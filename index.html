@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МестовНет — живая музыка в Крыму</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 28px 24px 18px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { color: #888; font-size: 0.9rem; margin-top: 4px; }
+
+    /* sticky toolbar с двумя строками */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f0f0f;
+      border-bottom: 1px solid #222;
+      padding: 12px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .date-filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .date-filter label {
+      font-size: 0.82rem;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .date-filter input[type="date"] {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 20px;
+      color: #f0f0f0;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      outline: none;
+      color-scheme: dark;
+    }
+
+    .date-filter input[type="date"]:focus { border-color: #555; }
+
+    .date-sep { color: #555; font-size: 0.85rem; }
+
+    .date-clear {
+      background: none;
+      border: none;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0 2px;
+      display: none;
+    }
+
+    .date-clear:hover { color: #aaa; }
+    .date-clear.visible { display: block; }
+
+    /* горизонтальный скролл для городов */
+    .city-filters {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    .city-filters::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #aaa;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .filter-btn:hover { border-color: #555; color: #fff; }
+    .filter-btn.active { background: #fff; color: #000; border-color: #fff; }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .date-group h2 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #777;
+      margin-bottom: 10px;
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .date-group:first-child h2 { margin-top: 0; }
+
+    /* бейдж "Сегодня" */
+    .today-badge {
+      background: #e8ff60;
+      color: #000;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .card {
+      background: #181818;
+      border: 1px solid #242424;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 8px;
+      transition: border-color 0.15s, transform 0.1s;
+      cursor: pointer;
+    }
+
+    .card:hover { border-color: #3a3a3a; transform: translateY(-1px); }
+    .card:active { transform: translateY(0); }
+    .card.cancelled { opacity: 0.45; }
+
+    /* горизонтальная раскладка: время | контент | превью */
+    .card-inner {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+    }
+
+    .card-time {
+      width: 42px;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      padding-top: 2px;
+      line-height: 1.2;
+    }
+
+    .card-time.no-time { color: #484848; font-size: 0.78rem; font-weight: 400; }
+
+    .card-body {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .card-artist {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f0f0f0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-venue {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .card-venue .city { color: #555; margin-left: 4px; }
+
+    .card-description {
+      font-size: 0.78rem;
+      color: #666;
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-top: 2px;
+    }
+
+    /* теги и источник в одной строке */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      color: #777;
+      white-space: nowrap;
+    }
+
+    .tag.type { border-color: #252545; color: #7777bb; background: #101025; }
+    .tag.price { border-color: #253525; color: #77bb77; background: #101810; }
+    .tag.free { border-color: #253525; color: #77bb77; background: #101810; }
+    .tag.cancelled-tag { border-color: #352525; color: #bb7777; background: #180f0f; }
+
+    .card-source {
+      font-size: 0.72rem;
+      margin-top: 4px;
+    }
+
+    .src-link {
+      color: #4a7aaa;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .src-link:hover { color: #7aaadd; }
+
+    /* превью справа */
+    .card-thumb {
+      width: 88px;
+      flex-shrink: 0;
+      object-fit: contain;
+      border-radius: 8px;
+      align-self: flex-start;
+      background: #111;
+      display: block;
+    }
+
+    /* скелетон загрузки */
+    .skeleton-card {
+      background: #181818;
+      border: 1px solid #222;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .skeleton-img {
+      height: 160px;
+      background: linear-gradient(90deg, #1a1a1a 25%, #222 50%, #1a1a1a 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+    }
+
+    .skeleton-inner { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+
+    .skeleton-line {
+      height: 13px;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #1e1e1e 25%, #252525 50%, #1e1e1e 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+    }
+    .skeleton-line.short { width: 35%; }
+    .skeleton-line.medium { width: 60%; }
+    .skeleton-line.long { width: 88%; }
+
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .empty {
+      text-align: center;
+      color: #555;
+      padding: 60px 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 20px 16px 14px; }
+      .toolbar { padding: 10px 16px; }
+      main { padding: 16px; }
+      .card-thumb { width: 72px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>МестовНет</h1>
+  <p>Живая музыка в Крыму</p>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <div class="date-filter">
+    <input type="date" id="date-from">
+    <button class="date-clear" id="clear-from" title="Сбросить">×</button>
+    <span class="date-sep">—</span>
+    <input type="date" id="date-to">
+    <button class="date-clear" id="clear-to" title="Сбросить">×</button>
+  </div>
+  <div class="city-filters" id="city-filters">
+    <button class="filter-btn active" data-city="all">Все города</button>
+  </div>
+</div>
+
+<main id="main">
+  <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-inner"><div class="skeleton-line medium"></div><div class="skeleton-line short"></div><div class="skeleton-line long"></div></div></div>
+  <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-inner"><div class="skeleton-line medium"></div><div class="skeleton-line short"></div><div class="skeleton-line long"></div></div></div>
+  <div class="skeleton-card"><div class="skeleton-inner"><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+</main>
+
+<script>
+let EVENTS = [];
+
+function getHidden() {
+  try { return new Set(JSON.parse(localStorage.getItem("mestovnet_hidden") || "[]")); }
+  catch { return new Set(); }
+}
+
+function getCustomTimes() {
+  try { return JSON.parse(localStorage.getItem("mestovnet_times") || "{}"); }
+  catch { return {}; }
+}
+
+const MONTHS = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const todayStr = today.toISOString().slice(0, 10);
+
+let activeCity = "all";
+let activeDateFrom = "";
+let activeDateTo = "";
+
+function inDateRange(event) {
+  if (!event.date) return true;
+  if (event.date < todayStr) return false;
+  if (activeDateFrom && event.date < activeDateFrom) return false;
+  if (activeDateTo && event.date > activeDateTo) return false;
+  return true;
+}
+
+function isToday(dateStr) {
+  if (!dateStr) return false;
+  return new Date(dateStr + "T00:00:00").getTime() === today.getTime();
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + "T00:00:00");
+  return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;
+}
+
+function getSourceHref(e) {
+  if (e.source_url) return e.source_url;
+  if (e.source_channel === "krymskiye_dela") return `https://www.instagram.com/${e.source_channel}/`;
+  return `https://t.me/${e.source_channel}`;
+}
+
+function getSourceLabel(e) {
+  if (e.source_channel === "yandex_afisha") return "Яндекс.Афиша";
+  if (e.source_channel === "krymskiye_dela") return `@${e.source_channel} (Instagram)`;
+  return `@${e.source_channel}`;
+}
+
+function buildFilters() {
+  const cityFilters = document.getElementById("city-filters");
+
+  [...new Set(EVENTS.map(e => e.source_city))].sort().forEach(city => {
+    const btn = document.createElement("button");
+    btn.className = "filter-btn";
+    btn.dataset.city = city;
+    cityFilters.appendChild(btn);
+  });
+
+  const inputFrom = document.getElementById("date-from");
+  const inputTo = document.getElementById("date-to");
+  const clearFrom = document.getElementById("clear-from");
+  const clearTo = document.getElementById("clear-to");
+
+  inputFrom.addEventListener("change", e => {
+    activeDateFrom = e.target.value;
+    clearFrom.classList.toggle("visible", !!activeDateFrom);
+    render();
+  });
+  inputTo.addEventListener("change", e => {
+    activeDateTo = e.target.value;
+    clearTo.classList.toggle("visible", !!activeDateTo);
+    render();
+  });
+  clearFrom.addEventListener("click", () => {
+    inputFrom.value = "";
+    activeDateFrom = "";
+    clearFrom.classList.remove("visible");
+    render();
+  });
+  clearTo.addEventListener("click", () => {
+    inputTo.value = "";
+    activeDateTo = "";
+    clearTo.classList.remove("visible");
+    render();
+  });
+
+  document.getElementById("toolbar").addEventListener("click", e => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    if (btn.dataset.city) {
+      activeCity = btn.dataset.city;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", b.dataset.city === activeCity));
+    }
+    render();
+  });
+}
+
+function updateCounts() {
+  const rangeEvents = EVENTS.filter(inDateRange);
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    const city = btn.dataset.city;
+    const count = city === "all"
+      ? rangeEvents.length
+      : rangeEvents.filter(e => e.source_city === city).length;
+    btn.textContent = city === "all" ? `Все города (${count})` : `${city} (${count})`;
+  });
+}
+
+function render() {
+  const main = document.getElementById("main");
+  main.innerHTML = "";
+
+  updateCounts();
+
+  const hidden = getHidden();
+  const customTimes = getCustomTimes();
+  const filtered = EVENTS.filter(e => {
+    if (hidden.has(e.source_url)) return false;
+    const cityOk = activeCity === "all" || e.source_city === activeCity;
+    return inDateRange(e) && cityOk;
+  });
+
+  if (filtered.length === 0) {
+    main.innerHTML = '<div class="empty">Событий не найдено</div>';
+    return;
+  }
+
+  const groups = {};
+  filtered.forEach(e => {
+    const key = e.date || "no-date";
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(e);
+  });
+
+  const sortedKeys = Object.keys(groups).sort((a, b) => {
+    if (a === "no-date") return 1;
+    if (b === "no-date") return -1;
+    return a.localeCompare(b);
+  });
+
+  sortedKeys.forEach(key => {
+    const group = document.createElement("div");
+    group.className = "date-group";
+
+    const h2 = document.createElement("h2");
+    if (key === "no-date") {
+      h2.textContent = "Дата уточняется";
+    } else if (isToday(key)) {
+      const badge = document.createElement("span");
+      badge.className = "today-badge";
+      badge.textContent = "Сегодня";
+      h2.appendChild(badge);
+      h2.appendChild(document.createTextNode(formatDate(key)));
+    } else {
+      h2.textContent = formatDate(key);
+    }
+    group.appendChild(h2);
+
+    const sorted = groups[key].slice().sort((a, b) => {
+      const ta = a.time || customTimes[a.source_url];
+      const tb = b.time || customTimes[b.source_url];
+      if (ta && tb) return ta.localeCompare(tb);
+      if (ta) return -1;
+      if (tb) return 1;
+      return 0;
+    });
+    sorted.forEach(event => {
+      const effective = (!event.time && customTimes[event.source_url])
+        ? { ...event, time: customTimes[event.source_url] }
+        : event;
+      group.appendChild(makeCard(effective));
+    });
+    main.appendChild(group);
+  });
+}
+
+function makeCard(e) {
+  const card = document.createElement("div");
+  card.className = "card" + (e.cancelled ? " cancelled" : "");
+
+  const srcHref = getSourceHref(e);
+  card.addEventListener("click", ev => {
+    if (!ev.target.closest("a")) window.open(srcHref, "_blank");
+  });
+
+  const inner = document.createElement("div");
+  inner.className = "card-inner";
+
+  // колонка времени
+  const time = document.createElement("div");
+  time.className = e.time ? "card-time" : "card-time no-time";
+  time.textContent = e.time || "—";
+  inner.appendChild(time);
+
+  // основной контент
+  const body = document.createElement("div");
+  body.className = "card-body";
+
+  const artist = document.createElement("div");
+  artist.className = "card-artist";
+  artist.textContent = e.artist || e.venue || "";
+  body.appendChild(artist);
+
+  const venue = document.createElement("div");
+  venue.className = "card-venue";
+  venue.innerHTML = (e.venue || e.source_channel || "") +
+    (e.artist ? `<span class="city">· ${e.source_city}</span>` : "");
+  body.appendChild(venue);
+
+  if (e.description) {
+    const desc = document.createElement("div");
+    desc.className = "card-description";
+    desc.textContent = e.description;
+    body.appendChild(desc);
+  }
+
+  // теги + источник в одной строке
+  const footer = document.createElement("div");
+  footer.className = "card-footer";
+
+  if (e.cancelled) {
+    addTag(footer, "перенесено", "cancelled-tag");
+  }
+  if (e.event_type) addTag(footer, e.event_type, "type");
+  if (e.price) {
+    const cls = e.price === "бесплатно" ? "free" : "price";
+    const label = e.price === "бесплатно" ? "бесплатно" : e.price + " ₽";
+    addTag(footer, label, cls);
+  }
+
+  body.appendChild(footer);
+
+  const sourceDiv = document.createElement("div");
+  sourceDiv.className = "card-source";
+  const srcLink = document.createElement("a");
+  srcLink.className = "src-link";
+  srcLink.href = srcHref;
+  srcLink.target = "_blank";
+  srcLink.textContent = getSourceLabel(e);
+  sourceDiv.appendChild(srcLink);
+  body.appendChild(sourceDiv);
+  inner.appendChild(body);
+
+  // превью справа
+  if (e.image) {
+    const img = document.createElement("img");
+    img.className = "card-thumb";
+    img.src = e.image;
+    img.alt = e.artist || e.venue;
+    img.loading = "lazy";
+    img.onerror = () => img.remove();
+    inner.appendChild(img);
+  }
+
+  card.appendChild(inner);
+  return card;
+}
+
+function addTag(container, text, cls) {
+  const t = document.createElement("span");
+  t.className = `tag ${cls}`;
+  t.textContent = text;
+  container.appendChild(t);
+}
+
+fetch("events.json")
+  .then(r => r.json())
+  .then(data => {
+    EVENTS = data;
+    buildFilters();
+    render();
+  })
+  .catch(() => {
+    document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>';
+  });
+</script>
+</body>
+</html>

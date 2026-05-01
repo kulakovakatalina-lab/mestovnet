@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админка — МестовНет</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    /* ---- auth screen ---- */
+    #auth-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 16px;
+      padding: 24px;
+    }
+
+    #auth-screen h2 { font-size: 1.1rem; color: #aaa; }
+
+    #auth-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    #auth-form input {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #f0f0f0;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+    #auth-form input:focus { border-color: #555; }
+
+    #auth-form button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    #auth-error {
+      color: #bb7777;
+      font-size: 0.85rem;
+      display: none;
+    }
+
+    /* ---- admin app ---- */
+    #app { display: none; }
+
+    header {
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid #222;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    header h1 { font-size: 1.3rem; font-weight: 700; }
+    header a { color: #4a7aaa; font-size: 0.85rem; text-decoration: none; }
+    header a:hover { color: #7aaadd; }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f0f0f;
+      border-bottom: 1px solid #222;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .stats {
+      font-size: 0.82rem;
+      color: #666;
+      margin-right: auto;
+    }
+    .stats b { color: #f0f0f0; }
+
+    .toolbar-btn {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #aaa;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .toolbar-btn:hover { border-color: #555; color: #fff; }
+    .toolbar-btn.danger { border-color: #4a2222; color: #bb7777; }
+    .toolbar-btn.danger:hover { border-color: #aa4444; color: #ffaaaa; background: #1a1010; }
+
+    .search-wrap {
+      position: relative;
+    }
+    .search-wrap input {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #f0f0f0;
+      padding: 6px 12px 6px 32px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      outline: none;
+      width: 200px;
+      transition: border-color 0.15s, width 0.2s;
+    }
+    .search-wrap input:focus { border-color: #555; width: 260px; }
+    .search-wrap::before {
+      content: "⌕";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #555;
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .date-group h2 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #555;
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    .date-group:first-child h2 { margin-top: 0; }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      background: #151515;
+      margin-bottom: 5px;
+      transition: border-color 0.15s, opacity 0.2s;
+    }
+
+    .row.hidden-row { opacity: 0.4; }
+    .row.hidden-row .row-artist { text-decoration: line-through; color: #555; }
+    .row.search-hidden { display: none; }
+
+    .row-time-wrap {
+      width: 58px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .row-time {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .row-time.no-time {
+      color: #3a3a3a;
+      font-size: 0.75rem;
+      font-weight: 400;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .row-time.no-time:hover { color: #777; }
+
+    .row-time.custom-time {
+      color: #d4a84b;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .row-time.custom-time:hover { color: #f0c060; }
+
+    .time-del {
+      background: none;
+      border: none;
+      color: #3a3a3a;
+      font-size: 0.9rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0 1px;
+      transition: color 0.15s;
+      flex-shrink: 0;
+    }
+    .time-del:hover { color: #bb7777; }
+
+    .time-input {
+      background: #1a1a1a;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-size: 0.78rem;
+      padding: 2px 4px;
+      width: 58px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .time-input:focus { border-color: #d4a84b; }
+
+    .row-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .row-artist {
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #e0e0e0;
+    }
+
+    .row-meta {
+      font-size: 0.75rem;
+      color: #555;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* toggle switch */
+    .toggle-wrap {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toggle-label {
+      font-size: 0.75rem;
+      color: #555;
+      width: 38px;
+      text-align: right;
+    }
+    .toggle-label.on { color: #77bb77; }
+
+    .switch {
+      position: relative;
+      width: 40px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #2a2a2a;
+      border-radius: 22px;
+      cursor: pointer;
+      transition: background 0.2s;
+      border: 1px solid #333;
+    }
+    .slider::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 2px;
+      top: 2px;
+      background: #555;
+      border-radius: 50%;
+      transition: transform 0.2s, background 0.2s;
+    }
+    input:checked + .slider { background: #1a3a1a; border-color: #2a5a2a; }
+    input:checked + .slider::before { transform: translateX(18px); background: #77cc77; }
+
+    .empty { text-align: center; color: #555; padding: 60px 0; font-size: 0.95rem; }
+
+    @media (max-width: 480px) {
+      header { padding: 16px; }
+      .toolbar { padding: 10px 16px; gap: 8px; }
+      .search-wrap input { width: 140px; }
+      .search-wrap input:focus { width: 180px; }
+      main { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- экран входа -->
+<div id="auth-screen">
+  <h2>Вход в админку</h2>
+  <form id="auth-form">
+    <input type="password" id="pwd-input" placeholder="Пароль" autocomplete="current-password">
+    <button type="submit">Войти</button>
+    <span id="auth-error">Неверный пароль</span>
+  </form>
+</div>
+
+<!-- интерфейс админки -->
+<div id="app">
+  <header>
+    <h1>Админка МестовНет</h1>
+    <a href="index.html">← На сайт</a>
+  </header>
+
+  <div class="toolbar">
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Поиск…">
+    </div>
+    <div class="stats" id="stats"></div>
+    <button class="toolbar-btn" id="btn-show-all">Показать всё</button>
+    <button class="toolbar-btn danger" id="btn-logout">Выйти</button>
+  </div>
+
+  <main id="main"></main>
+</div>
+
+<script>
+// ---- пароль ----
+// Поменяй пароль здесь:
+const PASSWORD = "admin1234";
+const SESSION_KEY = "mestovnet_admin_auth";
+const HIDDEN_KEY  = "mestovnet_hidden";
+const TIMES_KEY   = "mestovnet_times";
+
+function getHidden() {
+  try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY) || "[]")); }
+  catch { return new Set(); }
+}
+
+function saveHidden(set) {
+  localStorage.setItem(HIDDEN_KEY, JSON.stringify([...set]));
+}
+
+function getTimes() {
+  try { return JSON.parse(localStorage.getItem(TIMES_KEY) || "{}"); }
+  catch { return {}; }
+}
+
+function saveTimes(obj) {
+  localStorage.setItem(TIMES_KEY, JSON.stringify(obj));
+}
+
+// ---- auth ----
+function checkAuth() {
+  return sessionStorage.getItem(SESSION_KEY) === "1";
+}
+
+document.getElementById("auth-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const val = document.getElementById("pwd-input").value;
+  if (val === PASSWORD) {
+    sessionStorage.setItem(SESSION_KEY, "1");
+    showApp();
+  } else {
+    document.getElementById("auth-error").style.display = "block";
+    document.getElementById("pwd-input").value = "";
+  }
+});
+
+document.getElementById("btn-logout").addEventListener("click", () => {
+  sessionStorage.removeItem(SESSION_KEY);
+  location.reload();
+});
+
+// ---- app ----
+let EVENTS = [];
+let hidden = getHidden();
+let times  = getTimes();
+
+const MONTHS = ["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
+const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + "T00:00:00");
+  return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;
+}
+
+function updateStats() {
+  const total = EVENTS.length;
+  const hiddenCount = EVENTS.filter(e => hidden.has(e.source_url)).length;
+  document.getElementById("stats").innerHTML =
+    `всего <b>${total}</b> &nbsp;·&nbsp; скрыто <b>${hiddenCount}</b>`;
+}
+
+function render() {
+  const main = document.getElementById("main");
+  main.innerHTML = "";
+
+  const groups = {};
+  EVENTS.forEach(e => {
+    const key = e.date || "no-date";
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(e);
+  });
+
+  const sortedKeys = Object.keys(groups).sort((a, b) => {
+    if (a === "no-date") return 1;
+    if (b === "no-date") return -1;
+    return a.localeCompare(b);
+  });
+
+  sortedKeys.forEach(key => {
+    const group = document.createElement("div");
+    group.className = "date-group";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = key === "no-date" ? "Дата уточняется" : formatDate(key);
+    group.appendChild(h2);
+
+    const sorted = groups[key].slice().sort((a, b) => {
+      if (a.time && b.time) return a.time.localeCompare(b.time);
+      if (a.time) return -1;
+      if (b.time) return 1;
+      return 0;
+    });
+
+    sorted.forEach(event => group.appendChild(makeRow(event)));
+    main.appendChild(group);
+  });
+
+  updateStats();
+}
+
+function renderTimeContent(wrap, e) {
+  wrap.innerHTML = "";
+
+  if (e.time) {
+    const span = document.createElement("span");
+    span.className = "row-time";
+    span.textContent = e.time;
+    wrap.appendChild(span);
+    return;
+  }
+
+  const custom = times[e.source_url];
+
+  if (custom) {
+    const span = document.createElement("span");
+    span.className = "row-time custom-time";
+    span.textContent = custom;
+    span.title = "Изменить время";
+    span.addEventListener("click", () => showTimeInput(wrap, e));
+    wrap.appendChild(span);
+
+    const del = document.createElement("button");
+    del.className = "time-del";
+    del.textContent = "×";
+    del.title = "Удалить время";
+    del.addEventListener("click", ev => {
+      ev.stopPropagation();
+      delete times[e.source_url];
+      saveTimes(times);
+      renderTimeContent(wrap, e);
+    });
+    wrap.appendChild(del);
+  } else {
+    const dash = document.createElement("span");
+    dash.className = "row-time no-time";
+    dash.textContent = "＋";
+    dash.title = "Добавить время";
+    dash.addEventListener("click", () => showTimeInput(wrap, e));
+    wrap.appendChild(dash);
+  }
+}
+
+function showTimeInput(wrap, e) {
+  wrap.innerHTML = "";
+  const input = document.createElement("input");
+  input.type = "time";
+  input.className = "time-input";
+  input.value = times[e.source_url] || "";
+  wrap.appendChild(input);
+  input.focus();
+
+  function commit() {
+    const val = input.value;
+    if (val) {
+      times[e.source_url] = val;
+    } else {
+      delete times[e.source_url];
+    }
+    saveTimes(times);
+    renderTimeContent(wrap, e);
+  }
+
+  input.addEventListener("blur", commit);
+  input.addEventListener("keydown", ev => {
+    if (ev.key === "Enter") { ev.preventDefault(); input.blur(); }
+    if (ev.key === "Escape") { renderTimeContent(wrap, e); }
+  });
+}
+
+function makeRow(e) {
+  const isHidden = hidden.has(e.source_url);
+
+  const row = document.createElement("div");
+  row.className = "row" + (isHidden ? " hidden-row" : "");
+  row.dataset.artist = (e.artist || e.venue || "").toLowerCase();
+  row.dataset.venue  = (e.venue || "").toLowerCase();
+  row.dataset.city   = (e.source_city || "").toLowerCase();
+
+  const timeWrap = document.createElement("div");
+  timeWrap.className = "row-time-wrap";
+  renderTimeContent(timeWrap, e);
+  row.appendChild(timeWrap);
+
+  const info = document.createElement("div");
+  info.className = "row-info";
+
+  const artist = document.createElement("div");
+  artist.className = "row-artist";
+  artist.textContent = e.artist || e.venue || "";
+  info.appendChild(artist);
+
+  const meta = document.createElement("div");
+  meta.className = "row-meta";
+  const parts = [];
+  if (e.venue && e.artist) parts.push(e.venue);
+  if (e.source_city) parts.push(e.source_city);
+  if (e.event_type) parts.push(e.event_type);
+  meta.textContent = parts.join(" · ");
+  info.appendChild(meta);
+
+  row.appendChild(info);
+
+  // toggle
+  const wrap = document.createElement("div");
+  wrap.className = "toggle-wrap";
+
+  const label = document.createElement("span");
+  label.className = isHidden ? "toggle-label" : "toggle-label on";
+  label.textContent = isHidden ? "скрыто" : "видно";
+
+  const sw = document.createElement("label");
+  sw.className = "switch";
+
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  input.checked = !isHidden;
+  input.addEventListener("change", () => {
+    if (input.checked) {
+      hidden.delete(e.source_url);
+      row.classList.remove("hidden-row");
+      label.className = "toggle-label on";
+      label.textContent = "видно";
+    } else {
+      hidden.add(e.source_url);
+      row.classList.add("hidden-row");
+      label.className = "toggle-label";
+      label.textContent = "скрыто";
+    }
+    saveHidden(hidden);
+    updateStats();
+  });
+
+  const slider = document.createElement("span");
+  slider.className = "slider";
+
+  sw.appendChild(input);
+  sw.appendChild(slider);
+  wrap.appendChild(label);
+  wrap.appendChild(sw);
+  row.appendChild(wrap);
+
+  return row;
+}
+
+// поиск
+document.getElementById("search").addEventListener("input", function() {
+  const q = this.value.toLowerCase().trim();
+  document.querySelectorAll(".row").forEach(row => {
+    if (!q) {
+      row.classList.remove("search-hidden");
+      return;
+    }
+    const match = row.dataset.artist.includes(q) ||
+                  row.dataset.venue.includes(q) ||
+                  row.dataset.city.includes(q);
+    row.classList.toggle("search-hidden", !match);
+  });
+  // скрыть пустые группы
+  document.querySelectorAll(".date-group").forEach(g => {
+    const visible = [...g.querySelectorAll(".row")].some(r => !r.classList.contains("search-hidden"));
+    g.style.display = visible ? "" : "none";
+  });
+});
+
+// показать всё
+document.getElementById("btn-show-all").addEventListener("click", () => {
+  if (!confirm("Сделать все события видимыми?")) return;
+  hidden.clear();
+  saveHidden(hidden);
+  render();
+});
+
+function showApp() {
+  document.getElementById("auth-screen").style.display = "none";
+  document.getElementById("app").style.display = "block";
+
+  fetch("events.json")
+    .then(r => r.json())
+    .then(data => {
+      EVENTS = data;
+      render();
+    })
+    .catch(() => {
+      document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>';
+    });
+}
+
+// автовход если сессия активна
+if (checkAuth()) showApp();
+</script>
+</body>
+</html>

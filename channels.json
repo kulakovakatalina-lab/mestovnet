@@ -1,0 +1,80 @@
+{
+  "instagram_channels": [
+    {
+      "username": "krymskiye_dela",
+      "title": "Крымские Дела",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "Instagram-канал о событиях Крыма"
+    }
+  ],
+  "vk_channels": [],
+  "max_channels": [
+    {
+      "chat_id": 0,
+      "username": "HaiPetri",
+      "title": "Хай'Петри",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "join: https://max.ru/join/XLGyAA-3_jV-fbgxaCUQJOSnrIf7Oc1nvpoyZPyWCbg"
+    }
+  ],
+  "channels": [
+    {
+      "username": "belbekma",
+      "title": "Белбек",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "BelbekskayaYarmarka",
+      "title": "Белбекская Ярмарка",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "hp_band",
+      "title": "HP Band",
+      "city": "Крым",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "clubjam",
+      "title": "Jam Club",
+      "city": "Симферополь",
+      "type": "venue",
+      "notes": "концерты, трибьюты, джем-сессии"
+    },
+    {
+      "username": "nb_yalta",
+      "title": "Народный бар",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "rocknroll_92",
+      "title": "Рок-н-рольщики",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "dlyadushi_Crimea",
+      "title": "Для души | Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": ""
+    },
+    {
+      "username": "tavrida_art",
+      "title": "ТАВРИДА.АРТ",
+      "city": "Судак",
+      "type": "venue",
+      "notes": "арт-кластер, фестивали, концерты"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.env
+ig_session.json
+__pycache__/
+*.pyc
+.claude/
+memory/
+raw_posts.json
