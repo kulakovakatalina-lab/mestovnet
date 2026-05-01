@@ -62,6 +62,7 @@
     .date-filter input[type="date"]:focus { border-color: #555; }
 
     .date-sep { color: #555; font-size: 0.85rem; }
+    .date-label { color: #888; font-size: 0.82rem; }
 
     .date-clear {
       background: none;
@@ -309,9 +310,11 @@
 
 <div class="toolbar" id="toolbar">
   <div class="date-filter">
+    <span class="date-label">с</span>
     <input type="date" id="date-from">
     <button class="date-clear" id="clear-from" title="Сбросить">×</button>
     <span class="date-sep">—</span>
+    <span class="date-label">по</span>
     <input type="date" id="date-to">
     <button class="date-clear" id="clear-to" title="Сбросить">×</button>
   </div>
