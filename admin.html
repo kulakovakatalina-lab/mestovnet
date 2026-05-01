@@ -335,6 +335,8 @@
     </div>
     <div class="stats" id="stats"></div>
     <button class="toolbar-btn" id="btn-show-all">Показать всё</button>
+    <button class="toolbar-btn" id="btn-export">Экспорт настроек</button>
+    <label class="toolbar-btn" id="btn-import-label">Импорт настроек<input type="file" id="btn-import" accept=".json" style="display:none"></label>
     <button class="toolbar-btn danger" id="btn-logout">Выйти</button>
   </div>
 
@@ -618,6 +620,37 @@ document.getElementById("btn-show-all").addEventListener("click", () => {
   hidden.clear();
   saveHidden(hidden);
   render();
+});
+
+document.getElementById("btn-export").addEventListener("click", () => {
+  const data = {
+    [HIDDEN_KEY]: localStorage.getItem(HIDDEN_KEY) || "[]",
+    [TIMES_KEY]: localStorage.getItem(TIMES_KEY) || "{}",
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "mestovnet-settings.json";
+  a.click();
+});
+
+document.getElementById("btn-import").addEventListener("change", e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      if (data[HIDDEN_KEY]) localStorage.setItem(HIDDEN_KEY, data[HIDDEN_KEY]);
+      if (data[TIMES_KEY]) localStorage.setItem(TIMES_KEY, data[TIMES_KEY]);
+      alert("Настройки импортированы. Страница перезагрузится.");
+      location.reload();
+    } catch {
+      alert("Ошибка: файл повреждён или неверного формата.");
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = "";
 });
 
 function showApp() {
