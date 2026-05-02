@@ -108,12 +108,23 @@ def get_source_href(e: dict) -> str:
         return f"https://www.instagram.com/{ch}/"
     return f"https://t.me/{ch}"
 
-# ── CSS (извлекаем из index.html, чтобы не дублировать) ──────────────────────
+# ── CSS и JS (извлекаем из index.html, чтобы не дублировать) ────────────────
 
 def extract_css() -> str:
     try:
         src = INDEX_FILE.read_text(encoding="utf-8")
         m = re.search(r"<style>(.*?)</style>", src, re.DOTALL)
+        if m:
+            return m.group(1)
+    except Exception:
+        pass
+    return ""
+
+def extract_js() -> str:
+    """Берём JS из index.html — так он всегда в синхроне с главной страницей."""
+    try:
+        src = INDEX_FILE.read_text(encoding="utf-8")
+        m = re.search(r"<script>\s*(.*?)\s*</script>", src, re.DOTALL)
         if m:
             return m.group(1)
     except Exception:
@@ -268,21 +279,10 @@ def make_jsonld_breadcrumbs(crumbs: list[tuple[str, str]]) -> str:
         + "\n</script>"
     )
 
-# ── Дополнительный CSS для страниц городов ───────────────────────────────────
+# ── Шаблон страницы города ───────────────────────────────────────────────────
 
 EXTRA_CSS = """
-    .breadcrumbs {
-      padding: 8px 24px;
-      font-size: 0.8rem;
-      color: #999;
-      background: #fff;
-      border-bottom: 1px solid #f0eeea;
-    }
-    .breadcrumbs a { color: #999; text-decoration: none; }
-    .breadcrumbs a:hover { color: #1a1a1a; }
-    .breadcrumbs .sep { margin: 0 5px; }
-
-    .city-nav {
+    ._placeholder {
       display: flex;
       gap: 6px;
       flex-wrap: wrap;
@@ -509,74 +509,81 @@ render();
 
 def make_city_page(
     city: str,
-    events: list,
+    events_all: list,
     all_cities: list[str],
     css: str,
 ) -> str:
-    today = today_str()
-    slug  = city_slug(city)
-    prep  = CITY_PREP.get(city, f"в {city}")
-    count = len([e for e in events if (e.get("date") or "") >= today])
+    """Генерирует страницу города — выглядит как главная, но с предвыбранным городом."""
+    today  = today_str()
+    slug   = city_slug(city)
+    prep   = CITY_PREP.get(city, f"в {city}")
+    city_events = [e for e in events_all if e.get("source_city") == city]
+    count  = len([e for e in city_events if (e.get("date") or "") >= today])
 
     title       = f"Живая музыка и концерты {prep} — Местов.Нет"
     description = (f"Афиша концертов и живой музыки {prep}: "
                    f"ближайшие {count} событий в клубах, барах и на площадках. "
                    f"Обновляется ежедневно.")
 
-    static_content = render_event_list(events, today)
-    jsonld_events  = make_jsonld_events([e for e in events if (e.get("date") or "") >= today])
-    jsonld_bc      = make_jsonld_breadcrumbs([
-        ("Местов.Нет", "/"),
-        (city, ""),
-    ])
+    # Статический пре-рендер событий города (для поисковиков)
+    static_content = render_event_list(city_events, today)
+    jsonld_events  = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today])
+    jsonld_bc      = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (city, "")])
 
-    # Навигация по городам
-    nav_links = []
-    for c in sorted(all_cities):
-        s = city_slug(c)
-        cls = " current" if c == city else ""
-        nav_links.append(
-            f'<a class="city-nav-link{cls}" href="/{("" if c == city else "cities/"+s+".html")}">'
-            f'{esc(c)}</a>'
-        )
-    nav_html = (
-        '<nav class="city-nav" aria-label="Города">'
-        f'<a class="city-nav-link" href="/">← Все города</a>'
-        + "".join(nav_links)
-        + "</nav>"
+    # JS: берём из index.html и адаптируем (убираем fetch, предвыбираем город)
+    raw_js = extract_js()
+    city_json = json.dumps(city)
+    events_json = json.dumps(events_all, ensure_ascii=False)
+
+    # 1. Заменяем let EVENTS = [] на массив со всеми событиями
+    repl_events = f'let EVENTS = {events_json}'
+    adapted_js = re.sub(
+        r'let EVENTS\s*=\s*\[\s*\]',
+        lambda _: repl_events,
+        raw_js,
     )
-
-    events_js = json.dumps(events, ensure_ascii=False)
+    # 2. Заменяем let activeCity = "all" на нужный город
+    repl_city = f'let activeCity = {city_json}'
+    adapted_js = re.sub(
+        r'let activeCity\s*=\s*["\']all["\']',
+        lambda _: repl_city,
+        adapted_js,
+    )
+    # 3. Заменяем fetch(...) на инит с предвыбором города
+    city_boot = (
+        "buildFilters();\n"
+        "document.querySelectorAll('.filter-btn').forEach("
+        "b => b.classList.toggle('active', b.dataset.city === activeCity));\n"
+        "render();\n"
+    )
+    adapted_js = re.sub(
+        r"fetch\(['\"]events\.json['\"]\).*",
+        lambda _: city_boot,
+        adapted_js,
+        flags=re.DOTALL,
+    )
+    full_js = adapted_js
 
     return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/images/fav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:type" content="website">
   <link rel="canonical" href="{DOMAIN}/cities/{slug}.html">
-  <style>{css}{EXTRA_CSS}</style>
+  <style>{css}</style>
   {jsonld_events}
   {jsonld_bc}
 </head>
 <body>
 <header>
-  <h1><a href="/" style="text-decoration:none;color:inherit">Местов.Нет</a></h1>
-  <p>Живая музыка {prep}</p>
+  <img src="/images/logo.png" alt="Местов.Нет" class="site-logo">
 </header>
-
-<nav class="breadcrumbs" aria-label="Хлебные крошки">
-  <a href="/">Местов.Нет</a>
-  <span class="sep">/</span>
-  <span>{esc(city)}</span>
-</nav>
-
-{nav_html}
 
 <div class="toolbar" id="toolbar">
   <div class="date-filter" id="date-filter">
@@ -584,6 +591,9 @@ def make_city_page(
     <button class="preset-btn" data-preset="weekend">Выходные</button>
     <button class="preset-btn" data-preset="week">Неделя</button>
     <button class="preset-btn" data-preset="custom" id="btn-custom">Выбрать даты</button>
+  </div>
+  <div class="city-filters" id="city-filters">
+    <button class="filter-btn" data-city="all">Все города</button>
   </div>
 </div>
 
@@ -607,8 +617,7 @@ def make_city_page(
 </main>
 
 <script>
-let EVENTS = {events_js};
-{CITY_PAGE_JS}
+{full_js}
 </script>
 </body>
 </html>"""
@@ -732,11 +741,11 @@ def main() -> None:
     cities_dir.mkdir(exist_ok=True)
     print(f"🏙   Генерируем страницы городов ({len(cities_with_events)}) …")
     for city in cities_with_events:
-        city_events = [e for e in events if e.get("source_city") == city]
         slug = city_slug(city)
-        page = make_city_page(city, city_events, cities_with_events, css)
+        page = make_city_page(city, events, cities_with_events, css)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
+        city_events  = [e for e in events if e.get("source_city") == city]
         future_count = len([e for e in city_events if (e.get("date") or "") >= today])
         print(f"    ✓ cities/{slug}.html  ({future_count} событий)")
 
