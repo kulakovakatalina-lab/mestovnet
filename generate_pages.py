@@ -553,6 +553,7 @@ def make_city_page(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/fav.png">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <meta property="og:title" content="{esc(title)}">
