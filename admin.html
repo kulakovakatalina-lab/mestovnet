@@ -113,6 +113,7 @@
     .toolbar-btn:hover { border-color: #555; color: #fff; }
     .toolbar-btn.danger { border-color: #4a2222; color: #bb7777; }
     .toolbar-btn.danger:hover { border-color: #aa4444; color: #ffaaaa; background: #1a1010; }
+    .toolbar-btn:disabled { opacity: 0.45; cursor: default; }
 
     .search-wrap {
       position: relative;
@@ -354,8 +355,10 @@
     </div>
     <div class="stats" id="stats"></div>
     <button class="toolbar-btn" id="btn-show-all">Показать всё</button>
-    <button class="toolbar-btn" id="btn-export">Экспорт настроек</button>
-    <label class="toolbar-btn" id="btn-import-label">Импорт настроек<input type="file" id="btn-import" accept=".json" style="display:none"></label>
+    <button class="toolbar-btn" id="btn-save" disabled>Сохранено ✓</button>
+    <button class="toolbar-btn" id="btn-token">🔑 Токен</button>
+    <button class="toolbar-btn" id="btn-export">Экспорт</button>
+    <label class="toolbar-btn" id="btn-import-label">Импорт<input type="file" id="btn-import" accept=".json" style="display:none"></label>
     <button class="toolbar-btn danger" id="btn-logout">Выйти</button>
   </div>
 
@@ -363,40 +366,14 @@
 </div>
 
 <script>
-// ---- пароль ----
-// Поменяй пароль здесь:
-const PASSWORD = "admin1234";
+// ---- конфигурация ----
+const GITHUB_REPO   = "kulakovakatalina-lab/mestovnet";
+const GITHUB_BRANCH = "main";
+const GITHUB_FILE   = "settings.json";
+
+const PASSWORD    = "admin1234";
 const SESSION_KEY = "mestovnet_admin_auth";
-const HIDDEN_KEY  = "mestovnet_hidden";
-const TIMES_KEY   = "mestovnet_times";
-const NAMES_KEY   = "mestovnet_names";
-
-function getHidden() {
-  try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY) || "[]")); }
-  catch { return new Set(); }
-}
-
-function saveHidden(set) {
-  localStorage.setItem(HIDDEN_KEY, JSON.stringify([...set]));
-}
-
-function getTimes() {
-  try { return JSON.parse(localStorage.getItem(TIMES_KEY) || "{}"); }
-  catch { return {}; }
-}
-
-function saveTimes(obj) {
-  localStorage.setItem(TIMES_KEY, JSON.stringify(obj));
-}
-
-function getNames() {
-  try { return JSON.parse(localStorage.getItem(NAMES_KEY) || "{}"); }
-  catch { return {}; }
-}
-
-function saveNames(obj) {
-  localStorage.setItem(NAMES_KEY, JSON.stringify(obj));
-}
+const TOKEN_KEY   = "mestovnet_github_token";
 
 // ---- auth ----
 function checkAuth() {
@@ -420,15 +397,107 @@ document.getElementById("btn-logout").addEventListener("click", () => {
   location.reload();
 });
 
-// ---- app ----
+// ---- состояние ----
 let EVENTS = [];
-let hidden = getHidden();
-let times  = getTimes();
-let names  = getNames();
+let hidden = new Set();
+let times  = {};
+let names  = {};
+let dirty  = false;
 
 const MONTHS = ["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
 const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
 
+// ---- GitHub API ----
+function getToken() {
+  return localStorage.getItem(TOKEN_KEY) || "";
+}
+
+function updateTokenBtn() {
+  const btn = document.getElementById("btn-token");
+  if (!btn) return;
+  const has = !!getToken();
+  btn.textContent = has ? "🔑 Токен ✓" : "🔑 Токен";
+  btn.style.borderColor = has ? "#2a5a2a" : "";
+  btn.style.color = has ? "#77cc77" : "";
+}
+
+function markDirty() {
+  dirty = true;
+  updateSaveBtn();
+}
+
+function updateSaveBtn() {
+  const btn = document.getElementById("btn-save");
+  if (!btn) return;
+  btn.disabled = !dirty;
+  btn.textContent = dirty ? "Сохранить изменения" : "Сохранено ✓";
+  btn.style.borderColor = dirty ? "#2a5a5a" : "";
+  btn.style.color = dirty ? "#77cccc" : "";
+}
+
+async function pushSettings() {
+  const token = getToken();
+  if (!token) {
+    alert("Сначала введите GitHub токен (кнопка «🔑 Токен»).\n\nСоздайте токен на github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens.\nНужен доступ: Contents (Read and write) для репозитория mestovnet.");
+    return;
+  }
+
+  const btn = document.getElementById("btn-save");
+  btn.textContent = "Сохранение…";
+  btn.disabled = true;
+
+  const content = { hidden: [...hidden], times, names };
+  const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
+
+  try {
+    const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+    const headers = {
+      Authorization: `token ${token}`,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json"
+    };
+
+    const body = {
+      message: "Admin: обновить настройки",
+      content: encoded,
+      branch: GITHUB_BRANCH
+    };
+
+    // получаем SHA текущего файла (нужен для обновления)
+    const metaRes = await fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers });
+    if (metaRes.ok) {
+      const meta = await metaRes.json();
+      body.sha = meta.sha;
+    }
+
+    const res = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.message || `HTTP ${res.status}`);
+    }
+
+    dirty = false;
+    updateSaveBtn();
+  } catch(e) {
+    alert("Ошибка сохранения: " + e.message);
+    btn.textContent = "Сохранить изменения";
+    btn.disabled = false;
+  }
+}
+
+async function loadSettings() {
+  try {
+    const res = await fetch(`settings.json?_=${Date.now()}`);
+    if (res.ok) {
+      const d = await res.json();
+      hidden = new Set(d.hidden || []);
+      times  = d.times  || {};
+      names  = d.names  || {};
+    }
+  } catch { /* оставляем пустые defaults */ }
+}
+
+// ---- форматирование ----
 function formatDate(dateStr) {
   const d = new Date(dateStr + "T00:00:00");
   return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;
@@ -508,7 +577,7 @@ function renderTimeContent(wrap, e) {
     del.addEventListener("click", ev => {
       ev.stopPropagation();
       delete times[e.source_url];
-      saveTimes(times);
+      markDirty();
       renderTimeContent(wrap, e);
     });
     wrap.appendChild(del);
@@ -538,7 +607,7 @@ function showTimeInput(wrap, e) {
     } else {
       delete times[e.source_url];
     }
-    saveTimes(times);
+    markDirty();
     renderTimeContent(wrap, e);
   }
 
@@ -578,7 +647,7 @@ function showNameInput(wrap, e) {
     } else {
       delete names[e.source_url];
     }
-    saveNames(names);
+    markDirty();
     renderArtistContent(wrap, e);
   }
 
@@ -621,7 +690,6 @@ function makeRow(e) {
 
   row.appendChild(info);
 
-  // toggle
   const wrap = document.createElement("div");
   wrap.className = "toggle-wrap";
 
@@ -647,7 +715,7 @@ function makeRow(e) {
       label.className = "toggle-label";
       label.textContent = "скрыто";
     }
-    saveHidden(hidden);
+    markDirty();
     updateStats();
   });
 
@@ -663,40 +731,48 @@ function makeRow(e) {
   return row;
 }
 
-// поиск
+// ---- поиск ----
 document.getElementById("search").addEventListener("input", function() {
   const q = this.value.toLowerCase().trim();
   document.querySelectorAll(".row").forEach(row => {
-    if (!q) {
-      row.classList.remove("search-hidden");
-      return;
-    }
+    if (!q) { row.classList.remove("search-hidden"); return; }
     const match = row.dataset.artist.includes(q) ||
                   row.dataset.venue.includes(q) ||
                   row.dataset.city.includes(q);
     row.classList.toggle("search-hidden", !match);
   });
-  // скрыть пустые группы
   document.querySelectorAll(".date-group").forEach(g => {
     const visible = [...g.querySelectorAll(".row")].some(r => !r.classList.contains("search-hidden"));
     g.style.display = visible ? "" : "none";
   });
 });
 
-// показать всё
+// ---- кнопки ----
 document.getElementById("btn-show-all").addEventListener("click", () => {
   if (!confirm("Сделать все события видимыми?")) return;
   hidden.clear();
-  saveHidden(hidden);
+  markDirty();
   render();
 });
 
+document.getElementById("btn-save").addEventListener("click", pushSettings);
+
+document.getElementById("btn-token").addEventListener("click", () => {
+  const cur = getToken();
+  const t = prompt(
+    "GitHub Personal Access Token\n" +
+    "(github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens,\n" +
+    "доступ: Contents Read & write для репозитория mestovnet):",
+    cur
+  );
+  if (t !== null) {
+    localStorage.setItem(TOKEN_KEY, t.trim());
+    updateTokenBtn();
+  }
+});
+
 document.getElementById("btn-export").addEventListener("click", () => {
-  const data = {
-    [HIDDEN_KEY]: localStorage.getItem(HIDDEN_KEY) || "[]",
-    [TIMES_KEY]: localStorage.getItem(TIMES_KEY) || "{}",
-    [NAMES_KEY]: localStorage.getItem(NAMES_KEY) || "{}",
-  };
+  const data = { hidden: [...hidden], times, names };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -710,12 +786,13 @@ document.getElementById("btn-import").addEventListener("change", e => {
   const reader = new FileReader();
   reader.onload = ev => {
     try {
-      const data = JSON.parse(ev.target.result);
-      if (data[HIDDEN_KEY]) localStorage.setItem(HIDDEN_KEY, data[HIDDEN_KEY]);
-      if (data[TIMES_KEY]) localStorage.setItem(TIMES_KEY, data[TIMES_KEY]);
-      if (data[NAMES_KEY]) localStorage.setItem(NAMES_KEY, data[NAMES_KEY]);
-      alert("Настройки импортированы. Страница перезагрузится.");
-      location.reload();
+      const d = JSON.parse(ev.target.result);
+      if (Array.isArray(d.hidden)) hidden = new Set(d.hidden);
+      if (d.times && typeof d.times === "object") times = d.times;
+      if (d.names && typeof d.names === "object") names = d.names;
+      markDirty();
+      render();
+      alert("Настройки загружены. Нажмите «Сохранить изменения» чтобы опубликовать.");
     } catch {
       alert("Ошибка: файл повреждён или неверного формата.");
     }
@@ -724,22 +801,24 @@ document.getElementById("btn-import").addEventListener("change", e => {
   e.target.value = "";
 });
 
-function showApp() {
+// ---- запуск ----
+async function showApp() {
   document.getElementById("auth-screen").style.display = "none";
   document.getElementById("app").style.display = "block";
 
+  updateTokenBtn();
+  updateSaveBtn();
+
+  await loadSettings();
+
   fetch("events.json")
     .then(r => r.json())
-    .then(data => {
-      EVENTS = data;
-      render();
-    })
+    .then(data => { EVENTS = data; render(); })
     .catch(() => {
       document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>';
     });
 }
 
-// автовход если сессия активна
 if (checkAuth()) showApp();
 </script>
 </body>

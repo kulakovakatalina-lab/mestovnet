@@ -1212,18 +1212,11 @@
 <script>
 let EVENTS = [];
 
-function getHidden() {
-  try { return new Set(JSON.parse(localStorage.getItem("mestovnet_hidden") || "[]")); }
-  catch { return new Set(); }
-}
-function getCustomTimes() {
-  try { return JSON.parse(localStorage.getItem("mestovnet_times") || "{}"); }
-  catch { return {}; }
-}
-function getCustomNames() {
-  try { return JSON.parse(localStorage.getItem("mestovnet_names") || "{}"); }
-  catch { return {}; }
-}
+let SETTINGS = { hidden: [], times: {}, names: {} };
+
+function getHidden()      { return new Set(SETTINGS.hidden || []); }
+function getCustomTimes() { return SETTINGS.times || {}; }
+function getCustomNames() { return SETTINGS.names || {}; }
 
 const MONTHS     = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 const MONTHS_NOM = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
@@ -1683,10 +1676,17 @@ function addTag(container, text, cls) {
   container.appendChild(t);
 }
 
-fetch("events.json")
-  .then(r => r.json())
-  .then(data => { EVENTS = data; buildFilters(); render(); })
-  .catch(() => { document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>'; });
+Promise.all([
+  fetch("events.json").then(r => r.json()),
+  fetch("settings.json").then(r => r.json()).catch(() => ({ hidden: [], times: {}, names: {} }))
+]).then(([events, settings]) => {
+  EVENTS = events;
+  SETTINGS = settings;
+  buildFilters();
+  render();
+}).catch(() => {
+  document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>';
+});
 </script>
 </body>
 </html>
