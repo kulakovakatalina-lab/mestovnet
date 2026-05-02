@@ -421,7 +421,13 @@ def main():
 
     existing_urls = {e["source_url"] for e in existing if e.get("source_url")}
     new_events = [e for e in all_events if e.get("source_url") not in existing_urls]
-    merged = existing + new_events
+    merged_raw = existing + new_events
+
+    before2 = len(merged_raw)
+    merged = deduplicate_events(merged_raw)
+    after2 = len(merged)
+    if before2 != after2:
+        print(f"Дедупликация с архивом: {before2} → {after2} (убрано: {before2 - after2})")
 
     print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
 
