@@ -478,6 +478,9 @@ function setPreset(preset) {
     const r = getPresetRange(preset);
     activeDateFrom = r.from;
     activeDateTo   = r.to;
+  } else if (!preset) {
+    activeDateFrom = "";
+    activeDateTo   = "";
   }
   document.querySelectorAll(".preset-btn").forEach(b =>
     b.classList.toggle("active", b.dataset.preset === preset)
