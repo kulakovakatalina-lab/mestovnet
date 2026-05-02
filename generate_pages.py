@@ -576,7 +576,7 @@ def make_city_page(
     var btn = e.target.closest('[data-city]');
     if (!btn) return;
     var dest = CITY_URLS[btn.dataset.city];
-    if (dest !== undefined) {{
+    if (dest !== undefined && dest !== window.location.pathname) {{
       e.stopImmediatePropagation();
       window.location.href = dest;
     }}
