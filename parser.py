@@ -375,10 +375,24 @@ def main():
     after = len(all_events)
     print(f"\nДедупликация: {before} → {after} событий (убрано дублей: {before - after})")
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_events, f, ensure_ascii=False, indent=2)
+    existing = []
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, encoding="utf-8") as f:
+                existing = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            existing = []
 
-    print(f"Готово. Всего событий: {after}, сохранено в {OUTPUT_FILE}")
+    existing_urls = {e["source_url"] for e in existing if e.get("source_url")}
+    new_events = [e for e in all_events if e.get("source_url") not in existing_urls]
+    merged = existing + new_events
+
+    print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+
+    print(f"Готово. Сохранено в {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
