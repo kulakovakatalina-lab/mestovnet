@@ -342,6 +342,11 @@ function getCustomTimes() {
   catch { return {}; }
 }
 
+function getCustomNames() {
+  try { return JSON.parse(localStorage.getItem("mestovnet_names") || "{}"); }
+  catch { return {}; }
+}
+
 const MONTHS = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
 
@@ -452,6 +457,7 @@ function render() {
 
   const hidden = getHidden();
   const customTimes = getCustomTimes();
+  const customNames = getCustomNames();
   const filtered = EVENTS.filter(e => {
     if (hidden.has(e.source_url)) return false;
     const cityOk = activeCity === "all" || e.source_city === activeCity;
@@ -503,9 +509,11 @@ function render() {
       return 0;
     });
     sorted.forEach(event => {
-      const effective = (!event.time && customTimes[event.source_url])
-        ? { ...event, time: customTimes[event.source_url] }
-        : event;
+      const effective = {
+        ...event,
+        ...((!event.time && customTimes[event.source_url]) ? { time: customTimes[event.source_url] } : {}),
+        ...(customNames[event.source_url] ? { artist: customNames[event.source_url] } : {}),
+      };
       group.appendChild(makeCard(effective));
     });
     main.appendChild(group);

@@ -242,7 +242,26 @@
       overflow: hidden;
       text-overflow: ellipsis;
       color: #e0e0e0;
+      cursor: pointer;
     }
+
+    .row-artist:hover { color: #fff; text-decoration: underline dotted #555; }
+    .row-artist.custom-name { color: #7db87d; }
+    .row-artist.custom-name:hover { color: #a0d4a0; }
+
+    .name-input {
+      background: #1a1a1a;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .name-input:focus { border-color: #7db87d; }
 
     .row-meta {
       font-size: 0.75rem;
@@ -350,6 +369,7 @@ const PASSWORD = "admin1234";
 const SESSION_KEY = "mestovnet_admin_auth";
 const HIDDEN_KEY  = "mestovnet_hidden";
 const TIMES_KEY   = "mestovnet_times";
+const NAMES_KEY   = "mestovnet_names";
 
 function getHidden() {
   try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY) || "[]")); }
@@ -367,6 +387,15 @@ function getTimes() {
 
 function saveTimes(obj) {
   localStorage.setItem(TIMES_KEY, JSON.stringify(obj));
+}
+
+function getNames() {
+  try { return JSON.parse(localStorage.getItem(NAMES_KEY) || "{}"); }
+  catch { return {}; }
+}
+
+function saveNames(obj) {
+  localStorage.setItem(NAMES_KEY, JSON.stringify(obj));
 }
 
 // ---- auth ----
@@ -395,6 +424,7 @@ document.getElementById("btn-logout").addEventListener("click", () => {
 let EVENTS = [];
 let hidden = getHidden();
 let times  = getTimes();
+let names  = getNames();
 
 const MONTHS = ["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
 const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
@@ -519,6 +549,46 @@ function showTimeInput(wrap, e) {
   });
 }
 
+function renderArtistContent(wrap, e) {
+  wrap.innerHTML = "";
+  const custom = names[e.source_url];
+  const span = document.createElement("span");
+  span.className = "row-artist" + (custom ? " custom-name" : "");
+  span.textContent = custom || e.artist || e.venue || "";
+  span.title = "Нажмите чтобы изменить название";
+  span.addEventListener("click", () => showNameInput(wrap, e));
+  wrap.appendChild(span);
+}
+
+function showNameInput(wrap, e) {
+  wrap.innerHTML = "";
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "name-input";
+  input.value = names[e.source_url] || e.artist || e.venue || "";
+  wrap.appendChild(input);
+  input.focus();
+  input.select();
+
+  function commit() {
+    const val = input.value.trim();
+    const original = (e.artist || e.venue || "").trim();
+    if (val && val !== original) {
+      names[e.source_url] = val;
+    } else {
+      delete names[e.source_url];
+    }
+    saveNames(names);
+    renderArtistContent(wrap, e);
+  }
+
+  input.addEventListener("blur", commit);
+  input.addEventListener("keydown", ev => {
+    if (ev.key === "Enter") { ev.preventDefault(); input.blur(); }
+    if (ev.key === "Escape") { renderArtistContent(wrap, e); }
+  });
+}
+
 function makeRow(e) {
   const isHidden = hidden.has(e.source_url);
 
@@ -536,10 +606,9 @@ function makeRow(e) {
   const info = document.createElement("div");
   info.className = "row-info";
 
-  const artist = document.createElement("div");
-  artist.className = "row-artist";
-  artist.textContent = e.artist || e.venue || "";
-  info.appendChild(artist);
+  const artistWrap = document.createElement("div");
+  renderArtistContent(artistWrap, e);
+  info.appendChild(artistWrap);
 
   const meta = document.createElement("div");
   meta.className = "row-meta";
@@ -626,6 +695,7 @@ document.getElementById("btn-export").addEventListener("click", () => {
   const data = {
     [HIDDEN_KEY]: localStorage.getItem(HIDDEN_KEY) || "[]",
     [TIMES_KEY]: localStorage.getItem(TIMES_KEY) || "{}",
+    [NAMES_KEY]: localStorage.getItem(NAMES_KEY) || "{}",
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
@@ -643,6 +713,7 @@ document.getElementById("btn-import").addEventListener("change", e => {
       const data = JSON.parse(ev.target.result);
       if (data[HIDDEN_KEY]) localStorage.setItem(HIDDEN_KEY, data[HIDDEN_KEY]);
       if (data[TIMES_KEY]) localStorage.setItem(TIMES_KEY, data[TIMES_KEY]);
+      if (data[NAMES_KEY]) localStorage.setItem(NAMES_KEY, data[NAMES_KEY]);
       alert("Настройки импортированы. Страница перезагрузится.");
       location.reload();
     } catch {
