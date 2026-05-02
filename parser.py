@@ -1,5 +1,7 @@
 import argparse
+import hashlib
 import json
+import mimetypes
 import os
 import re
 import subprocess
@@ -15,6 +17,40 @@ load_dotenv()
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
 DAYS_BACK = 2
+IMAGES_DIR = "images/events"
+
+
+def download_image(url: str):
+    """Скачивает картинку локально, возвращает путь вида /images/events/<hash>.<ext>."""
+    if not url:
+        return None
+    os.makedirs(IMAGES_DIR, exist_ok=True)
+    url_hash = hashlib.md5(url.encode()).hexdigest()
+    # Пробуем определить расширение из URL
+    ext = "jpg"
+    path_part = url.split("?")[0].split("/")[-1]
+    if "." in path_part:
+        guessed = path_part.rsplit(".", 1)[-1].lower()
+        if guessed in ("jpg", "jpeg", "png", "webp", "gif"):
+            ext = guessed
+    local_path = os.path.join(IMAGES_DIR, f"{url_hash}.{ext}")
+    if os.path.exists(local_path):
+        return f"/{local_path}"
+    try:
+        resp = httpx.get(url, timeout=15, follow_redirects=True,
+                         headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+        # Уточняем расширение по Content-Type если не определили из URL
+        ct = resp.headers.get("content-type", "")
+        guessed_ext = mimetypes.guess_extension(ct.split(";")[0].strip())
+        if guessed_ext and guessed_ext.lstrip(".") in ("jpg", "jpeg", "png", "webp", "gif"):
+            ext = guessed_ext.lstrip(".")
+            local_path = os.path.join(IMAGES_DIR, f"{url_hash}.{ext}")
+        with open(local_path, "wb") as f:
+            f.write(resp.content)
+        return f"/{local_path}"
+    except Exception:
+        return url  # fallback: оставляем внешний URL
 
 
 def load_channels():
@@ -152,7 +188,7 @@ def process_yandex_afisha(all_events: list):
             "source_channel": "yandex_afisha",
             "source_city": post["_city"],
             "post_date": post["date"],
-            "image": post.get("image"),
+            "image": download_image(post.get("image")),
             "source_url": pre["source_url"],
         }
         all_events.append(event)
@@ -328,7 +364,7 @@ def process_channels(channels, all_events, get_posts_fn):
                 if not event.get("venue"):
                     event["venue"] = channel["title"]
                 event["post_date"] = post["date"]
-                event["image"] = post.get("image")
+                event["image"] = download_image(post.get("image"))
                 event["source_url"] = post.get("url")
                 all_events.append(event)
                 channel_events += 1
