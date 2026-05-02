@@ -314,8 +314,8 @@
     .tag.cancelled-tag { border-color: #f5d5d5; color: #c04040; background: #fff5f5; }
 
     .card-source { font-size: 0.72rem; margin-top: 5px; }
-    .src-link { color: #fc4c2f; text-decoration: none; transition: opacity 0.15s; }
-    .src-link:hover { opacity: 0.75; }
+    .src-link { color: #666; text-decoration: none; transition: color 0.15s; }
+    .src-link:hover { color: #1a1a1a; }
 
     .card-thumb {
       width: 88px; height: 88px;
@@ -681,7 +681,7 @@ function buildFilters() {
     }
     const city = e.target.closest("[data-city]");
     if (city) {
-      activeCity = city.dataset.city;
+      activeCity = (activeCity === city.dataset.city && city.dataset.city !== "all") ? "all" : city.dataset.city;
       document.querySelectorAll(".filter-btn").forEach(b =>
         b.classList.toggle("active", b.dataset.city === activeCity)
       );
