@@ -2,9 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Афиша концертов и живой музыки в Крыму: 43 ближайших событий в Симферополе, Ялте, Севастополе и других городах. Клубы, бары, площадки — всё в одном месте.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Местов.Нет — живая музыка в Крыму</title>
+  <title>Живая музыка и концерты в Симферополе — Местов.Нет</title>
+  <meta name="description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 23 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:title" content="Живая музыка и концерты в Симферополе — Местов.Нет">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 23 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://mestov.net/cities/simferopol.html">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -360,35 +364,47 @@
       main { padding: 16px; }
       .card-thumb { width: 72px; height: 72px; }
     }
-  </style>
-  <link rel="canonical" href="https://mestovnet.ru/">
-  <meta property="og:title" content="Местов.Нет — живая музыка в Крыму">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Крыму: 43 ближайших событий в Евпатория, Керчь, Севастополь, Симферополь, Судак, Ялта. Клубы, бары, площадки — всё в одном месте.">
-  <meta property="og:type" content="website">
+  
+    .breadcrumbs {
+      padding: 8px 24px;
+      font-size: 0.8rem;
+      color: #999;
+      background: #fff;
+      border-bottom: 1px solid #f0eeea;
+    }
+    .breadcrumbs a { color: #999; text-decoration: none; }
+    .breadcrumbs a:hover { color: #1a1a1a; }
+    .breadcrumbs .sep { margin: 0 5px; }
+
+    .city-nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 10px 24px 8px;
+      background: #fff;
+      border-bottom: 1px solid #e8e6e0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .city-nav::-webkit-scrollbar { display: none; }
+    .city-nav-link {
+      font-size: 0.8rem;
+      color: #666;
+      text-decoration: none;
+      padding: 4px 12px;
+      border: 1px solid #e0ddd8;
+      border-radius: 16px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.15s;
+    }
+    .city-nav-link:hover { border-color: #aaa; color: #1a1a1a; }
+    .city-nav-link.current { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "MusicEvent",
-      "name": "HP Band",
-      "startDate": "2026-05-03T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "набережная Ялты",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "HP Band выступает на «Фестивале уличного искусства» на набережной Ялты. Живая музыка, пение и танцы.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "HP Band"
-      },
-      "image": "https://cdn4.telesco.pe/file/idz8W-fun0M5q_lpBtz_Zw7-mhrApw66s3SCcN1HoDsZF80LZ26J8nDJOp9-yCfskiUSfFGEN-_H44fSKcrorO3QD5cmsfiZMUJp8IDss8hh1ipGnp9uXi3GqhNpBa8tYBWrL7EO5WOLVUrj2W-OyAgabtN0hmOTpUFe4H8JLmn_xcjVnVkjLcvdPmrV3kgd2IyWuJHZhEHGkFjc6JpUp-WPxv6fh1sQWCUBW8C9fZgw2hps_JvCoHKcIUs8WQmTK5nLIajOCobFIddL38PzO0LqsbQXjP9kQGIYczyrZpRmp2kbX1XwRSKBaFSfjQyZ1cUFNWm7lj6eoBGshFHL6w.jpg"
-    },
     {
       "@type": "MusicEvent",
       "name": "Blackened",
@@ -521,32 +537,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "ОРЕВО, Свобода слова, Манекен, Трипса, Что Ты Делаешь?!?!?!!",
-      "startDate": "2026-05-03T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Народный бар",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Панк-рок вечер в баре «Народный». Местная группа из Ялты.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "ОРЕВО, Свобода слова, Манекен, Трипса, Что Ты Делаешь?!?!?!!"
-      },
-      "image": "https://cdn4.telesco.pe/file/L9O0qecEnIn8BSRE9uT9iMXvE-bwg6a-dL61fwqJKJXLxwu6jGMdZ9Cbw3Pu3zz23pehvFDOx8FIGQ87hqs1f86RjEWel_f4TrVHhPFb30LYP2fOsBgTuiXRpLDqD7pxYj7BKmTqDCTtXnIH-V0Mfg8xiesYZhUMFSns5hD0DlsRAoU54NMa2dYQKkyXhCYMIoM6YCsPcZHXu9UQ0vpwYC1s2b30en67pm_5sADFoJEJz5cjR0IMRsgi2o-AeYaX4CI2Ay7cJYM0nTeUBjI5MWjz7BiaYjtH9_de2Kl9cuNWG1fNaZvcF8_BbL_5tUpThgDcAQNlY7qwjfQ04eqXcg.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "500 рублей",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Оркестр русских народных инструментов",
       "startDate": "2026-05-23T18:00:00+03:00",
       "location": {
@@ -584,86 +574,6 @@
         "name": "Андрей Ясинский"
       },
       "image": "https://cdn4.telesco.pe/file/meTDn91uWxiV5hXgpL1VEi18yWWcfmflJqH4IjcKehVJChdGDmSvdaZw_WjEDBOntZ4Q8sfIJ_zfNNc9AzgPGSlImWSkQM4n1aKzSFuZVjbY57UTsyLiBiFEukhbNvRV167bFtayDbCJao39_301Xt1w2xZNhqgO3sAcP9U2BCkB927qFCFtfafaRwDvD8_hzuThplgKN9gNw-z8Gn5L4RkuZJ46ygb11x3gAjwtBrNv1bIR9bIiMsFVmlOwtA8UhE1_kZa0aNdssstel2vWR56KIQqqzWoaeqL9bOF_15xGkMu7Wpk2e7q5LjV6xuN12Bu95zjdUAZY29v_u2FjcA.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Балет арт-кластера «Таврида», Группа «Т», Группа «Хвоя», Иван Алексеев-Лару и группа «Время Настоящего»",
-      "startDate": "2026-05-02T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "ТАВРИДА.АРТ",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Судак",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Трансляция открытия Киномаёвки. Выступление балета арт-кластера «Таврида».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Балет арт-кластера «Таврида», Группа «Т», Группа «Хвоя», Иван Алексеев-Лару и группа «Время Настоящего»"
-      },
-      "image": "https://cdn4.telesco.pe/file/t600fUKij1sWyiIHLxm5SytifFTq0gcvNsFR2prsKK9KrFTg5efonphHytd-dUztDkCWwSME9mypqEgPQ2CX612dtBOA15gvGi_lra-RQ_3-Ho2fKbYZ875U6PDb18Rrw6VWag1nlwqgve2GEVB7PZ9V3x2WqgsdzqIgV0Iz9S0uivfaerYRtNh1PDD_ROJSC7Tb6737-wtknBphZ0HPfJWLOCIjiBbBogTMtN-tYtRAPtRsMAsmrw5I_SvV6Uf_6-p01Zhqgjfe4C9kE7hJcic86pA-X8Cns1wxMj7eFrIILthjQSPOBQDU53Kp7q62mgI3gy9bs6d6g6uufpPYsQ.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Сергей Бобунец, Три дня дождя, Таврида.АРТ, Сергей Бобунец, Маша Вокс",
-      "startDate": "2026-05-02T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Крымские Дела",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Трибьют-шоу фильмам «Брат» и «Брат 2» с хитами «Крылья», «Ту-лу-ла», «Дорога», «Вечно молодой». Выступают Сергей Бобунец, группа «Три дня дождя» и артисты лейбла «Таврида.АРТ».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Сергей Бобунец, Три дня дождя, Таврида.АРТ, Сергей Бобунец, Маша Вокс"
-      },
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_cat=100&ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&oe=69FACC86"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Три дня дождя, BELOBOKA, Runa Project",
-      "startDate": "2026-05-03T19:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Главная сцена у АРТ-ЭКСПО",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Судак",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальное выступление участников творческого молодёжного сообщества современной музыки Runa Project в рамках закрытия фестиваля Киномаёвка.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Три дня дождя, BELOBOKA, Runa Project"
-      },
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_cat=100&ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&oe=69FACC86"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Пицца, Beautiful Boys",
-      "startDate": "2026-05-02T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Мрия, Бальный зал",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Живое выступление группы «Пицца» с лидером Сергеем Приказчиковым в рамках праздника «Крымские каникулы». По промокоду «ДЕЛА» скидка 10%.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Пицца, Beautiful Boys"
-      },
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.71878-15/683555534_1231319095742202_7273075059584704020_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=101&ig_cache_key=Mzg4Njc4NzkxOTMwMTkyMjQxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=TOyCmEwKOp4Q7kNvwF0ONzq&_nc_oc=AdqX3mwlQJk8MSLEW-chpdV6R8CgOfFRftMfRN91n92rVyCo3bFs0wxzYRQip2n6kGY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af6VA1JRo1-euWMJwh7DeuDB_BE4lEWwuWqI_j6pOVVDUg&oe=69FAB533"
     },
     {
       "@type": "MusicEvent",
@@ -711,28 +621,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Балаган 38 (ПОР 38/7), Севастополь",
-      "startDate": "2026-05-10T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Балаган 38 (ПОР 38/7), Севастополь",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.",
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761",
-      "offers": {
-        "@type": "Offer",
-        "name": "800₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Level Beach Club (Гурзуфская 9), Симферополь",
       "startDate": "2026-05-16T18:30:00+03:00",
       "location": {
@@ -749,50 +637,6 @@
       "offers": {
         "@type": "Offer",
         "name": "900₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Чайка на Пляже (Дражинского 50Б), Ялта",
-      "startDate": "2026-05-17T17:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Чайка на Пляже (Дражинского 50Б), Ялта",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.",
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761",
-      "offers": {
-        "@type": "Offer",
-        "name": "1000₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Балаган 38 (ПОР 38/7), Севастополь",
-      "startDate": "2026-05-22T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Балаган 38 (ПОР 38/7), Севастополь",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.",
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761",
-      "offers": {
-        "@type": "Offer",
-        "name": "800₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -818,26 +662,6 @@
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Оркестр «Яника»",
-      "startDate": "2026-05-09T17:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Курортный комплекс «Аквамарин», летняя сцена",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Евпатория",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Изысканный вечер живой музыки под открытым небом. В программе классическая музыка и популярные эстрадные произведения.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Оркестр «Яника»"
-      },
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/681287088_17984914848004825_2626049738278024879_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=100&ig_cache_key=Mzg4NTgzNjQxNzk0MzAxODIzNTE3OTg0OTE0ODQyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHgxMjc4LnNkci5DMyJ9&_nc_ohc=1Y7Ei-S2adgQ7kNvwFKbd4q&_nc_oc=AdrhZ2i0bamY5n1Bb8Scx36JPIdtU8EiMhioXrlohZbMsT5b4QjKe74z7ZACfppG-Og&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4IXwr0tTxaDEAnKBcRyLQlexu-d2O62fhdDOMlfvHJfA&oe=69FACFF4"
     },
     {
       "@type": "MusicEvent",
@@ -1066,17 +890,105 @@
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Три дня дождя",
+      "startDate": "2026-08-22T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Centrum",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Три дня дождя в Centrum, Симферополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Три дня дождя"
+      },
+      "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/b74fce9e3427c8569630ad21396f1d35/s400x190",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 3 400 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Моя Мишель",
+      "startDate": "2026-08-23T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Centrum",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Моя Мишель в Centrum, Симферополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Моя Мишель"
+      },
+      "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/d7b3566dcb6e988734cabdbeb706a1ad/s400x190",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 3 000 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Helvegen",
+      "startDate": "2026-10-20T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Депо",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Helvegen в Депо, Симферополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Helvegen"
+      },
+      "image": "https://avatars.mds.yandex.net/get-afishanew/4395007/ec397414ff85191ebf8e63e7eddba4f7/s400x190",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 1 500 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь"}]}
+</script>
 </head>
 <body>
-
 <header>
-  <h1>Местов.Нет</h1>
-  <p>Живая музыка в Крыму</p>
+  <h1><a href="/" style="text-decoration:none;color:inherit">Местов.Нет</a></h1>
+  <p>Живая музыка в Симферополе</p>
 </header>
+
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+  <a href="/">Местов.Нет</a>
+  <span class="sep">/</span>
+  <span>Симферополь</span>
+</nav>
+
+<nav class="city-nav" aria-label="Города"><a class="city-nav-link" href="/">← Все города</a><a class="city-nav-link" href="/cities/evpatoriya.html">Евпатория</a><a class="city-nav-link" href="/cities/kerch.html">Керчь</a><a class="city-nav-link" href="/cities/sevastopol.html">Севастополь</a><a class="city-nav-link current" href="/">Симферополь</a><a class="city-nav-link" href="/cities/sudak.html">Судак</a><a class="city-nav-link" href="/cities/yalta.html">Ялта</a></nav>
 
 <div class="toolbar" id="toolbar">
   <div class="date-filter" id="date-filter">
@@ -1085,12 +997,8 @@
     <button class="preset-btn" data-preset="week">Неделя</button>
     <button class="preset-btn" data-preset="custom" id="btn-custom">Выбрать даты</button>
   </div>
-  <div class="city-filters" id="city-filters">
-    <button class="filter-btn active" data-city="all">Все города</button>
-  </div>
 </div>
 
-<!-- Модальный календарь -->
 <div class="cal-overlay" id="cal-overlay">
   <div class="cal-modal" id="cal-modal">
     <div class="cal-nav-row">
@@ -1107,42 +1015,28 @@
 </div>
 
 <main id="main">
+<div class="date-group"><h2>Дата уточняется</h2>
+<div class="card" onclick="window.open('https://www.instagram.com/p/DXyMwM7DGOe/','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Мыст</div><div class="card-venue">Крымские Дела<span class="city">· Симферополь</span></div><div class="card-description">Чаепитие «Крымские сказки» под живое музыкальное сопровождение группы «Мыст» в рамках фестиваля «Киномаёвка».</div><div class="card-footer"><span class="tag type">другое</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXyMwM7DGOe/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&amp;_nc_cat=100&amp;ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&amp;_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&amp;oe=69FACC86" alt="Мыст" loading="lazy" onerror="this.remove()"></div></div>
+</div>
 <div class="date-group"><h2><span class="today-badge">Сегодня</span>2 мая, пт</h2>
 <div class="card" onclick="window.open('https://www.instagram.com/p/DXrLAezRLTp/','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Камерный оркестр «Новая гармония»</div><div class="card-venue">Пещера «Мраморная»<span class="city">· Симферополь</span></div><div class="card-description">Открытие нового концертного сезона с программой «Звуковой сплав 6» под руководством дирижёра Дениса Карлова. Классика и современные мотивы в уникальной акустике пещеры со сталактитами.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXrLAezRLTp/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.71878-15/685422701_1508823507307776_1988320901868515885_n.jpg?stp=dst-jpg_e15_p360x360_tt6&amp;_nc_cat=108&amp;ig_cache_key=Mzg4NTI0NzUxNTEyMTIwMjQwOQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=G-JNow1xTNwQ7kNvwHeGAN4&amp;_nc_oc=AdrJFC6PxsAbZ8kVzdaS-MiZzJtr59igUQDW7oyerHUz4FRrvrp8PSK40ms3Ck8CmQA&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af7PIxrkfkblX4OXTg7zXWmDpFyW_nyWOLd2cbdsfnRhHQ&amp;oe=69FAA3F8" alt="Камерный оркестр «Новая гармония»" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/tavrida_art/20745','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Балет арт-кластера «Таврида», Группа «Т», Группа «Хвоя», Иван Алексеев-Лару и группа «Время Настоящего»</div><div class="card-venue">ТАВРИДА.АРТ<span class="city">· Судак</span></div><div class="card-description">Трансляция открытия Киномаёвки. Выступление балета арт-кластера «Таврида».</div><div class="card-footer"><span class="tag type">другое</span></div><div class="card-source"><a class="src-link" href="https://t.me/tavrida_art/20745" target="_blank" rel="noopener">@tavrida_art</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/t600fUKij1sWyiIHLxm5SytifFTq0gcvNsFR2prsKK9KrFTg5efonphHytd-dUztDkCWwSME9mypqEgPQ2CX612dtBOA15gvGi_lra-RQ_3-Ho2fKbYZ875U6PDb18Rrw6VWag1nlwqgve2GEVB7PZ9V3x2WqgsdzqIgV0Iz9S0uivfaerYRtNh1PDD_ROJSC7Tb6737-wtknBphZ0HPfJWLOCIjiBbBogTMtN-tYtRAPtRsMAsmrw5I_SvV6Uf_6-p01Zhqgjfe4C9kE7hJcic86pA-X8Cns1wxMj7eFrIILthjQSPOBQDU53Kp7q62mgI3gy9bs6d6g6uufpPYsQ.jpg" alt="Балет арт-кластера «Таврида», Группа «Т», Группа «Хвоя», Иван Алексеев-Лару и группа «Время Настоящего»" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXwpQT_RU5z/','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Пицца, Beautiful Boys</div><div class="card-venue">Мрия, Бальный зал<span class="city">· Ялта</span></div><div class="card-description">Живое выступление группы «Пицца» с лидером Сергеем Приказчиковым в рамках праздника «Крымские каникулы». По промокоду «ДЕЛА» скидка 10%.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXwpQT_RU5z/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.71878-15/683555534_1231319095742202_7273075059584704020_n.jpg?stp=dst-jpg_e15_p360x360_tt6&amp;_nc_cat=101&amp;ig_cache_key=Mzg4Njc4NzkxOTMwMTkyMjQxOQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=TOyCmEwKOp4Q7kNvwF0ONzq&amp;_nc_oc=AdqX3mwlQJk8MSLEW-chpdV6R8CgOfFRftMfRN91n92rVyCo3bFs0wxzYRQip2n6kGY&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af6VA1JRo1-euWMJwh7DeuDB_BE4lEWwuWqI_j6pOVVDUg&amp;oe=69FAB533" alt="Пицца, Beautiful Boys" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/clubjam/915','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Blackened</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Metallica Tribute by Blackened — 3 часа живого звука. Одновременно проходит второй концерт в параллельном зале клуба.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag price">600р (бесплатно для подписчиков клуба)</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/915" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/QKv-uhH2-YEU-JXfMww6zZFwpHVNe2s9__JujMUNkOSq7IRsTr0KuAKU_nClw5dgz-tweyGEQOJoC2VJW-1gN6UTFOWy7KZVmyZXaNh9FC_kf2LF9R2e3OMwE5o1NGCer7QS3y49FhUd65ZwGy5n9t4oeiLYlcsm9-dIftGOTN8_zYoI_UDXKg8_odrXAIIL7lYDTZ7pqFmnegemPlhr2bfj9PJlVMAzjwo83M_O0pI2rKHnQ2Pd133CiVXvJLVp0e0B_5nGhbLlw2OVOeSFeXO-pP5ubK33tkS19lajUIAAyvYs6n-yHyHmUtjNZ5pSfYFcnVPJhOzNUjKk6LIcow.jpg" alt="Blackened" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Санта Барбара (Екатерининская 28), Симферополь</div><div class="card-venue">Санта Барбара (Екатерининская 28), Симферополь</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">800₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Санта Барбара (Екатерининская 28), Симферополь" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXyMwM7DGOe/','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Сергей Бобунец, Три дня дождя, Таврида.АРТ, Сергей Бобунец, Маша Вокс</div><div class="card-venue">Крымские Дела<span class="city">· Севастополь</span></div><div class="card-description">Трибьют-шоу фильмам «Брат» и «Брат 2» с хитами «Крылья», «Ту-лу-ла», «Дорога», «Вечно молодой». Выступают Сергей Бобунец, группа «Три дня дождя» и артисты лейбла «Таврида.АРТ».</div><div class="card-footer"><span class="tag type">трибьют</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXyMwM7DGOe/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&amp;_nc_cat=100&amp;ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&amp;_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&amp;oe=69FACC86" alt="Сергей Бобунец, Три дня дождя, Таврида.АРТ, Сергей Бобунец, Маша Вокс" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/clubjam/919','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Что ты делаешь?!?!?!, Metallica Tribute</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Панк-футуристическая группа из Мытищ (4 девушки и 1 парень) выступает в Jam Club. На разогреве местные группы Трипса и Крыши Нет.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/919" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/hbpQwKYxaqdpEUlc8bELnw_BiUVB7M5P0oMevcBQqoV-rYl3o9vv7dvrgGEQ7t34NMtoz7e411K7SncrOZFAarQEGmoCXpw3VPJ2sL5qQPOyRsDWuqxW2FzzJLRKyofzLuIcC8ZXi41xNYlbWgwMymXkpKim7GIonmi6DNUajrGuyc5uD6L3H7OvIptQLRAu1B0LbchmVEqC75HUtC5IN2m6p6EeQexyKdEGOLYJTovTY4rPRXZfjb5bQHnml3PnQlS84IqDQ3CCRTSvLljTnSJy6cj8iQ4_Ejx09VjXrrURrURjjjR9kps6RtHuKvDkaLjtZ0hv5s-wDo8Y-CTNZw.jpg" alt="Что ты делаешь?!?!?!, Metallica Tribute" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/clubjam/921','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет, Blackened</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">ЧТО ТЫ ДЕЛАЕШЬ?!?!?!! ГОУ НА ФЕСТ. Московская группа выступает в рамках многогруппового фестиваля.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/921" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/MY5pUtrQteGec4Sej8h9ruzZ2HSevj6Q2xS9FR4F0h_-ttHzaRCIlG1USj-rcyuIZMooysWtfMpnAV2vi6wA3gHqOu225srUNKSK_XnKWYFnN3ehzo3fCQOZVbv8T8Nv1jaC5m3YdcLHtACwXtex_dswH8pY4823lyw2Rynq3m2_2VFmG9QtRVmmLj7ScuXfXc2doOAl51JLQHFNpSQzNVJ91IBS7YapKQwQWBjuS7d6QkwRP6VcimGRTGKNdHB9lcVwzpLF1VmuauBE0mLcJmgEcPdsHIiy4Yq1G1brWL41Pm3Ei6uxYeNCYQSnoP3vLqprM8Iz0RvYoutL9Bt2lA.jpg" alt="Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет, Blackened" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>3 мая, сб</h2>
-<div class="card" onclick="window.open('https://t.me/hp_band/79','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">HP Band</div><div class="card-venue">набережная Ялты<span class="city">· Ялта</span></div><div class="card-description">HP Band выступает на «Фестивале уличного искусства» на набережной Ялты. Живая музыка, пение и танцы.</div><div class="card-footer"><span class="tag type">фестиваль</span></div><div class="card-source"><a class="src-link" href="https://t.me/hp_band/79" target="_blank" rel="noopener">@hp_band</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/idz8W-fun0M5q_lpBtz_Zw7-mhrApw66s3SCcN1HoDsZF80LZ26J8nDJOp9-yCfskiUSfFGEN-_H44fSKcrorO3QD5cmsfiZMUJp8IDss8hh1ipGnp9uXi3GqhNpBa8tYBWrL7EO5WOLVUrj2W-OyAgabtN0hmOTpUFe4H8JLmn_xcjVnVkjLcvdPmrV3kgd2IyWuJHZhEHGkFjc6JpUp-WPxv6fh1sQWCUBW8C9fZgw2hps_JvCoHKcIUs8WQmTK5nLIajOCobFIddL38PzO0LqsbQXjP9kQGIYczyrZpRmp2kbX1XwRSKBaFSfjQyZ1cUFNWm7lj6eoBGshFHL6w.jpg" alt="HP Band" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/nb_yalta/1935','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">ОРЕВО, Свобода слова, Манекен, Трипса, Что Ты Делаешь?!?!?!!</div><div class="card-venue">Народный бар<span class="city">· Ялта</span></div><div class="card-description">Панк-рок вечер в баре «Народный». Местная группа из Ялты.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">500 рублей</span></div><div class="card-source"><a class="src-link" href="https://t.me/nb_yalta/1935" target="_blank" rel="noopener">@nb_yalta</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/L9O0qecEnIn8BSRE9uT9iMXvE-bwg6a-dL61fwqJKJXLxwu6jGMdZ9Cbw3Pu3zz23pehvFDOx8FIGQ87hqs1f86RjEWel_f4TrVHhPFb30LYP2fOsBgTuiXRpLDqD7pxYj7BKmTqDCTtXnIH-V0Mfg8xiesYZhUMFSns5hD0DlsRAoU54NMa2dYQKkyXhCYMIoM6YCsPcZHXu9UQ0vpwYC1s2b30en67pm_5sADFoJEJz5cjR0IMRsgi2o-AeYaX4CI2Ay7cJYM0nTeUBjI5MWjz7BiaYjtH9_de2Kl9cuNWG1fNaZvcF8_BbL_5tUpThgDcAQNlY7qwjfQ04eqXcg.jpg" alt="ОРЕВО, Свобода слова, Манекен, Трипса, Что Ты Делаешь?!?!?!!" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXyMwM7DGOe/','_blank')"><div class="card-inner"><div class="card-time">19:30</div><div class="card-body"><div class="card-artist">Три дня дождя, BELOBOKA, Runa Project</div><div class="card-venue">Главная сцена у АРТ-ЭКСПО<span class="city">· Судак</span></div><div class="card-description">Музыкальное выступление участников творческого молодёжного сообщества современной музыки Runa Project в рамках закрытия фестиваля Киномаёвка.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXyMwM7DGOe/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&amp;_nc_cat=100&amp;ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&amp;_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&amp;oe=69FACC86" alt="Три дня дождя, BELOBOKA, Runa Project" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>8 мая, чт</h2>
 <div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">18:30</div><div class="card-body"><div class="card-artist">Монро (Кирова 27), Симферополь</div><div class="card-venue">Монро (Кирова 27), Симферополь</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">900₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Монро (Кирова 27), Симферополь" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/the-hatters-tour-6?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">The Hatters</div><div class="card-venue">Муссон<span class="city">· Севастополь</span></div><div class="card-description">The Hatters в Муссон, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 600 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/the-hatters-tour-6?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5109582/2d3df3d7d3db7eab1af02ee48f7c106a/s400x190" alt="The Hatters" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>9 мая, пт</h2>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXtQ6JSxRr7/','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Оркестр «Яника»</div><div class="card-venue">Курортный комплекс «Аквамарин», летняя сцена<span class="city">· Евпатория</span></div><div class="card-description">Изысканный вечер живой музыки под открытым небом. В программе классическая музыка и популярные эстрадные произведения.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXtQ6JSxRr7/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/681287088_17984914848004825_2626049738278024879_n.jpg?stp=dst-jpg_e15_p360x360_tt6&amp;_nc_cat=100&amp;ig_cache_key=Mzg4NTgzNjQxNzk0MzAxODIzNTE3OTg0OTE0ODQyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHgxMjc4LnNkci5DMyJ9&amp;_nc_ohc=1Y7Ei-S2adgQ7kNvwFKbd4q&amp;_nc_oc=AdrhZ2i0bamY5n1Bb8Scx36JPIdtU8EiMhioXrlohZbMsT5b4QjKe74z7ZACfppG-Og&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4IXwr0tTxaDEAnKBcRyLQlexu-d2O62fhdDOMlfvHJfA&amp;oe=69FACFF4" alt="Оркестр «Яника»" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/clubjam/916','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Nirvana Tribute</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Трибьют-концерт Nirvana в субботу 9 мая. Вход бесплатный, 3 часа живого звука.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/916" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/NCeooWu-WzRa6RFC5Ki9dCsobKzybMvL-PZhpDzTXuEiHSDryah7lEOq3wB_fmYO6ocVxoexMAV8deFY5YfLZ2mLu_z2HlkqUuBQyQB-Y94fwJxFvrSGwE3z616Gp-hd_CNh1q1Qsy7uhEFWZYoswpDZwZ6OQfWAepx56WT0j4_T1PHK7LtUyJ3jtL74JNTG24jWLsir1RIe0DDmY3RIFdewqN80zD3x5PhULAFgNMJLX207gX1TSF4ZdnvuIJzaDCgzbYYuJ9zHA32cGzjDQ-iFZKQH3FGc1EsOnRG0LQDhpcqSf_aPN0jXI4CPL6lLXuTBzRNd5qmU6iVWe1Yv8w.jpg" alt="Nirvana Tribute" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>10 мая, сб</h2>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Балаган 38 (ПОР 38/7), Севастополь</div><div class="card-venue">Балаган 38 (ПОР 38/7), Севастополь</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">800₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Балаган 38 (ПОР 38/7), Севастополь" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/the-hatters-tour-6?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">The Hatters</div><div class="card-venue">Наследие<span class="city">· Симферополь</span></div><div class="card-description">The Hatters в Наследие, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 4 200 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/the-hatters-tour-6?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5109582/2d3df3d7d3db7eab1af02ee48f7c106a/s400x190" alt="The Hatters" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>16 мая, пт</h2>
 <div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">18:30</div><div class="card-body"><div class="card-artist">Level Beach Club (Гурзуфская 9), Симферополь</div><div class="card-venue">Level Beach Club (Гурзуфская 9), Симферополь</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">900₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Level Beach Club (Гурзуфская 9), Симферополь" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/clubjam/917','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Антагония, Pulsa Di Nura, The Lone Dark Side, Johnny Dow!!, Ядохимикаты, Официально Устроен</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Metal Mania Fest pt.1 в Jam Club (зал 1). Вход свободный.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/917" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/tER-BHHNFat586jx3o1UWvtUWnuwiLKRkeRyW5WQVKMi5hdIIQj9dcPe1_QOJuzuf2N3YQHJX3Uy-ZPQ1HdNdkDtxIr6_-SmC80bOLr7I7e8_I-j58bOPR4ebwTnRWLQABNXtNbnbnR8VYu494zyELkEoPEoVcMDtaYJT8qA1QndXehew2IAEcPCLhfnnwH1HmtqS8gMuoEMw01ZZrF5iJRLulIr5mDcUi071elpMnIUXUNbcotN8AMb0D_bGdcxfBJulNAB9x1JUBSBA5dpOUo1afIoNMI64XgF9_PTNpwgHfs5jqxhUNtDBZrTV3MPbVJafXc3wUk2bCo2UpVEqw.jpg" alt="Антагония, Pulsa Di Nura, The Lone Dark Side, Johnny Dow!!, Ядохимикаты, Официально Устроен" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>17 мая, сб</h2>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">17:30</div><div class="card-body"><div class="card-artist">Чайка на Пляже (Дражинского 50Б), Ялта</div><div class="card-venue">Чайка на Пляже (Дражинского 50Б), Ялта</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">1000₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Чайка на Пляже (Дражинского 50Б), Ялта" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>22 мая, чт</h2>
-<div class="card" onclick="window.open('https://www.instagram.com/p/DXuLR0gRT6e/','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Балаган 38 (ПОР 38/7), Севастополь</div><div class="card-venue">Балаган 38 (ПОР 38/7), Севастополь</div><div class="card-description">Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag price">800₽</span></div><div class="card-source"><a class="src-link" href="https://www.instagram.com/p/DXuLR0gRT6e/" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&amp;_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-arn2-1.cdninstagram.com&amp;_nc_gid=niQGmwwwdcZtsK6eGl6oFw&amp;_nc_ss=7a3ba&amp;oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&amp;oe=69FAA761" alt="Балаган 38 (ПОР 38/7), Севастополь" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>23 мая, пт</h2>
 <div class="card" onclick="window.open('https://t.me/dlyadushi_Crimea/6075','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Оркестр русских народных инструментов</div><div class="card-venue">Музыкальное училище им. П.И. Чайковского, ул. Набережная имени 60-летия СССР, 31, Симферополь<span class="city">· Симферополь</span></div><div class="card-description">Концерт «Гоголь-сюита» — авангардное полистилистическое произведение А. Шнитке в исполнении оркестра русских народных инструментов. Впервые прозвучит музыка из кинофильма «Мёртвые души» и «Гоголь-сюита».</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/dlyadushi_Crimea/6075" target="_blank" rel="noopener">@dlyadushi_Crimea</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/W8r6Ww2hBwdDHqFsbCgF_D_SO4Z-cjxugbQKfAPfeSRwgjdetkDoV3UCwUwgeCkDCi5Xy1Kx-ODrzmxGMu7v9DncNkgNx7sWFP2CcF_wDlJINSCzE2PHtGhsonHmaXAXibfZdIRCawZJUCWRBb2NvRvOXIKfxa-YgS7TWpZXZvJ1ge2f-XaPTVs25A6Ik7LXnd0m3mcg03NBqkNBXXzq3ZMWBdrN9FKxh0mEuaH_5eXh4nBjh4rG8j8EWEMKYmEbmHfdfJNM54gm4UlgRcFyNzdJ40CHUv19vSAyR5C-pUsgLVXQaZAYSeF4RzCMzKOa5spOKQsejQ03iLwZPXY35w.jpg" alt="Оркестр русских народных инструментов" loading="lazy" onerror="this.remove()"></div></div>
@@ -1151,29 +1045,14 @@
 <div class="date-group"><h2>14 июня, сб</h2>
 <div class="card" onclick="window.open('https://t.me/dlyadushi_Crimea/6078','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Андрей Ясинский</div><div class="card-venue">Пещера Мраморная, Симферопольский р-н<span class="city">· Симферополь</span></div><div class="card-description">Концерт-погружение мультиинструменталиста Андрея Ясинского в пещере. Фортепиано, флейты, окарина, калимба, ханг и другие инструменты — медитативная музыка в подземном пространстве.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/dlyadushi_Crimea/6078" target="_blank" rel="noopener">@dlyadushi_Crimea</a></div></div><img class="card-thumb" src="https://cdn4.telesco.pe/file/meTDn91uWxiV5hXgpL1VEi18yWWcfmflJqH4IjcKehVJChdGDmSvdaZw_WjEDBOntZ4Q8sfIJ_zfNNc9AzgPGSlImWSkQM4n1aKzSFuZVjbY57UTsyLiBiFEukhbNvRV167bFtayDbCJao39_301Xt1w2xZNhqgO3sAcP9U2BCkB927qFCFtfafaRwDvD8_hzuThplgKN9gNw-z8Gn5L4RkuZJ46ygb11x3gAjwtBrNv1bIR9bIiMsFVmlOwtA8UhE1_kZa0aNdssstel2vWR56KIQqqzWoaeqL9bOF_15xGkMu7Wpk2e7q5LjV6xuN12Bu95zjdUAZY29v_u2FjcA.jpg" alt="Андрей Ясинский" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>20 июня, пт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Sunset Vibes. Абонемент</div><div class="card-venue">Винный парк (Понизовка)<span class="city">· Ялта</span></div><div class="card-description">Sunset Vibes. Абонемент в Винный парк (Понизовка), Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 7 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4395007/914a773760c6e33d5fb5e8f0636fa7d4/s400x190" alt="Sunset Vibes. Абонемент" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>25 июня, ср</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Radio Tapok</div><div class="card-venue">Консоль Спорт<span class="city">· Симферополь</span></div><div class="card-description">Radio Tapok в Консоль Спорт, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/14837015/ac5f3337895b1dce5010b26f810b96e5/s380x220" alt="Radio Tapok" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>26 июня, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">AdrenalinHouse в Театр им. А. П. Чехова, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4768735/b582f5c1908b30df29b17e2b2d50941e/s400x190" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>1 июля, вт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Jawa. Хиты «Сектор Газа»</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">Jawa. Хиты «Сектор Газа» в Корабел, Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4487581/6e60c7fb92e1cf2c9736f75ffadd7c12/s400x190" alt="Jawa. Хиты «Сектор Газа»" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>4 июля, пт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">12:00</div><div class="card-body"><div class="card-artist">Гастролис</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Гастролис в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5098259/f428be3a49dd77a22a789c32ba63faf4/s400x190" alt="Гастролис" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>12 июля, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">ГУДТАЙМС</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">ГУДТАЙМС в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/35821/5817f41dc83f3e49bd4ee4a4d1d8e643/s400x190" alt="ГУДТАЙМС" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>19 июля, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Ramil’</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Ramil’ в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5098259/b8c0334867a9fffc1dd3594121b8a1df/s400x190" alt="Ramil’" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>24 июля, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">КняZz в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4487581/ee70da95d2adb886010ec663cd598448/s400x190" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>26 июля, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Ева Польна</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Ева Польна в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5109582/c92f9b472c4bcfdbc6302285de614662/s400x190" alt="Ева Польна" loading="lazy" onerror="this.remove()"></div></div>
@@ -1184,15 +1063,6 @@
 <div class="date-group"><h2>9 августа, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Музыкальный театр<span class="city">· Симферополь</span></div><div class="card-description">Нэнси в Музыкальный театр, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4395007/f01ece8e9cd2d9426b086be6c7ff9ad4/s400x190" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>11 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Нэнси в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4395007/f01ece8e9cd2d9426b086be6c7ff9ad4/s400x190" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>13 августа, ср</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/14837015/273330f1b03918895e0cd2f2815f315e/s400x190" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>14 августа, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Комната культуры</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Комната культуры в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5098259/caf77d2ab50d73dc1155ee13898b6468/s400x190" alt="Комната культуры" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>15 августа, пт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Градусы</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Градусы в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5098259/a7e1060d3557670f677e0f04af70c588/s400x190" alt="Градусы" loading="lazy" onerror="this.remove()"></div></div>
 </div>
@@ -1202,492 +1072,204 @@
 <div class="date-group"><h2>23 августа, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Моя Мишель в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/5109582/d7b3566dcb6e988734cabdbeb706a1ad/s400x190" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>25 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Моя Мишель в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4487581/c508988137ac26f4ce889d4768b31f67/s400x190" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>20 октября, пн</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Helvegen</div><div class="card-venue">Депо<span class="city">· Симферополь</span></div><div class="card-description">Helvegen в Депо, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="https://avatars.mds.yandex.net/get-afishanew/4395007/ec397414ff85191ebf8e63e7eddba4f7/s400x190" alt="Helvegen" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </main>
 
 <script>
-let EVENTS = [];
-
-function getHidden() {
-  try { return new Set(JSON.parse(localStorage.getItem("mestovnet_hidden") || "[]")); }
-  catch { return new Set(); }
-}
-function getCustomTimes() {
-  try { return JSON.parse(localStorage.getItem("mestovnet_times") || "{}"); }
-  catch { return {}; }
-}
-function getCustomNames() {
-  try { return JSON.parse(localStorage.getItem("mestovnet_names") || "{}"); }
-  catch { return {}; }
-}
+let EVENTS = [{"date": "2026-05-02", "time": "19:00", "artist": "Blackened", "event_type": "трибьют", "venue": "Jam Club", "price": "600р (бесплатно для подписчиков клуба)", "description": "Metallica Tribute by Blackened — 3 часа живого звука. Одновременно проходит второй концерт в параллельном зале клуба.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/915", "image": "https://cdn4.telesco.pe/file/QKv-uhH2-YEU-JXfMww6zZFwpHVNe2s9__JujMUNkOSq7IRsTr0KuAKU_nClw5dgz-tweyGEQOJoC2VJW-1gN6UTFOWy7KZVmyZXaNh9FC_kf2LF9R2e3OMwE5o1NGCer7QS3y49FhUd65ZwGy5n9t4oeiLYlcsm9-dIftGOTN8_zYoI_UDXKg8_odrXAIIL7lYDTZ7pqFmnegemPlhr2bfj9PJlVMAzjwo83M_O0pI2rKHnQ2Pd133CiVXvJLVp0e0B_5nGhbLlw2OVOeSFeXO-pP5ubK33tkS19lajUIAAyvYs6n-yHyHmUtjNZ5pSfYFcnVPJhOzNUjKk6LIcow.jpg", "post_date": "2026-04-27T13:43:25+00:00"}, {"date": "2026-05-09", "time": null, "artist": "Nirvana Tribute", "event_type": "трибьют", "venue": "Jam Club", "price": "бесплатно", "description": "Трибьют-концерт Nirvana в субботу 9 мая. Вход бесплатный, 3 часа живого звука.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/916", "image": "https://cdn4.telesco.pe/file/NCeooWu-WzRa6RFC5Ki9dCsobKzybMvL-PZhpDzTXuEiHSDryah7lEOq3wB_fmYO6ocVxoexMAV8deFY5YfLZ2mLu_z2HlkqUuBQyQB-Y94fwJxFvrSGwE3z616Gp-hd_CNh1q1Qsy7uhEFWZYoswpDZwZ6OQfWAepx56WT0j4_T1PHK7LtUyJ3jtL74JNTG24jWLsir1RIe0DDmY3RIFdewqN80zD3x5PhULAFgNMJLX207gX1TSF4ZdnvuIJzaDCgzbYYuJ9zHA32cGzjDQ-iFZKQH3FGc1EsOnRG0LQDhpcqSf_aPN0jXI4CPL6lLXuTBzRNd5qmU6iVWe1Yv8w.jpg", "post_date": "2026-04-27T18:24:29+00:00"}, {"date": "2026-05-16", "time": null, "artist": "Антагония, Pulsa Di Nura, The Lone Dark Side, Johnny Dow!!, Ядохимикаты, Официально Устроен", "event_type": "фестиваль", "venue": "Jam Club", "price": "бесплатно", "description": "Metal Mania Fest pt.1 в Jam Club (зал 1). Вход свободный.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/917", "image": "https://cdn4.telesco.pe/file/tER-BHHNFat586jx3o1UWvtUWnuwiLKRkeRyW5WQVKMi5hdIIQj9dcPe1_QOJuzuf2N3YQHJX3Uy-ZPQ1HdNdkDtxIr6_-SmC80bOLr7I7e8_I-j58bOPR4ebwTnRWLQABNXtNbnbnR8VYu494zyELkEoPEoVcMDtaYJT8qA1QndXehew2IAEcPCLhfnnwH1HmtqS8gMuoEMw01ZZrF5iJRLulIr5mDcUi071elpMnIUXUNbcotN8AMb0D_bGdcxfBJulNAB9x1JUBSBA5dpOUo1afIoNMI64XgF9_PTNpwgHfs5jqxhUNtDBZrTV3MPbVJafXc3wUk2bCo2UpVEqw.jpg", "post_date": "2026-04-28T19:32:23+00:00"}, {"date": "2026-05-02", "time": null, "artist": "Что ты делаешь?!?!?!, Metallica Tribute", "event_type": "концерт", "venue": "Jam Club", "price": "бесплатно", "description": "Панк-футуристическая группа из Мытищ (4 девушки и 1 парень) выступает в Jam Club. На разогреве местные группы Трипса и Крыши Нет.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/919", "image": "https://cdn4.telesco.pe/file/hbpQwKYxaqdpEUlc8bELnw_BiUVB7M5P0oMevcBQqoV-rYl3o9vv7dvrgGEQ7t34NMtoz7e411K7SncrOZFAarQEGmoCXpw3VPJ2sL5qQPOyRsDWuqxW2FzzJLRKyofzLuIcC8ZXi41xNYlbWgwMymXkpKim7GIonmi6DNUajrGuyc5uD6L3H7OvIptQLRAu1B0LbchmVEqC75HUtC5IN2m6p6EeQexyKdEGOLYJTovTY4rPRXZfjb5bQHnml3PnQlS84IqDQ3CCRTSvLljTnSJy6cj8iQ4_Ejx09VjXrrURrURjjjR9kps6RtHuKvDkaLjtZ0hv5s-wDo8Y-CTNZw.jpg", "post_date": "2026-04-30T12:19:20+00:00"}, {"date": "2026-05-01", "time": null, "artist": "Черный Доктор Солнечной Долины, Angle Of Wonders, Иччи, Крыша Мира, Нарратор, Динаминатор", "event_type": "фестиваль", "venue": "Jam Club", "price": "бесплатно", "description": "РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТ. Выступает в рамках многогруппового рок-фестиваля.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/921", "image": "https://cdn4.telesco.pe/file/MY5pUtrQteGec4Sej8h9ruzZ2HSevj6Q2xS9FR4F0h_-ttHzaRCIlG1USj-rcyuIZMooysWtfMpnAV2vi6wA3gHqOu225srUNKSK_XnKWYFnN3ehzo3fCQOZVbv8T8Nv1jaC5m3YdcLHtACwXtex_dswH8pY4823lyw2Rynq3m2_2VFmG9QtRVmmLj7ScuXfXc2doOAl51JLQHFNpSQzNVJ91IBS7YapKQwQWBjuS7d6QkwRP6VcimGRTGKNdHB9lcVwzpLF1VmuauBE0mLcJmgEcPdsHIiy4Yq1G1brWL41Pm3Ei6uxYeNCYQSnoP3vLqprM8Iz0RvYoutL9Bt2lA.jpg", "post_date": "2026-04-30T19:03:01+00:00"}, {"date": "2026-05-02", "time": null, "artist": "Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет, Blackened", "event_type": "фестиваль", "venue": "Jam Club", "price": "бесплатно", "description": "ЧТО ТЫ ДЕЛАЕШЬ?!?!?!! ГОУ НА ФЕСТ. Московская группа выступает в рамках многогруппового фестиваля.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/921", "image": "https://cdn4.telesco.pe/file/MY5pUtrQteGec4Sej8h9ruzZ2HSevj6Q2xS9FR4F0h_-ttHzaRCIlG1USj-rcyuIZMooysWtfMpnAV2vi6wA3gHqOu225srUNKSK_XnKWYFnN3ehzo3fCQOZVbv8T8Nv1jaC5m3YdcLHtACwXtex_dswH8pY4823lyw2Rynq3m2_2VFmG9QtRVmmLj7ScuXfXc2doOAl51JLQHFNpSQzNVJ91IBS7YapKQwQWBjuS7d6QkwRP6VcimGRTGKNdHB9lcVwzpLF1VmuauBE0mLcJmgEcPdsHIiy4Yq1G1brWL41Pm3Ei6uxYeNCYQSnoP3vLqprM8Iz0RvYoutL9Bt2lA.jpg", "post_date": "2026-04-30T19:03:01+00:00"}, {"date": "2026-05-01", "time": "19:00", "artist": "Фани, Ревайндер", "event_type": "концерт", "venue": "Jam Club", "price": "бесплатно", "description": "Бесплатные рок-концерты по случаю Первомая. Двери открываются в 19:00.", "source_city": "Симферополь", "source_channel": "clubjam", "source_url": "https://t.me/clubjam/922", "image": "https://cdn4.telesco.pe/file/Q9GiNkKZ4oigD8dyEH93Gr6-jrYp7Q3PzSuB7WZA3dhc7b3mq_mWYzLnXIsMwTUbwWAss_vlmQq9_hzw6kDumm91p7sject2Qh0cUh-VSlUbuJ4IHWscXeKuh8hpB4OXENoIFlJSR8ykHFfaS3O3VhqF11JhXEyIN9nN2x3FeQ4vTF2mlmgrJyX2l6oW9eri_5X2Ax255fSpTnSMwN31-HS-FkxncaGGJKllMtBgv8FDgCON-kgVG6mTlLLtHvObv68YEFTsNTbeSr53E2WnyhVidS4UbESFJXxUpecO27xp7gIeOjNTEhv_j-jd-i5JddbkHf_yENPPE5pv5ZAg8A.jpg", "post_date": "2026-05-01T11:16:43+00:00"}, {"date": "2026-05-23", "time": "18:00", "artist": "Оркестр русских народных инструментов", "event_type": "концерт", "venue": "Музыкальное училище им. П.И. Чайковского, ул. Набережная имени 60-летия СССР, 31, Симферополь", "price": null, "description": "Концерт «Гоголь-сюита» — авангардное полистилистическое произведение А. Шнитке в исполнении оркестра русских народных инструментов. Впервые прозвучит музыка из кинофильма «Мёртвые души» и «Гоголь-сюита».", "source_city": "Симферополь", "source_channel": "dlyadushi_Crimea", "source_url": "https://t.me/dlyadushi_Crimea/6075", "image": "https://cdn4.telesco.pe/file/W8r6Ww2hBwdDHqFsbCgF_D_SO4Z-cjxugbQKfAPfeSRwgjdetkDoV3UCwUwgeCkDCi5Xy1Kx-ODrzmxGMu7v9DncNkgNx7sWFP2CcF_wDlJINSCzE2PHtGhsonHmaXAXibfZdIRCawZJUCWRBb2NvRvOXIKfxa-YgS7TWpZXZvJ1ge2f-XaPTVs25A6Ik7LXnd0m3mcg03NBqkNBXXzq3ZMWBdrN9FKxh0mEuaH_5eXh4nBjh4rG8j8EWEMKYmEbmHfdfJNM54gm4UlgRcFyNzdJ40CHUv19vSAyR5C-pUsgLVXQaZAYSeF4RzCMzKOa5spOKQsejQ03iLwZPXY35w.jpg", "post_date": "2026-04-27T09:12:17+00:00"}, {"date": "2026-06-14", "time": "18:00", "artist": "Андрей Ясинский", "event_type": "концерт", "venue": "Пещера Мраморная, Симферопольский р-н", "price": null, "description": "Концерт-погружение мультиинструменталиста Андрея Ясинского в пещере. Фортепиано, флейты, окарина, калимба, ханг и другие инструменты — медитативная музыка в подземном пространстве.", "source_city": "Симферополь", "source_channel": "dlyadushi_Crimea", "source_url": "https://t.me/dlyadushi_Crimea/6078", "image": "https://cdn4.telesco.pe/file/meTDn91uWxiV5hXgpL1VEi18yWWcfmflJqH4IjcKehVJChdGDmSvdaZw_WjEDBOntZ4Q8sfIJ_zfNNc9AzgPGSlImWSkQM4n1aKzSFuZVjbY57UTsyLiBiFEukhbNvRV167bFtayDbCJao39_301Xt1w2xZNhqgO3sAcP9U2BCkB927qFCFtfafaRwDvD8_hzuThplgKN9gNw-z8Gn5L4RkuZJ46ygb11x3gAjwtBrNv1bIR9bIiMsFVmlOwtA8UhE1_kZa0aNdssstel2vWR56KIQqqzWoaeqL9bOF_15xGkMu7Wpk2e7q5LjV6xuN12Bu95zjdUAZY29v_u2FjcA.jpg", "post_date": "2026-04-28T14:33:01+00:00"}, {"date": "2026-05-02", "time": "19:00", "artist": null, "event_type": "вечеринка", "venue": "Санта Барбара (Екатерининская 28), Симферополь", "price": "800₽", "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXuLR0gRT6e/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761", "post_date": "2026-04-29T16:00:00+00:00"}, {"date": "2026-05-08", "time": "18:30", "artist": null, "event_type": "вечеринка", "venue": "Монро (Кирова 27), Симферополь", "price": "900₽", "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXuLR0gRT6e/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761", "post_date": "2026-04-29T16:00:00+00:00"}, {"date": "2026-05-16", "time": "18:30", "artist": null, "event_type": "вечеринка", "venue": "Level Beach Club (Гурзуфская 9), Симферополь", "price": "900₽", "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXuLR0gRT6e/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761", "post_date": "2026-04-29T16:00:00+00:00"}, {"date": "2026-05-23", "time": "19:00", "artist": null, "event_type": "вечеринка", "venue": "Санта Барбара (Екатерининская 28), Симферополь", "price": "800₽", "description": "Музыкальное лото — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке. Более 100 любимых песен за вечер.", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXuLR0gRT6e/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/683037837_17984843415004825_507080402647302186_n.jpg?stp=dst-jpg_e15_s640x640_tt6&_nc_cat=107&ig_cache_key=Mzg4NjA5MzEzMTU4NjAyNzE2NjE3OTg0ODQzNDEyMDA0ODI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MjA5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=0Tm6bXz67ZcQ7kNvwE0QxNX&_nc_oc=AdrYAvY2sdGBNpgav8wAG03pq9tnxOdgCu3rTvl-6aTDXrr0bn4zdbDwcEc0gcjN5KI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af4XUqZ4EG0m4-ttsBLCH9WvMUDlHE_yKiwybqqtBvAuUA&oe=69FAA761", "post_date": "2026-04-29T16:00:00+00:00"}, {"date": "2026-05-02", "time": "17:00", "artist": "Камерный оркестр «Новая гармония»", "event_type": "концерт", "venue": "Пещера «Мраморная»", "price": null, "description": "Открытие нового концертного сезона с программой «Звуковой сплав 6» под руководством дирижёра Дениса Карлова. Классика и современные мотивы в уникальной акустике пещеры со сталактитами.", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXrLAezRLTp/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.71878-15/685422701_1508823507307776_1988320901868515885_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=108&ig_cache_key=Mzg4NTI0NzUxNTEyMTIwMjQwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=G-JNow1xTNwQ7kNvwHeGAN4&_nc_oc=AdrJFC6PxsAbZ8kVzdaS-MiZzJtr59igUQDW7oyerHUz4FRrvrp8PSK40ms3Ck8CmQA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af7PIxrkfkblX4OXTg7zXWmDpFyW_nyWOLd2cbdsfnRhHQ&oe=69FAA3F8", "post_date": "2026-04-28T12:00:00+00:00"}, {"date": "2026-06-25", "time": "20:00", "artist": "Radio Tapok", "event_type": "концерт", "venue": "Консоль Спорт", "price": "от 2 500 ₽", "description": "Radio Tapok в Консоль Спорт, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/14837015/ac5f3337895b1dce5010b26f810b96e5/s380x220", "post_date": "2026-06-25"}, {"date": "2026-05-10", "time": "20:00", "artist": "The Hatters", "event_type": "концерт", "venue": "Наследие", "price": "от 4 200 ₽", "description": "The Hatters в Наследие, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/the-hatters-tour-6?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/2d3df3d7d3db7eab1af02ee48f7c106a/s400x190", "post_date": "2026-05-10"}, {"date": "2026-07-12", "time": "20:00", "artist": "ГУДТАЙМС", "event_type": "концерт", "venue": "Centrum", "price": "от 2 300 ₽", "description": "ГУДТАЙМС в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/35821/5817f41dc83f3e49bd4ee4a4d1d8e643/s400x190", "post_date": "2026-07-12"}, {"date": "2026-07-19", "time": "20:00", "artist": "Ramil’", "event_type": "концерт", "venue": "Centrum", "price": "от 2 500 ₽", "description": "Ramil’ в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5098259/b8c0334867a9fffc1dd3594121b8a1df/s400x190", "post_date": "2026-07-19"}, {"date": "2026-07-26", "time": "20:00", "artist": "Ева Польна", "event_type": "концерт", "venue": "Centrum", "price": "от 2 800 ₽", "description": "Ева Польна в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/c92f9b472c4bcfdbc6302285de614662/s400x190", "post_date": "2026-07-26"}, {"date": "2026-08-02", "time": "20:00", "artist": "Найк Борзов", "event_type": "концерт", "venue": "Centrum", "price": "от 2 300 ₽", "description": "Найк Борзов в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/14837015/5d1ddde05f573ff2fe36413af173a208/s400x190", "post_date": "2026-08-02"}, {"date": "2026-08-09", "time": "19:00", "artist": "Нэнси", "event_type": "концерт", "venue": "Музыкальный театр", "price": "от 2 000 ₽", "description": "Нэнси в Музыкальный театр, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/4395007/f01ece8e9cd2d9426b086be6c7ff9ad4/s400x190", "post_date": "2026-08-09"}, {"date": "2026-08-15", "time": "20:00", "artist": "Градусы", "event_type": "концерт", "venue": "Centrum", "price": "от 2 800 ₽", "description": "Градусы в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5098259/a7e1060d3557670f677e0f04af70c588/s400x190", "post_date": "2026-08-15"}, {"date": "2026-08-22", "time": "20:00", "artist": "Три дня дождя", "event_type": "концерт", "venue": "Centrum", "price": "от 3 400 ₽", "description": "Три дня дождя в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/tri-dnia-dozhdia-2026-08-22?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/b74fce9e3427c8569630ad21396f1d35/s400x190", "post_date": "2026-08-22"}, {"date": "2026-08-23", "time": "20:00", "artist": "Моя Мишель", "event_type": "концерт", "venue": "Centrum", "price": "от 3 000 ₽", "description": "Моя Мишель в Centrum, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/5109582/d7b3566dcb6e988734cabdbeb706a1ad/s400x190", "post_date": "2026-08-23"}, {"date": "2026-10-20", "time": "20:00", "artist": "Helvegen", "event_type": "концерт", "venue": "Депо", "price": "от 1 500 ₽", "description": "Helvegen в Депо, Симферополь.", "source_city": "Симферополь", "source_channel": "yandex_afisha", "source_url": "https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection", "image": "https://avatars.mds.yandex.net/get-afishanew/4395007/ec397414ff85191ebf8e63e7eddba4f7/s400x190", "post_date": "2026-10-20"}, {"date": null, "time": null, "artist": "Мыст", "event_type": "другое", "venue": "Крымские Дела", "price": "бесплатно", "description": "Чаепитие «Крымские сказки» под живое музыкальное сопровождение группы «Мыст» в рамках фестиваля «Киномаёвка».", "source_city": "Симферополь", "source_channel": "krymskiye_dela", "source_url": "https://www.instagram.com/p/DXyMwM7DGOe/", "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/658381740_17985040425004825_1103443096775065021_n.jpg?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_cat=100&ig_cache_key=Mzg4Njk2MjcyMzExNjU1NjQ1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNDd4MTY2MS5zZHIuQzMifQ%3D%3D&_nc_ohc=4-MWFrqPoVAQ7kNvwGWe977&_nc_oc=Adqz-ehuVJjNqNnlhMknh63RJO2tvm49aCtWx9josmM3wYI0IFWFgIZz_jRQiWydx2g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=niQGmwwwdcZtsK6eGl6oFw&_nc_ss=7a3ba&oh=00_Af5tFp-U6GeKzFoUUby_zwIab6qBLoYNUEN2cwHtd8utAQ&oe=69FACC86", "post_date": "2026-05-01T05:30:00+00:00"}];
 
 const MONTHS     = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 const MONTHS_NOM = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
 
 const today = new Date();
-today.setHours(0, 0, 0, 0);
+today.setHours(0,0,0,0);
 const todayStr = toDateStr(today);
 
-// ── фильтр-состояние ──
-let activeCity    = "all";
+let activePreset   = "";
 let activeDateFrom = "";
 let activeDateTo   = "";
-let activePreset   = "";
-
-// ── календарь-состояние ──
-let calStart  = "";
-let calEnd    = "";
-let calHover  = "";
-let viewYear  = today.getFullYear();
-let viewMonth = today.getMonth();
+let calStart = "", calEnd = "", calHover = "";
+let viewYear = today.getFullYear(), viewMonth = today.getMonth();
 
 function toDateStr(d) {
   return [d.getFullYear(), String(d.getMonth()+1).padStart(2,"0"), String(d.getDate()).padStart(2,"0")].join("-");
 }
-
 function fmtShort(ds) {
-  const d = new Date(ds + "T00:00:00");
+  const d = new Date(ds+"T00:00:00");
   return `${d.getDate()} ${MONTHS[d.getMonth()]}`;
 }
-
-// ── пресеты ──
 function getPresetRange(preset) {
   const day = today.getDay();
-  if (preset === "today") return { from: todayStr, to: todayStr };
-  if (preset === "week") {
-    const end = new Date(today);
-    end.setDate(end.getDate() + 6);
-    return { from: todayStr, to: toDateStr(end) };
+  if (preset==="today") return {from:todayStr,to:todayStr};
+  if (preset==="week") { const e=new Date(today); e.setDate(e.getDate()+6); return {from:todayStr,to:toDateStr(e)}; }
+  if (preset==="weekend") {
+    let dts = day===6?0:(6-day+7)%7;
+    if(dts===0&&day===0) dts=6;
+    const sat=new Date(today); sat.setDate(sat.getDate()+dts);
+    const sun=new Date(sat); sun.setDate(sun.getDate()+1);
+    return day===0?{from:todayStr,to:todayStr}:{from:toDateStr(sat),to:toDateStr(sun)};
   }
-  if (preset === "weekend") {
-    let daysToSat = day === 6 ? 0 : (6 - day + 7) % 7;
-    if (daysToSat === 0 && day === 0) daysToSat = 6; // сегодня вс — берём следующую сб
-    const sat = new Date(today);
-    sat.setDate(sat.getDate() + daysToSat);
-    const sun = new Date(sat);
-    sun.setDate(sun.getDate() + 1);
-    // если сегодня вс — показываем только сегодня
-    return day === 0
-      ? { from: todayStr, to: todayStr }
-      : { from: toDateStr(sat), to: toDateStr(sun) };
-  }
-  return { from: "", to: "" };
+  return {from:"",to:""};
 }
-
 function setPreset(preset) {
   activePreset = preset;
-  if (preset && preset !== "custom") {
-    const r = getPresetRange(preset);
-    activeDateFrom = r.from;
-    activeDateTo   = r.to;
-  } else if (!preset) {
-    activeDateFrom = "";
-    activeDateTo   = "";
-  }
-  document.querySelectorAll(".preset-btn").forEach(b =>
-    b.classList.toggle("active", b.dataset.preset === preset)
-  );
+  if (preset && preset!=="custom") { const r=getPresetRange(preset); activeDateFrom=r.from; activeDateTo=r.to; }
+  else if (!preset) { activeDateFrom=""; activeDateTo=""; }
+  document.querySelectorAll(".preset-btn").forEach(b=>b.classList.toggle("active",b.dataset.preset===preset));
   updateCustomBtnLabel();
   render();
 }
-
 function updateCustomBtnLabel() {
   const btn = document.getElementById("btn-custom");
-  if (activePreset === "custom" && (activeDateFrom || activeDateTo)) {
-    if (activeDateFrom && activeDateTo && activeDateFrom !== activeDateTo) {
-      btn.textContent = `${fmtShort(activeDateFrom)} — ${fmtShort(activeDateTo)}`;
-    } else {
-      btn.textContent = fmtShort(activeDateFrom || activeDateTo);
-    }
-  } else {
-    btn.textContent = "Выбрать даты";
-  }
+  if (!btn) return;
+  if (activePreset==="custom"&&(activeDateFrom||activeDateTo)) {
+    if (activeDateFrom&&activeDateTo&&activeDateFrom!==activeDateTo)
+      btn.textContent=`${fmtShort(activeDateFrom)} — ${fmtShort(activeDateTo)}`;
+    else btn.textContent=fmtShort(activeDateFrom||activeDateTo);
+  } else { btn.textContent="Выбрать даты"; }
 }
-
-// ── календарь ──
 function openCalendar() {
-  viewYear  = activeDateFrom ? new Date(activeDateFrom + "T00:00:00").getFullYear() : today.getFullYear();
-  viewMonth = activeDateFrom ? new Date(activeDateFrom + "T00:00:00").getMonth()    : today.getMonth();
-  calStart  = activeDateFrom;
-  calEnd    = activeDateTo;
-  calHover  = "";
-  renderCalendar();
-  document.getElementById("cal-overlay").classList.add("open");
+  viewYear=activeDateFrom?new Date(activeDateFrom+"T00:00:00").getFullYear():today.getFullYear();
+  viewMonth=activeDateFrom?new Date(activeDateFrom+"T00:00:00").getMonth():today.getMonth();
+  calStart=activeDateFrom; calEnd=activeDateTo; calHover="";
+  renderCalendar(); document.getElementById("cal-overlay").classList.add("open");
 }
-
-function closeCalendar() {
-  document.getElementById("cal-overlay").classList.remove("open");
-  calHover = "";
-}
-
+function closeCalendar() { document.getElementById("cal-overlay").classList.remove("open"); calHover=""; }
 function renderCalendar() {
-  const container = document.getElementById("cal-months");
-  container.innerHTML = "";
-  for (let i = 0; i < 2; i++) {
-    let m = viewMonth + i, y = viewYear;
-    if (m > 11) { m -= 12; y++; }
-    container.appendChild(buildMonth(y, m));
-  }
+  const c=document.getElementById("cal-months"); c.innerHTML="";
+  for(let i=0;i<2;i++){let m=viewMonth+i,y=viewYear; if(m>11){m-=12;y++;} c.appendChild(buildMonth(y,m));}
   updateCalLabel();
 }
-
-function buildMonth(year, month) {
-  const wrap = document.createElement("div");
-  wrap.className = "cal-month";
-
-  const title = document.createElement("div");
-  title.className = "cal-month-title";
-  title.textContent = `${MONTHS_NOM[month]} ${year}`;
-  wrap.appendChild(title);
-
-  const grid = document.createElement("div");
-  grid.className = "cal-grid";
-
-  ["пн","вт","ср","чт","пт","сб","вс"].forEach(d => {
-    const dn = document.createElement("div");
-    dn.className = "cal-day-name";
-    dn.textContent = d;
-    grid.appendChild(dn);
-  });
-
-  const firstDay  = new Date(year, month, 1);
-  const startPad  = (firstDay.getDay() + 6) % 7;
-  const totalDays = new Date(year, month + 1, 0).getDate();
-
-  for (let i = 0; i < startPad; i++) {
-    const el = document.createElement("div");
-    el.className = "cal-day cal-empty";
-    grid.appendChild(el);
+function buildMonth(year,month) {
+  const wrap=document.createElement("div"); wrap.className="cal-month";
+  const title=document.createElement("div"); title.className="cal-month-title";
+  title.textContent=`${MONTHS_NOM[month]} ${year}`; wrap.appendChild(title);
+  const grid=document.createElement("div"); grid.className="cal-grid";
+  ["пн","вт","ср","чт","пт","сб","вс"].forEach(d=>{const dn=document.createElement("div");dn.className="cal-day-name";dn.textContent=d;grid.appendChild(dn);});
+  const firstDay=new Date(year,month,1),startPad=(firstDay.getDay()+6)%7,totalDays=new Date(year,month+1,0).getDate();
+  for(let i=0;i<startPad;i++){const el=document.createElement("div");el.className="cal-day cal-empty";grid.appendChild(el);}
+  for(let d=1;d<=totalDays;d++){
+    const ds=toDateStr(new Date(year,month,d)),el=document.createElement("div");
+    el.className="cal-day"; el.textContent=d; el.dataset.date=ds;
+    if(ds<todayStr) el.classList.add("cal-past"); else if(ds===todayStr) el.classList.add("cal-today");
+    applyDayRange(el,ds); grid.appendChild(el);
   }
-
-  for (let d = 1; d <= totalDays; d++) {
-    const ds = toDateStr(new Date(year, month, d));
-    const el = document.createElement("div");
-    el.className = "cal-day";
-    el.textContent = d;
-    el.dataset.date = ds;
-    if (ds < todayStr)    el.classList.add("cal-past");
-    else if (ds === todayStr) el.classList.add("cal-today");
-    applyDayRange(el, ds);
-    grid.appendChild(el);
-  }
-
-  // события на гриде
-  grid.addEventListener("mouseover", e => {
-    const day = e.target.closest("[data-date]");
-    if (!day || day.classList.contains("cal-past")) return;
-    if (calStart && !calEnd) {
-      calHover = day.dataset.date;
-      refreshAllDays();
-    }
+  grid.addEventListener("mouseover",e=>{const day=e.target.closest("[data-date]");if(!day||day.classList.contains("cal-past"))return;if(calStart&&!calEnd){calHover=day.dataset.date;refreshAllDays();}});
+  grid.addEventListener("mouseleave",()=>{if(calStart&&!calEnd){calHover="";refreshAllDays();}});
+  grid.addEventListener("click",e=>{
+    const day=e.target.closest("[data-date]");
+    if(!day||day.classList.contains("cal-past")||day.classList.contains("cal-empty"))return;
+    const ds=day.dataset.date;
+    if(!calStart||(calStart&&calEnd)){calStart=ds;calEnd="";calHover="";}
+    else{if(ds<=calStart){calEnd=calStart;calStart=ds;}else calEnd=ds;calHover="";}
+    refreshAllDays(); updateCalLabel();
   });
-  grid.addEventListener("mouseleave", () => {
-    if (calStart && !calEnd) { calHover = ""; refreshAllDays(); }
-  });
-  grid.addEventListener("click", e => {
-    const day = e.target.closest("[data-date]");
-    if (!day || day.classList.contains("cal-past") || day.classList.contains("cal-empty")) return;
-    const ds = day.dataset.date;
-    if (!calStart || (calStart && calEnd)) {
-      calStart = ds; calEnd = ""; calHover = "";
-    } else {
-      if (ds <= calStart) { calEnd = calStart; calStart = ds; }
-      else                 calEnd = ds;
-      calHover = "";
-    }
-    refreshAllDays();
-    updateCalLabel();
-  });
-
-  wrap.appendChild(grid);
-  return wrap;
+  wrap.appendChild(grid); return wrap;
 }
-
-function applyDayRange(el, ds) {
+function applyDayRange(el,ds){
   el.classList.remove("cal-start","cal-end","cal-in-range");
-  const eff = calEnd || calHover;
-  if (!calStart) return;
-  const s = calStart <= (eff || calStart) ? calStart : eff;
-  const e = calStart <= (eff || calStart) ? eff      : calStart;
-  if (!e) {
-    if (ds === s) el.classList.add("cal-start","cal-end");
-    return;
-  }
-  if      (ds === s && ds === e) el.classList.add("cal-start","cal-end");
-  else if (ds === s)             el.classList.add("cal-start");
-  else if (ds === e)             el.classList.add("cal-end");
-  else if (ds > s && ds < e)    el.classList.add("cal-in-range");
+  const eff=calEnd||calHover; if(!calStart)return;
+  const s=calStart<=(eff||calStart)?calStart:eff, e=calStart<=(eff||calStart)?eff:calStart;
+  if(!e){if(ds===s)el.classList.add("cal-start","cal-end");return;}
+  if(ds===s&&ds===e)el.classList.add("cal-start","cal-end");
+  else if(ds===s)el.classList.add("cal-start");
+  else if(ds===e)el.classList.add("cal-end");
+  else if(ds>s&&ds<e)el.classList.add("cal-in-range");
 }
-
-function refreshAllDays() {
-  document.querySelectorAll(".cal-day[data-date]").forEach(el =>
-    applyDayRange(el, el.dataset.date)
-  );
+function refreshAllDays(){document.querySelectorAll(".cal-day[data-date]").forEach(el=>applyDayRange(el,el.dataset.date));}
+function updateCalLabel(){
+  const label=document.getElementById("cal-label");
+  if(!calStart&&!calEnd){label.textContent="Выберите даты";return;}
+  if(calStart&&!calEnd){label.textContent=fmtShort(calStart);return;}
+  const s=calStart<=calEnd?calStart:calEnd,e=calStart<=calEnd?calEnd:calStart;
+  label.textContent=s===e?fmtShort(s):`${fmtShort(s)} — ${fmtShort(e)}`;
 }
-
-function updateCalLabel() {
-  const label = document.getElementById("cal-label");
-  if (!calStart && !calEnd) { label.textContent = "Выберите даты"; return; }
-  if (calStart && !calEnd)  { label.textContent = fmtShort(calStart); return; }
-  const s = calStart <= calEnd ? calStart : calEnd;
-  const e = calStart <= calEnd ? calEnd   : calStart;
-  label.textContent = s === e ? fmtShort(s) : `${fmtShort(s)} — ${fmtShort(e)}`;
-}
-
-// ── фильтр событий ──
 function inDateRange(event) {
-  if (!event.date) return true;
-  if (event.date < todayStr) return false;
-  if (activeDateFrom && event.date < activeDateFrom) return false;
-  if (activeDateTo   && event.date > activeDateTo)   return false;
+  if(!event.date) return true;
+  if(event.date<todayStr) return false;
+  if(activeDateFrom&&event.date<activeDateFrom) return false;
+  if(activeDateTo&&event.date>activeDateTo) return false;
   return true;
 }
-
-function isToday(ds) {
-  return new Date(ds + "T00:00:00").getTime() === today.getTime();
-}
-
-function formatDate(ds) {
-  const d = new Date(ds + "T00:00:00");
-  return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;
-}
-
-function getSourceHref(e) {
-  if (e.source_url) return e.source_url;
-  if (e.source_channel === "krymskiye_dela") return `https://www.instagram.com/${e.source_channel}/`;
+function isToday(ds){return new Date(ds+"T00:00:00").getTime()===today.getTime();}
+function formatDate(ds){const d=new Date(ds+"T00:00:00");return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;}
+function getSourceHref(e){
+  if(e.source_url) return e.source_url;
+  if(e.source_channel==="krymskiye_dela") return `https://www.instagram.com/${e.source_channel}/`;
   return `https://t.me/${e.source_channel}`;
 }
-
-function getSourceLabel(e) {
-  if (e.source_channel === "yandex_afisha") return "Яндекс.Афиша";
-  if (e.source_channel === "krymskiye_dela") return `@${e.source_channel} (Instagram)`;
+function getSourceLabel(e){
+  if(e.source_channel==="yandex_afisha") return "Яндекс.Афиша";
+  if(e.source_channel==="krymskiye_dela") return `@${e.source_channel} (Instagram)`;
   return `@${e.source_channel}`;
 }
-
-// ── инициализация фильтров ──
-function buildFilters() {
-  // города
-  const cityFilters = document.getElementById("city-filters");
-  [...new Set(EVENTS.map(e => e.source_city))].sort().forEach(city => {
-    const btn = document.createElement("button");
-    btn.className = "filter-btn";
-    btn.dataset.city = city;
-    cityFilters.appendChild(btn);
-  });
-
-  // клики по тулбару (пресеты + города)
-  document.getElementById("toolbar").addEventListener("click", e => {
-    const preset = e.target.closest("[data-preset]");
-    if (preset) {
-      const p = preset.dataset.preset;
-      if (p === "custom") { openCalendar(); return; }
-      activePreset === p ? setPreset("") : setPreset(p);
-      return;
-    }
-    const city = e.target.closest("[data-city]");
-    if (city) {
-      activeCity = (activeCity === city.dataset.city && city.dataset.city !== "all") ? "all" : city.dataset.city;
-      document.querySelectorAll(".filter-btn").forEach(b =>
-        b.classList.toggle("active", b.dataset.city === activeCity)
-      );
-      render();
-    }
-  });
-
-  // оверлей — закрыть по клику вне модала
-  document.getElementById("cal-overlay").addEventListener("click", e => {
-    if (e.target === e.currentTarget) closeCalendar();
-  });
-
-  // навигация по месяцам
-  document.getElementById("cal-prev").addEventListener("click", () => {
-    viewMonth--; if (viewMonth < 0)  { viewMonth = 11; viewYear--; } renderCalendar();
-  });
-  document.getElementById("cal-next").addEventListener("click", () => {
-    viewMonth++; if (viewMonth > 11) { viewMonth = 0;  viewYear++; } renderCalendar();
-  });
-
-  // кнопка "Сбросить" в календаре
-  document.getElementById("cal-btn-clear").addEventListener("click", () => {
-    calStart = ""; calEnd = ""; calHover = "";
-    renderCalendar();
-  });
-
-  // кнопка "Применить"
-  document.getElementById("cal-btn-apply").addEventListener("click", () => {
-    if (calStart || calEnd) {
-      const s = (!calEnd || calStart <= calEnd) ? calStart : calEnd;
-      const e = (!calEnd || calStart <= calEnd) ? calEnd   : calStart;
-      activeDateFrom = s || e;
-      activeDateTo   = e || s;
-      activePreset   = "custom";
-      document.querySelectorAll(".preset-btn").forEach(b =>
-        b.classList.toggle("active", b.dataset.preset === "custom")
-      );
-      updateCustomBtnLabel();
-    } else {
-      activeDateFrom = ""; activeDateTo = "";
-      setPreset("");
-    }
-    closeCalendar();
-    render();
-  });
-}
-
-// ── рендер списка событий ──
-function updateCounts() {
-  const hidden = getHidden();
-  const rangeEvents = EVENTS.filter(e => inDateRange(e) && !hidden.has(e.source_url));
-  document.querySelectorAll(".filter-btn").forEach(btn => {
-    const city = btn.dataset.city;
-    const count = city === "all"
-      ? rangeEvents.length
-      : rangeEvents.filter(e => e.source_city === city).length;
-    btn.textContent = city === "all" ? `Все города (${count})` : `${city} (${count})`;
-  });
-}
-
 function render() {
-  const main = document.getElementById("main");
-  main.innerHTML = "";
-  updateCounts();
-
-  const hidden      = getHidden();
-  const customTimes = getCustomTimes();
-  const customNames = getCustomNames();
-
-  const filtered = EVENTS.filter(e => {
-    if (hidden.has(e.source_url)) return false;
-    const cityOk = activeCity === "all" || e.source_city === activeCity;
-    return inDateRange(e) && cityOk;
-  });
-
-  if (filtered.length === 0) {
-    main.innerHTML = '<div class="empty">Событий не найдено</div>';
-    return;
-  }
-
-  const groups = {};
-  filtered.forEach(e => { const k = e.date || "no-date"; if (!groups[k]) groups[k] = []; groups[k].push(e); });
-
-  Object.keys(groups).sort((a,b) => {
-    if (a === "no-date") return 1; if (b === "no-date") return -1; return a.localeCompare(b);
-  }).forEach(key => {
-    const group = document.createElement("div");
-    group.className = "date-group";
-
-    const h2 = document.createElement("h2");
-    if (key === "no-date") {
-      h2.textContent = "Дата уточняется";
-    } else if (isToday(key)) {
-      const badge = document.createElement("span");
-      badge.className = "today-badge"; badge.textContent = "Сегодня";
-      h2.appendChild(badge);
-      h2.appendChild(document.createTextNode(formatDate(key)));
-    } else {
-      h2.textContent = formatDate(key);
-    }
+  const main=document.getElementById("main"); main.innerHTML="";
+  const filtered=EVENTS.filter(e=>inDateRange(e));
+  if(filtered.length===0){main.innerHTML='<div class="empty">Событий не найдено</div>';return;}
+  const groups={};
+  filtered.forEach(e=>{const k=e.date||"no-date";if(!groups[k])groups[k]=[];groups[k].push(e);});
+  Object.keys(groups).sort((a,b)=>{if(a==="no-date")return 1;if(b==="no-date")return -1;return a.localeCompare(b);}).forEach(key=>{
+    const group=document.createElement("div"); group.className="date-group";
+    const h2=document.createElement("h2");
+    if(key==="no-date"){h2.textContent="Дата уточняется";}
+    else if(isToday(key)){const badge=document.createElement("span");badge.className="today-badge";badge.textContent="Сегодня";h2.appendChild(badge);h2.appendChild(document.createTextNode(formatDate(key)));}
+    else{h2.textContent=formatDate(key);}
     group.appendChild(h2);
-
-    groups[key].slice().sort((a,b) => {
-      const ta = a.time || customTimes[a.source_url];
-      const tb = b.time || customTimes[b.source_url];
-      if (ta && tb) return ta.localeCompare(tb);
-      if (ta) return -1; if (tb) return 1; return 0;
-    }).forEach(event => {
-      group.appendChild(makeCard({
-        ...event,
-        ...((!event.time && customTimes[event.source_url]) ? { time: customTimes[event.source_url] } : {}),
-        ...(customNames[event.source_url] ? { artist: customNames[event.source_url] } : {}),
-      }));
-    });
-
+    groups[key].slice().sort((a,b)=>{const ta=a.time,tb=b.time;if(ta&&tb)return ta.localeCompare(tb);if(ta)return -1;if(tb)return 1;return 0;}).forEach(event=>{group.appendChild(makeCard(event));});
     main.appendChild(group);
   });
 }
-
 function makeCard(e) {
-  const card = document.createElement("div");
-  card.className = "card" + (e.cancelled ? " cancelled" : "");
-  const srcHref = getSourceHref(e);
-  card.addEventListener("click", ev => { if (!ev.target.closest("a")) window.open(srcHref, "_blank"); });
-
-  const inner = document.createElement("div");
-  inner.className = "card-inner";
-
-  const time = document.createElement("div");
-  time.className = e.time ? "card-time" : "card-time no-time";
-  time.textContent = e.time || "—";
-  inner.appendChild(time);
-
-  const body = document.createElement("div");
-  body.className = "card-body";
-
-  const artist = document.createElement("div");
-  artist.className = "card-artist";
-  artist.textContent = e.artist || e.venue || "";
-  body.appendChild(artist);
-
-  const venue = document.createElement("div");
-  venue.className = "card-venue";
-  venue.innerHTML = (e.venue || e.source_channel || "") +
-    (e.artist ? `<span class="city">· ${e.source_city}</span>` : "");
+  const card=document.createElement("div"); card.className="card"+(e.cancelled?" cancelled":"");
+  const srcHref=getSourceHref(e);
+  card.addEventListener("click",ev=>{if(!ev.target.closest("a"))window.open(srcHref,"_blank");});
+  const inner=document.createElement("div"); inner.className="card-inner";
+  const time=document.createElement("div"); time.className=e.time?"card-time":"card-time no-time"; time.textContent=e.time||"—"; inner.appendChild(time);
+  const body=document.createElement("div"); body.className="card-body";
+  const artist=document.createElement("div"); artist.className="card-artist"; artist.textContent=e.artist||e.venue||""; body.appendChild(artist);
+  const venue=document.createElement("div"); venue.className="card-venue";
+  venue.innerHTML=(e.venue||e.source_channel||"")+(e.artist?`<span class="city">· ${e.source_city}</span>`:"");
   body.appendChild(venue);
-
-  if (e.description) {
-    const desc = document.createElement("div");
-    desc.className = "card-description";
-    desc.textContent = e.description;
-    body.appendChild(desc);
-  }
-
-  const footer = document.createElement("div");
-  footer.className = "card-footer";
-  if (e.cancelled) addTag(footer, "перенесено", "cancelled-tag");
-  if (e.event_type) addTag(footer, e.event_type, "type");
-  if (e.price && e.price !== "null") {
-    const cls = e.price === "бесплатно" ? "free" : "price";
-    addTag(footer, e.price === "бесплатно" ? "бесплатно" : e.price + " ₽", cls);
-  }
+  if(e.description){const desc=document.createElement("div");desc.className="card-description";desc.textContent=e.description;body.appendChild(desc);}
+  const footer=document.createElement("div"); footer.className="card-footer";
+  if(e.cancelled) addTag(footer,"перенесено","cancelled-tag");
+  if(e.event_type) addTag(footer,e.event_type,"type");
+  if(e.price&&e.price!=="null"){const cls=e.price==="бесплатно"?"free":"price";addTag(footer,e.price==="бесплатно"?"бесплатно":e.price,cls);}
   body.appendChild(footer);
-
-  const srcDiv = document.createElement("div");
-  srcDiv.className = "card-source";
-  const srcLink = document.createElement("a");
-  srcLink.className = "src-link"; srcLink.href = srcHref;
-  srcLink.target = "_blank"; srcLink.textContent = getSourceLabel(e);
-  srcDiv.appendChild(srcLink);
-  body.appendChild(srcDiv);
-  inner.appendChild(body);
-
-  if (e.image) {
-    const img = document.createElement("img");
-    img.className = "card-thumb"; img.src = e.image;
-    img.alt = e.artist || e.venue; img.loading = "lazy";
-    img.onerror = () => img.remove();
-    inner.appendChild(img);
-  }
-
-  card.appendChild(inner);
-  return card;
+  const srcDiv=document.createElement("div"); srcDiv.className="card-source";
+  const srcLink=document.createElement("a"); srcLink.className="src-link"; srcLink.href=srcHref; srcLink.target="_blank"; srcLink.textContent=getSourceLabel(e);
+  srcDiv.appendChild(srcLink); body.appendChild(srcDiv); inner.appendChild(body);
+  if(e.image){const img=document.createElement("img");img.className="card-thumb";img.src=e.image;img.alt=e.artist||e.venue;img.loading="lazy";img.onerror=()=>img.remove();inner.appendChild(img);}
+  card.appendChild(inner); return card;
 }
+function addTag(container,text,cls){const t=document.createElement("span");t.className=`tag ${cls}`;t.textContent=text;container.appendChild(t);}
 
-function addTag(container, text, cls) {
-  const t = document.createElement("span");
-  t.className = `tag ${cls}`; t.textContent = text;
-  container.appendChild(t);
-}
+// Инит
+document.getElementById("date-filter").addEventListener("click",e=>{
+  const preset=e.target.closest("[data-preset]"); if(!preset) return;
+  const p=preset.dataset.preset;
+  if(p==="custom"){openCalendar();return;}
+  activePreset===p?setPreset(""):setPreset(p);
+});
+document.getElementById("cal-overlay").addEventListener("click",e=>{if(e.target===e.currentTarget)closeCalendar();});
+document.getElementById("cal-prev").addEventListener("click",()=>{viewMonth--;if(viewMonth<0){viewMonth=11;viewYear--;}renderCalendar();});
+document.getElementById("cal-next").addEventListener("click",()=>{viewMonth++;if(viewMonth>11){viewMonth=0;viewYear++;}renderCalendar();});
+document.getElementById("cal-btn-clear").addEventListener("click",()=>{calStart="";calEnd="";calHover="";renderCalendar();});
+document.getElementById("cal-btn-apply").addEventListener("click",()=>{
+  if(calStart||calEnd){
+    const s=(!calEnd||calStart<=calEnd)?calStart:calEnd, e=(!calEnd||calStart<=calEnd)?calEnd:calStart;
+    activeDateFrom=s||e; activeDateTo=e||s; activePreset="custom";
+    document.querySelectorAll(".preset-btn").forEach(b=>b.classList.toggle("active",b.dataset.preset==="custom"));
+    updateCustomBtnLabel();
+  } else { activeDateFrom=""; activeDateTo=""; setPreset(""); }
+  closeCalendar(); render();
+});
+render();
 
-fetch("events.json")
-  .then(r => r.json())
-  .then(data => { EVENTS = data; buildFilters(); render(); })
-  .catch(() => { document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>'; });
 </script>
 </body>
 </html>
