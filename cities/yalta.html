@@ -1219,6 +1219,20 @@ buildFilters();
 document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.city === activeCity));
 render();
 
+// City chip clicks navigate to the city page (or home for "all")
+(function () {
+  var CITY_URLS = {"all": "/", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Судак": "/cities/sudak.html", "Ялта": "/cities/yalta.html"};
+  document.getElementById('city-filters').addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-city]');
+    if (!btn) return;
+    var dest = CITY_URLS[btn.dataset.city];
+    if (dest !== undefined) {
+      e.stopImmediatePropagation();
+      window.location.href = dest;
+    }
+  }, true);
+})();
+
 </script>
 </body>
 </html>

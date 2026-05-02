@@ -562,7 +562,28 @@ def make_city_page(
         adapted_js,
         flags=re.DOTALL,
     )
-    full_js = adapted_js
+    # 4. Добавляем навигацию: клик по городу → страница города, «Все города» → главная
+    city_url_map: dict[str, str] = {"all": "/"}
+    for c in all_cities:
+        city_url_map[c] = f"/cities/{city_slug(c)}.html"
+    city_url_js = json.dumps(city_url_map, ensure_ascii=False)
+
+    nav_snippet = f"""
+// City chip clicks navigate to the city page (or home for "all")
+(function () {{
+  var CITY_URLS = {city_url_js};
+  document.getElementById('city-filters').addEventListener('click', function (e) {{
+    var btn = e.target.closest('[data-city]');
+    if (!btn) return;
+    var dest = CITY_URLS[btn.dataset.city];
+    if (dest !== undefined) {{
+      e.stopImmediatePropagation();
+      window.location.href = dest;
+    }}
+  }}, true);
+}})();
+"""
+    full_js = adapted_js + nav_snippet
 
     return f"""<!DOCTYPE html>
 <html lang="ru">
