@@ -8,90 +8,45 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f0f0f;
-      color: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f5f4f2;
+      color: #1a1a1a;
       min-height: 100vh;
     }
 
     header {
-      padding: 28px 24px 18px;
-      border-bottom: 1px solid #222;
+      background: #fff;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid #e8e6e0;
     }
+    header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.3px; }
+    header p { color: #999; font-size: 0.88rem; margin-top: 3px; }
 
-    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
-    header p { color: #888; font-size: 0.9rem; margin-top: 4px; }
-
-    /* sticky toolbar с двумя строками */
     .toolbar {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #0f0f0f;
-      border-bottom: 1px solid #222;
-      padding: 12px 24px;
+      background: #fff;
+      border-bottom: 1px solid #e8e6e0;
+      padding: 10px 24px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
+    /* ── пресеты дат ── */
     .date-filter {
       display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .date-filter label {
-      font-size: 0.82rem;
-      color: #888;
-      white-space: nowrap;
-    }
-
-    .date-filter input[type="date"] {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 20px;
-      color: #f0f0f0;
-      padding: 5px 14px;
-      font-size: 0.82rem;
-      cursor: pointer;
-      outline: none;
-      color-scheme: dark;
-    }
-
-    .date-filter input[type="date"]:focus { border-color: #555; }
-
-    .date-sep { color: #555; font-size: 0.85rem; }
-    .date-label { color: #888; font-size: 0.82rem; }
-
-    .date-clear {
-      background: none;
-      border: none;
-      color: #555;
-      font-size: 1rem;
-      line-height: 1;
-      cursor: pointer;
-      padding: 0 2px;
-      display: none;
-    }
-
-    .date-clear:hover { color: #aaa; }
-    .date-clear.visible { display: block; }
-
-    /* горизонтальный скролл для городов */
-    .city-filters {
-      display: flex;
-      gap: 8px;
+      gap: 6px;
       overflow-x: auto;
       scrollbar-width: none;
-      padding-bottom: 2px;
     }
-    .city-filters::-webkit-scrollbar { display: none; }
+    .date-filter::-webkit-scrollbar { display: none; }
 
-    .filter-btn {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      color: #aaa;
+    .preset-btn {
+      background: #fff;
+      border: 1px solid #e0ddd8;
+      color: #666;
       padding: 5px 14px;
       border-radius: 20px;
       font-size: 0.82rem;
@@ -100,182 +55,292 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
+    .preset-btn:hover { border-color: #aaa; color: #1a1a1a; }
+    .preset-btn.active { background: #fc4c2f; color: #fff; border-color: #fc4c2f; font-weight: 500; }
 
-    .filter-btn:hover { border-color: #555; color: #fff; }
-    .filter-btn.active { background: #fff; color: #000; border-color: #fff; }
+    /* ── фильтр городов ── */
+    .city-filters {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    .city-filters::-webkit-scrollbar { display: none; }
 
+    .filter-btn {
+      background: #fff;
+      border: 1px solid #e0ddd8;
+      color: #666;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .filter-btn:hover { border-color: #aaa; color: #1a1a1a; }
+    .filter-btn.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; font-weight: 500; }
+
+    /* ── модальный календарь ── */
+    .cal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.22);
+      z-index: 200;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 72px;
+    }
+    .cal-overlay.open { display: flex; }
+
+    .cal-modal {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.16);
+      padding: 20px 24px 16px;
+      width: 100%;
+      max-width: 620px;
+      margin: 0 16px;
+    }
+
+    .cal-nav-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      gap: 8px;
+    }
+
+    .cal-nav {
+      background: none;
+      border: 1px solid #e8e6e0;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #666;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.12s;
+    }
+    .cal-nav:hover { background: #f5f4f2; }
+
+    .cal-months {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .cal-month { flex: 1; min-width: 0; }
+
+    .cal-month-title {
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+    }
+
+    .cal-day-name {
+      text-align: center;
+      font-size: 0.65rem;
+      color: #bbb;
+      padding: 3px 0 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .cal-day {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.1s, color 0.1s;
+      user-select: none;
+    }
+    .cal-day:hover:not(.cal-past):not(.cal-empty) { background: #f0eeea; }
+    .cal-day.cal-today { font-weight: 700; color: #fc4c2f; }
+    .cal-day.cal-past { color: #ddd; cursor: default; }
+    .cal-day.cal-empty { cursor: default; }
+    .cal-day.cal-in-range { background: #ffe5e0; border-radius: 0; }
+    .cal-day.cal-start { background: #fc4c2f !important; color: #fff !important; border-radius: 6px 0 0 6px; }
+    .cal-day.cal-end   { background: #fc4c2f !important; color: #fff !important; border-radius: 0 6px 6px 0; }
+    .cal-day.cal-start.cal-end { border-radius: 6px; }
+
+    .cal-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      margin-top: 14px;
+      border-top: 1px solid #f0eeea;
+    }
+    .cal-range-label { font-size: 0.82rem; color: #888; }
+    .cal-btn-clear {
+      background: none; border: none; color: #bbb;
+      font-size: 0.82rem; cursor: pointer; padding: 6px;
+    }
+    .cal-btn-clear:hover { color: #555; }
+    .cal-btn-apply {
+      background: #fc4c2f; color: #fff; border: none;
+      border-radius: 20px; padding: 8px 24px;
+      font-size: 0.85rem; font-weight: 600; cursor: pointer;
+      transition: background 0.15s;
+    }
+    .cal-btn-apply:hover { background: #e53e25; }
+
+    @media (max-width: 500px) {
+      .cal-month:last-child { display: none; }
+      .cal-modal { margin: 0 8px; padding: 16px 14px 12px; }
+      .cal-overlay { padding-top: 60px; }
+    }
+
+    /* ── контент ── */
     main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 20px 24px;
     }
 
     .date-group h2 {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: #777;
-      margin-bottom: 10px;
+      letter-spacing: 1.4px;
+      color: #bbb;
+      margin-bottom: 8px;
       margin-top: 28px;
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
     .date-group:first-child h2 { margin-top: 0; }
 
-    /* бейдж "Сегодня" */
     .today-badge {
-      background: #e8ff60;
-      color: #000;
-      font-size: 0.68rem;
+      background: #fc4c2f;
+      color: #fff;
+      font-size: 0.65rem;
       font-weight: 700;
       padding: 2px 8px;
-      border-radius: 8px;
-      letter-spacing: 0.5px;
+      border-radius: 6px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
     }
 
     .card {
-      background: #181818;
-      border: 1px solid #242424;
+      background: #fff;
       border-radius: 12px;
       overflow: hidden;
       margin-bottom: 8px;
-      transition: border-color 0.15s, transform 0.1s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s, transform 0.15s;
       cursor: pointer;
     }
+    .card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06); transform: translateY(-1px); }
+    .card:active { transform: translateY(0); box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+    .card.cancelled { opacity: 0.5; }
 
-    .card:hover { border-color: #3a3a3a; transform: translateY(-1px); }
-    .card:active { transform: translateY(0); }
-    .card.cancelled { opacity: 0.45; }
-
-    /* горизонтальная раскладка: время | контент | превью */
     .card-inner {
       display: flex;
-      gap: 12px;
+      gap: 14px;
       align-items: flex-start;
       padding: 14px 16px;
     }
 
     .card-time {
-      width: 42px;
+      width: 44px;
       flex-shrink: 0;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 700;
-      color: #fff;
-      padding-top: 2px;
+      color: #1a1a1a;
+      padding-top: 1px;
       line-height: 1.2;
     }
+    .card-time.no-time { color: #ccc; font-size: 0.78rem; font-weight: 400; }
 
-    .card-time.no-time { color: #484848; font-size: 0.78rem; font-weight: 400; }
-
-    .card-body {
-      flex: 1;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
+    .card-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 
     .card-artist {
       font-size: 0.95rem;
       font-weight: 600;
-      color: #f0f0f0;
+      color: #1a1a1a;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
-    .card-venue {
-      font-size: 0.8rem;
-      color: #777;
-    }
-
-    .card-venue .city { color: #555; margin-left: 4px; }
+    .card-venue { font-size: 0.8rem; color: #888; }
+    .card-venue .city { color: #bbb; margin-left: 4px; }
 
     .card-description {
       font-size: 0.78rem;
-      color: #666;
+      color: #aaa;
       line-height: 1.45;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      margin-top: 2px;
+      margin-top: 3px;
     }
 
-    /* теги и источник в одной строке */
-    .card-footer {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 6px;
-    }
+    .card-footer { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
 
     .tag {
       font-size: 0.7rem;
       padding: 2px 8px;
       border-radius: 10px;
-      border: 1px solid #333;
-      color: #777;
+      border: 1px solid #e8e6e0;
+      color: #aaa;
       white-space: nowrap;
+      background: #fafafa;
     }
+    .tag.type { border-color: #e0daf5; color: #7c5cbf; background: #f5f0ff; }
+    .tag.price { border-color: #d5ecd5; color: #3a8c3a; background: #f0faf0; }
+    .tag.free  { border-color: #d5ecd5; color: #3a8c3a; background: #f0faf0; }
+    .tag.cancelled-tag { border-color: #f5d5d5; color: #c04040; background: #fff5f5; }
 
-    .tag.type { border-color: #252545; color: #7777bb; background: #101025; }
-    .tag.price { border-color: #253525; color: #77bb77; background: #101810; }
-    .tag.free { border-color: #253525; color: #77bb77; background: #101810; }
-    .tag.cancelled-tag { border-color: #352525; color: #bb7777; background: #180f0f; }
+    .card-source { font-size: 0.72rem; margin-top: 5px; }
+    .src-link { color: #fc4c2f; text-decoration: none; transition: opacity 0.15s; }
+    .src-link:hover { opacity: 0.75; }
 
-    .card-source {
-      font-size: 0.72rem;
-      margin-top: 4px;
-    }
-
-    .src-link {
-      color: #4a7aaa;
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-    .src-link:hover { color: #7aaadd; }
-
-    /* превью справа */
     .card-thumb {
-      width: 88px;
+      width: 88px; height: 88px;
       flex-shrink: 0;
-      object-fit: contain;
+      object-fit: cover;
       border-radius: 8px;
       align-self: flex-start;
-      background: #111;
+      background: #f0eeea;
       display: block;
     }
 
-    /* скелетон загрузки */
     .skeleton-card {
-      background: #181818;
-      border: 1px solid #222;
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 10px;
+      background: #fff; border-radius: 12px; overflow: hidden;
+      margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
     }
-
     .skeleton-img {
       height: 160px;
-      background: linear-gradient(90deg, #1a1a1a 25%, #222 50%, #1a1a1a 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.4s infinite;
+      background: linear-gradient(90deg, #f0eeea 25%, #e8e5e0 50%, #f0eeea 75%);
+      background-size: 200% 100%; animation: shimmer 1.4s infinite;
     }
-
     .skeleton-inner { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
-
     .skeleton-line {
-      height: 13px;
-      border-radius: 6px;
-      background: linear-gradient(90deg, #1e1e1e 25%, #252525 50%, #1e1e1e 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.4s infinite;
+      height: 12px; border-radius: 6px;
+      background: linear-gradient(90deg, #eeeae6 25%, #e5e1dc 50%, #eeeae6 75%);
+      background-size: 200% 100%; animation: shimmer 1.4s infinite;
     }
     .skeleton-line.short { width: 35%; }
     .skeleton-line.medium { width: 60%; }
@@ -286,18 +351,13 @@
       100% { background-position: -200% 0; }
     }
 
-    .empty {
-      text-align: center;
-      color: #555;
-      padding: 60px 0;
-      font-size: 0.95rem;
-    }
+    .empty { text-align: center; color: #ccc; padding: 60px 0; font-size: 0.95rem; }
 
     @media (max-width: 480px) {
       header { padding: 20px 16px 14px; }
       .toolbar { padding: 10px 16px; }
       main { padding: 16px; }
-      .card-thumb { width: 72px; }
+      .card-thumb { width: 72px; height: 72px; }
     }
   </style>
 </head>
@@ -309,17 +369,30 @@
 </header>
 
 <div class="toolbar" id="toolbar">
-  <div class="date-filter">
-    <span class="date-label">с</span>
-    <input type="date" id="date-from">
-    <button class="date-clear" id="clear-from" title="Сбросить">×</button>
-    <span class="date-sep">—</span>
-    <span class="date-label">по</span>
-    <input type="date" id="date-to">
-    <button class="date-clear" id="clear-to" title="Сбросить">×</button>
+  <div class="date-filter" id="date-filter">
+    <button class="preset-btn" data-preset="today">Сегодня</button>
+    <button class="preset-btn" data-preset="weekend">Выходные</button>
+    <button class="preset-btn" data-preset="week">Неделя</button>
+    <button class="preset-btn" data-preset="custom" id="btn-custom">Выбрать даты</button>
   </div>
   <div class="city-filters" id="city-filters">
     <button class="filter-btn active" data-city="all">Все города</button>
+  </div>
+</div>
+
+<!-- Модальный календарь -->
+<div class="cal-overlay" id="cal-overlay">
+  <div class="cal-modal" id="cal-modal">
+    <div class="cal-nav-row">
+      <button class="cal-nav" id="cal-prev">&#8249;</button>
+      <div class="cal-months" id="cal-months"></div>
+      <button class="cal-nav" id="cal-next">&#8250;</button>
+    </div>
+    <div class="cal-actions">
+      <button class="cal-btn-clear" id="cal-btn-clear">Сбросить</button>
+      <span class="cal-range-label" id="cal-label">Выберите даты</span>
+      <button class="cal-btn-apply" id="cal-btn-apply">Применить</button>
+    </div>
   </div>
 </div>
 
@@ -336,48 +409,241 @@ function getHidden() {
   try { return new Set(JSON.parse(localStorage.getItem("mestovnet_hidden") || "[]")); }
   catch { return new Set(); }
 }
-
 function getCustomTimes() {
   try { return JSON.parse(localStorage.getItem("mestovnet_times") || "{}"); }
   catch { return {}; }
 }
-
 function getCustomNames() {
   try { return JSON.parse(localStorage.getItem("mestovnet_names") || "{}"); }
   catch { return {}; }
 }
 
-const MONTHS = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+const MONTHS     = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+const MONTHS_NOM = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
 
 const today = new Date();
 today.setHours(0, 0, 0, 0);
+const todayStr = toDateStr(today);
 
-const todayStr = [
-  today.getFullYear(),
-  String(today.getMonth() + 1).padStart(2, "0"),
-  String(today.getDate()).padStart(2, "0")
-].join("-");
-
-let activeCity = "all";
+// ── фильтр-состояние ──
+let activeCity    = "all";
 let activeDateFrom = "";
-let activeDateTo = "";
+let activeDateTo   = "";
+let activePreset   = "";
 
+// ── календарь-состояние ──
+let calStart  = "";
+let calEnd    = "";
+let calHover  = "";
+let viewYear  = today.getFullYear();
+let viewMonth = today.getMonth();
+
+function toDateStr(d) {
+  return [d.getFullYear(), String(d.getMonth()+1).padStart(2,"0"), String(d.getDate()).padStart(2,"0")].join("-");
+}
+
+function fmtShort(ds) {
+  const d = new Date(ds + "T00:00:00");
+  return `${d.getDate()} ${MONTHS[d.getMonth()]}`;
+}
+
+// ── пресеты ──
+function getPresetRange(preset) {
+  const day = today.getDay();
+  if (preset === "today") return { from: todayStr, to: todayStr };
+  if (preset === "week") {
+    const end = new Date(today);
+    end.setDate(end.getDate() + 6);
+    return { from: todayStr, to: toDateStr(end) };
+  }
+  if (preset === "weekend") {
+    let daysToSat = day === 6 ? 0 : (6 - day + 7) % 7;
+    if (daysToSat === 0 && day === 0) daysToSat = 6; // сегодня вс — берём следующую сб
+    const sat = new Date(today);
+    sat.setDate(sat.getDate() + daysToSat);
+    const sun = new Date(sat);
+    sun.setDate(sun.getDate() + 1);
+    // если сегодня вс — показываем только сегодня
+    return day === 0
+      ? { from: todayStr, to: todayStr }
+      : { from: toDateStr(sat), to: toDateStr(sun) };
+  }
+  return { from: "", to: "" };
+}
+
+function setPreset(preset) {
+  activePreset = preset;
+  if (preset && preset !== "custom") {
+    const r = getPresetRange(preset);
+    activeDateFrom = r.from;
+    activeDateTo   = r.to;
+  }
+  document.querySelectorAll(".preset-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.preset === preset)
+  );
+  updateCustomBtnLabel();
+  render();
+}
+
+function updateCustomBtnLabel() {
+  const btn = document.getElementById("btn-custom");
+  if (activePreset === "custom" && (activeDateFrom || activeDateTo)) {
+    if (activeDateFrom && activeDateTo && activeDateFrom !== activeDateTo) {
+      btn.textContent = `${fmtShort(activeDateFrom)} — ${fmtShort(activeDateTo)}`;
+    } else {
+      btn.textContent = fmtShort(activeDateFrom || activeDateTo);
+    }
+  } else {
+    btn.textContent = "Выбрать даты";
+  }
+}
+
+// ── календарь ──
+function openCalendar() {
+  viewYear  = activeDateFrom ? new Date(activeDateFrom + "T00:00:00").getFullYear() : today.getFullYear();
+  viewMonth = activeDateFrom ? new Date(activeDateFrom + "T00:00:00").getMonth()    : today.getMonth();
+  calStart  = activeDateFrom;
+  calEnd    = activeDateTo;
+  calHover  = "";
+  renderCalendar();
+  document.getElementById("cal-overlay").classList.add("open");
+}
+
+function closeCalendar() {
+  document.getElementById("cal-overlay").classList.remove("open");
+  calHover = "";
+}
+
+function renderCalendar() {
+  const container = document.getElementById("cal-months");
+  container.innerHTML = "";
+  for (let i = 0; i < 2; i++) {
+    let m = viewMonth + i, y = viewYear;
+    if (m > 11) { m -= 12; y++; }
+    container.appendChild(buildMonth(y, m));
+  }
+  updateCalLabel();
+}
+
+function buildMonth(year, month) {
+  const wrap = document.createElement("div");
+  wrap.className = "cal-month";
+
+  const title = document.createElement("div");
+  title.className = "cal-month-title";
+  title.textContent = `${MONTHS_NOM[month]} ${year}`;
+  wrap.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "cal-grid";
+
+  ["пн","вт","ср","чт","пт","сб","вс"].forEach(d => {
+    const dn = document.createElement("div");
+    dn.className = "cal-day-name";
+    dn.textContent = d;
+    grid.appendChild(dn);
+  });
+
+  const firstDay  = new Date(year, month, 1);
+  const startPad  = (firstDay.getDay() + 6) % 7;
+  const totalDays = new Date(year, month + 1, 0).getDate();
+
+  for (let i = 0; i < startPad; i++) {
+    const el = document.createElement("div");
+    el.className = "cal-day cal-empty";
+    grid.appendChild(el);
+  }
+
+  for (let d = 1; d <= totalDays; d++) {
+    const ds = toDateStr(new Date(year, month, d));
+    const el = document.createElement("div");
+    el.className = "cal-day";
+    el.textContent = d;
+    el.dataset.date = ds;
+    if (ds < todayStr)    el.classList.add("cal-past");
+    else if (ds === todayStr) el.classList.add("cal-today");
+    applyDayRange(el, ds);
+    grid.appendChild(el);
+  }
+
+  // события на гриде
+  grid.addEventListener("mouseover", e => {
+    const day = e.target.closest("[data-date]");
+    if (!day || day.classList.contains("cal-past")) return;
+    if (calStart && !calEnd) {
+      calHover = day.dataset.date;
+      refreshAllDays();
+    }
+  });
+  grid.addEventListener("mouseleave", () => {
+    if (calStart && !calEnd) { calHover = ""; refreshAllDays(); }
+  });
+  grid.addEventListener("click", e => {
+    const day = e.target.closest("[data-date]");
+    if (!day || day.classList.contains("cal-past") || day.classList.contains("cal-empty")) return;
+    const ds = day.dataset.date;
+    if (!calStart || (calStart && calEnd)) {
+      calStart = ds; calEnd = ""; calHover = "";
+    } else {
+      if (ds <= calStart) { calEnd = calStart; calStart = ds; }
+      else                 calEnd = ds;
+      calHover = "";
+    }
+    refreshAllDays();
+    updateCalLabel();
+  });
+
+  wrap.appendChild(grid);
+  return wrap;
+}
+
+function applyDayRange(el, ds) {
+  el.classList.remove("cal-start","cal-end","cal-in-range");
+  const eff = calEnd || calHover;
+  if (!calStart) return;
+  const s = calStart <= (eff || calStart) ? calStart : eff;
+  const e = calStart <= (eff || calStart) ? eff      : calStart;
+  if (!e) {
+    if (ds === s) el.classList.add("cal-start","cal-end");
+    return;
+  }
+  if      (ds === s && ds === e) el.classList.add("cal-start","cal-end");
+  else if (ds === s)             el.classList.add("cal-start");
+  else if (ds === e)             el.classList.add("cal-end");
+  else if (ds > s && ds < e)    el.classList.add("cal-in-range");
+}
+
+function refreshAllDays() {
+  document.querySelectorAll(".cal-day[data-date]").forEach(el =>
+    applyDayRange(el, el.dataset.date)
+  );
+}
+
+function updateCalLabel() {
+  const label = document.getElementById("cal-label");
+  if (!calStart && !calEnd) { label.textContent = "Выберите даты"; return; }
+  if (calStart && !calEnd)  { label.textContent = fmtShort(calStart); return; }
+  const s = calStart <= calEnd ? calStart : calEnd;
+  const e = calStart <= calEnd ? calEnd   : calStart;
+  label.textContent = s === e ? fmtShort(s) : `${fmtShort(s)} — ${fmtShort(e)}`;
+}
+
+// ── фильтр событий ──
 function inDateRange(event) {
   if (!event.date) return true;
   if (event.date < todayStr) return false;
   if (activeDateFrom && event.date < activeDateFrom) return false;
-  if (activeDateTo && event.date > activeDateTo) return false;
+  if (activeDateTo   && event.date > activeDateTo)   return false;
   return true;
 }
 
-function isToday(dateStr) {
-  if (!dateStr) return false;
-  return new Date(dateStr + "T00:00:00").getTime() === today.getTime();
+function isToday(ds) {
+  return new Date(ds + "T00:00:00").getTime() === today.getTime();
 }
 
-function formatDate(dateStr) {
-  const d = new Date(dateStr + "T00:00:00");
+function formatDate(ds) {
+  const d = new Date(ds + "T00:00:00");
   return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;
 }
 
@@ -393,9 +659,10 @@ function getSourceLabel(e) {
   return `@${e.source_channel}`;
 }
 
+// ── инициализация фильтров ──
 function buildFilters() {
+  // города
   const cityFilters = document.getElementById("city-filters");
-
   [...new Set(EVENTS.map(e => e.source_city))].sort().forEach(city => {
     const btn = document.createElement("button");
     btn.className = "filter-btn";
@@ -403,45 +670,66 @@ function buildFilters() {
     cityFilters.appendChild(btn);
   });
 
-  const inputFrom = document.getElementById("date-from");
-  const inputTo = document.getElementById("date-to");
-  const clearFrom = document.getElementById("clear-from");
-  const clearTo = document.getElementById("clear-to");
-
-  inputFrom.addEventListener("change", e => {
-    activeDateFrom = e.target.value;
-    clearFrom.classList.toggle("visible", !!activeDateFrom);
-    render();
-  });
-  inputTo.addEventListener("change", e => {
-    activeDateTo = e.target.value;
-    clearTo.classList.toggle("visible", !!activeDateTo);
-    render();
-  });
-  clearFrom.addEventListener("click", () => {
-    inputFrom.value = "";
-    activeDateFrom = "";
-    clearFrom.classList.remove("visible");
-    render();
-  });
-  clearTo.addEventListener("click", () => {
-    inputTo.value = "";
-    activeDateTo = "";
-    clearTo.classList.remove("visible");
-    render();
-  });
-
+  // клики по тулбару (пресеты + города)
   document.getElementById("toolbar").addEventListener("click", e => {
-    const btn = e.target.closest("button");
-    if (!btn) return;
-    if (btn.dataset.city) {
-      activeCity = btn.dataset.city;
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", b.dataset.city === activeCity));
+    const preset = e.target.closest("[data-preset]");
+    if (preset) {
+      const p = preset.dataset.preset;
+      if (p === "custom") { openCalendar(); return; }
+      activePreset === p ? setPreset("") : setPreset(p);
+      return;
     }
+    const city = e.target.closest("[data-city]");
+    if (city) {
+      activeCity = city.dataset.city;
+      document.querySelectorAll(".filter-btn").forEach(b =>
+        b.classList.toggle("active", b.dataset.city === activeCity)
+      );
+      render();
+    }
+  });
+
+  // оверлей — закрыть по клику вне модала
+  document.getElementById("cal-overlay").addEventListener("click", e => {
+    if (e.target === e.currentTarget) closeCalendar();
+  });
+
+  // навигация по месяцам
+  document.getElementById("cal-prev").addEventListener("click", () => {
+    viewMonth--; if (viewMonth < 0)  { viewMonth = 11; viewYear--; } renderCalendar();
+  });
+  document.getElementById("cal-next").addEventListener("click", () => {
+    viewMonth++; if (viewMonth > 11) { viewMonth = 0;  viewYear++; } renderCalendar();
+  });
+
+  // кнопка "Сбросить" в календаре
+  document.getElementById("cal-btn-clear").addEventListener("click", () => {
+    calStart = ""; calEnd = ""; calHover = "";
+    renderCalendar();
+  });
+
+  // кнопка "Применить"
+  document.getElementById("cal-btn-apply").addEventListener("click", () => {
+    if (calStart || calEnd) {
+      const s = (!calEnd || calStart <= calEnd) ? calStart : calEnd;
+      const e = (!calEnd || calStart <= calEnd) ? calEnd   : calStart;
+      activeDateFrom = s || e;
+      activeDateTo   = e || s;
+      activePreset   = "custom";
+      document.querySelectorAll(".preset-btn").forEach(b =>
+        b.classList.toggle("active", b.dataset.preset === "custom")
+      );
+      updateCustomBtnLabel();
+    } else {
+      activeDateFrom = ""; activeDateTo = "";
+      setPreset("");
+    }
+    closeCalendar();
     render();
   });
 }
 
+// ── рендер списка событий ──
 function updateCounts() {
   const hidden = getHidden();
   const rangeEvents = EVENTS.filter(e => inDateRange(e) && !hidden.has(e.source_url));
@@ -457,12 +745,12 @@ function updateCounts() {
 function render() {
   const main = document.getElementById("main");
   main.innerHTML = "";
-
   updateCounts();
 
-  const hidden = getHidden();
+  const hidden      = getHidden();
   const customTimes = getCustomTimes();
   const customNames = getCustomNames();
+
   const filtered = EVENTS.filter(e => {
     if (hidden.has(e.source_url)) return false;
     const cityOk = activeCity === "all" || e.source_city === activeCity;
@@ -475,19 +763,11 @@ function render() {
   }
 
   const groups = {};
-  filtered.forEach(e => {
-    const key = e.date || "no-date";
-    if (!groups[key]) groups[key] = [];
-    groups[key].push(e);
-  });
+  filtered.forEach(e => { const k = e.date || "no-date"; if (!groups[k]) groups[k] = []; groups[k].push(e); });
 
-  const sortedKeys = Object.keys(groups).sort((a, b) => {
-    if (a === "no-date") return 1;
-    if (b === "no-date") return -1;
-    return a.localeCompare(b);
-  });
-
-  sortedKeys.forEach(key => {
+  Object.keys(groups).sort((a,b) => {
+    if (a === "no-date") return 1; if (b === "no-date") return -1; return a.localeCompare(b);
+  }).forEach(key => {
     const group = document.createElement("div");
     group.className = "date-group";
 
@@ -496,8 +776,7 @@ function render() {
       h2.textContent = "Дата уточняется";
     } else if (isToday(key)) {
       const badge = document.createElement("span");
-      badge.className = "today-badge";
-      badge.textContent = "Сегодня";
+      badge.className = "today-badge"; badge.textContent = "Сегодня";
       h2.appendChild(badge);
       h2.appendChild(document.createTextNode(formatDate(key)));
     } else {
@@ -505,22 +784,19 @@ function render() {
     }
     group.appendChild(h2);
 
-    const sorted = groups[key].slice().sort((a, b) => {
+    groups[key].slice().sort((a,b) => {
       const ta = a.time || customTimes[a.source_url];
       const tb = b.time || customTimes[b.source_url];
       if (ta && tb) return ta.localeCompare(tb);
-      if (ta) return -1;
-      if (tb) return 1;
-      return 0;
-    });
-    sorted.forEach(event => {
-      const effective = {
+      if (ta) return -1; if (tb) return 1; return 0;
+    }).forEach(event => {
+      group.appendChild(makeCard({
         ...event,
         ...((!event.time && customTimes[event.source_url]) ? { time: customTimes[event.source_url] } : {}),
         ...(customNames[event.source_url] ? { artist: customNames[event.source_url] } : {}),
-      };
-      group.appendChild(makeCard(effective));
+      }));
     });
+
     main.appendChild(group);
   });
 }
@@ -528,22 +804,17 @@ function render() {
 function makeCard(e) {
   const card = document.createElement("div");
   card.className = "card" + (e.cancelled ? " cancelled" : "");
-
   const srcHref = getSourceHref(e);
-  card.addEventListener("click", ev => {
-    if (!ev.target.closest("a")) window.open(srcHref, "_blank");
-  });
+  card.addEventListener("click", ev => { if (!ev.target.closest("a")) window.open(srcHref, "_blank"); });
 
   const inner = document.createElement("div");
   inner.className = "card-inner";
 
-  // колонка времени
   const time = document.createElement("div");
   time.className = e.time ? "card-time" : "card-time no-time";
   time.textContent = e.time || "—";
   inner.appendChild(time);
 
-  // основной контент
   const body = document.createElement("div");
   body.className = "card-body";
 
@@ -565,40 +836,29 @@ function makeCard(e) {
     body.appendChild(desc);
   }
 
-  // теги + источник в одной строке
   const footer = document.createElement("div");
   footer.className = "card-footer";
-
-  if (e.cancelled) {
-    addTag(footer, "перенесено", "cancelled-tag");
-  }
+  if (e.cancelled) addTag(footer, "перенесено", "cancelled-tag");
   if (e.event_type) addTag(footer, e.event_type, "type");
-  if (e.price) {
+  if (e.price && e.price !== "null") {
     const cls = e.price === "бесплатно" ? "free" : "price";
-    const label = e.price === "бесплатно" ? "бесплатно" : e.price + " ₽";
-    addTag(footer, label, cls);
+    addTag(footer, e.price === "бесплатно" ? "бесплатно" : e.price + " ₽", cls);
   }
-
   body.appendChild(footer);
 
-  const sourceDiv = document.createElement("div");
-  sourceDiv.className = "card-source";
+  const srcDiv = document.createElement("div");
+  srcDiv.className = "card-source";
   const srcLink = document.createElement("a");
-  srcLink.className = "src-link";
-  srcLink.href = srcHref;
-  srcLink.target = "_blank";
-  srcLink.textContent = getSourceLabel(e);
-  sourceDiv.appendChild(srcLink);
-  body.appendChild(sourceDiv);
+  srcLink.className = "src-link"; srcLink.href = srcHref;
+  srcLink.target = "_blank"; srcLink.textContent = getSourceLabel(e);
+  srcDiv.appendChild(srcLink);
+  body.appendChild(srcDiv);
   inner.appendChild(body);
 
-  // превью справа
   if (e.image) {
     const img = document.createElement("img");
-    img.className = "card-thumb";
-    img.src = e.image;
-    img.alt = e.artist || e.venue;
-    img.loading = "lazy";
+    img.className = "card-thumb"; img.src = e.image;
+    img.alt = e.artist || e.venue; img.loading = "lazy";
     img.onerror = () => img.remove();
     inner.appendChild(img);
   }
@@ -609,21 +869,14 @@ function makeCard(e) {
 
 function addTag(container, text, cls) {
   const t = document.createElement("span");
-  t.className = `tag ${cls}`;
-  t.textContent = text;
+  t.className = `tag ${cls}`; t.textContent = text;
   container.appendChild(t);
 }
 
 fetch("events.json")
   .then(r => r.json())
-  .then(data => {
-    EVENTS = data;
-    buildFilters();
-    render();
-  })
-  .catch(() => {
-    document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>';
-  });
+  .then(data => { EVENTS = data; buildFilters(); render(); })
+  .catch(() => { document.getElementById("main").innerHTML = '<div class="empty">Не удалось загрузить события.</div>'; });
 </script>
 </body>
 </html>
