@@ -434,7 +434,8 @@ function buildFilters() {
 }
 
 function updateCounts() {
-  const rangeEvents = EVENTS.filter(inDateRange);
+  const hidden = getHidden();
+  const rangeEvents = EVENTS.filter(e => inDateRange(e) && !hidden.has(e.source_url));
   document.querySelectorAll(".filter-btn").forEach(btn => {
     const city = btn.dataset.city;
     const count = city === "all"
