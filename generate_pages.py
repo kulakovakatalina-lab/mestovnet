@@ -17,13 +17,15 @@ import os
 import re
 from collections import defaultdict
 from datetime import date, datetime
+from typing import Optional
 from pathlib import Path
 
 # ── Конфиг ──────────────────────────────────────────────────────────────────
 
-BASE_DIR   = Path(__file__).parent
-EVENTS_FILE = BASE_DIR / "events.json"
-INDEX_FILE  = BASE_DIR / "index.html"
+BASE_DIR      = Path(__file__).parent
+EVENTS_FILE   = BASE_DIR / "events.json"
+SETTINGS_FILE = BASE_DIR / "settings.json"
+INDEX_FILE    = BASE_DIR / "index.html"
 DOMAIN     = "https://mestov.net"
 
 # ── Локализация ──────────────────────────────────────────────────────────────
@@ -133,7 +135,7 @@ def extract_js() -> str:
 
 # ── Статический рендер карточки события ──────────────────────────────────────
 
-def render_card(e: dict) -> str:
+def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
     artist   = e.get("artist") or ""
     venue    = e.get("venue") or e.get("source_channel") or ""
     city     = e.get("source_city") or ""
@@ -145,7 +147,8 @@ def render_card(e: dict) -> str:
     src_label = esc(get_source_label(e))
     image    = e.get("image") or ""
 
-    label    = artist or venue
+    src_url  = e.get("source_url") or ""
+    label    = (custom_names or {}).get(src_url) or artist or venue
     venue_html = esc(venue) + (f'<span class="city">· {esc(city)}</span>' if artist else "")
 
     # Теги
@@ -179,7 +182,7 @@ def render_card(e: dict) -> str:
         f'</div>{img_html}</div></div>'
     )
 
-def render_event_list(events: list, today: str) -> str:
+def render_event_list(events: list, today: str, custom_names: Optional[dict] = None) -> str:
     future   = [e for e in events if e.get("date") and e["date"] >= today]
     no_date  = [e for e in events if not e.get("date")]
 
@@ -201,14 +204,14 @@ def render_event_list(events: list, today: str) -> str:
             label = f'<span class="today-badge">Сегодня</span>{fmt_date(key)}'
         else:
             label = fmt_date(key)
-        cards = "\n".join(render_card(e) for e in grp)
+        cards = "\n".join(render_card(e, custom_names) for e in grp)
         parts.append(f'<div class="date-group"><h2>{label}</h2>\n{cards}\n</div>')
 
     return "\n".join(parts)
 
 # ── JSON-LD ───────────────────────────────────────────────────────────────────
 
-def make_jsonld_events(events: list) -> str:
+def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str:
     items = []
     for e in events[:30]:
         if not e.get("date"):
@@ -218,10 +221,12 @@ def make_jsonld_events(events: list) -> str:
         except ValueError:
             continue
 
+        src_url = e.get("source_url") or ""
+        custom_name = (custom_names or {}).get(src_url)
         time_ = e.get("time") or "00:00"
         item: dict = {
             "@type":     "MusicEvent",
-            "name":      e.get("artist") or e.get("venue") or "Концерт",
+            "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
             "startDate": f'{e["date"]}T{time_}:00+03:00',
             "location":  {
                 "@type": "MusicVenue",
@@ -235,8 +240,9 @@ def make_jsonld_events(events: list) -> str:
         }
         if e.get("description"):
             item["description"] = e["description"]
-        if e.get("artist"):
-            item["performer"] = {"@type": "MusicGroup", "name": e["artist"]}
+        display_artist = custom_name or e.get("artist")
+        if display_artist:
+            item["performer"] = {"@type": "MusicGroup", "name": display_artist}
         if e.get("image"):
             item["image"] = e["image"]
 
@@ -512,6 +518,7 @@ def make_city_page(
     events_all: list,
     all_cities: list[str],
     css: str,
+    custom_names: Optional[dict] = None,
 ) -> str:
     """Генерирует страницу города — выглядит как главная, но с предвыбранным городом."""
     today  = today_str()
@@ -526,8 +533,8 @@ def make_city_page(
                    f"Обновляется ежедневно.")
 
     # Статический пре-рендер событий города (для поисковиков)
-    static_content = render_event_list(city_events, today)
-    jsonld_events  = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today])
+    static_content = render_event_list(city_events, today, custom_names)
+    jsonld_events  = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today], custom_names)
     jsonld_bc      = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (city, "")])
 
     # JS: берём из index.html и адаптируем (убираем fetch, предвыбираем город)
@@ -645,14 +652,14 @@ def make_city_page(
 
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
-def update_index(events: list, css_exists: bool) -> str:
+def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = None) -> str:
     """Читает текущий index.html и добавляет JSON-LD + статический пре-рендер."""
     src = INDEX_FILE.read_text(encoding="utf-8")
     today = today_str()
     future = [e for e in events if (e.get("date") or "") >= today]
 
     # JSON-LD для событий
-    jsonld_events = make_jsonld_events(future)
+    jsonld_events = make_jsonld_events(future, custom_names)
 
     # Улучшенный title и description
     count = len(future)
@@ -700,7 +707,7 @@ def update_index(events: list, css_exists: bool) -> str:
         src = src.replace("</head>", f"  {jsonld_events}\n</head>")
 
     # Статический пре-рендер событий: заменяем скелетоны в <main>
-    static_html = render_event_list(future, today)
+    static_html = render_event_list(future, today, custom_names)
     src = re.sub(
         r'(<main id="main">)(.*?)(</main>)',
         lambda m: f'{m.group(1)}\n{static_html}\n{m.group(3)}',
@@ -743,6 +750,11 @@ def main() -> None:
     events: list[dict] = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
     print(f"    {len(events)} событий загружено")
 
+    settings = {}
+    if SETTINGS_FILE.exists():
+        settings = json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
+    custom_names: dict = settings.get("names", {})
+
     today  = today_str()
     css    = extract_css()
 
@@ -753,7 +765,7 @@ def main() -> None:
 
     # 1. Обновляем index.html
     print("📝  Обновляем index.html …")
-    new_index = update_index(events, bool(css))
+    new_index = update_index(events, bool(css), custom_names)
     INDEX_FILE.write_text(new_index, encoding="utf-8")
     print("    ✓ index.html обновлён")
 
@@ -763,7 +775,7 @@ def main() -> None:
     print(f"🏙   Генерируем страницы городов ({len(cities_with_events)}) …")
     for city in cities_with_events:
         slug = city_slug(city)
-        page = make_city_page(city, events, cities_with_events, css)
+        page = make_city_page(city, events, cities_with_events, css, custom_names)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
         city_events  = [e for e in events if e.get("source_city") == city]
