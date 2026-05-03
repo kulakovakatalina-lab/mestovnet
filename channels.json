@@ -70,6 +70,34 @@
       "notes": ""
     },
     {
+      "username": "afisha_crimea",
+      "title": "Афиша Крыма",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "афиша мероприятий по всему Крыму"
+    },
+    {
+      "username": "sevastopol_jazz",
+      "title": "Севастополь Джаз",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "grzntcrimea",
+      "title": "Горизонт Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": ""
+    },
+    {
+      "username": "purplecaseband",
+      "title": "Purple Case Band",
+      "city": "Крым",
+      "type": "venue",
+      "notes": ""
+    },
+    {
       "username": "tavrida_art",
       "title": "ТАВРИДА.АРТ",
       "city": "Судак",
