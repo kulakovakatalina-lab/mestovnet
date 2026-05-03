@@ -26,7 +26,8 @@
     "source_channel": "clubjam",
     "source_url": "https://t.me/clubjam/923",
     "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
-    "post_date": "2026-05-02T10:13:03+00:00"
+    "post_date": "2026-05-02T10:13:03+00:00",
+    "genre": "метал"
   },
   {
     "date": "2026-05-09",
@@ -70,7 +71,8 @@
     "source_channel": "clubjam",
     "source_url": "https://t.me/clubjam/919",
     "image": "https://cdn4.telesco.pe/file/hbpQwKYxaqdpEUlc8bELnw_BiUVB7M5P0oMevcBQqoV-rYl3o9vv7dvrgGEQ7t34NMtoz7e411K7SncrOZFAarQEGmoCXpw3VPJ2sL5qQPOyRsDWuqxW2FzzJLRKyofzLuIcC8ZXi41xNYlbWgwMymXkpKim7GIonmi6DNUajrGuyc5uD6L3H7OvIptQLRAu1B0LbchmVEqC75HUtC5IN2m6p6EeQexyKdEGOLYJTovTY4rPRXZfjb5bQHnml3PnQlS84IqDQ3CCRTSvLljTnSJy6cj8iQ4_Ejx09VjXrrURrURjjjR9kps6RtHuKvDkaLjtZ0hv5s-wDo8Y-CTNZw.jpg",
-    "post_date": "2026-04-30T12:19:20+00:00"
+    "post_date": "2026-04-30T12:19:20+00:00",
+    "genre": "панк-рок"
   },
   {
     "date": "2026-05-01",
@@ -84,7 +86,8 @@
     "source_channel": "clubjam",
     "source_url": "https://t.me/clubjam/921",
     "image": "https://cdn4.telesco.pe/file/MY5pUtrQteGec4Sej8h9ruzZ2HSevj6Q2xS9FR4F0h_-ttHzaRCIlG1USj-rcyuIZMooysWtfMpnAV2vi6wA3gHqOu225srUNKSK_XnKWYFnN3ehzo3fCQOZVbv8T8Nv1jaC5m3YdcLHtACwXtex_dswH8pY4823lyw2Rynq3m2_2VFmG9QtRVmmLj7ScuXfXc2doOAl51JLQHFNpSQzNVJ91IBS7YapKQwQWBjuS7d6QkwRP6VcimGRTGKNdHB9lcVwzpLF1VmuauBE0mLcJmgEcPdsHIiy4Yq1G1brWL41Pm3Ei6uxYeNCYQSnoP3vLqprM8Iz0RvYoutL9Bt2lA.jpg",
-    "post_date": "2026-04-30T19:03:01+00:00"
+    "post_date": "2026-04-30T19:03:01+00:00",
+    "genre": "метал"
   },
   {
     "date": "2026-05-01",
@@ -98,7 +101,8 @@
     "source_channel": "clubjam",
     "source_url": "https://t.me/clubjam/922",
     "image": "https://cdn4.telesco.pe/file/Q9GiNkKZ4oigD8dyEH93Gr6-jrYp7Q3PzSuB7WZA3dhc7b3mq_mWYzLnXIsMwTUbwWAss_vlmQq9_hzw6kDumm91p7sject2Qh0cUh-VSlUbuJ4IHWscXeKuh8hpB4OXENoIFlJSR8ykHFfaS3O3VhqF11JhXEyIN9nN2x3FeQ4vTF2mlmgrJyX2l6oW9eri_5X2Ax255fSpTnSMwN31-HS-FkxncaGGJKllMtBgv8FDgCON-kgVG6mTlLLtHvObv68YEFTsNTbeSr53E2WnyhVidS4UbESFJXxUpecO27xp7gIeOjNTEhv_j-jd-i5JddbkHf_yENPPE5pv5ZAg8A.jpg",
-    "post_date": "2026-05-01T11:16:43+00:00"
+    "post_date": "2026-05-01T11:16:43+00:00",
+    "genre": "рок"
   },
   {
     "date": "2026-05-03",
@@ -242,7 +246,8 @@
     "source_channel": "krymskiye_dela",
     "source_url": "https://www.instagram.com/p/DXuLR0gRT6e/",
     "image": "/images/events/615f8143abe0e9f88416f061d1fa8f47.jpg",
-    "post_date": "2026-04-29T16:00:00+00:00"
+    "post_date": "2026-04-29T16:00:00+00:00",
+    "genre": "интерактив"
   },
   {
     "date": "2026-05-08",
@@ -361,21 +366,23 @@
     "source_channel": "krymskiye_dela",
     "source_url": "https://www.instagram.com/p/DXrLAezRLTp/",
     "image": "/images/events/76393de77646c220b97b7410dfcb7998.jpg",
-    "post_date": "2026-04-28T12:00:00+00:00"
+    "post_date": "2026-04-28T12:00:00+00:00",
+    "genre": "классика"
   },
   {
     "date": "2026-05-01",
     "time": "17:00",
-    "artist": "Sevastopol Jazz (@sevastopol_jazz)",
+    "artist": "Sevastopol Jazz (@sevastopol_jazz), Sevastopol Jazz",
     "event_type": "концерт",
-    "venue": "Егоровский зал винзавода «Массандра»",
+    "venue": "Егоровский зал винзавода Массандра",
     "price": null,
-    "description": "Джазовый вечер в историческом Егоровском зале винзавода «Массандра». Атмосферное мероприятие с живой музыкой и дегустацией вина.",
+    "description": "Джазовый вечер в историческом Егоровском зале винзавода «Массандра». Атмосферный концерт с дегустацией вина от проекта @sevastopol_jazz.",
     "source_city": "Ялта",
-    "source_channel": "krymskiye_dela",
-    "source_url": "https://www.instagram.com/p/DXo3Q85jL6E/",
-    "image": "/images/events/0593590b23025e2028b52f03388328e8.jpg",
-    "post_date": "2026-04-27T14:36:58+00:00"
+    "source_channel": "crimea_event",
+    "genre": "джаз",
+    "source_url": "https://t.me/crimea_event/5518",
+    "image": "/images/events/5043019cbaba96ac6159eae279dbd866.jpg",
+    "post_date": "2026-04-28T05:43:20+00:00"
   },
   {
     "date": "2026-06-25",
@@ -703,7 +710,8 @@
     "source_city": "Севастополь",
     "post_date": "2026-05-02T11:03:09+00:00",
     "image": "/images/events/7ada4b12e7a91fb9b0b50457f1cc3276.jpg",
-    "source_url": "https://t.me/rocknroll_92/6537"
+    "source_url": "https://t.me/rocknroll_92/6537",
+    "genre": "поп-рок"
   },
   {
     "date": "2026-05-09",
@@ -1075,7 +1083,8 @@
     "source_channel": "skazhitejazz",
     "source_url": "https://t.me/skazhitejazz/1547",
     "image": "/images/events/7a7ca292aed3a164d7e7a9a4c4701944.jpg",
-    "post_date": "2026-04-10T19:38:29+00:00"
+    "post_date": "2026-04-10T19:38:29+00:00",
+    "genre": "джаз"
   },
   {
     "date": "2026-05-01",
@@ -1089,7 +1098,8 @@
     "source_city": "Ялта",
     "post_date": "2026-04-13T07:39:52+00:00",
     "image": "/images/events/0343924718b2e47052e7a2351f4150cd.jpg",
-    "source_url": "https://t.me/skazhitejazz/1553"
+    "source_url": "https://t.me/skazhitejazz/1553",
+    "genre": "джаз"
   },
   {
     "date": "2026-06-01",
@@ -1148,21 +1158,23 @@
     "source_city": "Ялта",
     "post_date": "2026-04-15T04:19:26+00:00",
     "image": "/images/events/35b4ca6c192d9c553e716ae8a8ac3994.jpg",
-    "source_url": "https://t.me/skazhitejazz/1554"
+    "source_url": "https://t.me/skazhitejazz/1554",
+    "genre": "джаз"
   },
   {
     "date": "2026-05-02",
-    "time": null,
+    "time": "13:00",
     "artist": "Квартет Виктора Никулина, Елена Голофеева",
-    "event_type": "концерт",
-    "venue": "Отель Palmira Palace",
-    "price": null,
-    "description": "Открытие сезона в Ялте. Квартет Виктора Никулина выступает совместно с Еленой Голофеевой, билеты в продаже.",
+    "event_type": "фестиваль",
+    "venue": "Palmira Palace Resort & SPA",
+    "price": "1500 рублей",
+    "description": "Фестиваль-маркет «Скажите Джаз» с живым джазом, маркетом локальных брендов, гастрономией и вином. Мероприятие в курортном формате с тёплой атмосферой.",
     "source_city": "Ялта",
     "source_channel": "skazhitejazz",
-    "source_url": "https://t.me/skazhitejazz/1555",
-    "image": "/images/events/4aa2c4ab3cc8c92720bc79073a8c4af1.jpg",
-    "post_date": "2026-04-18T08:28:27+00:00"
+    "genre": "джаз",
+    "source_url": "https://t.me/skazhitejazz/1557",
+    "image": "/images/events/81a10287d178827e5c5141fefd3315a6.jpg",
+    "post_date": "2026-04-24T08:24:43+00:00"
   },
   {
     "date": "2026-05-02",
@@ -1176,21 +1188,8 @@
     "source_city": "Ялта",
     "post_date": "2026-04-21T08:55:57+00:00",
     "image": "/images/events/b4eb51f0cfb379f33295b80951b5bcfd.jpg",
-    "source_url": "https://t.me/skazhitejazz/1556"
-  },
-  {
-    "date": "2026-05-02",
-    "time": "13:00",
-    "artist": null,
-    "event_type": "фестиваль",
-    "venue": "Palmira Palace Resort & SPA",
-    "price": null,
-    "description": "Фестиваль-маркет «Скажите Джаз» с живым джазом, маркетом локальных брендов, гастрономией и вином. Мероприятие в курортном формате с тёплой атмосферой.",
-    "source_channel": "skazhitejazz",
-    "source_city": "Ялта",
-    "post_date": "2026-04-24T08:24:43+00:00",
-    "image": "/images/events/81a10287d178827e5c5141fefd3315a6.jpg",
-    "source_url": "https://t.me/skazhitejazz/1557"
+    "source_url": "https://t.me/skazhitejazz/1556",
+    "genre": "джаз"
   },
   {
     "date": "2026-05-02",
@@ -1204,7 +1203,8 @@
     "source_city": "Крым",
     "post_date": "2026-04-25T09:19:45+00:00",
     "image": "/images/events/fa3fa8e24b4492f13c3fc3e617284f2a.jpg",
-    "source_url": "https://t.me/skazhitejazz/1561"
+    "source_url": "https://t.me/skazhitejazz/1561",
+    "genre": "джаз"
   },
   {
     "date": "2026-05-02",
@@ -1218,7 +1218,8 @@
     "source_city": "Ялта",
     "post_date": "2026-04-29T17:23:27+00:00",
     "image": "/images/events/c6b3982d1b902a4784e06ea54033e66f.jpg",
-    "source_url": "https://t.me/skazhitejazz/1562"
+    "source_url": "https://t.me/skazhitejazz/1562",
+    "genre": "джаз"
   },
   {
     "date": "2026-04-30",
@@ -1232,7 +1233,8 @@
     "source_city": "Крым",
     "post_date": "2026-04-30T13:59:46+00:00",
     "image": "/images/events/9a5bc8158016cd84daa15d89d7531dfc.jpg",
-    "source_url": "https://t.me/skazhitejazz/1563"
+    "source_url": "https://t.me/skazhitejazz/1563",
+    "genre": "джаз"
   },
   {
     "date": "2026-08-15",
@@ -1263,6 +1265,241 @@
     "image": "/images/events/bfc35d3e60f02018dbdc59859e94f53e.jpg",
     "source_url": "https://t.me/skazhitejazz/1564",
     "genre": "джаз"
+  },
+  {
+    "date": "2025-05-01",
+    "time": "15:00",
+    "artist": "Touch the Wind",
+    "event_type": "концерт",
+    "venue": "Прогулочная аллея отеля Ялта-Интурист",
+    "price": null,
+    "description": "Выступление духового оркестра Touch the Wind в рамках праздничной программы на Первомай. В программе также конкурсы, костюмированная анимация, ярмарка и мастер-классы.",
+    "source_channel": "hotel_yalta_intourist",
+    "source_city": "Ялта",
+    "post_date": "2026-04-26T12:23:02+00:00",
+    "image": "/images/events/becb4f41ad5150c176f2c89ee11c9daa.jpg",
+    "source_url": "https://t.me/hotel_yalta_intourist/2582"
+  },
+  {
+    "date": "2026-05-03",
+    "time": "18:00",
+    "artist": null,
+    "event_type": "концерт",
+    "venue": "Пляж «Изумрудный», Отель «Ялта-Интурист»",
+    "price": null,
+    "description": "Живая музыка на пляже «Изумрудный» отеля «Ялта-Интурист». Проводится ежедневно.",
+    "source_city": "Ялта",
+    "source_channel": "hotel_yalta_intourist",
+    "genre": null,
+    "source_url": "https://t.me/hotel_yalta_intourist/2597",
+    "image": "/images/events/b31823392a202d6cb85c7518a4808047.jpg",
+    "post_date": "2026-05-01T14:00:07+00:00"
+  },
+  {
+    "date": "2026-05-01",
+    "time": "12:00",
+    "artist": "Dim K, Bessonov",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": null,
+    "description": "Открытие майского сезона на пляже, тема вечеринки — Jazzy Brut. DJ-сет с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "джаз",
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-02",
+    "time": "12:00",
+    "artist": "Rhino, Spahova",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": null,
+    "description": "Пляжная вечеринка в формате We Love House. DJ-сет с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": null,
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-03",
+    "time": "12:00",
+    "artist": "Busha, Spahova",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": null,
+    "description": "Вечеринка MTV Hits 2000-х на пляже у моря. DJ-сет с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": null,
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-08",
+    "time": "12:00",
+    "artist": "Rus, Kardys",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": "бесплатно",
+    "description": "Пляжная вечеринка Disco Time. DJ-сет с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": null,
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-09",
+    "time": "12:00",
+    "artist": "80's / 90's, Aldi",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": null,
+    "description": "Победный джаз — праздничная вечеринка ко Дню Победы. DJ-сет в стиле 80-х/90-х с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "джаз",
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-10",
+    "time": "12:00",
+    "artist": "El, Happy Paul",
+    "event_type": "вечеринка",
+    "venue": "кафе «Van Gogh», Массандровский пляж",
+    "price": null,
+    "description": "Закрытие майских праздников в формате Ethnic Vibe. DJ-сет с 12:00 до 16:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": null,
+    "source_url": "https://t.me/massandrasun/2177",
+    "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
+    "post_date": "2026-04-24T17:39:52+00:00"
+  },
+  {
+    "date": "2026-05-10",
+    "time": "17:00",
+    "artist": null,
+    "event_type": "концерт",
+    "venue": "API Balaklava",
+    "price": null,
+    "description": "Музыкальный вечер с живой музыкой — на превью-кадре скрипач на природе. Билеты на Blyumin.com.",
+    "source_channel": "api_balaklava",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-02T12:01:33+00:00",
+    "image": "/images/events/c883b8c44f8a3409e61222ad36cb9c38.jpg",
+    "source_url": "https://t.me/api_balaklava/1247"
+  },
+  {
+    "date": "2026-05-01",
+    "time": "12:30",
+    "artist": "Кавер-группа «Будни»",
+    "event_type": "фестиваль",
+    "venue": "Эко-пространство «Али Баир»",
+    "price": "2000 руб",
+    "description": "«Винная Маёвка» — фестиваль крымского виноделия в Байдарской долине с круговой дегустацией вин от 35+ производителей. В программе концерт кавер-группы «Будни», винное казино, конкурсы и розыгрыши.",
+    "source_channel": "crimea_event",
+    "source_city": "Севастополь",
+    "post_date": "2026-04-20T05:29:01+00:00",
+    "image": "/images/events/add2032759f14ea02921d383fb74aa46.jpg",
+    "source_url": "https://t.me/crimea_event/5501",
+    "genre": "каверы"
+  },
+  {
+    "date": "2025-04-25",
+    "time": "19:30",
+    "artist": "Казян",
+    "event_type": "фестиваль",
+    "venue": "Клуб ДЕПО",
+    "price": null,
+    "description": "Большой Крымский Рэп Фестиваль с хедлайнером Казяном, лучшими южными MC Крыма и секретными гостями. Двери в 18:30, начало в 19:30.",
+    "source_channel": "crimea_event",
+    "source_city": "Симферополь",
+    "post_date": "2026-04-20T05:48:01+00:00",
+    "image": "/images/events/6a3517d429354252cbff11eabd0761ea.jpg",
+    "source_url": "https://t.me/crimea_event/5506",
+    "genre": "хип-хоп"
+  },
+  {
+    "date": "2026-04-26",
+    "time": "19:20",
+    "artist": "Елена Голофеева, Максим Перов, Руслан Сейдалиев",
+    "event_type": "концерт",
+    "venue": "Дворец «Дюльбер»",
+    "price": null,
+    "description": "Концерт «Песни любимого кино» — вечер живой музыки с песнями из советских кинофильмов. На сцене: вокал, фортепиано, труба и ударные; в программе также экскурсия по дворцу и прогулка с видом на море.",
+    "source_channel": "crimea_event",
+    "source_city": "Ялта",
+    "post_date": "2026-04-21T19:19:29+00:00",
+    "image": "/images/events/b54843f0d725be72129c79fe42245fe3.jpg",
+    "source_url": "https://t.me/crimea_event/5509"
+  },
+  {
+    "date": "2026-05-02",
+    "time": "17:00",
+    "artist": "Two Violins",
+    "event_type": "концерт",
+    "venue": "Отель Аквамарин, летняя сцена",
+    "price": null,
+    "description": "Дуэт TWO VIOLINS исполняет мировые рок-хиты Queen, Metallica, Nirvana, Linkin Park и других легенд на скрипках. Уникальное сочетание классических инструментов и рок-музыки.",
+    "source_channel": "crimea_event",
+    "source_city": "Севастополь",
+    "post_date": "2026-04-24T17:35:11+00:00",
+    "image": "/images/events/ac4d3f9771249e1321e9b1144113be31.jpg",
+    "source_url": "https://t.me/crimea_event/5512",
+    "genre": "метал"
+  },
+  {
+    "date": "2026-05-15",
+    "time": "18:00",
+    "artist": "Odnono",
+    "event_type": "концерт",
+    "venue": "Арт-Ковчег",
+    "price": "2500₽ до 15 мая, 3000₽ в день концерта",
+    "description": "Большой концерт indie-группы Odnono в полном составе с духовыми, гитарами и барабанами. Программа объединяет хип-хоп, акустику и этнические мотивы, включая презентацию нового альбома «Васанта».",
+    "source_channel": "crimea_event",
+    "source_city": "Бахчисарай",
+    "post_date": "2026-04-29T06:09:54+00:00",
+    "image": "/images/events/f6f6f2c14a253728a8f4024bc00ceb52.jpg",
+    "source_url": "https://t.me/crimea_event/5519",
+    "genre": "хип-хоп"
+  },
+  {
+    "date": "2026-05-01",
+    "time": null,
+    "artist": null,
+    "event_type": "фестиваль",
+    "venue": "Судакская крепость",
+    "price": "бесплатно",
+    "description": "Праздник в средневековом стиле в честь 600-летия барбакана цитадели. Выступления с кельтской и европейской музыкой на аутентичных инструментах, мастер-классы по старинным танцам.",
+    "source_channel": "crimea_event",
+    "source_city": "Судак",
+    "post_date": "2026-05-01T07:34:36+00:00",
+    "image": "/images/events/302e9401f819a369efd34484090782c1.jpg",
+    "source_url": "https://t.me/crimea_event/5520"
+  },
+  {
+    "date": "2026-05-02",
+    "time": "17:00",
+    "artist": "Donna Cello",
+    "event_type": "концерт",
+    "venue": "Скельская пещера",
+    "price": "1500 рублей",
+    "description": "Концерт дуэта виолончелей Donna Cello в Скельской пещере. В программе — мелодии из кинофильмов.",
+    "source_channel": "crimea_event",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-01T10:03:36+00:00",
+    "image": "/images/events/d7f2fe4aa1996a2d99615cde3da280b4.jpg",
+    "source_url": "https://t.me/crimea_event/5521"
   },
   {
     "date": null,
@@ -1304,7 +1541,8 @@
     "source_city": "Крым",
     "post_date": "2026-04-08T08:49:50+00:00",
     "image": "/images/events/313aa7151deea0bbd47de28e6ea4c01b.jpg",
-    "source_url": "https://t.me/skazhitejazz/1545"
+    "source_url": "https://t.me/skazhitejazz/1545",
+    "genre": "джаз"
   },
   {
     "date": null,
@@ -1318,6 +1556,21 @@
     "source_city": "Крым",
     "post_date": "2026-04-08T08:49:50+00:00",
     "image": "/images/events/313aa7151deea0bbd47de28e6ea4c01b.jpg",
-    "source_url": "https://t.me/skazhitejazz/1545"
+    "source_url": "https://t.me/skazhitejazz/1545",
+    "genre": "джаз"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "CORA",
+    "event_type": "вечеринка",
+    "venue": "Sky Beach Ялта",
+    "price": null,
+    "description": "Открытие Sky Beach: живой вокал CORA под открытым небом и диджей-сет у подогреваемого бассейна. Мероприятие прошло, точная дата не указана.",
+    "source_channel": "sky_beach_yalta",
+    "source_city": "Ялта",
+    "post_date": "2026-04-30T17:53:09+00:00",
+    "image": "/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg",
+    "source_url": "https://t.me/sky_beach_yalta/1213"
   }
 ]
