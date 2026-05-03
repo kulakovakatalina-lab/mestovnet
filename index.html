@@ -1225,11 +1225,12 @@
 <script>
 let EVENTS = [];
 
-let SETTINGS = { hidden: [], times: {}, names: {} };
+let SETTINGS = { hidden: [], times: {}, names: {}, prices: {} };
 
-function getHidden()      { return new Set(SETTINGS.hidden || []); }
-function getCustomTimes() { return SETTINGS.times || {}; }
-function getCustomNames() { return SETTINGS.names || {}; }
+function getHidden()        { return new Set(SETTINGS.hidden || []); }
+function getCustomTimes()   { return SETTINGS.times  || {}; }
+function getCustomNames()   { return SETTINGS.names  || {}; }
+function getCustomPrices()  { return SETTINGS.prices || {}; }
 
 const MONTHS     = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 const MONTHS_NOM = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
@@ -1563,9 +1564,10 @@ function render() {
   main.innerHTML = "";
   updateCounts();
 
-  const hidden      = getHidden();
-  const customTimes = getCustomTimes();
-  const customNames = getCustomNames();
+  const hidden       = getHidden();
+  const customTimes  = getCustomTimes();
+  const customNames  = getCustomNames();
+  const customPrices = getCustomPrices();
 
   const filtered = EVENTS.filter(e => {
     if (hidden.has(e.source_url)) return false;
@@ -1609,7 +1611,8 @@ function render() {
       group.appendChild(makeCard({
         ...event,
         ...((!event.time && customTimes[event.source_url]) ? { time: customTimes[event.source_url] } : {}),
-        ...(customNames[event.source_url] ? { artist: customNames[event.source_url] } : {}),
+        ...(customNames[event.source_url]  ? { artist: customNames[event.source_url] }  : {}),
+        ...(customPrices[event.source_url] !== undefined ? { price: customPrices[event.source_url] } : {}),
       }));
     });
 
@@ -1691,7 +1694,7 @@ function addTag(container, text, cls) {
 
 Promise.all([
   fetch("events.json").then(r => r.json()),
-  fetch("settings.json").then(r => r.json()).catch(() => ({ hidden: [], times: {}, names: {} }))
+  fetch("settings.json").then(r => r.json()).catch(() => ({ hidden: [], times: {}, names: {}, prices: {} }))
 ]).then(([events, settings]) => {
   EVENTS = events;
   SETTINGS = settings;
