@@ -264,6 +264,42 @@
     }
     .name-input:focus { border-color: #7db87d; }
 
+    .row-extra {
+      font-size: 0.72rem;
+      color: #555;
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .row-price {
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .row-price:hover { color: #aaa; }
+    .row-price.custom-price { color: #7db87d; }
+    .row-price.custom-price:hover { color: #a0d4a0; }
+    .row-price.no-price { color: #3a3a3a; }
+    .row-price.no-price:hover { color: #666; }
+
+    .price-input {
+      background: #1a1a1a;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-size: 0.72rem;
+      padding: 1px 5px;
+      width: 120px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .price-input:focus { border-color: #7db87d; }
+
+    .row-src { color: #3a3a3a; text-decoration: none; }
+    .row-src:hover { color: #7aaadd; }
+
     .row-meta {
       font-size: 0.75rem;
       color: #555;
@@ -402,6 +438,7 @@ let EVENTS = [];
 let hidden = new Set();
 let times  = {};
 let names  = {};
+let prices = {};
 let dirty  = false;
 
 const MONTHS = ["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
@@ -446,7 +483,7 @@ async function pushSettings() {
   btn.textContent = "Сохранение…";
   btn.disabled = true;
 
-  const content = { hidden: [...hidden], times, names };
+  const content = { hidden: [...hidden], times, names, prices };
   const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
 
   try {
@@ -493,6 +530,7 @@ async function loadSettings() {
       hidden = new Set(d.hidden || []);
       times  = d.times  || {};
       names  = d.names  || {};
+      prices = d.prices || {};
     }
   } catch { /* оставляем пустые defaults */ }
 }
@@ -658,6 +696,54 @@ function showNameInput(wrap, e) {
   });
 }
 
+function renderPriceContent(wrap, e) {
+  wrap.innerHTML = "";
+  const custom = prices[e.source_url];
+  const original = e.price || null;
+  const span = document.createElement("span");
+  const display = custom !== undefined ? custom : original;
+  if (custom !== undefined) {
+    span.className = "row-price custom-price";
+  } else if (original) {
+    span.className = "row-price";
+  } else {
+    span.className = "row-price no-price";
+  }
+  span.textContent = display || "цена —";
+  span.title = "Нажмите чтобы изменить цену";
+  span.addEventListener("click", () => showPriceInput(wrap, e));
+  wrap.appendChild(span);
+}
+
+function showPriceInput(wrap, e) {
+  wrap.innerHTML = "";
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "price-input";
+  input.placeholder = "напр. от 500 ₽";
+  input.value = prices[e.source_url] !== undefined ? prices[e.source_url] : (e.price || "");
+  wrap.appendChild(input);
+  input.focus();
+  input.select();
+
+  function commit() {
+    const val = input.value.trim();
+    if (val !== (e.price || "")) {
+      prices[e.source_url] = val;
+    } else {
+      delete prices[e.source_url];
+    }
+    markDirty();
+    renderPriceContent(wrap, e);
+  }
+
+  input.addEventListener("blur", commit);
+  input.addEventListener("keydown", ev => {
+    if (ev.key === "Enter") { ev.preventDefault(); input.blur(); }
+    if (ev.key === "Escape") { renderPriceContent(wrap, e); }
+  });
+}
+
 function makeRow(e) {
   const isHidden = hidden.has(e.source_url);
 
@@ -688,6 +774,29 @@ function makeRow(e) {
   meta.textContent = parts.join(" · ");
   info.appendChild(meta);
 
+  const extra = document.createElement("div");
+  extra.className = "row-extra";
+
+  const priceWrap = document.createElement("span");
+  renderPriceContent(priceWrap, e);
+  extra.appendChild(priceWrap);
+
+  if (e.description) {
+    const desc = document.createElement("span");
+    desc.textContent = e.description;
+    extra.appendChild(desc);
+  }
+
+  if (e.source_url) {
+    const src = document.createElement("a");
+    src.className = "row-src";
+    src.href = e.source_url;
+    src.target = "_blank";
+    src.textContent = "↗ источник";
+    extra.appendChild(src);
+  }
+
+  info.appendChild(extra);
   row.appendChild(info);
 
   const wrap = document.createElement("div");
@@ -790,6 +899,7 @@ document.getElementById("btn-import").addEventListener("change", e => {
       if (Array.isArray(d.hidden)) hidden = new Set(d.hidden);
       if (d.times && typeof d.times === "object") times = d.times;
       if (d.names && typeof d.names === "object") names = d.names;
+      if (d.prices && typeof d.prices === "object") prices = d.prices;
       markDirty();
       render();
       alert("Настройки загружены. Нажмите «Сохранить изменения» чтобы опубликовать.");
