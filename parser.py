@@ -237,6 +237,59 @@ def process_yandex_afisha(all_events: list):
     print(f"  Найдено событий: {count}")
 
 
+# Жанр по source_channel (если канал всегда одного жанра)
+_CHANNEL_GENRES: dict[str, str] = {
+    "skazhitejazz": "джаз",
+}
+
+# Правила определения жанра по ключевым словам (порядок важен — специфичные раньше)
+_GENRE_RULES: list[tuple[list[str], str]] = [
+    (["фолк-метал", "folk metal"],                                             "фолк-метал"),
+    (["панк", "punk"],                                                         "панк-рок"),
+    (["метал", "metal", "radio tapok", "blackened"],                           "метал"),
+    (["хип-хоп", "hip-hop", "хип хоп", "рэп", "rap"],                        "хип-хоп"),
+    (["джаз", "jazz", "свинг", "swing", "блюз", "blues"],                    "джаз"),
+    (["симфони", "камерн", "опер", "сонат", "классическ"],                    "классика"),
+    (["хор сретен", "мужской хор", "женский хор", "детский хор", "хоровой"], "хоровая"),
+    (["оркестр русских народных", "народный оркестр"],                         "классика"),
+    (["этно", "этническ", "уутай"],                                           "этно"),
+    (["народн", "народная"],                                                   "народная"),
+    (["авторская", "авторские", "авторской"],                                  "авторская"),
+    (["музыкальное лото", "угадыванием хитов", "музыкальный квиз"],           "интерактив"),
+    (["инди", "indie"],                                                        "инди"),
+    (["лаунж", "lounge"],                                                      "лаунж"),
+    (["при свечах", "легенды 90", "легенды мтв", "легенды mtv", "суперхиты 90"], "поп"),
+    (["поп-рок", "рок-поп", "pop-rock"],                                      "поп-рок"),
+    (["русский рок", "русских рок", "каверы на рок", "рок-хиты", "рок хиты"],"русский рок"),
+    (["рок", "rock"],                                                          "рок"),
+    (["поп", "pop"],                                                           "поп"),
+    (["квн", "юмор", "комедия", "стендап"],                                   "юмор"),
+    (["кавер", "cover"],                                                       "каверы"),
+]
+
+
+def detect_genre(event: dict) -> "str | None":
+    """Определяет жанр события по ключевым словам. Возвращает None если не удалось."""
+    # 1. По каналу
+    ch = (event.get("source_channel") or "").lower()
+    for key, genre in _CHANNEL_GENRES.items():
+        if key in ch:
+            return genre
+
+    # 2. По тексту — ищем в описании + артисте (в нижнем регистре)
+    text = " ".join(filter(None, [
+        event.get("description") or "",
+        event.get("artist") or "",
+        event.get("event_type") or "",
+    ])).lower()
+
+    for keywords, genre in _GENRE_RULES:
+        if any(kw in text for kw in keywords):
+            return genre
+
+    return None
+
+
 # Ключевые слова для определения города когда канал охватывает весь Крым
 _CITY_HINTS = [
     ("Ялт",         "Ялта"),
@@ -279,7 +332,7 @@ def _merge_events(group: list[dict]) -> dict:
     group_sorted = sorted(group, key=lambda e: e.get("post_date") or "", reverse=True)
     most_recent = group_sorted[0]
     merged = {}
-    for field in ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city", "source_channel"):
+    for field in ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city", "source_channel", "genre"):
         for e in group_sorted:
             v = e.get(field)
             if v and str(v).strip():
@@ -497,6 +550,17 @@ def main():
         print(f"Дедупликация с архивом: {before2} → {after2} (убрано: {before2 - after2})")
 
     print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
+
+    # Проставляем жанр там, где его ещё нет
+    genre_added = 0
+    for e in merged:
+        if not e.get("genre"):
+            g = detect_genre(e)
+            if g:
+                e["genre"] = g
+                genre_added += 1
+    if genre_added:
+        print(f"Жанр определён автоматически: {genre_added} событий")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
