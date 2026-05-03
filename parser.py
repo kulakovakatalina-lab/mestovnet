@@ -357,15 +357,16 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 i, j = indices[a], indices[b]
                 ai = _artist_set(stage1[i])
                 aj = _artist_set(stage1[j])
+                vi = _normalize(stage1[i].get("venue") or "")
+                vj = _normalize(stage1[j].get("venue") or "")
+                ti = stage1[i].get("time") or ""
+                tj = stage1[j].get("time") or ""
                 if ai and aj and ai & aj:
                     # Есть хотя бы один общий артист → одно событие
                     union(i, j)
-                elif not ai and not aj:
-                    # Оба без артиста → совпадение площадки
-                    vi = _normalize(stage1[i].get("venue") or "")
-                    vj = _normalize(stage1[j].get("venue") or "")
-                    if vi and vj and vi == vj:
-                        union(i, j)
+                elif vi and vj and vi == vj and ti and tj and ti == tj:
+                    # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
+                    union(i, j)
 
     groups: dict[int, list[dict]] = {}
     for i in range(n):

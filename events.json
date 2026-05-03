@@ -324,16 +324,16 @@
   {
     "date": "2026-05-09",
     "time": "17:00",
-    "artist": "Оркестр «Яника»",
+    "artist": "Оркестр «Яника», Оркестр «Янина»",
     "event_type": "концерт",
     "venue": "Курортный комплекс «Аквамарин», летняя сцена",
     "price": null,
-    "description": "Изысканный вечер живой музыки под открытым небом. В программе классическая музыка и популярные эстрадные произведения.",
-    "source_city": "Евпатория",
-    "source_channel": "krymskiye_dela",
-    "source_url": "https://www.instagram.com/p/DXtQ6JSxRr7/",
-    "image": "/images/events/bab55805aa8ec2202e9dbe3dec91b841.jpg",
-    "post_date": "2026-04-29T07:30:00+00:00"
+    "description": "Вечер живой музыки оркестра «Янина» на летней сцене комплекса «Аквамарин». В программе классическая музыка и популярные эстрадные произведения под открытым небом.",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_crimea",
+    "source_url": "https://t.me/afisha_crimea/7368",
+    "image": null,
+    "post_date": "2026-05-02T08:33:46+00:00"
   },
   {
     "date": "2026-05-02",
@@ -978,20 +978,6 @@
     "source_url": "https://t.me/rocknroll_92/6517",
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": null
-  },
-  {
-    "date": "2026-05-09",
-    "time": "17:00",
-    "artist": "Оркестр «Янина»",
-    "event_type": "концерт",
-    "venue": "Курортный комплекс «Аквамарин», летняя сцена",
-    "price": null,
-    "description": "Вечер живой музыки оркестра «Янина» на летней сцене комплекса «Аквамарин». В программе классическая музыка и популярные эстрадные произведения под открытым небом.",
-    "source_channel": "afisha_crimea",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-02T08:33:46+00:00",
-    "image": null,
-    "source_url": "https://t.me/afisha_crimea/7368"
   },
   {
     "date": "2026-05-03",
