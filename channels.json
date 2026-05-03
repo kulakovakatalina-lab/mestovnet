@@ -110,6 +110,48 @@
       "city": "Судак",
       "type": "venue",
       "notes": "арт-кластер, фестивали, концерты"
+    },
+    {
+      "username": "sky_beach_yalta",
+      "title": "Sky Beach Ялта",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "пляжный клуб"
+    },
+    {
+      "username": "hotel_yalta_intourist",
+      "title": "Отель Ялта-Интурист",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "гостиничный комплекс, концерты и события"
+    },
+    {
+      "username": "massandrasun",
+      "title": "Массандра Sun",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "площадка в Массандре"
+    },
+    {
+      "username": "usadbarodnoegnezdo",
+      "title": "Усадьба Родное Гнездо",
+      "city": "Крым",
+      "type": "venue",
+      "notes": ""
+    },
+    {
+      "username": "api_balaklava",
+      "title": "API Балаклава",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "бар в Балаклаве"
+    },
+    {
+      "username": "crimea_event",
+      "title": "Крым Event",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "афиша событий Крыма"
     }
   ]
 }
