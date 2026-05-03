@@ -157,6 +157,9 @@ def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
         tags += '<span class="tag cancelled-tag">перенесено</span>'
     if evtype:
         tags += f'<span class="tag type">{esc(evtype)}</span>'
+    genre = e.get("genre") or ""
+    if genre:
+        tags += f'<span class="tag genre">{esc(genre)}</span>'
     price_text, price_cls = price_fmt(e.get("price"))
     if price_text:
         tags += f'<span class="tag {price_cls}">{esc(price_text)}</span>'
