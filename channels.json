@@ -152,6 +152,20 @@
       "city": "Крым",
       "type": "afisha",
       "notes": "афиша событий Крыма"
+    },
+    {
+      "username": "Svoi_ludi_crimea",
+      "title": "Свои Люди Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": ""
+    },
+    {
+      "username": "koncertykrym",
+      "title": "Концерты Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": ""
     }
   ]
 }
