@@ -117,7 +117,7 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
 
 
 def extract_events(post_text: str, channel_meta: dict, thumbnail_path: "str | None" = None) -> list[dict]:
-    image_note = "\nТакже прилагается превью-кадр видео — прочитай текст с него, если он содержит детали мероприятия." if thumbnail_path else ""
+    image_note = "\nТакже прилагается изображение из поста — прочитай весь текст с афиши/картинки, если он содержит детали мероприятия (дата, время, артист, цена)." if thumbnail_path else ""
 
     prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
 Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
