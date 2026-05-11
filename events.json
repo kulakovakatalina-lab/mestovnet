@@ -2207,6 +2207,34 @@
     "source_url": "https://t.me/crimea_event/5527"
   },
   {
+    "date": "2026-05-23",
+    "time": "23:00",
+    "artist": "DJ Nejtrino",
+    "event_type": "вечеринка",
+    "venue": "Гастродвор",
+    "price": null,
+    "description": "Дискотека 90–2000-х с DJ Nejtrino. Хиты русских и зарубежных артистов, электронные треки, хаус-хиты 2000-х. Дресс-код: стиль 90–2000-х, 21+.",
+    "source_channel": "krymskiye_dela",
+    "source_city": "Ялта",
+    "post_date": "2026-05-10T19:45:01+00:00",
+    "image": "/images/events/918685dc4bc0a4f13de2f523dd5d8282.jpg",
+    "source_url": "https://t.me/krymskiye_dela/5418"
+  },
+  {
+    "date": "2026-05-24",
+    "time": "16:00",
+    "artist": "Живой звук: кларнет",
+    "event_type": "концерт",
+    "venue": "Винодельня «Золотая Балка»",
+    "price": "3500₽",
+    "description": "Музыкальный вечер на террасе с видом на виноградники: живой кларнет, дегустация вин Локо Чимбали и мини-экскурсия по винодельне. Адрес: Балаклава, Крестовского 66.",
+    "source_channel": "krymskiye_dela",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-11T09:04:47+00:00",
+    "image": "/images/events/3910c4d2f5716c3a8945afa03e305da4.jpg",
+    "source_url": "https://t.me/krymskiye_dela/5423"
+  },
+  {
     "date": null,
     "time": null,
     "artist": "Мыст",
