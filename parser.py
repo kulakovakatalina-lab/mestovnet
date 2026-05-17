@@ -127,7 +127,10 @@ def extract_events(post_text: str, channel_meta: dict, thumbnail_path: "str | No
 {post_text}
 \"\"\"{image_note}
 
-Если в посте анонсируется живая музыка или музыкальное мероприятие — верни JSON-массив объектов.
+Если в посте анонсируются музыкальные мероприятия — верни JSON-массив объектов.
+Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
+Если по дням нет конкретных деталей (просто «афиша на неделю», «3 дня живой музыки», расписание без имён) — верни [].
+ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
 Каждый объект:
 {{
   "date": "YYYY-MM-DD или null",
@@ -248,12 +251,14 @@ _GENRE_RULES: list[tuple[list[str], str]] = [
     (["панк", "punk"],                                                         "панк-рок"),
     (["метал", "metal", "radio tapok", "blackened"],                           "метал"),
     (["хип-хоп", "hip-hop", "хип хоп", "рэп", "rap"],                        "хип-хоп"),
-    (["джаз", "jazz", "свинг", "swing", "блюз", "blues"],                    "джаз"),
+    (["джаз", "jazz", "свинг", "swing"],                                      "джаз"),
+    (["блюз", "blues", "blues night"],                                        "блюз"),
     (["симфони", "камерн", "опер", "сонат", "классическ"],                    "классика"),
     (["хор сретен", "мужской хор", "женский хор", "детский хор", "хоровой"], "хоровая"),
     (["оркестр русских народных", "народный оркестр"],                         "классика"),
+    (["духовой оркестр", "эстрадно-духовой", "духовой ансамбль"],              "классика"),
     (["этно", "этническ", "уутай"],                                           "этно"),
-    (["народн", "народная"],                                                   "народная"),
+    (["народн", "народная", "фолк", "folk"],                                   "фолк"),
     (["авторская", "авторские", "авторской"],                                  "авторская"),
     (["музыкальное лото", "угадыванием хитов", "музыкальный квиз"],           "интерактив"),
     (["инди", "indie"],                                                        "инди"),
@@ -265,6 +270,29 @@ _GENRE_RULES: list[tuple[list[str], str]] = [
     (["поп", "pop"],                                                           "поп"),
     (["квн", "юмор", "комедия", "стендап"],                                   "юмор"),
     (["кавер", "cover"],                                                       "каверы"),
+    # — расширенные правила —
+    (["трибьют", "tribute"],                                                   "рок"),
+    (["киномаёвка", "кинофест"],                                               "поп"),
+    (["песни побед", "день побед", "9 мая", "военн", "катюш"],                "поп"),
+    (["виолончель", "cello", "виолончели"],                                    "классика"),
+    (["скрипач", "скрипка", "скрипк"],                                         "классика"),
+    (["пианин", "фортепиано", "рояль"],                                        "классика"),
+    (["балет", "танц"],                                                        "другое"),
+    (["кельтск", "средневеков", "барбакан"],                                   "фолк"),
+    (["drum'n'bass", "drum and bass", "dnb", "breakbeat"],                    "поп"),
+    (["trance", "goa trance", "транс"],                                        "поп"),
+    (["jungle", "джангл"],                                                     "поп"),
+    (["house", "хаус", "mtv hits", "mtv хиты"],                                "поп"),
+    (["диско", "disco", "disco time"],                                         "поп"),
+    (["dj-сет", "dj сет", "dj"],                                               "поп"),
+    (["живая музыка на пляже", "живая музыка на набережной"],                  "поп"),
+    (["настойк", "дегустац"],                                                  "другое"),
+    (["сказки с оркестром", "незнайк"],                                        "классика"),
+    (["чехов в музыке"],                                                       "классика"),
+    (["песни любимого кино", "песни из кино"],                                 "поп"),
+    (["самая красивая музыка"],                                                "классика"),
+    (["танцуем все", "танцевальная вечеринка"],                                "поп"),
+    (["открытие фестиваля", "открытие сезона"],                                "поп"),
 ]
 
 
@@ -276,7 +304,7 @@ def detect_genre(event: dict) -> "str | None":
         if key in ch:
             return genre
 
-    # 2. По тексту — ищем в описании + артисте (в нижнем регистре)
+    # 2. По тексту — ищем в описании + артисте + event_type (в нижнем регистре)
     text = " ".join(filter(None, [
         event.get("description") or "",
         event.get("artist") or "",
@@ -286,6 +314,137 @@ def detect_genre(event: dict) -> "str | None":
     for keywords, genre in _GENRE_RULES:
         if any(kw in text for kw in keywords):
             return genre
+
+    # 3. Фолбэк по event_type
+    etype = (event.get("event_type") or "").lower()
+    if etype in ("трибьют", "tribute"):
+        return "рок"
+    if etype == "вечеринка":
+        return "поп"
+    if etype == "фестиваль":
+        return "рок"
+    if etype == "концерт":
+        return "поп"
+
+    return None
+
+
+def _extract_artist_from_description(desc: str) -> "str | None":
+    """Пытается извлечь имя артиста из описания когда artist=null."""
+    if not desc:
+        return None
+    import re
+
+    # Паттерны: "Выступление X", "X выступает", "Концерт X", "Живая музыка X"
+    patterns = [
+        r"[Вв]ыступление\s+([А-ЯЁ][А-Яа-яё«»\s\-\.\,]+?)(?:\s+в\s+|\s+на\s+|\s+—\s+|\s+—\s+|\s+исполняет|\s+с\s+лидером|\s+—\s+|\s+\(|$)",
+        r"([А-ЯЁ][А-Яа-яё«»\s\-\.\,]+?)\s+выступает",
+        r"[Кк]онцерт\s+(?:дуэта\s+)?(?:группы\s+)?([А-ЯЁ][А-Яа-яё«»\s\-\.\,]+?)(?:\s+в\s+|\s+на\s+|\s+—\s+|\s+от\s+|$)",
+        r"[Жж]ивая\s+музыка[:\s]+([А-ЯЁ][А-Яа-яё«»\s\-\.\,]+?)(?:\s+—\s+|\s+на\s+|\s+в\s+|$)",
+        r"DJ\s+([А-ЯЁA-Za-z][А-Яа-яёA-Za-z0-9\s\-\,]+?)(?:\s+—\s+|\s+сет|\s+в\s+|$)",
+        r"DJ-сет\s+(?:с\s+)?([А-ЯЁA-Za-z][А-Яа-яёA-Za-z0-9\s\-\,]+?)(?:\s+с\s+|\s+до\s+|$)",
+        r"группа\s+«([^»]+)»",
+        r"«([^»]+)»\s+исполняет",
+    ]
+
+    for pat in patterns:
+        m = re.search(pat, desc)
+        if m:
+            artist = m.group(1).strip().rstrip(".,")
+            if len(artist) > 2 and len(artist) < 80:
+                return artist
+
+    return None
+
+
+def _fallback_artist(event: dict) -> "str | None":
+    """Фолбэк артиста по event_type и описанию."""
+    import re
+    etype = (event.get("event_type") or "").lower()
+    desc = event.get("description") or ""
+    desc_lower = desc.lower()
+
+    # Музыкальное лото / квиз
+    if "музыкальное лото" in desc_lower or "музыкальный квиз" in desc_lower:
+        return "Музыкальное лото"
+
+    # DJ-сеты без имени
+    if etype == "вечеринка" and ("dj" in desc_lower or "диджей" in desc_lower):
+        return "DJ-сет"
+
+    # Звукотерапия / медитация
+    if "звукотерап" in desc_lower or "тибетск" in desc_lower or "гонг" in desc_lower:
+        return "Звукотерапия"
+
+    # Квартирник / акустика без имени
+    if "квартирник" in desc_lower:
+        return "Квартирник"
+
+    # Театральная постановка / спектакль
+    if "спектакль" in desc_lower or "театральная постановка" in desc_lower:
+        m = re.search(r"«([^»]+)»", desc)
+        if m:
+            return f"Спектакль «{m.group(1)}»"
+        return "Спектакль"
+
+    # Фестиваль — берём название из описания
+    if etype == "фестиваль":
+        m = re.search(r"«([^»]+)»", desc)
+        if m:
+            return m.group(1)
+        return "Фестиваль"
+
+    # Концерт — ищем название в кавычках
+    if etype == "концерт":
+        m = re.search(r"[Кк]онцерт\s+«([^»]+)»", desc)
+        if m:
+            return m.group(1)
+        m = re.search(r"«([^»]+)»", desc)
+        if m:
+            return m.group(1)
+        # "Живой концерт X" / "Летний концерт"
+        m = re.search(r"[Жж]ивой\s+концерт\s+«([^»]+)»", desc)
+        if m:
+            return m.group(1)
+        if "живой концерт" in desc_lower:
+            return "Живой концерт"
+        if "музыкальный вечер" in desc_lower:
+            return "Музыкальный вечер"
+        if "летний концерт" in desc_lower:
+            return "Летний концерт"
+        if "живой звук" in desc_lower or "живого звука" in desc_lower:
+            return "Живой звук"
+        if "открытие сезона" in desc_lower:
+            return "Открытие сезона"
+        if "литературно-музыкальная" in desc_lower:
+            m = re.search(r"«([^»]+)»", desc)
+            if m:
+                return m.group(1)
+            return "Литературно-музыкальная гостиная"
+        if "открытие летнего" in desc_lower:
+            return "Открытие летнего сезона"
+
+    # Вечеринка — можно взять тему
+    if etype == "вечеринка":
+        m = re.search(r"в\s+стиле\s+([А-ЯЁA-Za-z][А-Яа-яёA-Za-z0-9\s\-]+?)(?:\s+в\s+|\s+на\s+|\.)", desc_lower)
+        if m:
+            return f"Вечеринка {m.group(1).strip().title()}"
+        return "Вечеринка"
+
+    # Дегустация
+    if "дегустац" in desc_lower:
+        return "Дегустация"
+
+    # Акция / массовое мероприятие
+    if "акция" in desc_lower or "массовое" in desc_lower:
+        return "Массовое мероприятие"
+
+    # Этнокультурный проект / показы
+    if "этнокультурн" in desc_lower or "показ" in desc_lower:
+        m = re.search(r"«([^»]+)»", desc)
+        if m:
+            return m.group(1)
+        return "Этно-проект"
 
     return None
 
@@ -551,14 +710,55 @@ def main():
 
     print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
 
-    # Проставляем жанр там, где его ещё нет
+    # Убираем события-призраки: одинаковое описание + общий артист (афиши без деталей)
+    ghost_before = len(merged)
+    ghost_artists = {"живой звук", "музыкальный вечер", "концерт", "живой концерт"}
+    by_source: dict[str, list] = {}
+    for i, e in enumerate(merged):
+        by_source.setdefault(e.get("source_url") or "", []).append(i)
+    keep = set(range(len(merged)))
+    for url, indices in by_source.items():
+        if len(indices) < 2 or not url:
+            continue
+        descs = {merged[i].get("description", "") for i in indices}
+        if len(descs) == 1:
+            artists = {_normalize(merged[i].get("artist") or "") for i in indices}
+            if artists & ghost_artists:
+                print(f"  призрак: {url} — {list(artists)}")
+                for i in indices:
+                    keep.discard(i)
+    merged = [e for i, e in enumerate(merged) if i in keep]
+    ghost_removed = ghost_before - len(merged)
+    if ghost_removed:
+        print(f"Убрано событий-призраков: {ghost_removed}")
+
+    # Проставляем жанр и артиста там, где их ещё нет
     genre_added = 0
+    artist_extracted = 0
+    artist_fallback = 0
     for e in merged:
+        # Фолбэк артиста из описания
+        if not e.get("artist"):
+            extracted = _extract_artist_from_description(e.get("description") or "")
+            if extracted:
+                e["artist"] = extracted
+                artist_extracted += 1
+            else:
+                # Фолбэк по типу события
+                fb = _fallback_artist(e)
+                if fb:
+                    e["artist"] = fb
+                    artist_fallback += 1
+        # Жанр
         if not e.get("genre"):
             g = detect_genre(e)
             if g:
                 e["genre"] = g
                 genre_added += 1
+    if artist_extracted:
+        print(f"Артист извлечён из описания: {artist_extracted} событий")
+    if artist_fallback:
+        print(f"Артист-фолбэк по типу: {artist_fallback} событий")
     if genre_added:
         print(f"Жанр определён автоматически: {genre_added} событий")
 
