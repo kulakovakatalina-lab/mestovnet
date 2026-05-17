@@ -393,35 +393,27 @@ a { color: inherit; text-decoration: none; }
 }
 .artist-meta { font-size: 13px; color: var(--muted); }
 
-.map-block {
+.venue-info {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
-  margin-bottom: 0;
+  padding: 16px;
 }
-#map-container {
-  width: 100%;
-  height: 280px;
-}
-.map-loading {
-  height: 280px;
-  background: oklch(95% 0.003 240);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-size: 13px;
-}
-.map-address {
-  padding: 14px 16px;
+.venue-name {
   font-size: 14px;
   color: var(--fg);
-  border-top: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  margin-bottom: 10px;
 }
-.map-address svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--muted); }
+.venue-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  transition: opacity 0.12s;
+}
+.venue-map-link:hover { opacity: 0.75; }
+.venue-map-link svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 .event-sidebar {
   padding-top: 40px;
@@ -979,15 +971,15 @@ function render(event) {
             </div>
 
             <div class="section-label">Место проведения</div>
-            <div class="map-block" id="map-block">
-              <div class="map-loading">Загрузка карты...</div>
-              <div class="map-address">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                  <circle cx="12" cy="9" r="2.5"/>
+            <div class="venue-info">
+              <div class="venue-name">${event.venue || '—'}, ${event.source_city || '—'}</div>
+              <a href="https://yandex.ru/maps/?text=${encodeURIComponent((event.venue || '') + ', ' + (event.source_city || '') + ', Крым')}" target="_blank" rel="noopener" class="venue-map-link">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"/>
+                  <circle cx="8" cy="6.5" r="1.75"/>
                 </svg>
-                ${event.venue || '—'}, ${event.source_city || '—'}
-              </div>
+                Открыть на Яндекс Картах
+              </a>
             </div>
           </div>
         </div>
@@ -1008,33 +1000,8 @@ function render(event) {
 
   document.getElementById('content').innerHTML = html;
   updateLoadMoreBtn();
-  loadMap(event.venue, event.source_city);
 }
 
-async function loadMap(venue, city) {
-  console.log('loadMap called:', venue, city);
-  const block = document.getElementById('map-block');
-  if (!block) { console.log('no map-block'); return; }
-  if (!venue || !city) { console.log('no venue/city'); return; }
-  try {
-    const q = encodeURIComponent(`${venue}, ${city}, Крым`);
-    console.log('nominatim query:', q);
-    const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${q}&limit=1&accept-language=ru`);
-    console.log('nominatim status:', res.status);
-    const data = await res.json();
-    console.log('nominatim data:', data);
-    if (data.length) {
-      const { lat, lon } = data[0];
-      console.log('coords:', lat, lon);
-      block.querySelector('.map-loading').outerHTML = `<iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?ll=${lon},${lat}&z=16&l=map&pt=${lon},${lat},pm2rdm" allowfullscreen loading="lazy" style="width:100%;height:280px;border:none;display:block;"></iframe>`;
-    } else {
-      console.log('no results, fallback');
-      block.querySelector('.map-loading').outerHTML = `<iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?text=${q}&z=14&l=map" allowfullscreen loading="lazy" style="width:100%;height:280px;border:none;display:block;"></iframe>`;
-    }
-  } catch (e) {
-    console.error('loadMap error:', e);
-    block.querySelector('.map-loading').outerHTML = `<iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?text=${encodeURIComponent(venue + ', ' + city)}&z=14&l=map" allowfullscreen loading="lazy" style="width:100%;height:280px;border:none;display:block;"></iframe>`;
-  }
 }
 function loadMore() {
   shownCount += 8;
