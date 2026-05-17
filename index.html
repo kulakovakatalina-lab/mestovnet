@@ -543,6 +543,7 @@ footer {
 .bg-blues   { background: linear-gradient(135deg, oklch(22% 0.06 270), oklch(30% 0.10 265)); }
 .bg-classic { background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }
 .bg-pop     { background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }
+.bg-default { background: linear-gradient(135deg, oklch(22% 0.06 255), oklch(14% 0.04 270), oklch(18% 0.08 220)); }
 
 .loading {
   text-align: center;
@@ -702,6 +703,7 @@ const CITY_LABELS = {
 const MONTHS_GEN = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
 const DOW = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 
+const starIcon = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`;
 const genreIcon = (g) => `<svg width="40" height="40" viewBox="0 0 80 80" fill="none"><path d="M28 56V28l36-8v8L36 36v20a8 8 0 1 1-8 0z" fill="white" opacity=".25"/><circle cx="28" cy="56" r="8" fill="white" opacity=".25"/><circle cx="64" cy="28" r="8" fill="white" opacity=".25"/></svg>`;
 
 function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
@@ -774,7 +776,7 @@ function renderFeatured(ev) {
   if (!ev) { document.getElementById('featured').innerHTML = ''; return; }
   const imgHtml = ev.image
     ? `<img src="${ev.image}" alt="${ev.artist || ''}" onerror="this.style.display='none'">`
-    : `<div class="featured-poster-bg">${genreIcon(ev.genre)}</div>`;
+    : `<div class="featured-poster-bg">${starIcon}</div>`;
 
   document.getElementById('featured').innerHTML = `
     <a href="event.html?idx=${ev.globalIdx}" class="featured-link">
@@ -817,8 +819,8 @@ function renderEvents(events) {
   grid.innerHTML = events.map((ev, i) => {
 
     const imgHtml = ev.image
-      ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-${ev.genre}')">`
-      : `<div class="bg-${ev.genre}" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
+      ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
+      : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
 
     return `<a href="event.html?idx=${ev.globalIdx}" class="event-card" data-city="${ev.city}">
       <div class="card-img">${imgHtml}</div>
