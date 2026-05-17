@@ -312,8 +312,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  background: var(--fg);
-  color: var(--bg);
+  background: oklch(58% 0.18 255 / 0.10);
+  color: var(--accent);
   border-radius: var(--radius-sm);
   font-size: 13px;
   font-weight: 600;
@@ -322,10 +322,6 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   text-decoration: none;
 }
 .row-btn:hover { opacity: 0.80; }
-.row-btn.free {
-  background: oklch(58% 0.18 255 / 0.10);
-  color: var(--accent);
-}
 
 .pill {
   display: inline-block;
@@ -639,9 +635,9 @@ function renderEvents(events) {
         </div>
       </div>
       <div class="row-right">
-        <span class="row-time">${ev.time || '—'}</span>
+        ${ev.time ? `<span class="row-time">${ev.time}</span>` : ''}
         <span class="row-price">${ev.priceDisplay}</span>
-        <span class="row-btn ${isFree ? 'free' : ''}">Подробнее</span>
+        <span class="row-btn">Подробнее</span>
       </div>
     </a>`;
   }).join('');
