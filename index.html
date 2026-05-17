@@ -785,10 +785,11 @@ function renderFeatured(ev) {
         <h2 class="featured-artist">${ev.artist || '—'}</h2>
         <p class="featured-desc">${ev.description || ''}</p>
         <div class="featured-meta">
+          ${ev.time ? `
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"></rect><path d="M2 7h12M5 1.5v3M11 1.5v3"></path></svg>
-            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${ev.time || '—'}
-          </div>
+            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${ev.time}
+          </div>` : ''}
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"></path><circle cx="8" cy="6.5" r="1.75"></circle></svg>
             ${ev.venue || '—'} · ${ev.source_city || '—'}
@@ -832,7 +833,7 @@ function renderEvents(events) {
         <div class="event-artist">${ev.artist || '—'}</div>
         <div class="event-venue">${ev.venue || '—'} · ${ev.source_city || '—'}</div>
         <div class="event-footer">
-          <span class="event-time">${ev.time || '—'}</span>
+          ${ev.time ? `<span class="event-time">${ev.time}</span>` : ''}
           <span class="event-price">${ev.priceDisplay}</span>
         </div>
       </div>
