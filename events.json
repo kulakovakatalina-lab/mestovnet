@@ -341,17 +341,21 @@
   {
     "date": "2026-05-02",
     "time": "17:00",
-    "artist": "Камерный оркестр «Новая гармония»",
+    "artist": "Камерный оркестр «Новая гармония», Donna Cello",
     "event_type": "концерт",
-    "venue": "Пещера «Мраморная»",
-    "price": null,
-    "description": "Открытие нового концертного сезона с программой «Звуковой сплав 6» под руководством дирижёра Дениса Карлова. Классика и современные мотивы в уникальной акустике пещеры со сталактитами.",
-    "source_city": "Симферополь",
-    "source_channel": "krymskiye_dela",
-    "source_url": "https://www.instagram.com/p/DXrLAezRLTp/",
-    "image": "/images/events/76393de77646c220b97b7410dfcb7998.jpg",
-    "post_date": "2026-04-28T12:00:00+00:00",
-    "genre": "классика"
+    "venue": "Скельская пещера",
+    "price": "1500 рублей",
+    "description": "Концерт дуэта виолончелей Donna Cello в Скельской пещере. В программе — мелодии из кинофильмов.",
+    "source_city": "Севастополь",
+    "source_channel": "crimea_event",
+    "genre": "классика",
+    "source_url": "https://t.me/crimea_event/5521",
+    "images": [
+      "/images/events/d7f2fe4aa1996a2d99615cde3da280b4.jpg",
+      "/images/events/76393de77646c220b97b7410dfcb7998.jpg"
+    ],
+    "image": "/images/events/d7f2fe4aa1996a2d99615cde3da280b4.jpg",
+    "post_date": "2026-05-01T10:03:36+00:00"
   },
   {
     "date": "2026-05-01",
@@ -1453,21 +1457,6 @@
     "genre": "другое"
   },
   {
-    "date": "2026-05-02",
-    "time": "17:00",
-    "artist": "Donna Cello",
-    "event_type": "концерт",
-    "venue": "Скельская пещера",
-    "price": "1500 рублей",
-    "description": "Концерт дуэта виолончелей Donna Cello в Скельской пещере. В программе — мелодии из кинофильмов.",
-    "source_channel": "crimea_event",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-01T10:03:36+00:00",
-    "image": "/images/events/d7f2fe4aa1996a2d99615cde3da280b4.jpg",
-    "source_url": "https://t.me/crimea_event/5521",
-    "genre": "классика"
-  },
-  {
     "date": "2026-05-17",
     "time": "18:30",
     "artist": "Крымский академический симфонический оркестр",
@@ -1785,17 +1774,21 @@
   {
     "date": "2026-05-30",
     "time": "19:00",
-    "artist": "Группа «Лесоповал»",
+    "artist": "Группа «Лесоповал», Лесоповал",
     "event_type": "концерт",
-    "venue": "ДК «Корабел», Театральный зал",
+    "venue": "КДК Корабел",
     "price": null,
-    "description": "Гастрольный концерт группы «Лесоповал».",
+    "description": "Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.",
+    "source_city": "Керчь",
     "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-05-09T11:59:02+00:00",
-    "image": "/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg",
+    "genre": "поп",
     "source_url": "https://t.me/afisha_crimea/7419",
-    "genre": "поп"
+    "images": [
+      "/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg",
+      "/images/events/26ce7743e97006fada43acafedf0269a.jpg"
+    ],
+    "image": "/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg",
+    "post_date": "2026-05-10T17:20:46+00:00"
   },
   {
     "date": "2026-06-07",
@@ -1815,7 +1808,7 @@
   {
     "date": "2026-05-17",
     "time": "17:30",
-    "artist": "Андрей Ясинский",
+    "artist": "Андрей Ясинский, Открытие сезона",
     "event_type": "концерт",
     "venue": "Крымская астрофизическая обсерватория",
     "price": null,
@@ -1824,6 +1817,10 @@
     "source_channel": "dlyadushi_Crimea",
     "genre": "классика",
     "source_url": "https://t.me/dlyadushi_Crimea/6135",
+    "images": [
+      "/images/events/b266ae57ddc2e2153660e22a159c615c.jpg",
+      "/images/events/b1940abfb5148ab0873c08debc3dd043.jpg"
+    ],
     "image": "/images/events/b266ae57ddc2e2153660e22a159c615c.jpg",
     "post_date": "2026-05-17T10:24:06+00:00"
   },
@@ -2032,21 +2029,6 @@
     "description": "Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.",
     "source_channel": "afisha_crimea",
     "source_city": "Симферополь",
-    "post_date": "2026-05-10T17:20:46+00:00",
-    "image": "/images/events/26ce7743e97006fada43acafedf0269a.jpg",
-    "source_url": "https://t.me/afisha_crimea/7425",
-    "genre": "поп"
-  },
-  {
-    "date": "2026-05-30",
-    "time": "19:00",
-    "artist": "Лесоповал",
-    "event_type": "концерт",
-    "venue": "КДК Корабел",
-    "price": null,
-    "description": "Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.",
-    "source_channel": "afisha_crimea",
-    "source_city": "Керчь",
     "post_date": "2026-05-10T17:20:46+00:00",
     "image": "/images/events/26ce7743e97006fada43acafedf0269a.jpg",
     "source_url": "https://t.me/afisha_crimea/7425",
@@ -2475,21 +2457,6 @@
     "genre": "поп"
   },
   {
-    "date": "2026-05-17",
-    "time": "17:30",
-    "artist": "Открытие сезона",
-    "event_type": "концерт",
-    "venue": "Обсерватория (под куполом телескопа)",
-    "price": null,
-    "description": "Открытие сезона: концерт под куполом телескопа в посёлке Научный. Два сеанса — 17:30 и 20:00.",
-    "source_city": "Крым",
-    "source_channel": "krymskiye_dela",
-    "genre": "поп",
-    "source_url": "https://t.me/krymskiye_dela/5456",
-    "image": "/images/events/b1940abfb5148ab0873c08debc3dd043.jpg",
-    "post_date": "2026-05-14T11:41:50+00:00"
-  },
-  {
     "date": "2026-05-23",
     "time": "12:00",
     "artist": "Живая музыка: саксофон и вокал, Живая музыка: скрипка и вокал",
@@ -2772,6 +2739,21 @@
     "image": "/images/events/a754b9b6ef531c25e93cdf0abd29405f.jpg",
     "source_url": "https://t.me/belbekma/1258",
     "genre": "другое"
+  },
+  {
+    "date": "2026-05-18",
+    "time": "21:30",
+    "artist": "Домино",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики",
+    "price": "бесплатно",
+    "description": "Кавер-группа «Домино» исполнит русский рок, поп-рок и неожиданные мешапы. Квартирник около 21:30, не акустика.",
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-16T09:23:24+00:00",
+    "image": "/images/events/cc6c0379c521ffafb66136b2d528dbb2.jpg",
+    "source_url": "https://t.me/rocknroll_92/6612",
+    "genre": "поп-рок"
   },
   {
     "date": null,
