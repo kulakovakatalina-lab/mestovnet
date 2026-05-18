@@ -17,7 +17,7 @@
   {
     "date": "2026-05-02",
     "time": "19:00",
-    "artist": "Blackened, Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет, Что ты делаешь?!?!?!, Metallica Tribute",
+    "artist": "Тр, пса, Нет, Крыш, Тавр, да.АРТ, Blackened, дня дождя, Маша Вокс, Сергей Бобунец, Metallica Tribute, Что Ты Делаешь?!! (Москва)",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "600р (бесплатно для подписчиков клуба + репост)",
@@ -27,7 +27,8 @@
     "genre": "метал",
     "source_url": "https://t.me/clubjam/923",
     "images": [
-      "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg"
+      "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
+      "/images/events/cfb58fb55d25949e746b02b0183183d5.jpg"
     ],
     "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
     "post_date": "2026-05-02T10:13:03+00:00"
@@ -35,7 +36,7 @@
   {
     "date": "2026-05-09",
     "time": null,
-    "artist": "Nirvana Tribute, Nirvana Tribute by Insomnia, Insomnia, Insomnia (Nirvana Tribute)",
+    "artist": "Insomnia, Nirvana Tribute",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -55,7 +56,7 @@
   {
     "date": "2026-05-16",
     "time": null,
-    "artist": "Антагония, Pulsa Di Nura, The Lone Dark Side, Johnny Dow!!, Ядохимикаты, Официально Устроен",
+    "artist": "я, м, ц, Оф, каты, Антагон, Johnny Dow!!, Pulsa Di Nura, ально Устроен, The Lone Dark Side",
     "event_type": "фестиваль",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -70,7 +71,7 @@
   {
     "date": "2026-05-01",
     "time": "19:00",
-    "artist": "Черный Доктор Солнечной Долины, Angle Of Wonders, Иччи, Крыша Мира, Нарратор, Динаминатор, Фани, Ревайндер",
+    "artist": "Д, ны, ра, Ичч, нам, Фан, натор, Крыша М, Angle Of Wonders",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -86,17 +87,21 @@
   {
     "date": "2026-05-03",
     "time": "19:00",
-    "artist": "ОРЕВО, Свобода слова, Манекен, Трипса, Что Ты Делаешь?!?!?!!",
+    "artist": "Тр, пса, ОРЕВО, Манекен, BELOBOKA, дня дождя, Runa Project, Свобода слова, Что Ты Делаешь?!?!?!!",
     "event_type": "концерт",
     "venue": "Народный бар",
     "price": "500 рублей",
     "description": "Панк-рок вечер с участием местных и приезжих групп. Вход 500 рублей, билеты на месте.",
     "source_city": "Ялта",
     "source_channel": "nb_yalta",
+    "genre": "панк-рок",
     "source_url": "https://t.me/nb_yalta/1938",
+    "images": [
+      "/images/events/d7df5c4dce24caf3f2dcc9ed35bac688.jpg",
+      "/images/events/cfb58fb55d25949e746b02b0183183d5.jpg"
+    ],
     "image": "/images/events/d7df5c4dce24caf3f2dcc9ed35bac688.jpg",
-    "post_date": "2026-05-02T11:55:07+00:00",
-    "genre": "панк-рок"
+    "post_date": "2026-05-02T11:55:07+00:00"
   },
   {
     "date": "2026-05-01",
@@ -116,7 +121,7 @@
   {
     "date": "2026-05-23",
     "time": "18:00",
-    "artist": "Оркестр русских народных инструментов",
+    "artist": "х народных, нструментов, Оркестр русск",
     "event_type": "концерт",
     "venue": "Музыкальное училище им. П.И. Чайковского, ул. Набережная имени 60-летия СССР, 31, Симферополь",
     "price": null,
@@ -131,7 +136,7 @@
   {
     "date": "2026-06-14",
     "time": "18:00",
-    "artist": "Андрей Ясинский",
+    "artist": "й, нск",
     "event_type": "концерт",
     "venue": "Пещера Мраморная",
     "price": null,
@@ -146,7 +151,7 @@
   {
     "date": "2026-05-02",
     "time": "18:00",
-    "artist": "Балет арт-кластера «Таврида», Группа «Т», Группа «Хвоя», Иван Алексеев-Лару и группа «Время Настоящего»",
+    "artist": "Группа «Т», да», Группа «Хвоя», Иван Алексеев-Лару",
     "event_type": "другое",
     "venue": "ТАВРИДА.АРТ",
     "price": null,
@@ -161,7 +166,7 @@
   {
     "date": "2026-05-01",
     "time": "20:15",
-    "artist": "ХВОЯ, Иван Алексеев-Лару, Дмитрий Колоницкий",
+    "artist": "й, Дм, тр, цк, ХВОЯ, Иван Алексеев-Лару",
     "event_type": "концерт",
     "venue": "Крымские Дела",
     "price": null,
@@ -175,38 +180,8 @@
   },
   {
     "date": "2026-05-02",
-    "time": "20:00",
-    "artist": "Сергей Бобунец, Три дня дождя, Таврида.АРТ, Сергей Бобунец, Маша Вокс",
-    "event_type": "трибьют",
-    "venue": "Крымские Дела",
-    "price": null,
-    "description": "Трибьют-шоу фильмам «Брат» и «Брат 2» с хитами «Крылья», «Ту-лу-ла», «Дорога», «Вечно молодой». Выступают Сергей Бобунец, группа «Три дня дождя» и артисты лейбла «Таврида.АРТ».",
-    "source_city": "Севастополь",
-    "source_channel": "krymskiye_dela",
-    "source_url": "https://www.instagram.com/p/DXyMwM7DGOe/",
-    "image": "/images/events/cfb58fb55d25949e746b02b0183183d5.jpg",
-    "post_date": "2026-05-01T05:30:00+00:00",
-    "genre": "рок"
-  },
-  {
-    "date": "2026-05-03",
-    "time": "19:30",
-    "artist": "Три дня дождя, BELOBOKA, Runa Project",
-    "event_type": "концерт",
-    "venue": "Главная сцена у АРТ-ЭКСПО",
-    "price": null,
-    "description": "Музыкальное выступление участников творческого молодёжного сообщества современной музыки Runa Project в рамках закрытия фестиваля Киномаёвка.",
-    "source_city": "Судак",
-    "source_channel": "krymskiye_dela",
-    "source_url": "https://www.instagram.com/p/DXyMwM7DGOe/",
-    "image": "/images/events/cfb58fb55d25949e746b02b0183183d5.jpg",
-    "post_date": "2026-05-01T05:30:00+00:00",
-    "genre": "инди-рок"
-  },
-  {
-    "date": "2026-05-02",
     "time": "18:00",
-    "artist": "Пицца, Beautiful Boys",
+    "artist": "П, цца, Beautiful Boys",
     "event_type": "концерт",
     "venue": "Мрия, Бальный зал",
     "price": "null",
@@ -326,7 +301,7 @@
   {
     "date": "2026-05-09",
     "time": "17:00",
-    "artist": "Оркестр «Яника», Оркестр «Янина»",
+    "artist": "ка», на», Оркестр «Ян",
     "event_type": "концерт",
     "venue": "Курортный комплекс «Аквамарин», летняя сцена",
     "price": null,
@@ -341,7 +316,7 @@
   {
     "date": "2026-05-02",
     "time": "17:00",
-    "artist": "Камерный оркестр «Новая гармония», Donna Cello",
+    "artist": "я», Donna Cello",
     "event_type": "концерт",
     "venue": "Скельская пещера",
     "price": "1500 рублей",
@@ -360,7 +335,7 @@
   {
     "date": "2026-05-01",
     "time": "17:00",
-    "artist": "Sevastopol Jazz (@sevastopol_jazz), Sevastopol Jazz",
+    "artist": "Sevastopol Jazz",
     "event_type": "концерт",
     "venue": "Егоровский зал винзавода Массандра",
     "price": null,
@@ -382,10 +357,13 @@
     "description": "Radio Tapok в Консоль Спорт, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "метал",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/78a4094cc5dc5673c86ba9cf30484d01.png"
+    ],
     "image": "/images/events/78a4094cc5dc5673c86ba9cf30484d01.png",
-    "post_date": "2026-06-25",
-    "genre": "метал"
+    "post_date": "2026-06-25"
   },
   {
     "date": "2026-05-10",
@@ -412,10 +390,13 @@
     "description": "ГУДТАЙМС в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/010c7bc5be1509afa4b359aed83ca806.jpg"
+    ],
     "image": "/images/events/010c7bc5be1509afa4b359aed83ca806.jpg",
-    "post_date": "2026-07-12",
-    "genre": "поп"
+    "post_date": "2026-07-12"
   },
   {
     "date": "2026-07-19",
@@ -427,10 +408,13 @@
     "description": "Ramil’ в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/c963bf29a1169f9966ef014494b955eb.jpg"
+    ],
     "image": "/images/events/c963bf29a1169f9966ef014494b955eb.jpg",
-    "post_date": "2026-07-19",
-    "genre": "поп"
+    "post_date": "2026-07-19"
   },
   {
     "date": "2026-07-26",
@@ -442,10 +426,13 @@
     "description": "Ева Польна в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/6c56d21aea75ad2d56b19ecb9a29c405.jpg"
+    ],
     "image": "/images/events/6c56d21aea75ad2d56b19ecb9a29c405.jpg",
-    "post_date": "2026-07-26",
-    "genre": "поп"
+    "post_date": "2026-07-26"
   },
   {
     "date": "2026-08-02",
@@ -457,10 +444,13 @@
     "description": "Найк Борзов в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "рок",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/cc7e49e70eb311cd33b996f3d275b261.png"
+    ],
     "image": "/images/events/cc7e49e70eb311cd33b996f3d275b261.png",
-    "post_date": "2026-08-02",
-    "genre": "рок"
+    "post_date": "2026-08-02"
   },
   {
     "date": "2026-08-09",
@@ -472,10 +462,13 @@
     "description": "Нэнси в Музыкальный театр, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg"
+    ],
     "image": "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg",
-    "post_date": "2026-08-09",
-    "genre": "поп"
+    "post_date": "2026-08-09"
   },
   {
     "date": "2026-08-15",
@@ -487,10 +480,13 @@
     "description": "Градусы в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "хип-хоп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/3d95c335021cdf782fd6ee03b025b48e.jpg"
+    ],
     "image": "/images/events/3d95c335021cdf782fd6ee03b025b48e.jpg",
-    "post_date": "2026-08-15",
-    "genre": "хип-хоп"
+    "post_date": "2026-08-15"
   },
   {
     "date": "2026-08-22",
@@ -502,10 +498,13 @@
     "description": "Три дня дождя в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "рок",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/tri-dnia-dozhdia-2026-08-22?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/553b66b9818479f49107b7b921dad133.jpg"
+    ],
     "image": "/images/events/553b66b9818479f49107b7b921dad133.jpg",
-    "post_date": "2026-08-22",
-    "genre": "рок"
+    "post_date": "2026-08-22"
   },
   {
     "date": "2026-08-23",
@@ -517,10 +516,13 @@
     "description": "Моя Мишель в Centrum, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "рок",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/b9dcca237131d9fbb8b46202f41c18a8.jpg"
+    ],
     "image": "/images/events/b9dcca237131d9fbb8b46202f41c18a8.jpg",
-    "post_date": "2026-08-23",
-    "genre": "рок"
+    "post_date": "2026-08-23"
   },
   {
     "date": "2026-10-20",
@@ -532,10 +534,13 @@
     "description": "Helvegen в Депо, Симферополь.",
     "source_city": "Симферополь",
     "source_channel": "yandex_afisha",
+    "genre": "фолк-метал",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/12216bbe04fad74b3da1812de62bad95.jpg"
+    ],
     "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg",
-    "post_date": "2026-10-20",
-    "genre": "фолк-метал"
+    "post_date": "2026-10-20"
   },
   {
     "date": "2026-07-24",
@@ -684,7 +689,7 @@
   {
     "date": "2026-07-01",
     "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
+    "artist": "Jawa. Х, ты «Сектор Газа»",
     "event_type": "концерт",
     "venue": "Корабел",
     "price": "от 2 000 ₽",
@@ -714,7 +719,7 @@
   {
     "date": "2026-05-02",
     "time": "21:30",
-    "artist": "Домино",
+    "artist": "но, Дом",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": null,
@@ -729,7 +734,7 @@
   {
     "date": "2026-05-09",
     "time": "14:00",
-    "artist": "Гитара у костра",
+    "artist": "Г, тара у костра",
     "event_type": "концерт",
     "venue": "Байдарская Долина, Alibair",
     "price": "1100₽, детский 800₽",
@@ -789,7 +794,7 @@
   {
     "date": "2026-05-23",
     "time": "17:00",
-    "artist": "Чемпионы высшей лиги КВН: команда «Союз»",
+    "artist": "г, Чемп, оны высшей л, КВН: команда «Союз»",
     "venue": "Дом офицеров флота",
     "event_type": "концерт",
     "price": "от 2 500 ₽",
@@ -819,7 +824,7 @@
   {
     "date": "2026-06-27",
     "time": "18:00",
-    "artist": "Оркестр при свечах «Аура Шоу». Суперхиты 90-х",
+    "artist": "ты 90-х, Оркестр пр, свечах «Аура Шоу». Суперх",
     "venue": "Центр культуры и искусства",
     "event_type": "концерт",
     "price": "от 1 590 ₽",
@@ -834,7 +839,7 @@
   {
     "date": "2026-06-30",
     "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
+    "artist": "Jawa. Х, ты «Сектор Газа»",
     "venue": "Дом офицеров флота",
     "event_type": "концерт",
     "price": "от 2 300 ₽",
@@ -864,7 +869,7 @@
   {
     "date": "2026-05-03",
     "time": "21:00",
-    "artist": "Дегустация",
+    "artist": "я, Дегустац",
     "event_type": "другое",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -878,23 +883,27 @@
   },
   {
     "date": "2026-05-08",
-    "time": "21:00",
-    "artist": "Дима Резник",
+    "time": "19:00",
+    "artist": "нам, натор, ма Резн, Нарратор, Black Tears, Кабель Джек, Circlemakers, Пока не поздно, Черный доктор солнечной дол",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики",
+    "venue": "Jam Club",
     "price": "бесплатно",
-    "description": "Акустический кавер-концерт русских рок и поп-рок хитов.",
-    "source_city": "Севастополь",
-    "source_channel": "rocknroll_92",
+    "description": "Modern Rock Heavy Fest — блок Modern Rock & Metal. Несколько групп в одном вечере.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "метал",
     "source_url": "https://t.me/rocknroll_92/6517",
+    "images": [
+      "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
+      "/images/events/723be1e881e61799963f0189107eb321.jpg"
+    ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": null,
-    "genre": "русский рок"
+    "post_date": "2026-05-07T19:44:01+00:00"
   },
   {
     "date": "2026-05-09",
     "time": "21:00",
-    "artist": "Игорь Симдянкин, Вечеринка, Правнук Левитана",
+    "artist": "н, Вечер, Игорь С",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -929,7 +938,7 @@
   {
     "date": "2026-05-15",
     "time": "21:00",
-    "artist": "Сергей Резниченко, Сергей Резниченко (группа «7 шаговъ»)",
+    "artist": "ченко, Сергей Резн",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -944,7 +953,7 @@
   {
     "date": "2026-05-16",
     "time": "21:00",
-    "artist": "Домино, Группа «Домино»",
+    "artist": "но, Дом",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -959,7 +968,7 @@
   {
     "date": "2026-05-17",
     "time": "21:30",
-    "artist": "Евгений Громов, Домино",
+    "artist": "но, Дом, Евген, й Громов",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -993,7 +1002,7 @@
   {
     "date": "2026-05-23",
     "time": "21:00",
-    "artist": "Игорь Симдянкин",
+    "artist": "н, Игорь С",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -1008,7 +1017,7 @@
   {
     "date": "2026-05-24",
     "time": "21:00",
-    "artist": "Максим Шеремет",
+    "artist": "Макс, м Шеремет",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -1023,7 +1032,7 @@
   {
     "date": "2026-05-29",
     "time": "21:00",
-    "artist": "Дима Резник",
+    "artist": "Д, к, ма Резн",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -1068,7 +1077,7 @@
   {
     "date": "2026-05-03",
     "time": "10:00",
-    "artist": "Массовое мероприятие",
+    "artist": "е, ят",
     "event_type": "другое",
     "venue": "Театр имени Бориса Лавренёва, площадь Ушакова, у Матросского клуба",
     "price": "бесплатно",
@@ -1083,7 +1092,7 @@
   {
     "date": "2026-05-08",
     "time": "17:00",
-    "artist": "Jazz trio «АЗ», Анна Шакель",
+    "artist": "Анна Шакель, Jazz trio «АЗ»",
     "event_type": "концерт",
     "venue": "Дворец Дюльбер",
     "price": null,
@@ -1098,7 +1107,7 @@
   {
     "date": "2026-05-02",
     "time": "13:00",
-    "artist": "Скажите Джаз, Май в ритме джаза",
+    "artist": "Скаж, те Джаз, Май в р, тме джаза",
     "event_type": "фестиваль",
     "venue": "Palmira Palace Resort & SPA",
     "price": null,
@@ -1114,7 +1123,7 @@
   {
     "date": "2026-05-01",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Скажите Джаз",
     "price": null,
@@ -1129,7 +1138,7 @@
   {
     "date": "2026-06-01",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Скажите Джаз",
     "price": null,
@@ -1144,7 +1153,7 @@
   {
     "date": "2026-07-01",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Скажите Джаз",
     "price": null,
@@ -1159,7 +1168,7 @@
   {
     "date": "2026-08-01",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Скажите Джаз",
     "price": null,
@@ -1174,7 +1183,7 @@
   {
     "date": "2026-05-02",
     "time": "13:00",
-    "artist": "Квартет Виктора Никулина, Елена Голофеева",
+    "artist": "на, кул, ктора Н, Квартет В",
     "event_type": "концерт",
     "venue": "Отель «Пальмира Палас»",
     "price": "1500 рублей",
@@ -1189,7 +1198,7 @@
   {
     "date": "2026-04-30",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Скажите Джаз",
     "price": null,
@@ -1204,7 +1213,7 @@
   {
     "date": "2026-08-15",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Коктебель (берег Чёрного моря)",
     "price": null,
@@ -1219,7 +1228,7 @@
   {
     "date": "2026-08-16",
     "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Скаж, те Джаз",
     "event_type": "фестиваль",
     "venue": "Коктебель (берег Чёрного моря)",
     "price": null,
@@ -1249,7 +1258,7 @@
   {
     "date": "2026-05-03",
     "time": "18:00",
-    "artist": "Живая музыка",
+    "artist": "Ж, вая музыка",
     "event_type": "концерт",
     "venue": "Пляж «Изумрудный», Отель «Ялта-Интурист»",
     "price": null,
@@ -1324,7 +1333,7 @@
   {
     "date": "2026-05-09",
     "time": "12:00",
-    "artist": "80's / 90's, Aldi",
+    "artist": "Aldi, 80's / 90's",
     "event_type": "концерт",
     "venue": "Массандра Sun",
     "price": null,
@@ -1369,7 +1378,7 @@
   {
     "date": "2026-05-01",
     "time": "12:30",
-    "artist": "Кавер-группа «Будни»",
+    "artist": "Кавер-группа «Будн",
     "event_type": "фестиваль",
     "venue": "Эко-пространство «Али Баир»",
     "price": "2000 руб",
@@ -1399,7 +1408,7 @@
   {
     "date": "2026-04-26",
     "time": "19:20",
-    "artist": "Елена Голофеева, Максим Перов, Руслан Сейдалиев",
+    "artist": "ев, Макс, м Перов, Руслан Сейдал",
     "event_type": "концерт",
     "venue": "Дворец «Дюльбер»",
     "price": null,
@@ -1444,7 +1453,7 @@
   {
     "date": "2026-05-01",
     "time": null,
-    "artist": "Фестиваль",
+    "artist": "Фест, валь",
     "event_type": "фестиваль",
     "venue": "Судакская крепость",
     "price": "бесплатно",
@@ -1459,7 +1468,7 @@
   {
     "date": "2026-05-17",
     "time": "18:30",
-    "artist": "Крымский академический симфонический оркестр",
+    "artist": "й с, ческ, мфон, Крымск, й академ, й оркестр",
     "event_type": "концерт",
     "venue": "Ливадийский дворец",
     "price": null,
@@ -1474,7 +1483,7 @@
   {
     "date": "2026-05-12",
     "time": "15:00",
-    "artist": "Солисты Крымского академического симфонического оркестра",
+    "artist": "Сол, мфон, ческого с, ческого оркестра, сты Крымского академ",
     "event_type": "концерт",
     "venue": "Концертный зал «Юбилейный»",
     "price": null,
@@ -1504,7 +1513,7 @@
   {
     "date": "2026-05-05",
     "time": null,
-    "artist": "Сказки с оркестром. Оркестровая яма",
+    "artist": "Сказк, с оркестром. Оркестровая яма",
     "event_type": "концерт",
     "venue": "Музыкальное училище им. П.И. Чайковского",
     "price": null,
@@ -1519,7 +1528,7 @@
   {
     "date": "2026-05-13",
     "time": "19:00",
-    "artist": "Правин (Павел Новиков), Правин, Андрей Танзю, Карина Клавихо",
+    "artist": "н, хо, ков), Кар, Прав",
     "event_type": "концерт",
     "venue": "Белбек",
     "price": "1800₽",
@@ -1534,7 +1543,7 @@
   {
     "date": "2026-05-08",
     "time": "19:00",
-    "artist": "Хай'Петри",
+    "artist": "Хай'Петр",
     "event_type": "вечеринка",
     "venue": "набережная",
     "price": null,
@@ -1549,7 +1558,7 @@
   {
     "date": "2025-05-08",
     "time": "19:00",
-    "artist": "Пока не поздно, Black Tears, Черный доктор солнечной долины, Нарратор, Кабель Джек, Circlemakers",
+    "artist": "ны, Нарратор, Black Tears, Кабель Джек, Circlemakers, Пока не поздно",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -1577,24 +1586,9 @@
     "genre": "каверы"
   },
   {
-    "date": "2026-05-08",
-    "time": "19:00",
-    "artist": "Black Tears, Circlemakers, Динаминатор, Нарратор, Кабель Джек, Пока не поздно, Черный доктор солнечной долины",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Modern Rock Heavy Fest — блок Modern Rock & Metal. Несколько групп в одном вечере.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "метал",
-    "source_url": "https://t.me/clubjam/928",
-    "image": "/images/events/723be1e881e61799963f0189107eb321.jpg",
-    "post_date": "2026-05-07T19:44:01+00:00"
-  },
-  {
     "date": "2026-05-16",
     "time": "20:00",
-    "artist": "Карбид",
+    "artist": "д, Карб",
     "event_type": "трибьют",
     "venue": "Народный бар",
     "price": "500 рублей",
@@ -1609,7 +1603,7 @@
   {
     "date": "2026-05-09",
     "time": null,
-    "artist": "Шляпники",
+    "artist": "к, Шляпн",
     "event_type": "концерт",
     "venue": "памятник Затопленным кораблям",
     "price": "бесплатно",
@@ -1624,7 +1618,7 @@
   {
     "date": "2026-05-10",
     "time": "17:00",
-    "artist": "Максим Перов (фортепиано), Елена Новикова (вокал)",
+    "artist": "ано), Макс, Елена Нов, кова (вокал), м Перов (фортеп",
     "event_type": "концерт",
     "venue": "Скельская пещера",
     "price": null,
@@ -1639,7 +1633,7 @@
   {
     "date": "2026-05-11",
     "time": "17:00",
-    "artist": "Анна Сингаевская, Руслан Сейдалиев, Михаил Якубовский, Максим Перов",
+    "artist": "М, й, ев, ха, Анна С, л Якубовск",
     "event_type": "концерт",
     "venue": "Дворец «Дюльбер»",
     "price": null,
@@ -1699,7 +1693,7 @@
   {
     "date": "2026-05-10",
     "time": "15:00",
-    "artist": "Она и война",
+    "artist": "Она, война",
     "event_type": "концерт",
     "venue": "ДК «Корабел», Малый зал",
     "price": null,
@@ -1714,7 +1708,7 @@
   {
     "date": "2026-05-16",
     "time": "12:00",
-    "artist": "Лицей искусств",
+    "artist": "Л, цей, скусств",
     "event_type": "концерт",
     "venue": "ДК «Корабел», Театральный зал",
     "price": null,
@@ -1774,7 +1768,7 @@
   {
     "date": "2026-05-30",
     "time": "19:00",
-    "artist": "Группа «Лесоповал», Лесоповал",
+    "artist": "Лесоповал",
     "event_type": "концерт",
     "venue": "КДК Корабел",
     "price": null,
@@ -1793,7 +1787,7 @@
   {
     "date": "2026-06-07",
     "time": null,
-    "artist": "Летний концерт",
+    "artist": "Летн, й концерт",
     "event_type": "концерт",
     "venue": "Массандра",
     "price": null,
@@ -1808,7 +1802,7 @@
   {
     "date": "2026-05-17",
     "time": "17:30",
-    "artist": "Андрей Ясинский, Открытие сезона",
+    "artist": "й, нск, Открыт, е сезона",
     "event_type": "концерт",
     "venue": "Крымская астрофизическая обсерватория",
     "price": null,
@@ -1827,7 +1821,7 @@
   {
     "date": "2026-05-09",
     "time": "16:00",
-    "artist": "Духовой оркестр, Симфонический оркестр",
+    "artist": "С, мфон",
     "event_type": "концерт",
     "venue": "Отель Ялта-Интурист, Прогулочная аллея",
     "price": null,
@@ -1843,21 +1837,24 @@
     "date": "2026-07-25",
     "time": "19:00",
     "artist": "Thomas Mraz",
-    "venue": "Депо",
     "event_type": "концерт",
+    "venue": "Депо",
     "price": "от 2 000 ₽",
     "description": "Thomas Mraz в Депо, Симферополь.",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-07-25",
-    "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/thomas-mraz-2026-07-25?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "genre": "поп"
+    "images": [
+      "/images/events/451270406988b08b5e25ffbabb5a6966.jpg"
+    ],
+    "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
+    "post_date": "2026-07-25"
   },
   {
     "date": "2026-08-30",
     "time": "20:00",
-    "artist": "Хаски",
+    "artist": "Хаск",
     "venue": "Centrum",
     "event_type": "концерт",
     "price": "от 2 800 ₽",
@@ -1902,7 +1899,7 @@
   {
     "date": "2026-07-25",
     "time": "20:00",
-    "artist": "Эльбрус Джанмирзоев",
+    "artist": "рзоев, Эльбрус Джанм",
     "venue": "Дворец культуры рыбаков",
     "event_type": "концерт",
     "price": "от 2 500 ₽",
@@ -1932,7 +1929,7 @@
   {
     "date": "2026-06-13",
     "time": "18:00",
-    "artist": "Сияние. Открытие сезона на маяке",
+    "artist": "С, ян, е. Открыт",
     "event_type": "концерт",
     "venue": "Мрия",
     "price": "от 2 500 ₽",
@@ -1947,7 +1944,7 @@
   {
     "date": "2026-08-05",
     "time": "20:00",
-    "artist": "Стешок, Anjelina, Макар Давыдов, Мали и…",
+    "artist": "Мал, Стешок, Anjelina, Макар Давыдов",
     "event_type": "концерт",
     "venue": "Юбилейный",
     "price": "от 3 800 ₽",
@@ -1962,7 +1959,7 @@
   {
     "date": "2026-05-22",
     "time": null,
-    "artist": "Артур Беркут и Сергей Маврин",
+    "artist": "н, Сергей Мавр, Артур Беркут",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "скидка по промокоду «jam»",
@@ -1977,7 +1974,7 @@
   {
     "date": "2026-05-29",
     "time": null,
-    "artist": "Spiritual Seasons, Канальи",
+    "artist": "Каналь, Spiritual Seasons",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "бесплатно для подписчиков",
@@ -2052,7 +2049,7 @@
   {
     "date": "2026-05-06",
     "time": "16:00",
-    "artist": "Государственный симфонический академический оркестр России им. Е.Ф. Светланова",
+    "artist": "мфон, ческ, й академ, й оркестр Росс, м. Е.Ф. Светланова, Государственный с",
     "event_type": "концерт",
     "venue": "Дом-музей А.П. Чехова (Белая дача)",
     "price": "бесплатно",
@@ -2067,7 +2064,7 @@
   {
     "date": "2026-05-13",
     "time": "16:00",
-    "artist": "Денис Мацуев",
+    "artist": "Ден, с Мацуев",
     "event_type": "концерт",
     "venue": "Дом-музей А.П. Чехова (Белая дача)",
     "price": "бесплатно",
@@ -2082,7 +2079,7 @@
   {
     "date": "2026-05-27",
     "time": "16:00",
-    "artist": "Государственный камерный оркестр «Виртуозы Москвы»",
+    "artist": "ртуозы Москвы», Государственный камерный оркестр «В",
     "event_type": "концерт",
     "venue": "Дом-музей А.П. Чехова (Белая дача)",
     "price": "бесплатно",
@@ -2097,7 +2094,7 @@
   {
     "date": "2026-05-24",
     "time": null,
-    "artist": "Спектакль «Мастер и Маргарита»",
+    "artist": "та», Маргар",
     "event_type": "другое",
     "venue": "Крым Event",
     "price": null,
@@ -2126,7 +2123,7 @@
   {
     "date": "2026-05-24",
     "time": "16:00",
-    "artist": "Живой звук: кларнет",
+    "artist": "Ж, вой звук: кларнет",
     "event_type": "концерт",
     "venue": "Винодельня «Золотая Балка»",
     "price": "3500₽",
@@ -2141,7 +2138,7 @@
   {
     "date": "2026-05-15",
     "time": "20:00",
-    "artist": "Славик, Тревор, Saicotropic, Jahnky",
+    "artist": "к, Слав, Тревор, Jahnky, Saicotropic",
     "event_type": "вечеринка",
     "venue": "Кронгс паб",
     "price": null,
@@ -2156,7 +2153,7 @@
   {
     "date": "2026-05-15",
     "time": "20:00",
-    "artist": "Татьяна Асланиди и Александр Санчез",
+    "artist": "д, Татьяна Аслан",
     "event_type": "концерт",
     "venue": "Fadini",
     "price": null,
@@ -2186,7 +2183,7 @@
   {
     "date": "2026-05-22",
     "time": "23:30",
-    "artist": "By Индия",
+    "artist": "я, By Инд",
     "event_type": "вечеринка",
     "venue": "ночной клуб «Белый»",
     "price": null,
@@ -2201,7 +2198,7 @@
   {
     "date": "2026-05-14",
     "time": null,
-    "artist": "Алексей Мышкин",
+    "artist": "н, Алексей Мышк",
     "event_type": "другое",
     "venue": "Белбек",
     "price": null,
@@ -2216,7 +2213,7 @@
   {
     "date": "2026-05-22",
     "time": "18:00",
-    "artist": "Андрей Танзю, Александр Васильев, Карина Клавихо",
+    "artist": "хо, Кар, льев, на Клав, Андрей Танзю, Александр Вас",
     "event_type": "концерт",
     "venue": "Арт-Ковчег",
     "price": "2000 рублей по предпродаже, 2500 рублей в день мероприятия",
@@ -2231,7 +2228,7 @@
   {
     "date": "2026-05-31",
     "time": null,
-    "artist": "Фестиваль",
+    "artist": "Фест, валь",
     "event_type": "фестиваль",
     "venue": "Белбек",
     "price": "бесплатно",
@@ -2246,7 +2243,7 @@
   {
     "date": "2026-06-06",
     "time": null,
-    "artist": "Александр Васильев",
+    "artist": "льев, Александр Вас",
     "event_type": "концерт",
     "venue": "Белбек",
     "price": null,
@@ -2276,7 +2273,7 @@
   {
     "date": "2026-05-17",
     "time": "17:00",
-    "artist": "Священные Звуки Вселенной",
+    "artist": "Вселенной, Священные Звук",
     "event_type": "другое",
     "venue": "7 долин",
     "price": "1500 руб",
@@ -2305,7 +2302,7 @@
   {
     "date": "2026-05-15",
     "time": "19:00",
-    "artist": "Get Back, Структура, Иччи, Angle Of Wonders, Get Back (The Beatles Tribute)",
+    "artist": "Ичч, Get Back, Структура, Angle Of Wonders",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -2320,7 +2317,7 @@
   {
     "date": "2026-05-24",
     "time": null,
-    "artist": "Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Андрей Дегурко и Андрей Рыбальченко",
+    "artist": "Ал, м Куртмеметов, Андрей Дегурко",
     "event_type": "концерт",
     "venue": "Дворец «Дюльбер»",
     "price": null,
@@ -2354,7 +2351,7 @@
   {
     "date": "2026-05-30",
     "time": "17:00",
-    "artist": "Крымский академический симфонический оркестр",
+    "artist": "й с, ческ, мфон, Крымск, й академ, й оркестр",
     "event_type": "концерт",
     "venue": "Мраморная пещера",
     "price": null,
@@ -2369,7 +2366,7 @@
   {
     "date": "2026-05-21",
     "time": "19:00",
-    "artist": "Крымский Академический Симфонический Оркестр, Александр Долинский",
+    "artist": "й, нск, ческ, мфон, Крымск, Александр Дол",
     "event_type": "концерт",
     "venue": "Театр им. А.П. Чехова",
     "price": null,
@@ -2384,7 +2381,7 @@
   {
     "date": "2026-05-24",
     "time": "15:30",
-    "artist": "Крымский Академический Симфонический Оркестр, Александр Долинский",
+    "artist": "й, нск, ческ, мфон, Крымск, Александр Дол",
     "event_type": "концерт",
     "venue": "Музыкальное училище им. П.И. Чайковского",
     "price": null,
@@ -2399,7 +2396,7 @@
   {
     "date": "2026-04-26",
     "time": null,
-    "artist": "Крымский академический симфонический оркестр, Александр Папушев",
+    "artist": "й с, ческ, мфон, Крымск, й академ, й оркестр, Александр Папушев",
     "event_type": "концерт",
     "venue": "Музыкальное училище им. П.И. Чайковского",
     "price": null,
@@ -2414,7 +2411,7 @@
   {
     "date": "2026-05-16",
     "time": "21:00",
-    "artist": "Виктор Бобраков",
+    "artist": "В",
     "event_type": "концерт",
     "venue": "Krongs",
     "price": null,
@@ -2444,7 +2441,7 @@
   {
     "date": "2026-05-16",
     "time": "14:00",
-    "artist": "Вечеринка",
+    "artist": "нка, Вечер",
     "event_type": "вечеринка",
     "venue": "Lucky Winery",
     "price": "от 2000₽",
@@ -2459,7 +2456,7 @@
   {
     "date": "2026-05-23",
     "time": "12:00",
-    "artist": "Живая музыка: саксофон и вокал, Живая музыка: скрипка и вокал",
+    "artist": "Ж, пка, вокал, вая музыка: скр, вая музыка: саксофон",
     "event_type": "концерт",
     "venue": "Ресторан «Шалаш»",
     "price": "бесплатно",
@@ -2474,7 +2471,7 @@
   {
     "date": "2026-05-20",
     "time": "19:00",
-    "artist": "Оркестр «Консонанс», Михаил Якубовский, Елена Голофеева, Виталий Бакшинский, Юлия Бакшинская",
+    "artist": "М, й, В, ха, Юл, тал, нск, я Бакш, Оркестр «Консонанс»",
     "event_type": "концерт",
     "venue": "Русский театр им. Горького",
     "price": "от 600₽",
@@ -2489,7 +2486,7 @@
   {
     "date": "2026-05-16",
     "time": "18:00",
-    "artist": "Севастопольский театр юного зрителя",
+    "artist": "теля, Севастопольск, й театр юного зр",
     "event_type": "концерт",
     "venue": "Античный театр, Херсонес Таврический",
     "price": "null",
@@ -2504,7 +2501,7 @@
   {
     "date": "2026-05-31",
     "time": null,
-    "artist": "Анна Шакель и Андрей Рыбальченко",
+    "artist": "Анна Шакель, Андрей Рыбальченко",
     "event_type": "концерт",
     "venue": "Гольф-поле",
     "price": null,
@@ -2519,7 +2516,7 @@
   {
     "date": "2026-05-16",
     "time": "21:00",
-    "artist": "Квартирник",
+    "artist": "к, рн",
     "event_type": "другое",
     "venue": "Арт-резиденция ФАЗА, Кулакова 84",
     "price": "байка из жизни",
@@ -2533,7 +2530,7 @@
   {
     "date": "2026-05-16",
     "time": "16:00",
-    "artist": "Мода народов Крыма. Нить единства",
+    "artist": "ть ед, нства, Мода народов Крыма. Н",
     "event_type": "другое",
     "venue": "Крымский этнографический музей (ул. Пушкина, 18)",
     "price": "бесплатно",
@@ -2548,7 +2545,7 @@
   {
     "date": "2026-05-23",
     "time": null,
-    "artist": "Крым. Нить единства",
+    "artist": "ть ед, нства, Крым. Н",
     "event_type": "другое",
     "venue": "Крым Event",
     "price": "бесплатно",
@@ -2563,7 +2560,7 @@
   {
     "date": "2026-05-12",
     "time": null,
-    "artist": "Артисты Крымского киноконцертного объединения",
+    "artist": "я, Арт, нен, сты Крымского к, ноконцертного объед",
     "event_type": "концерт",
     "venue": "Малый зал концертного зала «Юбилейный»",
     "price": null,
@@ -2578,7 +2575,7 @@
   {
     "date": "2026-06-03",
     "time": "19:00",
-    "artist": "Крымский академический симфонический оркестр",
+    "artist": "й с, ческ, мфон, Крымск, й академ, й оркестр",
     "event_type": "концерт",
     "venue": "КДК «Корабел»",
     "price": null,
@@ -2593,7 +2590,7 @@
   {
     "date": "2026-06-24",
     "time": "19:00",
-    "artist": "Крымский академический симфонический оркестр",
+    "artist": "й с, ческ, мфон, Крымск, й академ, й оркестр",
     "event_type": "концерт",
     "venue": "Отель «Ялта-Интурист»",
     "price": null,
@@ -2638,7 +2635,7 @@
   {
     "date": "2026-05-21",
     "time": "19:00",
-    "artist": "Свобода Важнее Моды, Король Газа",
+    "artist": "Король Газа, Свобода Важнее Моды",
     "event_type": "концерт",
     "venue": "Народный бар",
     "price": "500 рублей",
@@ -2653,7 +2650,7 @@
   {
     "date": "2026-05-16",
     "time": null,
-    "artist": "Ночи музеев",
+    "artist": "Ноч, музеев",
     "event_type": "концерт",
     "venue": "Малахов курган",
     "price": "бесплатно",
@@ -2668,7 +2665,7 @@
   {
     "date": "2026-05-17",
     "time": null,
-    "artist": "Ночи музеев",
+    "artist": "Ноч, музеев",
     "event_type": "концерт",
     "venue": "Малахов курган",
     "price": "бесплатно",
@@ -2683,7 +2680,7 @@
   {
     "date": "2026-05-30",
     "time": "11:00",
-    "artist": "Вечеринка",
+    "artist": "нка, Вечер",
     "event_type": "вечеринка",
     "venue": "Sky Beach (Скай Пляж)",
     "price": "5000₽",
@@ -2698,7 +2695,7 @@
   {
     "date": "2026-05-30",
     "time": "18:30",
-    "artist": "Камерный оркестр «Новая гармония» под управлением Дениса Карлова",
+    "artist": "ем Ден, са Карлова, я» под управлен, Камерный оркестр «Новая гармон",
     "event_type": "концерт",
     "venue": "Картинная галерея им. И.К. Айвазовского",
     "price": null,
@@ -2713,7 +2710,7 @@
   {
     "date": "2026-05-23",
     "time": "12:00",
-    "artist": "Карина Клавихо",
+    "artist": "хо, Кар, на Клав",
     "event_type": "другое",
     "venue": "Арт-Ковчег",
     "price": "6000₽ за 2 дня",
@@ -2728,7 +2725,7 @@
   {
     "date": "2026-05-24",
     "time": "12:00",
-    "artist": "Карина Клавихо",
+    "artist": "хо, Кар, на Клав",
     "event_type": "другое",
     "venue": "Арт-Ковчег",
     "price": "6000₽ за 2 дня",
@@ -2743,7 +2740,7 @@
   {
     "date": "2026-05-18",
     "time": "21:30",
-    "artist": "Домино",
+    "artist": "но, Дом",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -2754,6 +2751,20 @@
     "image": "/images/events/cc6c0379c521ffafb66136b2d528dbb2.jpg",
     "source_url": "https://t.me/rocknroll_92/6612",
     "genre": "поп-рок"
+  },
+  {
+    "date": "2026-05-21",
+    "time": "19:00",
+    "artist": "Влада Вэрмей",
+    "event_type": "другое",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "500 рублей",
+    "description": "Премьера исторической лекции «Последние императрицы России» о судьбах Марии Александровны, Марии Фёдоровны и Александры Фёдоровны.",
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-16T09:13:58+00:00",
+    "image": "/images/events/0e00fe0b318fc78b9eb3a7c33f4a2114.jpg",
+    "source_url": "https://t.me/dlyadushi_Crimea/6133"
   },
   {
     "date": null,
@@ -2773,7 +2784,7 @@
   {
     "date": null,
     "time": "evening",
-    "artist": "Сергей Бобунец, группа «Три дня дождя», Позывной «БРАТ",
+    "artist": "группа «Тр, дня дождя», Позывной «БРАТ, Сергей Бобунец",
     "event_type": "фестиваль",
     "venue": "Таврида.АРТ",
     "price": "бесплатно",
@@ -2792,7 +2803,7 @@
   {
     "date": null,
     "time": null,
-    "artist": "Стивен Митчелл, Jazz Band",
+    "artist": "Ст, вен М, тчелл, Jazz Band",
     "event_type": "концерт",
     "venue": "Скажите Джаз",
     "price": null,
@@ -2808,7 +2819,7 @@
   {
     "date": null,
     "time": null,
-    "artist": "CORA, Вечеринка",
+    "artist": "нка, CORA, Вечер",
     "event_type": "вечеринка",
     "venue": "Sky Beach Ялта",
     "price": null,
@@ -2826,7 +2837,7 @@
   {
     "date": null,
     "time": "19:00",
-    "artist": "Живая музыка",
+    "artist": "Ж, вая музыка",
     "event_type": "концерт",
     "venue": "Таверна «Дирижабль», Пания Парк, Деревня Мастеров",
     "price": "бесплатно",
@@ -2841,7 +2852,7 @@
   {
     "date": null,
     "time": "21:00",
-    "artist": "Дима Резник",
+    "artist": "Д, к, ма Резн",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -2856,7 +2867,7 @@
   {
     "date": null,
     "time": null,
-    "artist": "Правин, Андрей Танзю и Карина Клавихо",
+    "artist": "н, хо, Кар, Прав",
     "event_type": "концерт",
     "venue": "Арт-Ковчег",
     "price": null,

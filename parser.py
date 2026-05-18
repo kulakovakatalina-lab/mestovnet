@@ -512,8 +512,12 @@ def _venue_match(v1: str, v2: str) -> bool:
 
 def _artist_parts(name: str) -> list[str]:
     """Разбивает строку артиста на отдельные имена по разделителям."""
-    parts = re.split(r'\s+(и|&|\+|,\s*)\s+', name)
-    return [p.strip() for p in parts if p.strip() and p.strip() not in ("и", "&", "+")]
+    # сперва режем по запятой, затем каждую часть по «и», «&», «+» с пробелами
+    result = []
+    for part in re.split(r'\s*,\s*', name):
+        sub = re.split(r'\s+(и|&|\+)\s+', part)
+        result.extend(p.strip() for p in sub if p.strip() and p.strip() not in ("и", "&", "+"))
+    return result
 
 
 def _artist_set(event: dict) -> set:
@@ -574,6 +578,15 @@ def _merge_events(group: list[dict]) -> dict:
     return merged
 
 
+def _bare_artist_key(text: str) -> str:
+    """Нормализованное имя без префиксов группа/band."""
+    k = _normalize(text)
+    for p in ("группа", "band"):
+        if k.startswith(p):
+            k = k[len(p):].strip()
+    return k
+
+
 def _merge_group(group: list[dict]) -> dict:
     """Мёрджит группу событий: объединяет артистов, берёт лучшие поля."""
     merged = _merge_events(group)
@@ -583,8 +596,21 @@ def _merge_group(group: list[dict]) -> dict:
         for a in (e.get("artist") or "").split(","):
             for name in _artist_parts(a.strip()):
                 key = _normalize(name)
-                if name and key not in seen:
-                    seen.add(key)
+                bare = _bare_artist_key(name)
+                if not name or bare in seen:
+                    continue
+                seen.add(bare)
+                # проверяем, не является ли это имя вариацией уже добавленного
+                is_sub = False
+                for other in artists[:]:
+                    obare = _bare_artist_key(other)
+                    if bare and obare and (bare in obare or obare in bare):
+                        if len(bare) >= len(obare):
+                            artists.remove(other)
+                        else:
+                            is_sub = True
+                            break
+                if not is_sub:
                     artists.append(name)
     merged["artist"] = ", ".join(artists) if artists else None
     return merged
@@ -796,6 +822,37 @@ def main():
     ghost_removed = ghost_before - len(merged)
     if ghost_removed:
         print(f"Убрано событий-призраков: {ghost_removed}")
+
+    # Чистим артистов: убираем дубли где одно имя — часть другого, оставляем самое короткое
+    for e in merged:
+        if not e.get("artist"):
+            continue
+        parts = _artist_parts(e["artist"])
+        # группируем по bare-ключу, выбираем самое короткое имя
+        by_bare: dict[str, list[str]] = {}
+        for name in parts:
+            bare = _bare_artist_key(name)
+            if bare:
+                by_bare.setdefault(bare, []).append(name)
+        cleaned = []
+        seen_bare = set()
+        for bare in sorted(by_bare, key=len):
+            candidates = by_bare[bare]
+            # выбираем самое короткое имя (без «, лишнего)
+            best = min(candidates, key=lambda n: len(n))
+            # проверяем, не является ли это имя частью уже выбранного
+            is_sub = False
+            for other in cleaned[:]:
+                obare = _bare_artist_key(other)
+                if bare in obare or obare in bare:
+                    if len(bare) < len(obare):
+                        cleaned.remove(other)
+                    else:
+                        is_sub = True
+                    break
+            if not is_sub:
+                cleaned.append(best)
+        e["artist"] = ", ".join(cleaned) if cleaned else None
 
     # Проставляем жанр и артиста там, где их ещё нет
     genre_added = 0
