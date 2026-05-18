@@ -494,9 +494,20 @@ def _normalize_venue(text: str) -> str:
     text = text.lower()
     text = re.sub(r"[«»\"'']", "", text)
     text = re.sub(r"[^\w\s]", "", text, flags=re.UNICODE)
-    stops = {"отель", "resort", "spa", "palace", "дворец", "гостиница", "inn", "hotel", "club"}
+    stops = {"отель", "resort", "spa", "palace", "дворец", "гостиница", "inn", "hotel", "club", "дк", "кдк", "дк ", "кдк ", "дом культуры", "дворец культуры", "театральный", "зал"}
     words = [w for w in text.split() if w not in stops]
     return " ".join(words).strip()
+
+
+def _venue_match(v1: str, v2: str) -> bool:
+    """Проверяет, относятся ли названия площадок к одному месту."""
+    w1 = set(_normalize_venue(v1).split())
+    w2 = set(_normalize_venue(v2).split())
+    if not w1 or not w2:
+        return False
+    common = w1 & w2
+    # достаточно одного общего значимого слова
+    return len(common) >= 1
 
 
 def _artist_parts(name: str) -> list[str]:
@@ -512,6 +523,10 @@ def _artist_set(event: dict) -> set:
     for raw in artist.split(","):
         for name in _artist_parts(raw.strip()):
             n = _normalize(name)
+            # убираем префиксы «группа», «band» для лучшего сравнения
+            for prefix in ("группа ", "band ", "группа «", "«"):
+                if n.startswith(prefix):
+                    n = n[len(prefix):].strip()
             if n:
                 names.add(n)
     return names
@@ -617,15 +632,15 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 i, j = indices[a], indices[b]
                 ai = _artist_set(stage1[i])
                 aj = _artist_set(stage1[j])
-                vi = _normalize_venue(stage1[i].get("venue") or "")
-                vj = _normalize_venue(stage1[j].get("venue") or "")
+                vi = stage1[i].get("venue") or ""
+                vj = stage1[j].get("venue") or ""
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
                 if ai and aj and ai & aj:
                     # Есть хотя бы один общий артист → одно событие
                     union(i, j)
-                elif vi and vj and vi == vj:
-                    # Одинаковые площадка → одно событие (даже если артисты названы по-разному)
+                elif vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj:
+                    # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
                     union(i, j)
 
     groups: dict[int, list[dict]] = {}
