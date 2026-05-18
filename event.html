@@ -167,6 +167,13 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.22;
   color: #fff;
 }
+.carousel { position: relative; width: 100%; border-radius: var(--radius-lg); overflow: hidden; }
+.carousel-track { display: flex; transition: transform 0.35s ease; }
+.carousel-slide { min-width: 100%; }
+.carousel-slide img { width: 100%; height: auto; display: block; }
+.carousel-dots { display: flex; gap: 8px; justify-content: center; padding: 14px 0; }
+.carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: oklch(70% 0.02 250 / 0.35); cursor: pointer; transition: background 0.2s; }
+.carousel-dot.active { background: var(--accent); }
 
 .event-content-col {
   display: flex;
@@ -891,12 +898,24 @@ async function load() {
 function render(event) {
   document.title = `${event.artist || 'Мероприятие'} — Местов.Нет`;
 
-  const posterHtml = event.image
-    ? `<div class="event-poster-wrap"><img src="${event.image}" alt="${event.artist || ''}" loading="lazy"></div>`
+  const images = event.images && event.images.length ? event.images : (event.image ? [event.image] : []);
+  const posterHtml = images.length
+    ? `<div class="event-poster-wrap">${
+        images.length === 1
+          ? `<img src="${images[0]}" alt="${event.artist || ''}" loading="lazy">`
+          : `<div class="carousel" id="posterCarousel">
+              <div class="carousel-track" id="carouselTrack">
+                ${images.map(img => `<div class="carousel-slide"><img src="${img}" alt="${event.artist || ''}" loading="lazy"></div>`).join('')}
+              </div>
+              <div class="carousel-dots" id="carouselDots">
+                ${images.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}" data-slide="${i}"></span>`).join('')}
+              </div>
+            </div>`
+      }</div>`
     : `<div class="event-poster-wrap"><div class="event-poster-placeholder">${starIcon}</div></div>`;
 
-  const avatarImg = event.image
-    ? `<img src="${event.image}" alt="${event.artist || ''}">`
+  const avatarImg = images.length
+    ? `<img src="${images[0]}" alt="${event.artist || ''}">`
     : starIcon;
 
   const visible = allUpcoming.slice(0, shownCount);
@@ -1002,7 +1021,22 @@ function render(event) {
   `;
 
   document.getElementById('content').innerHTML = html;
+  initCarousel();
   updateLoadMoreBtn();
+}
+
+function initCarousel() {
+  const track = document.getElementById('carouselTrack');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (!track || !dots.length) return;
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.dataset.slide);
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      dots.forEach(d => d.classList.remove('active'));
+      dot.classList.add('active');
+    });
+  });
 }
 
 function loadMore() {
