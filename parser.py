@@ -512,9 +512,10 @@ def _venue_match(v1: str, v2: str) -> bool:
 
 def _artist_parts(name: str) -> list[str]:
     """Разбивает строку артиста на отдельные имена по разделителям."""
-    # сперва режем по запятой, затем каждую часть по «и», «&», «+» с пробелами
+    # Режем только по ", " (запятая + пробел) — это явный разделитель между артистами
+    # Не режем по одиночной запятой без пробела (может быть частью названия)
     result = []
-    for part in re.split(r'\s*,\s*', name):
+    for part in re.split(r',\s+', name):
         sub = re.split(r'\s+(и|&|\+)\s+', part)
         result.extend(p.strip() for p in sub if p.strip() and p.strip() not in ("и", "&", "+"))
     return result
