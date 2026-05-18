@@ -482,14 +482,54 @@ def _normalize(text: str) -> str:
     if not text:
         return ""
     text = text.lower()
+    text = re.sub(r"[«»\"'']", "", text)
     text = re.sub(r"[^\w\s]", "", text, flags=re.UNICODE)
     return re.sub(r"\s+", " ", text).strip()
 
+
+def _normalize_venue(text: str) -> str:
+    """Нормализует название площадки: убирает тип (отель, resort, spa, palace)."""
+    if not text:
+        return ""
+    text = text.lower()
+    text = re.sub(r"[«»\"'']", "", text)
+    text = re.sub(r"[^\w\s]", "", text, flags=re.UNICODE)
+    stops = {"отель", "resort", "spa", "palace", "дворец", "гостиница", "inn", "hotel", "club"}
+    words = [w for w in text.split() if w not in stops]
+    return " ".join(words).strip()
+
+
+def _artist_parts(name: str) -> list[str]:
+    """Разбивает строку артиста на отдельные имена по разделителям."""
+    parts = re.split(r'\s+(и|&|\+|,\s*)\s+', name)
+    return [p.strip() for p in parts if p.strip() and p.strip() not in ("и", "&", "+")]
+
+
+def _artist_set(event: dict) -> set:
+    """Множество нормализованных имён артистов из события."""
+    artist = event.get("artist") or ""
+    names = set()
+    for raw in artist.split(","):
+        for name in _artist_parts(raw.strip()):
+            n = _normalize(name)
+            if n:
+                names.add(n)
+    return names
+
+
+def _field_count(e: dict) -> int:
+    """Сколько непустых полей у события."""
+    fields = ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city")
+    return sum(1 for f in fields if e.get(f))
 
 
 def _merge_events(group: list[dict]) -> dict:
     group_sorted = sorted(group, key=lambda e: e.get("post_date") or "", reverse=True)
     most_recent = group_sorted[0]
+
+    # Выбираем источник с самой полной информацией
+    best = max(group, key=_field_count)
+
     merged = {}
     for field in ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city", "source_channel", "genre"):
         for e in group_sorted:
@@ -499,16 +539,24 @@ def _merge_events(group: list[dict]) -> dict:
                 break
         else:
             merged[field] = None
-    merged["source_url"] = most_recent.get("source_url")
-    merged["image"] = most_recent.get("image")
+    merged["source_url"] = best.get("source_url") or most_recent.get("source_url")
+
+    # Собираем все постеры
+    all_images = []
+    for e in group_sorted:
+        img = e.get("image")
+        if img and img not in all_images:
+            all_images.append(img)
+    # сначала картинка из лучшего источника
+    best_img = best.get("image")
+    if best_img and best_img in all_images:
+        all_images.remove(best_img)
+        all_images.insert(0, best_img)
+    merged["images"] = all_images if all_images else None
+    merged["image"] = all_images[0] if all_images else None
+
     merged["post_date"] = most_recent.get("post_date")
     return merged
-
-
-def _artist_set(event: dict) -> set:
-    """Множество нормализованных имён артистов из события."""
-    artist = event.get("artist") or ""
-    return {_normalize(a) for a in artist.split(",") if a.strip()}
 
 
 def _merge_group(group: list[dict]) -> dict:
@@ -518,11 +566,11 @@ def _merge_group(group: list[dict]) -> dict:
     artists: list = []
     for e in group:
         for a in (e.get("artist") or "").split(","):
-            a = a.strip()
-            key = _normalize(a)
-            if a and key not in seen:
-                seen.add(key)
-                artists.append(a)
+            for name in _artist_parts(a.strip()):
+                key = _normalize(name)
+                if name and key not in seen:
+                    seen.add(key)
+                    artists.append(name)
     merged["artist"] = ", ".join(artists) if artists else None
     return merged
 
@@ -569,15 +617,15 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 i, j = indices[a], indices[b]
                 ai = _artist_set(stage1[i])
                 aj = _artist_set(stage1[j])
-                vi = _normalize(stage1[i].get("venue") or "")
-                vj = _normalize(stage1[j].get("venue") or "")
+                vi = _normalize_venue(stage1[i].get("venue") or "")
+                vj = _normalize_venue(stage1[j].get("venue") or "")
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
                 if ai and aj and ai & aj:
                     # Есть хотя бы один общий артист → одно событие
                     union(i, j)
-                elif vi and vj and vi == vj and ti and tj and ti == tj:
-                    # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
+                elif vi and vj and vi == vj:
+                    # Одинаковые площадка → одно событие (даже если артисты названы по-разному)
                     union(i, j)
 
     groups: dict[int, list[dict]] = {}
@@ -676,10 +724,12 @@ def main():
 
     ig_user = os.environ.get("IG_USERNAME", "")
     ig_pass = os.environ.get("IG_PASSWORD", "")
+    ig_proxy = os.environ.get("IG_PROXY", "")
     if ig_channels and ig_user and ig_pass:
-        process_channels(
-            ig_channels, all_events, lambda ch: fetch_instagram_posts_wrapper(ch["username"])
-        )
+        print("\nInstagram — пропускаю (долго и нестабильно)")
+        # process_channels(
+        #     ig_channels, all_events, lambda ch: fetch_instagram_posts_wrapper(ch["username"])
+        # )
     elif ig_channels:
         print("\nInstagram-каналы настроены, но IG_USERNAME / IG_PASSWORD не заданы — пропускаю.")
 

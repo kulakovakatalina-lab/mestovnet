@@ -17,32 +17,40 @@
   {
     "date": "2026-05-02",
     "time": "19:00",
-    "artist": "Blackened, Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет",
+    "artist": "Blackened, Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет, Что ты делаешь?!?!?!, Metallica Tribute",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "600р (бесплатно для подписчиков клуба + репост)",
     "description": "Metallica Tribute by Blackened — 3 часа живого звука. Параллельно второй концерт во втором зале клуба.",
     "source_city": "Симферополь",
     "source_channel": "clubjam",
+    "genre": "метал",
     "source_url": "https://t.me/clubjam/923",
+    "images": [
+      "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg"
+    ],
     "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
-    "post_date": "2026-05-02T10:13:03+00:00",
-    "genre": "метал"
+    "post_date": "2026-05-02T10:13:03+00:00"
   },
   {
     "date": "2026-05-09",
     "time": null,
-    "artist": "Nirvana Tribute",
+    "artist": "Nirvana Tribute, Nirvana Tribute by Insomnia, Insomnia, Insomnia (Nirvana Tribute)",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
-    "description": "Трибьют-концерт Nirvana в субботу 9 мая. Вход бесплатный, 3 часа живого звука.",
+    "description": "Трибьют-концерт Nirvana в исполнении группы Insomnia. Вход свободный.",
     "source_city": "Симферополь",
     "source_channel": "clubjam",
+    "genre": "рок",
     "source_url": "https://t.me/clubjam/916",
-    "image": null,
-    "post_date": "2026-04-27T18:24:29+00:00",
-    "genre": "рок"
+    "images": [
+      "/images/events/6f49a07cd56f328db18fece4a98b3469.jpg",
+      "/images/events/723be1e881e61799963f0189107eb321.jpg",
+      "/images/events/114e2f39dfc0d0b2a11460eb18664b28.jpg"
+    ],
+    "image": "/images/events/6f49a07cd56f328db18fece4a98b3469.jpg",
+    "post_date": "2026-05-09T09:27:06+00:00"
   },
   {
     "date": "2026-05-16",
@@ -60,49 +68,20 @@
     "post_date": "2026-05-13T15:24:31+00:00"
   },
   {
-    "date": "2026-05-02",
-    "time": null,
-    "artist": "Что ты делаешь?!?!?!, Metallica Tribute",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Панк-футуристическая группа из Мытищ (4 девушки и 1 парень) выступает в Jam Club. На разогреве местные группы Трипса и Крыши Нет.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/919",
-    "image": null,
-    "post_date": "2026-04-30T12:19:20+00:00",
-    "genre": "панк-рок"
-  },
-  {
-    "date": "2026-05-01",
-    "time": null,
-    "artist": "Черный Доктор Солнечной Долины, Angle Of Wonders, Иччи, Крыша Мира, Нарратор, Динаминатор",
-    "event_type": "фестиваль",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТ. Выступает в рамках многогруппового рок-фестиваля.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/921",
-    "image": null,
-    "post_date": "2026-04-30T19:03:01+00:00",
-    "genre": "метал"
-  },
-  {
     "date": "2026-05-01",
     "time": "19:00",
-    "artist": "Фани, Ревайндер",
+    "artist": "Черный Доктор Солнечной Долины, Angle Of Wonders, Иччи, Крыша Мира, Нарратор, Динаминатор, Фани, Ревайндер",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "бесплатно",
     "description": "Бесплатные рок-концерты по случаю Первомая. Двери открываются в 19:00.",
     "source_city": "Симферополь",
     "source_channel": "clubjam",
+    "genre": "рок",
     "source_url": "https://t.me/clubjam/922",
+    "images": null,
     "image": null,
-    "post_date": "2026-05-01T11:16:43+00:00",
-    "genre": "рок"
+    "post_date": "2026-05-01T11:16:43+00:00"
   },
   {
     "date": "2026-05-03",
@@ -566,6 +545,9 @@
     "source_channel": "yandex_afisha",
     "genre": "рок",
     "source_url": "https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg"
+    ],
     "image": "/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg",
     "post_date": "2026-07-24"
   },
@@ -581,6 +563,9 @@
     "source_channel": "yandex_afisha",
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg"
+    ],
     "image": "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg",
     "post_date": "2026-08-11"
   },
@@ -596,6 +581,9 @@
     "source_channel": "yandex_afisha",
     "genre": "инди",
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/24b1ef623050ed6cd67138099025047a.jpg"
+    ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14"
   },
@@ -611,6 +599,9 @@
     "source_channel": "yandex_afisha",
     "genre": "рок",
     "source_url": "https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/89c039836f9198387fc0a6a596ad5de3.jpg"
+    ],
     "image": "/images/events/89c039836f9198387fc0a6a596ad5de3.jpg",
     "post_date": "2026-08-25"
   },
@@ -626,6 +617,9 @@
     "source_channel": "yandex_afisha",
     "genre": "поп-рок",
     "source_url": "https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg"
+    ],
     "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
     "post_date": "2026-07-04"
   },
@@ -641,6 +635,9 @@
     "source_channel": "yandex_afisha",
     "genre": "лаунж",
     "source_url": "https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg"
+    ],
     "image": "/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg",
     "post_date": "2026-06-20"
   },
@@ -656,6 +653,9 @@
     "source_channel": "yandex_afisha",
     "genre": "шоу",
     "source_url": "https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg"
+    ],
     "image": "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg",
     "post_date": "2026-06-26"
   },
@@ -671,6 +671,9 @@
     "source_channel": "yandex_afisha",
     "genre": "хоровая",
     "source_url": "https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg"
+    ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-13"
   },
@@ -887,17 +890,22 @@
   {
     "date": "2026-05-09",
     "time": "21:00",
-    "artist": "Игорь Симдянкин",
+    "artist": "Игорь Симдянкин, Вечеринка, Правнук Левитана",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
-    "description": "Праздничный квартирник. Поём легендарные песни вместе с Игорем Симдянкиным.",
+    "description": "Вечер песен Победы с правнуком легендарного советского диктора Левитана. Автор поста отмечает душевную атмосферу и пела весь вечер.",
     "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
+    "genre": "поп",
     "source_url": "https://t.me/rocknroll_92/6517",
+    "images": [
+      "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
+      "/images/events/0b5d127fd85a1c3a4eef08e02e070031.jpg",
+      "/images/events/6826b4aa85deb66d11d1b2484c32d224.jpg"
+    ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": null,
-    "genre": "каверы"
+    "post_date": "2026-05-10T06:59:59+00:00"
   },
   {
     "date": "2026-05-10",
@@ -946,18 +954,22 @@
   },
   {
     "date": "2026-05-17",
-    "time": "21:00",
-    "artist": "Евгений Громов",
+    "time": "21:30",
+    "artist": "Евгений Громов, Домино",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
-    "description": "Акустическая авторская рок-программа и каверы на русский рок.",
+    "description": "Кавер-группа «Домино» исполняет русский рок, поп-рок и неожиданные мешапы — не акустика. Квартирник около 21:30, заведение работает с 18:00 до 4:00.",
     "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
+    "genre": "поп-рок",
     "source_url": "https://t.me/rocknroll_92/6517",
+    "images": [
+      "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
+      "/images/events/cc6c0379c521ffafb66136b2d528dbb2.jpg"
+    ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": null,
-    "genre": "авторская"
+    "post_date": "2026-05-16T09:23:24+00:00"
   },
   {
     "date": "2026-05-22",
@@ -1082,7 +1094,7 @@
   {
     "date": "2026-05-02",
     "time": "13:00",
-    "artist": "Скажите Джаз",
+    "artist": "Скажите Джаз, Май в ритме джаза",
     "event_type": "фестиваль",
     "venue": "Palmira Palace Resort & SPA",
     "price": null,
@@ -1091,6 +1103,7 @@
     "source_channel": "skazhitejazz",
     "genre": "джаз",
     "source_url": "https://t.me/skazhitejazz/1562",
+    "images": null,
     "image": null,
     "post_date": "2026-04-29T17:23:27+00:00"
   },
@@ -1153,21 +1166,6 @@
     "image": null,
     "source_url": "https://t.me/skazhitejazz/1553",
     "genre": "джаз"
-  },
-  {
-    "date": "2026-05-02",
-    "time": null,
-    "artist": "Май в ритме джаза",
-    "event_type": "фестиваль",
-    "venue": "Palmira Palace",
-    "price": null,
-    "description": "Открытие сезона — фестиваль «Май в ритме джаза»: живой джаз у моря в Palmira Palace. Организатор — «Скажите Джаз».",
-    "source_city": "Ялта",
-    "source_channel": "skazhitejazz",
-    "genre": "джаз",
-    "source_url": "https://t.me/skazhitejazz/1556",
-    "image": null,
-    "post_date": "2026-04-21T08:55:57+00:00"
   },
   {
     "date": "2026-05-02",
@@ -1575,21 +1573,6 @@
     "post_date": "2026-05-06T07:13:45+00:00"
   },
   {
-    "date": "2026-05-09",
-    "time": null,
-    "artist": "Nirvana Tribute by Insomnia",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно (для подписчиков при репосте)",
-    "description": "Трибьют-концерт Nirvana от группы Insomnia в Jam Club. Вход бесплатный для подписчиков канала при репосте.",
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-05-06T11:20:31+00:00",
-    "image": "/images/events/114e2f39dfc0d0b2a11460eb18664b28.jpg",
-    "source_url": "https://t.me/clubjam/926",
-    "genre": "рок"
-  },
-  {
     "date": "2026-07-03",
     "time": "19:00",
     "artist": "AC/DC Show — Back in Storm",
@@ -1620,36 +1603,6 @@
     "post_date": "2026-05-07T19:44:01+00:00"
   },
   {
-    "date": "2026-05-09",
-    "time": null,
-    "artist": "Insomnia",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Nirvana Tribute by Insomnia — трибьют-концерт в честь легендарной группы Nirvana.",
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-05-07T19:44:01+00:00",
-    "image": "/images/events/723be1e881e61799963f0189107eb321.jpg",
-    "source_url": "https://t.me/clubjam/928",
-    "genre": "рок"
-  },
-  {
-    "date": "2026-05-09",
-    "time": null,
-    "artist": "Insomnia (Nirvana Tribute)",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Трибьют-концерт Nirvana в исполнении группы Insomnia. Вход свободный.",
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-05-09T09:27:06+00:00",
-    "image": "/images/events/6f49a07cd56f328db18fece4a98b3469.jpg",
-    "source_url": "https://t.me/clubjam/937",
-    "genre": "рок"
-  },
-  {
     "date": "2026-05-16",
     "time": "20:00",
     "artist": "Карбид",
@@ -1677,36 +1630,6 @@
     "post_date": "2026-05-09T08:40:42+00:00",
     "image": "/images/events/36e54d3bd513ff530f6d83fba6291939.jpg",
     "source_url": "https://t.me/rocknroll_92/6577",
-    "genre": "поп"
-  },
-  {
-    "date": "2026-05-09",
-    "time": null,
-    "artist": "Вечеринка",
-    "event_type": "вечеринка",
-    "venue": "Рок-н-рольщики",
-    "price": null,
-    "description": "Вечер в честь Дня Победы: живое пение великих и легендарных песен военных лет. Гостей ждут вечером 9 мая.",
-    "source_channel": "rocknroll_92",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-09T11:53:45+00:00",
-    "image": "/images/events/6826b4aa85deb66d11d1b2484c32d224.jpg",
-    "source_url": "https://t.me/rocknroll_92/6578",
-    "genre": "поп"
-  },
-  {
-    "date": "2026-05-09",
-    "time": null,
-    "artist": "Правнук Левитана",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики",
-    "price": null,
-    "description": "Вечер песен Победы с правнуком легендарного советского диктора Левитана. Автор поста отмечает душевную атмосферу и пела весь вечер.",
-    "source_channel": "rocknroll_92",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-10T06:59:59+00:00",
-    "image": "/images/events/0b5d127fd85a1c3a4eef08e02e070031.jpg",
-    "source_url": "https://t.me/rocknroll_92/6581",
     "genre": "поп"
   },
   {
@@ -2430,7 +2353,7 @@
   {
     "date": "2026-05-22",
     "time": "19:00",
-    "artist": "Джаз-трио «А3» и Анна Шакель",
+    "artist": "Джаз-трио «А3», Анна Шакель",
     "event_type": "концерт",
     "venue": "Aquamarine Resort & SPA",
     "price": null,
@@ -2439,6 +2362,10 @@
     "source_channel": "krymskiye_dela",
     "genre": "джаз",
     "source_url": "https://www.instagram.com/p/DYb_OQJjJ4A/",
+    "images": [
+      "/images/events/3adcefd9e525180e1792d2ea4023e26e.jpg",
+      "/images/events/5244a03ffba451fd63689c71bc7fc240.jpg"
+    ],
     "image": "/images/events/3adcefd9e525180e1792d2ea4023e26e.jpg",
     "post_date": "2026-05-17T11:00:00+00:00"
   },
@@ -2608,21 +2535,6 @@
     "genre": "классика"
   },
   {
-    "date": "2026-05-22",
-    "time": null,
-    "artist": "Анна Шакель и джаз-трио «А3»",
-    "event_type": "концерт",
-    "venue": "Отель «Аквамарин»",
-    "price": null,
-    "description": "Открытие сезона концертом под открытым небом. Весенние джазовые композиции в атмосфере тёплого майского вечера.",
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-14T15:06:52+00:00",
-    "image": "/images/events/5244a03ffba451fd63689c71bc7fc240.jpg",
-    "source_url": "https://t.me/sevastopol_jazz/1252",
-    "genre": "джаз"
-  },
-  {
     "date": "2026-05-31",
     "time": null,
     "artist": "Анна Шакель и Андрей Рыбальченко",
@@ -2772,21 +2684,6 @@
     "post_date": "2026-05-17T14:50:16+00:00"
   },
   {
-    "date": "2026-05-17",
-    "time": "21:30",
-    "artist": "Домино",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики",
-    "price": "бесплатно",
-    "description": "Кавер-группа «Домино» исполняет русский рок, поп-рок и неожиданные мешапы — не акустика. Квартирник около 21:30, заведение работает с 18:00 до 4:00.",
-    "source_channel": "rocknroll_92",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-16T09:23:24+00:00",
-    "image": "/images/events/cc6c0379c521ffafb66136b2d528dbb2.jpg",
-    "source_url": "https://t.me/rocknroll_92/6612",
-    "genre": "поп-рок"
-  },
-  {
     "date": "2026-05-16",
     "time": null,
     "artist": "Ночи музеев",
@@ -2894,62 +2791,55 @@
   {
     "date": null,
     "time": "evening",
-    "artist": "Сергей Бобунец и группа «Три дня дождя»",
-    "event_type": "трибьют",
-    "venue": "ТАВРИДА.АРТ",
-    "price": null,
-    "description": "Трибьют-шоу в рамках фестиваля «Киномаёвка», посвящённого дилогии «Брат». Прозвучат любимые треки из фильмов в новом исполнении.",
-    "source_channel": "tavrida_art",
+    "artist": "Сергей Бобунец, группа «Три дня дождя», Позывной «БРАТ",
+    "event_type": "фестиваль",
+    "venue": "Таврида.АРТ",
+    "price": "бесплатно",
+    "description": "Музыкальное шоу «Позывной «БРАТ»» на фестивале «Таврида.АРТ». Открытый конкурс: участники подают авторский трек (до 3 минут, MP3) и стихотворение или клип для выступления перед тысячами зрителей.",
     "source_city": "Судак",
-    "post_date": "2026-05-02T09:39:37+00:00",
-    "image": "/images/events/140ea2a82d334349fe2fd88d8e47608e.jpg",
+    "source_channel": "tavrida_art",
+    "genre": "рок",
     "source_url": "https://t.me/tavrida_art/20752",
-    "genre": "рок"
+    "images": [
+      "/images/events/140ea2a82d334349fe2fd88d8e47608e.jpg",
+      "/images/events/02c1fedf0024571f118d757272352fc1.jpg"
+    ],
+    "image": "/images/events/140ea2a82d334349fe2fd88d8e47608e.jpg",
+    "post_date": "2026-05-16T16:03:11+00:00"
   },
   {
     "date": null,
     "time": null,
-    "artist": "Стивен Митчелл & Jazz Band",
+    "artist": "Стивен Митчелл, Jazz Band",
     "event_type": "концерт",
     "venue": "Скажите Джаз",
     "price": null,
     "description": "Американский джазовый исполнитель Стивен Митчелл выступит с джаз-бандом в рамках международной главы сезона «Скажите Джаз». Три концерта в июле.",
-    "source_channel": "skazhitejazz",
     "source_city": "Крым",
-    "post_date": "2026-04-08T08:49:50+00:00",
-    "image": null,
+    "source_channel": "skazhitejazz",
+    "genre": "джаз",
     "source_url": "https://t.me/skazhitejazz/1545",
-    "genre": "джаз"
+    "images": null,
+    "image": null,
+    "post_date": "2026-04-08T08:49:50+00:00"
   },
   {
     "date": null,
     "time": null,
-    "artist": "Стивен Митчелл",
-    "event_type": "трибьют",
-    "venue": "Скажите Джаз",
-    "price": null,
-    "description": "Трибьют Луи Армстронгу в исполнении Стивена Митчелла — часть серии концертов в июле.",
-    "source_channel": "skazhitejazz",
-    "source_city": "Крым",
-    "post_date": "2026-04-08T08:49:50+00:00",
-    "image": null,
-    "source_url": "https://t.me/skazhitejazz/1545",
-    "genre": "джаз"
-  },
-  {
-    "date": null,
-    "time": null,
-    "artist": "CORA",
+    "artist": "CORA, Вечеринка",
     "event_type": "вечеринка",
     "venue": "Sky Beach Ялта",
     "price": null,
-    "description": "Открытие Sky Beach: живой вокал CORA под открытым небом и диджей-сет у подогреваемого бассейна. Мероприятие прошло, точная дата не указана.",
-    "source_channel": "sky_beach_yalta",
+    "description": "Тематическая вечеринка «Боги Олимпа» на Sky Beach. Закрытое атмосферное мероприятие для избранных гостей.",
     "source_city": "Ялта",
-    "post_date": "2026-04-30T17:53:09+00:00",
-    "image": "/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg",
+    "source_channel": "sky_beach_yalta",
+    "genre": "поп",
     "source_url": "https://t.me/sky_beach_yalta/1213",
-    "genre": "поп"
+    "images": [
+      "/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg"
+    ],
+    "image": "/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg",
+    "post_date": "2026-05-17T17:23:41+00:00"
   },
   {
     "date": null,
@@ -2994,36 +2884,6 @@
     "post_date": "2026-05-14T15:45:02+00:00",
     "image": "/images/events/71b8c5b7c72038dbeac39d453a78347d.jpg",
     "source_url": "https://t.me/belbekma/1248",
-    "genre": "поп"
-  },
-  {
-    "date": null,
-    "time": null,
-    "artist": "Позывной «БРАТ",
-    "event_type": "фестиваль",
-    "venue": "Таврида.АРТ",
-    "price": "бесплатно",
-    "description": "Музыкальное шоу «Позывной «БРАТ»» на фестивале «Таврида.АРТ». Открытый конкурс: участники подают авторский трек (до 3 минут, MP3) и стихотворение или клип для выступления перед тысячами зрителей.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-05-16T16:03:11+00:00",
-    "image": "/images/events/02c1fedf0024571f118d757272352fc1.jpg",
-    "source_url": "https://t.me/tavrida_art/20947",
-    "genre": "рок"
-  },
-  {
-    "date": null,
-    "time": null,
-    "artist": "Вечеринка",
-    "event_type": "вечеринка",
-    "venue": "Sky Beach Ялта",
-    "price": null,
-    "description": "Тематическая вечеринка «Боги Олимпа» на Sky Beach. Закрытое атмосферное мероприятие для избранных гостей.",
-    "source_channel": "sky_beach_yalta",
-    "source_city": "Ялта",
-    "post_date": "2026-05-17T17:23:41+00:00",
-    "image": null,
-    "source_url": "https://t.me/sky_beach_yalta/1252",
     "genre": "поп"
   }
 ]
