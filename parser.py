@@ -18,6 +18,8 @@ CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
 DAYS_BACK = 2
 IMAGES_DIR = "images/events"
+CACHE_DIR = ".cache"
+BATCH_SIZE = 10  # max posts per Claude call
 
 
 def download_image(url: str):
@@ -51,6 +53,30 @@ def download_image(url: str):
         return f"/{local_path}"
     except Exception:
         return url  # fallback: оставляем внешний URL
+
+
+def _cache_key(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+
+
+def _cache_read(text: str):
+    key = _cache_key(text)
+    path = os.path.join(CACHE_DIR, f"{key}.json")
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+    return None
+
+
+def _cache_write(text: str, data):
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    key = _cache_key(text)
+    path = os.path.join(CACHE_DIR, f"{key}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
 
 
 def load_channels():
@@ -87,14 +113,17 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
         if post_dt < cutoff:
             continue
 
-        image_url = None
+        image_urls = []
         thumbnail_url = None
 
-        image_tag = msg.select_one(".tgme_widget_message_photo_wrap")
-        if image_tag and image_tag.get("style"):
-            style = image_tag["style"]
-            if "url(" in style:
-                image_url = style.split("url('")[-1].split("')")[0]
+        # Извлекаем ВСЕ картинки из поста (альбомы/карусели)
+        for image_tag in msg.select(".tgme_widget_message_photo_wrap"):
+            if image_tag and image_tag.get("style"):
+                style = image_tag["style"]
+                if "url(" in style:
+                    img_url = style.split("url('")[-1].split("')")[0]
+                    if img_url and img_url not in image_urls:
+                        image_urls.append(img_url)
 
         video_tag = msg.select_one(".tgme_widget_message_video_thumb")
         if video_tag and video_tag.get("style"):
@@ -108,7 +137,8 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
         posts.append({
             "date": post_dt.isoformat(),
             "text": text_tag.get_text(separator="\n").strip(),
-            "image": image_url,
+            "image": image_urls[0] if image_urls else None,
+            "images": image_urls if len(image_urls) > 1 else None,
             "thumbnail": thumbnail_url,
             "url": post_url,
         })
@@ -116,93 +146,154 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
     return posts
 
 
-def extract_events(post_text: str, channel_meta: dict, thumbnail_path: "str | None" = None) -> list[dict]:
-    image_note = "\nТакже прилагается изображение из поста — прочитай весь текст с афиши/картинки, если он содержит детали мероприятия (дата, время, артист, цена)." if thumbnail_path else ""
+def _call_claude_text(prompt: str) -> str:
+    cmd = ["claude", "-p", prompt, "--output-format", "text"]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+    except subprocess.TimeoutExpired:
+        return ""
+    return result.stdout.strip()
 
-    prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
+
+def _call_claude_vision(prompt: str, image_paths: list[str]) -> str:
+    import base64
+    content = []
+    for p in image_paths:
+        try:
+            with open(p, "rb") as f:
+                img_b64 = base64.b64encode(f.read()).decode()
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}})
+        except Exception:
+            pass
+    content.append({"type": "text", "text": prompt})
+    msg = json.dumps({
+        "type": "user",
+        "message": {
+            "role": "user",
+            "content": content,
+        },
+    })
+    cmd = ["claude", "--print", "--verbose", "--input-format", "stream-json", "--output-format", "stream-json"]
+    try:
+        result = subprocess.run(cmd, input=msg, capture_output=True, text=True, timeout=300)
+    except subprocess.TimeoutExpired:
+        return ""
+    raw_parts = []
+    for line in result.stdout.splitlines():
+        try:
+            obj = json.loads(line)
+            if obj.get("type") == "assistant":
+                for block in obj.get("message", {}).get("content", []):
+                    if block.get("type") == "text":
+                        raw_parts.append(block["text"])
+        except json.JSONDecodeError:
+            pass
+    return "".join(raw_parts).strip()
+
+
+def _parse_claude_json(raw: str):
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return None
+
+
+def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, list[dict]]:
+    """Извлекает события из батча постов одним вызовом Claude.
+    Возвращает dict: post_url -> [events...].
+    """
+    if not posts:
+        return {}
+
+    # Проверяем кэш — хэш по всем текстам постов
+    cache_texts = [p["text"] for p in posts]
+    cached = _cache_read("\n---\n".join(cache_texts))
+    if cached is not None:
+        print(f" [кэш]", end="")
+        return cached
+
+    # Скачиваем все картинки для vision
+    vision_paths = []
+    for post in posts:
+        vision_url = post.get("image") or post.get("thumbnail")
+        if vision_url:
+            try:
+                import tempfile
+                resp = httpx.get(vision_url, timeout=10, follow_redirects=True,
+                                 headers={"User-Agent": "Mozilla/5.0"})
+                resp.raise_for_status()
+                with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
+                    tmp.write(resp.content)
+                    vision_paths.append(tmp.name)
+            except Exception:
+                pass
+
+    # Строим промпт для батча
+    posts_section = ""
+    for i, post in enumerate(posts):
+        url = post.get("url") or f"post_{i}"
+        posts_section += f"\n--- POST {i+1} (url: {url}) ---\n{post['text']}\n"
+
+    image_note = "\nТакже приложены изображения из постов — прочитай текст с афиш/картинок, если они содержат детали мероприятий (дата, время, артист, цена)." if vision_paths else ""
+
+    prompt_text = f"""Ты анализируешь посты из Telegram-канала крымского заведения.
 Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
-Текст поста:
-\"\"\"
-{post_text}
-\"\"\"{image_note}
+{posts_section}
+{image_note}
 
-Если в посте анонсируются музыкальные мероприятия — верни JSON-массив объектов.
+Для КАЖДОГО поста извлеки музыкальные мероприятия. Верни JSON-объект где ключи — url поста (точно как указано выше), а значения — массивы событий.
+
 НЕ включай в результат:
 - мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
 - «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
 - выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
 - общие анонсы без конкретного исполнителя/группы на конкретную дату.
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
-Если по дням нет конкретных деталей (просто «афиша на неделю», «3 дня живой музыки», расписание без имён) — верни [].
+Если по дням нет конкретных деталей — верни пустой массив [].
 ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
-ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста. НЕ придумывай и НЕ подставляй имена артистов, которых нет в тексте. Если в посте не назван конкретный исполнитель — укажи null.
-Каждый объект:
+ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста. НЕ придумывай имена. Если не назван конкретный исполнитель — укажи null.
+Каждое событие:
 {{
   "date": "YYYY-MM-DD или null",
   "time": "HH:MM или null",
   "artist": "название группы/исполнителя или null",
   "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
-  "venue": "конкретное место проведения из текста (кафе, ресторан, винодельня и т.п.) или null если не указано",
-  "city": "конкретный город Крыма (Ялта / Симферополь / Севастополь / Алушта / Судак / Керчь / Феодосия / Евпатория / Коктебель / Бахчисарай / Гурзуф / Саки и т.п.) — определи по названию площадки или контексту, null если не ясно",
+  "venue": "конкретное место проведения из текста или null",
+  "city": "город Крыма или null",
   "price": "цена или бесплатно или null",
   "description": "1-2 предложения"
 }}
 
-Если мероприятий нет — верни только [].
+Если мероприятий нет ни в одном посте — верни {{}}.
 Верни только JSON, без пояснений, без markdown."""
 
-    if thumbnail_path:
-        import base64
-        with open(thumbnail_path, "rb") as f:
-            img_b64 = base64.b64encode(f.read()).decode()
-        msg = json.dumps({
-            "type": "user",
-            "message": {
-                "role": "user",
-                "content": [
-                    {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}},
-                    {"type": "text", "text": prompt_text},
-                ],
-            },
-        })
-        cmd = ["claude", "--print", "--verbose", "--input-format", "stream-json", "--output-format", "stream-json"]
-        try:
-            result = subprocess.run(cmd, input=msg, capture_output=True, text=True, timeout=180)
-        except subprocess.TimeoutExpired:
-            print(" [таймаут]", end="")
-            return []
-        # Извлекаем текст из stream-json
-        raw_parts = []
-        for line in result.stdout.splitlines():
-            try:
-                obj = json.loads(line)
-                if obj.get("type") == "assistant":
-                    for block in obj.get("message", {}).get("content", []):
-                        if block.get("type") == "text":
-                            raw_parts.append(block["text"])
-            except json.JSONDecodeError:
-                pass
-        raw = "".join(raw_parts).strip()
+    if vision_paths:
+        raw = _call_claude_vision(prompt_text, vision_paths)
     else:
-        cmd = ["claude", "-p", prompt_text, "--output-format", "text"]
+        raw = _call_claude_text(prompt_text)
+
+    # Cleanup temp files
+    for p in vision_paths:
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-        except subprocess.TimeoutExpired:
-            print(" [таймаут]", end="")
-            return []
-        raw = result.stdout.strip()
+            os.unlink(p)
+        except OSError:
+            pass
 
-    # убираем markdown-обёртку если модель всё равно добавила
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
+    result = _parse_claude_json(raw)
+    if result is None:
+        return {}
 
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        return []
+    # Валидируем структуру
+    if not isinstance(result, dict):
+        return {}
+
+    _cache_write("\n---\n".join(cache_texts), result)
+    return result
 
 
 def fetch_max_posts(chat_id: int, token: str) -> list[dict]:
@@ -680,6 +771,25 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
     return [_merge_group(g) if len(g) > 1 else g[0] for g in groups.values()]
 
 
+def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
+    """Скачивает все картинки из постов. Возвращает url -> [local_paths...]."""
+    result = {}
+    for post in posts:
+        urls = list(post.get("images") or [])
+        if post.get("image") and post["image"] not in urls:
+            urls.insert(0, post["image"])
+        if post.get("thumbnail") and post["thumbnail"] not in urls:
+            urls.append(post["thumbnail"])
+        if urls:
+            local = []
+            for u in urls:
+                p = download_image(u)
+                if p:
+                    local.append(p)
+            result[post.get("url") or ""] = local
+    return result
+
+
 def process_channels(channels, all_events, get_posts_fn):
     for channel in channels:
         label = channel.get("username") or channel.get("domain") or str(channel.get("chat_id"))
@@ -691,55 +801,57 @@ def process_channels(channels, all_events, get_posts_fn):
             print(f"  Ошибка: {e}")
             continue
 
+        if not posts:
+            print(f"  Найдено событий: 0          ")
+            continue
+
+        # Скачиваем все картинки заранее
+        images_map = _download_all_images(posts)
+
+        # Батчим посты
+        batches = [posts[i:i + BATCH_SIZE] for i in range(0, len(posts), BATCH_SIZE)]
         channel_events = 0
-        for i, post in enumerate(posts):
-            print(f"  Пост {i+1}/{len(posts)}...", end="\r")
 
-            # Скачиваем фото или thumbnail видео для анализа Claude vision
-            thumbnail_path = None
-            vision_url = post.get("image") or post.get("thumbnail")
-            if vision_url:
-                try:
-                    import tempfile
-                    resp = httpx.get(vision_url, timeout=10, follow_redirects=True,
-                                     headers={"User-Agent": "Mozilla/5.0"})
-                    resp.raise_for_status()
-                    suffix = ".jpg"
-                    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
-                        tmp.write(resp.content)
-                        thumbnail_path = tmp.name
-                except Exception:
-                    thumbnail_path = None
+        for bi, batch in enumerate(batches):
+            print(f"  Батч {bi + 1}/{len(batches)} ({len(batch)} постов)...", end="")
 
-            events = extract_events(post["text"], channel, thumbnail_path)
+            batch_result = extract_events_batch(batch, channel)
 
-            if thumbnail_path:
-                try:
-                    os.unlink(thumbnail_path)
-                except OSError:
-                    pass
+            for post in batch:
+                post_url = post.get("url") or ""
+                events = batch_result.get(post_url, [])
 
-            for event in events:
-                event["source_channel"] = label
-                city = channel["city"]
-                if city == "Крым":
-                    # Приоритет: Claude-поле city → venue → description → keyword
-                    city = (
-                        event.get("city") or
-                        _detect_city(event.get("venue") or "") or
-                        _detect_city(event.get("description") or "") or
-                        city
-                    )
-                event["source_city"] = city
-                event.pop("city", None)  # убираем из финального объекта
-                if not event.get("venue"):
-                    event["venue"] = channel["title"]
-                event["post_date"] = post["date"]
-                # Для видео-постов используем thumbnail как обложку события
-                event["image"] = download_image(post.get("image") or post.get("thumbnail"))
-                event["source_url"] = post.get("url")
-                all_events.append(event)
-                channel_events += 1
+                local_images = images_map.get(post_url, [])
+
+                for idx, event in enumerate(events):
+                    event["source_channel"] = label
+                    city = channel["city"]
+                    if city == "Крым":
+                        city = (
+                            event.get("city") or
+                            _detect_city(event.get("venue") or "") or
+                            _detect_city(event.get("description") or "") or
+                            city
+                        )
+                    event["source_city"] = city
+                    event.pop("city", None)
+                    if not event.get("venue"):
+                        event["venue"] = channel["title"]
+                    event["post_date"] = post["date"]
+
+                    if local_images:
+                        event["image"] = local_images[idx % len(local_images)]
+                        event["images"] = local_images if len(local_images) > 1 else None
+                    else:
+                        event["image"] = None
+                        event["images"] = None
+
+                    event["source_url"] = post_url
+                    all_events.append(event)
+                    channel_events += 1
+
+            print(f" +{len([e for p in batch for e in batch_result.get(p.get('url', ''), [])])}")
+
         print(f"  Найдено событий: {channel_events}          ")
 
 
