@@ -202,6 +202,118 @@ def _parse_claude_json(raw: str):
         return None
 
 
+def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> list[dict]:
+    """Извлекает события из одного поста с одной картинкой. Возвращает [events...]."""
+    text = post["text"]
+    cache_key = hashlib.sha256(("single:" + text + ":" + image_path).encode("utf-8")).hexdigest()[:16]
+    cached = _cache_read(cache_key)
+    if cached is not None:
+        return cached
+
+    prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
+Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+
+Текст поста:
+\"\"\"
+{text}
+\"\"\"
+
+Также прилагается изображение из поста — прочитай весь текст с афиши/картинки, если он содержит детали мероприятия (дата, время, артист, цена).
+
+Если в посте анонсируются музыкальные мероприятия — верни JSON-массив объектов.
+НЕ включай в результат:
+- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
+- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
+- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
+- общие анонсы без конкретного исполнителя/группы на конкретную дату.
+Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
+Если по дням нет конкретных деталей — верни [].
+ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
+ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста. НЕ придумывай имена. Если не назван конкретный исполнитель — укажи null.
+Каждое событие:
+{{
+  "date": "YYYY-MM-DD или null",
+  "time": "HH:MM или null",
+  "artist": "название группы/исполнителя или null",
+  "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
+  "venue": "конкретное место проведения из текста или null",
+  "city": "город Крыма или null",
+  "price": "цена или бесплатно или null",
+  "description": "1-2 предложения"
+}}
+
+Если мероприятий нет — верни [].
+Верни только JSON, без пояснений, без markdown."""
+
+    raw = _call_claude_vision(prompt_text, [image_path])
+    result = _parse_claude_json(raw)
+    if result is None:
+        return []
+    if not isinstance(result, list):
+        return []
+    _cache_write(cache_key, result)
+    return result
+
+
+def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str]) -> list[dict]:
+    """Извлекает события из поста с несколькими картинками (афишами).
+    Каждая картинка — отдельное мероприятие.
+    Возвращает [events...] где каждое событие имеет поле image_index."""
+    text = post["text"]
+    cache_key = hashlib.sha256(("multi:" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
+    cached = _cache_read(cache_key)
+    if cached is not None:
+        return cached
+
+    images_desc = "\n".join([f"Изображение {i}: (афиша/фото #{i+1})" for i in range(len(image_paths))])
+
+    prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
+Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+
+Текст поста:
+\"\"\"
+{text}
+\"\"\"
+
+К посту приложено {len(image_paths)} изображений. Каждое изображение — это отдельная афиша мероприятия.
+{images_desc}
+
+Для КАЖДОГО изображения извлеки одно музыкальное мероприятие. Верни JSON-массив объектов.
+ВАЖНО: каждое событие должно содержать поле "image_index" — номер изображения (0, 1, 2, ...) из которого ты извлёк это мероприятие.
+
+НЕ включай в результат:
+- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
+- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
+- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
+- общие анонсы без конкретного исполнителя/группы на конкретную дату.
+ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
+ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста/афиши. НЕ придумывай имена.
+Каждое событие:
+{{
+  "image_index": 0,
+  "date": "YYYY-MM-DD или null",
+  "time": "HH:MM или null",
+  "artist": "название группы/исполнителя или null",
+  "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
+  "venue": "конкретное место проведения из текста или null",
+  "city": "город Крыма или null",
+  "price": "цена или бесплатно или null",
+  "description": "1-2 предложения"
+}}
+
+Если мероприятий нет — верни [].
+Верни только JSON, без пояснений, без markdown."""
+
+    raw = _call_claude_vision(prompt_text, image_paths)
+    result = _parse_claude_json(raw)
+    if result is None:
+        return []
+    if not isinstance(result, list):
+        return []
+    _cache_write(cache_key, result)
+    return result
+
+
 def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, list[dict]]:
     """Извлекает события из батча постов одним вызовом Claude.
     Возвращает dict: post_url -> [events...].
@@ -828,7 +940,8 @@ def _redistribute_images(events: list[dict]) -> int:
 
         for idx, e in enumerate(group):
             e["image"] = local[idx % len(local)]
-            e["images"] = local
+            # Без image_index не знаем какая картинка "своя" — ставим только primary
+            e["images"] = None
             updated += 1
 
     return updated
@@ -868,52 +981,100 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
             print(f"  Найдено событий: 0          ")
             continue
 
-        # Скачиваем все картинки заранее
-        images_map = _download_all_images(posts)
+        # Разделяем: multi-image (отдельно) и single-image (батчим)
+        multi_posts = [p for p in posts if p.get("images") and len(p["images"]) > 1]
+        single_posts = [p for p in posts if not p.get("images") or len(p.get("images") or []) <= 1]
 
-        # Батчим посты
-        batches = [posts[i:i + BATCH_SIZE] for i in range(0, len(posts), BATCH_SIZE)]
         channel_events = 0
 
-        for bi, batch in enumerate(batches):
-            print(f"  Батч {bi + 1}/{len(batches)} ({len(batch)} постов)...", end="")
+        # Multi-image — отдельный вызов на каждый пост
+        for post in multi_posts:
+            post_url = post.get("url") or ""
+            print(f"  Multi-image: {post_url} ({len(post['images'])} картинок)...", end="")
 
-            batch_result = extract_events_batch(batch, channel)
+            local = []
+            for u in post["images"]:
+                p = download_image(u)
+                if p:
+                    local.append(p)
 
-            for post in batch:
-                post_url = post.get("url") or ""
-                events = batch_result.get(post_url, [])
+            if not local:
+                print(" нет картинок")
+                continue
 
-                local_images = images_map.get(post_url, [])
+            events = extract_events_multi(post, channel, local)
+            print(f" +{len(events)}")
 
-                for idx, event in enumerate(events):
-                    event["source_channel"] = label
-                    city = channel["city"]
-                    if city == "Крым":
-                        city = (
-                            event.get("city") or
-                            _detect_city(event.get("venue") or "") or
-                            _detect_city(event.get("description") or "") or
-                            city
-                        )
-                    event["source_city"] = city
-                    event.pop("city", None)
-                    if not event.get("venue"):
-                        event["venue"] = channel["title"]
-                    event["post_date"] = post["date"]
+            for event in events:
+                event["source_channel"] = label
+                city = channel["city"]
+                if city == "Крым":
+                    city = (
+                        event.get("city") or
+                        _detect_city(event.get("venue") or "") or
+                        _detect_city(event.get("description") or "") or
+                        city
+                    )
+                event["source_city"] = city
+                event.pop("city", None)
+                if not event.get("venue"):
+                    event["venue"] = channel["title"]
+                event["post_date"] = post["date"]
 
-                    if local_images:
-                        event["image"] = local_images[idx % len(local_images)]
-                        event["images"] = local_images if len(local_images) > 1 else None
-                    else:
-                        event["image"] = None
-                        event["images"] = None
+                img_idx = event.pop("image_index", 0)
+                if local and 0 <= img_idx < len(local):
+                    event["image"] = local[img_idx]
+                    event["images"] = [local[img_idx]]
+                elif local:
+                    event["image"] = local[0]
+                    event["images"] = [local[0]]
+                event["source_url"] = post_url
+                all_events.append(event)
+                channel_events += 1
 
-                    event["source_url"] = post_url
-                    all_events.append(event)
-                    channel_events += 1
+        # Single-image — батчим
+        batches = [single_posts[i:i + BATCH_SIZE] for i in range(0, len(single_posts), BATCH_SIZE)]
+        if batches:
+            images_map = _download_all_images(single_posts)
 
-            print(f" +{len([e for p in batch for e in batch_result.get(p.get('url', ''), [])])}")
+            for bi, batch in enumerate(batches):
+                print(f"  Батч {bi + 1}/{len(batches)} ({len(batch)} постов)...", end="")
+
+                batch_result = extract_events_batch(batch, channel)
+
+                for post in batch:
+                    post_url = post.get("url") or ""
+                    events = batch_result.get(post_url, [])
+                    local_images = images_map.get(post_url, [])
+
+                    for idx, event in enumerate(events):
+                        event["source_channel"] = label
+                        city = channel["city"]
+                        if city == "Крым":
+                            city = (
+                                event.get("city") or
+                                _detect_city(event.get("venue") or "") or
+                                _detect_city(event.get("description") or "") or
+                                city
+                            )
+                        event["source_city"] = city
+                        event.pop("city", None)
+                        if not event.get("venue"):
+                            event["venue"] = channel["title"]
+                        event["post_date"] = post["date"]
+
+                        if local_images:
+                            event["image"] = local_images[idx % len(local_images)]
+                            event["images"] = local_images if len(local_images) > 1 else None
+                        else:
+                            event["image"] = None
+                            event["images"] = None
+
+                        event["source_url"] = post_url
+                        all_events.append(event)
+                        channel_events += 1
+
+                print(f" +{len([e for p in batch for e in batch_result.get(p.get('url', ''), [])])}")
 
         print(f"  Найдено событий: {channel_events}          ")
 
