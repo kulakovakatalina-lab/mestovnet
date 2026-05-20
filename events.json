@@ -521,10 +521,8 @@
     "source_channel": "belbekma",
     "genre": "этно",
     "source_url": "https://t.me/belbekma/1237",
-    "images": [
-      "/images/events/a8cc463eb515d66da91f6a6d176f7493.jpg"
-    ],
-    "image": "/images/events/a8cc463eb515d66da91f6a6d176f7493.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-05-13T06:55:03+00:00"
   },
   {
@@ -538,12 +536,10 @@
     "source_channel": "belbekma",
     "source_city": "Севастополь",
     "post_date": "2026-05-13T06:55:03+00:00",
-    "image": "/images/events/61e52b59b47dadd8b3d494bf0809cff5.jpg",
+    "image": null,
     "source_url": "https://t.me/belbekma/1237",
     "genre": "классика",
-    "images": [
-      "/images/events/61e52b59b47dadd8b3d494bf0809cff5.jpg"
-    ]
+    "images": null
   },
   {
     "date": "2026-05-15",
@@ -613,12 +609,10 @@
     "source_channel": "belbekma",
     "source_city": "Севастополь",
     "post_date": "2026-05-13T06:55:03+00:00",
-    "image": "/images/events/ef78441dc4238f6acd25984d37e050e4.jpg",
+    "image": null,
     "source_url": "https://t.me/belbekma/1237",
     "genre": "поп",
-    "images": [
-      "/images/events/ef78441dc4238f6acd25984d37e050e4.jpg"
-    ]
+    "images": null
   },
   {
     "date": "2026-06-07",
@@ -631,12 +625,10 @@
     "source_channel": "belbekma",
     "source_city": "Севастополь",
     "post_date": "2026-05-13T06:55:03+00:00",
-    "image": "/images/events/00ccdc46c5da99f48d2204e519d03a52.jpg",
+    "image": null,
     "source_url": "https://t.me/belbekma/1237",
     "genre": "хип-хоп",
-    "images": [
-      "/images/events/00ccdc46c5da99f48d2204e519d03a52.jpg"
-    ]
+    "images": null
   },
   {
     "date": "2026-05-17",
