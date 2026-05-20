@@ -577,40 +577,6 @@
     "post_date": "2026-05-16T06:45:01+00:00"
   },
   {
-    "date": "2026-05-23",
-    "time": "12:00",
-    "artist": "Карина Клавихо",
-    "event_type": "другое",
-    "venue": "Арт-Ковчег",
-    "price": "6000₽ за 2 дня",
-    "description": "Двухдневный танцевальный интенсив по fusion dance: техники плавности и змеиной пластики, основы хореографии и ритмики, философия и символика элементов.",
-    "source_city": "Севастополь",
-    "source_channel": "belbekma",
-    "genre": "другое",
-    "source_url": "https://t.me/belbekma/1258",
-    "images": [
-      "/images/events/15822de8382582fad5abf168d47f09f8.jpg",
-      "/images/events/fc93cbcd8d9ed854c0402c414d45ef9d.jpg"
-    ],
-    "image": "/images/events/15822de8382582fad5abf168d47f09f8.jpg",
-    "post_date": "2026-05-17T06:45:04+00:00"
-  },
-  {
-    "date": "2026-05-29",
-    "time": null,
-    "artist": "Андрей Танзю",
-    "event_type": "другое",
-    "venue": "Белбек",
-    "price": null,
-    "description": "Двухдневный интенсив по перкуссии (29–30 мая): рамочные барабаны, традиционные ритмы Индии, Турции и Египта от пионера world music в России.",
-    "source_channel": "belbekma",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-13T06:55:03+00:00",
-    "image": "/images/events/fc93cbcd8d9ed854c0402c414d45ef9d.jpg",
-    "source_url": "https://t.me/belbekma/1237",
-    "genre": "инди"
-  },
-  {
     "date": "2026-05-30",
     "time": null,
     "artist": "Spiritual Seasons",
@@ -624,20 +590,6 @@
     "image": "/images/events/fc93cbcd8d9ed854c0402c414d45ef9d.jpg",
     "source_url": "https://t.me/belbekma/1237",
     "genre": "фолк"
-  },
-  {
-    "date": "2026-05-31",
-    "time": null,
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Белбек",
-    "price": "бесплатно",
-    "description": "День свободного творчества: мастер-классы, открытый микрофон, концерты, театр и детская зона. Вход свободный.",
-    "source_channel": "belbekma",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-13T06:55:03+00:00",
-    "image": "/images/events/fc93cbcd8d9ed854c0402c414d45ef9d.jpg",
-    "source_url": "https://t.me/belbekma/1237"
   },
   {
     "date": "2026-06-06",
@@ -716,21 +668,6 @@
     "image": "/images/events/545f341503aa51bd1901c758c23fe20f.jpg",
     "source_url": "https://t.me/belbekma/1251",
     "genre": "поп"
-  },
-  {
-    "date": "2026-05-24",
-    "time": "12:00",
-    "artist": "Карина Клавихо",
-    "event_type": "другое",
-    "venue": "Арт-Ковчег",
-    "price": "6000₽ за 2 дня",
-    "description": "Двухдневный танцевальный интенсив по fusion dance: техники плавности и змеиной пластики, основы хореографии и ритмики, философия и символика элементов.",
-    "source_channel": "belbekma",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-17T06:45:04+00:00",
-    "image": "/images/events/15822de8382582fad5abf168d47f09f8.jpg",
-    "source_url": "https://t.me/belbekma/1258",
-    "genre": "другое"
   },
   {
     "date": "2026-05-23",
