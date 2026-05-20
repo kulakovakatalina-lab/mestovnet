@@ -296,19 +296,19 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
     return result
 
 
-def fetch_max_posts(chat_id: int, token: str) -> list[dict]:
+def fetch_max_posts(chat_id: int, token: str, days_back: int) -> list[dict]:
     from fetch_max import fetch_max_posts as _fetch
-    return _fetch(chat_id, token, DAYS_BACK)
+    return _fetch(chat_id, token, days_back)
 
 
-def fetch_vk_posts(domain: str, token: str) -> list[dict]:
+def fetch_vk_posts(domain: str, token: str, days_back: int) -> list[dict]:
     from fetch_vk import fetch_vk_posts as _fetch
-    return _fetch(domain, token, DAYS_BACK)
+    return _fetch(domain, token, days_back)
 
 
-def fetch_instagram_posts_wrapper(username: str) -> list[dict]:
+def fetch_instagram_posts_wrapper(username: str, days_back: int) -> list[dict]:
     from fetch_instagram import fetch_instagram_posts as _fetch
-    return _fetch(username, DAYS_BACK)
+    return _fetch(username, days_back)
 
 
 def process_yandex_afisha(all_events: list):
@@ -771,6 +771,69 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
     return [_merge_group(g) if len(g) > 1 else g[0] for g in groups.values()]
 
 
+def _fetch_images_from_url(url: str) -> list[str]:
+    """Fetches all image URLs from a Telegram post."""
+    if not url or "t.me/" not in url:
+        return []
+    try:
+        resp = httpx.get(url, headers={"User-Agent": "Mozilla/5.0"},
+                         follow_redirects=True, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        images = []
+        for wrap in soup.select(".tgme_widget_message_photo_wrap"):
+            style = wrap.get("style", "")
+            if "url(" in style:
+                img_url = style.split("url('")[-1].split("')")[0]
+                if img_url and img_url not in images:
+                    images.append(img_url)
+        return images
+    except Exception:
+        return []
+
+
+def _redistribute_images(events: list[dict]) -> int:
+    """Перескачивает картинки из постов и распределяет по событиям.
+    Нужно для старых событий из кэша/архива у которых одна картинка на всех.
+    Возвращает количество обновлённых событий."""
+    by_url = {}
+    for e in events:
+        url = e.get("source_url", "")
+        if url and "t.me/" in url:
+            by_url.setdefault(url, []).append(e)
+
+    updated = 0
+    for url, group in by_url.items():
+        # Skip if already has multiple distinct images
+        existing = set()
+        for e in group:
+            for img in (e.get("images") or []):
+                existing.add(img)
+            if e.get("image"):
+                existing.add(e["image"])
+        if len(existing) > 1:
+            continue
+
+        raw_urls = _fetch_images_from_url(url)
+        if len(raw_urls) <= 1:
+            continue
+
+        local = []
+        for u in raw_urls:
+            p = download_image(u)
+            if p:
+                local.append(p)
+        if len(local) <= 1:
+            continue
+
+        for idx, e in enumerate(group):
+            e["image"] = local[idx % len(local)]
+            e["images"] = local
+            updated += 1
+
+    return updated
+
+
 def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
     """Скачивает все картинки из постов. Возвращает url -> [local_paths...]."""
     result = {}
@@ -790,13 +853,13 @@ def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
     return result
 
 
-def process_channels(channels, all_events, get_posts_fn):
+def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK):
     for channel in channels:
         label = channel.get("username") or channel.get("domain") or str(channel.get("chat_id"))
         print(f"\nЧитаю {label} ({channel['title']})...")
         try:
             posts = get_posts_fn(channel)
-            print(f"  Постов за {DAYS_BACK} дней: {len(posts)}")
+            print(f"  Постов за {days_back} дней: {len(posts)}")
         except Exception as e:
             print(f"  Ошибка: {e}")
             continue
@@ -855,18 +918,18 @@ def process_channels(channels, all_events, get_posts_fn):
         print(f"  Найдено событий: {channel_events}          ")
 
 
-def main():
+def main(days_back: int = DAYS_BACK):
     tg_channels, max_channels, vk_channels, ig_channels = load_channels()
 
     all_events = []
 
-    process_channels(tg_channels, all_events, lambda ch: fetch_posts(ch["username"], DAYS_BACK))
+    process_channels(tg_channels, all_events, lambda ch: fetch_posts(ch["username"], days_back), days_back)
 
     max_token = os.environ.get("MAX_BOT_TOKEN", "")
     active_max = [c for c in max_channels if c.get("chat_id")]
     if active_max and max_token:
         process_channels(
-            active_max, all_events, lambda ch: fetch_max_posts(ch["chat_id"], max_token)
+            active_max, all_events, lambda ch: fetch_max_posts(ch["chat_id"], max_token, days_back), days_back
         )
     elif active_max:
         print("\nMax-каналы настроены, но MAX_BOT_TOKEN не задан — пропускаю.")
@@ -874,7 +937,7 @@ def main():
     vk_token = os.environ.get("VK_SERVICE_TOKEN", "")
     if vk_channels and vk_token:
         process_channels(
-            vk_channels, all_events, lambda ch: fetch_vk_posts(ch["domain"], vk_token)
+            vk_channels, all_events, lambda ch: fetch_vk_posts(ch["domain"], vk_token, days_back), days_back
         )
     elif vk_channels:
         print("\nVK-каналы настроены, но VK_SERVICE_TOKEN не задан — пропускаю.")
@@ -885,12 +948,17 @@ def main():
     if ig_channels and ig_user and ig_pass:
         print("\nInstagram — пропускаю (долго и нестабильно)")
         # process_channels(
-        #     ig_channels, all_events, lambda ch: fetch_instagram_posts_wrapper(ch["username"])
+        #     ig_channels, all_events, lambda ch: fetch_instagram_posts_wrapper(ch["username"], days_back)
         # )
     elif ig_channels:
         print("\nInstagram-каналы настроены, но IG_USERNAME / IG_PASSWORD не заданы — пропускаю.")
 
     process_yandex_afisha(all_events)
+
+    # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
+    img_updated = _redistribute_images(all_events)
+    if img_updated:
+        print(f"Картинки обновлены: {img_updated} событий")
 
     before = len(all_events)
     all_events = deduplicate_events(all_events)
@@ -1010,7 +1078,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=None, help="Глубина парсинга в днях (по умолчанию: DAYS_BACK)")
     args = parser.parse_args()
+    days = args.days if args.days else DAYS_BACK
     if args.days:
-        DAYS_BACK = args.days
-        print(f"Глубина парсинга: {DAYS_BACK} дней")
-    main()
+        print(f"Глубина парсинга: {days} дней")
+    main(days_back=days)

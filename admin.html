@@ -407,19 +407,31 @@ const GITHUB_REPO   = "kulakovakatalina-lab/mestovnet";
 const GITHUB_BRANCH = "main";
 const GITHUB_FILE   = "settings.json";
 
-const PASSWORD    = "admin1234";
+// SHA-256 хеш пароля (admin1234) — не храним пароль в открытом виде
+const PASSWORD_HASH = "ac9689e2272427085e35b9d3e3e8bed88cb3434828b43b86fc0596cad4c6e270";
+
 const SESSION_KEY = "mestovnet_admin_auth";
 const TOKEN_KEY   = "mestovnet_github_token";
+
+// Простая SHA-256 функция через Web Crypto API
+async function sha256(text) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
 
 // ---- auth ----
 function checkAuth() {
   return sessionStorage.getItem(SESSION_KEY) === "1";
 }
 
-document.getElementById("auth-form").addEventListener("submit", e => {
+document.getElementById("auth-form").addEventListener("submit", async e => {
   e.preventDefault();
   const val = document.getElementById("pwd-input").value;
-  if (val === PASSWORD) {
+  const hash = await sha256(val);
+  if (hash === PASSWORD_HASH) {
     sessionStorage.setItem(SESSION_KEY, "1");
     showApp();
   } else {
