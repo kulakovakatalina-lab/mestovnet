@@ -168,9 +168,20 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
 }
 .carousel { position: relative; width: 100%; border-radius: var(--radius-lg); overflow: hidden; }
-.carousel-track { display: flex; transition: transform 0.35s ease; }
-.carousel-slide { min-width: 100%; }
+.carousel-track { position: relative; }
+.carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s ease; }
+.carousel-slide.active { position: relative; opacity: 1; }
 .carousel-slide img { width: 100%; height: auto; display: block; }
+.carousel-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px; border: none; border-radius: 50%;
+  background: oklch(20% 0.02 250 / 0.7); color: #fff;
+  font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s; z-index: 2;
+}
+.carousel-btn:hover { background: oklch(30% 0.04 250 / 0.85); }
+.carousel-btn-prev { left: 10px; }
+.carousel-btn-next { right: 10px; }
 .carousel-dots { display: flex; gap: 8px; justify-content: center; padding: 14px 0; }
 .carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: oklch(70% 0.02 250 / 0.35); cursor: pointer; transition: background 0.2s; }
 .carousel-dot.active { background: var(--accent); }
@@ -905,8 +916,10 @@ function render(event) {
           ? `<img src="${images[0]}" alt="${event.artist || ''}" loading="lazy">`
           : `<div class="carousel" id="posterCarousel">
               <div class="carousel-track" id="carouselTrack">
-                ${images.map(img => `<div class="carousel-slide"><img src="${img}" alt="${event.artist || ''}" loading="lazy"></div>`).join('')}
+                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${img}" alt="${event.artist || ''}" loading="lazy"></div>`).join('')}
               </div>
+              <button class="carousel-btn carousel-btn-prev" id="carouselPrev">&#8249;</button>
+              <button class="carousel-btn carousel-btn-next" id="carouselNext">&#8250;</button>
               <div class="carousel-dots" id="carouselDots">
                 ${images.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}" data-slide="${i}"></span>`).join('')}
               </div>
@@ -1026,17 +1039,27 @@ function render(event) {
 }
 
 function initCarousel() {
-  const track = document.getElementById('carouselTrack');
+  const slides = document.querySelectorAll('.carousel-slide');
   const dots = document.querySelectorAll('.carousel-dot');
-  if (!track || !dots.length) return;
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  if (!slides.length) return;
+
+  let current = 0;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
   dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      const idx = parseInt(dot.dataset.slide);
-      track.style.transform = `translateX(-${idx * 100}%)`;
-      dots.forEach(d => d.classList.remove('active'));
-      dot.classList.add('active');
-    });
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.slide)));
   });
+  if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
 }
 
 function loadMore() {
