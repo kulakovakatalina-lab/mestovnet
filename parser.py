@@ -256,17 +256,19 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 
 
 def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str]) -> list[dict]:
-    """Извлекает события из поста с несколькими картинками (афишами).
-    Каждая картинка — отдельное мероприятие.
+    """Извлекает события из поста с несколькими картинками.
+    Один вызов Claude: находит афиши среди всех изображений и извлекает события.
     Возвращает [events...] где каждое событие имеет поле image_index."""
     text = post["text"]
+    print(f"\n  [multi] {post.get('url', '?')} {len(image_paths)} images", end="")
     cache_key = hashlib.sha256(("multi:" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
+    print(f" key={cache_key}", end="")
     cached = _cache_read(cache_key)
+    print(f" cache={cached is not None}", end="")
     if cached is not None:
         return cached
 
-    images_desc = "\n".join([f"Изображение {i}: (афиша/фото #{i+1})" for i in range(len(image_paths))])
-
+    # Один вызов: найти афиши и извлечь события
     prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
 Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
@@ -275,19 +277,18 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 {text}
 \"\"\"
 
-К посту приложено {len(image_paths)} изображений. Каждое изображение — это отдельная афиша мероприятия.
-{images_desc}
+К посту приложено {len(image_paths)} изображений. Среди них могут быть:
+- афиши/постеры с информацией о мероприятиях (дата, время, артист, место);
+- дополнительные фотографии (фото с концертов, QR-коды, логотипы, общие фото).
 
-Для КАЖДОГО изображения извлеки одно музыкальное мероприятие. Верни JSON-массив объектов.
-ВАЖНО: каждое событие должно содержать поле "image_index" — номер изображения (0, 1, 2, ...) из которого ты извлёк это мероприятие.
+Найди ВСЕ музыкальные мероприятия и для каждого укажи номер изображения-афиши.
 
 НЕ включай в результат:
 - мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
 - «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
 - выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
 - общие анонсы без конкретного исполнителя/группы на конкретную дату.
-ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
-ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста/афиши. НЕ придумывай имена.
+ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста афиши. НЕ придумывай имена.
 Каждое событие:
 {{
   "image_index": 0,
@@ -295,23 +296,64 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
   "time": "HH:MM или null",
   "artist": "название группы/исполнителя или null",
   "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
-  "venue": "конкретное место проведения из текста или null",
+  "venue": "конкретное место проведения или null",
   "city": "город Крыма или null",
   "price": "цена или бесплатно или null",
   "description": "1-2 предложения"
 }}
 
 Если мероприятий нет — верни [].
-Верни только JSON, без пояснений, без markdown."""
+Только JSON."""
 
-    raw = _call_claude_vision(prompt_text, image_paths)
-    result = _parse_claude_json(raw)
-    if result is None:
+    content = []
+    for img_path in image_paths:
+        abs_path = os.path.abspath(img_path.lstrip("/"))
+        try:
+            with open(abs_path, "rb") as f:
+                img_b64 = base64.b64encode(f.read()).decode()
+            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}})
+        except Exception:
+            pass
+    content.append({"type": "text", "text": prompt_text})
+
+    msg = json.dumps({"type": "user", "message": {"role": "user", "content": content}})
+    cmd = ["claude", "--print", "--verbose", "--input-format", "stream-json", "--output-format", "stream-json"]
+    try:
+        result = subprocess.run(cmd, input=msg, capture_output=True, text=True, timeout=300)
+    except subprocess.TimeoutExpired:
+        print(" [timeout]")
         return []
-    if not isinstance(result, list):
+
+    raw_parts = []
+    for line in result.stdout.splitlines():
+        try:
+            obj = json.loads(line)
+            if obj.get("type") == "assistant":
+                for block in obj.get("message", {}).get("content", []):
+                    if block.get("type") == "text":
+                        raw_parts.append(block["text"])
+        except json.JSONDecodeError:
+            pass
+    raw = "".join(raw_parts).strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+
+    print(f" [raw: {raw[:100]}]", end="")
+
+    try:
+        events = json.loads(raw)
+    except json.JSONDecodeError:
+        print(" [parse error]")
         return []
-    _cache_write(cache_key, result)
-    return result
+
+    if not isinstance(events, list):
+        return []
+
+    print(f" -> {len(events)} events", end="")
+    _cache_write(cache_key, events)
+    return events
 
 
 def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, list[dict]]:
