@@ -673,7 +673,7 @@ footer {
 </div>
 
 <main id="main">
-<div class="date-group"><h2>22 мая, чт</h2>
+<div class="date-group"><h2><span class="today-badge">Сегодня</span>22 мая, чт</h2>
 <div class="card" onclick="window.open('https://t.me/afisha_crimea/7472','_blank')"><div class="card-inner"><div class="card-time">23:30</div><div class="card-body"><div class="card-artist">By Индия</div><div class="card-venue">Ночной клуб «Белый»<span class="city">· Евпатория</span></div><div class="card-description">Выступление By Индия в ночном клубе — треки «Wanna fly», «Кавалерия», «Mone», «Шадо» и другие хиты из плей-листа.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">инди</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7472" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/2e2a789b43bcb35a1b565f91248f1e92.jpg" alt="By Индия" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </main>
@@ -742,7 +742,7 @@ render();
 
 // City chip clicks navigate to the city page (or home for "all")
 (function () {
-  var CITY_URLS = {"all": "/", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
+  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
   document.getElementById('city-filters').addEventListener('click', function (e) {
     var btn = e.target.closest('[data-city]');
     if (!btn) return;

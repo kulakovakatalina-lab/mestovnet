@@ -1064,6 +1064,8 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 event["post_date"] = post["date"]
 
                 img_idx = event.pop("image_index", 0)
+                if img_idx is None:
+                    img_idx = 0
                 if local and 0 <= img_idx < len(local):
                     event["image"] = local[img_idx]
                     event["images"] = [local[img_idx]]
