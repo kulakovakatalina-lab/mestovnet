@@ -5,9 +5,9 @@
   <link rel="icon" type="image/png" href="/images/fav.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Живая музыка и концерты в Керчи — Местов.Нет</title>
-  <meta name="description" content="Афиша концертов и живой музыки в Керчи: ближайшие 3 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta name="description" content="Афиша концертов и живой музыки в Керчи: ближайшие 4 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:title" content="Живая музыка и концерты в Керчи — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Керчи: ближайшие 3 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Керчи: ближайшие 4 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://mestov.net/cities/kerch.html">
   <style>
@@ -684,6 +684,32 @@ footer {
         "name": "Крымский академический симфонический оркестр"
       },
       "image": "/images/events/0f82acfceb9518e73e5ba22a4383df64.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "SHAMAN",
+      "startDate": "2026-07-24T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Корабел",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Керчь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "SHAMAN в Корабел, Керчь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "SHAMAN"
+      },
+      "image": "/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 2 500 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
@@ -733,6 +759,9 @@ footer {
 </div>
 <div class="date-group"><h2>1 июля, вт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Jawa. Хиты «Сектор Газа»</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">Jawa. Хиты «Сектор Газа» в Корабел, Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc3a3f27558985d459629e1973ea2f18.jpg" alt="Jawa. Хиты «Сектор Газа»" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июля, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">SHAMAN в Корабел, Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="SHAMAN" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </main>
 
@@ -800,7 +829,7 @@ render();
 
 // City chip clicks navigate to the city page (or home for "all")
 (function () {
-  var CITY_URLS = {"all": "/", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
+  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
   document.getElementById('city-filters').addEventListener('click', function (e) {
     var btn = e.target.closest('[data-city]');
     if (!btn) return;
