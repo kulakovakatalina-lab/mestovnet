@@ -1123,6 +1123,7 @@ footer {
 
 <main id="main">
 <div class="date-group"><h2>Дата уточняется</h2>
+<div class="card" onclick="window.open('https://t.me/rocknroll_92/6653','_blank')"><div class="card-inner"><div class="card-time">18:00-04:00, квартирник ~21:30</div><div class="card-body"><div class="card-artist">Игорь Симдянкин</div><div class="card-venue">Рок-н-рольщики<span class="city">· Севастополь</span></div><div class="card-description">Музыкальная вечеринка с русской рок-поп музыкой. Музыкальный квартирник начинается около 21:30, вход строго 18+.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">поп-рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6653" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/90a59242c8aa8ec21a61534642d34d15.jpg" alt="Игорь Симдянкин" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/belbekma/1248','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Карина Клавихо, Правин, Андрей Танзю</div><div class="card-venue">Арт-Ковчег<span class="city">· Севастополь</span></div><div class="card-description">Суфийский концерт — созерцание практики через звук и мастерство. Искренность и мудрость без национальных и религиозных границ.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1248" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/bbf007c97c344b5736255b1456c861bd.jpg" alt="Карина Клавихо, Правин, Андрей Танзю" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2><span class="today-badge">Сегодня</span>24 мая, сб</h2>
@@ -1244,7 +1245,7 @@ render();
 
 // City chip clicks navigate to the city page (or home for "all")
 (function () {
-  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
+  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Крым": "/cities/крым.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
   document.getElementById('city-filters').addEventListener('click', function (e) {
     var btn = e.target.closest('[data-city]');
     if (!btn) return;
