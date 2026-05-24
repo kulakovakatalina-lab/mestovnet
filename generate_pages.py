@@ -55,6 +55,8 @@ CITY_SLUGS: dict[str, str] = {
     "Алушта":        "alushta",
     "Саки":          "saki",
     "Крым":          "all",
+    "Научный (Бахчисарайский р-н)": "nauchny",
+    "Бахчисарайский район": "bakhchisaray",
 }
 
 CITY_PREP = {                           # «в Симферополе», «в Ялте», …
@@ -70,6 +72,8 @@ CITY_PREP = {                           # «в Симферополе», «в Я
     "Алушта":        "в Алуште",
     "Саки":          "в Саках",
     "Крым":          "в Крыму",
+    "Научный (Бахчисарайский р-н)": "в Научном",
+    "Бахчисарайский район": "в Бахчисарайском районе",
 }
 
 # ── Утилиты ──────────────────────────────────────────────────────────────────
@@ -489,9 +493,14 @@ def main() -> None:
     # 2. Генерируем страницы городов
     cities_dir = BASE_DIR / "cities"
     cities_dir.mkdir(exist_ok=True)
+    seen_slugs: set[str] = set()
     print(f"🏙   Генерируем страницы городов ({len(cities_with_events)}) …")
     for city in cities_with_events:
         slug = city_slug(city)
+        if slug in seen_slugs:
+            print(f"    — cities/{slug}.html  (дубль: {city}, пропущен)")
+            continue
+        seen_slugs.add(slug)
         page = make_city_page(city, events, cities_with_events, css, custom_names)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
