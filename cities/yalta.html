@@ -1,16 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="/images/fav.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Живая музыка и концерты в Ялте — Местов.Нет</title>
-  <meta name="description" content="Афиша концертов и живой музыки в Ялте: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
-  <meta property="og:title" content="Живая музыка и концерты в Ялте — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Ялте: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
-  <meta property="og:type" content="website">
-  <link rel="canonical" href="https://mestov.net/cities/yalta.html">
-  <style>
+<meta charset="utf-8">
+<meta name="description" content="Афиша концертов и живой музыки в Ялте: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Живая музыка и концерты в Ялте — Местов.Нет</title>
+<link rel="icon" type="image/png" href="/images/fav.png">
+<style>
 :root {
   --bg:      oklch(99% 0.002 240);
   --surface: oklch(100% 0 0);
@@ -609,6 +605,11 @@ footer {
   pointer-events: none;
 }
 </style>
+  <link rel="canonical" href="https://mestov.net/cities/yalta.html">
+  <meta property="og:title" content="Живая музыка и концерты в Ялте — Местов.Нет">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Ялте: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:type" content="website">
+  
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -943,81 +944,72 @@ footer {
 </script>
 </head>
 <body>
-<header>
-  <img src="/images/logo.png" alt="Местов.Нет" class="site-logo">
-</header>
 
-<div class="toolbar" id="toolbar">
-  <div class="date-filter" id="date-filter">
-    <button class="preset-btn" data-preset="today">Сегодня</button>
-    <button class="preset-btn" data-preset="weekend">Выходные</button>
-    <button class="preset-btn" data-preset="week">Неделя</button>
-    <button class="preset-btn" data-preset="custom" id="btn-custom">Выбрать даты</button>
-  </div>
-  <div class="city-filters" id="city-filters">
-    <button class="filter-btn" data-city="all">Все города</button>
-  </div>
-</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">местов<em>.нет</em></a>
+  <div class="nav-sep"></div>
+  <div class="nav-genres" id="nav-genres"></div>
+</nav>
 
-<div class="cal-overlay" id="cal-overlay">
-  <div class="cal-modal" id="cal-modal">
-    <div class="cal-nav-row">
-      <button class="cal-nav" id="cal-prev">&#8249;</button>
-      <div class="cal-months" id="cal-months"></div>
-      <button class="cal-nav" id="cal-next">&#8250;</button>
+<div class="genre-strip-mobile" id="genre-strip-mobile"></div>
+
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow" id="hero-eyebrow">Афиша живой музыки · Крым</p>
+    <h1 class="hero-title">Живые концерты — от Ялты до Керчи</h1>
+    <p class="hero-sub">Джаз-клубы, акустические сеты, рок-вечера и этнические фестивали. Площадки по всему Крыму. Обновляется каждый день.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-n" id="stat-events">—</div>
+        <div class="hero-stat-l">событий</div>
+      </div>
+      <div>
+        <div class="hero-stat-n" id="stat-venues">—</div>
+        <div class="hero-stat-l">площадок</div>
+      </div>
+      <div>
+        <div class="hero-stat-n" id="stat-cities">—</div>
+        <div class="hero-stat-l">городов</div>
+      </div>
     </div>
-    <div class="cal-actions">
-      <button class="cal-btn-clear" id="cal-btn-clear">Сбросить</button>
-      <span class="cal-range-label" id="cal-label">Выберите даты</span>
-      <button class="cal-btn-apply" id="cal-btn-apply">Применить</button>
-    </div>
+  </div>
+
+  <div class="featured" id="featured"></div>
+</section>
+
+<div class="divider"></div>
+
+<div class="section" style="padding-top:28px; padding-bottom:0;">
+  <div class="city-pills" id="city-filter">
+    <button class="city-pill active" data-city="all">Все города</button>
   </div>
 </div>
 
-<main id="main">
-<div class="date-group"><h2>Дата уточняется</h2>
-<div class="card" onclick="window.open('https://t.me/sky_beach_yalta/1213','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">CORA</div><div class="card-venue">Sky Beach Ялта<span class="city">· Ялта</span></div><div class="card-description">Открытие Sky Beach: живой вокал CORA под открытым небом и диджей-сет у подогреваемого бассейна. Мероприятие прошло, точная дата не указана.</div><div class="card-footer"><span class="tag type">вечеринка</span></div><div class="card-source"><a class="src-link" href="https://t.me/sky_beach_yalta/1213" target="_blank" rel="noopener">@sky_beach_yalta</a></div></div><img class="card-thumb" src="/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg" alt="CORA" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>27 мая, вт</h2>
-<div class="card" onclick="window.open('https://t.me/afisha_crimea/7427','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Государственный камерный оркестр «Виртуозы Москвы»</div><div class="card-venue">Дом-музей А.П. Чехова (Белая дача)<span class="city">· Ялта</span></div><div class="card-description">Дирижёр Владимир Спиваков. В программе произведения А. Вивальди, А. Корелли, Х. Турины и Л. Боккерини.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7427" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/c34548d0afb625955a347e44ce78ed13.jpg" alt="Государственный камерный оркестр «Виртуозы Москвы»" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>6 июня, пт</h2>
-<div class="card" onclick="window.open('https://t.me/koncertykrym/2019','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Дом-музей им. А.П. Чехова</div><div class="card-venue">Дом-музей им. А.П. Чехова</div><div class="card-description">Концерт цикла «Чехов в музыке» с новой программой. Билеты на concert-kko.ru.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2019" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/e9a76d032ff7f3c354667d5eca9888fb.jpg" alt="Дом-музей им. А.П. Чехова" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>13 июня, пт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Сияние. Открытие сезона на маяке</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Сияние. Открытие сезона на маяке в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/53d3205a3cca65f7684260786329a531.jpg" alt="Сияние. Открытие сезона на маяке" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>20 июня, пт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Sunset Vibes. Абонемент</div><div class="card-venue">Винный парк (Понизовка)<span class="city">· Ялта</span></div><div class="card-description">Sunset Vibes. Абонемент в Винный парк (Понизовка), Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">лаунж</span><span class="tag price">от 7 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg" alt="Sunset Vibes. Абонемент" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>24 июня, вт</h2>
-<div class="card" onclick="window.open('https://t.me/koncertykrym/2050','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Крымский академический симфонический оркестр</div><div class="card-venue">Отель «Ялта-Интурист»<span class="city">· Ялта</span></div><div class="card-description">Концерт «Музыка и свечи: на краю эмоций» при свете сотен мерцающих свечей. Прозвучат произведения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы и других композиторов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2050" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg" alt="Крымский академический симфонический оркестр" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>26 июня, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">AdrenalinHouse в Театр им. А. П. Чехова, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">шоу</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>4 июля, пт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">12:00</div><div class="card-body"><div class="card-artist">Гастролис</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Гастролис в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп-рок</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg" alt="Гастролис" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>24 июля, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">КняZz в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>5 августа, вт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Стешок, Anjelina, Макар Давыдов, Мали и…</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg" alt="Стешок, Anjelina, Макар Давыдов, Мали и…" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>11 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Нэнси в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>13 августа, ср</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>14 августа, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Комната культуры</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Комната культуры в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">инди</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/24b1ef623050ed6cd67138099025047a.jpg" alt="Комната культуры" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>25 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Моя Мишель в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-</main>
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Ближайшие события</h2>
+  </div>
+  <div class="events-grid" id="events-grid">
+    <div class="loading">Загрузка событий...</div>
+  </div>
+  <div class="load-more-wrap">
+    <button class="load-more-btn" id="load-more-btn" onclick="loadMoreEvents()">Показать ещё</button>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">По жанрам</h2>
+  </div>
+  <div class="genre-grid" id="genre-grid"></div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">местов<em>.нет</em></a>
+  <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
+</footer>
 
 <script>
 const GENRE_MAP = {
@@ -1077,24 +1069,399 @@ let shownEventsCount = 12;
 
 async function load() {
   try {
-    const res = await buildFilters();
-document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.city === activeCity));
-render();
+    const res = await fetch('events.json');
+    const data = await res.json();
+    const today = new Date(); today.setHours(0, 0, 0, 0);
 
-// City chip clicks navigate to the city page (or home for "all")
-(function () {
-  var CITY_URLS = {"all": "/", "Бахчисарай": "/cities/bakhchisaray.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Коктебель": "/cities/коктебель.html", "Крым": "/cities/крым.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Судак": "/cities/sudak.html", "Ялта": "/cities/yalta.html"};
-  document.getElementById('city-filters').addEventListener('click', function (e) {
-    var btn = e.target.closest('[data-city]');
-    if (!btn) return;
-    var dest = CITY_URLS[btn.dataset.city];
-    if (dest !== undefined && dest !== window.location.pathname) {
-      e.stopImmediatePropagation();
-      window.location.href = dest;
-    }
-  }, true);
+    allEvents = data
+      .map((e, i) => ({ ...e, _origIdx: i }))
+      .filter(e => e.date && parseDate(e.date) >= today)
+      .map(e => ({
+        ...e,
+        dateObj: parseDate(e.date),
+        genre: mapGenre(e.genre),
+        city: mapCity(e.source_city),
+        dateFmt: formatDate(parseDate(e.date)),
+        priceDisplay: priceText(e.price),
+        globalIdx: e._origIdx
+      }))
+      .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
+
+    renderAll();
+  } catch (err) {
+    document.getElementById('events-grid').innerHTML = '<div class="loading">Не удалось загрузить события</div>';
+  }
+}
+
+function renderAll() {
+  const upcoming = currentCity === 'all' ? allEvents : allEvents.filter(e => e.city === currentCity);
+  const cities = new Set(allEvents.map(e => e.city).filter(c => c !== 'all'));
+  const venues = new Set(allEvents.map(e => e.venue));
+
+  document.getElementById('stat-events').textContent = allEvents.length;
+  document.getElementById('stat-venues').textContent = venues.size;
+  document.getElementById('stat-cities').textContent = cities.size;
+
+  renderNavGenres();
+  renderFeatured(upcoming[0]);
+  renderCityPills(cities);
+  renderEvents(upcoming.slice(0, shownEventsCount));
+  renderGenreGrid();
+  updateLoadMoreBtn();
+}
+
+function renderFeatured(ev) {
+  if (!ev) { document.getElementById('featured').innerHTML = ''; return; }
+  const imgHtml = ev.image
+    ? `<img src="${ev.image}" alt="${ev.artist || ''}" onerror="this.style.display='none'">`
+    : `<div class="featured-poster-bg">${starIcon}</div>`;
+
+  document.getElementById('featured').innerHTML = `
+    <a href="event.html?idx=${ev.globalIdx}" class="featured-link">
+      <div class="featured-poster">${imgHtml}</div>
+      <div class="featured-body">
+        <p class="featured-label">Ближайшее событие</p>
+        <span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>
+        <h2 class="featured-artist">${ev.artist || '—'}</h2>
+        <p class="featured-desc">${ev.description || ''}</p>
+        <div class="featured-meta">
+          ${ev.time ? `
+          <div class="featured-meta-row">
+            <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"></rect><path d="M2 7h12M5 1.5v3M11 1.5v3"></path></svg>
+            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${ev.time}
+          </div>` : ''}
+          <div class="featured-meta-row">
+            <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"></path><circle cx="8" cy="6.5" r="1.75"></circle></svg>
+            ${ev.venue || '—'} · ${ev.source_city || '—'}
+          </div>
+        </div>
+        <span class="featured-price">${ev.priceDisplay}</span>
+      </div>
+    </a>`;
+}
+
+function renderCityPills(cities) {
+  const container = document.getElementById('city-filter');
+  let html = '<button class="city-pill active" data-city="all">Все города</button>';
+  const sorted = [...cities].sort((a, b) => (CITY_LABELS[a] || a).localeCompare(CITY_LABELS[b] || b, 'ru'));
+  for (const c of sorted) {
+    html += `<button class="city-pill" data-city="${c}">${CITY_LABELS[c] || c}</button>`;
+  }
+  container.innerHTML = html;
+}
+
+function renderEvents(events) {
+  const grid = document.getElementById('events-grid');
+  if (!events.length) { grid.innerHTML = '<div class="loading">Нет событий</div>'; return; }
+
+  grid.innerHTML = events.map((ev, i) => {
+
+    const imgHtml = ev.image
+      ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
+      : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
+
+    return `<a href="event.html?idx=${ev.globalIdx}" class="event-card" data-city="${ev.city}">
+      <div class="card-img">${imgHtml}</div>
+      <div class="card-body">
+        <div class="card-top">
+          <div>
+            <div class="event-date-day">${ev.dateFmt.day}</div>
+            <div class="event-date-rest">${ev.dateFmt.month} · ${ev.dateFmt.dow}</div>
+          </div>
+          <span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>
+        </div>
+        <div class="event-artist">${ev.artist || '—'}</div>
+        <div class="event-venue">${ev.venue || '—'} · ${ev.source_city || '—'}</div>
+        <div class="event-footer">
+          ${ev.time ? `<span class="event-time">${ev.time}</span>` : ''}
+          <span class="event-price">${ev.priceDisplay}</span>
+        </div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+function renderGenreGrid() {
+  const counts = {};
+  allEvents.forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
+  const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
+  const grid = document.getElementById('genre-grid');
+  grid.innerHTML = order.filter(g => counts[g]).map(g => {
+    const n = counts[g];
+    const label = n === 1 ? 'событие' : n < 5 ? 'события' : 'событий';
+    return `<a href="genre.html?g=${g}" class="genre-card"><span class="genre-card-name">${GENRE_LABELS[g]}</span><span class="genre-card-count">${n} ${label}</span></a>`;
+  }).join('');
+}
+
+function loadMoreEvents() {
+  shownEventsCount += 8;
+  const upcoming = currentCity === 'all' ? allEvents : allEvents.filter(e => e.city === currentCity);
+  renderEvents(upcoming.slice(0, shownEventsCount));
+  updateLoadMoreBtn();
+}
+
+function updateLoadMoreBtn() {
+  const btn = document.getElementById('load-more-btn');
+  if (!btn) return;
+  const upcoming = currentCity === 'all' ? allEvents : allEvents.filter(e => e.city === currentCity);
+  if (shownEventsCount >= upcoming.length) {
+    btn.disabled = true;
+    btn.textContent = 'Все загружены';
+  } else {
+    btn.disabled = false;
+    btn.textContent = `Показать ещё (${upcoming.length - shownEventsCount})`;
+  }
+}
+
+function renderNavGenres() {
+  const counts = {};
+  allEvents.forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
+  const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
+  const active = order.filter(g => counts[g]);
+
+  const navHtml = active.map(g =>
+    `<a href="genre.html?g=${g}" class="nav-genre">${GENRE_LABELS[g]}</a>`
+  ).join('');
+  document.getElementById('nav-genres').innerHTML = navHtml;
+
+  const mobileHtml = active.map(g =>
+    `<a href="genre.html?g=${g}">${GENRE_LABELS[g]}</a>`
+  ).join('');
+  document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
+}
+
+document.getElementById('city-filter').addEventListener('click', function(e) {
+  const btn = e.target.closest('.city-pill');
+  if (!btn) return;
+  document.querySelectorAll('.city-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  currentCity = btn.dataset.city;
+  shownEventsCount = 12;
+  const upcoming = currentCity === 'all' ? allEvents : allEvents.filter(e => e.city === currentCity);
+  renderEvents(upcoming.slice(0, shownEventsCount));
+  updateLoadMoreBtn();
+});
+
+load();
+</script>
+<div id="seo-content" style="display:none">
+<div class="date-group"><h2><span class="today-badge">Сегодня</span>24 мая, сб</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2043','_blank')"><div class="card-inner"><div class="card-time">15:30</div><div class="card-body"><div class="card-artist">Крымский Академический Симфонический Оркестр, Александр Долинский</div><div class="card-venue">Музыкальное училище им. П.И. Чайковского<span class="city">· Симферополь</span></div><div class="card-description">Концерт «Песни, опалённые войной» — военные песни («Смуглянка», «Катюша», «Синий платочек», «Севастопольский вальс») в исполнении симфонического оркестра и солистов. 81-я годовщина Победы.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2043" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/c4a40541b3caced7883318ab7b4b1f09.jpg" alt="Крымский Академический Симфонический Оркестр, Александр Долинский" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/krymskiye_dela/5423','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Живой звук: кларнет</div><div class="card-venue">Винодельня «Золотая Балка»<span class="city">· Севастополь</span></div><div class="card-description">Музыкальный вечер на террасе с видом на виноградники: живой кларнет, дегустация вин Локо Чимбали и мини-экскурсия по винодельне. Адрес: Балаклава, Крестовского 66.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">3500₽</span></div><div class="card-source"><a class="src-link" href="https://t.me/krymskiye_dela/5423" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="/images/events/3910c4d2f5716c3a8945afa03e305da4.jpg" alt="Живой звук: кларнет" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_92/6517','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Максим Шеремет</div><div class="card-venue">Рок-н-рольщики<span class="city">· Севастополь</span></div><div class="card-description">Премьера! Впервые на этой сцене — авторская рок-программа и каверы на отечественный рок. Акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">авторская</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6517" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg" alt="Максим Шеремет" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/crimea_event/5527','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Крым Event</div><div class="card-venue">Крым Event</div><div class="card-description">Театральная постановка «Мастер и Маргарита» в Севастополе. Спектакль по мотивам романа Булгакова о поиске и обретении любви.</div><div class="card-footer"><span class="tag type">другое</span></div><div class="card-source"><a class="src-link" href="https://t.me/crimea_event/5527" target="_blank" rel="noopener">@crimea_event</a></div></div><img class="card-thumb" src="/images/events/8e7a07e4b780d946023d79972b612da7.jpg" alt="Крым Event" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/sevastopol_jazz/1252','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Андрей Дегурко и Андрей Рыбальченко</div><div class="card-venue">Дворец «Дюльбер»<span class="city">· Севастополь</span></div><div class="card-description">Этно-джазовая программа в одном из красивейших дворцов Крыма с восточными мотивами и живым звучанием.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">этно</span></div><div class="card-source"><a class="src-link" href="https://t.me/sevastopol_jazz/1252" target="_blank" rel="noopener">@sevastopol_jazz</a></div></div><img class="card-thumb" src="/images/events/5244a03ffba451fd63689c71bc7fc240.jpg" alt="Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Андрей Дегурко и Андрей Рыбальченко" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>26 мая, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-legendy-mtv?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Аура Шоу. Легенды MTV</div><div class="card-venue">Центр культуры и искусства<span class="city">· Севастополь</span></div><div class="card-description">Аура Шоу. Легенды MTV в Центр культуры и искусства, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 590 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-legendy-mtv?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/738be0615178b33c3bca6dc5ca6dcb8f.png" alt="Аура Шоу. Легенды MTV" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>27 мая, вт</h2>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7427','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Государственный камерный оркестр «Виртуозы Москвы»</div><div class="card-venue">Дом-музей А.П. Чехова (Белая дача)<span class="city">· Ялта</span></div><div class="card-description">Дирижёр Владимир Спиваков. В программе произведения А. Вивальди, А. Корелли, Х. Турины и Л. Боккерини.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7427" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/c34548d0afb625955a347e44ce78ed13.jpg" alt="Государственный камерный оркестр «Виртуозы Москвы»" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>29 мая, чт</h2>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7425','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Лесоповал</div><div class="card-venue">Крымский Музыкальный Театр<span class="city">· Симферополь</span></div><div class="card-description">Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7425" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/26ce7743e97006fada43acafedf0269a.jpg" alt="Лесоповал" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_92/6517','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Дима Резник</div><div class="card-venue">Рок-н-рольщики<span class="city">· Севастополь</span></div><div class="card-description">Акустический кавер-концерт русских рок и поп-рок хитов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">русский рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6517" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg" alt="Дима Резник" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/clubjam/938','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Spiritual Seasons, Канальи</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Фолк-вечер со Spiritual Seasons и группой Канальи в честь дня рождения клуба Jam. Подписчики проходят бесплатно.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">бесплатно для подписчиков</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/938" target="_blank" rel="noopener">@clubjam</a></div></div></div></div>
+</div>
+<div class="date-group"><h2>30 мая, пт</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2042','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Крымский академический симфонический оркестр</div><div class="card-venue">Мраморная пещера<span class="city">· Симферополь</span></div><div class="card-description">Камерный состав КАСО выступит в пещере «Мраморная» с программой классики, неоклассики, мюзиклов и кино. Уникальная акустика пещеры, входящей в пятёрку красивейших в мире.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2042" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/a27f851dc2aade14d42fe56bfba211fb.jpg" alt="Крымский академический симфонический оркестр" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7419','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Группа «Лесоповал»</div><div class="card-venue">ДК «Корабел», Театральный зал<span class="city">· Крым</span></div><div class="card-description">Гастрольный концерт группы «Лесоповал».</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7419" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg" alt="Группа «Лесоповал»" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7425','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Лесоповал</div><div class="card-venue">КДК Корабел<span class="city">· Керчь</span></div><div class="card-description">Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7425" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/26ce7743e97006fada43acafedf0269a.jpg" alt="Лесоповал" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/krymskiye_dela/5441','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Spiritual Seasons</div><div class="card-venue">Арт-Ковчег<span class="city">· Бахчисарай</span></div><div class="card-description">Концерт коллектива Spiritual Seasons — скандинавская, кельтская и славянская музыка: волынки, скрипки, флейты, ирландские танцы и огненное шоу. Концерт строго безалкогольный.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">1500–2500₽</span></div><div class="card-source"><a class="src-link" href="https://t.me/krymskiye_dela/5441" target="_blank" rel="noopener">@krymskiye_dela (Instagram)</a></div></div><img class="card-thumb" src="/images/events/0617934ef4b131fbaf4000c68d2b0b17.jpg" alt="Spiritual Seasons" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_92/6517','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">САБ</div><div class="card-venue">Рок-н-рольщики<span class="city">· Севастополь</span></div><div class="card-description">Рок и поп-рок на двух языках. Группа «САБ».</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6517" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg" alt="САБ" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>31 мая, сб</h2>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7425','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Лесоповал</div><div class="card-venue">ДОФ<span class="city">· Севастополь</span></div><div class="card-description">Концерт группы «Лесоповал» — финалистов шоу «ВИА Суперстар» на НТВ.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7425" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/26ce7743e97006fada43acafedf0269a.jpg" alt="Лесоповал" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_92/6517','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Фёдор Старовойтов</div><div class="card-venue">Рок-н-рольщики<span class="city">· Севастополь</span></div><div class="card-description">Караоке с боссом. Музыкальный беспредел — поём любые песни бесплатно.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">интерактив</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6517" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg" alt="Фёдор Старовойтов" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/belbekma/1237','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Белбек</div><div class="card-venue">Белбек</div><div class="card-description">День свободного творчества: открытый микрофон, концерты, мастер-классы, семинары, театр и детская зона. Вход свободный.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1237" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/883f9a5b20318eebca68100bb3ad4bc3.jpg" alt="Белбек" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/sevastopol_jazz/1252','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Анна Шакель и Андрей Рыбальченко</div><div class="card-venue">Гольф-поле<span class="city">· Севастополь</span></div><div class="card-description">Камерный концерт на закате среди просторов долины. Музыка звучит особенно близко в тишине природы.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/sevastopol_jazz/1252" target="_blank" rel="noopener">@sevastopol_jazz</a></div></div><img class="card-thumb" src="/images/events/5244a03ffba451fd63689c71bc7fc240.jpg" alt="Анна Шакель и Андрей Рыбальченко" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>1 июня, вс</h2>
+<div class="card" onclick="window.open('https://t.me/skazhitejazz/1553','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Скажите Джаз</div><div class="card-venue">Скажите Джаз<span class="city">· Судак</span></div><div class="card-description">Июньский этап фестиваля «Скажите Джаз» в Судаке. Живая музыка в курортной атмосфере.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1553" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/0343924718b2e47052e7a2351f4150cd.jpg" alt="Скажите Джаз" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>3 июня, вт</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2050','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Крымский академический симфонический оркестр</div><div class="card-venue">КДК «Корабел»<span class="city">· Керчь</span></div><div class="card-description">Концерт «Музыка и свечи: на краю эмоций» при свете сотен мерцающих свечей. Прозвучат произведения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы и других композиторов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2050" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg" alt="Крымский академический симфонический оркестр" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>6 июня, пт</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2019','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Дом-музей им. А.П. Чехова</div><div class="card-venue">Дом-музей им. А.П. Чехова</div><div class="card-description">Концерт цикла «Чехов в музыке» с новой программой. Билеты на concert-kko.ru.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2019" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/e9a76d032ff7f3c354667d5eca9888fb.jpg" alt="Дом-музей им. А.П. Чехова" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/belbekma/1237','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Александр Васильев</div><div class="card-venue">Белбек<span class="city">· Севастополь</span></div><div class="card-description">Виртуозный гитарный саундхилинг и песнопения коренных народов Северной и Южной Америки в современном звучании. Истории из экспедиций в Перу к мастерам и старейшинам.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1237" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/883f9a5b20318eebca68100bb3ad4bc3.jpg" alt="Александр Васильев" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>7 июня, сб</h2>
+<div class="card" onclick="window.open('https://t.me/sevastopol_jazz/1239','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Массандра</div><div class="card-venue">Массандра</div><div class="card-description">Летний концерт под открытым небом в Массандре с видом на горы. Билеты на сайте sevjazz.ru.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/sevastopol_jazz/1239" target="_blank" rel="noopener">@sevastopol_jazz</a></div></div><img class="card-thumb" src="/images/events/e3ca9f04b60ff848e334ef5ef81e0656.jpg" alt="Массандра" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/belbekma/1237','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Коля Маню</div><div class="card-venue">Белбек<span class="city">· Севастополь</span></div><div class="card-description">Возвращение мастера отечественного раггамаффина: солнечный микс из дэнсхолла, афробита и хип-хопа с чистым позитивом и глубокими смыслами.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хип-хоп</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1237" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/883f9a5b20318eebca68100bb3ad4bc3.jpg" alt="Коля Маню" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>13 июня, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Сияние. Открытие сезона на маяке</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Сияние. Открытие сезона на маяке в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/53d3205a3cca65f7684260786329a531.jpg" alt="Сияние. Открытие сезона на маяке" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>14 июня, сб</h2>
+<div class="card" onclick="window.open('https://t.me/belbekma/1251','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Андрей Ясинский</div><div class="card-venue">Пещера Мраморная<span class="city">· Севастополь</span></div><div class="card-description">Концерт-погружение «Космос внутри» в пещере Мраморная. Возраст строго 12+, билеты по ссылке.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">медитативная</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1251" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/0dfbeaf433c2f45c3c10a70add7322ac.jpg" alt="Андрей Ясинский" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>20 июня, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Sunset Vibes. Абонемент</div><div class="card-venue">Винный парк (Понизовка)<span class="city">· Ялта</span></div><div class="card-description">Sunset Vibes. Абонемент в Винный парк (Понизовка), Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">лаунж</span><span class="tag price">от 7 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg" alt="Sunset Vibes. Абонемент" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>23 июня, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Radio Tapok</div><div class="card-venue">Муссон<span class="city">· Севастополь</span></div><div class="card-description">Radio Tapok в Муссон, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">метал</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/78a4094cc5dc5673c86ba9cf30484d01.png" alt="Radio Tapok" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июня, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/adrenalinhouse-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Центр культуры и искусства<span class="city">· Севастополь</span></div><div class="card-description">AdrenalinHouse в Центр культуры и искусства, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">шоу</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/adrenalinhouse-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2050','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Крымский академический симфонический оркестр</div><div class="card-venue">Отель «Ялта-Интурист»<span class="city">· Ялта</span></div><div class="card-description">Концерт «Музыка и свечи: на краю эмоций» при свете сотен мерцающих свечей. Прозвучат произведения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы и других композиторов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2050" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg" alt="Крымский академический симфонический оркестр" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>25 июня, ср</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Radio Tapok</div><div class="card-venue">Консоль Спорт<span class="city">· Симферополь</span></div><div class="card-description">Radio Tapok в Консоль Спорт, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">метал</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/78a4094cc5dc5673c86ba9cf30484d01.png" alt="Radio Tapok" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>26 июня, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">AdrenalinHouse в Театр им. А. П. Чехова, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">шоу</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>27 июня, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-superkhity-90-kh?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Оркестр при свечах «Аура Шоу». Суперхиты 90-х</div><div class="card-venue">Центр культуры и искусства<span class="city">· Севастополь</span></div><div class="card-description">Оркестр при свечах «Аура Шоу». Суперхиты 90-х в Центр культуры и искусства, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 590 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-superkhity-90-kh?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/229990655db35bf5ef939f00f7281920.jpg" alt="Оркестр при свечах «Аура Шоу». Суперхиты 90-х" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Radio Tapok</div><div class="card-venue">Спортивная школа «Наследие»<span class="city">· Керчь</span></div><div class="card-description">Radio Tapok в Спортивная школа «Наследие», Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">метал</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/radio-tapok-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/78a4094cc5dc5673c86ba9cf30484d01.png" alt="Radio Tapok" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>30 июня, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Jawa. Хиты «Сектор Газа»</div><div class="card-venue">Дом офицеров флота<span class="city">· Севастополь</span></div><div class="card-description">Jawa. Хиты «Сектор Газа» в Дом офицеров флота, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc3a3f27558985d459629e1973ea2f18.jpg" alt="Jawa. Хиты «Сектор Газа»" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>1 июля, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Jawa. Хиты «Сектор Газа»</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">Jawa. Хиты «Сектор Газа» в Корабел, Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc3a3f27558985d459629e1973ea2f18.jpg" alt="Jawa. Хиты «Сектор Газа»" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/skazhitejazz/1553','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Скажите Джаз</div><div class="card-venue">Скажите Джаз<span class="city">· Крым</span></div><div class="card-description">Июльский этап фестиваля «Скажите Джаз» под звёздами. Конкретный город не указан.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1553" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/0343924718b2e47052e7a2351f4150cd.jpg" alt="Скажите Джаз" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>3 июля, чт</h2>
+<div class="card" onclick="window.open('https://t.me/clubjam/927','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">AC/DC Show — Back in Storm</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Трибьют-шоу AC/DC «Back in Storm» — лучший кавер на AC/DC в РФ. Вход свободный для подписчиков канала.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">каверы</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/927" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/16867a31edef386e238ad1e03e10538b.jpg" alt="AC/DC Show — Back in Storm" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>4 июля, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">12:00</div><div class="card-body"><div class="card-artist">Гастролис</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Гастролис в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп-рок</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg" alt="Гастролис" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>12 июля, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">ГУДТАЙМС</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">ГУДТАЙМС в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/gudtaims-2026-07-12?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/010c7bc5be1509afa4b359aed83ca806.jpg" alt="ГУДТАЙМС" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>19 июля, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Ramil’</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Ramil’ в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/ramil-2026-07-19?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c963bf29a1169f9966ef014494b955eb.jpg" alt="Ramil’" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июля, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">КняZz в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>25 июля, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/thomas-mraz-2026-07-25?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Thomas Mraz</div><div class="card-venue">Депо<span class="city">· Симферополь</span></div><div class="card-description">Thomas Mraz в Депо, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/thomas-mraz-2026-07-25?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/451270406988b08b5e25ffbabb5a6966.jpg" alt="Thomas Mraz" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/elbrus-dzhanmirzoyev-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Эльбрус Джанмирзоев</div><div class="card-venue">Дворец культуры рыбаков<span class="city">· Севастополь</span></div><div class="card-description">Эльбрус Джанмирзоев в Дворец культуры рыбаков, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/elbrus-dzhanmirzoyev-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/7d629f1ee5500258473518fee00275ed.jpg" alt="Эльбрус Джанмирзоев" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>26 июля, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Ева Польна</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Ева Польна в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/eva-polna-2026-07-26?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6c56d21aea75ad2d56b19ecb9a29c405.jpg" alt="Ева Польна" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>1 августа, пт</h2>
+<div class="card" onclick="window.open('https://t.me/skazhitejazz/1553','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Скажите Джаз</div><div class="card-venue">Скажите Джаз<span class="city">· Коктебель</span></div><div class="card-description">Августовский финальный этап фестиваля «Скажите Джаз» в Коктебеле.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1553" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/0343924718b2e47052e7a2351f4150cd.jpg" alt="Скажите Джаз" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>2 августа, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Найк Борзов</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Найк Борзов в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc7e49e70eb311cd33b996f3d275b261.png" alt="Найк Борзов" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>5 августа, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Стешок, Anjelina, Макар Давыдов, Мали и…</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg" alt="Стешок, Anjelina, Макар Давыдов, Мали и…" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>7 августа, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Nightwish Tribute Show</div><div class="card-venue">БТР / Бар тяжёлого рока<span class="city">· Севастополь</span></div><div class="card-description">Nightwish Tribute Show в БТР / Бар тяжёлого рока, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/4987b5ba7f03e0b3471c7706060e8abd.jpg" alt="Nightwish Tribute Show" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>9 августа, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Музыкальный театр<span class="city">· Симферополь</span></div><div class="card-description">Нэнси в Музыкальный театр, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/nensi-16?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>11 августа, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Нэнси в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/clubjam/938','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Neverlove / Unlvd</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Акустический (анплагд) концерт Neverlove / Unlvd. Для подписчиков канала действует скидка по промокоду «jam».</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">скидка по промокоду «jam»</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/938" target="_blank" rel="noopener">@clubjam</a></div></div></div></div>
+</div>
+<div class="date-group"><h2>12 августа, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Центр культуры и искусства<span class="city">· Севастополь</span></div><div class="card-description">Хор Сретенского монастыря в Центр культуры и искусства, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>13 августа, ср</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>14 августа, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Комната культуры</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Комната культуры в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">инди</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/24b1ef623050ed6cd67138099025047a.jpg" alt="Комната культуры" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>15 августа, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Градусы</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Градусы в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хип-хоп</span><span class="tag price">от 2 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/gradusy-2026-08-15?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/3d95c335021cdf782fd6ee03b025b48e.jpg" alt="Градусы" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/skazhitejazz/1564','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Коктебель (берег Чёрного моря)</div><div class="card-venue">Коктебель (берег Чёрного моря)</div><div class="card-description">Фестиваль-маркет «Скажите Джаз» в Коктебеле — два дня живого джаза, гастрономии и культурной атмосферы на берегу Чёрного моря.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1564" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/bfc35d3e60f02018dbdc59859e94f53e.jpg" alt="Коктебель (берег Чёрного моря)" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>16 августа, сб</h2>
+<div class="card" onclick="window.open('https://t.me/skazhitejazz/1564','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Коктебель (берег Чёрного моря)</div><div class="card-venue">Коктебель (берег Чёрного моря)</div><div class="card-description">Второй день фестиваля-маркета «Скажите Джаз» — живая музыка, закаты, вино и гастрономия у моря.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1564" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/bfc35d3e60f02018dbdc59859e94f53e.jpg" alt="Коктебель (берег Чёрного моря)" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>22 августа, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/tri-dnia-dozhdia-2026-08-22?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Три дня дождя</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Три дня дождя в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 3 400 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/tri-dnia-dozhdia-2026-08-22?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/553b66b9818479f49107b7b921dad133.jpg" alt="Три дня дождя" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>23 августа, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Моя Мишель в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/b9dcca237131d9fbb8b46202f41c18a8.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>25 августа, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Моя Мишель в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>30 августа, сб</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/khaski-2026-08-30?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хаски</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Хаски в Centrum, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/khaski-2026-08-30?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6271dad627f17cb58f47918770692f37.jpg" alt="Хаски" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>3 сентября, ср</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/olena-uutai?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Олена Уутай</div><div class="card-venue">Центр культуры и искусства<span class="city">· Севастополь</span></div><div class="card-description">Олена Уутай в Центр культуры и искусства, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">этно</span><span class="tag price">от 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/olena-uutai?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/d48c4edd047fc58a1fa1ad14b4781e29.jpg" alt="Олена Уутай" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>5 сентября, пт</h2>
+<div class="card" onclick="window.open('https://t.me/clubjam/938','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Чёрный Кофе</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Концерт группы Чёрный Кофе. Для подписчиков канала действует скидка по промокоду «jam».</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">скидка по промокоду «jam»</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/938" target="_blank" rel="noopener">@clubjam</a></div></div></div></div>
+</div>
+<div class="date-group"><h2>20 октября, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Helvegen</div><div class="card-venue">Депо<span class="city">· Симферополь</span></div><div class="card-description">Helvegen в Депо, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк-метал</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/12216bbe04fad74b3da1812de62bad95.jpg" alt="Helvegen" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>21 октября, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Helvegen</div><div class="card-venue">Boombox<span class="city">· Севастополь</span></div><div class="card-description">Helvegen в Boombox, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк-метал</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/12216bbe04fad74b3da1812de62bad95.jpg" alt="Helvegen" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+</div>
+<div id="seo-content" style="display:none">
+<div class="date-group"><h2>Дата уточняется</h2>
+<div class="card" onclick="window.open('https://t.me/sky_beach_yalta/1213','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">CORA</div><div class="card-venue">Sky Beach Ялта<span class="city">· Ялта</span></div><div class="card-description">Открытие Sky Beach: живой вокал CORA под открытым небом и диджей-сет у подогреваемого бассейна. Мероприятие прошло, точная дата не указана.</div><div class="card-footer"><span class="tag type">вечеринка</span></div><div class="card-source"><a class="src-link" href="https://t.me/sky_beach_yalta/1213" target="_blank" rel="noopener">@sky_beach_yalta</a></div></div><img class="card-thumb" src="/images/events/0018fbd3f51fcceaf4b1234787801be2.jpg" alt="CORA" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>27 мая, вт</h2>
+<div class="card" onclick="window.open('https://t.me/afisha_crimea/7427','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Государственный камерный оркестр «Виртуозы Москвы»</div><div class="card-venue">Дом-музей А.П. Чехова (Белая дача)<span class="city">· Ялта</span></div><div class="card-description">Дирижёр Владимир Спиваков. В программе произведения А. Вивальди, А. Корелли, Х. Турины и Л. Боккерини.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/afisha_crimea/7427" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/c34548d0afb625955a347e44ce78ed13.jpg" alt="Государственный камерный оркестр «Виртуозы Москвы»" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>6 июня, пт</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2019','_blank')"><div class="card-inner"><div class="card-time">16:00</div><div class="card-body"><div class="card-artist">Дом-музей им. А.П. Чехова</div><div class="card-venue">Дом-музей им. А.П. Чехова</div><div class="card-description">Концерт цикла «Чехов в музыке» с новой программой. Билеты на concert-kko.ru.</div><div class="card-footer"><span class="tag type">концерт</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2019" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/e9a76d032ff7f3c354667d5eca9888fb.jpg" alt="Дом-музей им. А.П. Чехова" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>13 июня, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Сияние. Открытие сезона на маяке</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Сияние. Открытие сезона на маяке в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/siianie-otkrytie-sezona-na-maiake?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/53d3205a3cca65f7684260786329a531.jpg" alt="Сияние. Открытие сезона на маяке" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>20 июня, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">17:00</div><div class="card-body"><div class="card-artist">Sunset Vibes. Абонемент</div><div class="card-venue">Винный парк (Понизовка)<span class="city">· Ялта</span></div><div class="card-description">Sunset Vibes. Абонемент в Винный парк (Понизовка), Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">лаунж</span><span class="tag price">от 7 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/party/sunset-vibes-abonement?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg" alt="Sunset Vibes. Абонемент" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июня, вт</h2>
+<div class="card" onclick="window.open('https://t.me/koncertykrym/2050','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Крымский академический симфонический оркестр</div><div class="card-venue">Отель «Ялта-Интурист»<span class="city">· Ялта</span></div><div class="card-description">Концерт «Музыка и свечи: на краю эмоций» при свете сотен мерцающих свечей. Прозвучат произведения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы и других композиторов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span></div><div class="card-source"><a class="src-link" href="https://t.me/koncertykrym/2050" target="_blank" rel="noopener">@koncertykrym</a></div></div><img class="card-thumb" src="/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg" alt="Крымский академический симфонический оркестр" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>26 июня, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">AdrenalinHouse в Театр им. А. П. Чехова, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">шоу</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>4 июля, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">12:00</div><div class="card-body"><div class="card-artist">Гастролис</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Гастролис в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп-рок</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg" alt="Гастролис" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июля, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">КняZz в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>5 августа, вт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Стешок, Anjelina, Макар Давыдов, Мали и…</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag price">от 3 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg" alt="Стешок, Anjelina, Макар Давыдов, Мали и…" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>11 августа, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Нэнси в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>13 августа, ср</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>14 августа, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Комната культуры</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">Комната культуры в Мрия, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">инди</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/24b1ef623050ed6cd67138099025047a.jpg" alt="Комната культуры" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>25 августа, пн</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Моя Мишель в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+</div>
+<script>
+(function() {
+  var CITY = "yalta";
+  var orig = window.renderAll;
+  if (typeof orig === "function") {
+    window.renderAll = function() {
+      orig();
+      document.querySelectorAll(".city-pill").forEach(function(b) {
+        b.classList.toggle("active", b.dataset.city === CITY);
+      });
+    };
+  }
 })();
-
 </script>
 </body>
 </html>
