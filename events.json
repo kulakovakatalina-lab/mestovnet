@@ -1528,6 +1528,108 @@
     "genre": "поп"
   },
   {
+    "date": "2024-06-27",
+    "time": "19:00",
+    "artist": "Илья Раевский",
+    "event_type": "концерт",
+    "venue": "театр имени А.П. Чехова",
+    "price": null,
+    "description": "Стендап концерт комика Ильи Раевского. Комедия с острым наблюдательным взглядом, сочетающая иронию и точные бытовые детали.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-05-22T17:10:39+00:00",
+    "image": "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg",
+    "images": [
+      "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg"
+    ],
+    "source_url": "https://t.me/afisha_crimea/7529",
+    "genre": "юмор"
+  },
+  {
+    "date": "2024-06-28",
+    "time": "19:00",
+    "artist": "Илья Раевский",
+    "event_type": "концерт",
+    "venue": "СЦКИ",
+    "price": null,
+    "description": "Стендап концерт комика Ильи Раевского. Комедия с острым наблюдательным взглядом, сочетающая иронию и точные бытовые детали.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-22T17:10:39+00:00",
+    "image": "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg",
+    "images": [
+      "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg"
+    ],
+    "source_url": "https://t.me/afisha_crimea/7529",
+    "genre": "юмор"
+  },
+  {
+    "date": "2024-06-30",
+    "time": "19:00",
+    "artist": "Илья Раевский",
+    "event_type": "концерт",
+    "venue": "ДКП",
+    "price": null,
+    "description": "Стендап концерт комика Ильи Раевского. Комедия с острым наблюдательным взглядом, сочетающая иронию и точные бытовые детали.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Симферополь",
+    "post_date": "2026-05-22T17:10:39+00:00",
+    "image": "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg",
+    "images": [
+      "/images/events/bff6e1d41a687e9e367b08e6a0f181bd.jpg"
+    ],
+    "source_url": "https://t.me/afisha_crimea/7529",
+    "genre": "юмор"
+  },
+  {
+    "date": "2024-06-07",
+    "time": "18:30",
+    "artist": "квинтет «Белый город»",
+    "event_type": "концерт",
+    "venue": "Али-Баир",
+    "price": "1300₽",
+    "description": "Музыка летнего вечера на закате. Квинтет «Белый город» выступит с программой от Баха и Вивальди до блюза и хитов Металлики.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-23T17:01:03+00:00",
+    "image": "/images/events/753793e34a98e41c9d2d7fd5c7bb279d.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/7540",
+    "genre": "метал"
+  },
+  {
+    "date": "2024-06-19",
+    "time": "19:00",
+    "artist": "Стивен Митчелл, Джаз-бэнд «Скажите Jazz»",
+    "event_type": "концерт",
+    "venue": "Горная Сыроварня",
+    "price": "1500-2500 ₽",
+    "description": "Концерт джаза с живой легендой американского джаза Стивеном Митчеллом и джаз-бэндом «Скажите Jazz». В программе золотая эпоха американского джаза: Wonderful World, Hello Dolly, Summertime, Go Down Moses и другие легендарные хиты.",
+    "source_channel": "skazhitejazz",
+    "source_city": "Крым",
+    "post_date": "2026-05-23T08:53:22+00:00",
+    "image": "/images/events/413ab7e72b2c2eae8e549eb3a46cc748.jpg",
+    "images": null,
+    "source_url": "https://t.me/skazhitejazz/1566",
+    "genre": "джаз"
+  },
+  {
+    "date": "2024-05-24",
+    "time": "15:30",
+    "artist": "Песни, опалённые войной",
+    "event_type": "концерт",
+    "venue": "муз. училище им. П.И. Чайковского",
+    "price": null,
+    "description": "Концерт «Песни, опалённые войной» с живым исполнением Крымского академического симфонического оркестра и солистов. В программе классические советские песни: «Смуглянка», «Катюша», «Синий платочек», «Севастопольский вальс».",
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-05-22T13:53:17+00:00",
+    "image": "/images/events/9701f939688a3302f99adace99bbaa0c.jpg",
+    "images": null,
+    "source_url": "https://t.me/koncertykrym/2087",
+    "genre": "классика"
+  },
+  {
     "date": null,
     "time": null,
     "artist": "Карина Клавихо, Правин, Андрей Танзю",
@@ -1557,5 +1659,39 @@
     "images": null,
     "image": null,
     "post_date": "2026-05-20T13:30:55+00:00"
+  },
+  {
+    "date": null,
+    "time": "18:00-04:00, квартирник ~21:30",
+    "artist": "Игорь Симдянкин",
+    "event_type": "вечеринка",
+    "venue": "Рок-н-рольщики",
+    "price": "бесплатно",
+    "description": "Музыкальная вечеринка с русской рок-поп музыкой. Музыкальный квартирник начинается около 21:30, вход строго 18+.",
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-05-23T09:43:16+00:00",
+    "image": "/images/events/90a59242c8aa8ec21a61534642d34d15.jpg",
+    "images": [
+      "/images/events/90a59242c8aa8ec21a61534642d34d15.jpg"
+    ],
+    "source_url": "https://t.me/rocknroll_92/6653",
+    "genre": "поп-рок"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "Вечеринка",
+    "event_type": "вечеринка",
+    "venue": "Усадьба Родное Гнездо",
+    "price": null,
+    "description": "Греческий вечер с традиционными развлечениями - битьё тарелок и танцы сиртаки.",
+    "source_channel": "usadbarodnoegnezdo",
+    "source_city": "Крым",
+    "post_date": "2026-05-22T20:01:28+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://t.me/usadbarodnoegnezdo/3226",
+    "genre": "другое"
   }
 ]

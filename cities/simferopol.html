@@ -1257,7 +1257,7 @@ render();
 
 // City chip clicks navigate to the city page (or home for "all")
 (function () {
-  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
+  var CITY_URLS = {"all": "/", "Бахчисарайский район": "/cities/бахчисарайский-район.html", "Евпатория": "/cities/evpatoriya.html", "Керчь": "/cities/kerch.html", "Крым": "/cities/крым.html", "Научный": "/cities/научный.html", "Путиловка": "/cities/путиловка.html", "Севастополь": "/cities/sevastopol.html", "Симферополь": "/cities/simferopol.html", "Ялта": "/cities/yalta.html"};
   document.getElementById('city-filters').addEventListener('click', function (e) {
     var btn = e.target.closest('[data-city]');
     if (!btn) return;
