@@ -48,11 +48,13 @@ CITY_SLUGS: dict[str, str] = {
     "Севастополь":   "sevastopol",
     "Бахчисарай":    "bakhchisaray",
     "Судак":         "sudak",
-    "Евпатория":     "evpatoriya",
+    "Евпатория":     "evpatoria",
     "Керчь":         "kerch",
+    "Коктебель":     "koktebel",
     "Феодосия":      "feodosiya",
     "Алушта":        "alushta",
     "Саки":          "saki",
+    "Крым":          "all",
 }
 
 CITY_PREP = {                           # «в Симферополе», «в Ялте», …
@@ -63,9 +65,11 @@ CITY_PREP = {                           # «в Симферополе», «в Я
     "Судак":         "в Судаке",
     "Евпатория":     "в Евпатории",
     "Керчь":         "в Керчи",
+    "Коктебель":     "в Коктебеле",
     "Феодосия":      "в Феодосии",
     "Алушта":        "в Алуште",
     "Саки":          "в Саках",
+    "Крым":          "в Крыму",
 }
 
 # ── Утилиты ──────────────────────────────────────────────────────────────────
@@ -290,232 +294,6 @@ def make_jsonld_breadcrumbs(crumbs: list[tuple[str, str]]) -> str:
 
 # ── Шаблон страницы города ───────────────────────────────────────────────────
 
-EXTRA_CSS = """
-    ._placeholder {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      padding: 10px 24px 8px;
-      background: #fff;
-      border-bottom: 1px solid #e8e6e0;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .city-nav::-webkit-scrollbar { display: none; }
-    .city-nav-link {
-      font-size: 0.8rem;
-      color: #666;
-      text-decoration: none;
-      padding: 4px 12px;
-      border: 1px solid #e0ddd8;
-      border-radius: 16px;
-      white-space: nowrap;
-      flex-shrink: 0;
-      transition: all 0.15s;
-    }
-    .city-nav-link:hover { border-color: #aaa; color: #1a1a1a; }
-    .city-nav-link.current { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
-"""
-
-# ── JS (общая логика для всех страниц) ───────────────────────────────────────
-
-# Логика идентична index.html, но без fetch — события передаются через EVENTS_DATA.
-# Для index.html оставляем fetch (для живой фильтрации), но добавляем статику в DOM.
-
-CITY_PAGE_JS = r"""
-const MONTHS     = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
-const MONTHS_NOM = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
-const DAYS = ["вс","пн","вт","ср","чт","пт","сб"];
-
-const today = new Date();
-today.setHours(0,0,0,0);
-const todayStr = toDateStr(today);
-
-let activePreset   = "";
-let activeDateFrom = "";
-let activeDateTo   = "";
-let calStart = "", calEnd = "", calHover = "";
-let viewYear = today.getFullYear(), viewMonth = today.getMonth();
-
-function toDateStr(d) {
-  return [d.getFullYear(), String(d.getMonth()+1).padStart(2,"0"), String(d.getDate()).padStart(2,"0")].join("-");
-}
-function fmtShort(ds) {
-  const d = new Date(ds+"T00:00:00");
-  return `${d.getDate()} ${MONTHS[d.getMonth()]}`;
-}
-function getPresetRange(preset) {
-  const day = today.getDay();
-  if (preset==="today") return {from:todayStr,to:todayStr};
-  if (preset==="week") { const e=new Date(today); e.setDate(e.getDate()+6); return {from:todayStr,to:toDateStr(e)}; }
-  if (preset==="weekend") {
-    let dts = day===6?0:(6-day+7)%7;
-    if(dts===0&&day===0) dts=6;
-    const sat=new Date(today); sat.setDate(sat.getDate()+dts);
-    const sun=new Date(sat); sun.setDate(sun.getDate()+1);
-    return day===0?{from:todayStr,to:todayStr}:{from:toDateStr(sat),to:toDateStr(sun)};
-  }
-  return {from:"",to:""};
-}
-function setPreset(preset) {
-  activePreset = preset;
-  if (preset && preset!=="custom") { const r=getPresetRange(preset); activeDateFrom=r.from; activeDateTo=r.to; }
-  else if (!preset) { activeDateFrom=""; activeDateTo=""; }
-  document.querySelectorAll(".preset-btn").forEach(b=>b.classList.toggle("active",b.dataset.preset===preset));
-  updateCustomBtnLabel();
-  render();
-}
-function updateCustomBtnLabel() {
-  const btn = document.getElementById("btn-custom");
-  if (!btn) return;
-  if (activePreset==="custom"&&(activeDateFrom||activeDateTo)) {
-    if (activeDateFrom&&activeDateTo&&activeDateFrom!==activeDateTo)
-      btn.textContent=`${fmtShort(activeDateFrom)} — ${fmtShort(activeDateTo)}`;
-    else btn.textContent=fmtShort(activeDateFrom||activeDateTo);
-  } else { btn.textContent="Выбрать даты"; }
-}
-function openCalendar() {
-  viewYear=activeDateFrom?new Date(activeDateFrom+"T00:00:00").getFullYear():today.getFullYear();
-  viewMonth=activeDateFrom?new Date(activeDateFrom+"T00:00:00").getMonth():today.getMonth();
-  calStart=activeDateFrom; calEnd=activeDateTo; calHover="";
-  renderCalendar(); document.getElementById("cal-overlay").classList.add("open");
-}
-function closeCalendar() { document.getElementById("cal-overlay").classList.remove("open"); calHover=""; }
-function renderCalendar() {
-  const c=document.getElementById("cal-months"); c.innerHTML="";
-  for(let i=0;i<2;i++){let m=viewMonth+i,y=viewYear; if(m>11){m-=12;y++;} c.appendChild(buildMonth(y,m));}
-  updateCalLabel();
-}
-function buildMonth(year,month) {
-  const wrap=document.createElement("div"); wrap.className="cal-month";
-  const title=document.createElement("div"); title.className="cal-month-title";
-  title.textContent=`${MONTHS_NOM[month]} ${year}`; wrap.appendChild(title);
-  const grid=document.createElement("div"); grid.className="cal-grid";
-  ["пн","вт","ср","чт","пт","сб","вс"].forEach(d=>{const dn=document.createElement("div");dn.className="cal-day-name";dn.textContent=d;grid.appendChild(dn);});
-  const firstDay=new Date(year,month,1),startPad=(firstDay.getDay()+6)%7,totalDays=new Date(year,month+1,0).getDate();
-  for(let i=0;i<startPad;i++){const el=document.createElement("div");el.className="cal-day cal-empty";grid.appendChild(el);}
-  for(let d=1;d<=totalDays;d++){
-    const ds=toDateStr(new Date(year,month,d)),el=document.createElement("div");
-    el.className="cal-day"; el.textContent=d; el.dataset.date=ds;
-    if(ds<todayStr) el.classList.add("cal-past"); else if(ds===todayStr) el.classList.add("cal-today");
-    applyDayRange(el,ds); grid.appendChild(el);
-  }
-  grid.addEventListener("mouseover",e=>{const day=e.target.closest("[data-date]");if(!day||day.classList.contains("cal-past"))return;if(calStart&&!calEnd){calHover=day.dataset.date;refreshAllDays();}});
-  grid.addEventListener("mouseleave",()=>{if(calStart&&!calEnd){calHover="";refreshAllDays();}});
-  grid.addEventListener("click",e=>{
-    const day=e.target.closest("[data-date]");
-    if(!day||day.classList.contains("cal-past")||day.classList.contains("cal-empty"))return;
-    const ds=day.dataset.date;
-    if(!calStart||(calStart&&calEnd)){calStart=ds;calEnd="";calHover="";}
-    else{if(ds<=calStart){calEnd=calStart;calStart=ds;}else calEnd=ds;calHover="";}
-    refreshAllDays(); updateCalLabel();
-  });
-  wrap.appendChild(grid); return wrap;
-}
-function applyDayRange(el,ds){
-  el.classList.remove("cal-start","cal-end","cal-in-range");
-  const eff=calEnd||calHover; if(!calStart)return;
-  const s=calStart<=(eff||calStart)?calStart:eff, e=calStart<=(eff||calStart)?eff:calStart;
-  if(!e){if(ds===s)el.classList.add("cal-start","cal-end");return;}
-  if(ds===s&&ds===e)el.classList.add("cal-start","cal-end");
-  else if(ds===s)el.classList.add("cal-start");
-  else if(ds===e)el.classList.add("cal-end");
-  else if(ds>s&&ds<e)el.classList.add("cal-in-range");
-}
-function refreshAllDays(){document.querySelectorAll(".cal-day[data-date]").forEach(el=>applyDayRange(el,el.dataset.date));}
-function updateCalLabel(){
-  const label=document.getElementById("cal-label");
-  if(!calStart&&!calEnd){label.textContent="Выберите даты";return;}
-  if(calStart&&!calEnd){label.textContent=fmtShort(calStart);return;}
-  const s=calStart<=calEnd?calStart:calEnd,e=calStart<=calEnd?calEnd:calStart;
-  label.textContent=s===e?fmtShort(s):`${fmtShort(s)} — ${fmtShort(e)}`;
-}
-function inDateRange(event) {
-  if(!event.date) return true;
-  if(event.date<todayStr) return false;
-  if(activeDateFrom&&event.date<activeDateFrom) return false;
-  if(activeDateTo&&event.date>activeDateTo) return false;
-  return true;
-}
-function isToday(ds){return new Date(ds+"T00:00:00").getTime()===today.getTime();}
-function formatDate(ds){const d=new Date(ds+"T00:00:00");return `${d.getDate()} ${MONTHS[d.getMonth()]}, ${DAYS[d.getDay()]}`;}
-function getSourceHref(e){
-  if(e.source_url) return e.source_url;
-  if(e.source_channel==="krymskiye_dela") return `https://www.instagram.com/${e.source_channel}/`;
-  return `https://t.me/${e.source_channel}`;
-}
-function getSourceLabel(e){
-  if(e.source_channel==="yandex_afisha") return "Яндекс.Афиша";
-  if(e.source_channel==="krymskiye_dela") return `@${e.source_channel} (Instagram)`;
-  return `@${e.source_channel}`;
-}
-function render() {
-  const main=document.getElementById("main"); main.innerHTML="";
-  const filtered=EVENTS.filter(e=>inDateRange(e));
-  if(filtered.length===0){main.innerHTML='<div class="empty">Событий не найдено</div>';return;}
-  const groups={};
-  filtered.forEach(e=>{const k=e.date||"no-date";if(!groups[k])groups[k]=[];groups[k].push(e);});
-  Object.keys(groups).sort((a,b)=>{if(a==="no-date")return 1;if(b==="no-date")return -1;return a.localeCompare(b);}).forEach(key=>{
-    const group=document.createElement("div"); group.className="date-group";
-    const h2=document.createElement("h2");
-    if(key==="no-date"){h2.textContent="Дата уточняется";}
-    else if(isToday(key)){const badge=document.createElement("span");badge.className="today-badge";badge.textContent="Сегодня";h2.appendChild(badge);h2.appendChild(document.createTextNode(formatDate(key)));}
-    else{h2.textContent=formatDate(key);}
-    group.appendChild(h2);
-    groups[key].slice().sort((a,b)=>{const ta=a.time,tb=b.time;if(ta&&tb)return ta.localeCompare(tb);if(ta)return -1;if(tb)return 1;return 0;}).forEach(event=>{group.appendChild(makeCard(event));});
-    main.appendChild(group);
-  });
-}
-function makeCard(e) {
-  const card=document.createElement("div"); card.className="card"+(e.cancelled?" cancelled":"");
-  const srcHref=getSourceHref(e);
-  card.addEventListener("click",ev=>{if(!ev.target.closest("a"))window.open(srcHref,"_blank");});
-  const inner=document.createElement("div"); inner.className="card-inner";
-  const time=document.createElement("div"); time.className=e.time?"card-time":"card-time no-time"; time.textContent=e.time||"—"; inner.appendChild(time);
-  const body=document.createElement("div"); body.className="card-body";
-  const artist=document.createElement("div"); artist.className="card-artist"; artist.textContent=e.artist||e.venue||""; body.appendChild(artist);
-  const venue=document.createElement("div"); venue.className="card-venue";
-  venue.innerHTML=(e.venue||e.source_channel||"")+(e.artist?`<span class="city">· ${e.source_city}</span>`:"");
-  body.appendChild(venue);
-  if(e.description){const desc=document.createElement("div");desc.className="card-description";desc.textContent=e.description;body.appendChild(desc);}
-  const footer=document.createElement("div"); footer.className="card-footer";
-  if(e.cancelled) addTag(footer,"перенесено","cancelled-tag");
-  if(e.event_type) addTag(footer,e.event_type,"type");
-  if(e.price&&e.price!=="null"){const cls=e.price==="бесплатно"?"free":"price";addTag(footer,e.price==="бесплатно"?"бесплатно":e.price,cls);}
-  body.appendChild(footer);
-  const srcDiv=document.createElement("div"); srcDiv.className="card-source";
-  const srcLink=document.createElement("a"); srcLink.className="src-link"; srcLink.href=srcHref; srcLink.target="_blank"; srcLink.textContent=getSourceLabel(e);
-  srcDiv.appendChild(srcLink); body.appendChild(srcDiv); inner.appendChild(body);
-  if(e.image){const img=document.createElement("img");img.className="card-thumb";img.src=e.image;img.alt=e.artist||e.venue;img.loading="lazy";img.onerror=()=>img.remove();inner.appendChild(img);}
-  card.appendChild(inner); return card;
-}
-function addTag(container,text,cls){const t=document.createElement("span");t.className=`tag ${cls}`;t.textContent=text;container.appendChild(t);}
-
-// Инит
-document.getElementById("date-filter").addEventListener("click",e=>{
-  const preset=e.target.closest("[data-preset]"); if(!preset) return;
-  const p=preset.dataset.preset;
-  if(p==="custom"){openCalendar();return;}
-  activePreset===p?setPreset(""):setPreset(p);
-});
-document.getElementById("cal-overlay").addEventListener("click",e=>{if(e.target===e.currentTarget)closeCalendar();});
-document.getElementById("cal-prev").addEventListener("click",()=>{viewMonth--;if(viewMonth<0){viewMonth=11;viewYear--;}renderCalendar();});
-document.getElementById("cal-next").addEventListener("click",()=>{viewMonth++;if(viewMonth>11){viewMonth=0;viewYear++;}renderCalendar();});
-document.getElementById("cal-btn-clear").addEventListener("click",()=>{calStart="";calEnd="";calHover="";renderCalendar();});
-document.getElementById("cal-btn-apply").addEventListener("click",()=>{
-  if(calStart||calEnd){
-    const s=(!calEnd||calStart<=calEnd)?calStart:calEnd, e=(!calEnd||calStart<=calEnd)?calEnd:calStart;
-    activeDateFrom=s||e; activeDateTo=e||s; activePreset="custom";
-    document.querySelectorAll(".preset-btn").forEach(b=>b.classList.toggle("active",b.dataset.preset==="custom"));
-    updateCustomBtnLabel();
-  } else { activeDateFrom=""; activeDateTo=""; setPreset(""); }
-  closeCalendar(); render();
-});
-render();
-"""
-
-# ── Шаблон страницы города ───────────────────────────────────────────────────
-
 def make_city_page(
     city: str,
     events_all: list,
@@ -523,135 +301,66 @@ def make_city_page(
     css: str,
     custom_names: Optional[dict] = None,
 ) -> str:
-    """Генерирует страницу города — выглядит как главная, но с предвыбранным городом."""
-    today  = today_str()
-    slug   = city_slug(city)
-    prep   = CITY_PREP.get(city, f"в {city}")
+    """Генерирует страницу города на основе нового index.html."""
+    today   = today_str()
+    slug    = city_slug(city)
+    prep    = CITY_PREP.get(city, f"в {city}")
     city_events = [e for e in events_all if e.get("source_city") == city]
-    count  = len([e for e in city_events if (e.get("date") or "") >= today])
+    count   = len([e for e in city_events if (e.get("date") or "") >= today])
 
     title       = f"Живая музыка и концерты {prep} — Местов.Нет"
     description = (f"Афиша концертов и живой музыки {prep}: "
                    f"ближайшие {count} событий в клубах, барах и на площадках. "
                    f"Обновляется ежедневно.")
 
+    jsonld_events = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today], custom_names)
+    jsonld_bc     = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (city, "")])
+
+    # Берём за основу свежий index.html
+    src = INDEX_FILE.read_text(encoding="utf-8")
+
+    # Мета-теги
+    src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)
+    src = re.sub(r'<meta name="description"[^>]+>', f'<meta name="description" content="{esc(description)}">', src)
+    src = re.sub(r'<link rel="canonical"[^>]+>', f'<link rel="canonical" href="{DOMAIN}/cities/{slug}.html">', src)
+    src = re.sub(r'<meta property="og:title"[^>]+>', f'<meta property="og:title" content="{esc(title)}">', src)
+    src = re.sub(r'<meta property="og:description"[^>]+>', f'<meta property="og:description" content="{esc(description)}">', src)
+
+    # JSON-LD: убираем старый, вставляем городской + breadcrumb
+    src = re.sub(r'<script type="application/ld\+json">.*?</script>', '', src, flags=re.DOTALL)
+    if jsonld_events or jsonld_bc:
+        combined = ''
+        if jsonld_events:
+            combined += jsonld_events
+        if jsonld_bc:
+            combined += '\n  ' if combined else ''
+            combined += jsonld_bc
+        src = src.replace('</head>', f'  {combined}\n</head>')
+
     # Статический пре-рендер событий города (для поисковиков)
     static_content = render_event_list(city_events, today, custom_names)
-    jsonld_events  = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today], custom_names)
-    jsonld_bc      = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (city, "")])
+    seo_block = f'<div id="seo-content" style="display:none">\n{static_content}\n</div>\n'
 
-    # JS: берём из index.html и адаптируем (убираем fetch, предвыбираем город)
-    raw_js = extract_js()
-    city_json = json.dumps(city)
-    events_json = json.dumps(events_all, ensure_ascii=False)
-
-    # 1. Заменяем let EVENTS = [] на массив со всеми событиями
-    repl_events = f'let EVENTS = {events_json}'
-    adapted_js = re.sub(
-        r'let EVENTS\s*=\s*\[\s*\]',
-        lambda _: repl_events,
-        raw_js,
-    )
-    # 2. Заменяем let activeCity = "all" на нужный город
-    repl_city = f'let activeCity = {city_json}'
-    adapted_js = re.sub(
-        r'let activeCity\s*=\s*["\']all["\']',
-        lambda _: repl_city,
-        adapted_js,
-    )
-    # 3. Заменяем fetch(...) на инит с предвыбором города
-    city_boot = (
-        "buildFilters();\n"
-        "document.querySelectorAll('.filter-btn').forEach("
-        "b => b.classList.toggle('active', b.dataset.city === activeCity));\n"
-        "render();\n"
-    )
-    adapted_js = re.sub(
-        r"fetch\(['\"]events\.json['\"]\).*",
-        lambda _: city_boot,
-        adapted_js,
-        flags=re.DOTALL,
-    )
-    # 4. Добавляем навигацию: клик по городу → страница города, «Все города» → главная
-    city_url_map: dict[str, str] = {"all": "/"}
-    for c in all_cities:
-        city_url_map[c] = f"/cities/{city_slug(c)}.html"
-    city_url_js = json.dumps(city_url_map, ensure_ascii=False)
-
-    nav_snippet = f"""
-// City chip clicks navigate to the city page (or home for "all")
-(function () {{
-  var CITY_URLS = {city_url_js};
-  document.getElementById('city-filters').addEventListener('click', function (e) {{
-    var btn = e.target.closest('[data-city]');
-    if (!btn) return;
-    var dest = CITY_URLS[btn.dataset.city];
-    if (dest !== undefined && dest !== window.location.pathname) {{
-      e.stopImmediatePropagation();
-      window.location.href = dest;
-    }}
-  }}, true);
+    # Скрипт: предвыбираем город после загрузки
+    city_script = f'''<script>
+(function() {{
+  var CITY = "{slug}";
+  var orig = window.renderAll;
+  if (typeof orig === "function") {{
+    window.renderAll = function() {{
+      orig();
+      document.querySelectorAll(".city-pill").forEach(function(b) {{
+        b.classList.toggle("active", b.dataset.city === CITY);
+      }});
+    }};
+  }}
 }})();
-"""
-    full_js = adapted_js + nav_snippet
-
-    return f"""<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="/images/fav.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{esc(title)}</title>
-  <meta name="description" content="{esc(description)}">
-  <meta property="og:title" content="{esc(title)}">
-  <meta property="og:description" content="{esc(description)}">
-  <meta property="og:type" content="website">
-  <link rel="canonical" href="{DOMAIN}/cities/{slug}.html">
-  <style>{css}</style>
-  {jsonld_events}
-  {jsonld_bc}
-</head>
-<body>
-<header>
-  <img src="/images/logo.png" alt="Местов.Нет" class="site-logo">
-</header>
-
-<div class="toolbar" id="toolbar">
-  <div class="date-filter" id="date-filter">
-    <button class="preset-btn" data-preset="today">Сегодня</button>
-    <button class="preset-btn" data-preset="weekend">Выходные</button>
-    <button class="preset-btn" data-preset="week">Неделя</button>
-    <button class="preset-btn" data-preset="custom" id="btn-custom">Выбрать даты</button>
-  </div>
-  <div class="city-filters" id="city-filters">
-    <button class="filter-btn" data-city="all">Все города</button>
-  </div>
-</div>
-
-<div class="cal-overlay" id="cal-overlay">
-  <div class="cal-modal" id="cal-modal">
-    <div class="cal-nav-row">
-      <button class="cal-nav" id="cal-prev">&#8249;</button>
-      <div class="cal-months" id="cal-months"></div>
-      <button class="cal-nav" id="cal-next">&#8250;</button>
-    </div>
-    <div class="cal-actions">
-      <button class="cal-btn-clear" id="cal-btn-clear">Сбросить</button>
-      <span class="cal-range-label" id="cal-label">Выберите даты</span>
-      <button class="cal-btn-apply" id="cal-btn-apply">Применить</button>
-    </div>
-  </div>
-</div>
-
-<main id="main">
-{static_content}
-</main>
-
-<script>
-{full_js}
 </script>
-</body>
-</html>"""
+'''
+
+    src = src.replace('</body>', f'{seo_block}{city_script}</body>')
+
+    return src
 
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
@@ -709,14 +418,18 @@ def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = 
     if '<script type="application/ld+json">' not in src and jsonld_events:
         src = src.replace("</head>", f"  {jsonld_events}\n</head>")
 
-    # Статический пре-рендер событий: заменяем скелетоны в <main>
+    # Статический пре-рендер событий (скрытый блок для SEO)
     static_html = render_event_list(future, today, custom_names)
-    src = re.sub(
-        r'(<main id="main">)(.*?)(</main>)',
-        lambda m: f'{m.group(1)}\n{static_html}\n{m.group(3)}',
-        src,
-        flags=re.DOTALL,
-    )
+    seo_block = f'<div id="seo-content" style="display:none">\n{static_html}\n</div>\n'
+    if '<div id="seo-content"' in src:
+        src = re.sub(
+            r'<div id="seo-content"[^>]*>.*?</div>',
+            seo_block.strip(),
+            src,
+            flags=re.DOTALL,
+        )
+    else:
+        src = src.replace('</body>', f'{seo_block}</body>')
 
     return src
 
@@ -761,9 +474,10 @@ def main() -> None:
     today  = today_str()
     css    = extract_css()
 
-    # Города, для которых есть события
+    # Города, для которых есть события (исключаем «Крым» — он на главной)
     cities_with_events: list[str] = sorted(
-        {e["source_city"] for e in events if e.get("source_city")}
+        c for c in {e["source_city"] for e in events if e.get("source_city")}
+        if city_slug(c) != "all"
     )
 
     # 1. Обновляем index.html
