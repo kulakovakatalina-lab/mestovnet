@@ -1,9 +1,7 @@
 #!/bin/bash
 set -e
 
-DAYS=${1:-2}
-BRANCH="deploy-genres"
-REMOTE_BRANCH="main"
+DAYS=${1:-14}
 
 echo "=== Местов.Нет: обновление событий ==="
 echo "Глубина: $DAYS дней"
@@ -29,7 +27,7 @@ if git diff --cached --quiet; then
 else
     COUNT=$(python3 -c "import json; d=json.load(open('events.json')); print(len(d))")
     git commit -m "Обновить события: $COUNT в базе"
-    git push origin "$BRANCH:$REMOTE_BRANCH"
+    git push origin HEAD:main
     echo ""
     echo "✅ Задеплоено на mestov.net"
 fi
