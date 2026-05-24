@@ -1513,6 +1513,21 @@
     "genre": "поп"
   },
   {
+    "date": "2026-08-10",
+    "time": "19:00",
+    "artist": "Lida",
+    "venue": "Nebar",
+    "event_type": "концерт",
+    "price": "от 1 800 ₽",
+    "description": "Lida в Nebar, Севастополь.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-10",
+    "image": "/images/events/427f2e6e36f241d4e4220b23580ce621.jpg",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/lida-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "genre": "поп"
+  },
+  {
     "date": null,
     "time": null,
     "artist": "Карина Клавихо, Правин, Андрей Танзю",
