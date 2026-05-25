@@ -14,5 +14,16 @@
   },
   "prices": {
     "https://t.me/hp_band/79": "бесплатно"
-  }
+  },
+  "images": {},
+  "cities": {
+    "https://t.me/crimea_event/5542": "Бахчисарай"
+  },
+  "venues": {
+    "https://t.me/krymskiye_dela/5441": "Арт-Ковчег, с. Путиловка",
+    "https://t.me/belbekma/1237": "Арт-Ковчег, с. Путиловка",
+    "https://t.me/crimea_event/5542": "Арт-Ковчег, с. Путиловка"
+  },
+  "descriptions": {},
+  "genres": {}
 }
