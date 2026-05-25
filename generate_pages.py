@@ -141,6 +141,58 @@ def extract_js() -> str:
         pass
     return ""
 
+# ── Применение настроек из settings.json ─────────────────────────────────────
+
+def apply_settings(events: list[dict], settings: dict) -> list[dict]:
+    """Возвращает новый список событий с применёнными переопределениями из settings.json.
+
+    Применяет: names, times, prices, images, cities, venues, descriptions, genres.
+    Удаляет скрытые события (hidden).
+    Оригинальные объекты не изменяются — создаются копии.
+    """
+    hidden       = set(settings.get("hidden",       []))
+    names        = settings.get("names",        {})
+    times        = settings.get("times",        {})
+    prices       = settings.get("prices",       {})
+    images_ov    = settings.get("images",       {})
+    cities_ov    = settings.get("cities",       {})
+    venues_ov    = settings.get("venues",       {})
+    descs_ov     = settings.get("descriptions", {})
+    genres_ov    = settings.get("genres",       {})
+
+    result = []
+    for e in events:
+        url = e.get("source_url") or ""
+
+        # Скрытые события исключаем полностью
+        if url in hidden:
+            continue
+
+        ev = dict(e)  # мелкая копия, нам хватает
+
+        if url in names:
+            ev["artist"] = names[url]
+        if url in times:
+            ev["time"] = times[url]
+        if url in prices:
+            ev["price"] = prices[url]
+        if url in images_ov:
+            # None (null в JSON) означает «удалить картинку»
+            ev["image"] = None if images_ov[url] is None else images_ov[url]
+        if url in cities_ov:
+            ev["source_city"] = cities_ov[url]
+        if url in venues_ov:
+            ev["venue"] = venues_ov[url]
+        if url in descs_ov:
+            ev["description"] = descs_ov[url]
+        if url in genres_ov:
+            ev["genre"] = genres_ov[url]
+
+        result.append(ev)
+
+    return result
+
+
 # ── Статический рендер карточки события ──────────────────────────────────────
 
 def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
@@ -473,7 +525,23 @@ def main() -> None:
     settings = {}
     if SETTINGS_FILE.exists():
         settings = json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
-    custom_names: dict = settings.get("names", {})
+
+    # Применяем все переопределения из settings.json одним проходом
+    events = apply_settings(events, settings)
+    hidden_count = len(settings.get("hidden", []))
+    print(f"    После применения настроек: {len(events)} событий "
+          f"({hidden_count} скрыто, переопределений: "
+          f"names={len(settings.get('names',{}))}, "
+          f"times={len(settings.get('times',{}))}, "
+          f"prices={len(settings.get('prices',{}))}, "
+          f"images={len(settings.get('images',{}))}, "
+          f"cities={len(settings.get('cities',{}))}, "
+          f"venues={len(settings.get('venues',{}))}, "
+          f"descriptions={len(settings.get('descriptions',{}))}, "
+          f"genres={len(settings.get('genres',{}))})")
+
+    # custom_names больше не нужен отдельно — names уже применены в events
+    custom_names: dict = {}
 
     today  = today_str()
     css    = extract_css()

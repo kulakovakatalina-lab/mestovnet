@@ -7,6 +7,7 @@
 import re
 import time
 from datetime import datetime, timezone
+from typing import Optional
 
 import httpx
 from bs4 import BeautifulSoup
@@ -50,6 +51,23 @@ def _parse_date_time(date_str: str):
     return f"{year}-{month:02d}-{day:02d}", t
 
 
+def _fetch_event_description(event_url: str) -> Optional[str]:
+    """Парсит страницу события: извлекает блок «О концерте»."""
+    try:
+        resp = httpx.get(event_url, headers=_HEADERS, follow_redirects=True, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        h3 = soup.find("h3", string=re.compile(r"О концерте|О мероприятии"))
+        if h3:
+            desc_div = h3.find_next_sibling("div")
+            if desc_div:
+                text = desc_div.get_text(strip=True)
+                return text if len(text) > 30 else None
+        return None
+    except Exception:
+        return None
+
+
 def fetch_yandex_afisha_posts(city_slug: str, city_name: str) -> list[dict]:
     url = f"https://afisha.yandex.ru/{city_slug}/concert"
 
@@ -91,6 +109,11 @@ def fetch_yandex_afisha_posts(city_slug: str, city_name: str) -> list[dict]:
         if not date:
             continue
 
+        # Загружаем блок «О концерте» со страницы события
+        description = _fetch_event_description(link)
+        if not description:
+            description = f"{artist} в {venue}, {city_name}."
+
         posts.append({
             "date": date,
             "text": (
@@ -105,7 +128,7 @@ def fetch_yandex_afisha_posts(city_slug: str, city_name: str) -> list[dict]:
                 "time": t,
                 "price": price,
                 "event_type": "концерт",
-                "description": f"{artist} в {venue}, {city_name}.",
+                "description": description,
                 "source_url": link,
             },
         })
