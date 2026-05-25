@@ -1,16 +1,18 @@
 import argparse
+import base64
 import hashlib
 import json
 import mimetypes
 import os
 import re
-import subprocess
 import time
 from datetime import datetime, timedelta, timezone
+from io import BytesIO
 
 import httpx
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from PIL import Image
 
 load_dotenv()
 
@@ -146,49 +148,164 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
     return posts
 
 
-def _call_claude_text(prompt: str) -> str:
-    cmd = ["claude", "-p", prompt, "--output-format", "text"]
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-    except subprocess.TimeoutExpired:
+# --- Anthropic API ---
+ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_VISION_MODEL = os.environ.get("ANTHROPIC_VISION_MODEL", "claude-sonnet-4-6")
+ANTHROPIC_TEXT_MODEL = os.environ.get("ANTHROPIC_TEXT_MODEL", "claude-haiku-4-5-20251001")
+ANTHROPIC_MAX_TOKENS = 4096
+
+_SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-канала крымского заведения.
+Извлекай музыкальные мероприятия из текста поста и приложенных изображений.
+
+НЕ включай в результат:
+- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
+- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
+- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
+- общие анонсы без конкретного исполнителя/группы на конкретную дату.
+
+ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
+ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста. НЕ придумывай имена.
+Если не назван конкретный исполнитель — укажи null.
+
+Поля события:
+- date: "YYYY-MM-DD" или null
+- time: "HH:MM" или null
+- artist: название группы/исполнителя или null
+- event_type: "концерт" / "джем" / "трибьют" / "вечеринка" / "фестиваль" / "другое"
+- venue: конкретное место проведения или null
+- city: город Крыма или null
+- price: цена, "бесплатно" или null
+- description: 1-2 предложения"""
+
+
+def _call_anthropic(
+    user_content: "str | list",
+    system: "str | None" = None,
+    model: "str | None" = None,
+    max_retries: int = 2,
+) -> str:
+    """Прямой вызов Anthropic Messages API.
+    user_content — строка или список content blocks (текст + base64-изображения).
+    model — принудительная модель (иначе auto по наличию картинок).
+    system — кастомный system prompt (иначе _SYSTEM_PROMPT)."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("  ОШИБКА: ANTHROPIC_API_KEY не задан")
         return ""
-    return result.stdout.strip()
+
+    if isinstance(user_content, str):
+        user_content = [{"type": "text", "text": user_content}]
+
+    if model is None:
+        has_images = any(block.get("type") == "image" for block in user_content)
+        model = ANTHROPIC_VISION_MODEL if has_images else ANTHROPIC_TEXT_MODEL
+
+    sys_text = system if system is not None else _SYSTEM_PROMPT
+
+    body = {
+        "model": model,
+        "max_tokens": ANTHROPIC_MAX_TOKENS,
+        "system": [{
+            "type": "text",
+            "text": sys_text,
+            "cache_control": {"type": "ephemeral"},
+        }],
+        "messages": [{"role": "user", "content": user_content}],
+    }
+
+    headers = {
+        "x-api-key": api_key,
+        "anthropic-version": "2023-06-01",
+        "anthropic-beta": "prompt-caching-2024-12-16",
+        "content-type": "application/json",
+    }
+
+    for attempt in range(max_retries + 1):
+        try:
+            resp = httpx.post(ANTHROPIC_API_URL, json=body, headers=headers, timeout=180)
+            resp.raise_for_status()
+            data = resp.json()
+            parts = []
+            for block in data.get("content", []):
+                if block.get("type") == "text":
+                    parts.append(block["text"])
+            return "".join(parts).strip()
+        except httpx.HTTPStatusError as e:
+            status = e.response.status_code
+            if status >= 500 and attempt < max_retries:
+                wait = 2 ** (attempt + 1)
+                print(f" [retry {attempt + 1}/{max_retries} after {wait}s: {status}]", end="")
+                time.sleep(wait)
+                continue
+            print(f" [API error {status}: {e.response.text[:200]}]", end="")
+            return ""
+        except httpx.TimeoutException:
+            if attempt < max_retries:
+                wait = 2 ** (attempt + 1)
+                print(f" [retry {attempt + 1}/{max_retries} after {wait}s: timeout]", end="")
+                time.sleep(wait)
+                continue
+            print(" [API timeout]", end="")
+            return ""
+        except Exception as e:
+            print(f" [API exception: {e}]", end="")
+            return ""
+    return ""
 
 
-def _call_claude_vision(prompt: str, image_paths: list[str]) -> str:
-    import base64
+_OCR_SYSTEM = "Твоя задача — точно перечислить ВЕСЬ текст, который ты видишь на изображении. Если это афиша или постер мероприятия, выпиши все даты, имена исполнителей, названия групп, цены, места проведения. Пиши на том же языке, что на изображении."
+
+
+def _ocr_images(b64_datas: list[str]) -> str:
+    """Sonnet: читает текст с одного или нескольких изображений. Возвращает прочитанный текст."""
+    if not b64_datas:
+        return ""
     content = []
-    for p in image_paths:
-        try:
-            with open(p, "rb") as f:
-                img_b64 = base64.b64encode(f.read()).decode()
-            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}})
-        except Exception:
-            pass
-    content.append({"type": "text", "text": prompt})
-    msg = json.dumps({
-        "type": "user",
-        "message": {
-            "role": "user",
-            "content": content,
-        },
-    })
-    cmd = ["claude", "--print", "--verbose", "--input-format", "stream-json", "--output-format", "stream-json"]
+    for b64 in b64_datas:
+        content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}})
+    label = "Перечисли весь текст на каждом изображении. Начинай описание каждого с '=== Изображение N ==='."
+    if len(b64_datas) == 1:
+        label = "Перечисли весь текст на этом изображении."
+    content.append({"type": "text", "text": label})
+    return _call_anthropic(content, model=ANTHROPIC_VISION_MODEL, system=_OCR_SYSTEM)
+
+
+MAX_IMAGE_PX = 768  # максимальная длинная сторона для картинок, отправляемых в API
+
+
+def _resize_for_api(raw: bytes) -> bytes:
+    """Ресайзит изображение в памяти (до MAX_IMAGE_PX по длинной стороне)
+    и сжимает в JPEG quality 85. Оригинал на диске не трогает."""
     try:
-        result = subprocess.run(cmd, input=msg, capture_output=True, text=True, timeout=300)
-    except subprocess.TimeoutExpired:
-        return ""
-    raw_parts = []
-    for line in result.stdout.splitlines():
-        try:
-            obj = json.loads(line)
-            if obj.get("type") == "assistant":
-                for block in obj.get("message", {}).get("content", []):
-                    if block.get("type") == "text":
-                        raw_parts.append(block["text"])
-        except json.JSONDecodeError:
-            pass
-    return "".join(raw_parts).strip()
+        img = Image.open(BytesIO(raw))
+        img = img.convert("RGB")
+        w, h = img.size
+        if w > MAX_IMAGE_PX or h > MAX_IMAGE_PX:
+            ratio = MAX_IMAGE_PX / max(w, h)
+            img = img.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
+        buf = BytesIO()
+        img.save(buf, format="JPEG", quality=85)
+        return buf.getvalue()
+    except Exception:
+        return raw
+
+
+def _img_to_base64(url_or_path: str) -> "str | None":
+    """Скачивает или читает изображение, ресайзит, возвращает base64."""
+    try:
+        if url_or_path.startswith(("http://", "https://", "ftp://")):
+            resp = httpx.get(url_or_path, timeout=15, follow_redirects=True,
+                             headers={"User-Agent": "Mozilla/5.0"})
+            resp.raise_for_status()
+            raw = resp.content
+        else:
+            p = os.path.abspath(url_or_path.lstrip("/"))
+            with open(p, "rb") as f:
+                raw = f.read()
+        resized = _resize_for_api(raw)
+        return base64.b64encode(resized).decode()
+    except Exception:
+        return None
 
 
 def _parse_claude_json(raw: str):
@@ -203,52 +320,36 @@ def _parse_claude_json(raw: str):
 
 
 def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> list[dict]:
-    """Извлекает события из одного поста с одной картинкой. Возвращает [events...]."""
+    """Извлекает события из одного поста с одной картинкой. Возвращает [events...].
+    Sonnet → OCR картинки, Haiku → извлечение событий из текста + OCR."""
     text = post["text"]
     cache_key = hashlib.sha256(("single:" + text + ":" + image_path).encode("utf-8")).hexdigest()[:16]
     cached = _cache_read(cache_key)
     if cached is not None:
         return cached
 
-    prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
-Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+    img_b64 = _img_to_base64(image_path)
+    if img_b64:
+        ocr_text = _ocr_images([img_b64])
+    else:
+        ocr_text = ""
+    image_block = f"\n\nТекст с изображения:\n\"\"\"\n{ocr_text}\n\"\"\"\n" if ocr_text else ""
+
+    user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
 Текст поста:
 \"\"\"
 {text}
 \"\"\"
-
-Также прилагается изображение из поста — прочитай весь текст с афиши/картинки, если он содержит детали мероприятия (дата, время, артист, цена).
-
-Если в посте анонсируются музыкальные мероприятия — верни JSON-массив объектов.
-НЕ включай в результат:
-- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
-- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
-- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
-- общие анонсы без конкретного исполнителя/группы на конкретную дату.
+{image_block}
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
 Если по дням нет конкретных деталей — верни [].
-ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
-ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста. НЕ придумывай имена. Если не назван конкретный исполнитель — укажи null.
-Каждое событие:
-{{
-  "date": "YYYY-MM-DD или null",
-  "time": "HH:MM или null",
-  "artist": "название группы/исполнителя или null",
-  "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
-  "venue": "конкретное место проведения из текста или null",
-  "city": "город Крыма или null",
-  "price": "цена или бесплатно или null",
-  "description": "1-2 предложения"
-}}
 
-Если мероприятий нет — верни [].
-Верни только JSON, без пояснений, без markdown."""
+Верни JSON-массив событий. Если мероприятий нет — верни [].
+Верни только JSON, без пояснений."""
 
-    raw = _call_claude_vision(prompt_text, [image_path])
+    raw = _call_anthropic(user_text)
     result = _parse_claude_json(raw)
-    if result is None:
-        return []
     if not isinstance(result, list):
         return []
     _cache_write(cache_key, result)
@@ -257,8 +358,8 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 
 def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str]) -> list[dict]:
     """Извлекает события из поста с несколькими картинками.
-    Один вызов Claude: находит афиши среди всех изображений и извлекает события.
-    Возвращает [events...] где каждое событие имеет поле image_index."""
+    Sonnet → OCR всех картинок, Haiku → извлечение событий из текста + OCR.
+    Возвращает [events...] где каждое событие имеет поле image_indices (список номеров картинок)."""
     text = post["text"]
     print(f"\n  [multi] {post.get('url', '?')} {len(image_paths)} images", end="")
     cache_key = hashlib.sha256(("multi:" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
@@ -268,78 +369,47 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
     if cached is not None:
         return cached
 
-    # Один вызов: найти афиши и извлечь события
-    prompt_text = f"""Ты анализируешь пост из Telegram-канала крымского заведения.
-Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+    b64s = []
+    for img_path in image_paths:
+        b64 = _img_to_base64(img_path)
+        if b64:
+            b64s.append(b64)
+    ocr_text = _ocr_images(b64s) if b64s else ""
+
+    user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
 Текст поста:
 \"\"\"
 {text}
 \"\"\"
 
+Текст с изображений (каждое описание начинается с '=== Изображение N ==='):
+\"\"\"
+{ocr_text}
+\"\"\"
+
 К посту приложено {len(image_paths)} изображений. Среди них могут быть:
-- афиши/постеры с информацией о мероприятиях (дата, время, артист, место);
-- дополнительные фотографии (фото с концертов, QR-коды, логотипы, общие фото).
+- разные афиши разных мероприятий (каждая картинка — своё событие);
+- несколько фото одного и того же мероприятия (общая афиша + дополнительные фото).
 
-Найди ВСЕ музыкальные мероприятия и для каждого укажи номер изображения-афиши.
+ОПРЕДЕЛИ СЦЕНАРИЙ:
+1) Если в посте анонсируется НЕСКОЛЬКО разных событий и у каждого своя картинка-афиша — создай отдельное событие на каждое, указав номер его картинки.
+2) Если в посте ОДНО событие, но к нему приложено несколько картинок (афиша + фото зала/исполнителя) — создай ОДНО событие и перечисли номера ВСЕХ подходящих картинок.
 
-НЕ включай в результат:
-- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
-- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
-- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
-- общие анонсы без конкретного исполнителя/группы на конкретную дату.
-ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста афиши. НЕ придумывай имена.
-Каждое событие:
-{{
-  "image_index": 0,
-  "date": "YYYY-MM-DD или null",
-  "time": "HH:MM или null",
-  "artist": "название группы/исполнителя или null",
-  "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
-  "venue": "конкретное место проведения или null",
-  "city": "город Крыма или null",
-  "price": "цена или бесплатно или null",
-  "description": "1-2 предложения"
-}}
+Дополнительное поле:
+- image_indices: [0] — номера картинок, относящихся к этому событию
+- Если событию соответствует одна картинка → image_indices: [N]
+- Если событию соответствует несколько картинок → image_indices: [0, 1, 2]
+- Если картинка не относится к событию (логотип, qr-код) — НЕ включай её номер
 
-Если мероприятий нет — верни [].
-Только JSON."""
+Верни JSON-массив событий с полем image_indices. Если мероприятий нет — верни [].
+Верни только JSON, без пояснений."""
 
-    content = []
-    for img_path in image_paths:
-        abs_path = os.path.abspath(img_path.lstrip("/"))
-        try:
-            with open(abs_path, "rb") as f:
-                img_b64 = base64.b64encode(f.read()).decode()
-            content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}})
-        except Exception:
-            pass
-    content.append({"type": "text", "text": prompt_text})
-
-    msg = json.dumps({"type": "user", "message": {"role": "user", "content": content}})
-    cmd = ["claude", "--print", "--verbose", "--input-format", "stream-json", "--output-format", "stream-json"]
-    try:
-        result = subprocess.run(cmd, input=msg, capture_output=True, text=True, timeout=300)
-    except subprocess.TimeoutExpired:
-        print(" [timeout]")
-        return []
-
-    raw_parts = []
-    for line in result.stdout.splitlines():
-        try:
-            obj = json.loads(line)
-            if obj.get("type") == "assistant":
-                for block in obj.get("message", {}).get("content", []):
-                    if block.get("type") == "text":
-                        raw_parts.append(block["text"])
-        except json.JSONDecodeError:
-            pass
-    raw = "".join(raw_parts).strip()
+    raw = _call_anthropic(user_text)
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
-
     print(f" [raw: {raw[:100]}]", end="")
 
     try:
@@ -347,10 +417,8 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
     except json.JSONDecodeError:
         print(" [parse error]")
         return []
-
     if not isinstance(events, list):
         return []
-
     print(f" -> {len(events)} events", end="")
     _cache_write(cache_key, events)
     return events
@@ -358,94 +426,54 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 
 def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, list[dict]]:
     """Извлекает события из батча постов одним вызовом Claude.
+    Sonnet → OCR картинок (если есть), Haiku → извлечение событий из текстов + OCR.
     Возвращает dict: post_url -> [events...].
     """
     if not posts:
         return {}
 
-    # Проверяем кэш — хэш по всем текстам постов
     cache_texts = [p["text"] for p in posts]
     cached = _cache_read("\n---\n".join(cache_texts))
     if cached is not None:
         print(f" [кэш]", end="")
         return cached
 
-    # Скачиваем все картинки для vision
-    vision_paths = []
-    for post in posts:
-        vision_url = post.get("image") or post.get("thumbnail")
-        if vision_url:
-            try:
-                import tempfile
-                resp = httpx.get(vision_url, timeout=10, follow_redirects=True,
-                                 headers={"User-Agent": "Mozilla/5.0"})
-                resp.raise_for_status()
-                with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
-                    tmp.write(resp.content)
-                    vision_paths.append(tmp.name)
-            except Exception:
-                pass
-
-    # Строим промпт для батча
     posts_section = ""
     for i, post in enumerate(posts):
         url = post.get("url") or f"post_{i}"
         posts_section += f"\n--- POST {i+1} (url: {url}) ---\n{post['text']}\n"
 
-    image_note = "\nТакже приложены изображения из постов — прочитай текст с афиш/картинок, если они содержат детали мероприятий (дата, время, артист, цена)." if vision_paths else ""
+    # Sonnet: OCR всех картинок батча
+    b64s = []
+    for post in posts:
+        vision_url = post.get("image") or post.get("thumbnail")
+        if vision_url:
+            b64 = _img_to_base64(vision_url)
+            if b64:
+                b64s.append(b64)
+    ocr_text = _ocr_images(b64s) if b64s else ""
 
-    prompt_text = f"""Ты анализируешь посты из Telegram-канала крымского заведения.
-Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+    image_note = ""
+    if ocr_text:
+        image_note = f"\n\nТекст с изображений постов:\n\"\"\"\n{ocr_text}\n\"\"\""
+
+    user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
 {posts_section}
 {image_note}
 
 Для КАЖДОГО поста извлеки музыкальные мероприятия. Верни JSON-объект где ключи — url поста (точно как указано выше), а значения — массивы событий.
 
-НЕ включай в результат:
-- мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
-- «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
-- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
-- общие анонсы без конкретного исполнителя/группы на конкретную дату.
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
 Если по дням нет конкретных деталей — верни пустой массив [].
-ВАЖНО: НЕ создавай события с пустыми/общими полями artist.
-ВАЖНО: artist должен быть извлечён ИСКЛЮЧИТЕЛЬНО из текста поста. НЕ придумывай имена. Если не назван конкретный исполнитель — укажи null.
-Каждое событие:
-{{
-  "date": "YYYY-MM-DD или null",
-  "time": "HH:MM или null",
-  "artist": "название группы/исполнителя или null",
-  "event_type": "концерт / джем / трибьют / вечеринка / фестиваль / другое",
-  "venue": "конкретное место проведения из текста или null",
-  "city": "город Крыма или null",
-  "price": "цена или бесплатно или null",
-  "description": "1-2 предложения"
-}}
 
 Если мероприятий нет ни в одном посте — верни {{}}.
-Верни только JSON, без пояснений, без markdown."""
+Верни только JSON, без пояснений."""
 
-    if vision_paths:
-        raw = _call_claude_vision(prompt_text, vision_paths)
-    else:
-        raw = _call_claude_text(prompt_text)
-
-    # Cleanup temp files
-    for p in vision_paths:
-        try:
-            os.unlink(p)
-        except OSError:
-            pass
-
+    raw = _call_anthropic(user_text)
     result = _parse_claude_json(raw)
-    if result is None:
-        return {}
-
-    # Валидируем структуру
     if not isinstance(result, dict):
         return {}
-
     _cache_write("\n---\n".join(cache_texts), result)
     return result
 
@@ -1063,15 +1091,25 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                     event["venue"] = channel["title"]
                 event["post_date"] = post["date"]
 
-                img_idx = event.pop("image_index", 0)
-                if img_idx is None:
-                    img_idx = 0
-                if local and 0 <= img_idx < len(local):
-                    event["image"] = local[img_idx]
-                    event["images"] = [local[img_idx]]
+                img_indices = event.pop("image_indices", None) or event.pop("image_index", None)
+                if img_indices is None:
+                    img_indices = [0]
+                elif not isinstance(img_indices, list):
+                    img_indices = [img_indices]
+                if local and img_indices:
+                    selected = []
+                    for idx in img_indices:
+                        if isinstance(idx, int) and 0 <= idx < len(local):
+                            selected.append(local[idx])
+                    if selected:
+                        event["image"] = selected[0]
+                        event["images"] = selected if len(selected) > 1 else None
+                    else:
+                        event["image"] = local[0]
+                        event["images"] = None
                 elif local:
                     event["image"] = local[0]
-                    event["images"] = [local[0]]
+                    event["images"] = None
                 event["source_url"] = post_url
                 all_events.append(event)
                 channel_events += 1

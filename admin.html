@@ -173,6 +173,7 @@
     .row.hidden-row { opacity: 0.4; }
     .row.hidden-row .row-artist { text-decoration: line-through; color: #555; }
     .row.search-hidden { display: none; }
+    .row-wrapper.search-hidden { display: none; }
 
     .row-time-wrap {
       width: 58px;
@@ -357,6 +358,166 @@
 
     .empty { text-align: center; color: #555; padding: 60px 0; font-size: 0.95rem; }
 
+    /* ---- expandable detail panel ---- */
+    .row-expand-btn {
+      background: none;
+      border: none;
+      color: #3a3a3a;
+      font-size: 0.75rem;
+      cursor: pointer;
+      padding: 0 2px;
+      line-height: 1;
+      transition: color 0.15s;
+      flex-shrink: 0;
+    }
+    .row-expand-btn:hover { color: #aaa; }
+    .row-expand-btn.open { color: #77cccc; }
+
+    .row-detail {
+      display: none;
+      padding: 10px 14px 12px;
+      border-top: 1px solid #222;
+      margin-top: 4px;
+    }
+    .row-detail.open { display: block; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+    }
+    @media (max-width: 540px) {
+      .detail-grid { grid-template-columns: 1fr; }
+    }
+
+    .detail-field {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .detail-field.full { grid-column: 1 / -1; }
+
+    .detail-label {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #444;
+    }
+    .detail-label.custom { color: #5a8a5a; }
+
+    .detail-value {
+      font-size: 0.78rem;
+      color: #888;
+      cursor: pointer;
+      transition: color 0.15s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .detail-value:hover { color: #ccc; }
+    .detail-value.custom { color: #7db87d; }
+    .detail-value.custom:hover { color: #a0d4a0; }
+    .detail-value.empty-val { color: #333; }
+    .detail-value.empty-val:hover { color: #666; }
+
+    .detail-input {
+      background: #1a1a1a;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-size: 0.78rem;
+      padding: 3px 6px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .detail-input:focus { border-color: #7db87d; }
+    .detail-input.textarea {
+      resize: vertical;
+      min-height: 52px;
+      white-space: pre-wrap;
+    }
+
+    /* ---- image block ---- */
+    .detail-image-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .detail-img {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #333;
+      flex-shrink: 0;
+      display: block;
+    }
+    .detail-img-placeholder {
+      width: 72px;
+      height: 72px;
+      border-radius: 6px;
+      border: 1px dashed #333;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #333;
+    }
+    .detail-img-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 0;
+      flex: 1;
+    }
+    .detail-img-url {
+      font-size: 0.72rem;
+      color: #555;
+      word-break: break-all;
+    }
+    .detail-img-url.custom { color: #7db87d; }
+    .img-action-btn {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #aaa;
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+    .img-action-btn:hover { border-color: #555; color: #fff; }
+    .img-action-btn.del { border-color: #4a2222; color: #bb7777; }
+    .img-action-btn.del:hover { border-color: #aa4444; color: #ffaaaa; background: #1a1010; }
+    .img-input {
+      background: #1a1a1a;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-size: 0.72rem;
+      padding: 3px 6px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .img-input:focus { border-color: #7db87d; }
+
+    .detail-del-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      color: #3a3a3a;
+      cursor: pointer;
+      transition: color 0.15s;
+      margin-top: 2px;
+    }
+    .detail-del-wrap:hover { color: #bb7777; }
+
     @media (max-width: 480px) {
       header { padding: 16px; }
       .toolbar { padding: 10px 16px; gap: 8px; }
@@ -447,10 +608,15 @@ document.getElementById("btn-logout").addEventListener("click", () => {
 
 // ---- состояние ----
 let EVENTS = [];
-let hidden = new Set();
-let times  = {};
-let names  = {};
-let prices = {};
+let hidden       = new Set();
+let times        = {};
+let names        = {};
+let prices       = {};
+let images       = {};   // кастомный URL/путь к картинке
+let cities       = {};   // кастомный город
+let venues       = {};   // кастомное место проведения
+let descriptions = {};   // кастомное описание
+let genres       = {};   // кастомный жанр
 let dirty  = false;
 
 const MONTHS = ["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек"];
@@ -495,7 +661,7 @@ async function pushSettings() {
   btn.textContent = "Сохранение…";
   btn.disabled = true;
 
-  const content = { hidden: [...hidden], times, names, prices };
+  const content = { hidden: [...hidden], times, names, prices, images, cities, venues, descriptions, genres };
   const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
 
   try {
@@ -539,10 +705,15 @@ async function loadSettings() {
     const res = await fetch(`settings.json?_=${Date.now()}`);
     if (res.ok) {
       const d = await res.json();
-      hidden = new Set(d.hidden || []);
-      times  = d.times  || {};
-      names  = d.names  || {};
-      prices = d.prices || {};
+      hidden       = new Set(d.hidden || []);
+      times        = d.times        || {};
+      names        = d.names        || {};
+      prices       = d.prices       || {};
+      images       = d.images       || {};
+      cities       = d.cities       || {};
+      venues       = d.venues       || {};
+      descriptions = d.descriptions || {};
+      genres       = d.genres       || {};
     }
   } catch { /* оставляем пустые defaults */ }
 }
@@ -756,11 +927,206 @@ function showPriceInput(wrap, e) {
   });
 }
 
+// ---- helpers for detail fields ----
+
+// Универсальный инлайн-редактор для текстовых полей
+function makeDetailField(container, labelText, getValue, isCustom, onSave, onClear, opts = {}) {
+  container.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "detail-label" + (isCustom() ? " custom" : "");
+  label.textContent = labelText;
+  container.appendChild(label);
+
+  const valueWrap = document.createElement("div");
+
+  const current = getValue();
+  if (opts.editing) {
+    // показываем инпут сразу
+    showDetailInput();
+  } else {
+    const span = document.createElement("span");
+    span.className = "detail-value" + (isCustom() ? " custom" : (!current ? " empty-val" : ""));
+    span.textContent = current || (opts.placeholder || "— нажмите чтобы изменить");
+    span.title = "Нажмите чтобы изменить";
+    span.addEventListener("click", showDetailInput);
+    valueWrap.appendChild(span);
+
+    // кнопка сброса кастомного значения
+    if (isCustom()) {
+      const del = document.createElement("span");
+      del.className = "detail-del-wrap";
+      del.innerHTML = "× сбросить";
+      del.title = "Вернуть оригинальное значение";
+      del.addEventListener("click", e => {
+        e.stopPropagation();
+        onClear();
+        makeDetailField(container, labelText, getValue, isCustom, onSave, onClear, opts);
+      });
+      valueWrap.appendChild(del);
+    }
+  }
+
+  container.appendChild(valueWrap);
+
+  function showDetailInput() {
+    valueWrap.innerHTML = "";
+    let input;
+    if (opts.textarea) {
+      input = document.createElement("textarea");
+      input.className = "detail-input textarea";
+      input.rows = 3;
+    } else {
+      input = document.createElement("input");
+      input.type = "text";
+      input.className = "detail-input";
+    }
+    input.value = getValue() || "";
+    if (opts.placeholder) input.placeholder = opts.placeholder;
+    valueWrap.appendChild(input);
+    input.focus();
+    if (!opts.textarea) { input.select(); }
+
+    function commit() {
+      const val = input.value.trim();
+      onSave(val);
+      makeDetailField(container, labelText, getValue, isCustom, onSave, onClear, opts);
+    }
+
+    input.addEventListener("blur", commit);
+    input.addEventListener("keydown", ev => {
+      if (ev.key === "Enter" && !opts.textarea) { ev.preventDefault(); input.blur(); }
+      if (ev.key === "Escape") { makeDetailField(container, labelText, getValue, isCustom, onSave, onClear, opts); }
+    });
+  }
+}
+
+// Рендер блока изображения
+function renderImageBlock(container, e) {
+  container.innerHTML = "";
+
+  const label = document.createElement("div");
+  const hasCustom = images[e.source_url] !== undefined;
+  const hasDelete = images[e.source_url] === null; // null = удалить картинку
+  label.className = "detail-label" + (hasCustom ? " custom" : "");
+  label.textContent = "Картинка";
+  container.appendChild(label);
+
+  const wrap = document.createElement("div");
+  wrap.className = "detail-image-wrap";
+
+  // превью
+  const currentImg = hasDelete ? null : (images[e.source_url] || e.image || null);
+  if (currentImg) {
+    const img = document.createElement("img");
+    img.className = "detail-img";
+    img.src = currentImg;
+    img.alt = "";
+    img.onerror = () => { img.style.display = "none"; };
+    wrap.appendChild(img);
+  } else {
+    const ph = document.createElement("div");
+    ph.className = "detail-img-placeholder";
+    ph.textContent = "🖼";
+    wrap.appendChild(ph);
+  }
+
+  const actions = document.createElement("div");
+  actions.className = "detail-img-actions";
+
+  // URL текущего изображения
+  if (currentImg) {
+    const urlTxt = document.createElement("div");
+    urlTxt.className = "detail-img-url" + (hasCustom && !hasDelete ? " custom" : "");
+    urlTxt.textContent = currentImg.length > 60 ? "…" + currentImg.slice(-55) : currentImg;
+    urlTxt.title = currentImg;
+    actions.appendChild(urlTxt);
+  } else if (hasDelete) {
+    const del = document.createElement("div");
+    del.className = "detail-img-url";
+    del.textContent = "картинка удалена";
+    actions.appendChild(del);
+  }
+
+  // Кнопка «Изменить / Добавить URL»
+  const editBtn = document.createElement("button");
+  editBtn.className = "img-action-btn";
+  editBtn.textContent = currentImg ? "Изменить URL" : "Добавить URL";
+  editBtn.addEventListener("click", () => showImgInput(container, e, actions, editBtn));
+  actions.appendChild(editBtn);
+
+  // Кнопка «Удалить картинку» (если есть картинка)
+  if (currentImg) {
+    const delBtn = document.createElement("button");
+    delBtn.className = "img-action-btn del";
+    delBtn.textContent = "Удалить картинку";
+    delBtn.addEventListener("click", () => {
+      if (!confirm("Удалить картинку у этого мероприятия?")) return;
+      images[e.source_url] = null; // null = явное удаление
+      markDirty();
+      renderImageBlock(container, e);
+    });
+    actions.appendChild(delBtn);
+  }
+
+  // Кнопка «Сбросить» (если есть кастом)
+  if (hasCustom) {
+    const resetBtn = document.createElement("button");
+    resetBtn.className = "img-action-btn";
+    resetBtn.textContent = "Сбросить к оригиналу";
+    resetBtn.addEventListener("click", () => {
+      delete images[e.source_url];
+      markDirty();
+      renderImageBlock(container, e);
+    });
+    actions.appendChild(resetBtn);
+  }
+
+  wrap.appendChild(actions);
+  container.appendChild(wrap);
+}
+
+function showImgInput(container, e, actionsEl, triggerBtn) {
+  // заменяем кнопку на инпут
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "img-input";
+  input.placeholder = "https://… или /images/events/…";
+  const cur = images[e.source_url];
+  input.value = (cur && cur !== null) ? cur : "";
+  actionsEl.replaceChild(input, triggerBtn);
+  input.focus();
+
+  function commit() {
+    const val = input.value.trim();
+    if (val) {
+      images[e.source_url] = val;
+    } else {
+      delete images[e.source_url];
+    }
+    markDirty();
+    renderImageBlock(container, e);
+  }
+
+  input.addEventListener("blur", commit);
+  input.addEventListener("keydown", ev => {
+    if (ev.key === "Enter") { ev.preventDefault(); input.blur(); }
+    if (ev.key === "Escape") { renderImageBlock(container, e); }
+  });
+}
+
 function makeRow(e) {
   const isHidden = hidden.has(e.source_url);
 
+  // обёртка = строка + скрытая панель деталей
+  const wrapper = document.createElement("div");
+  wrapper.style.marginBottom = "5px";
+
   const row = document.createElement("div");
   row.className = "row" + (isHidden ? " hidden-row" : "");
+  row.style.marginBottom = "0";
+  row.style.borderRadius = "10px 10px 0 0";
+  row.style.borderBottom = "none";
   row.dataset.artist = (e.artist || e.venue || "").toLowerCase();
   row.dataset.venue  = (e.venue || "").toLowerCase();
   row.dataset.city   = (e.source_city || "").toLowerCase();
@@ -779,11 +1145,11 @@ function makeRow(e) {
 
   const meta = document.createElement("div");
   meta.className = "row-meta";
-  const parts = [];
-  if (e.venue && e.artist) parts.push(e.venue);
-  if (e.source_city) parts.push(e.source_city);
-  if (e.event_type) parts.push(e.event_type);
-  meta.textContent = parts.join(" · ");
+  const metaParts = [];
+  if (e.venue && e.artist) metaParts.push(venues[e.source_url] || e.venue);
+  if (e.source_city) metaParts.push(cities[e.source_url] || e.source_city);
+  if (e.event_type) metaParts.push(genres[e.source_url] || e.genre || e.event_type);
+  meta.textContent = metaParts.join(" · ");
   info.appendChild(meta);
 
   const extra = document.createElement("div");
@@ -792,12 +1158,6 @@ function makeRow(e) {
   const priceWrap = document.createElement("span");
   renderPriceContent(priceWrap, e);
   extra.appendChild(priceWrap);
-
-  if (e.description) {
-    const desc = document.createElement("span");
-    desc.textContent = e.description;
-    extra.appendChild(desc);
-  }
 
   if (e.source_url) {
     const src = document.createElement("a");
@@ -811,8 +1171,16 @@ function makeRow(e) {
   info.appendChild(extra);
   row.appendChild(info);
 
-  const wrap = document.createElement("div");
-  wrap.className = "toggle-wrap";
+  // --- кнопка разворачивания деталей ---
+  const expandBtn = document.createElement("button");
+  expandBtn.className = "row-expand-btn";
+  expandBtn.title = "Редактировать детали";
+  expandBtn.textContent = "✎";
+  row.appendChild(expandBtn);
+
+  // --- toggle видимости ---
+  const toggleWrap = document.createElement("div");
+  toggleWrap.className = "toggle-wrap";
 
   const label = document.createElement("span");
   label.className = isHidden ? "toggle-label" : "toggle-label on";
@@ -821,11 +1189,11 @@ function makeRow(e) {
   const sw = document.createElement("label");
   sw.className = "switch";
 
-  const input = document.createElement("input");
-  input.type = "checkbox";
-  input.checked = !isHidden;
-  input.addEventListener("change", () => {
-    if (input.checked) {
+  const chk = document.createElement("input");
+  chk.type = "checkbox";
+  chk.checked = !isHidden;
+  chk.addEventListener("change", () => {
+    if (chk.checked) {
       hidden.delete(e.source_url);
       row.classList.remove("hidden-row");
       label.className = "toggle-label on";
@@ -843,27 +1211,164 @@ function makeRow(e) {
   const slider = document.createElement("span");
   slider.className = "slider";
 
-  sw.appendChild(input);
+  sw.appendChild(chk);
   sw.appendChild(slider);
-  wrap.appendChild(label);
-  wrap.appendChild(sw);
-  row.appendChild(wrap);
+  toggleWrap.appendChild(label);
+  toggleWrap.appendChild(sw);
+  row.appendChild(toggleWrap);
 
-  return row;
+  // --- панель деталей (изначально скрыта) ---
+  const detail = document.createElement("div");
+  detail.className = "row-detail";
+  detail.style.cssText = "background:#151515;border:1px solid #222;border-top:none;border-radius:0 0 10px 10px;padding:10px 14px 12px;display:none;";
+
+  const grid = document.createElement("div");
+  grid.className = "detail-grid";
+
+  // -- Картинка (на всю ширину) --
+  const imgField = document.createElement("div");
+  imgField.className = "detail-field full";
+  renderImageBlock(imgField, e);
+  grid.appendChild(imgField);
+
+  // -- Город --
+  const cityField = document.createElement("div");
+  cityField.className = "detail-field";
+  makeDetailField(
+    cityField, "Город",
+    () => cities[e.source_url] || e.source_city || "",
+    () => cities[e.source_url] !== undefined,
+    val => {
+      if (val && val !== (e.source_city || "").trim()) {
+        cities[e.source_url] = val;
+      } else {
+        delete cities[e.source_url];
+      }
+      markDirty();
+      // обновить meta строку
+      const metaParts2 = [];
+      if (e.venue && e.artist) metaParts2.push(venues[e.source_url] || e.venue);
+      if (e.source_city) metaParts2.push(cities[e.source_url] || e.source_city);
+      if (e.event_type) metaParts2.push(genres[e.source_url] || e.genre || e.event_type);
+      meta.textContent = metaParts2.join(" · ");
+    },
+    () => { delete cities[e.source_url]; markDirty(); },
+    { placeholder: "напр. Симферополь" }
+  );
+  grid.appendChild(cityField);
+
+  // -- Место проведения --
+  const venueField = document.createElement("div");
+  venueField.className = "detail-field";
+  makeDetailField(
+    venueField, "Место проведения",
+    () => venues[e.source_url] || e.venue || "",
+    () => venues[e.source_url] !== undefined,
+    val => {
+      if (val && val !== (e.venue || "").trim()) {
+        venues[e.source_url] = val;
+      } else {
+        delete venues[e.source_url];
+      }
+      markDirty();
+      const metaParts2 = [];
+      if (e.venue && e.artist) metaParts2.push(venues[e.source_url] || e.venue);
+      if (e.source_city) metaParts2.push(cities[e.source_url] || e.source_city);
+      if (e.event_type) metaParts2.push(genres[e.source_url] || e.genre || e.event_type);
+      meta.textContent = metaParts2.join(" · ");
+    },
+    () => { delete venues[e.source_url]; markDirty(); },
+    { placeholder: "напр. Арт Ковчег" }
+  );
+  grid.appendChild(venueField);
+
+  // -- Жанр --
+  const genreField = document.createElement("div");
+  genreField.className = "detail-field";
+  makeDetailField(
+    genreField, "Жанр",
+    () => genres[e.source_url] || e.genre || "",
+    () => genres[e.source_url] !== undefined,
+    val => {
+      if (val && val !== (e.genre || "").trim()) {
+        genres[e.source_url] = val;
+      } else {
+        delete genres[e.source_url];
+      }
+      markDirty();
+      const metaParts2 = [];
+      if (e.venue && e.artist) metaParts2.push(venues[e.source_url] || e.venue);
+      if (e.source_city) metaParts2.push(cities[e.source_url] || e.source_city);
+      if (e.event_type) metaParts2.push(genres[e.source_url] || e.genre || e.event_type);
+      meta.textContent = metaParts2.join(" · ");
+    },
+    () => { delete genres[e.source_url]; markDirty(); },
+    { placeholder: "напр. джаз, рок, электронная" }
+  );
+  grid.appendChild(genreField);
+
+  // -- Описание (полная ширина) --
+  const descField = document.createElement("div");
+  descField.className = "detail-field full";
+  makeDetailField(
+    descField, "Описание",
+    () => descriptions[e.source_url] !== undefined ? descriptions[e.source_url] : (e.description || ""),
+    () => descriptions[e.source_url] !== undefined,
+    val => {
+      if (val !== (e.description || "").trim()) {
+        descriptions[e.source_url] = val;
+      } else {
+        delete descriptions[e.source_url];
+      }
+      markDirty();
+    },
+    () => { delete descriptions[e.source_url]; markDirty(); },
+    { textarea: true, placeholder: "Описание мероприятия" }
+  );
+  grid.appendChild(descField);
+
+  detail.appendChild(grid);
+
+  // --- открыть/закрыть панель ---
+  expandBtn.addEventListener("click", e => {
+    e.stopPropagation();
+    const isOpen = detail.style.display !== "none";
+    if (isOpen) {
+      detail.style.display = "none";
+      expandBtn.classList.remove("open");
+      row.style.borderRadius = "10px";
+      row.style.borderBottom = "";
+    } else {
+      detail.style.display = "block";
+      expandBtn.classList.add("open");
+      row.style.borderRadius = "10px 10px 0 0";
+      row.style.borderBottom = "none";
+    }
+  });
+
+  wrapper.appendChild(row);
+  wrapper.appendChild(detail);
+
+  // для поиска — делегируем dataset на wrapper
+  wrapper.classList.add("row-wrapper");
+
+  return wrapper;
 }
 
 // ---- поиск ----
 document.getElementById("search").addEventListener("input", function() {
   const q = this.value.toLowerCase().trim();
-  document.querySelectorAll(".row").forEach(row => {
-    if (!q) { row.classList.remove("search-hidden"); return; }
-    const match = row.dataset.artist.includes(q) ||
-                  row.dataset.venue.includes(q) ||
-                  row.dataset.city.includes(q);
-    row.classList.toggle("search-hidden", !match);
+  document.querySelectorAll(".row-wrapper").forEach(wrapper => {
+    const row = wrapper.querySelector(".row");
+    if (!row) return;
+    if (!q) { wrapper.classList.remove("search-hidden"); return; }
+    const match = (row.dataset.artist || "").includes(q) ||
+                  (row.dataset.venue  || "").includes(q) ||
+                  (row.dataset.city   || "").includes(q);
+    wrapper.classList.toggle("search-hidden", !match);
   });
   document.querySelectorAll(".date-group").forEach(g => {
-    const visible = [...g.querySelectorAll(".row")].some(r => !r.classList.contains("search-hidden"));
+    const visible = [...g.querySelectorAll(".row-wrapper")].some(r => !r.classList.contains("search-hidden"));
     g.style.display = visible ? "" : "none";
   });
 });
@@ -893,7 +1398,7 @@ document.getElementById("btn-token").addEventListener("click", () => {
 });
 
 document.getElementById("btn-export").addEventListener("click", () => {
-  const data = { hidden: [...hidden], times, names };
+  const data = { hidden: [...hidden], times, names, prices, images, cities, venues, descriptions, genres };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -909,9 +1414,14 @@ document.getElementById("btn-import").addEventListener("change", e => {
     try {
       const d = JSON.parse(ev.target.result);
       if (Array.isArray(d.hidden)) hidden = new Set(d.hidden);
-      if (d.times && typeof d.times === "object") times = d.times;
-      if (d.names && typeof d.names === "object") names = d.names;
-      if (d.prices && typeof d.prices === "object") prices = d.prices;
+      if (d.times        && typeof d.times        === "object") times        = d.times;
+      if (d.names        && typeof d.names        === "object") names        = d.names;
+      if (d.prices       && typeof d.prices       === "object") prices       = d.prices;
+      if (d.images       && typeof d.images       === "object") images       = d.images;
+      if (d.cities       && typeof d.cities       === "object") cities       = d.cities;
+      if (d.venues       && typeof d.venues       === "object") venues       = d.venues;
+      if (d.descriptions && typeof d.descriptions === "object") descriptions = d.descriptions;
+      if (d.genres       && typeof d.genres       === "object") genres       = d.genres;
       markDirty();
       render();
       alert("Настройки загружены. Нажмите «Сохранить изменения» чтобы опубликовать.");
