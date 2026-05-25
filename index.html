@@ -1521,14 +1521,44 @@ let allEvents = [];
 let currentCity = 'all';
 let shownEventsCount = 12;
 
+function applySettings(data, settings) {
+  const hiddenSet = new Set(settings.hidden || []);
+  const ovNames   = settings.names        || {};
+  const ovTimes   = settings.times        || {};
+  const ovPrices  = settings.prices       || {};
+  const ovImages  = settings.images       || {};
+  const ovCities  = settings.cities       || {};
+  const ovVenues  = settings.venues       || {};
+  const ovDescs   = settings.descriptions || {};
+  const ovGenres  = settings.genres       || {};
+  return data.map((e, i) => {
+    const url = e.source_url || '';
+    if (hiddenSet.has(url)) return null;
+    const ev = { ...e, _origIdx: i };
+    if (url in ovNames)  ev.artist      = ovNames[url];
+    if (url in ovTimes)  ev.time        = ovTimes[url];
+    if (url in ovPrices) ev.price       = ovPrices[url];
+    if (url in ovImages) ev.image       = ovImages[url] === null ? null : ovImages[url];
+    if (url in ovCities) ev.source_city = ovCities[url];
+    if (url in ovVenues) ev.venue       = ovVenues[url];
+    if (url in ovDescs)  ev.description = ovDescs[url];
+    if (url in ovGenres) ev.genre       = ovGenres[url];
+    return ev;
+  }).filter(Boolean);
+}
+
 async function load() {
   try {
-    const res = await fetch('events.json');
+    const [res, settingsRes] = await Promise.all([
+      fetch('events.json'),
+      fetch('settings.json').catch(() => null)
+    ]);
     const data = await res.json();
+    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
+    const patched = applySettings(data, settings);
     const today = new Date(); today.setHours(0, 0, 0, 0);
 
-    allEvents = data
-      .map((e, i) => ({ ...e, _origIdx: i }))
+    allEvents = patched
       .filter(e => e.date && parseDate(e.date) >= today)
       .map(e => ({
         ...e,
