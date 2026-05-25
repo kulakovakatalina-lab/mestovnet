@@ -865,15 +865,56 @@ async function load() {
   console.log('idx:', idx);
 
   try {
-    const res = await fetch('events.json');
+    const [res, settingsRes] = await Promise.all([
+      fetch('events.json'),
+      fetch('settings.json').catch(() => null)
+    ]);
     console.log('fetch status:', res.status);
     const data = await res.json();
     console.log('data length:', data.length);
-    allEvents = data.map((e, i) => ({ ...e, genre: mapGenre(e.genre), globalIdx: i }));
+
+    // Применяем настройки из settings.json
+    let settings = {};
+    if (settingsRes && settingsRes.ok) {
+      settings = await settingsRes.json().catch(() => ({}));
+    }
+    const hiddenSet   = new Set(settings.hidden || []);
+    const ovNames     = settings.names        || {};
+    const ovTimes     = settings.times        || {};
+    const ovPrices    = settings.prices       || {};
+    const ovImages    = settings.images       || {};
+    const ovCities    = settings.cities       || {};
+    const ovVenues    = settings.venues       || {};
+    const ovDescs     = settings.descriptions || {};
+    const ovGenres    = settings.genres       || {};
+
+    function applySettings(e) {
+      const url = e.source_url || '';
+      if (hiddenSet.has(url)) return null;
+      const ev = { ...e };
+      if (url in ovNames)   ev.artist      = ovNames[url];
+      if (url in ovTimes)   ev.time        = ovTimes[url];
+      if (url in ovPrices)  ev.price       = ovPrices[url];
+      if (url in ovImages)  ev.image       = ovImages[url] === null ? null : ovImages[url];
+      if (url in ovCities)  ev.source_city = ovCities[url];
+      if (url in ovVenues)  ev.venue       = ovVenues[url];
+      if (url in ovDescs)   ev.description = ovDescs[url];
+      if (url in ovGenres)  ev.genre       = ovGenres[url];
+      return ev;
+    }
+
+    const patched = data.map((e, i) => {
+      const ev = applySettings(e);
+      return ev ? { ...ev, _origIdx: i } : null;
+    });
+
+    allEvents = patched
+      .map((e, i) => e ? { ...e, genre: mapGenre(e.genre), globalIdx: i } : null)
+      .filter(Boolean);
     const today = new Date(); today.setHours(0, 0, 0, 0);
 
-    const upcoming = data
-      .map((e, i) => ({ ...e, _origIdx: i }))
+    const upcoming = patched
+      .filter(Boolean)
       .filter(e => e.date && parseDate(e.date) >= today)
       .map(e => ({
         ...e,
