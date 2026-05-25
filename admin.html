@@ -552,6 +552,7 @@
     </div>
     <div class="stats" id="stats"></div>
     <button class="toolbar-btn" id="btn-show-all">Показать всё</button>
+    <button class="toolbar-btn" id="btn-toggle-past">Прошедшие</button>
     <button class="toolbar-btn" id="btn-save" disabled>Сохранено ✓</button>
     <button class="toolbar-btn" id="btn-token">🔑 Токен</button>
     <button class="toolbar-btn" id="btn-export">Экспорт</button>
@@ -608,6 +609,7 @@ document.getElementById("btn-logout").addEventListener("click", () => {
 
 // ---- состояние ----
 let EVENTS = [];
+let showPast = false;   // показывать ли прошедшие события
 let hidden       = new Set();
 let times        = {};
 let names        = {};
@@ -726,17 +728,36 @@ function formatDate(dateStr) {
 
 function updateStats() {
   const total = EVENTS.length;
+  const pastCount = EVENTS.filter(isPast).length;
   const hiddenCount = EVENTS.filter(e => hidden.has(e.source_url)).length;
   document.getElementById("stats").innerHTML =
-    `всего <b>${total}</b> &nbsp;·&nbsp; скрыто <b>${hiddenCount}</b>`;
+    `всего <b>${total}</b> &nbsp;·&nbsp; скрыто <b>${hiddenCount}</b> &nbsp;·&nbsp; прошло <b>${pastCount}</b>`;
+}
+
+function updatePastBtn() {
+  const btn = document.getElementById("btn-toggle-past");
+  if (!btn) return;
+  btn.textContent = showPast ? "Скрыть прошедшие" : "Прошедшие";
+  btn.style.borderColor = showPast ? "#2a5a5a" : "";
+  btn.style.color = showPast ? "#77cccc" : "";
+}
+
+function isPast(e) {
+  if (!e.date) return false;
+  const now = new Date();
+  const eventTime = times[e.source_url] || e.time || "23:59";
+  const eventDt = new Date(`${e.date}T${eventTime}:00`);
+  return eventDt < now;
 }
 
 function render() {
   const main = document.getElementById("main");
   main.innerHTML = "";
 
+  const visibleEvents = showPast ? EVENTS : EVENTS.filter(e => !isPast(e));
+
   const groups = {};
-  EVENTS.forEach(e => {
+  visibleEvents.forEach(e => {
     const key = e.date || "no-date";
     if (!groups[key]) groups[key] = [];
     groups[key].push(e);
@@ -1381,6 +1402,12 @@ document.getElementById("btn-show-all").addEventListener("click", () => {
   render();
 });
 
+document.getElementById("btn-toggle-past").addEventListener("click", () => {
+  showPast = !showPast;
+  updatePastBtn();
+  render();
+});
+
 document.getElementById("btn-save").addEventListener("click", pushSettings);
 
 document.getElementById("btn-token").addEventListener("click", () => {
@@ -1440,6 +1467,7 @@ async function showApp() {
 
   updateTokenBtn();
   updateSaveBtn();
+  updatePastBtn();
 
   await loadSettings();
 
