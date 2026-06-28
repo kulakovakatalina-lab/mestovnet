@@ -855,14 +855,15 @@ function copyAgain() {
 
 let allEvents = [];
 let allUpcoming = [];
-let currentEventIdx = -1;
+let currentEventId = null;
 let shownCount = 4;
 
 async function load() {
   console.log('load started');
   const params = new URLSearchParams(window.location.search);
-  const idx = parseInt(params.get('idx'));
-  console.log('idx:', idx);
+  const id = params.get('id');
+  const idxFallback = parseInt(params.get('idx'));
+  console.log('id:', id, 'idx fallback:', idxFallback);
 
   try {
     const [res, settingsRes] = await Promise.all([
@@ -932,11 +933,17 @@ async function load() {
       }))
       .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
 
-    const event = upcoming.find(e => e.globalIdx === idx) || upcoming[0];
+    let event;
+    if (id) {
+      event = upcoming.find(e => e.id === id);
+    } else if (!isNaN(idxFallback)) {
+      event = upcoming.find(e => e.globalIdx === idxFallback);
+    }
+    event = event || upcoming[0];
     if (!event) { document.getElementById('content').innerHTML = '<div class="loading">Событие не найдено</div>'; return; }
 
-    currentEventIdx = event.globalIdx;
-    allUpcoming = upcoming.filter(e => e.globalIdx !== currentEventIdx);
+    currentEventId = event.id;
+    allUpcoming = upcoming.filter(e => e.id !== currentEventId);
     shownCount = 4;
 
     renderNavGenres();
@@ -974,7 +981,7 @@ function render(event) {
 
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="event.html?idx=${e.globalIdx}" class="mini-card">
+    <a href="event.html?id=${e.id}" class="mini-card">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
@@ -1112,7 +1119,7 @@ function loadMore() {
 function renderMoreCards() {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="event.html?idx=${e.globalIdx}" class="mini-card">
+    <a href="event.html?id=${e.id}" class="mini-card">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
@@ -1138,7 +1145,9 @@ function updateLoadMoreBtn() {
 
 function renderNavGenres() {
   const counts = {};
-  allEvents.forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
+  const todayNow = new Date(); todayNow.setHours(0, 0, 0, 0);
+  allEvents.filter(e => e.date && parseDate(e.date) >= todayNow)
+    .forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
   const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
   const active = order.filter(g => counts[g]);
 
