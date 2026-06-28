@@ -909,35 +909,35 @@ async function load() {
       return ev ? { ...ev, _origIdx: i } : null;
     });
 
-    allEvents = patched
-      .map((e, i) => e ? { ...e, genre: mapGenre(e.genre), globalIdx: i } : null)
-      .filter(Boolean);
     const today = new Date(); today.setHours(0, 0, 0, 0);
 
-    const upcoming = patched
-      .filter(Boolean)
-      .filter(e => e.date && parseDate(e.date) >= today)
-      .map(e => ({
-        ...e,
-        dateObj: parseDate(e.date),
-        genre: mapGenre(e.genre),
-        dateFmt: {
-          day: String(parseDate(e.date).getDate()).padStart(2, '0'),
-          month: MONTHS_GEN[parseDate(e.date).getMonth()],
-          monthShort: ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'][parseDate(e.date).getMonth()],
-          dow: DOW_FULL[parseDate(e.date).getDay()],
-          full: `${parseDate(e.date).getDate()} ${MONTHS_GEN[parseDate(e.date).getMonth()]} ${parseDate(e.date).getFullYear()}`
-        },
-        priceDisplay: priceText(e.price),
-        globalIdx: e._origIdx
-      }))
+    const enrich = e => ({
+      ...e,
+      dateObj: parseDate(e.date),
+      genre: mapGenre(e.genre),
+      dateFmt: {
+        day: String(parseDate(e.date).getDate()).padStart(2, '0'),
+        month: MONTHS_GEN[parseDate(e.date).getMonth()],
+        monthShort: ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'][parseDate(e.date).getMonth()],
+        dow: DOW_FULL[parseDate(e.date).getDay()],
+        full: `${parseDate(e.date).getDate()} ${MONTHS_GEN[parseDate(e.date).getMonth()]} ${parseDate(e.date).getFullYear()}`
+      },
+      priceDisplay: priceText(e.price),
+      globalIdx: e._origIdx
+    });
+
+    // все события с датой (прошедшие + предстоящие), чтобы открывалась и страница архивного события
+    allEvents = patched.filter(Boolean).filter(e => e.date).map(enrich);
+
+    const upcoming = allEvents
+      .filter(e => e.dateObj >= today)
       .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
 
     let event;
     if (id) {
-      event = upcoming.find(e => e.id === id);
+      event = allEvents.find(e => e.id === id);
     } else if (!isNaN(idxFallback)) {
-      event = upcoming.find(e => e.globalIdx === idxFallback);
+      event = allEvents.find(e => e.globalIdx === idxFallback);
     }
     event = event || upcoming[0];
     if (!event) { document.getElementById('content').innerHTML = '<div class="loading">Событие не найдено</div>'; return; }
