@@ -1,0 +1,6 @@
+.env
+.venv/
+*.pickle
+bot_data.pickle
+__pycache__/
+*.pyc

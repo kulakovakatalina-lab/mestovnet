@@ -1,0 +1,18 @@
+# Конфиг Fly.io для телеграм-бота «Местов.Нет».
+# Бот работает на long-polling — HTTP-порт и health-check не нужны.
+#
+# Если имя app занято — поменяй значение ниже и создай том в том же регионе.
+app = "mestov-net-bot"
+primary_region = "fra"
+
+[build]
+  dockerfile = "Dockerfile"
+
+# Постоянный диск для подписок (bot_data.pickle). Dockerfile задаёт DATA_DIR=/data.
+[[mounts]]
+  source = "data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
