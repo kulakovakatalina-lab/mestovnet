@@ -4,4 +4,18 @@ __pycache__/
 *.pyc
 .claude/
 memory/
+.DS_Store
+
+# Промежуточные файлы парсера
 raw_posts.json
+raw_posts_max.json
+extracted_events.json
+yandex_events.json
+parser_output.log
+
+# Кэш запросов к API
+.cache/
+
+# Тесты
+.coverage
+.pytest_cache/
