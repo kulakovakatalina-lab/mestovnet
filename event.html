@@ -821,6 +821,16 @@ function parseDate(d) {
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
 }
 
+// Момент, до которого событие актуально: дата + время начала.
+// Без времени — до конца дня.
+function parseDateTime(e) {
+  const d = parseDate(e.date);
+  const m = e.time && e.time.match(/(\d{1,2}):(\d{2})/);
+  if (m) d.setHours(+m[1], +m[2], 0, 0);
+  else d.setHours(23, 59, 59, 0);
+  return d;
+}
+
 function priceText(p) {
   if (!p) return 'Вход свободный';
   const low = p.toLowerCase();
@@ -909,7 +919,7 @@ async function load() {
       return ev ? { ...ev, _origIdx: i } : null;
     });
 
-    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const now = new Date();
 
     const enrich = e => ({
       ...e,
@@ -930,7 +940,7 @@ async function load() {
     allEvents = patched.filter(Boolean).filter(e => e.date).map(enrich);
 
     const upcoming = allEvents
-      .filter(e => e.dateObj >= today)
+      .filter(e => parseDateTime(e) >= now)
       .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
 
     let event;
@@ -1145,8 +1155,8 @@ function updateLoadMoreBtn() {
 
 function renderNavGenres() {
   const counts = {};
-  const todayNow = new Date(); todayNow.setHours(0, 0, 0, 0);
-  allEvents.filter(e => e.date && parseDate(e.date) >= todayNow)
+  const now = new Date();
+  allEvents.filter(e => e.date && parseDateTime(e) >= now)
     .forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
   const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
   const active = order.filter(g => counts[g]);
