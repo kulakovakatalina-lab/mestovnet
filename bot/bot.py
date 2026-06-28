@@ -54,6 +54,8 @@ SITE = "https://mestov.net"
 EVENTS_URL = f"{SITE}/events.json"
 SETTINGS_URL = f"{SITE}/settings.json"
 TZ = ZoneInfo("Europe/Simferopol")  # время Крыма (МСК, UTC+3)
+# Telegram ID администратора — кому доступна /stats. Можно задать через env.
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "267459702"))
 DATA_DIR = os.environ.get("DATA_DIR", ".")
 PERSIST_PATH = os.path.join(DATA_DIR, "bot_data.pickle")
 MAX_EVENTS = 25  # сколько событий максимум в одной подборке
@@ -360,10 +362,56 @@ async def cmd_digest(update: Update, context: ContextTypes.DEFAULT_TYPE):
                       reply_to=update.effective_message)
 
 
+async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_user.id != ADMIN_ID:
+        await update.effective_message.reply_text("Команда доступна только администратору.")
+        return
+    bd = context.application.bot_data
+    subs = bd.get("subs", {})
+    total_sub = bd.get("total_subscribed", 0)
+    total_unsub = bd.get("total_unsubscribed", 0)
+
+    freq_count = {"daily": 0, "weekly": 0, "ondemand": 0}
+    genre_count = {g: 0 for g in GENRE_ORDER}
+    genre_all = 0
+    city_count = {c: 0 for c in CITY_ORDER}
+    city_all = 0
+    for s in subs.values():
+        freq_count[s.get("freq", "ondemand")] = freq_count.get(s.get("freq"), 0) + 1
+        if "all" in s["genres"] or not s["genres"]:
+            genre_all += 1
+        else:
+            for g in s["genres"]:
+                if g in genre_count:
+                    genre_count[g] += 1
+        if "all" in s["cities"] or not s["cities"]:
+            city_all += 1
+        else:
+            for c in s["cities"]:
+                if c in city_count:
+                    city_count[c] += 1
+
+    lines = [
+        "📊 <b>Статистика</b>", "",
+        f"👥 Активных подписчиков: <b>{len(subs)}</b>",
+        f"➕ Всего подписалось: {total_sub}",
+        f"➖ Всего отписалось: {total_unsub}", "",
+        "<b>По частоте:</b>",
+        f"• каждый день: {freq_count['daily']}",
+        f"• раз в неделю: {freq_count['weekly']}",
+        f"• по запросу: {freq_count['ondemand']}", "",
+        "<b>По жанрам:</b>",
+        f"• любые: {genre_all}",
+    ]
+    lines += [f"• {GENRE_LABELS[g]}: {genre_count[g]}" for g in GENRE_ORDER]
+    lines += ["", "<b>По городам:</b>", f"• весь Крым: {city_all}"]
+    lines += [f"• {CITY_LABELS[c]}: {city_count[c]}" for c in CITY_ORDER]
+    await update.effective_message.reply_html("\n".join(lines))
+
+
 async def cmd_stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
-    if get_subs(context).pop(chat_id, None) is not None:
-        unschedule(context.application, chat_id)
+    if record_unsubscribe(context, chat_id):
         await update.effective_message.reply_text("Отписал. Вернуться — /start")
     else:
         await update.effective_message.reply_text("У тебя и не было подписки. /start")
@@ -472,8 +520,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     if data == "sub:stop":
-        if get_subs(context).pop(chat_id, None) is not None:
-            unschedule(context.application, chat_id)
+        if record_unsubscribe(context, chat_id):
             await q.edit_message_text("Отписал. Вернуться — /start")
         else:
             await q.edit_message_text("Подписки и не было. /start")
@@ -491,9 +538,23 @@ def save_and_finish(context, chat_id, draft):
         "weekday": draft.get("weekday", 4),  # по умолчанию пятница
         "time": SEND_TIME,
     }
-    get_subs(context)[chat_id] = sub
+    subs = get_subs(context)
+    if chat_id not in subs:  # новая подписка — считаем
+        context.application.bot_data["total_subscribed"] = \
+            context.application.bot_data.get("total_subscribed", 0) + 1
+    subs[chat_id] = sub
     context.chat_data.pop("draft", None)
     schedule_sub(context.application, chat_id, sub)
+
+
+def record_unsubscribe(context, chat_id):
+    """Удаляет подписку, ведёт счётчик отписок. True, если была подписка."""
+    if get_subs(context).pop(chat_id, None) is None:
+        return False
+    context.application.bot_data["total_unsubscribed"] = \
+        context.application.bot_data.get("total_unsubscribed", 0) + 1
+    unschedule(context.application, chat_id)
+    return True
 
 
 def summary_text(sub):
@@ -609,6 +670,7 @@ def main():
     app.add_handler(CommandHandler("help", cmd_help))
     app.add_handler(CommandHandler("digest", cmd_digest))
     app.add_handler(CommandHandler("stop", cmd_stop))
+    app.add_handler(CommandHandler("stats", cmd_stats))
     app.add_handler(CallbackQueryHandler(on_button))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, on_menu_text))
 
