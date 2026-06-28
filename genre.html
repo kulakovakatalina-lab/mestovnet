@@ -618,7 +618,6 @@ function renderAll() {
   renderNavGenres();
   renderCityPills(genreEvents);
   renderEvents(filtered);
-  renderOtherGenres();
 }
 
 function renderCityPills(events) {
@@ -668,17 +667,6 @@ function renderEvents(events) {
   }).join('');
 }
 
-function renderOtherGenres() {
-  const counts = {};
-  allEvents.forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
-  const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
-  const list = document.getElementById('other-genres-list');
-  list.innerHTML = order.filter(g => counts[g] && g !== currentGenre).map(g => {
-    const n = counts[g];
-    const label = n === 1 ? 'событие' : n < 5 ? 'события' : 'событий';
-    return `<a href="genre.html?g=${g}" class="other-genre-link">${GENRE_LABELS[g]} (${n} ${label})</a>`;
-  }).join('');
-}
 
 document.getElementById('city-filter').addEventListener('click', function(e) {
   const btn = e.target.closest('.city-pill');
