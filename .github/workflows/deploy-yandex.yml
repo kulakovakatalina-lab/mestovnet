@@ -1,0 +1,57 @@
+name: Deploy to Yandex Object Storage
+
+# Заливает статику сайта в бакет mestov.net при каждом пуше в main,
+# а также вручную (кнопка Run workflow на вкладке Actions).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Чтобы одновременно не запускались две заливки
+concurrency:
+  group: deploy-yandex
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ru-central1
+      ENDPOINT: https://storage.yandexcloud.net
+      BUCKET: s3://mestov.net
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Собрать чистую папку сайта (только нужные файлы)
+        run: |
+          set -e
+          rm -rf _site
+          mkdir -p _site
+          # Файлы в корне
+          cp index.html event.html genre.html admin.html _site/
+          cp events.json settings.json _site/
+          cp sitemap.xml robots.txt _site/
+          cp yandex_c7b51fb2f9cdb188.html _site/
+          # Папки целиком
+          cp -r cities _site/
+          cp -r images _site/
+          echo "--- содержимое _site ---"
+          ls -R _site | head -50
+
+      - name: Залить ассеты (картинки) с долгим кэшем
+        run: |
+          aws s3 sync _site/images "$BUCKET/images" \
+            --endpoint-url "$ENDPOINT" \
+            --delete \
+            --cache-control "public, max-age=2592000"
+
+      - name: Залить HTML/JSON с коротким кэшем
+        run: |
+          aws s3 sync _site "$BUCKET" \
+            --endpoint-url "$ENDPOINT" \
+            --delete \
+            --exclude "images/*" \
+            --cache-control "public, max-age=300"
