@@ -1,20 +1,15 @@
 import argparse
-import base64
 import hashlib
 import json
 import mimetypes
 import os
 import re
+import subprocess
 import time
 from datetime import datetime, timedelta, timezone
-from io import BytesIO
 
 import httpx
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-from PIL import Image
-
-load_dotenv()
 
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
@@ -148,14 +143,9 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
     return posts
 
 
-# --- Anthropic API ---
-ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
-ANTHROPIC_VISION_MODEL = os.environ.get("ANTHROPIC_VISION_MODEL", "claude-sonnet-4-6")
-ANTHROPIC_TEXT_MODEL = os.environ.get("ANTHROPIC_TEXT_MODEL", "claude-haiku-4-5-20251001")
-ANTHROPIC_MAX_TOKENS = 4096
-
+# --- Claude CLI ---
 _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-канала крымского заведения.
-Извлекай музыкальные мероприятия из текста поста и приложенных изображений.
+Извлекай музыкальные мероприятия из текста поста.
 
 НЕ включай в результат:
 - мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
@@ -178,134 +168,35 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 - description: 1-2 предложения"""
 
 
-def _call_anthropic(
-    user_content: "str | list",
-    system: "str | None" = None,
-    model: "str | None" = None,
-    max_retries: int = 2,
-) -> str:
-    """Прямой вызов Anthropic Messages API.
-    user_content — строка или список content blocks (текст + base64-изображения).
-    model — принудительная модель (иначе auto по наличию картинок).
-    system — кастомный system prompt (иначе _SYSTEM_PROMPT)."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not api_key:
-        print("  ОШИБКА: ANTHROPIC_API_KEY не задан")
-        return ""
-
-    if isinstance(user_content, str):
-        user_content = [{"type": "text", "text": user_content}]
-
-    if model is None:
-        has_images = any(block.get("type") == "image" for block in user_content)
-        model = ANTHROPIC_VISION_MODEL if has_images else ANTHROPIC_TEXT_MODEL
-
-    sys_text = system if system is not None else _SYSTEM_PROMPT
-
-    body = {
-        "model": model,
-        "max_tokens": ANTHROPIC_MAX_TOKENS,
-        "system": [{
-            "type": "text",
-            "text": sys_text,
-            "cache_control": {"type": "ephemeral"},
-        }],
-        "messages": [{"role": "user", "content": user_content}],
-    }
-
-    headers = {
-        "x-api-key": api_key,
-        "anthropic-version": "2023-06-01",
-        "anthropic-beta": "prompt-caching-2024-12-16",
-        "content-type": "application/json",
-    }
-
+def _call_claude(prompt: str, max_retries: int = 2) -> str:
+    """Вызывает claude -p через subprocess. Возвращает ответ или пустую строку."""
+    full_prompt = _SYSTEM_PROMPT + "\n\n" + prompt
     for attempt in range(max_retries + 1):
         try:
-            resp = httpx.post(ANTHROPIC_API_URL, json=body, headers=headers, timeout=180)
-            resp.raise_for_status()
-            data = resp.json()
-            parts = []
-            for block in data.get("content", []):
-                if block.get("type") == "text":
-                    parts.append(block["text"])
-            return "".join(parts).strip()
-        except httpx.HTTPStatusError as e:
-            status = e.response.status_code
-            if status >= 500 and attempt < max_retries:
-                wait = 2 ** (attempt + 1)
-                print(f" [retry {attempt + 1}/{max_retries} after {wait}s: {status}]", end="")
-                time.sleep(wait)
-                continue
-            print(f" [API error {status}: {e.response.text[:200]}]", end="")
-            return ""
-        except httpx.TimeoutException:
+            result = subprocess.run(
+                ["claude", "-p", full_prompt],
+                capture_output=True, text=True, timeout=120,
+            )
+            if result.returncode == 0:
+                return result.stdout.strip()
             if attempt < max_retries:
-                wait = 2 ** (attempt + 1)
-                print(f" [retry {attempt + 1}/{max_retries} after {wait}s: timeout]", end="")
-                time.sleep(wait)
+                time.sleep(2 ** (attempt + 1))
                 continue
-            print(" [API timeout]", end="")
+            print(f" [claude error: {result.stderr[:200]}]", end="")
+            return ""
+        except subprocess.TimeoutExpired:
+            if attempt < max_retries:
+                time.sleep(2 ** (attempt + 1))
+                continue
+            print(" [claude timeout]", end="")
+            return ""
+        except FileNotFoundError:
+            print(" [claude CLI не найден]", end="")
             return ""
         except Exception as e:
-            print(f" [API exception: {e}]", end="")
+            print(f" [claude exception: {e}]", end="")
             return ""
     return ""
-
-
-_OCR_SYSTEM = "Твоя задача — точно перечислить ВЕСЬ текст, который ты видишь на изображении. Если это афиша или постер мероприятия, выпиши все даты, имена исполнителей, названия групп, цены, места проведения. Пиши на том же языке, что на изображении."
-
-
-def _ocr_images(b64_datas: list[str]) -> str:
-    """Sonnet: читает текст с одного или нескольких изображений. Возвращает прочитанный текст."""
-    if not b64_datas:
-        return ""
-    content = []
-    for b64 in b64_datas:
-        content.append({"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}})
-    label = "Перечисли весь текст на каждом изображении. Начинай описание каждого с '=== Изображение N ==='."
-    if len(b64_datas) == 1:
-        label = "Перечисли весь текст на этом изображении."
-    content.append({"type": "text", "text": label})
-    return _call_anthropic(content, model=ANTHROPIC_VISION_MODEL, system=_OCR_SYSTEM)
-
-
-MAX_IMAGE_PX = 768  # максимальная длинная сторона для картинок, отправляемых в API
-
-
-def _resize_for_api(raw: bytes) -> bytes:
-    """Ресайзит изображение в памяти (до MAX_IMAGE_PX по длинной стороне)
-    и сжимает в JPEG quality 85. Оригинал на диске не трогает."""
-    try:
-        img = Image.open(BytesIO(raw))
-        img = img.convert("RGB")
-        w, h = img.size
-        if w > MAX_IMAGE_PX or h > MAX_IMAGE_PX:
-            ratio = MAX_IMAGE_PX / max(w, h)
-            img = img.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
-        buf = BytesIO()
-        img.save(buf, format="JPEG", quality=85)
-        return buf.getvalue()
-    except Exception:
-        return raw
-
-
-def _img_to_base64(url_or_path: str) -> "str | None":
-    """Скачивает или читает изображение, ресайзит, возвращает base64."""
-    try:
-        if url_or_path.startswith(("http://", "https://", "ftp://")):
-            resp = httpx.get(url_or_path, timeout=15, follow_redirects=True,
-                             headers={"User-Agent": "Mozilla/5.0"})
-            resp.raise_for_status()
-            raw = resp.content
-        else:
-            p = os.path.abspath(url_or_path.lstrip("/"))
-            with open(p, "rb") as f:
-                raw = f.read()
-        resized = _resize_for_api(raw)
-        return base64.b64encode(resized).decode()
-    except Exception:
-        return None
 
 
 def _parse_claude_json(raw: str):
@@ -320,20 +211,12 @@ def _parse_claude_json(raw: str):
 
 
 def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> list[dict]:
-    """Извлекает события из одного поста с одной картинкой. Возвращает [events...].
-    Sonnet → OCR картинки, Haiku → извлечение событий из текста + OCR."""
+    """Извлекает события из одного поста. image_path сохраняется в кэш-ключе для уникальности."""
     text = post["text"]
     cache_key = hashlib.sha256(("single:" + text + ":" + image_path).encode("utf-8")).hexdigest()[:16]
     cached = _cache_read(cache_key)
     if cached is not None:
         return cached
-
-    img_b64 = _img_to_base64(image_path)
-    if img_b64:
-        ocr_text = _ocr_images([img_b64])
-    else:
-        ocr_text = ""
-    image_block = f"\n\nТекст с изображения:\n\"\"\"\n{ocr_text}\n\"\"\"\n" if ocr_text else ""
 
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
@@ -341,14 +224,14 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 \"\"\"
 {text}
 \"\"\"
-{image_block}
+
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
 Если по дням нет конкретных деталей — верни [].
 
 Верни JSON-массив событий. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
-    raw = _call_anthropic(user_text)
+    raw = _call_claude(user_text)
     result = _parse_claude_json(raw)
     if not isinstance(result, list):
         return []
@@ -357,9 +240,8 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 
 
 def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str]) -> list[dict]:
-    """Извлекает события из поста с несколькими картинками.
-    Sonnet → OCR всех картинок, Haiku → извлечение событий из текста + OCR.
-    Возвращает [events...] где каждое событие имеет поле image_indices (список номеров картинок)."""
+    """Извлекает события из поста с несколькими картинками (только по тексту).
+    Возвращает [events...] где каждое событие имеет поле image_indices."""
     text = post["text"]
     print(f"\n  [multi] {post.get('url', '?')} {len(image_paths)} images", end="")
     cache_key = hashlib.sha256(("multi:" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
@@ -369,13 +251,6 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
     if cached is not None:
         return cached
 
-    b64s = []
-    for img_path in image_paths:
-        b64 = _img_to_base64(img_path)
-        if b64:
-            b64s.append(b64)
-    ocr_text = _ocr_images(b64s) if b64s else ""
-
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
 Текст поста:
@@ -383,29 +258,19 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 {text}
 \"\"\"
 
-Текст с изображений (каждое описание начинается с '=== Изображение N ==='):
-\"\"\"
-{ocr_text}
-\"\"\"
+К посту приложено {len(image_paths)} изображений (афиши/фото).
 
-К посту приложено {len(image_paths)} изображений. Среди них могут быть:
-- разные афиши разных мероприятий (каждая картинка — своё событие);
-- несколько фото одного и того же мероприятия (общая афиша + дополнительные фото).
-
-ОПРЕДЕЛИ СЦЕНАРИЙ:
-1) Если в посте анонсируется НЕСКОЛЬКО разных событий и у каждого своя картинка-афиша — создай отдельное событие на каждое, указав номер его картинки.
-2) Если в посте ОДНО событие, но к нему приложено несколько картинок (афиша + фото зала/исполнителя) — создай ОДНО событие и перечисли номера ВСЕХ подходящих картинок.
+ОПРЕДЕЛИ СЦЕНАРИЙ по тексту:
+1) Если анонсируется НЕСКОЛЬКО разных событий — создай отдельное событие на каждое с image_indices: [N].
+2) Если одно событие с несколькими фото — одно событие с image_indices: [0, 1, ...].
 
 Дополнительное поле:
-- image_indices: [0] — номера картинок, относящихся к этому событию
-- Если событию соответствует одна картинка → image_indices: [N]
-- Если событию соответствует несколько картинок → image_indices: [0, 1, 2]
-- Если картинка не относится к событию (логотип, qr-код) — НЕ включай её номер
+- image_indices: список номеров картинок (начиная с 0), относящихся к событию
 
 Верни JSON-массив событий с полем image_indices. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
-    raw = _call_anthropic(user_text)
+    raw = _call_claude(user_text)
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -443,24 +308,9 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
         url = post.get("url") or f"post_{i}"
         posts_section += f"\n--- POST {i+1} (url: {url}) ---\n{post['text']}\n"
 
-    # Sonnet: OCR всех картинок батча
-    b64s = []
-    for post in posts:
-        vision_url = post.get("image") or post.get("thumbnail")
-        if vision_url:
-            b64 = _img_to_base64(vision_url)
-            if b64:
-                b64s.append(b64)
-    ocr_text = _ocr_images(b64s) if b64s else ""
-
-    image_note = ""
-    if ocr_text:
-        image_note = f"\n\nТекст с изображений постов:\n\"\"\"\n{ocr_text}\n\"\"\""
-
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
 {posts_section}
-{image_note}
 
 Для КАЖДОГО поста извлеки музыкальные мероприятия. Верни JSON-объект где ключи — url поста (точно как указано выше), а значения — массивы событий.
 
@@ -470,7 +320,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
 Если мероприятий нет ни в одном посте — верни {{}}.
 Верни только JSON, без пояснений."""
 
-    raw = _call_anthropic(user_text)
+    raw = _call_claude(user_text)
     result = _parse_claude_json(raw)
     if not isinstance(result, dict):
         return {}
