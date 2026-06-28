@@ -195,10 +195,48 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 .city-pill:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
 .city-pill.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
 
+.archive-link {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.archive-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 22px var(--gutter);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  transition: color 0.12s, background 0.12s;
+}
+.archive-link a:hover { color: var(--fg); background: var(--surface); }
+.archive-link a .arrow { transition: transform 0.12s; }
+.archive-link a:hover .arrow { transform: translateX(3px); }
+
+.past-heading {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 4px var(--gutter) 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .events-list {
   max-width: var(--max-w);
   margin: 0 auto;
 }
+
+.event-row.past {
+  opacity: 0.5;
+  filter: grayscale(0.4);
+  transition: opacity 0.15s, filter 0.15s, background 0.12s;
+}
+.event-row.past:hover { opacity: 1; filter: none; }
 
 .event-row {
   display: grid;
@@ -468,6 +506,11 @@ footer {
   <div class="loading">Загрузка событий...</div>
 </div>
 
+<div class="archive-link" id="archive-link"></div>
+
+<div class="past-heading" id="past-heading" hidden></div>
+<div class="events-list" id="past-list"></div>
+
 <footer>
   <a href="index.html" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
@@ -527,6 +570,8 @@ function priceText(p) {
 let allEvents = [];
 let currentGenre = 'jazz';
 let currentCity = 'all';
+let currentView = 'upcoming';
+let pastExpanded = false;
 
 function applySettings(data, settings) {
   const hiddenSet = new Set(settings.hidden || []);
@@ -555,7 +600,9 @@ function applySettings(data, settings) {
 }
 
 async function load() {
-  currentGenre = new URLSearchParams(location.search).get('g') || 'jazz';
+  const params = new URLSearchParams(location.search);
+  currentGenre = params.get('g') || 'jazz';
+  currentView = params.get('past') === '1' ? 'past' : 'upcoming';
 
   try {
     const [res, settingsRes] = await Promise.all([
@@ -568,10 +615,11 @@ async function load() {
     const today = new Date(); today.setHours(0, 0, 0, 0);
 
     allEvents = patched
-      .filter(e => e.date && parseDate(e.date) >= today)
+      .filter(e => e.date)
       .map(e => ({
         ...e,
         dateObj: parseDate(e.date),
+        isPast: parseDate(e.date) < today,
         genre: mapGenre(e.genre),
         city: mapCity(e.source_city),
         dateFmt: formatDate(parseDate(e.date)),
@@ -588,7 +636,9 @@ async function load() {
 
 function renderNavGenres() {
   const counts = {};
-  allEvents.forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
+  allEvents.forEach(e => {
+    if (e.isPast === (currentView === 'past')) counts[e.genre] = (counts[e.genre] || 0) + 1;
+  });
   const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
   const active = order.filter(g => counts[g]);
 
@@ -603,13 +653,20 @@ function renderNavGenres() {
   document.getElementById('mobile-strip').innerHTML = mobileHtml;
 }
 
+function currentViewEvents() {
+  const isPast = currentView === 'past';
+  const evs = allEvents.filter(e => e.genre === currentGenre && e.isPast === isPast);
+  return isPast ? evs.slice().reverse() : evs;
+}
+
 function renderAll() {
-  const genreEvents = allEvents.filter(e => e.genre === currentGenre);
+  const genreEvents = currentViewEvents();
   const filtered = currentCity === 'all' ? genreEvents : genreEvents.filter(e => e.city === currentCity);
 
   const label = GENRE_LABELS[currentGenre] || currentGenre;
   document.title = `Местов.Нет — ${label}`;
   document.getElementById('hero-title').textContent = `${label} в Крыму`;
+  document.getElementById('hero-eyebrow').textContent = currentView === 'past' ? 'Архив · Крым' : 'Подборка · Крым';
   document.getElementById('hero-count').textContent = genreEvents.length;
 
   const countLabel = genreEvents.length === 1 ? 'концерт' : genreEvents.length < 5 ? 'концерта' : 'концертов';
@@ -618,6 +675,23 @@ function renderAll() {
   renderNavGenres();
   renderCityPills(genreEvents);
   renderEvents(filtered);
+  renderArchiveLink();
+  renderPastInline();
+}
+
+function renderArchiveLink() {
+  const el = document.getElementById('archive-link');
+  if (currentView === 'past') {
+    el.innerHTML = `<a href="genre.html?g=${currentGenre}"><span class="arrow">←</span> Предстоящие концерты</a>`;
+    return;
+  }
+  const pastCount = allEvents.filter(e => e.genre === currentGenre && e.isPast).length;
+  if (!pastCount) { el.innerHTML = ''; return; }
+  const word = pastCount === 1 ? 'концерт' : pastCount < 5 ? 'концерта' : 'концертов';
+  const text = pastExpanded
+    ? `Скрыть прошедшие <span class="arrow">↑</span>`
+    : `Прошедшие ${pastCount} ${word} <span class="arrow">↓</span>`;
+  el.innerHTML = `<a href="genre.html?g=${currentGenre}&past=1">${text}</a>`;
 }
 
 function renderCityPills(events) {
@@ -631,18 +705,12 @@ function renderCityPills(events) {
   container.innerHTML = html;
 }
 
-function renderEvents(events) {
-  const list = document.getElementById('events-list');
-  if (!events.length) { list.innerHTML = '<div class="loading">Нет событий в этом жанре</div>'; return; }
+function eventRowHtml(ev, extraClass) {
+  const thumbHtml = ev.image
+    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
+    : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
 
-  list.innerHTML = events.map(ev => {
-    const thumbHtml = ev.image
-      ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
-      : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
-
-    const isFree = ev.priceDisplay === 'Бесплатно' || ev.priceDisplay === 'Вход свободный';
-
-    return `<a href="event.html?id=${ev.id}" class="event-row" data-genre="${ev.genre}" data-city="${ev.city}">
+  return `<a href="event.html?id=${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${ev.city}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
@@ -664,9 +732,39 @@ function renderEvents(events) {
         <span class="row-btn">Подробнее</span>
       </div>
     </a>`;
-  }).join('');
 }
 
+function renderEvents(events) {
+  const list = document.getElementById('events-list');
+  if (!events.length) {
+    const msg = currentView === 'past' ? 'Нет прошедших событий в этом жанре' : 'Нет событий в этом жанре';
+    list.innerHTML = `<div class="loading">${msg}</div>`;
+    return;
+  }
+  list.innerHTML = events.map(ev => eventRowHtml(ev)).join('');
+}
+
+function pastEventsForGenre() {
+  const evs = allEvents.filter(e => e.genre === currentGenre && e.isPast);
+  const filtered = currentCity === 'all' ? evs : evs.filter(e => e.city === currentCity);
+  return filtered.slice().reverse();
+}
+
+function renderPastInline() {
+  const heading = document.getElementById('past-heading');
+  const list = document.getElementById('past-list');
+  if (!pastExpanded) {
+    heading.hidden = true;
+    list.innerHTML = '';
+    return;
+  }
+  const events = pastEventsForGenre();
+  heading.hidden = false;
+  heading.textContent = 'Прошедшие';
+  list.innerHTML = events.length
+    ? events.map(ev => eventRowHtml(ev, 'past')).join('')
+    : '<div class="loading">Нет прошедших событий</div>';
+}
 
 document.getElementById('city-filter').addEventListener('click', function(e) {
   const btn = e.target.closest('.city-pill');
@@ -674,9 +772,19 @@ document.getElementById('city-filter').addEventListener('click', function(e) {
   document.querySelectorAll('.city-pill').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   currentCity = btn.dataset.city;
-  const genreEvents = allEvents.filter(e => e.genre === currentGenre);
+  const genreEvents = currentViewEvents();
   const filtered = currentCity === 'all' ? genreEvents : genreEvents.filter(e => e.city === currentCity);
   renderEvents(filtered);
+  if (currentView !== 'past') { renderArchiveLink(); renderPastInline(); }
+});
+
+document.getElementById('archive-link').addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (!link || currentView === 'past') return;   // standalone archive page keeps normal navigation
+  e.preventDefault();
+  pastExpanded = !pastExpanded;
+  renderArchiveLink();
+  renderPastInline();
 });
 
 load();
