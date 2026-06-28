@@ -648,7 +648,7 @@ function renderEvents(events) {
 
     const isFree = ev.priceDisplay === 'Бесплатно' || ev.priceDisplay === 'Вход свободный';
 
-    return `<a href="event.html?idx=${ev.globalIdx}" class="event-row" data-genre="${ev.genre}" data-city="${ev.city}">
+    return `<a href="event.html?id=${ev.id}" class="event-row" data-genre="${ev.genre}" data-city="${ev.city}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
