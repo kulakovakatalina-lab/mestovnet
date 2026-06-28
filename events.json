@@ -398,21 +398,6 @@
     "genre": "джаз"
   },
   {
-    "date": "2026-08-01",
-    "time": null,
-    "artist": "Концерт в Jam Club",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": null,
-    "description": "Концерт 1 августа в Jam Club Симферополь.",
-    "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/1015",
-    "post_date": null,
-    "image": null,
-    "genre": "поп"
-  },
-  {
     "date": "2026-08-02",
     "time": "20:00",
     "artist": "Найк Борзов",
