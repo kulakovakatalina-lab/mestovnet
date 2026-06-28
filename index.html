@@ -1506,6 +1506,16 @@ function parseDate(d) {
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
 }
 
+// Момент, до которого событие актуально: дата + время начала.
+// Без времени — до конца дня.
+function parseDateTime(e) {
+  const d = parseDate(e.date);
+  const m = e.time && e.time.match(/(\d{1,2}):(\d{2})/);
+  if (m) d.setHours(+m[1], +m[2], 0, 0);
+  else d.setHours(23, 59, 59, 0);
+  return d;
+}
+
 function formatDate(d) {
   return { day: String(d.getDate()).padStart(2, '0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
@@ -1556,10 +1566,10 @@ async function load() {
     const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched = applySettings(data, settings);
-    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const now = new Date();
 
     allEvents = patched
-      .filter(e => e.date && parseDate(e.date) >= today)
+      .filter(e => e.date && parseDateTime(e) >= now)
       .map(e => ({
         ...e,
         dateObj: parseDate(e.date),
