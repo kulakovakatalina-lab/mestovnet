@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-06-28",
-    "time": "21:00",
-    "artist": "Живая музыка",
-    "event_type": "другое",
-    "venue": "Рок-н-рольщики",
-    "source_city": "Севастополь",
-    "price": "бесплатно",
-    "description": "Вечер живого пения под фонограмму (аналог каоке). Вход и песни бесплатные, столики без депозитов.",
-    "source_channel": "rocknroll_92",
-    "source_url": "https://t.me/rocknroll_92/6893",
-    "post_date": "2026-06-28T12:20:43+00:00",
-    "image": "/images/events/c34f28e675c7684a44357c059640fa6d.jpg",
-    "id": "5623440b"
-  },
-  {
     "date": "2026-06-30",
     "time": "19:00",
     "artist": "Jawa. Хиты «Сектор Газа»",
@@ -1110,6 +1095,21 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/helvegen-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк-метал",
     "id": "f2113f78"
+  },
+  {
+    "date": "2026-06-28",
+    "time": "21:00",
+    "artist": "Живая музыка",
+    "event_type": "другое",
+    "venue": "Рок-н-рольщики",
+    "source_city": "Севастополь",
+    "price": "бесплатно",
+    "description": "Вечер живого пения под фонограмму (аналог каоке). Вход и песни бесплатные, столики без депозитов.",
+    "source_channel": "rocknroll_92",
+    "source_url": "https://t.me/rocknroll_92/6893",
+    "post_date": "2026-06-28T12:20:43+00:00",
+    "image": "/images/events/c34f28e675c7684a44357c059640fa6d.jpg",
+    "id": "5623440b"
   },
   {
     "date": "2026-06-27",
