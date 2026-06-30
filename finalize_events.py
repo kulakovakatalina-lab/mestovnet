@@ -454,6 +454,16 @@ def main(push: bool = True):
         if not e.get("id"):
             e["id"] = _make_id(e)
 
+    # Проверка на коллизии ID
+    from collections import Counter
+    id_counts = Counter(e["id"] for e in merged if e.get("id"))
+    for dup_id, count in id_counts.items():
+        if count > 1:
+            dupes = [e for e in merged if e.get("id") == dup_id]
+            print(f"⚠️  Коллизия ID {dup_id}: {count} событий")
+            for d in dupes:
+                print(f"    -> {d.get('artist')} | {d.get('date')} | {d.get('source_url','')}")
+
     # Сортировка: будущие по дате вперёд, прошедшие в конце по убыванию даты
     from datetime import date
     today = date.today().isoformat()
