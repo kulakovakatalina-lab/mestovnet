@@ -63,6 +63,13 @@
       "notes": ""
     },
     {
+      "username": "rocknroll_82",
+      "title": "Рок-н-рольщики в Симферополе",
+      "city": "Симферополь",
+      "type": "venue",
+      "notes": ""
+    },
+    {
       "username": "dlyadushi_Crimea",
       "title": "Для души | Крым",
       "city": "Крым",
@@ -163,6 +170,13 @@
     {
       "username": "koncertykrym",
       "title": "Концерты Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": ""
+    },
+    {
+      "username": "afisha_payberry",
+      "title": "Афиша PayBerry",
       "city": "Крым",
       "type": "afisha",
       "notes": ""

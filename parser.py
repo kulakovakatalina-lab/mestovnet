@@ -370,6 +370,57 @@ def process_yandex_afisha(all_events: list):
     print(f"  Найдено событий: {count}")
 
 
+# Сопоставление жанров afisha.ru со словарём сайта (нижний регистр)
+_AFISHA_GENRE_MAP = {
+    "эстрада": "поп",
+    "шансон": "поп",
+    "электроника": "поп",
+    "авторская песня": "авторская",
+    "хип-хоп/рэп": "хип-хоп",
+}
+_SITE_GENRES = {
+    "поп", "классика", "рок", "джаз", "метал", "другое", "интерактив",
+    "этно", "поп-рок", "фолк", "русский рок", "авторская", "инди",
+    "хип-хоп", "панк-рок", "каверы", "юмор", "хоровая", "фолк-метал",
+    "шоу", "лаунж", "медитативная", "рок-поп", "народная",
+}
+
+
+def _normalize_afisha_genre(g):
+    if not g:
+        return None
+    g = g.strip().lower()
+    g = _AFISHA_GENRE_MAP.get(g, g)
+    return g if g in _SITE_GENRES else None
+
+
+def process_afisha_ru(all_events: list):
+    from fetch_afisha_ru import fetch_all_crimea
+    print("\nАфиша (afisha.ru) — крымские города...")
+    posts = fetch_all_crimea()
+    count = 0
+    for post in posts:
+        pre = post["_prefilled"]
+        event = {
+            "date": pre["date"],
+            "time": pre["time"],
+            "artist": pre["artist"],
+            "venue": pre["venue"],
+            "event_type": pre["event_type"],
+            "price": pre["price"],
+            "description": pre["description"],
+            "source_channel": "afisha_ru",
+            "source_city": post["_city"],
+            "post_date": datetime.now(timezone.utc).isoformat(),
+            "image": download_image(post.get("image")),
+            "source_url": pre["source_url"],
+            "genre": _normalize_afisha_genre(pre.get("genre")),
+        }
+        all_events.append(event)
+        count += 1
+    print(f"  Найдено событий: {count}")
+
+
 # Жанр по source_channel (если канал всегда одного жанра)
 _CHANNEL_GENRES: dict[str, str] = {
     "skazhitejazz": "джаз",
@@ -1048,6 +1099,8 @@ def main(days_back: int = DAYS_BACK):
         print("\nInstagram-каналы настроены, но IG_USERNAME / IG_PASSWORD не заданы — пропускаю.")
 
     process_yandex_afisha(all_events)
+
+    process_afisha_ru(all_events)
 
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
     img_updated = _redistribute_images(all_events)
