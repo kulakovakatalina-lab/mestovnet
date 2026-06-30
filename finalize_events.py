@@ -2,6 +2,7 @@
 Шаг 3: принимает извлечённые события (extracted_events.json + yandex_events.json),
 мёрджит с архивом events.json, дедуплицирует, определяет жанры, пушит на GitHub.
 """
+import hashlib
 import json
 import os
 import re
@@ -11,6 +12,7 @@ import sys
 OUTPUT_FILE = "events.json"
 EXTRACTED_FILE = "extracted_events.json"
 YANDEX_FILE = "yandex_events.json"
+AFISHA_FILE = "afisha_events.json"
 
 # ── Жанры ──────────────────────────────────────────────────────────────────
 
@@ -159,6 +161,13 @@ def _fallback_artist(event: dict) -> "str | None":
     return None
 
 
+# ── Стабильный ID ───────────────────────────────────────────────────────────
+
+def _make_id(event: dict) -> str:
+    key = event.get("source_url") or f"{event.get('artist','')}-{event.get('date','')}-{event.get('venue','')}"
+    return hashlib.md5(key.encode()).hexdigest()[:8]
+
+
 # ── Нормализация и дедупликация ─────────────────────────────────────────────
 
 def _normalize(text: str) -> str:
@@ -224,7 +233,7 @@ def _merge_events(group: list[dict]) -> dict:
     group_sorted = sorted(group, key=lambda e: e.get("post_date") or "", reverse=True)
     best = max(group, key=_field_count)
     merged = {}
-    for field in ("date", "time", "artist", "event_type", "venue", "price",
+    for field in ("id", "date", "time", "artist", "event_type", "venue", "price",
                   "description", "source_city", "source_channel", "genre"):
         for e in group_sorted:
             v = e.get(field)
@@ -348,6 +357,14 @@ def main(push: bool = True):
     else:
         print(f"{YANDEX_FILE} не найден")
 
+    if os.path.exists(AFISHA_FILE):
+        with open(AFISHA_FILE, encoding="utf-8") as f:
+            afisha = json.load(f)
+        print(f"Афиша (afisha.ru): {len(afisha)}")
+        new_events.extend(afisha)
+    else:
+        print(f"{AFISHA_FILE} не найден")
+
     # Дедупликация новых
     before = len(new_events)
     new_events = deduplicate_events(new_events)
@@ -432,14 +449,20 @@ def main(push: bool = True):
     if genre_added:
         print(f"Жанр определён: {genre_added} событий")
 
-    # Удаляем прошедшие события
+    # Назначаем стабильный id (сохраняем существующий, генерируем для новых)
+    for e in merged:
+        if not e.get("id"):
+            e["id"] = _make_id(e)
+
+    # Сортировка: будущие по дате вперёд, прошедшие в конце по убыванию даты
     from datetime import date
     today = date.today().isoformat()
-    before_past = len(merged)
-    merged = [e for e in merged if not e.get("date") or e["date"] >= today]
-    removed_past = before_past - len(merged)
-    if removed_past:
-        print(f"Удалено прошедших: {removed_past} событий")
+    future = sorted([e for e in merged if (e.get("date") or "") >= today],
+                    key=lambda e: (e.get("date") or "", e.get("time") or ""))
+    past = sorted([e for e in merged if (e.get("date") or "") < today],
+                  key=lambda e: (e.get("date") or ""), reverse=True)
+    merged = future + past
+    print(f"Будущих: {len(future)}, прошедших: {len(past)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)

@@ -11,6 +11,7 @@ raw_posts.json
 raw_posts_max.json
 extracted_events.json
 yandex_events.json
+afisha_events.json
 parser_output.log
 
 # Кэш запросов к API
@@ -19,3 +20,7 @@ parser_output.log
 # Тесты
 .coverage
 .pytest_cache/
+
+# Real-ESRGAN upscaler binary + models (большой, не в git)
+tools/
+images/events_orig/
