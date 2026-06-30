@@ -164,7 +164,7 @@ def _fallback_artist(event: dict) -> "str | None":
 # ── Стабильный ID ───────────────────────────────────────────────────────────
 
 def _make_id(event: dict) -> str:
-    key = event.get("source_url") or f"{event.get('artist','')}-{event.get('date','')}-{event.get('venue','')}"
+    key = f"{event.get('source_url','')}-{event.get('date','')}-{event.get('artist','')}"
     return hashlib.md5(key.encode()).hexdigest()[:8]
 
 
