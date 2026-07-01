@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-06-30",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом офицеров флота",
-    "event_type": "концерт",
-    "price": "от 2 300 ₽",
-    "description": "Jawa. Хиты «Сектор Газа» в Дом офицеров флота, Севастополь.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Севастополь",
-    "post_date": "2026-06-30",
-    "image": "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "genre": "рок",
-    "id": "0f52d30c"
-  },
-  {
     "date": "2026-07-01",
     "time": null,
     "artist": "Скажите Джаз",
@@ -129,6 +113,22 @@
     "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
     "post_date": "2026-07-04",
     "id": "1055d54d"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "17:00",
+    "artist": "Хэппи Пол",
+    "event_type": "вечеринка",
+    "venue": "Hungry Bird",
+    "source_city": "Симеиз",
+    "price": null,
+    "description": "День Ивана Купала на пляже: анимация, маркет крымских мастеров, хороводы у костра, фаер-шоу и музыкальная атмосфера от диджея Хэппи Пол.",
+    "source_channel": "afisha_crimea",
+    "source_url": "https://t.me/afisha_crimea/7876",
+    "post_date": "2026-06-30",
+    "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg",
+    "genre": "поп",
+    "id": "76223b42"
   },
   {
     "date": "2026-07-04",
@@ -585,6 +585,22 @@
     "id": "1633413b"
   },
   {
+    "date": "2026-07-31",
+    "time": "21:00",
+    "artist": "Елена Новикова. Stand Up",
+    "venue": "Santa Barbara",
+    "event_type": "концерт",
+    "price": "от 1500 ₽",
+    "description": "О концерте Рады пригласить на премьеру жизнеутверждающего концерта «Такое Лето» от актрисы и комика Елены Новиковой.\r\n\r\nЕлене 56, она успешна в карьере, мудра в материнстве и отношениях, но совсем не умеет ценить себя, слышать свои чувства. Для того, чтобы разобрат\u0000ься в этом вопросе, она отправляется в путешествие со всей семьей. Естественно, к морю.\r\n\r\n«Такое лето» - это Час юмора от самой ироничной комикессы российского стендап сообщества.",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-07-01T07:22:47.755490+00:00",
+    "image": "/images/events/72545316d471370f37a291b84627bcee.jpg",
+    "source_url": "https://www.afisha.ru/concert/elena-novikova-stand-up-6042443/",
+    "genre": "юмор",
+    "id": "24af4b8c"
+  },
+  {
     "date": "2026-08-01",
     "time": null,
     "artist": "Скажите Джаз",
@@ -699,6 +715,22 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "ac0e017c"
+  },
+  {
+    "date": "2026-08-07",
+    "time": "20:00",
+    "artist": "Елена Новикова. Stand Up",
+    "venue": "Молодость",
+    "event_type": "концерт",
+    "price": "от 1500 ₽",
+    "description": "О концерте Рады пригласить на премьеру жизнеутверждающего концерта «Такое Лето» от актрисы и комика Елены Новиковой.\r\n\r\nЕлене 56, она успешна в карьере, мудра в материнстве и отношениях, но совсем не умеет ценить себя, слышать свои чувства. Для того, чтобы разобрат\u0000ься в этом вопросе, она отправляется в путешествие со всей семьей. Естественно, к морю.\r\n\r\n«Такое лето» - это Час юмора от самой ироничной комикессы российского стендап сообщества.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-07-01T07:22:50.048722+00:00",
+    "image": "/images/events/72545316d471370f37a291b84627bcee.jpg",
+    "source_url": "https://www.afisha.ru/concert/elena-novikova-stand-up-6042443/",
+    "genre": "юмор",
+    "id": "fd48e806"
   },
   {
     "date": "2026-08-08",
@@ -1447,6 +1479,22 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/helvegen-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк-метал",
     "id": "f2113f78"
+  },
+  {
+    "date": "2026-06-30",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом офицеров флота",
+    "event_type": "концерт",
+    "price": "от 2 300 ₽",
+    "description": "Jawa. Хиты «Сектор Газа» в Дом офицеров флота, Севастополь.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Севастополь",
+    "post_date": "2026-06-30",
+    "image": "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "genre": "рок",
+    "id": "0f52d30c"
   },
   {
     "date": "2026-06-28",
