@@ -39,6 +39,7 @@ jobs:
           cp -r cities _site/
           cp -r images _site/
           cp -r venues _site/
+          cp -r event _site/
           echo "--- содержимое _site ---"
           ls -R _site | head -50
 
@@ -56,11 +57,20 @@ jobs:
             --delete \
             --exclude "images/*" \
             --exclude "venues/*" \
+            --exclude "event/*" \
             --cache-control "public, max-age=300"
 
       - name: Залить страницы заведений (venues/) с явным Content-Type)
         run: |
           aws s3 sync _site/venues "$BUCKET/venues" \
+            --endpoint-url "$ENDPOINT" \
+            --delete \
+            --content-type "text/html; charset=utf-8" \
+            --cache-control "public, max-age=300"
+
+      - name: Залить страницы событий (event/) с явным Content-Type
+        run: |
+          aws s3 sync _site/event "$BUCKET/event" \
             --endpoint-url "$ENDPOINT" \
             --delete \
             --content-type "text/html; charset=utf-8" \
