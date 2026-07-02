@@ -1093,6 +1093,7 @@ let allUpcoming = [];
 let currentEventId = null;
 let shownCount = 4;
 let venueByAlias = {};  // raw venue string → {slug, address}
+let isSameGenreList = false;
 
 async function load() {
   console.log('load started');
@@ -1192,7 +1193,10 @@ async function load() {
     if (!event) { document.getElementById('content').innerHTML = '<div class="loading">Событие не найдено</div>'; return; }
 
     currentEventId = event.id;
-    allUpcoming = upcoming.filter(e => e.id !== currentEventId);
+    const otherUpcoming = upcoming.filter(e => e.id !== currentEventId);
+    const sameGenre = otherUpcoming.filter(e => e.genre === event.genre);
+    isSameGenreList = sameGenre.length > 0;
+    allUpcoming = isSameGenreList ? sameGenre : otherUpcoming;
     shownCount = 4;
 
     renderNavGenres();
@@ -1319,7 +1323,7 @@ function render(event) {
 
     <div class="more-section">
       <div class="more-header">
-        <div class="more-title">Другие мероприятия</div>
+        <div class="more-title">${isSameGenreList ? `Другие мероприятия в жанре «${GENRE_LABELS[event.genre]}»` : 'Другие мероприятия'}</div>
       </div>
       <div class="more-grid" id="more-grid">${moreCards}</div>
       <div class="load-more-wrap">
