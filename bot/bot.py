@@ -13,7 +13,7 @@
 import html
 import logging
 import os
-from datetime import date, datetime, time
+from datetime import date, datetime, time, timezone
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -215,7 +215,7 @@ def format_digest(events, genres, cities):
             place_bits.append(html.escape(e["venue"]))
         place_bits.append(price_text(e["price"]))
         place = " · ".join(place_bits)
-        link = f"{SITE}/event.html?id={e['id']}"
+        link = f"{SITE}/event/{e['id']}"
         lines.append(f'📅 {when} — <a href="{link}"><b>{artist}</b></a>\n'
                      f"📍 {place}\n")
 
@@ -601,13 +601,21 @@ def schedule_sub(app, chat_id, sub):
 # ---------------------------------------------------------------------------
 # Отправка подборки
 # ---------------------------------------------------------------------------
+def _update_last_sent(context, chat_id):
+    """Записывает текущее время как метку последней плановой рассылки."""
+    sub = get_sub(context, chat_id)
+    if sub:
+        sub["last_sent_at"] = datetime.now(timezone.utc).isoformat()
+        get_subs(context)[chat_id] = sub
+
+
 async def send_digest(context, chat_id, on_demand=False, reply_to=None):
     sub = get_sub(context, chat_id)
     if not sub and not on_demand:
         return
     genres = sub["genres"] if sub else ["all"]
     cities = sub["cities"] if sub else ["all"]
-    horizon = 7  # всегда только события на ближайшую неделю
+    horizon = 7  # только события на ближайшую неделю
 
     try:
         events = await fetch_events()
@@ -621,6 +629,21 @@ async def send_digest(context, chat_id, on_demand=False, reply_to=None):
         return
 
     filtered = filter_events(events, genres, cities, horizon_days=horizon)
+
+    # Для плановых рассылок — только события, изменившиеся/появившиеся с прошлого раза
+    new_only = not on_demand and sub is not None
+    if new_only:
+        last_sent_at = sub.get("last_sent_at")
+        if last_sent_at:
+            filtered = [e for e in filtered
+                        if (e.get("updated_at") or "") >= last_sent_at]
+            if not filtered:
+                log.info("No new events for %s since %s, skipping", chat_id, last_sent_at)
+                _update_last_sent(context, chat_id)
+                return
+        # Обновляем метку времени последней рассылки
+        _update_last_sent(context, chat_id)
+
     text = format_digest(filtered, genres, cities)
     target = reply_to.reply_html if reply_to else None
     if target:
