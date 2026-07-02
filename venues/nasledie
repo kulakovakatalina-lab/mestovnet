@@ -812,8 +812,6 @@ footer {
     line-height: 1.6;
     margin-top: 14px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .genre-hero-meta {
     text-align: right;

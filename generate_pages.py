@@ -756,8 +756,6 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     line-height: 1.6;
     margin-top: 14px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }}
   .genre-hero-meta {{
     text-align: right;
