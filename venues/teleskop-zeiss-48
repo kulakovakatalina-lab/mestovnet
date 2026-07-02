@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Телескоп Zeiss-48 — афиша в Научном · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научном. 0 ближайших событий. Расписание и билеты.">
+  <title>Телескоп Zeiss-48 — афиша в Научный (Бахчисарайский р-н) · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научный (Бахчисарайский р-н). 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/teleskop-zeiss-48">
-  <meta property="og:title" content="Телескоп Zeiss-48 — афиша в Научном · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научном. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Телескоп Zeiss-48 — афиша в Научный (Бахчисарайский р-н) · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научный (Бахчисарайский р-н). 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный (Бахчисарайский р-н)", "item": "https://mestov.net/cities/nauchny.html"}, {"@type": "ListItem", "position": 3, "name": "Телескоп Zeiss-48"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный (Бахчисарайский р-н)", "item": "https://mestov.net/cities/научный-(бахчисарайский-р-н).html"}, {"@type": "ListItem", "position": 3, "name": "Телескоп Zeiss-48"}]}
 </script>
   <style>
 
@@ -554,7 +554,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 
 .card-img {
   width: 100%;
-  height: 148px;
+  aspect-ratio: 1;
   flex-shrink: 0;
   overflow: hidden;
   background: oklch(22% 0.01 250);
@@ -959,7 +959,7 @@ footer {
   <div>
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/nauchny.html">Научный (Бахчисарайский р-н)</a>
+      · <a href="/cities/научный-(бахчисарайский-р-н).html">Научный (Бахчисарайский р-н)</a>
     </div>
     <h1 class="genre-hero-title">Телескоп Zeiss-48</h1>
     <p class="venue-description">Рефлектор с диаметром зеркала 48 дюймов производства Carl Zeiss, установленный в Крымской астрофизической обсерватории в посёлке Научный. Получен как репарации после Второй мировой войны и используется для наблюдений с начала 1950-х годов.</p>

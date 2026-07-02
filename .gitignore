@@ -16,7 +16,7 @@ parser_output.log
 posts.json
 
 # Логи разовых прогонов
-upscale.log
+upscale*.log
 
 # Артефакт сборки Yandex Cloud Function
 bot-yandex/function.zip

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki">
   <meta property="og:title" content="Рок-н-рольщики — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -21,48 +21,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU",
         "streetAddress": "ул. Ленина, 8"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Живая музыка",
-      "startDate": "2026-07-03T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Живой звук каждую пятницу с 21:00. Вход бесплатный, столики без депозитов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Живая музыка"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Живая музыка",
-      "startDate": "2026-07-04T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Живой звук каждую субботу с 21:00. Вход бесплатный, столики без депозитов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Живая музыка"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Музыкальный квартирник",
-      "startDate": "2026-07-05T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Воскресный музыкальный квартирник с 21:00. Также в программе дегустации и живое общение. Вход бесплатный.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Музыкальный квартирник"
       }
     }
   ]
@@ -596,7 +554,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 
 .card-img {
   width: 100%;
-  height: 148px;
+  aspect-ratio: 1;
   flex-shrink: 0;
   overflow: hidden;
   background: oklch(22% 0.01 250);
@@ -1007,7 +965,7 @@ footer {
     <p class="venue-description">Тематический бар с живой музыкой в центре Севастополя — уникальная барная карта, авторские коктейли и музыкальные квартирники.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Ленина, 8, Севастополь</span><a href="https://yandex.ru/maps/?text=ул.+Ленина,+8,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

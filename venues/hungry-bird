@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hungry Bird — афиша в Симеиз · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Hungry Bird, в Симеиз. 1 ближайших событий. Расписание и билеты.">
+  <title>Hungry Bird — афиша в Симеизе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/hungry-bird">
-  <meta property="og:title" content="Hungry Bird — афиша в Симеиз · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Hungry Bird, в Симеиз. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Hungry Bird — афиша в Симеизе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -42,7 +42,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симеиз", "item": "https://mestov.net/cities/симеиз.html"}, {"@type": "ListItem", "position": 3, "name": "Hungry Bird"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симеиз", "item": "https://mestov.net/cities/simeiz.html"}, {"@type": "ListItem", "position": 3, "name": "Hungry Bird"}]}
 </script>
   <style>
 
@@ -569,7 +569,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 
 .card-img {
   width: 100%;
-  height: 148px;
+  aspect-ratio: 1;
   flex-shrink: 0;
   overflow: hidden;
   background: oklch(22% 0.01 250);
@@ -974,7 +974,7 @@ footer {
   <div>
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/симеиз.html">Симеиз</a>
+      · <a href="/cities/simeiz.html">Симеиз</a>
     </div>
     <h1 class="genre-hero-title">Hungry Bird</h1>
     <p class="venue-description">Hungry Bird — крафтовый бар-ресторан на набережной Симеиза с живой атмосферой у моря.</p>

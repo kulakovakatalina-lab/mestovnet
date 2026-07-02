@@ -79,12 +79,20 @@ def _cache_write(text: str, data):
 def load_channels():
     with open(CHANNELS_FILE, encoding="utf-8") as f:
         data = json.load(f)
-    return (
+    groups = (
         data["channels"],
         data.get("max_channels", []),
         data.get("vk_channels", []),
         data.get("instagram_channels", []),
     )
+    # Сверяем города каналов со справочником cities.json — предупреждаем о незнакомых.
+    unknown = sorted({
+        ch["city"] for group in groups for ch in group
+        if ch.get("city") and _canon_city(ch["city"]) is None
+    })
+    if unknown:
+        print(f"⚠️  Города каналов вне справочника cities.json: {', '.join(unknown)}")
+    return groups
 
 
 def fetch_posts(username: str, days_back: int) -> list[dict]:
@@ -630,33 +638,77 @@ def _fallback_artist(event: dict) -> "str | None":
     return None
 
 
-# Ключевые слова для определения города когда канал охватывает весь Крым
-_CITY_HINTS = [
-    ("Ялт",         "Ялта"),
-    ("Массандр",    "Ялта"),
-    ("Мисхор",      "Ялта"),
-    ("Дюльбер",     "Ялта"),
-    ("Ливади",      "Ялта"),
-    ("Мрия",        "Ялта"),
-    ("Симферополь", "Симферополь"),
-    ("Севастополь", "Севастополь"),
-    ("Керч",        "Керчь"),
-    ("Феодоси",     "Феодосия"),
-    ("Судак",       "Судак"),
-    ("Евпатори",    "Евпатория"),
-    ("Алушт",       "Алушта"),
-    ("Коктебель",   "Коктебель"),
-    ("Бахчисарай",  "Бахчисарай"),
-    ("Саки",        "Саки"),
-    ("Гурзуф",      "Гурзуф"),
-]
+# ── Справочник городов (cities.json) ──────────────────────────────────────────
+# Единственный источник правды по городам. Из него строятся:
+#   _CITY_CANON  — точное имя/алиас → каноническое имя (для сверки готовых значений)
+#   _CITY_RE     — регэкспы с падежами → каноническое имя (для поиска в тексте)
+CITIES_FILE = "cities.json"
+
+with open(CITIES_FILE, encoding="utf-8") as _f:
+    _CITIES = json.load(_f)
+
+# Окончания для распознавания падежей русского города в свободном тексте
+# (существительные + прилагательные-названия вроде «Научный»).
+_CITY_ENDINGS = r"(?:ого|ому|ым|ых|ые|ый|ий|ой|ом|ем|ей|а|я|у|ю|е|ы|и|ь|)"
+
+
+def _city_stem(word: str) -> str:
+    """Основа слова для поиска с падежами: отбрасывает окончание прилагательного или гласную/ь/й."""
+    w = word.lower()
+    for suf in ("ый", "ий", "ой"):
+        if w.endswith(suf) and len(w) > len(suf) + 2:
+            return w[: -len(suf)]
+    if w and w[-1] in "аяьйыиеою":
+        w = w[:-1]
+    return w
+
+
+def _norm(text: str) -> str:
+    return (text or "").strip().lower().replace("ё", "е")
+
+
+_CITY_CANON: dict[str, str] = {}   # нормализованное имя/алиас → каноническое имя
+_CITY_RE: list = []                # [(compiled_regex, каноническое_имя)] для _detect_city
+
+for _entry in _CITIES:
+    _canon = _entry["name"]
+    for _form in [_canon] + _entry.get("aliases", []):
+        _CITY_CANON[_norm(_form)] = _canon
+        if _entry.get("slug") == "all":
+            continue  # «Крым» — это fallback, из текста его не «распознаём»
+        if " " in _form:
+            _CITY_RE.append((re.compile(re.escape(_form.lower())), _canon))
+        else:
+            _CITY_RE.append(
+                (re.compile(r"\b" + re.escape(_city_stem(_form)) + _CITY_ENDINGS + r"\b"), _canon)
+            )
+
+
+def _canon_city(raw):
+    """Точное значение → каноническое имя из справочника или None."""
+    return _CITY_CANON.get(_norm(raw)) if raw else None
+
 
 def _detect_city(text: str):
-    low = text.lower()
-    for hint, city in _CITY_HINTS:
-        if hint.lower() in low:
-            return city
+    """Ищет в свободном тексте любой город/алиас справочника (с падежами)."""
+    low = (text or "").lower().replace("ё", "е")
+    for rx, canon in _CITY_RE:
+        if rx.search(low):
+            return canon
     return None
+
+
+def resolve_city(event: dict, channel: dict) -> str:
+    """Определяет город события — всегда каноническое имя из справочника или «Крым»."""
+    ch = _canon_city(channel.get("city"))
+    if ch and ch != "Крым":          # канал привязан к конкретному городу — доверяем ему
+        return ch
+    detected = (
+        _canon_city(event.get("city"))           # город от Claude, только если он из справочника
+        or _detect_city(event.get("venue") or "")
+        or _detect_city(event.get("description") or "")
+    )
+    return detected or "Крым"        # fallback
 
 
 def _normalize(text: str) -> str:
@@ -979,15 +1031,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
 
             for event in events:
                 event["source_channel"] = label
-                city = channel["city"]
-                if city == "Крым":
-                    city = (
-                        event.get("city") or
-                        _detect_city(event.get("venue") or "") or
-                        _detect_city(event.get("description") or "") or
-                        city
-                    )
-                event["source_city"] = city
+                event["source_city"] = resolve_city(event, channel)
                 event.pop("city", None)
                 if not event.get("venue"):
                     event["venue"] = channel["title"]
@@ -1033,15 +1077,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
 
                     for idx, event in enumerate(events):
                         event["source_channel"] = label
-                        city = channel["city"]
-                        if city == "Крым":
-                            city = (
-                                event.get("city") or
-                                _detect_city(event.get("venue") or "") or
-                                _detect_city(event.get("description") or "") or
-                                city
-                            )
-                        event["source_city"] = city
+                        event["source_city"] = resolve_city(event, channel)
                         event.pop("city", None)
                         if not event.get("venue"):
                             event["venue"] = channel["title"]
