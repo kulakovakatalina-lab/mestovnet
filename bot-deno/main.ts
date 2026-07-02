@@ -218,7 +218,7 @@ function formatDigest(events: Ev[], genres: string[], cities: string[]): string 
     if (e.time) when += ` ${e.time}`;
     const place = [e.sourceCity, e.venue, priceText(e.price)]
       .filter(Boolean).map((x) => escapeHtml(x)).join(" · ");
-    const link = `${SITE}/event.html?id=${e.id}`;
+    const link = `${SITE}/event/${e.id}`;
     lines.push(`📅 ${when} — <a href="${link}"><b>${escapeHtml(e.artist)}</b></a>\n📍 ${place}\n`);
   }
   if (events.length > MAX_EVENTS) {
