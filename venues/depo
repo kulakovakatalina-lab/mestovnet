@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Депо — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 8 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/depo">
   <meta property="og:title" content="Депо — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 8 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -67,6 +67,21 @@
         "name": "Hofmannita"
       },
       "image": "/images/events/330d0accf79808e08686bc3dba50aaa5.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Авет Маркарян",
+      "startDate": "2026-08-07T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Депо"
+      },
+      "description": "О концерте Сольный концерт Авета Маркаряна.\r\n\r\nЗрителей ждет вечер живой музыки и известных композиций артиста. Приглашаем провести этот вечер вместе.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Авет Маркарян"
+      },
+      "image": "/images/events/340d375445a1c7512c3162b51717cb57.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -659,7 +674,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 
 .card-img {
   width: 100%;
-  height: 148px;
+  aspect-ratio: 1;
   flex-shrink: 0;
   overflow: hidden;
   background: oklch(22% 0.01 250);
@@ -1070,7 +1085,7 @@ footer {
     <p class="venue-description">Клуб и концертная площадка в центре Симферополя, принимает рок-концерты и электронную музыку.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Киевская, 4а, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Киевская,+4а,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">7</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">8</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

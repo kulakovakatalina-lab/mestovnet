@@ -32,7 +32,7 @@ jobs:
           mkdir -p _site
           # Файлы в корне
           cp index.html event.html genre.html admin.html _site/
-          cp events.json settings.json venues.json _site/
+          cp events.json settings.json venues.json cities.json _site/
           cp sitemap.xml robots.txt _site/
           cp yandex_c7b51fb2f9cdb188.html _site/
           # Папки целиком
