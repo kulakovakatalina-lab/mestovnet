@@ -198,7 +198,7 @@ function formatDigest(events, genres, cities) {
     let when = `${String(d).padStart(2, "0")} ${MONTHS_GEN[m - 1]} (${DOW[wd]})`;
     if (e.time) when += ` ${e.time}`;
     const place = [e.sourceCity, e.venue, priceText(e.price)].filter(Boolean).map(esc).join(" \u00b7 ");
-    const link = `${SITE}/event.html?id=${e.id}`;
+    const link = `${SITE}/event/${e.id}`;
     lines.push(`\ud83d\udcc5 ${when} \u2014 <a href="${link}"><b>${esc(e.artist)}</b></a>\n\ud83d\udccd ${place}\n`);
   }
   if (events.length > MAX_EVENTS)

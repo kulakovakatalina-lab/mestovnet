@@ -27,6 +27,7 @@ EVENTS_FILE   = BASE_DIR / "events.json"
 VENUES_FILE   = BASE_DIR / "venues.json"
 SETTINGS_FILE = BASE_DIR / "settings.json"
 INDEX_FILE    = BASE_DIR / "index.html"
+EVENT_FILE    = BASE_DIR / "event.html"
 DOMAIN     = "https://mestov.net"
 
 # ── Локализация ──────────────────────────────────────────────────────────────
@@ -412,6 +413,69 @@ def make_city_page(
     src = src.replace('</body>', f'{seo_block}{city_script}</body>')
 
     return src
+
+# ── Шаблон страницы события (event/{id} без расширения) ──────────────────────
+
+def make_event_page(event: dict, all_events: list[dict], today: str,
+                     custom_names: Optional[dict] = None) -> str:
+    """Генерирует страницу события на основе event.html (чистый URL /event/{id})."""
+    eid   = event["id"]
+    src_url  = event.get("source_url") or ""
+    artist   = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
+    venue    = event.get("venue") or ""
+    city     = event.get("source_city") or ""
+    city_prep = CITY_PREP.get(city, f"в {city}" if city else "")
+
+    title = f"{artist} — {venue}" if venue else artist
+    if city:
+        title += f", {city}"
+    title += " · Местов.Нет"
+
+    desc_parts = [artist]
+    if venue:
+        desc_parts.append(venue)
+    if city_prep:
+        desc_parts.append(city_prep)
+    if event.get("date"):
+        desc_parts.append(fmt_date(event["date"]))
+    description = ", ".join(desc_parts) + ". Билеты и подробности на Местов.Нет."
+
+    canonical = f"{DOMAIN}/event/{eid}"
+    jsonld    = make_jsonld_events([event], custom_names)
+    jsonld_bc = make_jsonld_breadcrumbs([
+        ("Местов.Нет", "/"),
+        (city, f"/cities/{city_slug(city)}.html") if city else ("Крым", "/"),
+        (artist, ""),
+    ])
+
+    src = EVENT_FILE.read_text(encoding="utf-8")
+
+    src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)
+    if '<meta name="description"' in src:
+        src = re.sub(r'<meta name="description"[^>]+>',
+                      f'<meta name="description" content="{esc(description)}">', src)
+    else:
+        src = src.replace('<meta name="viewport"',
+                           f'<meta name="description" content="{esc(description)}">\n<meta name="viewport"')
+    src = re.sub(r'<link rel="canonical"[^>]+>', '', src)
+    src = re.sub(r'<meta property="og:[^>]+>', '', src)
+    og_tags = (
+        f'<link rel="canonical" href="{canonical}">\n'
+        f'<meta property="og:title" content="{esc(title)}">\n'
+        f'<meta property="og:description" content="{esc(description)}">\n'
+        f'<meta property="og:type" content="article">\n'
+    )
+    if event.get("image"):
+        img = event["image"]
+        img_abs = img if img.startswith("http") else f"{DOMAIN}{img}"
+        og_tags += f'<meta property="og:image" content="{esc(img_abs)}">\n'
+
+    src = re.sub(r'<script type="application/ld\+json">.*?</script>', '', src, flags=re.DOTALL)
+    combined = jsonld + ('\n' + jsonld_bc if jsonld_bc else '')
+    src = src.replace('</head>', f'{og_tags}{combined}\n</head>')
+
+    return src
+
 
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
@@ -893,7 +957,7 @@ function eventRowHtml(ev, extraClass) {{
   const thumbHtml = ev.image
     ? `<img src="${{ev.image}}" alt="${{ev.artist || ''}}" loading="lazy">`
     : `<div class="bg-${{genre}}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${{genreIcon(genre)}}</div>`;
-  return `<a href="/event.html?id=${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
+  return `<a href="/event/${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
     <div class="row-date">
       <div class="row-date-day">${{fmt.day}}</div>
       <div class="row-date-month">${{fmt.month}}</div>
@@ -988,7 +1052,8 @@ load();
 
 # ── sitemap.xml ───────────────────────────────────────────────────────────────
 
-def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None) -> str:
+def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
+                  event_ids: Optional[list] = None) -> str:
     today = today_str()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -1005,6 +1070,8 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None) -> str:
         lines.append(url(f"{DOMAIN}/cities/{s}.html", "daily", "0.8"))
     for s in sorted(venue_slugs or []):
         lines.append(url(f"{DOMAIN}/venues/{s}", "weekly", "0.7"))
+    for eid in sorted(event_ids or []):
+        lines.append(url(f"{DOMAIN}/event/{eid}", "weekly", "0.6"))
 
     lines.append("</urlset>")
     return "\n".join(lines)
@@ -1108,13 +1175,39 @@ def main() -> None:
         print(f"    ✓ venues/{venue['slug']}  "
               f"({v_upcoming} предстоящих, {v_past} прошедших)")
 
-    # 4. sitemap.xml
+    # 4. Генерируем страницы событий (event/{id} без расширения)
+    events_dir = BASE_DIR / "event"
+    events_dir.mkdir(exist_ok=True)
+    print(f"🎫  Генерируем страницы событий ({len(events)}) …")
+    generated_event_ids: list[str] = []
+    for e in events:
+        eid = e.get("id")
+        if not eid:
+            continue
+        page = make_event_page(e, events, today, custom_names)
+        out  = events_dir / eid  # без расширения
+        out.write_text(page, encoding="utf-8")
+        generated_event_ids.append(eid)
+    # Убираем файлы для событий, которых больше нет в events.json
+    current_ids = set(generated_event_ids)
+    removed = 0
+    for f in events_dir.iterdir():
+        if f.is_file() and f.name not in current_ids:
+            f.unlink()
+            removed += 1
+    print(f"    ✓ event/  ({len(generated_event_ids)} страниц"
+          + (f", удалено устаревших: {removed}" if removed else "") + ")")
+
+    upcoming_event_ids = [e["id"] for e in events
+                           if e.get("id") and (e.get("date") or "") >= today]
+
+    # 5. sitemap.xml
     print("🗺   Генерируем sitemap.xml …")
-    sitemap = make_sitemap(cities_with_events, generated_venue_slugs)
+    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids)
     (BASE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("    ✓ sitemap.xml")
 
-    # 5. robots.txt
+    # 6. robots.txt
     robots = make_robots()
     (BASE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("    ✓ robots.txt")
@@ -1122,6 +1215,7 @@ def main() -> None:
     print("\n✅  Готово! Все страницы сгенерированы.")
     print(f"    Города: {', '.join(cities_with_events)}")
     print(f"    Заведений: {len(generated_venue_slugs)}")
+    print(f"    Событий: {len(generated_event_ids)}")
     print(f"\n💡  Следующий шаг: отправьте sitemap.xml в Яндекс.Вебмастер и Google Search Console:")
     print(f"    {DOMAIN}/sitemap.xml")
 
