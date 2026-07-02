@@ -934,7 +934,7 @@ a { color: inherit; text-decoration: none; }
 <div class="toast" id="toast"></div>
 
 <nav class="nav">
-  <a href="index.html" class="nav-logo">местов<em>.нет</em></a>
+  <a href="/" class="nav-logo">местов<em>.нет</em></a>
   <div class="nav-sep"></div>
   <div class="nav-genres" id="nav-genres"></div>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
@@ -1060,15 +1060,19 @@ let venueByAlias = {};  // raw venue string → {slug, address}
 async function load() {
   console.log('load started');
   const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
+  let id = params.get('id');
+  if (!id) {
+    const m = window.location.pathname.match(/\/event\/([^\/]+)/);
+    if (m) id = decodeURIComponent(m[1]);
+  }
   const idxFallback = parseInt(params.get('idx'));
   console.log('id:', id, 'idx fallback:', idxFallback);
 
   try {
     const [res, settingsRes, venuesRes] = await Promise.all([
-      fetch('events.json'),
-      fetch('settings.json').catch(() => null),
-      fetch('venues.json').catch(() => null)
+      fetch('/events.json'),
+      fetch('/settings.json').catch(() => null),
+      fetch('/venues.json').catch(() => null)
     ]);
     console.log('fetch status:', res.status);
     const data = await res.json();
@@ -1189,7 +1193,7 @@ function render(event) {
 
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="event.html?id=${e.id}" class="mini-card">
+    <a href="/event/${e.id}" class="mini-card">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
@@ -1337,7 +1341,7 @@ function loadMore() {
 function renderMoreCards() {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="event.html?id=${e.id}" class="mini-card">
+    <a href="/event/${e.id}" class="mini-card">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
@@ -1370,12 +1374,12 @@ function renderNavGenres() {
   const active = order.filter(g => counts[g]);
 
   const navHtml = active.map(g =>
-    `<a href="genre.html?g=${g}" class="nav-genre">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre.html?g=${g}" class="nav-genre">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('nav-genres').innerHTML = navHtml;
 
   const mobileHtml = active.map(g =>
-    `<a href="genre.html?g=${g}">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre.html?g=${g}">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
 }

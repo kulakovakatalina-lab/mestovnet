@@ -315,7 +315,7 @@ def format_digest(events, genres, cities):
             when += f" {e['time']}"
         place = " · ".join(esc(x) for x in
                            [e["source_city"], e["venue"], price_text(e["price"])] if x)
-        link = f"{SITE}/event.html?id={e['id']}"
+        link = f"{SITE}/event/{e['id']}"
         lines.append(f'📅 {when} — <a href="{link}"><b>{esc(e["artist"])}</b></a>\n'
                      f"📍 {place}\n")
     if len(events) > MAX_EVENTS:
