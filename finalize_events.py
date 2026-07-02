@@ -464,8 +464,21 @@ def main(push: bool = True):
             for d in dupes:
                 print(f"    -> {d.get('artist')} | {d.get('date')} | {d.get('source_url','')}")
 
+    # Проставляем updated_at: now — для новых и изменившихся событий
+    from datetime import date, datetime, timezone
+    existing_by_id = {e["id"]: e for e in existing if e.get("id")}
+    _TRACKED_FIELDS = ("date", "time", "artist", "venue", "price")
+    now_iso = datetime.now(timezone.utc).isoformat()
+    for e in merged:
+        eid = e.get("id")
+        old = existing_by_id.get(eid) if eid else None
+        if old is None:
+            e["updated_at"] = now_iso
+        else:
+            changed = any(e.get(f) != old.get(f) for f in _TRACKED_FIELDS)
+            e["updated_at"] = now_iso if changed else old.get("updated_at", old.get("post_date", now_iso))
+
     # Сортировка: будущие по дате вперёд, прошедшие в конце по убыванию даты
-    from datetime import date
     today = date.today().isoformat()
     future = sorted([e for e in merged if (e.get("date") or "") >= today],
                     key=lambda e: (e.get("date") or "", e.get("time") or ""))
