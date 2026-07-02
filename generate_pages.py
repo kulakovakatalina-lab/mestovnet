@@ -41,45 +41,37 @@ MONTHS_NOM = [
 DAYS_SHORT = ["вс","пн","вт","ср","чт","пт","сб"]
 
 # ── Города ───────────────────────────────────────────────────────────────────
+# Единственный источник правды — cities.json (совпадает со справочником парсера).
 
-CITY_SLUGS: dict[str, str] = {
-    "Симферополь":   "simferopol",
-    "Ялта":          "yalta",
-    "Севастополь":   "sevastopol",
-    "Бахчисарай":    "bakhchisaray",
-    "Судак":         "sudak",
-    "Евпатория":     "evpatoria",
-    "Керчь":         "kerch",
-    "Коктебель":     "koktebel",
-    "Феодосия":      "feodosiya",
-    "Алушта":        "alushta",
-    "Саки":          "saki",
-    "Крым":          "all",
-    "Научный (Бахчисарайский р-н)": "nauchny",
-    "Бахчисарайский район": "bakhchisaray",
-}
+CITIES_FILE = BASE_DIR / "cities.json"
+with open(CITIES_FILE, encoding="utf-8") as _f:
+    _CITIES = json.load(_f)
 
-CITY_PREP = {                           # «в Симферополе», «в Ялте», …
-    "Симферополь":   "в Симферополе",
-    "Ялта":          "в Ялте",
-    "Севастополь":   "в Севастополе",
-    "Бахчисарай":    "в Бахчисарае",
-    "Судак":         "в Судаке",
-    "Евпатория":     "в Евпатории",
-    "Керчь":         "в Керчи",
-    "Коктебель":     "в Коктебеле",
-    "Феодосия":      "в Феодосии",
-    "Алушта":        "в Алуште",
-    "Саки":          "в Саках",
-    "Крым":          "в Крыму",
-    "Научный (Бахчисарайский р-н)": "в Научном",
-    "Бахчисарайский район": "в Бахчисарайском районе",
-}
+CITY_SLUGS: dict[str, str] = {c["name"]: c["slug"] for c in _CITIES}
+CITY_PREP:  dict[str, str] = {c["name"]: c["prep"] for c in _CITIES}
 
 # ── Утилиты ──────────────────────────────────────────────────────────────────
 
+# Управляющие C0-символы (кроме \t \n \r) — не должны попадать в HTML/JSON-LD.
+_CTRL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+
 def esc(text) -> str:
-    return html_module.escape(str(text)) if text else ""
+    return html_module.escape(_CTRL_RE.sub("", str(text))) if text else ""
+
+# SEO-пререндер оборачивается маркерами — так замена блока не спотыкается
+# о вложенные </div> внутри карточек (прежний regex этим и был сломан).
+SEO_START = "<!--seo-content-->"
+SEO_END   = "<!--/seo-content-->"
+_SEO_RE   = re.compile(re.escape(SEO_START) + r".*?" + re.escape(SEO_END) + r"\n?", re.DOTALL)
+
+def wrap_seo(content: str) -> str:
+    return f'{SEO_START}\n<div id="seo-content" style="display:none">\n{content}\n</div>\n{SEO_END}\n'
+
+def strip_seo(src: str) -> str:
+    # Убираем как новый (маркеры), так и старый (без маркеров) SEO-блок.
+    src = _SEO_RE.sub("", src)
+    src = re.sub(r'<div id="seo-content".*</div>\s*(?=</body>)', "", src, flags=re.DOTALL)
+    return src
 
 def today_str() -> str:
     return date.today().isoformat()
@@ -393,9 +385,11 @@ def make_city_page(
             combined += jsonld_bc
         src = src.replace('</head>', f'  {combined}\n</head>')
 
-    # Статический пре-рендер событий города (для поисковиков)
+    # Статический пре-рендер событий города (для поисковиков).
+    # Шаблон (index.html) может уже содержать SEO-блок — убираем его, чтобы не дублировать.
+    src = strip_seo(src)
     static_content = render_event_list(city_events, today, custom_names)
-    seo_block = f'<div id="seo-content" style="display:none">\n{static_content}\n</div>\n'
+    seo_block = wrap_seo(static_content)
 
     # Скрипт: предвыбираем город после загрузки
     city_script = f'''<script>
@@ -474,18 +468,10 @@ def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = 
     if '<script type="application/ld+json">' not in src and jsonld_events:
         src = src.replace("</head>", f"  {jsonld_events}\n</head>")
 
-    # Статический пре-рендер событий (скрытый блок для SEO)
+    # Статический пре-рендер событий (скрытый блок для SEO).
+    # Снимаем прежний блок по маркерам (устойчиво к вложенным </div>) и вставляем свежий.
     static_html = render_event_list(future, today, custom_names)
-    seo_block = f'<div id="seo-content" style="display:none">\n{static_html}\n</div>\n'
-    if '<div id="seo-content"' in src:
-        src = re.sub(
-            r'<div id="seo-content"[^>]*>.*?</div>',
-            seo_block.strip(),
-            src,
-            flags=re.DOTALL,
-        )
-    else:
-        src = src.replace('</body>', f'{seo_block}</body>')
+    src = strip_seo(src).replace('</body>', f'{wrap_seo(static_html)}</body>')
 
     return src
 
@@ -546,10 +532,15 @@ def main() -> None:
     today  = today_str()
     css    = extract_css()
 
-    # Города, для которых есть события (исключаем «Крым» — он на главной)
+    # Города, для которых есть события. Берём только из справочника cities.json
+    # (исключаем «Крым» — он на главной). Незнакомые значения игнорируем.
+    raw_cities = {e["source_city"] for e in events if e.get("source_city")}
+    unknown = sorted(c for c in raw_cities if c not in CITY_SLUGS)
+    if unknown:
+        print(f"⚠️  Города вне справочника cities.json (пропущены): {', '.join(unknown)}")
     cities_with_events: list[str] = sorted(
-        c for c in {e["source_city"] for e in events if e.get("source_city")}
-        if city_slug(c) != "all"
+        c for c in raw_cities
+        if c in CITY_SLUGS and CITY_SLUGS[c] != "all"
     )
 
     # 1. Обновляем index.html

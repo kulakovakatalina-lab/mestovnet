@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Крыму: 72 ближайших событий в Симферополе, Ялте, Севастополе и других городах. Клубы, бары, площадки — всё в одном месте.">
+<meta name="description" content="Афиша концертов и живой музыки в Крыму: 87 ближайших событий в Симферополе, Ялте, Севастополе и других городах. Клубы, бары, площадки — всё в одном месте.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Местов.Нет — живая музыка в Крыму</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -1665,17 +1665,17 @@ const GENRE_LABELS = {
   jazz: 'Джаз', rock: 'Рок', folk: 'Фолк', blues: 'Блюз', classic: 'Классика', pop: 'Поп'
 };
 
-const CITY_MAP = {
-  'Севастополь': 'sevastopol', 'Симферополь': 'simferopol', 'Ялта': 'yalta',
-  'Судак': 'sudak', 'Керчь': 'kerch', 'Коктебель': 'koktebel',
-  'Бахчисарай': 'bakhchisaray', 'Евпатория': 'evpatoria', 'Крым': 'all'
-};
+// Справочник городов подтягивается из cities.json (единый источник правды).
+// name → slug и slug → name; «Крым» имеет slug 'all'.
+let CITY_MAP = {};
+let CITY_LABELS = {};
 
-const CITY_LABELS = {
-  sevastopol: 'Севастополь', simferopol: 'Симферополь', yalta: 'Ялта',
-  sudak: 'Судак', kerch: 'Керчь', koktebel: 'Коктебель',
-  bakhchisaray: 'Бахчисарай', evpatoria: 'Евпатория'
-};
+function loadCities(list) {
+  for (const c of list) {
+    CITY_MAP[c.name] = c.slug;
+    if (c.slug !== 'all') CITY_LABELS[c.slug] = c.name;
+  }
+}
 
 const MONTHS_GEN = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
 const DOW = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
@@ -1744,12 +1744,14 @@ function applySettings(data, settings) {
 
 async function load() {
   try {
-    const [res, settingsRes] = await Promise.all([
+    const [res, settingsRes, citiesRes] = await Promise.all([
       fetch('events.json'),
-      fetch('settings.json').catch(() => null)
+      fetch('settings.json').catch(() => null),
+      fetch('cities.json').catch(() => null)
     ]);
     const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
+    if (citiesRes && citiesRes.ok) loadCities(await citiesRes.json().catch(() => []));
     const patched = applySettings(data, settings);
     const now = new Date();
 
