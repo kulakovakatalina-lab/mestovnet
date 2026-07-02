@@ -112,26 +112,6 @@ def get_source_href(e: dict) -> str:
 
 # ── CSS и JS (извлекаем из index.html, чтобы не дублировать) ────────────────
 
-def extract_css() -> str:
-    try:
-        src = INDEX_FILE.read_text(encoding="utf-8")
-        m = re.search(r"<style>(.*?)</style>", src, re.DOTALL)
-        if m:
-            return m.group(1)
-    except Exception:
-        pass
-    return ""
-
-def extract_js() -> str:
-    """Берём JS из index.html — так он всегда в синхроне с главной страницей."""
-    try:
-        src = INDEX_FILE.read_text(encoding="utf-8")
-        m = re.search(r"<script>\s*(.*?)\s*</script>", src, re.DOTALL)
-        if m:
-            return m.group(1)
-    except Exception:
-        pass
-    return ""
 
 # ── Применение настроек из settings.json ─────────────────────────────────────
 
@@ -346,7 +326,6 @@ def make_city_page(
     city: str,
     events_all: list,
     all_cities: list[str],
-    css: str,
     custom_names: Optional[dict] = None,
 ) -> str:
     """Генерирует страницу города на основе нового index.html."""
@@ -414,7 +393,7 @@ def make_city_page(
 
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
-def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = None) -> str:
+def update_index(events: list, custom_names: Optional[dict] = None) -> str:
     """Читает текущий index.html и добавляет JSON-LD + статический пре-рендер."""
     src = INDEX_FILE.read_text(encoding="utf-8")
     today = today_str()
@@ -530,7 +509,6 @@ def main() -> None:
     custom_names: dict = {}
 
     today  = today_str()
-    css    = extract_css()
 
     # Города, для которых есть события. Берём только из справочника cities.json
     # (исключаем «Крым» — он на главной). Незнакомые значения игнорируем.
@@ -545,7 +523,7 @@ def main() -> None:
 
     # 1. Обновляем index.html
     print("📝  Обновляем index.html …")
-    new_index = update_index(events, bool(css), custom_names)
+    new_index = update_index(events, custom_names)
     INDEX_FILE.write_text(new_index, encoding="utf-8")
     print("    ✓ index.html обновлён")
 
@@ -560,7 +538,7 @@ def main() -> None:
             print(f"    — cities/{slug}.html  (дубль: {city}, пропущен)")
             continue
         seen_slugs.add(slug)
-        page = make_city_page(city, events, cities_with_events, css, custom_names)
+        page = make_city_page(city, events, cities_with_events, custom_names)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
         city_events  = [e for e in events if e.get("source_city") == city]

@@ -2,260 +2,13 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Керчи: ближайшие 4 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов и живой музыки в Керчи: ближайшие 3 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Живая музыка и концерты в Керчи — Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
+<link rel="stylesheet" href="/shared.css">
+<script src="/shared.js"></script>
 <style>
-:root {
-  --bg:      oklch(99% 0.002 240);
-  --surface: oklch(100% 0 0);
-  --fg:      oklch(18% 0.012 250);
-  --muted:   oklch(54% 0.012 250);
-  --border:  oklch(92% 0.005 250);
-  --accent:  oklch(58% 0.18 255);
-
-  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
-  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
-  --font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
-
-  --radius-sm: 6px;
-  --radius:    10px;
-  --radius-lg: 16px;
-  --nav-h:     56px;
-  --gutter:    clamp(16px, 4vw, 48px);
-  --max-w:     1440px;
-}
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; }
-body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-body);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-a { color: inherit; text-decoration: none; }
-button { font: inherit; background: none; border: none; cursor: pointer; }
-
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  height: var(--nav-h);
-  background: oklch(99% 0.002 240 / 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 var(--gutter);
-  gap: 8px;
-}
-
-.nav-logo {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -0.035em;
-  flex-shrink: 0;
-  color: var(--fg);
-}
-.nav-logo em { color: var(--accent); font-style: normal; }
-
-.nav-sep { width: 1px; height: 20px; background: var(--border); margin: 0 8px; flex-shrink: 0; }
-
-.nav-genres {
-  display: flex;
-  gap: 2px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  flex: 1;
-}
-.nav-genres::-webkit-scrollbar { display: none; }
-
-.nav-genre {
-  padding: 5px 13px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
-  border-radius: 100px;
-  white-space: nowrap;
-  transition: color 0.12s, background 0.12s;
-}
-.nav-genre:hover { color: var(--fg); background: var(--border); }
-
-.genre-strip-mobile {
-  display: none;
-  overflow-x: auto;
-  scrollbar-width: none;
-  gap: 6px;
-  padding: 10px var(--gutter);
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
-}
-.genre-strip-mobile::-webkit-scrollbar { display: none; }
-.genre-strip-mobile a {
-  flex-shrink: 0;
-  padding: 5px 14px;
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
-  white-space: nowrap;
-  transition: all 0.12s;
-}
-.genre-strip-mobile a:hover { border-color: var(--fg); color: var(--fg); }
-
-/* —— Кнопка подписки в шапке —— */
-.nav-cta {
-  flex-shrink: 0;
-  margin-left: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #fff;
-  background: var(--accent);
-  border: none;
-  border-radius: 100px;
-  white-space: nowrap;
-  transition: filter 0.12s, transform 0.1s;
-}
-.nav-cta:hover { filter: brightness(1.08); }
-.nav-cta:active { transform: scale(0.96); }
-.nav-cta:focus { outline: none; }
-.nav-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
-
-/* —— Модалка подписки —— */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: oklch(18% 0.012 250 / 0.45);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-.modal-overlay.open { opacity: 1; visibility: visible; }
-.modal {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  padding: 36px 32px 32px;
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 24px 70px oklch(18% 0.012 250 / 0.28);
-  transform: translateY(14px) scale(0.98);
-  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.modal-overlay.open .modal { transform: translateY(0) scale(1); }
-.modal-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: var(--muted);
-  font-size: 20px;
-  line-height: 1;
-  transition: background 0.12s, color 0.12s;
-}
-.modal-close:hover { background: var(--border); color: var(--fg); }
-.modal-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 12px;
-  margin-bottom: 18px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: oklch(58% 0.18 255 / 0.1);
-  border-radius: 100px;
-}
-.modal-badge svg { width: 13px; height: 13px; }
-.modal-title {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin-bottom: 12px;
-}
-.modal-lead {
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 22px;
-}
-.modal-list { list-style: none; margin-bottom: 28px; }
-.modal-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 11px;
-  padding: 9px 0;
-  font-size: 14.5px;
-  line-height: 1.45;
-  border-top: 1px solid var(--border);
-}
-.modal-list li:first-child { border-top: none; }
-.modal-list .ico {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  margin-top: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: oklch(58% 0.18 255 / 0.12);
-  color: var(--accent);
-  font-size: 13px;
-}
-.modal-list b { font-weight: 600; }
-.modal-list span { color: var(--muted); }
-.modal-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  padding: 14px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  background: var(--accent);
-  border-radius: var(--radius);
-  transition: filter 0.12s, transform 0.1s;
-}
-.modal-cta:hover { filter: brightness(1.08); }
-.modal-cta:active { transform: scale(0.99); }
-.modal-cta svg { width: 18px; height: 18px; }
-.modal-note {
-  margin-top: 14px;
-  text-align: center;
-  font-size: 12.5px;
-  color: var(--muted);
-}
-
 .hero {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -664,27 +417,6 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   font-variant-numeric: tabular-nums;
 }
 
-footer {
-  border-top: 1px solid var(--border);
-  padding: 32px var(--gutter);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  max-width: var(--max-w);
-  margin: 0 auto;
-}
-.footer-logo {
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--fg);
-}
-.footer-logo em { color: var(--accent); font-style: normal; }
-.footer-note { font-size: 13px; color: var(--muted); }
-
 .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
 .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
 .bg-rock    { background: linear-gradient(135deg, oklch(22% 0.04 15),  oklch(32% 0.06 20)); }
@@ -692,13 +424,6 @@ footer {
 .bg-classic { background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }
 .bg-pop     { background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }
 .bg-default { background: linear-gradient(135deg, oklch(22% 0.06 255), oklch(14% 0.04 270), oklch(18% 0.08 220)); }
-
-.loading {
-  text-align: center;
-  padding: 80px 0;
-  color: var(--muted);
-  font-size: 15px;
-}
 
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 1fr 380px; gap: 32px; }
@@ -754,39 +479,13 @@ footer {
 </style>
   <link rel="canonical" href="https://mestov.net/cities/kerch.html">
   <meta property="og:title" content="Живая музыка и концерты в Керчи — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Керчи: ближайшие 4 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Керчи: ближайшие 3 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "MusicEvent",
-      "name": "Jawa. Хиты «Сектор Газа»",
-      "startDate": "2026-07-01T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Корабел",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Керчь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Jawa. Хиты «Сектор Газа» в Корабел, Керчь.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Jawa. Хиты «Сектор Газа»"
-      },
-      "image": "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "от 2 000 ₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
     {
       "@type": "MusicEvent",
       "name": "SHAMAN",
@@ -874,59 +573,10 @@ footer {
 </head>
 <body>
 
-<nav class="nav">
-  <a href="index.html" class="nav-logo">местов<em>.нет</em></a>
-  <div class="nav-sep"></div>
-  <div class="nav-genres" id="nav-genres"></div>
-  <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
-    <span>Подписаться</span>
-  </button>
-</nav>
+<site-nav></site-nav>
 
-<div class="modal-overlay" id="sub-modal" role="dialog" aria-modal="true" aria-labelledby="sub-modal-title" onclick="if(event.target===this)closeSubModal()">
-  <div class="modal">
-    <button class="modal-close" type="button" onclick="closeSubModal()" aria-label="Закрыть">&times;</button>
-    <span class="modal-badge">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
-      Telegram-бот
-    </span>
-    <h2 class="modal-title" id="sub-modal-title">Концерты — прямо в Telegram</h2>
-    <p class="modal-lead">Бот «Местов.Нет» сам пришлёт подборку живой музыки Крыма — без листания афиш и пропущенных вечеров.</p>
-    <ul class="modal-list">
-      <li><span class="ico">♫</span><span><b>Под ваш вкус.</b> Выбираете жанры и города — приходит только то, что интересно.</span></li>
-      <li><span class="ico">↻</span><span><b>В удобном ритме.</b> Раз в день, раз в неделю или по запросу — как захотите.</span></li>
-      <li><span class="ico">✓</span><span><b>Бесплатно и без спама.</b> Только концерты, отписаться можно в одно касание.</span></li>
-    </ul>
-    <a class="modal-cta" href="https://t.me/mestovnet_bot" target="_blank" rel="noopener" onclick="closeSubModal()">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
-      Открыть в Telegram
-    </a>
-    <p class="modal-note">@mestovnet_bot · подписка за 10 секунд</p>
-  </div>
-</div>
+<site-modal></site-modal>
 
-<div class="genre-strip-mobile" id="genre-strip-mobile"></div>
-
-<section class="hero">
-  <div>
-    <p class="hero-eyebrow" id="hero-eyebrow">Афиша живой музыки · Крым</p>
-    <h1 class="hero-title">Живые концерты — от Ялты до Керчи</h1>
-    <p class="hero-sub">Джаз-клубы, акустические сеты, рок-вечера и этнические фестивали. Площадки по всему Крыму. Обновляется каждый день.</p>
-    <div class="hero-stats">
-      <div>
-        <div class="hero-stat-n" id="stat-events">—</div>
-        <div class="hero-stat-l">событий</div>
-      </div>
-      <div>
-        <div class="hero-stat-n" id="stat-venues">—</div>
-        <div class="hero-stat-l">площадок</div>
-      </div>
-      <div>
-        <div class="hero-stat-n" id="stat-cities">—</div>
-        <div class="hero-stat-l">городов</div>
-      </div>
-    </div>
   </div>
 
   <div class="featured" id="featured"></div>
@@ -961,37 +611,9 @@ footer {
   <div class="genre-grid" id="genre-grid"></div>
 </section>
 
-<footer>
-  <a href="index.html" class="footer-logo">местов<em>.нет</em></a>
-  <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
-</footer>
+<site-footer></site-footer>
 
 <script>
-function openSubModal() {
-  document.getElementById('sub-modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeSubModal() {
-  document.getElementById('sub-modal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeSubModal();
-});
-
-const GENRE_MAP = {
-  'джаз': 'jazz', 'рок': 'rock', 'русский рок': 'rock', 'панк-рок': 'rock',
-  'инди-рок': 'rock', 'метал': 'rock', 'инди': 'rock', 'авторская': 'rock',
-  'классика': 'classic', 'хоровая': 'classic', 'медитативная': 'classic',
-  'поп': 'pop', 'поп-рок': 'pop', 'лаунж': 'pop', 'хип-хоп': 'pop',
-  'каверы': 'pop', 'юмор': 'pop', 'шоу': 'pop', 'интерактив': 'pop',
-  'этно': 'folk', 'фолк-метал': 'folk', 'народная': 'folk',
-  'блюз': 'blues'
-};
-
-const GENRE_LABELS = {
-  jazz: 'Джаз', rock: 'Рок', folk: 'Фолк', blues: 'Блюз', classic: 'Классика', pop: 'Поп'
-};
 
 // Справочник городов подтягивается из cities.json (единый источник правды).
 // name → slug и slug → name; «Крым» имеет slug 'all'.
@@ -1011,7 +633,6 @@ const DOW = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 const starIcon = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`;
 const genreIcon = (g) => `<svg width="40" height="40" viewBox="0 0 80 80" fill="none"><path d="M28 56V28l36-8v8L36 36v20a8 8 0 1 1-8 0z" fill="white" opacity=".25"/><circle cx="28" cy="56" r="8" fill="white" opacity=".25"/><circle cx="64" cy="28" r="8" fill="white" opacity=".25"/></svg>`;
 
-function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
 function mapCity(raw) { return CITY_MAP[raw] || 'all'; }
 
 function parseDate(d) {
@@ -1255,9 +876,6 @@ load();
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2><span class="today-badge">Сегодня</span>1 июля, вт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Jawa. Хиты «Сектор Газа»</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">Jawa. Хиты «Сектор Газа» в Корабел, Керчь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/gruppa-jawa-sektor-gaza?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc3a3f27558985d459629e1973ea2f18.jpg" alt="Jawa. Хиты «Сектор Газа»" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>24 июля, чт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».
 
