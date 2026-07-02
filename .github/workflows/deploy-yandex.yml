@@ -32,12 +32,13 @@ jobs:
           mkdir -p _site
           # Файлы в корне
           cp index.html event.html genre.html admin.html _site/
-          cp events.json settings.json cities.json _site/
+          cp events.json settings.json venues.json cities.json _site/
           cp sitemap.xml robots.txt _site/
           cp yandex_c7b51fb2f9cdb188.html _site/
           # Папки целиком
           cp -r cities _site/
           cp -r images _site/
+          cp -r venues _site/
           echo "--- содержимое _site ---"
           ls -R _site | head -50
 
@@ -54,4 +55,13 @@ jobs:
             --endpoint-url "$ENDPOINT" \
             --delete \
             --exclude "images/*" \
+            --exclude "venues/*" \
+            --cache-control "public, max-age=300"
+
+      - name: Залить страницы заведений (venues/) с явным Content-Type)
+        run: |
+          aws s3 sync _site/venues "$BUCKET/venues" \
+            --endpoint-url "$ENDPOINT" \
+            --delete \
+            --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"

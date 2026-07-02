@@ -24,6 +24,7 @@ from pathlib import Path
 
 BASE_DIR      = Path(__file__).parent
 EVENTS_FILE   = BASE_DIR / "events.json"
+VENUES_FILE   = BASE_DIR / "venues.json"
 SETTINGS_FILE = BASE_DIR / "settings.json"
 INDEX_FILE    = BASE_DIR / "index.html"
 DOMAIN     = "https://mestov.net"
@@ -475,9 +476,519 @@ def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = 
 
     return src
 
+# ── Заведения ────────────────────────────────────────────────────────────────
+
+def load_venues() -> list[dict]:
+    if VENUES_FILE.exists():
+        return json.loads(VENUES_FILE.read_text(encoding="utf-8"))
+    return []
+
+
+def build_venue_alias_lookup(venues: list[dict]) -> dict[str, str]:
+    """Возвращает словарь raw_venue_string → venue_slug."""
+    lookup: dict[str, str] = {}
+    for v in venues:
+        for alias in v.get("aliases", []):
+            lookup[alias] = v["slug"]
+        # имя тоже добавляем на случай ручных правок settings.json
+        lookup[v["name"]] = v["slug"]
+    return lookup
+
+
+def resolve_venue_slugs(events: list[dict], lookup: dict[str, str]) -> None:
+    """Добавляет поле venue_slug к каждому событию (in-place)."""
+    for e in events:
+        raw = (e.get("venue") or "").strip()
+        e["venue_slug"] = lookup.get(raw)
+
+
+def render_past_event_list(events: list[dict], today: str,
+                           custom_names: Optional[dict] = None) -> str:
+    past = [e for e in events if e.get("date") and e["date"] < today]
+    if not past:
+        return ""
+    groups: dict[str, list] = defaultdict(list)
+    for e in past:
+        groups[e["date"]].append(e)
+    parts = []
+    for key in sorted(groups, reverse=True):  # сначала самые свежие прошедшие
+        grp = sorted(groups[key], key=lambda e: e.get("time") or "99:99")
+        cards = "\n".join(render_card(e, custom_names) for e in grp)
+        parts.append(
+            f'<div class="date-group">'
+            f'<h2 class="past-date">{fmt_date(key)}</h2>\n{cards}\n</div>'
+        )
+    return "\n".join(parts)
+
+
+def make_venue_jsonld(venue: dict, upcoming: list[dict],
+                      today: str, custom_names: Optional[dict] = None) -> str:
+    items: list[dict] = []
+
+    place: dict = {
+        "@type": "MusicVenue",
+        "name":  venue["name"],
+        "address": {
+            "@type":           "PostalAddress",
+            "addressLocality": venue.get("city") or "Крым",
+            "addressCountry":  "RU",
+        },
+    }
+    if venue.get("address"):
+        place["address"]["streetAddress"] = venue["address"]
+    items.append(place)
+
+    for e in upcoming[:20]:
+        if not e.get("date"):
+            continue
+        src_url = e.get("source_url") or ""
+        custom_name = (custom_names or {}).get(src_url)
+        time_ = e.get("time") or "00:00"
+        item: dict = {
+            "@type":     "MusicEvent",
+            "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
+            "startDate": f'{e["date"]}T{time_}:00+03:00',
+            "location":  {"@type": "MusicVenue", "name": venue["name"]},
+        }
+        if e.get("description"):
+            item["description"] = e["description"]
+        artist = custom_name or e.get("artist")
+        if artist:
+            item["performer"] = {"@type": "MusicGroup", "name": artist}
+        if e.get("image"):
+            item["image"] = e["image"]
+        items.append(item)
+
+    schema = {"@context": "https://schema.org", "@graph": items}
+    return (
+        '<script type="application/ld+json">\n'
+        + json.dumps(schema, ensure_ascii=False, indent=2)
+        + "\n</script>"
+    )
+
+
+# Блок nav + modal копируем из index.html один раз при генерации страниц.
+_NAV_CACHE: str = ""
+
+def _extract_nav_block() -> str:
+    global _NAV_CACHE
+    if _NAV_CACHE:
+        return _NAV_CACHE
+    src = INDEX_FILE.read_text(encoding="utf-8")
+    # Берём от <nav до закрытия модального блока (после </div> modal)
+    m = re.search(r'(<nav class="nav">.*?</div>\s*</div>)', src, re.DOTALL)
+    if m:
+        _NAV_CACHE = m.group(1).replace('href="index.html"', 'href="/"')
+    else:
+        _NAV_CACHE = '<nav class="nav"><a href="/" class="nav-logo">местов<em>.нет</em></a></nav>'
+    return _NAV_CACHE
+
+
+def make_venue_page(venue: dict, all_events: list[dict], today: str,
+                    css: str, custom_names: Optional[dict] = None) -> str:
+    import json as _json
+    slug    = venue["slug"]
+    name    = venue["name"]
+    city    = venue.get("city") or ""
+    address = venue.get("address") or ""
+    aliases = list(venue.get("aliases", [])) + [name]
+
+    v_events = [e for e in all_events if e.get("venue_slug") == slug]
+    upcoming = sorted(
+        [e for e in v_events if (e.get("date") or "") >= today],
+        key=lambda e: (e.get("date") or "9999", e.get("time") or "99:99"),
+    )
+
+    city_prep   = CITY_PREP.get(city, f"в {city}" if city else "")
+    title       = f"{name} — афиша {city_prep} · Местов.Нет" if city_prep else f"{name} · Местов.Нет"
+    description = (f"Концерты и живая музыка в {name}"
+                   + (f", {city_prep}" if city_prep else "")
+                   + f". {len(upcoming)} ближайших событий. Расписание и билеты.")
+    canonical   = f"{DOMAIN}/venues/{slug}"
+    jsonld      = make_venue_jsonld(venue, upcoming, today, custom_names)
+    jsonld_bc   = make_jsonld_breadcrumbs([
+        ("Местов.Нет", "/"),
+        (city, f"/cities/{city_slug(city)}.html") if city else ("Крым", "/"),
+        (name, ""),
+    ])
+
+    # Адрес + карта — под заголовком слева
+    if address:
+        maps_q   = f"{address}, {city}, Крым" if city else f"{address}, Крым"
+        maps_url = f"https://yandex.ru/maps/?text={maps_q.replace(' ', '+')}"
+        address_block = (
+            f'<div class="venue-address-block">'
+            f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
+            f'<a href="{esc(maps_url)}" target="_blank" rel="noopener" class="venue-map-link">'
+            f'Открыть на Яндекс\xa0Картах</a>'
+            f'</div>'
+        )
+    else:
+        address_block = ""
+
+    # Кол-во актуальных событий — справа
+    event_count  = len(upcoming)
+    count_word   = "событие" if event_count == 1 else "события" if event_count < 5 else "событий"
+    hero_right   = (
+        f'<div class="genre-hero-meta">'
+        f'<div class="genre-hero-count">{event_count}</div>'
+        f'<div class="genre-hero-count-label">{count_word}</div>'
+        f'</div>'
+    ) if event_count else ""
+
+    aliases_json = _json.dumps(aliases, ensure_ascii=False)
+    eyebrow_city = (f'· <a href="/cities/{city_slug(city)}.html">{esc(city)}</a>' if city else "· Крым")
+    nav_block    = _extract_nav_block()
+
+    return f'''<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)}</title>
+  <meta name="description" content="{esc(description)}">
+  <link rel="canonical" href="{canonical}">
+  <meta property="og:title" content="{esc(title)}">
+  <meta property="og:description" content="{esc(description)}">
+  <meta property="og:type" content="website">
+  {jsonld}
+  {jsonld_bc}
+  <style>
+{css}
+  /* ── Герой заведения (genre-hero CSS из genre.html) ── */
+  .genre-hero {{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 64px) var(--gutter) clamp(28px, 4vw, 44px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }}
+  .genre-hero-eyebrow {{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }}
+  .genre-hero-eyebrow a {{ color: var(--muted); text-decoration: none; }}
+  .genre-hero-eyebrow a:hover {{ color: var(--accent); }}
+  .genre-hero-title {{
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5.5vw, 68px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.0;
+    color: var(--fg);
+  }}
+  .venue-description {{
+    font-size: 15px;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 560px;
+    margin-top: 14px;
+  }}
+  .genre-hero-meta {{
+    text-align: right;
+    flex-shrink: 0;
+  }}
+  .genre-hero-count {{
+    font-family: var(--font-mono);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: -0.05em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }}
+  .genre-hero-count-label {{
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }}
+  .venue-address-block {{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 14px;
+  }}
+  .venue-hero-address {{
+    font-size: 14px;
+    color: var(--muted);
+  }}
+  .venue-map-link {{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 6px 14px;
+    transition: background 0.12s, border-color 0.12s;
+    white-space: nowrap;
+  }}
+  .venue-map-link:hover {{ background: var(--border); }}
+  /* ── event-row CSS (из genre.html) ── */
+  .bg-jazz    {{ background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }}
+  .bg-folk    {{ background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }}
+  .bg-rock    {{ background: linear-gradient(135deg, oklch(22% 0.04 15),  oklch(32% 0.06 20)); }}
+  .bg-blues   {{ background: linear-gradient(135deg, oklch(22% 0.06 270), oklch(30% 0.10 265)); }}
+  .bg-classic {{ background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }}
+  .bg-pop     {{ background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }}
+  .events-list {{ max-width: var(--max-w); margin: 0 auto; }}
+  .event-row {{
+    display: grid;
+    grid-template-columns: 80px 80px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    padding: clamp(18px, 3vw, 28px) var(--gutter);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }}
+  .event-row:hover {{ background: var(--surface); }}
+  .event-row.past {{ opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }}
+  .event-row.past:hover {{ opacity: 1; filter: none; }}
+  .row-date {{ flex-shrink: 0; text-align: center; }}
+  .row-date-day {{ font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }}
+  .row-date-month {{ font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }}
+  .row-date-dow {{ font-size: 11px; color: var(--muted); margin-top: 2px; }}
+  .row-thumb {{ width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }}
+  .row-thumb svg {{ opacity: 0.22; }}
+  .row-thumb img {{ width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 8px; }}
+  .row-artist {{ font-family: var(--font-display); font-size: clamp(18px, 2.5vw, 24px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; color: var(--fg); margin-bottom: 6px; }}
+  .row-desc {{ font-size: 14px; color: var(--muted); line-height: 1.55; max-width: 560px; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+  .row-venue {{ display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }}
+  .row-venue-dot {{ width: 3px; height: 3px; border-radius: 50%; background: var(--border); flex-shrink: 0; }}
+  .row-right {{ text-align: right; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }}
+  .row-time {{ font-family: var(--font-mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }}
+  .row-price {{ font-size: 14px; font-weight: 600; color: var(--fg); }}
+  .row-btn {{ display: inline-flex; align-items: center; padding: 8px 16px; background: oklch(58% 0.18 255 / 0.10); color: var(--accent); border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; transition: opacity 0.12s; white-space: nowrap; text-decoration: none; }}
+  .row-btn:hover {{ opacity: 0.80; }}
+  .pill {{ display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 0.02em; }}
+  .pill-jazz    {{ background: oklch(58% 0.18 255 / 0.10); color: var(--accent); }}
+  .pill-rock    {{ background: oklch(55% 0.15 15  / 0.10); color: oklch(50% 0.15 15); }}
+  .pill-folk    {{ background: oklch(50% 0.12 150 / 0.10); color: oklch(46% 0.12 150); }}
+  .pill-blues   {{ background: oklch(52% 0.14 270 / 0.10); color: oklch(50% 0.16 270); }}
+  .pill-classic {{ background: oklch(52% 0.10 60  / 0.10); color: oklch(46% 0.10 60); }}
+  .pill-pop     {{ background: oklch(58% 0.16 320 / 0.10); color: oklch(54% 0.16 320); }}
+  .archive-link a {{ display: flex; align-items: center; justify-content: center; gap: 6px; padding: 22px var(--gutter); font-size: 14px; font-weight: 500; color: var(--muted); border-top: 1px solid var(--border); transition: color 0.12s, background 0.12s; }}
+  .archive-link a:hover {{ color: var(--fg); background: var(--surface); }}
+  .past-heading {{ max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }}
+  .loading {{ padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }}
+  @media (max-width: 640px) {{
+    .event-row {{ grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }}
+    .row-thumb {{ width: 60px; height: 60px; }}
+    .row-right {{ display: none; }}
+    .row-artist {{ font-size: 16px; }}
+    .genre-hero {{ justify-content: center; text-align: center; }}
+    .genre-hero-eyebrow {{ text-align: center; }}
+    .venue-address-block {{ align-items: center; }}
+    .genre-hero-meta {{ width: 100%; text-align: center; }}
+    .genre-hero-count {{ font-size: 36px; }}
+  }}
+  </style>
+</head>
+<body>
+
+{nav_block}
+
+<div class="genre-hero">
+  <div>
+    <div class="genre-hero-eyebrow">
+      <a href="/">Местов.Нет</a>
+      {eyebrow_city}
+    </div>
+    <h1 class="genre-hero-title">{esc(name)}</h1>
+    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
+    {address_block}
+  </div>
+  {hero_right}
+</div>
+
+<div class="events-list" id="events-list">
+  <div class="loading">Загрузка…</div>
+</div>
+
+<div class="archive-link" id="archive-link"></div>
+
+<div class="past-heading" id="past-heading" hidden>Прошедшие</div>
+<div class="events-list" id="past-list"></div>
+
+<footer>
+  <a href="/" class="footer-logo">местов<em>.нет</em></a>
+  <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
+</footer>
+
+<script>
+const VENUE_ALIASES = {aliases_json};
+
+const GENRE_MAP = {{
+  'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
+  'инди-рок':'rock','метал':'rock','инди':'rock','авторская':'rock',
+  'классика':'classic','хоровая':'classic','медитативная':'classic',
+  'поп':'pop','поп-рок':'pop','лаунж':'pop','хип-хоп':'pop',
+  'каверы':'pop','юмор':'pop','шоу':'pop','интерактив':'pop',
+  'этно':'folk','фолк-метал':'folk','народная':'folk','блюз':'blues'
+}};
+const GENRE_LABELS = {{ jazz:'Джаз', rock:'Рок', folk:'Фолк', blues:'Блюз', classic:'Классика', pop:'Поп' }};
+const MONTHS_GEN = ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+const DOW = ['вс','пн','вт','ср','чт','пт','сб'];
+
+function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
+function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
+function parseDateTime(e) {{
+  const d = parseDate(e.date);
+  const m = e.time && e.time.match(/(\d{{1,2}}):(\d{{2}})/);
+  if (m) d.setHours(+m[1], +m[2], 0, 0); else d.setHours(23, 59, 59, 0);
+  return d;
+}}
+function formatDate(d) {{
+  return {{ day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] }};
+}}
+function priceText(p) {{
+  if (!p) return 'Вход свободный';
+  const low = p.toLowerCase();
+  return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
+}}
+
+function applySettings(data, settings) {{
+  const hiddenSet = new Set(settings.hidden || []);
+  const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
+    images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
+    descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
+  return data.map((e, i) => {{
+    const url = e.source_url || '';
+    if (hiddenSet.has(url)) return null;
+    const ev = {{ ...e }};
+    if (url in ov.names)        ev.artist      = ov.names[url];
+    if (url in ov.times)        ev.time        = ov.times[url];
+    if (url in ov.prices)       ev.price       = ov.prices[url];
+    if (url in ov.images)       ev.image       = ov.images[url] === null ? null : ov.images[url];
+    if (url in ov.cities)       ev.source_city = ov.cities[url];
+    if (url in ov.venues)       ev.venue       = ov.venues[url];
+    if (url in ov.descriptions) ev.description = ov.descriptions[url];
+    if (url in ov.genres)       ev.genre       = ov.genres[url];
+    return ev;
+  }}).filter(Boolean);
+}}
+
+const genreIcon = (g) => `<svg width="40" height="40" viewBox="0 0 80 80" fill="none"><path d="M28 56V28l36-8v8L36 36v20a8 8 0 1 1-8 0z" fill="white" opacity=".25"/><circle cx="28" cy="56" r="8" fill="white" opacity=".25"/><circle cx="64" cy="28" r="8" fill="white" opacity=".25"/></svg>`;
+
+function eventRowHtml(ev, extraClass) {{
+  const genre = mapGenre(ev.genre);
+  const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
+  const price = ev.priceDisplay || priceText(ev.price);
+  const thumbHtml = ev.image
+    ? `<img src="${{ev.image}}" alt="${{ev.artist || ''}}" loading="lazy">`
+    : `<div class="bg-${{genre}}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${{genreIcon(genre)}}</div>`;
+  return `<a href="/event.html?id=${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
+    <div class="row-date">
+      <div class="row-date-day">${{fmt.day}}</div>
+      <div class="row-date-month">${{fmt.month}}</div>
+      <div class="row-date-dow">${{fmt.dow}}</div>
+    </div>
+    <div class="row-thumb">${{thumbHtml}}</div>
+    <div>
+      <div class="row-artist">${{ev.artist || '—'}}</div>
+      <div class="row-desc">${{ev.description || ''}}</div>
+      <div class="row-venue">
+        <span>${{ev.venue || '—'}}</span>
+        <span class="row-venue-dot"></span>
+        <span>${{ev.source_city || '—'}}</span>
+      </div>
+    </div>
+    <div class="row-right">
+      ${{ev.time ? `<span class="row-time">${{ev.time}}</span>` : ''}}
+      <span class="row-price">${{price}}</span>
+      <span class="row-btn">Подробнее</span>
+    </div>
+  </a>`;
+}}
+
+function renderList(events, containerId, extraClass) {{
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = events.length
+    ? events.map(ev => eventRowHtml(ev, extraClass)).join('')
+    : '<div class="loading">Нет событий</div>';
+}}
+
+let pastEvents = [];
+let pastExpanded = false;
+
+function renderArchive() {{
+  const el = document.getElementById('archive-link');
+  if (!pastEvents.length) {{ el.innerHTML = ''; return; }}
+  const word = pastEvents.length === 1 ? 'событие' : pastEvents.length < 5 ? 'события' : 'событий';
+  el.innerHTML = `<a href="#">
+    ${{pastExpanded ? '↑ Скрыть прошедшие' : `↓ Показать прошедшие — ${{pastEvents.length}} ${{word}}`}}
+  </a>`;
+  el.querySelector('a').onclick = (e) => {{
+    e.preventDefault();
+    pastExpanded = !pastExpanded;
+    document.getElementById('past-heading').hidden = !pastExpanded;
+    if (pastExpanded) renderList(pastEvents, 'past-list', 'past');
+    else document.getElementById('past-list').innerHTML = '';
+    renderArchive();
+  }};
+}}
+
+async function load() {{
+  try {{
+    const [res, settingsRes] = await Promise.all([
+      fetch('/events.json'),
+      fetch('/settings.json').catch(() => null)
+    ]);
+    const data = await res.json();
+    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
+    const patched  = applySettings(data, settings);
+    const now      = new Date();
+    const aliasSet = new Set(VENUE_ALIASES);
+
+    const all = patched
+      .filter(e => e.date && e.venue && aliasSet.has(e.venue))
+      .map(e => ({{ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }}))
+      .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
+
+    const upcoming = all.filter(e => parseDateTime(e) >= now);
+    pastEvents     = all.filter(e => parseDateTime(e) <  now).reverse();
+
+    renderList(upcoming, 'events-list');
+    renderArchive();
+
+    // Жанры в шапке — все жанры сайта, не только этого заведения
+    const genreCounts = {{}};
+    patched.forEach(e => {{ const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; }});
+    const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
+    const navEl = document.getElementById('nav-genres');
+    if (navEl) navEl.innerHTML = activeGenres.map(g =>
+      `<a href="/genre.html?g=${{g}}" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
+    ).join('');
+  }} catch(err) {{
+    document.getElementById('events-list').innerHTML = '<div class="loading">Не удалось загрузить события</div>';
+  }}
+}}
+load();
+</script>
+</body>
+</html>'''
+
+
 # ── sitemap.xml ───────────────────────────────────────────────────────────────
 
-def make_sitemap(cities: list[str]) -> str:
+def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None) -> str:
     today = today_str()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -492,6 +1003,8 @@ def make_sitemap(cities: list[str]) -> str:
     for c in sorted(cities):
         s = city_slug(c)
         lines.append(url(f"{DOMAIN}/cities/{s}.html", "daily", "0.8"))
+    for s in sorted(venue_slugs or []):
+        lines.append(url(f"{DOMAIN}/venues/{s}", "weekly", "0.7"))
 
     lines.append("</urlset>")
     return "\n".join(lines)
@@ -528,6 +1041,11 @@ def main() -> None:
 
     # custom_names больше не нужен отдельно — names уже применены в events
     custom_names: dict = {}
+
+    # Загружаем реестр заведений и привязываем venue_slug к каждому событию
+    venues = load_venues()
+    venue_lookup = build_venue_alias_lookup(venues)
+    resolve_venue_slugs(events, venue_lookup)
 
     today  = today_str()
     css    = extract_css()
@@ -567,19 +1085,43 @@ def main() -> None:
         future_count = len([e for e in city_events if (e.get("date") or "") >= today])
         print(f"    ✓ cities/{slug}.html  ({future_count} событий)")
 
-    # 3. sitemap.xml
+    # 3. Генерируем страницы заведений (venues/{slug} без расширения)
+    venues_dir = BASE_DIR / "venues"
+    venues_dir.mkdir(exist_ok=True)
+    venues_with_events = [
+        v for v in venues
+        if any(e.get("venue_slug") == v["slug"] for e in events)
+    ]
+    print(f"🏟   Генерируем страницы заведений ({len(venues_with_events)}) …")
+    generated_venue_slugs: list[str] = []
+    for venue in venues_with_events:
+        page = make_venue_page(venue, events, today, css, custom_names)
+        out  = venues_dir / venue["slug"]  # без расширения .html
+        out.write_text(page, encoding="utf-8")
+        v_upcoming = len([e for e in events
+                          if e.get("venue_slug") == venue["slug"]
+                          and (e.get("date") or "") >= today])
+        v_past     = len([e for e in events
+                          if e.get("venue_slug") == venue["slug"]
+                          and (e.get("date") or "9999") < today])
+        generated_venue_slugs.append(venue["slug"])
+        print(f"    ✓ venues/{venue['slug']}  "
+              f"({v_upcoming} предстоящих, {v_past} прошедших)")
+
+    # 4. sitemap.xml
     print("🗺   Генерируем sitemap.xml …")
-    sitemap = make_sitemap(cities_with_events)
+    sitemap = make_sitemap(cities_with_events, generated_venue_slugs)
     (BASE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("    ✓ sitemap.xml")
 
-    # 4. robots.txt
+    # 5. robots.txt
     robots = make_robots()
     (BASE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("    ✓ robots.txt")
 
     print("\n✅  Готово! Все страницы сгенерированы.")
     print(f"    Города: {', '.join(cities_with_events)}")
+    print(f"    Заведений: {len(generated_venue_slugs)}")
     print(f"\n💡  Следующий шаг: отправьте sitemap.xml в Яндекс.Вебмастер и Google Search Console:")
     print(f"    {DOMAIN}/sitemap.xml")
 

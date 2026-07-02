@@ -221,6 +221,16 @@ a { color: inherit; text-decoration: none; }
   font-size: 14px;
   color: var(--muted);
 }
+.event-info-venue a, .venue-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s, color 0.15s;
+}
+.event-info-venue a:hover, .venue-name a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 .event-info-meta {
   display: flex;
   gap: 24px;
@@ -1045,6 +1055,7 @@ let allEvents = [];
 let allUpcoming = [];
 let currentEventId = null;
 let shownCount = 4;
+let venueByAlias = {};  // raw venue string → {slug, address}
 
 async function load() {
   console.log('load started');
@@ -1054,9 +1065,10 @@ async function load() {
   console.log('id:', id, 'idx fallback:', idxFallback);
 
   try {
-    const [res, settingsRes] = await Promise.all([
+    const [res, settingsRes, venuesRes] = await Promise.all([
       fetch('events.json'),
-      fetch('settings.json').catch(() => null)
+      fetch('settings.json').catch(() => null),
+      fetch('venues.json').catch(() => null)
     ]);
     console.log('fetch status:', res.status);
     const data = await res.json();
@@ -1076,6 +1088,14 @@ async function load() {
     const ovVenues    = settings.venues       || {};
     const ovDescs     = settings.descriptions || {};
     const ovGenres    = settings.genres       || {};
+
+    if (venuesRes && venuesRes.ok) {
+      const venuesList = await venuesRes.json().catch(() => []);
+      venuesList.forEach(v => {
+        (v.aliases || []).forEach(alias => { venueByAlias[alias] = v; });
+        venueByAlias[v.name] = v;
+      });
+    }
 
     function applySettings(e) {
       const url = e.source_url || '';
@@ -1194,7 +1214,12 @@ function render(event) {
           <div class="event-info">
             <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
             <h1 class="event-info-artist">${event.artist || '—'}</h1>
-            <div class="event-info-venue">${event.venue || '—'} · ${event.source_city || '—'}</div>
+            <div class="event-info-venue">${(function(){
+              const vd = venueByAlias[event.venue || ''];
+              const name = event.venue || '—';
+              const city = event.source_city || '—';
+              return (vd ? `<a href="/venues/${vd.slug}">${name}</a>` : name) + ' · ' + city;
+            })()}</div>
             <div class="event-info-meta">
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Дата</span>
@@ -1242,16 +1267,21 @@ function render(event) {
             </div>
 
             <div class="section-label">Место проведения</div>
-            <div class="venue-info">
-              <div class="venue-name">${event.venue || '—'}, ${event.source_city || '—'}</div>
-              <a href="https://yandex.ru/maps/?text=${encodeURIComponent((event.venue || '') + ', ' + (event.source_city || '') + ', Крым')}" target="_blank" rel="noopener" class="venue-map-link">
+            ${(function(){
+              const vd = venueByAlias[event.venue || ''];
+              const name = event.venue || '—';
+              const city = event.source_city || '—';
+              const nameHtml = vd ? `<a href="/venues/${vd.slug}">${name}</a>` : name;
+              const mapHtml = (vd && vd.address) ? `
+              <a href="https://yandex.ru/maps/?text=${encodeURIComponent(vd.address + ', ' + city + ', Крым')}" target="_blank" rel="noopener" class="venue-map-link">
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"/>
                   <circle cx="8" cy="6.5" r="1.75"/>
                 </svg>
                 Открыть на Яндекс Картах
-              </a>
-            </div>
+              </a>` : '';
+              return `<div class="venue-info"><div class="venue-name">${nameHtml}, ${city}</div>${mapHtml}</div>`;
+            })()}
           </div>
         </div>
         </div>
