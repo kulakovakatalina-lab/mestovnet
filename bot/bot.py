@@ -215,7 +215,7 @@ def format_digest(events, genres, cities):
             place_bits.append(html.escape(e["venue"]))
         place_bits.append(price_text(e["price"]))
         place = " · ".join(place_bits)
-        link = f"{SITE}/event.html?id={e['id']}"
+        link = f"{SITE}/event/{e['id']}"
         lines.append(f'📅 {when} — <a href="{link}"><b>{artist}</b></a>\n'
                      f"📍 {place}\n")
 

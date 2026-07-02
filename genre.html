@@ -896,7 +896,7 @@ function eventRowHtml(ev, extraClass) {
     ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
 
-  return `<a href="event.html?id=${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${ev.city}">
+  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${ev.city}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
