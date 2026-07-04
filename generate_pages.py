@@ -1092,7 +1092,8 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
 # ── robots.txt ────────────────────────────────────────────────────────────────
 
 def make_robots() -> str:
-    return f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n"
+    return (f"User-agent: *\nAllow: /\nDisallow: /404.html\n"
+            f"Sitemap: {DOMAIN}/sitemap.xml\n")
 
 # ── Главная функция ───────────────────────────────────────────────────────────
 
