@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Хай&#x27;Петри», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Группа «Хай&#x27;Петри», Группа «Домино», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Хай&#x27;Петри» — Бар рок-н-ролльщики, Севастополь · Местов.Нет</title>
+<title>Группа «Хай&#x27;Петри», Группа «Домино» — Бар рок-н-ролльщики, Севастополь · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -947,8 +947,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/3b69d12f">
-<meta property="og:title" content="Группа «Хай&#x27;Петри» — Бар рок-н-ролльщики, Севастополь · Местов.Нет">
-<meta property="og:description" content="Группа «Хай&#x27;Петри», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Группа «Хай&#x27;Петри», Группа «Домино» — Бар рок-н-ролльщики, Севастополь · Местов.Нет">
+<meta property="og:description" content="Группа «Хай&#x27;Петри», Группа «Домино», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
 <script type="application/ld+json">
@@ -957,7 +957,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Группа «Хай'Петри»",
+      "name": "Группа «Хай'Петри», Группа «Домино»",
       "startDate": "2026-07-18T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -971,7 +971,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Группа «Хай'Петри» и рок-поп-хиты на двух языках. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Хай'Петри»"
+        "name": "Группа «Хай'Петри», Группа «Домино»"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     }
@@ -979,7 +979,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Группа «Хай'Петри»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Группа «Хай'Петри», Группа «Домино»"}]}
 </script>
 </head>
 <body>

@@ -14,7 +14,6 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Театр им. А.П. Чехова — афиша в Ялте · Местов.Нет</title>
@@ -39,16 +38,16 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Семейный альбом",
+      "name": "Семейный альбом, Крымский камерный оркестр",
       "startDate": "2026-07-05T15:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Театр им. А.П. Чехова"
       },
-      "description": "Концерт «Семейный альбом».",
+      "description": "Концерт «Семейный альбом» ко Дню семьи, любви и верности: проникновенные мелодии, объединяющие поколения. Билеты: concert-kko.ru.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Семейный альбом"
+        "name": "Семейный альбом, Крымский камерный оркестр"
       },
       "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg"
     },

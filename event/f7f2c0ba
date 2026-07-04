@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Семейный альбом, Колонный зал театра им. А.П. Чехова, в Ялте, 5 июля, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Семейный альбом, Крымский камерный оркестр, Колонный зал театра им. А.П. Чехова, в Ялте, 5 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Семейный альбом — Колонный зал театра им. А.П. Чехова, Ялта · Местов.Нет</title>
+<title>Семейный альбом, Крымский камерный оркестр — Колонный зал театра им. А.П. Чехова, Ялта · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -947,8 +947,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/f7f2c0ba">
-<meta property="og:title" content="Семейный альбом — Колонный зал театра им. А.П. Чехова, Ялта · Местов.Нет">
-<meta property="og:description" content="Семейный альбом, Колонный зал театра им. А.П. Чехова, в Ялте, 5 июля, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Семейный альбом, Крымский камерный оркестр — Колонный зал театра им. А.П. Чехова, Ялта · Местов.Нет">
+<meta property="og:description" content="Семейный альбом, Крымский камерный оркестр, Колонный зал театра им. А.П. Чехова, в Ялте, 5 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/24052074457cb6c80c25337c6936efa4.jpg">
 <script type="application/ld+json">
@@ -957,7 +957,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Семейный альбом",
+      "name": "Семейный альбом, Крымский камерный оркестр",
       "startDate": "2026-07-05T15:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -968,10 +968,10 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт «Семейный альбом».",
+      "description": "Концерт «Семейный альбом» ко Дню семьи, любви и верности: проникновенные мелодии, объединяющие поколения. Билеты: concert-kko.ru.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Семейный альбом"
+        "name": "Семейный альбом, Крымский камерный оркестр"
       },
       "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg"
     }
@@ -979,7 +979,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Семейный альбом"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Семейный альбом, Крымский камерный оркестр"}]}
 </script>
 </head>
 <body>
