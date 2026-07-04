@@ -1031,6 +1031,16 @@ const genreIcon = (g) => {
 
 function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
 
+// Данные событий приходят из чужих каналов — экранируем перед вставкой в innerHTML.
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+// В src/href пускаем только http(s) и локальные пути (не //host).
+function safeUrl(u) {
+  u = String(u ?? '');
+  return /^(https?:\/\/|\/(?!\/))/i.test(u) ? escapeHtml(u) : '';
+}
+
 function parseDate(d) {
   const parts = d.split('-');
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
@@ -1193,7 +1203,7 @@ async function load() {
     render(event);
   } catch (err) {
     console.error('load error:', err);
-    document.getElementById('content').innerHTML = '<div class="loading">Не удалось загрузить: ' + err.message + '</div>';
+    document.getElementById('content').innerHTML = '<div class="loading">Не удалось загрузить: ' + escapeHtml(err.message) + '</div>';
   }
 }
 
@@ -1204,10 +1214,10 @@ function render(event) {
   const posterHtml = images.length
     ? `<div class="event-poster-wrap">${
         images.length === 1
-          ? `<img src="${images[0]}" alt="${event.artist || ''}" loading="lazy">`
+          ? `<img src="${safeUrl(images[0])}" alt="${escapeHtml(event.artist)}" loading="lazy">`
           : `<div class="carousel" id="posterCarousel">
               <div class="carousel-track" id="carouselTrack">
-                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${img}" alt="${event.artist || ''}" loading="lazy"></div>`).join('')}
+                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${safeUrl(img)}" alt="${escapeHtml(event.artist)}" loading="lazy"></div>`).join('')}
               </div>
               <button class="carousel-btn carousel-btn-prev" id="carouselPrev">&#8249;</button>
               <button class="carousel-btn carousel-btn-next" id="carouselNext">&#8250;</button>
@@ -1220,12 +1230,12 @@ function render(event) {
 
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="/event/${e.id}" class="mini-card">
-      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card">
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
-        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
-        <div class="mini-artist">${e.artist || '—'}</div>
-        <div class="mini-venue">${e.venue || '—'} · ${e.source_city || '—'}</div>
+        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
+        <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
       </div>
     </a>
   `).join('');
@@ -1244,12 +1254,12 @@ function render(event) {
           <div class="event-content-col">
           <div class="event-info">
             <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
-            <h1 class="event-info-artist">${event.artist || '—'}</h1>
+            <h1 class="event-info-artist">${escapeHtml(event.artist) || '—'}</h1>
             <div class="event-info-venue">${(function(){
               const vd = venueByAlias[event.venue || ''];
-              const name = event.venue || '—';
-              const city = event.source_city || '—';
-              return (vd ? `<a href="/venues/${vd.slug}">${name}</a>` : name) + ' · ' + city;
+              const name = escapeHtml(event.venue) || '—';
+              const city = escapeHtml(event.source_city) || '—';
+              return (vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name) + ' · ' + city;
             })()}</div>
             <div class="event-info-meta">
               <div class="event-info-meta-item">
@@ -1259,11 +1269,11 @@ function render(event) {
               ${event.time ? `
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Начало</span>
-                <span class="event-info-meta-value mono">${event.time}</span>
+                <span class="event-info-meta-value mono">${escapeHtml(event.time)}</span>
               </div>` : ''}
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Стоимость</span>
-                <span class="event-info-meta-value">${event.priceDisplay}</span>
+                <span class="event-info-meta-value">${escapeHtml(event.priceDisplay)}</span>
               </div>
             </div>
             <div class="event-info-actions">
@@ -1274,7 +1284,7 @@ function render(event) {
                 </svg>
                 Поделиться
               </button>
-              <a href="${event.source_url || '#'}" target="_blank" rel="noopener" class="event-source-btn">
+              <a href="${safeUrl(event.source_url) || '#'}" target="_blank" rel="noopener" class="event-source-btn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                   <polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/>
@@ -1286,15 +1296,15 @@ function render(event) {
 
           <div class="event-main">
             <div class="section-label">О мероприятии</div>
-            <p class="about-text">${event.description || 'Информация уточняется.'}</p>
+            <p class="about-text">${escapeHtml(event.description) || 'Информация уточняется.'}</p>
             <div class="about-genre"><span class="pill pill-${event.genre}">${GENRE_LABELS[event.genre]}</span></div>
 
             <div class="section-label">Место проведения</div>
             ${(function(){
               const vd = venueByAlias[event.venue || ''];
-              const name = event.venue || '—';
-              const city = event.source_city || '—';
-              const nameHtml = vd ? `<a href="/venues/${vd.slug}">${name}</a>` : name;
+              const name = escapeHtml(event.venue) || '—';
+              const city = escapeHtml(event.source_city) || '—';
+              const nameHtml = vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name;
               const mapHtml = (vd && vd.address) ? `
               <a href="https://yandex.ru/maps/?text=${encodeURIComponent(vd.address + ', ' + city + ', Крым')}" target="_blank" rel="noopener" class="venue-map-link">
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1360,12 +1370,12 @@ function loadMore() {
 function renderMoreCards() {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="/event/${e.id}" class="mini-card">
-      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${e.image}" alt="${e.artist || ''}" loading="lazy">` : starIcon}</div>
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card">
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy">` : starIcon}</div>
       <div class="mini-body">
-        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${e.time}` : ''}</div>
-        <div class="mini-artist">${e.artist || '—'}</div>
-        <div class="mini-venue">${e.venue || '—'} · ${e.source_city || '—'}</div>
+        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
+        <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
       </div>
     </a>
   `).join('');
