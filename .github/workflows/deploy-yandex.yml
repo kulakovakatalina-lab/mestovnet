@@ -76,6 +76,15 @@ jobs:
             --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"
 
+      # Настройка хостинга бакета: главная — index.html, ошибки — 404.html.
+      # Идемпотентно: безопасно выполнять при каждом деплое.
+      - name: Настроить документы веб-сайта (index + 404)
+        run: |
+          aws s3api put-bucket-website \
+            --bucket mestov.net \
+            --endpoint-url "$ENDPOINT" \
+            --website-configuration '{"IndexDocument":{"Suffix":"index.html"},"ErrorDocument":{"Key":"404.html"}}'
+
       # Smoke-проверка прода: если что-то сломано — прогон красный.
       # ?v=RUN_ID обходит 5-минутный кэш CDN, чтобы проверялась свежая версия.
       - name: Проверить сайт после деплоя
