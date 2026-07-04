@@ -31,7 +31,7 @@ jobs:
           rm -rf _site
           mkdir -p _site
           # Файлы в корне
-          cp index.html event.html genre.html admin.html _site/
+          cp index.html event.html genre.html admin.html 404.html _site/
           cp events.json settings.json venues.json cities.json _site/
           cp sitemap.xml robots.txt _site/
           cp yandex_c7b51fb2f9cdb188.html _site/
@@ -110,5 +110,9 @@ jobs:
           echo "4) Страница города открывается"
           curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
+
+          echo "5) Страница 404 на месте и закрыта от индексации"
+          curl -sfSL "$SITE/404.html$V" -o /tmp/404.html
+          grep -qi "noindex" /tmp/404.html || { echo "FAIL: в 404.html нет noindex"; exit 1; }
 
           echo "Все проверки прошли ✅"
