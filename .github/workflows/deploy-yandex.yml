@@ -85,8 +85,8 @@ jobs:
           V="?v=${{ github.run_id }}"
 
           echo "1) Главная отвечает и содержит контент"
-          HOME_HTML=$(curl -sfSL "$SITE/$V")
-          echo "$HOME_HTML" | grep -qi "местов" || { echo "FAIL: на главной нет названия сайта"; exit 1; }
+          curl -sfSL "$SITE/$V" -o /tmp/home.html
+          grep -qi "местов" /tmp/home.html || { echo "FAIL: на главной нет названия сайта"; exit 1; }
 
           echo "2) events.json валиден и не пустой"
           curl -sfSL "$SITE/events.json$V" -o /tmp/events.json
@@ -100,13 +100,15 @@ jobs:
           echo "3) Первая страница события из sitemap открывается"
           EVENT_URL=$(curl -sfSL "$SITE/sitemap.xml$V" | grep -o 'https://mestov.net/event/[^<]*' | head -1)
           if [ -n "$EVENT_URL" ]; then
-            curl -sfSL "$EVENT_URL$V" | grep -qi "местов" || { echo "FAIL: страница события пустая: $EVENT_URL"; exit 1; }
+            curl -sfSL "$EVENT_URL$V" -o /tmp/event.html
+            grep -qi "местов" /tmp/event.html || { echo "FAIL: страница события пустая: $EVENT_URL"; exit 1; }
             echo "OK: $EVENT_URL"
           else
             echo "В sitemap нет страниц событий — пропускаю"
           fi
 
           echo "4) Страница города открывается"
-          curl -sfSL "$SITE/cities/sevastopol.html$V" | grep -qi "местов" || { echo "FAIL: страница города пустая"; exit 1; }
+          curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
+          grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
 
           echo "Все проверки прошли ✅"
