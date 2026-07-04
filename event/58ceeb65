@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Дима Резник, Бар рок-н-ролльщики, в Севастополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Дуэт «МысКрыма», Рок-н-рольщики в Симферополе, в Симферополе, 17 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Дима Резник — Бар рок-н-ролльщики, Севастополь · Местов.Нет</title>
+<title>Дуэт «МысКрыма» — Рок-н-рольщики в Симферополе, Симферополь · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -946,40 +946,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/fd57288c">
-<meta property="og:title" content="Дима Резник — Бар рок-н-ролльщики, Севастополь · Местов.Нет">
-<meta property="og:description" content="Дима Резник, Бар рок-н-ролльщики, в Севастополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/58ceeb65">
+<meta property="og:title" content="Дуэт «МысКрыма» — Рок-н-рольщики в Симферополе, Симферополь · Местов.Нет">
+<meta property="og:description" content="Дуэт «МысКрыма», Рок-н-рольщики в Симферополе, в Симферополе, 17 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
+<meta property="og:image" content="https://mestov.net/images/events/db97efe8913a933b2fd182cda237c4d3.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Дима Резник",
-      "startDate": "2026-07-24T21:00:00+03:00",
+      "name": "Дуэт «МысКрыма»",
+      "startDate": "2026-07-17T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Бар рок-н-ролльщики",
+        "name": "Рок-н-рольщики в Симферополе",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Русский рок и поп-рок в акустике — Дима Резник.",
+      "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Дима Резник"
+        "name": "Дуэт «МысКрыма»"
       },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Дима Резник"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Дуэт «МысКрыма»"}]}
 </script>
 </head>
 <body>
