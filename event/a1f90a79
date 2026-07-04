@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Пиво-понг (beerpong), Бар рок-н-ролльщики, в Симферополе, 19 июля, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Таисия Повалий, Юбилейный, в Ялте, 1 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Пиво-понг (beerpong) — Бар рок-н-ролльщики, Симферополь · Местов.Нет</title>
+<title>Таисия Повалий — Юбилейный, Ялта · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -946,40 +946,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31580673">
-<meta property="og:title" content="Пиво-понг (beerpong) — Бар рок-н-ролльщики, Симферополь · Местов.Нет">
-<meta property="og:description" content="Пиво-понг (beerpong), Бар рок-н-ролльщики, в Симферополе, 19 июля, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/a1f90a79">
+<meta property="og:title" content="Таисия Повалий — Юбилейный, Ялта · Местов.Нет">
+<meta property="og:description" content="Таисия Повалий, Юбилейный, в Ялте, 1 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/db97efe8913a933b2fd182cda237c4d3.png">
+<meta property="og:image" content="https://mestov.net/images/events/875b3dc713315349104d35bcee6233d9.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Пиво-понг (beerpong)",
-      "startDate": "2026-07-19T20:00:00+03:00",
+      "name": "Таисия Повалий",
+      "startDate": "2026-08-01T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Бар рок-н-ролльщики",
+        "name": "Юбилейный",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Играем в пиво-понг (beerpong). Предварительная регистрация команд обязательна.",
+      "description": "Таисия Повалий в Юбилейный, Ялта.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Пиво-понг (beerpong)"
+        "name": "Таисия Повалий"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/875b3dc713315349104d35bcee6233d9.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Пиво-понг (beerpong)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Таисия Повалий"}]}
 </script>
 </head>
 <body>

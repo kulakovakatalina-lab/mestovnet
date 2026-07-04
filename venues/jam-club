@@ -14,7 +14,6 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
@@ -39,18 +38,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "AC/DC Show — Back in Storm",
-      "startDate": "2026-07-03T19:00:00+03:00",
+      "name": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom",
+      "startDate": "2026-07-04T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Трибьют-шоу AC/DC «Back in Storm» — лучший кавер на AC/DC в РФ. Вход свободный для подписчиков канала.",
+      "description": "Rock Fest в Jam Club: выступают группы Манекен, Inkoda, Структура, Red Stars. Бесплатный вход для подписчиков клуба.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "AC/DC Show — Back in Storm"
+        "name": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom"
       },
-      "image": "/images/events/16867a31edef386e238ad1e03e10538b.jpg"
+      "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg"
     },
     {
       "@type": "MusicEvent",

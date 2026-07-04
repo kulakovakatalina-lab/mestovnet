@@ -14,14 +14,13 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 26 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 12 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki">
   <meta property="og:title" content="Рок-н-рольщики — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 26 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Севастополе. 12 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -39,82 +38,22 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Максим Шеремет",
-      "startDate": "2026-07-03T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Каверы на отечественный рок в исполнении Максима Шеремета. Акустика. Вход бесплатный, столики без депозитов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Максим Шеремет"
-      },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Трио «Дочь самурая»",
-      "startDate": "2026-07-03T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Трио «Дочь самурая» — хиты русского рок-попа. Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Трио «Дочь самурая»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Алексей Гаркуша",
+      "name": "Алексей Гаркуша, Группа «Проект-С»",
       "startDate": "2026-07-04T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики"
       },
-      "description": "62 года Юре Хою и 26 лет без него: акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши. Вход бесплатный, столики без депозитов.",
+      "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него. Вход бесплатный.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Алексей Гаркуша"
+        "name": "Алексей Гаркуша, Группа «Проект-С»"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Группа «Проект-С»",
-      "startDate": "2026-07-04T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Мировые и русские рок-хиты в исполнении группы «Проект-С». Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Проект-С»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дегустация настоек",
-      "startDate": "2026-07-05T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Бесплатная дегустация настоек из нового меню. Вход бесплатный.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дегустация настоек"
-      },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Фёдор Старовойтов",
+      "name": "Дегустация настоек, Фёдор Старовойтов",
       "startDate": "2026-07-05T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -123,13 +62,13 @@
       "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Фёдор Старовойтов"
+        "name": "Дегустация настоек, Фёдор Старовойтов"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин (Король и Шут)",
+      "name": "Игорь Симдянкин (Король, Шут), Алексей Гаркуша",
       "startDate": "2026-07-10T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -138,28 +77,13 @@
       "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин (Король и Шут)"
+        "name": "Игорь Симдянкин (Король, Шут), Алексей Гаркуша"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Алексей Гаркуша",
-      "startDate": "2026-07-10T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "62 года Юре Хою и 26 лет без него: акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Алексей Гаркуша"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «САБ»",
+      "name": "Группа «САБ», Группа «Хай'Петри»",
       "startDate": "2026-07-11T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -168,28 +92,13 @@
       "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «САБ»"
+        "name": "Группа «САБ», Группа «Хай'Петри»"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Группа «Хай'Петри»",
-      "startDate": "2026-07-11T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Группа «Хай'Петри» с рок-поп-хитами на двух языках. Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Хай'Петри»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Паша Грей",
+      "name": "Паша Грей, Евгений Громов",
       "startDate": "2026-07-12T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -198,28 +107,13 @@
       "description": "Камеди-рок и каверы на зарубежный и русский рок в исполнении Паши Грея.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Паша Грей"
+        "name": "Паша Грей, Евгений Громов"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Евгений Громов",
-      "startDate": "2026-07-12T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Русский рок и поп-рок в акустике — Евгений Громов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Евгений Громов"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Домино»",
+      "name": "Группа «Домино», Дуэт «МысКрыма»",
       "startDate": "2026-07-17T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -228,28 +122,13 @@
       "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Домино»"
+        "name": "Группа «Домино», Дуэт «МысКрыма»"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Дуэт «МысКрыма»",
-      "startDate": "2026-07-17T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дуэт «МысКрыма»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Хай'Петри»",
+      "name": "Группа «Хай'Петри», Группа «Домино»",
       "startDate": "2026-07-18T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -258,24 +137,9 @@
       "description": "Группа «Хай'Петри» и рок-поп-хиты на двух языках. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Хай'Петри»"
+        "name": "Группа «Хай'Петри», Группа «Домино»"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Домино»",
-      "startDate": "2026-07-18T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками. Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Домино»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
     },
     {
       "@type": "MusicEvent",
@@ -294,22 +158,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Пиво-понг (beerpong)",
-      "startDate": "2026-07-19T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики"
-      },
-      "description": "Играем в пиво-понг (beerpong). Предварительная регистрация команд обязательна.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Пиво-понг (beerpong)"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дима Резник",
+      "name": "Дима Резник, Игорь Симдянкин",
       "startDate": "2026-07-24T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -318,24 +167,54 @@
       "description": "Русский рок и поп-рок в акустике — Дима Резник.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Дима Резник"
+        "name": "Дима Резник, Игорь Симдянкин"
       },
       "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
-      "startDate": "2026-07-24T21:00:00+03:00",
+      "name": "Группа «Денайро», Группа «САБ»",
+      "startDate": "2026-07-25T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики"
       },
-      "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+      "description": "Группа «Денайро» и рок-хиты. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Группа «Денайро», Группа «САБ»"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Фёдор Старовойтов, Дегустация настоек",
+      "startDate": "2026-07-26T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Фёдор Старовойтов, Дегустация настоек"
+      },
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин, Группа «Кальвадос»",
+      "startDate": "2026-07-31T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Русский рок и поп-рок в исполнении Игоря Симдянкина. Акустика.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин, Группа «Кальвадос»"
+      },
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     }
   ]
 }
@@ -1279,7 +1158,7 @@ footer {
     <p class="venue-description">Тематический бар с живой музыкой в центре Севастополя — уникальная барная карта, авторские коктейли и музыкальные квартирники.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Ленина, 8, Севастополь</span><a href="https://yandex.ru/maps/?text=ул.+Ленина,+8,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">26</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">12</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

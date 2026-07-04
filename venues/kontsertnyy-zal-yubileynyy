@@ -14,14 +14,13 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Концертный зал «Юбилейный» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 10 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 11 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kontsertnyy-zal-yubileynyy">
   <meta property="og:title" content="Концертный зал «Юбилейный» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 10 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 11 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -66,6 +65,21 @@
         "name": "КняZz"
       },
       "image": "/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Таисия Повалий",
+      "startDate": "2026-08-01T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Концертный зал «Юбилейный»"
+      },
+      "description": "Таисия Повалий в Юбилейный, Ялта.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Таисия Повалий"
+      },
+      "image": "/images/events/875b3dc713315349104d35bcee6233d9.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1129,7 +1143,7 @@ footer {
     <p class="venue-description">Летний театрально-концертный комплекс в центре набережной Ялты с раздвижной крышей, вмещает около 2600 зрителей.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Черноморский пер., 2, Ялта</span><a href="https://yandex.ru/maps/?text=Черноморский+пер.,+2,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">10</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">11</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
