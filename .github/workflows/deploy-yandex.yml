@@ -31,7 +31,7 @@ jobs:
           rm -rf _site
           mkdir -p _site
           # Файлы в корне
-          cp index.html event.html genre.html admin.html _site/
+          cp index.html event.html genre.html admin.html 404.html _site/
           cp events.json settings.json venues.json cities.json _site/
           cp sitemap.xml robots.txt _site/
           cp yandex_c7b51fb2f9cdb188.html _site/
@@ -76,6 +76,15 @@ jobs:
             --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"
 
+      # Настройка хостинга бакета: главная — index.html, ошибки — 404.html.
+      # Идемпотентно: безопасно выполнять при каждом деплое.
+      - name: Настроить документы веб-сайта (index + 404)
+        run: |
+          aws s3api put-bucket-website \
+            --bucket mestov.net \
+            --endpoint-url "$ENDPOINT" \
+            --website-configuration '{"IndexDocument":{"Suffix":"index.html"},"ErrorDocument":{"Key":"404.html"}}'
+
       # Smoke-проверка прода: если что-то сломано — прогон красный.
       # ?v=RUN_ID обходит 5-минутный кэш CDN, чтобы проверялась свежая версия.
       - name: Проверить сайт после деплоя
@@ -110,5 +119,9 @@ jobs:
           echo "4) Страница города открывается"
           curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
+
+          echo "5) Страница 404 на месте и закрыта от индексации"
+          curl -sfSL "$SITE/404.html$V" -o /tmp/404.html
+          grep -qi "noindex" /tmp/404.html || { echo "FAIL: в 404.html нет noindex"; exit 1; }
 
           echo "Все проверки прошли ✅"

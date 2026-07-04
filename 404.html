@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110385036', 'ym');
+
+    ym(110385036, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>404 — Местов.Нет</title>
+<link rel="icon" type="image/png" href="/images/fav.png">
+<style>
+:root {
+  --bg:      oklch(99% 0.002 240);
+  --surface: oklch(100% 0 0);
+  --fg:      oklch(18% 0.012 250);
+  --muted:   oklch(54% 0.012 250);
+  --border:  oklch(92% 0.005 250);
+  --accent:  oklch(58% 0.18 255);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+
+  --nav-h:   56px;
+  --gutter:  clamp(16px, 4vw, 48px);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a { color: inherit; text-decoration: none; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  height: var(--nav-h);
+  background: oklch(99% 0.002 240 / 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  color: var(--fg);
+}
+.nav-logo em { color: var(--accent); font-style: normal; }
+
+.stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px var(--gutter) 80px;
+}
+
+/* Эквалайзер: три столбика вместо нуля в «404» */
+.code {
+  font-family: var(--font-display);
+  font-size: clamp(96px, 20vw, 180px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.06em;
+  color: var(--fg);
+  user-select: none;
+}
+.eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.09em;
+  height: 0.72em;
+  padding: 0 0.04em;
+}
+.eq span {
+  width: 0.16em;
+  border-radius: 0.08em;
+  background: var(--accent);
+  animation: bounce 1.1s ease-in-out infinite;
+  transform-origin: bottom;
+}
+.eq span:nth-child(1) { height: 55%; animation-delay: 0s; }
+.eq span:nth-child(2) { height: 95%; animation-delay: 0.18s; }
+.eq span:nth-child(3) { height: 70%; animation-delay: 0.36s; }
+@keyframes bounce {
+  0%, 100% { transform: scaleY(0.45); }
+  50%      { transform: scaleY(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .eq span { animation: none; }
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-top: 28px;
+}
+.lead {
+  color: var(--muted);
+  font-size: clamp(15px, 2.2vw, 17px);
+  margin-top: 10px;
+  max-width: 46ch;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 13px 28px;
+  background: var(--accent);
+  color: oklch(100% 0 0);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: 100px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 2px 12px oklch(58% 0.18 255 / 0.3);
+}
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px oklch(58% 0.18 255 / 0.4);
+}
+.btn svg { flex-shrink: 0; }
+
+.footer {
+  padding: 20px var(--gutter);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-logo" href="/">местов<em>.нет</em></a>
+</nav>
+
+<main class="stage">
+  <div class="code" aria-label="Ошибка 404">
+    4<span class="eq" aria-hidden="true"><span></span><span></span><span></span></span>4
+  </div>
+  <h1>Такой сцены у нас нет</h1>
+  <p class="lead">Страница не найдена — то ли концерт отменили, то ли адрес перепутали. Зато на главной вся афиша живой музыки в Крыму.</p>
+  <a class="btn" href="/">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M9.5 3.5 5 8l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    На главную, к афише
+  </a>
+</main>
+
+<footer class="footer">Местов.Нет — живая музыка в Крыму</footer>
+
+</body>
+</html>
