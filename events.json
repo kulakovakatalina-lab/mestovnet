@@ -13,9 +13,9 @@
     "genre": "рок",
     "source_url": "https://t.me/clubjam/1027",
     "images": [
-      "/images/events/949850d70e101bc822009aef7de8ecdc.jpg"
+      "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg"
     ],
-    "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
+    "image": "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg",
     "post_date": "2026-07-02T19:58:02+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
@@ -5118,5 +5118,25 @@
     "genre": "рок",
     "id": "ae234599",
     "updated_at": "2026-05-02T09:39:37+00:00"
+  },
+  {
+    "id": "0fcd10fd",
+    "date": "2026-07-03",
+    "time": null,
+    "artist": "AC/DC Tribute",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатный для подписчиков",
+    "description": "Трибьют-концерт AC/DC в Jam Club. Клуб работал до утра, бесплатный вход для подписчиков.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1041",
+    "images": [
+      "/images/events/949850d70e101bc822009aef7de8ecdc.jpg"
+    ],
+    "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
+    "post_date": "2026-07-03T07:46:20+00:00",
+    "updated_at": "2026-07-04T00:00:00+00:00"
   }
 ]
