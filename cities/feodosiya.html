@@ -996,6 +996,16 @@ const genreIcon = (g) => `<svg width="40" height="40" viewBox="0 0 80 80" fill="
 function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
 function mapCity(raw) { return CITY_MAP[raw] || 'all'; }
 
+// Данные событий приходят из чужих каналов — экранируем перед вставкой в innerHTML.
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+// В src/href пускаем только http(s) и локальные пути (не //host).
+function safeUrl(u) {
+  u = String(u ?? '');
+  return /^(https?:\/\/|\/(?!\/))/i.test(u) ? escapeHtml(u) : '';
+}
+
 function parseDate(d) {
   const parts = d.split('-');
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
@@ -1104,29 +1114,29 @@ function renderAll() {
 function renderFeatured(ev) {
   if (!ev) { document.getElementById('featured').innerHTML = ''; return; }
   const imgHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.artist || ''}" onerror="this.style.display='none'">`
+    ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" onerror="this.style.display='none'">`
     : `<div class="featured-poster-bg">${starIcon}</div>`;
 
   document.getElementById('featured').innerHTML = `
-    <a href="/event/${ev.id}" class="featured-link">
+    <a href="/event/${escapeHtml(ev.id)}" class="featured-link">
       <div class="featured-poster">${imgHtml}</div>
       <div class="featured-body">
         <p class="featured-label">Ближайшее событие</p>
         <span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>
-        <h2 class="featured-artist">${ev.artist || '—'}</h2>
-        <p class="featured-desc">${ev.description || ''}</p>
+        <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
+        <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
           ${ev.time ? `
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"></rect><path d="M2 7h12M5 1.5v3M11 1.5v3"></path></svg>
-            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${ev.time}
+            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${escapeHtml(ev.time)}
           </div>` : ''}
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"></path><circle cx="8" cy="6.5" r="1.75"></circle></svg>
-            ${ev.venue || '—'} · ${ev.source_city || '—'}
+            ${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}
           </div>
         </div>
-        <span class="featured-price">${ev.priceDisplay}</span>
+        <span class="featured-price">${escapeHtml(ev.priceDisplay)}</span>
       </div>
     </a>`;
 }
@@ -1136,7 +1146,7 @@ function renderCityPills(cities) {
   let html = '<button class="city-pill active" data-city="all">Все города</button>';
   const sorted = [...cities].sort((a, b) => (CITY_LABELS[a] || a).localeCompare(CITY_LABELS[b] || b, 'ru'));
   for (const c of sorted) {
-    html += `<button class="city-pill" data-city="${c}">${CITY_LABELS[c] || c}</button>`;
+    html += `<button class="city-pill" data-city="${escapeHtml(c)}">${escapeHtml(CITY_LABELS[c] || c)}</button>`;
   }
   container.innerHTML = html;
 }
@@ -1148,10 +1158,10 @@ function renderEvents(events) {
   grid.innerHTML = events.map((ev, i) => {
 
     const imgHtml = ev.image
-      ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
+      ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
       : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
 
-    return `<a href="/event/${ev.id}" class="event-card" data-city="${ev.city}">
+    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card" data-city="${escapeHtml(ev.city)}">
       <div class="card-img">${imgHtml}</div>
       <div class="card-body">
         <div class="card-top">
@@ -1161,11 +1171,11 @@ function renderEvents(events) {
           </div>
           <span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>
         </div>
-        <div class="event-artist">${ev.artist || '—'}</div>
-        <div class="event-venue">${ev.venue || '—'} · ${ev.source_city || '—'}</div>
+        <div class="event-artist">${escapeHtml(ev.artist) || '—'}</div>
+        <div class="event-venue">${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}</div>
         <div class="event-footer">
-          ${ev.time ? `<span class="event-time">${ev.time}</span>` : ''}
-          <span class="event-price">${ev.priceDisplay}</span>
+          ${ev.time ? `<span class="event-time">${escapeHtml(ev.time)}</span>` : ''}
+          <span class="event-price">${escapeHtml(ev.priceDisplay)}</span>
         </div>
       </div>
     </a>`;

@@ -739,6 +739,16 @@ const genreIcon = (g) => `<svg width="28" height="28" viewBox="0 0 24 24" fill="
 function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
 function mapCity(raw) { return CITY_MAP[raw] || 'all'; }
 
+// Данные событий приходят из чужих каналов — экранируем перед вставкой в innerHTML.
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+// В src/href пускаем только http(s) и локальные пути (не //host).
+function safeUrl(u) {
+  u = String(u ?? '');
+  return /^(https?:\/\/|\/(?!\/))/i.test(u) ? escapeHtml(u) : '';
+}
+
 function parseDate(d) {
   const parts = d.split('-');
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
@@ -799,7 +809,9 @@ function applySettings(data, settings) {
 
 async function load() {
   const params = new URLSearchParams(location.search);
-  currentGenre = params.get('g') || 'jazz';
+  // Параметр из URL — только известный жанр, иначе reflected XSS через innerHTML.
+  const g = params.get('g');
+  currentGenre = GENRE_LABELS[g] ? g : 'jazz';
   currentView = params.get('past') === '1' ? 'past' : 'upcoming';
 
   try {
@@ -900,17 +912,17 @@ function renderCityPills(events) {
   let html = '<button class="city-pill active" data-city="all">Все</button>';
   const sorted = [...cities].sort((a, b) => (CITY_LABELS[a] || a).localeCompare(CITY_LABELS[b] || b, 'ru'));
   for (const c of sorted) {
-    html += `<button class="city-pill" data-city="${c}">${CITY_LABELS[c] || c}</button>`;
+    html += `<button class="city-pill" data-city="${escapeHtml(c)}">${escapeHtml(CITY_LABELS[c] || c)}</button>`;
   }
   container.innerHTML = html;
 }
 
 function eventRowHtml(ev, extraClass) {
   const thumbHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
+    ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy">`
     : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
 
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${ev.city}">
+  return `<a href="/event/${escapeHtml(ev.id)}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${escapeHtml(ev.city)}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
@@ -918,17 +930,17 @@ function eventRowHtml(ev, extraClass) {
       </div>
       <div class="row-thumb">${thumbHtml}</div>
       <div>
-        <div class="row-artist">${ev.artist || '—'}</div>
-        <div class="row-desc">${ev.description || ''}</div>
+        <div class="row-artist">${escapeHtml(ev.artist) || '—'}</div>
+        <div class="row-desc">${escapeHtml(ev.description)}</div>
         <div class="row-venue">
-          <span>${ev.venue || '—'}</span>
+          <span>${escapeHtml(ev.venue) || '—'}</span>
           <span class="row-venue-dot"></span>
-          <span>${ev.source_city || '—'}</span>
+          <span>${escapeHtml(ev.source_city) || '—'}</span>
         </div>
       </div>
       <div class="row-right">
-        ${ev.time ? `<span class="row-time">${ev.time}</span>` : ''}
-        <span class="row-price">${ev.priceDisplay}</span>
+        ${ev.time ? `<span class="row-time">${escapeHtml(ev.time)}</span>` : ''}
+        <span class="row-price">${escapeHtml(ev.priceDisplay)}</span>
         <span class="row-btn">Подробнее</span>
       </div>
     </a>`;
