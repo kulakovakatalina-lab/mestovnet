@@ -60,9 +60,9 @@
     "id": "9737631a",
     "date": "2026-07-04",
     "time": "21:00",
-    "artist": "Алексей Гаркуша, Группа «Проект-С»",
+    "artist": "Алексей Гаркуша",
     "event_type": "трибьют",
-    "venue": "Рок-н-рольщики",
+    "venue": "Бар рок-н-ролльщики",
     "price": "бесплатный",
     "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него. Вход бесплатный.",
     "source_city": "Севастополь",
@@ -119,18 +119,17 @@
     "id": "c641b4c8",
     "date": "2026-07-05",
     "time": "21:00",
-    "artist": "Дегустация настоек, Фёдор Старовойтов",
+    "artist": "Дегустация настоек",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": "бесплатно",
-    "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
-    "source_city": "Симферополь",
+    "description": "Бесплатная дегустация. Презентация настоек из нового меню.",
+    "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
     "genre": "другое",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:05+00:00",
@@ -191,7 +190,7 @@
     "id": "142a3b74",
     "date": "2026-07-10",
     "time": "21:00",
-    "artist": "Игорь Симдянкин (Король, Шут), Алексей Гаркуша",
+    "artist": "Игорь Симдянкин",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -201,8 +200,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -229,7 +227,7 @@
     "id": "de5306a0",
     "date": "2026-07-11",
     "time": "21:00",
-    "artist": "Группа «САБ», Группа «Хай'Петри»",
+    "artist": "Группа «САБ»",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -239,8 +237,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -267,7 +264,7 @@
     "id": "f69eb1d5",
     "date": "2026-07-12",
     "time": "21:00",
-    "artist": "Паша Грей, Евгений Громов",
+    "artist": "Паша Грей",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -277,8 +274,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -305,7 +301,7 @@
     "id": "11db5c77",
     "date": "2026-07-17",
     "time": "21:00",
-    "artist": "Группа «Домино», Дуэт «МысКрыма»",
+    "artist": "Группа «Домино»",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -315,8 +311,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -377,7 +372,7 @@
     "id": "3b69d12f",
     "date": "2026-07-18",
     "time": "21:00",
-    "artist": "Группа «Хай'Петри», Группа «Домино»",
+    "artist": "Группа «Хай'Петри»",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -387,8 +382,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -459,8 +453,7 @@
     "genre": "другое",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -595,7 +588,7 @@
     "id": "fd57288c",
     "date": "2026-07-24",
     "time": "21:00",
-    "artist": "Дима Резник, Игорь Симдянкин",
+    "artist": "Дима Резник",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -605,8 +598,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -687,7 +679,7 @@
     "id": "31ef169e",
     "date": "2026-07-25",
     "time": "21:00",
-    "artist": "Группа «Денайро», Группа «САБ»",
+    "artist": "Группа «Денайро»",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -697,8 +689,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -759,7 +750,7 @@
     "id": "2915ab1c",
     "date": "2026-07-26",
     "time": "21:00",
-    "artist": "Фёдор Старовойтов, Дегустация настоек",
+    "artist": "Фёдор Старовойтов",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -769,8 +760,7 @@
     "genre": "другое",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -814,7 +804,7 @@
     "id": "d7993622",
     "date": "2026-07-31",
     "time": "21:00",
-    "artist": "Игорь Симдянкин, Группа «Кальвадос»",
+    "artist": "Игорь Симдянкин",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": null,
@@ -824,8 +814,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
@@ -1884,18 +1873,17 @@
     "id": "6ec2b8e8",
     "date": "2026-07-03",
     "time": "21:00",
-    "artist": "Максим Шеремет, Трио «Дочь самурая»",
+    "artist": "Максим Шеремет",
     "event_type": "концерт",
     "venue": "Бар рок-н-ролльщики",
     "price": "бесплатно",
-    "description": "Трио «Дочь самурая» — хиты русского рок-попа. Не акустика.",
-    "source_city": "Симферополь",
+    "description": "Каверы на отечественный рок в исполнении Максима Шеремета. Акустика.",
+    "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:05+00:00",
@@ -5138,5 +5126,265 @@
     "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
     "post_date": "2026-07-03T07:46:20+00:00",
     "updated_at": "2026-07-04T00:00:00+00:00"
+  },
+  {
+    "id": "02aa3424",
+    "date": "2026-07-03",
+    "time": "21:00",
+    "artist": "Трио «Дочь самурая»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": "бесплатно",
+    "description": "Трио «Дочь самурая» — хиты русского рок-попа. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:05+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "6581382c",
+    "date": "2026-07-04",
+    "time": "21:00",
+    "artist": "Группа «Проект-С»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": "бесплатный",
+    "description": "Мировые и русские рок-хиты в исполнении группы «Проект-С». Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-03T11:37:47+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "92239e89",
+    "date": "2026-07-05",
+    "time": "21:00",
+    "artist": "Фёдор Старовойтов",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": "бесплатно",
+    "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:05+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "fc0334a9",
+    "date": "2026-07-10",
+    "time": "21:00",
+    "artist": "Алексей Гаркуша",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "13d99e44",
+    "date": "2026-07-11",
+    "time": "21:00",
+    "artist": "Группа «Хай'Петри»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Хай'Петри» с рок-поп-хитами на двух языках. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "57573558",
+    "date": "2026-07-12",
+    "time": "21:00",
+    "artist": "Евгений Громов",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Русский рок и поп-рок в акустике — Евгений Громов.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "58ceeb65",
+    "date": "2026-07-17",
+    "time": "21:00",
+    "artist": "Дуэт «МысКрыма»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "ac2efd2a",
+    "date": "2026-07-18",
+    "time": "21:00",
+    "artist": "Группа «Домино»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "31626dfe",
+    "date": "2026-07-19",
+    "time": "20:00",
+    "artist": "Пиво-понг (beerpong)",
+    "event_type": "другое",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Играем в пиво-понг (beerpong). Предварительная регистрация команд обязательна.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-02T09:35:21+00:00"
+  },
+  {
+    "id": "2b0892c2",
+    "date": "2026-07-24",
+    "time": "21:00",
+    "artist": "Игорь Симдянкин",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "34c7a19a",
+    "date": "2026-07-25",
+    "time": "21:00",
+    "artist": "Группа «САБ»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "41a28bc0",
+    "date": "2026-07-26",
+    "time": "21:00",
+    "artist": "Дегустация настоек",
+    "event_type": "другое",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Бесплатная дегустация авторских настоек. Презентация меню.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "04c0337c",
+    "date": "2026-07-31",
+    "time": "21:00",
+    "artist": "Группа «Кальвадос»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
   }
 ]
