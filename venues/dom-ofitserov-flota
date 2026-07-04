@@ -840,7 +840,7 @@ footer {
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
