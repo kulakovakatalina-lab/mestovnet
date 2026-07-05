@@ -67,6 +67,7 @@ jobs:
           cp yandex_c7b51fb2f9cdb188.html _site/
           # Папки целиком
           cp -r cities _site/
+          cp -r genres _site/
           cp -r images _site/
           cp -r venues _site/
           cp -r event _site/
@@ -149,6 +150,10 @@ jobs:
           echo "4) Страница города открывается"
           curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
+
+          echo "4b) Страница жанра открывается"
+          curl -sfSL "$SITE/genres/jazz.html$V" -o /tmp/genre.html
+          grep -qi "местов" /tmp/genre.html || { echo "FAIL: страница жанра пустая"; exit 1; }
 
           echo "5) Страница 404 на месте и закрыта от индексации"
           curl -sfSL "$SITE/404.html$V" -o /tmp/404.html
