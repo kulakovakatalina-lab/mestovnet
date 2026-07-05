@@ -1196,7 +1196,7 @@ function renderGenreGrid() {
   grid.innerHTML = order.filter(g => counts[g]).map(g => {
     const n = counts[g];
     const label = n === 1 ? 'событие' : n < 5 ? 'события' : 'событий';
-    return `<a href="genre.html?g=${g}" class="genre-card"><span class="genre-card-name">${GENRE_LABELS[g]}</span><span class="genre-card-count">${n} ${label}</span></a>`;
+    return `<a href="/genres/${g}.html" class="genre-card"><span class="genre-card-name">${GENRE_LABELS[g]}</span><span class="genre-card-count">${n} ${label}</span></a>`;
   }).join('');
 }
 
@@ -1227,12 +1227,12 @@ function renderNavGenres() {
   const active = order.filter(g => counts[g]);
 
   const navHtml = active.map(g =>
-    `<a href="genre.html?g=${g}" class="nav-genre">${GENRE_LABELS[g]}</a>`
+    `<a href="/genres/${g}.html" class="nav-genre">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('nav-genres').innerHTML = navHtml;
 
   const mobileHtml = active.map(g =>
-    `<a href="genre.html?g=${g}">${GENRE_LABELS[g]}</a>`
+    `<a href="/genres/${g}.html">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
 }
