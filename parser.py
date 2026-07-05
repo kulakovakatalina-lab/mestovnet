@@ -6,7 +6,7 @@ import os
 import re
 import subprocess
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import httpx
 from bs4 import BeautifulSoup
@@ -161,6 +161,11 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 - выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
 - общие анонсы без конкретного исполнителя/группы на конкретную дату.
 
+ВАЖНО: правило для поля date.
+- В каждом запросе указана дата публикации поста. Ориентируйся на неё, а не на свои знания.
+- Если год события в тексте не указан — это анонс: бери год из даты публикации; если полученная дата оказывается раньше даты публикации — бери следующий год.
+- Никогда не ставь год раньше года публикации поста.
+
 ВАЖНО: поле artist должно быть заполнено всегда.
 - Если в тексте назван конкретный исполнитель/группа — используй его.
 - Если исполнитель не назван, но из текста понятно что за событие — придумай короткое название-описание (1-4 слова), например: «Живая музыка», «Джазовый вечер», «Акустический концерт», «Кавер-вечер», «Вечер романса», «Фолк-концерт» и т.п.
@@ -219,15 +224,50 @@ def _parse_claude_json(raw: str):
         return None
 
 
+def _post_date_str(post: dict) -> str:
+    """Дата публикации поста в формате YYYY-MM-DD (для промпта и кэш-ключа)."""
+    return (post.get("date") or "")[:10]
+
+
+def fix_event_year(event: dict, post_date_iso: str) -> None:
+    """Страховка от неверно угаданного года: анонс не может быть сильно раньше поста.
+
+    Если дата события отстаёт от даты публикации больше чем на 60 дней —
+    год угадан неверно; подставляем год публикации (или следующий).
+    Небольшое отставание не трогаем: пост о только что прошедшем событии
+    отфильтруется дальше как прошедший.
+    """
+    d = event.get("date")
+    if not d or not post_date_iso:
+        return
+    try:
+        ev = date.fromisoformat(str(d)[:10])
+        pd = date.fromisoformat(post_date_iso[:10])
+    except ValueError:
+        return
+    if (pd - ev).days <= 60:
+        return
+    for year in (pd.year, pd.year + 1):
+        try:
+            cand = ev.replace(year=year)
+        except ValueError:  # 29 февраля в невисокосном году
+            cand = date(year, 2, 28)
+        if (pd - cand).days <= 60:
+            event["date"] = cand.isoformat()
+            return
+
+
 def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> list[dict]:
     """Извлекает события из одного поста. image_path сохраняется в кэш-ключе для уникальности."""
     text = post["text"]
-    cache_key = hashlib.sha256(("single:" + text + ":" + image_path).encode("utf-8")).hexdigest()[:16]
+    post_date = _post_date_str(post)
+    cache_key = hashlib.sha256(("single:" + post_date + ":" + text + ":" + image_path).encode("utf-8")).hexdigest()[:16]
     cached = _cache_read(cache_key)
     if cached is not None:
         return cached
 
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+Дата публикации поста: {post_date}.
 
 Текст поста:
 \"\"\"
@@ -252,8 +292,9 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
     """Извлекает события из поста с несколькими картинками (только по тексту).
     Возвращает [events...] где каждое событие имеет поле image_indices."""
     text = post["text"]
+    post_date = _post_date_str(post)
     print(f"\n  [multi] {post.get('url', '?')} {len(image_paths)} images", end="")
-    cache_key = hashlib.sha256(("multi:" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
+    cache_key = hashlib.sha256(("multi:" + post_date + ":" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
     print(f" key={cache_key}", end="")
     cached = _cache_read(cache_key)
     print(f" cache={cached is not None}", end="")
@@ -261,6 +302,7 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
         return cached
 
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
+Дата публикации поста: {post_date}.
 
 Текст поста:
 \"\"\"
@@ -306,7 +348,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
     if not posts:
         return {}
 
-    cache_texts = [p["text"] for p in posts]
+    cache_texts = [_post_date_str(p) + ":" + p["text"] for p in posts]
     cached = _cache_read("\n---\n".join(cache_texts))
     if cached is not None:
         print(f" [кэш]", end="")
@@ -315,7 +357,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
     posts_section = ""
     for i, post in enumerate(posts):
         url = post.get("url") or f"post_{i}"
-        posts_section += f"\n--- POST {i+1} (url: {url}) ---\n{post['text']}\n"
+        posts_section += f"\n--- POST {i+1} (url: {url}, дата публикации: {_post_date_str(post)}) ---\n{post['text']}\n"
 
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 
@@ -1036,6 +1078,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 if not event.get("venue"):
                     event["venue"] = channel["title"]
                 event["post_date"] = post["date"]
+                fix_event_year(event, post["date"])
 
                 img_indices = event.pop("image_indices", None) or event.pop("image_index", None)
                 if img_indices is None:
@@ -1082,6 +1125,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                         if not event.get("venue"):
                             event["venue"] = channel["title"]
                         event["post_date"] = post["date"]
+                        fix_event_year(event, post["date"])
 
                         if local_images:
                             event["image"] = local_images[idx % len(local_images)]
