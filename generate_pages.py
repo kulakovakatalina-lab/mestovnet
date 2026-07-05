@@ -4,6 +4,7 @@
 Reads events.json and generates:
   - index.html          (с JSON-LD + статическим пре-рендером)
   - cities/{slug}.html  (страница каждого города)
+  - genres/{slug}.html  (страница каждого жанра)
   - sitemap.xml
   - robots.txt
 
@@ -28,7 +29,30 @@ VENUES_FILE   = BASE_DIR / "venues.json"
 SETTINGS_FILE = BASE_DIR / "settings.json"
 INDEX_FILE    = BASE_DIR / "index.html"
 EVENT_FILE    = BASE_DIR / "event.html"
+GENRE_FILE    = BASE_DIR / "genre.html"
 DOMAIN     = "https://mestov.net"
+
+# ── Жанры ────────────────────────────────────────────────────────────────────
+# Копия GENRE_MAP/GENRE_LABELS из genre.html — единственное место для правки на JS-стороне,
+# здесь дублируется для статической генерации страниц /genres/{slug}.html.
+
+GENRE_MAP: dict[str, str] = {
+    "джаз": "jazz", "рок": "rock", "русский рок": "rock", "панк-рок": "rock",
+    "инди-рок": "rock", "метал": "rock", "инди": "rock", "авторская": "rock",
+    "классика": "classic", "хоровая": "classic", "медитативная": "classic",
+    "поп": "pop", "поп-рок": "pop", "лаунж": "pop", "хип-хоп": "pop",
+    "каверы": "pop", "юмор": "pop", "шоу": "pop", "интерактив": "pop",
+    "этно": "folk", "фолк-метал": "folk", "народная": "folk",
+    "блюз": "blues",
+}
+GENRE_LABELS: dict[str, str] = {
+    "jazz": "Джаз", "rock": "Рок", "folk": "Фолк",
+    "blues": "Блюз", "classic": "Классика", "pop": "Поп",
+}
+GENRE_ORDER: list[str] = ["jazz", "rock", "folk", "blues", "classic", "pop"]
+
+def map_genre(raw: Optional[str]) -> str:
+    return GENRE_MAP.get((raw or "").lower(), "pop")
 
 # ── Локализация ──────────────────────────────────────────────────────────────
 
@@ -411,6 +435,63 @@ def make_city_page(
 '''
 
     src = src.replace('</body>', f'{seo_block}{city_script}</body>')
+
+    return src
+
+# ── Шаблон страницы жанра (genres/{slug}.html) ────────────────────────────────
+
+def make_genre_page(
+    genre: str,
+    events_all: list,
+    css: str,
+    custom_names: Optional[dict] = None,
+) -> str:
+    """Генерирует статическую SEO-страницу жанра на основе genre.html."""
+    today  = today_str()
+    label  = GENRE_LABELS[genre]
+    genre_events = [e for e in events_all if map_genre(e.get("genre")) == genre]
+    count  = len([e for e in genre_events if (e.get("date") or "") >= today])
+    count_word = "концерт" if count == 1 else "концерта" if count < 5 else "концертов"
+
+    title       = f"{label} в Крыму — концерты и афиша | Местов.Нет"
+    description = (f"Афиша концертов в жанре «{label.lower()}» в Крыму: "
+                   f"ближайшие {count} {count_word} в клубах, барах и на площадках. "
+                   f"Обновляется ежедневно.")
+
+    jsonld_events = make_jsonld_events([e for e in genre_events if (e.get("date") or "") >= today], custom_names)
+    jsonld_bc     = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (label, "")])
+
+    src = GENRE_FILE.read_text(encoding="utf-8")
+
+    # Мета-теги
+    src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)
+    src = re.sub(r'<meta name="description"[^>]+>', f'<meta name="description" content="{esc(description)}">', src)
+    src = re.sub(r'<link rel="canonical"[^>]+>', f'<link rel="canonical" href="{DOMAIN}/genres/{genre}.html">', src)
+    src = re.sub(r'<meta property="og:title"[^>]+>', f'<meta property="og:title" content="{esc(title)}">', src)
+    src = re.sub(r'<meta property="og:description"[^>]+>', f'<meta property="og:description" content="{esc(description)}">', src)
+
+    # JSON-LD: убираем старый, вставляем жанровый + breadcrumb
+    src = re.sub(r'<script type="application/ld\+json">.*?</script>', '', src, flags=re.DOTALL)
+    if jsonld_events or jsonld_bc:
+        combined = ''
+        if jsonld_events:
+            combined += jsonld_events
+        if jsonld_bc:
+            combined += '\n  ' if combined else ''
+            combined += jsonld_bc
+        src = src.replace('</head>', f'  {combined}\n</head>')
+
+    # Статический пре-рендер событий жанра (для поисковиков).
+    src = strip_seo(src)
+    static_content = render_event_list(genre_events, today, custom_names)
+    seo_block = wrap_seo(static_content)
+
+    # Скрипт: жанр по умолчанию для этой статической страницы (без ?g=).
+    # Должен выполниться ДО основного <script>, который синхронно вызывает load().
+    genre_script = f'<script>window.__DEFAULT_GENRE__ = "{genre}";</script>\n'
+    src = src.replace('<script>\nconst GENRE_MAP', f'{genre_script}<script>\nconst GENRE_MAP')
+
+    src = src.replace('</body>', f'{seo_block}</body>')
 
     return src
 
@@ -1050,7 +1131,7 @@ async function load() {{
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
     const navEl = document.getElementById('nav-genres');
     if (navEl) navEl.innerHTML = activeGenres.map(g =>
-      `<a href="/genre.html?g=${{g}}" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
+      `<a href="/genres/${{g}}.html" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
     ).join('');
   }} catch(err) {{
     document.getElementById('events-list').innerHTML = '<div class="loading">Не удалось загрузить события</div>';
@@ -1065,7 +1146,7 @@ load();
 # ── sitemap.xml ───────────────────────────────────────────────────────────────
 
 def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
-                  event_ids: Optional[list] = None) -> str:
+                  event_ids: Optional[list] = None, genre_slugs: Optional[list] = None) -> str:
     today = today_str()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -1080,6 +1161,8 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
     for c in sorted(cities):
         s = city_slug(c)
         lines.append(url(f"{DOMAIN}/cities/{s}.html", "daily", "0.8"))
+    for s in (genre_slugs or []):
+        lines.append(url(f"{DOMAIN}/genres/{s}.html", "daily", "0.7"))
     for s in sorted(venue_slugs or []):
         lines.append(url(f"{DOMAIN}/venues/{s}", "weekly", "0.7"))
     for eid in sorted(event_ids or []):
@@ -1165,6 +1248,19 @@ def main() -> None:
         future_count = len([e for e in city_events if (e.get("date") or "") >= today])
         print(f"    ✓ cities/{slug}.html  ({future_count} событий)")
 
+    # 2b. Генерируем страницы жанров (genres/{slug}.html)
+    genres_dir = BASE_DIR / "genres"
+    genres_dir.mkdir(exist_ok=True)
+    genres_with_events = [g for g in GENRE_ORDER if any(map_genre(e.get("genre")) == g for e in events)]
+    print(f"🎼   Генерируем страницы жанров ({len(genres_with_events)}) …")
+    for genre in genres_with_events:
+        page = make_genre_page(genre, events, css, custom_names)
+        out  = genres_dir / f"{genre}.html"
+        out.write_text(page, encoding="utf-8")
+        g_count = len([e for e in events
+                       if map_genre(e.get("genre")) == genre and (e.get("date") or "") >= today])
+        print(f"    ✓ genres/{genre}.html  ({g_count} событий)")
+
     # 3. Генерируем страницы заведений (venues/{slug} без расширения)
     venues_dir = BASE_DIR / "venues"
     venues_dir.mkdir(exist_ok=True)
@@ -1216,7 +1312,7 @@ def main() -> None:
 
     # 5. sitemap.xml
     print("🗺   Генерируем sitemap.xml …")
-    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids)
+    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids, genres_with_events)
     (BASE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("    ✓ sitemap.xml")
 
@@ -1227,6 +1323,7 @@ def main() -> None:
 
     print("\n✅  Готово! Все страницы сгенерированы.")
     print(f"    Города: {', '.join(cities_with_events)}")
+    print(f"    Жанры: {', '.join(genres_with_events)}")
     print(f"    Заведений: {len(generated_venue_slugs)}")
     print(f"    Событий: {len(generated_event_ids)}")
     print(f"\n💡  Следующий шаг: отправьте sitemap.xml в Яндекс.Вебмастер и Google Search Console:")
