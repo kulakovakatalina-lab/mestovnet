@@ -1,7 +1,7 @@
 """Тесты фетчеров с моками HTTP-запросов."""
 
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -10,11 +10,12 @@ import pytest
 class TestFetchPosts:
     @patch("parser.httpx.get")
     def test_fetch_posts_basic(self, mock_get):
-        html = """
+        recent_date = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+        html = f"""
         <html>
         <div class="tgme_widget_message" data-post="test_channel/1">
             <div class="tgme_widget_message_date">
-                <time datetime="2026-05-15T20:00:00+00:00"></time>
+                <time datetime="{recent_date}"></time>
             </div>
             <div class="tgme_widget_message_text">Концерт группы Сплин</div>
         </div>
@@ -56,11 +57,12 @@ class TestFetchPosts:
 
     @patch("parser.httpx.get")
     def test_fetch_posts_multiple_images(self, mock_get):
-        html = """
+        recent_date = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+        html = f"""
         <html>
         <div class="tgme_widget_message" data-post="test/1">
             <div class="tgme_widget_message_date">
-                <time datetime="2026-05-15T20:00:00+00:00"></time>
+                <time datetime="{recent_date}"></time>
             </div>
             <div class="tgme_widget_message_text">Афиша</div>
             <div class="tgme_widget_message_photo_wrap" style="background-image:url('https://example.com/img1.jpg')"></div>
