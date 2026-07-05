@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/all.html">Крым</a>
     </div>
     <h1 class="genre-hero-title">Krongs</h1>
-    <p class="venue-description">Krong&#x27;s Pub — крафтовый паб в центре Севастополя на набережной Нахимова, популярное место для живой музыки.</p>
+    <p class="venue-description">За неделю здесь прошло 5 концертов — почти все поп, без узнаваемых резидентов. Данных пока мало для более подробного портрета.</p>
     <div class="venue-address-block"><span class="venue-hero-address">пр-кт Нахимова, 8, Крым</span><a href="https://yandex.ru/maps/?text=пр-кт+Нахимова,+8,+Крым,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

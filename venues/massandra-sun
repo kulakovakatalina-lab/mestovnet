@@ -820,11 +820,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -974,7 +973,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Массандра Sun</h1>
-    
+    <p class="venue-description">За один уик-энд здесь прошло 3 концерта в трёх разных жанрах — этно, джаз и поп. Данных пока мало для более подробного портрета.</p>
     
   </div>
   

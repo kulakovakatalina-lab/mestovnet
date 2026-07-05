@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Sky Beach Ялта</h1>
-    <p class="venue-description">Sky Beach — пляжный комплекс в Ялте с 50-метровым бассейном и площадками для летних концертов.</p>
+    <p class="venue-description">За год здесь прошло 3 концерта с платным входом. Певица CORA дважды открывала здесь сезон — живой вокал под открытым небом и диджей-сет у подогреваемого бассейна. Афиша целиком поп.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Дражинского, 37, Ялта</span><a href="https://yandex.ru/maps/?text=ул.+Дражинского,+37,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   
