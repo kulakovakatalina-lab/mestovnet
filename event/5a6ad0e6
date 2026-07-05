@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Крымский академический симфонический оркестр, музыкальное училище им. П.И. Чайковского, в Симферополе, 24 мая, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Крымский академический симфонический оркестр, музыкальное училище им. П.И. Чайковского, в Симферополе, 24 мая, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Крымский академический симфонический оркестр — музыкальное училище им. П.И. Чайковского, Симферополь · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -948,7 +948,7 @@ a { color: inherit; text-decoration: none; }
 </style>
 <link rel="canonical" href="https://mestov.net/event/5a6ad0e6">
 <meta property="og:title" content="Крымский академический симфонический оркестр — музыкальное училище им. П.И. Чайковского, Симферополь · Местов.Нет">
-<meta property="og:description" content="Крымский академический симфонический оркестр, музыкальное училище им. П.И. Чайковского, в Симферополе, 24 мая, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:description" content="Крымский академический симфонический оркестр, музыкальное училище им. П.И. Чайковского, в Симферополе, 24 мая, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/0e1722ad5ffd480db98a0079e4133624.jpg">
 <script type="application/ld+json">
@@ -958,7 +958,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Крымский академический симфонический оркестр",
-      "startDate": "2025-05-24T15:30:00+03:00",
+      "startDate": "2026-05-24T15:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "музыкальное училище им. П.И. Чайковского",

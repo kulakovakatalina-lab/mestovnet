@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hungry Bird — афиша в Симеизе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/hungry-bird">
   <meta property="og:title" content="Hungry Bird — афиша в Симеизе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Hungry Bird, в Симеизе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Владимира Луговского, 2А, пгт Симеиз"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Хэппи Пол",
-      "startDate": "2026-07-04T17:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Hungry Bird"
-      },
-      "description": "День Ивана Купала на пляже: анимация, маркет крымских мастеров, хороводы у костра, фаер-шоу и музыкальная атмосфера от диджея Хэппи Пол.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Хэппи Пол"
-      },
-      "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg"
     }
   ]
 }
@@ -993,7 +978,7 @@ footer {
     <p class="venue-description">Hungry Bird — крафтовый бар-ресторан на набережной Симеиза с живой атмосферой у моря.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Владимира Луговского, 2А, пгт Симеиз, Симеиз</span><a href="https://yandex.ru/maps/?text=ул.+Владимира+Луговского,+2А,+пгт+Симеиз,+Симеиз,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
