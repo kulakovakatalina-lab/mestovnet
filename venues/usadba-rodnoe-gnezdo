@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/usadba-rodnoe-gnezdo">
   <meta property="og:title" content="Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "с. Родное, Балаклавский р-н"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Денайро",
+      "startDate": "2026-07-11T17:30:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Усадьба «Родное гнездо»"
+      },
+      "description": "Вечеринка для своих с живой музыкой под гитару от Денайро и специальным BBQ-меню от бренд-шефа Павла Галича.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Денайро"
+      },
+      "image": "/images/events/99c9a66e257e462e893f8673f27fa3ca.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -993,7 +1008,7 @@ footer {
     <p class="venue-description">Усадьба «Родное гнездо» — винно-туристический комплекс среди виноградников с рестораном и дегустациями.</p>
     <div class="venue-address-block"><span class="venue-hero-address">с. Родное, Балаклавский р-н, Севастополь</span><a href="https://yandex.ru/maps/?text=с.+Родное,+Балаклавский+р-н,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

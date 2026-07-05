@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="CORA, Sky Beach Ялта, в Ялте, 30 мая, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="CORA, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CORA — Sky Beach Ялта, Ялта · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -948,7 +948,7 @@ a { color: inherit; text-decoration: none; }
 </style>
 <link rel="canonical" href="https://mestov.net/event/37d71771">
 <meta property="og:title" content="CORA — Sky Beach Ялта, Ялта · Местов.Нет">
-<meta property="og:description" content="CORA, Sky Beach Ялта, в Ялте, 30 мая, чт. Билеты и подробности на Местов.Нет.">
+<meta property="og:description" content="CORA, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/8c77f238aab189fdc410746c2585aa10.jpg">
 <script type="application/ld+json">
@@ -958,7 +958,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "CORA",
-      "startDate": "2025-05-30T11:00:00+03:00",
+      "startDate": "2026-05-30T11:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Sky Beach Ялта",
