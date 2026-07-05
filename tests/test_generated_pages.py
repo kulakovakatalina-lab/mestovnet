@@ -16,7 +16,7 @@ from generate_pages import (
     esc,
     resolve_venue_slugs,
 )
-from tests.conftest import KNOWN_BROKEN_IMAGE_EVENT_IDS, KNOWN_MISSING_VENUE_PAGES
+from tests.conftest import KNOWN_MISSING_EVENT_PAGES, KNOWN_MISSING_VENUE_PAGES
 
 # Сколько upcoming-событий проверять детально — весь список избыточен для
 # каждого прогона, репрезентативной выборки достаточно, чтобы ловить
@@ -53,10 +53,13 @@ class TestEventPages:
     def test_pages_exist_for_upcoming_events(self, upcoming_events, project_root):
         missing = [
             e["id"] for e in upcoming_events
-            if e["id"] not in KNOWN_BROKEN_IMAGE_EVENT_IDS
+            if e["id"] not in KNOWN_MISSING_EVENT_PAGES
             and not (project_root / "event" / e["id"]).is_file()
         ]
-        assert not missing, f"Нет сгенерированной страницы event/<id> для: {missing}"
+        assert not missing, (
+            f"Нет сгенерированной страницы event/<id> для: {missing}. "
+            f"Похоже, сайт нужно пересобрать: python3 generate_pages.py"
+        )
 
     def test_title_contains_artist(self, upcoming_events, project_root):
         problems = []
