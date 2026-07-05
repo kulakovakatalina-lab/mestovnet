@@ -13,7 +13,37 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Автотесты перед релизом: вёрстка, ссылки, соответствие постеров событиям,
+  # sitemap/robots. Гоняем только новые pre-release тесты, а не весь tests/ —
+  # там есть отдельный (уже существующий и пока не пройденный) набор юнит-
+  # тестов парсера, который к релизу сайта не относится.
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Установить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установить зависимости
+        run: pip install -r requirements.txt
+
+      - name: Установить браузер для Playwright
+        run: playwright install --with-deps chromium
+
+      - name: Прогнать pre-release тесты
+        run: >
+          pytest -q
+          tests/test_data_integrity.py
+          tests/test_generated_pages.py
+          tests/test_sitemap_robots.py
+          tests/test_layout_playwright.py
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
