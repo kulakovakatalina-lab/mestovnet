@@ -881,11 +881,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -1035,7 +1034,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Дворец культуры рыбаков</h1>
-    <p class="venue-description">Дворец культуры рыбаков — один из крупнейших культурно-досуговых комплексов Севастополя, открытый в 1979 году.</p>
+    <p class="venue-description">За последний месяц здесь прошло 4 концерта. Был премьерный вечер Ирины Круг, в остальном афиша ровно поделена между попом, фолком и классикой. Вход платный.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Павла Корчагина, 1, Севастополь</span><a href="https://yandex.ru/maps/?text=ул.+Павла+Корчагина,+1,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>

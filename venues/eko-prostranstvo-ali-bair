@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Эко-пространство «Али-Баир»</h1>
-    <p class="venue-description">Эко-пространство «Али-Баир» в Байдарской долине — площадка у горы Али-Баир для фестивалей и концертов на природе.</p>
+    <p class="venue-description">За последний месяц здесь прошло 4 концерта. Здесь совмещают музыку и вино: фестиваль крымского виноделия «Винная Маёвка» в Байдарской долине — круговая дегустация вин от 35+ производителей плюс концерт каверов.</p>
     <div class="venue-address-block"><span class="venue-hero-address">с. Широкое, Байдарская долина, Севастополь</span><a href="https://yandex.ru/maps/?text=с.+Широкое,+Байдарская+долина,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

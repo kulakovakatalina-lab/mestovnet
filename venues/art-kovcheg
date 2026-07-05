@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/бахчисарайский-район,-с.-путиловка.html">Бахчисарайский район, с. Путиловка</a>
     </div>
     <h1 class="genre-hero-title">Арт-Ковчег</h1>
-    <p class="venue-description">Творческое пространство в Бельбекской долине, проводит фестивали и арт-пикники на открытом воздухе.</p>
+    <p class="venue-description">За последний месяц здесь сыграли 7 концертов, часть — с бесплатным входом. Небольшая площадка с постоянными резидентами: Андрей Танзю и Карина Клавихо выступали здесь по три раза, заходил и Александр Васильев. Жанрово — микс хип-хопа и этники.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Молодёжная, 49, с. Путиловка, Бахчисарайский р-н, Бахчисарайский район, с. Путиловка</span><a href="https://yandex.ru/maps/?text=ул.+Молодёжная,+49,+с.+Путиловка,+Бахчисарайский+р-н,+Бахчисарайский+район,+с.+Путиловка,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

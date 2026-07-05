@@ -16,7 +16,8 @@
       "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg"
     ],
     "image": "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
-    "post_date": "2026-07-04T11:41:51+00:00"
+    "post_date": "2026-07-04T11:41:51+00:00",
+    "id": "cb010779"
   },
   {
     "date": "2026-07-04",
@@ -55,7 +56,8 @@
       "/images/events/077c76e7cf8177ec9c1e8c2a5b3dfc5c.jpg"
     ],
     "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg",
-    "post_date": "2026-07-02T07:18:01+00:00"
+    "post_date": "2026-07-02T07:18:01+00:00",
+    "id": "76223b42"
   },
   {
     "date": "2026-07-04",
@@ -75,7 +77,8 @@
       "/images/events/bc95d1a8a62c3cdeec5072b914809ebd.jpg"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-03T11:37:47+00:00"
+    "post_date": "2026-07-03T11:37:47+00:00",
+    "id": "80e467be"
   },
   {
     "date": "2026-07-05",
@@ -456,7 +459,8 @@
       "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-02T09:35:21+00:00"
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "id": "bc0251ff"
   },
   {
     "date": "2026-07-19",
@@ -636,7 +640,8 @@
       "/images/events/451270406988b08b5e25ffbabb5a6966.jpg"
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
-    "post_date": "2026-07-25"
+    "post_date": "2026-07-25",
+    "id": "f937c01c"
   },
   {
     "date": "2026-07-25",
@@ -1260,7 +1265,8 @@
       "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg"
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
-    "post_date": "2026-08-13"
+    "post_date": "2026-08-13",
+    "id": "c9bac59d"
   },
   {
     "date": "2026-08-14",
@@ -1882,7 +1888,8 @@
       "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-03T11:37:47+00:00"
+    "post_date": "2026-07-03T11:37:47+00:00",
+    "id": "ee3201f1"
   },
   {
     "date": "2026-07-02",
@@ -2087,7 +2094,8 @@
       "/images/events/8f15b9b07a24779e75f9916afc9be0e4.jpg"
     ],
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
-    "post_date": "2026-06-23T09:38:23+00:00"
+    "post_date": "2026-06-23T09:38:23+00:00",
+    "id": "c4a80534"
   },
   {
     "date": "2026-06-23",
@@ -2265,7 +2273,8 @@
       "/images/events/9499901282c2702137e45c3e667fe43d.jpg"
     ],
     "image": "/images/events/753793e34a98e41c9d2d7fd5c7bb279d.jpg",
-    "post_date": "2026-05-25T07:48:59+00:00"
+    "post_date": "2026-05-25T07:48:59+00:00",
+    "id": "a2e9f541"
   },
   {
     "date": "2026-06-07",
@@ -2462,7 +2471,8 @@
       "/images/events/048333b432c68f76a7503b734b35476c.jpg"
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": "2026-05-25T07:43:16+00:00"
+    "post_date": "2026-05-25T07:43:16+00:00",
+    "id": "0bd46674"
   },
   {
     "date": "2026-05-30",
@@ -2556,7 +2566,8 @@
       "/images/events/73ce749b474309723b801db8ced40865.jpg"
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": "2026-05-25T07:43:16+00:00"
+    "post_date": "2026-05-25T07:43:16+00:00",
+    "id": "4dbd153b"
   },
   {
     "date": "2026-05-29",
@@ -2592,7 +2603,8 @@
       "/images/events/73ce749b474309723b801db8ced40865.jpg"
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": "2026-05-25T07:43:16+00:00"
+    "post_date": "2026-05-25T07:43:16+00:00",
+    "id": "d5569c55"
   },
   {
     "date": "2026-05-27",
@@ -2661,7 +2673,8 @@
       "/images/events/f708682a9f919924c4fe70a3ea25f091.jpg"
     ],
     "image": "/images/events/5244a03ffba451fd63689c71bc7fc240.jpg",
-    "post_date": "2026-05-14T15:06:52+00:00"
+    "post_date": "2026-05-14T15:06:52+00:00",
+    "id": "e8aceb0a"
   },
   {
     "date": "2026-05-24",
@@ -2963,7 +2976,8 @@
       "/images/events/bcfe948e09eb737418d12d9a2ff658da.jpg"
     ],
     "image": "/images/events/8fb402b228029b96acad467b92f497d1.jpg",
-    "post_date": "2026-05-16T16:49:37+00:00"
+    "post_date": "2026-05-16T16:49:37+00:00",
+    "id": "714dba03"
   },
   {
     "date": "2026-05-22",
@@ -3092,7 +3106,8 @@
       "/images/events/2b42707761acdc396303da0d1b5e208e.jpg"
     ],
     "image": "/images/events/69fa684ea6fd63510ce4369a7309420a.jpg",
-    "post_date": "2026-05-20T05:55:53+00:00"
+    "post_date": "2026-05-20T05:55:53+00:00",
+    "id": "f3d2f5ae"
   },
   {
     "date": "2026-05-17",
@@ -5054,7 +5069,8 @@
     "image": null,
     "images": null,
     "source_url": "https://t.me/BelbekskayaYarmarka/2201",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "a7b77ead"
   },
   {
     "date": "2026-06-26",
@@ -5070,7 +5086,8 @@
     "image": "/images/events/950341fc0af234db3d39b369490a5a18.jpg",
     "images": null,
     "source_url": "https://t.me/clubjam/1026",
-    "genre": "метал"
+    "genre": "метал",
+    "id": "6af765b8"
   },
   {
     "date": "2026-06-27",
@@ -5086,7 +5103,8 @@
     "image": "/images/events/340b77216d452f582475aa699380306e.jpg",
     "images": null,
     "source_url": "https://t.me/nb_yalta/1959",
-    "genre": "рок"
+    "genre": "рок",
+    "id": "d2938292"
   },
   {
     "date": "2026-07-11",
@@ -5102,7 +5120,8 @@
     "image": "/images/events/ef34d0639f5e613f5827401bfcdaa23e.jpg",
     "images": null,
     "source_url": "https://t.me/afisha_crimea/7911",
-    "genre": "классика"
+    "genre": "классика",
+    "id": "bb3195b6"
   },
   {
     "date": "2026-06-27",
@@ -5121,7 +5140,8 @@
       "/images/events/b77bcb957668ce5a16cb31ca61c8449e.jpg"
     ],
     "source_url": "https://t.me/sevastopol_jazz/1264",
-    "genre": "джаз"
+    "genre": "джаз",
+    "id": "94e0202e"
   },
   {
     "date": "2026-07-10",
@@ -5143,7 +5163,8 @@
       "/images/events/6b92eae93816054f75dfeac39ad46969.jpg"
     ],
     "source_url": "https://t.me/massandrasun/2334",
-    "genre": "другое"
+    "genre": "другое",
+    "id": "889e1262"
   },
   {
     "date": "2026-07-02",
@@ -5159,7 +5180,8 @@
     "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "53df3f9c"
   },
   {
     "date": "2026-07-03",
@@ -5175,7 +5197,8 @@
     "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "296cd22e"
   },
   {
     "date": "2026-07-04",
@@ -5191,7 +5214,8 @@
     "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "e6f3da3c"
   },
   {
     "date": "2026-07-05",
@@ -5207,7 +5231,8 @@
     "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "e0e535e1"
   },
   {
     "date": "2026-07-11",
@@ -5223,7 +5248,8 @@
     "image": "/images/events/99c9a66e257e462e893f8673f27fa3ca.jpg",
     "images": null,
     "source_url": "https://t.me/usadbarodnoegnezdo/3362",
-    "genre": "поп"
+    "genre": "поп",
+    "id": "6e0d79ec"
   },
   {
     "date": "2026-06-27",
@@ -5239,7 +5265,8 @@
     "image": "/images/events/39a25dc1c66c0dc7af5b5597e28cdde1.jpg",
     "images": null,
     "source_url": "https://t.me/afisha_payberry/1583",
-    "genre": "джаз"
+    "genre": "джаз",
+    "id": "35c59839"
   },
   {
     "date": "2026-06-26",
@@ -5255,7 +5282,8 @@
     "image": "/images/events/edf287e5cb16cd85cc70f2ec29493fb8.jpg",
     "images": null,
     "source_url": "https://t.me/afisha_payberry/1584",
-    "genre": "классика"
+    "genre": "классика",
+    "id": "2e9556da"
   },
   {
     "date": null,

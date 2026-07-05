@@ -851,11 +851,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -1005,7 +1004,7 @@ footer {
       · <a href="/cities/evpatoria.html">Евпатория</a>
     </div>
     <h1 class="genre-hero-title">Клуб «Белый»</h1>
-    <p class="venue-description">Ночной клуб «Белый» — крупнейший ночной клуб Евпатории с большой танцевальной сценой.</p>
+    <p class="venue-description">За два месяца здесь прошло 3 концерта с платным входом — поп, хип-хоп и инди поровну, устойчивых резидентов пока не видно.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Фрунзе, 1, Евпатория</span><a href="https://yandex.ru/maps/?text=ул.+Фрунзе,+1,+Евпатория,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>

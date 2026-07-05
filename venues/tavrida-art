@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/sudak.html">Судак</a>
     </div>
     <h1 class="genre-hero-title">ТАВРИДА.АРТ</h1>
-    <p class="venue-description">ТАВРИДА.АРТ — ежегодный арт-кластер в Судаке, главная творческая площадка России для молодых деятелей культуры.</p>
+    <p class="venue-description">В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».</p>
     <div class="venue-address-block"><span class="venue-hero-address">бухта Капсель, Судак, Судак</span><a href="https://yandex.ru/maps/?text=бухта+Капсель,+Судак,+Судак,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

@@ -836,11 +836,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -990,7 +989,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Муссон</h1>
-    <p class="venue-description">ТРЦ «Муссон» — крупнейший торгово-развлекательный центр Севастополя с кинотеатром, катком и площадками для концертов.</p>
+    <p class="venue-description">За последние месяцы здесь прошло 3 концерта с платным входом — поп, метал и инди поровну, без выраженных резидентов сцены.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Вакуленчука, 29, Севастополь</span><a href="https://yandex.ru/maps/?text=ул.+Вакуленчука,+29,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
