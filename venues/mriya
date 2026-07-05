@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мрия — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Мрия, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Мрия, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/mriya">
   <meta property="og:title" content="Мрия — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Мрия, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Мрия, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Генерала Острякова, 9, с. Оползневое"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Гастролис",
-      "startDate": "2026-07-04T12:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Мрия"
-      },
-      "description": "Гастролис в Мрия, Ялта.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Гастролис"
-      },
-      "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -851,11 +836,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -1005,10 +989,10 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Мрия</h1>
-    <p class="venue-description">Mriya Resort &amp; Spa — пятизвёздочный курортный комплекс в 25 км от Ялты с бальным залом и развлекательной программой.</p>
+    <p class="venue-description">За последние месяцы здесь прошло 4 концерта. Один из них — вечер открытия сезона «Сияние» на маяке, афиша тяготеет к попу и его оттенкам.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Генерала Острякова, 9, с. Оползневое, Ялта</span><a href="https://yandex.ru/maps/?text=ул.+Генерала+Острякова,+9,+с.+Оползневое,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

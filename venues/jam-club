@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Горького, 5"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom",
-      "startDate": "2026-07-04T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Rock Fest в Jam Club: выступают группы Манекен, Inkoda, Структура, Red Stars. Бесплатный вход для подписчиков клуба.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom"
-      },
-      "image": "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -909,11 +894,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -1063,10 +1047,10 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Jam Club</h1>
-    <p class="venue-description">Концертный клуб в центре Симферополя, принимает рок-концерты, живую музыку и тематические вечеринки.</p>
+    <p class="venue-description">За чуть больше года здесь сыграли 23 концерта, в основном рок и метал — чаще других выступают Иччи и Нарратор. Среди трибьютов были AC/DC, The Beatles и Nirvana, а однажды здесь дал большой сольный концерт хард-рок-легенда «Чёрный Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Горького, 5, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Горького,+5,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

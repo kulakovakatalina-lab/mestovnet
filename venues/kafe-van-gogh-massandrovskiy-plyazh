@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">кафе «Van Gogh», Массандровский пляж</h1>
-    <p class="venue-description">Пляж-кафе «Van Gogh» на Массандровском пляже в Ялте с открытой верандой и видом на море.</p>
+    <p class="venue-description">За один уик-энд здесь прошло 3 концерта. Певица Spahova выступала дважды, а открытие майского сезона на пляже прошло под темой Jazzy Brut с диджей-сетом.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Дражинского, 31Г, Ялта</span><a href="https://yandex.ru/maps/?text=ул.+Дражинского,+31Г,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

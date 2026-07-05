@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Отель «Аквамарин»</h1>
-    <p class="venue-description">Курортный комплекс «Аквамарин» 5* в Севастополе на берегу бухты Омега с аквапарком и летней концертной сценой.</p>
+    <p class="venue-description">За последний месяц здесь прошло 3 концерта. Открытие сезона отметили джазовым концертом под открытым небом, а дальше жанры расходятся в разные стороны — от классики до метала.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Парковая, 11, Севастополь</span><a href="https://yandex.ru/maps/?text=ул.+Парковая,+11,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

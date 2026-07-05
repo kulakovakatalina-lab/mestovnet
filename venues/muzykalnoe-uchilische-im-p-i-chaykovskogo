@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Музыкальное училище им. П.И. Чайковского</h1>
-    <p class="venue-description">Среднее профессиональное учебное заведение в Симферополе, основанное в 1910 году и считающееся одним из старейших музыкальных училищ страны. Готовит специалистов по инструментальному исполнительству, вокалу, хоровому дирижированию и теории музыки.</p>
+    <p class="venue-description">За год здесь прошло 5 концертов — все чисто классические. Финальным аккордом цикла «Сказки с оркестром» стал концерт с персонажем Незнайкой, где вместе с оркестром на сцену выходили юные музыканты училища.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Набережная имени 60-летия СССР, 31, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Набережная+имени+60-летия+СССР,+31,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

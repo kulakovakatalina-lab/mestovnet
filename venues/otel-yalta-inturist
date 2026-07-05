@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Отель «Ялта-Интурист»</h1>
-    <p class="venue-description">Крупный гостиничный комплекс на берегу моря в Ялте, работающий с советских времён и рассчитанный на несколько тысяч гостей. На территории расположены несколько ресторанов, бассейн, собственный пляж и развлекательная инфраструктура.</p>
+    <p class="venue-description">За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Прогулочная аллея, Ялта</span><a href="https://yandex.ru/maps/?text=Прогулочная+аллея,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   

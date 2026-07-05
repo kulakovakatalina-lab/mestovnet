@@ -821,11 +821,10 @@ footer {
   }
   .venue-description {
     font-size: 15px;
-    font-style: italic;
     color: var(--muted);
     line-height: 1.6;
     margin-top: 14px;
-    white-space: nowrap;
+    max-width: 640px;
   }
   .genre-hero-meta {
     text-align: right;
@@ -975,7 +974,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Народный бар</h1>
-    <p class="venue-description">Бар с крафтовым пивом в Ялте, расположенный в правом крыле городской бани и открывшийся в 2020 году. Работает в формате контактного бара с открытой стойкой, где гости общаются напрямую с барменами.</p>
+    <p class="venue-description">За последний месяц здесь прошло 4 концерта с платным входом. Играла группа «Карбид» с трибьютом Rammstein — лучшие хиты и неожиданные аранжировки немецких индастриал-рокеров. Основа афиши — панк-рок.</p>
     <div class="venue-address-block"><span class="venue-hero-address">на ул. Ломоносова, 15, Ялта</span><a href="https://yandex.ru/maps/?text=на+ул.+Ломоносова,+15,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   
