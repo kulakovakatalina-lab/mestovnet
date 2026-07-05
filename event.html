@@ -1007,6 +1007,11 @@ const MONTHS_GEN = ['января', 'февраля', 'марта', 'апрел�
 const DOW_FULL = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
 
 const starIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`;
+function posterFallback(img) {
+  const target = img.closest('.carousel-slide') || img.closest('.event-poster-wrap');
+  if (target) target.innerHTML = `<div class="event-poster-placeholder">${starIcon}</div>`;
+  else img.remove();
+}
 const genreIcon = (g) => {
   const icons = {
     jazz: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
@@ -1204,10 +1209,10 @@ function render(event) {
   const posterHtml = images.length
     ? `<div class="event-poster-wrap">${
         images.length === 1
-          ? `<img src="${safeUrl(images[0])}" alt="${escapeHtml(event.artist)}" loading="lazy">`
+          ? `<img src="${safeUrl(images[0])}" alt="${escapeHtml(event.artist)}" loading="lazy" onerror="posterFallback(this)">`
           : `<div class="carousel" id="posterCarousel">
               <div class="carousel-track" id="carouselTrack">
-                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${safeUrl(img)}" alt="${escapeHtml(event.artist)}" loading="lazy"></div>`).join('')}
+                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${safeUrl(img)}" alt="${escapeHtml(event.artist)}" loading="lazy" onerror="posterFallback(this)"></div>`).join('')}
               </div>
               <button class="carousel-btn carousel-btn-prev" id="carouselPrev">&#8249;</button>
               <button class="carousel-btn carousel-btn-next" id="carouselNext">&#8250;</button>
@@ -1221,7 +1226,7 @@ function render(event) {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
     <a href="/event/${escapeHtml(e.id)}" class="mini-card">
-      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy">` : starIcon}</div>
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
         <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
@@ -1361,7 +1366,7 @@ function renderMoreCards() {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
     <a href="/event/${escapeHtml(e.id)}" class="mini-card">
-      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy">` : starIcon}</div>
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
         <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
