@@ -27,6 +27,7 @@ bot-yandex/function.zip
 # Тесты
 .coverage
 .pytest_cache/
+tests/artifacts/
 
 # Real-ESRGAN upscaler binary + models (большой, не в git)
 tools/
