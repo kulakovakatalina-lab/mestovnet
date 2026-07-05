@@ -4,3 +4,5 @@ instagrapi
 python-dotenv
 pytest
 pytest-cov
+Pillow
+playwright
