@@ -1,144 +1,5 @@
 [
   {
-    "date": "2026-07-04",
-    "time": "18:00",
-    "artist": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom",
-    "event_type": "фестиваль",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "ROCK FEST — первая сцена с группами Манекен, Inkoda, Структура и Red Stars. Бесплатный вход для подписчиков клуба, работают до утра.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1043",
-    "images": [
-      "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
-      "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg"
-    ],
-    "image": "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
-    "post_date": "2026-07-04T11:41:51+00:00",
-    "id": "cb010779"
-  },
-  {
-    "date": "2026-07-04",
-    "time": "12:00",
-    "artist": "Гастролис",
-    "event_type": "концерт",
-    "venue": "Мрия",
-    "price": "от 1 500 ₽",
-    "description": "Гастролис в Мрия, Ялта.",
-    "source_city": "Ялта",
-    "source_channel": "yandex_afisha",
-    "genre": "поп-рок",
-    "source_url": "https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
-    "images": [
-      "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg"
-    ],
-    "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
-    "post_date": "2026-07-04",
-    "id": "1055d54d",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "date": "2026-07-04",
-    "time": "17:00",
-    "artist": "Хэппи Пол",
-    "event_type": "другое",
-    "venue": "Hungry Bird",
-    "price": null,
-    "description": "День Ивана Купала в Hungry Bird: музыкальная атмосфера от Хэппи Пол, фаер-шоу, хороводы у костра, маркет крымских мастеров и закат у моря.",
-    "source_city": "Симеиз",
-    "source_channel": "crimea_event",
-    "genre": "поп",
-    "source_url": "https://t.me/afisha_crimea/7876",
-    "images": [
-      "/images/events/83516cb087000eb2abb999b60c755072.jpg",
-      "/images/events/077c76e7cf8177ec9c1e8c2a5b3dfc5c.jpg"
-    ],
-    "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg",
-    "post_date": "2026-07-02T07:18:01+00:00",
-    "id": "76223b42"
-  },
-  {
-    "date": "2026-07-04",
-    "time": "21:00",
-    "artist": "Алексей Гаркуша, Группа «Проект-С»",
-    "event_type": "трибьют",
-    "venue": "Бар рок-н-ролльщики",
-    "price": "бесплатный",
-    "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него. Вход бесплатный.",
-    "source_city": "Севастополь",
-    "source_channel": "rocknroll_92",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_92/6907",
-    "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-      "/images/events/bc95d1a8a62c3cdeec5072b914809ebd.jpg"
-    ],
-    "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-03T11:37:47+00:00",
-    "id": "80e467be"
-  },
-  {
-    "date": "2026-07-05",
-    "time": null,
-    "artist": "Трио «А3», Анна Шакель",
-    "event_type": "джем",
-    "venue": null,
-    "source_city": "Севастополь",
-    "price": "600–1100 ₽",
-    "description": "Поющий джазовый вечер: сначала живой джаз от трио «А3» и Анны Шакель, затем зрители подключаются к пению вместе с музыкантами.",
-    "source_channel": "afisha_payberry",
-    "source_url": "https://t.me/afisha_payberry/1588",
-    "post_date": "2026-06-29T15:06:43+00:00",
-    "image": "/images/events/db4fa16adbc4107e307a931633293cdc.jpg",
-    "genre": "джаз",
-    "id": "095ea2fe",
-    "updated_at": "2026-06-29T15:06:43+00:00"
-  },
-  {
-    "id": "f7f2c0ba",
-    "date": "2026-07-05",
-    "time": "15:00",
-    "artist": "Семейный альбом, Крымский камерный оркестр",
-    "event_type": "концерт",
-    "venue": "Колонный зал театра им. А.П. Чехова",
-    "price": null,
-    "description": "Концерт «Семейный альбом» ко Дню семьи, любви и верности: проникновенные мелодии, объединяющие поколения. Билеты: concert-kko.ru.",
-    "source_city": "Ялта",
-    "source_channel": "koncertykrym",
-    "genre": "поп",
-    "source_url": "https://t.me/koncertykrym/2179",
-    "images": [
-      "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
-      "/images/events/68f84065678f269edd4310b8e6e868a0.jpg"
-    ],
-    "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
-    "post_date": "2026-07-02T09:42:33+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "c641b4c8",
-    "date": "2026-07-05",
-    "time": "21:00",
-    "artist": "Дегустация настоек",
-    "event_type": "концерт",
-    "venue": "Бар рок-н-ролльщики",
-    "price": "бесплатно",
-    "description": "Бесплатная дегустация. Презентация настоек из нового меню.",
-    "source_city": "Севастополь",
-    "source_channel": "rocknroll_92",
-    "genre": "другое",
-    "source_url": "https://t.me/rocknroll_92/6907",
-    "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
-    ],
-    "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-02T09:35:05+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
     "date": "2026-07-08",
     "time": "19:30",
     "artist": "Джокер",
@@ -171,6 +32,30 @@
     "genre": "классика",
     "id": "732b94cd",
     "updated_at": "2026-07-09"
+  },
+  {
+    "date": "2026-07-10",
+    "time": "17:00",
+    "artist": "YSJ «Маяк» (Local Edition)",
+    "event_type": "вечеринка",
+    "venue": "Пляж «Ковёр», 7-й сектор Массандровского пляжа",
+    "price": "бесплатно (для зрителей)",
+    "description": "Трёхдневный фестиваль YSJ «Маяк» (Local Edition) проходит 10–12 июля с 17:00 до 22:00. В программе DJ-сеты, танцевальные батлы и конкурсы для зрителей; участие в батлах — платное.",
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-07-05T08:13:30+00:00",
+    "image": "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
+    "images": [
+      "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
+      "/images/events/345d9c34f401b3a19260059d461135dd.jpg",
+      "/images/events/aef116ac487642af51db7ca4727328f1.jpg",
+      "/images/events/6598c312f7438a8e04e974ec303af91d.jpg",
+      "/images/events/6b92eae93816054f75dfeac39ad46969.jpg"
+    ],
+    "source_url": "https://t.me/massandrasun/2334",
+    "genre": "другое",
+    "id": "889e1262",
+    "updated_at": "2026-07-05T08:13:30+00:00"
   },
   {
     "date": "2026-07-10",
@@ -210,6 +95,62 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "fc0334a9",
+    "date": "2026-07-10",
+    "time": "21:00",
+    "artist": "Алексей Гаркуша",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "date": "2026-07-11",
+    "time": "17:30",
+    "artist": "Денайро",
+    "event_type": "вечеринка",
+    "venue": "Усадьба «Родное гнездо»",
+    "price": "1000 ₽",
+    "description": "Вечеринка для своих с живой музыкой под гитару от Денайро и специальным BBQ-меню от бренд-шефа Павла Галича.",
+    "source_channel": "usadbarodnoegnezdo",
+    "source_city": "Крым",
+    "post_date": "2026-07-04T14:40:48+00:00",
+    "image": "/images/events/99c9a66e257e462e893f8673f27fa3ca.jpg",
+    "images": null,
+    "source_url": "https://t.me/usadbarodnoegnezdo/3362",
+    "genre": "поп",
+    "id": "6e0d79ec",
+    "updated_at": "2026-07-04T14:40:48+00:00"
+  },
+  {
+    "date": "2026-07-11",
+    "time": "18:00",
+    "artist": "Крымский камерный оркестр «Новая Гармония»",
+    "event_type": "концерт",
+    "venue": "Пещера «Мраморная»",
+    "price": null,
+    "description": "Уникальный проект «Звуковой сплав 6» под управлением дирижёра Дениса Карлова. В программе шедевры камерной музыки от барокко до современности в акустике древней пещеры.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-07-04T17:05:43+00:00",
+    "image": "/images/events/ef34d0639f5e613f5827401bfcdaa23e.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/7911",
+    "genre": "классика",
+    "id": "bb3195b6",
+    "updated_at": "2026-07-04T17:05:43+00:00"
+  },
+  {
     "date": "2026-07-11",
     "time": "20:00",
     "artist": "GangaMantra",
@@ -247,6 +188,26 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "13d99e44",
+    "date": "2026-07-11",
+    "time": "21:00",
+    "artist": "Группа «Хай'Петри»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Хай'Петри» с рок-поп-хитами на двух языках. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
     "date": "2026-07-12",
     "time": "20:00",
     "artist": "ГУДТАЙМС",
@@ -280,6 +241,26 @@
       "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "57573558",
+    "date": "2026-07-12",
+    "time": "21:00",
+    "artist": "Евгений Громов",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Русский рок и поп-рок в акустике — Евгений Громов.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
@@ -338,6 +319,26 @@
     "updated_at": "2026-06-30T04:22:26.388720+00:00"
   },
   {
+    "id": "58ceeb65",
+    "date": "2026-07-17",
+    "time": "21:00",
+    "artist": "Дуэт «МысКрыма»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
     "date": "2026-07-18",
     "time": "13:00",
     "artist": "DJ сет",
@@ -388,6 +389,26 @@
       "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "ac2efd2a",
+    "date": "2026-07-18",
+    "time": "21:00",
+    "artist": "Группа «Домино»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
@@ -460,7 +481,8 @@
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
-    "id": "bc0251ff"
+    "id": "bc0251ff",
+    "updated_at": "2026-07-02T09:35:21+00:00"
   },
   {
     "date": "2026-07-19",
@@ -608,6 +630,26 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "2b0892c2",
+    "date": "2026-07-24",
+    "time": "21:00",
+    "artist": "Игорь Симдянкин",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
     "date": "2026-07-25",
     "time": "16:00",
     "artist": "Крымский камерный оркестр",
@@ -625,6 +667,7 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "f937c01c",
     "date": "2026-07-25",
     "time": "19:00",
     "artist": "Thomas Mraz",
@@ -641,7 +684,7 @@
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-25",
-    "id": "f937c01c"
+    "updated_at": "2026-07-25"
   },
   {
     "date": "2026-07-25",
@@ -694,6 +737,26 @@
       "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "34c7a19a",
+    "date": "2026-07-25",
+    "time": "21:00",
+    "artist": "Группа «САБ»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
@@ -769,6 +832,26 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "41a28bc0",
+    "date": "2026-07-26",
+    "time": "21:00",
+    "artist": "Дегустация настоек",
+    "event_type": "другое",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Бесплатная дегустация авторских настоек. Презентация меню.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
     "date": "2026-07-31",
     "time": "19:00",
     "artist": "Таисия Повалий",
@@ -838,6 +921,26 @@
     "genre": "юмор",
     "id": "24af4b8c",
     "updated_at": "2026-07-01T07:22:47.755490+00:00"
+  },
+  {
+    "id": "04c0337c",
+    "date": "2026-07-31",
+    "time": "21:00",
+    "artist": "Группа «Кальвадос»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": null,
+    "description": "Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:21+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
     "date": "2026-08-01",
@@ -1250,6 +1353,7 @@
     "updated_at": "2026-08-13"
   },
   {
+    "id": "c9bac59d",
     "date": "2026-08-13",
     "time": "20:00",
     "artist": "Хор Сретенского монастыря",
@@ -1266,7 +1370,7 @@
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-13",
-    "id": "c9bac59d"
+    "updated_at": "2026-08-13"
   },
   {
     "date": "2026-08-14",
@@ -1837,6 +1941,204 @@
     "updated_at": "2026-10-21"
   },
   {
+    "date": "2026-07-05",
+    "time": null,
+    "artist": "Трио «А3», Анна Шакель",
+    "event_type": "джем",
+    "venue": null,
+    "source_city": "Севастополь",
+    "price": "600–1100 ₽",
+    "description": "Поющий джазовый вечер: сначала живой джаз от трио «А3» и Анны Шакель, затем зрители подключаются к пению вместе с музыкантами.",
+    "source_channel": "afisha_payberry",
+    "source_url": "https://t.me/afisha_payberry/1588",
+    "post_date": "2026-06-29T15:06:43+00:00",
+    "image": "/images/events/db4fa16adbc4107e307a931633293cdc.jpg",
+    "genre": "джаз",
+    "id": "095ea2fe",
+    "updated_at": "2026-06-29T15:06:43+00:00"
+  },
+  {
+    "id": "f7f2c0ba",
+    "date": "2026-07-05",
+    "time": "15:00",
+    "artist": "Семейный альбом, Крымский камерный оркестр",
+    "event_type": "концерт",
+    "venue": "Колонный зал театра им. А.П. Чехова",
+    "price": null,
+    "description": "Концерт «Семейный альбом» ко Дню семьи, любви и верности: проникновенные мелодии, объединяющие поколения. Билеты: concert-kko.ru.",
+    "source_city": "Ялта",
+    "source_channel": "koncertykrym",
+    "genre": "поп",
+    "source_url": "https://t.me/koncertykrym/2179",
+    "images": [
+      "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
+      "/images/events/68f84065678f269edd4310b8e6e868a0.jpg"
+    ],
+    "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
+    "post_date": "2026-07-02T09:42:33+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "c641b4c8",
+    "date": "2026-07-05",
+    "time": "21:00",
+    "artist": "Дегустация настоек",
+    "event_type": "концерт",
+    "venue": "Бар рок-н-ролльщики",
+    "price": "бесплатно",
+    "description": "Бесплатная дегустация. Презентация настоек из нового меню.",
+    "source_city": "Севастополь",
+    "source_channel": "rocknroll_92",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_92/6907",
+    "images": [
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+    ],
+    "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+    "post_date": "2026-07-02T09:35:05+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "92239e89",
+    "date": "2026-07-05",
+    "time": "21:00",
+    "artist": "Фёдор Старовойтов",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики в Симферополе",
+    "price": "бесплатно",
+    "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "другое",
+    "source_url": "https://t.me/rocknroll_82/193",
+    "images": [
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+    ],
+    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+    "post_date": "2026-07-02T09:35:05+00:00",
+    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "date": "2026-07-05",
+    "time": "14:00",
+    "artist": "DIM K. | EL",
+    "event_type": "вечеринка",
+    "venue": "пляж Van Gogh",
+    "price": null,
+    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-07-01T15:42:07+00:00",
+    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
+    "images": null,
+    "source_url": "https://t.me/massandrasun/2322",
+    "genre": "поп",
+    "id": "e0e535e1",
+    "updated_at": "2026-07-01T15:42:07+00:00"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "18:00",
+    "artist": "Манекен, Inkoda, Структура, Red Stars, Крыша мира, Ключ, Иччи, Shoom",
+    "event_type": "фестиваль",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "ROCK FEST — первая сцена с группами Манекен, Inkoda, Структура и Red Stars. Бесплатный вход для подписчиков клуба, работают до утра.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1043",
+    "images": [
+      "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
+      "/images/events/76c54c3ae86ecf9c9b6f2121850fb5f6.jpg"
+    ],
+    "image": "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
+    "post_date": "2026-07-04T11:41:51+00:00",
+    "id": "cb010779",
+    "updated_at": "2026-07-04T11:41:51+00:00"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "12:00",
+    "artist": "Гастролис",
+    "event_type": "концерт",
+    "venue": "Мрия",
+    "price": "от 1 500 ₽",
+    "description": "Гастролис в Мрия, Ялта.",
+    "source_city": "Ялта",
+    "source_channel": "yandex_afisha",
+    "genre": "поп-рок",
+    "source_url": "https://afisha.yandex.ru/yalta/festival/gastrolis-2026?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg"
+    ],
+    "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
+    "post_date": "2026-07-04",
+    "id": "1055d54d",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "17:00",
+    "artist": "Хэппи Пол",
+    "event_type": "другое",
+    "venue": "Hungry Bird",
+    "price": null,
+    "description": "День Ивана Купала в Hungry Bird: музыкальная атмосфера от Хэппи Пол, фаер-шоу, хороводы у костра, маркет крымских мастеров и закат у моря.",
+    "source_city": "Симеиз",
+    "source_channel": "crimea_event",
+    "genre": "поп",
+    "source_url": "https://t.me/afisha_crimea/7876",
+    "images": [
+      "/images/events/83516cb087000eb2abb999b60c755072.jpg",
+      "/images/events/077c76e7cf8177ec9c1e8c2a5b3dfc5c.jpg"
+    ],
+    "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg",
+    "post_date": "2026-07-02T07:18:01+00:00",
+    "id": "76223b42",
+    "updated_at": "2026-07-02T07:18:01+00:00"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "21:00",
+    "artist": "Алексей Гаркуша, Группа «Проект-С»",
+    "event_type": "трибьют",
+    "venue": "Бар рок-н-ролльщики",
+    "price": "бесплатный",
+    "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него. Вход бесплатный.",
+    "source_city": "Севастополь",
+    "source_channel": "rocknroll_92",
+    "genre": "рок",
+    "source_url": "https://t.me/rocknroll_92/6907",
+    "images": [
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+      "/images/events/bc95d1a8a62c3cdeec5072b914809ebd.jpg"
+    ],
+    "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+    "post_date": "2026-07-03T11:37:47+00:00",
+    "id": "80e467be",
+    "updated_at": "2026-07-03T11:37:47+00:00"
+  },
+  {
+    "date": "2026-07-04",
+    "time": "14:00",
+    "artist": "SCREAM | MARTIN W.",
+    "event_type": "вечеринка",
+    "venue": "пляж Van Gogh",
+    "price": null,
+    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-07-01T15:42:07+00:00",
+    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
+    "images": null,
+    "source_url": "https://t.me/massandrasun/2322",
+    "genre": "поп",
+    "id": "e6f3da3c",
+    "updated_at": "2026-07-01T15:42:07+00:00"
+  },
+  {
     "date": "2026-07-03",
     "time": "19:00",
     "artist": "AC/DC Show — Back in Storm",
@@ -1889,7 +2191,46 @@
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-03T11:37:47+00:00",
-    "id": "ee3201f1"
+    "id": "ee3201f1",
+    "updated_at": "2026-07-03T11:37:47+00:00"
+  },
+  {
+    "id": "0fcd10fd",
+    "date": "2026-07-03",
+    "time": null,
+    "artist": "AC/DC Tribute",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатный для подписчиков",
+    "description": "Трибьют-концерт AC/DC в Jam Club. Клуб работал до утра, бесплатный вход для подписчиков.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1041",
+    "images": [
+      "/images/events/949850d70e101bc822009aef7de8ecdc.jpg"
+    ],
+    "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
+    "post_date": "2026-07-03T07:46:20+00:00",
+    "updated_at": "2026-07-04T00:00:00+00:00"
+  },
+  {
+    "date": "2026-07-03",
+    "time": "14:00",
+    "artist": "EL | KUZNETSOV",
+    "event_type": "вечеринка",
+    "venue": "пляж Van Gogh",
+    "price": null,
+    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-07-01T15:42:07+00:00",
+    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
+    "images": null,
+    "source_url": "https://t.me/massandrasun/2322",
+    "genre": "поп",
+    "id": "296cd22e",
+    "updated_at": "2026-07-01T15:42:07+00:00"
   },
   {
     "date": "2026-07-02",
@@ -1907,6 +2248,24 @@
     "genre": "авторская",
     "id": "bf792606",
     "updated_at": "2026-06-27T05:20:06+00:00"
+  },
+  {
+    "date": "2026-07-02",
+    "time": "14:00",
+    "artist": "BUSHA | KARDYS",
+    "event_type": "вечеринка",
+    "venue": "пляж Van Gogh",
+    "price": null,
+    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-07-01T15:42:07+00:00",
+    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
+    "images": null,
+    "source_url": "https://t.me/massandrasun/2322",
+    "genre": "поп",
+    "id": "53df3f9c",
+    "updated_at": "2026-07-01T15:42:07+00:00"
   },
   {
     "date": "2026-07-01",
@@ -2027,6 +2386,63 @@
     "updated_at": "2026-06-27T12:15:49+00:00"
   },
   {
+    "date": "2026-06-27",
+    "time": "20:00",
+    "artist": "Paper Plain",
+    "event_type": "трибьют",
+    "venue": "Народный бар",
+    "price": "500р",
+    "description": "Трибьют-концерт Nirvana от севастопольского бэнда Paper Plain. В программе хиты, акустика, электричество и малоизвестные треки Курта Кобейна.",
+    "source_channel": "nb_yalta",
+    "source_city": "Ялта",
+    "post_date": "2026-06-22T13:01:13+00:00",
+    "image": "/images/events/340b77216d452f582475aa699380306e.jpg",
+    "images": null,
+    "source_url": "https://t.me/nb_yalta/1959",
+    "genre": "рок",
+    "id": "d2938292",
+    "updated_at": "2026-06-22T13:01:13+00:00"
+  },
+  {
+    "date": "2026-06-27",
+    "time": null,
+    "artist": "Массандра Джаз",
+    "event_type": "фестиваль",
+    "venue": "Севастополь Джаз",
+    "price": null,
+    "description": "Фестиваль «Массандра Джаз» пройдёт один день — 27 июня. Билеты доступны на сайте sevjazz.ru, возможен трансфер.",
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-06-23T11:20:46+00:00",
+    "image": "/images/events/65102059bf8de0490704a3706e6c1704.jpg",
+    "images": [
+      "/images/events/65102059bf8de0490704a3706e6c1704.jpg",
+      "/images/events/b77bcb957668ce5a16cb31ca61c8449e.jpg"
+    ],
+    "source_url": "https://t.me/sevastopol_jazz/1264",
+    "genre": "джаз",
+    "id": "94e0202e",
+    "updated_at": "2026-06-23T11:20:46+00:00"
+  },
+  {
+    "date": "2026-06-27",
+    "time": null,
+    "artist": "Массандра.Джаз",
+    "event_type": "фестиваль",
+    "venue": "Винзавод Массандра",
+    "price": "2000–4000 ₽",
+    "description": "Фестиваль под открытым небом с живыми выступлениями и танцами в атмосфере крымского вечера. Гастрономические зоны, авторские коктейли и лаундж среди исторической архитектуры.",
+    "source_channel": "afisha_payberry",
+    "source_city": "Ялта",
+    "post_date": "2026-06-21T14:01:42+00:00",
+    "image": "/images/events/39a25dc1c66c0dc7af5b5597e28cdde1.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_payberry/1583",
+    "genre": "джаз",
+    "id": "35c59839",
+    "updated_at": "2026-06-21T14:01:42+00:00"
+  },
+  {
     "date": "2026-06-26",
     "time": "18:00",
     "artist": "AdrenalinHouse",
@@ -2042,6 +2458,42 @@
     "post_date": "2026-06-26",
     "id": "e60e24bd",
     "updated_at": "2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "time": null,
+    "artist": "Минерва",
+    "event_type": "фестиваль",
+    "venue": "Jam Club",
+    "price": null,
+    "description": "Группа Минерва из Севастополя выступает на метал-фесте. Подробности в предыдущем посте.",
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-06-26T12:37:52+00:00",
+    "image": "/images/events/950341fc0af234db3d39b369490a5a18.jpg",
+    "images": null,
+    "source_url": "https://t.me/clubjam/1026",
+    "genre": "метал",
+    "id": "6af765b8",
+    "updated_at": "2026-06-26T12:37:52+00:00"
+  },
+  {
+    "date": "2026-06-26",
+    "time": null,
+    "artist": "Юлия Бакшинская",
+    "event_type": "концерт",
+    "venue": "Афиша PayBerry",
+    "price": "500–800 ₽",
+    "description": "Вечер авторской музыки с программой «О самом сокровенном» — о любви, надежде и внутренней силе. Живой вокал, фортепиано, саксофон и ударные в камерной атмосфере.",
+    "source_channel": "afisha_payberry",
+    "source_city": "Севастополь",
+    "post_date": "2026-06-25T08:02:30+00:00",
+    "image": "/images/events/edf287e5cb16cd85cc70f2ec29493fb8.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_payberry/1584",
+    "genre": "классика",
+    "id": "2e9556da",
+    "updated_at": "2026-06-25T08:02:30+00:00"
   },
   {
     "date": "2026-06-25",
@@ -2078,6 +2530,7 @@
     "updated_at": "2026-06-24"
   },
   {
+    "id": "c4a80534",
     "date": "2026-06-24",
     "time": "19:00",
     "artist": "Крымский академический симфонический оркестр",
@@ -2091,11 +2544,11 @@
     "source_url": "https://t.me/koncertykrym/2050",
     "images": [
       "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
-      "/images/events/8f15b9b07a24779e75f9916afc9be0e4.jpg"
+      "/images/events/b6f425439b6856bd66270518bc287f53.jpg"
     ],
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
     "post_date": "2026-06-23T09:38:23+00:00",
-    "id": "c4a80534"
+    "updated_at": "2026-06-23T09:38:23+00:00"
   },
   {
     "date": "2026-06-23",
@@ -2131,6 +2584,24 @@
     "genre": "классика",
     "id": "cf0a6db4",
     "updated_at": "2026-05-20T12:41:34+00:00"
+  },
+  {
+    "date": "2026-06-21",
+    "time": "17:30",
+    "artist": "Ритмы Сердца",
+    "event_type": "концерт",
+    "venue": "Поляна Вкусов, Ярмарочное Поле, Пания Парк",
+    "price": null,
+    "description": "Живая музыка от «Ритмы Сердца» в атмосфере тайского ночного рынка с видом на Бойко. Праздник жизни под том ям и wok.",
+    "source_channel": "BelbekskayaYarmarka",
+    "source_city": "Севастополь",
+    "post_date": "2026-06-21T13:30:22+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://t.me/BelbekskayaYarmarka/2201",
+    "genre": "поп",
+    "id": "a7b77ead",
+    "updated_at": "2026-06-21T13:30:22+00:00"
   },
   {
     "date": "2026-06-20",
@@ -2274,7 +2745,8 @@
     ],
     "image": "/images/events/753793e34a98e41c9d2d7fd5c7bb279d.jpg",
     "post_date": "2026-05-25T07:48:59+00:00",
-    "id": "a2e9f541"
+    "id": "a2e9f541",
+    "updated_at": "2026-05-25T07:48:59+00:00"
   },
   {
     "date": "2026-06-07",
@@ -2349,21 +2821,25 @@
     "updated_at": "2026-06-06"
   },
   {
+    "id": "93d47d57",
     "date": "2026-06-03",
     "time": "19:00",
     "artist": "Крымский академический симфонический оркестр",
     "event_type": "концерт",
     "venue": "КДК «Корабел»",
     "price": null,
-    "description": "Концерт «Музыка и свечи: на краю эмоций» при свете сотен мерцающих свечей. Прозвучат произведения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы и других композиторов.",
-    "source_channel": "koncertykrym",
+    "description": "Концерт проекта «Музыка и свечи» с программой «На краю эмоций» – сочинения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы в атмосфере свечей.",
     "source_city": "Керчь",
-    "post_date": "2026-05-15T08:38:53+00:00",
-    "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
-    "source_url": "https://t.me/koncertykrym/2050",
+    "source_channel": "koncertykrym",
     "genre": "классика",
-    "id": "979ff040",
-    "updated_at": "2026-05-15T08:38:53+00:00"
+    "source_url": "https://t.me/koncertykrym/2050",
+    "images": [
+      "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
+      "/images/events/b6f425439b6856bd66270518bc287f53.jpg"
+    ],
+    "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
+    "post_date": "2026-05-25T08:50:22+00:00",
+    "updated_at": "2026-05-25T08:50:22+00:00"
   },
   {
     "date": "2026-05-31",
@@ -2472,27 +2948,29 @@
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
-    "id": "0bd46674"
+    "id": "0bd46674",
+    "updated_at": "2026-05-25T07:43:16+00:00"
   },
   {
+    "id": "37d71771",
     "date": "2026-05-30",
     "time": "11:00",
-    "artist": "Вечеринка",
+    "artist": "Вечеринка, CORA",
     "event_type": "вечеринка",
     "venue": "Sky Beach Ялта",
     "price": "5000₽",
-    "description": "Вечеринка Богов Олимпа с шоу-программой, развлечениями, авторскими блюдами и коктейлями. Дресс-код в стиле богов Олимпа приветствуется.",
+    "description": "Закрытая вечеринка на Олимпе с живым звуком группы CORA. Зажигательная музыка у бассейна, шоу-программа, изысканные закуски и блюда.",
     "source_city": "Ялта",
     "source_channel": "sky_beach_yalta",
     "genre": "поп",
     "source_url": "https://t.me/sky_beach_yalta/1249",
     "images": [
-      "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg"
+      "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg",
+      "/images/events/8c77f238aab189fdc410746c2585aa10.jpg"
     ],
     "image": "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg",
-    "post_date": "2026-05-17T17:23:41+00:00",
-    "id": "f5656fc9",
-    "updated_at": "2026-05-17T17:23:41+00:00"
+    "post_date": "2026-05-24T15:36:35+00:00",
+    "updated_at": "2026-07-06T16:43:38.138239+00:00"
   },
   {
     "date": "2026-05-30",
@@ -2567,7 +3045,44 @@
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
-    "id": "4dbd153b"
+    "id": "4dbd153b",
+    "updated_at": "2026-05-25T07:43:16+00:00"
+  },
+  {
+    "date": "2026-05-30",
+    "time": "18:00",
+    "artist": "Евгения Кекер, DJ Tony",
+    "event_type": "вечеринка",
+    "venue": "Гастродвор",
+    "price": null,
+    "description": "Вечер Оскара с танцевальными и вокальными перформансами, мелодиями из фильмов и DJ-сетом. Дресс-код: красная дорожка (вечерний).",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-05-25T17:02:19+00:00",
+    "image": "/images/events/cb4f04613aa6d9977dc3f7966dc05d26.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/7564",
+    "genre": "другое",
+    "id": "39cc8a63",
+    "updated_at": "2026-05-25T17:02:19+00:00"
+  },
+  {
+    "date": "2026-05-30",
+    "time": "18:30",
+    "artist": "Анастасия Грас",
+    "event_type": "концерт",
+    "venue": "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+    "price": "бесплатно",
+    "description": "Вечер живой музыки с исполнением любимых хитов Анастасией Грас. Ужин в ресторане на закате с авторской кухней и вином.",
+    "source_channel": "usadbarodnoegnezdo",
+    "source_city": "Крым",
+    "post_date": "2026-05-25T17:05:53+00:00",
+    "image": "/images/events/7b143f0c8a4e0b35a19195cb8dbdd0f3.jpg",
+    "images": null,
+    "source_url": "https://t.me/usadbarodnoegnezdo/3230",
+    "genre": "авторская",
+    "id": "ad0dec71",
+    "updated_at": "2026-05-25T17:05:53+00:00"
   },
   {
     "date": "2026-05-29",
@@ -2604,7 +3119,44 @@
     ],
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
-    "id": "d5569c55"
+    "id": "d5569c55",
+    "updated_at": "2026-05-25T07:43:16+00:00"
+  },
+  {
+    "date": "2026-05-29",
+    "time": null,
+    "artist": "Spiritual Seasons, Канальи",
+    "event_type": "фестиваль",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "День рождения Jam Club (4 года). Выступление фолк-групп Spiritual Seasons и Канальи с бесплатным входом.",
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-05-24T20:15:32+00:00",
+    "image": "/images/events/00d5299c268fc62145904f8552b63b7c.jpg",
+    "images": null,
+    "source_url": "https://t.me/clubjam/969",
+    "genre": "фолк",
+    "id": "72738ac4",
+    "updated_at": "2026-05-24T20:15:32+00:00"
+  },
+  {
+    "date": "2026-05-29",
+    "time": "21:00",
+    "artist": "Антон Дарочкин",
+    "event_type": "концерт",
+    "venue": "Comedy Republic",
+    "price": "1100",
+    "description": "Stand Up концерт финалиста Stand Up Лиги, участника «Камеди Батл» на ТНТ Антона Дарочкина. Легкая атмосфера и живой юмор.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-05-24T17:07:01+00:00",
+    "image": "/images/events/dee817413e488d32f4e3b5cb29993e2c.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/7552",
+    "genre": "юмор",
+    "id": "1ec77b5e",
+    "updated_at": "2026-05-24T17:07:01+00:00"
   },
   {
     "date": "2026-05-27",
@@ -2674,9 +3226,11 @@
     ],
     "image": "/images/events/5244a03ffba451fd63689c71bc7fc240.jpg",
     "post_date": "2026-05-14T15:06:52+00:00",
-    "id": "e8aceb0a"
+    "id": "e8aceb0a",
+    "updated_at": "2026-05-14T15:06:52+00:00"
   },
   {
+    "id": "983db2bb",
     "date": "2026-05-24",
     "time": "15:30",
     "artist": "Крымский Академический Симфонический Оркестр, Александр Долинский",
@@ -2690,11 +3244,10 @@
     "source_url": "https://t.me/koncertykrym/2043",
     "images": [
       "/images/events/c4a40541b3caced7883318ab7b4b1f09.jpg",
-      "/images/events/9701f939688a3302f99adace99bbaa0c.jpg"
+      "/images/events/0e1722ad5ffd480db98a0079e4133624.jpg"
     ],
     "image": "/images/events/c4a40541b3caced7883318ab7b4b1f09.jpg",
     "post_date": "2026-05-22T13:53:17+00:00",
-    "id": "983db2bb",
     "updated_at": "2026-05-22T13:53:17+00:00"
   },
   {
@@ -2977,7 +3530,8 @@
     ],
     "image": "/images/events/8fb402b228029b96acad467b92f497d1.jpg",
     "post_date": "2026-05-16T16:49:37+00:00",
-    "id": "714dba03"
+    "id": "714dba03",
+    "updated_at": "2026-05-16T16:49:37+00:00"
   },
   {
     "date": "2026-05-22",
@@ -3107,7 +3661,8 @@
     ],
     "image": "/images/events/69fa684ea6fd63510ce4369a7309420a.jpg",
     "post_date": "2026-05-20T05:55:53+00:00",
-    "id": "f3d2f5ae"
+    "id": "f3d2f5ae",
+    "updated_at": "2026-05-20T05:55:53+00:00"
   },
   {
     "date": "2026-05-17",
@@ -4047,6 +4602,7 @@
     "updated_at": "2026-04-29T16:00:00+00:00"
   },
   {
+    "id": "52d615fd",
     "date": "2026-05-08",
     "time": "19:00",
     "artist": "Black Tears, Circlemakers, Динаминатор, Нарратор, Кабель Джек, Пока не поздно, Черный доктор солнечной долины",
@@ -4058,9 +4614,12 @@
     "source_channel": "clubjam",
     "genre": "метал",
     "source_url": "https://t.me/clubjam/928",
+    "images": [
+      "/images/events/723be1e881e61799963f0189107eb321.jpg",
+      "/images/events/e261c1fa8b3a1df286dbf81e1c3007ea.jpg"
+    ],
     "image": "/images/events/723be1e881e61799963f0189107eb321.jpg",
     "post_date": "2026-05-07T19:44:01+00:00",
-    "id": "52d615fd",
     "updated_at": "2026-05-07T19:44:01+00:00"
   },
   {
@@ -4581,6 +5140,23 @@
     "updated_at": "2026-05-01T11:16:43+00:00"
   },
   {
+    "date": "2026-05-01",
+    "time": "15:00",
+    "artist": "Touch the Wind",
+    "event_type": "концерт",
+    "venue": "Прогулочная аллея отеля Ялта-Интурист",
+    "price": null,
+    "description": "Выступление духового оркестра Touch the Wind в рамках праздничной программы на Первомай. В программе также конкурсы, костюмированная анимация, ярмарка и мастер-классы.",
+    "source_channel": "hotel_yalta_intourist",
+    "source_city": "Ялта",
+    "post_date": "2026-04-26T12:23:02+00:00",
+    "image": "/images/events/becb4f41ad5150c176f2c89ee11c9daa.jpg",
+    "source_url": "https://t.me/hotel_yalta_intourist/2582",
+    "genre": "поп",
+    "id": "5c1b507d",
+    "updated_at": "2026-04-26T12:23:02+00:00"
+  },
+  {
     "date": "2026-04-30",
     "time": null,
     "artist": "Скажите Джаз",
@@ -4632,112 +5208,6 @@
     "updated_at": "2026-04-21T19:19:29+00:00"
   },
   {
-    "date": "2026-06-24",
-    "time": "19:00",
-    "artist": "Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "Отель «Ялта-Интурист»",
-    "price": null,
-    "description": "Концерт проекта «Музыка и свечи» с программой «На краю эмоций» – сочинения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы в атмосфере свечей.",
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-05-25T08:50:22+00:00",
-    "image": "/images/events/b6f425439b6856bd66270518bc287f53.jpg",
-    "images": null,
-    "source_url": "https://t.me/koncertykrym/2099",
-    "genre": "классика",
-    "id": "9e8cb3fb",
-    "updated_at": "2026-05-25T08:50:22+00:00"
-  },
-  {
-    "date": "2026-06-03",
-    "time": "19:00",
-    "artist": "Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "КДК «Корабел»",
-    "price": null,
-    "description": "Концерт проекта «Музыка и свечи» с программой «На краю эмоций» – сочинения Прокофьева, Орфа, Морриконе, Артемьева, Пьяццоллы в атмосфере свечей.",
-    "source_channel": "koncertykrym",
-    "source_city": "Керчь",
-    "post_date": "2026-05-25T08:50:22+00:00",
-    "image": "/images/events/b6f425439b6856bd66270518bc287f53.jpg",
-    "images": null,
-    "source_url": "https://t.me/koncertykrym/2099",
-    "genre": "классика",
-    "id": "93d47d57",
-    "updated_at": "2026-05-25T08:50:22+00:00"
-  },
-  {
-    "date": "2026-05-30",
-    "time": "11:00",
-    "artist": "CORA",
-    "event_type": "вечеринка",
-    "venue": "Sky Beach Ялта",
-    "price": null,
-    "description": "Закрытая вечеринка на Олимпе с живым звуком группы CORA. Зажигательная музыка у бассейна, шоу-программа, изысканные закуски и блюда.",
-    "source_channel": "sky_beach_yalta",
-    "source_city": "Ялта",
-    "post_date": "2026-05-24T15:36:35+00:00",
-    "image": "/images/events/8c77f238aab189fdc410746c2585aa10.jpg",
-    "images": null,
-    "source_url": "https://t.me/sky_beach_yalta/1264",
-    "genre": "поп",
-    "id": "37d71771",
-    "updated_at": "2026-05-24T15:36:35+00:00"
-  },
-  {
-    "date": "2026-05-24",
-    "time": "15:30",
-    "artist": "Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "музыкальное училище им. П.И. Чайковского",
-    "price": null,
-    "description": "Концерт «Песни, опалённые войной» с живым исполнением песен военной тематики: «Смуглянка», «Катюша», «Синий платочек», «Севастопольский вальс» и других классических произведений.",
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-05-22T13:53:17+00:00",
-    "image": "/images/events/0e1722ad5ffd480db98a0079e4133624.jpg",
-    "images": null,
-    "source_url": "https://t.me/koncertykrym/2087",
-    "genre": "классика",
-    "id": "5a6ad0e6",
-    "updated_at": "2026-05-22T13:53:17+00:00"
-  },
-  {
-    "date": "2026-05-08",
-    "time": "19:00",
-    "artist": "Пока не поздно, Black Tears, Черный доктор солнечной долины, Нарратор, Кабель Джек, Circlemakers",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "JAM & FRIENDS — рок-вечер с несколькими группами в двух залах. Бесплатный вход для подписчиков.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/924",
-    "image": "/images/events/e261c1fa8b3a1df286dbf81e1c3007ea.jpg",
-    "post_date": "2026-05-06T07:13:45+00:00",
-    "id": "7a18305d",
-    "updated_at": "2026-05-06T07:13:45+00:00"
-  },
-  {
-    "date": "2026-05-01",
-    "time": "15:00",
-    "artist": "Touch the Wind",
-    "event_type": "концерт",
-    "venue": "Прогулочная аллея отеля Ялта-Интурист",
-    "price": null,
-    "description": "Выступление духового оркестра Touch the Wind в рамках праздничной программы на Первомай. В программе также конкурсы, костюмированная анимация, ярмарка и мастер-классы.",
-    "source_channel": "hotel_yalta_intourist",
-    "source_city": "Ялта",
-    "post_date": "2026-04-26T12:23:02+00:00",
-    "image": "/images/events/becb4f41ad5150c176f2c89ee11c9daa.jpg",
-    "source_url": "https://t.me/hotel_yalta_intourist/2582",
-    "genre": "поп",
-    "id": "5c1b507d",
-    "updated_at": "2026-04-26T12:23:02+00:00"
-  },
-  {
     "date": "2026-04-25",
     "time": "19:30",
     "artist": "Казян",
@@ -4753,528 +5223,6 @@
     "genre": "хип-хоп",
     "id": "e902f592",
     "updated_at": "2026-04-20T05:48:01+00:00"
-  },
-  {
-    "date": "2026-05-30",
-    "time": "18:00",
-    "artist": "Евгения Кекер, DJ Tony",
-    "event_type": "вечеринка",
-    "venue": "Гастродвор",
-    "price": null,
-    "description": "Вечер Оскара с танцевальными и вокальными перформансами, мелодиями из фильмов и DJ-сетом. Дресс-код: красная дорожка (вечерний).",
-    "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-05-25T17:02:19+00:00",
-    "image": "/images/events/cb4f04613aa6d9977dc3f7966dc05d26.jpg",
-    "images": null,
-    "source_url": "https://t.me/afisha_crimea/7564",
-    "genre": "другое",
-    "id": "39cc8a63",
-    "updated_at": "2026-05-25T17:02:19+00:00"
-  },
-  {
-    "date": "2026-05-30",
-    "time": "18:30",
-    "artist": "Анастасия Грас",
-    "event_type": "концерт",
-    "venue": "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-    "price": "бесплатно",
-    "description": "Вечер живой музыки с исполнением любимых хитов Анастасией Грас. Ужин в ресторане на закате с авторской кухней и вином.",
-    "source_channel": "usadbarodnoegnezdo",
-    "source_city": "Крым",
-    "post_date": "2026-05-25T17:05:53+00:00",
-    "image": "/images/events/7b143f0c8a4e0b35a19195cb8dbdd0f3.jpg",
-    "images": null,
-    "source_url": "https://t.me/usadbarodnoegnezdo/3230",
-    "genre": "авторская",
-    "id": "ad0dec71",
-    "updated_at": "2026-05-25T17:05:53+00:00"
-  },
-  {
-    "date": "2026-05-29",
-    "time": null,
-    "artist": "Spiritual Seasons, Канальи",
-    "event_type": "фестиваль",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "День рождения Jam Club (4 года). Выступление фолк-групп Spiritual Seasons и Канальи с бесплатным входом.",
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-05-24T20:15:32+00:00",
-    "image": "/images/events/00d5299c268fc62145904f8552b63b7c.jpg",
-    "images": null,
-    "source_url": "https://t.me/clubjam/969",
-    "genre": "фолк",
-    "id": "72738ac4",
-    "updated_at": "2026-05-24T20:15:32+00:00"
-  },
-  {
-    "date": "2026-05-29",
-    "time": "21:00",
-    "artist": "Антон Дарочкин",
-    "event_type": "концерт",
-    "venue": "Comedy Republic",
-    "price": "1100",
-    "description": "Stand Up концерт финалиста Stand Up Лиги, участника «Камеди Батл» на ТНТ Антона Дарочкина. Легкая атмосфера и живой юмор.",
-    "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-05-24T17:07:01+00:00",
-    "image": "/images/events/dee817413e488d32f4e3b5cb29993e2c.jpg",
-    "images": null,
-    "source_url": "https://t.me/afisha_crimea/7552",
-    "genre": "юмор",
-    "id": "1ec77b5e",
-    "updated_at": "2026-05-24T17:07:01+00:00"
-  },
-  {
-    "id": "0fcd10fd",
-    "date": "2026-07-03",
-    "time": null,
-    "artist": "AC/DC Tribute",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатный для подписчиков",
-    "description": "Трибьют-концерт AC/DC в Jam Club. Клуб работал до утра, бесплатный вход для подписчиков.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1041",
-    "images": [
-      "/images/events/949850d70e101bc822009aef7de8ecdc.jpg"
-    ],
-    "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
-    "post_date": "2026-07-03T07:46:20+00:00",
-    "updated_at": "2026-07-04T00:00:00+00:00"
-  },
-  {
-    "id": "92239e89",
-    "date": "2026-07-05",
-    "time": "21:00",
-    "artist": "Фёдор Старовойтов",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": "бесплатно",
-    "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "другое",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:05+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "fc0334a9",
-    "date": "2026-07-10",
-    "time": "21:00",
-    "artist": "Алексей Гаркуша",
-    "event_type": "трибьют",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши, приуроченный к 62-летию Юры Хоя и 26 годам без него.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "13d99e44",
-    "date": "2026-07-11",
-    "time": "21:00",
-    "artist": "Группа «Хай'Петри»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Группа «Хай'Петри» с рок-поп-хитами на двух языках. Не акустика.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "57573558",
-    "date": "2026-07-12",
-    "time": "21:00",
-    "artist": "Евгений Громов",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Русский рок и поп-рок в акустике — Евгений Громов.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "58ceeb65",
-    "date": "2026-07-17",
-    "time": "21:00",
-    "artist": "Дуэт «МысКрыма»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "ac2efd2a",
-    "date": "2026-07-18",
-    "time": "21:00",
-    "artist": "Группа «Домино»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками. Не акустика.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "2b0892c2",
-    "date": "2026-07-24",
-    "time": "21:00",
-    "artist": "Игорь Симдянкин",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "34c7a19a",
-    "date": "2026-07-25",
-    "time": "21:00",
-    "artist": "Группа «САБ»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "41a28bc0",
-    "date": "2026-07-26",
-    "time": "21:00",
-    "artist": "Дегустация настоек",
-    "event_type": "другое",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Бесплатная дегустация авторских настоек. Презентация меню.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "другое",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "id": "04c0337c",
-    "date": "2026-07-31",
-    "time": "21:00",
-    "artist": "Группа «Кальвадос»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики в Симферополе",
-    "price": null,
-    "description": "Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_82/193",
-    "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
-  },
-  {
-    "date": "2026-06-21",
-    "time": "17:30",
-    "artist": "Ритмы Сердца",
-    "event_type": "концерт",
-    "venue": "Поляна Вкусов, Ярмарочное Поле, Пания Парк",
-    "price": null,
-    "description": "Живая музыка от «Ритмы Сердца» в атмосфере тайского ночного рынка с видом на Бойко. Праздник жизни под том ям и wok.",
-    "source_channel": "BelbekskayaYarmarka",
-    "source_city": "Севастополь",
-    "post_date": "2026-06-21T13:30:22+00:00",
-    "image": null,
-    "images": null,
-    "source_url": "https://t.me/BelbekskayaYarmarka/2201",
-    "genre": "поп",
-    "id": "a7b77ead"
-  },
-  {
-    "date": "2026-06-26",
-    "time": null,
-    "artist": "Минерва",
-    "event_type": "фестиваль",
-    "venue": "Jam Club",
-    "price": null,
-    "description": "Группа Минерва из Севастополя выступает на метал-фесте. Подробности в предыдущем посте.",
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-06-26T12:37:52+00:00",
-    "image": "/images/events/950341fc0af234db3d39b369490a5a18.jpg",
-    "images": null,
-    "source_url": "https://t.me/clubjam/1026",
-    "genre": "метал",
-    "id": "6af765b8"
-  },
-  {
-    "date": "2026-06-27",
-    "time": "20:00",
-    "artist": "Paper Plain",
-    "event_type": "трибьют",
-    "venue": "Народный бар",
-    "price": "500р",
-    "description": "Трибьют-концерт Nirvana от севастопольского бэнда Paper Plain. В программе хиты, акустика, электричество и малоизвестные треки Курта Кобейна.",
-    "source_channel": "nb_yalta",
-    "source_city": "Ялта",
-    "post_date": "2026-06-22T13:01:13+00:00",
-    "image": "/images/events/340b77216d452f582475aa699380306e.jpg",
-    "images": null,
-    "source_url": "https://t.me/nb_yalta/1959",
-    "genre": "рок",
-    "id": "d2938292"
-  },
-  {
-    "date": "2026-07-11",
-    "time": "18:00",
-    "artist": "Крымский камерный оркестр «Новая Гармония»",
-    "event_type": "концерт",
-    "venue": "Пещера «Мраморная»",
-    "price": null,
-    "description": "Уникальный проект «Звуковой сплав 6» под управлением дирижёра Дениса Карлова. В программе шедевры камерной музыки от барокко до современности в акустике древней пещеры.",
-    "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-07-04T17:05:43+00:00",
-    "image": "/images/events/ef34d0639f5e613f5827401bfcdaa23e.jpg",
-    "images": null,
-    "source_url": "https://t.me/afisha_crimea/7911",
-    "genre": "классика",
-    "id": "bb3195b6"
-  },
-  {
-    "date": "2026-06-27",
-    "time": null,
-    "artist": "Массандра Джаз",
-    "event_type": "фестиваль",
-    "venue": "Севастополь Джаз",
-    "price": null,
-    "description": "Фестиваль «Массандра Джаз» пройдёт один день — 27 июня. Билеты доступны на сайте sevjazz.ru, возможен трансфер.",
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-06-23T11:20:46+00:00",
-    "image": "/images/events/65102059bf8de0490704a3706e6c1704.jpg",
-    "images": [
-      "/images/events/65102059bf8de0490704a3706e6c1704.jpg",
-      "/images/events/b77bcb957668ce5a16cb31ca61c8449e.jpg"
-    ],
-    "source_url": "https://t.me/sevastopol_jazz/1264",
-    "genre": "джаз",
-    "id": "94e0202e"
-  },
-  {
-    "date": "2026-07-10",
-    "time": "17:00",
-    "artist": "YSJ «Маяк» (Local Edition)",
-    "event_type": "вечеринка",
-    "venue": "Пляж «Ковёр», 7-й сектор Массандровского пляжа",
-    "price": "бесплатно (для зрителей)",
-    "description": "Трёхдневный фестиваль YSJ «Маяк» (Local Edition) проходит 10–12 июля с 17:00 до 22:00. В программе DJ-сеты, танцевальные батлы и конкурсы для зрителей; участие в батлах — платное.",
-    "source_channel": "massandrasun",
-    "source_city": "Ялта",
-    "post_date": "2026-07-05T08:13:30+00:00",
-    "image": "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
-    "images": [
-      "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
-      "/images/events/345d9c34f401b3a19260059d461135dd.jpg",
-      "/images/events/aef116ac487642af51db7ca4727328f1.jpg",
-      "/images/events/6598c312f7438a8e04e974ec303af91d.jpg",
-      "/images/events/6b92eae93816054f75dfeac39ad46969.jpg"
-    ],
-    "source_url": "https://t.me/massandrasun/2334",
-    "genre": "другое",
-    "id": "889e1262"
-  },
-  {
-    "date": "2026-07-02",
-    "time": "14:00",
-    "artist": "BUSHA | KARDYS",
-    "event_type": "вечеринка",
-    "venue": "пляж Van Gogh",
-    "price": null,
-    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
-    "source_channel": "massandrasun",
-    "source_city": "Ялта",
-    "post_date": "2026-07-01T15:42:07+00:00",
-    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
-    "images": null,
-    "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп",
-    "id": "53df3f9c"
-  },
-  {
-    "date": "2026-07-03",
-    "time": "14:00",
-    "artist": "EL | KUZNETSOV",
-    "event_type": "вечеринка",
-    "venue": "пляж Van Gogh",
-    "price": null,
-    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
-    "source_channel": "massandrasun",
-    "source_city": "Ялта",
-    "post_date": "2026-07-01T15:42:07+00:00",
-    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
-    "images": null,
-    "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп",
-    "id": "296cd22e"
-  },
-  {
-    "date": "2026-07-04",
-    "time": "14:00",
-    "artist": "SCREAM | MARTIN W.",
-    "event_type": "вечеринка",
-    "venue": "пляж Van Gogh",
-    "price": null,
-    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
-    "source_channel": "massandrasun",
-    "source_city": "Ялта",
-    "post_date": "2026-07-01T15:42:07+00:00",
-    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
-    "images": null,
-    "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп",
-    "id": "e6f3da3c"
-  },
-  {
-    "date": "2026-07-05",
-    "time": "14:00",
-    "artist": "DIM K. | EL",
-    "event_type": "вечеринка",
-    "venue": "пляж Van Gogh",
-    "price": null,
-    "description": "Диджей-сет на пляже Van Gogh. Играют с 14:00 до 22:00.",
-    "source_channel": "massandrasun",
-    "source_city": "Ялта",
-    "post_date": "2026-07-01T15:42:07+00:00",
-    "image": "/images/events/89eb859f510b14c61796097be1fe5280.jpg",
-    "images": null,
-    "source_url": "https://t.me/massandrasun/2322",
-    "genre": "поп",
-    "id": "e0e535e1"
-  },
-  {
-    "date": "2026-07-11",
-    "time": "17:30",
-    "artist": "Денайро",
-    "event_type": "вечеринка",
-    "venue": "Усадьба «Родное гнездо»",
-    "price": "1000 ₽",
-    "description": "Вечеринка для своих с живой музыкой под гитару от Денайро и специальным BBQ-меню от бренд-шефа Павла Галича.",
-    "source_channel": "usadbarodnoegnezdo",
-    "source_city": "Крым",
-    "post_date": "2026-07-04T14:40:48+00:00",
-    "image": "/images/events/99c9a66e257e462e893f8673f27fa3ca.jpg",
-    "images": null,
-    "source_url": "https://t.me/usadbarodnoegnezdo/3362",
-    "genre": "поп",
-    "id": "6e0d79ec"
-  },
-  {
-    "date": "2026-06-27",
-    "time": null,
-    "artist": "Массандра.Джаз",
-    "event_type": "фестиваль",
-    "venue": "Винзавод Массандра",
-    "price": "2000–4000 ₽",
-    "description": "Фестиваль под открытым небом с живыми выступлениями и танцами в атмосфере крымского вечера. Гастрономические зоны, авторские коктейли и лаундж среди исторической архитектуры.",
-    "source_channel": "afisha_payberry",
-    "source_city": "Ялта",
-    "post_date": "2026-06-21T14:01:42+00:00",
-    "image": "/images/events/39a25dc1c66c0dc7af5b5597e28cdde1.jpg",
-    "images": null,
-    "source_url": "https://t.me/afisha_payberry/1583",
-    "genre": "джаз",
-    "id": "35c59839"
-  },
-  {
-    "date": "2026-06-26",
-    "time": null,
-    "artist": "Юлия Бакшинская",
-    "event_type": "концерт",
-    "venue": "Афиша PayBerry",
-    "price": "500–800 ₽",
-    "description": "Вечер авторской музыки с программой «О самом сокровенном» — о любви, надежде и внутренней силе. Живой вокал, фортепиано, саксофон и ударные в камерной атмосфере.",
-    "source_channel": "afisha_payberry",
-    "source_city": "Севастополь",
-    "post_date": "2026-06-25T08:02:30+00:00",
-    "image": "/images/events/edf287e5cb16cd85cc70f2ec29493fb8.jpg",
-    "images": null,
-    "source_url": "https://t.me/afisha_payberry/1584",
-    "genre": "классика",
-    "id": "2e9556da"
   },
   {
     "date": null,
