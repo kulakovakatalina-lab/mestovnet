@@ -825,6 +825,10 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     gap: 24px;
     flex-wrap: wrap;
   }}
+  .genre-hero-info {{
+    min-width: 0;
+    max-width: 100%;
+  }}
   .genre-hero-eyebrow {{
     font-family: var(--font-mono);
     font-size: 11px;
@@ -832,6 +836,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     text-transform: uppercase;
     color: var(--muted);
     margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }}
   .genre-hero-eyebrow a {{ color: var(--muted); text-decoration: none; }}
   .genre-hero-eyebrow a:hover {{ color: var(--accent); }}
@@ -842,6 +848,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     letter-spacing: -0.04em;
     line-height: 1.0;
     color: var(--fg);
+    overflow-wrap: break-word;
+    word-break: break-word;
   }}
   .venue-description {{
     font-size: 15px;
@@ -849,6 +857,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     line-height: 1.6;
     margin-top: 14px;
     max-width: 640px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }}
   .genre-hero-meta {{
     text-align: right;
@@ -874,10 +884,13 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     align-items: flex-start;
     gap: 8px;
     margin-top: 14px;
+    max-width: 100%;
   }}
   .venue-hero-address {{
     font-size: 14px;
     color: var(--muted);
+    overflow-wrap: break-word;
+    word-break: break-word;
   }}
   .venue-map-link {{
     display: inline-flex;
@@ -962,7 +975,7 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
 {nav_block}
 
 <div class="genre-hero">
-  <div>
+  <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
       {eyebrow_city}
