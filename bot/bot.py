@@ -226,7 +226,7 @@ def format_digest(events, genres, cities):
     # ссылки на жанровые страницы сайта
     if genres and "all" not in genres:
         glinks = " · ".join(
-            f'<a href="{SITE}/genres/{g}.html">{GENRE_LABELS[g]}</a>'
+            f'<a href="{SITE}/genre/{g}/">{GENRE_LABELS[g]}</a>'
             for g in GENRE_ORDER if g in genres)
         lines.append(f"\n🔎 На сайте: {glinks}")
 
