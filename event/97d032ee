@@ -1438,12 +1438,12 @@ function renderNavGenres() {
   const active = order.filter(g => counts[g]);
 
   const navHtml = active.map(g =>
-    `<a href="/genres/${g}.html" class="nav-genre">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/" class="nav-genre">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('nav-genres').innerHTML = navHtml;
 
   const mobileHtml = active.map(g =>
-    `<a href="/genres/${g}.html">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
 }

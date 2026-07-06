@@ -1150,7 +1150,7 @@ async function load() {
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
     const navEl = document.getElementById('nav-genres');
     if (navEl) navEl.innerHTML = activeGenres.map(g =>
-      `<a href="/genres/${g}.html" class="nav-genre">${GENRE_LABELS[g]}</a>`
+      `<a href="/genre/${g}/" class="nav-genre">${GENRE_LABELS[g]}</a>`
     ).join('');
   } catch(err) {
     document.getElementById('events-list').innerHTML = '<div class="loading">Не удалось загрузить события</div>';

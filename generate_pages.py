@@ -4,7 +4,7 @@
 Reads events.json and generates:
   - index.html          (с JSON-LD + статическим пре-рендером)
   - cities/{slug}.html  (страница каждого города)
-  - genres/{slug}.html  (страница каждого жанра)
+  - genre/{slug}/       (страница каждого жанра, чистый URL /genre/{slug}/)
   - sitemap.xml
   - robots.txt
 
@@ -34,7 +34,7 @@ DOMAIN     = "https://mestov.net"
 
 # ── Жанры ────────────────────────────────────────────────────────────────────
 # Копия GENRE_MAP/GENRE_LABELS из genre.html — единственное место для правки на JS-стороне,
-# здесь дублируется для статической генерации страниц /genres/{slug}.html.
+# здесь дублируется для статической генерации страниц /genre/{slug}/.
 
 GENRE_MAP: dict[str, str] = {
     "джаз": "jazz", "рок": "rock", "русский рок": "rock", "панк-рок": "rock",
@@ -438,7 +438,7 @@ def make_city_page(
 
     return src
 
-# ── Шаблон страницы жанра (genres/{slug}.html) ────────────────────────────────
+# ── Шаблон страницы жанра (genre/{slug}/index.html, чистый URL /genre/{slug}/) ─
 
 def make_genre_page(
     genre: str,
@@ -466,7 +466,7 @@ def make_genre_page(
     # Мета-теги
     src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)
     src = re.sub(r'<meta name="description"[^>]+>', f'<meta name="description" content="{esc(description)}">', src)
-    src = re.sub(r'<link rel="canonical"[^>]+>', f'<link rel="canonical" href="{DOMAIN}/genres/{genre}.html">', src)
+    src = re.sub(r'<link rel="canonical"[^>]+>', f'<link rel="canonical" href="{DOMAIN}/genre/{genre}/">', src)
     src = re.sub(r'<meta property="og:title"[^>]+>', f'<meta property="og:title" content="{esc(title)}">', src)
     src = re.sub(r'<meta property="og:description"[^>]+>', f'<meta property="og:description" content="{esc(description)}">', src)
 
@@ -1144,7 +1144,7 @@ async function load() {{
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
     const navEl = document.getElementById('nav-genres');
     if (navEl) navEl.innerHTML = activeGenres.map(g =>
-      `<a href="/genres/${{g}}.html" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
+      `<a href="/genre/${{g}}/" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
     ).join('');
   }} catch(err) {{
     document.getElementById('events-list').innerHTML = '<div class="loading">Не удалось загрузить события</div>';
@@ -1175,7 +1175,7 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
         s = city_slug(c)
         lines.append(url(f"{DOMAIN}/cities/{s}.html", "daily", "0.8"))
     for s in (genre_slugs or []):
-        lines.append(url(f"{DOMAIN}/genres/{s}.html", "daily", "0.7"))
+        lines.append(url(f"{DOMAIN}/genre/{s}/", "daily", "0.7"))
     for s in sorted(venue_slugs or []):
         lines.append(url(f"{DOMAIN}/venues/{s}", "weekly", "0.7"))
     for eid in sorted(event_ids or []):
@@ -1261,18 +1261,20 @@ def main() -> None:
         future_count = len([e for e in city_events if (e.get("date") or "") >= today])
         print(f"    ✓ cities/{slug}.html  ({future_count} событий)")
 
-    # 2b. Генерируем страницы жанров (genres/{slug}.html)
-    genres_dir = BASE_DIR / "genres"
-    genres_dir.mkdir(exist_ok=True)
+    # 2b. Генерируем страницы жанров (genre/{slug}/index.html — чистый URL /genre/{slug}/)
+    genre_dir = BASE_DIR / "genre"
+    genre_dir.mkdir(exist_ok=True)
     genres_with_events = [g for g in GENRE_ORDER if any(map_genre(e.get("genre")) == g for e in events)]
     print(f"🎼   Генерируем страницы жанров ({len(genres_with_events)}) …")
     for genre in genres_with_events:
         page = make_genre_page(genre, events, css, custom_names)
-        out  = genres_dir / f"{genre}.html"
+        slug_dir = genre_dir / genre
+        slug_dir.mkdir(exist_ok=True)
+        out = slug_dir / "index.html"
         out.write_text(page, encoding="utf-8")
         g_count = len([e for e in events
                        if map_genre(e.get("genre")) == genre and (e.get("date") or "") >= today])
-        print(f"    ✓ genres/{genre}.html  ({g_count} событий)")
+        print(f"    ✓ genre/{genre}/  ({g_count} событий)")
 
     # 3. Генерируем страницы заведений (venues/{slug} без расширения)
     venues_dir = BASE_DIR / "venues"

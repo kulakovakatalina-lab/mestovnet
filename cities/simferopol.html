@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 42 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 41 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Живая музыка и концерты в Симферополе — Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -768,7 +768,7 @@ footer {
 </style>
   <link rel="canonical" href="https://mestov.net/cities/simferopol.html">
   <meta property="og:title" content="Живая музыка и концерты в Симферополе — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 42 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 41 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   
   <script type="application/ld+json">
@@ -1896,7 +1896,7 @@ function renderGenreGrid() {
   grid.innerHTML = order.filter(g => counts[g]).map(g => {
     const n = counts[g];
     const label = n === 1 ? 'событие' : n < 5 ? 'события' : 'событий';
-    return `<a href="/genres/${g}.html" class="genre-card"><span class="genre-card-name">${GENRE_LABELS[g]}</span><span class="genre-card-count">${n} ${label}</span></a>`;
+    return `<a href="/genre/${g}/" class="genre-card"><span class="genre-card-name">${GENRE_LABELS[g]}</span><span class="genre-card-count">${n} ${label}</span></a>`;
   }).join('');
 }
 
@@ -1927,12 +1927,12 @@ function renderNavGenres() {
   const active = order.filter(g => counts[g]);
 
   const navHtml = active.map(g =>
-    `<a href="/genres/${g}.html" class="nav-genre">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/" class="nav-genre">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('nav-genres').innerHTML = navHtml;
 
   const mobileHtml = active.map(g =>
-    `<a href="/genres/${g}.html">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
 }
@@ -1953,9 +1953,6 @@ load();
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2><span class="today-badge">Сегодня</span>5 июля, сб</h2>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Фёдор Старовойтов</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">другое</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Фёдор Старовойтов" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>9 июля, ср</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/pro-art-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Про.Арт</div><div class="card-venue">Дворец культуры профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">Симфония «оживших картин» в шоу Про. Арт: более 40 шедевров мировой живописи в сопровождении оркестра и тысяч свечей
 

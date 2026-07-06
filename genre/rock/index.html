@@ -19,7 +19,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Рок в Крыму — концерты и афиша | Местов.Нет</title>
 <meta name="description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 34 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
-<link rel="canonical" href="https://mestov.net/genres/rock.html">
+<link rel="canonical" href="https://mestov.net/genre/rock/">
 <meta property="og:title" content="Рок в Крыму — концерты и афиша | Местов.Нет">
 <meta property="og:description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 34 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -1533,7 +1533,7 @@ function applySettings(data, settings) {
 async function load() {
   const params = new URLSearchParams(location.search);
   // Параметр из URL — только известный жанр, иначе reflected XSS через innerHTML.
-  // На статических страницах /genres/{slug}.html жанр без ?g= задаётся генератором.
+  // На статических страницах /genre/{slug}/ жанр без ?g= задаётся генератором.
   const g = params.get('g') || window.__DEFAULT_GENRE__;
   currentGenre = GENRE_LABELS[g] ? g : 'jazz';
   currentView = params.get('past') === '1' ? 'past' : 'upcoming';
@@ -1579,12 +1579,12 @@ function renderNavGenres() {
   const active = order.filter(g => counts[g]);
 
   const navHtml = active.map(g =>
-    `<a href="/genres/${g}.html" class="nav-genre${g === currentGenre ? ' active' : ''}" data-g="${g}">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/" class="nav-genre${g === currentGenre ? ' active' : ''}" data-g="${g}">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('nav-genres').innerHTML = navHtml;
 
   const mobileHtml = active.map(g =>
-    `<a href="/genres/${g}.html" data-g="${g}" class="${g === currentGenre ? 'active' : ''}">${GENRE_LABELS[g]}</a>`
+    `<a href="/genre/${g}/" data-g="${g}" class="${g === currentGenre ? 'active' : ''}">${GENRE_LABELS[g]}</a>`
   ).join('');
   document.getElementById('mobile-strip').innerHTML = mobileHtml;
 }
@@ -1618,7 +1618,7 @@ function renderAll() {
 function renderArchiveLink() {
   const el = document.getElementById('archive-link');
   if (currentView === 'past') {
-    el.innerHTML = `<a href="/genres/${currentGenre}.html"><span class="arrow">←</span> Предстоящие концерты</a>`;
+    el.innerHTML = `<a href="/genre/${currentGenre}/"><span class="arrow">←</span> Предстоящие концерты</a>`;
     return;
   }
   const pastCount = allEvents.filter(e => e.genre === currentGenre && e.isPast).length;
@@ -1627,7 +1627,7 @@ function renderArchiveLink() {
   const text = pastExpanded
     ? `Скрыть прошедшие <span class="arrow">↑</span>`
     : `Прошедшие ${pastCount} ${word} <span class="arrow">↓</span>`;
-  el.innerHTML = `<a href="/genres/${currentGenre}.html?past=1">${text}</a>`;
+  el.innerHTML = `<a href="/genre/${currentGenre}/?past=1">${text}</a>`;
 }
 
 function renderCityPills(events) {
