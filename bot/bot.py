@@ -155,6 +155,7 @@ async def fetch_events():
             "source_city": raw_city,
             "genre": map_genre(raw_genre),
             "city": map_city(raw_city),
+            "updated_at": e.get("updated_at"),
         })
     events.sort(key=lambda x: (x["date"], x["time"]))
     return events

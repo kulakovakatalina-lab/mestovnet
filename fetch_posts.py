@@ -183,7 +183,7 @@ def main(days_back: int = DAYS_BACK):
                 "description": pre["description"],
                 "source_channel": "yandex_afisha",
                 "source_city": post["_city"],
-                "post_date": post["date"],
+                "post_date": datetime.now(timezone.utc).isoformat(),
                 "image": download_image(post.get("image")),
                 "source_url": pre["source_url"],
             })

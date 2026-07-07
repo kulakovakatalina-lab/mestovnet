@@ -31,7 +31,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/pro-art-show?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "732b94cd",
-    "updated_at": "2026-07-09"
+    "updated_at": null
   },
   {
     "date": "2026-07-10",
@@ -222,7 +222,7 @@
     "post_date": "2026-07-12",
     "genre": "поп",
     "id": "d103a183",
-    "updated_at": "2026-07-12"
+    "updated_at": null
   },
   {
     "id": "f69eb1d5",
@@ -461,7 +461,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "8d08e0ce",
-    "updated_at": "2026-07-19"
+    "updated_at": null
   },
   {
     "date": "2026-07-19",
@@ -499,7 +499,7 @@
     "post_date": "2026-07-19",
     "genre": "поп",
     "id": "a486b46b",
-    "updated_at": "2026-07-19"
+    "updated_at": null
   },
   {
     "date": "2026-07-20",
@@ -516,7 +516,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "b2aaf09f",
-    "updated_at": "2026-07-20"
+    "updated_at": null
   },
   {
     "date": "2026-07-23",
@@ -550,7 +550,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "c90f59a9",
-    "updated_at": "2026-07-23"
+    "updated_at": null
   },
   {
     "date": "2026-07-24",
@@ -567,7 +567,7 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "7ac6d093",
-    "updated_at": "2026-07-24"
+    "updated_at": null
   },
   {
     "id": "f4c87da8",
@@ -587,7 +587,7 @@
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-24",
-    "updated_at": "2026-07-24"
+    "updated_at": null
   },
   {
     "date": "2026-07-24",
@@ -607,7 +607,7 @@
     "image": "/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg",
     "post_date": "2026-07-24",
     "id": "48be9f32",
-    "updated_at": "2026-07-24"
+    "updated_at": null
   },
   {
     "id": "fd57288c",
@@ -684,7 +684,7 @@
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-25",
-    "updated_at": "2026-07-25"
+    "updated_at": null
   },
   {
     "date": "2026-07-25",
@@ -718,7 +718,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/elbrus-dzhanmirzoyev-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "7391a631",
-    "updated_at": "2026-07-25"
+    "updated_at": null
   },
   {
     "id": "31ef169e",
@@ -792,7 +792,7 @@
     "post_date": "2026-07-26",
     "genre": "поп",
     "id": "6b292afd",
-    "updated_at": "2026-07-26"
+    "updated_at": null
   },
   {
     "date": "2026-07-26",
@@ -866,7 +866,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/taisiia-povalii-2026-07-31?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "12de58ae",
-    "updated_at": "2026-07-31"
+    "updated_at": null
   },
   {
     "date": "2026-07-31",
@@ -883,7 +883,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/hofmannita-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "1633413b",
-    "updated_at": "2026-07-31"
+    "updated_at": null
   },
   {
     "id": "d7993622",
@@ -991,7 +991,7 @@
     "post_date": "2026-08-02",
     "genre": "рок",
     "id": "96b48a80",
-    "updated_at": "2026-08-02"
+    "updated_at": null
   },
   {
     "date": "2026-08-04",
@@ -1008,7 +1008,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк",
     "id": "9147e7cb",
-    "updated_at": "2026-08-04"
+    "updated_at": null
   },
   {
     "date": "2026-08-05",
@@ -1046,7 +1046,7 @@
     ],
     "image": "/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg",
     "post_date": "2026-08-05",
-    "updated_at": "2026-08-05"
+    "updated_at": null
   },
   {
     "id": "cfd1ba69",
@@ -1066,7 +1066,7 @@
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
     "post_date": "2026-08-06",
-    "updated_at": "2026-08-06"
+    "updated_at": null
   },
   {
     "date": "2026-08-07",
@@ -1083,7 +1083,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "ac0e017c",
-    "updated_at": "2026-08-07"
+    "updated_at": null
   },
   {
     "date": "2026-08-07",
@@ -1134,7 +1134,7 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк",
     "id": "bfc5064d",
-    "updated_at": "2026-08-08"
+    "updated_at": null
   },
   {
     "date": "2026-08-09",
@@ -1151,7 +1151,7 @@
     "post_date": "2026-08-09",
     "genre": "поп",
     "id": "caccae3e",
-    "updated_at": "2026-08-09"
+    "updated_at": null
   },
   {
     "id": "a773ec81",
@@ -1171,7 +1171,7 @@
     ],
     "image": "/images/events/427f2e6e36f241d4e4220b23580ce621.jpg",
     "post_date": "2026-08-10",
-    "updated_at": "2026-08-10"
+    "updated_at": null
   },
   {
     "date": "2026-08-10",
@@ -1188,7 +1188,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "00ae5df9",
-    "updated_at": "2026-08-10"
+    "updated_at": null
   },
   {
     "date": "2026-08-11",
@@ -1222,7 +1222,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/lida-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "2fa5f9bb",
-    "updated_at": "2026-08-11"
+    "updated_at": null
   },
   {
     "date": "2026-08-11",
@@ -1239,7 +1239,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/neverlove-unluvd-anplagd?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "5cb733bd",
-    "updated_at": "2026-08-11"
+    "updated_at": null
   },
   {
     "date": "2026-08-11",
@@ -1276,7 +1276,7 @@
     "image": "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg",
     "post_date": "2026-08-11",
     "id": "1c9ec2a0",
-    "updated_at": "2026-08-11"
+    "updated_at": null
   },
   {
     "id": "865f18cd",
@@ -1296,7 +1296,7 @@
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-12",
-    "updated_at": "2026-08-12"
+    "updated_at": null
   },
   {
     "id": "1ef543fb",
@@ -1316,7 +1316,7 @@
     ],
     "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
     "post_date": "2026-08-12",
-    "updated_at": "2026-08-12"
+    "updated_at": null
   },
   {
     "date": "2026-08-12",
@@ -1333,7 +1333,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/grigorii-leps-bkshow?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "d14c8230",
-    "updated_at": "2026-08-12"
+    "updated_at": null
   },
   {
     "date": "2026-08-13",
@@ -1350,7 +1350,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "c950e969",
-    "updated_at": "2026-08-13"
+    "updated_at": null
   },
   {
     "id": "c9bac59d",
@@ -1370,7 +1370,7 @@
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-13",
-    "updated_at": "2026-08-13"
+    "updated_at": null
   },
   {
     "date": "2026-08-14",
@@ -1387,7 +1387,7 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "3f63d368",
-    "updated_at": "2026-08-14"
+    "updated_at": null
   },
   {
     "date": "2026-08-14",
@@ -1407,7 +1407,7 @@
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
     "id": "f3794b28",
-    "updated_at": "2026-08-14"
+    "updated_at": null
   },
   {
     "date": "2026-08-14",
@@ -1475,7 +1475,7 @@
     "post_date": "2026-08-15",
     "genre": "хип-хоп",
     "id": "136320c2",
-    "updated_at": "2026-08-15"
+    "updated_at": null
   },
   {
     "date": "2026-08-16",
@@ -1509,7 +1509,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/polina-gagarina-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "f449eda0",
-    "updated_at": "2026-08-16"
+    "updated_at": null
   },
   {
     "date": "2026-08-22",
@@ -1526,7 +1526,7 @@
     "post_date": "2026-08-22",
     "genre": "рок",
     "id": "475b28f4",
-    "updated_at": "2026-08-22"
+    "updated_at": null
   },
   {
     "date": "2026-08-22",
@@ -1543,7 +1543,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/irina-i-aleksandr-krug?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "a500d197",
-    "updated_at": "2026-08-22"
+    "updated_at": null
   },
   {
     "id": "e12f7005",
@@ -1563,7 +1563,7 @@
     ],
     "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
     "post_date": "2026-08-23",
-    "updated_at": "2026-08-23"
+    "updated_at": null
   },
   {
     "date": "2026-08-23",
@@ -1580,7 +1580,7 @@
     "post_date": "2026-08-23",
     "genre": "рок",
     "id": "0f539d8d",
-    "updated_at": "2026-08-23"
+    "updated_at": null
   },
   {
     "date": "2026-08-24",
@@ -1597,7 +1597,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/irina-i-aleksandr-krug?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "4cb48f9d",
-    "updated_at": "2026-08-24"
+    "updated_at": null
   },
   {
     "id": "da121c77",
@@ -1617,7 +1617,7 @@
     ],
     "image": "/images/events/01873170526cb87b0894114f0f5ef245.jpg",
     "post_date": "2026-08-25",
-    "updated_at": "2026-08-25"
+    "updated_at": null
   },
   {
     "date": "2026-08-25",
@@ -1637,7 +1637,7 @@
     "image": "/images/events/89c039836f9198387fc0a6a596ad5de3.jpg",
     "post_date": "2026-08-25",
     "id": "42687b0b",
-    "updated_at": "2026-08-25"
+    "updated_at": null
   },
   {
     "id": "0b89699e",
@@ -1657,7 +1657,7 @@
     ],
     "image": "/images/events/81b8e499655fb4660eab2539a00eb535.jpg",
     "post_date": "2026-08-26",
-    "updated_at": "2026-08-26"
+    "updated_at": null
   },
   {
     "date": "2026-08-26",
@@ -1708,7 +1708,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/khaski-2026-08-30?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "34857b2d",
-    "updated_at": "2026-08-30"
+    "updated_at": null
   },
   {
     "id": "259b8985",
@@ -1728,7 +1728,7 @@
     ],
     "image": "/images/events/d48c4edd047fc58a1fa1ad14b4781e29.jpg",
     "post_date": "2026-09-03",
-    "updated_at": "2026-09-03"
+    "updated_at": null
   },
   {
     "date": "2026-09-03",
@@ -1796,7 +1796,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк",
     "id": "15bf75c9",
-    "updated_at": "2026-09-06"
+    "updated_at": null
   },
   {
     "date": "2026-09-06",
@@ -1830,7 +1830,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/igor-rasteriaev-2026-09?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "5e4f6797",
-    "updated_at": "2026-09-18"
+    "updated_at": null
   },
   {
     "id": "d01c7110",
@@ -1850,7 +1850,7 @@
     ],
     "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
     "post_date": "2026-09-19",
-    "updated_at": "2026-09-19"
+    "updated_at": null
   },
   {
     "date": "2026-09-23",
@@ -1901,7 +1901,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "другое",
     "id": "a019cd85",
-    "updated_at": "2026-10-08"
+    "updated_at": null
   },
   {
     "date": "2026-10-20",
@@ -1918,7 +1918,7 @@
     "post_date": "2026-10-20",
     "genre": "фолк-метал",
     "id": "8b310aaf",
-    "updated_at": "2026-10-20"
+    "updated_at": null
   },
   {
     "id": "f2113f78",
@@ -1938,7 +1938,7 @@
     ],
     "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg",
     "post_date": "2026-10-21",
-    "updated_at": "2026-10-21"
+    "updated_at": null
   },
   {
     "date": "2026-07-05",
@@ -2075,7 +2075,7 @@
     "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
     "post_date": "2026-07-04",
     "id": "1055d54d",
-    "updated_at": "2026-07-04"
+    "updated_at": null
   },
   {
     "date": "2026-07-04",
@@ -2299,7 +2299,7 @@
     "post_date": "2026-07-01",
     "genre": "рок",
     "id": "4ef9b8c8",
-    "updated_at": "2026-07-01"
+    "updated_at": null
   },
   {
     "date": "2026-06-30",
@@ -2316,7 +2316,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "0f52d30c",
-    "updated_at": "2026-06-30"
+    "updated_at": null
   },
   {
     "date": "2026-06-28",
@@ -2349,7 +2349,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-superkhity-90-kh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "625ce153",
-    "updated_at": "2026-06-27"
+    "updated_at": null
   },
   {
     "date": "2026-06-27",
@@ -2366,7 +2366,7 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "метал",
     "id": "7f7da373",
-    "updated_at": "2026-06-27"
+    "updated_at": null
   },
   {
     "date": "2026-06-27",
@@ -2457,7 +2457,7 @@
     "image": "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg",
     "post_date": "2026-06-26",
     "id": "e60e24bd",
-    "updated_at": "2026-06-26"
+    "updated_at": null
   },
   {
     "date": "2026-06-26",
@@ -2510,7 +2510,7 @@
     "post_date": "2026-06-25",
     "genre": "метал",
     "id": "600a5d89",
-    "updated_at": "2026-06-25"
+    "updated_at": null
   },
   {
     "date": "2026-06-24",
@@ -2527,7 +2527,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/adrenalinhouse-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "шоу",
     "id": "49d1af1e",
-    "updated_at": "2026-06-24"
+    "updated_at": null
   },
   {
     "id": "c4a80534",
@@ -2565,7 +2565,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "метал",
     "id": "86ed3238",
-    "updated_at": "2026-06-23"
+    "updated_at": null
   },
   {
     "date": "2026-06-21",
@@ -2621,7 +2621,7 @@
     "image": "/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg",
     "post_date": "2026-06-20",
     "id": "a76e9c2f",
-    "updated_at": "2026-06-20"
+    "updated_at": null
   },
   {
     "date": "2026-06-19",
@@ -2691,7 +2691,7 @@
     "image": "/images/events/53d3205a3cca65f7684260786329a531.jpg",
     "post_date": "2026-06-13",
     "id": "883e2b58",
-    "updated_at": "2026-06-13"
+    "updated_at": null
   },
   {
     "date": "2026-06-07",
@@ -2725,7 +2725,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/dzhaz-i-latina-v-tsvetushchikh-rozakh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "джаз",
     "id": "1f208119",
-    "updated_at": "2026-06-07"
+    "updated_at": null
   },
   {
     "date": "2026-06-07",
@@ -2818,7 +2818,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/sovremennaia-klassika-v-tsvetushchikh-rozakh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "a4314b4d",
-    "updated_at": "2026-06-06"
+    "updated_at": null
   },
   {
     "id": "93d47d57",
@@ -3190,7 +3190,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-legendy-mtv?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "8c87080d",
-    "updated_at": "2026-05-26"
+    "updated_at": null
   },
   {
     "date": "2026-05-24",
@@ -3390,7 +3390,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/chempiony-vysshei-ligi-kvn-komanda-soiuz?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "юмор",
     "id": "d159f520",
-    "updated_at": "2026-05-23"
+    "updated_at": null
   },
   {
     "date": "2026-05-23",
@@ -3852,7 +3852,7 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/cherez-muzyku-k-svetu-2023-11-18?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "b5b3bbb4",
-    "updated_at": "2026-05-16"
+    "updated_at": null
   },
   {
     "date": "2026-05-16",
@@ -4310,7 +4310,7 @@
     "post_date": "2026-05-10",
     "genre": "инди",
     "id": "851dc634",
-    "updated_at": "2026-05-10"
+    "updated_at": null
   },
   {
     "date": "2026-05-10",
@@ -4654,7 +4654,7 @@
     "post_date": "2026-05-08",
     "genre": "инди",
     "id": "5ae886ac",
-    "updated_at": "2026-05-08"
+    "updated_at": null
   },
   {
     "date": "2026-05-08",
