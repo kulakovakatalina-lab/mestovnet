@@ -8,7 +8,22 @@
       "notes": "Instagram-канал о событиях Крыма"
     }
   ],
-  "vk_channels": [],
+  "vk_channels": [
+    {
+      "domain": "krongspub",
+      "title": "Krongs",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "паб, пр-кт Нахимова, 8; своего TG не нашли — только VK. Активируется после VK_SERVICE_TOKEN."
+    },
+    {
+      "domain": "club_beliy",
+      "title": "Клуб «Белый»",
+      "city": "Евпатория",
+      "type": "venue",
+      "notes": "ночной клуб, ул. Фрунзе, 1; своего TG не нашли — только VK. Активируется после VK_SERVICE_TOKEN."
+    }
+  ],
   "max_channels": [
     {
       "chat_id": 0,
@@ -180,6 +195,34 @@
       "city": "Крым",
       "type": "afisha",
       "notes": ""
+    },
+    {
+      "username": "dk_korabel",
+      "title": "ДК «Корабел»",
+      "city": "Керчь",
+      "type": "venue",
+      "notes": "найден через веб-поиск, не проверялся вручную перед первым запуском парсера"
+    },
+    {
+      "username": "artkovcheg",
+      "title": "Арт-Ковчег",
+      "city": "Бахчисарайский район",
+      "type": "venue",
+      "notes": "найден через веб-поиск; упоминался в старой версии INSTRUCTIONS.md, но отсутствовал в channels.json"
+    },
+    {
+      "username": "PalmiraPalaceHotel",
+      "title": "Palmira Palace Resort & SPA",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "найден через веб-поиск, не проверялся вручную перед первым запуском парсера"
+    },
+    {
+      "username": "mriyaresortyalta",
+      "title": "Мрия Resort",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "найден через веб-поиск, не проверялся вручную перед первым запуском парсера"
     }
   ]
 }
