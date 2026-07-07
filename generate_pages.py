@@ -803,6 +803,7 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfcfd">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{canonical}">
