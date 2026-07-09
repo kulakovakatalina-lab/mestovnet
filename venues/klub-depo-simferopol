@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/jam-club">
-  <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <title>Клуб ДЕПО, ул. Киевская, д. 4н — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Клуб ДЕПО, ул. Киевская, д. 4н, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/klub-depo-simferopol">
+  <meta property="og:title" content="Клуб ДЕПО, ул. Киевская, д. 4н — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Клуб ДЕПО, ул. Киевская, д. 4н, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,107 +28,34 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Jam Club",
+      "name": "Клуб ДЕПО, ул. Киевская, д. 4н",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
         "addressCountry": "RU",
-        "streetAddress": "ул. Горького, 5"
+        "streetAddress": "ул. Киевская, 4н"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Канальи",
-      "startDate": "2026-07-11T18:00:00+03:00",
+      "name": "Севастопольский эстрадный оркестр Валентина Таева",
+      "startDate": "2026-07-12T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "Клуб ДЕПО, ул. Киевская, д. 4н"
       },
-      "description": "Фолк-концерт группы «Канальи» в день рождения коллектива. Зажигательные мелодии средневековья: Шотландия, Ирландия, Германия, Франция и Древняя Русь. После концерта — бесплатное круглосуточное караоке.",
+      "description": "Уникальный формат: рок-хиты (Наутилус Помпилиус, Король и Шут, Ленинград, Сплин, Чайф и др.) в живом исполнении Севастопольского эстрадного оркестра. Поют все вместе с залом.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Канальи"
+        "name": "Севастопольский эстрадный оркестр Валентина Таева"
       },
-      "image": "/images/events/67d0f1b4f3869e6ba0fdcb1d970a9732.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Мираж Огня",
-      "startDate": "2026-07-17T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Tribute-концерт группы АРИЯ. Исполняет Мираж Огня. Живой звук, мощный свет. Вход свободный.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мираж Огня"
-      },
-      "image": "/images/events/ca4810db5f3b474898c34688a6bb97b7.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Unluvd, Neverlove",
-      "startDate": "2026-08-11T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Neverlove с особенной программой Unluvd — Анплагд. Группа представит шоу, в котором знакомые треки прозвучат ближе, честнее и атмосфернее.\n\nНе пропустите Neverlove и их новое шоу Unluvd — Анплагд.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Unluvd, Neverlove"
-      },
-      "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Neverlove / Unlvd",
-      "startDate": "2026-08-11T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Акустический (анплагд) концерт Neverlove / Unlvd. Для подписчиков канала действует скидка по промокоду «jam».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Neverlove / Unlvd"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Черный кофе",
-      "startDate": "2026-09-05T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!\r\nВ программу войдут такие нетленные хиты, как: «Вольному — воля», «Владимирская Русь», «Звездный водоем», «Листья», «Светлый металл», «Переступи порог», «Леди Осень», «Это — рок!» и многие другие.\r\n\r\nТакже поклонники группы услышат новые песни, написанные Мастером мелодичного хард-рока в последние годы на стихи Александра Шаганова, Сергея Есенина, великую классику Баха, Альбинони и бессмертные песни Владимира Высоцкого.— они прозвучат в исполнении фронтмена и основателя «Чёрного Кофе» — Дмитрия Варшавского.\r\n«Чёрный кофе» — это не ностальгия, а летопись российского рока. Их дебютный студийный альбом «Переступи порог» открыл официальную дискографию русскоязычного хэви-метал-рока и оказался самым успешным проектом «перестроечной эры». Только в первые месяцы продаж он разошёлся по стране тиражом более 1 400 000 экземпляров. Аналогичный успех сопутствовал и следующему диску коллектива — «Вольному — воля».\r\n\r\nГруппа давала десятки аншлаговых выступлений ежемесячно на протяжении многих лет, но... время шло, предпочтения слушателей менялись. И только сейчас музыка hard'n'heavy обретает второе дыхание и корифеи стиля, вроде «Чёрного Кофе», обретают новую жизнь.\r\n\r\nС Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.\r\n\r\nВ концерте прозвучат самые легендарные хиты группы!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Черный кофе"
-      },
-      "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Чёрный Кофе",
-      "startDate": "2026-09-05T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Концерт группы Чёрный Кофе. Для подписчиков канала действует скидка по промокоду «jam».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Чёрный Кофе"
-      }
+      "image": "/images/events/b1a706606b8243144d62a4ac5755c8e8.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Jam Club"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Клуб ДЕПО, ул. Киевская, д. 4н"}]}
 </script>
   <style>
 
@@ -1074,11 +1001,11 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Jam Club</h1>
-    <p class="venue-description">За чуть больше года здесь сыграли 23 концерта, в основном рок и метал — чаще других выступают Иччи и Нарратор. Среди трибьютов были AC/DC, The Beatles и Nirvana, а однажды здесь дал большой сольный концерт хард-рок-легенда «Чёрный Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Горького, 5, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Горького,+5,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
+    <h1 class="genre-hero-title">Клуб ДЕПО, ул. Киевская, д. 4н</h1>
+    
+    <div class="venue-address-block"><span class="venue-hero-address">ул. Киевская, 4н, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Киевская,+4н,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1096,7 +1023,7 @@ footer {
 </footer>
 
 <script>
-const VENUE_ALIASES = ["Jam Club", "Jam Club"];
+const VENUE_ALIASES = ["Клуб ДЕПО, ул. Киевская, д. 4н", "Клуб ДЕПО", "ДЕПО", "Клуб ДЕПО, ул. Киевская, д. 4н"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
