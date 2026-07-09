@@ -2,6 +2,7 @@
 Шаг 3: принимает извлечённые события (extracted_events.json + yandex_events.json),
 мёрджит с архивом events.json, дедуплицирует, определяет жанры, пушит на GitHub.
 """
+import difflib
 import hashlib
 import json
 import os
@@ -336,6 +337,95 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
     return [_merge_group(g) if len(g) > 1 else g[0] for g in groups.values()]
 
 
+# ── Нечёткий матч площадок ─────────────────────────────────────────────────
+
+def _build_venue_index(venues: list) -> dict:
+    """Все известные варианты названий (норм.) → (slug, canonical_name)."""
+    index = {}
+    for v in venues:
+        canonical = v["name"]
+        slug = v["slug"]
+        for variant in [canonical] + v.get("aliases", []):
+            key = _normalize_venue(variant)
+            if key:
+                index[key] = (slug, canonical)
+    return index
+
+
+def _fuzzy_match_venue(incoming: str, venue_index: dict) -> "tuple[str, str] | None":
+    """
+    Ищет ближайшую площадку из venue_index для строки incoming.
+    Возвращает (slug, canonical_name) при уверенном совпадении, иначе None.
+    Порог: subset_score или seq_score ≥ 0.65.
+    """
+    norm_in = _normalize_venue(incoming)
+    if not norm_in:
+        return None
+    if norm_in in venue_index:
+        return venue_index[norm_in]
+
+    tokens_in = {t for t in norm_in.split() if len(t) > 2 and not t.isdigit()}
+    if not tokens_in:
+        return None
+
+    best_score = 0.0
+    best_match = None
+    for known_norm, (slug, canonical) in venue_index.items():
+        tokens_known = {t for t in known_norm.split() if len(t) > 2 and not t.isdigit()}
+        if not tokens_known:
+            continue
+        # токены меньшего множества целиком входят в большее
+        if tokens_known <= tokens_in:
+            subset_score = len(tokens_known) / len(tokens_in)
+        elif tokens_in <= tokens_known:
+            subset_score = len(tokens_in) / len(tokens_known)
+        else:
+            subset_score = 0.0
+        seq_score = difflib.SequenceMatcher(None, norm_in, known_norm).ratio()
+        score = max(subset_score, seq_score)
+        if score > best_score:
+            best_score = score
+            best_match = (slug, canonical)
+
+    return best_match if best_score >= 0.65 else None
+
+
+def resolve_venues(events: list, venues_data: list) -> tuple:
+    """
+    Для каждого события пытается сопоставить venue с venues.json.
+    Если совпадение найдено — подставляет canonical name и добавляет
+    исходную строку как алиас (если её ещё нет).
+    Возвращает (modified_venues_data, aliases_added).
+    """
+    venue_index = _build_venue_index(venues_data)
+    venues_by_slug = {v["slug"]: v for v in venues_data}
+    aliases_added = []
+
+    for event in events:
+        venue = event.get("venue")
+        if not venue:
+            continue
+        norm = _normalize_venue(venue)
+        if norm in venue_index:
+            _, canonical = venue_index[norm]
+            event["venue"] = canonical
+            continue
+        match = _fuzzy_match_venue(venue, venue_index)
+        if match:
+            slug, canonical = match
+            event["venue"] = canonical
+            v = venues_by_slug.get(slug)
+            if v:
+                aliases = set(v.get("aliases", []))
+                if venue not in aliases:
+                    aliases.add(venue)
+                    v["aliases"] = sorted(aliases)
+                    venue_index[norm] = (slug, canonical)
+                    aliases_added.append(f"«{venue}» → {canonical}")
+
+    return venues_data, aliases_added
+
+
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main(push: bool = True):
@@ -364,6 +454,19 @@ def main(push: bool = True):
         new_events.extend(afisha)
     else:
         print(f"{AFISHA_FILE} не найден")
+
+    # Нечёткий матч площадок → canonical names + автоалиасы
+    venues_file = "venues.json"
+    venues_data: list[dict] = []
+    if os.path.exists(venues_file):
+        with open(venues_file, encoding="utf-8") as f:
+            venues_data = json.load(f)
+    venues_data, aliases_added = resolve_venues(new_events, venues_data)
+    if aliases_added:
+        with open(venues_file, "w", encoding="utf-8") as f:
+            json.dump(venues_data, f, ensure_ascii=False, indent=2)
+        for a in aliases_added:
+            print(f"  Алиас: {a}")
 
     # Дедупликация новых
     before = len(new_events)
@@ -492,7 +595,10 @@ def main(push: bool = True):
     print(f"Сохранено → {OUTPUT_FILE}")
 
     if push:
-        subprocess.run(["git", "add", OUTPUT_FILE, "images/events/"], check=False)
+        to_add = [OUTPUT_FILE, "images/events/"]
+        if aliases_added:
+            to_add.append(venues_file)
+        subprocess.run(["git", "add"] + to_add, check=False)
         subprocess.run(["git", "commit", "-m", "parser: обновить events.json [автоматически]"], check=False)
         result = subprocess.run(["git", "push"], check=False)
         if result.returncode == 0:
