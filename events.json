@@ -72,26 +72,38 @@
     "updated_at": "2026-06-30T04:22:39.323893+00:00"
   },
   {
-    "id": "142a3b74",
     "date": "2026-07-10",
     "time": "21:00",
-    "artist": "Игорь Симдянкин, Алексей Гаркуша",
+    "artist": "Игорь Симдянкин",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики",
+    "source_city": "Севастополь",
+    "price": "бесплатный",
+    "description": "День памяти Михаила Горшенёва: большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+    "source_channel": "rocknroll_92",
+    "source_url": "https://t.me/rocknroll_92/6937",
+    "post_date": "2026-07-09T13:42:22+00:00",
+    "image": "/images/events/13e3eaf6f313e800ad89887e8298a816.jpg",
+    "genre": "рок",
+    "id": "239b7382",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
+  },
+  {
+    "date": "2026-07-10",
+    "time": "21:00",
+    "artist": "Алексей Гаркуша",
     "event_type": "трибьют",
     "venue": "Рок-н-рольщики в Симферополе",
+    "source_city": "Симферополь",
     "price": "бесплатный",
     "description": "62 года Юре Хою и 26 лет без него: акустический трибьют группы «Сектор Газа» в исполнении Алексея Гаркуши.",
-    "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_92/6937",
-    "images": [
-      "/images/events/13e3eaf6f313e800ad89887e8298a816.jpg",
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/13e3eaf6f313e800ad89887e8298a816.jpg",
+    "source_url": "https://t.me/rocknroll_82/250",
     "post_date": "2026-07-09T14:39:22+00:00",
-    "updated_at": "2026-07-09T15:44:27.878109+00:00"
+    "image": "/images/events/da3a492a31059ea91a7e5b8ae852840f.jpg",
+    "genre": "рок",
+    "id": "1d0c82ac",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
   },
   {
     "id": "e6607c6a",
@@ -202,26 +214,38 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
-    "id": "de5306a0",
     "date": "2026-07-11",
     "time": "21:00",
-    "artist": "Группа «САБ», Группа «Хай'Петри»",
+    "artist": "САБ",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики",
+    "source_city": "Севастополь",
+    "price": "бесплатный",
+    "description": "Музыкальная ирония, мощный звук и рок-поп на двух языках. Группа «САБ» специально приедет из Ялты. Не акустика.",
+    "source_channel": "rocknroll_92",
+    "source_url": "https://t.me/rocknroll_92/6937",
+    "post_date": "2026-07-09T13:42:22+00:00",
+    "image": "/images/events/64fd2bb50cf2e2a609103072ff17c53f.jpg",
+    "genre": "поп-рок",
+    "id": "60358947",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
+  },
+  {
+    "date": "2026-07-11",
+    "time": "21:00",
+    "artist": "Хай'Петри",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики в Симферополе",
+    "source_city": "Симферополь",
     "price": "бесплатный",
     "description": "Мощный звук и нетленные рок-поп-хиты на двух языках от группы «Хай'Петри». Музыканты специально приедут из Ялты. Не акустика.",
-    "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_92/6937",
-    "images": [
-      "/images/events/64fd2bb50cf2e2a609103072ff17c53f.jpg",
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/64fd2bb50cf2e2a609103072ff17c53f.jpg",
+    "source_url": "https://t.me/rocknroll_82/250",
     "post_date": "2026-07-09T14:39:22+00:00",
-    "updated_at": "2026-07-09T15:44:27.878109+00:00"
+    "image": "/images/events/75e70aa8289bbbff255bd6273f796a33.jpg",
+    "genre": "поп-рок",
+    "id": "fd8f3d9f",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
   },
   {
     "date": "2026-07-12",
@@ -275,26 +299,38 @@
     "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
-    "id": "f69eb1d5",
     "date": "2026-07-12",
     "time": "21:00",
-    "artist": "Паша Грей, Евгений Громов",
+    "artist": "Паша Грей",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики",
+    "source_city": "Севастополь",
+    "price": "бесплатный",
+    "description": "Камеди-рок и каверы на зарубежный и русский рок в исполнении Паши Грея, акустика.",
+    "source_channel": "rocknroll_92",
+    "source_url": "https://t.me/rocknroll_92/6937",
+    "post_date": "2026-07-09T13:42:22+00:00",
+    "image": "/images/events/104c9d879fcbb8634de70c77404c75c0.jpg",
+    "genre": "русский рок",
+    "id": "6d7f1e01",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
+  },
+  {
+    "date": "2026-07-12",
+    "time": "21:00",
+    "artist": "Евгений Громов",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики в Симферополе",
+    "source_city": "Симферополь",
     "price": "бесплатный",
     "description": "Русский рок и поп-рок в акустике от Евгения Громова.",
-    "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/rocknroll_92/6937",
-    "images": [
-      "/images/events/104c9d879fcbb8634de70c77404c75c0.jpg",
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    ],
-    "image": "/images/events/104c9d879fcbb8634de70c77404c75c0.jpg",
+    "source_url": "https://t.me/rocknroll_82/250",
     "post_date": "2026-07-09T14:39:22+00:00",
-    "updated_at": "2026-07-09T15:44:27.878109+00:00"
+    "image": "/images/events/33d2bd3c6e030f2e9c5e1def5d8c9e99.jpg",
+    "genre": "поп-рок",
+    "id": "7555dfb4",
+    "updated_at": "2026-07-09T15:51:02.158789+00:00"
   },
   {
     "date": "2026-07-16",

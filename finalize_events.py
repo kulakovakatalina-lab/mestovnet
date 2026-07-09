@@ -320,6 +320,10 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
         for a in range(len(indices)):
             for b in range(a + 1, len(indices)):
                 i, j = indices[a], indices[b]
+                ci = (stage1[i].get("source_city") or "").strip()
+                cj = (stage1[j].get("source_city") or "").strip()
+                if ci and cj and ci.lower() != cj.lower():
+                    continue  # разные города — точно разные события
                 ai = _artist_set(stage1[i])
                 aj = _artist_set(stage1[j])
                 vi = stage1[i].get("venue") or ""
