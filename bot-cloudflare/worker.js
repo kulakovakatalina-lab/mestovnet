@@ -155,6 +155,7 @@ async function fetchEvents() {
       price: ovPrices[url] ?? e.price ?? "",
       sourceCity: rawCity || "",
       genre: mapGenre(rawGenre), city: mapCity(rawCity),
+      updatedAt: e.updated_at || "",
     });
   }
   out.sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time));
@@ -289,7 +290,7 @@ const WELCOME =
   "Выбери жанры, города и как часто слать — а дальше я сам.\n" +
   `Источник: ${SITE}`;
 
-async function sendDigest(env, chatId, sub) {
+async function sendDigest(env, chatId, sub, onDemand = true) {
   const genres = sub ? sub.genres : ["all"];
   const cities = sub ? sub.cities : ["all"];
   let events;
@@ -299,7 +300,22 @@ async function sendDigest(env, chatId, sub) {
     await send(env, chatId, "Не удалось загрузить события с сайта, попробуй позже 🙏", null, false);
     return;
   }
-  await send(env, chatId, formatDigest(filterEvents(events, genres, cities), genres, cities));
+  let filtered = filterEvents(events, genres, cities);
+
+  // Для плановых рассылок — только события, изменившиеся/появившиеся с прошлого раза.
+  // Первая плановая рассылка показывает всё и устанавливает базу; /digest по
+  // запросу всегда работает как раньше — все события на 7 дней вперёд.
+  if (!onDemand && sub) {
+    const lastSentAt = sub.lastSentAt;
+    sub.lastSentAt = new Date().toISOString();
+    await setSub(env, chatId, sub);
+    if (lastSentAt) {
+      filtered = filtered.filter((e) => (e.updatedAt || "") >= lastSentAt);
+      if (!filtered.length) return;
+    }
+  }
+
+  await send(env, chatId, formatDigest(filtered, genres, cities));
 }
 
 async function finishSub(env, chatId, msgId, draft) {
@@ -451,7 +467,7 @@ async function runCron(env) {
   const { weekday } = crimeaParts();
   for (const [chatId, sub] of await iterSubs(env)) {
     if (sub.freq === "daily" || (sub.freq === "weekly" && sub.weekday === weekday)) {
-      try { await sendDigest(env, chatId, sub); } catch (e) { console.log("digest failed", chatId, e); }
+      try { await sendDigest(env, chatId, sub, false); } catch (e) { console.log("digest failed", chatId, e); }
     }
   }
 }
