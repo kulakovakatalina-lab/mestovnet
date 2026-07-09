@@ -1,20 +1,20 @@
 [
   {
-    "date": "2026-07-08",
-    "time": "19:30",
-    "artist": "Джокер",
-    "venue": "Молодость",
-    "event_type": "концерт",
-    "price": "от 1000 ₽",
-    "description": "О концерте «Я буду жить, — кричал он, — вечно!»\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами «Лесника», «Камнем по голове», «Мастер приглашает в гости», «Жаль нет ружья», «Ели мясо мужики», «Мертвый анархист», «Отец и маски», «Охотник» и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!",
-    "source_channel": "afisha_ru",
-    "source_city": "Севастополь",
-    "post_date": "2026-06-30T04:22:33.552468+00:00",
-    "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "source_url": "https://www.afisha.ru/concert/dzhoker-6040095/",
-    "genre": "рок",
-    "id": "e4458b51",
-    "updated_at": "2026-06-30T04:22:33.552468+00:00"
+    "date": "2026-07-09",
+    "time": "14:00",
+    "artist": "Kardys, Martin W.",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "46029406",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-09",
@@ -34,28 +34,25 @@
     "updated_at": "2026-07-09"
   },
   {
+    "id": "889e1262",
     "date": "2026-07-10",
     "time": "17:00",
-    "artist": "YSJ «Маяк» (Local Edition)",
-    "event_type": "вечеринка",
-    "venue": "Пляж «Ковёр», 7-й сектор Массандровского пляжа",
+    "artist": "YSJ «Маяк» (Local Edition), Ялта Лето Джем, Spahova, Martin W., Happy Paul",
+    "event_type": "фестиваль",
+    "venue": "Массандровский пляж, сектор 7 «Ковёр»",
     "price": "бесплатно (для зрителей)",
-    "description": "Трёхдневный фестиваль YSJ «Маяк» (Local Edition) проходит 10–12 июля с 17:00 до 22:00. В программе DJ-сеты, танцевальные батлы и конкурсы для зрителей; участие в батлах — платное.",
-    "source_channel": "massandrasun",
+    "description": "Трёхдневный пляжный фестиваль (10–12 июля): DJ-сеты, танцевальные батлы и конкурсы для зрителей на Массандровском пляже.",
     "source_city": "Ялта",
-    "post_date": "2026-07-05T08:13:30+00:00",
-    "image": "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
+    "source_channel": "massandrasun",
+    "genre": "другое",
+    "source_url": "https://t.me/massandrasun/2334",
     "images": [
       "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
-      "/images/events/345d9c34f401b3a19260059d461135dd.jpg",
-      "/images/events/aef116ac487642af51db7ca4727328f1.jpg",
-      "/images/events/6598c312f7438a8e04e974ec303af91d.jpg",
-      "/images/events/6b92eae93816054f75dfeac39ad46969.jpg"
+      "/images/events/ec888aa817625c3fed745fe3aad0a6de.jpg"
     ],
-    "source_url": "https://t.me/massandrasun/2334",
-    "genre": "другое",
-    "id": "889e1262",
-    "updated_at": "2026-07-05T08:13:30+00:00"
+    "image": "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-10",
@@ -115,6 +112,27 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "e6607c6a",
+    "date": "2026-07-11",
+    "time": "14:00",
+    "artist": "Pasha Rhino, Happy Paul, Martin W.",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "поп",
+    "source_url": "https://t.me/massandrasun/2348",
+    "images": [
+      "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+      "/images/events/954ec71c369a7875432c9ef40be4ce9e.jpg"
+    ],
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
     "date": "2026-07-11",
     "time": "17:30",
     "artist": "Денайро",
@@ -149,6 +167,23 @@
     "genre": "классика",
     "id": "bb3195b6",
     "updated_at": "2026-07-04T17:05:43+00:00"
+  },
+  {
+    "date": "2026-07-11",
+    "time": "18:00",
+    "artist": "Канальи",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатный для подписчиков",
+    "description": "Фолк-концерт группы «Канальи» в день рождения коллектива. Зажигательные мелодии средневековья: Шотландия, Ирландия, Германия, Франция и Древняя Русь. После концерта — бесплатное круглосуточное караоке.",
+    "source_channel": "clubjam",
+    "source_url": "https://t.me/clubjam/1045",
+    "post_date": "2026-07-07T09:38:00+00:00",
+    "image": "/images/events/67d0f1b4f3869e6ba0fdcb1d970a9732.jpg",
+    "genre": "фолк",
+    "id": "e23bd27b",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-11",
@@ -209,6 +244,23 @@
   },
   {
     "date": "2026-07-12",
+    "time": "14:00",
+    "artist": "Dim K., Peskovsky",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "a4d010fa",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
+    "date": "2026-07-12",
     "time": "20:00",
     "artist": "ГУДТАЙМС",
     "event_type": "концерт",
@@ -223,6 +275,23 @@
     "genre": "поп",
     "id": "d103a183",
     "updated_at": "2026-07-12"
+  },
+  {
+    "date": "2026-07-12",
+    "time": "20:00",
+    "artist": "Севастопольский эстрадный оркестр Валентина Таева",
+    "event_type": "концерт",
+    "venue": "Клуб ДЕПО, ул. Киевская, д. 4н",
+    "source_city": "Симферополь",
+    "price": "1000 ₽",
+    "description": "Уникальный формат: рок-хиты (Наутилус Помпилиус, Король и Шут, Ленинград, Сплин, Чайф и др.) в живом исполнении Севастопольского эстрадного оркестра. Поют все вместе с залом.",
+    "source_channel": "dlyadushi_Crimea",
+    "source_url": "https://t.me/dlyadushi_Crimea/6324",
+    "post_date": "2026-07-08T14:10:57+00:00",
+    "image": "/images/events/b1a706606b8243144d62a4ac5755c8e8.jpg",
+    "genre": "русский рок",
+    "id": "3595b715",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "id": "f69eb1d5",
@@ -263,6 +332,44 @@
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "date": "2026-07-16",
+    "time": "14:00",
+    "artist": "Peskovsky, Pasha Rhino",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "87082c4d",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
+    "id": "8360766c",
+    "date": "2026-07-17",
+    "time": "14:00",
+    "artist": "Rus, Santier, South DJ's",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "поп",
+    "source_url": "https://t.me/massandrasun/2348",
+    "images": [
+      "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+      "/images/events/954ec71c369a7875432c9ef40be4ce9e.jpg"
+    ],
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-17",
@@ -340,6 +447,23 @@
   },
   {
     "date": "2026-07-18",
+    "time": null,
+    "artist": "Матвей Блюмин",
+    "event_type": "концерт",
+    "venue": null,
+    "source_city": "Севастополь",
+    "price": "900 ₽",
+    "description": "«Реинкарнация Паганини» — программа из произведений XVIII–XIX веков и композиций великого гения скрипки. Победитель международных конкурсов, солист Московской и Петербургской филармоний.",
+    "source_channel": "afisha_payberry",
+    "source_url": "https://t.me/afisha_payberry/1592",
+    "post_date": "2026-07-07T08:33:28+00:00",
+    "image": "/images/events/9c2e06f07c0edc3e7720874ed2de9658.jpg",
+    "genre": "фолк",
+    "id": "a6271162",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
+    "date": "2026-07-18",
     "time": "13:00",
     "artist": "DJ сет",
     "event_type": "вечеринка",
@@ -354,6 +478,27 @@
     "genre": "поп",
     "id": "257e6c3a",
     "updated_at": "2026-07-01"
+  },
+  {
+    "id": "0d702006",
+    "date": "2026-07-18",
+    "time": "14:00",
+    "artist": "Kuznetsov, Santier, Scream",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "поп",
+    "source_url": "https://t.me/massandrasun/2348",
+    "images": [
+      "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+      "/images/events/954ec71c369a7875432c9ef40be4ce9e.jpg"
+    ],
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-18",
@@ -428,6 +573,23 @@
     "genre": "поп",
     "id": "db2ae2a5",
     "updated_at": "2026-07-01"
+  },
+  {
+    "date": "2026-07-19",
+    "time": "14:00",
+    "artist": "Rus, Scream",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "761edc15",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-19",
@@ -520,6 +682,23 @@
   },
   {
     "date": "2026-07-23",
+    "time": "14:00",
+    "artist": "EL, Busha",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "e926e160",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
+    "date": "2026-07-23",
     "time": "19:00",
     "artist": "Хиты 2000-х. Караоке с оркестром",
     "venue": "ДК профсоюзов",
@@ -551,6 +730,27 @@
     "genre": "поп",
     "id": "c90f59a9",
     "updated_at": "2026-07-23"
+  },
+  {
+    "id": "e980146b",
+    "date": "2026-07-24",
+    "time": "14:00",
+    "artist": "Spahova, Kuznetsov, Pasha Rhino",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "поп",
+    "source_url": "https://t.me/massandrasun/2348",
+    "images": [
+      "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+      "/images/events/954ec71c369a7875432c9ef40be4ce9e.jpg"
+    ],
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-24",
@@ -648,6 +848,27 @@
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "id": "31082f74",
+    "date": "2026-07-25",
+    "time": "14:00",
+    "artist": "Pasha Rhino, Santier, Gretta",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_city": "Ялта",
+    "source_channel": "massandrasun",
+    "genre": "поп",
+    "source_url": "https://t.me/massandrasun/2348",
+    "images": [
+      "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+      "/images/events/954ec71c369a7875432c9ef40be4ce9e.jpg"
+    ],
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-25",
@@ -762,6 +983,23 @@
   },
   {
     "date": "2026-07-26",
+    "time": "14:00",
+    "artist": "Spahova, Martin W.",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "16e1554b",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
+    "date": "2026-07-26",
     "time": "19:00",
     "artist": "Стивен Митчелл",
     "event_type": "концерт",
@@ -795,21 +1033,25 @@
     "updated_at": "2026-07-26"
   },
   {
+    "id": "74649dad",
     "date": "2026-07-26",
     "time": "20:00",
     "artist": "Честный",
-    "venue": "Ribiza",
     "event_type": "концерт",
-    "price": "от 3000 ₽",
-    "description": "О концерте 18:00 – Фото с артистом\r\n18:50 – Ранний вход\r\n19:00 – Общий вход\r\n20:00 – Начало концерта\r\n21:30 – Завершение концерта\r\n\r\nРасписание может быть изменено в одностороннем порядке без предварительного уведомления в случае форс-мажорных обстоятельств, в том числе задержки авиарейсов или фото с артистом.\r\n\r\nДля входа на концерт может потребоваться паспорт для подтверждения личности либо сопровождение родителя.\r\n\r\nПосле концерта фото с артистом не осуществляется, в случае опоздания не оказанная услуга не компенсируется. Приходите вовремя.",
-    "source_channel": "afisha_ru",
+    "venue": "Ribiza",
+    "price": "от 2 400 ₽",
+    "description": "Честный приглашает на большие концерты. Максимум энергии, яркие эмоции, все хиты и новые песни — «Лепесточек», «Желаю», «Майами», «Прости мама», «Разлетайтесь мыши» и многие другие.\n\nПриходите за эмоциями, за мурашками! До встречи.\n\nФото и автограф сессия производится за 2 часа до времени, указанного в билете. Не опаздывайте — после концерта фото с артистом недоступно.",
     "source_city": "Симферополь",
-    "post_date": "2026-06-30T04:22:26.388640+00:00",
-    "image": "/images/events/e6cb139ea7013442a7f07b5e35a4d5d7.jpg",
-    "source_url": "https://www.afisha.ru/concert/chestniy-6024572/",
+    "source_channel": "yandex_afisha",
     "genre": "хип-хоп",
-    "id": "74649dad",
-    "updated_at": "2026-06-30T04:22:26.388640+00:00"
+    "source_url": "https://www.afisha.ru/concert/chestniy-6024572/",
+    "images": [
+      "/images/events/e6cb139ea7013442a7f07b5e35a4d5d7.jpg",
+      "/images/events/645ac1e0b419618ffbbd9ed64cf3e9c9.jpg"
+    ],
+    "image": "/images/events/e6cb139ea7013442a7f07b5e35a4d5d7.jpg",
+    "post_date": "2026-07-26",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "id": "2915ab1c",
@@ -1887,6 +2129,23 @@
     "updated_at": "2026-06-30T04:22:27.332127+00:00"
   },
   {
+    "date": "2026-09-26",
+    "time": "12:00",
+    "artist": "Фестиваль Winepark",
+    "venue": "Винный парк (Понизовка)",
+    "event_type": "концерт",
+    "price": "от 1 000 ₽",
+    "description": "Фестиваль Winepark в Винный парк (Понизовка), Ялта.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Ялта",
+    "post_date": "2026-09-26",
+    "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
+    "source_url": "https://afisha.yandex.ru/yalta/festival/festival-winepark?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "genre": "поп",
+    "id": "f560e22d",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+  },
+  {
     "date": "2026-10-08",
     "time": "18:00",
     "artist": "AdrenalinHouse",
@@ -1939,6 +2198,23 @@
     "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg",
     "post_date": "2026-10-21",
     "updated_at": "2026-10-21"
+  },
+  {
+    "date": "2026-07-08",
+    "time": "19:30",
+    "artist": "Джокер",
+    "venue": "Молодость",
+    "event_type": "концерт",
+    "price": "от 1000 ₽",
+    "description": "О концерте «Я буду жить, — кричал он, — вечно!»\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами «Лесника», «Камнем по голове», «Мастер приглашает в гости», «Жаль нет ружья», «Ели мясо мужики», «Мертвый анархист», «Отец и маски», «Охотник» и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-06-30T04:22:33.552468+00:00",
+    "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
+    "source_url": "https://www.afisha.ru/concert/dzhoker-6040095/",
+    "genre": "рок",
+    "id": "e4458b51",
+    "updated_at": "2026-06-30T04:22:33.552468+00:00"
   },
   {
     "date": "2026-07-05",
