@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Вечеринка, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Rus, Scream, Пляж-кафе Van Gogh, Массандровский пляж, в Ялте, 19 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Вечеринка — Sky Beach Ялта, Ялта · Местов.Нет</title>
+<title>Rus, Scream — Пляж-кафе Van Gogh, Массандровский пляж, Ялта · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -946,46 +946,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/f5656fc9">
-<meta property="og:title" content="Вечеринка — Sky Beach Ялта, Ялта · Местов.Нет">
-<meta property="og:description" content="Вечеринка, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/761edc15">
+<meta property="og:title" content="Rus, Scream — Пляж-кафе Van Gogh, Массандровский пляж, Ялта · Местов.Нет">
+<meta property="og:description" content="Rus, Scream, Пляж-кафе Van Gogh, Массандровский пляж, в Ялте, 19 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Вечеринка",
-      "startDate": "2026-05-30T11:00:00+03:00",
+      "name": "Rus, Scream",
+      "startDate": "2026-07-19T14:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Sky Beach Ялта",
+        "name": "Пляж-кафе Van Gogh, Массандровский пляж",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Вечеринка Богов Олимпа с шоу-программой, развлечениями, авторскими блюдами и коктейлями. Дресс-код в стиле богов Олимпа приветствуется.",
+      "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Вечеринка"
+        "name": "Rus, Scream"
       },
-      "image": "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "5000₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Вечеринка"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Rus, Scream"}]}
 </script>
 </head>
 <body>

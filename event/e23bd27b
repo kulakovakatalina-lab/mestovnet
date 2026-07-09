@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Вечеринка, CORA, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Канальи, Jam Club, в Симферополе, 11 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Вечеринка, CORA — Sky Beach Ялта, Ялта · Местов.Нет</title>
+<title>Канальи — Jam Club, Симферополь · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -946,37 +946,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/37d71771">
-<meta property="og:title" content="Вечеринка, CORA — Sky Beach Ялта, Ялта · Местов.Нет">
-<meta property="og:description" content="Вечеринка, CORA, Sky Beach Ялта, в Ялте, 30 мая, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/e23bd27b">
+<meta property="og:title" content="Канальи — Jam Club, Симферополь · Местов.Нет">
+<meta property="og:description" content="Канальи, Jam Club, в Симферополе, 11 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/67d0f1b4f3869e6ba0fdcb1d970a9732.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Вечеринка, CORA",
-      "startDate": "2026-05-30T11:00:00+03:00",
+      "name": "Канальи",
+      "startDate": "2026-07-11T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Sky Beach Ялта",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Закрытая вечеринка на Олимпе с живым звуком группы CORA. Зажигательная музыка у бассейна, шоу-программа, изысканные закуски и блюда.",
+      "description": "Фолк-концерт группы «Канальи» в день рождения коллектива. Зажигательные мелодии средневековья: Шотландия, Ирландия, Германия, Франция и Древняя Русь. После концерта — бесплатное круглосуточное караоке.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Вечеринка, CORA"
+        "name": "Канальи"
       },
-      "image": "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg",
+      "image": "/images/events/67d0f1b4f3869e6ba0fdcb1d970a9732.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "5000₽",
+        "name": "бесплатный для подписчиков",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Вечеринка, CORA"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Канальи"}]}
 </script>
 </head>
 <body>
