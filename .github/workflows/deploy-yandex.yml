@@ -34,13 +34,8 @@ jobs:
       - name: Установить браузер для Playwright
         run: playwright install --with-deps chromium
 
-      - name: Прогнать pre-release тесты
-        run: >
-          pytest -q
-          tests/test_data_integrity.py
-          tests/test_generated_pages.py
-          tests/test_sitemap_robots.py
-          tests/test_layout_playwright.py
+      - name: Прогнать все тесты
+        run: pytest tests/ -q
 
   deploy:
     needs: test
