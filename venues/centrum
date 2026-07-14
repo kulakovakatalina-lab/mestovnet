@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Centrum — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Centrum, в Симферополе. 8 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Centrum, в Симферополе. 7 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/centrum">
   <meta property="og:title" content="Centrum — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Centrum, в Симферополе. 8 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Centrum, в Симферополе. 7 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Севастопольская, 62"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "ГУДТАЙМС",
-      "startDate": "2026-07-12T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Centrum"
-      },
-      "description": "Группа «Гудтаймс» на Roof Live 2026. Большой сольный концерт на живой крыше твоего города.\n\nГруппа «Гудтаймс» на Roof Live — это яркая атмосфера концерта на высоте, где музыка становится частью пейзажа.\n\nБерите ваших прекрасных друзей, подруг и готовьтесь к самой яркой и душевной вечеринке в жизни: короли фитнес-рока никого не оставят равнодушным.\n\nНа концерте зрители услышат как хиты («Видение», «Спасибо, Артём», «Гори»), так и треки с невыпущенного нового альбома. Все песни обязательны к совместному исполнению!\n\nRoof Live — флагманский формат «Эфира», команда организаторов ставит перед собой цель не просто проводить концерты, а формировать устойчивую культурную инфраструктуру летних городских событий. Проект поддерживает живую сцену, создаёт лучшие возможности для встречи артистов со зрителями и объединяет аудиторию вокруг качественного музыкального контента.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "ГУДТАЙМС"
-      },
-      "image": "/images/events/010c7bc5be1509afa4b359aed83ca806.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1110,7 +1095,7 @@ footer {
     <p class="venue-description">За два месяца здесь прошло 8 концертов серии Roof Live на крыше — играли группы «Гудтаймс» и «Моя Мишель». Жанрово это в основном поп и рок, вход платный.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Севастопольская, 62, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Севастопольская,+62,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">8</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">7</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
