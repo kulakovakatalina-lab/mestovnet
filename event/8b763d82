@@ -224,6 +224,29 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.04em;
   width: fit-content;
 }
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
+.event-info-cancelled {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  background: oklch(55% 0.19 25);
+  color: #fff;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
 .event-info-artist {
   font-family: var(--font-display);
   font-size: clamp(28px, 4vw, 42px);
@@ -720,6 +743,8 @@ a { color: inherit; text-decoration: none; }
   color: inherit;
 }
 .mini-card:hover { border-color: oklch(80% 0.008 250); transform: translateY(-2px); }
+.mini-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.mini-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
 .mini-img {
   aspect-ratio: 1;
   display: flex;
@@ -1127,6 +1152,7 @@ async function load() {
       settings = await settingsRes.json().catch(() => ({}));
     }
     const hiddenSet   = new Set(settings.hidden || []);
+    const cancelledSet = new Set(settings.cancelled || []);
     const ovNames     = settings.names        || {};
     const ovTimes     = settings.times        || {};
     const ovPrices    = settings.prices       || {};
@@ -1156,6 +1182,7 @@ async function load() {
       if (url in ovVenues)  ev.venue       = ovVenues[url];
       if (url in ovDescs)   ev.description = ovDescs[url];
       if (url in ovGenres)  ev.genre       = ovGenres[url];
+      if (cancelledSet.has(url)) ev.cancelled = true;
       return ev;
     }
 
@@ -1235,11 +1262,11 @@ function render(event) {
 
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="/event/${escapeHtml(e.id)}" class="mini-card">
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card${e.cancelled ? ' cancelled' : ''}">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
-        <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-artist">${e.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(e.artist) || '—'}</div>
         <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
       </div>
     </a>
@@ -1259,6 +1286,7 @@ function render(event) {
           <div class="event-content-col">
           <div class="event-info">
             <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
+            ${event.cancelled ? '<span class="cancelled-badge event-info-cancelled">Мероприятие отменено</span>' : ''}
             <h1 class="event-info-artist">${escapeHtml(event.artist) || '—'}</h1>
             <div class="event-info-venue">${(function(){
               const vd = venueByAlias[event.venue || ''];
@@ -1375,11 +1403,11 @@ function loadMore() {
 function renderMoreCards() {
   const visible = allUpcoming.slice(0, shownCount);
   const moreCards = visible.map(e => `
-    <a href="/event/${escapeHtml(e.id)}" class="mini-card">
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card${e.cancelled ? ' cancelled' : ''}">
       <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
       <div class="mini-body">
         <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
-        <div class="mini-artist">${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-artist">${e.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(e.artist) || '—'}</div>
         <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
       </div>
     </a>
