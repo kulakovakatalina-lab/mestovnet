@@ -164,11 +164,12 @@ def extract_js() -> str:
 def apply_settings(events: list[dict], settings: dict) -> list[dict]:
     """Возвращает новый список событий с применёнными переопределениями из settings.json.
 
-    Применяет: names, times, prices, images, cities, venues, descriptions, genres.
+    Применяет: names, times, prices, images, cities, venues, descriptions, genres, cancelled.
     Удаляет скрытые события (hidden).
     Оригинальные объекты не изменяются — создаются копии.
     """
     hidden       = set(settings.get("hidden",       []))
+    cancelled_ov = set(settings.get("cancelled",    []))
     names        = settings.get("names",        {})
     times        = settings.get("times",        {})
     prices       = settings.get("prices",       {})
@@ -205,6 +206,8 @@ def apply_settings(events: list[dict], settings: dict) -> list[dict]:
             ev["description"] = descs_ov[url]
         if url in genres_ov:
             ev["genre"] = genres_ov[url]
+        if url in cancelled_ov:
+            ev["cancelled"] = True
 
         result.append(ev)
 
@@ -232,7 +235,7 @@ def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
     # Теги
     tags = ""
     if cancelled:
-        tags += '<span class="tag cancelled-tag">перенесено</span>'
+        tags += '<span class="tag cancelled-tag">отменено</span>'
     if evtype:
         tags += f'<span class="tag type">{esc(evtype)}</span>'
     genre = e.get("genre") or ""
@@ -321,6 +324,8 @@ def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str
         }
         if e.get("description"):
             item["description"] = e["description"]
+        if e.get("cancelled"):
+            item["eventStatus"] = "https://schema.org/EventCancelled"
         display_artist = custom_name or e.get("artist")
         if display_artist:
             item["performer"] = {"@type": "MusicGroup", "name": display_artist}
@@ -930,6 +935,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
   .event-row:hover {{ background: var(--surface); }}
   .event-row.past {{ opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }}
   .event-row.past:hover {{ opacity: 1; filter: none; }}
+  .event-row.cancelled {{ opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }}
+  .event-row.cancelled:hover {{ opacity: 0.85; filter: grayscale(0.2); }}
   .row-date {{ flex-shrink: 0; text-align: center; }}
   .row-date-day {{ font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }}
   .row-date-month {{ font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }}
@@ -1034,7 +1041,8 @@ function priceText(p) {{
 }}
 
 function applySettings(data, settings) {{
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
     images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
     descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
@@ -1050,6 +1058,7 @@ function applySettings(data, settings) {{
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -1063,7 +1072,8 @@ function eventRowHtml(ev, extraClass) {{
   const thumbHtml = ev.image
     ? `<img src="${{ev.image}}" alt="${{ev.artist || ''}}" loading="lazy">`
     : `<div class="bg-${{genre}}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${{genreIcon(genre)}}</div>`;
-  return `<a href="/event/${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${{ev.id}}" class="${{rowClass}}" data-genre="${{genre}}">
     <div class="row-date">
       <div class="row-date-day">${{fmt.day}}</div>
       <div class="row-date-month">${{fmt.month}}</div>
@@ -1071,7 +1081,7 @@ function eventRowHtml(ev, extraClass) {{
     </div>
     <div class="row-thumb">${{thumbHtml}}</div>
     <div>
-      <div class="row-artist">${{ev.artist || '—'}}</div>
+      <div class="row-artist">${{ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}}${{ev.artist || '—'}}</div>
       <div class="row-desc">${{ev.description || ''}}</div>
       <div class="row-venue">
         <span>${{ev.venue || '—'}}</span>
