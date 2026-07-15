@@ -576,6 +576,23 @@ def main(push: bool = True):
     existing_by_id = {e["id"]: e for e in existing if e.get("id")}
     _TRACKED_FIELDS = ("date", "time", "artist", "venue", "price")
     now_iso = datetime.now(timezone.utc).isoformat()
+
+    # Заведомо прошедшая метка для событий-легаси без нормального updated_at
+    # (см. _normalize_updated_at) — не now_iso, чтобы не устраивать им ещё
+    # одну повторную рассылку: раз они и так уже разошлись подписчикам
+    # (в этом и была причина бага), считаем их старыми, а не свежими.
+    _LEGACY_EPOCH = "1970-01-01T00:00:00+00:00"
+
+    def _normalize_updated_at(old_event: dict) -> str:
+        # До 2026-07-02 у событий не было updated_at, и тогдашний фолбэк по
+        # ошибке подставлял голую дату события (post_date, YYYY-MM-DD) —
+        # такая строка при сравнении с полным ISO-timestamp в боте
+        # сравнивается лексикографически неверно (а для событий с afisha,
+        # где post_date совпадает с датой самого события, дала бы дату в
+        # будущем, что тоже сломало бы сравнение). Чиним при каждом прогоне.
+        prev = old_event.get("updated_at")
+        return prev if prev and len(prev) > 10 else _LEGACY_EPOCH
+
     for e in merged:
         eid = e.get("id")
         old = existing_by_id.get(eid) if eid else None
@@ -583,7 +600,7 @@ def main(push: bool = True):
             e["updated_at"] = now_iso
         else:
             changed = any(e.get(f) != old.get(f) for f in _TRACKED_FIELDS)
-            e["updated_at"] = now_iso if changed else old.get("updated_at", old.get("post_date", now_iso))
+            e["updated_at"] = now_iso if changed else _normalize_updated_at(old)
 
     # Сортировка: будущие по дате вперёд, прошедшие в конце по убыванию даты
     today = date.today().isoformat()
