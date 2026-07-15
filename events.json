@@ -55,6 +55,23 @@
     "updated_at": null
   },
   {
+    "date": "2026-07-17",
+    "time": "19:00",
+    "artist": "Елена Свок",
+    "event_type": "концерт",
+    "venue": "Антикварно-художественная галерея «Стикс»",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "Музыкальный вечер певицы, поэта и актрисы Елены Свок: авторская песня, романсы Окуджавы, Визбора, Матвеевой и любимые песни из кинофильмов.",
+    "source_channel": "crimea_event",
+    "source_url": "https://t.me/crimea_event/5605",
+    "post_date": "2026-07-15",
+    "image": "/images/events/53fa37a20c5bf1bba5d21107d13171b5.jpg",
+    "genre": "авторская",
+    "id": "f21c846e",
+    "updated_at": "2026-07-15T16:43:18.018520+00:00"
+  },
+  {
     "id": "11db5c77",
     "date": "2026-07-17",
     "time": "21:00",
@@ -95,21 +112,22 @@
     "id": "58ceeb65",
     "date": "2026-07-17",
     "time": "21:00",
-    "artist": "Дуэт «МысКрыма»",
+    "artist": "Дуэт «МысКрыма», МысКрыма (Дмитрий Ванх, Вета)",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики в Симферополе",
     "price": null,
-    "description": "Дуэт «МысКрыма»: Дмитрий Ванх и Вета с рок-поп хитами на двух языках.",
+    "description": "Впервые на сцене клуба — дуэт «МысКрыма»: Дмитрий Ванх и Вета сыграют рок-поп хиты на двух языках. Вход свободный.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/193",
     "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+      "/images/events/2e80a8c72e534e1c156620eb97a803b5.jpg"
     ],
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "post_date": "2026-07-14",
+    "updated_at": "2026-07-15T16:43:18.018520+00:00"
   },
   {
     "date": "2026-07-18",
@@ -168,6 +186,23 @@
   },
   {
     "date": "2026-07-18",
+    "time": "19:00",
+    "artist": "Гитара у костра",
+    "event_type": "концерт",
+    "venue": "Эко-пространство «Али-Баир»",
+    "source_city": "Севастополь",
+    "price": "от 1200 ₽",
+    "description": "Концерт под открытым небом в Байдарской долине: хиты КИНО, Жуков, Чайфа, Басты и Sting у костра. Детский билет 800 ₽, есть трансфер из Севастополя.",
+    "source_channel": "crimea_event",
+    "source_url": "https://t.me/crimea_event/5600",
+    "post_date": "2026-07-14",
+    "image": "/images/events/9f1e3a2deb611fa00d4b03bef32d2b91.jpg",
+    "genre": "поп",
+    "id": "11c32c50",
+    "updated_at": "2026-07-15T16:43:18.018520+00:00"
+  },
+  {
+    "date": "2026-07-18",
     "time": "21:00",
     "artist": "Tigo, Rubi",
     "venue": "Белый",
@@ -211,16 +246,17 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики в Симферополе",
     "price": null,
-    "description": "Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками. Не акустика.",
+    "description": "Группа «Домино» из Севастополя исполнит хиты русского рок-попа в неожиданных аранжировках. Вход свободный.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/193",
     "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+      "/images/events/2e80a8c72e534e1c156620eb97a803b5.jpg"
     ],
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
+    "post_date": "2026-07-14",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
@@ -1369,21 +1405,24 @@
     "updated_at": "2026-08-14"
   },
   {
+    "id": "42897b6c",
     "date": "2026-08-14",
     "time": "20:00",
-    "artist": "Plamenev",
-    "venue": "Депо",
+    "artist": "Plamenev, Павел Пламенев",
     "event_type": "концерт",
+    "venue": "Депо",
     "price": "от 2000 ₽",
     "description": "О концерте ПЛАМЕНЕВ - новая легенда русского рока!\r\n\r\nПавел Пламенев выступит с большим сольным концертом и представит специальную программу из своих главных хитов.\r\n\r\nКаждая песня Павла Пламенева - это отдельная история, пропитанная глубоким смыслом и эмоциями, способная найти отклик в сердце любого слушателя. Его песни затрагивают важные темы: любовь, самопознание, преодоление трудностей, поиски гармонии с собой и миром.",
-    "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-06-30T04:22:30.549985+00:00",
-    "image": "/images/events/097cd737ab1aa699f30afafa57818b00.jpg",
-    "source_url": "https://www.afisha.ru/concert/plamenev-6005929/",
+    "source_channel": "afisha_ru",
     "genre": "рок",
-    "id": "42897b6c",
-    "updated_at": "2026-06-30T04:22:30.549985+00:00"
+    "source_url": "https://www.afisha.ru/concert/plamenev-6005929/",
+    "images": [
+      "/images/events/097cd737ab1aa699f30afafa57818b00.jpg"
+    ],
+    "image": "/images/events/097cd737ab1aa699f30afafa57818b00.jpg",
+    "post_date": "2026-07-15T16:41:53.822379+00:00",
+    "updated_at": "2026-07-15T16:43:18.018520+00:00"
   },
   {
     "date": "2026-08-15",
@@ -1775,20 +1814,23 @@
     "updated_at": "2026-06-30T04:22:28.517443+00:00"
   },
   {
+    "id": "5e4f6797",
     "date": "2026-09-18",
     "time": "20:00",
     "artist": "Игорь Растеряев",
-    "venue": "Депо",
     "event_type": "концерт",
+    "venue": "Депо",
     "price": "от 2 400 ₽",
     "description": "Игорь Растеряев в Депо, Симферополь.",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-09-18",
-    "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/igor-rasteriaev-2026-09?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "source_channel": "yandex_afisha",
     "genre": "поп",
-    "id": "5e4f6797",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/igor-rasteriaev-2026-09?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png"
+    ],
+    "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
+    "post_date": "2026-09-18",
     "updated_at": "2026-09-18"
   },
   {
