@@ -36,7 +36,13 @@ MIN_EVENTS = 2
 # ── Курируемые слияния ────────────────────────────────────────────────────
 # (canon_id, каноническое имя, [норм-ключи вариантов]) — заполняется по факту
 # разбора отчёта о подозрениях на дубли, как MERGE_GROUPS в build_venues.py.
-MERGE_GROUPS: list[tuple[str, str, list[str]]] = []
+# «Скажите Джаз»/«Скажите Jazz» не слились автоматически: слово «джаз» —
+# заимствование, механический транслит даёт «dzhaz», а не «jazz», так что
+# translit_key их не пересекает. Отдельный частный случай, не общее правило.
+MERGE_GROUPS: list[tuple[str, str, list[str]]] = [
+    ("skazhite-jazz", "Скажите Джаз",
+     ["скажите джаз", "скажите jazz", "джазбэнд скажите jazz"]),
+]
 
 # ── Курируемый exclude-список ──────────────────────────────────────────────
 # Норм-ключи явных не-артистов, которые не поймала автоматика
@@ -112,7 +118,7 @@ def main():
         artist = (e.get("artist") or "").strip()
         if not artist:
             continue
-        for raw in artist.split(","):
+        for raw in parser_mod._split_artist_field(artist):
             for name in parser_mod._artist_parts(raw.strip()):
                 name = name.strip()
                 if not name:
@@ -170,6 +176,15 @@ def main():
 
         variant_counts = Counter({n: len(set(mentions[n])) for n in variant_names})
         canon_name = variant_counts.most_common(1)[0][0]
+
+        # Курируемое имя (MERGE_GROUPS) перебивает частотный выбор
+        curated_cid = next(
+            (MERGE_MAP[norm_key(n)] for n in variant_names if norm_key(n) in MERGE_MAP),
+            None,
+        )
+        if curated_cid:
+            canon_name = MERGE_NAME[curated_cid]
+
         nk = norm_key(canon_name)
 
         if nk in EXCLUDE_ARTISTS:

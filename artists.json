@@ -1,5 +1,31 @@
 [
   {
+    "slug": "skazhite-dzhaz",
+    "name": "Скажите Джаз",
+    "aliases": [
+      "Band Скажите Jazz",
+      "Джаз-бэнд «Скажите Jazz»",
+      "Скажите Джаз"
+    ],
+    "event_count": 8,
+    "cities": [
+      "Крым",
+      "Коктебель",
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Скажите Джаз",
+      "Коктебель (берег Чёрного моря)",
+      "Palmira Palace Resort & SPA",
+      "Горная Сыроварня",
+      "Усадьба Родное гнездо"
+    ],
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-08-16",
+    "description": null
+  },
+  {
     "slug": "krymskiy-akademicheskiy-simfonicheskiy-orkestr",
     "name": "Крымский академический симфонический оркестр",
     "aliases": [
@@ -43,27 +69,6 @@
     ],
     "first_seen": "2026-05-09",
     "last_seen": "2026-07-31",
-    "description": null
-  },
-  {
-    "slug": "skazhite-dzhaz",
-    "name": "Скажите Джаз",
-    "aliases": [
-      "Скажите Джаз"
-    ],
-    "event_count": 6,
-    "cities": [
-      "Коктебель",
-      "Крым",
-      "Ялта"
-    ],
-    "venues": [
-      "Скажите Джаз",
-      "Коктебель (берег Чёрного моря)",
-      "Palmira Palace Resort & SPA"
-    ],
-    "first_seen": "2026-04-30",
-    "last_seen": "2026-08-16",
     "description": null
   },
   {

@@ -10,6 +10,7 @@ from parser import (
     _artist_parts,
     _artist_set,
     is_generic_artist,
+    _split_artist_field,
 )
 
 
@@ -341,3 +342,22 @@ class TestIsGenericArtist:
     def test_bare_festival_literal_is_generic(self):
         event = {"artist": "Фестиваль", "event_type": "фестиваль", "description": "Большой летний фестиваль"}
         assert is_generic_artist(event)
+
+
+class TestSplitArtistField:
+    def test_comma_inside_parens_not_split(self):
+        assert _split_artist_field(
+            "Дуэт «МысКрыма», МысКрыма (Дмитрий Ванх, Вета)"
+        ) == ["Дуэт «МысКрыма»", " МысКрыма (Дмитрий Ванх, Вета)"]
+
+    def test_comma_inside_guillemets_not_split(self):
+        assert _split_artist_field("«Би-2, live», Сплин") == ["«Би-2, live»", " Сплин"]
+
+    def test_plain_comma_list_still_splits(self):
+        assert _split_artist_field("Би-2, Сплин, Земфира") == ["Би-2", " Сплин", " Земфира"]
+
+    def test_no_comma(self):
+        assert _split_artist_field("Би-2") == ["Би-2"]
+
+    def test_empty(self):
+        assert _split_artist_field("") == [""]

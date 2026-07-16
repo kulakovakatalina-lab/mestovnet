@@ -229,6 +229,32 @@ def _venue_match(v1: str, v2: str) -> bool:
     return bool(w1 and w2 and w1 & w2)
 
 
+def _split_artist_field(artist: str) -> list[str]:
+    """Разбивает поле artist по запятым верхнего уровня — не внутри скобок/«».
+
+    Наивный artist.split(",") ломает случаи вроде «Дуэт «МысКрыма»
+    (Дмитрий Ванханов, Вета)», где запятая — часть перечисления внутри
+    скобок, а не разделитель артистов.
+    """
+    parts: list[str] = []
+    depth = 0
+    current: list[str] = []
+    for ch in artist:
+        if ch in "(«":
+            depth += 1
+            current.append(ch)
+        elif ch in ")»":
+            depth = max(0, depth - 1)
+            current.append(ch)
+        elif ch == "," and depth == 0:
+            parts.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    parts.append("".join(current))
+    return parts
+
+
 _ARTIST_JOIN_RE = re.compile(
     r'\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+', re.IGNORECASE,
 )
@@ -260,7 +286,7 @@ def _translit_key(text: str) -> str:
 def _artist_set(event: dict) -> set:
     artist = event.get("artist") or ""
     names = set()
-    for raw in artist.split(","):
+    for raw in _split_artist_field(artist):
         for name in _artist_parts(raw.strip()):
             n = _normalize(name)
             for prefix in ("группа ", "band ", "«"):
@@ -319,7 +345,7 @@ def _merge_group(group: list[dict]) -> dict:
     seen: set = set()
     artists: list = []
     for e in group:
-        for a in (e.get("artist") or "").split(","):
+        for a in _split_artist_field(e.get("artist") or ""):
             for name in _artist_parts(a.strip()):
                 bare = _bare_artist_key(name)
                 if not name or bare in seen:
