@@ -541,6 +541,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -778,7 +792,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "Кубанский казачий хор. Русь от края до края!",
-      "startDate": "2026-08-05T20:00:00+03:00",
+      "startDate": "2026-09-07T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Звездный",
@@ -1017,7 +1031,8 @@ let currentCity = 'all';
 let shownEventsCount = 12;
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ovNames   = settings.names        || {};
   const ovTimes   = settings.times        || {};
   const ovPrices  = settings.prices       || {};
@@ -1038,6 +1053,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1102,7 +1118,7 @@ function renderFeatured(ev) {
       <div class="featured-poster">${imgHtml}</div>
       <div class="featured-body">
         <p class="featured-label">Ближайшее событие</p>
-        <span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>
+        ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>`}
         <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
         <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
@@ -1141,7 +1157,7 @@ function renderEvents(events) {
       ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
       : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
 
-    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card" data-city="${escapeHtml(ev.city)}">
+    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card${ev.cancelled ? ' cancelled' : ''}" data-city="${escapeHtml(ev.city)}">
       <div class="card-img">${imgHtml}</div>
       <div class="card-body">
         <div class="card-top">
@@ -1149,7 +1165,7 @@ function renderEvents(events) {
             <div class="event-date-day">${ev.dateFmt.day}</div>
             <div class="event-date-rest">${ev.dateFmt.month} · ${ev.dateFmt.dow}</div>
           </div>
-          <span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>
+          ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>`}
         </div>
         <div class="event-artist">${escapeHtml(ev.artist) || '—'}</div>
         <div class="event-venue">${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}</div>
@@ -1227,11 +1243,6 @@ load();
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2>5 августа, вт</h2>
-<div class="card" onclick="window.open('https://www.afisha.ru/concert/kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya-6030267/','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Кубанский казачий хор. Русь от края до края!</div><div class="card-venue">Звездный<span class="city">· Феодосия</span></div><div class="card-description">О концерте Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора. Концертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.
-
-Лейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span><span class="tag price">от 1200 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya-6030267/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg" alt="Кубанский казачий хор. Русь от края до края!" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>11 августа, пн</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/grigoriy-leps-2295879/','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Григорий Лепс</div><div class="card-venue">Звездный<span class="city">· Феодосия</span></div><div class="card-description">О концерте Его голос пробирает до мурашек, а каждая песня – хит, который в унисон поют многотысячные залы. Он - Григорий Лепс, и этим все сказано. Услышав его глубокий баритон единожды, вы уже не сможете его забыть.
 
@@ -1242,6 +1253,11 @@ load();
 Споем «Водопадом» и «Самый лучший день» вместе с любимым артистом. А новые песни Григория Лепса станут настоящим сюрпризом для поклонников.
 
 Незабываемые впечатления обеспечены!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 4500 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/grigoriy-leps-2295879/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/5b56cdcbd5dd4bd1af086e05f7524552.jpg" alt="Григорий Лепс" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>7 сентября, вс</h2>
+<div class="card" onclick="window.open('https://www.afisha.ru/concert/kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya-6030267/','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Кубанский казачий хор. Русь от края до края!</div><div class="card-venue">Звездный<span class="city">· Феодосия</span></div><div class="card-description">О концерте Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора. Концертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.
+
+Лейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span><span class="tag price">от 1200 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya-6030267/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg" alt="Кубанский казачий хор. Русь от края до края!" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </div>
 <!--/seo-content-->

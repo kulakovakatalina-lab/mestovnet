@@ -18,10 +18,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Джаз в Крыму — концерты и афиша | Местов.Нет</title>
-<meta name="description" content="Афиша концертов в жанре «джаз» в Крыму: ближайшие 3 концерта в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов в жанре «джаз» в Крыму: ближайшие 2 концерта в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="canonical" href="https://mestov.net/genre/jazz/">
 <meta property="og:title" content="Джаз в Крыму — концерты и афиша | Местов.Нет">
-<meta property="og:description" content="Афиша концертов в жанре «джаз» в Крыму: ближайшие 3 концерта в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta property="og:description" content="Афиша концертов в жанре «джаз» в Крыму: ближайшие 2 концерта в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -255,6 +255,25 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   transition: opacity 0.15s, filter 0.15s, background 0.12s;
 }
 .event-row.past:hover { opacity: 1; filter: none; }
+
+.event-row.cancelled {
+  opacity: 0.55;
+  filter: grayscale(0.5);
+  transition: opacity 0.15s, filter 0.15s, background 0.12s;
+}
+.event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .event-row {
   display: grid;
@@ -644,26 +663,6 @@ footer {
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Band Скажите Jazz, Стивен Митчелл",
-      "startDate": "2026-07-19T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Усадьба Родное гнездо",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "«Hello, Louise!» — трибьют-концерт по творчеству Луи Армстронга. Стивен Митчелл (вокал, США) и Band Скажите Jazz. Усадьба Родное гнездо, с. Родное.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Band Скажите Jazz, Стивен Митчелл"
-      },
-      "image": "/images/events/13746f1c0741fbb47a9c4dc86d772063.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Стивен Митчелл",
       "startDate": "2026-07-26T19:00:00+03:00",
       "location": {
@@ -857,7 +856,8 @@ let currentView = 'upcoming';
 let pastExpanded = false;
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ovNames   = settings.names        || {};
   const ovTimes   = settings.times        || {};
   const ovPrices  = settings.prices       || {};
@@ -878,6 +878,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -998,7 +999,8 @@ function eventRowHtml(ev, extraClass) {
     ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy">`
     : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
 
-  return `<a href="/event/${escapeHtml(ev.id)}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${escapeHtml(ev.city)}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${escapeHtml(ev.id)}" class="${rowClass}" data-genre="${ev.genre}" data-city="${escapeHtml(ev.city)}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
@@ -1006,7 +1008,7 @@ function eventRowHtml(ev, extraClass) {
       </div>
       <div class="row-thumb">${thumbHtml}</div>
       <div>
-        <div class="row-artist">${escapeHtml(ev.artist) || '—'}</div>
+        <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(ev.artist) || '—'}</div>
         <div class="row-desc">${escapeHtml(ev.description)}</div>
         <div class="row-venue">
           <span>${escapeHtml(ev.venue) || '—'}</span>
@@ -1094,9 +1096,6 @@ document.addEventListener('keydown', e => {
 <div id="seo-content" style="display:none">
 <div class="date-group"><h2>Дата уточняется</h2>
 <div class="card" onclick="window.open('https://t.me/skazhitejazz/1545','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Стивен Митчелл, Jazz Band</div><div class="card-venue">Скажите Джаз<span class="city">· Крым</span></div><div class="card-description">Американский джазовый исполнитель Стивен Митчелл выступит с джаз-бандом в рамках международной главы сезона «Скажите Джаз». Три концерта в июле.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1545" target="_blank" rel="noopener">@skazhitejazz</a></div></div></div></div>
-</div>
-<div class="date-group"><h2>19 июля, сб</h2>
-<div class="card" onclick="window.open('https://t.me/skazhitejazz/1410','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Band Скажите Jazz, Стивен Митчелл</div><div class="card-venue">Усадьба Родное гнездо<span class="city">· Севастополь</span></div><div class="card-description">«Hello, Louise!» — трибьют-концерт по творчеству Луи Армстронга. Стивен Митчелл (вокал, США) и Band Скажите Jazz. Усадьба Родное гнездо, с. Родное.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1410" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/13746f1c0741fbb47a9c4dc86d772063.jpg" alt="Band Скажите Jazz, Стивен Митчелл" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>26 июля, сб</h2>
 <div class="card" onclick="window.open('https://t.me/skazhitejazz/1428','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Стивен Митчелл</div><div class="card-venue">Горная сыроварня<span class="city">· Алушта</span></div><div class="card-description">Sinatra Under The Crimea Stars — эксклюзивный трибьют Фрэнку Синатре. Стивен Митчелл (вокал, США). Горная сыроварня, с. Лучистое.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/skazhitejazz/1428" target="_blank" rel="noopener">@skazhitejazz</a></div></div><img class="card-thumb" src="/images/events/10548fa8fc65217d17790b9c596bcc78.jpg" alt="Стивен Митчелл" loading="lazy" onerror="this.remove()"></div></div>

@@ -541,6 +541,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -778,7 +792,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "SHAMAN",
-      "startDate": "2026-07-24T19:00:00+03:00",
+      "startDate": "2027-07-24T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Корабел",
@@ -1043,7 +1057,8 @@ let currentCity = 'all';
 let shownEventsCount = 12;
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ovNames   = settings.names        || {};
   const ovTimes   = settings.times        || {};
   const ovPrices  = settings.prices       || {};
@@ -1064,6 +1079,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1128,7 +1144,7 @@ function renderFeatured(ev) {
       <div class="featured-poster">${imgHtml}</div>
       <div class="featured-body">
         <p class="featured-label">Ближайшее событие</p>
-        <span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>
+        ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>`}
         <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
         <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
@@ -1167,7 +1183,7 @@ function renderEvents(events) {
       ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
       : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
 
-    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card" data-city="${escapeHtml(ev.city)}">
+    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card${ev.cancelled ? ' cancelled' : ''}" data-city="${escapeHtml(ev.city)}">
       <div class="card-img">${imgHtml}</div>
       <div class="card-body">
         <div class="card-top">
@@ -1175,7 +1191,7 @@ function renderEvents(events) {
             <div class="event-date-day">${ev.dateFmt.day}</div>
             <div class="event-date-rest">${ev.dateFmt.month} · ${ev.dateFmt.dow}</div>
           </div>
-          <span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>
+          ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>`}
         </div>
         <div class="event-artist">${escapeHtml(ev.artist) || '—'}</div>
         <div class="event-venue">${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}</div>
@@ -1253,13 +1269,6 @@ load();
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2>24 июля, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».
-
-На большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.
-
-Свои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="SHAMAN" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>8 августа, пт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Кубанский казачий хор. Русь от края до края</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора.
 
@@ -1275,6 +1284,13 @@ load();
 1 декабря 2014 года состоялся официальный релиз долгожданного дебютного альбома Владимира Ждамирова «За забором весна». В него вошло 13 песен, которые в самые короткие сроки полюбились зрителям и стали популярны. В декабре 2017 года вышел второй сольный альбом Владимира Ждамирова «Где-то там». Владимир Ждамиров регулярно выпускает новые песни и клипы. «А я несу тебе цветы», «В чужие края», «Я поцелуем выпью твои слёзы», «Я вернусь», «Разведённые», «Всё пройдет», «Не плачь» и др.
 
 В настоящее время Владимир Ждамиров очень громко заявил о себе, как о сольном артист, он принимает участие в таких фестивалях , как «Шансон года», «Эх разгуляй», «Шансон ТВ-все Звезды» в Витебске и др. Полюбившиеся песни постоянно находятся в ротации на федеральных радиостанциях. Артист активно гастролирует и радует своих поклонников полюбившимися и новыми хитами.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/vladimir-zhdamirov-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/d6b386c1ef99ea53fcf9cb25ef9986fd.jpg" alt="Владимир Ждамиров" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>24 июля, пт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Корабел<span class="city">· Керчь</span></div><div class="card-description">SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».
+
+На большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.
+
+Свои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="SHAMAN" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </div>
 <!--/seo-content-->
