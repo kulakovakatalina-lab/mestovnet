@@ -18,10 +18,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Рок в Крыму — концерты и афиша | Местов.Нет</title>
-<meta name="description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 27 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 26 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="canonical" href="https://mestov.net/genre/rock/">
 <meta property="og:title" content="Рок в Крыму — концерты и афиша | Местов.Нет">
-<meta property="og:description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 27 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta property="og:description" content="Афиша концертов в жанре «рок» в Крыму: ближайшие 26 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -255,6 +255,25 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   transition: opacity 0.15s, filter 0.15s, background 0.12s;
 }
 .event-row.past:hover { opacity: 1; filter: none; }
+
+.event-row.cancelled {
+  opacity: 0.55;
+  filter: grayscale(0.5);
+  transition: opacity 0.15s, filter 0.15s, background 0.12s;
+}
+.event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .event-row {
   display: grid;
@@ -644,32 +663,6 @@ footer {
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Мираж Огня",
-      "startDate": "2026-07-17T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Tribute-концерт группы АРИЯ. Исполняет Мираж Огня. Живой звук, мощный свет. Вход свободный.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мираж Огня"
-      },
-      "image": "/images/events/ca4810db5f3b474898c34688a6bb97b7.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Елена Свок",
       "startDate": "2026-07-17T19:00:00+03:00",
       "location": {
@@ -771,7 +764,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "Хиты 2000-х. Караоке с оркестром",
-      "startDate": "2026-07-23T19:00:00+03:00",
+      "startDate": "2026-09-08T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "ДК профсоюзов",
@@ -808,6 +801,7 @@ footer {
         }
       },
       "description": "Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?\n\nАктёры, фокусники, лицедеи, шуты, клоуны и многие другие персонажи оживут для зрителя не только в песнях, но и на экранах, которые создаёт Андрей Князев! Публика сможет увидеть различные сюжетные истории и горячо любимого с детства Шута, который рассказывает предыстории к песням.\n\nПрограмма «Мастер кукол» рассчитана как на широкого массового слушателя, который любит хиты-нетленки, так и на искушённого поклонника творчества групп, для которого группа «КняZz» каждый год вводит композиции, ранее на концертах либо не звучавшие, либо исполняющиеся очень редко.\n\nМузыканты ведут работу над звучанием, чтобы песни стали более красочными, обогащёнными и текстурными. А новые аранжировки делают музыку группы более плотной, насыщенной и разнообразной. Сценография концерта усложняется за счёт не только новых музыкальных решений и эксклюзивных экранов, но и за счёт разноцветных всполохов софитов и визуальных эффектов, которые создаёт наш художник по свету!\n\nЖивая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "КняZz"
@@ -980,6 +974,7 @@ footer {
         }
       },
       "description": "Nightwish Tribute Show в БТР / Бар тяжёлого рока, Севастополь.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Nightwish Tribute Show"
@@ -1214,6 +1209,7 @@ footer {
         }
       },
       "description": "«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.\n\nБольшой сольный концерт одной из самых ярких и интересных команд на современной российской сцене с презентацией нового альбома.\n\nКонцерты «Моя Мишель» — это всегда ярко, смело, честно, стильно и запредельно красиво! Под обаяние фронтвумен группы Тани Ткачук попадаёт каждый без исключения, ведь только она умеет как никто подарить слушателям море нежности, любви и счастья через свои песни.\n\nВ рамках концерта Моя Мишель презентует зрителям свой новый студийный альбом «Ангелы и не очень», который уже покорил сердца многих слушателей лид-синглом «Город Ангелов», ставший буквально за 2 недели радиохитом.\n\n«Ангелы и не очень» — это симбиоз как нежных, так и дерзких эмоций, в которые погружаешься каждый раз при прослушивании треков. Тут найдется и лирика для лёгкой грусти, и современные танцевальные синглы, которые закрутят в вихре ярких эмоций каждого.\n\nГруппа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Моя Мишель"
@@ -1433,7 +1429,8 @@ let currentView = 'upcoming';
 let pastExpanded = false;
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ovNames   = settings.names        || {};
   const ovTimes   = settings.times        || {};
   const ovPrices  = settings.prices       || {};
@@ -1454,6 +1451,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1574,7 +1572,8 @@ function eventRowHtml(ev, extraClass) {
     ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy">`
     : `<div class="bg-${ev.genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(ev.genre)}</div>`;
 
-  return `<a href="/event/${escapeHtml(ev.id)}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${ev.genre}" data-city="${escapeHtml(ev.city)}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${escapeHtml(ev.id)}" class="${rowClass}" data-genre="${ev.genre}" data-city="${escapeHtml(ev.city)}">
       <div class="row-date">
         <div class="row-date-day">${ev.dateFmt.day}</div>
         <div class="row-date-month">${ev.dateFmt.month}</div>
@@ -1582,7 +1581,7 @@ function eventRowHtml(ev, extraClass) {
       </div>
       <div class="row-thumb">${thumbHtml}</div>
       <div>
-        <div class="row-artist">${escapeHtml(ev.artist) || '—'}</div>
+        <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(ev.artist) || '—'}</div>
         <div class="row-desc">${escapeHtml(ev.description)}</div>
         <div class="row-venue">
           <span>${escapeHtml(ev.venue) || '—'}</span>
@@ -1672,7 +1671,6 @@ document.addEventListener('keydown', e => {
 <div class="card" onclick="window.open('https://t.me/tavrida_art/20988','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Фестиваль</div><div class="card-venue">ТАВРИДА.АРТ<span class="city">· Судак</span></div><div class="card-description">Фестиваль молодого искусства. Событие объединяет молодых творцов, ищущих вдохновение и своё место в мире искусства.</div><div class="card-footer"><span class="tag type">фестиваль</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/tavrida_art/20988" target="_blank" rel="noopener">@tavrida_art</a></div></div><img class="card-thumb" src="/images/events/45e8f7034eaf303e4801c5c78cbff0e7.jpg" alt="Фестиваль" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>17 июля, чт</h2>
-<div class="card" onclick="window.open('https://t.me/clubjam/1015','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Мираж Огня</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Tribute-концерт группы АРИЯ. Исполняет Мираж Огня. Живой звук, мощный свет. Вход свободный.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1015" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/ca4810db5f3b474898c34688a6bb97b7.jpg" alt="Мираж Огня" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/crimea_event/5605','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Елена Свок</div><div class="card-venue">Антикварно-художественная галерея «Стикс»<span class="city">· Ялта</span></div><div class="card-description">Музыкальный вечер певицы, поэта и актрисы Елены Свок: авторская песня, романсы Окуджавы, Визбора, Матвеевой и любимые песни из кинофильмов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">авторская</span></div><div class="card-source"><a class="src-link" href="https://t.me/crimea_event/5605" target="_blank" rel="noopener">@crimea_event</a></div></div><img class="card-thumb" src="/images/events/53fa37a20c5bf1bba5d21107d13171b5.jpg" alt="Елена Свок" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_92/6907','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «Домино»</div><div class="card-venue">Бар рок-н-ролльщики<span class="city">· Севастополь</span></div><div class="card-description">Группа «Домино» с хитами русского рок-попа и неожиданными аранжировками.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6907" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/7723ef4f01d21b32f52a505cec5e31aa.png" alt="Группа «Домино»" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Дуэт «МысКрыма», МысКрыма (Дмитрий Ванх, Вета)</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Впервые на сцене клуба — дуэт «МысКрыма»: Дмитрий Ванх и Вета сыграют рок-поп хиты на двух языках. Вход свободный.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Дуэт «МысКрыма», МысКрыма (Дмитрий Ванх, Вета)" loading="lazy" onerror="this.remove()"></div></div>
@@ -1681,14 +1679,8 @@ document.addEventListener('keydown', e => {
 <div class="card" onclick="window.open('https://t.me/rocknroll_92/6907','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «Хай&#x27;Петри»</div><div class="card-venue">Бар рок-н-ролльщики<span class="city">· Севастополь</span></div><div class="card-description">Группа «Хай&#x27;Петри» и рок-поп-хиты на двух языках. Не акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6907" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/7723ef4f01d21b32f52a505cec5e31aa.png" alt="Группа «Хай&#x27;Петри»" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «Домино»</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Группа «Домино» из Севастополя исполнит хиты русского рок-попа в неожиданных аранжировках. Вход свободный.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Группа «Домино»" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>23 июля, ср</h2>
-<div class="card" onclick="window.open('https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Хиты 2000-х. Караоке с оркестром</div><div class="card-venue">ДК профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">О концерте Мы знаем как вы любите петь !
-Представьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.
-На сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.
-Пойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1590 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" alt="Хиты 2000-х. Караоке с оркестром" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>24 июля, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?
 
 Актёры, фокусники, лицедеи, шуты, клоуны и многие другие персонажи оживут для зрителя не только в песнях, но и на экранах, которые создаёт Андрей Князев! Публика сможет увидеть различные сюжетные истории и горячо любимого с детства Шута, который рассказывает предыстории к песням.
 
@@ -1696,7 +1688,7 @@ document.addEventListener('keydown', e => {
 
 Музыканты ведут работу над звучанием, чтобы песни стали более красочными, обогащёнными и текстурными. А новые аранжировки делают музыку группы более плотной, насыщенной и разнообразной. Сценография концерта усложняется за счёт не только новых музыкальных решений и эксклюзивных экранов, но и за счёт разноцветных всполохов софитов и визуальных эффектов, которые создаёт наш художник по свету!
 
-Живая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
+Живая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_92/6907','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Дима Резник</div><div class="card-venue">Бар рок-н-ролльщики<span class="city">· Севастополь</span></div><div class="card-description">Русский рок и поп-рок в акустике — Дима Резник.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_92/6907" target="_blank" rel="noopener">@rocknroll_92</a></div></div><img class="card-thumb" src="/images/events/7723ef4f01d21b32f52a505cec5e31aa.png" alt="Дима Резник" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Игорь Симдянкин</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Игорь Симдянкин" loading="lazy" onerror="this.remove()"></div></div>
 </div>
@@ -1718,7 +1710,7 @@ document.addEventListener('keydown', e => {
 Roof Live — флагманский формат «Эфира», команда организаторов ставит перед собой цель не просто проводить концерты, а формировать устойчивую культурную инфраструктуру летних городских событий. Проект поддерживает живую сцену, создаёт лучшие возможности для встречи артистов со зрителями и объединяет аудиторию вокруг качественного музыкального контента.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/cc7e49e70eb311cd33b996f3d275b261.png" alt="Найк Борзов" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>7 августа, чт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Nightwish Tribute Show</div><div class="card-venue">БТР / Бар тяжёлого рока<span class="city">· Севастополь</span></div><div class="card-description">Nightwish Tribute Show в БТР / Бар тяжёлого рока, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/4987b5ba7f03e0b3471c7706060e8abd.jpg" alt="Nightwish Tribute Show" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Nightwish Tribute Show</div><div class="card-venue">БТР / Бар тяжёлого рока<span class="city">· Севастополь</span></div><div class="card-description">Nightwish Tribute Show в БТР / Бар тяжёлого рока, Севастополь.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1 300 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/4987b5ba7f03e0b3471c7706060e8abd.jpg" alt="Nightwish Tribute Show" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>10 августа, вс</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/vladimir-zhdamirov-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Владимир Ждамиров</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">Владимир Ждамиров, легенда русского шансона, 13 лет проработал в составе группа «Бутырка», являясь автором музыки, лидером и музыкальным руководителем коллектива. Записал 8 альбомов, более 80 песен, добрая половина которых вошла в золотую коллекцию русского шансона. Такие песни, исполненные Владимиром, как «Запахло весной», «Тает снег», «Кольщик», «Аттестат», «Икона», «Шарик», «Не трогай осень», «Последний рассвет» и многие другие глубоко запали в душу поклонникам коллектива, что на долгие годы определило его популярность и востребованность.
@@ -1797,7 +1789,7 @@ Roof Live — флагманский формат «Эфира», команда
 Roof Live — флагманский формат «Эфира», команда организаторов ставит перед собой цель не просто проводить концерты, а формировать устойчивую культурную инфраструктуру летних городских событий. Проект поддерживает живую сцену, создаёт лучшие возможности для встречи артистов со зрителями и объединяет аудиторию вокруг качественного музыкального контента.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/moia-mishel-2026-08-23?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/b9dcca237131d9fbb8b46202f41c18a8.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>25 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.
 
 Большой сольный концерт одной из самых ярких и интересных команд на современной российской сцене с презентацией нового альбома.
 
@@ -1807,7 +1799,7 @@ Roof Live — флагманский формат «Эфира», команда
 
 «Ангелы и не очень» — это симбиоз как нежных, так и дерзких эмоций, в которые погружаешься каждый раз при прослушивании треков. Тут найдется и лирика для лёгкой грусти, и современные танцевальные синглы, которые закрутят в вихре ярких эмоций каждого.
 
-Группа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
+Группа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>5 сентября, пт</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/cherniy-kofe-6022650/','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Черный кофе</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!
@@ -1834,6 +1826,12 @@ Roof Live — флагманский формат «Эфира», команда
 С Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.
 
 В концерте прозвучат самые легендарные хиты группы!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1700 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/cherniy-kofe-6022650/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg" alt="Черный кофе" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>8 сентября, пн</h2>
+<div class="card" onclick="window.open('https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Хиты 2000-х. Караоке с оркестром</div><div class="card-venue">ДК профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">О концерте Мы знаем как вы любите петь !
+Представьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.
+На сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.
+Пойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1590 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" alt="Хиты 2000-х. Караоке с оркестром" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </div>
 <!--/seo-content-->

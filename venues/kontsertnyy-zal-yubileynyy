@@ -38,21 +38,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "SHAMAN",
-      "startDate": "2026-07-23T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»"
-      },
-      "description": "SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».\n\nНа большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.\n\nСвои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "SHAMAN"
-      },
-      "image": "/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "КняZz",
       "startDate": "2026-07-24T20:00:00+03:00",
       "location": {
@@ -80,21 +65,6 @@
         "name": "Таисия Повалий"
       },
       "image": "/images/events/875b3dc713315349104d35bcee6233d9.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Кубанский казачий хор. Русь от края до края",
-      "startDate": "2026-08-04T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»"
-      },
-      "description": "Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора.\n\nКонцертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.\n\nЛейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Кубанский казачий хор. Русь от края до края"
-      },
-      "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -200,6 +170,36 @@
         "name": "Моя Мишель"
       },
       "image": "/images/events/89c039836f9198387fc0a6a596ad5de3.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Кубанский казачий хор. Русь от края до края",
+      "startDate": "2026-09-06T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Концертный зал «Юбилейный»"
+      },
+      "description": "Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора.\n\nКонцертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.\n\nЛейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Кубанский казачий хор. Русь от края до края"
+      },
+      "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "SHAMAN",
+      "startDate": "2027-07-23T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Концертный зал «Юбилейный»"
+      },
+      "description": "SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».\n\nНа большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.\n\nСвои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "SHAMAN"
+      },
+      "image": "/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg"
     }
   ]
 }
@@ -729,6 +729,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -1071,6 +1085,8 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
+  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
+  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1205,7 +1221,8 @@ function priceText(p) {
 }
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1221,6 +1238,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1234,7 +1252,8 @@ function eventRowHtml(ev, extraClass) {
   const thumbHtml = ev.image
     ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1242,7 +1261,7 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.artist || '—'}</div>
+      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
         <span>${ev.venue || '—'}</span>

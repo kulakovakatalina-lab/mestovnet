@@ -541,6 +541,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -944,7 +958,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "SHAMAN",
-      "startDate": "2026-07-23T20:00:00+03:00",
+      "startDate": "2027-07-23T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Юбилейный",
@@ -1001,6 +1015,7 @@ footer {
         }
       },
       "description": "Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?\n\nАктёры, фокусники, лицедеи, шуты, клоуны и многие другие персонажи оживут для зрителя не только в песнях, но и на экранах, которые создаёт Андрей Князев! Публика сможет увидеть различные сюжетные истории и горячо любимого с детства Шута, который рассказывает предыстории к песням.\n\nПрограмма «Мастер кукол» рассчитана как на широкого массового слушателя, который любит хиты-нетленки, так и на искушённого поклонника творчества групп, для которого группа «КняZz» каждый год вводит композиции, ранее на концертах либо не звучавшие, либо исполняющиеся очень редко.\n\nМузыканты ведут работу над звучанием, чтобы песни стали более красочными, обогащёнными и текстурными. А новые аранжировки делают музыку группы более плотной, насыщенной и разнообразной. Сценография концерта усложняется за счёт не только новых музыкальных решений и эксклюзивных экранов, но и за счёт разноцветных всполохов софитов и визуальных эффектов, которые создаёт наш художник по свету!\n\nЖивая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "КняZz"
@@ -1096,7 +1111,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "Кубанский казачий хор. Русь от края до края",
-      "startDate": "2026-08-04T20:00:00+03:00",
+      "startDate": "2026-09-06T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Юбилейный",
@@ -1133,6 +1148,7 @@ footer {
         }
       },
       "description": "Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже"
@@ -1185,6 +1201,7 @@ footer {
         }
       },
       "description": "«Нэнси» — музыкальная поп-рок группа. Создана в 1992 году Андреем Костенко и Анатолием Бондаренко.\n\nС выходом первого альбома группа приобрела особую популярность, композицию «Отель» любили и пели под гитару в каждом дворе, дискотеки не обходились без медляка «Дым сигарет с ментолом» и энергичной танцевальной композиции «На столе чистый лист».\n\nИх песни били рекорды во всех хит парадах страны. Такой стремительной и бешеной популярностью могут похвастаться немногие артисты. За время работы коллектива было выпущено более 20 альбомов.\n\nНа концерте вас ждут любимые хиты и новые душевные композиции в живом исполнении Андрея Костенко с музыкальным коллективом, романтичная атмосфера, веселье и зажигательные танцы обеспечены!\n\nС 2022 года в России официальным солистом группы «Нэнси» является только Андрей Костенко.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Нэнси"
@@ -1237,6 +1254,7 @@ footer {
         }
       },
       "description": "Хор Сретенского монастыря в Юбилейный, Ялта.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Хор Сретенского монастыря"
@@ -1341,6 +1359,7 @@ footer {
         }
       },
       "description": "«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.\n\nБольшой сольный концерт одной из самых ярких и интересных команд на современной российской сцене с презентацией нового альбома.\n\nКонцерты «Моя Мишель» — это всегда ярко, смело, честно, стильно и запредельно красиво! Под обаяние фронтвумен группы Тани Ткачук попадаёт каждый без исключения, ведь только она умеет как никто подарить слушателям море нежности, любви и счастья через свои песни.\n\nВ рамках концерта Моя Мишель презентует зрителям свой новый студийный альбом «Ангелы и не очень», который уже покорил сердца многих слушателей лид-синглом «Город Ангелов», ставший буквально за 2 недели радиохитом.\n\n«Ангелы и не очень» — это симбиоз как нежных, так и дерзких эмоций, в которые погружаешься каждый раз при прослушивании треков. Тут найдется и лирика для лёгкой грусти, и современные танцевальные синглы, которые закрутят в вихре ярких эмоций каждого.\n\nГруппа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Моя Мишель"
@@ -1641,7 +1660,8 @@ let currentCity = 'all';
 let shownEventsCount = 12;
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ovNames   = settings.names        || {};
   const ovTimes   = settings.times        || {};
   const ovPrices  = settings.prices       || {};
@@ -1662,6 +1682,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1726,7 +1747,7 @@ function renderFeatured(ev) {
       <div class="featured-poster">${imgHtml}</div>
       <div class="featured-body">
         <p class="featured-label">Ближайшее событие</p>
-        <span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>
+        ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="featured-genre">${GENRE_LABELS[ev.genre]}</span>`}
         <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
         <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
@@ -1765,7 +1786,7 @@ function renderEvents(events) {
       ? `<img src="${safeUrl(ev.image)}" alt="${escapeHtml(ev.artist)}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('bg-default')">`
       : `<div class="bg-default" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">${starIcon}</div>`;
 
-    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card" data-city="${escapeHtml(ev.city)}">
+    return `<a href="/event/${escapeHtml(ev.id)}" class="event-card${ev.cancelled ? ' cancelled' : ''}" data-city="${escapeHtml(ev.city)}">
       <div class="card-img">${imgHtml}</div>
       <div class="card-body">
         <div class="card-top">
@@ -1773,7 +1794,7 @@ function renderEvents(events) {
             <div class="event-date-day">${ev.dateFmt.day}</div>
             <div class="event-date-rest">${ev.dateFmt.month} · ${ev.dateFmt.dow}</div>
           </div>
-          <span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>
+          ${ev.cancelled ? '<span class="cancelled-badge">Отменено</span>' : `<span class="pill pill-${ev.genre}">${GENRE_LABELS[ev.genre]}</span>`}
         </div>
         <div class="event-artist">${escapeHtml(ev.artist) || '—'}</div>
         <div class="event-venue">${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}</div>
@@ -1871,15 +1892,10 @@ load();
 </div>
 <div class="date-group"><h2>23 июля, ср</h2>
 <div class="card" onclick="window.open('https://t.me/massandrasun/2348','_blank')"><div class="card-inner"><div class="card-time">14:00</div><div class="card-body"><div class="card-artist">EL, Busha</div><div class="card-venue">Пляж-кафе Van Gogh, Массандровский пляж<span class="city">· Ялта</span></div><div class="card-description">DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/massandrasun/2348" target="_blank" rel="noopener">@massandrasun</a></div></div><img class="card-thumb" src="/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg" alt="EL, Busha" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».
-
-На большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.
-
-Свои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="SHAMAN" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>24 июля, чт</h2>
 <div class="card" onclick="window.open('https://t.me/massandrasun/2348','_blank')"><div class="card-inner"><div class="card-time">14:00</div><div class="card-body"><div class="card-artist">Spahova, Kuznetsov, Pasha Rhino</div><div class="card-venue">Пляж-кафе Van Gogh, Массандровский пляж<span class="city">· Ялта</span></div><div class="card-description">DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/massandrasun/2348" target="_blank" rel="noopener">@massandrasun</a></div></div><img class="card-thumb" src="/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg" alt="Spahova, Kuznetsov, Pasha Rhino" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">КняZz</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Группа «КняZz» представляет программу «Мастер кукол»! Её основой станут композиции из репертуара групп «КняZz» и «Король и Шут», связанные с театральной тематикой. Вы никогда не задумывались, как их много в творчестве этих двух коллективов?
 
 Актёры, фокусники, лицедеи, шуты, клоуны и многие другие персонажи оживут для зрителя не только в песнях, но и на экранах, которые создаёт Андрей Князев! Публика сможет увидеть различные сюжетные истории и горячо любимого с детства Шута, который рассказывает предыстории к песням.
 
@@ -1887,7 +1903,7 @@ load();
 
 Музыканты ведут работу над звучанием, чтобы песни стали более красочными, обогащёнными и текстурными. А новые аранжировки делают музыку группы более плотной, насыщенной и разнообразной. Сценография концерта усложняется за счёт не только новых музыкальных решений и эксклюзивных экранов, но и за счёт разноцветных всполохов софитов и визуальных эффектов, которые создаёт наш художник по свету!
 
-Живая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
+Живая музыка, яркое световое шоу, экраны, оживляющие героев песен — всё это ждёт вас в программе «Мастер кукол»! До встречи на концертах группы «КняZz»!</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/knyazz-master-kukol?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg" alt="КняZz" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>25 июля, пт</h2>
 <div class="card" onclick="window.open('https://t.me/massandrasun/2348','_blank')"><div class="card-inner"><div class="card-time">14:00</div><div class="card-body"><div class="card-artist">Pasha Rhino, Santier, Gretta</div><div class="card-venue">Пляж-кафе Van Gogh, Массандровский пляж<span class="city">· Ялта</span></div><div class="card-description">DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.</div><div class="card-footer"><span class="tag type">вечеринка</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/massandrasun/2348" target="_blank" rel="noopener">@massandrasun</a></div></div><img class="card-thumb" src="/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg" alt="Pasha Rhino, Santier, Gretta" loading="lazy" onerror="this.remove()"></div></div>
@@ -1899,15 +1915,8 @@ load();
 <div class="date-group"><h2>1 августа, пт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/taisiia-povalii-2026-07-31?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Таисия Повалий</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Таисия Повалий в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/taisiia-povalii-2026-07-31?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/875b3dc713315349104d35bcee6233d9.jpg" alt="Таисия Повалий" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<div class="date-group"><h2>4 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Кубанский казачий хор. Русь от края до края</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора.
-
-Концертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.
-
-Лейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span><span class="tag price">от 1 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/a97cd76724082f57da1840f49628d5c1.jpg" alt="Кубанский казачий хор. Русь от края до края" loading="lazy" onerror="this.remove()"></div></div>
-</div>
 <div class="date-group"><h2>5 августа, вт</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg" alt="Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/steshok-anjelina-makar-davydov-mali-i-dzhedzhe?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg" alt="Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>10 августа, вс</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/vladimir-zhdamirov-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Владимир Ждамиров</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">Владимир Ждамиров, легенда русского шансона, 13 лет проработал в составе группа «Бутырка», являясь автором музыки, лидером и музыкальным руководителем коллектива. Записал 8 альбомов, более 80 песен, добрая половина которых вошла в золотую коллекцию русского шансона. Такие песни, исполненные Владимиром, как «Запахло весной», «Тает снег», «Кольщик», «Аттестат», «Икона», «Шарик», «Не трогай осень», «Последний рассвет» и многие другие глубоко запали в душу поклонникам коллектива, что на долгие годы определило его популярность и востребованность.
@@ -1919,7 +1928,7 @@ load();
 В настоящее время Владимир Ждамиров очень громко заявил о себе, как о сольном артист, он принимает участие в таких фестивалях , как «Шансон года», «Эх разгуляй», «Шансон ТВ-все Звезды» в Витебске и др. Полюбившиеся песни постоянно находятся в ротации на федеральных радиостанциях. Артист активно гастролирует и радует своих поклонников полюбившимися и новыми хитами.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/vladimir-zhdamirov-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/d6b386c1ef99ea53fcf9cb25ef9986fd.jpg" alt="Владимир Ждамиров" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>11 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Нэнси» — музыкальная поп-рок группа. Создана в 1992 году Андреем Костенко и Анатолием Бондаренко.
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Нэнси</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Нэнси» — музыкальная поп-рок группа. Создана в 1992 году Андреем Костенко и Анатолием Бондаренко.
 
 С выходом первого альбома группа приобрела особую популярность, композицию «Отель» любили и пели под гитару в каждом дворе, дискотеки не обходились без медляка «Дым сигарет с ментолом» и энергичной танцевальной композиции «На столе чистый лист».
 
@@ -1927,7 +1936,7 @@ load();
 
 На концерте вас ждут любимые хиты и новые душевные композиции в живом исполнении Андрея Костенко с музыкальным коллективом, романтичная атмосфера, веселье и зажигательные танцы обеспечены!
 
-С 2022 года в России официальным солистом группы «Нэнси» является только Андрей Костенко.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
+С 2022 года в России официальным солистом группы «Нэнси» является только Андрей Костенко.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/nensi-16?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/84ea039de29bcac109240d7eadd3d61f.jpg" alt="Нэнси" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>12 августа, вт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/grigorii-leps-bkshow?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Григорий Лепс</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Легендарный Григорий Лепс вновь возвращается с большим сольным концертом! Состоится грандиозное музыкальное событие, которое подарит зрителям яркие эмоции, мощную энергетику и атмосферу настоящего праздника.
@@ -1939,7 +1948,7 @@ load();
 Не упустите возможность стать частью этого события!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 4 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/grigorii-leps-bkshow?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/a057d7e75297dcfca5bf2df6ca51154b.jpg" alt="Григорий Лепс" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>13 августа, ср</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Хор Сретенского монастыря</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Хор Сретенского монастыря в Юбилейный, Ялта.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">хоровая</span><span class="tag price">от 1 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg" alt="Хор Сретенского монастыря" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>14 августа, чт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Комната культуры</div><div class="card-venue">Мрия<span class="city">· Ялта</span></div><div class="card-description">На пляжной сцене курорта прозвучат хорошо знакомые и известные композиции группы «Комната Культуры», а вечер наполнится незабываемой атмосферой и яркими впечатлениями.
@@ -1978,7 +1987,7 @@ load();
 Специальный гость новой программы — Александр Круг. Удивительным образом младший сын Михаила Круга смог вобрать в себя не только внешность и фамилию отца, но и приятный узнаваемый баритон, который волнует души и сердца зрителей всех поколений. Александр Круг исполнит полюбившие хиты своего отца, а также представит зрителям свои новые песни.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/irina-i-aleksandr-krug?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg" alt="Ирина, Александр Круг" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>25 августа, пн</h2>
-<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.
+<div class="card cancelled" onclick="window.open('https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Моя Мишель</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">«Ангелы и не очень» спустились: Моя Мишель сыграет большой сольный концерт и презентует новый альбом.
 
 Большой сольный концерт одной из самых ярких и интересных команд на современной российской сцене с презентацией нового альбома.
 
@@ -1988,7 +1997,7 @@ load();
 
 «Ангелы и не очень» — это симбиоз как нежных, так и дерзких эмоций, в которые погружаешься каждый раз при прослушивании треков. Тут найдется и лирика для лёгкой грусти, и современные танцевальные синглы, которые закрутят в вихре ярких эмоций каждого.
 
-Группа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
+Группа круто набрала популярность за последние несколько лет: сначала сингл «Пташка», завоевавший сердца слушателей на радио и в диджитал, затем романтичная «Курточка», покорившая своим летним вайбом, следом ворвался «Ветер меняет направление», окутавший слушателя своей романтичной атмосферой, и, наконец, «Зима в Сердце» ставшая прекрасным и немного грустным гимном прошедшей зимы. Летом 2024 года Моя Мишель представила новый яркий и запоминающийся сингл «Облака», который момента взлет на первые места в хит-параде радио и чартов стримингов.</div><div class="card-footer"><span class="tag cancelled-tag">отменено</span><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/moia-mishel-angely-i-ne-ochen?source=selection-events&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/89c039836f9198387fc0a6a596ad5de3.jpg" alt="Моя Мишель" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>6 сентября, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Шансон-парад</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">Шоу самого народного жанра! Мастера авторской песни и звёзды эстрады выступят на одной сцене!
@@ -2006,6 +2015,11 @@ load();
 «Шансон-парад» — это больше, чем просто концерт. Это встреча старых друзей, море любимых песен и неповторимая атмосфера, где царит дух настоящего шансона.
 
 Традиционный праздник песни ждёт вас на концерте «Шансон-парад»!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span><span class="tag price">от 1 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/8d8fb493adb505ad23d6622ee419de8a.jpg" alt="Шансон-парад" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Кубанский казачий хор. Русь от края до края</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">Духовно-патриотическая программа «Русь от края до края!» приурочена к 214-му Дню рождения Кубанского казачьего хора.
+
+Концертная программа отличается особым животворящим духом, пропитана казачьим фольклором, глубоко духовными и патриотическими произведениями известных поэтов-песенников, авторскими произведениями, написанными художественным руководителем Государственного академического Кубанского казачьего хора, народным артистом России, Героем Труда России, композитором Виктором Гавриловичем Захарченко на стихи выдающихся классиков и поэтов современности. На сцене одновременно задействованы почти 100 человек, красочные образы дополнены яркими костюмами. Хореографические постановки в исполнении танцевальной группы коллектива никого не оставят равнодушными.
+
+Лейтмотивом концерта станет тема любви к Родине. Этим одним из самых сильных чувств наполнены песни Кубанского казачьего хора, пробуждая в зрителях гордость за свой народ, за армию, Родину, вызывая желание быть похожими на смелых и отважных воинов своей страны. Песни Кубанского казачьего хора о родной земле, своём народе, пережитой им истории. Они во все времена имели большую силу, чем пушки. Духоподъёмные песни программы «Русь от края до края!» помогают выстоять в тяжёлые времена, ощутить единство и получить мощный эмоциональный заряд.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span><span class="tag price">от 1 800 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/a97cd76724082f57da1840f49628d5c1.jpg" alt="Кубанский казачий хор. Русь от края до края" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>24 сентября, ср</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/duet-para-6031954/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Дуэт «Пара»</div><div class="card-venue">Ялтинский театр им. Чехова<span class="city">· Ялта</span></div><div class="card-description">О концерте Спешим вас обрадовать — концерт дуэта «Пара» состоится в вашем городе! Не упустите возможность насладиться потрясающим исполнением Зульфии Чотчаевой и Ислама Мальсуйгенова!
@@ -2021,6 +2035,13 @@ load();
 <div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">AdrenalinHouse</div><div class="card-venue">Театр им. А. П. Чехова<span class="city">· Ялта</span></div><div class="card-description">Тебе наверняка знакомы хиты, такие как «Скам», «+Вайб», «Психушка», «Рофл»! Скорее зови своих друзей и приходите танцевать и подпевать на концерт AdrenalinHouse. Потом две недели будете обсуждать, как же было круто!
 
 Мощное шоу, вайб, твои любимые треки, автографсессия, мерч. Всё как ты любишь! Увидимся в твоём городе.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">другое</span><span class="tag price">от 1 120 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="AdrenalinHouse" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<div class="date-group"><h2>23 июля, чт</h2>
+<div class="card" onclick="window.open('https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">SHAMAN</div><div class="card-venue">Юбилейный<span class="city">· Ялта</span></div><div class="card-description">SHAMAN: «30 лет на сцене — это не повод подводить итоги. Это время оглянуться назад, на свой путь, полный трудностей и побед, врагов и друзей, поблагодарить их всех и двигаться дальше. Я уверен, что впереди много работы, интересных песен и новых музыкальных открытий».
+
+На большую сцену Ярослав Дронов начал выходить уже в четыре года. В составе вокально-эстрадного коллектива «Ассорти» юный солист ездил на гастроли и принимал участие в концертах, конкурсах городского, областного, всероссийского и международного уровня.
+
+Свои собственные песни Ярослав пишет с пятнадцати лет. За плечами популярного артиста три музыкальных образования, включая Российскую Академию музыки им. Гнесиных, многолетний опыт сценической деятельности и самостоятельное продюсирование своего творчества. Признание знаменитому певцу принесли мощный голос, яркий образ и, конечно, авторские песни, которые никого не оставляют равнодушным, — «Я русский», «Встанем», «Ты моя», «Мой бой», «Моя Россия», «Мы», «Мёд» и многие другие композиции. Все они прозвучат на концерте артиста.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="SHAMAN" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 </div>
 <!--/seo-content-->

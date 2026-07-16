@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Горького, 5"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Мираж Огня",
-      "startDate": "2026-07-17T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Tribute-концерт группы АРИЯ. Исполняет Мираж Огня. Живой звук, мощный свет. Вход свободный.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мираж Огня"
-      },
-      "image": "/images/events/ca4810db5f3b474898c34688a6bb97b7.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -637,6 +622,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -979,6 +978,8 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
+  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
+  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1063,7 +1064,7 @@ footer {
     <p class="venue-description">За чуть больше года здесь сыграли 23 концерта, в основном рок и метал — чаще других выступают Иччи и Нарратор. Среди трибьютов были AC/DC, The Beatles и Nirvana, а однажды здесь дал большой сольный концерт хард-рок-легенда «Чёрный Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Горького, 5, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Горького,+5,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1113,7 +1114,8 @@ function priceText(p) {
 }
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1129,6 +1131,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1142,7 +1145,8 @@ function eventRowHtml(ev, extraClass) {
   const thumbHtml = ev.image
     ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1150,7 +1154,7 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.artist || '—'}</div>
+      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
         <span>${ev.venue || '—'}</span>

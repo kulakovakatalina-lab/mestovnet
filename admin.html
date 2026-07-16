@@ -186,6 +186,14 @@
 
     .row.hidden-row { opacity: 0.4; }
     .row.hidden-row .row-artist { text-decoration: line-through; color: #555; }
+    .row.cancelled-row { border-color: #4a2222; background: #1c1414; }
+    .row.cancelled-row .row-artist::before {
+      content: "ОТМЕНЕНО ";
+      color: #ff6666;
+      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+    }
     .row.search-hidden { display: none; }
     .row-wrapper.search-hidden { display: none; }
 
@@ -339,6 +347,7 @@
       text-align: right;
     }
     .toggle-label.on { color: #77bb77; }
+    .toggle-label.cancelled-on { color: #ff7777; }
 
     .switch {
       position: relative;
@@ -369,6 +378,8 @@
     }
     input:checked + .slider { background: #1a3a1a; border-color: #2a5a2a; }
     input:checked + .slider::before { transform: translateX(18px); background: #77cc77; }
+    .switch-danger input:checked + .slider { background: #3a1a1a; border-color: #5a2a2a; }
+    .switch-danger input:checked + .slider::before { background: #ff6666; }
 
     .empty { text-align: center; color: #555; padding: 60px 0; font-size: 0.95rem; }
 
@@ -625,6 +636,7 @@ document.getElementById("btn-logout").addEventListener("click", () => {
 let EVENTS = [];
 let showPast = false;   // показывать ли прошедшие события
 let hidden       = new Set();
+let cancelled    = new Set();
 let times        = {};
 let names        = {};
 let prices       = {};
@@ -677,7 +689,7 @@ async function pushSettings() {
   btn.textContent = "Сохранение…";
   btn.disabled = true;
 
-  const content = { hidden: [...hidden], times, names, prices, images, cities, venues, descriptions, genres };
+  const content = { hidden: [...hidden], cancelled: [...cancelled], times, names, prices, images, cities, venues, descriptions, genres };
   const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
 
   try {
@@ -722,6 +734,7 @@ async function loadSettings() {
     if (res.ok) {
       const d = await res.json();
       hidden       = new Set(d.hidden || []);
+      cancelled    = new Set(d.cancelled || []);
       times        = d.times        || {};
       names        = d.names        || {};
       prices       = d.prices       || {};
@@ -744,8 +757,9 @@ function updateStats() {
   const total = EVENTS.length;
   const pastCount = EVENTS.filter(isPast).length;
   const hiddenCount = EVENTS.filter(e => hidden.has(e.source_url)).length;
+  const cancelledCount = EVENTS.filter(e => cancelled.has(e.source_url)).length;
   document.getElementById("stats").innerHTML =
-    `всего <b>${total}</b> &nbsp;·&nbsp; скрыто <b>${hiddenCount}</b> &nbsp;·&nbsp; прошло <b>${pastCount}</b>`;
+    `всего <b>${total}</b> &nbsp;·&nbsp; скрыто <b>${hiddenCount}</b> &nbsp;·&nbsp; отменено <b>${cancelledCount}</b> &nbsp;·&nbsp; прошло <b>${pastCount}</b>`;
 }
 
 function updatePastBtn() {
@@ -1252,6 +1266,48 @@ function makeRow(e) {
   toggleWrap.appendChild(sw);
   row.appendChild(toggleWrap);
 
+  // --- toggle «отменено» ---
+  const isCancelled = cancelled.has(e.source_url);
+  if (isCancelled) row.classList.add("cancelled-row");
+
+  const cancelWrap = document.createElement("div");
+  cancelWrap.className = "toggle-wrap";
+
+  const cancelLabel = document.createElement("span");
+  cancelLabel.className = isCancelled ? "toggle-label cancelled-on" : "toggle-label";
+  cancelLabel.textContent = isCancelled ? "отменено" : "не отм.";
+
+  const cancelSw = document.createElement("label");
+  cancelSw.className = "switch switch-danger";
+
+  const cancelChk = document.createElement("input");
+  cancelChk.type = "checkbox";
+  cancelChk.checked = isCancelled;
+  cancelChk.addEventListener("change", () => {
+    if (cancelChk.checked) {
+      cancelled.add(e.source_url);
+      row.classList.add("cancelled-row");
+      cancelLabel.className = "toggle-label cancelled-on";
+      cancelLabel.textContent = "отменено";
+    } else {
+      cancelled.delete(e.source_url);
+      row.classList.remove("cancelled-row");
+      cancelLabel.className = "toggle-label";
+      cancelLabel.textContent = "не отм.";
+    }
+    markDirty();
+    updateStats();
+  });
+
+  const cancelSlider = document.createElement("span");
+  cancelSlider.className = "slider";
+
+  cancelSw.appendChild(cancelChk);
+  cancelSw.appendChild(cancelSlider);
+  cancelWrap.appendChild(cancelLabel);
+  cancelWrap.appendChild(cancelSw);
+  row.appendChild(cancelWrap);
+
   // --- панель деталей (изначально скрыта) ---
   const detail = document.createElement("div");
   detail.className = "row-detail";
@@ -1439,7 +1495,7 @@ document.getElementById("btn-token").addEventListener("click", () => {
 });
 
 document.getElementById("btn-export").addEventListener("click", () => {
-  const data = { hidden: [...hidden], times, names, prices, images, cities, venues, descriptions, genres };
+  const data = { hidden: [...hidden], cancelled: [...cancelled], times, names, prices, images, cities, venues, descriptions, genres };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -1455,6 +1511,7 @@ document.getElementById("btn-import").addEventListener("change", e => {
     try {
       const d = JSON.parse(ev.target.result);
       if (Array.isArray(d.hidden)) hidden = new Set(d.hidden);
+      if (Array.isArray(d.cancelled)) cancelled = new Set(d.cancelled);
       if (d.times        && typeof d.times        === "object") times        = d.times;
       if (d.names        && typeof d.names        === "object") names        = d.names;
       if (d.prices       && typeof d.prices       === "object") prices       = d.prices;
