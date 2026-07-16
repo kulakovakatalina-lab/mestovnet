@@ -137,6 +137,7 @@ async function fetchEvents() {
   let settings = {};
   if (setResp && setResp.ok) settings = await setResp.json().catch(() => ({}));
   const hidden = new Set(settings.hidden || []);
+  const cancelled = new Set(settings.cancelled || []);
   const ov = (k) => settings[k] || {};
   const ovNames = ov("names"), ovTimes = ov("times"), ovPrices = ov("prices");
   const ovCities = ov("cities"), ovVenues = ov("venues"), ovGenres = ov("genres");
@@ -144,7 +145,7 @@ async function fetchEvents() {
   const out = [];
   for (const e of data) {
     const url = e.source_url || "";
-    if (hidden.has(url) || !e.date || e.date < today) continue;
+    if (hidden.has(url) || cancelled.has(url) || !e.date || e.date < today) continue;
     const rawGenre = ovGenres[url] ?? e.genre;
     const rawCity = ovCities[url] ?? e.source_city;
     out.push({
