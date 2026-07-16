@@ -310,12 +310,26 @@ class TestIsGenericArtist:
         }
         assert is_generic_artist(event)
 
-    def test_recomputes_extracted_from_description(self):
+    def test_extracted_from_description_is_not_generic(self):
+        # _extract_artist_from_description достаёт РЕАЛЬНОЕ имя из текста —
+        # это не плейсхолдер, даже если artist совпадает с извлечённым значением.
         event = {
             "artist": "Сплин",
             "description": "Выступление Сплин в клубе",
         }
-        assert is_generic_artist(event)
+        assert not is_generic_artist(event)
+
+    def test_real_name_in_quotes_is_not_generic(self):
+        # Регрессия: «Концерт «X»»-паттерн в _fallback_artist достаёт название
+        # из кавычек — реальное имя (напр. «Скажите Джаз», настоящая джаз-группа)
+        # не должно считаться generic только потому, что оно совпало с тем,
+        # что вернул бы фолбэк для этого текста.
+        event = {
+            "artist": "Скажите Джаз",
+            "event_type": "концерт",
+            "description": "Концерт «Скажите Джаз» на летней веранде",
+        }
+        assert not is_generic_artist(event)
 
     def test_real_artist_is_not_generic(self):
         event = {"artist": "SHAMAN", "description": "Большой концерт на набережной"}
@@ -323,3 +337,7 @@ class TestIsGenericArtist:
 
     def test_empty_artist_is_not_generic(self):
         assert not is_generic_artist({"artist": None})
+
+    def test_bare_festival_literal_is_generic(self):
+        event = {"artist": "Фестиваль", "event_type": "фестиваль", "description": "Большой летний фестиваль"}
+        assert is_generic_artist(event)
