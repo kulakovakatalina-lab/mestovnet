@@ -130,6 +130,23 @@
     "updated_at": "2026-07-15T16:43:18.018520+00:00"
   },
   {
+    "date": "2026-07-17",
+    "time": "23:00",
+    "artist": "Поздняков",
+    "event_type": "вечеринка",
+    "venue": "Чайка на Пляже",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет Позднякова на пляже отеля Ялта-Интурист: дип-хаус, тек-хаус, электро-хаус и другие электронные направления.",
+    "source_channel": "afisha_crimea",
+    "source_url": "https://t.me/afisha_crimea/7991",
+    "post_date": "2026-07-15",
+    "image": "/images/events/4fe42b9ddd50853166e15773639a38f6.jpg",
+    "genre": "поп",
+    "id": "5fea63f1",
+    "updated_at": "2026-07-16T17:43:03.538011+00:00"
+  },
+  {
     "date": "2026-07-18",
     "time": null,
     "artist": "Матвей Блюмин",
@@ -147,21 +164,25 @@
     "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
+    "id": "257e6c3a",
     "date": "2026-07-18",
     "time": "13:00",
-    "artist": "DJ сет",
+    "artist": "DJ сет, DJ set",
     "event_type": "вечеринка",
-    "venue": "БЦ Царская Пристань",
-    "source_city": "Севастополь",
+    "venue": "БЦ «Царская Пристань»",
     "price": "Вход свободный",
-    "description": "Летний маркет с DJ set на весь день, локальные бренды, арт-зона от «Квадрат.Культ.Мир» и рамены от Миски.",
-    "source_channel": "afisha_crimea",
-    "source_url": "https://t.me/afisha_crimea/7888",
-    "post_date": "2026-07-01",
-    "image": "/images/events/a23657c68b8080f6630ac8bbfc1f384a.jpg",
+    "description": "Маркет «Царская Пристань» с локальными брендами, арт-зоной и DJ-сетом на весь день. 18–19 июля, 13:00–18:00, вход свободный.",
+    "source_city": "Севастополь",
+    "source_channel": "crimea_event",
     "genre": "поп",
-    "id": "257e6c3a",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "source_url": "https://t.me/afisha_crimea/7888",
+    "images": [
+      "/images/events/a23657c68b8080f6630ac8bbfc1f384a.jpg",
+      "/images/events/81b0758c370a44118a4a28344945abdc.jpg"
+    ],
+    "image": "/images/events/a23657c68b8080f6630ac8bbfc1f384a.jpg",
+    "post_date": "2026-07-14",
+    "updated_at": "2026-07-16T17:43:03.538011+00:00"
   },
   {
     "id": "0d702006",
@@ -1027,6 +1048,23 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
+    "date": "2026-08-06",
+    "time": "18:30",
+    "artist": "Buon Gusto Band",
+    "event_type": "концерт",
+    "venue": "Винодельня Valery Логинов",
+    "source_city": "Новороссийск",
+    "price": "от 1500₽",
+    "description": "Блюз-рок вечер с Buon Gusto Band и вокалистом Маркусом Сика из Кот-д'Ивуара. Программа «Blues Rock Party» на винодельне в районе Абрау-Дюрсо.",
+    "source_channel": "skazhitejazz",
+    "source_url": "https://t.me/skazhitejazz/1575",
+    "post_date": "2026-07-14",
+    "image": "/images/events/8b6fbeea2725693faa782cb7eb9c9f36.jpg",
+    "genre": "джаз",
+    "id": "4e6a5efa",
+    "updated_at": "2026-07-16T17:43:03.538011+00:00"
+  },
+  {
     "id": "cfd1ba69",
     "date": "2026-08-06",
     "time": "19:00",
@@ -1421,7 +1459,7 @@
       "/images/events/097cd737ab1aa699f30afafa57818b00.jpg"
     ],
     "image": "/images/events/097cd737ab1aa699f30afafa57818b00.jpg",
-    "post_date": "2026-07-15T16:41:53.822379+00:00",
+    "post_date": "2026-07-16T02:08:58.963193+00:00",
     "updated_at": "2026-07-15T16:43:18.018520+00:00"
   },
   {
