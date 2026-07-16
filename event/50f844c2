@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "О концерте Концерт Ваграма Вазяна.\r\n\r\nЛюбимые песни, живое выступление, атмосфера большого музыкального вечера и встреча со зрителям.\r\n\r\nНачало концерта — в 21:00.\r\n\r\nКоличество мест ограничено.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Ваграм Вазян"

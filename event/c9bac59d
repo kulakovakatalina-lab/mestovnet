@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "Хор Сретенского монастыря в Юбилейный, Ялта.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Хор Сретенского монастыря"

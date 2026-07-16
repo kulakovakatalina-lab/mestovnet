@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "Эльбрус Джанмирзоев в Дворец культуры рыбаков, Севастополь.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Эльбрус Джанмирзоев"
