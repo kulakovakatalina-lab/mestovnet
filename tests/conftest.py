@@ -106,8 +106,13 @@ def today_str():
 
 
 @pytest.fixture(scope="session")
-def upcoming_events(events, today_str):
-    return [e for e in events if e.get("date") and e["date"] >= today_str]
+def upcoming_events(events, today_str, settings):
+    hidden = set(settings.get("hidden", []))
+    return [
+        e for e in events
+        if e.get("date") and e["date"] >= today_str
+        and (e.get("source_url") or "") not in hidden
+    ]
 
 
 @pytest.fixture(scope="session")
