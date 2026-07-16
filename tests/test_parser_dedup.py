@@ -7,6 +7,9 @@ from parser import (
     _merge_events,
     _merge_group,
     _bare_artist_key,
+    _artist_parts,
+    _artist_set,
+    is_generic_artist,
 )
 
 
@@ -261,3 +264,62 @@ class TestDeduplicateEvents:
         assert "Би-2" in merged_artist
         assert "Сплин" in merged_artist
         assert "Земфира" in merged_artist
+
+
+class TestArtistPartsExtendedJoins:
+    def test_feat_dot(self):
+        assert _artist_parts("Pasha Rhino feat. DJ Sasha") == ["Pasha Rhino", "DJ Sasha"]
+
+    def test_feat_no_dot(self):
+        assert _artist_parts("Pasha Rhino feat DJ Sasha") == ["Pasha Rhino", "DJ Sasha"]
+
+    def test_ft_dot(self):
+        assert _artist_parts("Иван Иванов ft. Пётр Петров") == ["Иван Иванов", "Пётр Петров"]
+
+    def test_pri_uchastii(self):
+        assert _artist_parts("Группа А при участии Группы Б") == ["Группа А", "Группы Б"]
+
+    def test_s_uchastiem(self):
+        assert _artist_parts("Соло с участием хора") == ["Соло", "хора"]
+
+    def test_existing_i_join_still_works(self):
+        assert _artist_parts("Ирина и Александр Круг") == ["Ирина", "Александр Круг"]
+
+
+class TestArtistSetTranslit:
+    def test_latin_cyrillic_variants_intersect(self):
+        latin = _artist_set({"artist": "SHAMAN"})
+        cyrillic = _artist_set({"artist": "ШАМАН"})
+        assert latin & cyrillic
+
+    def test_distinct_artists_do_not_intersect(self):
+        a = _artist_set({"artist": "Би-2"})
+        b = _artist_set({"artist": "Сплин"})
+        assert not (a & b)
+
+
+class TestIsGenericArtist:
+    def test_flagged_event_is_generic(self):
+        assert is_generic_artist({"artist": "DJ-сет", "artist_is_generic": True})
+
+    def test_recomputes_fallback_by_type(self):
+        event = {
+            "artist": "Музыкальное лото",
+            "event_type": "концерт",
+            "description": "Сегодня музыкальное лото для всех гостей",
+        }
+        assert is_generic_artist(event)
+
+    def test_recomputes_extracted_from_description(self):
+        event = {
+            "artist": "Сплин",
+            "description": "Выступление Сплин в клубе",
+        }
+        assert is_generic_artist(event)
+
+    def test_real_artist_is_not_generic(self):
+        event = {"artist": "SHAMAN", "description": "Большой концерт на набережной"}
+        assert not is_generic_artist(event)
+
+    def test_empty_artist_is_not_generic(self):
+        assert not is_generic_artist({"artist": None})

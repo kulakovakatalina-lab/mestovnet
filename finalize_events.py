@@ -162,6 +162,25 @@ def _fallback_artist(event: dict) -> "str | None":
     return None
 
 
+def is_generic_artist(event: dict) -> bool:
+    """True, если event['artist'] — не имя исполнителя, а автосгенерированный
+    фолбэк-текст (см. _fallback_artist/_extract_artist_from_description), либо
+    событие явно помечено флагом artist_is_generic.
+
+    Пересчитывает классификацию на лету, поэтому применим и к событиям,
+    для которых флаг ещё не проставлен (например, к уже существующим
+    записям в events.json из прошлых прогонов) — используется страницами
+    артистов, чтобы не создавать их для «DJ-сет», «Музыкальное лото» и т.п.
+    """
+    if event.get("artist_is_generic"):
+        return True
+    artist = (event.get("artist") or "").strip()
+    if not artist:
+        return False
+    fb = _extract_artist_from_description(event.get("description") or "") or _fallback_artist(event)
+    return bool(fb) and fb.strip() == artist
+
+
 # ── Стабильный ID ───────────────────────────────────────────────────────────
 
 def _make_id(event: dict) -> str:
@@ -198,9 +217,32 @@ def _venue_match(v1: str, v2: str) -> bool:
     return bool(w1 and w2 and w1 & w2)
 
 
+_ARTIST_JOIN_RE = re.compile(
+    r'\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+', re.IGNORECASE,
+)
+_ARTIST_JOIN_WORDS = {"и", "&", "+", "feat", "feat.", "ft", "ft.",
+                      "при участии", "с участием"}
+
+
 def _artist_parts(name: str) -> list[str]:
-    result = re.split(r'\s+(и|&|\+)\s+', name)
-    return [p.strip() for p in result if p.strip() and p.strip() not in ("и", "&", "+")]
+    result = _ARTIST_JOIN_RE.split(name)
+    return [p.strip() for p in result
+            if p.strip() and p.strip().lower() not in _ARTIST_JOIN_WORDS]
+
+
+# Транслит для сравнения имён между кириллицей и латиницей (SHAMAN vs ШАМАН).
+# Таблица та же, что в build_venues.py:slugify, для единообразия.
+_TRANSLIT = {
+    "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e",
+    "ж": "zh", "з": "z", "и": "i", "й": "y", "к": "k", "л": "l", "м": "m",
+    "н": "n", "о": "o", "п": "p", "р": "r", "с": "s", "т": "t", "у": "u",
+    "ф": "f", "х": "h", "ц": "ts", "ч": "ch", "ш": "sh", "щ": "sch",
+    "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu", "я": "ya",
+}
+
+
+def _translit_key(text: str) -> str:
+    return "".join(_TRANSLIT.get(ch, ch) for ch in _normalize(text))
 
 
 def _artist_set(event: dict) -> set:
@@ -214,6 +256,7 @@ def _artist_set(event: dict) -> set:
                     n = n[len(prefix):].strip()
             if n:
                 names.add(n)
+                names.add(_translit_key(n))  # ловит кириллица/латиница дубли
     return names
 
 
@@ -544,6 +587,7 @@ def main(push: bool = True):
             fb = _extract_artist_from_description(e.get("description") or "") or _fallback_artist(e)
             if fb:
                 e["artist"] = fb
+                e["artist_is_generic"] = True
                 artist_added += 1
         if not e.get("genre"):
             g = detect_genre(e)
