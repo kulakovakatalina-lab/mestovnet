@@ -1048,23 +1048,6 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
-    "date": "2026-08-06",
-    "time": "18:30",
-    "artist": "Buon Gusto Band",
-    "event_type": "концерт",
-    "venue": "Винодельня Valery Логинов",
-    "source_city": "Новороссийск",
-    "price": "от 1500₽",
-    "description": "Блюз-рок вечер с Buon Gusto Band и вокалистом Маркусом Сика из Кот-д'Ивуара. Программа «Blues Rock Party» на винодельне в районе Абрау-Дюрсо.",
-    "source_channel": "skazhitejazz",
-    "source_url": "https://t.me/skazhitejazz/1575",
-    "post_date": "2026-07-14",
-    "image": "/images/events/8b6fbeea2725693faa782cb7eb9c9f36.jpg",
-    "genre": "джаз",
-    "id": "4e6a5efa",
-    "updated_at": "2026-07-16T17:43:03.538011+00:00"
-  },
-  {
     "id": "cfd1ba69",
     "date": "2026-08-06",
     "time": "19:00",
