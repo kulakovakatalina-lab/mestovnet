@@ -1,0 +1,1715 @@
+[
+  {
+    "slug": "krymskiy-akademicheskiy-simfonicheskiy-orkestr",
+    "name": "Крымский академический симфонический оркестр",
+    "aliases": [
+      "Крымский Академический Симфонический Оркестр",
+      "Крымский академический симфонический оркестр"
+    ],
+    "event_count": 8,
+    "cities": [
+      "Ялта",
+      "Симферополь",
+      "Керчь"
+    ],
+    "venues": [
+      "Музыкальное училище им. П.И. Чайковского",
+      "Отель «Ялта-Интурист», концерт-холл «Хрустальный»",
+      "Ливадийский дворец",
+      "Театр имени А.П. Чехова, Екатерининская ул., 13",
+      "КДК «Корабел»",
+      "Мраморная пещера",
+      "Театр им. А.П. Чехова"
+    ],
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-06-24",
+    "description": null
+  },
+  {
+    "slug": "igor-simdyankin",
+    "name": "Игорь Симдянкин",
+    "aliases": [
+      "Игорь Симдянкин"
+    ],
+    "event_count": 6,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики",
+      "Бар рок-н-ролльщики",
+      "Рок-н-рольщики в Симферополе"
+    ],
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-07-31",
+    "description": null
+  },
+  {
+    "slug": "skazhite-dzhaz",
+    "name": "Скажите Джаз",
+    "aliases": [
+      "Скажите Джаз"
+    ],
+    "event_count": 6,
+    "cities": [
+      "Коктебель",
+      "Крым",
+      "Ялта"
+    ],
+    "venues": [
+      "Скажите Джаз",
+      "Коктебель (берег Чёрного моря)",
+      "Palmira Palace Resort & SPA"
+    ],
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-08-16",
+    "description": null
+  },
+  {
+    "slug": "stiven-mitchell",
+    "name": "Стивен Митчелл",
+    "aliases": [
+      "Стивен Митчелл"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Крым",
+      "Алушта",
+      "Коктебель",
+      "Севастополь"
+    ],
+    "venues": [
+      "Горная Сыроварня",
+      "Горная сыроварня",
+      "Концертная площадка МОРЕ",
+      "Усадьба Родное гнездо",
+      "Скажите Джаз"
+    ],
+    "first_seen": "2026-06-19",
+    "last_seen": "2026-08-15",
+    "description": null
+  },
+  {
+    "slug": "spahova",
+    "name": "Spahova",
+    "aliases": [
+      "Spahova"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "кафе «Van Gogh», Массандровский пляж",
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандровский пляж, сектор 7 «Ковёр»"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-07-26",
+    "description": null
+  },
+  {
+    "slug": "dima-reznik",
+    "name": "Дима Резник",
+    "aliases": [
+      "Дима Резник"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, ул. Ленина, 8",
+      "Бар рок-н-ролльщики"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-07-24",
+    "description": null
+  },
+  {
+    "slug": "pasha-rhino",
+    "name": "Pasha Rhino",
+    "aliases": [
+      "Pasha Rhino"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "gruppa-domino",
+    "name": "Группа «Домино»",
+    "aliases": [
+      "Группа «Домино»",
+      "Домино"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики",
+      "Бар рок-н-ролльщики",
+      "Рок-н-рольщики в Симферополе"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-07-18",
+    "description": null
+  },
+  {
+    "slug": "shaman",
+    "name": "SHAMAN",
+    "aliases": [
+      "SHAMAN"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Керчь",
+      "Ялта",
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Корабел",
+      "Юбилейный",
+      "Музыкальный театр",
+      "Дворец культуры рыбаков"
+    ],
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-24",
+    "description": null
+  },
+  {
+    "slug": "martin-w",
+    "name": "Martin W.",
+    "aliases": [
+      "Martin W."
+    ],
+    "event_count": 4,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандровский пляж, сектор 7 «Ковёр»"
+    ],
+    "first_seen": "2026-07-09",
+    "last_seen": "2026-07-26",
+    "description": null
+  },
+  {
+    "slug": "kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya",
+    "name": "Кубанский казачий хор. Русь от края до края",
+    "aliases": [
+      "Кубанский казачий хор. Русь от края до края",
+      "Кубанский казачий хор. Русь от края до края!"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь",
+      "Феодосия",
+      "Ялта",
+      "Керчь"
+    ],
+    "venues": [
+      "Дворец культуры рыбаков",
+      "Звездный",
+      "Юбилейный",
+      "Корабел"
+    ],
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-08",
+    "description": null
+  },
+  {
+    "slug": "anna-shakel",
+    "name": "Анна Шакель",
+    "aliases": [
+      "Анна Шакель"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Отель «Аквамарин»",
+      "Гольф-поле",
+      "Дворец Дюльбер"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-07-05",
+    "description": null
+  },
+  {
+    "slug": "rus",
+    "name": "Rus",
+    "aliases": [
+      "Rus"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандра Sun"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-07-19",
+    "description": null
+  },
+  {
+    "slug": "santier",
+    "name": "Santier",
+    "aliases": [
+      "Santier"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "hay-petri",
+    "name": "Хай'Петри",
+    "aliases": [
+      "Группа «Хай'Петри»",
+      "Хай'Петри"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта",
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "набережная",
+      "Рок-н-рольщики в Симферополе",
+      "Бар рок-н-ролльщики"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-07-18",
+    "description": null
+  },
+  {
+    "slug": "sab",
+    "name": "САБ",
+    "aliases": [
+      "Группа «САБ»",
+      "САБ"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, ул. Ленина, 8",
+      "Рок-н-рольщики в Симферополе"
+    ],
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "fedor-starovoytov",
+    "name": "Фёдор Старовойтов",
+    "aliases": [
+      "Фёдор Старовойтов"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики, ул. Ленина, 8",
+      "Бар рок-н-ролльщики",
+      "Рок-н-рольщики в Симферополе"
+    ],
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-07-26",
+    "description": null
+  },
+  {
+    "slug": "vladimir-zhdamirov",
+    "name": "Владимир Ждамиров",
+    "aliases": [
+      "Владимир Ждамиров"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта",
+      "Симферополь",
+      "Керчь"
+    ],
+    "venues": [
+      "Театр им. А. П. Чехова",
+      "Дворец культуры профсоюзов",
+      "Корабел"
+    ],
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-14",
+    "description": null
+  },
+  {
+    "slug": "tri-dnya-dozhdya",
+    "name": "Три дня дождя",
+    "aliases": [
+      "Три дня дождя",
+      "группа «Три дня дождя»"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Судак",
+      "Симферополь"
+    ],
+    "venues": [
+      "Муссон",
+      "ТАВРИДА.АРТ",
+      "Centrum"
+    ],
+    "first_seen": "2026-08-22",
+    "last_seen": "2026-08-25",
+    "description": null
+  },
+  {
+    "slug": "irina",
+    "name": "Ирина",
+    "aliases": [
+      "Ирина"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь",
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Музыкальный театр",
+      "Юбилейный",
+      "Дворец культуры рыбаков"
+    ],
+    "first_seen": "2026-08-22",
+    "last_seen": "2026-08-24",
+    "description": null
+  },
+  {
+    "slug": "aleksandr-krug",
+    "name": "Александр Круг",
+    "aliases": [
+      "Александр Круг"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь",
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Музыкальный театр",
+      "Юбилейный",
+      "Дворец культуры рыбаков"
+    ],
+    "first_seen": "2026-08-22",
+    "last_seen": "2026-08-24",
+    "description": null
+  },
+  {
+    "slug": "chernyy-kofe",
+    "name": "Черный кофе",
+    "aliases": [
+      "Черный кофе",
+      "Чёрный Кофе"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "БТР"
+    ],
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-06",
+    "description": null
+  },
+  {
+    "slug": "adrenalinhouse",
+    "name": "AdrenalinHouse",
+    "aliases": [
+      "AdrenalinHouse"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Театр им. А. П. Чехова",
+      "Центр культуры и искусства"
+    ],
+    "first_seen": "2026-06-24",
+    "last_seen": "2026-10-08",
+    "description": null
+  },
+  {
+    "slug": "evgeniy-gromov",
+    "name": "Евгений Громов",
+    "aliases": [
+      "Евгений Громов"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики в Симферополе",
+      "Рок-н-рольщики",
+      "Пания Парк, Деревня Мастеров, с. Соколиное"
+    ],
+    "first_seen": "2026-05-17",
+    "last_seen": "2026-07-12",
+    "description": null
+  },
+  {
+    "slug": "happy-paul",
+    "name": "Happy Paul",
+    "aliases": [
+      "Happy Paul"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Массандровский пляж, сектор 7 «Ковёр»",
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандра Sun"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-07-11",
+    "description": null
+  },
+  {
+    "slug": "ichchi",
+    "name": "Иччи",
+    "aliases": [
+      "Иччи"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-07-04",
+    "description": null
+  },
+  {
+    "slug": "radio-tapok",
+    "name": "Radio Tapok",
+    "aliases": [
+      "Radio Tapok"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Керчь",
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Спортивная школа «Наследие»",
+      "Муссон",
+      "Консоль Спорт"
+    ],
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-27",
+    "description": null
+  },
+  {
+    "slug": "paper-plain",
+    "name": "Paper Plain",
+    "aliases": [
+      "Paper Plain"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Рок-н-рольщики",
+      "Народный бар"
+    ],
+    "first_seen": "2026-05-22",
+    "last_seen": "2026-06-27",
+    "description": null
+  },
+  {
+    "slug": "lesopoval",
+    "name": "Лесоповал",
+    "aliases": [
+      "Группа «Лесоповал»",
+      "Лесоповал"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь",
+      "Керчь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Крымский Музыкальный Театр",
+      "КДК Корабел",
+      "ДОФ"
+    ],
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-31",
+    "description": null
+  },
+  {
+    "slug": "andrey-tanzyu",
+    "name": "Андрей Танзю",
+    "aliases": [
+      "Андрей Танзю"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Бахчисарай"
+    ],
+    "venues": [
+      "Арт-Ковчег",
+      "Белбек"
+    ],
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-22",
+    "description": null
+  },
+  {
+    "slug": "karina-klaviho",
+    "name": "Карина Клавихо",
+    "aliases": [
+      "Карина Клавихо"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Бахчисарай"
+    ],
+    "venues": [
+      "Арт-Ковчег",
+      "Белбек"
+    ],
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-22",
+    "description": null
+  },
+  {
+    "slug": "elena-golofeeva",
+    "name": "Елена Голофеева",
+    "aliases": [
+      "Елена Голофеева"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Дворец «Дюльбер»",
+      "Отель «Пальмира Палас»",
+      "Русский театр им. Горького, Пушкина 15"
+    ],
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-05-20",
+    "description": null
+  },
+  {
+    "slug": "estradno-duhovoy-orkestr",
+    "name": "Эстрадно-духовой оркестр",
+    "aliases": [
+      "Эстрадно-духовой оркестр"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Кинотеатр «Победа»"
+    ],
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-05-11",
+    "description": null
+  },
+  {
+    "slug": "peskovsky",
+    "name": "Peskovsky",
+    "aliases": [
+      "Peskovsky"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-16",
+    "description": null
+  },
+  {
+    "slug": "matvey-blyumin",
+    "name": "Матвей Блюмин",
+    "aliases": [
+      "Матвей Блюмин"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Научный"
+    ],
+    "venues": [
+      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н"
+    ],
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-07-18",
+    "description": null
+  },
+  {
+    "slug": "kuznetsov",
+    "name": "Kuznetsov",
+    "aliases": [
+      "Kuznetsov"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-07-18",
+    "last_seen": "2026-07-24",
+    "description": null
+  },
+  {
+    "slug": "scream",
+    "name": "Scream",
+    "aliases": [
+      "Scream"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-07-18",
+    "last_seen": "2026-07-19",
+    "description": null
+  },
+  {
+    "slug": "gitara-u-kostra",
+    "name": "Гитара у костра",
+    "aliases": [
+      "Гитара у костра"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Байдарская Долина, Alibair",
+      "Эко-пространство «Али-Баир»"
+    ],
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-07-18",
+    "description": null
+  },
+  {
+    "slug": "el",
+    "name": "EL",
+    "aliases": [
+      "EL",
+      "El"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Массандра Sun",
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-07-23",
+    "description": null
+  },
+  {
+    "slug": "busha",
+    "name": "Busha",
+    "aliases": [
+      "Busha"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "кафе «Van Gogh», Массандровский пляж",
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-05-03",
+    "last_seen": "2026-07-23",
+    "description": null
+  },
+  {
+    "slug": "thomas-mraz",
+    "name": "Thomas Mraz",
+    "aliases": [
+      "Thomas Mraz"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Депо",
+      "Балаган 38"
+    ],
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "krymskiy-kamernyy-orkestr",
+    "name": "Крымский камерный оркестр",
+    "aliases": [
+      "Крымский камерный оркестр"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Дом-музей им. А.П. Чехова",
+      "Колонный зал театра им. А.П. Чехова"
+    ],
+    "first_seen": "2026-07-05",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "chestnyy",
+    "name": "Честный",
+    "aliases": [
+      "Честный"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Евпатория"
+    ],
+    "venues": [
+      "Ribiza",
+      "Белый"
+    ],
+    "first_seen": "2026-07-25",
+    "last_seen": "2026-07-26",
+    "description": null
+  },
+  {
+    "slug": "gruppa-denayro",
+    "name": "Группа «Денайро»",
+    "aliases": [
+      "Группа «Денайро»",
+      "Денайро"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Крым",
+      "Севастополь"
+    ],
+    "venues": [
+      "Усадьба «Родное гнездо»",
+      "Бар рок-н-ролльщики"
+    ],
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-25",
+    "description": null
+  },
+  {
+    "slug": "taisiya-povaliy",
+    "name": "Таисия Повалий",
+    "aliases": [
+      "Таисия Повалий"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Юбилейный",
+      "Музыкальный театр"
+    ],
+    "first_seen": "2026-07-31",
+    "last_seen": "2026-08-01",
+    "description": null
+  },
+  {
+    "slug": "elena-novikova-stand-up",
+    "name": "Елена Новикова. Stand Up",
+    "aliases": [
+      "Елена Новикова. Stand Up"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Santa Barbara",
+      "Молодость"
+    ],
+    "first_seen": "2026-07-31",
+    "last_seen": "2026-08-07",
+    "description": null
+  },
+  {
+    "slug": "anjelina",
+    "name": "Anjelina",
+    "aliases": [
+      "Anjelina"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Юбилейный",
+      "Севастопольский ЦКиИ"
+    ],
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-08",
+    "description": null
+  },
+  {
+    "slug": "dzhedzhe",
+    "name": "Джедже",
+    "aliases": [
+      "Джедже"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Юбилейный",
+      "Севастопольский ЦКиИ"
+    ],
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-08",
+    "description": null
+  },
+  {
+    "slug": "nensi",
+    "name": "Нэнси",
+    "aliases": [
+      "Нэнси"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Музыкальный театр",
+      "Юбилейный"
+    ],
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-11",
+    "description": null
+  },
+  {
+    "slug": "lida",
+    "name": "Lida",
+    "aliases": [
+      "Lida"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Nebar",
+      "Депо"
+    ],
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-11",
+    "description": null
+  },
+  {
+    "slug": "unluvd",
+    "name": "Unluvd",
+    "aliases": [
+      "Unluvd"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "БТР / Бар тяжёлого рока",
+      "Jam Club"
+    ],
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-12",
+    "description": null
+  },
+  {
+    "slug": "neverlove",
+    "name": "Neverlove",
+    "aliases": [
+      "Neverlove"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "БТР / Бар тяжёлого рока",
+      "Jam Club"
+    ],
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-12",
+    "description": null
+  },
+  {
+    "slug": "grigoriy-leps",
+    "name": "Григорий Лепс",
+    "aliases": [
+      "Григорий Лепс"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Феодосия"
+    ],
+    "venues": [
+      "Юбилейный",
+      "Звездный"
+    ],
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-12",
+    "description": null
+  },
+  {
+    "slug": "hor-sretenskogo-monastyrya",
+    "name": "Хор Сретенского монастыря",
+    "aliases": [
+      "Хор Сретенского монастыря"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Центр культуры и искусства",
+      "Юбилейный"
+    ],
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-13",
+    "description": null
+  },
+  {
+    "slug": "moya-mishel",
+    "name": "Моя Мишель",
+    "aliases": [
+      "Моя Мишель"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Centrum",
+      "Юбилейный"
+    ],
+    "first_seen": "2026-08-23",
+    "last_seen": "2026-08-25",
+    "description": null
+  },
+  {
+    "slug": "pro-art",
+    "name": "Про.Арт",
+    "aliases": [
+      "Про.Арт"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Дворец культуры профсоюзов",
+      "Центр культуры и искусства"
+    ],
+    "first_seen": "2026-07-09",
+    "last_seen": "2026-08-26",
+    "description": null
+  },
+  {
+    "slug": "lyubov-uspenskaya",
+    "name": "Любовь Успенская",
+    "aliases": [
+      "Любовь Успенская"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Дом офицеров флота",
+      "ДК профсоюзов"
+    ],
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-27",
+    "description": null
+  },
+  {
+    "slug": "igor-rasteryaev",
+    "name": "Игорь Растеряев",
+    "aliases": [
+      "Игорь Растеряев"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Депо",
+      "Boombox"
+    ],
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-19",
+    "description": null
+  },
+  {
+    "slug": "duet-para",
+    "name": "Дуэт «Пара»",
+    "aliases": [
+      "Дуэт «Пара»"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "ДК профсоюзов",
+      "Ялтинский театр им. Чехова"
+    ],
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-24",
+    "description": null
+  },
+  {
+    "slug": "helvegen",
+    "name": "Helvegen",
+    "aliases": [
+      "Helvegen"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Депо",
+      "Boombox"
+    ],
+    "first_seen": "2026-10-20",
+    "last_seen": "2026-10-21",
+    "description": null
+  },
+  {
+    "slug": "dim-k",
+    "name": "Dim K.",
+    "aliases": [
+      "Dim K",
+      "Dim K."
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "кафе «Van Gogh», Массандровский пляж",
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-07-12",
+    "description": null
+  },
+  {
+    "slug": "pasha-grey",
+    "name": "Паша Грей",
+    "aliases": [
+      "Паша Грей"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-07-12",
+    "description": null
+  },
+  {
+    "slug": "kanali",
+    "name": "Канальи",
+    "aliases": [
+      "Канальи"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-07-11",
+    "description": null
+  },
+  {
+    "slug": "donna-cello",
+    "name": "Donna Cello",
+    "aliases": [
+      "Donna Cello"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Скельская пещера",
+      "Эко-пространство «Али-Баир»"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-07-11",
+    "description": null
+  },
+  {
+    "slug": "gangamantra",
+    "name": "GangaMantra",
+    "aliases": [
+      "GangaMantra"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Зеленый Кордон (яблоневый сад, Бельбекская долина)",
+      "Арт-Ковчег, с. Путиловка"
+    ],
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-07-11",
+    "description": null
+  },
+  {
+    "slug": "aleksey-garkusha",
+    "name": "Алексей Гаркуша",
+    "aliases": [
+      "Алексей Гаркуша"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Бар рок-н-ролльщики",
+      "Рок-н-рольщики в Симферополе"
+    ],
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-07-10",
+    "description": null
+  },
+  {
+    "slug": "kardys",
+    "name": "Kardys",
+    "aliases": [
+      "Kardys"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Массандра Sun",
+      "Пляж-кафе Van Gogh, Массандровский пляж"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-07-09",
+    "description": null
+  },
+  {
+    "slug": "maneken",
+    "name": "Манекен",
+    "aliases": [
+      "Манекен"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Народный бар",
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-03",
+    "last_seen": "2026-07-04",
+    "description": null
+  },
+  {
+    "slug": "struktura",
+    "name": "Структура",
+    "aliases": [
+      "Структура"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-15",
+    "last_seen": "2026-07-04",
+    "description": null
+  },
+  {
+    "slug": "krysha-mira",
+    "name": "Крыша мира",
+    "aliases": [
+      "Крыша Мира",
+      "Крыша мира"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-07-04",
+    "description": null
+  },
+  {
+    "slug": "maksim-sheremet",
+    "name": "Максим Шеремет",
+    "aliases": [
+      "Максим Шеремет"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики"
+    ],
+    "first_seen": "2026-05-24",
+    "last_seen": "2026-07-03",
+    "description": null
+  },
+  {
+    "slug": "jawa-hity-sektor-gaza",
+    "name": "Jawa. Хиты «Сектор Газа»",
+    "aliases": [
+      "Jawa. Хиты «Сектор Газа»"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Керчь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Корабел",
+      "Дом офицеров флота"
+    ],
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-07-01",
+    "description": null
+  },
+  {
+    "slug": "yuliya-bakshinskaya",
+    "name": "Юлия Бакшинская",
+    "aliases": [
+      "Юлия Бакшинская"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Русский театр им. Горького, Пушкина 15",
+      "Афиша PayBerry"
+    ],
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-06-26",
+    "description": null
+  },
+  {
+    "slug": "andrey-yasinskiy",
+    "name": "Андрей Ясинский",
+    "aliases": [
+      "Андрей Ясинский"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Пещера Мраморная",
+      "Крымская астрофизическая обсерватория"
+    ],
+    "first_seen": "2026-05-17",
+    "last_seen": "2026-06-14",
+    "description": null
+  },
+  {
+    "slug": "aleksandr-vasilev",
+    "name": "Александр Васильев",
+    "aliases": [
+      "Александр Васильев"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Бахчисарай",
+      "Севастополь"
+    ],
+    "venues": [
+      "Арт-Ковчег",
+      "Белбек"
+    ],
+    "first_seen": "2026-05-22",
+    "last_seen": "2026-06-06",
+    "description": null
+  },
+  {
+    "slug": "andrey-rybalchenko",
+    "name": "Андрей Рыбальченко",
+    "aliases": [
+      "Андрей Рыбальченко"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Гольф-поле",
+      "Дворец «Дюльбер»"
+    ],
+    "first_seen": "2026-05-24",
+    "last_seen": "2026-05-31",
+    "description": null
+  },
+  {
+    "slug": "cora",
+    "name": "CORA",
+    "aliases": [
+      "CORA"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Sky Beach Ялта"
+    ],
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "description": null
+  },
+  {
+    "slug": "spiritual-seasons",
+    "name": "Spiritual Seasons",
+    "aliases": [
+      "Spiritual Seasons"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Бахчисарай"
+    ],
+    "venues": [
+      "Jam Club",
+      "Арт-Ковчег"
+    ],
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-30",
+    "description": null
+  },
+  {
+    "slug": "aleksandr-dolinskiy",
+    "name": "Александр Долинский",
+    "aliases": [
+      "Александр Долинский"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Музыкальное училище им. П.И. Чайковского",
+      "Театр им. А.П. Чехова"
+    ],
+    "first_seen": "2026-05-21",
+    "last_seen": "2026-05-24",
+    "description": null
+  },
+  {
+    "slug": "mihail-yakubovskiy",
+    "name": "Михаил Якубовский",
+    "aliases": [
+      "Михаил Якубовский"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Дворец «Дюльбер»",
+      "Русский театр им. Горького, Пушкина 15"
+    ],
+    "first_seen": "2026-05-11",
+    "last_seen": "2026-05-20",
+    "description": null
+  },
+  {
+    "slug": "angle-of-wonders",
+    "name": "Angle Of Wonders",
+    "aliases": [
+      "Angle Of Wonders"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-15",
+    "description": null
+  },
+  {
+    "slug": "pravin",
+    "name": "Правин",
+    "aliases": [
+      "Правин"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Белбек",
+      "Арт-Ковчег"
+    ],
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-13",
+    "description": null
+  },
+  {
+    "slug": "ruslan-seydaliev",
+    "name": "Руслан Сейдалиев",
+    "aliases": [
+      "Руслан Сейдалиев"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Дворец «Дюльбер»"
+    ],
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-05-11",
+    "description": null
+  },
+  {
+    "slug": "maksim-perov",
+    "name": "Максим Перов",
+    "aliases": [
+      "Максим Перов"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Дворец «Дюльбер»"
+    ],
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-05-11",
+    "description": null
+  },
+  {
+    "slug": "the-hatters",
+    "name": "The Hatters",
+    "aliases": [
+      "The Hatters"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Муссон",
+      "Наследие"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-05-10",
+    "description": null
+  },
+  {
+    "slug": "dinaminator",
+    "name": "Динаминатор",
+    "aliases": [
+      "Динаминатор"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-08",
+    "description": null
+  },
+  {
+    "slug": "narrator",
+    "name": "Нарратор",
+    "aliases": [
+      "Нарратор"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-08",
+    "description": null
+  },
+  {
+    "slug": "chernyy-doktor-solnechnoy-doliny",
+    "name": "Черный доктор солнечной долины",
+    "aliases": [
+      "Черный Доктор Солнечной Долины",
+      "Черный доктор солнечной долины"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-08",
+    "description": null
+  },
+  {
+    "slug": "tripsa",
+    "name": "Трипса",
+    "aliases": [
+      "Трипса"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Народный бар",
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-05-03",
+    "description": null
+  },
+  {
+    "slug": "chto-ty-delaesh",
+    "name": "Что Ты Делаешь?!?!?!!",
+    "aliases": [
+      "Что Ты Делаешь?!?!?!!",
+      "Что ты делаешь?!?!?!"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Народный бар",
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-05-03",
+    "description": null
+  }
+]

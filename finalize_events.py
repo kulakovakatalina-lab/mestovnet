@@ -119,6 +119,19 @@ def _extract_artist_from_description(desc: str) -> "str | None":
     return None
 
 
+# Безусловные плейсхолдеры, которые может вернуть _fallback_artist — не имя
+# исполнителя, а тип мероприятия (в отличие от веток с извлечением реального
+# названия из кавычек типа «Концерт «X»» — те МОГУТ совпасть с настоящим
+# артистом, поэтому в этот список не входят).
+_GENERIC_ARTIST_LITERALS = {
+    "Музыкальное лото", "DJ-сет", "Звукотерапия", "Квартирник", "Спектакль",
+    "Фестиваль", "Живой концерт", "Музыкальный вечер", "Летний концерт",
+    "Живой звук", "Открытие сезона", "Литературно-музыкальная гостиная",
+    "Открытие летнего сезона", "Вечеринка", "Дегустация",
+    "Массовое мероприятие", "Этно-проект",
+}
+
+
 def _fallback_artist(event: dict) -> "str | None":
     etype = (event.get("event_type") or "").lower()
     desc = event.get("description") or ""
@@ -163,22 +176,21 @@ def _fallback_artist(event: dict) -> "str | None":
 
 
 def is_generic_artist(event: dict) -> bool:
-    """True, если event['artist'] — не имя исполнителя, а автосгенерированный
-    фолбэк-текст (см. _fallback_artist/_extract_artist_from_description), либо
-    событие явно помечено флагом artist_is_generic.
+    """True, если event['artist'] — не имя исполнителя, а тип мероприятия
+    («DJ-сет», «Музыкальное лото», «Фестиваль» и т.п.), либо событие явно
+    помечено флагом artist_is_generic.
 
-    Пересчитывает классификацию на лету, поэтому применим и к событиям,
-    для которых флаг ещё не проставлен (например, к уже существующим
-    записям в events.json из прошлых прогонов) — используется страницами
-    артистов, чтобы не создавать их для «DJ-сет», «Музыкальное лото» и т.п.
+    Сверяется с фиксированным списком безусловных плейсхолдеров
+    (_GENERIC_ARTIST_LITERALS), а не пересчитывает _fallback_artist заново —
+    иначе ветки с извлечением реального названия из кавычек («Концерт «X»»)
+    ложно считались бы generic, если название совпало с уже настоящим
+    значением artist (так ловилось «Скажите Джаз» — реальная джаз-группа).
+    Применим и к событиям без проставленного флага (старые записи в
+    events.json из прошлых прогонов).
     """
     if event.get("artist_is_generic"):
         return True
-    artist = (event.get("artist") or "").strip()
-    if not artist:
-        return False
-    fb = _extract_artist_from_description(event.get("description") or "") or _fallback_artist(event)
-    return bool(fb) and fb.strip() == artist
+    return (event.get("artist") or "").strip() in _GENERIC_ARTIST_LITERALS
 
 
 # ── Стабильный ID ───────────────────────────────────────────────────────────
@@ -584,11 +596,18 @@ def main(push: bool = True):
     genre_added = artist_added = 0
     for e in merged:
         if not e.get("artist"):
-            fb = _extract_artist_from_description(e.get("description") or "") or _fallback_artist(e)
-            if fb:
-                e["artist"] = fb
-                e["artist_is_generic"] = True
+            extracted = _extract_artist_from_description(e.get("description") or "")
+            if extracted:
+                # Извлечено из кавычек/паттерна — попытка настоящего имени,
+                # флаг generic не ставим.
+                e["artist"] = extracted
                 artist_added += 1
+            else:
+                fb = _fallback_artist(e)
+                if fb:
+                    e["artist"] = fb
+                    e["artist_is_generic"] = fb in _GENERIC_ARTIST_LITERALS
+                    artist_added += 1
         if not e.get("genre"):
             g = detect_genre(e)
             if g:
