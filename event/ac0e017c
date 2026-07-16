@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "Nightwish Tribute Show в БТР / Бар тяжёлого рока, Севастополь.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Nightwish Tribute Show"

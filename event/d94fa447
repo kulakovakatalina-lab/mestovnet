@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "Стешок, Anjelina, Макар Давыдов, Мали и… в Юбилейный, Ялта.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Стешок, Anjelina, Макар Давыдов, Мали и…, Джедже"

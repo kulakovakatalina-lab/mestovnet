@@ -38,21 +38,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "SHAMAN",
-      "startDate": "2026-07-20T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дворец культуры рыбаков"
-      },
-      "description": "SHAMAN в Дворец культуры рыбаков, Севастополь.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "SHAMAN"
-      },
-      "image": "/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Эльбрус Джанмирзоев",
       "startDate": "2026-07-25T20:00:00+03:00",
       "location": {
@@ -95,6 +80,21 @@
         "name": "Ирина, Александр Круг"
       },
       "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "SHAMAN",
+      "startDate": "2027-07-20T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дворец культуры рыбаков"
+      },
+      "description": "SHAMAN в Дворец культуры рыбаков, Севастополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "SHAMAN"
+      },
+      "image": "/images/events/6f6f1118497bd756bada3426a51eb6ee.jpg"
     }
   ]
 }

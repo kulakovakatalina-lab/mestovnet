@@ -994,6 +994,7 @@ a { color: inherit; text-decoration: none; }
         }
       },
       "description": "О концерте Сольный концерт Авета Маркаряна.\r\n\r\nЗрителей ждет вечер живой музыки и известных композиций артиста. Приглашаем провести этот вечер вместе.",
+      "eventStatus": "https://schema.org/EventCancelled",
       "performer": {
         "@type": "MusicGroup",
         "name": "Авет Маркарян"
