@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Pasha Rhino, Santier, Gretta, El Capulco 0.0, в Ялте, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="South DJ&#x27;s (Back 2 Back), El Capulco 0.0, в Ялте, 17 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pasha Rhino, Santier, Gretta — El Capulco 0.0, Ялта · Местов.Нет</title>
+<title>South DJ&#x27;s (Back 2 Back) — El Capulco 0.0, Ялта · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -971,19 +971,19 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31082f74">
-<meta property="og:title" content="Pasha Rhino, Santier, Gretta — El Capulco 0.0, Ялта · Местов.Нет">
-<meta property="og:description" content="Pasha Rhino, Santier, Gretta, El Capulco 0.0, в Ялте, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/feec4028">
+<meta property="og:title" content="South DJ&#x27;s (Back 2 Back) — El Capulco 0.0, Ялта · Местов.Нет">
+<meta property="og:description" content="South DJ&#x27;s (Back 2 Back), El Capulco 0.0, в Ялте, 17 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Pasha Rhino, Santier, Gretta",
-      "startDate": "2026-07-25T18:00:00+03:00",
+      "name": "South DJ's (Back 2 Back)",
+      "startDate": "2026-07-17T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "El Capulco 0.0",
@@ -993,18 +993,18 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Гостевой DJ-сет Gretta в рамках программы летних вечеров El Capulco 0.0.",
+      "description": "Летний вечер в El Capulco 0.0 с музыкальной программой, призами и конкурсами на закате.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Pasha Rhino, Santier, Gretta"
+        "name": "South DJ's (Back 2 Back)"
       },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+      "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Pasha Rhino, Santier, Gretta"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "South DJ's (Back 2 Back)"}]}
 </script>
 </head>
 <body>

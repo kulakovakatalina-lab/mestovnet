@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Русский театр им. Горького — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Русский театр им. Горького, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Русский театр им. Горького, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/russkiy-teatr-im-gorkogo">
   <meta property="og:title" content="Русский театр им. Горького — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Русский театр им. Горького, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Русский театр им. Горького, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Пушкина 15"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Сергей Пенкин",
+      "startDate": "2026-11-17T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Русский театр им. Горького"
+      },
+      "description": "Сергей Пенкин в Драматический театр им. Горького, Симферополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Сергей Пенкин"
+      },
+      "image": "/images/events/8439b6dfa9dc0732c1213f4b754206c7.jpg"
     }
   ]
 }
@@ -1006,7 +1021,7 @@ footer {
     <p class="venue-description">Один из старейших театров Крыма, основанный в Симферополе в 1821 году и с 1932 года носящий имя Максима Горького. Здание 1911 года постройки является памятником архитектуры в стиле неоклассицизма с элементами модерна и барокко.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Пушкина 15, Симферополь</span><a href="https://yandex.ru/maps/?text=Пушкина+15,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1024,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const VENUE_ALIASES = ["Русский театр им. Горького", "Русский театр им. Горького, Пушкина 15", "Русский театр им. Горького"];
+const VENUE_ALIASES = ["Драматический театр им. Горького", "Русский театр им. Горького", "Русский театр им. Горького, Пушкина 15", "Русский театр им. Горького"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

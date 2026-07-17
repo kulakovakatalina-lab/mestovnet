@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/jam-club">
-  <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <title>El Capulco 0.0 — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/el-capulco">
+  <meta property="og:title" content="El Capulco 0.0 — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,107 +28,78 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Jam Club",
+      "name": "El Capulco 0.0",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Горького, 5"
+        "addressLocality": "Ялта",
+        "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Шут), Велес (трибьют Король",
+      "name": "South DJ's (Back 2 Back)",
       "startDate": "2026-07-17T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "El Capulco 0.0"
       },
-      "description": "Трибьют-концерт группы «Король и Шут» от коллектива Велес в честь дня памяти Горшка. После концерта — бесплатное рок-караоке всю ночь.",
+      "description": "Летний вечер в El Capulco 0.0 с музыкальной программой, призами и конкурсами на закате.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Шут), Велес (трибьют Король"
+        "name": "South DJ's (Back 2 Back)"
       },
-      "image": "/images/events/39629e74f191b5ab2e794678e1c184e1.jpg"
+      "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира",
+      "name": "Scream (Vinyl Set)",
       "startDate": "2026-07-18T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "El Capulco 0.0"
       },
-      "description": "Grunge Fest: гранж-группа Witch Nails отмечает 5-летие клуба, в компании Angle Of Wonders и Крыша мира.",
+      "description": "Виниловый сет от Scream в рамках программы летних вечеров El Capulco 0.0.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира"
+        "name": "Scream (Vinyl Set)"
       },
-      "image": "/images/events/84e65f7c61e9d9369295770b64c36e78.jpg"
+      "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Unluvd, Neverlove",
-      "startDate": "2026-08-11T19:00:00+03:00",
+      "name": "Spahova, Kuznetsov, Pasha Rhino",
+      "startDate": "2026-07-24T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "El Capulco 0.0"
       },
-      "description": "Neverlove с особенной программой Unluvd — Анплагд. Группа представит шоу, в котором знакомые треки прозвучат ближе, честнее и атмосфернее.\n\nНе пропустите Neverlove и их новое шоу Unluvd — Анплагд.",
+      "description": "DJ-сет Pasha Rhino в рамках программы летних вечеров El Capulco 0.0.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Unluvd, Neverlove"
+        "name": "Spahova, Kuznetsov, Pasha Rhino"
       },
-      "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg"
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Neverlove / Unlvd",
-      "startDate": "2026-08-11T00:00:00+03:00",
+      "name": "Pasha Rhino, Santier, Gretta",
+      "startDate": "2026-07-25T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "El Capulco 0.0"
       },
-      "description": "Акустический (анплагд) концерт Neverlove / Unlvd. Для подписчиков канала действует скидка по промокоду «jam».",
+      "description": "Гостевой DJ-сет Gretta в рамках программы летних вечеров El Capulco 0.0.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Neverlove / Unlvd"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Черный кофе",
-      "startDate": "2026-09-05T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "Pasha Rhino, Santier, Gretta"
       },
-      "description": "О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!\r\nВ программу войдут такие нетленные хиты, как: «Вольному — воля», «Владимирская Русь», «Звездный водоем», «Листья», «Светлый металл», «Переступи порог», «Леди Осень», «Это — рок!» и многие другие.\r\n\r\nТакже поклонники группы услышат новые песни, написанные Мастером мелодичного хард-рока в последние годы на стихи Александра Шаганова, Сергея Есенина, великую классику Баха, Альбинони и бессмертные песни Владимира Высоцкого.— они прозвучат в исполнении фронтмена и основателя «Чёрного Кофе» — Дмитрия Варшавского.\r\n«Чёрный кофе» — это не ностальгия, а летопись российского рока. Их дебютный студийный альбом «Переступи порог» открыл официальную дискографию русскоязычного хэви-метал-рока и оказался самым успешным проектом «перестроечной эры». Только в первые месяцы продаж он разошёлся по стране тиражом более 1 400 000 экземпляров. Аналогичный успех сопутствовал и следующему диску коллектива — «Вольному — воля».\r\n\r\nГруппа давала десятки аншлаговых выступлений ежемесячно на протяжении многих лет, но... время шло, предпочтения слушателей менялись. И только сейчас музыка hard'n'heavy обретает второе дыхание и корифеи стиля, вроде «Чёрного Кофе», обретают новую жизнь.\r\n\r\nС Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.\r\n\r\nВ концерте прозвучат самые легендарные хиты группы!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Черный кофе"
-      },
-      "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Чёрный Кофе",
-      "startDate": "2026-09-05T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Концерт группы Чёрный Кофе. Для подписчиков канала действует скидка по промокоду «jam».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Чёрный Кофе"
-      }
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Jam Club"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "El Capulco 0.0"}]}
 </script>
   <style>
 
@@ -1088,13 +1059,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Jam Club</h1>
-    <p class="venue-description">За чуть больше года здесь сыграли 23 концерта, в основном рок и метал — чаще других выступают Иччи и Нарратор. Среди трибьютов были AC/DC, The Beatles и Nirvana, а однажды здесь дал большой сольный концерт хард-рок-легенда «Чёрный Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Горького, 5, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Горького,+5,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
+    <h1 class="genre-hero-title">El Capulco 0.0</h1>
+    
+    
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1112,7 +1083,7 @@ footer {
 </footer>
 
 <script>
-const VENUE_ALIASES = ["Jam Club", "Jam Club"];
+const VENUE_ALIASES = ["El Capulco 0.0", "El Capulco", "El Capulco 0.0"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
