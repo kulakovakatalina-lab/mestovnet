@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Pasha Rhino, Santier, Gretta, El Capulco 0.0, в Ялте, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира, Jam Club, в Симферополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pasha Rhino, Santier, Gretta — El Capulco 0.0, Ялта · Местов.Нет</title>
+<title>Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира — Jam Club, Симферополь · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -971,40 +971,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31082f74">
-<meta property="og:title" content="Pasha Rhino, Santier, Gretta — El Capulco 0.0, Ялта · Местов.Нет">
-<meta property="og:description" content="Pasha Rhino, Santier, Gretta, El Capulco 0.0, в Ялте, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/71e2c32c">
+<meta property="og:title" content="Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира — Jam Club, Симферополь · Местов.Нет">
+<meta property="og:description" content="Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира, Jam Club, в Симферополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/84e65f7c61e9d9369295770b64c36e78.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Pasha Rhino, Santier, Gretta",
-      "startDate": "2026-07-25T18:00:00+03:00",
+      "name": "Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира",
+      "startDate": "2026-07-18T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "El Capulco 0.0",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Гостевой DJ-сет Gretta в рамках программы летних вечеров El Capulco 0.0.",
+      "description": "Grunge Fest: гранж-группа Witch Nails отмечает 5-летие клуба, в компании Angle Of Wonders и Крыша мира.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Pasha Rhino, Santier, Gretta"
+        "name": "Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира"
       },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+      "image": "/images/events/84e65f7c61e9d9369295770b64c36e78.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "Бесплатно для подписчиков клуба",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Pasha Rhino, Santier, Gretta"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Agressor, Bloodshot, Ампутация Сознания, Witch Nails, Angle Of Wonders, Крыша мира"}]}
 </script>
 </head>
 <body>

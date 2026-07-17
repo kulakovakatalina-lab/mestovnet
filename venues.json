@@ -992,5 +992,17 @@
       "Царская Пристань"
     ],
     "description": ""
+  },
+  {
+    "slug": "el-capulco",
+    "name": "El Capulco 0.0",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 0,
+    "aliases": [
+      "El Capulco 0.0",
+      "El Capulco"
+    ],
+    "description": ""
   }
 ]
