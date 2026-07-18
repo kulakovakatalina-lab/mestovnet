@@ -234,8 +234,8 @@ a { color: inherit; text-decoration: none; }
 }
 .event-info-artist-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  gap: 6px;
   margin-top: 2px;
 }
 .artist-more-link {
@@ -1354,9 +1354,7 @@ function render(event) {
               const matched = resolveArtists(event.artist || '');
               if (!matched.length) return '';
               return `<div class="event-info-artist-links">` + matched.map(a =>
-                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${
-                  matched.length > 1 ? `Подробнее: ${escapeHtml(a.name)}` : 'Подробнее об артисте'
-                }</a>`
+                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${escapeHtml(a.name)}: подробнее</a>`
               ).join('') + `</div>`;
             })()}
             <div class="event-info-venue">${(function(){
