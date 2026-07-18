@@ -1550,6 +1550,18 @@ function eventMatchesArtist(ev) {{
   }}
   return false;
 }}
+function otherArtistNames(ev) {{
+  const raw = ev.artist || '';
+  if (!raw) return [];
+  const names = [];
+  for (const part of splitArtistField(raw)) {{
+    for (const name of artistParts(part.trim())) {{
+      const n = name.trim();
+      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
+    }}
+  }}
+  return names;
+}}
 
 function applySettings(data, settings) {{
   const hiddenSet = new Set(settings.hidden || []);
@@ -1578,8 +1590,9 @@ function eventRowHtml(ev, extraClass) {{
   const genre = mapGenre(ev.genre);
   const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
   const price = ev.priceDisplay || priceText(ev.price);
+  const others = otherArtistNames(ev);
   const thumbHtml = ev.image
-    ? `<img src="${{ev.image}}" alt="${{ev.artist || ''}}" loading="lazy">`
+    ? `<img src="${{ev.image}}" alt="${{ev.venue || ''}}" loading="lazy">`
     : `<div class="bg-${{genre}}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${{genreIcon(genre)}}</div>`;
   return `<a href="/event/${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
     <div class="row-date">
@@ -1589,11 +1602,11 @@ function eventRowHtml(ev, extraClass) {{
     </div>
     <div class="row-thumb">${{thumbHtml}}</div>
     <div>
-      <div class="row-artist">${{ev.artist || '—'}}</div>
+      <span class="pill pill-${{genre}}">${{GENRE_LABELS[genre]}}</span>
+      <div class="row-artist">${{ev.venue || '—'}}</div>
       <div class="row-desc">${{ev.description || ''}}</div>
       <div class="row-venue">
-        <span>${{ev.venue || '—'}}</span>
-        <span class="row-venue-dot"></span>
+        ${{others.length ? `<span>${{others.join(', ')}}</span><span class="row-venue-dot"></span>` : ''}}
         <span>${{ev.source_city || '—'}}</span>
       </div>
     </div>
