@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Антикварно-художественная галерея «Стикс» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/galereya-stiks-yalta">
   <meta property="og:title" content="Антикварно-художественная галерея «Стикс» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Игнатенко, 10"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Елена Свок",
-      "startDate": "2026-07-17T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Антикварно-художественная галерея «Стикс»"
-      },
-      "description": "Музыкальный вечер певицы, поэта и актрисы Елены Свок: авторская песня, романсы Окуджавы, Визбора, Матвеевой и любимые песни из кинофильмов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Елена Свок"
-      },
-      "image": "/images/events/53fa37a20c5bf1bba5d21107d13171b5.jpg"
     }
   ]
 }
@@ -1021,7 +1006,7 @@ footer {
     
     <div class="venue-address-block"><span class="venue-hero-address">ул. Игнатенко, 10, Ялта</span><a href="https://yandex.ru/maps/?text=ул.+Игнатенко,+10,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

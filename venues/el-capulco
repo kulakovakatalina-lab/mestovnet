@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>El Capulco 0.0 — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/el-capulco">
   <meta property="og:title" content="El Capulco 0.0 — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "South DJ's (Back 2 Back)",
-      "startDate": "2026-07-17T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "El Capulco 0.0"
-      },
-      "description": "Летний вечер в El Capulco 0.0 с музыкальной программой, призами и конкурсами на закате.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "South DJ's (Back 2 Back)"
-      },
-      "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1065,7 +1050,7 @@ footer {
     
     
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
