@@ -12,11 +12,17 @@ from bs4 import BeautifulSoup
 from generate_pages import (
     CITY_SLUGS,
     DOMAIN,
+    build_artist_alias_lookup,
     build_venue_alias_lookup,
     esc,
+    resolve_artist_slugs,
     resolve_venue_slugs,
 )
-from tests.conftest import KNOWN_MISSING_EVENT_PAGES, KNOWN_MISSING_VENUE_PAGES
+from tests.conftest import (
+    KNOWN_MISSING_ARTIST_PAGES,
+    KNOWN_MISSING_EVENT_PAGES,
+    KNOWN_MISSING_VENUE_PAGES,
+)
 
 # Сколько upcoming-событий проверять детально — весь список избыточен для
 # каждого прогона, репрезентативной выборки достаточно, чтобы ловить
@@ -161,6 +167,49 @@ class TestVenueAndCityPages:
         assert not missing, f"Нет сгенерированной страницы cities/<slug>.html для городов с событиями: {missing}"
 
 
+class TestArtistPages:
+    def test_pages_exist_for_artists_with_events(self, artists, events, project_root):
+        # Реплицируем логику generate_pages.main(): artist_slugs резолвится
+        # тем же разбиением поля artist, что и при сборке реестра.
+        events_copy = [dict(e) for e in events]
+        resolve_artist_slugs(events_copy, build_artist_alias_lookup(artists))
+        active_slugs = {s for e in events_copy for s in (e.get("artist_slugs") or [])}
+
+        missing = [
+            a["slug"] for a in artists
+            if a["slug"] in active_slugs
+            and a["slug"] not in KNOWN_MISSING_ARTIST_PAGES
+            and not (project_root / "artist" / a["slug"]).is_file()
+        ]
+        assert not missing, (
+            f"Нет сгенерированной страницы artist/<slug> для артистов с событиями: {missing}. "
+            f"Похоже, сайт нужно пересобрать: python3 generate_pages.py"
+        )
+
+    def test_no_orphan_artist_slugs(self, artists, events):
+        """artist_slugs события всегда указывает на реально существующего артиста."""
+        events_copy = [dict(e) for e in events]
+        resolve_artist_slugs(events_copy, build_artist_alias_lookup(artists))
+        known_slugs = {a["slug"] for a in artists}
+
+        orphans = {
+            s for e in events_copy for s in (e.get("artist_slugs") or [])
+            if s not in known_slugs
+        }
+        assert not orphans, f"artist_slugs ссылается на несуществующего артиста: {orphans}"
+
+    def test_jsonld_has_music_group(self, sample_artist, project_root):
+        page = project_root / "artist" / sample_artist["slug"]
+        soup = _soup(page)
+        found = False
+        for script in soup.find_all("script", type="application/ld+json"):
+            data = json.loads(script.string or "")
+            graph = data.get("@graph", [data])
+            if any(item.get("@type") == "MusicGroup" for item in graph if isinstance(item, dict)):
+                found = True
+        assert found, f"Нет MusicGroup в JSON-LD на странице артиста {sample_artist['slug']}"
+
+
 class TestInternalLinks:
     """Обходит index.html + сэмпл сгенерированных страниц, проверяет что все
     относительные ссылки/картинки резолвятся в существующие файлы на диске."""
@@ -174,11 +223,12 @@ class TestInternalLinks:
                 broken.append(url)
         assert not broken, f"Битые внутренние ссылки/картинки на index.html: {broken}"
 
-    def test_sample_pages_links_resolve(self, project_root, sample_event, sample_venue, sample_city):
+    def test_sample_pages_links_resolve(self, project_root, sample_event, sample_venue, sample_city, sample_artist):
         pages = [
             project_root / "event" / sample_event["id"],
             project_root / "venues" / sample_venue["slug"],
             project_root / "cities" / f"{sample_city['slug']}.html",
+            project_root / "artist" / sample_artist["slug"],
         ]
         broken = {}
         for page in pages:
