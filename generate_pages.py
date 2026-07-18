@@ -398,6 +398,11 @@ def make_city_page(
     # Берём за основу свежий index.html
     src = INDEX_FILE.read_text(encoding="utf-8")
 
+    # Страница живёт на уровень глубже (cities/<slug>.html) — относительный
+    # href="index.html" у логотипа вёл бы на несуществующий cities/index.html.
+    src = src.replace('<a href="index.html" class="nav-logo">', '<a href="/" class="nav-logo">')
+    src = src.replace('<a href="index.html" class="footer-logo">', '<a href="/" class="footer-logo">')
+
     # Мета-теги
     src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)
     src = re.sub(r'<meta name="description"[^>]+>', f'<meta name="description" content="{esc(description)}">', src)
@@ -467,6 +472,11 @@ def make_genre_page(
     jsonld_bc     = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (label, "")])
 
     src = GENRE_FILE.read_text(encoding="utf-8")
+
+    # Страница живёт на уровень глубже (genre/<slug>/) — относительный
+    # href="index.html" у логотипа вёл бы на несуществующий genre/<slug>/index.html.
+    src = src.replace('<a href="index.html" class="nav-logo">', '<a href="/" class="nav-logo">')
+    src = src.replace('<a href="index.html" class="footer-logo">', '<a href="/" class="footer-logo">')
 
     # Мета-теги
     src = re.sub(r'<title>.*?</title>', f'<title>{esc(title)}</title>', src)

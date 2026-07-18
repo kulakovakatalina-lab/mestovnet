@@ -39,11 +39,19 @@ def _internal_targets(soup):
             yield val
 
 
-def _resolve_local(project_root, url):
+def _resolve_local(project_root, page_path, url):
+    """Резолвит относительную ссылку так же, как это сделал бы браузер —
+    от папки страницы, где она встретилась, а не от корня проекта.
+    Раньше резолвили от project_root независимо от вложенности страницы,
+    из-за чего относительный href="index.html" на вложенных страницах
+    (genre/<slug>/, cities/<slug>.html) всегда "находил" корневой
+    index.html в тесте, хотя в браузере вёл на несуществующий файл."""
     path = url.split("#")[0].split("?")[0]
     if path.startswith(DOMAIN):
         path = path[len(DOMAIN):]
-    return project_root / path.lstrip("/")
+    if path.startswith("/"):
+        return project_root / path.lstrip("/")
+    return page_path.parent / path
 
 
 class TestEventPages:
@@ -166,31 +174,68 @@ class TestInternalLinks:
     относительные ссылки/картинки резолвятся в существующие файлы на диске."""
 
     def test_index_links_resolve(self, project_root):
-        soup = _soup(project_root / "index.html")
+        page = project_root / "index.html"
+        soup = _soup(page)
         broken = []
         for url in _internal_targets(soup):
-            target = _resolve_local(project_root, url)
+            target = _resolve_local(project_root, page, url)
             if not target.exists():
                 broken.append(url)
         assert not broken, f"Битые внутренние ссылки/картинки на index.html: {broken}"
 
     def test_sample_pages_links_resolve(self, project_root, sample_event, sample_venue, sample_city):
+        genre_pages = sorted((project_root / "genre").glob("*/index.html"))
+        assert genre_pages, "Нет ни одной сгенерированной страницы genre/<slug>/index.html"
         pages = [
             project_root / "event" / sample_event["id"],
             project_root / "venues" / sample_venue["slug"],
             project_root / "cities" / f"{sample_city['slug']}.html",
+            *genre_pages,
         ]
         broken = {}
         for page in pages:
             soup = _soup(page)
             page_broken = []
             for url in _internal_targets(soup):
-                target = _resolve_local(project_root, url)
+                target = _resolve_local(project_root, page, url)
                 if not target.exists():
                     page_broken.append(url)
             if page_broken:
                 broken[str(page)] = page_broken
         assert not broken, f"Битые внутренние ссылки/картинки: {broken}"
+
+    def test_logo_links_to_home(self, project_root, sample_event, sample_venue, sample_city):
+        """Регресс: на вложенных страницах (genre/<slug>/, cities/<slug>.html)
+        относительный href="index.html" у логотипа резолвится в файл САМОЙ
+        страницы (он существует!), а не на главную — просто "существует ли
+        файл" эту регрессию не ловит, нужно сверять именно с index.html."""
+        genre_pages = sorted((project_root / "genre").glob("*/index.html"))
+        assert genre_pages, "Нет ни одной сгенерированной страницы genre/<slug>/index.html"
+        pages = [
+            project_root / "index.html",
+            project_root / "event" / sample_event["id"],
+            project_root / "venues" / sample_venue["slug"],
+            project_root / "cities" / f"{sample_city['slug']}.html",
+            *genre_pages,
+        ]
+        home = (project_root / "index.html").resolve()
+        broken = {}
+        for page in pages:
+            soup = _soup(page)
+            page_broken = []
+            for cls in ("nav-logo", "footer-logo"):
+                el = soup.find("a", class_=cls)
+                if el is None:
+                    continue
+                href = el.get("href")
+                target = _resolve_local(project_root, page, href) if href else None
+                if target is not None and target.is_dir():
+                    target = target / "index.html"
+                if target is None or target.resolve() != home:
+                    page_broken.append((cls, href))
+            if page_broken:
+                broken[str(page)] = page_broken
+        assert not broken, f"Логотип не ведёт на главную: {broken}"
 
 
 class TestEscapeRegression:
