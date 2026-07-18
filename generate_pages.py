@@ -1602,7 +1602,6 @@ function eventRowHtml(ev, extraClass) {{
     </div>
     <div class="row-thumb">${{thumbHtml}}</div>
     <div>
-      <span class="pill pill-${{genre}}">${{GENRE_LABELS[genre]}}</span>
       <div class="row-artist">${{ev.venue || '—'}}</div>
       <div class="row-desc">${{ev.description || ''}}</div>
       <div class="row-venue">
