@@ -232,6 +232,21 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.08;
   color: var(--fg);
 }
+.event-info-artist-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 2px;
+}
+.artist-more-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+.artist-more-link:hover {
+  text-decoration: underline;
+}
 .event-info-venue {
   font-size: 14px;
   color: var(--muted);
@@ -1130,7 +1145,41 @@ let allUpcoming = [];
 let currentEventId = null;
 let shownCount = 4;
 let venueByAlias = {};  // raw venue string → {slug, address}
+let artistByAlias = {};  // raw artist name → {slug, name}
 let isSameGenreList = false;
+
+// Разбивает поле artist так же, как build_artists.py/generate_pages.py:
+// запятые верхнего уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
+function splitArtistField(artist) {
+  const parts = [];
+  let depth = 0, current = '';
+  for (const ch of artist) {
+    if (ch === '(' || ch === '«') { depth++; current += ch; }
+    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
+    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
+    else { current += ch; }
+  }
+  parts.push(current);
+  return parts;
+}
+const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
+function artistParts(name) {
+  return name.split(ARTIST_JOIN_RE)
+    .map(s => s.trim())
+    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
+}
+function resolveArtists(rawArtist) {
+  const found = [];
+  const seen = new Set();
+  splitArtistField(rawArtist || '').forEach(part => {
+    artistParts(part.trim()).forEach(name => {
+      const a = artistByAlias[name.trim()];
+      if (a && !seen.has(a.slug)) { seen.add(a.slug); found.push(a); }
+    });
+  });
+  return found;
+}
 
 async function load() {
   console.log('load started');
@@ -1144,10 +1193,11 @@ async function load() {
   console.log('id:', id, 'idx fallback:', idxFallback);
 
   try {
-    const [res, settingsRes, venuesRes] = await Promise.all([
+    const [res, settingsRes, venuesRes, artistsRes] = await Promise.all([
       fetch('/events.json'),
       fetch('/settings.json').catch(() => null),
-      fetch('/venues.json').catch(() => null)
+      fetch('/venues.json').catch(() => null),
+      fetch('/artists.json').catch(() => null)
     ]);
     console.log('fetch status:', res.status);
     const data = await res.json();
@@ -1173,6 +1223,14 @@ async function load() {
       venuesList.forEach(v => {
         (v.aliases || []).forEach(alias => { venueByAlias[alias] = v; });
         venueByAlias[v.name] = v;
+      });
+    }
+
+    if (artistsRes && artistsRes.ok) {
+      const artistsList = await artistsRes.json().catch(() => []);
+      artistsList.forEach(a => {
+        (a.aliases || []).forEach(alias => { artistByAlias[alias] = a; });
+        artistByAlias[a.name] = a;
       });
     }
 
@@ -1292,6 +1350,15 @@ function render(event) {
           <div class="event-info">
             <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
             <h1 class="event-info-artist">${escapeHtml(event.artist) || '—'}</h1>
+            ${(function(){
+              const matched = resolveArtists(event.artist || '');
+              if (!matched.length) return '';
+              return `<div class="event-info-artist-links">` + matched.map(a =>
+                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${
+                  matched.length > 1 ? `Подробнее: ${escapeHtml(a.name)}` : 'Подробнее об артисте'
+                }</a>`
+              ).join('') + `</div>`;
+            })()}
             <div class="event-info-venue">${(function(){
               const vd = venueByAlias[event.venue || ''];
               const name = escapeHtml(event.venue) || '—';
