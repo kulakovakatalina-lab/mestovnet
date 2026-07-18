@@ -235,7 +235,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-top: 2px;
+  margin-bottom: 32px;
 }
 .artist-more-link {
   font-size: 13px;
@@ -1308,13 +1308,6 @@ function render(event) {
           <div class="event-info">
             <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
             <h1 class="event-info-artist">${escapeHtml(event.artist) || '—'}</h1>
-            ${(function(){
-              const matched = resolveArtists(event.artist || '');
-              if (!matched.length) return '';
-              return `<div class="event-info-artist-links">` + matched.map(a =>
-                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${escapeHtml(a.name)}: подробнее</a>`
-              ).join('') + `</div>`;
-            })()}
             <div class="event-info-venue">${(function(){
               const vd = venueByAlias[event.venue || ''];
               const name = escapeHtml(event.venue) || '—';
@@ -1358,6 +1351,13 @@ function render(event) {
             <div class="section-label">О мероприятии</div>
             <p class="about-text">${escapeHtml(event.description) || 'Информация уточняется.'}</p>
             <div class="about-genre"><span class="pill pill-${event.genre}">${GENRE_LABELS[event.genre]}</span></div>
+            ${(function(){
+              const matched = resolveArtists(event.artist || '');
+              if (!matched.length) return '';
+              return `<div class="event-info-artist-links">` + matched.map(a =>
+                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${escapeHtml(a.name)}: подробнее</a>`
+              ).join('') + `</div>`;
+            })()}
 
             <div class="section-label">Место проведения</div>
             ${(function(){
