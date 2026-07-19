@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Паша Грей</h1>
-    
+    <p class="venue-description">Севастопольский артист с фирменным «камеди-роком»: акустические каверы на русский и зарубежный рок в «Рок-н-рольщиках», вход свободный.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
   

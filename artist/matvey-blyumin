@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Матвей Блюмин — концерты в Крыму, Севастополь, Научный · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Научный). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Научный). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/matvey-blyumin">
   <meta property="og:title" content="Матвей Блюмин — концерты в Крыму, Севастополь, Научный · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Научный). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Научный). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Матвей Блюмин"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-07-18T00:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Крым",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "«Реинкарнация Паганини» — программа из произведений XVIII–XIX веков и композиций великого гения скрипки. Победитель международных конкурсов, солист Московской и Петербургской филармоний.",
-      "image": "/images/events/9c2e06f07c0edc3e7720874ed2de9658.jpg"
     }
   ]
 }
@@ -986,10 +966,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Матвей Блюмин</h1>
-    
+    <p class="venue-description">Скрипач-виртуоз, победитель международных конкурсов, солист Московской и Петербургской филармоний. В Крыму играет в необычных местах: под куполом телескопа Крымской астрофизической обсерватории (проект «Космос Внутри») и с программой «Реинкарнация Паганини».</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Научный</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

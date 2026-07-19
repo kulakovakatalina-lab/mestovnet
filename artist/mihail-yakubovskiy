@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Михаил Якубовский</h1>
-    
+    <p class="venue-description">Участник концертов под открытым небом во дворце Дюльбер («Самая красивая музыка столетия») и музыкальных киновечеров в Симферополе.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь</span></div>
   </div>
   

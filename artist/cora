@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">CORA</h1>
-    
+    <p class="venue-description">Живой вокал на вечеринках ялтинского Sky Beach: открытие сезона и закрытые вечера у подогреваемого бассейна на Олимпе.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
   

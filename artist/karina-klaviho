@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Карина Клавихо</h1>
-    
+    <p class="venue-description">Танцовщица, участница этно- и суфийских программ: медитативные концерты-погружения с кружениями в «Арт-Ковчеге» и пространстве «Белбек» под Севастополем.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Бахчисарай</span></div>
   </div>
   

@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Андрей Рыбальченко</h1>
-    
+    <p class="venue-description">Этно-джазовые программы с восточными мотивами: дворец Дюльбер в Кореизе и камерные концерты на закате в долине под Севастополем.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
   

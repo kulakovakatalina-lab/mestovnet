@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Paper Plain</h1>
-    
+    <p class="venue-description">Севастопольский бэнд, играющий трибьют Nirvana: от акустики до полного электрического состава с барабанами, включая малоизвестные треки Курта Кобейна. Выступают в «Рок-н-рольщиках» и «Народном баре».</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Ялта</span></div>
   </div>
   

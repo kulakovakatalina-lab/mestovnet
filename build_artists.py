@@ -42,6 +42,15 @@ MIN_EVENTS = 2
 MERGE_GROUPS: list[tuple[str, str, list[str]]] = [
     ("skazhite-jazz", "Скажите Джаз",
      ["скажите джаз", "скажите jazz", "джазбэнд скажите jazz"]),
+    # «Ирина и Александр Круг»: сплит по « и » отрезал фамилию у Ирины Круг
+    ("irina-krug", "Ирина Круг", ["ирина"]),
+    # Название программы приклеено к имени коллектива в исходных постах
+    ("kubanskiy-kazachiy-hor", "Кубанский казачий хор",
+     ["кубанский казачий хор русь от края до края"]),
+    ("jawa", "Jawa", ["jawa хиты сектор газа"]),
+    ("elena-novikova", "Елена Новикова", ["елена новикова stand up"]),
+    # Каноническое написание с «ё» (частотный выбор дал вариант без неё)
+    ("chernyy-kofe", "Чёрный Кофе", ["черный кофе", "чёрный кофе"]),
 ]
 
 # ── Курируемый exclude-список ──────────────────────────────────────────────
@@ -101,6 +110,15 @@ def main():
     events = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
     venues = json.loads(VENUES_FILE.read_text(encoding="utf-8")) if VENUES_FILE.exists() else []
     venue_keys = load_venue_keys(venues)
+
+    # Рукописные описания из прошлой версии реестра переживают пересборку:
+    # мерджим по slug. Написание описаний — отдельный ручной шаг, скрипт
+    # их только сохраняет, никогда не генерирует и не затирает.
+    prev_descriptions: dict[str, str] = {}
+    if OUT_FILE.exists():
+        for prev in json.loads(OUT_FILE.read_text(encoding="utf-8")):
+            if prev.get("description"):
+                prev_descriptions[prev["slug"]] = prev["description"]
 
     # is_generic_artist проверяет ПОЛЕ ЦЕЛИКОМ — событие вида «Фёдор Старовойтов,
     # Вечеринка» им не ловится (в поле есть и реальное имя). Поэтому отдельно
@@ -223,7 +241,7 @@ def main():
             "venues": [v for v, _ in venues_played.most_common()],
             "first_seen": min(dates) if dates else None,
             "last_seen": max(dates) if dates else None,
-            "description": None,
+            "description": prev_descriptions.get(slug),
         })
 
     artists.sort(key=lambda a: -a["event_count"])
