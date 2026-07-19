@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Peskovsky</h1>
-    
+    <p class="venue-description">Диджей пляж-кафе Van Gogh на Массандровском пляже в Ялте — дневные сеты у моря.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
   

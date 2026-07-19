@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Руслан Сейдалиев</h1>
-    
+    <p class="venue-description">Участник концертов под открытым небом во дворце Дюльбер: «Песни любимого кино» и «Самая красивая музыка столетия» — вокал, фортепиано, труба и ударные с видом на море.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
   

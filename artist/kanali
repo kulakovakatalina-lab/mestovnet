@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Канальи</h1>
-    
+    <p class="venue-description">Симферопольская фолк-группа: зажигательные мелодии средневековья — Шотландия, Ирландия, Германия, Франция и Древняя Русь. Резиденты Jam Club.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
   

@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Юлия Бакшинская</h1>
-    
+    <p class="venue-description">Вокалистка: киносаундтреки («Богемская рапсодия», Mamma Mia, «Красотка») и авторская программа «О самом сокровенном» — живой вокал с фортепиано, саксофоном и ударными в камерной атмосфере.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
   </div>
   

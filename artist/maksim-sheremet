@@ -966,7 +966,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Максим Шеремет</h1>
-    
+    <p class="venue-description">Вокалист с авторской рок-программой и акустическими каверами на отечественный рок. Играет в севастопольских «Рок-н-рольщиках», вход свободный.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
   
