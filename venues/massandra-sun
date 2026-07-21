@@ -814,6 +814,7 @@ footer {
   pointer-events: none;
 }
 
+  html { scroll-behavior: smooth; }
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
@@ -908,10 +909,16 @@ footer {
     white-space: nowrap;
   }
   .venue-map-link:hover { background: var(--border); }
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
   .venue-map-wrap {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: clamp(20px, 3vw, 32px) var(--gutter) 0;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
   }
   #venue-map {
     width: 100%;
@@ -920,6 +927,7 @@ footer {
     border-radius: var(--radius);
     border: 1px solid var(--border);
     background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
   }
   .venue-map-loading {
     display: flex;
@@ -1064,8 +1072,6 @@ footer {
   
 </div>
 
-
-
 <div class="events-list" id="events-list">
   <div class="loading">Загрузка…</div>
 </div>
@@ -1074,6 +1080,8 @@ footer {
 
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
+
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>

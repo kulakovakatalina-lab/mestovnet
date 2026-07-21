@@ -75,9 +75,10 @@ class TestVenueCoordinates:
 
 
 class TestVenuePagePinMap:
-    """Мини-карта с пином на странице заведения (venues/<slug>) —
-    рендерится только когда у площадки есть lat/lon, с балуном
-    (название, адрес, кнопка «Маршрут» до текущей точки)."""
+    """Мини-карта с пином на странице заведения (venues/<slug>), под блоком
+    «Прошедшие» — рендерится только когда у площадки есть lat/lon, с балуном
+    (название, адрес, кнопка «Как проехать?» до текущей точки). Адрес в шапке
+    кликабелен и скроллит к #venue-map."""
 
     def _venue_html(self, project_root, slug):
         path = project_root / "venues" / slug
@@ -97,8 +98,31 @@ class TestVenuePagePinMap:
             assert "api-maps.yandex.ru" in html, f"{v['slug']}: не подключён Yandex Maps API"
             assert f'{v["lat"]}, {v["lon"]}]' in html, f"{v['slug']}: пин не на координатах заведения"
             route_marker = f"rtext=~{v['lat']},{v['lon']}"
-            assert route_marker in html, f"{v['slug']}: нет ссылки «Маршрут» до площадки"
-            assert "Маршрут" in html
+            assert route_marker in html, f"{v['slug']}: нет ссылки «Как проехать?» до площадки"
+            assert "Как проехать?" in html
+            # Кликабельный адрес-якорь на карту есть только там, где вообще
+            # есть строка адреса (у части площадок с координатами известен
+            # только город — venue-address-block для них не рендерится вовсе).
+            if v.get("address"):
+                assert 'href="#venue-map"' in html, (
+                    f"{v['slug']}: адрес в шапке не ссылается на #venue-map"
+                )
+
+    def test_map_is_placed_after_past_events_block(self, project_root, venues):
+        with_coords = [
+            v for v in venues
+            if isinstance(v.get("lat"), (int, float)) and isinstance(v.get("lon"), (int, float))
+            and (project_root / "venues" / v["slug"]).is_file()
+        ]
+        assert with_coords
+        for v in with_coords:
+            html = self._venue_html(project_root, v["slug"])
+            assert html.index('id="past-list"') < html.index('id="venue-map"'), (
+                f"{v['slug']}: карта должна идти после блока прошедших событий"
+            )
+            assert html.index('id="venue-map"') < html.index("<footer>"), (
+                f"{v['slug']}: карта должна быть перед подвалом страницы"
+            )
 
     def test_venues_without_coords_have_no_map(self, project_root, venues):
         without_coords = [

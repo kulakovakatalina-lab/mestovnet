@@ -821,26 +821,32 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
         (name, ""),
     ])
 
-    # Адрес + карта — под заголовком слева
-    if address:
-        maps_q   = f"{address}, {city}, Крым" if city else f"{address}, Крым"
-        maps_url = f"https://yandex.ru/maps/?text={maps_q.replace(' ', '+')}"
-        address_block = (
-            f'<div class="venue-address-block">'
-            f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
-            f'<a href="{esc(maps_url)}" target="_blank" rel="noopener" class="venue-map-link">'
-            f'Открыть на Яндекс\xa0Картах</a>'
-            f'</div>'
-        )
-    else:
-        address_block = ""
-
     # Мини-карта с пином заведения — только если есть координаты
     # (geocode_venues.py заполняет lat/lon не для всех площадок).
     lat, lon = venue.get("lat"), venue.get("lon")
     has_coords = isinstance(lat, (int, float)) and isinstance(lon, (int, float))
     address_line = ", ".join(p for p in [address, city] if p) or "Крым"
     route_url = f"https://yandex.ru/maps/?rtext=~{lat},{lon}" if has_coords else ""
+
+    # Адрес + карта — под заголовком слева. Если есть координаты, адрес —
+    # кликабельная ссылка-якорь на #venue-map (карта вынесена под блок
+    # прошедших событий), иначе — обычный текст.
+    if address:
+        maps_q   = f"{address}, {city}, Крым" if city else f"{address}, Крым"
+        maps_url = f"https://yandex.ru/maps/?text={maps_q.replace(' ', '+')}"
+        address_text = (
+            f'<a href="#venue-map" class="venue-hero-address venue-hero-address-link">'
+            f'{esc(address)}, {esc(city)}</a>'
+        ) if has_coords else f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
+        address_block = (
+            f'<div class="venue-address-block">'
+            f'{address_text}'
+            f'<a href="{esc(maps_url)}" target="_blank" rel="noopener" class="venue-map-link">'
+            f'Открыть на Яндекс\xa0Картах</a>'
+            f'</div>'
+        )
+    else:
+        address_block = ""
 
     venue_map_section = (
         f'<div class="venue-map-wrap">'
@@ -866,7 +872,7 @@ ymaps.ready(function() {{
   var balloonContent = '<div class="balloon-card">'
     + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
     + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Маршрут</a>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
     + '</div>';
   var map = new ymaps.Map(el, {{
     center: [{lat}, {lon}],
@@ -924,6 +930,7 @@ ymaps.ready(function() {{
   {jsonld_bc}
   <style>
 {css}
+  html {{ scroll-behavior: smooth; }}
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {{
     max-width: var(--max-w);
@@ -1018,10 +1025,16 @@ ymaps.ready(function() {{
     white-space: nowrap;
   }}
   .venue-map-link:hover {{ background: var(--border); }}
+  .venue-hero-address-link {{
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }}
+  .venue-hero-address-link:hover {{ color: var(--accent); }}
   .venue-map-wrap {{
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: clamp(20px, 3vw, 32px) var(--gutter) 0;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
   }}
   #venue-map {{
     width: 100%;
@@ -1030,6 +1043,7 @@ ymaps.ready(function() {{
     border-radius: var(--radius);
     border: 1px solid var(--border);
     background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
   }}
   .venue-map-loading {{
     display: flex;
@@ -1143,8 +1157,6 @@ ymaps.ready(function() {{
   {hero_right}
 </div>
 
-{venue_map_section}
-
 <div class="events-list" id="events-list">
   <div class="loading">Загрузка…</div>
 </div>
@@ -1153,6 +1165,8 @@ ymaps.ready(function() {{
 
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
+
+{venue_map_section}
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
