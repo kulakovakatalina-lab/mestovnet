@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-21",
+    "time": null,
+    "artist": "Грань, Моё Побережье, The Enegal",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "description": "Рок-вечер с хитами Metallica, Rammstein, «Арии», «Короля и Шута», «Алисы» и других. Выступят группы «Грань», «Моё Побережье» и The Enegal.",
+    "source_channel": "clubjam",
+    "source_url": "https://t.me/clubjam/1069",
+    "post_date": "2026-07-20",
+    "image": "/images/events/c35ffbfcb24a80654f3dc025adcf319d.jpg",
+    "genre": "метал",
+    "id": "805ea8a1",
+    "updated_at": "2026-07-21T05:29:03.934719+00:00"
+  },
+  {
     "date": "2026-07-23",
     "time": "14:00",
     "artist": "EL, Busha",
@@ -57,6 +74,23 @@
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-24",
     "updated_at": "1970-01-01T00:00:00+00:00"
+  },
+  {
+    "date": "2026-07-24",
+    "time": "19:00",
+    "artist": "Светлана Рубина",
+    "event_type": "концерт",
+    "venue": "БЦ «Царская Пристань»",
+    "source_city": "Севастополь",
+    "price": "2500₽",
+    "description": "Концерт «Времена года» — четыре сезона Вивальди в исполнении скрипачки Светланы Рубиной с дегустацией вин, с видом на южную бухту Севастополя.",
+    "source_channel": "afisha_crimea",
+    "source_url": "https://t.me/afisha_crimea/8041",
+    "post_date": "2026-07-20",
+    "image": "/images/events/3d7756193db58af8fb3343e8465ed285.jpg",
+    "genre": "классика",
+    "id": "9ac23ecf",
+    "updated_at": "2026-07-21T05:29:03.934719+00:00"
   },
   {
     "date": "2026-07-24",
@@ -172,6 +206,23 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
     "updated_at": "2026-07-17T12:04:57.203987+00:00"
+  },
+  {
+    "date": "2026-07-25",
+    "time": "18:00",
+    "artist": "Анастасия Грас",
+    "event_type": "вечеринка",
+    "venue": "Усадьба «Родное гнездо»",
+    "source_city": "Севастополь",
+    "price": "1000₽",
+    "description": "BBQ-вечеринка в усадьбе «Родное гнездо» с гриль-меню от бренд-шефа Павла Галича, живой музыкой от Анастасии Грас и дегустацией вин усадьбы.",
+    "source_channel": "usadbarodnoegnezdo",
+    "source_url": "https://t.me/usadbarodnoegnezdo/3446",
+    "post_date": "2026-07-20",
+    "image": "/images/events/97028b70581036c0f1949058856bf625.jpg",
+    "genre": "другое",
+    "id": "15937169",
+    "updated_at": "2026-07-21T05:29:03.934719+00:00"
   },
   {
     "id": "f937c01c",
