@@ -1023,10 +1023,16 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
   .archive-link a:hover {{ color: var(--fg); background: var(--surface); }}
   .past-heading {{ max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }}
   .loading {{ padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }}
-  @media (max-width: 640px) {{
-    .event-row {{ grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }}
-    .row-thumb {{ width: 60px; height: 60px; }}
-    .row-right {{ display: none; }}
+  @media (max-width: 820px) {{
+    .event-row {{ grid-template-columns: 64px 64px 1fr; grid-template-rows: auto auto; }}
+    .row-thumb {{ width: 56px; height: 56px; }}
+    .row-right {{ grid-column: 2 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 8px; }}
+  }}
+  @media (max-width: 600px) {{
+    .event-row {{ grid-template-columns: 48px 1fr; grid-template-rows: auto auto; gap: 12px; padding: 16px var(--gutter); }}
+    .row-thumb {{ display: none; }}
+    .row-date-day {{ font-size: 26px; }}
+    .row-right {{ grid-column: 2; flex-wrap: wrap; gap: 8px; }}
     .row-artist {{ font-size: 16px; }}
     .genre-hero {{ justify-content: center; text-align: center; }}
     .genre-hero-eyebrow {{ text-align: center; }}
@@ -1472,10 +1478,16 @@ def make_artist_page(artist: dict, all_events: list[dict], today: str,
   .archive-link a:hover {{ color: var(--fg); background: var(--surface); }}
   .past-heading {{ max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }}
   .loading {{ padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }}
-  @media (max-width: 640px) {{
-    .event-row {{ grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }}
-    .row-thumb {{ width: 60px; height: 60px; }}
-    .row-right {{ display: none; }}
+  @media (max-width: 820px) {{
+    .event-row {{ grid-template-columns: 64px 64px 1fr; grid-template-rows: auto auto; }}
+    .row-thumb {{ width: 56px; height: 56px; }}
+    .row-right {{ grid-column: 2 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 8px; }}
+  }}
+  @media (max-width: 600px) {{
+    .event-row {{ grid-template-columns: 48px 1fr; grid-template-rows: auto auto; gap: 12px; padding: 16px var(--gutter); }}
+    .row-thumb {{ display: none; }}
+    .row-date-day {{ font-size: 26px; }}
+    .row-right {{ grid-column: 2; flex-wrap: wrap; gap: 8px; }}
     .row-artist {{ font-size: 16px; }}
     .genre-hero {{ justify-content: center; text-align: center; }}
     .genre-hero-eyebrow {{ text-align: center; }}

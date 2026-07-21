@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Рок-н-рольщики в Симферополе — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики в Симферополе, в Симферополе. 4 ближайших событий. Расписание и билеты.">
+  <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
-  <meta property="og:title" content="Рок-н-рольщики в Симферополе — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики в Симферополе, в Симферополе. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Рок-н-рольщики в Симферополе",
+      "name": "Рок-н-рольщики (Симферополь)",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
@@ -42,7 +42,7 @@
       "startDate": "2026-07-24T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе"
+        "name": "Рок-н-рольщики (Симферополь)"
       },
       "description": "День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
       "performer": {
@@ -57,7 +57,7 @@
       "startDate": "2026-07-25T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе"
+        "name": "Рок-н-рольщики (Симферополь)"
       },
       "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
       "performer": {
@@ -72,7 +72,7 @@
       "startDate": "2026-07-26T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе"
+        "name": "Рок-н-рольщики (Симферополь)"
       },
       "description": "Бесплатная дегустация авторских настоек. Презентация меню.",
       "performer": {
@@ -87,7 +87,7 @@
       "startDate": "2026-07-31T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе"
+        "name": "Рок-н-рольщики (Симферополь)"
       },
       "description": "Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.",
       "performer": {
@@ -100,7 +100,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Рок-н-рольщики в Симферополе"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Рок-н-рольщики (Симферополь)"}]}
 </script>
   <style>
 
@@ -182,6 +182,18 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   transition: color 0.12s, background 0.12s;
 }
 .nav-genre:hover { color: var(--fg); background: var(--border); }
+
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
 
 .genre-strip-mobile {
   display: none;
@@ -1009,10 +1021,16 @@ footer {
   .archive-link a:hover { color: var(--fg); background: var(--surface); }
   .past-heading { max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .loading { padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }
-  @media (max-width: 640px) {
-    .event-row { grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }
-    .row-thumb { width: 60px; height: 60px; }
-    .row-right { display: none; }
+  @media (max-width: 820px) {
+    .event-row { grid-template-columns: 64px 64px 1fr; grid-template-rows: auto auto; }
+    .row-thumb { width: 56px; height: 56px; }
+    .row-right { grid-column: 2 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 8px; }
+  }
+  @media (max-width: 600px) {
+    .event-row { grid-template-columns: 48px 1fr; grid-template-rows: auto auto; gap: 12px; padding: 16px var(--gutter); }
+    .row-thumb { display: none; }
+    .row-date-day { font-size: 26px; }
+    .row-right { grid-column: 2; flex-wrap: wrap; gap: 8px; }
     .row-artist { font-size: 16px; }
     .genre-hero { justify-content: center; text-align: center; }
     .genre-hero-eyebrow { text-align: center; }
@@ -1028,6 +1046,7 @@ footer {
   <a href="/" class="nav-logo">местов<em>.нет</em></a>
   <div class="nav-sep"></div>
   <div class="nav-genres" id="nav-genres"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
     <span>Подписаться</span>
@@ -1062,7 +1081,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Рок-н-рольщики в Симферополе</h1>
+    <h1 class="genre-hero-title">Рок-н-рольщики (Симферополь)</h1>
     <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
     <div class="venue-address-block"><span class="venue-hero-address">ул. Екатерининская, 14, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Екатерининская,+14,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
@@ -1084,7 +1103,7 @@ footer {
 </footer>
 
 <script>
-const VENUE_ALIASES = ["Рок-н-рольщики в Симферополе", "Рок-н-рольщики в Симферополе"];
+const VENUE_ALIASES = ["Рок-н-рольщики в Симферополе", "Рок-н-рольщики (Симферополь)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
