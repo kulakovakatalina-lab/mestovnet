@@ -72,3 +72,44 @@ class TestVenueCoordinates:
                     and self.LON_RANGE[0] <= lon <= self.LON_RANGE[1]):
                 bad.append((v["slug"], lat, lon))
         assert not bad, f"Координаты вне разумных границ Крыма: {bad}"
+
+
+class TestVenuePagePinMap:
+    """Мини-карта с пином на странице заведения (venues/<slug>) —
+    рендерится только когда у площадки есть lat/lon, с балуном
+    (название, адрес, кнопка «Маршрут» до текущей точки)."""
+
+    def _venue_html(self, project_root, slug):
+        path = project_root / "venues" / slug
+        assert path.is_file(), f"Нет сгенерированной страницы venues/{slug}"
+        return path.read_text(encoding="utf-8")
+
+    def test_venues_with_coords_render_pin_map(self, project_root, venues):
+        with_coords = [
+            v for v in venues
+            if isinstance(v.get("lat"), (int, float)) and isinstance(v.get("lon"), (int, float))
+            and (project_root / "venues" / v["slug"]).is_file()
+        ]
+        assert with_coords, "Нет ни одной сгенерированной страницы заведения с координатами"
+        for v in with_coords:
+            html = self._venue_html(project_root, v["slug"])
+            assert 'id="venue-map"' in html, f"{v['slug']}: нет контейнера #venue-map"
+            assert "api-maps.yandex.ru" in html, f"{v['slug']}: не подключён Yandex Maps API"
+            assert f'{v["lat"]}, {v["lon"]}]' in html, f"{v['slug']}: пин не на координатах заведения"
+            route_marker = f"rtext=~{v['lat']},{v['lon']}"
+            assert route_marker in html, f"{v['slug']}: нет ссылки «Маршрут» до площадки"
+            assert "Маршрут" in html
+
+    def test_venues_without_coords_have_no_map(self, project_root, venues):
+        without_coords = [
+            v for v in venues
+            if not (isinstance(v.get("lat"), (int, float)) and isinstance(v.get("lon"), (int, float)))
+            and (project_root / "venues" / v["slug"]).is_file()
+        ]
+        assert without_coords, "Нет ни одной сгенерированной страницы заведения без координат"
+        for v in without_coords:
+            html = self._venue_html(project_root, v["slug"])
+            assert 'id="venue-map"' not in html, f"{v['slug']}: не должно быть карты без координат"
+            assert "api-maps.yandex.ru" not in html, (
+                f"{v['slug']}: не должен подключаться Yandex Maps API без координат"
+            )
