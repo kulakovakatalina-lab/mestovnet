@@ -185,20 +185,40 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 var(--gutter) 16px;
-  display: flex;
-  gap: 6px;
 }
-.filter-pill {
-  padding: 7px 15px;
-  border: 1px solid var(--border);
-  border-radius: 100px;
+.switch-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.switch-label {
   font-size: 13px;
   font-weight: 500;
-  color: var(--muted);
-  transition: all 0.12s;
+  color: var(--fg);
 }
-.filter-pill:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
-.filter-pill.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.switch {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border-radius: 100px;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.switch[aria-checked="true"] { background: var(--accent); }
+.switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px oklch(18% 0.012 250 / 0.3);
+  transition: transform 0.15s;
+}
+.switch[aria-checked="true"] .switch-thumb { transform: translateX(16px); }
 
 footer {
   border-top: 1px solid var(--border);
@@ -391,9 +411,13 @@ footer {
   <p class="map-hero-sub" id="hero-sub">Загрузка…</p>
 </div>
 
-<div class="map-filters" role="group" aria-label="Фильтр площадок">
-  <button class="filter-pill" data-mode="all" type="button" aria-pressed="false">Все</button>
-  <button class="filter-pill active" data-mode="withEvents" type="button" aria-pressed="true">Только с концертами в афише</button>
+<div class="map-filters">
+  <label class="switch-row">
+    <span class="switch-label">Только с концертами в афише</span>
+    <button class="switch" id="filter-switch" type="button" role="switch" aria-checked="true">
+      <span class="switch-thumb"></span>
+    </button>
+  </label>
 </div>
 
 <div class="map-wrap">
@@ -475,7 +499,7 @@ function countUpcomingByVenue(events, settings, venueLookup) {
 let mapInstance = null;
 let clustererInstance = null;
 let allPlacemarkVenues = [];
-let filterMode = 'withEvents'; // 'all' | 'withEvents' — по умолчанию скрываем площадки без предстоящих концертов
+let onlyWithEvents = true; // по умолчанию скрываем площадки без предстоящих концертов
 
 function makePlacemark(v) {
   const url = `/venues/${v.slug}`;
@@ -498,7 +522,7 @@ function makePlacemark(v) {
 }
 
 function renderPlacemarks() {
-  const visible = filterMode === 'withEvents'
+  const visible = onlyWithEvents
     ? allPlacemarkVenues.filter(v => v.upcomingCount >= 1)
     : allPlacemarkVenues;
 
@@ -511,7 +535,7 @@ function renderPlacemarks() {
     : 'Ничего не найдено — попробуйте снять фильтр';
 
   if (placemarks.length) {
-    mapInstance.setBounds(clustererInstance.getBounds(), { checkZoomRange: true, zoomMargin: 40 });
+    mapInstance.setBounds(clustererInstance.getBounds(), { zoomMargin: 40 });
   }
 }
 
@@ -538,19 +562,18 @@ function initMap(venues) {
   });
   mapInstance.geoObjects.add(clustererInstance);
 
-  renderPlacemarks();
+  // requestAnimationFrame: сразу после создания карты контейнер иногда ещё
+  // не отрисован, и setBounds внутри renderPlacemarks() считает зум в 0
+  // (весь мир) — даём браузеру кадр на layout перед первым fit-to-bounds.
+  requestAnimationFrame(() => renderPlacemarks());
 }
 
-document.querySelectorAll('.filter-pill').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (!clustererInstance || btn.dataset.mode === filterMode) return;
-    filterMode = btn.dataset.mode;
-    document.querySelectorAll('.filter-pill').forEach(b => {
-      b.classList.toggle('active', b === btn);
-      b.setAttribute('aria-pressed', String(b === btn));
-    });
-    renderPlacemarks();
-  });
+document.querySelector('.switch-row').addEventListener('click', (e) => {
+  e.preventDefault();
+  if (!clustererInstance) return;
+  onlyWithEvents = !onlyWithEvents;
+  document.getElementById('filter-switch').setAttribute('aria-checked', String(onlyWithEvents));
+  renderPlacemarks();
 });
 
 ymaps.ready(async () => {
