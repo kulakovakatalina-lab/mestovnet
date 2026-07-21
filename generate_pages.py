@@ -828,23 +828,15 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     address_line = ", ".join(p for p in [address, city] if p) or "Крым"
     route_url = f"https://yandex.ru/maps/?rtext=~{lat},{lon}" if has_coords else ""
 
-    # Адрес + карта — под заголовком слева. Если есть координаты, адрес —
+    # Адрес — между заголовком и описанием. Если есть координаты, адрес —
     # кликабельная ссылка-якорь на #venue-map (карта вынесена под блок
     # прошедших событий), иначе — обычный текст.
     if address:
-        maps_q   = f"{address}, {city}, Крым" if city else f"{address}, Крым"
-        maps_url = f"https://yandex.ru/maps/?text={maps_q.replace(' ', '+')}"
         address_text = (
             f'<a href="#venue-map" class="venue-hero-address venue-hero-address-link">'
             f'{esc(address)}, {esc(city)}</a>'
         ) if has_coords else f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
-        address_block = (
-            f'<div class="venue-address-block">'
-            f'{address_text}'
-            f'<a href="{esc(maps_url)}" target="_blank" rel="noopener" class="venue-map-link">'
-            f'Открыть на Яндекс\xa0Картах</a>'
-            f'</div>'
-        )
+        address_block = f'<div class="venue-address-block">{address_text}</div>'
     else:
         address_block = ""
 
@@ -1010,21 +1002,6 @@ ymaps.ready(function() {{
     overflow-wrap: break-word;
     word-break: break-word;
   }}
-  .venue-map-link {{
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
-  }}
-  .venue-map-link:hover {{ background: var(--border); }}
   .venue-hero-address-link {{
     text-decoration: underline dotted;
     text-underline-offset: 3px;
@@ -1151,8 +1128,8 @@ ymaps.ready(function() {{
       {eyebrow_city}
     </div>
     <h1 class="genre-hero-title">{esc(name)}</h1>
-    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
     {address_block}
+    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
   </div>
   {hero_right}
 </div>

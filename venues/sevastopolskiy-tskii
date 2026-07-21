@@ -970,21 +970,6 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-map-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
-  }
-  .venue-map-link:hover { background: var(--border); }
   .venue-hero-address-link {
     text-decoration: underline dotted;
     text-underline-offset: 3px;
@@ -1142,8 +1127,8 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Севастопольский ЦКиИ</h1>
+    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Ленина, 25, Севастополь</a></div>
     <p class="venue-description">За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.</p>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Ленина, 25, Севастополь</a><a href="https://yandex.ru/maps/?text=ул.+Ленина,+25,+Севастополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>

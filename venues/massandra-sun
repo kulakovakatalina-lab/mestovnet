@@ -894,21 +894,6 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-map-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
-  }
-  .venue-map-link:hover { background: var(--border); }
   .venue-hero-address-link {
     text-decoration: underline dotted;
     text-underline-offset: 3px;
@@ -1066,8 +1051,8 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Массандра Sun</h1>
-    <p class="venue-description">За один уик-энд здесь прошло 3 концерта в трёх разных жанрах — этно, джаз и поп. Данных пока мало для более подробного портрета.</p>
     
+    <p class="venue-description">За один уик-энд здесь прошло 3 концерта в трёх разных жанрах — этно, джаз и поп. Данных пока мало для более подробного портрета.</p>
   </div>
   
 </div>
