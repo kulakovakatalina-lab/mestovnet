@@ -100,6 +100,18 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 }
 .nav-genre:hover { color: var(--fg); background: var(--border); }
 
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
+
 .genre-strip-mobile {
   display: none;
   overflow-x: auto;
@@ -821,7 +833,7 @@ footer {
       "startDate": "2026-07-24T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
@@ -867,7 +879,7 @@ footer {
       "startDate": "2026-07-25T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
@@ -965,7 +977,7 @@ footer {
       "startDate": "2026-07-26T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
@@ -1063,7 +1075,7 @@ footer {
       "startDate": "2026-07-31T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики в Симферополе",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
@@ -1559,6 +1571,7 @@ footer {
   <a href="/" class="nav-logo">местов<em>.нет</em></a>
   <div class="nav-sep"></div>
   <div class="nav-genres" id="nav-genres"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
     <span>Подписаться</span>
@@ -1952,11 +1965,11 @@ load();
 <div class="card" onclick="window.open('https://t.me/clubjam/1069','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Грань, Моё Побережье, The Enegal</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Рок-вечер с хитами Metallica, Rammstein, «Арии», «Короля и Шута», «Алисы» и других. Выступят группы «Грань», «Моё Побережье» и The Enegal.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">метал</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1069" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/c35ffbfcb24a80654f3dc025adcf319d.jpg" alt="Грань, Моё Побережье, The Enegal" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>24 июля, чт</h2>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Игорь Симдянкин</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Игорь Симдянкин" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Игорь Симдянкин</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">День памяти Михаила Горшенёва. Акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Игорь Симдянкин" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>25 июля, пт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/thomas-mraz-2026-07-25?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Thomas Mraz</div><div class="card-venue">Депо<span class="city">· Симферополь</span></div><div class="card-description">Thomas Mraz в Депо, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/thomas-mraz-2026-07-25?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/451270406988b08b5e25ffbabb5a6966.jpg" alt="Thomas Mraz" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «САБ»</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Группа «САБ»" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «САБ»</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Группа «САБ»" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>26 июля, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/kontsert-pogruzhenie-pod-kupolom-teleskopa?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:30</div><div class="card-body"><div class="card-artist">Концерт-погружение под куполом телескопа</div><div class="card-venue">Крымская астрофизическая обсерватория<span class="city">· Симферополь</span></div><div class="card-description">Андрей Ясинский — музыкант-мультиинструменталист, композитор, преподаватель музыки, путешественник из Таганрога, который после полугодового тура по России вернётся с концертом в обсерватории.
@@ -1984,7 +1997,7 @@ load();
 Приходите за эмоциями, за мурашками! До встречи.
 
 Фото и автограф сессия производится за 2 часа до времени, указанного в билете. Не опаздывайте — после концерта фото с артистом недоступно.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хип-хоп</span><span class="tag price">от 2 400 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/chestniy-6024572/" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/e6cb139ea7013442a7f07b5e35a4d5d7.jpg" alt="Честный" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Дегустация настоек</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Бесплатная дегустация авторских настоек. Презентация меню.</div><div class="card-footer"><span class="tag type">другое</span><span class="tag genre">другое</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Дегустация настоек" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Дегустация настоек</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Бесплатная дегустация авторских настоек. Презентация меню.</div><div class="card-footer"><span class="tag type">другое</span><span class="tag genre">другое</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Дегустация настоек" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>31 июля, чт</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/taisiia-povalii-2026-07-31?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Таисия Повалий</div><div class="card-venue">Музыкальный театр<span class="city">· Симферополь</span></div><div class="card-description">Таисия Повалий в Музыкальный театр, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/taisiia-povalii-2026-07-31?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/875b3dc713315349104d35bcee6233d9.jpg" alt="Таисия Повалий" loading="lazy" onerror="this.remove()"></div></div>
@@ -1994,7 +2007,7 @@ load();
 Елене 56, она успешна в карьере, мудра в материнстве и отношениях, но совсем не умеет ценить себя, слышать свои чувства. Для того, чтобы разобраться в этом вопросе, она отправляется в путешествие со всей семьей. Естественно, к морю.
 
 «Такое лето» - это Час юмора от самой ироничной комикессы российского стендап сообщества.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">юмор</span><span class="tag price">от 1500 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/elena-novikova-stand-up-6042443/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/72545316d471370f37a291b84627bcee.jpg" alt="Елена Новикова. Stand Up" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «Кальвадос»</div><div class="card-venue">Рок-н-рольщики в Симферополе<span class="city">· Симферополь</span></div><div class="card-description">Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Группа «Кальвадос»" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/rocknroll_82/193','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Группа «Кальвадос»</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/193" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/db97efe8913a933b2fd182cda237c4d3.png" alt="Группа «Кальвадос»" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>2 августа, сб</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/naik-borzov-2026-08-02?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Найк Борзов</div><div class="card-venue">Centrum<span class="city">· Симферополь</span></div><div class="card-description">Найк Борзов на Roof Live — звезда инди-сцены даст большой концерт на живой крыше твоего города. Любимые песни и музыкальные сюрпризы, невероятно теплая атмосфера и бесконечные космические энергии.

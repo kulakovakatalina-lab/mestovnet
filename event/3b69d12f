@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Хай&#x27;Петри», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Группа «Хай&#x27;Петри», Рок-н-рольщики (Севастополь), в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Хай&#x27;Петри» — Бар рок-н-ролльщики, Севастополь, 18 июля · Местов.Нет</title>
+<title>Группа «Хай&#x27;Петри» — Рок-н-рольщики (Севастополь), 18 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -94,6 +94,17 @@ a { color: inherit; text-decoration: none; }
   transition: color 0.12s, background 0.12s;
 }
 .nav-genre:hover { color: var(--fg); background: var(--border); }
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
 .nav-genre.active {
   color: var(--accent);
   background: oklch(58% 0.18 255 / 0.08);
@@ -987,8 +998,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/3b69d12f">
-<meta property="og:title" content="Группа «Хай&#x27;Петри» — Бар рок-н-ролльщики, Севастополь, 18 июля · Местов.Нет">
-<meta property="og:description" content="Группа «Хай&#x27;Петри», Бар рок-н-ролльщики, в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Группа «Хай&#x27;Петри» — Рок-н-рольщики (Севастополь), 18 июля · Местов.Нет">
+<meta property="og:description" content="Группа «Хай&#x27;Петри», Рок-н-рольщики (Севастополь), в Севастополе, 18 июля, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
 <script type="application/ld+json">
@@ -1001,7 +1012,7 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-07-18T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Бар рок-н-ролльщики",
+        "name": "Рок-н-рольщики (Севастополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
@@ -1030,6 +1041,7 @@ a { color: inherit; text-decoration: none; }
   <a href="/" class="nav-logo">местов<em>.нет</em></a>
   <div class="nav-sep"></div>
   <div class="nav-genres" id="nav-genres"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
     <span>Подписаться</span>
