@@ -835,6 +835,53 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     else:
         address_block = ""
 
+    # Мини-карта с пином заведения — только если есть координаты
+    # (geocode_venues.py заполняет lat/lon не для всех площадок).
+    lat, lon = venue.get("lat"), venue.get("lon")
+    has_coords = isinstance(lat, (int, float)) and isinstance(lon, (int, float))
+    address_line = ", ".join(p for p in [address, city] if p) or "Крым"
+    route_url = f"https://yandex.ru/maps/?rtext=~{lat},{lon}" if has_coords else ""
+
+    venue_map_section = (
+        f'<div class="venue-map-wrap">'
+        f'<div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div>'
+        f'</div>'
+    ) if has_coords else ""
+
+    venue_map_script = (
+        f'''<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {{
+  function escapeHtml(s) {{
+    return String(s).replace(/[&<>"']/g, function(c) {{
+      return ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}})[c];
+    }});
+  }}
+  var name = {_json.dumps(name, ensure_ascii=False)};
+  var addr = {_json.dumps(address_line, ensure_ascii=False)};
+  var routeUrl = {_json.dumps(route_url, ensure_ascii=False)};
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Маршрут</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {{
+    center: [{lat}, {lon}],
+    zoom: 16,
+    controls: ['zoomControl'],
+  }});
+  var placemark = new ymaps.Placemark([{lat}, {lon}], {{
+    hintContent: name,
+    balloonContent: balloonContent,
+  }}, {{ preset: 'islands#blueDotIcon' }});
+  map.geoObjects.add(placemark);
+}});
+</script>''' if has_coords else ""
+    )
+
     # Кол-во актуальных событий — справа
     event_count  = len(upcoming)
     count_word   = "событие" if event_count == 1 else "события" if event_count < 5 else "событий"
@@ -971,6 +1018,43 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     white-space: nowrap;
   }}
   .venue-map-link:hover {{ background: var(--border); }}
+  .venue-map-wrap {{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) 0;
+  }}
+  #venue-map {{
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }}
+  .venue-map-loading {{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }}
+  .balloon-card {{ min-width: 200px; }}
+  .balloon-name {{ font-weight: 700; margin-bottom: 4px; }}
+  .balloon-addr {{ font-size: 13px; color: var(--muted); margin-bottom: 10px; }}
+  .balloon-route {{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    transition: filter 0.12s;
+  }}
+  .balloon-route:hover {{ filter: brightness(1.08); }}
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    {{ background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }}
   .bg-folk    {{ background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }}
@@ -1059,6 +1143,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
   {hero_right}
 </div>
 
+{venue_map_section}
+
 <div class="events-list" id="events-list">
   <div class="loading">Загрузка…</div>
 </div>
@@ -1072,6 +1158,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
+
+{venue_map_script}
 
 <script>
 const VENUE_ALIASES = {aliases_json};
