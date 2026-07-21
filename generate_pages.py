@@ -821,19 +821,64 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
         (name, ""),
     ])
 
-    # Адрес + карта — под заголовком слева
+    # Мини-карта с пином заведения — только если есть координаты
+    # (geocode_venues.py заполняет lat/lon не для всех площадок).
+    lat, lon = venue.get("lat"), venue.get("lon")
+    has_coords = isinstance(lat, (int, float)) and isinstance(lon, (int, float))
+    address_line = ", ".join(p for p in [address, city] if p) or "Крым"
+    route_url = f"https://yandex.ru/maps/?rtext=~{lat},{lon}" if has_coords else ""
+
+    # Адрес — между заголовком и описанием. Если есть координаты, адрес —
+    # кликабельная ссылка-якорь на #venue-map (карта вынесена под блок
+    # прошедших событий), иначе — обычный текст.
     if address:
-        maps_q   = f"{address}, {city}, Крым" if city else f"{address}, Крым"
-        maps_url = f"https://yandex.ru/maps/?text={maps_q.replace(' ', '+')}"
-        address_block = (
-            f'<div class="venue-address-block">'
-            f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
-            f'<a href="{esc(maps_url)}" target="_blank" rel="noopener" class="venue-map-link">'
-            f'Открыть на Яндекс\xa0Картах</a>'
-            f'</div>'
-        )
+        address_text = (
+            f'<a href="#venue-map" class="venue-hero-address venue-hero-address-link">'
+            f'{esc(address)}, {esc(city)}</a>'
+        ) if has_coords else f'<span class="venue-hero-address">{esc(address)}, {esc(city)}</span>'
+        address_block = f'<div class="venue-address-block">{address_text}</div>'
     else:
         address_block = ""
+
+    venue_map_section = (
+        f'<div class="venue-map-wrap">'
+        f'<div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div>'
+        f'</div>'
+    ) if has_coords else ""
+
+    venue_map_script = (
+        f'''<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {{
+  function escapeHtml(s) {{
+    return String(s).replace(/[&<>"']/g, function(c) {{
+      return ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}})[c];
+    }});
+  }}
+  var name = {_json.dumps(name, ensure_ascii=False)};
+  var addr = {_json.dumps(address_line, ensure_ascii=False)};
+  var routeUrl = {_json.dumps(route_url, ensure_ascii=False)};
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {{
+    center: [{lat}, {lon}],
+    zoom: 16,
+    controls: ['zoomControl'],
+  }});
+  var placemark = new ymaps.Placemark([{lat}, {lon}], {{
+    hintContent: name,
+    balloonContent: balloonContent,
+  }}, {{ preset: 'islands#blueDotIcon' }});
+  map.geoObjects.add(placemark);
+}});
+</script>''' if has_coords else ""
+    )
 
     # Кол-во актуальных событий — справа
     event_count  = len(upcoming)
@@ -877,6 +922,7 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
   {jsonld_bc}
   <style>
 {css}
+  html {{ scroll-behavior: smooth; }}
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {{
     max-width: var(--max-w);
@@ -956,21 +1002,50 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     overflow-wrap: break-word;
     word-break: break-word;
   }}
-  .venue-map-link {{
+  .venue-hero-address-link {{
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }}
+  .venue-hero-address-link:hover {{ color: var(--accent); }}
+  .venue-map-wrap {{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
+  }}
+  #venue-map {{
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }}
+  .venue-map-loading {{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }}
+  .balloon-card {{ min-width: 200px; }}
+  .balloon-name {{ font-weight: 700; margin-bottom: 4px; }}
+  .balloon-addr {{ font-size: 13px; color: var(--muted); margin-bottom: 10px; }}
+  .balloon-route {{
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    justify-content: center;
+    padding: 7px 14px;
     font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
     border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
+    transition: filter 0.12s;
   }}
-  .venue-map-link:hover {{ background: var(--border); }}
+  .balloon-route:hover {{ filter: brightness(1.08); }}
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    {{ background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }}
   .bg-folk    {{ background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }}
@@ -1053,8 +1128,8 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
       {eyebrow_city}
     </div>
     <h1 class="genre-hero-title">{esc(name)}</h1>
-    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
     {address_block}
+    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
   </div>
   {hero_right}
 </div>
@@ -1068,10 +1143,14 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
+{venue_map_section}
+
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
+
+{venue_map_script}
 
 <script>
 const VENUE_ALIASES = {aliases_json};

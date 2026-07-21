@@ -875,6 +875,7 @@ footer {
   pointer-events: none;
 }
 
+  html { scroll-behavior: smooth; }
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
@@ -954,21 +955,50 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-map-link {
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
+  .venue-map-wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
+  }
+  #venue-map {
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+  .venue-map-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .balloon-card { min-width: 200px; }
+  .balloon-name { font-weight: 700; margin-bottom: 4px; }
+  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .balloon-route {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    justify-content: center;
+    padding: 7px 14px;
     font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
     border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
+    transition: filter 0.12s;
   }
-  .venue-map-link:hover { background: var(--border); }
+  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -1082,8 +1112,8 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Рок-н-рольщики (Симферополь)</h1>
+    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Екатерининская, 14, Симферополь</a></div>
     <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Екатерининская, 14, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Екатерининская,+14,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
@@ -1097,10 +1127,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Рок-н-рольщики (Симферополь)";
+  var addr = "ул. Екатерининская, 14, Симферополь";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.951251,34.098202";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.951251, 34.098202],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.951251, 34.098202], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["Рок-н-рольщики в Симферополе", "Рок-н-рольщики (Симферополь)"];
