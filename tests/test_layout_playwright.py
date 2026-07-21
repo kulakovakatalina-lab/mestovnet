@@ -87,6 +87,7 @@ def _pages_to_check(sample_event, sample_venue, sample_city):
         "event": f"/event/{sample_event['id']}",
         "venue": f"/venues/{sample_venue['slug']}",
         "city": f"/cities/{sample_city['slug']}.html",
+        "map": "/map.html",
         "404": "/404.html",
     }
 

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110385036', 'ym');
+
+    ym(110385036, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Местов.Нет — Карта площадок</title>
+<meta name="description" content="Карта площадок живой музыки Крыма — все бары, клубы и залы, где проходят концерты, на одной карте.">
+<link rel="canonical" href="https://mestov.net/map.html">
+<meta property="og:title" content="Местов.Нет — Карта площадок">
+<meta property="og:description" content="Карта площадок живой музыки Крыма — все бары, клубы и залы, где проходят концерты, на одной карте.">
+<link rel="icon" type="image/png" href="/images/fav.png">
+<style>
+:root {
+  --bg:      oklch(99% 0.002 240);
+  --surface: oklch(100% 0 0);
+  --fg:      oklch(18% 0.012 250);
+  --muted:   oklch(54% 0.012 250);
+  --border:  oklch(92% 0.005 250);
+  --accent:  oklch(58% 0.18 255);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 18px;
+  --nav-h:     56px;
+  --gutter:    clamp(16px, 4vw, 48px);
+  --max-w:     1440px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; background: none; border: none; cursor: pointer; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: oklch(99% 0.002 240 / 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+  gap: 8px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  flex-shrink: 0;
+  color: var(--fg);
+}
+.nav-logo em { color: var(--accent); font-style: normal; }
+.nav-sep { width: 1px; height: 20px; background: var(--border); margin: 0 8px; flex-shrink: 0; }
+
+.nav-map-link {
+  flex-shrink: 0;
+  margin-right: auto;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.08);
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+/* —— Кнопка подписки в шапке —— */
+.nav-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: filter 0.12s, transform 0.1s;
+}
+.nav-cta:hover { filter: brightness(1.08); }
+.nav-cta:active { transform: scale(0.96); }
+.nav-cta:focus { outline: none; }
+.nav-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+.map-hero {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 44px) var(--gutter) clamp(20px, 3vw, 28px);
+}
+.map-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.map-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4.5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.map-hero-sub { font-size: 14.5px; color: var(--muted); }
+
+.map-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter) clamp(28px, 4vw, 44px);
+}
+#map {
+  width: 100%;
+  height: min(72vh, 720px);
+  min-height: 380px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.map-loading, .map-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.balloon-card { min-width: 200px; }
+.balloon-name { font-weight: 700; margin-bottom: 4px; }
+.balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.balloon-count { font-size: 12.5px; color: var(--muted); margin-bottom: 10px; }
+.balloon-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  transition: filter 0.12s;
+}
+.balloon-more:hover { filter: brightness(1.08); }
+
+.map-filters {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter) 16px;
+}
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 15px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.12s;
+}
+.filter-toggle:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
+.filter-toggle.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--fg);
+}
+.footer-logo em { color: var(--accent); font-style: normal; }
+.footer-note { font-size: 13px; color: var(--muted); }
+
+/* —— Модалка подписки —— */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: oklch(18% 0.012 250 / 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 32px 32px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 70px oklch(18% 0.012 250 / 0.28);
+  transform: translateY(14px) scale(0.98);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-overlay.open .modal { transform: translateY(0) scale(1); }
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+  transition: background 0.12s, color 0.12s;
+}
+.modal-close:hover { background: var(--border); color: var(--fg); }
+.modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.1);
+  border-radius: 100px;
+}
+.modal-badge svg { width: 13px; height: 13px; }
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.modal-lead {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.modal-list { list-style: none; margin-bottom: 28px; }
+.modal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 9px 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  border-top: 1px solid var(--border);
+}
+.modal-list li:first-child { border-top: none; }
+.modal-list .ico {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: oklch(58% 0.18 255 / 0.12);
+  color: var(--accent);
+  font-size: 13px;
+}
+.modal-list b { font-weight: 600; }
+.modal-list span { color: var(--muted); }
+.modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius);
+  transition: filter 0.12s, transform 0.1s;
+}
+.modal-cta:hover { filter: brightness(1.08); }
+.modal-cta:active { transform: scale(0.99); }
+.modal-cta svg { width: 18px; height: 18px; }
+.modal-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  :root { --nav-h: 52px; }
+  footer { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">местов<em>.нет</em></a>
+  <div class="nav-sep"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
+  <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+    <span>Подписаться</span>
+  </button>
+</nav>
+
+<div class="modal-overlay" id="sub-modal" role="dialog" aria-modal="true" aria-labelledby="sub-modal-title" onclick="if(event.target===this)closeSubModal()">
+  <div class="modal">
+    <button class="modal-close" type="button" onclick="closeSubModal()" aria-label="Закрыть">&times;</button>
+    <span class="modal-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+      Telegram-бот
+    </span>
+    <h2 class="modal-title" id="sub-modal-title">Концерты — прямо в Telegram</h2>
+    <p class="modal-lead">Бот «Местов.Нет» сам пришлёт подборку живой музыки Крыма — без листания афиш и пропущенных вечеров.</p>
+    <ul class="modal-list">
+      <li><span class="ico">♫</span><span><b>Под ваш вкус.</b> Выбираете жанры и города — приходит только то, что интересно.</span></li>
+      <li><span class="ico">↻</span><span><b>В удобном ритме.</b> Раз в день, раз в неделю или по запросу — как захотите.</span></li>
+      <li><span class="ico">✓</span><span><b>Бесплатно и без спама.</b> Только концерты, отписаться можно в одно касание.</span></li>
+    </ul>
+    <a class="modal-cta" href="https://t.me/mestovnet_bot" target="_blank" rel="noopener" onclick="closeSubModal()">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+      Открыть в Telegram
+    </a>
+    <p class="modal-note">@mestovnet_bot · подписка за 10 секунд</p>
+  </div>
+</div>
+
+<div class="map-hero">
+  <div class="map-hero-eyebrow">Крым · живая музыка</div>
+  <h1 class="map-hero-title">Карта площадок</h1>
+  <p class="map-hero-sub" id="hero-sub">Загрузка…</p>
+</div>
+
+<div class="map-filters">
+  <button class="filter-toggle" id="filter-toggle" type="button" aria-pressed="false">
+    Только с 2+ концертами в афише
+  </button>
+</div>
+
+<div class="map-wrap">
+  <div id="map"><div class="map-loading">Загрузка карты…</div></div>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">местов<em>.нет</em></a>
+  <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+function openSubModal() {
+  document.getElementById('sub-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeSubModal() {
+  document.getElementById('sub-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSubModal();
+});
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function pluralRu(n, one, few, many) {
+  const mod10 = n % 10, mod100 = n % 100;
+  if (mod10 === 1 && mod100 !== 11) return one;
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 10 || mod100 >= 20)) return few;
+  return many;
+}
+
+function todayStr() {
+  const d = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+async function loadJson(url) {
+  const resp = await fetch(url, { cache: 'no-store' });
+  if (!resp.ok) throw new Error(url + ': ' + resp.status);
+  return resp.json();
+}
+
+// events.json не хранит venue_slug (это поле generate_pages.py считает
+// на лету и не сохраняет) — восстанавливаем его так же, как билд-скрипт:
+// точное совпадение сырой строки venue с aliases/name заведения.
+function buildVenueLookup(venues) {
+  const lookup = {};
+  for (const v of venues) {
+    for (const alias of v.aliases || []) lookup[alias] = v.slug;
+    lookup[v.name] = v.slug;
+  }
+  return lookup;
+}
+
+// Считаем предстоящие концерты по заведению — те же правила, что и на
+// страницах жанров/заведений: скрытые (hidden) события не считаем,
+// остальное — по venue_slug и дате >= сегодня.
+function countUpcomingByVenue(events, settings, venueLookup) {
+  const hiddenSet = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
+  const today = todayStr();
+  const counts = {};
+  for (const e of events) {
+    const url = e.source_url || '';
+    if (hiddenSet.has(url) || cancelledSet.has(url) || e.cancelled) continue;
+    const slug = venueLookup[(e.venue || '').trim()];
+    if (!slug || !e.date || e.date < today) continue;
+    counts[slug] = (counts[slug] || 0) + 1;
+  }
+  return counts;
+}
+
+let mapInstance = null;
+let clustererInstance = null;
+let allPlacemarkVenues = [];
+let showOnlyMultiple = false;
+
+function makePlacemark(v) {
+  const url = `/venues/${v.slug}`;
+  const countText = v.upcomingCount
+    ? `${v.upcomingCount} ${pluralRu(v.upcomingCount, 'концерт', 'концерта', 'концертов')} в афише`
+    : 'нет концертов в афише';
+  const balloonContent = `
+    <div class="balloon-card">
+      <div class="balloon-name">${escapeHtml(v.name)}</div>
+      <div class="balloon-addr">${escapeHtml(v.address || v.city || '')}</div>
+      <div class="balloon-count">${countText}</div>
+      <a class="balloon-more" href="${url}">Подробнее</a>
+    </div>`;
+
+  return new ymaps.Placemark(
+    [v.lat, v.lon],
+    { hintContent: v.name, balloonContent },
+    { preset: 'islands#blueDotIcon' }
+  );
+}
+
+function renderPlacemarks() {
+  const visible = showOnlyMultiple
+    ? allPlacemarkVenues.filter(v => v.upcomingCount > 1)
+    : allPlacemarkVenues;
+
+  clustererInstance.removeAll();
+  const placemarks = visible.map(makePlacemark);
+  clustererInstance.add(placemarks);
+
+  document.getElementById('hero-sub').textContent = visible.length
+    ? `${visible.length} площадок на карте`
+    : 'Ничего не найдено — попробуйте снять фильтр';
+
+  if (placemarks.length) {
+    mapInstance.setBounds(clustererInstance.getBounds(), { checkZoomRange: true, zoomMargin: 40 });
+  }
+}
+
+function initMap(venues) {
+  allPlacemarkVenues = venues.filter(v => typeof v.lat === 'number' && typeof v.lon === 'number');
+
+  if (!allPlacemarkVenues.length) {
+    document.getElementById('hero-sub').textContent = 'Координаты площадок ещё не готовы';
+    return;
+  }
+
+  const mapEl = document.getElementById('map');
+  mapEl.innerHTML = '';
+
+  mapInstance = new ymaps.Map(mapEl, {
+    center: [45.05, 34.35], // географический центр Крыма
+    zoom: 8,
+    controls: ['zoomControl', 'geolocationControl'],
+  });
+
+  clustererInstance = new ymaps.Clusterer({
+    preset: 'islands#invertedBlueClusterIcons',
+    groupByCoordinates: false,
+  });
+  mapInstance.geoObjects.add(clustererInstance);
+
+  renderPlacemarks();
+}
+
+document.getElementById('filter-toggle').addEventListener('click', () => {
+  if (!clustererInstance) return;
+  showOnlyMultiple = !showOnlyMultiple;
+  const btn = document.getElementById('filter-toggle');
+  btn.classList.toggle('active', showOnlyMultiple);
+  btn.setAttribute('aria-pressed', String(showOnlyMultiple));
+  renderPlacemarks();
+});
+
+ymaps.ready(async () => {
+  try {
+    const [venues, events, settings] = await Promise.all([
+      loadJson('/venues.json'),
+      loadJson('/events.json'),
+      loadJson('/settings.json').catch(() => ({})),
+    ]);
+    const venueLookup = buildVenueLookup(venues);
+    const counts = countUpcomingByVenue(events, settings || {}, venueLookup);
+    const enriched = venues.map(v => ({ ...v, upcomingCount: counts[v.slug] || 0 }));
+    initMap(enriched);
+  } catch (err) {
+    document.getElementById('map').innerHTML =
+      '<div class="map-error">Не удалось загрузить карту заведений</div>';
+    console.error(err);
+  }
+});
+</script>
+</body>
+</html>
