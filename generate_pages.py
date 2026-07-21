@@ -21,11 +21,14 @@ from datetime import date, datetime
 from typing import Optional
 from pathlib import Path
 
+import parser as parser_mod  # переиспользуем _split_artist_field/_artist_parts
+
 # ── Конфиг ──────────────────────────────────────────────────────────────────
 
 BASE_DIR      = Path(__file__).parent
 EVENTS_FILE   = BASE_DIR / "events.json"
 VENUES_FILE   = BASE_DIR / "venues.json"
+ARTISTS_FILE  = BASE_DIR / "artists.json"
 SETTINGS_FILE = BASE_DIR / "settings.json"
 INDEX_FILE    = BASE_DIR / "index.html"
 EVENT_FILE    = BASE_DIR / "event.html"
@@ -662,6 +665,42 @@ def resolve_venue_slugs(events: list[dict], lookup: dict[str, str]) -> None:
         e["venue_slug"] = lookup.get(raw)
 
 
+# ── Артисты ──────────────────────────────────────────────────────────────────
+
+def load_artists() -> list[dict]:
+    if ARTISTS_FILE.exists():
+        return json.loads(ARTISTS_FILE.read_text(encoding="utf-8"))
+    return []
+
+
+def build_artist_alias_lookup(artists: list[dict]) -> dict[str, str]:
+    """Возвращает словарь raw_artist_name → artist_slug."""
+    lookup: dict[str, str] = {}
+    for a in artists:
+        for alias in a.get("aliases", []):
+            lookup[alias.strip()] = a["slug"]
+        lookup[a["name"].strip()] = a["slug"]
+    return lookup
+
+
+def resolve_artist_slugs(events: list[dict], lookup: dict[str, str]) -> None:
+    """Добавляет поле artist_slugs (список — в одном событии бывает несколько
+    артистов) к каждому событию (in-place). Использует то же разбиение поля
+    artist, что и build_artists.py при сборке реестра (запятые верхнего
+    уровня + и/&/+/feat./ft./при участии/с участием), чтобы имена резолвились
+    так же, как они группировались."""
+    for e in events:
+        raw = (e.get("artist") or "").strip()
+        slugs: list[str] = []
+        if raw:
+            for part in parser_mod._split_artist_field(raw):
+                for name in parser_mod._artist_parts(part.strip()):
+                    slug = lookup.get(name.strip())
+                    if slug and slug not in slugs:
+                        slugs.append(slug)
+        e["artist_slugs"] = slugs
+
+
 def render_past_event_list(events: list[dict], today: str,
                            custom_names: Optional[dict] = None) -> str:
     past = [e for e in events if e.get("date") and e["date"] < today]
@@ -1176,10 +1215,500 @@ load();
 </html>'''
 
 
+def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str,
+                       custom_names: Optional[dict] = None) -> str:
+    items: list[dict] = []
+
+    performer: dict = {"@type": "MusicGroup", "name": artist["name"]}
+    items.append(performer)
+
+    for e in upcoming[:20]:
+        if not e.get("date"):
+            continue
+        src_url = e.get("source_url") or ""
+        custom_name = (custom_names or {}).get(src_url)
+        time_ = e.get("time") or "00:00"
+        item: dict = {
+            "@type":     "MusicEvent",
+            "name":      custom_name or artist["name"],
+            "startDate": f'{e["date"]}T{time_}:00+03:00',
+            "performer": {"@type": "MusicGroup", "name": artist["name"]},
+            "location":  {
+                "@type": "MusicVenue",
+                "name":  e.get("venue") or "Крым",
+                "address": {
+                    "@type":            "PostalAddress",
+                    "addressLocality":  e.get("source_city") or "Крым",
+                    "addressCountry":   "RU",
+                },
+            },
+        }
+        if e.get("description"):
+            item["description"] = e["description"]
+        if e.get("image"):
+            item["image"] = e["image"]
+        items.append(item)
+
+    schema = {"@context": "https://schema.org", "@graph": items}
+    return (
+        '<script type="application/ld+json">\n'
+        + json.dumps(schema, ensure_ascii=False, indent=2)
+        + "\n</script>"
+    )
+
+
+def make_artist_page(artist: dict, all_events: list[dict], today: str,
+                     css: str, custom_names: Optional[dict] = None) -> str:
+    import json as _json
+    slug    = artist["slug"]
+    name    = artist["name"]
+    aliases = list(artist.get("aliases", [])) + [name]
+
+    a_events = [e for e in all_events if slug in (e.get("artist_slugs") or [])]
+    upcoming = sorted(
+        [e for e in a_events if (e.get("date") or "") >= today],
+        key=lambda e: (e.get("date") or "9999", e.get("time") or "99:99"),
+    )
+
+    cities = artist.get("cities") or []
+    city_note = f", {', '.join(cities[:3])}" if cities else ""
+    title       = f"{name} — концерты в Крыму{city_note} · Местов.Нет"
+    description = (f"Расписание концертов {name} в Крыму"
+                   + (f" ({', '.join(cities[:3])})" if cities else "")
+                   + f". {len(upcoming)} ближайших событий.")
+    canonical   = f"{DOMAIN}/artist/{slug}"
+    jsonld      = make_artist_jsonld(artist, upcoming, today, custom_names)
+    jsonld_bc   = make_jsonld_breadcrumbs([
+        ("Местов.Нет", "/"),
+        (name, ""),
+    ])
+
+    # Города, где играет — под заголовком слева
+    if cities:
+        cities_block = (
+            f'<div class="venue-address-block">'
+            f'<span class="venue-hero-address">Играет: {esc(", ".join(cities))}</span>'
+            f'</div>'
+        )
+    else:
+        cities_block = ""
+
+    event_count  = len(upcoming)
+    count_word   = "событие" if event_count == 1 else "события" if event_count < 5 else "событий"
+    hero_right   = (
+        f'<div class="genre-hero-meta">'
+        f'<div class="genre-hero-count">{event_count}</div>'
+        f'<div class="genre-hero-count-label">{count_word}</div>'
+        f'</div>'
+    ) if event_count else ""
+
+    aliases_json = _json.dumps(aliases, ensure_ascii=False)
+    nav_block    = _extract_nav_block()
+
+    return f'''<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){{
+        m[i]=m[i]||function(){{(m[i].a=m[i].a||[]).push(arguments)}};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {{if (document.scripts[j].src === r) {{ return; }}}}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    }})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110385036', 'ym');
+
+    ym(110385036, 'init', {{ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true}});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)}</title>
+  <meta name="description" content="{esc(description)}">
+  <link rel="canonical" href="{canonical}">
+  <meta property="og:title" content="{esc(title)}">
+  <meta property="og:description" content="{esc(description)}">
+  <meta property="og:type" content="website">
+  {jsonld}
+  {jsonld_bc}
+  <style>
+{css}
+  /* ── Герой артиста (переиспользуем genre-hero/venue CSS) ── */
+  .genre-hero {{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 64px) var(--gutter) clamp(28px, 4vw, 44px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }}
+  .genre-hero-info {{
+    min-width: 0;
+    max-width: 100%;
+  }}
+  .genre-hero-eyebrow {{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }}
+  .genre-hero-eyebrow a {{ color: var(--muted); text-decoration: none; }}
+  .genre-hero-eyebrow a:hover {{ color: var(--accent); }}
+  .genre-hero-title {{
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5.5vw, 68px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.0;
+    color: var(--fg);
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }}
+  .venue-description {{
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 14px;
+    max-width: 640px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }}
+  .genre-hero-meta {{
+    text-align: right;
+    flex-shrink: 0;
+  }}
+  .genre-hero-count {{
+    font-family: var(--font-mono);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: -0.05em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }}
+  .genre-hero-count-label {{
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }}
+  .venue-address-block {{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 14px;
+    max-width: 100%;
+  }}
+  .venue-hero-address {{
+    font-size: 14px;
+    color: var(--muted);
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }}
+  /* ── event-row CSS (из genre.html) ── */
+  .bg-jazz    {{ background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }}
+  .bg-folk    {{ background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }}
+  .bg-rock    {{ background: linear-gradient(135deg, oklch(22% 0.04 15),  oklch(32% 0.06 20)); }}
+  .bg-blues   {{ background: linear-gradient(135deg, oklch(22% 0.06 270), oklch(30% 0.10 265)); }}
+  .bg-classic {{ background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }}
+  .bg-pop     {{ background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }}
+  .events-list {{ max-width: var(--max-w); margin: 0 auto; }}
+  .event-row {{
+    display: grid;
+    grid-template-columns: 80px 80px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    padding: clamp(18px, 3vw, 28px) var(--gutter);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }}
+  .event-row:hover {{ background: var(--surface); }}
+  .event-row.past {{ opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }}
+  .event-row.past:hover {{ opacity: 1; filter: none; }}
+  .row-date {{ flex-shrink: 0; text-align: center; }}
+  .row-date-day {{ font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }}
+  .row-date-month {{ font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }}
+  .row-date-dow {{ font-size: 11px; color: var(--muted); margin-top: 2px; }}
+  .row-thumb {{ width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }}
+  .row-thumb svg {{ opacity: 0.22; }}
+  .row-thumb img {{ width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 8px; }}
+  .row-artist {{ font-family: var(--font-display); font-size: clamp(18px, 2.5vw, 24px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; color: var(--fg); margin-bottom: 6px; }}
+  .row-desc {{ font-size: 14px; color: var(--muted); line-height: 1.55; max-width: 560px; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+  .row-venue {{ display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }}
+  .row-venue-dot {{ width: 3px; height: 3px; border-radius: 50%; background: var(--border); flex-shrink: 0; }}
+  .row-right {{ text-align: right; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }}
+  .row-time {{ font-family: var(--font-mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }}
+  .row-price {{ font-size: 14px; font-weight: 600; color: var(--fg); }}
+  .row-btn {{ display: inline-flex; align-items: center; padding: 8px 16px; background: oklch(58% 0.18 255 / 0.10); color: var(--accent); border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; transition: opacity 0.12s; white-space: nowrap; text-decoration: none; }}
+  .row-btn:hover {{ opacity: 0.80; }}
+  .pill {{ display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 0.02em; }}
+  .pill-jazz    {{ background: oklch(58% 0.18 255 / 0.10); color: var(--accent); }}
+  .pill-rock    {{ background: oklch(55% 0.15 15  / 0.10); color: oklch(50% 0.15 15); }}
+  .pill-folk    {{ background: oklch(50% 0.12 150 / 0.10); color: oklch(46% 0.12 150); }}
+  .pill-blues   {{ background: oklch(52% 0.14 270 / 0.10); color: oklch(50% 0.16 270); }}
+  .pill-classic {{ background: oklch(52% 0.10 60  / 0.10); color: oklch(46% 0.10 60); }}
+  .pill-pop     {{ background: oklch(58% 0.16 320 / 0.10); color: oklch(54% 0.16 320); }}
+  .archive-link a {{ display: flex; align-items: center; justify-content: center; gap: 6px; padding: 22px var(--gutter); font-size: 14px; font-weight: 500; color: var(--muted); border-top: 1px solid var(--border); transition: color 0.12s, background 0.12s; }}
+  .archive-link a:hover {{ color: var(--fg); background: var(--surface); }}
+  .past-heading {{ max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }}
+  .loading {{ padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }}
+  @media (max-width: 640px) {{
+    .event-row {{ grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }}
+    .row-thumb {{ width: 60px; height: 60px; }}
+    .row-right {{ display: none; }}
+    .row-artist {{ font-size: 16px; }}
+    .genre-hero {{ justify-content: center; text-align: center; }}
+    .genre-hero-eyebrow {{ text-align: center; }}
+    .venue-address-block {{ align-items: center; }}
+    .genre-hero-meta {{ width: 100%; text-align: center; }}
+    .genre-hero-count {{ font-size: 36px; }}
+  }}
+  </style>
+</head>
+<body>
+
+{nav_block}
+
+<div class="genre-hero">
+  <div class="genre-hero-info">
+    <div class="genre-hero-eyebrow">
+      <a href="/">Местов.Нет</a>
+      · Артист
+    </div>
+    <h1 class="genre-hero-title">{esc(name)}</h1>
+    {f'<p class="venue-description">{esc(artist.get("description", ""))}</p>' if artist.get("description") else ""}
+    {cities_block}
+  </div>
+  {hero_right}
+</div>
+
+<div class="events-list" id="events-list">
+  <div class="loading">Загрузка…</div>
+</div>
+
+<div class="archive-link" id="archive-link"></div>
+
+<div class="past-heading" id="past-heading" hidden>Прошедшие</div>
+<div class="events-list" id="past-list"></div>
+
+<footer>
+  <a href="/" class="footer-logo">местов<em>.нет</em></a>
+  <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
+</footer>
+
+<script>
+const ARTIST_ALIASES = {aliases_json};
+const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
+
+const GENRE_MAP = {{
+  'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
+  'инди-рок':'rock','метал':'rock','инди':'rock','авторская':'rock',
+  'классика':'classic','хоровая':'classic','медитативная':'classic',
+  'поп':'pop','поп-рок':'pop','лаунж':'pop','хип-хоп':'pop',
+  'каверы':'pop','юмор':'pop','шоу':'pop','интерактив':'pop',
+  'этно':'folk','фолк-метал':'folk','народная':'folk','блюз':'blues'
+}};
+const GENRE_LABELS = {{ jazz:'Джаз', rock:'Рок', folk:'Фолк', blues:'Блюз', classic:'Классика', pop:'Поп' }};
+const MONTHS_GEN = ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+const DOW = ['вс','пн','вт','ср','чт','пт','сб'];
+
+function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
+function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
+function parseDateTime(e) {{
+  const d = parseDate(e.date);
+  const m = e.time && e.time.match(/(\d{{1,2}}):(\d{{2}})/);
+  if (m) d.setHours(+m[1], +m[2], 0, 0); else d.setHours(23, 59, 59, 0);
+  return d;
+}}
+function formatDate(d) {{
+  return {{ day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] }};
+}}
+function priceText(p) {{
+  if (!p) return 'Вход свободный';
+  const low = p.toLowerCase();
+  return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
+}}
+
+// Разбивает поле artist так же, как build_artists.py: запятые верхнего
+// уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
+function splitArtistField(artist) {{
+  const parts = [];
+  let depth = 0, current = '';
+  for (const ch of artist) {{
+    if (ch === '(' || ch === '«') {{ depth++; current += ch; }}
+    else if (ch === ')' || ch === '»') {{ depth = Math.max(0, depth - 1); current += ch; }}
+    else if (ch === ',' && depth === 0) {{ parts.push(current); current = ''; }}
+    else {{ current += ch; }}
+  }}
+  parts.push(current);
+  return parts;
+}}
+const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
+function artistParts(name) {{
+  return name.split(ARTIST_JOIN_RE)
+    .map(s => s.trim())
+    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
+}}
+function eventMatchesArtist(ev) {{
+  const raw = ev.artist || '';
+  if (!raw) return false;
+  for (const part of splitArtistField(raw)) {{
+    for (const name of artistParts(part.trim())) {{
+      if (ARTIST_ALIAS_SET.has(name.trim())) return true;
+    }}
+  }}
+  return false;
+}}
+function otherArtistNames(ev) {{
+  const raw = ev.artist || '';
+  if (!raw) return [];
+  const names = [];
+  for (const part of splitArtistField(raw)) {{
+    for (const name of artistParts(part.trim())) {{
+      const n = name.trim();
+      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
+    }}
+  }}
+  return names;
+}}
+
+function applySettings(data, settings) {{
+  const hiddenSet = new Set(settings.hidden || []);
+  const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
+    images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
+    descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
+  return data.map((e, i) => {{
+    const url = e.source_url || '';
+    if (hiddenSet.has(url)) return null;
+    const ev = {{ ...e }};
+    if (url in ov.names)        ev.artist      = ov.names[url];
+    if (url in ov.times)        ev.time        = ov.times[url];
+    if (url in ov.prices)       ev.price       = ov.prices[url];
+    if (url in ov.images)       ev.image       = ov.images[url] === null ? null : ov.images[url];
+    if (url in ov.cities)       ev.source_city = ov.cities[url];
+    if (url in ov.venues)       ev.venue       = ov.venues[url];
+    if (url in ov.descriptions) ev.description = ov.descriptions[url];
+    if (url in ov.genres)       ev.genre       = ov.genres[url];
+    return ev;
+  }}).filter(Boolean);
+}}
+
+const genreIcon = (g) => `<svg width="40" height="40" viewBox="0 0 80 80" fill="none"><path d="M28 56V28l36-8v8L36 36v20a8 8 0 1 1-8 0z" fill="white" opacity=".25"/><circle cx="28" cy="56" r="8" fill="white" opacity=".25"/><circle cx="64" cy="28" r="8" fill="white" opacity=".25"/></svg>`;
+
+function eventRowHtml(ev, extraClass) {{
+  const genre = mapGenre(ev.genre);
+  const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
+  const price = ev.priceDisplay || priceText(ev.price);
+  const others = otherArtistNames(ev);
+  const thumbHtml = ev.image
+    ? `<img src="${{ev.image}}" alt="${{ev.venue || ''}}" loading="lazy">`
+    : `<div class="bg-${{genre}}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${{genreIcon(genre)}}</div>`;
+  return `<a href="/event/${{ev.id}}" class="event-row${{extraClass ? ' ' + extraClass : ''}}" data-genre="${{genre}}">
+    <div class="row-date">
+      <div class="row-date-day">${{fmt.day}}</div>
+      <div class="row-date-month">${{fmt.month}}</div>
+      <div class="row-date-dow">${{fmt.dow}}</div>
+    </div>
+    <div class="row-thumb">${{thumbHtml}}</div>
+    <div>
+      <div class="row-artist">${{ev.venue || '—'}}</div>
+      <div class="row-desc">${{ev.description || ''}}</div>
+      <div class="row-venue">
+        ${{others.length ? `<span>${{others.join(', ')}}</span><span class="row-venue-dot"></span>` : ''}}
+        <span>${{ev.source_city || '—'}}</span>
+      </div>
+    </div>
+    <div class="row-right">
+      ${{ev.time ? `<span class="row-time">${{ev.time}}</span>` : ''}}
+      <span class="row-price">${{price}}</span>
+      <span class="row-btn">Подробнее</span>
+    </div>
+  </a>`;
+}}
+
+function renderList(events, containerId, extraClass) {{
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = events.length
+    ? events.map(ev => eventRowHtml(ev, extraClass)).join('')
+    : '<div class="loading">Нет событий</div>';
+}}
+
+let pastEvents = [];
+let pastExpanded = false;
+
+function renderArchive() {{
+  const el = document.getElementById('archive-link');
+  if (!pastEvents.length) {{ el.innerHTML = ''; return; }}
+  const word = pastEvents.length === 1 ? 'событие' : pastEvents.length < 5 ? 'события' : 'событий';
+  el.innerHTML = `<a href="#">
+    ${{pastExpanded ? '↑ Скрыть прошедшие' : `↓ Показать прошедшие — ${{pastEvents.length}} ${{word}}`}}
+  </a>`;
+  el.querySelector('a').onclick = (e) => {{
+    e.preventDefault();
+    pastExpanded = !pastExpanded;
+    document.getElementById('past-heading').hidden = !pastExpanded;
+    if (pastExpanded) renderList(pastEvents, 'past-list', 'past');
+    else document.getElementById('past-list').innerHTML = '';
+    renderArchive();
+  }};
+}}
+
+async function load() {{
+  try {{
+    const [res, settingsRes] = await Promise.all([
+      fetch('/events.json'),
+      fetch('/settings.json').catch(() => null)
+    ]);
+    const data = await res.json();
+    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
+    const patched  = applySettings(data, settings);
+    const now      = new Date();
+
+    const all = patched
+      .filter(e => e.date && eventMatchesArtist(e))
+      .map(e => ({{ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }}))
+      .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
+
+    const upcoming = all.filter(e => parseDateTime(e) >= now);
+    pastEvents     = all.filter(e => parseDateTime(e) <  now).reverse();
+
+    renderList(upcoming, 'events-list');
+    renderArchive();
+
+    const genreCounts = {{}};
+    patched.forEach(e => {{ const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; }});
+    const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
+    const navEl = document.getElementById('nav-genres');
+    if (navEl) navEl.innerHTML = activeGenres.map(g =>
+      `<a href="/genre/${{g}}/" class="nav-genre">${{GENRE_LABELS[g]}}</a>`
+    ).join('');
+  }} catch(err) {{
+    document.getElementById('events-list').innerHTML = '<div class="loading">Не удалось загрузить события</div>';
+  }}
+}}
+load();
+</script>
+</body>
+</html>'''
+
+
 # ── sitemap.xml ───────────────────────────────────────────────────────────────
 
 def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
-                  event_ids: Optional[list] = None, genre_slugs: Optional[list] = None) -> str:
+                  event_ids: Optional[list] = None, genre_slugs: Optional[list] = None,
+                  artist_slugs: Optional[list] = None) -> str:
     today = today_str()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -1198,6 +1727,8 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
         lines.append(url(f"{DOMAIN}/genre/{s}/", "daily", "0.7"))
     for s in sorted(venue_slugs or []):
         lines.append(url(f"{DOMAIN}/venues/{s}", "weekly", "0.7"))
+    for s in sorted(artist_slugs or []):
+        lines.append(url(f"{DOMAIN}/artist/{s}", "weekly", "0.7"))
     for eid in sorted(event_ids or []):
         lines.append(url(f"{DOMAIN}/event/{eid}", "weekly", "0.6"))
 
@@ -1242,6 +1773,11 @@ def main() -> None:
     venues = load_venues()
     venue_lookup = build_venue_alias_lookup(venues)
     resolve_venue_slugs(events, venue_lookup)
+
+    # Загружаем реестр артистов и привязываем artist_slugs к каждому событию
+    artists = load_artists()
+    artist_lookup = build_artist_alias_lookup(artists)
+    resolve_artist_slugs(events, artist_lookup)
 
     today  = today_str()
     css    = extract_css()
@@ -1319,6 +1855,38 @@ def main() -> None:
         print(f"    ✓ venues/{venue['slug']}  "
               f"({v_upcoming} предстоящих, {v_past} прошедших)")
 
+    # 3b. Генерируем страницы артистов (artist/{slug} без расширения)
+    artist_dir = BASE_DIR / "artist"
+    artist_dir.mkdir(exist_ok=True)
+    artists_with_events = [
+        a for a in artists
+        if any(a["slug"] in (e.get("artist_slugs") or []) for e in events)
+    ]
+    print(f"🎤   Генерируем страницы артистов ({len(artists_with_events)}) …")
+    generated_artist_slugs: list[str] = []
+    for artist in artists_with_events:
+        page = make_artist_page(artist, events, today, css, custom_names)
+        out  = artist_dir / artist["slug"]  # без расширения .html
+        out.write_text(page, encoding="utf-8")
+        a_upcoming = len([e for e in events
+                          if artist["slug"] in (e.get("artist_slugs") or [])
+                          and (e.get("date") or "") >= today])
+        a_past     = len([e for e in events
+                          if artist["slug"] in (e.get("artist_slugs") or [])
+                          and (e.get("date") or "9999") < today])
+        generated_artist_slugs.append(artist["slug"])
+        print(f"    ✓ artist/{artist['slug']}  "
+              f"({a_upcoming} предстоящих, {a_past} прошедших)")
+    # Убираем файлы для артистов, которых больше нет в artists.json
+    current_artist_slugs = set(generated_artist_slugs)
+    artist_removed = 0
+    for f in artist_dir.iterdir():
+        if f.is_file() and f.name not in current_artist_slugs:
+            f.unlink()
+            artist_removed += 1
+    if artist_removed:
+        print(f"    (удалено устаревших страниц артистов: {artist_removed})")
+
     # 4. Генерируем страницы событий (event/{id} без расширения)
     events_dir = BASE_DIR / "event"
     events_dir.mkdir(exist_ok=True)
@@ -1347,7 +1915,8 @@ def main() -> None:
 
     # 5. sitemap.xml
     print("🗺   Генерируем sitemap.xml …")
-    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids, genres_with_events)
+    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids,
+                           genres_with_events, generated_artist_slugs)
     (BASE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("    ✓ sitemap.xml")
 
@@ -1360,6 +1929,7 @@ def main() -> None:
     print(f"    Города: {', '.join(cities_with_events)}")
     print(f"    Жанры: {', '.join(genres_with_events)}")
     print(f"    Заведений: {len(generated_venue_slugs)}")
+    print(f"    Артистов: {len(generated_artist_slugs)}")
     print(f"    Событий: {len(generated_event_ids)}")
     print(f"\n💡  Следующий шаг: отправьте sitemap.xml в Яндекс.Вебмастер и Google Search Console:")
     print(f"    {DOMAIN}/sitemap.xml")

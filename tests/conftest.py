@@ -64,6 +64,10 @@ KNOWN_MISSING_EVENT_PAGES = {
     "42da48cf",
 }
 
+# slug артистов, у которых есть события (artist_slugs резолвится), но
+# artist/<slug> ещё не сгенерирован — задел на будущее, как для venues/event.
+KNOWN_MISSING_ARTIST_PAGES = set()
+
 
 @pytest.fixture(scope="session")
 def project_root():
@@ -83,6 +87,11 @@ def events():
 @pytest.fixture(scope="session")
 def venues():
     return _load_json("venues.json")
+
+
+@pytest.fixture(scope="session")
+def artists():
+    return _load_json("artists.json")
 
 
 @pytest.fixture(scope="session")
@@ -134,6 +143,19 @@ def sample_venue(venues, events):
         if names & venue_names_with_events and (PROJECT_ROOT / "venues" / v["slug"]).is_file():
             return v
     pytest.skip("Нет ни одной площадки с событиями и сгенерированной страницей")
+
+
+@pytest.fixture(scope="session")
+def sample_artist(artists, events):
+    from generate_pages import build_artist_alias_lookup, resolve_artist_slugs
+
+    events_copy = [dict(e) for e in events]
+    resolve_artist_slugs(events_copy, build_artist_alias_lookup(artists))
+    active_slugs = {s for e in events_copy for s in (e.get("artist_slugs") or [])}
+    for a in artists:
+        if a["slug"] in active_slugs and (PROJECT_ROOT / "artist" / a["slug"]).is_file():
+            return a
+    pytest.skip("Нет ни одного артиста с событиями и сгенерированной страницей")
 
 
 @pytest.fixture(scope="session")

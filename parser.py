@@ -588,6 +588,19 @@ def _extract_artist_from_description(desc: str) -> "str | None":
     return None
 
 
+# Безусловные плейсхолдеры, которые может вернуть _fallback_artist — не имя
+# исполнителя, а тип мероприятия (в отличие от веток с извлечением реального
+# названия из кавычек типа «Концерт «X»» — те МОГУТ совпасть с настоящим
+# артистом, поэтому в этот список не входят).
+_GENERIC_ARTIST_LITERALS = {
+    "Музыкальное лото", "DJ-сет", "Звукотерапия", "Квартирник", "Спектакль",
+    "Фестиваль", "Живой концерт", "Музыкальный вечер", "Летний концерт",
+    "Живой звук", "Открытие сезона", "Литературно-музыкальная гостиная",
+    "Открытие летнего сезона", "Вечеринка", "Дегустация",
+    "Массовое мероприятие", "Этно-проект",
+}
+
+
 def _fallback_artist(event: dict) -> "str | None":
     """Фолбэк артиста по event_type и описанию."""
     import re
@@ -678,6 +691,24 @@ def _fallback_artist(event: dict) -> "str | None":
         return "Этно-проект"
 
     return None
+
+
+def is_generic_artist(event: dict) -> bool:
+    """True, если event['artist'] — не имя исполнителя, а тип мероприятия
+    («DJ-сет», «Музыкальное лото», «Фестиваль» и т.п.), либо событие явно
+    помечено флагом artist_is_generic.
+
+    Сверяется с фиксированным списком безусловных плейсхолдеров
+    (_GENERIC_ARTIST_LITERALS), а не пересчитывает _fallback_artist заново —
+    иначе ветки с извлечением реального названия из кавычек («Концерт «X»»)
+    ложно считались бы generic, если название совпало с уже настоящим
+    значением artist (так ловилось «Скажите Джаз» — реальная джаз-группа).
+    Применим и к событиям без проставленного флага (старые записи в
+    events.json из прошлых прогонов).
+    """
+    if event.get("artist_is_generic"):
+        return True
+    return (event.get("artist") or "").strip() in _GENERIC_ARTIST_LITERALS
 
 
 # ── Справочник городов (cities.json) ──────────────────────────────────────────
@@ -785,19 +816,68 @@ def _venue_match(v1: str, v2: str) -> bool:
     return len(common) >= 1
 
 
+def _split_artist_field(artist: str) -> list[str]:
+    """Разбивает поле artist по запятым верхнего уровня — не внутри скобок/«».
+
+    Наивный artist.split(",") ломает случаи вроде «Дуэт «МысКрыма»
+    (Дмитрий Ванханов, Вета)», где запятая — часть перечисления внутри
+    скобок, а не разделитель артистов.
+    """
+    parts: list[str] = []
+    depth = 0
+    current: list[str] = []
+    for ch in artist:
+        if ch in "(«":
+            depth += 1
+            current.append(ch)
+        elif ch in ")»":
+            depth = max(0, depth - 1)
+            current.append(ch)
+        elif ch == "," and depth == 0:
+            parts.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    parts.append("".join(current))
+    return parts
+
+
+_ARTIST_JOIN_RE = re.compile(
+    r'\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+', re.IGNORECASE,
+)
+_ARTIST_JOIN_WORDS = {"и", "&", "+", "feat", "feat.", "ft", "ft.",
+                      "при участии", "с участием"}
+
+
 def _artist_parts(name: str) -> list[str]:
     """Разбивает строку артиста на отдельные имена по разделителям."""
-    # Режем только по « и », « & », « + » с пробелами.
+    # Режем по « и », « & », « + », «feat.», «ft.», «при участии», «с участием».
     # Запятую НЕ трогаем — она может быть частью названия или перечисления инструментов.
-    result = re.split(r'\s+(и|&|\+)\s+', name)
-    return [p.strip() for p in result if p.strip() and p.strip() not in ("и", "&", "+")]
+    result = _ARTIST_JOIN_RE.split(name)
+    return [p.strip() for p in result
+            if p.strip() and p.strip().lower() not in _ARTIST_JOIN_WORDS]
+
+
+# Транслит для сравнения имён между кириллицей и латиницей (SHAMAN vs ШАМАН).
+# Таблица та же, что в build_venues.py:slugify, для единообразия.
+_TRANSLIT = {
+    "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e",
+    "ж": "zh", "з": "z", "и": "i", "й": "y", "к": "k", "л": "l", "м": "m",
+    "н": "n", "о": "o", "п": "p", "р": "r", "с": "s", "т": "t", "у": "u",
+    "ф": "f", "х": "h", "ц": "ts", "ч": "ch", "ш": "sh", "щ": "sch",
+    "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu", "я": "ya",
+}
+
+
+def _translit_key(text: str) -> str:
+    return "".join(_TRANSLIT.get(ch, ch) for ch in _normalize(text))
 
 
 def _artist_set(event: dict) -> set:
     """Множество нормализованных имён артистов из события."""
     artist = event.get("artist") or ""
     names = set()
-    for raw in artist.split(","):
+    for raw in _split_artist_field(artist):
         for name in _artist_parts(raw.strip()):
             n = _normalize(name)
             # убираем префиксы «группа», «band» для лучшего сравнения
@@ -806,6 +886,7 @@ def _artist_set(event: dict) -> set:
                     n = n[len(prefix):].strip()
             if n:
                 names.add(n)
+                names.add(_translit_key(n))  # ловит кириллица/латиница дубли
     return names
 
 
@@ -866,7 +947,7 @@ def _merge_group(group: list[dict]) -> dict:
     seen: set = set()
     artists: list = []
     for e in group:
-        for a in (e.get("artist") or "").split(","):
+        for a in _split_artist_field(e.get("artist") or ""):
             for name in _artist_parts(a.strip()):
                 key = _normalize(name)
                 bare = _bare_artist_key(name)
@@ -1274,6 +1355,8 @@ def main(days_back: int = DAYS_BACK):
         if not e.get("artist"):
             extracted = _extract_artist_from_description(e.get("description") or "")
             if extracted:
+                # Извлечено из кавычек/паттерна — это попытка настоящего имени,
+                # а не плейсхолдер, флаг generic не ставим.
                 e["artist"] = extracted
                 artist_extracted += 1
             else:
@@ -1281,6 +1364,7 @@ def main(days_back: int = DAYS_BACK):
                 fb = _fallback_artist(e)
                 if fb:
                     e["artist"] = fb
+                    e["artist_is_generic"] = fb in _GENERIC_ARTIST_LITERALS
                     artist_fallback += 1
         # Жанр
         if not e.get("genre"):

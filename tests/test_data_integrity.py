@@ -130,3 +130,31 @@ class TestCitiesJson:
         slugs = [c["slug"] for c in cities]
         dupes = {s for s in slugs if slugs.count(s) > 1}
         assert not dupes, f"Дублирующиеся slug городов: {dupes}"
+
+
+class TestArtistsJson:
+    def test_not_empty(self, artists):
+        assert isinstance(artists, list) and len(artists) > 0
+
+    def test_slugs_are_unique(self, artists):
+        slugs = [a["slug"] for a in artists]
+        dupes = {s for s in slugs if slugs.count(s) > 1}
+        assert not dupes, f"Дублирующиеся slug артистов: {dupes}"
+
+    def test_required_fields_present(self, artists):
+        problems = [a.get("slug", "<no slug>") for a in artists if not a.get("name")]
+        assert not problems, f"У артистов отсутствует name: {problems}"
+
+    def test_min_event_count(self, artists):
+        # Порог публикации страницы — 2+ события (см. BACKLOG.md, раздел 1).
+        below = [(a["slug"], a["event_count"]) for a in artists if a.get("event_count", 0) < 2]
+        assert not below, f"Артисты ниже порога публикации (event_count < 2) не должны быть в artists.json: {below}"
+
+    def test_no_generic_placeholder_names(self, artists):
+        # Регресс на баг с ложной generic-классификацией (см. коммит
+        # 6f8eed6): фолбэк-плейсхолдеры («DJ-сет», «Фестиваль» и т.п.)
+        # не должны попадать в реестр как «артисты».
+        from parser import _GENERIC_ARTIST_LITERALS
+
+        leaked = [a["slug"] for a in artists if a["name"] in _GENERIC_ARTIST_LITERALS]
+        assert not leaked, f"Generic-плейсхолдеры просочились в artists.json как артисты: {leaked}"
