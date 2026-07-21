@@ -995,6 +995,7 @@ footer {
   pointer-events: none;
 }
 
+  html { scroll-behavior: smooth; }
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
@@ -1089,10 +1090,16 @@ footer {
     white-space: nowrap;
   }
   .venue-map-link:hover { background: var(--border); }
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
   .venue-map-wrap {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: clamp(20px, 3vw, 32px) var(--gutter) 0;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
   }
   #venue-map {
     width: 100%;
@@ -1101,6 +1108,7 @@ footer {
     border-radius: var(--radius);
     border: 1px solid var(--border);
     background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
   }
   .venue-map-loading {
     display: flex;
@@ -1240,12 +1248,10 @@ footer {
     </div>
     <h1 class="genre-hero-title">Концертный зал «Юбилейный»</h1>
     <p class="venue-description">За последние месяцы здесь прошло 13 концертов с платным входом. Афиша — гастрольная эстрада высшего звена: SHAMAN, Таисия Повалий и большой сольный концерт Григория Лепса.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Черноморский пер., 2, Ялта</span><a href="https://yandex.ru/maps/?text=Черноморский+пер.,+2,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
+    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Черноморский пер., 2, Ялта</a><a href="https://yandex.ru/maps/?text=Черноморский+пер.,+2,+Ялта,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">12</div><div class="genre-hero-count-label">событий</div></div>
 </div>
-
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <div class="events-list" id="events-list">
   <div class="loading">Загрузка…</div>
@@ -1255,6 +1261,8 @@ footer {
 
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
+
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
@@ -1278,7 +1286,7 @@ ymaps.ready(function() {
   var balloonContent = '<div class="balloon-card">'
     + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
     + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Маршрут</a>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
     + '</div>';
   var map = new ymaps.Map(el, {
     center: [44.492898, 34.163783],
