@@ -185,11 +185,10 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 var(--gutter) 16px;
+  display: flex;
+  gap: 6px;
 }
-.filter-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
+.filter-pill {
   padding: 7px 15px;
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -198,8 +197,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   color: var(--muted);
   transition: all 0.12s;
 }
-.filter-toggle:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
-.filter-toggle.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.filter-pill:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
+.filter-pill.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
 
 footer {
   border-top: 1px solid var(--border);
@@ -392,10 +391,9 @@ footer {
   <p class="map-hero-sub" id="hero-sub">Загрузка…</p>
 </div>
 
-<div class="map-filters">
-  <button class="filter-toggle" id="filter-toggle" type="button" aria-pressed="false">
-    Только с 2+ концертами в афише
-  </button>
+<div class="map-filters" role="group" aria-label="Фильтр площадок">
+  <button class="filter-pill" data-mode="all" type="button" aria-pressed="false">Все</button>
+  <button class="filter-pill active" data-mode="withEvents" type="button" aria-pressed="true">Только с концертами в афише</button>
 </div>
 
 <div class="map-wrap">
@@ -477,7 +475,7 @@ function countUpcomingByVenue(events, settings, venueLookup) {
 let mapInstance = null;
 let clustererInstance = null;
 let allPlacemarkVenues = [];
-let showOnlyMultiple = false;
+let filterMode = 'withEvents'; // 'all' | 'withEvents' — по умолчанию скрываем площадки без предстоящих концертов
 
 function makePlacemark(v) {
   const url = `/venues/${v.slug}`;
@@ -500,8 +498,8 @@ function makePlacemark(v) {
 }
 
 function renderPlacemarks() {
-  const visible = showOnlyMultiple
-    ? allPlacemarkVenues.filter(v => v.upcomingCount > 1)
+  const visible = filterMode === 'withEvents'
+    ? allPlacemarkVenues.filter(v => v.upcomingCount >= 1)
     : allPlacemarkVenues;
 
   clustererInstance.removeAll();
@@ -543,13 +541,16 @@ function initMap(venues) {
   renderPlacemarks();
 }
 
-document.getElementById('filter-toggle').addEventListener('click', () => {
-  if (!clustererInstance) return;
-  showOnlyMultiple = !showOnlyMultiple;
-  const btn = document.getElementById('filter-toggle');
-  btn.classList.toggle('active', showOnlyMultiple);
-  btn.setAttribute('aria-pressed', String(showOnlyMultiple));
-  renderPlacemarks();
+document.querySelectorAll('.filter-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (!clustererInstance || btn.dataset.mode === filterMode) return;
+    filterMode = btn.dataset.mode;
+    document.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-pressed', String(b === btn));
+    });
+    renderPlacemarks();
+  });
 });
 
 ymaps.ready(async () => {
