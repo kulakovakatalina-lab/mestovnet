@@ -112,6 +112,14 @@ def fmt_date(ds: str) -> str:
     except Exception:
         return ds
 
+def fmt_date_short(ds: str) -> str:
+    """Дата без дня недели — для заголовков, где нужно короче."""
+    try:
+        d = datetime.strptime(ds, "%Y-%m-%d")
+        return f"{d.day} {MONTHS_GEN[d.month - 1]}"
+    except Exception:
+        return ds
+
 def city_slug(city: str) -> str:
     return CITY_SLUGS.get(city, city.lower().replace(" ", "-"))
 
@@ -526,8 +534,10 @@ def make_event_page(event: dict, all_events: list[dict], today: str,
     city_prep = CITY_PREP.get(city, f"в {city}" if city else "")
 
     title = f"{artist} — {venue}" if venue else artist
-    if city:
+    if city and city not in venue:
         title += f", {city}"
+    if event.get("date"):
+        title += f", {fmt_date_short(event['date'])}"
     title += " · Местов.Нет"
 
     desc_parts = [artist]

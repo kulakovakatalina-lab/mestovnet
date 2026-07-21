@@ -288,6 +288,36 @@ class TestInternalLinks:
         assert not broken, f"Логотип не ведёт на главную: {broken}"
 
 
+class TestUniqueMeta:
+    """Регресс: Яндекс.Метрика находила страницы с одинаковыми <title>/description
+    (события с одинаковым артистом и площадкой, но разными датами)."""
+
+    def _collect(self, project_root, subdir):
+        pages = [
+            p for p in (project_root / subdir).iterdir()
+            if p.is_file()
+        ]
+        titles, descriptions = {}, {}
+        for page in pages:
+            soup = _soup(page)
+            title = soup.title.get_text() if soup.title else ""
+            meta = soup.find("meta", attrs={"name": "description"})
+            desc = meta.get("content") if meta else ""
+            titles.setdefault(title, []).append(page.name)
+            descriptions.setdefault(desc, []).append(page.name)
+        return titles, descriptions
+
+    def test_event_titles_are_unique(self, project_root):
+        titles, _ = self._collect(project_root, "event")
+        dupes = {t: pages for t, pages in titles.items() if len(pages) > 1}
+        assert not dupes, f"Повторяющиеся <title> на страницах событий: {dupes}"
+
+    def test_event_descriptions_are_unique(self, project_root):
+        _, descriptions = self._collect(project_root, "event")
+        dupes = {d: pages for d, pages in descriptions.items() if len(pages) > 1}
+        assert not dupes, f"Повторяющиеся meta description на страницах событий: {dupes}"
+
+
 class TestEscapeRegression:
     """Регресс на фикс XSS в клиентских шаблонах (c8a6a6d)."""
 
