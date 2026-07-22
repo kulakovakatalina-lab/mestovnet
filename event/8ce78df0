@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Черный кофе, Jam Club, в Симферополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Чёрный Кофе, Черный кофе, Jam Club, в Симферополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Черный кофе — Jam Club, Симферополь, 5 сентября · Местов.Нет</title>
+<title>Чёрный Кофе, Черный кофе — Jam Club, Симферополь, 5 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -998,8 +998,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/8ce78df0">
-<meta property="og:title" content="Черный кофе — Jam Club, Симферополь, 5 сентября · Местов.Нет">
-<meta property="og:description" content="Черный кофе, Jam Club, в Симферополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Чёрный Кофе, Черный кофе — Jam Club, Симферополь, 5 сентября · Местов.Нет">
+<meta property="og:description" content="Чёрный Кофе, Черный кофе, Jam Club, в Симферополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg">
 <script type="application/ld+json">
@@ -1008,7 +1008,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Черный кофе",
+      "name": "Чёрный Кофе, Черный кофе",
       "startDate": "2026-09-05T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -1022,7 +1022,7 @@ a { color: inherit; text-decoration: none; }
       "description": "О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!\r\nВ программу войдут такие нетленные хиты, как: «Вольному — воля», «Владимирская Русь», «Звездный водоем», «Листья», «Светлый металл», «Переступи порог», «Леди Осень», «Это — рок!» и многие другие.\r\n\r\nТакже поклонники группы услышат новые песни, написанные Мастером мелодичного хард-рока в последние годы на стихи Александра Шаганова, Сергея Есенина, великую классику Баха, Альбинони и бессмертные песни Владимира Высоцкого.— они прозвучат в исполнении фронтмена и основателя «Чёрного Кофе» — Дмитрия Варшавского.\r\n«Чёрный кофе» — это не ностальгия, а летопись российского рока. Их дебютный студийный альбом «Переступи порог» открыл официальную дискографию русскоязычного хэви-метал-рока и оказался самым успешным проектом «перестроечной эры». Только в первые месяцы продаж он разошёлся по стране тиражом более 1 400 000 экземпляров. Аналогичный успех сопутствовал и следующему диску коллектива — «Вольному — воля».\r\n\r\nГруппа давала десятки аншлаговых выступлений ежемесячно на протяжении многих лет, но... время шло, предпочтения слушателей менялись. И только сейчас музыка hard'n'heavy обретает второе дыхание и корифеи стиля, вроде «Чёрного Кофе», обретают новую жизнь.\r\n\r\nС Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.\r\n\r\nВ концерте прозвучат самые легендарные хиты группы!",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Черный кофе"
+        "name": "Чёрный Кофе, Черный кофе"
       },
       "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg",
       "offers": {
@@ -1036,7 +1036,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Черный кофе"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Чёрный Кофе, Черный кофе"}]}
 </script>
 </head>
 <body>

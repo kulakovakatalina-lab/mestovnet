@@ -1120,5 +1120,14 @@
       "El Capulco"
     ],
     "description": ""
+  },
+  {
+    "slug": "snezhinka",
+    "name": "Снежинка",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 0,
+    "aliases": [],
+    "description": ""
   }
 ]
