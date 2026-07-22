@@ -77,7 +77,21 @@ jobs:
             --delete \
             --cache-control "public, max-age=2592000"
 
-      - name: Залить HTML/JSON с коротким кэшем
+      - name: Залить JSON/XML/TXT с коротким кэшем
+        run: |
+          aws s3 sync _site "$BUCKET" \
+            --endpoint-url "$ENDPOINT" \
+            --delete \
+            --exclude "*" \
+            --include "*.json" \
+            --include "*.xml" \
+            --include "*.txt" \
+            --cache-control "public, max-age=300"
+
+      # Без явного Content-Type aws s3 sync угадывает "text/html" без charset —
+      # на компьютерах с не-UTF8 локалью браузер может не дождаться <meta charset>
+      # и показать кракозябры. Поэтому HTML заливаем отдельно с charset в заголовке.
+      - name: Залить HTML (корень, cities/, genre/) с явным Content-Type
         run: |
           aws s3 sync _site "$BUCKET" \
             --endpoint-url "$ENDPOINT" \
@@ -86,6 +100,10 @@ jobs:
             --exclude "venues/*" \
             --exclude "event/*" \
             --exclude "artist/*" \
+            --exclude "*.json" \
+            --exclude "*.xml" \
+            --exclude "*.txt" \
+            --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"
 
       - name: Залить страницы заведений (venues/) с явным Content-Type)
@@ -133,6 +151,9 @@ jobs:
           curl -sfSL "$SITE/$V" -o /tmp/home.html
           grep -qi "местов" /tmp/home.html || { echo "FAIL: на главной нет названия сайта"; exit 1; }
 
+          echo "1b) Content-Type главной содержит charset=utf-8 (без этого возможны кракозябры)"
+          curl -sfSIL "$SITE/$V" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у главной нет charset=utf-8 в Content-Type"; exit 1; }
+
           echo "2) events.json валиден и не пустой"
           curl -sfSL "$SITE/events.json$V" -o /tmp/events.json
           python3 -c "
@@ -165,6 +186,7 @@ jobs:
           echo "4) Страница города открывается"
           curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
+          curl -sfSIL "$SITE/cities/sevastopol.html$V" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у страницы города нет charset=utf-8 в Content-Type"; exit 1; }
 
           echo "4b) Страница жанра открывается"
           curl -sfSL "$SITE/genre/jazz/$V" -o /tmp/genre.html
