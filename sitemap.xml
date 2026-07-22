@@ -20,12 +20,14 @@
   <url><loc>https://mestov.net/genre/pop/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/7-dolin</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/antichnyy-teatr-hersones-tavricheskiy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/antikvarno-hudozhestvennaya-galereya-stiks</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/api-balaklava</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kovcheg</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/art-rezidentsiya-faza</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/balagan-38</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/boombox</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/btr-bar-tyazhelogo-roka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/bts-tsarskaya-pristan</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/centrum</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/chayka-na-plyazhe</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/depo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -38,16 +40,14 @@
   <url><loc>https://mestov.net/venues/dvorets-kultury-rybakov</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/egorovskiy-zal-vinzavoda-massandra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/eko-prostranstvo-ali-bair</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/el-capulco</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/el-capulco-0-0</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/fadini</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/feodosiyskiy-gdk</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/galereya-stiks-yalta</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/gastrodvor</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/golf-pole</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/gornaya-syrovarnya</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/hungry-bird</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/jam-club</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/kafe-van-gogh-massandrovskiy-plyazh</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/kinoteatr-pobeda</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/klub-belyy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/konsol-sport</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -59,9 +59,8 @@
   <url><loc>https://mestov.net/venues/krymskiy-muzykalnyy-teatr</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/livadiyskiy-dvorets</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/lucky-winery</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/massandra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/massandra-sun</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/massandrovskiy-plyazh-kover-yalta</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/massandrovskiy-plyazh</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/molodost</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/mramornaya-peschera</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/mriya</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -74,12 +73,15 @@
   <url><loc>https://mestov.net/venues/nikitskiy-botanicheskiy-sad</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/otel-akvamarin</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/otel-yalta-inturist</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/otel-yalta-inturist-kontsert-holl-hrustalnyy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/palmira-palace</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/pamyatnik-zatoplennym-korablyam</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/paniya-park</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/plyazh-kafe-van-gogh-massandrovskiy-plyazh</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/polyana-vkusov-yarmarochnoe-pole-paniya-park</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/restoran-shalash</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/ribiza</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/rok-n-rolschiki</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/rok-n-rolschiki-sevastopol</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/rok-n-rolschiki-simferopol</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/russkiy-teatr-im-gorkogo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/santa-barbara</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -94,18 +96,18 @@
   <url><loc>https://mestov.net/venues/teatr-im-a-p-chehova</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/teatr-imeni-a-s-pushkina</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/teatr-imeni-borisa-lavreneva</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/teleskop-zeiss-48</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/tsarskaya-pristan</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/usadba-rodnoe-gnezdo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/venues/van-gogh-massandra-yalta</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/vinnyy-park-ponizovka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/vinodelnya-zolotaya-balka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/vinzavod-massandra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/venues/zelenyy-kordon-yablonevyy-sad-belbekskaya-dolina</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/venues/zvezdnyy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/adrenalinhouse</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/aleksandr-dolinskiy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/aleksandr-krug</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/aleksandr-vasilev</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/aleksey-garkusha</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/artist/anastasiya-gras</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/andrey-rybalchenko</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/andrey-tanzyu</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/andrey-yasinskiy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -118,6 +120,7 @@
   <url><loc>https://mestov.net/artist/chestnyy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/chto-ty-delaesh</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/cora</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/artist/denayro</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/dim-k</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/dima-reznik</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/dinaminator</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -133,7 +136,6 @@
   <url><loc>https://mestov.net/artist/gangamantra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/gitara-u-kostra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/grigoriy-leps</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://mestov.net/artist/gruppa-denayro</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/gruppa-domino</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/happy-paul</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/hay-petri</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
@@ -169,6 +171,7 @@
   <url><loc>https://mestov.net/artist/pasha-grey</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/pasha-rhino</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/peskovsky</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
+  <url><loc>https://mestov.net/artist/plamenev</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/pravin</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/pro-art</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://mestov.net/artist/radio-tapok</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-07-22</lastmod></url>

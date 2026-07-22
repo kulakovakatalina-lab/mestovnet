@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Клуб ДЕПО, ул. Киевская, д. 4н — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Клуб ДЕПО, ул. Киевская, д. 4н, в Симферополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/klub-depo-simferopol">
-  <meta property="og:title" content="Клуб ДЕПО, ул. Киевская, д. 4н — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Клуб ДЕПО, ул. Киевская, д. 4н, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Зеленый Кордон (яблоневый сад, Бельбекская долина) — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Зеленый Кордон (яблоневый сад, Бельбекская долина), в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/zelenyy-kordon-yablonevyy-sad-belbekskaya-dolina">
+  <meta property="og:title" content="Зеленый Кордон (яблоневый сад, Бельбекская долина) — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Зеленый Кордон (яблоневый сад, Бельбекская долина), в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,34 +28,18 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Клуб ДЕПО, ул. Киевская, д. 4н",
+      "name": "Зеленый Кордон (яблоневый сад, Бельбекская долина)",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Киевская, 4н"
+        "addressLocality": "Севастополь",
+        "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Севастопольский эстрадный оркестр Валентина Таева",
-      "startDate": "2026-07-12T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Клуб ДЕПО, ул. Киевская, д. 4н"
-      },
-      "description": "Уникальный формат: рок-хиты (Наутилус Помпилиус, Король и Шут, Ленинград, Сплин, Чайф и др.) в живом исполнении Севастопольского эстрадного оркестра. Поют все вместе с залом.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Севастопольский эстрадный оркестр Валентина Таева"
-      },
-      "image": "/images/events/b1a706606b8243144d62a4ac5755c8e8.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Клуб ДЕПО, ул. Киевская, д. 4н"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Зеленый Кордон (яблоневый сад, Бельбекская долина)"}]}
 </script>
   <style>
 
@@ -137,6 +121,18 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   transition: color 0.12s, background 0.12s;
 }
 .nav-genre:hover { color: var(--fg); background: var(--border); }
+
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
 
 .genre-strip-mobile {
   display: none;
@@ -579,6 +575,20 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
   transform: translateY(-2px);
 }
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
 
 .card-img {
   width: 100%;
@@ -804,6 +814,7 @@ footer {
   pointer-events: none;
 }
 
+  html { scroll-behavior: smooth; }
   /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
@@ -883,21 +894,50 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-map-link {
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
+  .venue-map-wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
+  }
+  #venue-map {
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+  .venue-map-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .balloon-card { min-width: 200px; }
+  .balloon-name { font-weight: 700; margin-bottom: 4px; }
+  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .balloon-route {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    justify-content: center;
+    padding: 7px 14px;
     font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--border);
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
     border-radius: var(--radius-sm);
-    padding: 6px 14px;
-    transition: background 0.12s, border-color 0.12s;
-    white-space: nowrap;
+    transition: filter 0.12s;
   }
-  .venue-map-link:hover { background: var(--border); }
+  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -921,6 +961,8 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
+  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
+  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -948,10 +990,16 @@ footer {
   .archive-link a:hover { color: var(--fg); background: var(--surface); }
   .past-heading { max-width: var(--max-w); margin: 0 auto; padding: 4px var(--gutter) 14px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .loading { padding: 40px var(--gutter); color: var(--muted); font-size: 14px; max-width: var(--max-w); margin: 0 auto; }
-  @media (max-width: 640px) {
-    .event-row { grid-template-columns: 52px 60px 1fr; gap: 12px; padding: 16px var(--gutter); }
-    .row-thumb { width: 60px; height: 60px; }
-    .row-right { display: none; }
+  @media (max-width: 820px) {
+    .event-row { grid-template-columns: 64px 64px 1fr; grid-template-rows: auto auto; }
+    .row-thumb { width: 56px; height: 56px; }
+    .row-right { grid-column: 2 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 8px; }
+  }
+  @media (max-width: 600px) {
+    .event-row { grid-template-columns: 48px 1fr; grid-template-rows: auto auto; gap: 12px; padding: 16px var(--gutter); }
+    .row-thumb { display: none; }
+    .row-date-day { font-size: 26px; }
+    .row-right { grid-column: 2; flex-wrap: wrap; gap: 8px; }
     .row-artist { font-size: 16px; }
     .genre-hero { justify-content: center; text-align: center; }
     .genre-hero-eyebrow { text-align: center; }
@@ -967,6 +1015,7 @@ footer {
   <a href="/" class="nav-logo">местов<em>.нет</em></a>
   <div class="nav-sep"></div>
   <div class="nav-genres" id="nav-genres"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
     <span>Подписаться</span>
@@ -999,13 +1048,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Клуб ДЕПО, ул. Киевская, д. 4н</h1>
+    <h1 class="genre-hero-title">Зеленый Кордон (яблоневый сад, Бельбекская долина)</h1>
     
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Киевская, 4н, Симферополь</span><a href="https://yandex.ru/maps/?text=ул.+Киевская,+4н,+Симферополь,+Крым" target="_blank" rel="noopener" class="venue-map-link">Открыть на Яндекс Картах</a></div>
+    <p class="venue-description">Яблоневый сад в Бельбекской долине под Севастополем — площадка под открытым небом для концертов авторской музыки, например выступление группы GangaMantra.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
@@ -1017,13 +1066,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
+
+
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
+
+
 <script>
-const VENUE_ALIASES = ["Клуб ДЕПО, ул. Киевская, д. 4н", "Клуб ДЕПО", "ДЕПО", "Клуб ДЕПО, ул. Киевская, д. 4н"];
+const VENUE_ALIASES = ["Зеленый Кордон (яблоневый сад, Бельбекская долина)", "Зеленый Кордон (яблоневый сад, Бельбекская долина)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
@@ -1055,7 +1108,8 @@ function priceText(p) {
 }
 
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1071,6 +1125,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1084,7 +1139,8 @@ function eventRowHtml(ev, extraClass) {
   const thumbHtml = ev.image
     ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1092,7 +1148,7 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.artist || '—'}</div>
+      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
         <span>${ev.venue || '—'}</span>

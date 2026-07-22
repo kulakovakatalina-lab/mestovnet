@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Бахчисарай",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Водохранилищная, 6, Бахчисарай"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/bakhchisaray.html">Бахчисарай</a>
     </div>
     <h1 class="genre-hero-title">Lucky Winery</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Водохранилищная, 6, Бахчисарай, Бахчисарай</span></div>
+    
     <p class="venue-description">Lucky Winery — органическая винодельня в Бахчисарае с производством крымских вин и рестораном.</p>
   </div>
   

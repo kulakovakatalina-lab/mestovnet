@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Винодела Егорова, 9, пгт Массандра"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Егоровский зал винзавода Массандра</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Винодела Егорова, 9, пгт Массандра, Ялта</span></div>
+    
     <p class="venue-description">Винзавод «Массандра» — один из старейших и известнейших винных заводов Крыма с историческими подвалами.</p>
   </div>
   

@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Крымская астрофизическая обсерватория — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Крымская астрофизическая обсерватория — афиша в Научном · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/krymskaya-astrofizicheskaya-observatoriya">
-  <meta property="og:title" content="Крымская астрофизическая обсерватория — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Крымская астрофизическая обсерватория — афиша в Научном · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,9 +31,9 @@
       "name": "Крымская астрофизическая обсерватория",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Севастополь",
+        "addressLocality": "Научный",
         "addressCountry": "RU",
-        "streetAddress": "пгт Научный, Бахчисарайский р-н"
+        "streetAddress": "ул. Научная, 46, п. Научный, Бахчисарайский р-н"
       }
     },
     {
@@ -55,7 +55,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Крымская астрофизическая обсерватория"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный", "item": "https://mestov.net/cities/nauchny.html"}, {"@type": "ListItem", "position": 3, "name": "Крымская астрофизическая обсерватория"}]}
 </script>
   <style>
 
@@ -1064,11 +1064,11 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/sevastopol.html">Севастополь</a>
+      · <a href="/cities/nauchny.html">Научный</a>
     </div>
     <h1 class="genre-hero-title">Крымская астрофизическая обсерватория</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">пгт Научный, Бахчисарайский р-н, Севастополь</span></div>
-    <p class="venue-description">Крымская астрофизическая обсерватория РАН — научный центр на высоте 600 м, открыт для экскурсий и наблюдений.</p>
+    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Научная, 46, п. Научный, Бахчисарайский р-н, Научный</a></div>
+    <p class="venue-description">Крымская астрофизическая обсерватория РАН близ посёлка Научный, открыта для экскурсий и наблюдений. Под куполом старейшего телескопа обсерватории (рефлектор Zeiss-48) проходят концерты: скрипач-виртуоз Матвей Блюмин и иммерсивные концерты-погружения «Космос внутри» Андрея Ясинского — фортепиано, можжевеловые флейты и электроника под звёздным небом.</p>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
@@ -1082,17 +1082,47 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Крымская астрофизическая обсерватория";
+  var addr = "ул. Научная, 46, п. Научный, Бахчисарайский р-н, Научный";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.726326,34.015381";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.726326, 34.015381],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.726326, 34.015381], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
-const VENUE_ALIASES = ["Астрофизическая обсерватория РАН (Научный)", "Крымская астрофизическая обсерватория", "Крымская астрофизическая обсерватория"];
+const VENUE_ALIASES = ["Крымская астрофизическая обсерватория", "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н", "Крымская астрофизическая обсерватория"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

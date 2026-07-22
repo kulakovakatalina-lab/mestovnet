@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "Никитский спуск, 52, пгт Никита"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Никитский ботанический сад</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Никитский спуск, 52, пгт Никита, Ялта</a></div>
+    
     <p class="venue-description">Никитский ботанический сад — старейший ботанический сад Крыма, основанный в 1812 году, площадка для фестивалей.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Никитский ботанический сад";
-  var addr = "Никитский спуск, 52, пгт Никита, Ялта";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.517663,34.245444";
   var el = document.getElementById('venue-map');
   if (!el) return;

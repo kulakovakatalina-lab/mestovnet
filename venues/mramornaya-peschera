@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "с. Мраморное, Симферопольский р-н"
+        "addressCountry": "RU"
       }
     },
     {
@@ -1067,8 +1066,8 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Мраморная пещера</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">с. Мраморное, Симферопольский р-н, Симферополь</span></div>
-    <p class="venue-description">Мраморная пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — уникальные концерты в подземных галереях.</p>
+    
+    <p class="venue-description">Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».</p>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
@@ -1092,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Мраморная пещера", "Пещера Мраморная", "Мраморная пещера"];
+const VENUE_ALIASES = ["Мраморная пещера", "Пещера «Мраморная»", "Пещера Мраморная", "Мраморная пещера"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

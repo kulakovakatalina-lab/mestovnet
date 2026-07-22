@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Крым",
-        "addressCountry": "RU",
-        "streetAddress": "пр-кт Нахимова, 8"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/all.html">Крым</a>
     </div>
     <h1 class="genre-hero-title">Krongs</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">пр-кт Нахимова, 8, Крым</span></div>
+    
     <p class="venue-description">За неделю здесь прошло 5 концертов — почти все поп, без узнаваемых резидентов. Данных пока мало для более подробного портрета.</p>
   </div>
   
