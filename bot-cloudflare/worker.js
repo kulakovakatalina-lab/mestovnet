@@ -105,6 +105,60 @@ const getDraft = async (env, id) =>
 const setDraft = (env, id, d) => env.KV.put(`draft:${id}`, JSON.stringify(d));
 const delDraft = (env, id) => env.KV.delete(`draft:${id}`);
 
+// Подписки на напоминания об конкретных событиях («Хочу пойти»):
+//   evsub:<eventId>  -> [chatId, ...]   — кому напоминать про это событие
+//   evsubs:<chatId>  -> [eventId, ...]  — на какие события подписан этот чат
+const getEvSub = (env, eid) => env.KV.get(`evsub:${eid}`, { type: "json" });
+const setEvSub = (env, eid, chats) => env.KV.put(`evsub:${eid}`, JSON.stringify(chats));
+const delEvSub = (env, eid) => env.KV.delete(`evsub:${eid}`);
+const getUserEvents = async (env, chatId) => (await env.KV.get(`evsubs:${chatId}`, { type: "json" })) || [];
+const setUserEvents = (env, chatId, evs) => env.KV.put(`evsubs:${chatId}`, JSON.stringify(evs));
+const delUserEvents = (env, chatId) => env.KV.delete(`evsubs:${chatId}`);
+
+async function addEventSub(env, chatId, eventId) {
+  const chats = (await getEvSub(env, eventId)) || [];
+  if (!chats.includes(chatId)) {
+    chats.push(chatId);
+    await setEvSub(env, eventId, chats);
+  }
+  const evs = await getUserEvents(env, chatId);
+  if (!evs.includes(eventId)) {
+    evs.push(eventId);
+    await setUserEvents(env, chatId, evs);
+  }
+}
+
+async function removeEventSub(env, chatId, eventId) {
+  const chats = (await getEvSub(env, eventId)) || [];
+  const i = chats.indexOf(chatId);
+  if (i !== -1) {
+    chats.splice(i, 1);
+    if (chats.length) await setEvSub(env, eventId, chats);
+    else await delEvSub(env, eventId);
+  }
+  const evs = await getUserEvents(env, chatId);
+  const j = evs.indexOf(eventId);
+  if (j !== -1) {
+    evs.splice(j, 1);
+    if (evs.length) await setUserEvents(env, chatId, evs);
+    else await delUserEvents(env, chatId);
+  }
+}
+
+async function iterEventSubs(env) {
+  const out = [];
+  let cursor;
+  do {
+    const list = await env.KV.list({ prefix: "evsub:", cursor });
+    for (const k of list.keys) {
+      const chats = await env.KV.get(k.name, { type: "json" });
+      if (chats && chats.length) out.push([k.name.slice(6), chats]);
+    }
+    cursor = list.list_complete ? null : list.cursor;
+  } while (cursor);
+  return out;
+}
+
 async function iterSubs(env) {
   const out = [];
   let cursor;
@@ -183,6 +237,19 @@ function priceText(p) {
   return p;
 }
 
+function fmtWhen(e) {
+  const [y, m, d] = e.date.split("-").map(Number);
+  const wd = (new Date(Date.UTC(y, m - 1, d)).getUTCDay() + 6) % 7;
+  let when = `${String(d).padStart(2, "0")} ${MONTHS_GEN[m - 1]} (${DOW[wd]})`;
+  if (e.time) when += ` ${e.time}`;
+  return when;
+}
+
+function fmtDateShort(e) {
+  const [, m, d] = e.date.split("-").map(Number);
+  return `${d} ${MONTHS_GEN[m - 1]}`;
+}
+
 function formatDigest(events, genres, cities) {
   if (!events.length) {
     return "На ближайшую неделю по твоим фильтрам событий не нашлось 🤷\n" +
@@ -195,13 +262,9 @@ function formatDigest(events, genres, cities) {
     ? "весь Крым" : CITY_ORDER.filter((c) => cities.includes(c)).map((c) => CITY_LABELS[c]).join(", ");
   const lines = ["🎶 <b>Подборка живой музыки</b>", `<i>${esc(gLabel)} · ${esc(cLabel)}</i>`, ""];
   for (const e of events.slice(0, MAX_EVENTS)) {
-    const [y, m, d] = e.date.split("-").map(Number);
-    const wd = (new Date(Date.UTC(y, m - 1, d)).getUTCDay() + 6) % 7;
-    let when = `${String(d).padStart(2, "0")} ${MONTHS_GEN[m - 1]} (${DOW[wd]})`;
-    if (e.time) when += ` ${e.time}`;
     const place = [e.sourceCity, e.venue, priceText(e.price)].filter(Boolean).map(esc).join(" · ");
     const link = `${SITE}/event/${e.id}`;
-    lines.push(`📅 ${when} — <a href="${link}"><b>${esc(e.artist)}</b></a>\n📍 ${place}\n`);
+    lines.push(`📅 ${fmtWhen(e)} — <a href="${link}"><b>${esc(e.artist)}</b></a>\n📍 ${place}\n`);
   }
   if (events.length > MAX_EVENTS)
     lines.push(`…и ещё ${events.length - MAX_EVENTS}. Все события — <a href="${SITE}">Местов.Нет</a>`);
@@ -214,16 +277,57 @@ function formatDigest(events, genres, cities) {
   return lines.join("\n");
 }
 
+// Тексты напоминаний «Хочу пойти» — за неделю/3 дня/день до события.
+function reminderText(kind, e) {
+  const link = `${SITE}/event/${e.id}`;
+  const artist = esc(e.artist);
+  const venue = esc(e.venue);
+  const city = esc(e.sourceCity);
+  const price = priceText(e.price);
+  if (kind === "t7") {
+    return [
+      "🎸 Через неделю — концерт, на который ты собираешься:",
+      "",
+      `<b>${artist}</b>`,
+      fmtWhen(e),
+      `📍 ${venue} · ${city}`,
+      ...(price ? [esc(price)] : []),
+      "",
+      `👉 <a href="${link}">Подробнее на Местов.Нет</a>`,
+    ].join("\n");
+  }
+  if (kind === "t3") {
+    return [
+      `⏳ Через 3 дня — <b>${artist}</b> в ${venue}.`,
+      fmtWhen(e),
+      "",
+      "Если билет или компания ещё не в кармане — самое время этим заняться.",
+      link,
+    ].join("\n");
+  }
+  return [
+    `🔥 Завтра — <b>${artist}</b>`,
+    fmtWhen(e),
+    `📍 ${venue}, ${city}`,
+    ...(price ? [esc(price)] : []),
+    "",
+    "Увидимся там.",
+    link,
+  ].join("\n");
+}
+
 // ---------------------------------------------------------------------------
 // Клавиатуры
 // ---------------------------------------------------------------------------
 const btn = (text, data) => ({ text, callback_data: data });
 const MAIN_KB = { keyboard: [[{ text: BTN_MENU }, { text: BTN_DIGEST }]], resize_keyboard: true, is_persistent: true };
+const cancelEventKb = (eventId) => ({ inline_keyboard: [[btn("❌ Отменить напоминания", `ev:cancel:${eventId}`)]] });
 
 const mainMenuKb = () => ({
   inline_keyboard: [
     [btn("✏️ Настроить подписку", "cfg:start")],
     [btn("📩 Прислать подборку сейчас", "digest:now")],
+    [btn("🎫 Мои события", "ev:list")],
     [btn("👀 Моя подписка", "sub:show")],
     [btn("🔕 Отписаться", "sub:stop")],
   ],
@@ -363,11 +467,38 @@ async function onStats(env, chatId, userId) {
   await send(env, chatId, lines.join("\n"));
 }
 
+async function handleEventStart(env, chatId, eventId) {
+  let events;
+  try {
+    events = await fetchEvents();
+  } catch (e) {
+    await send(env, chatId, "Не удалось загрузить события с сайта, попробуй позже 🙏", null, false);
+    return;
+  }
+  const e = events.find((x) => x.id === eventId);
+  if (!e) {
+    await send(env, chatId, "Не нашёл это событие — возможно, оно уже прошло или отменено.", null, false);
+    return;
+  }
+  await addEventSub(env, chatId, eventId);
+  const place = [e.venue, e.sourceCity].filter(Boolean).map(esc).join(", ");
+  const text =
+    `Записал! <b>${esc(e.artist)}</b>\n${fmtWhen(e)}${place ? `\n📍 ${place}` : ""}\n\n` +
+    "Напомню за неделю, за 3 дня и за день до концерта.";
+  await send(env, chatId, text, cancelEventKb(eventId));
+}
+
 async function onCommand(env, chatId, userId, text) {
-  const cmd = text.split(/\s+/)[0].replace("/", "").split("@")[0];
+  const parts = text.split(/\s+/);
+  const cmd = parts[0].replace("/", "").split("@")[0];
   if (cmd === "start") {
-    await send(env, chatId, WELCOME, MAIN_KB);
-    await send(env, chatId, "Что хочешь сделать?", mainMenuKb(), false);
+    const payload = parts[1] || "";
+    if (payload.startsWith("event_")) {
+      await handleEventStart(env, chatId, payload.slice("event_".length));
+    } else {
+      await send(env, chatId, WELCOME, MAIN_KB);
+      await send(env, chatId, "Что хочешь сделать?", mainMenuKb(), false);
+    }
   } else if (cmd === "help") {
     await send(env, chatId, "Команды:\n/start — меню\n/digest — подборка сейчас\n/stop — отписаться", mainMenuKb(), false);
   } else if (cmd === "digest") {
@@ -444,6 +575,29 @@ async function onCallback(env, cb) {
     } else {
       await editText(env, chatId, msgId, "Подписки и не было. /start", null, false);
     }
+  } else if (data.startsWith("ev:cancel:")) {
+    const eid = data.slice("ev:cancel:".length);
+    await removeEventSub(env, chatId, eid);
+    await editText(env, chatId, msgId, "Напоминания отменены.", null, false);
+  } else if (data === "ev:list") {
+    const evIds = await getUserEvents(env, chatId);
+    if (!evIds.length) {
+      await editText(env, chatId, msgId,
+        "Пока нет подписок на события. Нажми «Хочу пойти» на странице интересного концерта на сайте.", mainMenuKb(), false);
+      return;
+    }
+    let events;
+    try { events = await fetchEvents(); } catch (e) { events = []; }
+    const byId = Object.fromEntries(events.map((x) => [x.id, x]));
+    const rows = evIds.map((eid) => {
+      const e = byId[eid];
+      const label = e ? `${e.artist} — ${fmtDateShort(e)}` : eid;
+      return [btn(`❌ ${label}`, `ev:cancel:${eid}`)];
+    });
+    rows.push([btn("‹ Назад", "menu:back")]);
+    await editText(env, chatId, msgId, "🎫 <b>Твои события</b>\nНажми, чтобы отменить напоминания:", { inline_keyboard: rows });
+  } else if (data === "menu:back") {
+    await editText(env, chatId, msgId, "Что хочешь сделать?", mainMenuKb(), false);
   }
 }
 
@@ -473,6 +627,36 @@ async function runCron(env) {
   }
 }
 
+// Напоминания «Хочу пойти» — за 7/3/1 день до события. Кроном бежим раз в
+// сутки, поэтому просто сверяем разницу дат "в лоб": попадание ровно в 7/3/1
+// происходит один раз на событие, дополнительный учёт "уже отправлено" не нужен.
+async function runEventReminders(env) {
+  let events;
+  try {
+    events = await fetchEvents();
+  } catch (e) {
+    console.log("event reminders: fetch failed", e);
+    return;
+  }
+  const byId = Object.fromEntries(events.map((x) => [x.id, x]));
+  const today = crimeaParts().iso;
+  for (const [eventId, chats] of await iterEventSubs(env)) {
+    const e = byId[eventId];
+    if (!e) {
+      // событие прошло, отменено или скрыто — снимаем все напоминания по нему
+      for (const chatId of chats) await removeEventSub(env, chatId, eventId);
+      continue;
+    }
+    const diffDays = Math.round((Date.parse(e.date) - Date.parse(today)) / 86400000);
+    const kind = diffDays === 7 ? "t7" : diffDays === 3 ? "t3" : diffDays === 1 ? "t1" : null;
+    if (!kind) continue;
+    const text = reminderText(kind, e);
+    for (const chatId of chats) {
+      try { await send(env, chatId, text, cancelEventKb(eventId)); } catch (err) { console.log("reminder failed", chatId, eventId, err); }
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Точки входа Cloudflare Workers
 // ---------------------------------------------------------------------------
@@ -493,5 +677,6 @@ export default {
 
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runCron(env));
+    ctx.waitUntil(runEventReminders(env));
   },
 };
