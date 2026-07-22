@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 4 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
-  <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 4 ближайших событий. Расписание и билеты.">
+  <title>Снежинка — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/snezhinka">
+  <meta property="og:title" content="Снежинка — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,79 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Рок-н-рольщики (Симферополь)",
+      "name": "Снежинка",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Екатерининская, 14"
+        "addressLocality": "Севастополь",
+        "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
-      "startDate": "2026-07-24T21:00:00+03:00",
+      "name": "Денайро",
+      "startDate": "2026-07-24T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
+        "name": "Снежинка"
       },
-      "description": "Акустический трибьют «Король и Шут» в честь дня памяти Михаила Горшенёва. Квартирник около 21:00, клуб работает с 18:00 до 4:00.",
+      "description": "Живая программа из русской и зарубежной популярной музыки: вокал, гитара, клавиши, саксофон и ударные.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Денайро"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «САБ»",
-      "startDate": "2026-07-25T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «САБ»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дегустация настоек",
-      "startDate": "2026-07-26T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Бесплатная дегустация авторских настоек. Презентация меню.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дегустация настоек"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Кальвадос»",
-      "startDate": "2026-07-31T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Группа «Кальвадос». Хиты русского рока и поп-рока. Не акустика.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Кальвадос»"
-      },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/1e973fa271d4611af9731ceb97b098dc.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Рок-н-рольщики (Симферополь)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Снежинка"}]}
 </script>
   <style>
 
@@ -1109,13 +1063,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Рок-н-рольщики (Симферополь)</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Екатерининская, 14, Симферополь</a></div>
-    <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
+    <h1 class="genre-hero-title">Снежинка</h1>
+    
+    
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1127,47 +1081,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
-<script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "Рок-н-рольщики (Симферополь)";
-  var addr = "ул. Екатерининская, 14, Симферополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.951251,34.098202";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.951251, 34.098202],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.951251, 34.098202], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
+
 
 <script>
-const VENUE_ALIASES = ["Рок-н-рольщики в Симферополе", "Рок-н-рольщики (Симферополь)"];
+const VENUE_ALIASES = ["Снежинка"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
