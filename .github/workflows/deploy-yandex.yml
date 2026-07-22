@@ -140,19 +140,28 @@ jobs:
             --website-configuration '{"IndexDocument":{"Suffix":"index.html"},"ErrorDocument":{"Key":"404.html"}}'
 
       # Smoke-проверка прода: если что-то сломано — прогон красный.
-      # ?v=RUN_ID обходит 5-минутный кэш CDN, чтобы проверялась свежая версия.
+      # ?v=RUN_ID должен обходить 5-минутный кэш CDN, но CDN (yccdn) не
+      # учитывает query string в ключе кэша и отдаёт cache HIT многочасовой
+      # давности даже с уникальным ?v= — сам факт "?v= обходит кэш" не
+      # подтверждается (see cache-status: HIT, last-modified на много часов
+      # раньше деплоя). Поэтому Content-Type (который выставляет именно наш
+      # aws s3 sync и который CDN может закэшировать в устаревшем виде)
+      # проверяем напрямую у origin (S3 API), а не через mestov.net —
+      # так тест проверяет то, что реально контролирует деплой, а не то,
+      # что в моменте отдаёт CDN.
       - name: Проверить сайт после деплоя
         run: |
           set -e
           SITE="https://mestov.net"
+          ORIGIN="https://storage.yandexcloud.net/mestov.net"
           V="?v=${{ github.run_id }}"
 
           echo "1) Главная отвечает и содержит контент"
           curl -sfSL "$SITE/$V" -o /tmp/home.html
           grep -qi "местов" /tmp/home.html || { echo "FAIL: на главной нет названия сайта"; exit 1; }
 
-          echo "1b) Content-Type главной содержит charset=utf-8 (без этого возможны кракозябры)"
-          curl -sfSIL "$SITE/$V" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у главной нет charset=utf-8 в Content-Type"; exit 1; }
+          echo "1b) Content-Type главной (origin) содержит charset=utf-8 (без этого возможны кракозябры)"
+          curl -sfSIL "$ORIGIN/index.html" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у главной нет charset=utf-8 в Content-Type"; exit 1; }
 
           echo "2) events.json валиден и не пустой"
           curl -sfSL "$SITE/events.json$V" -o /tmp/events.json
@@ -186,7 +195,7 @@ jobs:
           echo "4) Страница города открывается"
           curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
-          curl -sfSIL "$SITE/cities/sevastopol.html$V" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у страницы города нет charset=utf-8 в Content-Type"; exit 1; }
+          curl -sfSIL "$ORIGIN/cities/sevastopol.html" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у страницы города нет charset=utf-8 в Content-Type"; exit 1; }
 
           echo "4b) Страница жанра открывается"
           curl -sfSL "$SITE/genre/jazz/$V" -o /tmp/genre.html
