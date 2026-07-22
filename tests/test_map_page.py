@@ -137,3 +137,46 @@ class TestVenuePagePinMap:
             assert "api-maps.yandex.ru" not in html, (
                 f"{v['slug']}: не должен подключаться Yandex Maps API без координат"
             )
+
+
+class TestEventPageVenueMap:
+    """Карточка события (event.html и его копии event/<id>) — в блоке
+    «Место проведения» вместо ссылки «Открыть на Яндекс Картах» встроенная
+    мини-карта с пином (только когда у площадки события есть координаты)."""
+
+    # event/<id> — статические копии event.html: generate_pages.py меняет
+    # только <head> (title/meta/jsonld), тело и весь JS идентичны исходнику.
+    # Сама карта строится в браузере во время выполнения (venueByAlias из
+    # venues.json, hasCoords), поэтому какая площадка получит карту решает
+    # рантайм, а не генератор — статический grep по event/<id> не может
+    # отличить "с координатами" от "без" (весь JS одинаков везде). Проверяем
+    # только исходный шаблон; фактический рендер карты и что она не ломает
+    # вёрстку — проверено вручную в браузере (см. commit).
+    def test_event_html_template_has_map_init(self, project_root):
+        html = (project_root / "event.html").read_text(encoding="utf-8")
+        assert "Открыть на Яндекс Картах" not in html, "старая ссылка-кнопка должна быть удалена"
+        assert "event-venue-map" in html
+        assert "api-maps.yandex.ru" in html
+        assert "Как проехать?" in html
+        assert "rtext=~" in html
+        assert "fitToViewport" in html, (
+            "без fitToViewport карта может отрендериться шире карточки "
+            "(контейнер меняет размер после инициализации карты)"
+        )
+
+    def test_generated_event_pages_match_template(self, project_root, events):
+        template = (project_root / "event.html").read_text(encoding="utf-8")
+        template_script = template.split("<script>", 1)[1]
+        checked = 0
+        for e in events[:5]:
+            path = project_root / "event" / (e.get("id") or "")
+            if not e.get("id") or not path.is_file():
+                continue
+            html = path.read_text(encoding="utf-8")
+            assert "Открыть на Яндекс Картах" not in html
+            assert html.split("<script>", 1)[1] == template_script, (
+                f"event/{e['id']}: JS-код разъехался с event.html — "
+                "generate_pages.py должен был просто скопировать тело шаблона"
+            )
+            checked += 1
+        assert checked, "не нашлось ни одной сгенерированной страницы события"
