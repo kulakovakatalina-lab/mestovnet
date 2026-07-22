@@ -498,17 +498,38 @@ a { color: inherit; text-decoration: none; }
   color: var(--fg);
   margin-bottom: 10px;
 }
-.venue-map-link {
+.event-venue-map-wrap { margin-top: 10px; }
+#event-venue-map {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.event-venue-map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--muted);
+  font-size: 13px;
+}
+.balloon-card { min-width: 180px; }
+.balloon-name { font-weight: 700; margin-bottom: 4px; }
+.balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.balloon-route {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  padding: 7px 14px;
   font-size: 13px;
-  font-weight: 500;
-  color: var(--accent);
-  transition: opacity 0.12s;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  transition: filter 0.12s;
 }
-.venue-map-link:hover { opacity: 0.75; }
-.venue-map-link svg { width: 14px; height: 14px; flex-shrink: 0; }
+.balloon-route:hover { filter: brightness(1.08); }
 
 .event-sidebar {
   padding-top: 40px;
@@ -1414,14 +1435,10 @@ function render(event) {
               const name = escapeHtml(event.venue) || '—';
               const city = escapeHtml(event.source_city) || '—';
               const nameHtml = vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name;
-              const mapHtml = (vd && vd.address) ? `
-              <a href="https://yandex.ru/maps/?text=${encodeURIComponent(vd.address + ', ' + city + ', Крым')}" target="_blank" rel="noopener" class="venue-map-link">
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"/>
-                  <circle cx="8" cy="6.5" r="1.75"/>
-                </svg>
-                Открыть на Яндекс Картах
-              </a>` : '';
+              const hasCoords = vd && typeof vd.lat === 'number' && typeof vd.lon === 'number';
+              const mapHtml = hasCoords
+                ? `<div class="event-venue-map-wrap"><div id="event-venue-map"><div class="event-venue-map-loading">Загрузка карты…</div></div></div>`
+                : '';
               return `<div class="venue-info"><div class="venue-name">${nameHtml}, ${city}</div>${mapHtml}</div>`;
             })()}
           </div>
@@ -1444,6 +1461,52 @@ function render(event) {
   document.getElementById('content').innerHTML = html;
   initCarousel();
   updateLoadMoreBtn();
+  initVenueMap(venueByAlias[event.venue || ''], event.source_city);
+}
+
+let ymapsLoading = null;
+function loadYmaps() {
+  if (window.ymaps) return Promise.resolve();
+  if (!ymapsLoading) {
+    ymapsLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU';
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+  return ymapsLoading;
+}
+
+function initVenueMap(vd, city) {
+  const el = document.getElementById('event-venue-map');
+  if (!el || !vd || typeof vd.lat !== 'number' || typeof vd.lon !== 'number') return;
+  const lat = vd.lat, lon = vd.lon;
+  loadYmaps().then(() => ymaps.ready(() => {
+    if (!document.getElementById('event-venue-map')) return; // ушли со страницы, пока грузилась карта
+    el.innerHTML = '';
+    const addr = [vd.address, city].filter(Boolean).join(', ') || 'Крым';
+    const routeUrl = `https://yandex.ru/maps/?rtext=~${lat},${lon}`;
+    const balloonContent = `<div class="balloon-card">`
+      + `<div class="balloon-name">${escapeHtml(vd.name)}</div>`
+      + `<div class="balloon-addr">${escapeHtml(addr)}</div>`
+      + `<a class="balloon-route" href="${routeUrl}" target="_blank" rel="noopener">Как проехать?</a>`
+      + `</div>`;
+    const map = new ymaps.Map(el, { center: [lat, lon], zoom: 16, controls: ['zoomControl'] });
+    const placemark = new ymaps.Placemark([lat, lon], {
+      hintContent: vd.name,
+      balloonContent,
+    }, { preset: 'islands#blueDotIcon' });
+    map.geoObjects.add(placemark);
+    // Карта инициализируется в узкой карточке внутри CSS-грида — размер
+    // контейнера на момент создания карты может ещё измениться (шрифты,
+    // разметка). Яндекс.Карты сами не подстраиваются под ресайз контейнера.
+    requestAnimationFrame(() => map.container.fitToViewport());
+    window.addEventListener('resize', () => map.container.fitToViewport());
+  })).catch(() => {
+    if (el) el.innerHTML = '<div class="event-venue-map-loading">Не удалось загрузить карту</div>';
+  });
 }
 
 function initCarousel() {
