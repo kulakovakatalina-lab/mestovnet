@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Capulco 0.0 — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 2 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/el-capulco">
-  <meta property="og:title" content="El Capulco 0.0 — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <title>Зеленый Кордон (яблоневый сад, Бельбекская долина) — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Зеленый Кордон (яблоневый сад, Бельбекская долина), в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/zelenyy-kordon-yablonevyy-sad-belbekskaya-dolina">
+  <meta property="og:title" content="Зеленый Кордон (яблоневый сад, Бельбекская долина) — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Зеленый Кордон (яблоневый сад, Бельбекская долина), в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,48 +28,18 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "El Capulco 0.0",
+      "name": "Зеленый Кордон (яблоневый сад, Бельбекская долина)",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ялта",
+        "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Spahova, Kuznetsov, Pasha Rhino",
-      "startDate": "2026-07-24T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "El Capulco 0.0"
-      },
-      "description": "DJ-сет Pasha Rhino в рамках программы летних вечеров El Capulco 0.0.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Spahova, Kuznetsov, Pasha Rhino"
-      },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Pasha Rhino, Santier, Gretta",
-      "startDate": "2026-07-25T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "El Capulco 0.0"
-      },
-      "description": "Гостевой DJ-сет Gretta в рамках программы летних вечеров El Capulco 0.0.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Pasha Rhino, Santier, Gretta"
-      },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "El Capulco 0.0"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Зеленый Кордон (яблоневый сад, Бельбекская долина)"}]}
 </script>
   <style>
 
@@ -1078,13 +1048,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/yalta.html">Ялта</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">El Capulco 0.0</h1>
+    <h1 class="genre-hero-title">Зеленый Кордон (яблоневый сад, Бельбекская долина)</h1>
     
-    
+    <p class="venue-description">Яблоневый сад в Бельбекской долине под Севастополем — площадка под открытым небом для концертов авторской музыки, например выступление группы GangaMantra.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
@@ -1106,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["El Capulco 0.0", "El Capulco", "El Capulco 0.0"];
+const VENUE_ALIASES = ["Зеленый Кордон (яблоневый сад, Бельбекская долина)", "Зеленый Кордон (яблоневый сад, Бельбекская долина)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

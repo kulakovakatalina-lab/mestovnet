@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Феодосия",
-        "addressCountry": "RU",
-        "streetAddress": "пр-кт им. Айвазовского, 45к7"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/feodosiya.html">Феодосия</a>
     </div>
     <h1 class="genre-hero-title">ДКиТ «Чайка»</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">пр-кт им. Айвазовского, 45к7, Феодосия</span></div>
+    
     <p class="venue-description">Дворец культуры и творчества «Чайка» в Феодосии — концертный зал на 426 мест, здание 1932 года.</p>
   </div>
   

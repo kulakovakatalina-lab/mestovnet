@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симеиз",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Владимира Луговского, 2А, пгт Симеиз"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/simeiz.html">Симеиз</a>
     </div>
     <h1 class="genre-hero-title">Hungry Bird</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Владимира Луговского, 2А, пгт Симеиз, Симеиз</a></div>
+    
     <p class="venue-description">Hungry Bird — крафтовый бар-ресторан на набережной Симеиза с живой атмосферой у моря.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Hungry Bird";
-  var addr = "ул. Владимира Луговского, 2А, пгт Симеиз, Симеиз";
+  var addr = "Симеиз";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.40293,34.00436";
   var el = document.getElementById('venue-map');
   if (!el) return;

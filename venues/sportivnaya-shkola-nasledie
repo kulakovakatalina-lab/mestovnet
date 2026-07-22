@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Керчь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Архиепископа Луки Войно-Ясенецкого, 5"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/kerch.html">Керчь</a>
     </div>
     <h1 class="genre-hero-title">Спортивная школа «Наследие»</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Архиепископа Луки Войно-Ясенецкого, 5, Керчь</a></div>
+    
     <p class="venue-description">Спортивная школа «Наследие» в Керчи — школа зимних видов спорта с секциями хоккея и фигурного катания.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Спортивная школа «Наследие»";
-  var addr = "ул. Архиепископа Луки Войно-Ясенецкого, 5, Керчь";
+  var addr = "Керчь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~45.338772,36.446663";
   var el = document.getElementById('venue-map');
   if (!el) return;

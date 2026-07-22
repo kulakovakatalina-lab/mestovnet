@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "12-й км дороги Гончарное — Ялта"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Ресторан «Шалаш»</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">12-й км дороги Гончарное — Ялта, Севастополь</a></div>
+    
     <p class="venue-description">Ресторан «Шалаш» — заведение кавказской кухни у Байдарских ворот с живописным горным видом.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Ресторан «Шалаш»";
-  var addr = "12-й км дороги Гончарное — Ялта, Севастополь";
+  var addr = "Севастополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.406022,33.781645";
   var el = document.getElementById('venue-map');
   if (!el) return;

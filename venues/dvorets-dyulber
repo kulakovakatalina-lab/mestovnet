@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "Алупкинское шоссе, 19, пгт Кореиз"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Дворец «Дюльбер»</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">Алупкинское шоссе, 19, пгт Кореиз, Севастополь</span></div>
+    
     <p class="venue-description">За последний месяц здесь прошло 5 концертов — камерные вечера с одним и тем же составом музыкантов: Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Руслан Сейдалиев и Максим Перов играли здесь по два раза каждый. Среди программ — «Песни любимого кино»: вокал, фортепиано, труба и ударные.</p>
   </div>
   

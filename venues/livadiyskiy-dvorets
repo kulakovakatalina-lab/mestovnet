@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Батурина, 44А, пгт Ливадия"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Ливадийский дворец</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Батурина, 44А, пгт Ливадия, Ялта</a></div>
+    
     <p class="venue-description">Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Ливадийский дворец";
-  var addr = "ул. Батурина, 44А, пгт Ливадия, Ялта";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.467678,34.143826";
   var el = document.getElementById('venue-map');
   if (!el) return;

@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "67-й км дороги Ялта — Севастополь"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">API Balaklava</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">67-й км дороги Ялта — Севастополь, Севастополь</span></div>
+    
     <p class="venue-description">API Balaklava — бутик-отель среди виноградников с бистро-баром и видом на горы, в 10 минутах от Балаклавы.</p>
   </div>
   

@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Ялтинская, 30Б, с. Соколиное"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Пания Парк</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Ялтинская, 30Б, с. Соколиное, Севастополь</span></div>
+    
     <p class="venue-description">Пания Парк — этническое пространство с ярмарками, мастер-классами и площадками для культурных мероприятий.</p>
   </div>
   
