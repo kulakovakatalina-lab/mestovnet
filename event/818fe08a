@@ -1405,17 +1405,15 @@ function render(event) {
               ).join('') + `</div>`;
             })()}
 
-            <div class="section-label">Место проведения</div>
             ${(function(){
               const vd = venueByAlias[event.venue || ''];
+              const hasCoords = vd && typeof vd.lat === 'number' && typeof vd.lon === 'number';
+              if (!hasCoords) return '';
               const name = escapeHtml(event.venue) || '—';
               const city = escapeHtml(event.source_city) || '—';
               const nameHtml = vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name;
-              const hasCoords = vd && typeof vd.lat === 'number' && typeof vd.lon === 'number';
-              const mapHtml = hasCoords
-                ? `<div class="event-venue-map-wrap"><div id="event-venue-map"><div class="event-venue-map-loading">Загрузка карты…</div></div></div>`
-                : '';
-              return `<div class="venue-info"><div class="venue-name">${nameHtml}, ${city}</div>${mapHtml}</div>`;
+              const mapHtml = `<div class="event-venue-map-wrap"><div id="event-venue-map"><div class="event-venue-map-loading">Загрузка карты…</div></div></div>`;
+              return `<div class="section-label">Место проведения</div><div class="venue-info"><div class="venue-name">${nameHtml}, ${city}</div>${mapHtml}</div>`;
             })()}
           </div>
         </div>
