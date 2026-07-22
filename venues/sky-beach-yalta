@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Дражинского, 37"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Sky Beach Ялта</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Дражинского, 37, Ялта</a></div>
+    
     <p class="venue-description">За год здесь прошло 3 концерта с платным входом. Певица CORA дважды открывала здесь сезон — живой вокал под открытым небом и диджей-сет у подогреваемого бассейна. Афиша целиком поп.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Sky Beach Ялта";
-  var addr = "ул. Дражинского, 37, Ялта";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.501937,34.188862";
   var el = document.getElementById('venue-map');
   if (!el) return;

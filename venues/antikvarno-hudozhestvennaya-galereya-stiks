@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>кафе «Van Gogh», Массандровский пляж — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в кафе «Van Gogh», Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/kafe-van-gogh-massandrovskiy-plyazh">
-  <meta property="og:title" content="кафе «Van Gogh», Массандровский пляж — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в кафе «Van Gogh», Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <title>Антикварно-художественная галерея «Стикс» — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/antikvarno-hudozhestvennaya-galereya-stiks">
+  <meta property="og:title" content="Антикварно-художественная галерея «Стикс» — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Антикварно-художественная галерея «Стикс», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,19 +28,18 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "кафе «Van Gogh», Массандровский пляж",
+      "name": "Антикварно-художественная галерея «Стикс»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Дражинского, 31Г"
+        "addressCountry": "RU"
       }
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "кафе «Van Gogh», Массандровский пляж"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Антикварно-художественная галерея «Стикс»"}]}
 </script>
   <style>
 
@@ -1051,9 +1050,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">кафе «Van Gogh», Массандровский пляж</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Дражинского, 31Г, Ялта</a></div>
-    <p class="venue-description">За один уик-энд здесь прошло 3 концерта. Певица Spahova выступала дважды, а открытие майского сезона на пляже прошло под темой Jazzy Brut с диджей-сетом.</p>
+    <h1 class="genre-hero-title">Антикварно-художественная галерея «Стикс»</h1>
+    
+    <p class="venue-description">Антикварно-художественная галерея в Ялте на ул. Игнатенко, где проходят камерные музыкальные вечера — например выступление певицы, поэта и актрисы Елены Свок с авторской песней.</p>
   </div>
   
 </div>
@@ -1082,9 +1081,9 @@ ymaps.ready(function() {
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
     });
   }
-  var name = "кафе «Van Gogh», Массандровский пляж";
-  var addr = "ул. Дражинского, 31Г, Ялта";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.497592,34.176973";
+  var name = "Антикварно-художественная галерея «Стикс»";
+  var addr = "Ялта";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.496812,34.172528";
   var el = document.getElementById('venue-map');
   if (!el) return;
   el.innerHTML = '';
@@ -1094,11 +1093,11 @@ ymaps.ready(function() {
     + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
     + '</div>';
   var map = new ymaps.Map(el, {
-    center: [44.497592, 34.176973],
+    center: [44.496812, 34.172528],
     zoom: 16,
     controls: ['zoomControl'],
   });
-  var placemark = new ymaps.Placemark([44.497592, 34.176973], {
+  var placemark = new ymaps.Placemark([44.496812, 34.172528], {
     hintContent: name,
     balloonContent: balloonContent,
   }, { preset: 'islands#blueDotIcon' });
@@ -1107,7 +1106,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["кафе «Van Gogh», Массандровский пляж", "кафе «Van Gogh», Массандровский пляж"];
+const VENUE_ALIASES = ["Антикварно-художественная галерея «Стикс»", "Антикварно-художественная галерея «Стикс»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

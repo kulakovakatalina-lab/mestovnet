@@ -106,19 +106,40 @@ def load_venue_keys(venues: list[dict]) -> set[str]:
     return keys
 
 
+def needs_desc_update(description, event_count: int, baseline) -> bool:
+    """Описание пора переписать: его нет, либо событийная история заметно
+    выросла с момента последней ручной правки (см. ACTUALIZATION.md)."""
+    if not description:
+        return True
+    baseline = baseline or 0
+    if baseline <= 0:
+        return True
+    if event_count - baseline >= 5:
+        return True
+    if event_count >= baseline * 1.3:
+        return True
+    return False
+
+
 def main():
     events = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
     venues = json.loads(VENUES_FILE.read_text(encoding="utf-8")) if VENUES_FILE.exists() else []
     venue_keys = load_venue_keys(venues)
 
     # Рукописные описания из прошлой версии реестра переживают пересборку:
-    # мерджим по slug. Написание описаний — отдельный ручной шаг, скрипт
-    # их только сохраняет, никогда не генерирует и не затирает.
-    prev_descriptions: dict[str, str] = {}
+    # мерджим по slug, а если slug не совпал (переименование/ручная чистка) —
+    # по имени, как fallback (см. тот же приём в build_venues.py). Написание
+    # описаний — отдельный ручной шаг, скрипт их только сохраняет, никогда не
+    # генерирует и не затирает. desc_baseline_count — снимок event_count на
+    # момент последней ручной правки описания, для детекта дрейфа.
+    prev_by_slug: dict[str, dict] = {}
+    prev_by_name: dict[str, dict] = {}
     if OUT_FILE.exists():
         for prev in json.loads(OUT_FILE.read_text(encoding="utf-8")):
-            if prev.get("description"):
-                prev_descriptions[prev["slug"]] = prev["description"]
+            if prev.get("slug"):
+                prev_by_slug[prev["slug"]] = prev
+            if prev.get("name"):
+                prev_by_name[prev["name"]] = prev
 
     # is_generic_artist проверяет ПОЛЕ ЦЕЛИКОМ — событие вида «Фёдор Старовойтов,
     # Вечеринка» им не ловится (в поле есть и реальное имя). Поэтому отдельно
@@ -232,6 +253,14 @@ def main():
             slug = f"{slug}-{len(artists)}"
         slug_seen[slug] = True
 
+        prev = prev_by_slug.get(slug) or prev_by_name.get(canon_name) or {}
+        description = prev.get("description")
+        baseline = prev.get("desc_baseline_count")
+        if description and baseline is None:
+            baseline = prev.get("event_count") or event_count
+        elif not description:
+            baseline = 0
+
         artists.append({
             "slug": slug,
             "name": canon_name,
@@ -241,7 +270,8 @@ def main():
             "venues": [v for v, _ in venues_played.most_common()],
             "first_seen": min(dates) if dates else None,
             "last_seen": max(dates) if dates else None,
-            "description": prev_descriptions.get(slug),
+            "description": description,
+            "desc_baseline_count": baseline,
         })
 
     artists.sort(key=lambda a: -a["event_count"])
@@ -262,6 +292,15 @@ def main():
         print("\nИсключено как площадка (проверить, что это не артист):")
         for name, cnt in sorted(excluded_venue_match, key=lambda x: -x[1]):
             print(f"  • {name} ({cnt} событий)")
+
+    stale = [a for a in artists
+             if needs_desc_update(a["description"], a["event_count"], a["desc_baseline_count"])]
+    print(f"\nТребует обновления описания ({len(stale)}):")
+    for a in sorted(stale, key=lambda a: -a["event_count"]):
+        state = "нет описания" if not a["description"] else (
+            f"было {a['desc_baseline_count']} → стало {a['event_count']}"
+        )
+        print(f"  • {a['name']} — {state}")
 
     print("\nВозможные дубли среди опубликованных (проверить вручную):")
     keys = [(a["name"], norm_key(a["name"])) for a in artists]

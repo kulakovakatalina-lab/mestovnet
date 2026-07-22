@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Телескоп Zeiss-48 — афиша в Научный (Бахчисарайский р-н) · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научный (Бахчисарайский р-н). 0 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/teleskop-zeiss-48">
-  <meta property="og:title" content="Телескоп Zeiss-48 — афиша в Научный (Бахчисарайский р-н) · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Телескоп Zeiss-48, в Научный (Бахчисарайский р-н). 0 ближайших событий. Расписание и билеты.">
+  <title>El Capulco 0.0 — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/el-capulco-0-0">
+  <meta property="og:title" content="El Capulco 0.0 — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в El Capulco 0.0, в Ялте. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,19 +28,48 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Телескоп Zeiss-48",
+      "name": "El Capulco 0.0",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Научный (Бахчисарайский р-н)",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Научная, 46, п. Научный, Бахчисарайский р-н"
+        "addressLocality": "Ялта",
+        "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Spahova, Kuznetsov, Pasha Rhino",
+      "startDate": "2026-07-24T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "El Capulco 0.0"
+      },
+      "description": "DJ-сет Pasha Rhino в рамках программы летних вечеров El Capulco 0.0.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Spahova, Kuznetsov, Pasha Rhino"
+      },
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Pasha Rhino, Santier, Gretta",
+      "startDate": "2026-07-25T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "El Capulco 0.0"
+      },
+      "description": "Гостевой DJ-сет Gretta в рамках программы летних вечеров El Capulco 0.0.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Pasha Rhino, Santier, Gretta"
+      },
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный (Бахчисарайский р-н)", "item": "https://mestov.net/cities/научный-(бахчисарайский-р-н).html"}, {"@type": "ListItem", "position": 3, "name": "Телескоп Zeiss-48"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "El Capulco 0.0"}]}
 </script>
   <style>
 
@@ -1049,13 +1078,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/научный-(бахчисарайский-р-н).html">Научный (Бахчисарайский р-н)</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Телескоп Zeiss-48</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Научная, 46, п. Научный, Бахчисарайский р-н, Научный (Бахчисарайский р-н)</span></div>
-    <p class="venue-description">Рефлектор с диаметром зеркала 48 дюймов производства Carl Zeiss, установленный в Крымской астрофизической обсерватории в посёлке Научный. Получен как репарации после Второй мировой войны и используется для наблюдений с начала 1950-х годов.</p>
+    <h1 class="genre-hero-title">El Capulco 0.0</h1>
+    
+    <p class="venue-description">Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ&#x27;s, Scream (виниловый сет), Pasha Rhino и Gretta.</p>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1077,7 +1106,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н", "Телескоп Zeiss-48"];
+const VENUE_ALIASES = ["El Capulco 0.0", "El Capulco 0.0"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

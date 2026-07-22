@@ -92,7 +92,7 @@ MERGE_GROUPS = [
         "набережная", "набережная ялты",
     ]),
     ("ali-bair", "Эко-пространство «Али-Баир»", "Севастополь", [
-        "али-баир", "эко-пространство али баир",
+        "али-баир", "эко-пространство али баир", "эко-пространство али-баир",
         "эко-пространство али-баир, байдарская долина (с. широкое)",
         "байдарская долина, alibair",
     ]),
@@ -111,11 +111,33 @@ MERGE_GROUPS = [
     ("sev-ckii", "Севастопольский ЦКиИ", "Севастополь", [
         "центр культуры и искусства", "севастопольский цкии",
     ]),
+    # Телескоп Zeiss-48 стоит в куполе Крымской астрофизической обсерватории —
+    # это одна площадка (см. описание телескопа), не два разных места.
+    ("krymskaya-astrofizicheskaya-observatoriya", "Крымская астрофизическая обсерватория", "Научный", [
+        "крымская астрофизическая обсерватория", "телескоп zeiss-48",
+        "астрофизическая обсерватория ран (научный)",
+    ]),
+    # «Массандра» и «Севастополь Джаз» — судя по описаниям событий, это тот же
+    # фестиваль «Массандра(.)Джаз» 27 июня, что и на Винзаводе Массандра в
+    # Ялте (у «Массандра» и «Севастополь Джаз» город в источнике, похоже,
+    # спутан с городом канала-источника, а не места проведения).
+    ("vinzavod-massandra", "Винзавод Массандра", "Ялта", [
+        "винзавод массандра", "массандра", "севастополь джаз",
+    ]),
+    # Подтверждено пользователем (2026-07-22): «пляж Van Gogh» и «Пляж-кафе Van
+    # Gogh, Массандровский пляж» — одно и то же место, разъехались на два имени
+    # из-за разных исходных постов. Пересекающиеся диджеи (Martin W., Scream,
+    # Kardys) это подтверждают.
+    ("plyazh-van-gogh-massandra", "Пляж-кафе Van Gogh, Массандровский пляж", "Ялта", [
+        "пляж van gogh", "пляж-кафе van gogh, массандровский пляж",
+        "кафе van gogh, массандровский пляж",
+    ]),
 ]
 # Строки, которые не являются заведениями (фестивали/организаторы/каналы).
 # Им карточка не создаётся, события остаются без ссылки на заведение.
 EXCLUDE_KEYS = {
     "скажите джаз", "крым event", "крымские дела", "comedy republic",
+    "афиша payberry",
 }
 
 MERGE_MAP = {}   # норм-ключ → canon_id
@@ -199,9 +221,42 @@ def addr_from_desc(desc: str):
     return None
 
 
+def needs_desc_update(description, event_count: int, baseline) -> bool:
+    """Описание пора переписать: его нет, либо событийная история заметно
+    выросла с момента последней ручной правки (см. ACTUALIZATION.md)."""
+    if not description:
+        return True
+    baseline = baseline or 0
+    if baseline <= 0:
+        return True
+    if event_count - baseline >= 5:
+        return True
+    if event_count >= baseline * 1.3:
+        return True
+    return False
+
+
 def main():
     events = json.load(open(EVENTS_FILE, encoding="utf-8"))
     groups = defaultdict(list)  # key -> list of (event, base_name, addr)
+
+    # Рукописные поля (description/lat/lon) и база отсчёта дрейфа описания
+    # переживают пересборку — мерджим по slug, как build_artists.py уже
+    # делает для description. Без этого пересборка стирала бы их (см.
+    # ACTUALIZATION.md о найденном баге).
+    # Слаг сам по себе — ненадёжный ключ: часть текущих записей venues.json
+    # была вручную подчищена после исходного бутстрапа (например slug
+    # «tsarskaya-pristan» вместо сгенерированного заново «bts-tsarskaya-
+    # -pristan»), так что пересборка даёт другой slug для того же (name,
+    # city). Матчим сначала по slug, а если не нашли — по (name, city).
+    prev_by_slug: dict[str, dict] = {}
+    prev_by_namecity: dict[tuple, dict] = {}
+    if OUT_FILE.exists():
+        for prev in json.loads(OUT_FILE.read_text(encoding="utf-8")):
+            if prev.get("slug"):
+                prev_by_slug[prev["slug"]] = prev
+            if prev.get("name"):
+                prev_by_namecity[(prev["name"], prev.get("city") or "")] = prev
 
     for e in events:
         raw = (e.get("venue") or "").strip()
@@ -240,13 +295,28 @@ def main():
             slug = f"{slug}-{slugify(city) or len(venues)}"
         slug_seen[slug] = True
 
+        event_count = len(items)
+        prev = prev_by_slug.get(slug) or prev_by_namecity.get((name, city)) or {}
+        description = prev.get("description")
+        baseline = prev.get("desc_baseline_count")
+        if description and baseline is None:
+            # первый прогон после фикса — база отсчёта - это то, что было
+            # в файле до пересборки (см. ACTUALIZATION.md)
+            baseline = prev.get("event_count") or event_count
+        elif not description:
+            baseline = 0
+
         venues.append({
             "slug": slug,
             "name": name,
             "city": city,
             "address": address,
-            "event_count": len(items),
+            "event_count": event_count,
             "aliases": aliases,
+            "description": description,
+            "desc_baseline_count": baseline,
+            "lat": prev.get("lat"),
+            "lon": prev.get("lon"),
         })
 
     venues.sort(key=lambda v: -v["event_count"])
@@ -261,6 +331,16 @@ def main():
     print("\nС адресом:")
     for v in with_addr:
         print(f"  • {v['name']} — {v['address']} ({v['city']})")
+
+    # требует обновления описания (нет описания либо заметный дрейф event_count)
+    stale = [v for v in venues
+             if needs_desc_update(v["description"], v["event_count"], v["desc_baseline_count"])]
+    print(f"\nТребует обновления описания ({len(stale)}):")
+    for v in sorted(stale, key=lambda v: -v["event_count"]):
+        state = "нет описания" if not v["description"] else (
+            f"было {v['desc_baseline_count']} → стало {v['event_count']}"
+        )
+        print(f"  • {v['name']} ({v['city']}) — {state}")
 
     # подозрения на дубли (похожие ключи в одном городе)
     print("\nВозможные дубли (проверить вручную):")

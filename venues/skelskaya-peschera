@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "с. Родниковское, Балаклавский р-н"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Скельская пещера</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">с. Родниковское, Балаклавский р-н, Севастополь</a></div>
+    
     <p class="venue-description">Скельская пещера в Балаклавском районе — природный памятник, принимает экскурсии и специальные мероприятия.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Скельская пещера";
-  var addr = "с. Родниковское, Балаклавский р-н, Севастополь";
+  var addr = "Севастополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.460666,33.8685";
   var el = document.getElementById('venue-map');
   if (!el) return;

@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Массандра — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Массандра, в Севастополе. 0 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/massandra">
-  <meta property="og:title" content="Массандра — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Массандра, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <title>БЦ «Царская Пристань» — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в БЦ «Царская Пристань», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/bts-tsarskaya-pristan">
+  <meta property="og:title" content="БЦ «Царская Пристань» — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в БЦ «Царская Пристань», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,18 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Массандра",
+      "name": "БЦ «Царская Пристань»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Светлана Рубина",
+      "startDate": "2026-07-24T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "БЦ «Царская Пристань»"
+      },
+      "description": "Концерт «Времена года» — четыре сезона Вивальди в исполнении скрипачки Светланы Рубиной с дегустацией вин, с видом на южную бухту Севастополя.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Светлана Рубина"
+      },
+      "image": "/images/events/3d7756193db58af8fb3343e8465ed285.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Массандра"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "БЦ «Царская Пристань»"}]}
 </script>
   <style>
 
@@ -1050,11 +1065,11 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Массандра</h1>
+    <h1 class="genre-hero-title">БЦ «Царская Пристань»</h1>
     
-    
+    <p class="venue-description">Бизнес-центр на набережной Севастополя, где по выходным проходят маркеты с локальными брендами, арт-зоной и DJ-сетом. Здесь же звучит и академическая музыка — скрипачка Светлана Рубина выступала с программой «Времена года» Вивальди.</p>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1081,9 +1096,9 @@ ymaps.ready(function() {
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
     });
   }
-  var name = "Массандра";
+  var name = "БЦ «Царская Пристань»";
   var addr = "Севастополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.592487,33.455814";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.597345,33.527468";
   var el = document.getElementById('venue-map');
   if (!el) return;
   el.innerHTML = '';
@@ -1093,11 +1108,11 @@ ymaps.ready(function() {
     + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
     + '</div>';
   var map = new ymaps.Map(el, {
-    center: [44.592487, 33.455814],
+    center: [44.597345, 33.527468],
     zoom: 16,
     controls: ['zoomControl'],
   });
-  var placemark = new ymaps.Placemark([44.592487, 33.455814], {
+  var placemark = new ymaps.Placemark([44.597345, 33.527468], {
     hintContent: name,
     balloonContent: balloonContent,
   }, { preset: 'islands#blueDotIcon' });
@@ -1106,7 +1121,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Массандра", "Массандра"];
+const VENUE_ALIASES = ["БЦ «Царская Пристань»", "БЦ Царская Пристань", "БЦ «Царская Пристань»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

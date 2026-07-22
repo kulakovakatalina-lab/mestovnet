@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "Приморский бул., Севастополь"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">памятник Затопленным кораблям</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Приморский бул., Севастополь, Севастополь</a></div>
+    
     <p class="venue-description">Памятник Затопленным кораблям — визитная карточка Севастополя, колонна с бронзовым орлом в море, 1905 год.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "памятник Затопленным кораблям";
-  var addr = "Приморский бул., Севастополь, Севастополь";
+  var addr = "Севастополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.618344,33.524292";
   var el = document.getElementById('venue-map');
   if (!el) return;

@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Карла Маркса, 27"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Консоль Спорт</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Карла Маркса, 27, Симферополь</a></div>
+    
     <p class="venue-description">«Консоль Спорт» — семейный фитнес-клуб в центре Симферополя с тренажёрным залом и бассейном.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Консоль Спорт";
-  var addr = "ул. Карла Маркса, 27, Симферополь";
+  var addr = "Симферополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~45.118668,34.021892";
   var el = document.getElementById('venue-map');
   if (!el) return;

@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Пляж-кафе Van Gogh, Массандровский пляж — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Пляж-кафе Van Gogh, Массандровский пляж, в Ялте. 2 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/van-gogh-massandra-yalta">
-  <meta property="og:title" content="Пляж-кафе Van Gogh, Массандровский пляж — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Пляж-кафе Van Gogh, Массандровский пляж, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <title>Рок-н-рольщики (Севастополь) — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 4 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-sevastopol">
+  <meta property="og:title" content="Рок-н-рольщики (Севастополь) — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,49 +28,78 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Пляж-кафе Van Gogh, Массандровский пляж",
+      "name": "Рок-н-рольщики (Севастополь)",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "Массандровский пляж, сектор 3"
+        "addressLocality": "Севастополь",
+        "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "EL, Busha",
-      "startDate": "2026-07-23T14:00:00+03:00",
+      "name": "Дима Резник",
+      "startDate": "2026-07-24T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Пляж-кафе Van Gogh, Массандровский пляж"
+        "name": "Рок-н-рольщики (Севастополь)"
       },
-      "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+      "description": "Русский рок и поп-рок в акустике — Дима Резник.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "EL, Busha"
+        "name": "Дима Резник"
       },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     },
     {
       "@type": "MusicEvent",
-      "name": "Spahova, Martin W.",
-      "startDate": "2026-07-26T14:00:00+03:00",
+      "name": "Группа «Денайро»",
+      "startDate": "2026-07-25T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Пляж-кафе Van Gogh, Массандровский пляж"
+        "name": "Рок-н-рольщики (Севастополь)"
       },
-      "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+      "description": "Группа «Денайро» и рок-хиты. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Spahova, Martin W."
+        "name": "Группа «Денайро»"
       },
-      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Фёдор Старовойтов",
+      "startDate": "2026-07-26T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Караоке с боссом: музыкальный беспредел, поём любые песни бесплатно. Ведущий Фёдор Старовойтов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Фёдор Старовойтов"
+      },
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин",
+      "startDate": "2026-07-31T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Русский рок и поп-рок в исполнении Игоря Симдянкина. Акустика.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин"
+      },
+      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Пляж-кафе Van Gogh, Массандровский пляж"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Рок-н-рольщики (Севастополь)"}]}
 </script>
   <style>
 
@@ -1079,13 +1108,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/yalta.html">Ялта</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Пляж-кафе Van Gogh, Массандровский пляж</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">Массандровский пляж, сектор 3, Ялта</span></div>
+    <h1 class="genre-hero-title">Рок-н-рольщики (Севастополь)</h1>
     
+    <p class="venue-description">Один из самых активных концертных баров Севастополя: вход почти всегда бесплатный, играют в основном русский рок и поп-рок — акустика и трибьюты. Чаще других выступают Игорь Симдянкин и Дима Резник, также на сцене — Паша Грей, Фёдор Старовойтов и группа «Домино». Среди трибьютов — Nirvana (Paper Plain) и «Король и Шут» (Игорь Симдянкин). Кроме концертов здесь проводят дегустации настоек, караоке и пиво-понг.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1097,17 +1126,47 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Рок-н-рольщики (Севастополь)";
+  var addr = "Севастополь";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.614484,33.525136";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.614484, 33.525136],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.614484, 33.525136], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
-const VENUE_ALIASES = ["Van Gogh", "Пляж-кафе Van Gogh", "Пляж-кафе Van Gogh (Массандровский пляж, сектор 3)", "Пляж-кафе Van Gogh, Массандровский пляж", "Пляж-кафе Van Gogh, Массандровский пляж"];
+const VENUE_ALIASES = ["Рок-н-рольщики (Севастополь)", "Рок-н-рольщики (Севастополь)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

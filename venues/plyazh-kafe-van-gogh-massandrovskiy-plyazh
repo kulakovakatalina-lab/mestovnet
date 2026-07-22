@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Массандровский пляж, сектор 7 «Ковёр» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Массандровский пляж, сектор 7 «Ковёр», в Ялте. 0 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/massandrovskiy-plyazh-kover-yalta">
-  <meta property="og:title" content="Массандровский пляж, сектор 7 «Ковёр» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Массандровский пляж, сектор 7 «Ковёр», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <title>Пляж-кафе Van Gogh, Массандровский пляж — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Пляж-кафе Van Gogh, Массандровский пляж, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/plyazh-kafe-van-gogh-massandrovskiy-plyazh">
+  <meta property="og:title" content="Пляж-кафе Van Gogh, Массандровский пляж — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Пляж-кафе Van Gogh, Массандровский пляж, в Ялте. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,19 +28,48 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Массандровский пляж, сектор 7 «Ковёр»",
+      "name": "Пляж-кафе Van Gogh, Массандровский пляж",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "Массандровский пляж, сектор 7"
+        "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "EL, Busha",
+      "startDate": "2026-07-23T14:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Пляж-кафе Van Gogh, Массандровский пляж"
+      },
+      "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "EL, Busha"
+      },
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Spahova, Martin W.",
+      "startDate": "2026-07-26T14:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Пляж-кафе Van Gogh, Массандровский пляж"
+      },
+      "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Spahova, Martin W."
+      },
+      "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Массандровский пляж, сектор 7 «Ковёр»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Пляж-кафе Van Gogh, Массандровский пляж"}]}
 </script>
   <style>
 
@@ -1051,11 +1080,11 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Массандровский пляж, сектор 7 «Ковёр»</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">Массандровский пляж, сектор 7, Ялта</span></div>
+    <h1 class="genre-hero-title">Пляж-кафе Van Gogh, Массандровский пляж</h1>
     
+    <p class="venue-description">Пляжный DJ-бар на Массандровском пляже в Ялте, работает ежедневно с 12:00 до 22:00 в тёплый сезон (с мая). Резиденты — Martin W., Scream, Pasha Rhino, Kardys, Kuznetsov, Busha, Spahova и другие — играют хаус и танцевальную электронику, иногда с тематическими вечеринками вроде Jazzy Brut или We Love House.</p>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1077,7 +1106,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Бар El Capulco (Массандровский пляж, сектор 6)", "Ковёр", "Массандровский пляж сектор 7", "Массандровский пляж, сектор 7 (пляж «Ковёр»)", "Массандровский пляж, сектор 7 «Ковёр»", "Массандровский пляж, сектор 7 «Ковёр»"];
+const VENUE_ALIASES = ["Пляж-кафе Van Gogh, Массандровский пляж", "кафе «Van Gogh», Массандровский пляж", "пляж Van Gogh", "Пляж-кафе Van Gogh, Массандровский пляж"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
