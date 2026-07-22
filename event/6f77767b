@@ -329,7 +329,7 @@ a { color: inherit; text-decoration: none; }
   gap: 10px;
   margin-top: 8px;
 }
-.event-share-btn {
+.event-want-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -343,9 +343,15 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
   transition: opacity 0.15s;
   font-family: var(--font-body);
+  text-decoration: none;
 }
-.event-share-btn:hover { opacity: 0.85; }
-.event-share-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+.event-want-btn:hover { opacity: 0.85; }
+.event-want-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+.event-want-btn.is-going {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
 .event-source-btn {
   display: inline-flex;
   align-items: center;
@@ -364,6 +370,22 @@ a { color: inherit; text-decoration: none; }
 }
 .event-source-btn:hover { border-color: var(--fg); }
 .event-source-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+.event-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  padding: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
+.event-copy-btn:hover { border-color: var(--fg); color: var(--fg); }
+.event-copy-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 .page {
   max-width: var(--max-w);
@@ -593,88 +615,6 @@ a { color: inherit; text-decoration: none; }
   margin-top: 14px;
   line-height: 1.55;
 }
-
-.share-block {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.share-main-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 16px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius-sm);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: opacity 0.15s;
-  font-family: var(--font-body);
-}
-.share-main-btn:hover { opacity: 0.85; }
-.share-main-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
-
-.share-url-row {
-  display: none;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-}
-.share-url-row.visible { display: flex; }
-.share-url-text {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--muted);
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.share-copy-btn {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 5px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  background: var(--surface);
-  cursor: pointer;
-  transition: all 0.12s;
-}
-.share-copy-btn:hover { border-color: var(--fg); color: var(--fg); }
-.share-copy-btn svg { width: 13px; height: 13px; }
-
-.share-org-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px 16px;
-  margin-top: 8px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
-  transition: all 0.12s;
-  text-decoration: none;
-}
-.share-org-link:hover { border-color: var(--fg); color: var(--fg); }
-.share-org-link svg { width: 13px; height: 13px; flex-shrink: 0; }
 
 .toast {
   position: fixed;
@@ -1128,21 +1068,23 @@ function showToast(msg) {
   toast._timer = setTimeout(() => toast.classList.remove('show'), 2200);
 }
 
-function handleShare() {
+function handleCopyLink() {
   const url = window.location.href;
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(url).then(() => showToast('Ссылка скопирована'));
   }
-  const urlRow = document.getElementById('shareUrlRow');
-  const urlText = document.getElementById('shareUrlText');
-  if (urlText) urlText.textContent = url;
-  if (urlRow) urlRow.classList.add('visible');
 }
 
-function copyAgain() {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(window.location.href).then(() => showToast('Ссылка скопирована'));
-  }
+const WANT_TO_GO_BOT = 'mestovnet_bot';
+const wantToGoUrl = (id) => `https://t.me/${WANT_TO_GO_BOT}?start=event_${encodeURIComponent(id)}`;
+const isWantToGo = (id) => localStorage.getItem('want_' + id) === '1';
+
+function markWantToGo(id) {
+  localStorage.setItem('want_' + id, '1');
+  const btn = document.getElementById('wantBtn');
+  const icon = document.getElementById('wantBtnIcon');
+  if (btn) btn.classList.add('is-going');
+  if (icon) icon.innerHTML = '<path d="M20 6L9 17l-5-5"/>';
 }
 
 let allEvents = [];
@@ -1380,13 +1322,16 @@ function render(event) {
               </div>
             </div>
             <div class="event-info-actions">
-              <button class="event-share-btn" onclick="handleShare()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-                </svg>
-                Поделиться
-              </button>
+              ${(function(){
+                const going = isWantToGo(event.id);
+                const ticketIcon = '<path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 1 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 1 0 0-4V8z"/><line x1="10" y1="6" x2="10" y2="18" stroke-dasharray="2 2"/>';
+                const checkIcon = '<path d="M20 6L9 17l-5-5"/>';
+                return `
+              <a href="${wantToGoUrl(event.id)}" target="_blank" rel="noopener" class="event-want-btn${going ? ' is-going' : ''}" id="wantBtn" onclick="markWantToGo('${escapeHtml(event.id)}')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" id="wantBtnIcon">${going ? checkIcon : ticketIcon}</svg>
+                <span id="wantBtnText">Я пойду!</span>
+              </a>`;
+              })()}
               <a href="${safeUrl(event.source_url) || '#'}" target="_blank" rel="noopener" class="event-source-btn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -1394,6 +1339,12 @@ function render(event) {
                 </svg>
                 Источник
               </a>
+              <button class="event-copy-btn" onclick="handleCopyLink()" aria-label="Скопировать ссылку" title="Скопировать ссылку">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="11" height="11" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+              </button>
             </div>
           </div>
 
