@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Феодосия",
-        "addressCountry": "RU",
-        "streetAddress": "пр-кт им. Айвазовского, 7"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/feodosiya.html">Феодосия</a>
     </div>
     <h1 class="genre-hero-title">Феодосийский ГДК</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">пр-кт им. Айвазовского, 7, Феодосия</span></div>
+    
     <p class="venue-description">Феодосийский городской дом культуры — учреждение культуры с 1953 года с залом на 220 мест.</p>
   </div>
   

@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Севастопольская, 62"
+        "addressCountry": "RU"
       }
     },
     {
@@ -1142,7 +1141,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Centrum</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Севастопольская, 62, Симферополь</a></div>
+    
     <p class="venue-description">За два месяца здесь прошло 8 концертов серии Roof Live на крыше — играли группы «Гудтаймс» и «Моя Мишель». Жанрово это в основном поп и рок, вход платный.</p>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
@@ -1173,7 +1172,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Centrum";
-  var addr = "ул. Севастопольская, 62, Симферополь";
+  var addr = "Симферополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.938155,34.09338";
   var el = document.getElementById('venue-map');
   if (!el) return;

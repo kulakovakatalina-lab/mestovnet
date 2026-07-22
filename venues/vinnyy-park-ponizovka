@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Приморская, 22, п. Понизовка"
+        "addressCountry": "RU"
       }
     },
     {
@@ -1082,8 +1081,8 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Винный парк (Понизовка)</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Приморская, 22, п. Понизовка, Ялта</a></div>
-    <p class="venue-description">Winepark — винный парк в посёлке Понизовка под Ялтой, пространство для дегустаций среди виноградников.</p>
+    
+    <p class="venue-description">Винный парк в посёлке Понизовка под Ялтой — пространство для дегустаций среди виноградников. По вечерам здесь проходит серия вечеринок Sunset Vibes на кровле с видом на закат, а также фестиваль Winepark.</p>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
@@ -1113,7 +1112,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Винный парк (Понизовка)";
-  var addr = "ул. Приморская, 22, п. Понизовка, Ялта";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.396253,33.944912";
   var el = document.getElementById('venue-map');
   if (!el) return;

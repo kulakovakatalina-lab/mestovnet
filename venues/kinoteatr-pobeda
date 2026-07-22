@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Большая Морская, 13"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Кинотеатр «Победа»</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Большая Морская, 13, Севастополь</a></div>
+    
     <p class="venue-description">В один уик-энд здесь дал три концерта эстрадно-духовой оркестр — программа исключительно классическая, вход бесплатный.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Кинотеатр «Победа»";
-  var addr = "ул. Большая Морская, 13, Севастополь";
+  var addr = "Севастополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.608085,33.521946";
   var el = document.getElementById('venue-map');
   if (!el) return;

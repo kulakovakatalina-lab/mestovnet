@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>кафе «Van Gogh», Массандровский пляж — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в кафе «Van Gogh», Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/kafe-van-gogh-massandrovskiy-plyazh">
-  <meta property="og:title" content="кафе «Van Gogh», Массандровский пляж — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в кафе «Van Gogh», Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <title>Массандровский пляж — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/massandrovskiy-plyazh">
+  <meta property="og:title" content="Массандровский пляж — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Массандровский пляж, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,19 +28,19 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "кафе «Van Gogh», Массандровский пляж",
+      "name": "Массандровский пляж",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
         "addressCountry": "RU",
-        "streetAddress": "ул. Дражинского, 31Г"
+        "streetAddress": "сектор 7 «Ковёр»"
       }
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "кафе «Van Gogh», Массандровский пляж"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Массандровский пляж"}]}
 </script>
   <style>
 
@@ -1051,9 +1051,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">кафе «Van Gogh», Массандровский пляж</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Дражинского, 31Г, Ялта</a></div>
-    <p class="venue-description">За один уик-энд здесь прошло 3 концерта. Певица Spahova выступала дважды, а открытие майского сезона на пляже прошло под темой Jazzy Brut с диджей-сетом.</p>
+    <h1 class="genre-hero-title">Массандровский пляж</h1>
+    <div class="venue-address-block"><span class="venue-hero-address">сектор 7 «Ковёр», Ялта</span></div>
+    <p class="venue-description">Пляж в Ялте, где проходят фестивали под открытым небом — например трёхдневный пляжный фестиваль с DJ-сетами, танцевальными баттлами и живыми выступлениями (YSJ «Маяк», Spahova, Martin W., Happy Paul).</p>
   </div>
   
 </div>
@@ -1067,47 +1067,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
-<script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "кафе «Van Gogh», Массандровский пляж";
-  var addr = "ул. Дражинского, 31Г, Ялта";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.497592,34.176973";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.497592, 34.176973],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.497592, 34.176973], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
+
 
 <script>
-const VENUE_ALIASES = ["кафе «Van Gogh», Массандровский пляж", "кафе «Van Gogh», Массандровский пляж"];
+const VENUE_ALIASES = ["Массандровский пляж, сектор 7 «Ковёр»", "Массандровский пляж"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

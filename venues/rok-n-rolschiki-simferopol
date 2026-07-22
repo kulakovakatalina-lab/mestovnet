@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Екатерининская, 14"
+        "addressCountry": "RU"
       }
     },
     {
@@ -1112,7 +1111,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Рок-н-рольщики (Симферополь)</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Екатерининская, 14, Симферополь</a></div>
+    
     <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
@@ -1143,7 +1142,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Рок-н-рольщики (Симферополь)";
-  var addr = "ул. Екатерининская, 14, Симферополь";
+  var addr = "Симферополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.951251,34.098202";
   var el = document.getElementById('venue-map');
   if (!el) return;
@@ -1167,7 +1166,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Рок-н-рольщики в Симферополе", "Рок-н-рольщики (Симферополь)"];
+const VENUE_ALIASES = ["Рок-н-рольщики (Симферополь)", "Рок-н-рольщики (Симферополь)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
