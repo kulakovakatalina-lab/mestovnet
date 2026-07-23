@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Игорь Симдянкин, Рок-н-рольщики (Симферополь), в Симферополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Крымский камерный оркестр «Новая Гармония», Мраморная пещера, в Симферополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Игорь Симдянкин — Рок-н-рольщики (Симферополь), 24 июля · Местов.Нет</title>
+<title>Крымский камерный оркестр «Новая Гармония» — Мраморная пещера, Симферополь, 26 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/2b0892c2">
-<meta property="og:title" content="Игорь Симдянкин — Рок-н-рольщики (Симферополь), 24 июля · Местов.Нет">
-<meta property="og:description" content="Игорь Симдянкин, Рок-н-рольщики (Симферополь), в Симферополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/59e69adb">
+<meta property="og:title" content="Крымский камерный оркестр «Новая Гармония» — Мраморная пещера, Симферополь, 26 июля · Местов.Нет">
+<meta property="og:description" content="Крымский камерный оркестр «Новая Гармония», Мраморная пещера, в Симферополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/db97efe8913a933b2fd182cda237c4d3.png">
+<meta property="og:image" content="https://mestov.net/images/events/a4cbd24c29fd001673bafe0d17f96c36.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
-      "startDate": "2026-07-24T21:00:00+03:00",
+      "name": "Крымский камерный оркестр «Новая Гармония»",
+      "startDate": "2026-07-26T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Мраморная пещера",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Акустический трибьют группы «Король и Шут» памяти Михаила Горшенёва. Работают с 18:00 до 4:00, квартирник около 21:00.",
+      "description": "Проект «Звуковой сплав 6» под управлением Дениса Карлова — акустика пещеры становится участником оркестра, в программе классика, неоклассика, мелодии из кино и мюзиклов.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Крымский камерный оркестр «Новая Гармония»"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/a4cbd24c29fd001673bafe0d17f96c36.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Крымский камерный оркестр «Новая Гармония»"}]}
 </script>
 </head>
 <body>
