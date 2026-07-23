@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Игорь Симдянкин, Рок-н-рольщики (Симферополь), в Симферополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джаз-трио «А3», Снежинка, в Севастополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Игорь Симдянкин — Рок-н-рольщики (Симферополь), 24 июля · Местов.Нет</title>
+<title>Джаз-трио «А3» — Снежинка, Севастополь, 26 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/2b0892c2">
-<meta property="og:title" content="Игорь Симдянкин — Рок-н-рольщики (Симферополь), 24 июля · Местов.Нет">
-<meta property="og:description" content="Игорь Симдянкин, Рок-н-рольщики (Симферополь), в Симферополе, 24 июля, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/dc0367a2">
+<meta property="og:title" content="Джаз-трио «А3» — Снежинка, Севастополь, 26 июля · Местов.Нет">
+<meta property="og:description" content="Джаз-трио «А3», Снежинка, в Севастополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/db97efe8913a933b2fd182cda237c4d3.png">
+<meta property="og:image" content="https://mestov.net/images/events/f817f7edc7b58c13551446ef97de1615.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
-      "startDate": "2026-07-24T21:00:00+03:00",
+      "name": "Джаз-трио «А3»",
+      "startDate": "2026-07-26T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Снежинка",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Акустический трибьют группы «Король и Шут» памяти Михаила Горшенёва. Работают с 18:00 до 4:00, квартирник около 21:00.",
+      "description": "Программа «От неоклассики до джаза» — простые мелодии и джазовые гармонии для спокойного вечера.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Джаз-трио «А3»"
       },
-      "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "image": "/images/events/f817f7edc7b58c13551446ef97de1615.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз-трио «А3»"}]}
 </script>
 </head>
 <body>
