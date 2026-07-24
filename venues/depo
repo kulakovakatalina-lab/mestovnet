@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Депо — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 8 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/depo">
   <meta property="og:title" content="Депо — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 8 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -50,6 +50,21 @@
         "name": "Thomas Mraz"
       },
       "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Scally Milano",
+      "startDate": "2026-07-27T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Депо"
+      },
+      "description": "Scally Milano в Депо, Симферополь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Scally Milano"
+      },
+      "image": "/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1160,7 +1175,7 @@ footer {
     <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Киевская, д. 4н, Симферополь</a></div>
     <p class="venue-description">За чуть больше года в «Депо» сыграли 9 концертов с платным входом. Разброс широкий: сольники армянской эстрады — Ваграм Вазян, Авет Маркарян — соседствуют с Крымским Рэп Фестивалем и хедлайнером Казяном.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">7</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">8</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

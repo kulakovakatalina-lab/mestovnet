@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Scally Milano, Депо, в Симферополе, 27 июля, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет</title>
+<title>Scally Milano — Депо, Симферополь, 27 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31ef169e">
-<meta property="og:title" content="Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет">
-<meta property="og:description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4bd9e72c">
+<meta property="og:title" content="Scally Milano — Депо, Симферополь, 27 июля · Местов.Нет">
+<meta property="og:description" content="Scally Milano, Депо, в Симферополе, 27 июля, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
+<meta property="og:image" content="https://mestov.net/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Группа «Денайро», Денис DZen Детков",
-      "startDate": "2026-07-25T21:00:00+03:00",
+      "name": "Scally Milano",
+      "startDate": "2026-07-27T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Севастополь)",
+        "name": "Депо",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Хиты русского рока сыграет Денис DZen Детков.",
+      "description": "Scally Milano в Депо, Симферополь.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Денайро», Денис DZen Детков"
+        "name": "Scally Milano"
       },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "image": "/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 1 700 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Группа «Денайро», Денис DZen Детков"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Scally Milano"}]}
 </script>
 </head>
 <body>

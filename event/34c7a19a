@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
+      "description": "Музыкальная ирония, рок и поп-рок на двух языках в исполнении группы «САБ» (Севастополь).",
       "performer": {
         "@type": "MusicGroup",
         "name": "Группа «САБ»"

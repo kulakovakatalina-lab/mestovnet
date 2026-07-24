@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Военный оркестр Черноморского флота, Дом офицеров флота, в Севастополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет</title>
+<title>Военный оркестр Черноморского флота — Дом офицеров флота, Севастополь, 26 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31ef169e">
-<meta property="og:title" content="Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет">
-<meta property="og:description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/1a434b65">
+<meta property="og:title" content="Военный оркестр Черноморского флота — Дом офицеров флота, Севастополь, 26 июля · Местов.Нет">
+<meta property="og:description" content="Военный оркестр Черноморского флота, Дом офицеров флота, в Севастополе, 26 июля, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
+<meta property="og:image" content="https://mestov.net/images/events/31392cb31092ac55412039ca5bb87c2f.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Группа «Денайро», Денис DZen Детков",
-      "startDate": "2026-07-25T21:00:00+03:00",
+      "name": "Военный оркестр Черноморского флота",
+      "startDate": "2026-07-26T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Севастополь)",
+        "name": "Дом офицеров флота",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Хиты русского рока сыграет Денис DZen Детков.",
+      "description": "Музыкально-историческое мероприятие «Вечерняя зоря»: реконструкция парада войск периода Крымской войны, выступление военного оркестра и танцевального коллектива.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Денайро», Денис DZen Детков"
+        "name": "Военный оркестр Черноморского флота"
       },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "image": "/images/events/31392cb31092ac55412039ca5bb87c2f.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Группа «Денайро», Денис DZen Детков"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Военный оркестр Черноморского флота"}]}
 </script>
 </head>
 <body>

@@ -37,18 +37,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Дмитрий Карпов",
-      "startDate": "2026-07-23T00:00:00+03:00",
+      "name": "Официально Устроен, Найти, Rechi, Dumonica, Город грехов, Deathtroy, Red Stars",
+      "startDate": "2026-07-24T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Музыкант и лидер многих музыкальных коллективов Крыма, в т.ч. «Крыша Мира», автор песен. Вход для подписчиков бесплатный.",
+      "description": "Супер-рок-пятница в Jam Club: в первом зале OFFICIAL ROCK FEST, во втором — RED METAL FEST. Бесплатное рок-караоке всю ночь.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Дмитрий Карпов"
+        "name": "Официально Устроен, Найти, Rechi, Dumonica, Город грехов, Deathtroy, Red Stars"
       },
-      "image": "/images/events/2956a01b6f778e42ab2655b93265dc10.jpg"
+      "image": "/images/events/e405d627ed8b9e28c3b8cf2cf171d00e.jpg"
     },
     {
       "@type": "MusicEvent",

@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Погружение под землёй, Мраморная пещера, в Симферополе, 31 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет</title>
+<title>Погружение под землёй — Мраморная пещера, Симферополь, 31 июля · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/31ef169e">
-<meta property="og:title" content="Группа «Денайро», Денис DZen Детков — Рок-н-рольщики (Севастополь), 25 июля · Местов.Нет">
-<meta property="og:description" content="Группа «Денайро», Денис DZen Детков, Рок-н-рольщики (Севастополь), в Севастополе, 25 июля, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/01dc961d">
+<meta property="og:title" content="Погружение под землёй — Мраморная пещера, Симферополь, 31 июля · Местов.Нет">
+<meta property="og:description" content="Погружение под землёй, Мраморная пещера, в Симферополе, 31 июля, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/7723ef4f01d21b32f52a505cec5e31aa.png">
+<meta property="og:image" content="https://mestov.net/images/events/cac90146f18bc3693f345b67e62747fa.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Группа «Денайро», Денис DZen Детков",
-      "startDate": "2026-07-25T21:00:00+03:00",
+      "name": "Погружение под землёй",
+      "startDate": "2026-07-31T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Севастополь)",
+        "name": "Мраморная пещера",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Хиты русского рока сыграет Денис DZen Детков.",
+      "description": "Андрей Ясинский — музыкант‑мультиинструменталист, композитор, преподаватель музыки, путешественник из Таганрога.\n\nЭто будет концерт‑погружение, концерт‑соединение со своей истинной сутью и природой на глубине 63 метров под землёй — в зале Жемчужных озёр.\n\nФортепиано, можжевеловые флейты, окарина, калимба, ханг, равдрам и другие редкие инструменты в руках Андрея рождают космическую музыку. Музыка таинственного леса, лунного света, окрашенных зеленью гор и необъятного звёздного неба, проникающая прямо в сердце.\n\nЛовите удачу за хвост и не упускайте возможности отправиться в космическое путешествие — в самую глубину души!\n\nМероприятие пройдёт в рамках проекта Ирины Андреевой «Космос внутри», посвящённого возрождению культурных традиций в Крыму и Крымской астрофизической обсерватории.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа «Денайро», Денис DZen Детков"
+        "name": "Погружение под землёй"
       },
-      "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "image": "/images/events/cac90146f18bc3693f345b67e62747fa.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 2 500 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Группа «Денайро», Денис DZen Детков"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Погружение под землёй"}]}
 </script>
 </head>
 <body>
