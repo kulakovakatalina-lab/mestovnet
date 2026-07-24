@@ -1,39 +1,5 @@
 [
   {
-    "date": "2026-07-23",
-    "time": null,
-    "artist": "Дмитрий Карпов",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": null,
-    "description": "Музыкант и лидер многих музыкальных коллективов Крыма, в т.ч. «Крыша Мира», автор песен. Вход для подписчиков бесплатный.",
-    "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/1071",
-    "post_date": "2026-07-22T21:29:33+00:00",
-    "image": "/images/events/2956a01b6f778e42ab2655b93265dc10.jpg",
-    "genre": "поп",
-    "id": "5578131b",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
-  },
-  {
-    "date": "2026-07-23",
-    "time": "14:00",
-    "artist": "EL, Busha",
-    "event_type": "вечеринка",
-    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
-    "source_city": "Ялта",
-    "price": null,
-    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
-    "source_channel": "massandrasun",
-    "source_url": "https://t.me/massandrasun/2348",
-    "post_date": "2026-07-08T16:18:08+00:00",
-    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
-    "genre": "поп",
-    "id": "e926e160",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
-  },
-  {
     "date": "2026-07-24",
     "time": null,
     "artist": "Денайро",
@@ -70,6 +36,23 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
     "updated_at": "2026-07-17T12:04:57.203987+00:00"
+  },
+  {
+    "date": "2026-07-24",
+    "time": "18:00",
+    "artist": "Официально Устроен, Найти, Rechi, Dumonica, Город грехов, Deathtroy, Red Stars",
+    "event_type": "фестиваль",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "description": "Супер-рок-пятница в Jam Club: в первом зале OFFICIAL ROCK FEST, во втором — RED METAL FEST. Бесплатное рок-караоке всю ночь.",
+    "source_channel": "clubjam",
+    "source_url": "https://t.me/clubjam/1072",
+    "post_date": "2026-07-23",
+    "image": "/images/events/e405d627ed8b9e28c3b8cf2cf171d00e.jpg",
+    "genre": "метал",
+    "id": "b7316536",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
   },
   {
     "id": "f4c87da8",
@@ -137,38 +120,39 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": null,
-    "description": "Русский рок и поп-рок в акустике — Дима Резник.",
+    "description": "Проверенная классика русского рока и современные поп-рок хиты в исполнении Димы Резника.",
     "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+      "/images/events/0a4c80ac19e0dd50e1792016e8024197.jpg"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
+    "post_date": "2026-07-23",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
     "id": "2b0892c2",
     "date": "2026-07-24",
     "time": "21:00",
-    "artist": "Игорь Симдянкин",
+    "artist": "Игорь Симдянкин (трибьют «Король, Шут»)",
     "event_type": "трибьют",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": null,
-    "description": "Акустический трибьют группы «Король и Шут» памяти Михаила Горшенёва. Работают с 18:00 до 4:00, квартирник около 21:00.",
+    "description": "День памяти Михаила Горшенёва: большой акустический трибьют группы «Король и Шут», все страшные сказки сыграет Игорь Симдянкин.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/193",
     "images": [
       "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-      "/images/events/98614694d2e83bf737ba35ca22d8076d.jpg"
+      "/images/events/f320d2df98dde3effec4f64f06378be2.jpg"
     ],
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-21T09:08:15+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "post_date": "2026-07-23",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
   },
   {
     "date": "2026-07-25",
@@ -202,7 +186,7 @@
     "source_url": "https://t.me/koncertykrym/2186",
     "images": [
       "/images/events/5dbc4ae3aae094a265fe892ae168697b.jpg",
-      "/images/events/ee27c281548fc68d5fc8e62740a9711d.jpg"
+      "/images/events/17d8da6159b100ef0c5e9ef113fc185e.jpg"
     ],
     "image": "/images/events/5dbc4ae3aae094a265fe892ae168697b.jpg",
     "post_date": "2026-07-22T10:20:17+00:00",
@@ -305,21 +289,22 @@
     "id": "31ef169e",
     "date": "2026-07-25",
     "time": "21:00",
-    "artist": "Группа «Денайро»",
+    "artist": "Группа «Денайро», Денис DZen Детков",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": null,
-    "description": "Группа «Денайро» и рок-хиты. Не акустика.",
+    "description": "Хиты русского рока сыграет Денис DZen Детков.",
     "source_city": "Севастополь",
     "source_channel": "rocknroll_92",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/6907",
     "images": [
-      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png"
+      "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
+      "/images/events/0a4c80ac19e0dd50e1792016e8024197.jpg"
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "post_date": "2026-07-23",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
   },
   {
     "id": "34c7a19a",
@@ -329,17 +314,35 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": null,
-    "description": "Музыкальная ирония, рок и поп-рок на двух языках. Группа «САБ». Не акустика.",
+    "description": "Музыкальная ирония, рок и поп-рок на двух языках в исполнении группы «САБ» (Севастополь).",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/193",
     "images": [
-      "/images/events/db97efe8913a933b2fd182cda237c4d3.png"
+      "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
+      "/images/events/f320d2df98dde3effec4f64f06378be2.jpg"
     ],
     "image": "/images/events/db97efe8913a933b2fd182cda237c4d3.png",
-    "post_date": "2026-07-02T09:35:21+00:00",
+    "post_date": "2026-07-23",
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
+  },
+  {
+    "date": "2026-07-26",
+    "time": null,
+    "artist": "Военный оркестр Черноморского флота",
+    "event_type": "другое",
+    "venue": "Дом офицеров флота",
+    "source_city": "Севастополь",
+    "price": null,
+    "description": "Музыкально-историческое мероприятие «Вечерняя зоря»: реконструкция парада войск периода Крымской войны, выступление военного оркестра и танцевального коллектива.",
+    "source_channel": "afisha_crimea",
+    "source_url": "https://t.me/afisha_crimea/8064",
+    "post_date": "2026-07-23",
+    "image": "/images/events/31392cb31092ac55412039ca5bb87c2f.jpg",
+    "genre": "поп",
+    "id": "1a434b65",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
   },
   {
     "date": "2026-07-26",
@@ -505,6 +508,44 @@
     "updated_at": "2026-07-04T09:32:45.310085+00:00"
   },
   {
+    "id": "4bd9e72c",
+    "date": "2026-07-27",
+    "time": "20:00",
+    "artist": "Scally Milano",
+    "event_type": "концерт",
+    "venue": "Депо",
+    "price": "от 1 700 ₽",
+    "description": "Scally Milano в Депо, Симферополь.",
+    "source_city": "Симферополь",
+    "source_channel": "yandex_afisha",
+    "genre": "хип-хоп",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/scally-milano-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg",
+      "/images/events/d17bcd97a2ada7f8999edb490491fac6.jpg"
+    ],
+    "image": "/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg",
+    "post_date": "2026-07-27",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+  },
+  {
+    "date": "2026-07-31",
+    "time": "18:00",
+    "artist": "Погружение под землёй",
+    "venue": "Мраморная пещера",
+    "event_type": "концерт",
+    "price": "от 2 500 ₽",
+    "description": "Андрей Ясинский — музыкант‑мультиинструменталист, композитор, преподаватель музыки, путешественник из Таганрога.\n\nЭто будет концерт‑погружение, концерт‑соединение со своей истинной сутью и природой на глубине 63 метров под землёй — в зале Жемчужных озёр.\n\nФортепиано, можжевеловые флейты, окарина, калимба, ханг, равдрам и другие редкие инструменты в руках Андрея рождают космическую музыку. Музыка таинственного леса, лунного света, окрашенных зеленью гор и необъятного звёздного неба, проникающая прямо в сердце.\n\nЛовите удачу за хвост и не упускайте возможности отправиться в космическое путешествие — в самую глубину души!\n\nМероприятие пройдёт в рамках проекта Ирины Андреевой «Космос внутри», посвящённого возрождению культурных традиций в Крыму и Крымской астрофизической обсерватории.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-07-31",
+    "image": "/images/events/cac90146f18bc3693f345b67e62747fa.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/pogruzhenie-pod-zemlioi?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "genre": "классика",
+    "id": "01dc961d",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+  },
+  {
     "date": "2026-07-31",
     "time": "19:00",
     "artist": "Таисия Повалий",
@@ -522,20 +563,24 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
+    "id": "1633413b",
     "date": "2026-07-31",
     "time": "20:00",
     "artist": "Hofmannita",
-    "venue": "Депо",
     "event_type": "концерт",
+    "venue": "Депо",
     "price": "от 1 500 ₽",
     "description": "Hofmannita в Депо, Симферополь.",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-07-31",
-    "image": "/images/events/330d0accf79808e08686bc3dba50aaa5.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/hofmannita-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "source_channel": "yandex_afisha",
     "genre": "поп",
-    "id": "1633413b",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/hofmannita-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/330d0accf79808e08686bc3dba50aaa5.jpg",
+      "/images/events/5ea5256f7489abcffb75d90b5d8a17e0.jpg"
+    ],
+    "image": "/images/events/330d0accf79808e08686bc3dba50aaa5.jpg",
+    "post_date": "2026-07-31",
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
@@ -1220,6 +1265,23 @@
   },
   {
     "date": "2026-08-22",
+    "time": null,
+    "artist": "«Пушкин в музыке»: романсы",
+    "event_type": "концерт",
+    "venue": "Дом-музей А.С. Пушкина",
+    "source_city": "Гурзуф",
+    "price": null,
+    "description": "Первый концерт новой серии «Пушкин в музыке» — романсы на стихи Александра Пушкина.",
+    "source_channel": "koncertykrym",
+    "source_url": "https://t.me/koncertykrym/2225",
+    "post_date": "2026-07-23",
+    "image": "/images/events/ae977305335661e6520c441e8157d37c.jpg",
+    "genre": "поп",
+    "id": "9e1da7d2",
+    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+  },
+  {
+    "date": "2026-08-22",
     "time": "17:00",
     "artist": "Sunset Vibes",
     "venue": "Винный парк (Понизовка)",
@@ -1822,6 +1884,40 @@
     "genre": "поп",
     "id": "7ac6d093",
     "updated_at": "1970-01-01T00:00:00+00:00"
+  },
+  {
+    "date": "2026-07-23",
+    "time": null,
+    "artist": "Дмитрий Карпов",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": null,
+    "description": "Музыкант и лидер многих музыкальных коллективов Крыма, в т.ч. «Крыша Мира», автор песен. Вход для подписчиков бесплатный.",
+    "source_channel": "clubjam",
+    "source_url": "https://t.me/clubjam/1071",
+    "post_date": "2026-07-22T21:29:33+00:00",
+    "image": "/images/events/2956a01b6f778e42ab2655b93265dc10.jpg",
+    "genre": "поп",
+    "id": "5578131b",
+    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+  },
+  {
+    "date": "2026-07-23",
+    "time": "14:00",
+    "artist": "EL, Busha",
+    "event_type": "вечеринка",
+    "venue": "Пляж-кафе Van Gogh, Массандровский пляж",
+    "source_city": "Ялта",
+    "price": null,
+    "description": "DJ-сет на Массандровском пляже. Пляж-кафе Van Gogh работает ежедневно с 14:00 до 22:00.",
+    "source_channel": "massandrasun",
+    "source_url": "https://t.me/massandrasun/2348",
+    "post_date": "2026-07-08T16:18:08+00:00",
+    "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
+    "genre": "поп",
+    "id": "e926e160",
+    "updated_at": "2026-07-09T04:38:26.658096+00:00"
   },
   {
     "date": "2026-07-21",
