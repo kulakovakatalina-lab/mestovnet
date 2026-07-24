@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Русский рок и поп-рок в акустике — Дима Резник.",
+      "description": "Проверенная классика русского рока и современные поп-рок хиты в исполнении Димы Резника.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Дима Резник"

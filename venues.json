@@ -1289,5 +1289,20 @@
     "desc_baseline_count": 1,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-s-pushkina-gurzuf",
+    "name": "Дом-музей А.С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 0,
+    "aliases": [
+      "Дом-музей Пушкина",
+      "Дом-музей А.С. Пушкина (Гурзуф)"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]
