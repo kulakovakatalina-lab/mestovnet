@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Крымский камерный оркестр — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Крымский камерный оркестр в Крыму (Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Крымский камерный оркестр в Крыму (Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/krymskiy-kamernyy-orkestr">
   <meta property="og:title" content="Крымский камерный оркестр — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр в Крыму (Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр в Крыму (Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Крымский камерный оркестр"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский камерный оркестр",
-      "startDate": "2026-07-25T16:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский камерный оркестр"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дом-музей А.П. Чехова (Белая дача)",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт цикла «Чехов в музыке» с программой «Вишнёвый сад: эхо уходящей эпохи» — сочинения Чайковского, Глинки, Рахманинова и других композиторов на Белой даче.",
-      "image": "/images/events/5dbc4ae3aae094a265fe892ae168697b.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Камерный оркестр с программами в чеховских местах Ялты: Колонный зал театра им. Чехова («Семейный альбом») и дом-музей писателя — цикл «Чехов в музыке» с программой «Вишнёвый сад. Мелодии уходящей эпохи».</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
