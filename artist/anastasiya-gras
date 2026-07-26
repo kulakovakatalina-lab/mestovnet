@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анастасия Грас — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анастасия Грас в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анастасия Грас в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anastasiya-gras">
   <meta property="og:title" content="Анастасия Грас — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анастасия Грас в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анастасия Грас в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анастасия Грас"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анастасия Грас",
-      "startDate": "2026-07-25T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анастасия Грас"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Усадьба «Родное гнездо»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "BBQ-вечеринка в усадьбе «Родное гнездо» с гриль-меню от бренд-шефа Павла Галича, живой музыкой от Анастасии Грас и дегустацией вин усадьбы.",
-      "image": "/images/events/97028b70581036c0f1949058856bf625.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Исполнительница живой музыки в винных усадьбах под Севастополем — выступает с ужинами на закате и BBQ-вечеринками, например в усадьбе «Родное гнездо».</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

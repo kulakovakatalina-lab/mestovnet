@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Mraz — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Thomas Mraz в Крыму (Севастополь, Симферополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Thomas Mraz в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/thomas-mraz">
   <meta property="og:title" content="Thomas Mraz — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Thomas Mraz в Крыму (Севастополь, Симферополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Thomas Mraz в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,46 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Thomas Mraz"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Thomas Mraz",
-      "startDate": "2026-07-24T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Thomas Mraz"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Балаган 38",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Thomas Mraz в Балаган 38, Севастополь.",
-      "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Thomas Mraz",
-      "startDate": "2026-07-25T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Thomas Mraz"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Депо",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Thomas Mraz в Депо, Симферополь.",
-      "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg"
     }
   ]
 }
@@ -1042,7 +1002,7 @@ footer {
     <p class="venue-description">Исполнитель альтернативного R&amp;B и хип-хопа. В июле — клубные концерты в Севастополе («Балаган 38») и Симферополе («Депо»).</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
