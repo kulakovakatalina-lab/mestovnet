@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Театр им. А.П. Чехова — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Театр им. А.П. Чехова, в Ялте. 6 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Театр им. А.П. Чехова, в Ялте. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/teatr-im-a-p-chehova">
   <meta property="og:title" content="Театр им. А.П. Чехова — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Театр им. А.П. Чехова, в Ялте. 6 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Театр им. А.П. Чехова, в Ялте. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "Екатерининская ул., 13"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Концерт-спектакль «Высоцкий»",
-      "startDate": "2026-07-26T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Театр им. А.П. Чехова"
-      },
-      "description": "Программа из миниатюр фестиваля памяти Владимира Высоцкого с участием певицы Оксаны Сенчиной, саксофониста Владимира Довгаля, скрипача Виталия Дорохова и других музыкантов и артистов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Концерт-спектакль «Высоцкий»"
-      },
-      "image": "/images/events/1c16c721131076a652480008e4c6ce2b.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1145,7 +1130,7 @@ footer {
     <div class="venue-address-block"><span class="venue-hero-address">Екатерининская ул., 13, Ялта</span></div>
     <p class="venue-description">За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
