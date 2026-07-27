@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мраморная пещера — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Мраморная пещера, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Мраморная пещера, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/mramornaya-peschera">
   <meta property="og:title" content="Мраморная пещера — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Мраморная пещера, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Мраморная пещера, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский камерный оркестр «Новая Гармония»",
-      "startDate": "2026-07-26T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Мраморная пещера"
-      },
-      "description": "Проект «Звуковой сплав 6» под управлением Дениса Карлова — акустика пещеры становится участником оркестра, в программе классика, неоклассика, мелодии из кино и мюзиклов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский камерный оркестр «Новая Гармония»"
-      },
-      "image": "/images/events/a4cbd24c29fd001673bafe0d17f96c36.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1099,7 +1084,7 @@ footer {
     
     <p class="venue-description">Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

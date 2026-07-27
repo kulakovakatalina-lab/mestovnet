@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Centrum — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Centrum, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Centrum, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/centrum">
   <meta property="og:title" content="Centrum — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Centrum, в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Centrum, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ева Польна",
-      "startDate": "2026-07-26T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Centrum"
-      },
-      "description": "Это самый яркий концерт на живой крыше твоего города и неповторимая атмосфера, где музыка становится частью пейзажа.\n\nГотовьтесь к встрече с харизматичной поп-музыкой от Евы Польны. «Следуй за мной в сторону сердца...» — пусть эти слова станут вашим путеводителем к вечеру незабываемых эмоций!\n\nПогрузитесь в атмосферу теплоты, музыки и радости вместе с Евой Польна: пойте любимые песни, делитесь улыбками и наслаждайтесь мгновениями, которые останутся в вашем сердце надолго.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ева Польна"
-      },
-      "image": "/images/events/6c56d21aea75ad2d56b19ecb9a29c405.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1144,7 +1129,7 @@ footer {
     
     <p class="venue-description">За два месяца здесь прошло 8 концертов серии Roof Live на крыше — играли группы «Гудтаймс» и «Моя Мишель». Жанрово это в основном поп и рок, вход платный.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">6</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

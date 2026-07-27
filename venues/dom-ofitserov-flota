@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дом офицеров флота — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дом офицеров флота, в Севастополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Дом офицеров флота, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dom-ofitserov-flota">
   <meta property="og:title" content="Дом офицеров флота — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дом офицеров флота, в Севастополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Дом офицеров флота, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Военный оркестр Черноморского флота",
-      "startDate": "2026-07-26T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дом офицеров флота"
-      },
-      "description": "Музыкально-историческое мероприятие «Вечерняя зоря»: реконструкция парада войск периода Крымской войны, выступление военного оркестра и танцевального коллектива.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Военный оркестр Черноморского флота"
-      },
-      "image": "/images/events/31392cb31092ac55412039ca5bb87c2f.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1099,7 +1084,7 @@ footer {
     
     <p class="venue-description">За последние три месяца здесь прошло 4 концерта. Заходили финалисты шоу «ВИА Суперстар» — группа «Лесоповал», в остальном афиша смешанная: поп, рок и юмористические вечера.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
