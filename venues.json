@@ -1305,5 +1305,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, д. 8",
+    "event_count": 0,
+    "aliases": [
+      "У Чёрного моря",
+      "ресторан \"У Чёрного моря\""
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]
