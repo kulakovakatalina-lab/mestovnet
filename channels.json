@@ -8,7 +8,127 @@
       "notes": "Instagram-канал о событиях Крыма"
     }
   ],
-  "vk_channels": [],
+  "vk_channels": [
+    {
+      "domain": "crimea_event",
+      "title": "Крым Event",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "аналог Telegram-канала crimea_event"
+    },
+    {
+      "domain": "skazhitejazz",
+      "title": "Скажите Джаз",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "аналог Telegram-канала skazhitejazz"
+    },
+    {
+      "domain": "sevastopol_jazz",
+      "title": "Севастополь Джаз",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "аналог Telegram-канала sevastopol_jazz"
+    },
+    {
+      "domain": "dlyadushi_crimea",
+      "title": "Для души | Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "аналог Telegram-канала dlyadushi_Crimea"
+    },
+    {
+      "domain": "grzntcrimea",
+      "title": "Горизонт Крым",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "аналог Telegram-канала grzntcrimea"
+    },
+    {
+      "domain": "afisha_payberry",
+      "title": "Афиша PayBerry",
+      "city": "Крым",
+      "type": "afisha",
+      "notes": "аналог Telegram-канала afisha_payberry"
+    },
+    {
+      "domain": "rocknroll_82",
+      "title": "Рок-н-рольщики (Симферополь)",
+      "city": "Симферополь",
+      "type": "venue",
+      "notes": "аналог Telegram-канала rocknroll_82"
+    },
+    {
+      "domain": "tavrida_art",
+      "title": "ТАВРИДА.АРТ",
+      "city": "Судак",
+      "type": "venue",
+      "notes": "аналог Telegram-канала tavrida_art"
+    },
+    {
+      "domain": "belbekma",
+      "title": "Белбек",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "аналог Telegram-канала belbekma"
+    },
+    {
+      "domain": "sky_beach_yalta",
+      "title": "Sky Beach Ялта",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "аналог Telegram-канала sky_beach_yalta"
+    },
+    {
+      "domain": "hotel_yalta_intourist",
+      "title": "Отель Ялта-Интурист",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "аналог Telegram-канала hotel_yalta_intourist"
+    },
+    {
+      "domain": "gastrodvor.yalta",
+      "title": "Гастродвор",
+      "city": "Ялта",
+      "type": "venue",
+      "notes": "новый источник, только VK, найден по проверке домена"
+    },
+    {
+      "domain": "apibalaklava",
+      "title": "API Balaklava",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "аналог заведения api-balaklava из venues.json, найден по названию"
+    },
+    {
+      "domain": "rodnoegnezdo",
+      "title": "Усадьба Родное гнездо",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "аналог заведения usadba-rodnoe-gnezdo из venues.json, найден по названию"
+    },
+    {
+      "domain": "konsolsport",
+      "title": "Консоль Спорт",
+      "city": "Симферополь",
+      "type": "venue",
+      "notes": "аналог заведения konsol-sport из venues.json, найден по названию"
+    },
+    {
+      "domain": "lucky_winery",
+      "title": "Lucky Winery",
+      "city": "Бахчисарай",
+      "type": "venue",
+      "notes": "аналог заведения lucky-winery из venues.json, найден по названию"
+    },
+    {
+      "domain": "7dolin",
+      "title": "7 Долин",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "аналог заведения 7-dolin из venues.json; сам паблик VK указывает город Бахчисарай — расхождение с venues.json, не проверено вручную"
+    }
+  ],
   "max_channels": [
     {
       "chat_id": 0,

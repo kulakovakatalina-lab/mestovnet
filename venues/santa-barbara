@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Санта Барбара — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Санта Барбара, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Санта Барбара, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/santa-barbara">
   <meta property="og:title" content="Санта Барбара — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Санта Барбара, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Санта Барбара, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "Екатерининская 28"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Елена Новикова. Stand Up",
-      "startDate": "2026-07-31T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Санта Барбара"
-      },
-      "description": "О концерте Рады пригласить на премьеру жизнеутверждающего концерта «Такое Лето» от актрисы и комика Елены Новиковой.\r\n\r\nЕлене 56, она успешна в карьере, мудра в материнстве и отношениях, но совсем не умеет ценить себя, слышать свои чувства. Для того, чтобы разобраться в этом вопросе, она отправляется в путешествие со всей семьей. Естественно, к морю.\r\n\r\n«Такое лето» - это Час юмора от самой ироничной комикессы российского стендап сообщества.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Елена Новикова. Stand Up"
-      },
-      "image": "/images/events/72545316d471370f37a291b84627bcee.jpg"
     }
   ]
 }
@@ -1070,7 +1055,7 @@ footer {
     <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Екатерининская 28, Симферополь</a></div>
     <p class="venue-description">За последние три месяца здесь прошло 3 концерта с платным входом. Тут тоже проходит «Музыкальное лото» с угадыванием хитов и караоке-атмосферой, а из необычного — премьера комедийного моноспектакля «Такое Лето» актрисы и комика Елены Новиковой.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
