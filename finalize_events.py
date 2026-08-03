@@ -263,8 +263,28 @@ _ARTIST_JOIN_WORDS = {"и", "&", "+", "feat", "feat.", "ft", "ft.",
 
 
 def _artist_parts(name: str) -> list[str]:
-    result = _ARTIST_JOIN_RE.split(name)
-    return [p.strip() for p in result
+    """Разбивает имя по «и»/«&»/«+»/feat. и т.п. — не внутри скобок/«».
+
+    Наивный regex.split() ломает случаи вроде «МыКрымы (Диана Ванх и Вета)»,
+    где «и» — часть перечисления внутри скобок, а не разделитель артистов.
+    """
+    depth = 0
+    depths = []
+    for ch in name:
+        if ch in "(«":
+            depth += 1
+        elif ch in ")»":
+            depth = max(0, depth - 1)
+        depths.append(depth)
+    parts = []
+    last = 0
+    for m in _ARTIST_JOIN_RE.finditer(name):
+        start, end = m.span()
+        if start < len(depths) and depths[start] == 0:
+            parts.append(name[last:start])
+            last = end
+    parts.append(name[last:])
+    return [p.strip() for p in parts
             if p.strip() and p.strip().lower() not in _ARTIST_JOIN_WORDS]
 
 
