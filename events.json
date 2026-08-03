@@ -111,7 +111,7 @@
   {
     "date": "2026-08-07",
     "time": "21:00",
-    "artist": "МыКрымы (Диана Ванх и Вета)",
+    "artist": "Вета), МыКрымы (Диана Ванх",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "source_city": "Симферополь",
@@ -495,7 +495,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
-      "/images/events/d4eed5a4065eb2a7e149683d13288a5f.jpg"
+      "/images/events/143cdd862e7f7af15697b7b2b384b53e.jpg"
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
@@ -1284,7 +1284,8 @@
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/igor-rasteriaev-2026-09?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png"
+      "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
+      "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     ],
     "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
     "post_date": "2026-09-18",
