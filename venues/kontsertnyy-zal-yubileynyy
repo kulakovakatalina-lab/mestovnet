@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Концертный зал «Юбилейный» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 10 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 9 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kontsertnyy-zal-yubileynyy">
   <meta property="og:title" content="Концертный зал «Юбилейный» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 10 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Концертный зал «Юбилейный», в Ялте. 9 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр",
-      "startDate": "2026-08-02T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»"
-      },
-      "description": "Большой Летний Гала-концерт «Музыку, маэстро!» — оркестр под управлением Александра Долинского и солисты Крымского киноконцертного объединения исполнят арии, дуэты из опер и оперетт, эстрадные и киномелодии.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр"
-      },
-      "image": "/images/events/9f55d1b66acf96977c953be2a4376fe0.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1204,7 +1189,7 @@ footer {
     
     <p class="venue-description">За последние месяцы здесь прошло 13 концертов с платным входом. Афиша — гастрольная эстрада высшего звена: SHAMAN, Таисия Повалий и большой сольный концерт Григория Лепса.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">10</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">9</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
