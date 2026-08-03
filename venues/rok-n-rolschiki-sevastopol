@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики (Севастополь) — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 9 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-sevastopol">
   <meta property="og:title" content="Рок-н-рольщики (Севастополь) — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Севастополь), в Севастополе. 9 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,141 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Шеремет",
+      "startDate": "2026-08-07T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Вечер ответственного рока: Максим Шеремет с любимыми каверами.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Шеремет"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "САБ",
+      "startDate": "2026-08-08T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Музыкальная ирония, драйв и рок-поп на русском и английском от группы «САБ».",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "САБ"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Паша Грей",
+      "startDate": "2026-08-09T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Авторский камбэк рока и каверы на зарубежный и русский рок в исполнении кибер-менестреля Паши Грея.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Паша Грей"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин",
+      "startDate": "2026-08-14T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "53 года Михаилу Горшенёву — большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Дима Позин",
+      "startDate": "2026-08-15T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Дима Позин и проверенные хиты русского рока и поп-рока.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Дима Позин"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин",
+      "startDate": "2026-08-21T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "36 лет как вечно живой — день памяти Виктора Цоя. Большой акустический концерт группы «Кино» в исполнении Игоря Симдянкина.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Денис (DZen)",
+      "startDate": "2026-08-22T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Только любимые русскоязычные хиты в исполнении Дениса (DZen).",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Денис (DZen)"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Дмитрий Калинин",
+      "startDate": "2026-08-28T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Дмитрий Калинин с классикой русского рока и свежими хитами.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Дмитрий Калинин"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Шеремет",
+      "startDate": "2026-08-29T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)"
+      },
+      "description": "Нетленные хиты русского рока в исполнении Максима Шеремета.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Шеремет"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     }
   ]
 }
@@ -1054,7 +1189,7 @@ footer {
     
     <p class="venue-description">Один из самых активных концертных баров Севастополя: вход почти всегда бесплатный, играют в основном русский рок и поп-рок — акустика и трибьюты. Чаще других выступают Игорь Симдянкин и Дима Резник, также на сцене — Паша Грей, Фёдор Старовойтов и группа «Домино». Среди трибьютов — Nirvana (Paper Plain) и «Король и Шут» (Игорь Симдянкин). Кроме концертов здесь проводят дегустации настоек, караоке и пиво-понг.</p>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">9</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Крымский академический симфонический оркестр — концерты в Крыму, Ялта, Симферополь, Керчь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Керчь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Керчь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/krymskiy-akademicheskiy-simfonicheskiy-orkestr">
   <meta property="og:title" content="Крымский академический симфонический оркестр — концерты в Крыму, Ялта, Симферополь, Керчь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Керчь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Керчь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Крымский академический симфонический оркестр"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр",
-      "startDate": "2026-08-02T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Большой Летний Гала-концерт «Музыку, маэстро!» — оркестр под управлением Александра Долинского и солисты Крымского киноконцертного объединения исполнят арии, дуэты из опер и оперетт, эстрадные и киномелодии.",
-      "image": "/images/events/9f55d1b66acf96977c953be2a4376fe0.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Главный симфонический оркестр полуострова. Играет часто и в необычных местах: помимо театральных залов Ялты, Симферополя и Керчи — Ливадийский дворец, пещера «Мраморная» с её редкой акустикой, вечера цикла «Музыка и свечи». В репертуаре — от Прокофьева и Орфа до Морриконе и Пьяццоллы, программы военных песен и посвящение Анне Герман.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь, Керчь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
