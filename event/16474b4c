@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Plamenev, Павел Пламенев, Депо, в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джаз в лабиринте, Винзавод Массандра, в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plamenev, Павел Пламенев — Депо, Симферополь, 14 августа · Местов.Нет</title>
+<title>Джаз в лабиринте — Винзавод Массандра, Севастополь, 16 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/42897b6c">
-<meta property="og:title" content="Plamenev, Павел Пламенев — Депо, Симферополь, 14 августа · Местов.Нет">
-<meta property="og:description" content="Plamenev, Павел Пламенев, Депо, в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/16474b4c">
+<meta property="og:title" content="Джаз в лабиринте — Винзавод Массандра, Севастополь, 16 августа · Местов.Нет">
+<meta property="og:description" content="Джаз в лабиринте, Винзавод Массандра, в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/097cd737ab1aa699f30afafa57818b00.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Plamenev, Павел Пламенев",
-      "startDate": "2026-08-14T20:00:00+03:00",
+      "name": "Джаз в лабиринте",
+      "startDate": "2026-08-16T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Депо",
+        "name": "Винзавод Массандра",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "О концерте ПЛАМЕНЕВ - новая легенда русского рока! \r\n\r\nПавел Пламенев выступит с сольным концертом, где представит специальную программу из своих главных хитов. \r\nКаждая песня Павла Пламенева - это отдельная история, пропитанная глубоким смыслом и эмоциями, способная найти отклик в сердце любого слушателя. Его песни затрагивают важные темы: любовь, самопознание, преодоление трудностей, поиски гармонии с собой и миром.",
+      "description": "Джазовый вечер «Джаз в лабиринте» в рамках августовской афиши «Севастополь Джаз».",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Plamenev, Павел Пламенев"
+        "name": "Джаз в лабиринте"
       },
-      "image": "/images/events/097cd737ab1aa699f30afafa57818b00.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "от 2200 ₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Plamenev, Павел Пламенев"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз в лабиринте"}]}
 </script>
 </head>
 <body>
