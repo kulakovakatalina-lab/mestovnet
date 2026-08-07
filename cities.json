@@ -1,29 +1,175 @@
 [
-  { "name": "Крым",           "slug": "all",             "prep": "в Крыму",            "aliases": [] },
-
-  { "name": "Симферополь",    "slug": "simferopol",      "prep": "в Симферополе",      "aliases": [] },
-  { "name": "Севастополь",    "slug": "sevastopol",      "prep": "в Севастополе",      "aliases": ["Инкерман", "Балаклава"] },
-  { "name": "Ялта",           "slug": "yalta",           "prep": "в Ялте",             "aliases": ["Ливадия", "Массандра", "Мисхор", "Дюльбер", "Мрия"] },
-  { "name": "Керчь",          "slug": "kerch",           "prep": "в Керчи",            "aliases": [] },
-  { "name": "Евпатория",      "slug": "evpatoria",       "prep": "в Евпатории",        "aliases": ["Заозёрное"] },
-  { "name": "Феодосия",       "slug": "feodosiya",       "prep": "в Феодосии",         "aliases": [] },
-  { "name": "Алушта",         "slug": "alushta",         "prep": "в Алуште",           "aliases": [] },
-  { "name": "Судак",          "slug": "sudak",           "prep": "в Судаке",           "aliases": ["Новый Свет"] },
-  { "name": "Бахчисарай",     "slug": "bakhchisaray",    "prep": "в Бахчисарае",       "aliases": ["Бахчисарайский район", "Бахчисарайский р-н", "Путиловка"] },
-  { "name": "Саки",           "slug": "saki",            "prep": "в Саках",            "aliases": [] },
-  { "name": "Джанкой",        "slug": "dzhankoy",        "prep": "в Джанкое",          "aliases": [] },
-  { "name": "Белогорск",      "slug": "belogorsk",       "prep": "в Белогорске",       "aliases": [] },
-  { "name": "Старый Крым",    "slug": "stary-krym",      "prep": "в Старом Крыму",     "aliases": [] },
-  { "name": "Армянск",        "slug": "armyansk",        "prep": "в Армянске",         "aliases": [] },
-  { "name": "Красноперекопск","slug": "krasnoperekopsk", "prep": "в Красноперекопске", "aliases": [] },
-  { "name": "Щёлкино",        "slug": "shchyolkino",     "prep": "в Щёлкино",          "aliases": [] },
-
-  { "name": "Коктебель",      "slug": "koktebel",        "prep": "в Коктебеле",        "aliases": [] },
-  { "name": "Гурзуф",         "slug": "gurzuf",          "prep": "в Гурзуфе",          "aliases": [] },
-  { "name": "Симеиз",         "slug": "simeiz",          "prep": "в Симеизе",          "aliases": [] },
-  { "name": "Научный",        "slug": "nauchny",         "prep": "в Научном",          "aliases": ["Научный (Бахчисарайский р-н)"] },
-  { "name": "Партенит",       "slug": "partenit",        "prep": "в Партените",        "aliases": [] },
-  { "name": "Николаевка",     "slug": "nikolaevka",      "prep": "в Николаевке",       "aliases": [] },
-  { "name": "Форос",          "slug": "foros",           "prep": "в Форосе",           "aliases": [] },
-  { "name": "Черноморское",   "slug": "chernomorskoe",   "prep": "в Черноморском",     "aliases": ["Оленевка"] }
+  {
+    "name": "Крым",
+    "slug": "all",
+    "prep": "в Крыму",
+    "aliases": []
+  },
+  {
+    "name": "Симферополь",
+    "slug": "simferopol",
+    "prep": "в Симферополе",
+    "aliases": []
+  },
+  {
+    "name": "Севастополь",
+    "slug": "sevastopol",
+    "prep": "в Севастополе",
+    "aliases": [
+      "Инкерман",
+      "Балаклава"
+    ]
+  },
+  {
+    "name": "Ялта",
+    "slug": "yalta",
+    "prep": "в Ялте",
+    "aliases": [
+      "Ливадия",
+      "Массандра",
+      "Мисхор",
+      "Дюльбер",
+      "Мрия"
+    ]
+  },
+  {
+    "name": "Керчь",
+    "slug": "kerch",
+    "prep": "в Керчи",
+    "aliases": []
+  },
+  {
+    "name": "Евпатория",
+    "slug": "evpatoria",
+    "prep": "в Евпатории",
+    "aliases": [
+      "Заозёрное"
+    ]
+  },
+  {
+    "name": "Феодосия",
+    "slug": "feodosiya",
+    "prep": "в Феодосии",
+    "aliases": []
+  },
+  {
+    "name": "Алушта",
+    "slug": "alushta",
+    "prep": "в Алуште",
+    "aliases": []
+  },
+  {
+    "name": "Судак",
+    "slug": "sudak",
+    "prep": "в Судаке",
+    "aliases": [
+      "Новый Свет"
+    ]
+  },
+  {
+    "name": "Бахчисарай",
+    "slug": "bakhchisaray",
+    "prep": "в Бахчисарае",
+    "aliases": [
+      "Бахчисарайский район",
+      "Бахчисарайский р-н",
+      "Путиловка"
+    ]
+  },
+  {
+    "name": "Саки",
+    "slug": "saki",
+    "prep": "в Саках",
+    "aliases": []
+  },
+  {
+    "name": "Джанкой",
+    "slug": "dzhankoy",
+    "prep": "в Джанкое",
+    "aliases": []
+  },
+  {
+    "name": "Белогорск",
+    "slug": "belogorsk",
+    "prep": "в Белогорске",
+    "aliases": [
+      "Краснолесье"
+    ]
+  },
+  {
+    "name": "Старый Крым",
+    "slug": "stary-krym",
+    "prep": "в Старом Крыму",
+    "aliases": []
+  },
+  {
+    "name": "Армянск",
+    "slug": "armyansk",
+    "prep": "в Армянске",
+    "aliases": []
+  },
+  {
+    "name": "Красноперекопск",
+    "slug": "krasnoperekopsk",
+    "prep": "в Красноперекопске",
+    "aliases": []
+  },
+  {
+    "name": "Щёлкино",
+    "slug": "shchyolkino",
+    "prep": "в Щёлкино",
+    "aliases": []
+  },
+  {
+    "name": "Коктебель",
+    "slug": "koktebel",
+    "prep": "в Коктебеле",
+    "aliases": []
+  },
+  {
+    "name": "Гурзуф",
+    "slug": "gurzuf",
+    "prep": "в Гурзуфе",
+    "aliases": []
+  },
+  {
+    "name": "Симеиз",
+    "slug": "simeiz",
+    "prep": "в Симеизе",
+    "aliases": []
+  },
+  {
+    "name": "Научный",
+    "slug": "nauchny",
+    "prep": "в Научном",
+    "aliases": [
+      "Научный (Бахчисарайский р-н)"
+    ]
+  },
+  {
+    "name": "Партенит",
+    "slug": "partenit",
+    "prep": "в Партените",
+    "aliases": []
+  },
+  {
+    "name": "Николаевка",
+    "slug": "nikolaevka",
+    "prep": "в Николаевке",
+    "aliases": []
+  },
+  {
+    "name": "Форос",
+    "slug": "foros",
+    "prep": "в Форосе",
+    "aliases": []
+  },
+  {
+    "name": "Черноморское",
+    "slug": "chernomorskoe",
+    "prep": "в Черноморском",
+    "aliases": [
+      "Оленевка"
+    ]
+  }
 ]
