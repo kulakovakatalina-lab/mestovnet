@@ -300,6 +300,13 @@
       "city": "Крым",
       "type": "afisha",
       "notes": ""
+    },
+    {
+      "username": "artcafesnezhinka",
+      "title": "Арт-кафе «Снежинка»",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": ""
     }
   ]
 }
