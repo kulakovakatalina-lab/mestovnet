@@ -1320,5 +1320,19 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "oranzhereya-simferopol",
+    "name": "Оранжерея",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 0,
+    "aliases": [
+      "Оранжерея"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]
