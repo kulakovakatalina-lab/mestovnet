@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Алексей Гарюша, Алексей Гаркуша, Рок-н-рольщики (Симферополь), в Симферополе, 8 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Денайро, Усадьба «Родное гнездо», в Севастополе, 8 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Алексей Гарюша, Алексей Гаркуша — Рок-н-рольщики (Симферополь), 8 августа · Местов.Нет</title>
+<title>Денайро — Усадьба «Родное гнездо», Севастополь, 8 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,44 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/3fb75da5">
-<meta property="og:title" content="Алексей Гарюша, Алексей Гаркуша — Рок-н-рольщики (Симферополь), 8 августа · Местов.Нет">
-<meta property="og:description" content="Алексей Гарюша, Алексей Гаркуша, Рок-н-рольщики (Симферополь), в Симферополе, 8 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4c958311">
+<meta property="og:title" content="Денайро — Усадьба «Родное гнездо», Севастополь, 8 августа · Местов.Нет">
+<meta property="og:description" content="Денайро, Усадьба «Родное гнездо», в Севастополе, 8 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/92b70e713e1424cdb80430699f945b6b.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Алексей Гарюша, Алексей Гаркуша",
-      "startDate": "2026-08-08T21:00:00+03:00",
+      "name": "Денайро",
+      "startDate": "2026-08-08T17:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Усадьба «Родное гнездо»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Нетленные хиты русского рока в исполнении Алексея Гаркуши.",
+      "description": "Арбузная вечеринка: эксклюзивное арбузное меню от бренд-шефа Павла Галича и живая музыка под гитару от Денайро.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Алексей Гарюша, Алексей Гаркуша"
+        "name": "Денайро"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "offers": {
+        "@type": "Offer",
+        "name": "2000 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Алексей Гарюша, Алексей Гаркуша"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Денайро"}]}
 </script>
 </head>
 <body>

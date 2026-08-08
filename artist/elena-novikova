@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Елена Новикова — концерты в Крыму, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Елена Новикова в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Елена Новикова в Крыму (Симферополь, Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/elena-novikova">
   <meta property="og:title" content="Елена Новикова — концерты в Крыму, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Елена Новикова в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Елена Новикова в Крыму (Симферополь, Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Елена Новикова"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Елена Новикова",
-      "startDate": "2026-08-07T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Елена Новикова"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Молодость",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "О концерте Рады пригласить на премьеру жизнеутверждающего концерта «Такое Лето» от актрисы и комика Елены Новиковой.\r\n\r\nЕлене 56, она успешна в карьере, мудра в материнстве и отношениях, но совсем не умеет ценить себя, слышать свои чувства. Для того, чтобы разобраться в этом вопросе, она отправляется в путешествие со всей семьей. Естественно, к морю.\r\n\r\n«Такое лето» - это Час юмора от самой ироничной комикессы российского стендап сообщества.",
-      "image": "/images/events/72545316d471370f37a291b84627bcee.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Актриса и комик. Привозит в Крым премьеру жизнеутверждающего стендап-концерта «Такое Лето»: Santa Barbara в Симферополе и «Молодость» в Севастополе.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
