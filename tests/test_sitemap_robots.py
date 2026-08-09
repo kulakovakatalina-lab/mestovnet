@@ -42,6 +42,44 @@ class TestSitemap:
         wrong = [loc for loc in locs if not loc.startswith(DOMAIN)]
         assert not wrong, f"URL в sitemap.xml не на домене {DOMAIN}: {wrong}"
 
+    def test_includes_all_non_hidden_events(self, project_root, events, settings):
+        """Регресс: sitemap.xml раньше исключал прошедшие события (только
+        upcoming), из-за чего ссылки на архивные афиши не были доступны
+        поисковикам. Теперь в sitemap должны попадать ВСЕ события из
+        events.json с id, кроме намеренно скрытых в settings.json."""
+        hidden = set(settings.get("hidden", []))
+        expected_ids = {
+            e["id"] for e in events
+            if e.get("id") and (e.get("source_url") or "") not in hidden
+        }
+        tree = ET.parse(project_root / "sitemap.xml")
+        locs = [el.text for el in tree.getroot().findall("sm:url/sm:loc", SITEMAP_NS)]
+        sitemap_ids = {loc.rsplit("/", 1)[-1] for loc in locs if "/event/" in loc}
+        missing = expected_ids - sitemap_ids
+        assert not missing, (
+            f"В sitemap.xml нет страниц событий, которые есть в events.json: "
+            f"{sorted(missing)}. Ожидалось {len(expected_ids)} страниц событий."
+        )
+
+    def test_includes_past_events(self, project_root, events, settings, today_str):
+        """Прошедшие события (date < сегодня или без даты) обязаны оставаться
+        в sitemap.xml — они не должны выпадать из него при прогоне."""
+        hidden = set(settings.get("hidden", []))
+        past_ids = {
+            e["id"] for e in events
+            if e.get("id")
+            and (e.get("source_url") or "") not in hidden
+            and (not e.get("date") or e["date"] < today_str)
+        }
+        assert past_ids, "В events.json нет прошедших событий — тест не может проверить"
+        tree = ET.parse(project_root / "sitemap.xml")
+        locs = [el.text for el in tree.getroot().findall("sm:url/sm:loc", SITEMAP_NS)]
+        sitemap_ids = {loc.rsplit("/", 1)[-1] for loc in locs if "/event/" in loc}
+        missing = past_ids - sitemap_ids
+        assert not missing, (
+            f"Прошедшие события отсутствуют в sitemap.xml: {sorted(missing)}"
+        )
+
 
 class TestRobots:
     def test_disallows_404_page(self, project_root):

@@ -126,6 +126,19 @@ def sample_event(upcoming_events, events):
 
 
 @pytest.fixture(scope="session")
+def event_without_date(events, settings):
+    """Прошедшее/архивное событие без даты, у которого есть сгенерированная
+    страница. Нужно для проверки, что JS не подменяет его на ближайшее."""
+    hidden = set(settings.get("hidden", []))
+    for e in events:
+        if (e.get("id") and not e.get("date")
+                and (e.get("source_url") or "") not in hidden
+                and (PROJECT_ROOT / "event" / e["id"]).is_file()):
+            return e
+    pytest.skip("Нет события без даты с сгенерированной страницей event/<id>")
+
+
+@pytest.fixture(scope="session")
 def sample_venue(venues, events):
     venue_names_with_events = {
         e.get("venue") for e in events if e.get("venue")
