@@ -28,6 +28,8 @@ jobs:
       MAX_BOT_TOKEN: ${{ secrets.MAX_BOT_TOKEN }}
       YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,14 +45,29 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Снимок реестров «до»
+        run: |
+          mkdir -p /tmp/before
+          cp events.json venues.json artists.json /tmp/before/
+
       - name: Запустить парсер
         run: |
           DAYS="${{ github.event.inputs.days || 14 }}"
           python parser.py --days "$DAYS"
 
+      - name: Пересобрать реестры артистов и заведений
+        run: |
+          python build_venues.py
+          python build_artists.py
+
       - name: Сгенерировать страницы
         run: |
           python generate_pages.py
+
+      - name: Отправить уведомление в Telegram
+        run: |
+          python notify_new.py --before-dir /tmp/before
+        continue-on-error: true
 
       - name: Закоммитить и запушить
         run: |
