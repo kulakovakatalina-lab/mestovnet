@@ -4,7 +4,6 @@ import json
 import mimetypes
 import os
 import re
-import subprocess
 import time
 from datetime import date, datetime, timedelta, timezone
 
@@ -151,7 +150,8 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
     return posts
 
 
-# --- Claude CLI ---
+# --- LLM (OpenAI-совместимый API, по умолчанию Yandex AI Studio) ---
+
 _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-канала крымского заведения.
 Извлекай музыкальные мероприятия из текста поста.
 
@@ -182,33 +182,60 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 - description: 1-2 предложения"""
 
 
-def _call_claude(prompt: str, max_retries: int = 2) -> str:
-    """Вызывает claude -p через subprocess. Возвращает ответ или пустую строку."""
-    full_prompt = _SYSTEM_PROMPT + "\n\n" + prompt
+def _call_llm(prompt: str, max_retries: int = 2) -> str:
+    """Вызывает OpenAI-совместимый LLM API (по умолчанию Yandex AI Studio).
+
+    Настройки через env:
+      LLM_API_URL   — endpoint /v1/chat/completions (дефолт: Yandex AI Studio)
+      LLM_API_KEY   — API-ключ (Yandex: Authorization: Api-Key <key>)
+      LLM_MODEL     — id модели (Yandex: gpt://<folder>/yandexgpt-lite/latest)
+    Возвращает текст ответа или пустую строку при ошибке.
+    """
+    api_key = os.environ.get("LLM_API_KEY", os.environ.get("DEEPSEEK_API_KEY", ""))
+    if not api_key:
+        print(" [LLM_API_KEY не задан]", end="")
+        return ""
+
+    api_url = os.environ.get("LLM_API_URL", "https://ai.api.cloud.yandex.net/v1/chat/completions")
+    model = os.environ.get("LLM_MODEL", "")
+    if not model:
+        folder = os.environ.get("YANDEX_FOLDER_ID", "")
+        model = f"gpt://{folder}/yandexgpt-lite/latest" if folder else "yandexgpt-lite/latest"
+
+    headers = {
+        "Authorization": f"Api-Key {api_key}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": _SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.2,
+        "max_tokens": 2048,
+    }
+
     for attempt in range(max_retries + 1):
         try:
-            result = subprocess.run(
-                ["claude", "-p", full_prompt],
-                capture_output=True, text=True, timeout=120,
-            )
-            if result.returncode == 0:
-                return result.stdout.strip()
+            resp = httpx.post(api_url, headers=headers, json=payload, timeout=120)
+            resp.raise_for_status()
+            data = resp.json()
+            return (data["choices"][0]["message"]["content"] or "").strip()
+        except httpx.TimeoutException:
             if attempt < max_retries:
                 time.sleep(2 ** (attempt + 1))
                 continue
-            print(f" [claude error: {result.stderr[:200]}]", end="")
+            print(" [llm timeout]", end="")
             return ""
-        except subprocess.TimeoutExpired:
+        except httpx.HTTPStatusError as e:
+            print(f" [llm error: {e.response.status_code} {e.response.text[:200]}]", end="")
             if attempt < max_retries:
                 time.sleep(2 ** (attempt + 1))
                 continue
-            print(" [claude timeout]", end="")
-            return ""
-        except FileNotFoundError:
-            print(" [claude CLI не найден]", end="")
             return ""
         except Exception as e:
-            print(f" [claude exception: {e}]", end="")
+            print(f" [llm exception: {e}]", end="")
             return ""
     return ""
 
@@ -280,7 +307,7 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 Верни JSON-массив событий. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
-    raw = _call_claude(user_text)
+    raw = _call_llm(user_text)
     result = _parse_claude_json(raw)
     if not isinstance(result, list):
         return []
@@ -321,7 +348,7 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 Верни JSON-массив событий с полем image_indices. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
-    raw = _call_claude(user_text)
+    raw = _call_llm(user_text)
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -341,8 +368,7 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 
 
 def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, list[dict]]:
-    """Извлекает события из батча постов одним вызовом Claude.
-    Sonnet → OCR картинок (если есть), Haiku → извлечение событий из текстов + OCR.
+    """Извлекает события из батча постов одним вызовом DeepSeek.
     Возвращает dict: post_url -> [events...].
     """
     if not posts:
@@ -371,7 +397,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
 Если мероприятий нет ни в одном посте — верни {{}}.
 Верни только JSON, без пояснений."""
 
-    raw = _call_claude(user_text)
+    raw = _call_llm(user_text)
     result = _parse_claude_json(raw)
     if not isinstance(result, dict):
         return {}
@@ -1292,6 +1318,12 @@ def main(days_back: int = DAYS_BACK):
         print(f"Дедупликация с архивом: {before2} → {after2} (убрано: {before2 - after2})")
 
     print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
+
+    # Назначаем стабильный id (сохраняем существующий, генерируем для новых)
+    for e in merged:
+        if not e.get("id"):
+            key = f"{e.get('source_url','')}-{e.get('date','')}-{e.get('artist','')}"
+            e["id"] = hashlib.md5(key.encode()).hexdigest()[:8]
 
     # Убираем события-призраки: одинаковое описание + общий артист (афиши без деталей)
     ghost_before = len(merged)

@@ -58,7 +58,7 @@
         "@type": "MusicVenue",
         "name": "Снежинка"
       },
-      "description": "Рок-н-ролльный вечер с группой Rocking Ham в рамках августовской афиши «Севастополь Джаз».",
+      "description": "Рокн-н-Ролл с «Rocking Ham»",
       "performer": {
         "@type": "MusicGroup",
         "name": "Rocking Ham"

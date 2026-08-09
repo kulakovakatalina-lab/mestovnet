@@ -84,7 +84,8 @@
     "address": "",
     "event_count": 10,
     "aliases": [
-      "Рок-н-рольщики (Симферополь)"
+      "Рок-н-рольщики (Симферополь)",
+      "Рок-н-рольщики"
     ],
     "description": "За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.",
     "desc_baseline_count": 13,
@@ -1200,7 +1201,8 @@
     "address": "",
     "event_count": 1,
     "aliases": [
-      "API Balaklava"
+      "API Balaklava",
+      "Api Balaklava, терраса"
     ],
     "description": "API Balaklava — бутик-отель среди виноградников с бистро-баром и видом на горы, в 10 минутах от Балаклавы.",
     "desc_baseline_count": 1,
@@ -1331,6 +1333,34 @@
       "Оранжерея"
     ],
     "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinogradnik-le-k2-selo-rodnoe",
+    "name": "Виноградник Le K2, село Родное",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 0,
+    "aliases": [
+      "Виноградник Le K2, село Родное"
+    ],
+    "description": "Виноградник Le K2 в селе Родное (Балаклавский район).",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "novoulyanovka-belbekskaya-dolina",
+    "name": "Новоульяновка, Бельбекская долина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 0,
+    "aliases": [
+      "Новоульяновка, Бельбекская долина"
+    ],
+    "description": "Новоульяновка в Бельбекской долине — место проведения выездных звуковых практик и концертов.",
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
