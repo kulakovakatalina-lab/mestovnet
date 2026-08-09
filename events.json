@@ -5966,23 +5966,6 @@
     "updated_at": "2026-05-02T08:33:46+00:00"
   },
   {
-    "date": "2026-05-09",
-    "time": "21:00",
-    "artist": "Игорь Симдянкин",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Севастополь)",
-    "price": "бесплатно",
-    "description": "Праздничный квартирник. Поём легендарные песни вместе с Игорем Симдянкиным.",
-    "source_city": "Севастополь",
-    "source_channel": "rocknroll_92",
-    "source_url": "https://t.me/rocknroll_92/6517",
-    "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": null,
-    "genre": "каверы",
-    "id": "1a08d116",
-    "updated_at": "1970-01-01T00:00:00+00:00"
-  },
-  {
     "date": "2026-05-08",
     "time": "12:00",
     "artist": "Rus, Kardys",
@@ -6086,23 +6069,6 @@
     "post_date": "2026-05-08",
     "genre": "инди",
     "id": "5ae886ac",
-    "updated_at": "1970-01-01T00:00:00+00:00"
-  },
-  {
-    "date": "2026-05-08",
-    "time": "21:00",
-    "artist": "Дима Резник",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Севастополь)",
-    "price": "бесплатно",
-    "description": "Акустический кавер-концерт русских рок и поп-рок хитов.",
-    "source_city": "Севастополь",
-    "source_channel": "rocknroll_92",
-    "source_url": "https://t.me/rocknroll_92/6517",
-    "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
-    "post_date": null,
-    "genre": "русский рок",
-    "id": "a564ed8d",
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
@@ -6693,23 +6659,6 @@
   {
     "date": null,
     "time": null,
-    "artist": "Карина Клавихо, Правин, Андрей Танзю",
-    "event_type": "концерт",
-    "venue": "Арт-Ковчег",
-    "price": null,
-    "description": "Суфийский концерт в Арт-Ковчеге. Созерцание практики через звук и мастерство.",
-    "source_channel": "belbekma",
-    "source_city": "Севастополь",
-    "post_date": "2026-05-14T15:45:02+00:00",
-    "image": "/images/events/71b8c5b7c72038dbeac39d453a78347d.jpg",
-    "source_url": "https://t.me/belbekma/1248",
-    "genre": "поп",
-    "id": "12c3d1d0",
-    "updated_at": "2026-05-14T15:45:02+00:00"
-  },
-  {
-    "date": null,
-    "time": null,
     "artist": "Мыст",
     "event_type": "другое",
     "venue": "Крымские Дела",
@@ -6777,7 +6726,7 @@
     "updated_at": "2026-05-07T12:24:36+00:00"
   },
   {
-    "date": null,
+    "date": "2026-05-08",
     "time": "21:00",
     "artist": "Дима Резник",
     "event_type": "концерт",
@@ -6794,8 +6743,8 @@
     "updated_at": "2026-05-08T11:24:34+00:00"
   },
   {
-    "date": null,
-    "time": "21:30",
+    "date": "2026-05-09",
+    "time": "21:00",
     "artist": "Игорь Симдянкин",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Севастополь)",

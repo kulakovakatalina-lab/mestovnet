@@ -1361,10 +1361,11 @@ function render(event) {
               return (vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name) + ' · ' + city;
             })()}</div>
             <div class="event-info-meta">
+              ${event.dateFmt ? `
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Дата</span>
-                <span class="event-info-meta-value">${event.dateFmt ? event.dateFmt.full : 'Дата уточняется'}</span>
-              </div>
+                <span class="event-info-meta-value">${event.dateFmt.full}</span>
+              </div>` : ''}
               ${event.time ? `
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Начало</span>

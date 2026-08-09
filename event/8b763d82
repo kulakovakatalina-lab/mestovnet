@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Дима Резник, Рок-н-рольщики (Севастополь), в Севастополе. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Дима Резник, Рок-н-рольщики (Севастополь), в Севастополе, 8 мая, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Дима Резник — Рок-н-рольщики (Севастополь) · Местов.Нет</title>
+<title>Дима Резник — Рок-н-рольщики (Севастополь), 8 мая · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,11 +959,43 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/8b763d82">
-<meta property="og:title" content="Дима Резник — Рок-н-рольщики (Севастополь) · Местов.Нет">
-<meta property="og:description" content="Дима Резник, Рок-н-рольщики (Севастополь), в Севастополе. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Дима Резник — Рок-н-рольщики (Севастополь), 8 мая · Местов.Нет">
+<meta property="og:description" content="Дима Резник, Рок-н-рольщики (Севастополь), в Севастополе, 8 мая, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/b1366f2ade890e4b74be3fc9e779e616.jpg">
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicEvent",
+      "name": "Дима Резник",
+      "startDate": "2026-05-08T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Акустический квартирник Димы Резника с хитами русского рок-попа в честь Дня Победы. Заведение работает с 18:00, живой звук около 21:00.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Дима Резник"
+      },
+      "image": "/images/events/b1366f2ade890e4b74be3fc9e779e616.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}
+</script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Дима Резник"}]}
 </script>
@@ -1331,10 +1363,11 @@ function render(event) {
               return (vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name) + ' · ' + city;
             })()}</div>
             <div class="event-info-meta">
+              ${event.dateFmt ? `
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Дата</span>
-                <span class="event-info-meta-value">${event.dateFmt ? event.dateFmt.full : 'Дата уточняется'}</span>
-              </div>
+                <span class="event-info-meta-value">${event.dateFmt.full}</span>
+              </div>` : ''}
               ${event.time ? `
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Начало</span>

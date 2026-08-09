@@ -33,6 +33,32 @@ class TestEventsJson:
         dupes = {i for i in ids if ids.count(i) > 1}
         assert not dupes, f"Дублирующиеся id событий: {dupes}"
 
+    def test_no_content_duplicates(self, events):
+        """Содержательные дубликаты: одинаковые дата+площадка+время или
+        пересекающиеся артисты на одну дату (критерии deduplicate_events из
+        parser.py), но разные id. Регресс на случай 8b763d82/a564ed8d —
+        одно расписание из разных постов канала попало в базу дважды."""
+        from parser import _artist_set, _venue_match
+
+        dated = [e for e in events if e.get("date") and e.get("id")]
+        dupes = []
+        for i in range(len(dated)):
+            for j in range(i + 1, len(dated)):
+                a, b = dated[i], dated[j]
+                if a["date"] != b["date"]:
+                    continue
+                ai, aj = _artist_set(a), _artist_set(b)
+                vi, vj = a.get("venue") or "", b.get("venue") or ""
+                ti, tj = a.get("time") or "", b.get("time") or ""
+                same_artist = bool(ai and aj and ai & aj)
+                same_venue_time = bool(vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj)
+                if same_artist or same_venue_time:
+                    dupes.append((a["id"], b["id"], a["date"], a.get("artist"), b.get("artist"),
+                                  vi or vj, ti or tj))
+        assert not dupes, (
+            f"Содержательные дубликаты событий (один концерт — две карточки): {dupes}"
+        )
+
     def test_dates_are_valid_and_recent(self, events):
         current_year = date.today().year
         bad = []

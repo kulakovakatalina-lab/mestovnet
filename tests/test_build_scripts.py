@@ -77,16 +77,35 @@ class TestBuildVenuesPreservesManualFields:
 
 
 class TestBuildArtistsPreservesManualFields:
-    def test_description_survives_rebuild(self, tmp_path, artists):
+    def test_description_survives_rebuild(self, tmp_path, artists, events):
         _copy_for_build(tmp_path)
         _run(tmp_path, "build_artists.py")
         after = json.loads((tmp_path / "artists.json").read_text(encoding="utf-8"))
         by_slug, by_name = _index_by_slug_and_name(after)
 
+        # Порог публикации страницы артиста — MIN_EVENTS (см. build_artists.py).
+        # Артист, у которого после дедупликации событий стало меньше порога,
+        # законно выпадает из реестра — его описание «теряется» не по ошибке
+        # пересборки, а из-за удаления дубликатов в events.json.
+        from build_artists import MIN_EVENTS
+        from parser import _split_artist_field
+        from collections import Counter
+
+        ev_per_artist: Counter = Counter()
+        for e in events:
+            if e.get("date"):
+                for part in _split_artist_field(e.get("artist") or ""):
+                    ev_per_artist[part.strip()] += 1
+
         lost_description = []
         for before in artists:
             match = _find_after(before, by_slug, by_name)
             if before.get("description") and not (match and match.get("description")):
+                names = {before.get("name"), *before.get("aliases", [])}
+                event_count = sum(ev_per_artist[name] for name in names)
+                if event_count < MIN_EVENTS:
+                    # Артист опустился ниже порога — страница намеренно снята.
+                    continue
                 lost_description.append(before["slug"])
 
         assert not lost_description, (

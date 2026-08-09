@@ -93,6 +93,39 @@ def _pages_to_check(sample_event, sample_venue, sample_city):
 
 
 class TestLayout:
+    def test_past_event_with_restored_date_shows_its_date(
+        self, live_server, browser, events, project_root,
+    ):
+        """Регресс: прошедшее событие, дата которого восстановлена из источника
+        (date:null → реальная дата), обязано показывать эту дату на странице."""
+        candidates = [
+            e for e in events
+            if e.get("id") and e.get("date")
+            and (project_root / "event" / e["id"]).is_file()
+            and (e.get("source_url") or "").startswith("https://t.me/rocknroll_92/6565")
+        ]
+        if not candidates:
+            pytest.skip("Нет события с восстановленной датой из rocknroll_92/6565")
+        e = candidates[0]
+        expected_date = e["date"]
+        page = browser.new_page(viewport=VIEWPORTS["desktop"])
+        js_errors = []
+        page.on("pageerror", lambda exc: js_errors.append(str(exc)))
+        page.goto(f"{live_server}/event/{e['id']}", wait_until="networkidle")
+        page.wait_for_selector("h1.event-info-artist", timeout=5000)
+        date_labels = page.locator(".event-info-meta-label").all_inner_texts()
+        date_values = page.locator(".event-info-meta-value").all_inner_texts()
+        page.close()
+
+        assert not js_errors, f"JS-ошибки на странице события: {js_errors}"
+        assert any("дата" in label.lower() for label in date_labels), (
+            f"У события /event/{e['id']} с известной датой скрыт блок «Дата»"
+        )
+        # «8 мая 2026» → формат из MONTHS_GEN, сверяем по году и дню
+        assert expected_date[:4] in " ".join(date_values), (
+            f"Дата события {expected_date} не показана на странице /event/{e['id']}"
+        )
+
     @pytest.mark.parametrize("viewport_name", list(VIEWPORTS.keys()))
     def test_pages_render_without_layout_breakage(
         self, live_server, browser, sample_event, sample_venue, sample_city,
@@ -165,6 +198,7 @@ class TestLayout:
         body_text = page.inner_text("body")
         h1 = page.locator("h1.event-info-artist").first
         h1_text = h1.inner_text() if h1.count() else ""
+        date_labels = page.locator(".event-info-meta-label").all_inner_texts()
 
         page.close()
 
@@ -174,3 +208,7 @@ class TestLayout:
             "JS, похоже, подменил событие на ближайшее"
         )
         assert expected in body_text, f"На странице /event/{eid} нет артиста «{expected}»"
+        assert not any("дата" in label.lower() for label in date_labels), (
+            f"У события без даты /event/{eid} показан блок «Дата» — "
+            "должен быть скрыт (дата неизвестна)"
+        )
