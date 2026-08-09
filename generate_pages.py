@@ -2011,12 +2011,11 @@ def main() -> None:
     print(f"    ✓ event/  ({len(generated_event_ids)} страниц"
           + (f", удалено устаревших: {removed}" if removed else "") + ")")
 
-    upcoming_event_ids = [e["id"] for e in events
-                           if e.get("id") and (e.get("date") or "") >= today]
+    all_event_ids = [e["id"] for e in events if e.get("id")]
 
     # 5. sitemap.xml
     print("🗺   Генерируем sitemap.xml …")
-    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, upcoming_event_ids,
+    sitemap = make_sitemap(cities_with_events, generated_venue_slugs, all_event_ids,
                            genres_with_events, generated_artist_slugs)
     (BASE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     print("    ✓ sitemap.xml")

@@ -147,3 +147,30 @@ class TestLayout:
         card_count = page.locator(".card").count()
         page.close()
         assert card_count > 0, "На главной нет ни одной карточки события, хотя события есть в events.json"
+
+    def test_past_event_without_date_shows_own_artist_not_nearest(
+        self, live_server, browser, event_without_date,
+    ):
+        """Регресс на баг: прошедшее событие с date:null отфильтровывалось
+        из allEvents в event.html, JS не находил его по id и подставлял
+        upcoming[0] — ближайшее событие (например «Джазовый пикник»). Страница
+        /event/{id} обязана показывать именно своё событие."""
+        eid = event_without_date["id"]
+        expected = (event_without_date.get("artist") or "Мероприятие").split(",")[0].strip()
+        page = browser.new_page(viewport=VIEWPORTS["desktop"])
+        js_errors = []
+        page.on("pageerror", lambda exc: js_errors.append(str(exc)))
+        page.goto(f"{live_server}/event/{eid}", wait_until="networkidle")
+
+        body_text = page.inner_text("body")
+        h1 = page.locator("h1.event-info-artist").first
+        h1_text = h1.inner_text() if h1.count() else ""
+
+        page.close()
+
+        assert not js_errors, f"JS-ошибки на странице прошедшего события: {js_errors}"
+        assert expected in h1_text, (
+            f"/event/{eid} показывает артиста «{h1_text}», а ожидался «{expected}» — "
+            "JS, похоже, подменил событие на ближайшее"
+        )
+        assert expected in body_text, f"На странице /event/{eid} нет артиста «{expected}»"

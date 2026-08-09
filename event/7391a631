@@ -1259,26 +1259,29 @@ async function load() {
 
     const now = new Date();
 
-    const enrich = e => ({
-      ...e,
-      dateObj: parseDate(e.date),
-      genre: mapGenre(e.genre),
-      dateFmt: {
-        day: String(parseDate(e.date).getDate()).padStart(2, '0'),
-        month: MONTHS_GEN[parseDate(e.date).getMonth()],
-        monthShort: ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'][parseDate(e.date).getMonth()],
-        dow: DOW_FULL[parseDate(e.date).getDay()],
-        full: `${parseDate(e.date).getDate()} ${MONTHS_GEN[parseDate(e.date).getMonth()]} ${parseDate(e.date).getFullYear()}`
-      },
-      priceDisplay: priceText(e.price),
-      globalIdx: e._origIdx
-    });
+    const enrich = e => {
+      const d = e.date ? parseDate(e.date) : null;
+      return {
+        ...e,
+        dateObj: d,
+        genre: mapGenre(e.genre),
+        dateFmt: d ? {
+          day: String(d.getDate()).padStart(2, '0'),
+          month: MONTHS_GEN[d.getMonth()],
+          monthShort: ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'][d.getMonth()],
+          dow: DOW_FULL[d.getDay()],
+          full: `${d.getDate()} ${MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}`
+        } : null,
+        priceDisplay: priceText(e.price),
+        globalIdx: e._origIdx
+      };
+    };
 
-    // все события с датой (прошедшие + предстоящие), чтобы открывалась и страница архивного события
-    allEvents = patched.filter(Boolean).filter(e => e.date).map(enrich);
+    // все события (прошедшие + предстоящие, с датой и без), чтобы открывалась и страница архивного события
+    allEvents = patched.filter(Boolean).map(enrich);
 
     const upcoming = allEvents
-      .filter(e => parseDateTime(e) >= now)
+      .filter(e => e.date && parseDateTime(e) >= now)
       .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
 
     let event;
@@ -1363,7 +1366,7 @@ function render(event) {
             <div class="event-info-meta">
               <div class="event-info-meta-item">
                 <span class="event-info-meta-label">Дата</span>
-                <span class="event-info-meta-value">${event.dateFmt.full}</span>
+                <span class="event-info-meta-value">${event.dateFmt ? event.dateFmt.full : 'Дата уточняется'}</span>
               </div>
               ${event.time ? `
               <div class="event-info-meta-item">
