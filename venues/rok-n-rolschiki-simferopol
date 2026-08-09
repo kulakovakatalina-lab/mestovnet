@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 8 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 7 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
   <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 8 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 7 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,22 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Алексей Гарюша, Алексей Гаркуша",
-      "startDate": "2026-08-08T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Нетленные хиты русского рока в исполнении Алексея Гаркуши.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Алексей Гарюша, Алексей Гаркуша"
-      },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Jokers Band",
+      "name": "Игорь Симдянкин, Jokers Band",
       "startDate": "2026-08-14T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -61,13 +46,13 @@
       "description": "Jokers Band show: мировые хиты в мощном концертном звучании. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Jokers Band"
+        "name": "Игорь Симдянкин, Jokers Band"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
+      "name": "Дима Позин, Игорь Симдянкин",
       "startDate": "2026-08-15T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -76,9 +61,9 @@
       "description": "День памяти Виктора Цоя: 36 лет как вечно живой. Большой акустический концерт группы «Кино» от Игоря Симдянкина (Севастополь).",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Дима Позин, Игорь Симдянкин"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -97,7 +82,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Проект-С",
+      "name": "Игорь Симдянкин, Проект-С",
       "startDate": "2026-08-21T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -106,13 +91,13 @@
       "description": "Мировые и русские рок-баллады в исполнении группы «Проект-С». Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Проект-С"
+        "name": "Игорь Симдянкин, Проект-С"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Демчиз",
+      "name": "Денис (DZen), Демчиз",
       "startDate": "2026-08-22T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -121,13 +106,13 @@
       "description": "Группа «Демчиз» (Севастополь): русский рок, поп-хиты и неожиданные танцевальные мэшапы.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Демчиз"
+        "name": "Денис (DZen), Демчиз"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Кальвадос",
+      "name": "Дмитрий Калинин, Кальвадос",
       "startDate": "2026-08-28T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -136,13 +121,13 @@
       "description": "Группа «Кальвадос» с крутым поп-роком и саундтреками из легендарных фильмов. Не акустика.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Кальвадос"
+        "name": "Дмитрий Калинин, Кальвадос"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин",
+      "name": "Максим Шеремет, Игорь Симдянкин",
       "startDate": "2026-08-29T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -151,9 +136,9 @@
       "description": "53 года Михаилу Горшенёву — большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин"
+        "name": "Максим Шеремет, Игорь Симдянкин"
       },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     }
   ]
 }
@@ -1174,7 +1159,7 @@ footer {
     
     <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">8</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">7</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1226,7 +1211,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Рок-н-рольщики (Симферополь)", "Рок-н-рольщики (Симферополь)"];
+const VENUE_ALIASES = ["Рок-н-рольщики (Симферополь)", "Рок-н-рольщики", "Рок-н-рольщики (Симферополь)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

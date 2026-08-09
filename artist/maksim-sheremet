@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Севастополь)",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Нетленные хиты русского рока в исполнении Максима Шеремета.",
+      "description": "53 года Михаилу Горшенёву — большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
       "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     }
   ]

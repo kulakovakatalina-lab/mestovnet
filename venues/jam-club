@@ -37,18 +37,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Sinful, Pulsa Di Nura, Bloodshot, Шум в голове",
-      "startDate": "2026-08-08T18:00:00+03:00",
+      "name": "Руслан Абдуллаев",
+      "startDate": "2026-08-09T19:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Metal Spirit Resurrection Fest — хедлайнеры Sinful (Москва), Pulsa Di Nura, Bloodshot и Шум в голове. После феста — бесплатное рок-караоке до утра.",
+      "description": "Концерт талантливого фингерстайл гитариста Руслана Абдуллаева.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Sinful, Pulsa Di Nura, Bloodshot, Шум в голове"
+        "name": "Руслан Абдуллаев"
       },
-      "image": "/images/events/be72b263fd6f5b42cb1ef1bd09765533.jpg"
+      "image": "/images/events/b0f4fa9a27df857d456af0d96ab1843c.jpg"
     },
     {
       "@type": "MusicEvent",

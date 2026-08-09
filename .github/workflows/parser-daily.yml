@@ -1,0 +1,69 @@
+name: Parser daily
+
+# Запускает parser.py раз в день утром (04:00 UTC = 07:00 Крым),
+# генерирует страницы и пушит изменения в main.
+# Пуш в main автоматически запускает deploy-yandex.yml (деплой на сайт).
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Глубина парсинга в днях"
+        required: false
+        default: "14"
+        type: string
+
+concurrency:
+  group: parser-daily
+  cancel-in-progress: false
+
+jobs:
+  parse-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      VK_SERVICE_TOKEN: ${{ secrets.VK_SERVICE_TOKEN }}
+      MAX_BOT_TOKEN: ${{ secrets.MAX_BOT_TOKEN }}
+      YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Установить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Установить зависимости
+        run: |
+          pip install -r requirements.txt
+
+      - name: Запустить парсер
+        run: |
+          DAYS="${{ github.event.inputs.days || 14 }}"
+          python parser.py --days "$DAYS"
+
+      - name: Сгенерировать страницы
+        run: |
+          python generate_pages.py
+
+      - name: Закоммитить и запушить
+        run: |
+          git config user.name "MestovNet Bot"
+          git config user.email "mestovnet-bot@users.noreply.github.com"
+
+          # Коммитим только если есть изменения
+          if git diff --quiet; then
+            echo "Нет изменений — коммитить нечего."
+            exit 0
+          fi
+
+          git add -A
+          COUNT=$(python3 -c "import json; d=json.load(open('events.json')); print(len(d))")
+          git commit -m "parser: обновить события [автоматически] ($COUNT в базе)"
+          git push origin HEAD:main
