@@ -97,7 +97,7 @@ def render_event_block(e: dict, artist_lookup: dict, venue_lookup: dict) -> list
     if date:
         title_parts.append(date)
     title = " — ".join(p for p in title_parts if p)
-    lines.append(f"🎤 <a href=\"{DOMAIN}/event/{e['id']}\">{esc(title)}</a>")
+    lines.append(f"<a href=\"{DOMAIN}/event/{e['id']}\">{esc(title)}</a>")
 
     # 2. Артист(ы) со ссылками
     artists = resolve_artist_names(artist, artist_lookup)
@@ -108,22 +108,22 @@ def render_event_block(e: dict, artist_lookup: dict, venue_lookup: dict) -> list
                 links.append(f"<a href=\"{DOMAIN}/artist/{slug}\">{esc(name)}</a>")
             else:
                 links.append(esc(name))
-        lines.append(f"🎸 {', '.join(links)}")
+        lines.append(f"Артист: {', '.join(links)}")
     elif artist:
-        lines.append(f"🎸 {esc(artist)}")
+        lines.append(f"Артист: {esc(artist)}")
 
     # 3. Заведение со ссылкой
     if venue:
         slug = venue_lookup.get(venue)
         if slug:
-            lines.append(f"🏛 <a href=\"{DOMAIN}/venues/{slug}\">{esc(venue)}</a>")
+            lines.append(f"Заведение: <a href=\"{DOMAIN}/venues/{slug}\">{esc(venue)}</a>")
         else:
-            lines.append(f"🏛 {esc(venue)}")
+            lines.append(f"Заведение: {esc(venue)}")
 
     # 4. Источник
     src = (e.get("source_url") or "").strip()
     if src:
-        lines.append(f"🔗 <a href=\"{esc(src)}\">{esc(src)}</a>")
+        lines.append(f"Источник: <a href=\"{esc(src)}\">{esc(src)}</a>")
 
     return lines
 
