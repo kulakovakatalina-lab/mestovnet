@@ -1136,7 +1136,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["ДОФ", "Дом офицеров флота", "Дом офицеров флота"];
+const VENUE_ALIASES = ["ДОФ", "Дом офицеров Черноморского флота", "Дом офицеров флота", "Дом офицеров флота"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
