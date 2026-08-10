@@ -1076,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["API Balaklava", "Api Balaklava, терраса", "API Balaklava"];
+const VENUE_ALIASES = ["API Balaklava", "API Balaklava"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
