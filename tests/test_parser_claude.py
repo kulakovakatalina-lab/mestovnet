@@ -78,8 +78,8 @@ class TestOnlyEventDicts:
         assert result[0]["date"] == "2026-08-01"
 
     def test_keeps_none_fields(self):
-        events = [{"date": None, "artist": None}]
-        assert _only_event_dicts(events) == [{"date": None, "artist": None}]
+        events = [{"date": "2026-08-01", "artist": None}]
+        assert _only_event_dicts(events) == [{"date": "2026-08-01", "artist": None}]
 
     def test_filters_refusal_descriptions(self):
         events = [
@@ -95,6 +95,25 @@ class TestOnlyEventDicts:
     def test_keeps_event_without_description(self):
         events = [{"date": "2026-08-01", "artist": "Группа"}]
         assert _only_event_dicts(events) == [{"date": "2026-08-01", "artist": "Группа"}]
+
+    def test_filters_non_music_markers(self):
+        events = [
+            {"date": "2026-08-01", "description": "Кино под открытым небом: «Сделано в Италии»."},
+            {"date": "2026-08-02", "description": "Утренний забег, танцы и завтрак."},
+            {"date": "2026-08-03", "description": "Групповая экскурсия с видом на море."},
+            {"date": "2026-08-04", "description": "Анонс атмосферы отдыха в отеле, без конкретного музыкального мероприятия."},
+            {"date": "2026-08-05", "description": "Джазовый вечер, группа «Берега»."},
+        ]
+        result = _only_event_dicts(events)
+        assert result == [{"date": "2026-08-05", "description": "Джазовый вечер, группа «Берега»."}]
+
+    def test_filters_empty_stub(self):
+        events = [
+            {"id": "a", "date": None, "artist": None, "venue": None, "description": ""},
+            {"id": "b", "date": "2026-08-02", "artist": "Группа", "venue": None, "description": ""},
+        ]
+        result = _only_event_dicts(events)
+        assert [e["id"] for e in result] == ["b"]
 
 
 class TestCleanBatchResult:
