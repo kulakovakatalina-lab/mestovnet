@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
     env:
       VK_SERVICE_TOKEN: ${{ secrets.VK_SERVICE_TOKEN }}
       MAX_BOT_TOKEN: ${{ secrets.MAX_BOT_TOKEN }}
@@ -70,6 +71,7 @@ jobs:
         continue-on-error: true
 
       - name: Закоммитить и запушить
+        id: commit
         run: |
           git config user.name "MestovNet Bot"
           git config user.email "mestovnet-bot@users.noreply.github.com"
@@ -77,6 +79,7 @@ jobs:
           # Коммитим только если есть изменения
           if git diff --quiet; then
             echo "Нет изменений — коммитить нечего."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -84,3 +87,13 @@ jobs:
           COUNT=$(python3 -c "import json; d=json.load(open('events.json')); print(len(d))")
           git commit -m "parser: обновить события [автоматически] ($COUNT в базе)"
           git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Пуш ботом через GITHUB_TOKEN не триггерит другие workflow (защита
+      # GitHub от бесконечных циклов), поэтому деплой запускаем явно.
+      - name: Запустить деплой
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "Deploy to Yandex Object Storage"
