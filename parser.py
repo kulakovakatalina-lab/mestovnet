@@ -251,6 +251,21 @@ def _parse_claude_json(raw: str):
         return None
 
 
+def _only_event_dicts(events) -> list[dict]:
+    """Отбрасывает элементы массива, которые не являются словарями событий.
+    LLM изредка возвращает вместо объекта строку (например «нет событий»)."""
+    return [e for e in events if isinstance(e, dict)]
+
+
+def _clean_batch_result(result: dict) -> dict:
+    """Чистит результат батча: значение каждого url — массив словарей событий."""
+    cleaned = {}
+    for url, events in result.items():
+        if isinstance(events, list):
+            cleaned[url] = _only_event_dicts(events)
+    return cleaned
+
+
 def _post_date_str(post: dict) -> str:
     """Дата публикации поста в формате YYYY-MM-DD (для промпта и кэш-ключа)."""
     return (post.get("date") or "")[:10]
@@ -311,6 +326,7 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
     result = _parse_claude_json(raw)
     if not isinstance(result, list):
         return []
+    result = _only_event_dicts(result)
     _cache_write(cache_key, result)
     return result
 
@@ -326,7 +342,7 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
     cached = _cache_read(cache_key)
     print(f" cache={cached is not None}", end="")
     if cached is not None:
-        return cached
+        return _only_event_dicts(cached)
 
     user_text = f"""Заведение: {channel_meta['title']}, город: {channel_meta['city']}.
 Дата публикации поста: {post_date}.
@@ -362,6 +378,7 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
         return []
     if not isinstance(events, list):
         return []
+    events = _only_event_dicts(events)
     print(f" -> {len(events)} events", end="")
     _cache_write(cache_key, events)
     return events
@@ -378,7 +395,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
     cached = _cache_read("\n---\n".join(cache_texts))
     if cached is not None:
         print(f" [кэш]", end="")
-        return cached
+        return _clean_batch_result(cached)
 
     posts_section = ""
     for i, post in enumerate(posts):
@@ -401,6 +418,7 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
     result = _parse_claude_json(raw)
     if not isinstance(result, dict):
         return {}
+    result = _clean_batch_result(result)
     _cache_write("\n---\n".join(cache_texts), result)
     return result
 
