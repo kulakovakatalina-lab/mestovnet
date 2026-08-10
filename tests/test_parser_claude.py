@@ -81,6 +81,21 @@ class TestOnlyEventDicts:
         events = [{"date": None, "artist": None}]
         assert _only_event_dicts(events) == [{"date": None, "artist": None}]
 
+    def test_filters_refusal_descriptions(self):
+        events = [
+            {"date": "2026-08-01", "description": "Нет информации о музыкальном мероприятии."},
+            {"date": "2026-08-02", "description": "Пост не содержит анонса музыкального мероприятия."},
+            {"date": "2026-08-03", "description": "Пост содержит информацию о блюде, нет музыкальных мероприятий."},
+            {"date": "2026-08-04", "description": "Живая музыка, группа «Берега» каждый вечер."},
+        ]
+        assert _only_event_dicts(events) == [
+            {"date": "2026-08-04", "description": "Живая музыка, группа «Берега» каждый вечер."}
+        ]
+
+    def test_keeps_event_without_description(self):
+        events = [{"date": "2026-08-01", "artist": "Группа"}]
+        assert _only_event_dicts(events) == [{"date": "2026-08-01", "artist": "Группа"}]
+
 
 class TestCleanBatchResult:
     def test_drops_non_list_values(self):
