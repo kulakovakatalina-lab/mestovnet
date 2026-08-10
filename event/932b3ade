@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен, Jam Club, в Симферополе, 7 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Сергей Нихаенко, ТАВРИДА.АРТ, в Судаке. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен — Jam Club, Симферополь, 7 августа · Местов.Нет</title>
+<title>Сергей Нихаенко — ТАВРИДА.АРТ, Судак · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/389b9d2e">
-<meta property="og:title" content="Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен — Jam Club, Симферополь, 7 августа · Местов.Нет">
-<meta property="og:description" content="Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен, Jam Club, в Симферополе, 7 августа, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/932b3ade">
+<meta property="og:title" content="Сергей Нихаенко — ТАВРИДА.АРТ, Судак · Местов.Нет">
+<meta property="og:description" content="Сергей Нихаенко, ТАВРИДА.АРТ, в Судаке. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/88bd0c5e49dff57ce115b5f18630c749.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/efb65e0db0023591633b76f0df621231.jpg">
+
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MusicEvent",
-      "name": "Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен",
-      "startDate": "2026-08-07T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Панк-фест с участием групп из Питера, Ростова, Ялты, Севастополя и Симферополя. После феста — бесплатное рок-караоке до утра.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен"
-      },
-      "image": "/images/events/88bd0c5e49dff57ce115b5f18630c749.jpg"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Регионы, По мнению твоей бывшей, Никто Не Виноват, Inkoda, Официально Устроен"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Судак", "item": "https://mestov.net/cities/sudak.html"}, {"@type": "ListItem", "position": 3, "name": "Сергей Нихаенко"}]}
 </script>
 </head>
 <body>
