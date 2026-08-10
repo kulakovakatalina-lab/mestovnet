@@ -64,6 +64,23 @@ class TestOnlyEventDicts:
         events = [42, None, "ошибка"]
         assert _only_event_dicts(events) == []
 
+    def test_normalizes_list_fields(self):
+        events = [{
+            "date": "2026-08-01",
+            "artist": ["Группа", "Другое"],
+            "venue": ["Бар"],
+            "price": 500,
+        }]
+        result = _only_event_dicts(events)
+        assert result[0]["artist"] == "Группа, Другое"
+        assert result[0]["venue"] == "Бар"
+        assert result[0]["price"] == "500"
+        assert result[0]["date"] == "2026-08-01"
+
+    def test_keeps_none_fields(self):
+        events = [{"date": None, "artist": None}]
+        assert _only_event_dicts(events) == [{"date": None, "artist": None}]
+
 
 class TestCleanBatchResult:
     def test_drops_non_list_values(self):
