@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "ул. Ленина, д. 8"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Ресторан «У Чёрного моря»</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ул. Ленина, д. 8, Севастополь</span></div>
+    
     
   </div>
   
@@ -1077,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["У Чёрного моря", "ресторан \"У Чёрного моря\"", "Ресторан «У Чёрного моря»"];
+const VENUE_ALIASES = ["Ресторан 'У Чёрного моря'", "Ресторан «У Чёрного моря»", "Ресторан «У Чёрного моря»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
