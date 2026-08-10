@@ -251,10 +251,35 @@ def _parse_claude_json(raw: str):
         return None
 
 
+_SCALAR_FIELDS = (
+    "artist", "venue", "event_type", "genre", "price", "description",
+    "date", "time", "source_channel", "source_city",
+)
+
+
+def _to_scalar(value):
+    """Приводит значение поля к строке, если LLM вернул список/число."""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, list):
+        return ", ".join(str(v) for v in value if v not in (None, ""))
+    if value is None:
+        return None
+    return str(value)
+
+
 def _only_event_dicts(events) -> list[dict]:
     """Отбрасывает элементы массива, которые не являются словарями событий.
     LLM изредка возвращает вместо объекта строку (например «нет событий»)."""
-    return [e for e in events if isinstance(e, dict)]
+    cleaned = []
+    for e in events:
+        if not isinstance(e, dict):
+            continue
+        for field in _SCALAR_FIELDS:
+            if field in e:
+                e[field] = _to_scalar(e[field])
+        cleaned.append(e)
+    return cleaned
 
 
 def _clean_batch_result(result: dict) -> dict:
