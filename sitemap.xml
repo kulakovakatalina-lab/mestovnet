@@ -26,7 +26,6 @@
   <url><loc>https://mestov.net/venues/antichnyy-teatr-hersones-tavricheskiy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/antikvarno-hudozhestvennaya-galereya-stiks</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/api-balaklava</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/api-balaklava-terrasa</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kafe-snezhinka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kovcheg</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-rezidentsiya-faza</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
@@ -55,7 +54,6 @@
   <url><loc>https://mestov.net/venues/gastrodvor</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/golf-pole</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/gornaya-syrovarnya</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/gorod-molodyh-tvortsov</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/hungry-bird</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/jam-club</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/kinoteatr-pobeda</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
@@ -114,12 +112,9 @@
   <url><loc>https://mestov.net/venues/teatr-imeni-a-s-pushkina</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/teatr-imeni-borisa-lavreneva</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/teplo-tvoya-territoriya</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/terrasa-api-bistro</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/tvorcheskaya-rezidentsiya-molodezh-moskvy-rodina</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/usadba-rodnoe-gnezdo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/vinnyy-park-ponizovka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/vinodelnya-zolotaya-balka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/vinogradnik-le-k2-selo-rodnoe</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/vinzavod-massandra</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/volgograd</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/venues/yoga-hall-ashram</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
@@ -146,6 +141,7 @@
   <url><loc>https://mestov.net/artist/chestnyy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/chto-ty-delaesh</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/cora</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
+  <url><loc>https://mestov.net/artist/danya</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/denayro</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/dim-k</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/dima-reznik</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
@@ -201,7 +197,6 @@
   <url><loc>https://mestov.net/artist/narrator</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/nensi</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/neverlove</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/artist/null</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/ofitsialno-ustroen</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/orkestr-konsonans</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/artist/paper-plain</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-08-10</lastmod></url>
@@ -245,8 +240,6 @@
   <url><loc>https://mestov.net/event/01dc961d</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/020aa105</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/0548b7e1</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/05c6ceba</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/06ec9eed</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/07dbf5d4</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/08eb1417</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/095ea2fe</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -282,7 +275,6 @@
   <url><loc>https://mestov.net/event/16e1554b</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/17a35bb2</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/17bc7a9d</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/19731558</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/1a434b65</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/1a81de71</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/1c9ec2a0</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -296,7 +288,6 @@
   <url><loc>https://mestov.net/event/20943b7b</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/219dd212</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2298dfa7</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/2497b267</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/249e6594</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/24af4b8c</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/257e6c3a</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -306,10 +297,8 @@
   <url><loc>https://mestov.net/event/2850789e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/296cd22e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2ad81603</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/2c1a9599</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2de42511</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2e9556da</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/2f05a767</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2fa5f9bb</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/2fb57618</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/31082f74</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -380,7 +369,6 @@
   <url><loc>https://mestov.net/event/613d7dd7</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/61afbb0f</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/61bd6dcf</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/625c138c</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/625ce153</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/628f2f40</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6344632d</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -390,7 +378,6 @@
   <url><loc>https://mestov.net/event/6a65cb44</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6af765b8</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6b292afd</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/6b7f6106</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6ba4e48c</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6bb794ba</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/6cc625c3</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -431,7 +418,6 @@
   <url><loc>https://mestov.net/event/7f438d7f</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/7f59a571</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/7f7da373</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/7fc03cd1</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/805ea8a1</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/80de7880</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/80e467be</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -505,7 +491,6 @@
   <url><loc>https://mestov.net/event/ab571935</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/ab94e177</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/ac0e017c</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/acb45fb8</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/ad0dec71</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/ad9aef5c</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/aefed7d5</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -534,7 +519,6 @@
   <url><loc>https://mestov.net/event/bce62a03</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/be345574</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/be7ad445</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/bec1eab0</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/bf792606</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/bf85d01e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/bfc5064d</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -543,10 +527,8 @@
   <url><loc>https://mestov.net/event/c0928bc8</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c0a5e517</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c0c55fe7</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/c17db86e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c1dc8779</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c2593d44</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/c2621de0</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c27408ac</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c3f264fb</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/c3fa0015</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -584,7 +566,6 @@
   <url><loc>https://mestov.net/event/d9072908</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/d94fa447</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/da41db32</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/daff3856</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/db2ae2a5</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/db68ab6e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/dc0367a2</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -619,12 +600,10 @@
   <url><loc>https://mestov.net/event/edf97122</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/ee3201f1</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/efc08d30</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/f14e19a8</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f1c15df3</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f2113f78</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f21c846e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f3d2f5ae</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/f3e82006</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f449eda0</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f49046ae</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/f4c87da8</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
@@ -643,7 +622,6 @@
   <url><loc>https://mestov.net/event/fb535329</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/fb78a24b</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/fd48e806</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://mestov.net/event/fd610694</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/fda4d83e</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://mestov.net/event/feec4028</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-08-10</lastmod></url>
 </urlset>

@@ -268,9 +268,11 @@ _SCALAR_FIELDS = (
 def _to_scalar(value):
     """Приводит значение поля к строке, если LLM вернул список/число."""
     if isinstance(value, str):
+        if value.strip().lower() in ("null", "none", "undefined", "nan"):
+            return None
         return value
     if isinstance(value, list):
-        return ", ".join(str(v) for v in value if v not in (None, ""))
+        return ", ".join(str(v) for v in value if v not in (None, "") and str(v).lower() not in ("null", "none"))
     if value is None:
         return None
     return str(value)
@@ -287,7 +289,7 @@ _REFUSAL_MARKERS = (
 # Не-музыкальные форматы, которые yandexgpt-lite упорно извлекает как события,
 # несмотря на запрет в системном промпте: кино, забеги, экскурсии, премьеры.
 _NON_MUSIC_MARKERS = (
-    "кино под открытым небом", "кинопоказ", "кино на стене", "киновечер",
+    "кино под открытым небом", "кинопоказ", "кино на стене",
     "премьера драмеди", "премьера фильма", "арт-забег", "утренний забег",
     "групповая экскурсия", "спортивный забег", "велоэкскурсия", "пешая экскурсия",
 )
@@ -1433,9 +1435,14 @@ def main(days_back: int = DAYS_BACK):
 
     # Чистим артистов: убираем дубли где одно имя — часть другого, оставляем самое короткое
     for e in merged:
-        if not e.get("artist"):
+        # LLM иногда возвращает строку "null" вместо None
+        artist = e.get("artist")
+        if isinstance(artist, str) and artist.strip().lower() in ("null", "none", "undefined"):
+            artist = None
+        if artist is None:
+            e["artist"] = None
             continue
-        parts = _artist_parts(e["artist"])
+        parts = _artist_parts(artist)
         # группируем по bare-ключу, выбираем самое короткое имя
         by_bare: dict[str, list[str]] = {}
         for name in parts:
@@ -1461,6 +1468,7 @@ def main(days_back: int = DAYS_BACK):
             if not is_sub:
                 cleaned.append(best)
         e["artist"] = ", ".join(cleaned) if cleaned else None
+        e["artist"] = _to_scalar(e["artist"])
 
     # Проставляем жанр и артиста там, где их ещё нет
     genre_added = 0
@@ -1494,6 +1502,15 @@ def main(days_back: int = DAYS_BACK):
         print(f"Артист-фолбэк по типу: {artist_fallback} событий")
     if genre_added:
         print(f"Жанр определён автоматически: {genre_added} событий")
+
+    # Финальная отбраковка мусора: события-заглушки (LLM вернул объект вместо [])
+    # и не-музыкальные форматы. Применяется ко всей базе, чтобы чистить и старые
+    # записи, попавшие в неё до появления фильтра.
+    before_filter = len(merged)
+    merged = [e for e in merged if not _is_refusal_event(e)]
+    removed = before_filter - len(merged)
+    if removed:
+        print(f"Убрано мусорных событий (заглушки/не-музыкальные): {removed}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
