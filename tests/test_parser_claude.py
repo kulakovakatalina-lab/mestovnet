@@ -5,7 +5,14 @@ import os
 import tempfile
 import pytest
 
-from parser import _parse_claude_json, _cache_key, _cache_read, _cache_write
+from parser import (
+    _parse_claude_json,
+    _cache_key,
+    _cache_read,
+    _cache_write,
+    _only_event_dicts,
+    _clean_batch_result,
+)
 
 
 class TestParseClaudeJson:
@@ -35,6 +42,44 @@ class TestParseClaudeJson:
     def test_non_dict_non_list(self):
         raw = '"just a string"'
         assert _parse_claude_json(raw) == "just a string"
+
+
+class TestOnlyEventDicts:
+    def test_filters_strings_from_list(self):
+        events = [
+            {"date": "2026-08-01"},
+            "нет событий",
+            {"artist": "X"},
+            "   ",
+        ]
+        assert _only_event_dicts(events) == [
+            {"date": "2026-08-01"},
+            {"artist": "X"},
+        ]
+
+    def test_keeps_empty(self):
+        assert _only_event_dicts([]) == []
+
+    def test_filters_non_dict_values(self):
+        events = [42, None, "ошибка"]
+        assert _only_event_dicts(events) == []
+
+
+class TestCleanBatchResult:
+    def test_drops_non_list_values(self):
+        result = {
+            "url1": [{"artist": "A"}],
+            "url2": "нет событий",
+            "url3": [{"artist": "B"}, "мусор"],
+            "url4": None,
+        }
+        assert _clean_batch_result(result) == {
+            "url1": [{"artist": "A"}],
+            "url3": [{"artist": "B"}],
+        }
+
+    def test_empty(self):
+        assert _clean_batch_result({}) == {}
 
 
 class TestCacheKey:
