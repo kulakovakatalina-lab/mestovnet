@@ -36,26 +36,6 @@
   },
   {
     "date": "2026-08-09",
-    "time": "18:00",
-    "artist": "Дегустация",
-    "event_type": "другое",
-    "venue": "Виноградник Le K2, село Родное",
-    "price": "6000 рублей с человека",
-    "description": "Групповая экскурсия к древним родникам, возможность заглянуть в производственный и бочковой цеха и увидеть, где производится вино, а также дегустация 4 видов вина с легкими закусками.",
-    "source_city": "Крым",
-    "source_channel": "afisha_crimea",
-    "genre": "другое",
-    "source_url": "https://t.me/afisha_crimea/8184",
-    "images": [
-      "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-      "/images/events/01ffa810b7eaad46b73e46aaebd9714e.jpg"
-    ],
-    "image": "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-    "post_date": "2026-08-07T17:04:24+00:00",
-    "id": "acb45fb8"
-  },
-  {
-    "date": "2026-08-09",
     "time": "19:00",
     "artist": "Нэнси",
     "event_type": "концерт",
@@ -286,26 +266,6 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
-    "date": "2026-08-12",
-    "time": "18:00",
-    "artist": "Дегустация",
-    "event_type": "другое",
-    "venue": "Виноградник Le K2, село Родное",
-    "price": "6000 рублей с человека",
-    "description": "Групповая экскурсия к древним родникам, возможность заглянуть в производственный и бочковой цеха и увидеть, где производится вино, а также дегустация 4 видов вина с легкими закусками.",
-    "source_city": "Крым",
-    "source_channel": "afisha_crimea",
-    "genre": "другое",
-    "source_url": "https://t.me/afisha_crimea/8184",
-    "images": [
-      "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-      "/images/events/01ffa810b7eaad46b73e46aaebd9714e.jpg"
-    ],
-    "image": "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-    "post_date": "2026-08-07T17:04:24+00:00",
-    "id": "bec1eab0"
-  },
-  {
     "id": "865f18cd",
     "date": "2026-08-12",
     "time": "19:00",
@@ -435,26 +395,6 @@
     "genre": "поп",
     "id": "4aba6757",
     "updated_at": "2026-08-08T04:12:26.655833+00:00"
-  },
-  {
-    "date": "2026-08-14",
-    "time": "18:00",
-    "artist": "Дегустация",
-    "event_type": "другое",
-    "venue": "Виноградник Le K2, село Родное",
-    "price": "6000 рублей с человека",
-    "description": "Групповая экскурсия к древним родникам, возможность заглянуть в производственный и бочковой цеха и увидеть, где производится вино, а также дегустация 4 видов вина с легкими закусками.",
-    "source_city": "Крым",
-    "source_channel": "afisha_crimea",
-    "genre": "другое",
-    "source_url": "https://t.me/afisha_crimea/8184",
-    "images": [
-      "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-      "/images/events/01ffa810b7eaad46b73e46aaebd9714e.jpg"
-    ],
-    "image": "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-    "post_date": "2026-08-07T17:04:24+00:00",
-    "id": "2497b267"
   },
   {
     "date": "2026-08-14",
@@ -696,28 +636,6 @@
     "genre": "джаз",
     "id": "16474b4c",
     "updated_at": "2026-08-07T05:30:55.213836+00:00"
-  },
-  {
-    "date": "2026-08-16",
-    "time": "18:00",
-    "artist": "Дегустация",
-    "event_type": "другое",
-    "venue": "Виноградник Le K2, село Родное",
-    "price": "6000 рублей с человека",
-    "description": "Групповая экскурсия к древним родникам, возможность заглянуть в производственный и бочковой цеха и увидеть, где производится вино, а также дегустация 4 видов вина с легкими закусками.",
-    "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-08-07T17:04:24+00:00",
-    "image": "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-    "images": [
-      "/images/events/e17007387c9bf4f21c39d81a43015495.jpg",
-      "/images/events/5368fcf1bbff957101409d6204d05517.jpg"
-    ],
-    "source_url": "https://t.me/afisha_crimea/8184",
-    "artist_is_generic": true,
-    "genre": "другое",
-    "id": "05c6ceba",
-    "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
     "date": "2026-08-16",
@@ -1744,24 +1662,6 @@
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
     "post_date": "2026-08-08T10:53:42+00:00",
     "id": "1f6057bc"
-  },
-  {
-    "date": "2026-08-08",
-    "time": "20:20",
-    "artist": "Шеф",
-    "event_type": "другое",
-    "venue": "Api Balaklava, терраса",
-    "price": null,
-    "description": "Кинопоказ под открытым небом среди виноградников. Смотрим фильм «Шеф»",
-    "source_channel": "api_balaklava",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-08T08:53:37+00:00",
-    "image": "/images/events/15731d3ba4a63d5ccc33e8776ab72a77.jpg",
-    "images": null,
-    "source_url": "https://t.me/api_balaklava/1361",
-    "artist_is_generic": false,
-    "id": "2f05a767",
-    "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
     "date": "2026-08-07",
@@ -6696,7 +6596,7 @@
   {
     "date": "2026-08-07",
     "time": "19:00",
-    "artist": null,
+    "artist": "Даня",
     "event_type": "другое",
     "venue": "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20",
     "price": null,
@@ -6712,7 +6612,7 @@
   {
     "date": "2026-08-08",
     "time": "19:00",
-    "artist": null,
+    "artist": "Даня",
     "event_type": "другое",
     "venue": "ТЕпЛО. Твоя территория, ул. Поликуровская, 25",
     "price": null,
@@ -6728,7 +6628,7 @@
   {
     "date": "2026-08-09",
     "time": "18:00",
-    "artist": null,
+    "artist": "Даня",
     "event_type": "другое",
     "venue": "Арт-студия «ФАЗА», ул. Кулакова, 84",
     "price": "1000₽",
@@ -6806,22 +6706,6 @@
     "source_url": "https://t.me/rocknroll_82/442",
     "id": "0e689d00",
     "genre": "юмор"
-  },
-  {
-    "date": "2026-08-07",
-    "time": "18:00",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Виноградник Le K2, село Родное",
-    "price": "6000 рублей с человека",
-    "description": "Групповая экскурсия с видом на виноградник, долину и Чёрное море.",
-    "source_channel": "dlyadushi_Crimea",
-    "source_city": "Крым",
-    "post_date": "2026-08-06T12:04:19+00:00",
-    "image": "/images/events/01ffa810b7eaad46b73e46aaebd9714e.jpg",
-    "images": null,
-    "source_url": "https://t.me/dlyadushi_Crimea/6424",
-    "id": "7fc03cd1"
   },
   {
     "date": "2026-08-07",
@@ -6921,27 +6805,6 @@
     "genre": "джаз"
   },
   {
-    "date": "2026-08-15",
-    "time": "17:00",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "творческая резиденция «Молодёжь Москвы. Родина»",
-    "price": "бесплатно",
-    "description": "Премьера драмеди «Дядя Фил». Встреча молодых кинематографистов, студентов и представителей творческих индустрий для обсуждения фильма и обмена идеями.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-09T12:05:51+00:00",
-    "image": "/images/events/7693772038f8651faa92dee4586dad57.jpg",
-    "images": [
-      "/images/events/7693772038f8651faa92dee4586dad57.jpg",
-      "/images/events/0de83655d4a35f45db66ed6ff7b8eafd.jpg",
-      "/images/events/f7539c45d458cd7e6ba0e8bd332dcd82.jpg",
-      "/images/events/75b22d68b8946b9ed132b006738e5739.jpg"
-    ],
-    "source_url": "https://t.me/tavrida_art/21757",
-    "id": "f3e82006"
-  },
-  {
     "date": "2026-08-05",
     "time": null,
     "artist": "Сергей Нихаенко",
@@ -6956,42 +6819,9 @@
     "images": [
       "https://cdn4.telesco.pe/file/SNW1brrff-B-2CQPZgYKA_e3jY1uVrq4lYZCj0Job69cytZg0hGkWmckgHhj17GUnfp1XvK1B1YtR0iRnJLYUbrh4-D4DAkcDXKQoHaR2PwOORkUmAXhAYzosxLi9p9sJi5jcWGFpmbUgKA83qoENn-wF2ruwsNuhwVke13CxRz7vTxdaYMKh1HxwtzzTQ0JOZqDW8hrrU5JHyrdxsRwWwXgtZpBeeUt-rH1UjE5CEprzhXAvhEmMe2D13qXgQISqkWmOgTsuC1Yhq0wvrBiUXEO2vzpH2NRYtNQzlKtJNqjfHPqhVRbvGQ05oPpuFWagCBf6OrtB5jpZW8OlmhvgQ.jpg"
     ],
-    "image": "https://cdn4.telesco.pe/file/SNW1brrff-B-2CQPZgYKA_e3jY1uVrq4lYZCj0Job69cytZg0hGkWmckgHhj17GUnfp1XvK1B1YtR0iRnJLYUbrh4-D4DAkcDXKQoHaR2PwOORkUmAXhAYzosxLi9p9sJi5jcWGFpmbUgKA83qoENn-wF2ruwsNuhwVke13CxRz7vTxdaYMKh1HxwtzzTQ0JOZqDW8hrrU5JHyrdxsRwWwXgtZpBeeUt-rH1UjE5CEprzhXAvhEmMe2D13qXgQISqkWmOgTsuC1Yhq0wvrBiUXEO2vzpH2NRYtNQzlKtJNqjfHPqhVRbvGQ05oPpuFWagCBf6OrtB5jpZW8OlmhvgQ.jpg",
+    "image": "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg",
     "post_date": "2026-08-05T15:01:26+00:00",
     "id": "df577a75"
-  },
-  {
-    "date": "2026-08-08",
-    "time": null,
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Город молодых творцов",
-    "price": null,
-    "description": "Арт-забег «От старта к арту» в Городе молодых творцов, где участники преодолевали дистанции под выступления музыкантов и танцоров.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-08T09:08:28+00:00",
-    "image": "/images/events/12749304f85152a9e4514db1b2ea8bf5.jpg",
-    "images": null,
-    "source_url": "https://t.me/tavrida_art/21753",
-    "id": "c17db86e",
-    "genre": "другое"
-  },
-  {
-    "date": "2026-08-01",
-    "time": "20:20",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "терраса Api Bistro",
-    "price": null,
-    "description": "Кино под открытым небом: «Сделано в Италии».",
-    "source_channel": "api_balaklava",
-    "source_city": "Севастополь",
-    "post_date": "2026-07-31T12:41:10+00:00",
-    "image": "/images/events/12f005579601b15d9b70bb9ec90c178d.jpg",
-    "images": null,
-    "source_url": "https://t.me/api_balaklava/1341",
-    "id": "fd610694"
   },
   {
     "date": "2026-08-01",
@@ -7116,22 +6946,6 @@
     "genre": "классика"
   },
   {
-    "date": "2026-08-11",
-    "time": "20:30",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Кино на стене старинного кафе 'Такси 2'.",
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-09T12:38:03+00:00",
-    "image": "/images/events/b0baad9796ae21ac575734c2684e5826.jpg",
-    "images": null,
-    "source_url": "https://t.me/artcafesnezhinka/1953",
-    "id": "19731558"
-  },
-  {
     "date": "2026-08-12",
     "time": "18:30",
     "artist": "Ольга Щукина",
@@ -7150,22 +6964,6 @@
     "image": "/images/events/0af875f4a7edddeeef24bff75a03e7d1.jpg",
     "post_date": "2026-08-09T12:38:03+00:00",
     "id": "cbfd43e3"
-  },
-  {
-    "date": "2026-08-13",
-    "time": "20:30",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Кино на стене старинного кафе 'За бортом'.",
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-09T12:38:03+00:00",
-    "image": "/images/events/fa9cf64bbc55955fd190ecdabf0581af.jpg",
-    "images": null,
-    "source_url": "https://t.me/artcafesnezhinka/1953",
-    "id": "f14e19a8"
   },
   {
     "date": "2026-08-15",
@@ -7219,57 +7017,6 @@
     "genre": "джаз"
   },
   {
-    "date": "2026-08-09",
-    "time": null,
-    "artist": "null",
-    "event_type": "концерт",
-    "venue": "Севастополь Джаз",
-    "price": null,
-    "description": "Джазовый пикник",
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-07T17:01:55+00:00",
-    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-214055536_2253",
-    "id": "6b7f6106",
-    "genre": "джаз"
-  },
-  {
-    "date": "2026-08-16",
-    "time": null,
-    "artist": "null",
-    "event_type": "концерт",
-    "venue": "Севастополь Джаз",
-    "price": null,
-    "description": "Джаз в лабиринте",
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-07T17:01:55+00:00",
-    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-214055536_2253",
-    "id": "06ec9eed",
-    "genre": "джаз"
-  },
-  {
-    "date": "2026-08-22",
-    "time": null,
-    "artist": "null",
-    "event_type": "концерт",
-    "venue": "Массандра",
-    "price": null,
-    "description": "Джазовые вечера в Массандре",
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-07T17:01:55+00:00",
-    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-214055536_2253",
-    "id": "2c1a9599",
-    "genre": "джаз"
-  },
-  {
     "date": "2026-07-31",
     "time": "19:00",
     "artist": "Андрей Рыбальченко (пианист), Андрей Дегурко (музыкант-виртуоз), Алим Куртмеметов (саксофонист)",
@@ -7320,23 +7067,6 @@
     "id": "6344632d",
     "artist_is_generic": true,
     "genre": "поп"
-  },
-  {
-    "date": "2026-08-09",
-    "time": "09:00",
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Гастродвор",
-    "price": "бесплатно",
-    "description": "Утренний забег, танцы и завтрак в отличной компании.",
-    "source_channel": "gastrodvor.yalta",
-    "source_city": "Ялта",
-    "post_date": "2026-07-29T11:55:42+00:00",
-    "image": "/images/events/2897ebf7def40f15e032f6c68b90973e.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-212929583_950",
-    "id": "daff3856",
-    "genre": "другое"
   },
   {
     "date": null,
@@ -7440,32 +7170,6 @@
     "genre": "рок",
     "id": "ae234599",
     "updated_at": "2026-05-02T09:39:37+00:00"
-  },
-  {
-    "date": null,
-    "time": null,
-    "artist": null,
-    "event_type": "другое",
-    "venue": "Отель Ялта-Интурист",
-    "price": null,
-    "description": "Анонс атмосферы отдыха в отеле, без конкретного музыкального мероприятия.",
-    "source_channel": "hotel_yalta_intourist",
-    "source_city": "Ялта",
-    "post_date": "2026-08-05T16:53:45+00:00",
-    "image": "/images/events/fba3f35956416a747292570ee4bb072c.jpg",
-    "images": null,
-    "source_url": "https://t.me/hotel_yalta_intourist/2797",
-    "id": "c2621de0"
-  },
-  {
-    "source_channel": "crimea_event",
-    "source_city": "Крым",
-    "venue": "Крым Event",
-    "post_date": "2026-08-07T01:10:55+00:00",
-    "image": "/images/events/9ed644fa74037d5998dbf14befa601ff.jpg",
-    "images": null,
-    "source_url": "https://t.me/crimea_event/5623",
-    "id": "625c138c"
   },
   {
     "date": null,

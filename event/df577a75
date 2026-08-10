@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Сергей Нихаенко — Волгоград, Судак, 5 августа · Местов.Нет">
 <meta property="og:description" content="Сергей Нихаенко, Волгоград, в Судаке, 5 августа, вт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://cdn4.telesco.pe/file/SNW1brrff-B-2CQPZgYKA_e3jY1uVrq4lYZCj0Job69cytZg0hGkWmckgHhj17GUnfp1XvK1B1YtR0iRnJLYUbrh4-D4DAkcDXKQoHaR2PwOORkUmAXhAYzosxLi9p9sJi5jcWGFpmbUgKA83qoENn-wF2ruwsNuhwVke13CxRz7vTxdaYMKh1HxwtzzTQ0JOZqDW8hrrU5JHyrdxsRwWwXgtZpBeeUt-rH1UjE5CEprzhXAvhEmMe2D13qXgQISqkWmOgTsuC1Yhq0wvrBiUXEO2vzpH2NRYtNQzlKtJNqjfHPqhVRbvGQ05oPpuFWagCBf6OrtB5jpZW8OlmhvgQ.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Сергей Нихаенко"
       },
-      "image": "https://cdn4.telesco.pe/file/SNW1brrff-B-2CQPZgYKA_e3jY1uVrq4lYZCj0Job69cytZg0hGkWmckgHhj17GUnfp1XvK1B1YtR0iRnJLYUbrh4-D4DAkcDXKQoHaR2PwOORkUmAXhAYzosxLi9p9sJi5jcWGFpmbUgKA83qoENn-wF2ruwsNuhwVke13CxRz7vTxdaYMKh1HxwtzzTQ0JOZqDW8hrrU5JHyrdxsRwWwXgtZpBeeUt-rH1UjE5CEprzhXAvhEmMe2D13qXgQISqkWmOgTsuC1Yhq0wvrBiUXEO2vzpH2NRYtNQzlKtJNqjfHPqhVRbvGQ05oPpuFWagCBf6OrtB5jpZW8OlmhvgQ.jpg"
+      "image": "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg"
     }
   ]
 }

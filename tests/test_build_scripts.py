@@ -54,14 +54,28 @@ def _find_after(rec, by_slug, by_name):
 
 
 class TestBuildVenuesPreservesManualFields:
-    def test_description_lat_lon_survive_rebuild(self, tmp_path, venues):
+    def test_description_lat_lon_survive_rebuild(self, tmp_path, venues, events):
         _copy_for_build(tmp_path)
         _run(tmp_path, "build_venues.py")
         after = json.loads((tmp_path / "venues.json").read_text(encoding="utf-8"))
         by_slug, by_name = _index_by_slug_and_name(after)
 
+        ev_per_venue = {}
+        for e in events:
+            raw = (e.get("venue") or "").strip()
+            if raw:
+                ev_per_venue[raw] = ev_per_venue.get(raw, 0) + 1
+
         lost_description, lost_coords = [], []
         for before in venues:
+            # Заведение, у которого в events.json больше нет ни одного события,
+            # законно выпадает из реестра (как артисты ниже MIN_EVENTS).
+            event_count = sum(
+                n for name, n in ev_per_venue.items()
+                if name == before.get("name") or name in before.get("aliases", [])
+            )
+            if event_count == 0:
+                continue
             match = _find_after(before, by_slug, by_name)
             if before.get("description") and not (match and match.get("description")):
                 lost_description.append(before["slug"])
