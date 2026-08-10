@@ -112,7 +112,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "EL",
+      "name": "EL, Dim K., Happy Paul",
       "startDate": "2026-08-29T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -121,7 +121,7 @@
       "description": "«Счастливые часы» на Массандровском пляже с диджеем EL.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "EL"
+        "name": "EL, Dim K., Happy Paul"
       },
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     }

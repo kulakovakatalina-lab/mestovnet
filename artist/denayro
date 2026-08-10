@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Денайро — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/denayro">
   <meta property="og:title" content="Денайро — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Денайро"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Денайро",
+      "startDate": "2026-08-15T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Денайро"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Летний вечер, живая музыка и любимые русские и зарубежные хиты.",
+      "image": "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg"
     }
   ]
 }
@@ -1002,7 +1022,7 @@ footer {
     <p class="venue-description">Севастопольский музыкант: живая музыка под гитару и группа с рок-хитами — выступает и в акустике на квартирниках, и с полным электрическим составом.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

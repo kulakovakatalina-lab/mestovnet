@@ -75,46 +75,69 @@
     "desc_baseline_count": 8
   },
   {
+    "slug": "happy-paul",
+    "name": "Happy Paul",
+    "aliases": [
+      "Happy Paul"
+    ],
+    "event_count": 7,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "El Capulco 0.0",
+      "бар El Capulco 0.0",
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандровский пляж, сектор 7 «Ковёр»",
+      "Массандра Sun"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-08-29",
+    "description": "Диджей пляжных вечеринок Ялты: этнические программы Ethnic Vibe и дневные сеты в кафе Van Gogh на Массандровском пляже.",
+    "desc_baseline_count": 3
+  },
+  {
     "slug": "spahova",
     "name": "Spahova",
     "aliases": [
       "Spahova"
     ],
-    "event_count": 6,
+    "event_count": 7,
     "cities": [
       "Ялта"
     ],
     "venues": [
       "El Capulco 0.0",
       "кафе «Van Gogh», Массандровский пляж",
+      "бар El Capulco 0.0",
       "Массандровский пляж, сектор 7 «Ковёр»",
       "Пляж-кафе Van Gogh, Массандровский пляж"
     ],
     "first_seen": "2026-05-02",
-    "last_seen": "2026-08-21",
+    "last_seen": "2026-08-22",
     "description": "Резидент пляжных вечеринок Массандровского пляжа в Ялте. Играет DJ-сеты в кафе Van Gogh — от хауса (We Love House) до хитов MTV 2000-х, обычно днём у моря. За сезон — пять выступлений, включая трёхдневный пляжный фестиваль в июле.",
     "desc_baseline_count": 5
   },
   {
-    "slug": "happy-paul",
-    "name": "Happy Paul",
+    "slug": "martin-w",
+    "name": "Martin W.",
     "aliases": [
-      "Happy Paul"
+      "Martin W."
     ],
-    "event_count": 5,
+    "event_count": 6,
     "cities": [
       "Ялта"
     ],
     "venues": [
-      "El Capulco 0.0",
       "Пляж-кафе Van Gogh, Массандровский пляж",
-      "Массандровский пляж, сектор 7 «Ковёр»",
-      "Массандра Sun"
+      "бар El Capulco 0.0",
+      "Пляж-кафе «Van Gogh»",
+      "Массандровский пляж, сектор 7 «Ковёр»"
     ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-08-28",
-    "description": "Диджей пляжных вечеринок Ялты: этнические программы Ethnic Vibe и дневные сеты в кафе Van Gogh на Массандровском пляже.",
-    "desc_baseline_count": 3
+    "first_seen": "2026-07-09",
+    "last_seen": "2026-08-23",
+    "description": "Диджей дневных вечеринок на Массандровском пляже в Ялте: сеты в пляж-кафе Van Gogh и на июльском трёхдневном пляжном фестивале.",
+    "desc_baseline_count": 4
   },
   {
     "slug": "stiven-mitchell",
@@ -142,6 +165,29 @@
     "desc_baseline_count": 5
   },
   {
+    "slug": "el",
+    "name": "EL",
+    "aliases": [
+      "EL",
+      "El"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "бар El Capulco 0.0",
+      "Пляж-кафе «Van Gogh»",
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "Массандра Sun",
+      "El Capulco 0.0"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-08-29",
+    "description": "Диджей ялтинских пляжных вечеринок: этнические программы Ethnic Vibe и сеты в кафе Van Gogh на Массандровском пляже.",
+    "desc_baseline_count": 2
+  },
+  {
     "slug": "kubanskiy-kazachiy-hor",
     "name": "Кубанский казачий хор",
     "aliases": [
@@ -167,6 +213,93 @@
     "last_seen": "2026-09-08",
     "description": "Старейший и самый известный казачий хор России. В августе — большой крымский тур с духовно-патриотической программой «Русь от края до края!» к 214-му дню рождения коллектива: Ялта, Феодосия, Севастополь, Керчь.",
     "desc_baseline_count": 4
+  },
+  {
+    "slug": "denayro",
+    "name": "Денайро",
+    "aliases": [
+      "Группа «Денайро»",
+      "Денайро"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Севастополь",
+      "Крым"
+    ],
+    "venues": [
+      "Рок-н-рольщики (Севастополь)",
+      "Снежинка",
+      "Усадьба «Родное гнездо»",
+      "Арт-кафе «Снежинка»",
+      "Усадьба Родное Гнездо"
+    ],
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-08-15",
+    "description": "Севастопольский музыкант: живая музыка под гитару и группа с рок-хитами — выступает и в акустике на квартирниках, и с полным электрическим составом.",
+    "desc_baseline_count": 3
+  },
+  {
+    "slug": "pasha-rhino",
+    "name": "Pasha Rhino",
+    "aliases": [
+      "Pasha Rhino"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "El Capulco 0.0",
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "бар El Capulco 0.0"
+    ],
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-08-22",
+    "description": "Диджей пляжных вечеринок кафе Van Gogh на Массандровском пляже в Ялте. В июле — четыре дневных сета у моря за месяц.",
+    "desc_baseline_count": 4
+  },
+  {
+    "slug": "anna-shakel",
+    "name": "Анна Шакель",
+    "aliases": [
+      "Анна Шакель"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Дворец Дюльбер",
+      "Гольф-поле",
+      "Отель «Аквамарин»",
+      "на природе"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-08-09",
+    "description": "Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.",
+    "desc_baseline_count": 4
+  },
+  {
+    "slug": "null",
+    "name": "null",
+    "aliases": [
+      "null"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Севастополь Джаз",
+      "Массандра",
+      "Ресторан «У Чёрного моря»",
+      "Jam Club"
+    ],
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "maksim-sheremet",
@@ -213,64 +346,24 @@
     "desc_baseline_count": 4
   },
   {
-    "slug": "denayro",
-    "name": "Денайро",
+    "slug": "santier",
+    "name": "Santier",
     "aliases": [
-      "Группа «Денайро»",
-      "Денайро"
+      "Santier"
     ],
     "event_count": 4,
     "cities": [
-      "Севастополь",
-      "Крым"
+      "Ялта"
     ],
     "venues": [
-      "Усадьба «Родное гнездо»",
-      "Снежинка",
-      "Рок-н-рольщики (Севастополь)"
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "El Capulco 0.0",
+      "Пляж-кафе «Van Gogh»"
     ],
-    "first_seen": "2026-07-11",
-    "last_seen": "2026-08-08",
-    "description": "Севастопольский музыкант: живая музыка под гитару и группа с рок-хитами — выступает и в акустике на квартирниках, и с полным электрическим составом.",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-08-30",
+    "description": "Диджей пляж-кафе Van Gogh на Массандровском пляже в Ялте — дневные сеты у моря в течение всего лета.",
     "desc_baseline_count": 3
-  },
-  {
-    "slug": "martin-w",
-    "name": "Martin W.",
-    "aliases": [
-      "Martin W."
-    ],
-    "event_count": 4,
-    "cities": [
-      "Ялта"
-    ],
-    "venues": [
-      "Пляж-кафе Van Gogh, Массандровский пляж",
-      "Массандровский пляж, сектор 7 «Ковёр»"
-    ],
-    "first_seen": "2026-07-09",
-    "last_seen": "2026-07-26",
-    "description": "Диджей дневных вечеринок на Массандровском пляже в Ялте: сеты в пляж-кафе Van Gogh и на июльском трёхдневном пляжном фестивале.",
-    "desc_baseline_count": 4
-  },
-  {
-    "slug": "pasha-rhino",
-    "name": "Pasha Rhino",
-    "aliases": [
-      "Pasha Rhino"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Ялта"
-    ],
-    "venues": [
-      "Пляж-кафе Van Gogh, Массандровский пляж",
-      "El Capulco 0.0"
-    ],
-    "first_seen": "2026-07-11",
-    "last_seen": "2026-07-25",
-    "description": "Диджей пляжных вечеринок кафе Van Gogh на Массандровском пляже в Ялте. В июле — четыре дневных сета у моря за месяц.",
-    "desc_baseline_count": 4
   },
   {
     "slug": "dima-reznik",
@@ -312,24 +405,47 @@
     "desc_baseline_count": 4
   },
   {
-    "slug": "anna-shakel",
-    "name": "Анна Шакель",
+    "slug": "paper-plain",
+    "name": "Paper Plain",
     "aliases": [
-      "Анна Шакель"
+      "Paper Plain"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь",
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Рок-н-рольщики (Севастополь)",
+      "Jam Club",
+      "Народный бар"
+    ],
+    "first_seen": "2026-05-22",
+    "last_seen": "2026-08-01",
+    "description": "Севастопольский бэнд, играющий трибьют Nirvana: от акустики до полного электрического состава с барабанами, включая малоизвестные треки Курта Кобейна. Выступают в «Рок-н-рольщиках» и «Народном баре».",
+    "desc_baseline_count": 3
+  },
+  {
+    "slug": "andrey-rybalchenko",
+    "name": "Андрей Рыбальченко",
+    "aliases": [
+      "Андрей Рыбальченко"
     ],
     "event_count": 4,
     "cities": [
       "Севастополь"
     ],
     "venues": [
-      "Отель «Аквамарин»",
-      "Дворец Дюльбер",
-      "Гольф-поле"
+      "Гольф-поле",
+      "Севастополь Джаз",
+      "Дворец «Дюльбер»",
+      "на природе"
     ],
-    "first_seen": "2026-05-08",
-    "last_seen": "2026-07-05",
-    "description": "Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.",
-    "desc_baseline_count": 4
+    "first_seen": "2026-05-24",
+    "last_seen": "2026-08-09",
+    "description": "Этно-джазовые программы с восточными мотивами: дворец Дюльбер в Кореизе и камерные концерты на закате в долине под Севастополем.",
+    "desc_baseline_count": 2
   },
   {
     "slug": "pasha-grey",
@@ -448,13 +564,13 @@
     ],
     "event_count": 3,
     "cities": [
-      "Судак",
       "Симферополь",
+      "Судак",
       "Севастополь"
     ],
     "venues": [
-      "ТАВРИДА.АРТ",
       "Centrum",
+      "ТАВРИДА.АРТ",
       "Муссон"
     ],
     "first_seen": "2026-08-22",
@@ -507,11 +623,11 @@
     "desc_baseline_count": 3
   },
   {
-    "slug": "el",
-    "name": "EL",
+    "slug": "dim-k",
+    "name": "Dim K.",
     "aliases": [
-      "EL",
-      "El"
+      "Dim K",
+      "Dim K."
     ],
     "event_count": 3,
     "cities": [
@@ -519,12 +635,12 @@
     ],
     "venues": [
       "Пляж-кафе Van Gogh, Массандровский пляж",
-      "Массандра Sun",
-      "El Capulco 0.0"
+      "El Capulco 0.0",
+      "кафе «Van Gogh», Массандровский пляж"
     ],
-    "first_seen": "2026-05-10",
+    "first_seen": "2026-05-01",
     "last_seen": "2026-08-29",
-    "description": "Диджей ялтинских пляжных вечеринок: этнические программы Ethnic Vibe и сеты в кафе Van Gogh на Массандровском пляже.",
+    "description": "Диджей пляжных вечеринок Ялты: от джазовых сетов Jazzy Brut на открытии сезона до летних вечеринок в кафе Van Gogh на Массандровском пляже.",
     "desc_baseline_count": 2
   },
   {
@@ -569,24 +685,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "ofitsialno-ustroen",
-    "name": "Официально Устроен",
-    "aliases": [
-      "Официально Устроен"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-16",
-    "last_seen": "2026-08-07",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "gitara-u-kostra",
     "name": "Гитара у костра",
     "aliases": [
@@ -606,6 +704,27 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "dzhaz-trio-a3",
+    "name": "Джаз-трио «А3»",
+    "aliases": [
+      "Джаз-трио «А3»",
+      "джаз-трио 'А3'"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Снежинка",
+      "Отель «Аквамарин»",
+      "Ресторан «Мотивы»"
+    ],
+    "first_seen": "2026-05-22",
+    "last_seen": "2026-08-01",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "fedor-starovoytov",
     "name": "Фёдор Старовойтов",
     "aliases": [
@@ -621,25 +740,6 @@
     "first_seen": "2026-05-31",
     "last_seen": "2026-07-26",
     "description": "Ведущий фирменного «Караоке с боссом» в барах «Рок-н-рольщики»: музыкальный беспредел, любые песни поют бесплатно. Ведёт вечера и в Севастополе, и в Симферополе.",
-    "desc_baseline_count": 3
-  },
-  {
-    "slug": "santier",
-    "name": "Santier",
-    "aliases": [
-      "Santier"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Ялта"
-    ],
-    "venues": [
-      "Пляж-кафе Van Gogh, Массандровский пляж",
-      "El Capulco 0.0"
-    ],
-    "first_seen": "2026-07-17",
-    "last_seen": "2026-07-25",
-    "description": "Диджей пляж-кафе Van Gogh на Массандровском пляже в Ялте — дневные сеты у моря в течение всего лета.",
     "desc_baseline_count": 3
   },
   {
@@ -662,6 +762,26 @@
     "last_seen": "2026-07-25",
     "description": "Группа «САБ» из Ялты: «музыкальная ирония» и рок-поп на русском и английском, электрический состав. Играют в «Рок-н-рольщиках» Севастополя и Симферополя, вход обычно свободный.",
     "desc_baseline_count": 3
+  },
+  {
+    "slug": "busha",
+    "name": "Busha",
+    "aliases": [
+      "Busha"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Пляж-кафе Van Gogh, Массандровский пляж",
+      "кафе «Van Gogh», Массандровский пляж",
+      "Пляж-кафе «Van Gogh»"
+    ],
+    "first_seen": "2026-05-03",
+    "last_seen": "2026-08-16",
+    "description": "Диджей пляжных вечеринок Ялты: от MTV Hits 2000-х до дневных сетов в кафе Van Gogh на Массандровском пляже.",
+    "desc_baseline_count": 2
   },
   {
     "slug": "rus",
@@ -802,24 +922,25 @@
     "desc_baseline_count": 3
   },
   {
-    "slug": "paper-plain",
-    "name": "Paper Plain",
+    "slug": "yuliya-bakshinskaya",
+    "name": "Юлия Бакшинская",
     "aliases": [
-      "Paper Plain"
+      "Юлия Бакшинская"
     ],
     "event_count": 3,
     "cities": [
       "Севастополь",
-      "Ялта"
+      "Симферополь"
     ],
     "venues": [
-      "Рок-н-рольщики (Севастополь)",
-      "Народный бар"
+      "Арт-кафе «Снежинка»",
+      "Афиша PayBerry",
+      "Русский театр им. Горького, Пушкина 15"
     ],
-    "first_seen": "2026-05-22",
-    "last_seen": "2026-06-27",
-    "description": "Севастопольский бэнд, играющий трибьют Nirvana: от акустики до полного электрического состава с барабанами, включая малоизвестные треки Курта Кобейна. Выступают в «Рок-н-рольщиках» и «Народном баре».",
-    "desc_baseline_count": 3
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-08-16",
+    "description": "Вокалистка: киносаундтреки («Богемская рапсодия», Mamma Mia, «Красотка») и авторская программа «О самом сокровенном» — живой вокал с фортепиано, саксофоном и ударными в камерной атмосфере.",
+    "desc_baseline_count": 2
   },
   {
     "slug": "lesopoval",
@@ -1302,60 +1423,6 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "pulsa-di-nura",
-    "name": "Pulsa Di Nura",
-    "aliases": [
-      "Pulsa Di Nura"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-16",
-    "last_seen": "2026-08-08",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "bloodshot",
-    "name": "Bloodshot",
-    "aliases": [
-      "Bloodshot"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-07-18",
-    "last_seen": "2026-08-08",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "inkoda",
-    "name": "Inkoda",
-    "aliases": [
-      "Inkoda"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-07-04",
-    "last_seen": "2026-08-07",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "elena-novikova",
     "name": "Елена Новикова",
     "aliases": [
@@ -1412,25 +1479,6 @@
     ],
     "first_seen": "2026-07-12",
     "last_seen": "2026-07-31",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "dzhaz-trio-a3",
-    "name": "Джаз-трио «А3»",
-    "aliases": [
-      "Джаз-трио «А3»"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Снежинка",
-      "Отель «Аквамарин»"
-    ],
-    "first_seen": "2026-05-22",
-    "last_seen": "2026-07-26",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -1553,6 +1601,24 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "ofitsialno-ustroen",
+    "name": "Официально Устроен",
+    "aliases": [
+      "Официально Устроен"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-16",
+    "last_seen": "2026-07-24",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "red-stars",
     "name": "Red Stars",
     "aliases": [
@@ -1571,23 +1637,23 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "busha",
-    "name": "Busha",
+    "slug": "gran",
+    "name": "Грань",
     "aliases": [
-      "Busha"
+      "Грань",
+      "Группа Грань"
     ],
     "event_count": 2,
     "cities": [
-      "Ялта"
+      "Симферополь"
     ],
     "venues": [
-      "Пляж-кафе Van Gogh, Массандровский пляж",
-      "кафе «Van Gogh», Массандровский пляж"
+      "Jam Club"
     ],
-    "first_seen": "2026-05-03",
-    "last_seen": "2026-07-23",
-    "description": "Диджей пляжных вечеринок Ялты: от MTV Hits 2000-х до дневных сетов в кафе Van Gogh на Массандровском пляже.",
-    "desc_baseline_count": 2
+    "first_seen": "2026-07-21",
+    "last_seen": "2026-07-31",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "scream",
@@ -1642,26 +1708,6 @@
     "first_seen": "2026-07-12",
     "last_seen": "2026-07-16",
     "description": "Диджей пляж-кафе Van Gogh на Массандровском пляже в Ялте — дневные сеты у моря.",
-    "desc_baseline_count": 2
-  },
-  {
-    "slug": "dim-k",
-    "name": "Dim K.",
-    "aliases": [
-      "Dim K",
-      "Dim K."
-    ],
-    "event_count": 2,
-    "cities": [
-      "Ялта"
-    ],
-    "venues": [
-      "Пляж-кафе Van Gogh, Массандровский пляж",
-      "кафе «Van Gogh», Массандровский пляж"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-07-12",
-    "description": "Диджей пляжных вечеринок Ялты: от джазовых сетов Jazzy Brut на открытии сезона до летних вечеринок в кафе Van Gogh на Массандровском пляже.",
     "desc_baseline_count": 2
   },
   {
@@ -1798,26 +1844,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "yuliya-bakshinskaya",
-    "name": "Юлия Бакшинская",
-    "aliases": [
-      "Юлия Бакшинская"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь",
-      "Симферополь"
-    ],
-    "venues": [
-      "Афиша PayBerry",
-      "Русский театр им. Горького, Пушкина 15"
-    ],
-    "first_seen": "2026-05-20",
-    "last_seen": "2026-06-26",
-    "description": "Вокалистка: киносаундтреки («Богемская рапсодия», Mamma Mia, «Красотка») и авторская программа «О самом сокровенном» — живой вокал с фортепиано, саксофоном и ударными в камерной атмосфере.",
-    "desc_baseline_count": 2
-  },
-  {
     "slug": "andrey-yasinskiy",
     "name": "Андрей Ясинский",
     "aliases": [
@@ -1857,25 +1883,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "andrey-rybalchenko",
-    "name": "Андрей Рыбальченко",
-    "aliases": [
-      "Андрей Рыбальченко"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Гольф-поле",
-      "Дворец «Дюльбер»"
-    ],
-    "first_seen": "2026-05-24",
-    "last_seen": "2026-05-31",
-    "description": "Этно-джазовые программы с восточными мотивами: дворец Дюльбер в Кореизе и камерные концерты на закате в долине под Севастополем.",
-    "desc_baseline_count": 2
-  },
-  {
     "slug": "cora",
     "name": "CORA",
     "aliases": [
@@ -1912,6 +1919,44 @@
     "last_seen": "2026-05-30",
     "description": "Фолк-группа со скандинавской, кельтской и славянской музыкой: волынки, скрипки, флейты и ирландские танцы. Играли на дне рождения Jam Club в Симферополе и в «Арт-Ковчеге» с огненным шоу.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "alim-kurtmemetov",
+    "name": "Алим Куртмеметов",
+    "aliases": [
+      "Алим Куртмеметов"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Севастополь Джаз",
+      "Дворец «Дюльбер»"
+    ],
+    "first_seen": "2026-05-24",
+    "last_seen": "2026-07-31",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "andrey-degurko",
+    "name": "Андрей Дегурко",
+    "aliases": [
+      "Андрей Дегурко"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Севастополь Джаз",
+      "Дворец «Дюльбер»"
+    ],
+    "first_seen": "2026-05-24",
+    "last_seen": "2026-07-31",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "aleksandr-dolinskiy",
@@ -1992,6 +2037,26 @@
     "last_seen": "2026-05-20",
     "description": "Участник концертов под открытым небом во дворце Дюльбер («Самая красивая музыка столетия») и музыкальных киновечеров в Симферополе.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "karbid",
+    "name": "Карбид",
+    "aliases": [
+      "Карбид"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Симферополь"
+    ],
+    "venues": [
+      "Народный бар",
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-16",
+    "last_seen": "2026-07-31",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "ruslan-seydaliev",
@@ -2144,5 +2209,42 @@
     "last_seen": "2026-05-03",
     "description": "Панк-футуристическая группа из Мытищ — четыре девушки и один парень. Весной отыграли в симферопольском Jam Club и ялтинском «Народном баре».",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "faberge-jazz-duo",
+    "name": "Faberge Jazz Duo",
+    "aliases": [
+      "Faberge Jazz Duo"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Крым"
+    ],
+    "venues": [
+      "АНАПСКИЙ РАЙОН, СУПСЕХ"
+    ],
+    "first_seen": "2026-07-27",
+    "last_seen": "2026-07-28",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "sergey-nihaenko",
+    "name": "Сергей Нихаенко",
+    "aliases": [
+      "Сергей Нихаенко"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Судак"
+    ],
+    "venues": [
+      "Волгоград",
+      "ТАВРИДА.АРТ"
+    ],
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-08-05",
+    "description": null,
+    "desc_baseline_count": 0
   }
 ]
