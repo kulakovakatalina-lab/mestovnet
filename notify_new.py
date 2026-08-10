@@ -9,14 +9,15 @@ artists.json) и отправляет сообщение со ссылками �
   3. заведение со ссылкой на страницу заведения
   4. ссылка на источник (пост в исходном канале)
 
-Если новых событий нет — сообщение не отправляется.
+Если новых событий нет — сообщение не отправляется, кроме случая
+--notify-empty: тогда отправляется уведомление, что ничего нового не найдено.
 
 Переменные окружения:
   TELEGRAM_BOT_TOKEN — токен бота (от @BotFather)
   TELEGRAM_CHAT_ID   — id получателя (число или @username)
 
 Пример:
-  python notify_new.py --before-dir /tmp/before
+  python notify_new.py --before-dir /tmp/before --notify-empty
 """
 
 import argparse
@@ -167,15 +168,19 @@ def main() -> int:
     ap.add_argument("--before-dir", required=True, help="каталог со снимками реестров до прогона")
     ap.add_argument("--after-dir", default=str(Path(__file__).parent),
                     help="каталог с актуальными реестрами (по умолчанию текущий)")
+    ap.add_argument("--notify-empty", action="store_true",
+                    help="отправить в Telegram «ничего нового», если новых событий не найдено")
     args = ap.parse_args()
 
     before_dir = Path(args.before_dir)
     after_dir = Path(args.after_dir)
 
     message = build_message(before_dir, after_dir)
-    if message is None:
+    if message is None and not args.notify_empty:
         print("Новых событий нет — сообщение не отправлено.")
         return 0
+    if message is None:
+        message = "<b>Местов.Нет:</b> ничего нового не найдено 🥱"
 
     print(message)
 

@@ -66,7 +66,7 @@ jobs:
 
       - name: Отправить уведомление в Telegram
         run: |
-          python notify_new.py --before-dir /tmp/before
+          python notify_new.py --before-dir /tmp/before --notify-empty
         continue-on-error: true
 
       - name: Закоммитить и запушить
