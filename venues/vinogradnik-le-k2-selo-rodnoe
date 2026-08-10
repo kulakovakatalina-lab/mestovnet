@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Виноградник Le K2, село Родное — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Виноградник Le K2, село Родное, в Крыму. 3 ближайших событий. Расписание и билеты.">
+  <title>Виноградник Le K2, село Родное — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Виноградник Le K2, село Родное, в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/vinogradnik-le-k2-selo-rodnoe">
-  <meta property="og:title" content="Виноградник Le K2, село Родное — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Виноградник Le K2, село Родное, в Крыму. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Виноградник Le K2, село Родное — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Виноградник Le K2, село Родное, в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,9 +31,24 @@
       "name": "Виноградник Le K2, село Родное",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Крым",
+        "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Дегустация",
+      "startDate": "2026-08-09T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Виноградник Le K2, село Родное"
+      },
+      "description": "Групповая экскурсия к древним родникам, возможность заглянуть в производственный и бочковой цеха и увидеть, где производится вино, а также дегустация 4 видов вина с легкими закусками.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Дегустация"
+      },
+      "image": "/images/events/e17007387c9bf4f21c39d81a43015495.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -84,7 +99,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Виноградник Le K2, село Родное"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Виноградник Le K2, село Родное"}]}
 </script>
   <style>
 
@@ -1093,13 +1108,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/all.html">Крым</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Виноградник Le K2, село Родное</h1>
     
     <p class="venue-description">Виноградник Le K2 в селе Родное (Балаклавский район).</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

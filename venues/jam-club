@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Руслан Абдуллаев",
+      "startDate": "2026-08-09T19:30:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "Концерт талантливого фингерстайл гитариста Руслана Абдуллаева.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Руслан Абдуллаев"
+      },
+      "image": "/images/events/b0f4fa9a27df857d456af0d96ab1843c.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1098,7 +1113,7 @@ footer {
     
     <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
