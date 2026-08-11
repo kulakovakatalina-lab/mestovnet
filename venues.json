@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 33,
+    "event_count": 34,
     "aliases": [
       "Jam Club"
     ],
@@ -90,6 +90,20 @@
     "lon": 34.1258
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 13,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -122,20 +136,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 11,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "teatr-im-a-p-chehova",
     "name": "Театр им. А.П. Чехова",
     "city": "Ялта",
@@ -152,6 +152,22 @@
     "desc_baseline_count": 8,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 9,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -173,9 +189,10 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 8,
+    "event_count": 9,
     "aliases": [
-      "Арт-кафе «Снежинка»"
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -228,22 +245,6 @@
     "desc_baseline_count": 5,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
   },
   {
     "slug": "dvorets-kultury-profsoyuzov",
@@ -681,6 +682,20 @@
     "lon": 34.132019
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Севастополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "golf-pole",
     "name": "Гольф-поле",
     "city": "Севастополь",
@@ -889,20 +904,6 @@
     "event_count": 2,
     "aliases": [
       "АНАПСКИЙ РАЙОН, СУПСЕХ"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Севастополь"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1491,6 +1492,76 @@
     "event_count": 1,
     "aliases": [
       "Волгоград"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "baydarskaya-dolina",
+    "name": "Байдарская долина",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Байдарская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn",
+    "name": "Крымский республиканский клинический госпиталь для ветеранов войн",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Крымский республиканский клинический госпиталь для ветеранов войн"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kinozal-krymskogo-kinokontsertnogo-obedineniya",
+    "name": "кинозал Крымского киноконцертного объединения",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "кинозал Крымского киноконцертного объединения"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kontserty-krym",
+    "name": "Концерты Крым",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концерты Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "mezhdunarodnyy-festival-molodezhi",
+    "name": "Международный фестиваль молодёжи",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Международный фестиваль молодёжи"
     ],
     "description": null,
     "desc_baseline_count": 0,

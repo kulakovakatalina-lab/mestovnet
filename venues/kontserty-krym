@@ -16,65 +16,30 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Владимир Ждамиров — концерты в Крыму, Симферополь, Керчь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Владимир Ждамиров в Крыму (Симферополь, Керчь, Ялта). 2 ближайших событий.">
-  <link rel="canonical" href="https://mestov.net/artist/vladimir-zhdamirov">
-  <meta property="og:title" content="Владимир Ждамиров — концерты в Крыму, Симферополь, Керчь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Владимир Ждамиров в Крыму (Симферополь, Керчь, Ялта). 2 ближайших событий.">
+  <title>Концерты Крым — афиша в Крыму · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Концерты Крым, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/kontserty-krym">
+  <meta property="og:title" content="Концерты Крым — афиша в Крыму · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Концерты Крым, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MusicGroup",
-      "name": "Владимир Ждамиров"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Владимир Ждамиров",
-      "startDate": "2026-08-13T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Владимир Ждамиров"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дворец культуры профсоюзов",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Владимир Ждамиров, легенда русского шансона, 13 лет проработал в составе группа «Бутырка», являясь автором музыки, лидером и музыкальным руководителем коллектива. Записал 8 альбомов, более 80 песен, добрая половина которых вошла в золотую коллекцию русского шансона. Такие песни, исполненные Владимиром, как «Запахло весной», «Тает снег», «Кольщик», «Аттестат», «Икона», «Шарик», «Не трогай осень», «Последний рассвет» и многие другие глубоко запали в душу поклонникам коллектива, что на долгие годы определило его популярность и востребованность.\n\nВ декабре 2013 года, вынужден был покинуть проект «Бутырка» и принял решение отправится в сольное плавание. Первые сольные концерты показали, что новые песни публика принимает горячо, артист по прежнему интересен людям. И интерес этот заметно растет, т.к. Владимир Ждамиров решил не ограничиваться рамками жанра и записал много новых песен о любви, о Родине, о войне, о жизни. Сольная карьера позволила артисту раскрыться и расширить границы своего творчества.\n\n1 декабря 2014 года состоялся официальный релиз долгожданного дебютного альбома Владимира Ждамирова «За забором весна». В него вошло 13 песен, которые в самые короткие сроки полюбились зрителям и стали популярны. В декабре 2017 года вышел второй сольный альбом Владимира Ждамирова «Где-то там». Владимир Ждамиров регулярно выпускает новые песни и клипы. «А я несу тебе цветы», «В чужие края», «Я поцелуем выпью твои слёзы», «Я вернусь», «Разведённые», «Всё пройдет», «Не плачь» и др.\n\nВ настоящее время Владимир Ждамиров очень громко заявил о себе, как о сольном артист, он принимает участие в таких фестивалях , как «Шансон года», «Эх разгуляй», «Шансон ТВ-все Звезды» в Витебске и др. Полюбившиеся песни постоянно находятся в ротации на федеральных радиостанциях. Артист активно гастролирует и радует своих поклонников полюбившимися и новыми хитами.",
-      "image": "/images/events/d6b386c1ef99ea53fcf9cb25ef9986fd.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Владимир Ждамиров",
-      "startDate": "2026-08-14T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Владимир Ждамиров"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Корабел",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Керчь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Владимир Ждамиров, легенда русского шансона, 13 лет проработал в составе группа «Бутырка», являясь автором музыки, лидером и музыкальным руководителем коллектива. Записал 8 альбомов, более 80 песен, добрая половина которых вошла в золотую коллекцию русского шансона. Такие песни, исполненные Владимиром, как «Запахло весной», «Тает снег», «Кольщик», «Аттестат», «Икона», «Шарик», «Не трогай осень», «Последний рассвет» и многие другие глубоко запали в душу поклонникам коллектива, что на долгие годы определило его популярность и востребованность.\n\nВ декабре 2013 года, вынужден был покинуть проект «Бутырка» и принял решение отправится в сольное плавание. Первые сольные концерты показали, что новые песни публика принимает горячо, артист по прежнему интересен людям. И интерес этот заметно растет, т.к. Владимир Ждамиров решил не ограничиваться рамками жанра и записал много новых песен о любви, о Родине, о войне, о жизни. Сольная карьера позволила артисту раскрыться и расширить границы своего творчества.\n\n1 декабря 2014 года состоялся официальный релиз долгожданного дебютного альбома Владимира Ждамирова «За забором весна». В него вошло 13 песен, которые в самые короткие сроки полюбились зрителям и стали популярны. В декабре 2017 года вышел второй сольный альбом Владимира Ждамирова «Где-то там». Владимир Ждамиров регулярно выпускает новые песни и клипы. «А я несу тебе цветы», «В чужие края», «Я поцелуем выпью твои слёзы», «Я вернусь», «Разведённые», «Всё пройдет», «Не плачь» и др.\n\nВ настоящее время Владимир Ждамиров очень громко заявил о себе, как о сольном артист, он принимает участие в таких фестивалях , как «Шансон года», «Эх разгуляй», «Шансон ТВ-все Звезды» в Витебске и др. Полюбившиеся песни постоянно находятся в ротации на федеральных радиостанциях. Артист активно гастролирует и радует своих поклонников полюбившимися и новыми хитами.",
-      "image": "/images/events/d6b386c1ef99ea53fcf9cb25ef9986fd.jpg"
+      "@type": "MusicVenue",
+      "name": "Концерты Крым",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Крым",
+        "addressCountry": "RU"
+      }
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Владимир Ждамиров"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Концерты Крым"}]}
 </script>
   <style>
 
@@ -849,7 +814,8 @@ footer {
   pointer-events: none;
 }
 
-  /* ── Герой артиста (переиспользуем genre-hero/venue CSS) ── */
+  html { scroll-behavior: smooth; }
+  /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -928,6 +894,50 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
+  .venue-map-wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
+  }
+  #venue-map {
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+  .venue-map-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .balloon-card { min-width: 200px; }
+  .balloon-name { font-weight: 700; margin-bottom: 4px; }
+  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .balloon-route {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    transition: filter 0.12s;
+  }
+  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -951,6 +961,8 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
+  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
+  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1036,13 +1048,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · Артист
+      · <a href="/cities/all.html">Крым</a>
     </div>
-    <h1 class="genre-hero-title">Владимир Ждамиров</h1>
-    <p class="venue-description">Легенда русского шансона: 13 лет был автором музыки, лидером и музыкальным руководителем группы «Бутырка», записал 8 альбомов. В августе — крымский тур: Ялта, Симферополь, Керчь.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Керчь, Ялта</span></div>
+    <h1 class="genre-hero-title">Концерты Крым</h1>
+    
+    
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
@@ -1054,14 +1066,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
+
+
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
+
+
 <script>
-const ARTIST_ALIASES = ["Владимир Ждамиров", "Владимир Ждамиров"];
-const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
+const VENUE_ALIASES = ["Концерты Крым", "Концерты Крым"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
@@ -1092,52 +1107,9 @@ function priceText(p) {
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
 
-// Разбивает поле artist так же, как build_artists.py: запятые верхнего
-// уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
-function splitArtistField(artist) {
-  const parts = [];
-  let depth = 0, current = '';
-  for (const ch of artist) {
-    if (ch === '(' || ch === '«') { depth++; current += ch; }
-    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
-    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
-    else { current += ch; }
-  }
-  parts.push(current);
-  return parts;
-}
-const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
-const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
-function artistParts(name) {
-  return name.split(ARTIST_JOIN_RE)
-    .map(s => s.trim())
-    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
-}
-function eventMatchesArtist(ev) {
-  const raw = ev.artist || '';
-  if (!raw) return false;
-  for (const part of splitArtistField(raw)) {
-    for (const name of artistParts(part.trim())) {
-      if (ARTIST_ALIAS_SET.has(name.trim())) return true;
-    }
-  }
-  return false;
-}
-function otherArtistNames(ev) {
-  const raw = ev.artist || '';
-  if (!raw) return [];
-  const names = [];
-  for (const part of splitArtistField(raw)) {
-    for (const name of artistParts(part.trim())) {
-      const n = name.trim();
-      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
-    }
-  }
-  return names;
-}
-
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1153,6 +1125,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1163,11 +1136,11 @@ function eventRowHtml(ev, extraClass) {
   const genre = mapGenre(ev.genre);
   const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
   const price = ev.priceDisplay || priceText(ev.price);
-  const others = otherArtistNames(ev);
   const thumbHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.venue || ''}" loading="lazy">`
+    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1175,10 +1148,11 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.venue || '—'}</div>
+      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
-        ${others.length ? `<span>${others.join(', ')}</span><span class="row-venue-dot"></span>` : ''}
+        <span>${ev.venue || '—'}</span>
+        <span class="row-venue-dot"></span>
         <span>${ev.source_city || '—'}</span>
       </div>
     </div>
@@ -1228,9 +1202,10 @@ async function load() {
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched  = applySettings(data, settings);
     const now      = new Date();
+    const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
-      .filter(e => e.date && eventMatchesArtist(e))
+      .filter(e => e.date && e.venue && aliasSet.has(e.venue))
       .map(e => ({ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }))
       .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
 
@@ -1240,6 +1215,7 @@ async function load() {
     renderList(upcoming, 'events-list');
     renderArchive();
 
+    // Жанры в шапке — все жанры сайта, не только этого заведения
     const genreCounts = {};
     patched.forEach(e => { const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; });
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
