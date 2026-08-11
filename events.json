@@ -427,7 +427,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
-      "/images/events/e7423570ef42b556796485980a896723.jpg"
+      "/images/events/a1716fe0554515951e433833aae684df.jpg"
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
@@ -522,7 +522,7 @@
     "source_url": "https://t.me/koncertykrym/2242",
     "images": [
       "/images/events/db786528a97ef05d8fcaedde6e07d6f4.jpg",
-      "/images/events/83b6e5022d2a90e2f616be15880621f8.jpg"
+      "/images/events/33c1233911c0c2720587909b248c91fa.jpg"
     ],
     "image": "/images/events/db786528a97ef05d8fcaedde6e07d6f4.jpg",
     "post_date": "2026-08-06T12:19:17+00:00",
@@ -906,19 +906,22 @@
   {
     "date": "2026-08-24",
     "time": "19:00",
-    "artist": "Ирина, Александр Круг",
-    "venue": "Музыкальный театр",
+    "artist": "Ирина, Александр Круг, StandUp Валентин Сидоров",
     "event_type": "концерт",
+    "venue": "Музыкальный театр",
     "price": "от 3 000 ₽",
     "description": "Творчество Ирины Круг уникально и неповторимо. Женственная и запоминающаяся, смогла создать свой музыкальный стиль и манеру исполнения, так что её песни преданные миллионы поклонников узнают с первых аккордов. Трогательные мотивы, осмысленные тексты, буквально пропитаны душевным сопереживанием и одновременно всеобъемлющим счастьем. Она не понаслышке знает, что такое любовь, потери и расставания.\n\nЗаигрывая с различными жанрами, она остаётся верна главному из них — шансону. И хиты дня сегодняшнего: «Подари любовь», «Фамилия», «Выберу себя», не уступают уже ставшим легендарными: «Тебе моя последняя любовь», «Королева», «Букет из белых роз». В новой программе найдется место и премьерам песен, которые наверняка по достоинству оценят слушатели.\n\nВыбирая песни сердцем, Ирина Круг переносит зрителя в свой завораживающий мир задушевной песни. Обладая чувственным и узнаваемым голосом, теплотой, очарованием, талантом, она оставляет след в сердцах зрителей. И с полной уверенностью можно сказать, что это будет высоко ими оценено.\n\nСпециальный гость новой программы — Александр Круг. Удивительным образом младший сын Михаила Круга смог вобрать в себя не только внешность и фамилию отца, но и приятный узнаваемый баритон, который волнует души и сердца зрителей всех поколений. Александр Круг исполнит полюбившие хиты своего отца, а также представит зрителям свои новые песни.",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-08-24",
-    "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/irina-i-aleksandr-krug?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "source_channel": "yandex_afisha",
     "genre": "классика",
-    "id": "4cb48f9d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/irina-i-aleksandr-krug?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
+      "/images/events/555b2dcb31465f132891c79308bbd773.jpg"
+    ],
+    "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
+    "post_date": "2026-08-24",
+    "id": "82cde712"
   },
   {
     "date": "2026-08-25",
@@ -1566,7 +1569,8 @@
     "genre": "поп",
     "source_url": "https://t.me/usadbarodnoegnezdo/3496",
     "images": [
-      "/images/events/786f3b4403256aa653efab94fae3327f.jpg"
+      "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
+      "/images/events/40975835ef03c23f372e1b9ad3c56b84.jpg"
     ],
     "image": "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
     "post_date": "2026-08-08T15:29:17+00:00",
@@ -1657,7 +1661,7 @@
     "source_url": "https://t.me/rocknroll_82/427",
     "images": [
       "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
-      "/images/events/c95e0713a4c7abe41dee859122ca1e98.jpg"
+      "/images/events/cdaf13920bc4da54d7ab3de29a4d6e21.jpg"
     ],
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
     "post_date": "2026-08-08T10:53:42+00:00",
@@ -6655,8 +6659,7 @@
     "source_url": "https://t.me/clubjam/1076",
     "images": [
       "/images/events/4b70b0df966bf8003b98133eca821e9f.jpg",
-      "/images/events/a0b593d2ec4408f04404bd418335a69c.jpg",
-      "/images/events/de9e8855e03afa8516b24c9d6d444e1c.jpg"
+      "/images/events/a2d5d298b9d3867898a5035eef6ca978.jpg"
     ],
     "image": "/images/events/4b70b0df966bf8003b98133eca821e9f.jpg",
     "post_date": "2026-07-31T11:56:44+00:00",
@@ -6817,7 +6820,7 @@
     "genre": "поп",
     "source_url": "https://t.me/tavrida_art/21742",
     "images": [
-      "https://cdn4.telesco.pe/file/SNW1brrff-B-2CQPZgYKA_e3jY1uVrq4lYZCj0Job69cytZg0hGkWmckgHhj17GUnfp1XvK1B1YtR0iRnJLYUbrh4-D4DAkcDXKQoHaR2PwOORkUmAXhAYzosxLi9p9sJi5jcWGFpmbUgKA83qoENn-wF2ruwsNuhwVke13CxRz7vTxdaYMKh1HxwtzzTQ0JOZqDW8hrrU5JHyrdxsRwWwXgtZpBeeUt-rH1UjE5CEprzhXAvhEmMe2D13qXgQISqkWmOgTsuC1Yhq0wvrBiUXEO2vzpH2NRYtNQzlKtJNqjfHPqhVRbvGQ05oPpuFWagCBf6OrtB5jpZW8OlmhvgQ.jpg"
+      "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg"
     ],
     "image": "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg",
     "post_date": "2026-08-05T15:01:26+00:00",
@@ -7069,6 +7072,209 @@
     "genre": "поп"
   },
   {
+    "date": "2026-08-01",
+    "time": null,
+    "artist": "Paper Plain",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "NIRVANA TRIBUTE by Paper Plain (Севастополь)",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1083",
+    "images": [
+      "/images/events/273ecea2a639d8a7e001ea50fd31e926.jpg",
+      "/images/events/3bd45c980a40da07ff690dd9341f08b0.jpg"
+    ],
+    "image": "/images/events/273ecea2a639d8a7e001ea50fd31e926.jpg",
+    "post_date": "2026-08-01T08:05:16+00:00",
+    "id": "65b5ae05"
+  },
+  {
+    "date": "2026-08-16",
+    "time": "19:30",
+    "artist": "Группа «Денайро»",
+    "event_type": "концерт",
+    "venue": "Байдарская долина",
+    "price": "взр. 1200₽, детский 7-14 лет: 800₽",
+    "description": "Закат, костёр и музыка в Байдарской долине. В программе — хиты, проверенные временем: Кино, Жуки, Агата Кристи, Баста, Sting, Чайф и ещё много треков, от которых по телу мурашки.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-10T17:05:20+00:00",
+    "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/8209",
+    "id": "912feab7",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-07-28",
+    "time": null,
+    "artist": "Проект «КиноПоддержка»",
+    "event_type": "встреча",
+    "venue": "Крымский республиканский клинический госпиталь для ветеранов войн",
+    "price": null,
+    "description": "Встреча проекта «КиноПоддержка», посвящённая фильму Никиты Михалкова «Родня».",
+    "source_channel": "koncertykrym",
+    "source_city": "Крым",
+    "post_date": "2026-08-03T13:33:47+00:00",
+    "image": "/images/events/3af885034eb8e87274866853435b5d95.jpg",
+    "images": null,
+    "source_url": "https://t.me/koncertykrym/2232",
+    "id": "6592dfe2"
+  },
+  {
+    "date": "2026-08-21",
+    "time": "18:30",
+    "artist": null,
+    "event_type": "кинолекторий",
+    "venue": "кинозал Крымского киноконцертного объединения",
+    "price": "бесплатно",
+    "description": "Кинолекторий об эпохе «оттепели»",
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-10T13:21:16+00:00",
+    "image": "/images/events/a0b91e81e951754a34c08ed74892dc07.jpg",
+    "images": null,
+    "source_url": "https://t.me/koncertykrym/2246",
+    "id": "c1d908ae"
+  },
+  {
+    "date": "2026-08-09",
+    "time": null,
+    "artist": null,
+    "event_type": "концерт",
+    "venue": "Севастополь Джаз",
+    "price": null,
+    "description": "Джазовый пикник",
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-07T17:01:55+00:00",
+    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-214055536_2253",
+    "id": "e64daa52",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-16",
+    "time": null,
+    "artist": null,
+    "event_type": "концерт",
+    "venue": "Севастополь Джаз",
+    "price": null,
+    "description": "Джаз в лабиринте",
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-07T17:01:55+00:00",
+    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-214055536_2253",
+    "id": "16fa784e",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-22",
+    "time": null,
+    "artist": null,
+    "event_type": "концерт",
+    "venue": "Массандра",
+    "price": null,
+    "description": "Джазовые вечера в Массандре",
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-07T17:01:55+00:00",
+    "image": "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-214055536_2253",
+    "id": "b0fd2dfd",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-08",
+    "time": null,
+    "artist": "Театр Горожан",
+    "event_type": "спектакль",
+    "venue": "Афиша PayBerry",
+    "price": "500 ₽",
+    "description": "Спектакль «Чехов. Сцены» по пьесам Чехова.",
+    "source_channel": "afisha_payberry",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-07T10:10:33+00:00",
+    "image": "/images/events/cd4a8c59dab6447ddf4f1f30ba267f86.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-221587243_2456",
+    "id": "2130c42f"
+  },
+  {
+    "date": "2026-08-09",
+    "time": null,
+    "artist": "Матвей Блюмин",
+    "event_type": "концерт",
+    "venue": "арт-кафе «Снежинка»",
+    "price": "800–900 ₽",
+    "description": "Французская программа: песни Пиаф, Азнавура, Монтана, Дассена и другие мотивы, знакомые с первых нот.",
+    "source_channel": "afisha_payberry",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-05T11:51:48+00:00",
+    "image": "/images/events/e8ddd2b57b4b3468e1362171ae995840.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-221587243_2454",
+    "id": "fb15f052",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-08-02",
+    "time": null,
+    "artist": "Дмитрий Зеленский, Любовь Фатеева, Ольга Плетнёва",
+    "event_type": "концерт",
+    "venue": "Севастополь",
+    "price": "500–600 ₽",
+    "description": "Инструментальное трио исполнит популярную классику, произведения из репертуара The Piano Guys и мировые хиты.",
+    "source_channel": "afisha_payberry",
+    "source_city": "Севастополь",
+    "post_date": "2026-07-28T08:30:13+00:00",
+    "image": "/images/events/f74f2d645c842714efeb163fe52c84fa.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-221587243_2445",
+    "id": "3248641f",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-08-03",
+    "time": null,
+    "artist": "Ася Зыкова",
+    "event_type": "другое",
+    "venue": "ТАВРИДА.АРТ",
+    "price": null,
+    "description": "Песня «Кричали дети со двора» Аси Зыковой, резидента арт-кластера «Таврида».",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-03T15:01:00+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://vk.com/wall-89840945_119288",
+    "id": "d26fc075"
+  },
+  {
+    "date": "2026-08-01",
+    "time": null,
+    "artist": "Юный баянист",
+    "event_type": "концерт",
+    "venue": "ТАВРИДА.АРТ",
+    "price": null,
+    "description": "Выступление юного баяниста.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-01T11:58:54+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://vk.com/wall-89840945_119274",
+    "id": "427f98ae",
+    "genre": "поп"
+  },
+  {
     "date": null,
     "time": null,
     "artist": "Стивен Митчелл, Jazz Band",
@@ -7299,5 +7505,41 @@
     "source_url": "https://vk.com/wall-89840945_119258",
     "id": "6e0577ec",
     "genre": "другое"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Концерты Крым",
+    "price": null,
+    "description": "Абонементы 89-го концертного сезона 2026–2027 уже в продаже!",
+    "source_city": "Крым",
+    "source_channel": "koncertykrym",
+    "genre": "классика",
+    "source_url": "https://t.me/koncertykrym/2235",
+    "images": [
+      "/images/events/d12547e136ba91b96d65151fdfa777f1.jpg"
+    ],
+    "image": "/images/events/d12547e136ba91b96d65151fdfa777f1.jpg",
+    "post_date": "2026-08-05T13:46:29+00:00",
+    "id": "8aa8fceb"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "Балет Тавриды",
+    "event_type": "фестиваль",
+    "venue": "Международный фестиваль молодёжи",
+    "price": null,
+    "description": "Подготовка к показу на Международном фестивале молодёжи в Екатеринбурге.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-06T10:50:30+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://vk.com/wall-89840945_119311",
+    "id": "3b2f1bad",
+    "genre": "фолк"
   }
 ]
