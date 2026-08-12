@@ -17,11 +17,11 @@
       "Музыкальное училище им. П.И. Чайковского",
       "Концертный зал «Юбилейный»",
       "КДК «Корабел»",
-      "Концерты Крым",
       "Мраморная пещера",
       "Театр им. А.П. Чехова",
       "Отель «Ялта-Интурист», концерт-холл «Хрустальный»",
       "Ливадийский дворец",
+      "Концерты Крым",
       "Театр имени А.П. Чехова, Екатерининская ул., 13"
     ],
     "first_seen": "2026-04-26",
@@ -75,6 +75,42 @@
     "last_seen": "2026-08-16",
     "description": "Джазовый коллектив и одноимённый фестиваль-маркет — один из главных джазовых проектов крымского лета. Играют свинг, латино и классику американского джаза, регулярно выступают с американским вокалистом Стивеном Митчеллом. За сезон — восемь событий по всему южному берегу: этапы фестиваля в Ялте и Коктебеле, концерты на Горной Сыроварне и в усадьбе «Родное гнездо» под Севастополем.",
     "desc_baseline_count": 8
+  },
+  {
+    "slug": "yuliya-soprano",
+    "name": "Юлия (сопрано)",
+    "aliases": [
+      "Юлия (сопрано)"
+    ],
+    "event_count": 8,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Органном зале \"LIVADIA\""
+    ],
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-30",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "anton-hromchenko-skripka",
+    "name": "Антон Хромченко (скрипка)",
+    "aliases": [
+      "Антон Хромченко (скрипка)"
+    ],
+    "event_count": 8,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Органном зале \"LIVADIA\""
+    ],
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-30",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "spahova",
@@ -158,9 +194,9 @@
       "Коктебель"
     ],
     "venues": [
+      "Скажите Джаз",
       "Усадьба Родное гнездо",
       "Горная сыроварня",
-      "Скажите Джаз",
       "Горная Сыроварня",
       "Концертная площадка МОРЕ"
     ],
@@ -318,6 +354,44 @@
     "desc_baseline_count": 5
   },
   {
+    "slug": "angle-of-wonders",
+    "name": "Angle Of Wonders",
+    "aliases": [
+      "Angle Of Wonders",
+      "Angle of Wonders"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-12",
+    "description": "Симферопольская рок-группа, регулярный участник фестивалей и трибьют-вечеров Jam Club — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Grunge Fest в честь 5-летия клуба.",
+    "desc_baseline_count": 3
+  },
+  {
+    "slug": "krysha-mira",
+    "name": "Крыша мира",
+    "aliases": [
+      "Крыша Мира",
+      "Крыша мира"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-12",
+    "description": "Участники рок-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST и Grunge Fest.",
+    "desc_baseline_count": 3
+  },
+  {
     "slug": "gruppa-domino",
     "name": "Группа «Домино»",
     "aliases": [
@@ -337,6 +411,25 @@
     "last_seen": "2026-07-18",
     "description": "Севастопольская группа, играющая хиты русского рок-попа в неожиданных аранжировках. Электрический состав, не акустика. Выступают в «Рок-н-рольщиках» Севастополя и Симферополя, вход обычно свободный.",
     "desc_baseline_count": 4
+  },
+  {
+    "slug": "ichchi",
+    "name": "Иччи",
+    "aliases": [
+      "ИЧЧИ",
+      "Иччи"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-12",
+    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
+    "desc_baseline_count": 3
   },
   {
     "slug": "paper-plain",
@@ -498,14 +591,14 @@
     ],
     "event_count": 3,
     "cities": [
-      "Судак",
       "Севастополь",
-      "Симферополь"
+      "Симферополь",
+      "Судак"
     ],
     "venues": [
-      "ТАВРИДА.АРТ",
       "Муссон",
-      "Centrum"
+      "Centrum",
+      "ТАВРИДА.АРТ"
     ],
     "first_seen": "2026-08-22",
     "last_seen": "2026-08-25",
@@ -735,6 +828,24 @@
     "desc_baseline_count": 3
   },
   {
+    "slug": "red-stars",
+    "name": "Red Stars",
+    "aliases": [
+      "Red Stars"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-08-14",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "rus",
     "name": "Rus",
     "aliases": [
@@ -772,43 +883,6 @@
     "last_seen": "2026-08-09",
     "description": "Скрипач-виртуоз, победитель международных конкурсов, солист Московской и Петербургской филармоний. В Крыму играет в необычных местах: под куполом телескопа Крымской астрофизической обсерватории (проект «Космос Внутри») и с программой «Реинкарнация Паганини».",
     "desc_baseline_count": 2
-  },
-  {
-    "slug": "angle-of-wonders",
-    "name": "Angle Of Wonders",
-    "aliases": [
-      "Angle Of Wonders"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-07-18",
-    "description": "Симферопольская рок-группа, регулярный участник фестивалей и трибьют-вечеров Jam Club — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Grunge Fest в честь 5-летия клуба.",
-    "desc_baseline_count": 3
-  },
-  {
-    "slug": "krysha-mira",
-    "name": "Крыша мира",
-    "aliases": [
-      "Крыша Мира",
-      "Крыша мира"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-07-18",
-    "description": "Участники рок-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST и Grunge Fest.",
-    "desc_baseline_count": 3
   },
   {
     "slug": "hay-petri",
@@ -850,24 +924,6 @@
     "first_seen": "2026-05-17",
     "last_seen": "2026-07-12",
     "description": "Севастопольский автор и исполнитель: акустическая авторская рок-программа и каверы на русский рок. Играет в «Рок-н-рольщиках» Севастополя и Симферополя и на открытых площадках, вход обычно свободный.",
-    "desc_baseline_count": 3
-  },
-  {
-    "slug": "ichchi",
-    "name": "Иччи",
-    "aliases": [
-      "Иччи"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-07-04",
-    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
     "desc_baseline_count": 3
   },
   {
@@ -974,6 +1030,24 @@
     "last_seen": "2026-05-11",
     "description": "Севастопольский эстрадно-духовой оркестр. Три дня подряд играл перед кинотеатром «Победа» в праздничном киномарафоне ко Дню Победы, вход свободный.",
     "desc_baseline_count": 3
+  },
+  {
+    "slug": "narrator",
+    "name": "Нарратор",
+    "aliases": [
+      "Нарратор"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-14",
+    "description": "Симферопольская группа с фестивалей Jam Club: модерн-рок и метал.",
+    "desc_baseline_count": 2
   },
   {
     "slug": "danya",
@@ -1646,10 +1720,11 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "red-stars",
-    "name": "Red Stars",
+    "slug": "gorod-grehov",
+    "name": "Город грехов",
     "aliases": [
-      "Red Stars"
+      "Город Грехов",
+      "Город грехов"
     ],
     "event_count": 2,
     "cities": [
@@ -1658,8 +1733,8 @@
     "venues": [
       "Jam Club"
     ],
-    "first_seen": "2026-07-04",
-    "last_seen": "2026-07-24",
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-08-14",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -2142,6 +2217,24 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "black-tears",
+    "name": "Black Tears",
+    "aliases": [
+      "Black Tears"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-08-14",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "dinaminator",
     "name": "Динаминатор",
     "aliases": [
@@ -2157,24 +2250,6 @@
     "first_seen": "2026-05-01",
     "last_seen": "2026-05-08",
     "description": "Участники метал-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Modern Rock Heavy Fest.",
-    "desc_baseline_count": 2
-  },
-  {
-    "slug": "narrator",
-    "name": "Нарратор",
-    "aliases": [
-      "Нарратор"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-05-08",
-    "description": "Симферопольская группа с фестивалей Jam Club: модерн-рок и метал.",
     "desc_baseline_count": 2
   },
   {
