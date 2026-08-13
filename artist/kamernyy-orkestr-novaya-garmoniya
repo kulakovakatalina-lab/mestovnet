@@ -16,75 +16,65 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/jam-club">
-  <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <title>Камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Камерный оркестр «Новая Гармония» в Крыму (Крым, Севастополь). 2 ближайших событий.">
+  <link rel="canonical" href="https://mestov.net/artist/kamernyy-orkestr-novaya-garmoniya">
+  <meta property="og:title" content="Камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Камерный оркестр «Новая Гармония» в Крыму (Крым, Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MusicVenue",
-      "name": "Jam Club",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU"
-      }
+      "@type": "MusicGroup",
+      "name": "Камерный оркестр «Новая Гармония»"
     },
     {
       "@type": "MusicEvent",
-      "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak",
-      "startDate": "2026-08-14T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "METAL FEST",
+      "name": "Камерный оркестр «Новая Гармония»",
+      "startDate": "2026-08-16T00:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak"
+        "name": "Камерный оркестр «Новая Гармония»"
       },
-      "image": "/images/events/0cd86d39e2b2fe110fd8fe801b3fa39a.jpg"
+      "location": {
+        "@type": "MusicVenue",
+        "name": "пещера «Мраморная»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Финальный аккорд лета: два концерта в сердце горы. Камерный оркестр «Новая Гармония» под управлением маэстро Дениса Карлова подарит вам «Звуковой сплав 6».",
+      "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg"
     },
     {
       "@type": "MusicEvent",
-      "name": "EXISTENTER, Red Stars (разогрев), MEANTRAITORS, ОПГ Годзилла (Керчь) (разогрев)",
-      "startDate": "2026-08-15T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "EXISTENTER (Москва), Red Stars на разогреве.",
+      "name": "Камерный оркестр «Новая Гармония»",
+      "startDate": "2026-08-23T00:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
-        "name": "EXISTENTER, Red Stars (разогрев), MEANTRAITORS, ОПГ Годзилла (Керчь) (разогрев)"
+        "name": "Камерный оркестр «Новая Гармония»"
       },
-      "image": "/images/events/40af1137095af62c0cdd32ab0f8fcca2.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Чёрный Кофе, Черный кофе",
-      "startDate": "2026-09-05T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "пещера «Мраморная»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
       },
-      "description": "О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!\r\nВ программу войдут такие нетленные хиты, как: «Вольному — воля», «Владимирская Русь», «Звездный водоем», «Листья», «Светлый металл», «Переступи порог», «Леди Осень», «Это — рок!» и многие другие.\r\n\r\nТакже поклонники группы услышат новые песни, написанные Мастером мелодичного хард-рока в последние годы на стихи Александра Шаганова, Сергея Есенина, великую классику Баха, Альбинони и бессмертные песни Владимира Высоцкого.— они прозвучат в исполнении фронтмена и основателя «Чёрного Кофе» — Дмитрия Варшавского.\r\n«Чёрный кофе» — это не ностальгия, а летопись российского рока. Их дебютный студийный альбом «Переступи порог» открыл официальную дискографию русскоязычного хэви-метал-рока и оказался самым успешным проектом «перестроечной эры». Только в первые месяцы продаж он разошёлся по стране тиражом более 1 400 000 экземпляров. Аналогичный успех сопутствовал и следующему диску коллектива — «Вольному — воля».\r\n\r\nГруппа давала десятки аншлаговых выступлений ежемесячно на протяжении многих лет, но... время шло, предпочтения слушателей менялись. И только сейчас музыка hard'n'heavy обретает второе дыхание и корифеи стиля, вроде «Чёрного Кофе», обретают новую жизнь.\r\n\r\nС Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.\r\n\r\nВ концерте прозвучат самые легендарные хиты группы!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Чёрный Кофе, Черный кофе"
-      },
-      "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
+      "description": "Финальный аккорд лета: два концерта в сердце горы. Камерный оркестр «Новая Гармония» под управлением маэстро Дениса Карлова подарит вам «Звуковой сплав 6».",
+      "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Jam Club"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Камерный оркестр «Новая Гармония»"}]}
 </script>
   <style>
 
@@ -859,8 +849,7 @@ footer {
   pointer-events: none;
 }
 
-  html { scroll-behavior: smooth; }
-  /* ── Герой заведения (genre-hero CSS из genre.html) ── */
+  /* ── Герой артиста (переиспользуем genre-hero/venue CSS) ── */
   .genre-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -939,50 +928,6 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-hero-address-link {
-    text-decoration: underline dotted;
-    text-underline-offset: 3px;
-    cursor: pointer;
-  }
-  .venue-hero-address-link:hover { color: var(--accent); }
-  .venue-map-wrap {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
-  }
-  #venue-map {
-    width: 100%;
-    height: min(42vh, 360px);
-    min-height: 240px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
-    scroll-margin-top: calc(var(--nav-h) + 16px);
-  }
-  .venue-map-loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: var(--muted);
-    font-size: 14px;
-  }
-  .balloon-card { min-width: 200px; }
-  .balloon-name { font-weight: 700; margin-bottom: 4px; }
-  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .balloon-route {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 14px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    background: var(--accent);
-    border-radius: var(--radius-sm);
-    transition: filter 0.12s;
-  }
-  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -1006,8 +951,6 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
-  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
-  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1093,13 +1036,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · Артист
     </div>
-    <h1 class="genre-hero-title">Jam Club</h1>
+    <h1 class="genre-hero-title">Камерный оркестр «Новая Гармония»</h1>
     
-    <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
+    <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1111,47 +1054,14 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
-
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
 <script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "Jam Club";
-  var addr = "Симферополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.949566,34.09857";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.949566, 34.09857],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.949566, 34.09857], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
-
-<script>
-const VENUE_ALIASES = ["Jam Club", "Jam Club"];
+const ARTIST_ALIASES = ["Камерный оркестр «Новая Гармония»", "Камерный оркестр «Новая гармония»", "Камерный оркестр «Новая Гармония»"];
+const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
@@ -1182,9 +1092,52 @@ function priceText(p) {
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
 
+// Разбивает поле artist так же, как build_artists.py: запятые верхнего
+// уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
+function splitArtistField(artist) {
+  const parts = [];
+  let depth = 0, current = '';
+  for (const ch of artist) {
+    if (ch === '(' || ch === '«') { depth++; current += ch; }
+    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
+    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
+    else { current += ch; }
+  }
+  parts.push(current);
+  return parts;
+}
+const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
+function artistParts(name) {
+  return name.split(ARTIST_JOIN_RE)
+    .map(s => s.trim())
+    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
+}
+function eventMatchesArtist(ev) {
+  const raw = ev.artist || '';
+  if (!raw) return false;
+  for (const part of splitArtistField(raw)) {
+    for (const name of artistParts(part.trim())) {
+      if (ARTIST_ALIAS_SET.has(name.trim())) return true;
+    }
+  }
+  return false;
+}
+function otherArtistNames(ev) {
+  const raw = ev.artist || '';
+  if (!raw) return [];
+  const names = [];
+  for (const part of splitArtistField(raw)) {
+    for (const name of artistParts(part.trim())) {
+      const n = name.trim();
+      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
+    }
+  }
+  return names;
+}
+
 function applySettings(data, settings) {
-  const hiddenSet    = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
+  const hiddenSet = new Set(settings.hidden || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1200,7 +1153,6 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1211,11 +1163,11 @@ function eventRowHtml(ev, extraClass) {
   const genre = mapGenre(ev.genre);
   const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
   const price = ev.priceDisplay || priceText(ev.price);
+  const others = otherArtistNames(ev);
   const thumbHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
+    ? `<img src="${ev.image}" alt="${ev.venue || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
-  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
+  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1223,11 +1175,10 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
+      <div class="row-artist">${ev.venue || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
-        <span>${ev.venue || '—'}</span>
-        <span class="row-venue-dot"></span>
+        ${others.length ? `<span>${others.join(', ')}</span><span class="row-venue-dot"></span>` : ''}
         <span>${ev.source_city || '—'}</span>
       </div>
     </div>
@@ -1277,10 +1228,9 @@ async function load() {
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched  = applySettings(data, settings);
     const now      = new Date();
-    const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
-      .filter(e => e.date && e.venue && aliasSet.has(e.venue))
+      .filter(e => e.date && eventMatchesArtist(e))
       .map(e => ({ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }))
       .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
 
@@ -1290,7 +1240,6 @@ async function load() {
     renderList(upcoming, 'events-list');
     renderArchive();
 
-    // Жанры в шапке — все жанры сайта, не только этого заведения
     const genreCounts = {};
     patched.forEach(e => { const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; });
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);

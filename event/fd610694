@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Игорь Симдянкин, Jokers Band, Рок-н-рольщики (Симферополь), в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Мероприятие, терраса Api Bistro, в Севастополе, 1 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Игорь Симдянкин, Jokers Band — Рок-н-рольщики (Симферополь), 14 августа · Местов.Нет</title>
+<title>Мероприятие — терраса Api Bistro, Севастополь, 1 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,36 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/36b08d8f">
-<meta property="og:title" content="Игорь Симдянкин, Jokers Band — Рок-н-рольщики (Симферополь), 14 августа · Местов.Нет">
-<meta property="og:description" content="Игорь Симдянкин, Jokers Band, Рок-н-рольщики (Симферополь), в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/fd610694">
+<meta property="og:title" content="Мероприятие — терраса Api Bistro, Севастополь, 1 августа · Местов.Нет">
+<meta property="og:description" content="Мероприятие, терраса Api Bistro, в Севастополе, 1 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b42317791e393ca1567b45c3ba38304d.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/ec9b00b0da421e2977fedd0b2cc13e5d.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин, Jokers Band",
-      "startDate": "2026-08-14T21:00:00+03:00",
+      "name": "терраса Api Bistro",
+      "startDate": "2026-08-01T20:20:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "терраса Api Bistro",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Игорь Симдянкин, Jokers Band"
-      },
-      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "description": "Тёплая история о семье и Тоскане: Лиам Нисон и его сын ищут не просто дом, а путь друг к другу. Атмосфера Италии, душевные моменты и лёгкий юмор — идеально для вечернего кино под звёздами",
+      "image": "/images/events/ec9b00b0da421e2977fedd0b2cc13e5d.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин, Jokers Band"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Мероприятие"}]}
 </script>
 </head>
 <body>

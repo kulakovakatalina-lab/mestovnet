@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/jam-club">
-  <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <title>у конного клуба «Золотая подкова» — афиша в Крыму · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в у конного клуба «Золотая подкова», в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/u-konnogo-kluba-zolotaya-podkova">
+  <meta property="og:title" content="у конного клуба «Золотая подкова» — афиша в Крыму · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в у конного клуба «Золотая подкова», в Крыму. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,63 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Jam Club",
+      "name": "у конного клуба «Золотая подкова»",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
+        "addressLocality": "Крым",
         "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak",
-      "startDate": "2026-08-14T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "METAL FEST",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak"
-      },
-      "image": "/images/events/0cd86d39e2b2fe110fd8fe801b3fa39a.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "EXISTENTER, Red Stars (разогрев), MEANTRAITORS, ОПГ Годзилла (Керчь) (разогрев)",
+      "name": "Анастасия Грас",
       "startDate": "2026-08-15T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club"
+        "name": "у конного клуба «Золотая подкова»"
       },
-      "description": "EXISTENTER (Москва), Red Stars на разогреве.",
+      "description": "Камерный концерт Анастасии Грас под открытым небом у конного клуба «Золотая подкова». Горы, лошади, закат и душевные песни в месте с особой историей – здесь спасают лошадей и дарят им новую жизнь.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "EXISTENTER, Red Stars (разогрев), MEANTRAITORS, ОПГ Годзилла (Керчь) (разогрев)"
+        "name": "Анастасия Грас"
       },
-      "image": "/images/events/40af1137095af62c0cdd32ab0f8fcca2.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Чёрный Кофе, Черный кофе",
-      "startDate": "2026-09-05T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "О концерте Большой сольный концерт легендарной хард-энд-хэви группы «Чёрный Кофе», во главе с фронтменом и основателем — Дмитрием Варшавским!\r\nВ программу войдут такие нетленные хиты, как: «Вольному — воля», «Владимирская Русь», «Звездный водоем», «Листья», «Светлый металл», «Переступи порог», «Леди Осень», «Это — рок!» и многие другие.\r\n\r\nТакже поклонники группы услышат новые песни, написанные Мастером мелодичного хард-рока в последние годы на стихи Александра Шаганова, Сергея Есенина, великую классику Баха, Альбинони и бессмертные песни Владимира Высоцкого.— они прозвучат в исполнении фронтмена и основателя «Чёрного Кофе» — Дмитрия Варшавского.\r\n«Чёрный кофе» — это не ностальгия, а летопись российского рока. Их дебютный студийный альбом «Переступи порог» открыл официальную дискографию русскоязычного хэви-метал-рока и оказался самым успешным проектом «перестроечной эры». Только в первые месяцы продаж он разошёлся по стране тиражом более 1 400 000 экземпляров. Аналогичный успех сопутствовал и следующему диску коллектива — «Вольному — воля».\r\n\r\nГруппа давала десятки аншлаговых выступлений ежемесячно на протяжении многих лет, но... время шло, предпочтения слушателей менялись. И только сейчас музыка hard'n'heavy обретает второе дыхание и корифеи стиля, вроде «Чёрного Кофе», обретают новую жизнь.\r\n\r\nС Дмитрием Варшавским на сцену поднимутся барабанщик Андрей Приставка и бас-гитаристка Евгения Варшавская. В таком составе группа выпустила три новых альбома за последние 10 лет.\r\n\r\nВ концерте прозвучат самые легендарные хиты группы!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Чёрный Кофе, Черный кофе"
-      },
-      "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
+      "image": "/images/events/e3c61d09dc34f10ffd495fa249c1fda9.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Jam Club"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "у конного клуба «Золотая подкова»"}]}
 </script>
   <style>
 
@@ -1093,13 +1063,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/all.html">Крым</a>
     </div>
-    <h1 class="genre-hero-title">Jam Club</h1>
+    <h1 class="genre-hero-title">у конного клуба «Золотая подкова»</h1>
     
-    <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
+    
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1111,47 +1081,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
-<script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "Jam Club";
-  var addr = "Симферополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.949566,34.09857";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.949566, 34.09857],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.949566, 34.09857], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
+
 
 <script>
-const VENUE_ALIASES = ["Jam Club", "Jam Club"];
+const VENUE_ALIASES = ["у конного клуба «Золотая подкова»", "у конного клуба «Золотая подкова»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

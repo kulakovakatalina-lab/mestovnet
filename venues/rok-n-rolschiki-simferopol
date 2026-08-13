@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 9 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
   <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 7 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 9 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики (Симферополь)"
       },
-      "description": "Jokers Band show: мировые хиты в мощном концертном звучании. Не акустика.",
+      "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
       "performer": {
         "@type": "MusicGroup",
         "name": "Игорь Симдянкин, Jokers Band"
@@ -67,6 +67,21 @@
     },
     {
       "@type": "MusicEvent",
+      "name": "Группа «Кино» в исполнении Игоря Симдянкина",
+      "startDate": "2026-08-15T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "День памяти Виктора Цоя: 36 лет как вечно живой. Большой акустический концерт группы «Кино» в исполнении харизматичного Игоря Симдянкина",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Кино» в исполнении Игоря Симдянкина"
+      },
+      "image": "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg"
+    },
+    {
+      "@type": "MusicEvent",
       "name": "Роман Куротрый",
       "startDate": "2026-08-16T21:00:00+03:00",
       "location": {
@@ -79,6 +94,21 @@
         "name": "Роман Куротрый"
       },
       "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Роман Курортный (Парень с пакетом)",
+      "startDate": "2026-08-16T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Впервые на нашей сцене Роман Курортный (Парень с пакетом) с акустической программой из любимых хитов",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Роман Курортный (Парень с пакетом)"
+      },
+      "image": "/images/events/a43614eff15d7629aeefbba9afbb8d61.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1159,7 +1189,7 @@ footer {
     
     <p class="venue-description">За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">7</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">9</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
