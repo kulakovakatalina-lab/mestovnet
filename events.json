@@ -69,8 +69,7 @@
     ],
     "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
     "post_date": "2026-08-08T12:53:03+00:00",
-    "id": "c3f264fb",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "id": "c3f264fb"
   },
   {
     "date": "2026-08-09",
@@ -427,7 +426,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
-      "/images/events/e4d4a3d49614f7252d945be5ae250084.jpg"
+      "/images/events/78b909a9498ab46cb6d1742c57db4ce2.jpg"
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
@@ -459,20 +458,19 @@
     "artist": "Игорь Симдянкин, Jokers Band",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Jokers Band show: мировые хиты в мощном концертном звучании. Не акустика.",
+    "price": "бесплатно",
+    "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "поп",
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
       "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
+      "/images/events/9ac6e1da28d4018ac8b864e652219b16.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-07-29T12:32:06+00:00",
-    "id": "36b08d8f",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "post_date": "2026-08-12T07:10:10+00:00",
+    "id": "36b08d8f"
   },
   {
     "date": "2026-08-15",
@@ -1573,7 +1571,7 @@
     "source_url": "https://t.me/usadbarodnoegnezdo/3496",
     "images": [
       "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
-      "/images/events/40975835ef03c23f372e1b9ad3c56b84.jpg"
+      "/images/events/cfe5a902593adad89e406b50dfe409fe.jpg"
     ],
     "image": "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
     "post_date": "2026-08-08T15:29:17+00:00",
@@ -1664,7 +1662,7 @@
     "source_url": "https://t.me/rocknroll_82/427",
     "images": [
       "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
-      "/images/events/ceb4d7d4c9156ca4ee3b302003001e7f.jpg"
+      "/images/events/41296aaeaa03bcd06df75644e455bbbe.jpg"
     ],
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
     "post_date": "2026-08-08T10:53:42+00:00",
@@ -6662,7 +6660,7 @@
     "source_url": "https://t.me/clubjam/1076",
     "images": [
       "/images/events/4b70b0df966bf8003b98133eca821e9f.jpg",
-      "/images/events/aa8deaf9a07631f5a75bf6374fff5cb8.jpg"
+      "/images/events/5e8321ed7489c7bc34ac38484ab911e2.jpg"
     ],
     "image": "/images/events/4b70b0df966bf8003b98133eca821e9f.jpg",
     "post_date": "2026-07-31T11:56:44+00:00",
@@ -7300,16 +7298,19 @@
     "artist": "Д.Р. Дмитрий Карпов, Андрей Смирнов, Крыша Мира, Из Крайности в Крайность, ИЧЧИ, Angle of Wonders, Убийца Мыслей, Saint Devils",
     "event_type": "концерт",
     "venue": "Jam Club",
-    "price": null,
-    "description": "Д.Р. Дмитрий Карпов & Андрей Смирнов.",
-    "source_channel": "clubjam",
+    "price": "бесплатно",
+    "description": "Совместный день рождения друзей клуба с участием музыкантов.",
     "source_city": "Симферополь",
-    "post_date": "2026-08-11T19:52:57+00:00",
-    "image": "/images/events/d0b2ad7ddb8ec55b62d5bad47a2fc3cc.jpg",
-    "images": null,
-    "source_url": "https://t.me/clubjam/1094",
-    "id": "1e4acde7",
-    "genre": "поп"
+    "source_channel": "clubjam",
+    "genre": "поп",
+    "source_url": "https://t.me/clubjam/1099",
+    "images": [
+      "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
+      "/images/events/d0b2ad7ddb8ec55b62d5bad47a2fc3cc.jpg"
+    ],
+    "image": "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
+    "post_date": "2026-08-12T10:37:31+00:00",
+    "id": "40d4008e"
   },
   {
     "date": "2026-08-14",
@@ -7623,6 +7624,147 @@
     "source_url": "https://vk.com/wall-212929583_950",
     "id": "daff3856",
     "genre": "другое"
+  },
+  {
+    "date": "2026-08-15",
+    "time": null,
+    "artist": "Группа «Кино» в исполнении Игоря Симдянкина",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "бесплатно",
+    "description": "День памяти Виктора Цоя: 36 лет как вечно живой. Большой акустический концерт группы «Кино» в исполнении харизматичного Игоря Симдянкина",
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-12T07:10:10+00:00",
+    "image": "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg",
+    "images": null,
+    "source_url": "https://t.me/rocknroll_82/459",
+    "id": "d57be3e6",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-08-16",
+    "time": null,
+    "artist": "Роман Курортный (Парень с пакетом)",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "бесплатно",
+    "description": "Впервые на нашей сцене Роман Курортный (Парень с пакетом) с акустической программой из любимых хитов",
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-12T07:10:10+00:00",
+    "image": "/images/events/a43614eff15d7629aeefbba9afbb8d61.jpg",
+    "images": null,
+    "source_url": "https://t.me/rocknroll_82/459",
+    "id": "1a6d1df6",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-08-16",
+    "time": null,
+    "artist": "Камерный оркестр «Новая Гармония»",
+    "event_type": "концерт",
+    "venue": "пещера «Мраморная»",
+    "price": null,
+    "description": "Финальный аккорд лета: два концерта в сердце горы. Камерный оркестр «Новая Гармония» под управлением маэстро Дениса Карлова подарит вам «Звуковой сплав 6».",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-12T17:02:09+00:00",
+    "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/8231",
+    "id": "e6fe7eb6",
+    "genre": "классика"
+  },
+  {
+    "date": "2026-08-23",
+    "time": null,
+    "artist": "Камерный оркестр «Новая Гармония»",
+    "event_type": "концерт",
+    "venue": "пещера «Мраморная»",
+    "price": null,
+    "description": "Финальный аккорд лета: два концерта в сердце горы. Камерный оркестр «Новая Гармония» под управлением маэстро Дениса Карлова подарит вам «Звуковой сплав 6».",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-12T17:02:09+00:00",
+    "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/8231",
+    "id": "25f2784c",
+    "genre": "классика"
+  },
+  {
+    "date": "2026-08-22",
+    "time": "17:00",
+    "artist": "итальянские песни",
+    "event_type": "вечеринка",
+    "venue": "Усадьба «Родное гнездо»",
+    "price": "6000 ₽",
+    "description": "Итальянская вечеринка с итальянскими песнями, ужином и танцами.",
+    "source_city": "Севастополь",
+    "source_channel": "rodnoegnezdo",
+    "genre": "другое",
+    "source_url": "https://t.me/usadbarodnoegnezdo/3517",
+    "images": [
+      "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
+      "/images/events/0357f70391ff1cc88ee65a1f1d16fdd0.jpg"
+    ],
+    "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
+    "post_date": "2026-08-12T17:48:04+00:00",
+    "id": "2565d6a4"
+  },
+  {
+    "date": "2026-08-01",
+    "time": "20:20",
+    "artist": null,
+    "event_type": "другое",
+    "venue": "терраса Api Bistro",
+    "price": null,
+    "description": "Тёплая история о семье и Тоскане: Лиам Нисон и его сын ищут не просто дом, а путь друг к другу. Атмосфера Италии, душевные моменты и лёгкий юмор — идеально для вечернего кино под звёздами",
+    "source_channel": "api_balaklava",
+    "source_city": "Севастополь",
+    "post_date": "2026-07-31T12:41:10+00:00",
+    "image": "/images/events/ec9b00b0da421e2977fedd0b2cc13e5d.jpg",
+    "images": null,
+    "source_url": "https://t.me/api_balaklava/1341",
+    "id": "fd610694",
+    "genre": "юмор"
+  },
+  {
+    "date": "2026-08-15",
+    "time": null,
+    "artist": "Анастасия Грас",
+    "event_type": "концерт",
+    "venue": "у конного клуба «Золотая подкова»",
+    "price": "1000 ₽",
+    "description": "Камерный концерт Анастасии Грас под открытым небом у конного клуба «Золотая подкова». Горы, лошади, закат и душевные песни в месте с особой историей – здесь спасают лошадей и дарят им новую жизнь.",
+    "source_city": "Крым",
+    "source_channel": "afisha_payberry",
+    "genre": "классика",
+    "source_url": "https://t.me/afisha_payberry/1616",
+    "images": [
+      "/images/events/e3c61d09dc34f10ffd495fa249c1fda9.jpg",
+      "/images/events/72137077ad5ad08f946770b7d3f22ff9.jpg"
+    ],
+    "image": "/images/events/e3c61d09dc34f10ffd495fa249c1fda9.jpg",
+    "post_date": "2026-08-12T10:12:43+00:00",
+    "id": "6d492f97"
+  },
+  {
+    "date": "2026-08-25",
+    "time": "19:00",
+    "artist": "StandUp Валентин Сидоров",
+    "venue": "ДК профсоюзов",
+    "event_type": "концерт",
+    "price": "от 1900 ₽",
+    "description": "О концерте Standup Валентин Сидоров – новый сольный тур! \r\n \r\nВалентин Сидоров – один из самых ярких комиков страны, чьи концерты собирают аншлаги от Москвы до Южно-Сахалинска, а всем полюбившиеся ролики с импровизацией со зрителями залетают на сотни тысяч просмотров. Актёр театра и кино, резидент Standup шоу ТНТ, участник телевизионных эфиров и популярных интернет-шоу – он едет к вам с новой программой!\r\n \r\nЮмор Валентина остроумен, а блестящая актерская игра и глубокая самоирония не оставят равнодушным самого искушенного любителя комедии. Не упустите шанс насладиться качественным юмором и, возможно, стать частью концерта!\r\n \r\nВозрастное ограничение: 18+ \r\nПри входе организаторы могут попросить предъявить оригинал паспорта и отказать в допуске без возврата стоимости билета, если посетителю не исполнилось 18 лет (ФЗ №93 от 01.05.2019).",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-13T05:39:11.612172+00:00",
+    "image": "/images/events/555b2dcb31465f132891c79308bbd773.jpg",
+    "source_url": "https://www.afisha.ru/concert/standup-valentin-sidorov-6010913/",
+    "genre": "юмор",
+    "id": "22b89eee"
   },
   {
     "date": null,

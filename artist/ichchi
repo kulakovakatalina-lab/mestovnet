@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иччи — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Иччи в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Иччи в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/ichchi">
   <meta property="og:title" content="Иччи — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Иччи в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Иччи в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Иччи"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Иччи",
-      "startDate": "2026-08-12T00:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Иччи"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Д.Р. Дмитрий Карпов & Андрей Смирнов.",
-      "image": "/images/events/d0b2ad7ddb8ec55b62d5bad47a2fc3cc.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">
