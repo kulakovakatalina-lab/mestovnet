@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 40,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 29,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 17,
+    "event_count": 21,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -74,6 +74,20 @@
     "lon": 34.163783
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 14,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -90,27 +104,14 @@
     "lon": 34.1258
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 13,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
-    "address": "",
+    "address": "сектор 6",
     "event_count": 11,
     "aliases": [
-      "El Capulco 0.0"
+      "El Capulco 0.0",
+      "El Capulco 0.0, сектор 6"
     ],
     "description": "Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ's, Scream (виниловый сет), Pasha Rhino и Gretta.",
     "desc_baseline_count": 4,
@@ -260,6 +261,23 @@
     "lon": 34.106607
   },
   {
+    "slug": "usadba-rodnoe-gnezdo",
+    "name": "Усадьба «Родное гнездо»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+      "Усадьба «Родное гнездо»",
+      "Усадьба Родное Гнездо",
+      "Усадьба Родное гнездо"
+    ],
+    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
+    "desc_baseline_count": 4,
+    "lat": 44.567516,
+    "lon": 33.728614
+  },
+  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -321,23 +339,6 @@
     "desc_baseline_count": 4,
     "lat": 44.614062,
     "lon": 33.525728
-  },
-  {
-    "slug": "usadba-rodnoe-gnezdo",
-    "name": "Усадьба «Родное гнездо»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-      "Усадьба «Родное гнездо»",
-      "Усадьба Родное Гнездо",
-      "Усадьба Родное гнездо"
-    ],
-    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
-    "desc_baseline_count": 4,
-    "lat": 44.567516,
-    "lon": 33.728614
   },
   {
     "slug": "eko-prostranstvo-ali-bair",
@@ -482,6 +483,34 @@
     "aliases": [
       "Севастополь",
       "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bar-el-capulco-0-0",
+    "name": "бар El Capulco 0.0",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "бар El Capulco 0.0"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "plyazh-kafe-van-gogh",
+    "name": "Пляж-кафе «Van Gogh»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Пляж-кафе «Van Gogh»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -726,6 +755,20 @@
     "lon": 34.132019
   },
   {
+    "slug": "mezhdunarodnyy-festival-molodezhi",
+    "name": "Международный фестиваль молодёжи",
+    "city": "Судак",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Международный фестиваль молодёжи"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "golf-pole",
     "name": "Гольф-поле",
     "city": "Севастополь",
@@ -941,13 +984,27 @@
     "lon": null
   },
   {
-    "slug": "mezhdunarodnyy-festival-molodezhi",
-    "name": "Международный фестиваль молодёжи",
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
     "city": "Судак",
     "address": "",
     "event_count": 2,
     "aliases": [
-      "Международный фестиваль молодёжи"
+      "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "lokatsiya-3-km-ot-nauchnogo",
+    "name": "Локация 3 км от Научного",
+    "city": "Научный",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Локация 3 км от Научного"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -997,13 +1054,13 @@
     "lon": null
   },
   {
-    "slug": "labirint-krasnolese",
-    "name": "Лабиринт Краснолесье",
+    "slug": "labirint",
+    "name": "Лабиринт",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Лабиринт Краснолесье"
+      "Лабиринт"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1599,20 +1656,6 @@
     "lon": null
   },
   {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Квартал культур мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "yalta",
     "name": "Ялта",
     "city": "Ялта",
@@ -1641,13 +1684,55 @@
     "lon": null
   },
   {
-    "slug": "u-konnogo-kluba-zolotaya-podkova",
-    "name": "у конного клуба «Золотая подкова»",
+    "slug": "konnyy-klub-zolotaya-podkova",
+    "name": "конный клуб «Золотая подкова»",
     "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "у конного клуба «Золотая подкова»"
+      "конный клуб «Золотая подкова»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "ekokemp-semena",
+    "name": "экокемп Семена",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "экокемп Семена"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-direktora-observatorii-v-p-nauchnyy",
+    "name": "Дом-музей директора обсерватории в п. Научный",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей директора обсерватории в п. Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
+    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "El Capulco 0.0",
+        "name": "El Capulco 0.0, сектор 6",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "«Счастливые часы» на Массандровском пляже с диджеем Gretta.",
+      "description": "Стильный летний сет, музыка, море и потрясающий закат!",
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     }
   ]
