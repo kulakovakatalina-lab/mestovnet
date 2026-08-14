@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Квартал культур мира — афиша в Судаке · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Квартал культур мира, в Судаке. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Квартал культур мира, в Судаке. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kvartal-kultur-mira">
   <meta property="og:title" content="Квартал культур мира — афиша в Судаке · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Квартал культур мира, в Судаке. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Квартал культур мира, в Судаке. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Судак",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Караоке",
+      "startDate": "2026-null-nullT00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Квартал культур мира"
+      },
+      "description": "Караоке-пауза на Международном фестивале молодёжи.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Караоке"
+      },
+      "image": "/images/events/a299817660c40f756d246bc8bb395dc0.jpg"
     }
   ]
 }
@@ -1054,7 +1069,7 @@ footer {
     
     
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

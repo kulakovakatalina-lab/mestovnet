@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Денайро — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 2 ближайших событий.">
+  <title>Денайро — концерты в Крыму, Севастополь, Крым, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым, Симферополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/denayro">
-  <meta property="og:title" content="Денайро — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым). 2 ближайших событий.">
+  <meta property="og:title" content="Денайро — концерты в Крыму, Севастополь, Крым, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Крым, Симферополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -67,7 +67,7 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Закат, костёр и музыка в Байдарской долине. В программе — хиты, проверенные временем: Кино, Жуки, Агата Кристи, Баста, Sting, Чайф и ещё много треков, от которых по телу мурашки.",
+      "description": "Закат, костёр и музыка. В программе — хиты, проверенные временем: Кино, Жуки, Агата Кристи, Баста, Sting, Чайф и ещё много треков, от которых по телу мурашки.",
       "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg"
     }
   ]
@@ -1040,7 +1040,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Денайро</h1>
     <p class="venue-description">Севастопольский музыкант: живая музыка под гитару и группа с рок-хитами — выступает и в акустике на квартирниках, и с полным электрическим составом.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
+    <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым, Симферополь</span></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
@@ -1060,7 +1060,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа 'Денайро'", "Группа «Денайро»", "Денайро", "Денайро"];
+const ARTIST_ALIASES = ["Группа 'Денайро'", "Группа «Денайро»", "Денайро", "группа «Денайро»", "Денайро"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
