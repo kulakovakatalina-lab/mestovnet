@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 33,
+    "event_count": 34,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 26,
+    "event_count": 28,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -90,6 +90,20 @@
     "lon": 34.1258
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 13,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -140,20 +154,6 @@
     "lon": null
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 10,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "sevastopolskiy-tskii",
     "name": "Севастопольский ЦКиИ",
     "city": "Севастополь",
@@ -173,9 +173,10 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 8,
+    "event_count": 9,
     "aliases": [
-      "Арт-кафе «Снежинка»"
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -197,6 +198,22 @@
     "lon": 34.09338
   },
   {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
+  },
+  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -211,6 +228,21 @@
     ],
     "description": "За последний месяц здесь сыграли 7 концертов, часть — с бесплатным входом. Небольшая площадка с постоянными резидентами: Андрей Танзю и Карина Клавихо выступали здесь по три раза, заходил и Александр Васильев. Жанрово — микс хип-хопа и этники.",
     "desc_baseline_count": 7,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "krymskiy-muzykalnyy-teatr",
+    "name": "Крымский музыкальный театр",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Крымский Музыкальный Театр",
+      "Музыкальный театр"
+    ],
+    "description": "За последние три месяца в театре прошло 5 концертов с платным входом — гастрольная площадка: заезжал SHAMAN, был премьерный вечер Ирины Круг, играли финалисты «ВИА Суперстар» — «Лесоповал».",
+    "desc_baseline_count": 5,
     "lat": null,
     "lon": null
   },
@@ -260,21 +292,6 @@
     "lon": 33.525728
   },
   {
-    "slug": "krymskiy-muzykalnyy-teatr",
-    "name": "Крымский музыкальный театр",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Крымский Музыкальный Театр",
-      "Музыкальный театр"
-    ],
-    "description": "За последние три месяца в театре прошло 5 концертов с платным входом — гастрольная площадка: заезжал SHAMAN, был премьерный вечер Ирины Круг, играли финалисты «ВИА Суперстар» — «Лесоповал».",
-    "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "eko-prostranstvo-ali-bair",
     "name": "Эко-пространство «Али-Баир»",
     "city": "Севастополь",
@@ -308,21 +325,6 @@
     "lon": null
   },
   {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Винзавод Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
-  },
-  {
     "slug": "usadba-rodnoe-gnezdo",
     "name": "Усадьба «Родное гнездо»",
     "city": "Севастополь",
@@ -338,6 +340,20 @@
     "desc_baseline_count": 4,
     "lat": 44.567516,
     "lon": 33.728614
+  },
+  {
+    "slug": "narodnyy-bar",
+    "name": "Народный бар",
+    "city": "Ялта",
+    "address": "на ул. Ломоносова, 15",
+    "event_count": 5,
+    "aliases": [
+      "Народный бар"
+    ],
+    "description": "За последний месяц здесь прошло 4 концерта с платным входом. Играла группа «Карбид» с трибьютом Rammstein — лучшие хиты и неожиданные аранжировки немецких индастриал-рокеров. Основа афиши — панк-рок.",
+    "desc_baseline_count": 4,
+    "lat": 44.49128,
+    "lon": 34.150075
   },
   {
     "slug": "krongs",
@@ -385,18 +401,18 @@
     "lon": 33.435348
   },
   {
-    "slug": "narodnyy-bar",
-    "name": "Народный бар",
-    "city": "Ялта",
-    "address": "на ул. Ломоносова, 15",
+    "slug": "belbek",
+    "name": "Белбек",
+    "city": "Севастополь",
+    "address": "",
     "event_count": 4,
     "aliases": [
-      "Народный бар"
+      "Белбек"
     ],
-    "description": "За последний месяц здесь прошло 4 концерта с платным входом. Играла группа «Карбид» с трибьютом Rammstein — лучшие хиты и неожиданные аранжировки немецких индастриал-рокеров. Основа афиши — панк-рок.",
+    "description": "За последний месяц здесь прошло 4 концерта, часть — с бесплатным входом. «День свободного творчества» с открытым микрофоном, мастер-классами и детской зоной соседствует с камерным поэтическим квартирником «для ценителей тишины и глубины».",
     "desc_baseline_count": 4,
-    "lat": 44.49128,
-    "lon": 34.150075
+    "lat": 44.684306,
+    "lon": 33.69919
   },
   {
     "slug": "dvorets-dyulber",
@@ -427,6 +443,20 @@
     "desc_baseline_count": 5,
     "lat": 44.959953,
     "lon": 34.097093
+  },
+  {
+    "slug": "snezhinka",
+    "name": "Снежинка",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Снежинка"
+    ],
+    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
+    "desc_baseline_count": 1,
+    "lat": 44.606638,
+    "lon": 33.522078
   },
   {
     "slug": "btr-bar-tyazhelogo-roka",
@@ -486,18 +516,34 @@
     "lon": 33.520673
   },
   {
-    "slug": "snezhinka",
-    "name": "Снежинка",
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "",
     "event_count": 3,
     "aliases": [
-      "Снежинка"
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
     ],
-    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
-    "desc_baseline_count": 1,
-    "lat": 44.606638,
-    "lon": 33.522078
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "santa-barbara",
+    "name": "Санта Барбара",
+    "city": "Симферополь",
+    "address": "Екатерининская 28",
+    "event_count": 3,
+    "aliases": [
+      "Santa Barbara",
+      "Санта Барбара (Екатерининская 28), Симферополь"
+    ],
+    "description": "За последние три месяца здесь прошло 3 концерта с платным входом. Тут тоже проходит «Музыкальное лото» с угадыванием хитов и караоке-атмосферой, а из необычного — премьера комедийного моноспектакля «Такое Лето» актрисы и комика Елены Новиковой.",
+    "desc_baseline_count": 3,
+    "lat": 44.953414,
+    "lon": 34.095164
   },
   {
     "slug": "krymskaya-astrofizicheskaya-observatoriya",
@@ -530,6 +576,21 @@
     "lon": 33.359537
   },
   {
+    "slug": "balagan-38",
+    "name": "Балаган 38",
+    "city": "Севастополь",
+    "address": "ПОР 38/7",
+    "event_count": 3,
+    "aliases": [
+      "Балаган 38",
+      "Балаган 38 (ПОР 38/7), Севастополь"
+    ],
+    "description": "За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.",
+    "desc_baseline_count": 3,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "bts-tsarskaya-pristan",
     "name": "БЦ «Царская Пристань»",
     "city": "Севастополь",
@@ -543,20 +604,6 @@
     "desc_baseline_count": 3,
     "lat": 44.597345,
     "lon": 33.527468
-  },
-  {
-    "slug": "belbek",
-    "name": "Белбек",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Белбек"
-    ],
-    "description": "За последний месяц здесь прошло 4 концерта, часть — с бесплатным входом. «День свободного творчества» с открытым микрофоном, мастер-классами и детской зоной соседствует с камерным поэтическим квартирником «для ценителей тишины и глубины».",
-    "desc_baseline_count": 4,
-    "lat": 44.684306,
-    "lon": 33.69919
   },
   {
     "slug": "otel-akvamarin",
@@ -635,6 +682,48 @@
     "lon": 34.132019
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Севастополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "golf-pole",
+    "name": "Гольф-поле",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Гольф-поле"
+    ],
+    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "zvezdnyy",
+    "name": "Звездный",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Звездный"
+    ],
+    "description": "Концертный зал «Звёздный» — главная концертная площадка Феодосии на 1300 мест.",
+    "desc_baseline_count": 2,
+    "lat": 45.038776,
+    "lon": 35.381128
+  },
+  {
     "slug": "koktebel-bereg-chernogo-morya",
     "name": "Коктебель (берег Чёрного моря)",
     "city": "Коктебель",
@@ -663,20 +752,6 @@
     "lon": null
   },
   {
-    "slug": "zvezdnyy",
-    "name": "Звездный",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Звездный"
-    ],
-    "description": "Концертный зал «Звёздный» — главная концертная площадка Феодосии на 1300 мест.",
-    "desc_baseline_count": 2,
-    "lat": 45.038776,
-    "lon": 35.381128
-  },
-  {
     "slug": "russkiy-teatr-im-gorkogo",
     "name": "Русский театр им. Горького",
     "city": "Симферополь",
@@ -690,20 +765,6 @@
     "desc_baseline_count": 2,
     "lat": 44.949797,
     "lon": 34.096364
-  },
-  {
-    "slug": "golf-pole",
-    "name": "Гольф-поле",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Гольф-поле"
-    ],
-    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
-    "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "molodost",
@@ -720,49 +781,6 @@
     "lon": 33.480956
   },
   {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан 'У Чёрного моря'",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Севастополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "anapskiy-rayon-supseh",
-    "name": "АНАПСКИЙ РАЙОН, СУПСЕХ",
-    "city": "Крым",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "АНАПСКИЙ РАЙОН, СУПСЕХ"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "gornaya-syrovarnya",
     "name": "Горная сыроварня",
     "city": "Алушта",
@@ -776,6 +794,21 @@
     "desc_baseline_count": 2,
     "lat": 44.740166,
     "lon": 34.398636
+  },
+  {
+    "slug": "chayka-na-plyazhe",
+    "name": "Чайка на Пляже",
+    "city": "Ялта",
+    "address": "Дражинского 50Б",
+    "event_count": 2,
+    "aliases": [
+      "Чайка на Пляже",
+      "Чайка на Пляже (Дражинского 50Б), Ялта"
+    ],
+    "description": "Прибрежный ресторан в Ялте на улице Дражинского: днём — с видом на море, вечером — клуб-караоке у самой береговой линии. Здесь проходят интерактивные форматы вроде «Музыкального лото» и DJ-сеты (например диджей Поздняков — дип-хаус и тек-хаус).",
+    "desc_baseline_count": 2,
+    "lat": 44.501937,
+    "lon": 34.188862
   },
   {
     "slug": "nikitskiy-botanicheskiy-sad",
@@ -864,6 +897,48 @@
     "lon": 34.167981
   },
   {
+    "slug": "anapskiy-rayon-supseh",
+    "name": "АНАПСКИЙ РАЙОН, СУПСЕХ",
+    "city": "Крым",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "АНАПСКИЙ РАЙОН, СУПСЕХ"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "novoulyanovka-belbekskaya-dolina",
+    "name": "Новоульяновка, Бельбекская долина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Новоульяновка, Бельбекская долина"
+    ],
+    "description": "Новоульяновка в Бельбекской долине — место проведения выездных звуковых практик и концертов.",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "nebar",
+    "name": "Nebar",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Nebar"
+    ],
+    "description": "Nebar — бар и ночной клуб в центре Севастополя с танцполом, живой музыкой и европейской кухней.",
+    "desc_baseline_count": 1,
+    "lat": 44.601019,
+    "lon": 33.524713
+  },
+  {
     "slug": "kontsertnaya-ploschadka-more",
     "name": "Концертная площадка МОРЕ",
     "city": "Коктебель",
@@ -892,48 +967,6 @@
     "lon": null
   },
   {
-    "slug": "nebar",
-    "name": "Nebar",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Nebar"
-    ],
-    "description": "Nebar — бар и ночной клуб в центре Севастополя с танцполом, живой музыкой и европейской кухней.",
-    "desc_baseline_count": 1,
-    "lat": 44.601019,
-    "lon": 33.524713
-  },
-  {
-    "slug": "art-studiya-faza",
-    "name": "Арт-студия «ФАЗА»",
-    "city": "Севастополь",
-    "address": "ул. Кулакова, 84",
-    "event_count": 1,
-    "aliases": [
-      "Арт-студия «ФАЗА», ул. Кулакова, 84"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "na-prirode",
-    "name": "на природе",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "на природе"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "rok-n-rolschiki",
     "name": "Рок-н-рольщики",
     "city": "Симферополь",
@@ -946,90 +979,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "teplo-tvoya-territoriya",
-    "name": "ТЕпЛО. Твоя территория",
-    "city": "Севастополь",
-    "address": "ул. Поликуровская, 25",
-    "event_count": 1,
-    "aliases": [
-      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "yoga-hall-ashram",
-    "name": "Yoga Hall Ashram",
-    "city": "Севастополь",
-    "address": "ул. Богдана Хмельницкого, 20",
-    "event_count": 1,
-    "aliases": [
-      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "dom-muzey-e-nagaevskoy-i-a-romma",
-    "name": "Дом‑музей Е. Нагаевской и А. Ромма",
-    "city": "Бахчисарай",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом‑музей Е. Нагаевской и А. Ромма"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "volgograd",
-    "name": "Волгоград",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Волгоград"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "restoran-motivy",
-    "name": "Ресторан «Мотивы»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Ресторан «Мотивы»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "santa-barbara",
-    "name": "Санта Барбара",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Santa Barbara"
-    ],
-    "description": "За последние три месяца здесь прошло 3 концерта с платным входом. Тут тоже проходит «Музыкальное лото» с угадыванием хитов и караоке-атмосферой, а из необычного — премьера комедийного моноспектакля «Такое Лето» актрисы и комика Елены Новиковой.",
-    "desc_baseline_count": 3,
-    "lat": 44.953414,
-    "lon": 34.095164
   },
   {
     "slug": "ribiza",
@@ -1046,20 +995,6 @@
     "lon": 34.100402
   },
   {
-    "slug": "balagan-38",
-    "name": "Балаган 38",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Балаган 38"
-    ],
-    "description": "За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.",
-    "desc_baseline_count": 3,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "antikvarno-hudozhestvennaya-galereya-stiks",
     "name": "Антикварно-художественная галерея «Стикс»",
     "city": "Ялта",
@@ -1072,20 +1007,6 @@
     "desc_baseline_count": 1,
     "lat": 44.496812,
     "lon": 34.172528
-  },
-  {
-    "slug": "chayka-na-plyazhe",
-    "name": "Чайка на Пляже",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Чайка на Пляже"
-    ],
-    "description": "Прибрежный ресторан в Ялте на улице Дражинского: днём — с видом на море, вечером — клуб-караоке у самой береговой линии. Здесь проходят интерактивные форматы вроде «Музыкального лото» и DJ-сеты (например диджей Поздняков — дип-хаус и тек-хаус).",
-    "desc_baseline_count": 2,
-    "lat": 44.501937,
-    "lon": 34.188862
   },
   {
     "slug": "zelenyy-kordon-yablonevyy-sad-belbekskaya-dolina",
@@ -1284,6 +1205,20 @@
     "lon": 34.143826
   },
   {
+    "slug": "lucky-winery",
+    "name": "Lucky Winery",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Lucky Winery"
+    ],
+    "description": "Lucky Winery — органическая винодельня в Бахчисарае с производством крымских вин и рестораном.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "krymskiy-etnograficheskiy-muzey",
     "name": "Крымский этнографический музей",
     "city": "Симферополь",
@@ -1326,6 +1261,34 @@
     "lon": 33.493306
   },
   {
+    "slug": "level-beach-club",
+    "name": "Level Beach Club",
+    "city": "Симферополь",
+    "address": "Гурзуфская 9",
+    "event_count": 1,
+    "aliases": [
+      "Level Beach Club (Гурзуфская 9), Симферополь"
+    ],
+    "description": "Пляжный клуб с двумя крытыми подогреваемыми бассейнами в Симферополе на Гурзуфской улице. Работает в летний сезон и предлагает зоны отдыха, детскую анимацию и ресторан.",
+    "desc_baseline_count": 1,
+    "lat": 44.945577,
+    "lon": 34.130878
+  },
+  {
+    "slug": "art-rezidentsiya-faza",
+    "name": "Арт-резиденция ФАЗА",
+    "city": "Севастополь",
+    "address": "Кулакова 84",
+    "event_count": 1,
+    "aliases": [
+      "Арт-резиденция ФАЗА, Кулакова 84"
+    ],
+    "description": "Арт-студия и выставочный центр в Севастополе на улице Кулакова, предлагающая мастер-классы по живописи, акварели, графике и другим художественным техникам. Работает более пяти лет и принимает как взрослых, так и детей.",
+    "desc_baseline_count": 1,
+    "lat": 44.601701,
+    "lon": 33.520799
+  },
+  {
     "slug": "fadini",
     "name": "Fadini",
     "city": "Севастополь",
@@ -1335,6 +1298,20 @@
       "Fadini"
     ],
     "description": "Камерная площадка в Севастополе для вечеров живой музыки — например выступление вокалистки Татьяны Асланиди с гитаристом Александром Санчесом.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "api-balaklava",
+    "name": "API Balaklava",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "API Balaklava"
+    ],
+    "description": "API Balaklava — бутик-отель среди виноградников с бистро-баром и видом на горы, в 10 минутах от Балаклавы.",
     "desc_baseline_count": 1,
     "lat": null,
     "lon": null
@@ -1368,6 +1345,48 @@
     "lon": 33.524292
   },
   {
+    "slug": "monro",
+    "name": "Монро",
+    "city": "Симферополь",
+    "address": "Кирова 27",
+    "event_count": 1,
+    "aliases": [
+      "Монро (Кирова 27), Симферополь"
+    ],
+    "description": "Ресторан-клуб на проспекте Кирова в Симферополе, предлагающий блюда европейской и азиатской кухни, а также обширную барную карту. Вечером проводятся музыкальные и развлекательные мероприятия.",
+    "desc_baseline_count": 1,
+    "lat": 44.951237,
+    "lon": 34.102476
+  },
+  {
+    "slug": "teatr-imeni-borisa-lavreneva",
+    "name": "Театр имени Бориса Лавренёва",
+    "city": "Севастополь",
+    "address": "площадь Ушакова, у Матросского клуба",
+    "event_count": 1,
+    "aliases": [
+      "Театр имени Бориса Лавренёва, площадь Ушакова, у Матросского клуба"
+    ],
+    "description": "Драматический театр Черноморского флота, основанный в 1932 году и с 1979 года носящий имя писателя-мариниста Бориса Лавренёва. Располагается в историческом здании Матросского клуба на площади Ушакова с характерными курантами на фасаде.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "sudakskaya-krepost",
+    "name": "Судакская крепость",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Судакская крепость"
+    ],
+    "description": "Судакская (Генуэзская) крепость XIV–XV веков — музей-заповедник и площадка для рыцарских фестивалей.",
+    "desc_baseline_count": 1,
+    "lat": 44.843669,
+    "lon": 34.956543
+  },
+  {
     "slug": "egorovskiy-zal-vinzavoda-massandra",
     "name": "Егоровский зал винзавода Массандра",
     "city": "Ялта",
@@ -1378,6 +1397,160 @@
     ],
     "description": "Винзавод «Массандра» — один из старейших и известнейших винных заводов Крыма с историческими подвалами.",
     "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "yoga-hall-ashram",
+    "name": "Yoga Hall Ashram",
+    "city": "Севастополь",
+    "address": "ул. Богдана Хмельницкого, 20",
+    "event_count": 1,
+    "aliases": [
+      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teplo-tvoya-territoriya",
+    "name": "ТЕпЛО. Твоя территория",
+    "city": "Севастополь",
+    "address": "ул. Поликуровская, 25",
+    "event_count": 1,
+    "aliases": [
+      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "art-studiya-faza",
+    "name": "Арт-студия «ФАЗА»",
+    "city": "Севастополь",
+    "address": "ул. Кулакова, 84",
+    "event_count": 1,
+    "aliases": [
+      "Арт-студия «ФАЗА», ул. Кулакова, 84"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-e-nagaevskoy-i-a-romma",
+    "name": "Дом‑музей Е. Нагаевской и А. Ромма",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом‑музей Е. Нагаевской и А. Ромма"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "restoran-motivy",
+    "name": "Ресторан «Мотивы»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Ресторан «Мотивы»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "na-prirode",
+    "name": "на природе",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "на природе"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "volgograd",
+    "name": "Волгоград",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Волгоград"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "baydarskaya-dolina",
+    "name": "Байдарская долина",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Байдарская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn",
+    "name": "Крымский республиканский клинический госпиталь для ветеранов войн",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Крымский республиканский клинический госпиталь для ветеранов войн"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kontserty-krym",
+    "name": "Концерты Крым",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концерты Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "mezhdunarodnyy-festival-molodezhi",
+    "name": "Международный фестиваль молодёжи",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Международный фестиваль молодёжи"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   }
