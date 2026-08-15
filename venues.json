@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 34,
+    "event_count": 41,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 29,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -26,6 +26,20 @@
     "desc_baseline_count": 34,
     "lat": 44.614484,
     "lon": 33.525136
+  },
+  {
+    "slug": "rok-n-rolschiki-simferopol",
+    "name": "Рок-н-рольщики (Симферополь)",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 23,
+    "aliases": [
+      "Рок-н-рольщики (Симферополь)"
+    ],
+    "description": "За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.",
+    "desc_baseline_count": 13,
+    "lat": 44.951251,
+    "lon": 34.098202
   },
   {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
@@ -44,20 +58,6 @@
     "lon": null
   },
   {
-    "slug": "rok-n-rolschiki-simferopol",
-    "name": "Рок-н-рольщики (Симферополь)",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 15,
-    "aliases": [
-      "Рок-н-рольщики (Симферополь)"
-    ],
-    "description": "За последний месяц здесь прошло 13 концертов — почти сплошь рок, акустика и трибьюты. Играли программы «Короля и Шута» и «Сектора Газа», прошли дегустации домашних настоек и караоке с ведущим. Формат камерный, новые исполнители на сцене почти каждую неделю.",
-    "desc_baseline_count": 13,
-    "lat": 44.951251,
-    "lon": 34.098202
-  },
-  {
     "slug": "kontsertnyy-zal-yubileynyy",
     "name": "Концертный зал «Юбилейный»",
     "city": "Ялта",
@@ -72,6 +72,20 @@
     "desc_baseline_count": 12,
     "lat": 44.492898,
     "lon": 34.163783
+  },
+  {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 14,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
   },
   {
     "slug": "depo",
@@ -90,27 +104,14 @@
     "lon": 34.1258
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 13,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
-    "address": "",
+    "address": "сектор 6",
     "event_count": 11,
     "aliases": [
-      "El Capulco 0.0"
+      "El Capulco 0.0",
+      "El Capulco 0.0, сектор 6"
     ],
     "description": "Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ's, Scream (виниловый сет), Pasha Rhino и Gretta.",
     "desc_baseline_count": 4,
@@ -198,6 +199,37 @@
     "lon": 34.09338
   },
   {
+    "slug": "mramornaya-peschera",
+    "name": "Мраморная пещера",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "Мраморная пещера",
+      "Пещера «Мраморная»",
+      "Пещера Мраморная",
+      "пещера «Мраморная»"
+    ],
+    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
+    "desc_baseline_count": 4,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "organnom-zale-livadia",
+    "name": "Органном зале \"LIVADIA\"",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "Органном зале \"LIVADIA\""
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinzavod-massandra",
     "name": "Винзавод Массандра",
     "city": "Ялта",
@@ -212,6 +244,38 @@
     "desc_baseline_count": 3,
     "lat": 44.497666,
     "lon": 34.1713
+  },
+  {
+    "slug": "dvorets-kultury-profsoyuzov",
+    "name": "Дворец культуры профсоюзов",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "ДК профсоюзов",
+      "Дворец культуры профсоюзов"
+    ],
+    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
+    "desc_baseline_count": 5,
+    "lat": 44.964773,
+    "lon": 34.106607
+  },
+  {
+    "slug": "usadba-rodnoe-gnezdo",
+    "name": "Усадьба «Родное гнездо»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+      "Усадьба «Родное гнездо»",
+      "Усадьба Родное Гнездо",
+      "Усадьба Родное гнездо"
+    ],
+    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
+    "desc_baseline_count": 4,
+    "lat": 44.567516,
+    "lon": 33.728614
   },
   {
     "slug": "art-kovcheg",
@@ -245,21 +309,6 @@
     "desc_baseline_count": 5,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "dvorets-kultury-profsoyuzov",
-    "name": "Дворец культуры профсоюзов",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "ДК профсоюзов",
-      "Дворец культуры профсоюзов"
-    ],
-    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
-    "desc_baseline_count": 5,
-    "lat": 44.964773,
-    "lon": 34.106607
   },
   {
     "slug": "dom-muzey-a-p-chehova-belaya-dacha",
@@ -307,39 +356,6 @@
     "desc_baseline_count": 4,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "mramornaya-peschera",
-    "name": "Мраморная пещера",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Мраморная пещера",
-      "Пещера «Мраморная»",
-      "Пещера Мраморная"
-    ],
-    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
-    "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "usadba-rodnoe-gnezdo",
-    "name": "Усадьба «Родное гнездо»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-      "Усадьба «Родное гнездо»",
-      "Усадьба Родное Гнездо",
-      "Усадьба Родное гнездо"
-    ],
-    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
-    "desc_baseline_count": 4,
-    "lat": 44.567516,
-    "lon": 33.728614
   },
   {
     "slug": "narodnyy-bar",
@@ -415,6 +431,20 @@
     "lon": 33.69919
   },
   {
+    "slug": "gastrodvor",
+    "name": "Гастродвор",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Гастродвор"
+    ],
+    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
+    "desc_baseline_count": 2,
+    "lat": 44.494636,
+    "lon": 34.166005
+  },
+  {
     "slug": "dvorets-dyulber",
     "name": "Дворец «Дюльбер»",
     "city": "Севастополь",
@@ -443,6 +473,66 @@
     "desc_baseline_count": 5,
     "lat": 44.959953,
     "lon": 34.097093
+  },
+  {
+    "slug": "otel-yalta-inturist",
+    "name": "Отель «Ялта-Интурист»",
+    "city": "Ялта",
+    "address": "Прогулочная аллея",
+    "event_count": 4,
+    "aliases": [
+      "Отель «Ялта-Интурист»",
+      "Отель Ялта-Интурист, Прогулочная аллея",
+      "Пляж «Изумрудный», Отель «Ялта-Интурист»",
+      "Прогулочная аллея отеля Ялта-Интурист"
+    ],
+    "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
+    "desc_baseline_count": 5,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 4,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bar-el-capulco-0-0",
+    "name": "бар El Capulco 0.0",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "бар El Capulco 0.0"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "plyazh-kafe-van-gogh",
+    "name": "Пляж-кафе «Van Gogh»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Пляж-кафе «Van Gogh»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "snezhinka",
@@ -650,22 +740,6 @@
     "lon": null
   },
   {
-    "slug": "otel-yalta-inturist",
-    "name": "Отель «Ялта-Интурист»",
-    "city": "Ялта",
-    "address": "Прогулочная аллея",
-    "event_count": 3,
-    "aliases": [
-      "Отель Ялта-Интурист, Прогулочная аллея",
-      "Пляж «Изумрудный», Отель «Ялта-Интурист»",
-      "Прогулочная аллея отеля Ялта-Интурист"
-    ],
-    "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
-    "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "palmira-palace",
     "name": "Palmira Palace",
     "city": "Ялта",
@@ -682,13 +756,13 @@
     "lon": 34.132019
   },
   {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
+    "slug": "mezhdunarodnyy-festival-molodezhi",
+    "name": "Международный фестиваль молодёжи",
+    "city": "Судак",
     "address": "",
     "event_count": 3,
     "aliases": [
-      "Севастополь"
+      "Международный фестиваль молодёжи"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -767,6 +841,20 @@
     "lon": 34.096364
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "molodost",
     "name": "Молодость",
     "city": "Севастополь",
@@ -839,20 +927,6 @@
     "lon": 34.188862
   },
   {
-    "slug": "gastrodvor",
-    "name": "Гастродвор",
-    "city": "Крым",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Гастродвор"
-    ],
-    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
-    "desc_baseline_count": 2,
-    "lat": 44.494636,
-    "lon": 34.166005
-  },
-  {
     "slug": "paniya-park",
     "name": "Пания Парк",
     "city": "Севастополь",
@@ -911,6 +985,34 @@
     "lon": null
   },
   {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "lokatsiya-3-km-ot-nauchnogo",
+    "name": "Локация 3 км от Научного",
+    "city": "Научный",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Локация 3 км от Научного"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "novoulyanovka-belbekskaya-dolina",
     "name": "Новоульяновка, Бельбекская долина",
     "city": "Севастополь",
@@ -953,6 +1055,20 @@
     "lon": null
   },
   {
+    "slug": "prostranstvo-labirinta-krasnolesya",
+    "name": "пространство лабиринта Краснолесья",
+    "city": "Белогорск",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "пространство лабиринта Краснолесья"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "oranzhereya",
     "name": "Оранжерея",
     "city": "Симферополь",
@@ -962,20 +1078,6 @@
       "Оранжерея"
     ],
     "description": "",
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
@@ -1527,6 +1629,146 @@
     "lon": null
   },
   {
+    "slug": "ekokemp-semena-belbekskaya-dolina",
+    "name": "экокемп Семена, Бельбекская долина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "экокемп Семена, Бельбекская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kinozal-krymskogo-kinokontsertnogo-obedineniya",
+    "name": "кинозал Крымского киноконцертного объединения",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "кинозал Крымского киноконцертного объединения"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "yalta",
+    "name": "Ялта",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Ялта"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "terrasa-api-bistro",
+    "name": "терраса Api Bistro",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "терраса Api Bistro"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "konnyy-klub-zolotaya-podkova",
+    "name": "конный клуб «Золотая подкова»",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "конный клуб «Золотая подкова»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "ekokemp-semena",
+    "name": "экокемп Семена",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "экокемп Семена"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-direktora-observatorii-v-p-nauchnyy",
+    "name": "Дом-музей директора обсерватории в п. Научный",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей директора обсерватории в п. Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
+    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "afisha-kryma",
+    "name": "Афиша Крыма",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Афиша Крыма"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinodelnya",
+    "name": "Винодельня",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Винодельня"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "kontserty-krym",
     "name": "Концерты Крым",
     "city": "Крым",
@@ -1541,13 +1783,13 @@
     "lon": null
   },
   {
-    "slug": "mezhdunarodnyy-festival-molodezhi",
-    "name": "Международный фестиваль молодёжи",
-    "city": "Судак",
+    "slug": "art-klaster-tavrida",
+    "name": "арт-кластер \"Таврида\"",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Международный фестиваль молодёжи"
+      "арт-кластер \"Таврида\""
     ],
     "description": null,
     "desc_baseline_count": 0,

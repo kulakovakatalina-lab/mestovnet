@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Gretta, El Capulco 0.0, в Ялте, 15 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Gretta, El Capulco 0.0, сектор 6, в Ялте, 15 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gretta — El Capulco 0.0, Ялта, 15 августа · Местов.Нет</title>
+<title>Gretta — El Capulco 0.0, сектор 6, Ялта, 15 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/9135013e">
-<meta property="og:title" content="Gretta — El Capulco 0.0, Ялта, 15 августа · Местов.Нет">
-<meta property="og:description" content="Gretta, El Capulco 0.0, в Ялте, 15 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Gretta — El Capulco 0.0, сектор 6, Ялта, 15 августа · Местов.Нет">
+<meta property="og:description" content="Gretta, El Capulco 0.0, сектор 6, в Ялте, 15 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg">
 <script type="application/ld+json">
@@ -973,14 +973,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-08-15T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "El Capulco 0.0",
+        "name": "El Capulco 0.0, сектор 6",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "«Счастливые часы» на Массандровском пляже с диджеем Gretta.",
+      "description": "Стильный летний сет, музыка, море и потрясающий закат!",
       "performer": {
         "@type": "MusicGroup",
         "name": "Gretta"

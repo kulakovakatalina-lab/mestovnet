@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Santier — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Santier в Крыму (Ялта). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Santier в Крыму (Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/santier">
   <meta property="og:title" content="Santier — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Santier в Крыму (Ялта). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Santier в Крыму (Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,46 @@
     {
       "@type": "MusicGroup",
       "name": "Santier"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Santier",
+      "startDate": "2026-08-29T14:00–22:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Santier"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "бар El Capulco 0.0",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Выступление Dim K. и Happy Paul.",
+      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Santier",
+      "startDate": "2026-08-30T18:00–22:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Santier"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Пляж-кафе «Van Gogh»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Выступление Santier.",
+      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
     }
   ]
 }
@@ -1002,7 +1042,7 @@ footer {
     <p class="venue-description">Диджей пляж-кафе Van Gogh на Массандровском пляже в Ялте — дневные сеты у моря в течение всего лета.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
-  
+  <div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

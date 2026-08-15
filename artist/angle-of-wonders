@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Angle Of Wonders", "Angle Of Wonders"];
+const ARTIST_ALIASES = ["Angle Of Wonders", "Angle of Wonders", "Angle Of Wonders"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
