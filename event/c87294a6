@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3», пространство лабиринта Краснолесья, в Белогорске, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джаз в лабиринте, Анна Шакель, Jazz Trio «А3» — пространство лабиринта Краснолесья, Белогорск, 16 августа · Местов.Нет</title>
+<title>Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,38 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/a719b813">
-<meta property="og:title" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3» — пространство лабиринта Краснолесья, Белогорск, 16 августа · Местов.Нет">
-<meta property="og:description" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3», пространство лабиринта Краснолесья, в Белогорске, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/c87294a6">
+<meta property="og:title" content="Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет">
+<meta property="og:description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»",
-      "startDate": "2026-08-16T17:30:00+03:00",
+      "name": "Игорь Симдянкин с «КиШом»",
+      "startDate": "2026-08-29T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "пространство лабиринта Краснолесья",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Белогорск",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Джазовый вечер с участием Jazz Trio «А3» и Анны Шакель.",
+      "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»"
-      },
-      "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg"
+        "name": "Игорь Симдянкин с «КиШом»"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Белогорск", "item": "https://mestov.net/cities/belogorsk.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин с «КиШом»"}]}
 </script>
 </head>
 <body>

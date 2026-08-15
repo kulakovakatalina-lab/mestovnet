@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 40,
+    "event_count": 41,
     "aliases": [
       "Jam Club"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 21,
+    "event_count": 23,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -475,6 +475,23 @@
     "lon": 34.097093
   },
   {
+    "slug": "otel-yalta-inturist",
+    "name": "Отель «Ялта-Интурист»",
+    "city": "Ялта",
+    "address": "Прогулочная аллея",
+    "event_count": 4,
+    "aliases": [
+      "Отель «Ялта-Интурист»",
+      "Отель Ялта-Интурист, Прогулочная аллея",
+      "Пляж «Изумрудный», Отель «Ялта-Интурист»",
+      "Прогулочная аллея отеля Ялта-Интурист"
+    ],
+    "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
+    "desc_baseline_count": 5,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "sevastopol",
     "name": "Севастополь",
     "city": "Севастополь",
@@ -723,22 +740,6 @@
     "lon": null
   },
   {
-    "slug": "otel-yalta-inturist",
-    "name": "Отель «Ялта-Интурист»",
-    "city": "Ялта",
-    "address": "Прогулочная аллея",
-    "event_count": 3,
-    "aliases": [
-      "Отель Ялта-Интурист, Прогулочная аллея",
-      "Пляж «Изумрудный», Отель «Ялта-Интурист»",
-      "Прогулочная аллея отеля Ялта-Интурист"
-    ],
-    "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
-    "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "palmira-palace",
     "name": "Palmira Palace",
     "city": "Ялта",
@@ -838,6 +839,20 @@
     "desc_baseline_count": 2,
     "lat": 44.949797,
     "lon": 34.096364
+  },
+  {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "molodost",
@@ -1054,13 +1069,13 @@
     "lon": null
   },
   {
-    "slug": "labirint",
-    "name": "Лабиринт",
-    "city": "Севастополь",
+    "slug": "prostranstvo-labirinta-krasnolesya",
+    "name": "пространство лабиринта Краснолесья",
+    "city": "Белогорск",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Лабиринт"
+      "пространство лабиринта Краснолесья"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1077,20 +1092,6 @@
       "Оранжерея"
     ],
     "description": "",
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
@@ -1733,6 +1734,34 @@
     "event_count": 1,
     "aliases": [
       "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "afisha-kryma",
+    "name": "Афиша Крыма",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Афиша Крыма"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinodelnya",
+    "name": "Винодельня",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Винодельня"
     ],
     "description": null,
     "desc_baseline_count": 0,

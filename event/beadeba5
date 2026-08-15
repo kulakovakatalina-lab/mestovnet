@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3», пространство лабиринта Краснолесья, в Белогорске, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джедже, Anjelina, Мали, Отель «Ялта-Интурист», в Ялте, 14 августа, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джаз в лабиринте, Анна Шакель, Jazz Trio «А3» — пространство лабиринта Краснолесья, Белогорск, 16 августа · Местов.Нет</title>
+<title>Джедже, Anjelina, Мали — Отель «Ялта-Интурист», 14 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/a719b813">
-<meta property="og:title" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3» — пространство лабиринта Краснолесья, Белогорск, 16 августа · Местов.Нет">
-<meta property="og:description" content="Джаз в лабиринте, Анна Шакель, Jazz Trio «А3», пространство лабиринта Краснолесья, в Белогорске, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/beadeba5">
+<meta property="og:title" content="Джедже, Anjelina, Мали — Отель «Ялта-Интурист», 14 августа · Местов.Нет">
+<meta property="og:description" content="Джедже, Anjelina, Мали, Отель «Ялта-Интурист», в Ялте, 14 августа, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»",
-      "startDate": "2026-08-16T17:30:00+03:00",
+      "name": "Джедже, Anjelina, Мали",
+      "startDate": "2026-08-14T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "пространство лабиринта Краснолесья",
+        "name": "Отель «Ялта-Интурист»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Белогорск",
+          "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Джазовый вечер с участием Jazz Trio «А3» и Анны Шакель.",
+      "description": "В рамках летнего тура по Крыму представители молодого поколения артистов Anjelina, Мали и Джедже остановились в отеле «Ялта-Интурист».",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»"
+        "name": "Джедже, Anjelina, Мали"
       },
-      "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg"
+      "image": "/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Белогорск", "item": "https://mestov.net/cities/belogorsk.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Джедже, Anjelina, Мали"}]}
 </script>
 </head>
 <body>

@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
+      "description": "Харизматичные и талантливые Jokers Band show сыграют мировые рок-поп хиты в полном электрическом составе.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Игорь Симдянкин, Jokers Band"
