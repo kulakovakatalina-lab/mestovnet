@@ -392,7 +392,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/97aba68ecbcb9b1189b2e41bf0a1ad01.jpg"
+      "/images/events/c8d0d7e208658573347c8083299eefc8.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -429,7 +429,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
-      "/images/events/ca571dbff8b41454d5414c3051476d92.jpg"
+      "/images/events/57b1a654bf04332849580dbbac5e75d1.jpg"
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
@@ -462,17 +462,17 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": "бесплатно",
-    "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
+    "description": "Харизматичные и талантливые Jokers Band show сыграют мировые рок-поп хиты в полном электрическом составе.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "поп",
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
       "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/9ac6e1da28d4018ac8b864e652219b16.jpg"
+      "/images/events/a438b7d5e177f8940a1fb1b7e0371338.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-12T07:10:10+00:00",
+    "post_date": "2026-08-14T08:43:14+00:00",
     "id": "36b08d8f"
   },
   {
@@ -543,7 +543,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/376937d0a02b9b00f549801bf8b60c6a.jpg"
+      "/images/events/76bf396a00c9d365dc2116515085c4b6.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -555,18 +555,18 @@
     "artist": "Plamenev, Павел Пламенев",
     "event_type": "концерт",
     "venue": "Дом офицеров флота",
-    "price": "от 2 000 ₽",
-    "description": "Павел Пламенев возвращается в Севастополь! Он выступит с обновлённой программой, в которую войдут как полюбившиеся хиты, так и совершенно новые песни, написанные специально для этого тура!\n\nЕсли вы уже были на его концерте в 2025 году — вас ждёт совсем другое шоу. Если ещё нет — самое время это исправить!\n\nКонцерт в сопровождении Симфонического оркестра!",
+    "price": "от 2500 ₽",
+    "description": "О концерте ПЛАМЕНЕВ - новая легенда русского рока! \r\n\r\nПавел Пламенев выступит с сольным концертом, где представит специальную программу из своих главных хитов. \r\nКаждая песня Павла Пламенева - это отдельная история, пропитанная глубоким смыслом и эмоциями, способная найти отклик в сердце любого слушателя. Его песни затрагивают важные темы: любовь, самопознание, преодоление трудностей, поиски гармонии с собой и миром.",
     "source_city": "Севастополь",
-    "source_channel": "yandex_afisha",
-    "genre": "классика",
+    "source_channel": "afisha_ru",
+    "genre": "рок",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/plamenev-s-orkestrom?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/cddd454127930809fde84bdafbf6e6dc.jpg",
       "/images/events/e91463cae48cae4add6b5d5360085ef6.jpg"
     ],
     "image": "/images/events/cddd454127930809fde84bdafbf6e6dc.jpg",
-    "post_date": "2026-08-15",
+    "post_date": "2026-08-15T04:29:40.868656+00:00",
     "id": "be7ad445"
   },
   {
@@ -625,22 +625,22 @@
   },
   {
     "date": "2026-08-16",
-    "time": "18:30",
+    "time": "17:30",
     "artist": "Джаз в лабиринте, Анна Шакель, Jazz Trio «А3»",
     "event_type": "концерт",
-    "venue": "Лабиринт",
+    "venue": "пространство лабиринта Краснолесья",
     "price": null,
-    "description": "Джазовый вечер с выступлением джаз-трио А3 и Анны Шакель.",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
+    "description": "Джазовый вечер с участием Jazz Trio «А3» и Анны Шакель.",
+    "source_city": "Белогорск",
+    "source_channel": "afisha_crimea",
     "genre": "джаз",
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/e736f40a86668539dfd8ef86072de7ca.jpg"
+      "/images/events/076942330dac7305eeeb85a826525b89.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-    "post_date": "2026-08-13T14:28:04+00:00",
+    "post_date": "2026-08-14T17:00:43+00:00",
     "id": "a719b813"
   },
   {
@@ -725,7 +725,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/3f651f8c3f9a4aeb97493ebc7136d54b.jpg"
+      "/images/events/30ed5f2a8e9d52b806220d450c4c56ad.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -817,7 +817,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/775b739962d38e4e83c6a252223554d8.jpg"
+      "/images/events/fe306deca45ab3f5891c9b2e2d95b5e4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -1043,7 +1043,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/ffe95a9ad15594304d09073520a631a0.jpg"
+      "/images/events/f3a470e244f4d0a89195ad4133d6983f.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -1084,7 +1084,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/97aba68ecbcb9b1189b2e41bf0a1ad01.jpg"
+      "/images/events/c8d0d7e208658573347c8083299eefc8.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -1682,7 +1682,7 @@
     "source_url": "https://t.me/rocknroll_82/427",
     "images": [
       "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
-      "/images/events/02126204ffa5415b16f9aaa4c0930db9.jpg"
+      "/images/events/80af107999c43f269d7b8e363f81b076.jpg"
     ],
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
     "post_date": "2026-08-08T10:53:42+00:00",
@@ -7363,7 +7363,7 @@
     "source_url": "https://t.me/clubjam/1102",
     "images": [
       "/images/events/b5f25ea685faa44dd887421a9f3face9.jpg",
-      "/images/events/40af1137095af62c0cdd32ab0f8fcca2.jpg"
+      "/images/events/50635a098e47e82cd1561fc2eb76831a.jpg"
     ],
     "image": "/images/events/b5f25ea685faa44dd887421a9f3face9.jpg",
     "post_date": "2026-08-13T20:25:48+00:00",
@@ -8163,8 +8163,7 @@
     "source_url": "https://vk.com/wall-237501275_85",
     "images": [
       "/images/events/1b4bd7c47303de068c6bc7a0c93fc38e.jpg",
-      "/images/events/59b7f123e335a337e20678a85f64c375.jpg",
-      "/images/events/a6e679eb41cb11f7f82d7564284b28dd.jpg"
+      "/images/events/59b7f123e335a337e20678a85f64c375.jpg"
     ],
     "image": "/images/events/1b4bd7c47303de068c6bc7a0c93fc38e.jpg",
     "post_date": "2026-08-09T09:06:10+00:00",
@@ -8208,6 +8207,105 @@
     "image": "/images/events/a299817660c40f756d246bc8bb395dc0.jpg",
     "post_date": "2026-08-13T11:22:27+00:00",
     "id": "30a88473"
+  },
+  {
+    "date": "2026-08-14",
+    "artist": "Игорь Симдянкин с «КиШом»",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-14T19:15:16+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://t.me/rocknroll_82/478",
+    "id": "15eb01ab",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-08-29",
+    "artist": "Игорь Симдянкин с «КиШом»",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-14T19:15:16+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://t.me/rocknroll_82/478",
+    "id": "c87294a6",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-08-15",
+    "time": "16:00",
+    "artist": "Аннет Адар",
+    "event_type": "концерт",
+    "venue": "Афиша Крыма",
+    "price": null,
+    "description": "Спектакль «Стрельников и не только» с музыкой композитора Николая Стрельникова.",
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-14T08:50:09+00:00",
+    "image": "/images/events/66d73ee11a00a67dd24848d1182d52d8.jpg",
+    "images": null,
+    "source_url": "https://t.me/afisha_crimea/8241",
+    "id": "fb0d2a4e",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-08-06",
+    "time": null,
+    "artist": "Маркус Сик (Кот-д’Ивуар), Buon Gusto Band (г.Ростов-на-Дону)",
+    "event_type": "концерт",
+    "venue": "Винодельня",
+    "price": null,
+    "description": "Концерт с участием Buon Gusto Band и Маркуса Сика.",
+    "source_channel": "skazhitejazz",
+    "source_city": "Крым",
+    "post_date": "2026-08-14T20:19:46+00:00",
+    "image": "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
+    "images": null,
+    "source_url": "https://t.me/skazhitejazz/1579",
+    "id": "1aab1574",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-14",
+    "time": null,
+    "artist": "Джедже, Anjelina, Мали",
+    "event_type": "концерт",
+    "venue": "Отель «Ялта-Интурист»",
+    "price": null,
+    "description": "В рамках летнего тура по Крыму представители молодого поколения артистов Anjelina, Мали и Джедже остановились в отеле «Ялта-Интурист».",
+    "source_channel": "hotel_yalta_intourist",
+    "source_city": "Ялта",
+    "post_date": "2026-08-14T12:03:23+00:00",
+    "image": "/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-14722524_61661",
+    "id": "beadeba5",
+    "genre": "поп"
+  },
+  {
+    "date": "2026-10-17",
+    "time": "20:00",
+    "artist": "Джокер",
+    "venue": "Jam Club",
+    "event_type": "концерт",
+    "price": "от 1000 ₽",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Симферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-15T04:29:40.851305+00:00",
+    "image": "/img/ds-2023/sber-loyalty/sber-loyalty-filter-label_2.png",
+    "source_url": "https://www.afisha.ru/concert/dzhoker-6048481/",
+    "genre": "рок",
+    "id": "c42060a4"
   },
   {
     "date": null,
@@ -8492,5 +8590,22 @@
     "images": null,
     "source_url": "https://t.me/afisha_crimea/8213",
     "id": "10ce27ed"
+  },
+  {
+    "date": null,
+    "time": "21:00",
+    "artist": "Алексей Гаркуша",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики",
+    "price": "бесплатно",
+    "description": "Алексей Гаркуша сыграет нетленные хиты русского рока.",
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-08T10:53:42+00:00",
+    "image": "/images/events/02126204ffa5415b16f9aaa4c0930db9.jpg",
+    "images": null,
+    "source_url": "https://vk.com/wall-237501275_82",
+    "id": "6a6a32e6",
+    "genre": "рок"
   }
 ]

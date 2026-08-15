@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Нарратор — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Нарратор в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Нарратор в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/narrator">
   <meta property="og:title" content="Нарратор — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Нарратор в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Нарратор в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Нарратор"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Нарратор",
-      "startDate": "2026-08-14T00:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Нарратор"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Панк-гиг 'Summerween' с участием панк-группы Делирий, Нарратор и Creak.",
-      "image": "/images/events/0bed8794a9bb90090d5f24cb227ee0b0.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Симферопольская группа с фестивалей Jam Club: модерн-рок и метал.</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

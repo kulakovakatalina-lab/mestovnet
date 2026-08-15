@@ -37,21 +37,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин, Jokers Band",
-      "startDate": "2026-08-14T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе. Готовьтесь танцевать! Будет очень весело и очень громко",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Игорь Симдянкин, Jokers Band"
-      },
-      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Дима Позин, Игорь Симдянкин",
       "startDate": "2026-08-15T21:00:00+03:00",
       "location": {
@@ -184,6 +169,20 @@
         "name": "Максим Шеремет, Игорь Симдянкин"
       },
       "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин с «КиШом»",
+      "startDate": "2026-08-29T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин с «КиШом»"
+      }
     }
   ]
 }
