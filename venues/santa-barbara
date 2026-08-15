@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "Екатерининская 28"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Санта Барбара</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Екатерининская 28, Симферополь</a></div>
+    
     <p class="venue-description">За последние три месяца здесь прошло 3 концерта с платным входом. Тут тоже проходит «Музыкальное лото» с угадыванием хитов и караоке-атмосферой, а из необычного — премьера комедийного моноспектакля «Такое Лето» актрисы и комика Елены Новиковой.</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Санта Барбара";
-  var addr = "Екатерининская 28, Симферополь";
+  var addr = "Симферополь";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.953414,34.095164";
   var el = document.getElementById('venue-map');
   if (!el) return;
@@ -1107,7 +1106,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Santa Barbara", "Санта Барбара (Екатерининская 28), Симферополь", "Санта Барбара"];
+const VENUE_ALIASES = ["Santa Barbara", "Санта Барбара"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

@@ -4,6 +4,7 @@
 Картинки — из атрибута data-src (lazy-loading).
 """
 
+import random
 import re
 import time
 from datetime import datetime, timezone
@@ -25,14 +26,54 @@ MONTH_MAP = {
     "сентября": 9, "октября": 10, "ноября": 11, "декабря": 12,
 }
 
-_HEADERS = {
-    # Мобильный UA — не вызывает капчу при умеренной частоте запросов
-    "User-Agent": (
-        "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) "
-        "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
-    ),
-    "Accept-Language": "ru-RU,ru;q=0.9",
-}
+# Ротация User-Agent для обхода блокировок
+_USER_AGENTS = [
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+]
+
+def _get_headers() -> dict:
+    """Возвращает заголовки с случайным User-Agent."""
+    return {
+        "User-Agent": random.choice(_USER_AGENTS),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Cache-Control": "max-age=0",
+    }
+
+
+def _fetch_with_retry(url: str, max_retries: int = 3) -> httpx.Response:
+    """Выполняет запрос с повторами при ошибках 403/429/5xx."""
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            resp = httpx.get(url, headers=_get_headers(), follow_redirects=True, timeout=20)
+            if resp.status_code == 403:
+                # Пробуем с другим UA
+                time.sleep(2 ** attempt + random.uniform(0, 1))
+                continue
+            resp.raise_for_status()
+            return resp
+        except httpx.HTTPStatusError as e:
+            last_error = e
+            if e.response.status_code in (403, 429, 500, 502, 503, 504):
+                time.sleep(2 ** attempt + random.uniform(0, 1))
+                continue
+            raise
+        except Exception as e:
+            last_error = e
+            time.sleep(2 ** attempt + random.uniform(0, 1))
+            continue
+    raise last_error or Exception(f"Failed after {max_retries} retries")
 
 
 def _parse_date_time(date_str: str):
@@ -54,8 +95,7 @@ def _parse_date_time(date_str: str):
 def _fetch_event_description(event_url: str) -> Optional[str]:
     """Парсит страницу события: извлекает блок «О концерте»."""
     try:
-        resp = httpx.get(event_url, headers=_HEADERS, follow_redirects=True, timeout=15)
-        resp.raise_for_status()
+        resp = _fetch_with_retry(event_url)
         soup = BeautifulSoup(resp.text, "html.parser")
         h3 = soup.find("h3", string=re.compile(r"О концерте|О мероприятии"))
         if h3:
@@ -71,8 +111,7 @@ def _fetch_event_description(event_url: str) -> Optional[str]:
 def fetch_yandex_afisha_posts(city_slug: str, city_name: str) -> list[dict]:
     url = f"https://afisha.yandex.ru/{city_slug}/concert"
 
-    resp = httpx.get(url, headers=_HEADERS, follow_redirects=True, timeout=15)
-    resp.raise_for_status()
+    resp = _fetch_with_retry(url)
 
     soup = BeautifulSoup(resp.text, "html.parser")
     posts = []
@@ -145,7 +184,7 @@ def fetch_all_crimea(days_back: int = 90) -> list[dict]:
             for p in posts:
                 p["_city"] = city["name"]
             all_posts.extend(posts)
-            time.sleep(2)  # пауза между городами
+            time.sleep(5)  # пауза между городами (увеличена для обхода rate limit)
         except Exception as e:
             print(f"  Ошибка {city['slug']}: {e}")
     return all_posts

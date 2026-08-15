@@ -47,31 +47,31 @@ class TestExtractArtistFromDescription:
 class TestFallbackArtist:
     def test_music_lottery(self):
         event = {"event_type": "концерт", "description": "Музыкальное лото в пятницу"}
-        assert _fallback_artist(event) == "Музыкальное лото"
+        assert _fallback_artist(event) is None
 
     def test_music_quiz(self):
         event = {"event_type": "концерт", "description": "Музыкальный квиз"}
-        assert _fallback_artist(event) == "Музыкальное лото"
+        assert _fallback_artist(event) is None
 
     def test_dj_party(self):
         event = {"event_type": "вечеринка", "description": "DJ играет до утра"}
-        assert _fallback_artist(event) == "DJ-сет"
+        assert _fallback_artist(event) is None
 
     def test_dj_party_lowercase(self):
         event = {"event_type": "вечеринка", "description": "диджей играет"}
-        assert _fallback_artist(event) == "DJ-сет"
+        assert _fallback_artist(event) is None
 
     def test_sound_therapy(self):
         event = {"event_type": "концерт", "description": "Звукотерапия тибетскими чашами"}
-        assert _fallback_artist(event) == "Звукотерапия"
+        assert _fallback_artist(event) is None
 
     def test_gong_therapy(self):
         event = {"event_type": "концерт", "description": "Гонг медитация"}
-        assert _fallback_artist(event) == "Звукотерапия"
+        assert _fallback_artist(event) is None
 
     def test_kvartirnik(self):
         event = {"event_type": "концерт", "description": "Квартирник у камина"}
-        assert _fallback_artist(event) == "Квартирник"
+        assert _fallback_artist(event) is None
 
     def test_spectacle_with_name(self):
         event = {"event_type": "другое", "description": 'Спектакль «Ревизор»'}
@@ -80,7 +80,7 @@ class TestFallbackArtist:
 
     def test_spectacle_without_name(self):
         event = {"event_type": "другое", "description": "Театральная постановка"}
-        assert _fallback_artist(event) == "Спектакль"
+        assert _fallback_artist(event) is None
 
     def test_festival_with_name(self):
         event = {"event_type": "фестиваль", "description": 'Открытие фестиваля «Крымская волна»'}
@@ -89,7 +89,7 @@ class TestFallbackArtist:
 
     def test_festival_without_name(self):
         event = {"event_type": "фестиваль", "description": "Летний фестиваль"}
-        assert _fallback_artist(event) == "Фестиваль"
+        assert _fallback_artist(event) is None
 
     def test_concert_with_quotes(self):
         event = {"event_type": "концерт", "description": 'Концерт «Зимняя сказка»'}
@@ -98,40 +98,39 @@ class TestFallbackArtist:
 
     def test_live_concert(self):
         event = {"event_type": "концерт", "description": "Живой концерт каждый вечер"}
-        assert _fallback_artist(event) == "Живой концерт"
+        assert _fallback_artist(event) is None
 
     def test_music_evening(self):
         event = {"event_type": "концерт", "description": "Музыкальный вечер"}
-        assert _fallback_artist(event) == "Музыкальный вечер"
+        assert _fallback_artist(event) is None
 
     def test_live_sound(self):
         event = {"event_type": "концерт", "description": "Живой звук на террасе"}
-        assert _fallback_artist(event) == "Живой звук"
+        assert _fallback_artist(event) is None
 
     def test_season_opening(self):
         event = {"event_type": "концерт", "description": "Открытие сезона"}
-        assert _fallback_artist(event) == "Открытие сезона"
+        assert _fallback_artist(event) is None
 
     def test_party_with_theme(self):
         event = {"event_type": "вечеринка", "description": "Вечеринка в стиле Ретро"}
-        result = _fallback_artist(event)
-        assert "Вечеринка" in result
+        assert _fallback_artist(event) is None
 
     def test_party_without_theme(self):
         event = {"event_type": "вечеринка", "description": "Танцы до утра"}
-        assert _fallback_artist(event) == "Вечеринка"
+        assert _fallback_artist(event) is None
 
     def test_deguestation(self):
         event = {"event_type": "другое", "description": "Дегустация вин"}
-        assert _fallback_artist(event) == "Дегустация"
+        assert _fallback_artist(event) is None
 
     def test_mass_event(self):
         event = {"event_type": "другое", "description": "Массовое мероприятие"}
-        assert _fallback_artist(event) == "Массовое мероприятие"
+        assert _fallback_artist(event) is None
 
     def test_ethno_project(self):
         event = {"event_type": "другое", "description": "Этнокультурный проект"}
-        assert _fallback_artist(event) == "Этно-проект"
+        assert _fallback_artist(event) is None
 
     def test_no_fallback(self):
         event = {"event_type": "концерт", "description": "Просто концерт"}

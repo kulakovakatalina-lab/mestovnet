@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU",
-        "streetAddress": "ПОР 38/7"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Балаган 38</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ПОР 38/7, Севастополь</span></div>
+    
     <p class="venue-description">За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.</p>
   </div>
   
@@ -1077,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Балаган 38", "Балаган 38 (ПОР 38/7), Севастополь", "Балаган 38"];
+const VENUE_ALIASES = ["Балаган 38", "Балаган 38"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

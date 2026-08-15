@@ -32,8 +32,7 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU",
-        "streetAddress": "Дражинского 50Б"
+        "addressCountry": "RU"
       }
     }
   ]
@@ -1052,7 +1051,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Чайка на Пляже</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Дражинского 50Б, Ялта</a></div>
+    
     <p class="venue-description">Прибрежный ресторан в Ялте на улице Дражинского: днём — с видом на море, вечером — клуб-караоке у самой береговой линии. Здесь проходят интерактивные форматы вроде «Музыкального лото» и DJ-сеты (например диджей Поздняков — дип-хаус и тек-хаус).</p>
   </div>
   
@@ -1083,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Чайка на Пляже";
-  var addr = "Дражинского 50Б, Ялта";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.501937,34.188862";
   var el = document.getElementById('venue-map');
   if (!el) return;
@@ -1107,7 +1106,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Чайка на Пляже", "Чайка на Пляже (Дражинского 50Б), Ялта", "Чайка на Пляже"];
+const VENUE_ALIASES = ["Чайка на Пляже", "Чайка на Пляже"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

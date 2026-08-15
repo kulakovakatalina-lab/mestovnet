@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастопольский ЦКиИ — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастопольский ЦКиИ, в Севастополе. 5 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастопольский ЦКиИ, в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopolskiy-tskii">
   <meta property="og:title" content="Севастопольский ЦКиИ — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастопольский ЦКиИ, в Севастополе. 5 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастопольский ЦКиИ, в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Хор Сретенского монастыря",
-      "startDate": "2026-08-12T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастопольский ЦКиИ"
-      },
-      "description": "Хор Сретенского монастыря в Центр культуры и искусства, Севастополь.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Хор Сретенского монастыря"
-      },
-      "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1129,7 +1114,7 @@ footer {
     
     <p class="venue-description">За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
