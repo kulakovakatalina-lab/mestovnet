@@ -292,6 +292,7 @@ _NON_MUSIC_MARKERS = (
     "кино под открытым небом", "кинопоказ", "кино на стене",
     "премьера драмеди", "премьера фильма", "арт-забег", "утренний забег",
     "групповая экскурсия", "спортивный забег", "велоэкскурсия", "пешая экскурсия",
+    "кинолекторий",
 )
 
 
@@ -714,41 +715,43 @@ _GENERIC_ARTIST_LITERALS = {
 
 
 def _fallback_artist(event: dict) -> "str | None":
-    """Фолбэк артиста по event_type и описанию."""
+    """Фолбэк артиста по event_type и описанию.
+    Возвращает None для случаев, где нет реального исполнителя
+    (это не музыкальные мероприятия с конкретным артистом)."""
     import re
     etype = (event.get("event_type") or "").lower()
     desc = event.get("description") or ""
     desc_lower = desc.lower()
 
-    # Музыкальное лото / квиз
+    # Музыкальное лото / квиз — не музыкальное мероприятие с артистом
     if "музыкальное лото" in desc_lower or "музыкальный квиз" in desc_lower:
-        return "Музыкальное лото"
+        return None
 
-    # DJ-сеты без имени
+    # DJ-сеты без имени — не конкретный артист
     if etype == "вечеринка" and ("dj" in desc_lower or "диджей" in desc_lower):
-        return "DJ-сет"
+        return None
 
-    # Звукотерапия / медитация
+    # Звукотерапия / медитация — не концерт
     if "звукотерап" in desc_lower or "тибетск" in desc_lower or "гонг" in desc_lower:
-        return "Звукотерапия"
+        return None
 
-    # Квартирник / акустика без имени
+    # Квартирник / акустика без имени — не конкретный артист
     if "квартирник" in desc_lower:
-        return "Квартирник"
+        return None
 
-    # Театральная постановка / спектакль
+    # Театральная постановка / спектакль — может быть мюзикл/опера, берём название из кавычек
     if "спектакль" in desc_lower or "театральная постановка" in desc_lower:
         m = re.search(r"«([^»]+)»", desc)
         if m:
-            return f"Спектакль «{m.group(1)}»"
-        return "Спектакль"
+            return m.group(1)
+        return None  # Не возвращаем "Спектакль" как артиста
 
-    # Фестиваль — берём название из описания
+    # Фестиваль — берём название из описания, если есть в кавычках
     if etype == "фестиваль":
         m = re.search(r"«([^»]+)»", desc)
         if m:
             return m.group(1)
-        return "Фестиваль"
+        return None  # Не возвращаем "Фестиваль" как артиста
 
     # Концерт — ищем название в кавычках
     if etype == "концерт":
@@ -758,49 +761,27 @@ def _fallback_artist(event: dict) -> "str | None":
         m = re.search(r"«([^»]+)»", desc)
         if m:
             return m.group(1)
-        # "Живой концерт X" / "Летний концерт"
+        # "Живой концерт X" / "Летний концерт" — не конкретный артист
         m = re.search(r"[Жж]ивой\s+концерт\s+«([^»]+)»", desc)
         if m:
             return m.group(1)
-        if "живой концерт" in desc_lower:
-            return "Живой концерт"
-        if "музыкальный вечер" in desc_lower:
-            return "Музыкальный вечер"
-        if "летний концерт" in desc_lower:
-            return "Летний концерт"
-        if "живой звук" in desc_lower or "живого звука" in desc_lower:
-            return "Живой звук"
-        if "открытие сезона" in desc_lower:
-            return "Открытие сезона"
-        if "литературно-музыкальная" in desc_lower:
-            m = re.search(r"«([^»]+)»", desc)
-            if m:
-                return m.group(1)
-            return "Литературно-музыкальная гостиная"
-        if "открытие летнего" in desc_lower:
-            return "Открытие летнего сезона"
+        return None  # Не возвращаем generic названия
 
-    # Вечеринка — можно взять тему
+    # Вечеринка — не конкретный артист
     if etype == "вечеринка":
-        m = re.search(r"в\s+стиле\s+([А-ЯЁA-Za-z][А-Яа-яёA-Za-z0-9\s\-]+?)(?:\s+в\s+|\s+на\s+|\.)", desc_lower)
-        if m:
-            return f"Вечеринка {m.group(1).strip().title()}"
-        return "Вечеринка"
+        return None
 
-    # Дегустация
+    # Дегустация — не музыкальное мероприятие
     if "дегустац" in desc_lower:
-        return "Дегустация"
+        return None
 
     # Акция / массовое мероприятие
     if "акция" in desc_lower or "массовое" in desc_lower:
-        return "Массовое мероприятие"
+        return None
 
     # Этнокультурный проект / показы
     if "этнокультурн" in desc_lower or "показ" in desc_lower:
-        m = re.search(r"«([^»]+)»", desc)
-        if m:
-            return m.group(1)
-        return "Этно-проект"
+        return None
 
     return None
 
@@ -1134,6 +1115,18 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 elif vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj:
                     # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
                     union(i, j)
+                elif (ai or aj) and (not ai or not aj) and vi and vj and _venue_match(vi, vj):
+                    # Дубликат VK-зеркала: одна версия без артиста, но площадка
+                    # та же и дата та же — это зеркало Telegram-анонса без имён.
+                    union(i, j)
+                elif (ai or aj) and (not ai or not aj):
+                    # Одна версия без артиста, другая с артистом: сливаем, если
+                    # артист полной версии упоминается в описании пустой версии
+                    # (или наоборот) — это одна афиша, где имена названы в одном канале.
+                    di = _normalize(stage1[i].get("description") or "")
+                    dj = _normalize(stage1[j].get("description") or "")
+                    if (ai and any(n in dj for n in ai)) or (aj and any(n in di for n in aj)):
+                        union(i, j)
 
     groups: dict[int, list[dict]] = {}
     for i in range(n):
@@ -1437,6 +1430,7 @@ def main(days_back: int = DAYS_BACK):
     for e in merged:
         # LLM иногда возвращает строку "null" вместо None
         artist = e.get("artist")
+        artist = _to_scalar(artist)
         if isinstance(artist, str) and artist.strip().lower() in ("null", "none", "undefined"):
             artist = None
         if artist is None:
@@ -1502,6 +1496,25 @@ def main(days_back: int = DAYS_BACK):
         print(f"Артист-фолбэк по типу: {artist_fallback} событий")
     if genre_added:
         print(f"Жанр определён автоматически: {genre_added} событий")
+
+    def _all_artists_generic(artist_str: str) -> bool:
+        """True если все части артиста — generic плейсхолдеры."""
+        if not artist_str:
+            return True
+        parts = _split_artist_field(artist_str)
+        for part in parts:
+            for name in _artist_parts(part.strip()):
+                bare = _bare_artist_key(name)
+                if bare and bare not in _GENERIC_ARTIST_LITERALS:
+                    return False
+        return True
+
+    # Фильтруем события без реального исполнителя (artist is None или только generic)
+    before_artist_filter = len(merged)
+    merged = [e for e in merged if e.get("artist") and not _all_artists_generic(e["artist"])]
+    removed_no_artist = before_artist_filter - len(merged)
+    if removed_no_artist:
+        print(f"Убрано событий без реального исполнителя: {removed_no_artist}")
 
     # Финальная отбраковка мусора: события-заглушки (LLM вернул объект вместо [])
     # и не-музыкальные форматы. Применяется ко всей базе, чтобы чистить и старые

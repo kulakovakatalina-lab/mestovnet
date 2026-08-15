@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SHAMAN — концерты в Крыму, Симферополь, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов SHAMAN в Крыму (Симферополь, Севастополь, Ялта). 4 ближайших событий.">
+  <title>SHAMAN — концерты в Крыму, Севастополь, Ялта, Керчь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов SHAMAN в Крыму (Севастополь, Ялта, Керчь). 4 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/shaman">
-  <meta property="og:title" content="SHAMAN — концерты в Крыму, Симферополь, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов SHAMAN в Крыму (Симферополь, Севастополь, Ялта). 4 ближайших событий.">
+  <meta property="og:title" content="SHAMAN — концерты в Крыму, Севастополь, Ялта, Керчь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов SHAMAN в Крыму (Севастополь, Ялта, Керчь). 4 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -1080,7 +1080,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">SHAMAN</h1>
     <p class="venue-description">SHAMAN (Ярослав Дронов) — один из самых популярных российских исполнителей, автор песен «Я русский», «Встанем», «Ты моя». В июле привёз в Крым юбилейную программу «30 лет на сцене»: четыре концерта подряд — Симферополь, Севастополь, Ялта и Керчь.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь, Ялта, Керчь</span></div>
+    <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Ялта, Керчь, Симферополь</span></div>
   </div>
   <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>

@@ -1,8 +1,8 @@
 name: Parser daily
 
 # Запускает parser.py раз в день утром (04:00 UTC = 07:00 Крым),
-# генерирует страницы и пушит изменения в main.
-# Пуш в main автоматически запускает deploy-yandex.yml (деплой на сайт).
+# генерирует страницы, пушит изменения в main, дожидается деплоя
+# и только после этого присылает Telegram-уведомление.
 on:
   schedule:
     - cron: "0 4 * * *"
@@ -21,6 +21,9 @@ concurrency:
 jobs:
   parse-and-deploy:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      deploy_ref: ${{ steps.commit.outputs.deploy_ref }}
     permissions:
       contents: write
       actions: write
@@ -51,6 +54,13 @@ jobs:
           mkdir -p /tmp/before
           cp events.json venues.json artists.json /tmp/before/
 
+      - name: Сохранить снимок для отложенного уведомления
+        uses: actions/upload-artifact@v4
+        with:
+          name: registries-before
+          path: /tmp/before/
+          retention-days: 1
+
       - name: Запустить парсер
         run: |
           DAYS="${{ github.event.inputs.days || 14 }}"
@@ -65,11 +75,6 @@ jobs:
         run: |
           python generate_pages.py
 
-      - name: Отправить уведомление в Telegram
-        run: |
-          python notify_new.py --before-dir /tmp/before --notify-empty
-        continue-on-error: true
-
       - name: Закоммитить и запушить
         id: commit
         run: |
@@ -80,6 +85,7 @@ jobs:
           if git diff --quiet; then
             echo "Нет изменений — коммитить нечего."
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "deploy_ref=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -88,12 +94,48 @@ jobs:
           git commit -m "parser: обновить события [автоматически] ($COUNT в базе)"
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "deploy_ref=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      # Пуш ботом через GITHUB_TOKEN не триггерит другие workflow (защита
-      # GitHub от бесконечных циклов), поэтому деплой запускаем явно.
-      - name: Запустить деплой
-        if: steps.commit.outputs.changed == 'true'
+
+  # Reusable workflow позволяет дождаться не только запуска, но и
+  # фактического завершения деплоя перед Telegram-уведомлением.
+  deploy:
+    needs: parse-and-deploy
+    if: needs.parse-and-deploy.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy-yandex.yml
+    with:
+      deploy_ref: ${{ needs.parse-and-deploy.outputs.deploy_ref }}
+    secrets: inherit
+
+  notify:
+    needs: [parse-and-deploy, deploy]
+    if: >-
+      ${{ always() && needs.parse-and-deploy.result == 'success' &&
+          (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout уже опубликованной версии
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Установить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Установить зависимости
+        run: pip install -r requirements.txt
+
+      - name: Загрузить снимок реестров «до»
+        uses: actions/download-artifact@v4
+        with:
+          name: registries-before
+          path: /tmp/before
+
+      - name: Отправить уведомление в Telegram
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh workflow run "Deploy to Yandex Object Storage"
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python notify_new.py --before-dir /tmp/before --notify-empty
+        continue-on-error: true

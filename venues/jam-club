@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,35 +33,6 @@
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Unluvd, Neverlove",
-      "startDate": "2026-08-11T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Neverlove с особенной программой Unluvd — Анплагд. Группа представит шоу, в котором знакомые треки прозвучат ближе, честнее и атмосфернее.\n\nНе пропустите Neverlove и их новое шоу Unluvd — Анплагд.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Unluvd, Neverlove"
-      },
-      "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Neverlove / Unlvd",
-      "startDate": "2026-08-11T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "Акустический (анплагд) концерт Neverlove / Unlvd. Для подписчиков канала действует скидка по промокоду «jam».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Neverlove / Unlvd"
       }
     },
     {
@@ -1098,7 +1069,7 @@ footer {
     
     <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
