@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Гастродвор — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Гастродвор, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <title>Гастродвор — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Гастродвор, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/gastrodvor">
-  <meta property="og:title" content="Гастродвор — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Гастродвор, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Гастродвор — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Гастродвор, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "Гастродвор",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Крым",
+        "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
     }
@@ -39,7 +39,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Гастродвор"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Гастродвор"}]}
 </script>
   <style>
 
@@ -1048,7 +1048,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/all.html">Крым</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Гастродвор</h1>
     
@@ -1082,7 +1082,7 @@ ymaps.ready(function() {
     });
   }
   var name = "Гастродвор";
-  var addr = "Крым";
+  var addr = "Ялта";
   var routeUrl = "https://yandex.ru/maps/?rtext=~44.494636,34.166005";
   var el = document.getElementById('venue-map');
   if (!el) return;
