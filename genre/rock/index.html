@@ -1231,7 +1231,7 @@ function formatDate(d) {
 }
 
 function priceText(p) {
-  if (!p) return 'Бесплатно';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Бесплатно';
   return p;

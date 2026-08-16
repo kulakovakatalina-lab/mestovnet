@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">памятник Затопленным кораблям</h1>
-    
-    <p class="venue-description">Памятник Затопленным кораблям — визитная карточка Севастополя, колонна с бронзовым орлом в море, 1905 год.</p>
+
+<p class="venue-description">Памятник Затопленным кораблям — визитная карточка Севастополя, колонна с бронзовым орлом в море, 1905 год.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1132,7 +1132,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Ялте: ближайшие 24 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов и живой музыки в Ялте: ближайшие 25 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Живая музыка и концерты в Ялте — Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -793,8 +793,8 @@ footer {
 }
 </style>
   <link rel="canonical" href="https://mestov.net/cities/yalta.html">
-  <meta property="og:title" content="Живая музыка и концерты в Ялте — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Ялте: ближайшие 24 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta property="og:title" content="Живая музыка и концерты в Ялте — Местов.Нет">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Ялте: ближайшие 25 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   
   <script type="application/ld+json">
@@ -846,6 +846,26 @@ footer {
         "name": "Spahova"
       },
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»",
+      "startDate": "2026-08-22T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Винзавод Массандра",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Премьера новой программы «Ритм & Грув» в исторических стенах Массандры.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»"
+      },
+      "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1534,7 +1554,7 @@ function formatDate(d) {
 }
 
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Вход свободный';
   return p;
@@ -1636,11 +1656,10 @@ function renderFeatured(ev) {
         <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
         <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
-          ${ev.time ? `
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"></rect><path d="M2 7h12M5 1.5v3M11 1.5v3"></path></svg>
-            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${escapeHtml(ev.time)}
-          </div>` : ''}
+            ${ev.dateFmt.day} ${ev.dateFmt.month}${ev.time ? ` · начало в ${escapeHtml(ev.time)}` : ''}
+          </div>
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"></path><circle cx="8" cy="6.5" r="1.75"></circle></svg>
             ${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}
@@ -1792,6 +1811,7 @@ load();
 Выбирая песни сердцем, Ирина Круг переносит зрителя в свой завораживающий мир задушевной песни. Обладая чувственным и узнаваемым голосом, теплотой, очарованием, талантом, она оставляет след в сердцах зрителей. И с полной уверенностью можно сказать, что это будет высоко ими оценено.
 
 Специальный гость новой программы — Александр Круг. Удивительным образом младший сын Михаила Круга смог вобрать в себя не только внешность и фамилию отца, но и приятный узнаваемый баритон, который волнует души и сердца зрителей всех поколений. Александр Круг исполнит полюбившие хиты своего отца, а также представит зрителям свои новые песни.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag price">от 2 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/yalta/concert/irina-i-aleksandr-krug?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg" alt="Ирина, Александр Круг" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/sevastopol_jazz/1279','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Джазовые вечера в Массандре: премьера «Ритм &amp; Грув»</div><div class="card-venue">Винзавод Массандра<span class="city">· Ялта</span></div><div class="card-description">Премьера новой программы «Ритм &amp; Грув» в исторических стенах Массандры.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">джаз</span></div><div class="card-source"><a class="src-link" href="https://t.me/sevastopol_jazz/1279" target="_blank" rel="noopener">@sevastopol_jazz</a></div></div><img class="card-thumb" src="/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg" alt="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув»" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>23 августа, сб</h2>
 <div class="card" onclick="window.open('https://t.me/massandrasun/2422','_blank')"><div class="card-inner"><div class="card-time">18:00–22:00</div><div class="card-body"><div class="card-artist">Martin W.</div><div class="card-venue">Пляж-кафе «Van Gogh»<span class="city">· Ялта</span></div><div class="card-description">Выступление Martin W.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/massandrasun/2422" target="_blank" rel="noopener">@massandrasun</a></div></div><img class="card-thumb" src="/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg" alt="Martin W." loading="lazy" onerror="this.remove()"></div></div>

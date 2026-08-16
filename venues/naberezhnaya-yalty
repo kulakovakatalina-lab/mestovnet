@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Набережная Ялты</h1>
-    
-    <p class="venue-description">Открытая площадка на набережной Ялты — здесь проходят уличные фестивали и танцевальные вечеринки под открытым небом: например выступление HP Band на «Фестивале уличного искусства» и вечеринка «Хай&#x27;Петри — Танцуем Все».</p>
+
+<p class="venue-description">Открытая площадка на набережной Ялты — здесь проходят уличные фестивали и танцевальные вечеринки под открытым небом: например выступление HP Band на «Фестивале уличного искусства» и вечеринка «Хай&#x27;Петри — Танцуем Все».</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1132,7 +1132,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

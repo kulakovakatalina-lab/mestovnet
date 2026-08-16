@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/bakhchisaray.html">Бахчисарай</a>
     </div>
     <h1 class="genre-hero-title">Lucky Winery</h1>
-    
-    <p class="venue-description">Lucky Winery — органическая винодельня в Бахчисарае с производством крымских вин и рестораном.</p>
+
+<p class="venue-description">Lucky Winery — органическая винодельня в Бахчисарае с производством крымских вин и рестораном.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1102,7 +1102,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

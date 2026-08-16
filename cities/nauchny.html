@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Научном: ближайшие 1 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов и живой музыки в Научном: ближайшие 0 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Живая музыка и концерты в Научном — Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -793,43 +793,10 @@ footer {
 }
 </style>
   <link rel="canonical" href="https://mestov.net/cities/nauchny.html">
-  <meta property="og:title" content="Живая музыка и концерты в Научном — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Научном: ближайшие 1 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta property="og:title" content="Живая музыка и концерты в Научном — Местов.Нет">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Научном: ближайшие 0 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MusicEvent",
-      "name": "Экскурсия по Крымской обсерватории",
-      "startDate": "2026-08-16T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дом-музей директора обсерватории в п. Научный",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Научный",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Посещение дома-музея директора обсерватории, прогулка к солнечным телескопам с возможностью наблюдения солнца и его протуберанцев, изучение кусочков метеоритов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Экскурсия по Крымской обсерватории"
-      },
-      "image": "/images/events/dc27c01d0d48d9c574eea122367e785a.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "2500 рублей",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-  ]
-}
-</script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный"}]}
 </script>
@@ -1007,7 +974,7 @@ function formatDate(d) {
 }
 
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Вход свободный';
   return p;
@@ -1109,11 +1076,10 @@ function renderFeatured(ev) {
         <h2 class="featured-artist">${escapeHtml(ev.artist) || '—'}</h2>
         <p class="featured-desc">${escapeHtml(ev.description)}</p>
         <div class="featured-meta">
-          ${ev.time ? `
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"></rect><path d="M2 7h12M5 1.5v3M11 1.5v3"></path></svg>
-            ${ev.dateFmt.day} ${ev.dateFmt.month} · начало в ${escapeHtml(ev.time)}
-          </div>` : ''}
+            ${ev.dateFmt.day} ${ev.dateFmt.month}${ev.time ? ` · начало в ${escapeHtml(ev.time)}` : ''}
+          </div>
           <div class="featured-meta-row">
             <svg class="featured-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.8 5 8 5 8s5-4.2 5-8c0-2.76-2.24-5-5-5z"></path><circle cx="8" cy="6.5" r="1.75"></circle></svg>
             ${escapeHtml(ev.venue) || '—'} · ${escapeHtml(ev.source_city) || '—'}
@@ -1230,9 +1196,7 @@ load();
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2><span class="today-badge">Сегодня</span>16 августа, сб</h2>
-<div class="card" onclick="window.open('https://t.me/dlyadushi_Crimea/6457','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Экскурсия по Крымской обсерватории</div><div class="card-venue">Дом-музей директора обсерватории в п. Научный<span class="city">· Научный</span></div><div class="card-description">Посещение дома-музея директора обсерватории, прогулка к солнечным телескопам с возможностью наблюдения солнца и его протуберанцев, изучение кусочков метеоритов.</div><div class="card-footer"><span class="tag type">другое</span><span class="tag price">2500 рублей</span></div><div class="card-source"><a class="src-link" href="https://t.me/dlyadushi_Crimea/6457" target="_blank" rel="noopener">@dlyadushi_Crimea</a></div></div><img class="card-thumb" src="/images/events/dc27c01d0d48d9c574eea122367e785a.jpg" alt="Экскурсия по Крымской обсерватории" loading="lazy" onerror="this.remove()"></div></div>
-</div>
+<div class="empty">Событий не найдено</div>
 </div>
 <!--/seo-content-->
 <script>

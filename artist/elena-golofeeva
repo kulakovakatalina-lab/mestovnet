@@ -999,10 +999,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Елена Голофеева</h1>
-    <p class="venue-description">Вокалистка: джаз, свинг и киномузыка. Пела с квартетом Виктора Никулина на вечере «Скажите Джаз» в «Пальмире Палас», во дворце Дюльбер и на киновечере в Русском театре им. Горького в Симферополе.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь</span></div>
+<p class="venue-description">Вокалистка: джаз, свинг и киномузыка. Пела с квартетом Виктора Никулина на вечере «Скажите Джаз» в «Пальмире Палас», во дворце Дюльбер и на киновечере в Русском театре им. Горького в Симферополе.</p>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь</span></div>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1047,7 +1047,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

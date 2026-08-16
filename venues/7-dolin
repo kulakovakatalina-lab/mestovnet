@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">7 долин</h1>
-    
-    <p class="venue-description">Природная локация «7 долин» под Севастополем — здесь проходят звукотерапевтические сеансы с гонгами и тибетскими чашами.</p>
+
+<p class="venue-description">Природная локация «7 долин» под Севастополем — здесь проходят звукотерапевтические сеансы с гонгами и тибетскими чашами.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1102,7 +1102,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

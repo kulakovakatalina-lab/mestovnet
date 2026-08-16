@@ -1108,7 +1108,7 @@ function parseDateTime(e) {
 }
 
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Вход свободный';
   return p;
