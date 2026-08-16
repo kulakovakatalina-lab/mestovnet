@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анастасия Грас — концерты в Крыму, Крым, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анастасия Грас в Крыму (Крым, Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анастасия Грас в Крыму (Крым, Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anastasiya-gras">
   <meta property="og:title" content="Анастасия Грас — концерты в Крыму, Крым, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анастасия Грас в Крыму (Крым, Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анастасия Грас в Крыму (Крым, Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анастасия Грас"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анастасия Грас",
-      "startDate": "2026-08-15T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анастасия Грас"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "конный клуб «Золотая подкова»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Крым",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Камерный концерт под открытым небом среди гор и лошадей с Анастасией Грас — кантри-поп певицей из Крыма.",
-      "image": "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
     <p class="venue-description">Исполнительница живой музыки в винных усадьбах под Севастополем — выступает с ужинами на закате и BBQ-вечеринками, например в усадьбе «Родное гнездо».</p>
     <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+  
 </div>
 
 <div class="events-list" id="events-list">

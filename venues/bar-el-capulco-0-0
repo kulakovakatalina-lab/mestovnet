@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>бар El Capulco 0.0 — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в бар El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в бар El Capulco 0.0, в Ялте. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/bar-el-capulco-0-0">
   <meta property="og:title" content="бар El Capulco 0.0 — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в бар El Capulco 0.0, в Ялте. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в бар El Capulco 0.0, в Ялте. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "EL, Happy Paul",
-      "startDate": "2026-08-15T14:00–22:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "бар El Capulco 0.0"
-      },
-      "description": "Выступление EL и Happy Paul.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "EL, Happy Paul"
-      },
-      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1114,7 +1099,7 @@ footer {
     
     
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
+  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
