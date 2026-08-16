@@ -1052,10 +1052,10 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Крымский этнографический музей</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Пушкина, 18, Симферополь</a></div>
-    <p class="venue-description">Музей в Симферополе, основанный в 1992 году и хранящий более 16 000 предметов, представляющих культуру и быт 25 народов Крыма. Расположен в здании 1869 года постройки — бывшем приюте для девочек, являющемся памятником архитектуры.</p>
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Пушкина, 18, Симферополь</a></div>
+<p class="venue-description">Музей в Симферополе, основанный в 1992 году и хранящий более 16 000 предметов, представляющих культуру и быт 25 народов Крыма. Расположен в здании 1869 года постройки — бывшем приюте для девочек, являющемся памятником архитектуры.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1133,7 +1133,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

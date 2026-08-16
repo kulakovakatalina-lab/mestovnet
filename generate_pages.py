@@ -85,7 +85,11 @@ CITY_PREP:  dict[str, str] = {c["name"]: c["prep"] for c in _CITIES}
 _CTRL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
 
 def esc(text) -> str:
-    return html_module.escape(_CTRL_RE.sub("", str(text))) if text else ""
+    if not text:
+        return ""
+    cleaned = _CTRL_RE.sub("", str(text)).replace("\r\n", "\n").replace("\r", "\n")
+    cleaned = "\n".join(line.rstrip() for line in cleaned.split("\n"))
+    return html_module.escape(cleaned)
 
 # SEO-пререндер оборачивается маркерами — так замена блока не спотыкается
 # о вложенные </div> внутри карточек (прежний regex этим и был сломан).
@@ -629,17 +633,25 @@ def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = 
     if '<link rel="canonical"' not in src:
         src = src.replace("</head>", f"  {canonical_tag}\n</head>")
 
-    # Open Graph
+    # Open Graph: значения зависят от текущего числа событий, поэтому их
+    # необходимо заменять при каждой генерации, а не только добавлять один раз.
     og_tags = (
         f'<meta property="og:title" content="{esc(new_title)}">\n'
         f'  <meta property="og:description" content="{esc(new_desc)}">\n'
         f'  <meta property="og:type" content="website">\n'
     )
-    if '<meta property="og:title"' not in src:
-        src = src.replace("</head>", f"  {og_tags}</head>")
+    src = re.sub(r'\s*<meta property="og:(?:title|description|type)"[^>]+>\s*', '\n', src)
+    src = src.replace("</head>", f"  {og_tags}</head>")
 
-    # JSON-LD: вставляем перед </head>
-    if '<script type="application/ld+json">' not in src and jsonld_events:
+    # JSON-LD также полностью обновляем: иначе в разметке навсегда остаются
+    # уже прошедшие события из первой генерации.
+    src = re.sub(
+        r'\s*<script type="application/ld\+json">.*?</script>\s*',
+        '\n',
+        src,
+        flags=re.DOTALL,
+    )
+    if jsonld_events:
         src = src.replace("</head>", f"  {jsonld_events}\n</head>")
 
     # Статический пре-рендер событий (скрытый блок для SEO).
@@ -1128,10 +1140,10 @@ ymaps.ready(function() {{
       {eyebrow_city}
     </div>
     <h1 class="genre-hero-title">{esc(name)}</h1>
-    {address_block}
-    {f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
+{address_block}
+{f'<p class="venue-description">{esc(venue.get("description", ""))}</p>' if venue.get("description") else ""}
   </div>
-  {hero_right}
+{hero_right}
 </div>
 
 <div class="events-list" id="events-list">
@@ -1171,7 +1183,7 @@ function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
 function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
 function parseDateTime(e) {{
   const d = parseDate(e.date);
-  const m = e.time && e.time.match(/(\d{{1,2}}):(\d{{2}})/);
+  const m = e.time && e.time.match(/(\\d{{1,2}}):(\\d{{2}})/);
   if (m) d.setHours(+m[1], +m[2], 0, 0); else d.setHours(23, 59, 59, 0);
   return d;
 }}
@@ -1179,7 +1191,7 @@ function formatDate(d) {{
   return {{ day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] }};
 }}
 function priceText(p) {{
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }}
@@ -1587,10 +1599,10 @@ def make_artist_page(artist: dict, all_events: list[dict], today: str,
       · Артист
     </div>
     <h1 class="genre-hero-title">{esc(name)}</h1>
-    {f'<p class="venue-description">{esc(artist.get("description", ""))}</p>' if artist.get("description") else ""}
-    {cities_block}
+{f'<p class="venue-description">{esc(artist.get("description", ""))}</p>' if artist.get("description") else ""}
+{cities_block}
   </div>
-  {hero_right}
+{hero_right}
 </div>
 
 <div class="events-list" id="events-list">
@@ -1627,7 +1639,7 @@ function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
 function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
 function parseDateTime(e) {{
   const d = parseDate(e.date);
-  const m = e.time && e.time.match(/(\d{{1,2}}):(\d{{2}})/);
+  const m = e.time && e.time.match(/(\\d{{1,2}}):(\\d{{2}})/);
   if (m) d.setHours(+m[1], +m[2], 0, 0); else d.setHours(23, 59, 59, 0);
   return d;
 }}
@@ -1635,7 +1647,7 @@ function formatDate(d) {{
   return {{ day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] }};
 }}
 function priceText(p) {{
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }}
@@ -1654,7 +1666,7 @@ function splitArtistField(artist) {{
   parts.push(current);
   return parts;
 }}
-const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_RE = /\\s+(и|&|\\+|feat\\.?|ft\\.?|при участии|с участием)\\s+/i;
 const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
 function artistParts(name) {{
   return name.split(ARTIST_JOIN_RE)

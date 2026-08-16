@@ -1052,10 +1052,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Балаган 38</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">ПОР 38/7, Севастополь</span></div>
-    <p class="venue-description">За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.</p>
+<div class="venue-address-block"><span class="venue-hero-address">ПОР 38/7, Севастополь</span></div>
+<p class="venue-description">За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1103,7 +1103,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

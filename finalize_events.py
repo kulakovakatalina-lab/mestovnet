@@ -360,6 +360,31 @@ def _bare_artist_key(text: str) -> str:
     return k
 
 
+def _artists_look_alike(a: str, b: str) -> bool:
+    """Нечёткое сравнение вариантов одного имени для дедупликации."""
+    ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
+    kb = _bare_artist_key(re.sub(r"\([^)]*\)", "", b))
+    if not ka or not kb:
+        return False
+    if ka in kb or kb in ka:
+        return True
+    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
+
+
+_NON_MUSIC_PREFIXES = (
+    "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка",
+)
+
+
+def is_non_music_event(event: dict) -> bool:
+    """Отсекает явно немузкальные карточки, ошибочно извлечённые как события."""
+    artist = _normalize(event.get("artist") or "")
+    event_type = _normalize(event.get("event_type") or "")
+    return artist.startswith(_NON_MUSIC_PREFIXES) or event_type in {
+        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка",
+    }
+
+
 def _field_count(e: dict) -> int:
     fields = ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city")
     return sum(1 for f in fields if e.get(f))
@@ -465,9 +490,15 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 vj = stage1[j].get("venue") or ""
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
+                same_venue = bool(vi and vj and _venue_match(vi, vj))
                 if ai and aj and ai & aj:
                     union(i, j)
-                elif vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj:
+                elif same_venue and _artists_look_alike(
+                    stage1[i].get("artist") or "",
+                    stage1[j].get("artist") or "",
+                ):
+                    union(i, j)
+                elif same_venue and ti and tj and ti == tj:
                     union(i, j)
 
     groups: dict[int, list[dict]] = {}
@@ -607,6 +638,9 @@ def main(push: bool = True):
         for a in aliases_added:
             print(f"  Алиас: {a}")
 
+    # Явно немузкальные события не должны попадать в музыкальную афишу.
+    new_events = [e for e in new_events if not is_non_music_event(e)]
+
     # Дедупликация новых
     before = len(new_events)
     new_events = deduplicate_events(new_events)
@@ -623,7 +657,7 @@ def main(push: bool = True):
 
     existing_urls = {e["source_url"] for e in existing if e.get("source_url")}
     truly_new = [e for e in new_events if e.get("source_url") not in existing_urls]
-    merged_raw = existing + truly_new
+    merged_raw = [e for e in existing + truly_new if not is_non_music_event(e)]
 
     before2 = len(merged_raw)
     merged = deduplicate_events(merged_raw)

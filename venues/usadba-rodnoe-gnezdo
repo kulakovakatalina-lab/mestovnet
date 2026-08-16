@@ -1066,10 +1066,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Усадьба «Родное гнездо»</h1>
-    
-    <p class="venue-description">Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.</p>
+
+<p class="venue-description">Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.</p>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1147,7 +1147,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

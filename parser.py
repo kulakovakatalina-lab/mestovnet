@@ -1,4 +1,5 @@
 import argparse
+import difflib
 import hashlib
 import json
 import mimetypes
@@ -303,6 +304,11 @@ def _is_refusal_event(e: dict) -> bool:
     if any(m in desc for m in _REFUSAL_MARKERS):
         return True
     if any(m in desc for m in _NON_MUSIC_MARKERS):
+        return True
+    artist = _normalize(e.get("artist") or "")
+    event_type = _normalize(e.get("event_type") or "")
+    non_music_prefixes = ("экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка")
+    if artist.startswith(non_music_prefixes) or event_type in non_music_prefixes:
         return True
     # Пустая заглушка: нет ни описания, ни артиста, ни площадки, ни даты
     if not desc and not e.get("artist") and not e.get("venue") and not e.get("date") and not e.get("time"):
@@ -1034,6 +1040,17 @@ def _bare_artist_key(text: str) -> str:
     return k
 
 
+def _artists_look_alike(a: str, b: str) -> bool:
+    """Ловит опечатки и пояснения в скобках у одного артиста."""
+    ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
+    kb = _bare_artist_key(re.sub(r"\([^)]*\)", "", b))
+    if not ka or not kb:
+        return False
+    if ka in kb or kb in ka:
+        return True
+    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
+
+
 def _merge_group(group: list[dict]) -> dict:
     """Мёрджит группу событий: объединяет артистов, берёт лучшие поля."""
     merged = _merge_events(group)
@@ -1109,13 +1126,19 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 vj = stage1[j].get("venue") or ""
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
+                same_venue = bool(vi and vj and _venue_match(vi, vj))
                 if ai and aj and ai & aj:
                     # Есть хотя бы один общий артист → одно событие
                     union(i, j)
-                elif vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj:
+                elif same_venue and _artists_look_alike(
+                    stage1[i].get("artist") or "",
+                    stage1[j].get("artist") or "",
+                ):
+                    union(i, j)
+                elif same_venue and ti and tj and ti == tj:
                     # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
                     union(i, j)
-                elif (ai or aj) and (not ai or not aj) and vi and vj and _venue_match(vi, vj):
+                elif (ai or aj) and (not ai or not aj) and same_venue:
                     # Дубликат VK-зеркала: одна версия без артиста, но площадка
                     # та же и дата та же — это зеркало Telegram-анонса без имён.
                     union(i, j)

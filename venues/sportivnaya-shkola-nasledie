@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/kerch.html">Керчь</a>
     </div>
     <h1 class="genre-hero-title">Спортивная школа «Наследие»</h1>
-    
-    <p class="venue-description">Спортивная школа «Наследие» в Керчи — школа зимних видов спорта с секциями хоккея и фигурного катания.</p>
+
+<p class="venue-description">Спортивная школа «Наследие» в Керчи — школа зимних видов спорта с секциями хоккея и фигурного катания.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1132,7 +1132,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

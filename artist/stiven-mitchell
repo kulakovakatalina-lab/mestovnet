@@ -999,10 +999,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Стивен Митчелл</h1>
-    <p class="venue-description">Американский джазовый вокалист, постоянный гость проекта «Скажите Джаз». Поёт золотую эпоху американского джаза: трибьюты Луи Армстронгу («Hello, Louise!») и Фрэнку Синатре, Wonderful World, Hello Dolly, Summertime. За лето — концерты на Горной Сыроварне под Алуштой, в усадьбе «Родное гнездо» и на фестивале в Коктебеле.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь, Алушта, Коктебель</span></div>
+<p class="venue-description">Американский джазовый вокалист, постоянный гость проекта «Скажите Джаз». Поёт золотую эпоху американского джаза: трибьюты Луи Армстронгу («Hello, Louise!») и Фрэнку Синатре, Wonderful World, Hello Dolly, Summertime. За лето — концерты на Горной Сыроварне под Алуштой, в усадьбе «Родное гнездо» и на фестивале в Коктебеле.</p>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь, Алушта, Коктебель</span></div>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1047,7 +1047,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

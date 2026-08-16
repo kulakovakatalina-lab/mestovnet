@@ -1052,10 +1052,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Театр имени Бориса Лавренёва</h1>
-    <div class="venue-address-block"><span class="venue-hero-address">площадь Ушакова, у Матросского клуба, Севастополь</span></div>
-    <p class="venue-description">Драматический театр Черноморского флота, основанный в 1932 году и с 1979 года носящий имя писателя-мариниста Бориса Лавренёва. Располагается в историческом здании Матросского клуба на площади Ушакова с характерными курантами на фасаде.</p>
+<div class="venue-address-block"><span class="venue-hero-address">площадь Ушакова, у Матросского клуба, Севастополь</span></div>
+<p class="venue-description">Драматический театр Черноморского флота, основанный в 1932 году и с 1979 года носящий имя писателя-мариниста Бориса Лавренёва. Располагается в историческом здании Матросского клуба на площади Ушакова с характерными курантами на фасаде.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1103,7 +1103,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

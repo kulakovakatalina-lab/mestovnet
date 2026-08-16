@@ -1059,10 +1059,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Антон Хромченко (скрипка)</h1>
-    
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
+
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
-  <div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1107,7 +1107,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

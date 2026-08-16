@@ -17,6 +17,18 @@ REQUIRED_EVENT_FIELDS = ["id", "artist", "source_city", "source_url", "descripti
 
 
 class TestEventsJson:
+    def test_no_explicitly_non_music_events(self, events, project_root):
+        import json
+        settings = json.loads((project_root / "settings.json").read_text(encoding="utf-8"))
+        hidden = set(settings.get("hidden", []))
+        prefixes = ("экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка")
+        leaked = [
+            (e.get("id"), e.get("artist")) for e in events
+            if e.get("source_url") not in hidden
+            and (e.get("artist") or "").strip().lower().startswith(prefixes)
+        ]
+        assert not leaked, f"В музыкальную афишу попали немузкальные события: {leaked}"
+
     def test_not_empty(self, events):
         assert isinstance(events, list) and len(events) > 0
 

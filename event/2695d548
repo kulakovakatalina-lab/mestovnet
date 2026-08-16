@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джазовый пикник, Гольф-поле, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув», Гольф-поле, в Ялте, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джазовый пикник — Гольф-поле, Севастополь, 9 августа · Местов.Нет</title>
+<title>Джазовые вечера в Массандре: премьера «Ритм &amp; Грув» — Гольф-поле, Ялта, 9 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/2695d548">
-<meta property="og:title" content="Джазовый пикник — Гольф-поле, Севастополь, 9 августа · Местов.Нет">
-<meta property="og:description" content="Джазовый пикник, Гольф-поле, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув» — Гольф-поле, Ялта, 9 августа · Местов.Нет">
+<meta property="og:description" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув», Гольф-поле, в Ялте, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg">
 <script type="application/ld+json">
@@ -969,21 +969,21 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джазовый пикник",
+      "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»",
       "startDate": "2026-08-09T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Гольф-поле",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
       "description": "Камерный джазовый вечер в рамках августовской афиши «Севастополь Джаз».",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джазовый пикник"
+        "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»"
       },
       "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     }
@@ -991,7 +991,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовый пикник"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»"}]}
 </script>
 </head>
 <body>
@@ -1101,7 +1101,7 @@ function parseDateTime(e) {
 }
 
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Вход свободный';
   return p;

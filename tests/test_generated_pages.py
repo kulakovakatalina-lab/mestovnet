@@ -34,6 +34,13 @@ def _soup(path):
     return BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser")
 
 
+def test_unknown_price_is_not_advertised_as_free(project_root):
+    for template in ("index.html", "genre.html", "event.html"):
+        source = (project_root / template).read_text(encoding="utf-8")
+        assert "if (!p) return 'Вход свободный'" not in source
+        assert "if (!p) return 'Бесплатно'" not in source
+
+
 def _internal_targets(soup):
     for tag, attr in (("a", "href"), ("img", "src"), ("link", "href"), ("script", "src")):
         for el in soup.find_all(tag):

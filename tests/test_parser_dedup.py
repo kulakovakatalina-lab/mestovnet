@@ -95,6 +95,20 @@ class TestBareArtistKey:
 
 
 class TestDeduplicateEvents:
+    def test_typo_and_parenthetical_artist_merge_at_same_venue(self):
+        base = {
+            "date": "2026-08-16",
+            "venue": "Рок-н-рольщики (Симферополь)",
+            "event_type": "концерт",
+            "description": "Акустический концерт",
+            "post_date": "2026-08-10",
+        }
+        events = [
+            {**base, "source_url": "https://t.me/a/1", "artist": "Роман Курортный (Парень с пакетом)"},
+            {**base, "source_url": "https://t.me/b/1", "artist": "Роман Куротрый"},
+        ]
+        assert len(deduplicate_events(events)) == 1
+
     def test_same_url_same_date_merge(self):
         events = [
             {

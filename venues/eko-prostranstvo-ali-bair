@@ -1051,10 +1051,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Эко-пространство «Али-Баир»</h1>
-    
-    <p class="venue-description">За последний месяц здесь прошло 4 концерта. Здесь совмещают музыку и вино: фестиваль крымского виноделия «Винная Маёвка» в Байдарской долине — круговая дегустация вин от 35+ производителей плюс концерт каверов.</p>
+
+<p class="venue-description">За последний месяц здесь прошло 4 концерта. Здесь совмещают музыку и вино: фестиваль крымского виноделия «Винная Маёвка» в Байдарской долине — круговая дегустация вин от 35+ производителей плюс концерт каверов.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1102,7 +1102,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

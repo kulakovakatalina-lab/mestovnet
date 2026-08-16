@@ -1052,10 +1052,10 @@ footer {
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Винодельня «Золотая Балка»</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Балаклава, Крестовского 66, Севастополь</a></div>
-    <p class="venue-description">Одно из крупнейших винодельческих хозяйств Крыма в Балаклавском районе Севастополя, история которого восходит к 1889 году. На территории предприятия действует туристический комплекс с дегустационным залом, рестораном и демонстрационными виноградниками.</p>
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Балаклава, Крестовского 66, Севастополь</a></div>
+<p class="venue-description">Одно из крупнейших винодельческих хозяйств Крыма в Балаклавском районе Севастополя, история которого восходит к 1889 году. На территории предприятия действует туристический комплекс с дегустационным залом, рестораном и демонстрационными виноградниками.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1133,7 +1133,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

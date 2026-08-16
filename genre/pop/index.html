@@ -18,10 +18,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Поп в Крыму — концерты и афиша | Местов.Нет</title>
-<meta name="description" content="Афиша концертов в жанре «поп» в Крыму: ближайшие 44 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов в жанре «поп» в Крыму: ближайшие 41 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="canonical" href="https://mestov.net/genre/pop/">
 <meta property="og:title" content="Поп в Крыму — концерты и афиша | Местов.Нет">
-<meta property="og:description" content="Афиша концертов в жанре «поп» в Крыму: ближайшие 44 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta property="og:description" content="Афиша концертов в жанре «поп» в Крыму: ближайшие 41 концертов в клубах, барах и на площадках. Обновляется ежедневно.">
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -726,26 +726,6 @@ footer {
     },
     {
       "@type": "MusicEvent",
-      "name": "Роман Куротрый",
-      "startDate": "2026-08-16T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Душевная акустика и любимые песни на двух языках в исполнении Романа Куротрого.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Роман Куротрый"
-      },
-      "image": "/images/events/92b70e713e1424cdb80430699f945b6b.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Spahova",
       "startDate": "2026-08-21T18:00:00+03:00",
       "location": {
@@ -1391,6 +1371,26 @@ footer {
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Концерт авторских песен",
+      "startDate": "2026-08-16T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "экокемп Семена, Бельбекская долина",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Концерт авторских песен во время йога-ретрита.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Концерт авторских песен"
+      },
+      "image": "/images/events/5c9b185a43eef6ffc0564e9c8e4817c6.jpg"
     }
   ]
 }
@@ -1535,7 +1535,7 @@ function formatDate(d) {
 }
 
 function priceText(p) {
-  if (!p) return 'Бесплатно';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   if (low.includes('бесплат') || low === 'вход свободный') return 'Бесплатно';
   return p;
@@ -1823,11 +1823,8 @@ document.addEventListener('keydown', e => {
 Выбор за тобой!
 
 Точное время запуска на площадку для вашей категории билета вы сможете найти во встрече мероприятия ВК за несколько дней до концерта</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">хип-хоп</span><span class="tag price">от 1700 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/scally-milano-6032074/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/d17bcd97a2ada7f8999edb490491fac6.jpg" alt="Scally Milano" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/rocknroll_82/372','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">Роман Куротрый</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Душевная акустика и любимые песни на двух языках в исполнении Романа Куротрого.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/372" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/92b70e713e1424cdb80430699f945b6b.jpg" alt="Роман Куротрый" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/belbekma/1347','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Концерт авторских песен</div><div class="card-venue">экокемп Семена, Бельбекская долина<span class="city">· Севастополь</span></div><div class="card-description">Концерт авторских песен во время йога-ретрита.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1347" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/5c9b185a43eef6ffc0564e9c8e4817c6.jpg" alt="Концерт авторских песен" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/rocknroll_82/459','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Роман Курортный (Парень с пакетом)</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Впервые на нашей сцене Роман Курортный (Парень с пакетом) с акустической программой из любимых хитов</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/rocknroll_82/459" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/a43614eff15d7629aeefbba9afbb8d61.jpg" alt="Роман Курортный (Парень с пакетом)" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://t.me/dlyadushi_Crimea/6457','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Экскурсия по Крымской обсерватории</div><div class="card-venue">Дом-музей директора обсерватории в п. Научный<span class="city">· Научный</span></div><div class="card-description">Посещение дома-музея директора обсерватории, прогулка к солнечным телескопам с возможностью наблюдения солнца и его протуберанцев, изучение кусочков метеоритов.</div><div class="card-footer"><span class="tag type">другое</span><span class="tag price">2500 рублей</span></div><div class="card-source"><a class="src-link" href="https://t.me/dlyadushi_Crimea/6457" target="_blank" rel="noopener">@dlyadushi_Crimea</a></div></div><img class="card-thumb" src="/images/events/dc27c01d0d48d9c574eea122367e785a.jpg" alt="Экскурсия по Крымской обсерватории" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://vk.com/wall-237501275_88','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Роман Курортный</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Роман Курортный (Парень с пакетом) с акустической программой из любимых хитов.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://vk.com/wall-237501275_88" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/7b8f979a07d4955ba8b671aa1cde19d9.jpg" alt="Роман Курортный" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>21 августа, чт</h2>
 <div class="card" onclick="window.open('https://t.me/massandrasun/2438','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Spahova</div><div class="card-venue">El Capulco 0.0, сектор 6<span class="city">· Ялта</span></div><div class="card-description">Музыкальный вечер</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span></div><div class="card-source"><a class="src-link" href="https://t.me/massandrasun/2438" target="_blank" rel="noopener">@afisha_crimea</a></div></div><img class="card-thumb" src="/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg" alt="Spahova" loading="lazy" onerror="this.remove()"></div></div>
@@ -1851,13 +1848,13 @@ document.addEventListener('keydown', e => {
 <div class="card" onclick="window.open('https://t.me/dlyadushi_Crimea/6459','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Матвей Блюмин</div><div class="card-venue">Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н<span class="city">· Крым</span></div><div class="card-description">Выступление скрипача-виртуоза Матвея Блюмина под куполом старейшего телескопа обсерватории. Победитель Всероссийского телевизионного конкурса «Синяя Птица», а также международных конкурсов в Италии, Румынии, Португалии, Швеции.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">фолк</span></div><div class="card-source"><a class="src-link" href="https://t.me/dlyadushi_Crimea/6459" target="_blank" rel="noopener">@dlyadushi_Crimea</a></div></div><img class="card-thumb" src="/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg" alt="Матвей Блюмин" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>25 августа, пн</h2>
-<div class="card" onclick="window.open('https://www.afisha.ru/concert/standup-valentin-sidorov-6010913/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">StandUp Валентин Сидоров</div><div class="card-venue">ДК профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">О концерте Standup Валентин Сидоров – новый сольный тур! 
- 
+<div class="card" onclick="window.open('https://www.afisha.ru/concert/standup-valentin-sidorov-6010913/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">StandUp Валентин Сидоров</div><div class="card-venue">ДК профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">О концерте Standup Валентин Сидоров – новый сольный тур!
+
 Валентин Сидоров – один из самых ярких комиков страны, чьи концерты собирают аншлаги от Москвы до Южно-Сахалинска, а всем полюбившиеся ролики с импровизацией со зрителями залетают на сотни тысяч просмотров. Актёр театра и кино, резидент Standup шоу ТНТ, участник телевизионных эфиров и популярных интернет-шоу – он едет к вам с новой программой!
- 
+
 Юмор Валентина остроумен, а блестящая актерская игра и глубокая самоирония не оставят равнодушным самого искушенного любителя комедии. Не упустите шанс насладиться качественным юмором и, возможно, стать частью концерта!
- 
-Возрастное ограничение: 18+ 
+
+Возрастное ограничение: 18+
 При входе организаторы могут попросить предъявить оригинал паспорта и отказать в допуске без возврата стоимости билета, если посетителю не исполнилось 18 лет (ФЗ №93 от 01.05.2019).</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">юмор</span><span class="tag price">от 1900 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/standup-valentin-sidorov-6010913/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/555b2dcb31465f132891c79308bbd773.jpg" alt="StandUp Валентин Сидоров" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/sevastopol/concert/tri-dnia-dozhdia-2026-07-06?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">20:00</div><div class="card-body"><div class="card-artist">Три дня дождя</div><div class="card-venue">Муссон<span class="city">· Севастополь</span></div><div class="card-description">Три дня дождя в Муссон, Севастополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 2 500 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/sevastopol/concert/tri-dnia-dozhdia-2026-07-06?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/01873170526cb87b0894114f0f5ef245.jpg" alt="Три дня дождя" loading="lazy" onerror="this.remove()"></div></div>
 </div>

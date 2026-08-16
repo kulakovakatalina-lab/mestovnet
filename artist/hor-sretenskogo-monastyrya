@@ -999,10 +999,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Хор Сретенского монастыря</h1>
-    <p class="venue-description">Знаменитый московский мужской хор. Августовский тур по Крыму — Дворец культуры профсоюзов в Симферополе, Центр культуры и искусства в Севастополе и ялтинский «Юбилейный».</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь, Севастополь</span></div>
+<p class="venue-description">Знаменитый московский мужской хор. Августовский тур по Крыму — Дворец культуры профсоюзов в Симферополе, Центр культуры и искусства в Севастополе и ялтинский «Юбилейный».</p>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь, Севастополь</span></div>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1047,7 +1047,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

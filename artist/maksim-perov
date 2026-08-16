@@ -999,10 +999,10 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Максим Перов</h1>
-    <p class="venue-description">Трубач, участник дворцовых концертных программ в Ялте — «Песни любимого кино» и «Самая красивая музыка столетия» во дворце Дюльбер.</p>
-    <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
+<p class="venue-description">Трубач, участник дворцовых концертных программ в Ялте — «Песни любимого кино» и «Самая красивая музыка столетия» во дворце Дюльбер.</p>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1047,7 +1047,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }

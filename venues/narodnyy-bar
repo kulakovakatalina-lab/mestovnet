@@ -1052,10 +1052,10 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Народный бар</h1>
-    <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">на ул. Ломоносова, 15, Ялта</a></div>
-    <p class="venue-description">За последний месяц здесь прошло 4 концерта с платным входом. Играла группа «Карбид» с трибьютом Rammstein — лучшие хиты и неожиданные аранжировки немецких индастриал-рокеров. Основа афиши — панк-рок.</p>
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">на ул. Ломоносова, 15, Ялта</a></div>
+<p class="venue-description">За последний месяц здесь прошло 4 концерта с платным входом. Играла группа «Карбид» с трибьютом Rammstein — лучшие хиты и неожиданные аранжировки немецких индастриал-рокеров. Основа афиши — панк-рок.</p>
   </div>
-  
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1133,7 +1133,7 @@ function formatDate(d) {
   return { day: String(d.getDate()).padStart(2,'0'), month: MONTHS_GEN[d.getMonth()], dow: DOW[d.getDay()] };
 }
 function priceText(p) {
-  if (!p) return 'Вход свободный';
+  if (!p) return 'Цена не указана';
   const low = p.toLowerCase();
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
