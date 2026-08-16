@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 29,
+    "event_count": 28,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -1762,6 +1762,20 @@
     "event_count": 1,
     "aliases": [
       "Винодельня"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -90,20 +90,24 @@
   },
   {
     "date": "2026-08-09",
-    "time": "21:00",
-    "artist": "Паша Грей",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Севастополь)",
-    "source_city": "Севастополь",
-    "price": null,
-    "description": "Авторский камбэк рока и каверы на зарубежный и русский рок в исполнении кибер-менестреля Паши Грея.",
-    "source_channel": "rocknroll_92",
-    "source_url": "https://t.me/rocknroll_92/7052",
-    "post_date": "2026-07-29T12:31:27+00:00",
-    "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "genre": "русский рок",
-    "id": "be345574",
-    "updated_at": "2026-08-03T05:34:40.521607+00:00"
+    "time": "20:00",
+    "artist": "Паша Грей, Открытый микрофон",
+    "event_type": "другое",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "бесплатно",
+    "description": "Вечер стёба, иронии и юмора. Стендап в формате Открытого микрофона: можно послушать шутки, а можно выступить со своим монологом. Старт около 20:00",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "юмор",
+    "source_url": "https://t.me/rocknroll_82/442",
+    "images": [
+      "/images/events/32fd3341544420c5f2d803b8108e5519.jpg",
+      "/images/events/80af107999c43f269d7b8e363f81b076.jpg",
+      "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+    ],
+    "image": "/images/events/32fd3341544420c5f2d803b8108e5519.jpg",
+    "post_date": "2026-08-09T09:05:07+00:00",
+    "id": "66048dfd"
   },
   {
     "id": "a773ec81",
@@ -392,7 +396,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/c8d0d7e208658573347c8083299eefc8.jpg"
+      "/images/events/431015923c6142ad431c140972a7db9d.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -429,7 +433,7 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/komnata-kultury-2026-08-14?source=selection-events&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
-      "/images/events/57b1a654bf04332849580dbbac5e75d1.jpg"
+      "/images/events/012f13887dc7630ce36aa6a0a694339e.jpg"
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
@@ -469,7 +473,7 @@
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
       "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/a438b7d5e177f8940a1fb1b7e0371338.jpg"
+      "/images/events/550a115fd18457bb88ae53f3ff814e54.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-14T08:43:14+00:00",
@@ -543,7 +547,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/76bf396a00c9d365dc2116515085c4b6.jpg"
+      "/images/events/d651de10001a19574ae406ddf59d7b21.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -637,7 +641,7 @@
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/076942330dac7305eeeb85a826525b89.jpg"
+      "/images/events/2db7bb7b759e8d35831c50320ed00fa8.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-14T17:00:43+00:00",
@@ -725,7 +729,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/30ed5f2a8e9d52b806220d450c4c56ad.jpg"
+      "/images/events/9b162bc7e9d5a5c18ec67ace543da7f1.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -817,7 +821,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/fe306deca45ab3f5891c9b2e2d95b5e4.jpg"
+      "/images/events/09455e433dc03803cf60d7e1104b002e.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -1043,7 +1047,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/f3a470e244f4d0a89195ad4133d6983f.jpg"
+      "/images/events/a93e0859054a38d558c68fdb79f9a1af.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -1084,7 +1088,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/c8d0d7e208658573347c8083299eefc8.jpg"
+      "/images/events/431015923c6142ad431c140972a7db9d.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
@@ -6706,26 +6710,6 @@
     "id": "5ddfb74f"
   },
   {
-    "date": "2026-08-09",
-    "time": "20:00",
-    "artist": "Открытый микрофон",
-    "event_type": "другое",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "бесплатно",
-    "description": "Вечер стёба, иронии и юмора. Стендап в формате Открытого микрофона: можно послушать шутки, а можно выступить со своим монологом. Старт около 20:00",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "юмор",
-    "source_url": "https://t.me/rocknroll_82/442",
-    "images": [
-      "/images/events/32fd3341544420c5f2d803b8108e5519.jpg",
-      "/images/events/80af107999c43f269d7b8e363f81b076.jpg"
-    ],
-    "image": "/images/events/32fd3341544420c5f2d803b8108e5519.jpg",
-    "post_date": "2026-08-09T09:05:07+00:00",
-    "id": "0e689d00"
-  },
-  {
     "date": "2026-08-07",
     "time": "15:00",
     "artist": "Наталья Похила, Юлия Нагаевская",
@@ -7120,7 +7104,7 @@
     "source_url": "https://t.me/afisha_crimea/8209",
     "images": [
       "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
-      "/images/events/09f6c870ce9f9abb730f48519626aa40.jpg"
+      "/images/events/b1487d5336983b1733a70b79ab739b8b.jpg"
     ],
     "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
     "post_date": "2026-08-11T05:56:20+00:00",
@@ -7283,20 +7267,20 @@
     "date": "2026-08-14",
     "time": null,
     "artist": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak",
-    "event_type": "концерт",
+    "event_type": "фестиваль",
     "venue": "Jam Club",
     "price": "бесплатно",
-    "description": "Панк-гиг 'Summerween' с участием панк-группы Делирий, Нарратор и Creak.",
+    "description": "METAL FEST",
     "source_city": "Симферополь",
     "source_channel": "clubjam",
     "genre": "метал",
     "source_url": "https://t.me/clubjam/1103",
     "images": [
       "/images/events/0bed8794a9bb90090d5f24cb227ee0b0.jpg",
-      "/images/events/0cd86d39e2b2fe110fd8fe801b3fa39a.jpg"
+      "/images/events/4c6a65a62151fe6bca479c399fb28df1.jpg"
     ],
     "image": "/images/events/0bed8794a9bb90090d5f24cb227ee0b0.jpg",
-    "post_date": "2026-08-13T20:15:39+00:00",
+    "post_date": "2026-08-14T10:11:44+00:00",
     "id": "3682e760"
   },
   {
@@ -7342,7 +7326,7 @@
   {
     "date": "2026-08-14",
     "time": "18:45",
-    "artist": "Вино и искусство",
+    "artist": "Вино, искусство",
     "event_type": "другое",
     "venue": "Севастополь, Матросский бульвар",
     "price": "1000₽",
@@ -7542,23 +7526,6 @@
     "genre": "классика"
   },
   {
-    "date": null,
-    "time": null,
-    "artist": "Квартал культур мира",
-    "event_type": "фестиваль",
-    "venue": "Международный фестиваль молодёжи",
-    "price": null,
-    "description": "Караоке-пауза в рамках Международного фестиваля молодёжи.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-11T09:00:43+00:00",
-    "image": null,
-    "images": null,
-    "source_url": "https://vk.com/wall-89840945_119365",
-    "id": "9a76376e",
-    "genre": "фолк"
-  },
-  {
     "date": "2026-08-09",
     "time": null,
     "artist": "йоги Aura, Студия танцев, фитнеса",
@@ -7578,7 +7545,7 @@
   {
     "date": "2026-08-09",
     "time": "9:00",
-    "artist": "Забег и танцы во Дворе",
+    "artist": "Забег, танцы во Дворе",
     "event_type": "другое",
     "venue": "Гастродвор",
     "price": "бесплатно",
@@ -7806,20 +7773,23 @@
   },
   {
     "date": "2026-08-15",
-    "time": null,
+    "time": "18:00 – 4:00",
     "artist": "Дима Резник",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
-    "description": "Дима Резник и любимые рок-поп хиты разных лет",
-    "source_channel": "rocknroll_92",
+    "description": "Пить настоечки и слушать Диму Резника. Споем и станцуем рок-поп разных лет.",
     "source_city": "Севастополь",
-    "post_date": "2026-08-13T07:10:09+00:00",
-    "image": "/images/events/e107cdd233ea56591bfb2a18f57999ac.jpg",
-    "images": null,
+    "source_channel": "rocknroll_92",
+    "genre": "поп-рок",
     "source_url": "https://t.me/rocknroll_92/7099",
-    "id": "26914dc5",
-    "genre": "поп-рок"
+    "images": [
+      "/images/events/e107cdd233ea56591bfb2a18f57999ac.jpg",
+      "/images/events/f34883620050185a0af70463162d6c2e.jpg"
+    ],
+    "image": "/images/events/e107cdd233ea56591bfb2a18f57999ac.jpg",
+    "post_date": "2026-08-15T12:11:22+00:00",
+    "id": "26914dc5"
   },
   {
     "date": "2026-08-14",
@@ -7885,23 +7855,6 @@
     "images": null,
     "source_url": "https://t.me/dlyadushi_Crimea/6459",
     "id": "82142496",
-    "genre": "фолк"
-  },
-  {
-    "date": null,
-    "time": null,
-    "artist": "KingOffthestreetKe",
-    "event_type": "фестиваль",
-    "venue": "Международный фестиваль молодёжи",
-    "price": null,
-    "description": "Таврида привезёт свой Фестиваль молодого искусства на Международный фестиваль молодёжи — 2026, на котором встретятся молодые творцы со всего мира.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-13T16:04:07+00:00",
-    "image": "/images/events/265abe6a57ea6182c03f19b81a030f13.jpg",
-    "images": null,
-    "source_url": "https://t.me/tavrida_art/21791",
-    "id": "b5b72542",
     "genre": "фолк"
   },
   {
@@ -8140,25 +8093,6 @@
     "id": "e029f202"
   },
   {
-    "date": null,
-    "time": null,
-    "artist": "Караоке",
-    "event_type": "другое",
-    "venue": "Квартал культур мира",
-    "price": null,
-    "description": "Караоке-пауза на Международном фестивале молодёжи.",
-    "source_city": "Судак",
-    "source_channel": "tavrida_art",
-    "genre": "фолк",
-    "source_url": "https://vk.com/wall-89840945_119396",
-    "images": [
-      "/images/events/a299817660c40f756d246bc8bb395dc0.jpg"
-    ],
-    "image": "/images/events/a299817660c40f756d246bc8bb395dc0.jpg",
-    "post_date": "2026-08-13T11:22:27+00:00",
-    "id": "30a88473"
-  },
-  {
     "date": "2026-08-14",
     "artist": "Игорь Симдянкин с «КиШом»",
     "event_type": "трибьют",
@@ -8256,6 +8190,75 @@
     "source_url": "https://www.afisha.ru/concert/dzhoker-6048481/",
     "genre": "рок",
     "id": "c42060a4"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "19:00",
+    "artist": "Джокер",
+    "venue": "Камелот",
+    "event_type": "концерт",
+    "price": "от 700 ₽",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашае\u0000т в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
+    "source_channel": "afisha_ru",
+    "source_city": "Керчь",
+    "post_date": "2026-08-16T04:35:10.461858+00:00",
+    "image": null,
+    "source_url": "https://www.afisha.ru/concert/dzhoker-6048497/",
+    "genre": "рок",
+    "id": "42567d5d"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "Квартал культур мира",
+    "event_type": "фестиваль",
+    "venue": "Международный фестиваль молодёжи",
+    "price": null,
+    "description": "Караоке-пауза в рамках Международного фестиваля молодёжи.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-11T09:00:43+00:00",
+    "image": null,
+    "images": null,
+    "source_url": "https://vk.com/wall-89840945_119365",
+    "id": "9a76376e",
+    "genre": "фолк"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "KingOffthestreetKe",
+    "event_type": "фестиваль",
+    "venue": "Международный фестиваль молодёжи",
+    "price": null,
+    "description": "Таврида привезёт свой Фестиваль молодого искусства на Международный фестиваль молодёжи — 2026, на котором встретятся молодые творцы со всего мира.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-13T16:04:07+00:00",
+    "image": "/images/events/265abe6a57ea6182c03f19b81a030f13.jpg",
+    "images": null,
+    "source_url": "https://t.me/tavrida_art/21791",
+    "id": "b5b72542",
+    "genre": "фолк"
+  },
+  {
+    "date": null,
+    "time": null,
+    "artist": "Караоке",
+    "event_type": "другое",
+    "venue": "Квартал культур мира",
+    "price": null,
+    "description": "Караоке-пауза на Международном фестивале молодёжи.",
+    "source_city": "Судак",
+    "source_channel": "tavrida_art",
+    "genre": "фолк",
+    "source_url": "https://vk.com/wall-89840945_119396",
+    "images": [
+      "/images/events/a299817660c40f756d246bc8bb395dc0.jpg"
+    ],
+    "image": "/images/events/a299817660c40f756d246bc8bb395dc0.jpg",
+    "post_date": "2026-08-13T11:22:27+00:00",
+    "id": "30a88473"
   },
   {
     "date": null,
