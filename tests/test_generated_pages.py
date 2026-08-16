@@ -15,6 +15,7 @@ from generate_pages import (
     build_artist_alias_lookup,
     build_venue_alias_lookup,
     esc,
+    apply_settings,
     resolve_artist_slugs,
     resolve_venue_slugs,
 )
@@ -39,6 +40,42 @@ def test_unknown_price_is_not_advertised_as_free(project_root):
         source = (project_root / template).read_text(encoding="utf-8")
         assert "if (!p) return 'Вход свободный'" not in source
         assert "if (!p) return 'Бесплатно'" not in source
+
+
+def test_featured_event_date_does_not_depend_on_time(project_root):
+    """Дата избранного события должна отображаться и при неизвестном времени."""
+    source = (project_root / "index.html").read_text(encoding="utf-8")
+    expected = "${ev.dateFmt.day} ${ev.dateFmt.month}${ev.time ?"
+    assert expected in source
+    assert "${ev.time ? `${ev.dateFmt.day}" not in source
+
+
+class TestHomepageSeo:
+    def test_description_and_open_graph_have_current_event_count(
+        self, events, settings, today_str, project_root
+    ):
+        visible = apply_settings(events, settings)
+        expected_count = sum((e.get("date") or "") >= today_str for e in visible)
+        soup = _soup(project_root / "index.html")
+        description = soup.find("meta", attrs={"name": "description"})
+        og_description = soup.find("meta", property="og:description")
+        assert description and og_description
+        assert description.get("content") == og_description.get("content")
+        assert f"{expected_count} ближайших событий" in description.get("content", "")
+
+    def test_jsonld_contains_only_upcoming_events(self, today_str, project_root):
+        soup = _soup(project_root / "index.html")
+        music_events = []
+        for script in soup.find_all("script", type="application/ld+json"):
+            data = json.loads(script.string or "{}")
+            graph = data.get("@graph", [data]) if isinstance(data, dict) else data
+            music_events.extend(
+                item for item in graph
+                if isinstance(item, dict) and item.get("@type") == "MusicEvent"
+            )
+        assert music_events, "На главной нет MusicEvent в JSON-LD"
+        stale = [e.get("startDate") for e in music_events if (e.get("startDate") or "")[:10] < today_str]
+        assert not stale, f"В JSON-LD главной остались прошедшие события: {stale}"
 
 
 def _internal_targets(soup):

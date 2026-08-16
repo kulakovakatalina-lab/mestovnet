@@ -45,6 +45,20 @@ jobs:
       - name: Установить браузер для Playwright
         run: playwright install --with-deps chromium
 
+      - name: Проверить актуальность сгенерированного сайта
+        run: |
+          python3 generate_pages.py
+          git diff --check
+          git diff --exit-code
+
+      - name: Не допустить служебный кэш в репозиторий
+        run: |
+          if [ -n "$(git ls-files .cache)" ]; then
+            echo "Служебные файлы .cache не должны попадать в Git"
+            git ls-files .cache
+            exit 1
+          fi
+
       - name: Прогнать все тесты
         run: pytest tests/ -q
 

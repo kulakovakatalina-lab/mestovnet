@@ -107,6 +107,14 @@ class TestOnlyEventDicts:
         result = _only_event_dicts(events)
         assert result == [{"date": "2026-08-05", "description": "Джазовый вечер, группа «Берега»."}]
 
+    def test_filters_non_music_artist_and_event_type(self):
+        events = [
+            {"date": "2026-08-01", "artist": "Экскурсия по дворцу"},
+            {"date": "2026-08-02", "artist": "Вечер истории", "event_type": "лекция"},
+            {"date": "2026-08-03", "artist": "Группа Берега", "event_type": "концерт"},
+        ]
+        assert _only_event_dicts(events) == [events[-1]]
+
     def test_filters_empty_stub(self):
         events = [
             {"id": "a", "date": None, "artist": None, "venue": None, "description": ""},
