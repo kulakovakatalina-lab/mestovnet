@@ -159,6 +159,74 @@ class TestDeduplicateEvents:
         result = deduplicate_events(events)
         assert len(result) == 1
 
+    def test_same_artist_same_date_different_venues_are_not_merged(self):
+        events = [
+            {
+                "source_url": "https://example.test/concert/1",
+                "date": "2026-08-26",
+                "time": "19:00",
+                "artist": "Любовь Успенская",
+                "venue": "Дом офицеров флота",
+                "source_city": "Севастополь",
+            },
+            {
+                "source_url": "https://example.test/concert/2",
+                "date": "2026-08-26",
+                "time": "19:00",
+                "artist": "Любовь Успенская",
+                "venue": "ДК профсоюзов",
+                "source_city": "Севастополь",
+            },
+        ]
+        assert len(deduplicate_events(events)) == 2
+
+    def test_same_artist_same_date_different_cities_are_not_merged(self):
+        base = {
+            "date": "2026-08-14",
+            "time": "21:00",
+            "artist": "Игорь Симдянкин",
+            "venue": "Рок-н-рольщики",
+        }
+        events = [
+            {**base, "source_url": "https://t.me/simferopol/1", "source_city": "Симферополь"},
+            {**base, "source_url": "https://t.me/sevastopol/1", "source_city": "Севастополь"},
+        ]
+        assert len(deduplicate_events(events)) == 2
+
+    def test_same_url_different_dates_are_not_merged(self):
+        base = {
+            "source_url": "https://t.me/venue/weekly-poster",
+            "artist": "Группа А",
+            "venue": "Jam Club",
+            "source_city": "Симферополь",
+        }
+        events = [
+            {**base, "date": "2026-08-21", "time": "20:00"},
+            {**base, "date": "2026-08-28", "time": "20:00"},
+        ]
+        assert len(deduplicate_events(events)) == 2
+
+    def test_repeated_run_preserves_existing_id(self):
+        existing = {
+            "id": "stable123",
+            "source_url": "https://t.me/venue/1",
+            "date": "2026-08-21",
+            "time": "20:00",
+            "artist": "Группа А",
+            "venue": "Jam Club",
+            "post_date": "2026-08-01",
+        }
+        refreshed = {
+            **existing,
+            "id": None,
+            "price": "1000 ₽",
+            "post_date": "2026-08-15",
+        }
+        result = deduplicate_events([existing, refreshed])
+        assert len(result) == 1
+        assert result[0]["id"] == "stable123"
+        assert result[0]["price"] == "1000 ₽"
+
     def test_different_artists_same_date_different_events(self):
         events = [
             {

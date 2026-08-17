@@ -9,6 +9,7 @@ import os
 import re
 import subprocess
 import sys
+from datetime import date
 
 OUTPUT_FILE = "events.json"
 EXTRACTED_FILE = "extracted_events.json"
@@ -28,6 +29,30 @@ def _to_scalar(value):
     if value is None:
         return None
     return str(value)
+
+
+def _valid_date_or_none(value):
+    if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return None
+    try:
+        return date.fromisoformat(value).isoformat()
+    except ValueError:
+        return None
+
+
+def _sanitize_event_dates(events: list[dict]) -> int:
+    cleaned = 0
+    for event in events:
+        raw = event.get("date")
+        if not raw:
+            continue
+        valid = _valid_date_or_none(raw)
+        if valid is None:
+            event["date"] = None
+            cleaned += 1
+        else:
+            event["date"] = valid
+    return cleaned
 
 
 # ── Жанры ──────────────────────────────────────────────────────────────────
@@ -372,7 +397,7 @@ def _artists_look_alike(a: str, b: str) -> bool:
 
 
 _NON_MUSIC_PREFIXES = (
-    "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка",
+    "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка", "standup", "стендап",
 )
 
 
@@ -381,7 +406,7 @@ def is_non_music_event(event: dict) -> bool:
     artist = _normalize(event.get("artist") or "")
     event_type = _normalize(event.get("event_type") or "")
     return artist.startswith(_NON_MUSIC_PREFIXES) or event_type in {
-        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка",
+        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка", "standup", "стендап",
     }
 
 
@@ -491,7 +516,7 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
                 same_venue = bool(vi and vj and _venue_match(vi, vj))
-                if ai and aj and ai & aj:
+                if ai and aj and ai & aj and (same_venue or not vi or not vj):
                     union(i, j)
                 elif same_venue and _artists_look_alike(
                     stage1[i].get("artist") or "",
@@ -625,6 +650,10 @@ def main(push: bool = True):
     else:
         print(f"{AFISHA_FILE} не найден")
 
+    invalid_dates = _sanitize_event_dates(new_events)
+    if invalid_dates:
+        print(f"Очищено некорректных дат: {invalid_dates}")
+
     # Нечёткий матч площадок → canonical names + автоалиасы
     venues_file = "venues.json"
     venues_data: list[dict] = []
@@ -655,13 +684,16 @@ def main(push: bool = True):
         except (json.JSONDecodeError, OSError):
             pass
 
-    existing_urls = {e["source_url"] for e in existing if e.get("source_url")}
-    truly_new = [e for e in new_events if e.get("source_url") not in existing_urls]
-    merged_raw = [e for e in existing + truly_new if not is_non_music_event(e)]
+    # Один URL (афиша на неделю, страница тура) может содержать
+    # несколько дат. Мерджим весь свежий набор и полагаемся на
+    # deduplicate_events, чтобы повторный запуск не плодил дубли.
+    merged_raw = [e for e in existing + new_events if not is_non_music_event(e)]
 
     before2 = len(merged_raw)
     merged = deduplicate_events(merged_raw)
-    print(f"Новых: {len(truly_new)}, было: {len(existing)}, итого: {len(merged)} (убрано дублей: {before2 - len(merged)})")
+    existing_ids = {e.get("id") for e in existing if e.get("id")}
+    truly_new_count = sum(1 for e in merged if not e.get("id") or e.get("id") not in existing_ids)
+    print(f"Новых: {truly_new_count}, было: {len(existing)}, итого: {len(merged)} (убрано дублей: {before2 - len(merged)})")
 
     # Убираем события-призраки
     ghost_artists = {"живой звук", "музыкальный вечер", "концерт", "живой концерт"}

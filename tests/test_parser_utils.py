@@ -9,9 +9,44 @@ from parser import (
     _artist_parts,
     _artist_set,
     _field_count,
+    _is_refusal_event,
+    _print_dry_run_report,
+    _sanitize_event_dates,
+    _valid_date_or_none,
     detect_genre,
     _detect_city,
 )
+
+
+def test_standup_is_rejected_as_non_music():
+    assert _is_refusal_event({"artist": "StandUp Валентин Сидоров"})
+    assert _is_refusal_event({"artist": "Стендап-концерт"})
+
+
+def test_dry_run_report_shows_diff(capsys):
+    existing = [{"id": "old", "date": "2026-08-20", "artist": "Группа A"}]
+    candidate = [{"id": "new", "date": "2026-08-21", "artist": "Группа B"}]
+    _print_dry_run_report(existing, candidate)
+    output = capsys.readouterr().out
+    assert "events.json не изменён" in output
+    assert "Добавить: 1" in output
+    assert "Убрать/склеить: 1" in output
+
+
+@pytest.mark.parametrize("value", ["2026-08-XX", "2026-null-null", "2026-02-30", "17.08.2026", "2026-8-17", None])
+def test_invalid_event_date_is_rejected(value):
+    assert _valid_date_or_none(value) is None
+
+
+def test_valid_event_date_is_canonical():
+    assert _valid_date_or_none("2026-08-17") == "2026-08-17"
+    assert _valid_date_or_none("2028-02-29") == "2028-02-29"
+
+
+def test_sanitize_event_dates_keeps_event_and_clears_only_date():
+    events = [{"date": "2026-08-XX", "artist": "Группа A"}]
+    assert _sanitize_event_dates(events) == 1
+    assert events == [{"date": None, "artist": "Группа A"}]
 
 
 class TestNormalize:
