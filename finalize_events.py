@@ -55,6 +55,46 @@ def _sanitize_event_dates(events: list[dict]) -> int:
     return cleaned
 
 
+def _valid_time_or_none(value):
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    labelled_start = re.search(r"(\d{1,2}:\d{2})\s*\((?:начало|старт)[^)]*\)", value, re.IGNORECASE)
+    if labelled_start:
+        return _valid_time_or_none(labelled_start.group(1))
+    match = re.fullmatch(r"(\d{1,2}):(\d{2})(?:\s*[-–—]\s*(\d{1,2}):(\d{2}))?", value)
+    if not match:
+        return None
+
+    def canonical(hour: str, minute: str):
+        h, m = int(hour), int(minute)
+        return f"{h:02d}:{m:02d}" if 0 <= h <= 23 and 0 <= m <= 59 else None
+
+    start = canonical(match.group(1), match.group(2))
+    if start is None:
+        return None
+    if match.group(3) is None:
+        return start
+    end = canonical(match.group(3), match.group(4))
+    return f"{start}–{end}" if end is not None else None
+
+
+def _sanitize_event_times(events: list[dict]) -> tuple[int, int]:
+    normalized = cleaned = 0
+    for event in events:
+        raw = event.get("time")
+        if not raw:
+            continue
+        valid = _valid_time_or_none(raw)
+        if valid is None:
+            event["time"] = None
+            cleaned += 1
+        elif valid != raw:
+            event["time"] = valid
+            normalized += 1
+    return normalized, cleaned
+
+
 # ── Жанры ──────────────────────────────────────────────────────────────────
 
 _CHANNEL_GENRES: dict[str, str] = {
@@ -660,6 +700,9 @@ def main(push: bool = True):
     invalid_dates = _sanitize_event_dates(new_events)
     if invalid_dates:
         print(f"Очищено некорректных дат: {invalid_dates}")
+    normalized_times, invalid_times = _sanitize_event_times(new_events)
+    if normalized_times or invalid_times:
+        print(f"Время: нормализовано {normalized_times}, очищено {invalid_times}")
 
     # Нечёткий матч площадок → canonical names + автоалиасы
     venues_file = "venues.json"
@@ -690,6 +733,11 @@ def main(push: bool = True):
                 existing = json.load(f)
         except (json.JSONDecodeError, OSError):
             pass
+    old_invalid_dates = _sanitize_event_dates(existing)
+    old_normalized_times, old_invalid_times = _sanitize_event_times(existing)
+    if old_invalid_dates or old_normalized_times or old_invalid_times:
+        print(f"Архив очищен: дат {old_invalid_dates}, "
+              f"времён нормализовано {old_normalized_times}, очищено {old_invalid_times}")
 
     # Один URL (афиша на неделю, страница тура) может содержать
     # несколько дат. Мерджим весь свежий набор и полагаемся на

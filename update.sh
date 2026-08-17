@@ -27,6 +27,9 @@ if git diff --cached --quiet; then
 else
     COUNT=$(python3 -c "import json; d=json.load(open('events.json')); print(len(d))")
     git commit -m "Обновить события: $COUNT в базе"
+    # Не перезаписываем изменения daily-parser/manual publish,
+    # если main успел обновиться за время локального запуска.
+    git pull --rebase origin main
     git push origin HEAD:main
     echo ""
     echo "✅ Задеплоено на mestov.net"

@@ -319,6 +319,50 @@ def _sanitize_event_dates(events: list[dict]) -> int:
     return cleaned
 
 
+def _valid_time_or_none(value):
+    """Нормализует HH:MM и понятный диапазон HH:MM–HH:MM."""
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    labelled_start = re.search(r"(\d{1,2}:\d{2})\s*\((?:начало|старт)[^)]*\)", value, re.IGNORECASE)
+    if labelled_start:
+        return _valid_time_or_none(labelled_start.group(1))
+    match = re.fullmatch(r"(\d{1,2}):(\d{2})(?:\s*[-–—]\s*(\d{1,2}):(\d{2}))?", value)
+    if not match:
+        return None
+
+    def canonical(hour: str, minute: str):
+        h, m = int(hour), int(minute)
+        if not (0 <= h <= 23 and 0 <= m <= 59):
+            return None
+        return f"{h:02d}:{m:02d}"
+
+    start = canonical(match.group(1), match.group(2))
+    if start is None:
+        return None
+    if match.group(3) is None:
+        return start
+    end = canonical(match.group(3), match.group(4))
+    return f"{start}–{end}" if end is not None else None
+
+
+def _sanitize_event_times(events: list[dict]) -> tuple[int, int]:
+    """Возвращает (нормализовано, очищено)."""
+    normalized = cleaned = 0
+    for event in events:
+        raw = event.get("time")
+        if not raw:
+            continue
+        valid = _valid_time_or_none(raw)
+        if valid is None:
+            event["time"] = None
+            cleaned += 1
+        elif valid != raw:
+            event["time"] = valid
+            normalized += 1
+    return normalized, cleaned
+
+
 _REFUSAL_MARKERS = (
     "нет музыкальных", "нет музыкального", "нет мероприятий", "не содержит анонса",
     "не содержит музыкальных", "информации о музыкальном мероприятии нет",
@@ -1421,6 +1465,10 @@ def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
     print("\n=== DRY RUN: events.json не изменён ===")
     print(f"Было: {len(existing)} | Станет: {len(candidate)} | "
           f"Добавить: {len(added)} | Обновить: {len(updated)} | Убрать/склеить: {len(removed)}")
+    undated = [e for e in candidate if not e.get("date")]
+    long_lineups = [e for e in candidate if len(e.get("artist") or "") > 180]
+    print(f"Диагностика: без даты: {len(undated)} | "
+          f"состав длиннее 180 символов: {len(long_lineups)}")
     for label, records in (("ADD", added), ("UPDATE", updated), ("REMOVE/MERGE", removed)):
         for e in records:
             print(f"  {label}: {e.get('date') or 'без даты'} | "
@@ -1479,6 +1527,9 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     invalid_dates = _sanitize_event_dates(all_events)
     if invalid_dates:
         print(f"Очищено некорректных дат: {invalid_dates}")
+    normalized_times, invalid_times = _sanitize_event_times(all_events)
+    if normalized_times or invalid_times:
+        print(f"Время: нормализовано {normalized_times}, очищено {invalid_times}")
     all_events = deduplicate_events(all_events)
     after = len(all_events)
     print(f"\nДедупликация: {before} → {after} событий (убрано дублей: {before - after})")
@@ -1490,6 +1541,12 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
                 existing = json.load(f)
         except (json.JSONDecodeError, OSError):
             existing = []
+    existing_before_cleanup = [dict(e) for e in existing]
+    old_invalid_dates = _sanitize_event_dates(existing)
+    old_normalized_times, old_invalid_times = _sanitize_event_times(existing)
+    if old_invalid_dates or old_normalized_times or old_invalid_times:
+        print(f"Архив очищен: дат {old_invalid_dates}, "
+              f"времён нормализовано {old_normalized_times}, очищено {old_invalid_times}")
 
     # Не фильтруем только по URL: один пост/страница может содержать
     # несколько дат. deduplicate_events склеит повторно полученные
@@ -1634,7 +1691,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
         print(f"Убрано мусорных событий (заглушки/не-музыкальные): {removed}")
 
     if dry_run:
-        _print_dry_run_report(existing, merged)
+        _print_dry_run_report(existing_before_cleanup, merged)
         PERSIST_IMAGES = previous_persist_images
         return merged
 

@@ -14,7 +14,9 @@ from parser import (
     _print_dry_run_report,
     resolve_city,
     _sanitize_event_dates,
+    _sanitize_event_times,
     _valid_date_or_none,
+    _valid_time_or_none,
     detect_genre,
     _detect_city,
 )
@@ -54,6 +56,28 @@ def test_sanitize_event_dates_keeps_event_and_clears_only_date():
     events = [{"date": "2026-08-XX", "artist": "Группа A"}]
     assert _sanitize_event_dates(events) == 1
     assert events == [{"date": None, "artist": "Группа A"}]
+
+
+@pytest.mark.parametrize("raw,expected", [
+    ("8:05", "08:05"),
+    ("18:00", "18:00"),
+    ("18:00-2:00", "18:00–02:00"),
+    ("18:00–02:00", "18:00–02:00"),
+    ("17:30 (сбор гостей), 18:30 (начало)", "18:30"),
+])
+def test_event_time_is_normalized(raw, expected):
+    assert _valid_time_or_none(raw) == expected
+
+
+@pytest.mark.parametrize("raw", ["24:00", "12:60", "вечером", "17:30 (сбор гостей)", None])
+def test_invalid_event_time_is_rejected(raw):
+    assert _valid_time_or_none(raw) is None
+
+
+def test_sanitize_event_times_reports_normalized_and_cleaned():
+    events = [{"time": "8:05"}, {"time": "25:00"}, {"time": "18:00"}]
+    assert _sanitize_event_times(events) == (1, 1)
+    assert events == [{"time": "08:05"}, {"time": None}, {"time": "18:00"}]
 
 
 class TestNormalize:
