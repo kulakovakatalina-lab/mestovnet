@@ -787,7 +787,7 @@
   {
     "date": "2026-08-22",
     "time": null,
-    "artist": "Грув», Джазовые вечера в Массандре: премьера «Ритм",
+    "artist": "Джазовые вечера в Массандре: премьера «Ритм & Грув»",
     "event_type": "концерт",
     "venue": "Массандра",
     "price": null,
@@ -8008,26 +8008,6 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6470",
     "id": "23d766b4",
     "genre": "джаз"
-  },
-  {
-    "date": "2026-08-XX",
-    "time": null,
-    "artist": "коллектив кавказского танца «АССА», фольклорный ансамбль «Совечёра», театр «Трикстер», ансамбль «Цветень»",
-    "event_type": "концерт",
-    "venue": "Квартал культур мира",
-    "price": null,
-    "description": "Выступления коллективов и ансамблей на Международном фестивале молодёжи в Квартале культур мира.",
-    "source_city": "Судак",
-    "source_channel": "tavrida_art",
-    "genre": "фолк",
-    "source_url": "https://t.me/tavrida_art/21803",
-    "images": [
-      "/images/events/6f0401422829ed42aaf9eec6094c1534.jpg",
-      "/images/events/5521bb4d67046536c4610eaabf86d64b.jpg"
-    ],
-    "image": "/images/events/6f0401422829ed42aaf9eec6094c1534.jpg",
-    "post_date": "2026-08-16T14:37:40+00:00",
-    "id": "de72bc30"
   },
   {
     "date": null,
