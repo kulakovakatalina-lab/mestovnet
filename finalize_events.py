@@ -9,6 +9,7 @@ import os
 import re
 import subprocess
 import sys
+from collections import Counter
 from datetime import date
 
 OUTPUT_FILE = "events.json"
@@ -432,6 +433,66 @@ def _bare_artist_key(text: str) -> str:
     return k
 
 
+def _all_artists_generic(artist: str) -> bool:
+    if not artist:
+        return True
+    generic = {_bare_artist_key(value) for value in _GENERIC_ARTIST_LITERALS}
+    for part in _split_artist_field(artist):
+        for name in _artist_parts(part.strip()):
+            bare = _bare_artist_key(name)
+            if bare and bare not in generic:
+                return False
+    return True
+
+
+def _known_cities() -> set[str]:
+    with open("cities.json", encoding="utf-8") as f:
+        cities = json.load(f)
+    return {
+        _normalize(value)
+        for city in cities
+        for value in [city["name"], *city.get("aliases", [])]
+    }
+
+
+def _event_validation_reason(event: dict) -> "str | None":
+    if not event.get("date"):
+        return "missing_date"
+    if _valid_date_or_none(event.get("date")) is None:
+        return "invalid_date"
+    artist = (event.get("artist") or "").strip()
+    if not artist:
+        return "missing_artist"
+    if _all_artists_generic(artist):
+        return "generic_artist"
+    if len(artist) > 180:
+        return "artist_too_long"
+    if is_non_music_event(event):
+        return "non_music"
+    if _normalize(event.get("source_city")) not in _known_cities():
+        return "unknown_city"
+    if not (event.get("source_url") or "").strip():
+        return "missing_source"
+    return None
+
+
+def validate_events(events: list[dict]) -> tuple[list[dict], Counter]:
+    accepted: list[dict] = []
+    rejected: Counter = Counter()
+    for event in events:
+        artist_parts = _split_artist_field(event.get("artist") or "")
+        music_parts = [part.strip() for part in artist_parts
+                       if not _normalize(part).startswith(("standup", "стендап", "музлото"))]
+        if music_parts != [part.strip() for part in artist_parts]:
+            event["artist"] = ", ".join(music_parts) or None
+        reason = _event_validation_reason(event)
+        if reason:
+            rejected[reason] += 1
+        else:
+            accepted.append(event)
+    return accepted, rejected
+
+
 def _artists_look_alike(a: str, b: str) -> bool:
     """Нечёткое сравнение вариантов одного имени для дедупликации."""
     ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
@@ -823,24 +884,11 @@ def main(push: bool = True):
     if genre_added:
         print(f"Жанр определён: {genre_added} событий")
 
-    def _all_artists_generic(artist_str: str) -> bool:
-        """True если все части артиста — generic плейсхолдеры."""
-        if not artist_str:
-            return True
-        parts = _split_artist_field(artist_str)
-        for part in parts:
-            for name in _artist_parts(part.strip()):
-                bare = _bare_artist_key(name)
-                if bare and bare not in _GENERIC_ARTIST_LITERALS:
-                    return False
-        return True
-
-    # Фильтруем события без реального исполнителя
-    before_artist_filter = len(merged)
-    merged = [e for e in merged if e.get("artist") and not _all_artists_generic(e["artist"])]
-    removed_no_artist = before_artist_filter - len(merged)
-    if removed_no_artist:
-        print(f"Убрано событий без реального исполнителя: {removed_no_artist}")
+    before_validation = len(merged)
+    merged, rejected = validate_events(merged)
+    print(f"Финальная проверка: принято {len(merged)} из {before_validation}")
+    for reason, count in rejected.items():
+        print(f"  Отклонено — {reason}: {count}")
 
     # Назначаем стабильный id (сохраняем существующий, генерируем для новых)
     for e in merged:
