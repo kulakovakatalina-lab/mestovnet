@@ -109,33 +109,124 @@ jobs:
 
   notify:
     needs: [parse-and-deploy, deploy]
-    if: >-
-      ${{ always() && needs.parse-and-deploy.result == 'success' &&
-          (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
+    # Отчёт должен прийти даже тогда, когда парсер, тесты или деплой упали.
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout уже опубликованной версии
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         uses: actions/checkout@v4
         with:
           ref: main
 
       - name: Установить Python
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Установить зависимости
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         run: pip install -r requirements.txt
 
       - name: Загрузить снимок реестров «до»
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         uses: actions/download-artifact@v4
         with:
           name: registries-before
           path: /tmp/before
 
       - name: Отправить уведомление в Telegram
+        id: regular_notification
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python notify_new.py --before-dir /tmp/before --notify-empty
         continue-on-error: true
+
+      - name: Сообщить об ошибке ночного запуска
+        if: >-
+          ${{ needs.parse-and-deploy.result != 'success' ||
+              (needs.deploy.result != 'success' && needs.deploy.result != 'skipped') }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PARSER_RESULT: ${{ needs.parse-and-deploy.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          parser_result = os.environ["PARSER_RESULT"]
+          deploy_result = os.environ["DEPLOY_RESULT"]
+          if parser_result != "success":
+              problem = f"парсер завершился со статусом {parser_result}"
+          else:
+              problem = f"парсер отработал, но проверка/деплой завершились со статусом {deploy_result}"
+
+          text = (
+              "⚠️ <b>Ночной запуск Местов.Нет завершился с ошибкой</b>\n\n"
+              f"{problem}. Изменения на сайте могли не опубликоваться.\n"
+              f'<a href="{os.environ["RUN_URL"]}">Открыть логи запуска</a>'
+          )
+          data = json.dumps({
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "text": text,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": True,
+          }).encode()
+          request = urllib.request.Request(
+              f'https://api.telegram.org/bot{os.environ["TELEGRAM_BOT_TOKEN"]}/sendMessage',
+              data=data,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              if response.status != 200:
+                  raise RuntimeError(f"Telegram вернул HTTP {response.status}")
+          PY
+
+      - name: Сообщить, что основной Telegram-отчёт не отправился
+        if: ${{ steps.regular_notification.outcome == 'failure' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          text = (
+              "⚠️ <b>Ночной запуск Местов.Нет завершён, но подробный отчёт не сформирован</b>\n\n"
+              f'<a href="{os.environ["RUN_URL"]}">Открыть логи запуска</a>'
+          )
+          data = json.dumps({
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "text": text,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": True,
+          }).encode()
+          request = urllib.request.Request(
+              f'https://api.telegram.org/bot{os.environ["TELEGRAM_BOT_TOKEN"]}/sendMessage',
+              data=data,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              if response.status != 200:
+                  raise RuntimeError(f"Telegram вернул HTTP {response.status}")
+          PY
