@@ -12,6 +12,7 @@ from parser import (
     _field_count,
     _is_refusal_event,
     _print_dry_run_report,
+    _print_source_report,
     resolve_city,
     _sanitize_event_dates,
     _sanitize_event_times,
@@ -53,6 +54,23 @@ def test_final_validation_accepts_complete_music_event():
 ])
 def test_final_validation_rejects_bad_event(change, reason):
     assert _event_validation_reason(_valid_event(**change)) == reason
+
+
+def test_source_report_shows_posts_passed_and_rejection_reason(capsys):
+    good = _valid_event(source_channel="test", source_url="https://example.com/good")
+    bad = _valid_event(source_channel="test", source_url="https://example.com/bad", date=None)
+    stats = {
+        "test": {
+            "title": "Тестовый канал",
+            "posts": 3,
+            "extracted": 2,
+            "urls": {good["source_url"], bad["source_url"]},
+        }
+    }
+    _print_source_report(stats, [good, bad], [good])
+    output = capsys.readouterr().out
+    assert "постов 3, извлечено 2, прошло 1, склеено дублей 0" in output
+    assert "нет даты: 1" in output
 
 
 def test_standup_is_rejected_as_non_music():
