@@ -22,12 +22,15 @@ DAYS_BACK = 2
 IMAGES_DIR = "images/events"
 CACHE_DIR = ".cache"
 BATCH_SIZE = 10  # max posts per Claude call
+PERSIST_IMAGES = True
 
 
 def download_image(url: str):
     """Скачивает картинку локально, возвращает путь вида /images/events/<hash>.<ext>."""
     if not url:
         return None
+    if not PERSIST_IMAGES:
+        return url
     os.makedirs(IMAGES_DIR, exist_ok=True)
     url_hash = hashlib.md5(url.encode()).hexdigest()
     # Пробуем определить расширение из URL
@@ -172,6 +175,7 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 - выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
 - общие анонсы без конкретного исполнителя/группы на конкретную дату;
 - экскурсии, музеи, прогулки, спортивные забеги, вечеринки без музыки, рекламу отеля;
+- музыкальное лото, музлото, музыкальные квизы и игры с угадыванием хитов;
 - рассказы путешественников, новости заведения без анонса события.
 
 ВАЖНО: правило для поля date.
@@ -329,7 +333,7 @@ _NON_MUSIC_MARKERS = (
     "кино под открытым небом", "кинопоказ", "кино на стене",
     "премьера драмеди", "премьера фильма", "арт-забег", "утренний забег",
     "групповая экскурсия", "спортивный забег", "велоэкскурсия", "пешая экскурсия",
-    "кинолекторий", "stand-up", "standup", "стендап",
+    "кинолекторий", "stand-up", "standup", "стендап", "музлото",
 )
 
 
@@ -345,7 +349,7 @@ def _is_refusal_event(e: dict) -> bool:
     event_type = _normalize(e.get("event_type") or "")
     non_music_prefixes = (
         "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка",
-        "standup", "стендап",
+        "standup", "стендап", "музлото",
     )
     if artist.startswith(non_music_prefixes) or event_type in non_music_prefixes:
         return True
@@ -912,14 +916,14 @@ def _detect_city(text: str):
 def resolve_city(event: dict, channel: dict) -> str:
     """Определяет город события — всегда каноническое имя из справочника или «Крым»."""
     ch = _canon_city(channel.get("city"))
-    if ch and ch != "Крым":          # канал привязан к конкретному городу — доверяем ему
-        return ch
-    detected = (
-        _canon_city(event.get("city"))           # город от Claude, только если он из справочника
+    # Канал может анонсировать выездное событие. Явно указанная
+    # локация надёжнее города-владельца канала.
+    explicit = (
+        _canon_city(event.get("city"))
         or _detect_city(event.get("venue") or "")
         or _detect_city(event.get("description") or "")
     )
-    return detected or "Крым"        # fallback
+    return explicit or (ch if ch and ch != "Крым" else None) or "Крым"
 
 
 def _normalize(text: str) -> str:
@@ -950,8 +954,13 @@ def _venue_match(v1: str, v2: str) -> bool:
     if not w1 or not w2:
         return False
     common = w1 & w2
-    # достаточно одного общего значимого слова
-    return len(common) >= 1
+    if common:
+        return True
+    # Падежные формы вроде «Лабиринт» / «лабиринта».
+    return any(
+        len(a) >= 5 and len(b) >= 5 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.86
+        for a in w1 for b in w2
+    )
 
 
 def _split_artist_field(artist: str) -> list[str]:
@@ -1420,6 +1429,9 @@ def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
 
 
 def main(days_back: int = DAYS_BACK, dry_run: bool = False):
+    global PERSIST_IMAGES
+    previous_persist_images = PERSIST_IMAGES
+    PERSIST_IMAGES = not dry_run
     tg_channels, max_channels, vk_channels, ig_channels = load_channels()
 
     all_events = []
@@ -1459,7 +1471,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     process_afisha_ru(all_events)
 
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
-    img_updated = _redistribute_images(all_events)
+    img_updated = 0 if dry_run else _redistribute_images(all_events)
     if img_updated:
         print(f"Картинки обновлены: {img_updated} событий")
 
@@ -1623,12 +1635,14 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
 
     if dry_run:
         _print_dry_run_report(existing, merged)
+        PERSIST_IMAGES = previous_persist_images
         return merged
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
 
     print(f"Готово. Сохранено в {OUTPUT_FILE}")
+    PERSIST_IMAGES = previous_persist_images
 
 
 if __name__ == "__main__":

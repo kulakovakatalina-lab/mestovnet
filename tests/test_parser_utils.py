@@ -1,6 +1,7 @@
 """Тесты утилитарных функций parser.py: normalize, venue_match, artist_parts, detect_genre, detect_city."""
 
 import pytest
+import parser as parser_module
 
 from parser import (
     _normalize,
@@ -11,6 +12,7 @@ from parser import (
     _field_count,
     _is_refusal_event,
     _print_dry_run_report,
+    resolve_city,
     _sanitize_event_dates,
     _valid_date_or_none,
     detect_genre,
@@ -21,6 +23,11 @@ from parser import (
 def test_standup_is_rejected_as_non_music():
     assert _is_refusal_event({"artist": "StandUp Валентин Сидоров"})
     assert _is_refusal_event({"artist": "Стендап-концерт"})
+
+
+def test_muzloto_is_rejected_as_non_music():
+    assert _is_refusal_event({"artist": "МУЗЛОТО"})
+    assert _is_refusal_event({"description": "В пятницу играем в музлото"})
 
 
 def test_dry_run_report_shows_diff(capsys):
@@ -265,6 +272,7 @@ class TestDetectCity:
         ("Мрия resort", "Ялта"),
         ("Дюльбер мероприятие", "Ялта"),
         ("Мисхор музыка", "Ялта"),
+        ("пространство лабиринта в Краснолесье", "Симферополь"),
     ])
     def test_city_detection(self, text, expected):
         assert _detect_city(text) == expected
@@ -275,3 +283,24 @@ class TestDetectCity:
     def test_case_insensitive(self):
         assert _detect_city("ЯЛТА") == "Ялта"
         assert _detect_city("севастополь") == "Севастополь"
+
+
+def test_dry_run_does_not_persist_images(tmp_path):
+    previous = parser_module.PERSIST_IMAGES
+    parser_module.PERSIST_IMAGES = False
+    try:
+        url = "https://example.test/poster.jpg"
+        assert parser_module.download_image(url) == url
+        assert list(tmp_path.iterdir()) == []
+    finally:
+        parser_module.PERSIST_IMAGES = previous
+
+
+def test_explicit_event_location_overrides_channel_city():
+    event = {
+        "city": None,
+        "venue": "Лабиринт",
+        "description": "Концерт в Краснолесье",
+    }
+    channel = {"city": "Севастополь"}
+    assert resolve_city(event, channel) == "Симферополь"
