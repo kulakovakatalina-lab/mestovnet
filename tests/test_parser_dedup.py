@@ -11,7 +11,12 @@ from parser import (
     _artist_set,
     is_generic_artist,
     _split_artist_field,
+    _venue_match,
 )
+
+
+def test_venue_match_handles_russian_case_endings():
+    assert _venue_match("Лабиринт", "пространство лабиринта в Краснолесье")
 
 
 class TestMergeEvents:

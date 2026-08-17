@@ -285,7 +285,14 @@ def _normalize_venue(text: str) -> str:
 def _venue_match(v1: str, v2: str) -> bool:
     w1 = set(_normalize_venue(v1).split())
     w2 = set(_normalize_venue(v2).split())
-    return bool(w1 and w2 and w1 & w2)
+    if not w1 or not w2:
+        return False
+    if w1 & w2:
+        return True
+    return any(
+        len(a) >= 5 and len(b) >= 5 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.86
+        for a in w1 for b in w2
+    )
 
 
 def _split_artist_field(artist: str) -> list[str]:
@@ -397,7 +404,7 @@ def _artists_look_alike(a: str, b: str) -> bool:
 
 
 _NON_MUSIC_PREFIXES = (
-    "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка", "standup", "стендап",
+    "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка", "standup", "стендап", "музлото",
 )
 
 
@@ -406,7 +413,7 @@ def is_non_music_event(event: dict) -> bool:
     artist = _normalize(event.get("artist") or "")
     event_type = _normalize(event.get("event_type") or "")
     return artist.startswith(_NON_MUSIC_PREFIXES) or event_type in {
-        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка", "standup", "стендап",
+        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка", "standup", "стендап", "музлото",
     }
 
 

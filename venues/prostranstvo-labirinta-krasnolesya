@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>пространство лабиринта Краснолесья — афиша в Белогорске · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в пространство лабиринта Краснолесья, в Белогорске. 0 ближайших событий. Расписание и билеты.">
+  <title>пространство лабиринта Краснолесья — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в пространство лабиринта Краснолесья, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/prostranstvo-labirinta-krasnolesya">
-  <meta property="og:title" content="пространство лабиринта Краснолесья — афиша в Белогорске · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в пространство лабиринта Краснолесья, в Белогорске. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="пространство лабиринта Краснолесья — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в пространство лабиринта Краснолесья, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "пространство лабиринта Краснолесья",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Белогорск",
+        "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
     }
@@ -39,7 +39,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Белогорск", "item": "https://mestov.net/cities/belogorsk.html"}, {"@type": "ListItem", "position": 3, "name": "пространство лабиринта Краснолесья"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "пространство лабиринта Краснолесья"}]}
 </script>
   <style>
 
@@ -1048,7 +1048,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/belogorsk.html">Белогорск</a>
+      · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">пространство лабиринта Краснолесья</h1>
 
@@ -1076,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["пространство лабиринта Краснолесья", "пространство лабиринта Краснолесья"];
+const VENUE_ALIASES = ["пространство лабиринта Краснолесья", "Лабиринт", "пространство лабиринта Краснолесья"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

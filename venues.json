@@ -1043,11 +1043,12 @@
   {
     "slug": "prostranstvo-labirinta-krasnolesya",
     "name": "пространство лабиринта Краснолесья",
-    "city": "Белогорск",
+    "city": "Симферополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "пространство лабиринта Краснолесья"
+      "пространство лабиринта Краснолесья",
+      "Лабиринт"
     ],
     "description": null,
     "desc_baseline_count": 0,
