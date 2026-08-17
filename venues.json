@@ -770,20 +770,6 @@
     "lon": 34.132019
   },
   {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Квартал культур мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "mezhdunarodnyy-festival-molodezhi",
     "name": "Международный фестиваль молодёжи",
     "city": "Судак",
@@ -978,6 +964,20 @@
     "event_count": 2,
     "aliases": [
       "АНАПСКИЙ РАЙОН, СУПСЕХ"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Квартал культур мира"
     ],
     "description": null,
     "desc_baseline_count": 0,
