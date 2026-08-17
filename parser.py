@@ -10,6 +10,11 @@ from datetime import date, datetime, timedelta, timezone
 
 import httpx
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+
+# Локально подхватываем ключи из .env. Уже заданные переменные
+# окружения (например, GitHub Actions Secrets) не перезаписываются.
+load_dotenv(override=False)
 
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
@@ -279,6 +284,37 @@ def _to_scalar(value):
     return str(value)
 
 
+def _valid_date_or_none(value):
+    """Возвращает строгую календарную дату YYYY-MM-DD или None.
+
+    LLM иногда возвращает шаблоны вроде 2026-08-XX или
+    несуществующие дни. Такие значения не должны участвовать
+    в сортировке, ID и датированной дедупликации.
+    """
+    if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return None
+    try:
+        return date.fromisoformat(value).isoformat()
+    except ValueError:
+        return None
+
+
+def _sanitize_event_dates(events: list[dict]) -> int:
+    """Очищает невалидные даты; возвращает число исправлений."""
+    cleaned = 0
+    for event in events:
+        raw = event.get("date")
+        if not raw:
+            continue
+        valid = _valid_date_or_none(raw)
+        if valid is None:
+            event["date"] = None
+            cleaned += 1
+        else:
+            event["date"] = valid
+    return cleaned
+
+
 _REFUSAL_MARKERS = (
     "нет музыкальных", "нет музыкального", "нет мероприятий", "не содержит анонса",
     "не содержит музыкальных", "информации о музыкальном мероприятии нет",
@@ -293,7 +329,7 @@ _NON_MUSIC_MARKERS = (
     "кино под открытым небом", "кинопоказ", "кино на стене",
     "премьера драмеди", "премьера фильма", "арт-забег", "утренний забег",
     "групповая экскурсия", "спортивный забег", "велоэкскурсия", "пешая экскурсия",
-    "кинолекторий",
+    "кинолекторий", "stand-up", "standup", "стендап",
 )
 
 
@@ -307,7 +343,10 @@ def _is_refusal_event(e: dict) -> bool:
         return True
     artist = _normalize(e.get("artist") or "")
     event_type = _normalize(e.get("event_type") or "")
-    non_music_prefixes = ("экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка")
+    non_music_prefixes = (
+        "экскурсия", "лекция", "мастер класс", "кинопоказ", "выставка",
+        "standup", "стендап",
+    )
     if artist.startswith(non_music_prefixes) or event_type in non_music_prefixes:
         return True
     # Пустая заглушка: нет ни описания, ни артиста, ни площадки, ни даты
@@ -1003,7 +1042,7 @@ def _merge_events(group: list[dict]) -> dict:
     best = max(group, key=_field_count)
 
     merged = {}
-    for field in ("date", "time", "artist", "event_type", "venue", "price", "description", "source_city", "source_channel", "genre"):
+    for field in ("id", "date", "time", "artist", "event_type", "venue", "price", "description", "source_city", "source_channel", "genre"):
         for e in group_sorted:
             v = e.get(field)
             if v and str(v).strip():
@@ -1081,7 +1120,8 @@ def _merge_group(group: list[dict]) -> dict:
 
 
 def deduplicate_events(events: list[dict]) -> list[dict]:
-    # Этап 1: события из одного поста с одной датой → одна карточка
+    # Этап 1: один URL + дата обычно означают одну карточку.
+    # Разные даты того же поста намеренно остаются разными событиями.
     by_post: dict[tuple, list] = {}
     no_url: list[dict] = []
     for event in events:
@@ -1120,6 +1160,10 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
         for a in range(len(indices)):
             for b in range(a + 1, len(indices)):
                 i, j = indices[a], indices[b]
+                ci = (stage1[i].get("source_city") or "").strip()
+                cj = (stage1[j].get("source_city") or "").strip()
+                if ci and cj and ci.lower() != cj.lower():
+                    continue  # в разных городах это разные события
                 ai = _artist_set(stage1[i])
                 aj = _artist_set(stage1[j])
                 vi = stage1[i].get("venue") or ""
@@ -1127,8 +1171,9 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
                 same_venue = bool(vi and vj and _venue_match(vi, vj))
-                if ai and aj and ai & aj:
-                    # Есть хотя бы один общий артист → одно событие
+                if ai and aj and ai & aj and (same_venue or not vi or not vj):
+                    # Общий артист — дубль только на той же площадке
+                    # (либо если один из источников площадку не указал).
                     union(i, j)
                 elif same_venue and _artists_look_alike(
                     stage1[i].get("artist") or "",
@@ -1352,7 +1397,29 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
         print(f"  Найдено событий: {channel_events}          ")
 
 
-def main(days_back: int = DAYS_BACK):
+def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
+    """Печатает краткий diff без записи events.json."""
+    old_by_id = {e.get("id"): e for e in existing if e.get("id")}
+    new_by_id = {e.get("id"): e for e in candidate if e.get("id")}
+    added = [e for eid, e in new_by_id.items() if eid not in old_by_id]
+    removed = [e for eid, e in old_by_id.items() if eid not in new_by_id]
+    tracked = ("date", "time", "artist", "venue", "price", "source_city", "source_url")
+    updated = [
+        e for eid, e in new_by_id.items()
+        if eid in old_by_id and any(e.get(f) != old_by_id[eid].get(f) for f in tracked)
+    ]
+
+    print("\n=== DRY RUN: events.json не изменён ===")
+    print(f"Было: {len(existing)} | Станет: {len(candidate)} | "
+          f"Добавить: {len(added)} | Обновить: {len(updated)} | Убрать/склеить: {len(removed)}")
+    for label, records in (("ADD", added), ("UPDATE", updated), ("REMOVE/MERGE", removed)):
+        for e in records:
+            print(f"  {label}: {e.get('date') or 'без даты'} | "
+                  f"{e.get('artist') or 'без артиста'} | "
+                  f"{e.get('venue') or 'без площадки'} | {e.get('source_city') or ''}")
+
+
+def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     tg_channels, max_channels, vk_channels, ig_channels = load_channels()
 
     all_events = []
@@ -1397,6 +1464,9 @@ def main(days_back: int = DAYS_BACK):
         print(f"Картинки обновлены: {img_updated} событий")
 
     before = len(all_events)
+    invalid_dates = _sanitize_event_dates(all_events)
+    if invalid_dates:
+        print(f"Очищено некорректных дат: {invalid_dates}")
     all_events = deduplicate_events(all_events)
     after = len(all_events)
     print(f"\nДедупликация: {before} → {after} событий (убрано дублей: {before - after})")
@@ -1409,9 +1479,10 @@ def main(days_back: int = DAYS_BACK):
         except (json.JSONDecodeError, OSError):
             existing = []
 
-    existing_urls = {e["source_url"] for e in existing if e.get("source_url")}
-    new_events = [e for e in all_events if e.get("source_url") not in existing_urls]
-    merged_raw = existing + new_events
+    # Не фильтруем только по URL: один пост/страница может содержать
+    # несколько дат. deduplicate_events склеит повторно полученные
+    # карточки, но сохранит новые даты того же URL.
+    merged_raw = existing + all_events
 
     before2 = len(merged_raw)
     merged = deduplicate_events(merged_raw)
@@ -1419,7 +1490,9 @@ def main(days_back: int = DAYS_BACK):
     if before2 != after2:
         print(f"Дедупликация с архивом: {before2} → {after2} (убрано: {before2 - after2})")
 
-    print(f"Новых событий: {len(new_events)}, уже было: {len(existing)}, итого: {len(merged)}")
+    existing_ids = {e.get("id") for e in existing if e.get("id")}
+    new_count = sum(1 for e in merged if not e.get("id") or e.get("id") not in existing_ids)
+    print(f"Новых событий: {new_count}, уже было: {len(existing)}, итого: {len(merged)}")
 
     # Назначаем стабильный id (сохраняем существующий, генерируем для новых)
     for e in merged:
@@ -1548,6 +1621,10 @@ def main(days_back: int = DAYS_BACK):
     if removed:
         print(f"Убрано мусорных событий (заглушки/не-музыкальные): {removed}")
 
+    if dry_run:
+        _print_dry_run_report(existing, merged)
+        return merged
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
 
@@ -1557,8 +1634,9 @@ def main(days_back: int = DAYS_BACK):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=None, help="Глубина парсинга в днях (по умолчанию: DAYS_BACK)")
+    parser.add_argument("--dry-run", action="store_true", help="Показать diff, не записывая events.json")
     args = parser.parse_args()
     days = args.days if args.days else DAYS_BACK
     if args.days:
         print(f"Глубина парсинга: {days} дней")
-    main(days_back=days)
+    main(days_back=days, dry_run=args.dry_run)
