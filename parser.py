@@ -601,7 +601,7 @@ def fetch_instagram_posts_wrapper(username: str, days_back: int) -> list[dict]:
     return _fetch(username, days_back)
 
 
-def process_yandex_afisha(all_events: list):
+def process_yandex_afisha(all_events: list, source_stats: dict = None):
     from fetch_yandex_afisha import fetch_all_crimea, CITIES
     print("\nЯндекс.Афиша — крымские города...")
     posts = fetch_all_crimea()
@@ -625,6 +625,12 @@ def process_yandex_afisha(all_events: list):
         all_events.append(event)
         count += 1
     print(f"  Найдено событий: {count}")
+    if source_stats is not None:
+        source_stats["yandex_afisha"] = {
+            "title": "Яндекс.Афиша", "posts": len(posts), "extracted": count,
+            "urls": {event["source_url"] for event in all_events
+                     if event.get("source_channel") == "yandex_afisha"},
+        }
 
 
 # Сопоставление жанров afisha.ru со словарём сайта (нижний регистр)
@@ -651,7 +657,7 @@ def _normalize_afisha_genre(g):
     return g if g in _SITE_GENRES else None
 
 
-def process_afisha_ru(all_events: list):
+def process_afisha_ru(all_events: list, source_stats: dict = None):
     from fetch_afisha_ru import fetch_all_crimea
     print("\nАфиша (afisha.ru) — крымские города...")
     posts = fetch_all_crimea()
@@ -676,6 +682,12 @@ def process_afisha_ru(all_events: list):
         all_events.append(event)
         count += 1
     print(f"  Найдено событий: {count}")
+    if source_stats is not None:
+        source_stats["afisha_ru"] = {
+            "title": "Афиша.ru", "posts": len(posts), "extracted": count,
+            "urls": {event["source_url"] for event in all_events
+                     if event.get("source_channel") == "afisha_ru"},
+        }
 
 
 # Жанр по source_channel (если канал всегда одного жанра)
@@ -1414,13 +1426,20 @@ def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
     return result
 
 
-def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK):
+def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK,
+                     source_stats: dict = None):
     for channel in channels:
         label = channel.get("username") or channel.get("domain") or str(channel.get("chat_id"))
+        if source_stats is not None:
+            source_stats[label] = {
+                "title": channel["title"], "posts": 0, "extracted": 0, "urls": set(),
+            }
         print(f"\nЧитаю {label} ({channel['title']})...")
         try:
             posts = get_posts_fn(channel)
             print(f"  Постов за {days_back} дней: {len(posts)}")
+            if source_stats is not None:
+                source_stats[label]["posts"] = len(posts)
         except Exception as e:
             print(f"  Ошибка: {e}")
             continue
@@ -1523,6 +1542,36 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 print(f" +{len([e for p in batch for e in batch_result.get(p.get('url', ''), [])])}")
 
         print(f"  Найдено событий: {channel_events}          ")
+        if source_stats is not None:
+            source_stats[label]["extracted"] = channel_events
+            source_stats[label]["urls"] = {
+                event.get("source_url") for event in all_events
+                if event.get("source_channel") == label and event.get("source_url")
+            }
+
+
+def _print_source_report(source_stats: dict, candidates: list[dict], accepted: list[dict]) -> None:
+    """Печатает эффективность каждого источника за текущий запуск."""
+    print("\n=== Отчёт по источникам ===")
+    accepted_ids = {id(event) for event in accepted}
+    for label, stats in source_stats.items():
+        urls = stats.get("urls", set())
+        relevant = [event for event in candidates
+                    if event.get("source_channel") == label and event.get("source_url") in urls]
+        passed = sum(id(event) in accepted_ids for event in relevant)
+        rejected = Counter(
+            reason for event in relevant
+            if id(event) not in accepted_ids
+            for reason in [_event_validation_reason(event)]
+            if reason
+        )
+        rejected_text = ", ".join(
+            f"{_VALIDATION_LABELS[reason]}: {count}" for reason, count in rejected.items()
+        ) or "0"
+        merged_away = max(0, stats["extracted"] - len(relevant))
+        print(f"{label} ({stats['title']}): постов {stats['posts']}, "
+              f"извлечено {stats['extracted']}, прошло {passed}, "
+              f"склеено дублей {merged_away}, отклонено {rejected_text}")
 
 
 def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
@@ -1558,14 +1607,17 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     tg_channels, max_channels, vk_channels, ig_channels = load_channels()
 
     all_events = []
+    source_stats = {}
 
-    process_channels(tg_channels, all_events, lambda ch: fetch_posts(ch["username"], days_back), days_back)
+    process_channels(tg_channels, all_events, lambda ch: fetch_posts(ch["username"], days_back),
+                     days_back, source_stats)
 
     max_token = os.environ.get("MAX_BOT_TOKEN", "")
     active_max = [c for c in max_channels if c.get("chat_id")]
     if active_max and max_token:
         process_channels(
-            active_max, all_events, lambda ch: fetch_max_posts(ch["chat_id"], max_token, days_back), days_back
+            active_max, all_events, lambda ch: fetch_max_posts(ch["chat_id"], max_token, days_back),
+            days_back, source_stats
         )
     elif active_max:
         print("\nMax-каналы настроены, но MAX_BOT_TOKEN не задан — пропускаю.")
@@ -1573,7 +1625,8 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     vk_token = os.environ.get("VK_SERVICE_TOKEN", "")
     if vk_channels and vk_token:
         process_channels(
-            vk_channels, all_events, lambda ch: fetch_vk_posts(ch["domain"], vk_token, days_back), days_back
+            vk_channels, all_events, lambda ch: fetch_vk_posts(ch["domain"], vk_token, days_back),
+            days_back, source_stats
         )
     elif vk_channels:
         print("\nVK-каналы настроены, но VK_SERVICE_TOKEN не задан — пропускаю.")
@@ -1589,9 +1642,9 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     elif ig_channels:
         print("\nInstagram-каналы настроены, но IG_USERNAME / IG_PASSWORD не заданы — пропускаю.")
 
-    process_yandex_afisha(all_events)
+    process_yandex_afisha(all_events, source_stats)
 
-    process_afisha_ru(all_events)
+    process_afisha_ru(all_events, source_stats)
 
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
     img_updated = 0 if dry_run else _redistribute_images(all_events)
@@ -1738,8 +1791,10 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
         print(f"Жанр определён автоматически: {genre_added} событий")
 
     before_validation = len(merged)
+    validation_candidates = list(merged)
     merged, rejected = validate_events(merged)
     _print_validation_report(before_validation, len(merged), rejected)
+    _print_source_report(source_stats, validation_candidates, merged)
 
     if dry_run:
         _print_dry_run_report(existing_before_cleanup, merged)
