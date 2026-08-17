@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 41,
+    "event_count": 36,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 27,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 23,
+    "event_count": 19,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -174,7 +174,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 9,
+    "event_count": 8,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -228,22 +228,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
   },
   {
     "slug": "dvorets-kultury-profsoyuzov",
@@ -356,6 +340,22 @@
     "desc_baseline_count": 4,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
   },
   {
     "slug": "narodnyy-bar",
@@ -564,6 +564,20 @@
     "lon": 33.525748
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -756,6 +770,20 @@
     "lon": 34.132019
   },
   {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "mezhdunarodnyy-festival-molodezhi",
     "name": "Международный фестиваль молодёжи",
     "city": "Судак",
@@ -812,20 +840,6 @@
     "lon": null
   },
   {
-    "slug": "dom-muzey-a-s-pushkina",
-    "name": "Дом-музей А.С. Пушкина",
-    "city": "Гурзуф",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Дом-музей А.С. Пушкина"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "russkiy-teatr-im-gorkogo",
     "name": "Русский театр им. Горького",
     "city": "Симферополь",
@@ -839,20 +853,6 @@
     "desc_baseline_count": 2,
     "lat": 44.949797,
     "lon": 34.096364
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "molodost",
@@ -985,20 +985,6 @@
     "lon": null
   },
   {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Квартал культур мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "lokatsiya-3-km-ot-nauchnogo",
     "name": "Локация 3 км от Научного",
     "city": "Научный",
@@ -1076,6 +1062,20 @@
     "event_count": 1,
     "aliases": [
       "Оранжерея"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-s-pushkina",
+    "name": "Дом-музей А.С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей А.С. Пушкина"
     ],
     "description": "",
     "desc_baseline_count": 0,
@@ -1713,20 +1713,6 @@
     "lon": null
   },
   {
-    "slug": "dom-muzey-direktora-observatorii-v-p-nauchnyy",
-    "name": "Дом-музей директора обсерватории в п. Научный",
-    "city": "Научный",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом-музей директора обсерватории в п. Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
     "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
     "city": "Крым",
@@ -1776,6 +1762,20 @@
     "event_count": 1,
     "aliases": [
       "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "peschera-mramornaya-s-mramornoe-simferopolskiy-rayon",
+    "name": "Пещера Мраморная, с. Мраморное, Симферопольский район",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Пещера Мраморная, с. Мраморное, Симферопольский район"
     ],
     "description": null,
     "desc_baseline_count": 0,

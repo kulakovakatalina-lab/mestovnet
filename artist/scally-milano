@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scally Milano — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Scally Milano в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Scally Milano в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/scally-milano">
   <meta property="og:title" content="Scally Milano — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Scally Milano в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Scally Milano в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Scally Milano"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Scally Milano",
-      "startDate": "2026-08-16T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Scally Milano"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Депо",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "О концерте Scally Milano выступит в Вашем городе!\r\n\r\nАвтор таких хитов, как «днями и ночами», «Русская Кукла», «Дай Мне Шанс», «Мечты», «Большие Бабки» и многих других!\r\nВас ждёт насыщенная программа, живое общение, мощная энергетика и, конечно же, фирменный стил\u0000ь Дани, который покорил миллионы сердец по всей стране!\r\n\r\nСОЛДАУТ неизбежен! Билеты тают на глазах — либо ты покупаешь билет сейчас, либо смотришь в сторис, как отдыхают те, кто успел.\r\nВыбор за тобой!\r\n\r\nТочное время запуска на площадку для вашей категории билета вы сможете найти во встрече мероприятия ВК за несколько дней до концерта",
-      "image": "/images/events/d17bcd97a2ada7f8999edb490491fac6.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
