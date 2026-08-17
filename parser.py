@@ -6,6 +6,7 @@ import mimetypes
 import os
 import re
 import time
+from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 
 import httpx
@@ -1132,6 +1133,80 @@ def _bare_artist_key(text: str) -> str:
     return k
 
 
+def _all_artists_generic(artist: str) -> bool:
+    """True, если поле не содержит ни одного настоящего имени исполнителя."""
+    if not artist:
+        return True
+    generic = {_bare_artist_key(value) for value in _GENERIC_ARTIST_LITERALS}
+    for part in _split_artist_field(artist):
+        for name in _artist_parts(part.strip()):
+            bare = _bare_artist_key(name)
+            if bare and bare not in generic:
+                return False
+    return True
+
+
+_VALIDATION_LABELS = {
+    "missing_date": "нет даты",
+    "invalid_date": "неверный формат даты",
+    "missing_artist": "нет исполнителя",
+    "generic_artist": "вместо исполнителя указан тип события",
+    "artist_too_long": "повреждённый/слишком длинный состав",
+    "non_music": "не музыкальное событие",
+    "unknown_city": "город отсутствует в справочнике",
+    "missing_source": "нет ссылки на источник",
+}
+
+
+def _event_validation_reason(event: dict) -> "str | None":
+    """Возвращает первую причину отказа или None для готового события."""
+    if not event.get("date"):
+        return "missing_date"
+    if _valid_date_or_none(event.get("date")) is None:
+        return "invalid_date"
+    artist = (event.get("artist") or "").strip()
+    if not artist:
+        return "missing_artist"
+    if _all_artists_generic(artist):
+        return "generic_artist"
+    if len(artist) > 180:
+        return "artist_too_long"
+    if _is_refusal_event(event):
+        return "non_music"
+    if _canon_city(event.get("source_city")) is None:
+        return "unknown_city"
+    if not (event.get("source_url") or "").strip():
+        return "missing_source"
+    return None
+
+
+def validate_events(events: list[dict]) -> tuple[list[dict], Counter]:
+    """Единый шлюз перед записью events.json."""
+    accepted: list[dict] = []
+    rejected: Counter = Counter()
+    for event in events:
+        # Дедупликация старых данных могла ошибочно присоединить стендап к
+        # настоящему концерту той же даты и площадки. Удаляем только такую
+        # примесь, сохраняя реальных исполнителей события.
+        artist_parts = _split_artist_field(event.get("artist") or "")
+        music_parts = [part.strip() for part in artist_parts
+                       if not _normalize(part).startswith(("standup", "стендап", "музлото"))]
+        if music_parts != [part.strip() for part in artist_parts]:
+            event["artist"] = ", ".join(music_parts) or None
+        reason = _event_validation_reason(event)
+        if reason:
+            rejected[reason] += 1
+        else:
+            accepted.append(event)
+    return accepted, rejected
+
+
+def _print_validation_report(total: int, accepted: int, rejected: Counter) -> None:
+    print(f"Финальная проверка: принято {accepted} из {total}")
+    for reason, count in rejected.items():
+        print(f"  Отклонено — {_VALIDATION_LABELS[reason]}: {count}")
+
+
 def _artists_look_alike(a: str, b: str) -> bool:
     """Ловит опечатки и пояснения в скобках у одного артиста."""
     ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
@@ -1662,33 +1737,9 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     if genre_added:
         print(f"Жанр определён автоматически: {genre_added} событий")
 
-    def _all_artists_generic(artist_str: str) -> bool:
-        """True если все части артиста — generic плейсхолдеры."""
-        if not artist_str:
-            return True
-        parts = _split_artist_field(artist_str)
-        for part in parts:
-            for name in _artist_parts(part.strip()):
-                bare = _bare_artist_key(name)
-                if bare and bare not in _GENERIC_ARTIST_LITERALS:
-                    return False
-        return True
-
-    # Фильтруем события без реального исполнителя (artist is None или только generic)
-    before_artist_filter = len(merged)
-    merged = [e for e in merged if e.get("artist") and not _all_artists_generic(e["artist"])]
-    removed_no_artist = before_artist_filter - len(merged)
-    if removed_no_artist:
-        print(f"Убрано событий без реального исполнителя: {removed_no_artist}")
-
-    # Финальная отбраковка мусора: события-заглушки (LLM вернул объект вместо [])
-    # и не-музыкальные форматы. Применяется ко всей базе, чтобы чистить и старые
-    # записи, попавшие в неё до появления фильтра.
-    before_filter = len(merged)
-    merged = [e for e in merged if not _is_refusal_event(e)]
-    removed = before_filter - len(merged)
-    if removed:
-        print(f"Убрано мусорных событий (заглушки/не-музыкальные): {removed}")
+    before_validation = len(merged)
+    merged, rejected = validate_events(merged)
+    _print_validation_report(before_validation, len(merged), rejected)
 
     if dry_run:
         _print_dry_run_report(existing_before_cleanup, merged)
@@ -1706,7 +1757,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=None, help="Глубина парсинга в днях (по умолчанию: DAYS_BACK)")
     parser.add_argument("--dry-run", action="store_true", help="Показать diff, не записывая events.json")
+    parser.add_argument("--validate-existing", action="store_true",
+                        help="Проверить и очистить текущий events.json без загрузки источников")
     args = parser.parse_args()
+    if args.validate_existing:
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            current = json.load(f)
+        _sanitize_event_dates(current)
+        _sanitize_event_times(current)
+        valid, rejected = validate_events(current)
+        _print_validation_report(len(current), len(valid), rejected)
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(valid, f, ensure_ascii=False, indent=2)
+        raise SystemExit(0)
     days = args.days if args.days else DAYS_BACK
     if args.days:
         print(f"Глубина парсинга: {days} дней")

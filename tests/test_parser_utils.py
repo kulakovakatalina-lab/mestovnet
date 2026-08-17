@@ -17,9 +17,42 @@ from parser import (
     _sanitize_event_times,
     _valid_date_or_none,
     _valid_time_or_none,
+    _event_validation_reason,
+    validate_events,
     detect_genre,
     _detect_city,
 )
+
+
+def _valid_event(**overrides):
+    event = {
+        "date": "2026-08-20",
+        "artist": "Группа A",
+        "source_city": "Ялта",
+        "source_url": "https://example.com/event",
+    }
+    event.update(overrides)
+    return event
+
+
+def test_final_validation_accepts_complete_music_event():
+    events, rejected = validate_events([_valid_event()])
+    assert len(events) == 1
+    assert not rejected
+
+
+@pytest.mark.parametrize(("change", "reason"), [
+    ({"date": None}, "missing_date"),
+    ({"date": "20.08.2026"}, "invalid_date"),
+    ({"artist": None}, "missing_artist"),
+    ({"artist": "Фестиваль"}, "generic_artist"),
+    ({"artist": "A" * 181}, "artist_too_long"),
+    ({"artist": "Стендап-концерт"}, "non_music"),
+    ({"source_city": "Неизвестный город"}, "unknown_city"),
+    ({"source_url": None}, "missing_source"),
+])
+def test_final_validation_rejects_bad_event(change, reason):
+    assert _event_validation_reason(_valid_event(**change)) == reason
 
 
 def test_standup_is_rejected_as_non_music():
