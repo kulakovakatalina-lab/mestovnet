@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Роман Куротрый, Роман Курортный (Парень с пакетом), Рок-н-рольщики, в Симферополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 14 августа · Местов.Нет</title>
+<title>Роман Куротрый, Роман Курортный (Парень с пакетом) — Рок-н-рольщики, Симферополь, 16 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,38 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/15eb01ab">
-<meta property="og:title" content="Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 14 августа · Местов.Нет">
-<meta property="og:description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/53d59ddd">
+<meta property="og:title" content="Роман Куротрый, Роман Курортный (Парень с пакетом) — Рок-н-рольщики, Симферополь, 16 августа · Местов.Нет">
+<meta property="og:description" content="Роман Куротрый, Роман Курортный (Парень с пакетом), Рок-н-рольщики, в Симферополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://mestov.net/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин с «КиШом»",
-      "startDate": "2026-08-14T00:00:00+03:00",
+      "name": "Роман Куротрый, Роман Курортный (Парень с пакетом)",
+      "startDate": "2026-08-16T18:00-2:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Рок-н-рольщики",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
+      "description": "Премьера программы с акустической программой из любимых рок-поп хитов на двух языках.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин с «КиШом»"
+        "name": "Роман Куротрый, Роман Курортный (Парень с пакетом)"
+      },
+      "image": "/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
       }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин с «КиШом»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Роман Куротрый, Роман Курортный (Парень с пакетом)"}]}
 </script>
 </head>
 <body>

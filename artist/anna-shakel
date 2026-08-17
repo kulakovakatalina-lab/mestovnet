@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Шакель — концерты в Крыму, Севастополь, Белогорск · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Белогорск). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Белогорск). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel">
   <meta property="og:title" content="Анна Шакель — концерты в Крыму, Севастополь, Белогорск · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Белогорск). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Белогорск). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Шакель"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель",
-      "startDate": "2026-08-16T17:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "пространство лабиринта Краснолесья",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Белогорск",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Джазовый вечер с участием Jazz Trio «А3» и Анны Шакель.",
-      "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
 <p class="venue-description">Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Белогорск</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

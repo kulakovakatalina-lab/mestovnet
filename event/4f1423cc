@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak, Jam Club, в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув», Массандра, в Ялте, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak — Jam Club, Симферополь, 14 августа · Местов.Нет</title>
+<title>Джазовые вечера в Массандре: премьера «Ритм &amp; Грув» — Массандра, Ялта, 22 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/3682e760">
-<meta property="og:title" content="Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak — Jam Club, Симферополь, 14 августа · Местов.Нет">
-<meta property="og:description" content="Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak, Jam Club, в Симферополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4f1423cc">
+<meta property="og:title" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув» — Массандра, Ялта, 22 августа · Местов.Нет">
+<meta property="og:description" content="Джазовые вечера в Массандре: премьера «Ритм &amp; Грув», Массандра, в Ялте, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/0bed8794a9bb90090d5f24cb227ee0b0.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak",
-      "startDate": "2026-08-14T00:00:00+03:00",
+      "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»",
+      "startDate": "2026-08-22T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club",
+        "name": "Массандра",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "METAL FEST",
+      "description": "Джазовые вечера в Массандре",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak"
+        "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»"
       },
-      "image": "/images/events/0bed8794a9bb90090d5f24cb227ee0b0.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Black Tears, Основа, Город Грехов, Red Stars, Делирий, Нарратор, Creak"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовые вечера в Массандре: премьера «Ритм & Грув»"}]}
 </script>
 </head>
 <body>
