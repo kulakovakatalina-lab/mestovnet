@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>кинозал Крымского киноконцертного объединения — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в кинозал Крымского киноконцертного объединения, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в кинозал Крымского киноконцертного объединения, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kinozal-krymskogo-kinokontsertnogo-obedineniya">
   <meta property="og:title" content="кинозал Крымского киноконцертного объединения — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в кинозал Крымского киноконцертного объединения, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в кинозал Крымского киноконцертного объединения, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,21 +49,6 @@
         "name": "Ночь кино, Чебурашка 2"
       },
       "image": "/images/events/ec9540a20ad7f178e24ce1bd171c911c.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ангелы Ладоги",
-      "startDate": "2026-08-29T16:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "кинозал Крымского киноконцертного объединения"
-      },
-      "description": "Показ фильма «Ангелы Ладоги» в рамках всероссийской акции «Ночь кино»",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ангелы Ладоги"
-      },
-      "image": "/images/events/3809e32254c96422f1498ea32873efcd.jpg"
     }
   ]
 }
@@ -1084,7 +1069,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

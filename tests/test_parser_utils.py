@@ -19,6 +19,7 @@ from parser import (
     _valid_date_or_none,
     _valid_time_or_none,
     _event_validation_reason,
+    _assign_event_images,
     validate_events,
     detect_genre,
     _detect_city,
@@ -81,6 +82,10 @@ def test_standup_is_rejected_as_non_music():
 def test_muzloto_is_rejected_as_non_music():
     assert _is_refusal_event({"artist": "МУЗЛОТО"})
     assert _is_refusal_event({"description": "В пятницу играем в музлото"})
+
+
+def test_film_screening_is_rejected_as_non_music():
+    assert _is_refusal_event({"description": "Показ фильма в рамках акции «Ночь кино»"})
 
 
 def test_dry_run_report_shows_diff(capsys):
@@ -379,3 +384,27 @@ def test_explicit_event_location_overrides_channel_city():
     }
     channel = {"city": "Севастополь"}
     assert resolve_city(event, channel) == "Симферополь"
+
+
+def test_multiple_events_from_image_album_do_not_guess_posters():
+    events = [{}, {}]
+    _assign_event_images(events, ["one.jpg", "two.jpg"], multi_image_post=True)
+    assert events == [
+        {"image": None, "images": None},
+        {"image": None, "images": None},
+    ]
+
+
+def test_single_event_keeps_image_album():
+    events = [{}]
+    _assign_event_images(events, ["one.jpg", "two.jpg"], multi_image_post=True)
+    assert events == [{"image": "one.jpg", "images": ["one.jpg", "two.jpg"]}]
+
+
+def test_multiple_events_share_only_a_single_post_image():
+    events = [{}, {}]
+    _assign_event_images(events, ["schedule.jpg"], multi_image_post=False)
+    assert events == [
+        {"image": "schedule.jpg", "images": None},
+        {"image": "schedule.jpg", "images": None},
+    ]

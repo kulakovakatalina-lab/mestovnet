@@ -47,8 +47,7 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Pasha Rhino, Spahova, Martin W."
-      },
-      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+      }
     },
     {
       "@type": "MusicEvent",
@@ -62,8 +61,7 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "EL"
-      },
-      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+      }
     },
     {
       "@type": "MusicEvent",
@@ -77,8 +75,7 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Dim K., Happy Paul, Santier"
-      },
-      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+      }
     }
   ]
 }

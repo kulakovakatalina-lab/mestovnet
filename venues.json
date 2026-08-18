@@ -94,7 +94,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 11,
+    "event_count": 12,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -869,20 +869,6 @@
     "lon": null
   },
   {
-    "slug": "kinozal-krymskogo-kinokontsertnogo-obedineniya",
-    "name": "кинозал Крымского киноконцертного объединения",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "кинозал Крымского киноконцертного объединения"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "lokatsiya-3-km-ot-nauchnogo",
     "name": "Локация 3 км от Научного",
     "city": "Научный",
@@ -1492,6 +1478,20 @@
     "event_count": 1,
     "aliases": [
       "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kinozal-krymskogo-kinokontsertnogo-obedineniya",
+    "name": "кинозал Крымского киноконцертного объединения",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "кинозал Крымского киноконцертного объединения"
     ],
     "description": null,
     "desc_baseline_count": 0,

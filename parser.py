@@ -376,7 +376,8 @@ _REFUSAL_MARKERS = (
 # несмотря на запрет в системном промпте: кино, забеги, экскурсии, премьеры.
 _NON_MUSIC_MARKERS = (
     "кино под открытым небом", "кинопоказ", "кино на стене",
-    "премьера драмеди", "премьера фильма", "арт-забег", "утренний забег",
+    "показ фильма", "ночь кино", "премьера драмеди", "премьера фильма",
+    "арт-забег", "утренний забег",
     "групповая экскурсия", "спортивный забег", "велоэкскурсия", "пешая экскурсия",
     "кинолекторий", "stand-up", "standup", "стендап", "музлото",
 )
@@ -495,12 +496,16 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 
 
 def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str]) -> list[dict]:
-    """Извлекает события из поста с несколькими картинками (только по тексту).
-    Возвращает [events...] где каждое событие имеет поле image_indices."""
+    """Извлекает события из текста поста с несколькими картинками.
+
+    Картинки в этот LLM-запрос не передаются, поэтому модель не должна
+    угадывать их соответствие событиям. Безопасное назначение выполняется
+    отдельно в ``_assign_event_images``.
+    """
     text = post["text"]
     post_date = _post_date_str(post)
     print(f"\n  [multi] {post.get('url', '?')} {len(image_paths)} images", end="")
-    cache_key = hashlib.sha256(("multi:" + post_date + ":" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
+    cache_key = hashlib.sha256(("multi-v2:" + post_date + ":" + text + ":" + ",".join(image_paths)).encode("utf-8")).hexdigest()[:16]
     print(f" key={cache_key}", end="")
     cached = _cache_read(cache_key)
     print(f" cache={cached is not None}", end="")
@@ -515,16 +520,10 @@ def extract_events_multi(post: dict, channel_meta: dict, image_paths: list[str])
 {text}
 \"\"\"
 
-К посту приложено {len(image_paths)} изображений (афиши/фото).
+К посту приложено {len(image_paths)} изображений, но ты их не видишь.
+Не добавляй image_index или image_indices и не пытайся сопоставлять картинки.
 
-ОПРЕДЕЛИ СЦЕНАРИЙ по тексту:
-1) Если анонсируется НЕСКОЛЬКО разных событий — создай отдельное событие на каждое с image_indices: [N].
-2) Если одно событие с несколькими фото — одно событие с image_indices: [0, 1, ...].
-
-Дополнительное поле:
-- image_indices: список номеров картинок (начиная с 0), относящихся к событию
-
-Верни JSON-массив событий с полем image_indices. Если мероприятий нет — верни [].
+Верни JSON-массив событий. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
     raw = _call_llm(user_text)
@@ -1382,6 +1381,10 @@ def _redistribute_images(events: list[dict]) -> int:
 
     updated = 0
     for url, group in by_url.items():
+        # Один пост с несколькими событиями нельзя безопасно разложить по
+        # картинкам без анализа самих изображений. Не угадываем по позиции.
+        if len(group) != 1:
+            continue
         # Skip if already has multiple distinct images
         existing = set()
         for e in group:
@@ -1404,11 +1407,9 @@ def _redistribute_images(events: list[dict]) -> int:
         if len(local) <= 1:
             continue
 
-        for idx, e in enumerate(group):
-            e["image"] = local[idx % len(local)]
-            # Без image_index не знаем какая картинка "своя" — ставим только primary
-            e["images"] = None
-            updated += 1
+        group[0]["image"] = local[0]
+        group[0]["images"] = local
+        updated += 1
 
     return updated
 
@@ -1430,6 +1431,33 @@ def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
                     local.append(p)
             result[post.get("url") or ""] = local
     return result
+
+
+def _assign_event_images(events: list[dict], local_images: list[str], *, multi_image_post: bool) -> None:
+    """Назначает постеры без предположений о невидимом содержимом картинок.
+
+    Единственному событию можно отдать весь альбом. Для нескольких событий
+    один настоящий постер безопасно использовать как общую афишу. Если же и
+    событий, и картинок несколько, соответствие неоднозначно — лучше оставить
+    карточки без постера, чем показать чужую дату или другого исполнителя.
+    """
+    if not events or not local_images:
+        for event in events:
+            event["image"] = None
+            event["images"] = None
+        return
+    if len(events) == 1:
+        events[0]["image"] = local_images[0]
+        events[0]["images"] = local_images if len(local_images) > 1 else None
+        return
+    if multi_image_post:
+        for event in events:
+            event["image"] = None
+            event["images"] = None
+        return
+    for event in events:
+        event["image"] = local_images[0]
+        event["images"] = None
 
 
 def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK,
@@ -1478,6 +1506,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
             events = extract_events_multi(post, channel, local)
             print(f" +{len(events)}")
 
+            _assign_event_images(events, local, multi_image_post=True)
             for event in events:
                 event["source_channel"] = label
                 event["source_city"] = resolve_city(event, channel)
@@ -1487,25 +1516,8 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 event["post_date"] = post["date"]
                 fix_event_year(event, post["date"])
 
-                img_indices = event.pop("image_indices", None) or event.pop("image_index", None)
-                if img_indices is None:
-                    img_indices = [0]
-                elif not isinstance(img_indices, list):
-                    img_indices = [img_indices]
-                if local and img_indices:
-                    selected = []
-                    for idx in img_indices:
-                        if isinstance(idx, int) and 0 <= idx < len(local):
-                            selected.append(local[idx])
-                    if selected:
-                        event["image"] = selected[0]
-                        event["images"] = selected if len(selected) > 1 else None
-                    else:
-                        event["image"] = local[0]
-                        event["images"] = None
-                elif local:
-                    event["image"] = local[0]
-                    event["images"] = None
+                event.pop("image_indices", None)
+                event.pop("image_index", None)
                 event["source_url"] = post_url
                 all_events.append(event)
                 channel_events += 1
@@ -1524,8 +1536,9 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                     post_url = post.get("url") or ""
                     events = batch_result.get(post_url, [])
                     local_images = images_map.get(post_url, [])
+                    _assign_event_images(events, local_images, multi_image_post=False)
 
-                    for idx, event in enumerate(events):
+                    for event in events:
                         event["source_channel"] = label
                         event["source_city"] = resolve_city(event, channel)
                         event.pop("city", None)
@@ -1533,13 +1546,6 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                             event["venue"] = channel["title"]
                         event["post_date"] = post["date"]
                         fix_event_year(event, post["date"])
-
-                        if local_images:
-                            event["image"] = local_images[idx % len(local_images)]
-                            event["images"] = local_images if len(local_images) > 1 else None
-                        else:
-                            event["image"] = None
-                            event["images"] = None
 
                         event["source_url"] = post_url
                         all_events.append(event)

@@ -700,11 +700,8 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": [
-      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/163d6e394d389f50abc851d19c91c0b8.jpg"
-    ],
-    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -798,11 +795,8 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": [
-      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/9e5baf522cf63908450a334911a57ac4.jpg"
-    ],
-    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -1024,11 +1018,8 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": [
-      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/ee2f6c97f267cd392c397037240618fa.jpg"
-    ],
-    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -1065,11 +1056,8 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": [
-      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/8843d590854d35e2a0bdea565656131c.jpg"
-    ],
-    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -7282,10 +7270,8 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": [
-      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
-    ],
-    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "756cf212"
   },
@@ -7301,10 +7287,8 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": [
-      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
-    ],
-    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "49330dd0"
   },
@@ -7320,10 +7304,8 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": [
-      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
-    ],
-    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
+    "images": null,
+    "image": null,
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "f5e6f453"
   },
@@ -7355,7 +7337,7 @@
     "source_channel": "massandrasun",
     "source_city": "Ялта",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
+    "image": null,
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "cd20600c",
@@ -7372,7 +7354,7 @@
     "source_channel": "massandrasun",
     "source_city": "Ялта",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
+    "image": null,
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "22b47e82",
@@ -7606,22 +7588,6 @@
     "post_date": "2026-08-07T17:01:55+00:00"
   },
   {
-    "date": "2026-08-29",
-    "time": "16:00",
-    "artist": "Ангелы Ладоги",
-    "event_type": "другое",
-    "venue": "кинозал Крымского киноконцертного объединения",
-    "price": "бесплатно",
-    "description": "Показ фильма «Ангелы Ладоги» в рамках всероссийской акции «Ночь кино»",
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-14T13:36:55+00:00",
-    "image": "/images/events/3809e32254c96422f1498ea32873efcd.jpg",
-    "images": null,
-    "source_url": "https://t.me/koncertykrym/2259",
-    "id": "ab23d197"
-  },
-  {
     "date": "2026-08-21",
     "time": "19:00",
     "artist": "Севастопольский бал",
@@ -7632,7 +7598,7 @@
     "source_channel": "artcafesnezhinka",
     "source_city": "Севастополь",
     "post_date": "2026-08-17T13:06:22+00:00",
-    "image": "/images/events/2bea8ba355c1e0c6a774032ead00ca0f.jpg",
+    "image": "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg",
     "images": null,
     "source_url": "https://t.me/artcafesnezhinka/1962",
     "id": "06b988f5",
@@ -7649,7 +7615,7 @@
     "source_channel": "artcafesnezhinka",
     "source_city": "Севастополь",
     "post_date": "2026-08-17T13:06:22+00:00",
-    "image": "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg",
+    "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
     "images": null,
     "source_url": "https://t.me/artcafesnezhinka/1962",
     "id": "6b3d762a",
@@ -7658,20 +7624,34 @@
   {
     "id": "283fc5bf",
     "date": "2026-08-23",
-    "time": "15:00",
+    "time": "19:00",
     "artist": "Антон Калиниченко, Максим Перов",
-    "event_type": "другое",
+    "event_type": "концерт",
     "venue": "Арт-кафе «Снежинка»",
     "price": "800 ₽",
-    "description": "Большой тематический день с атмосферой Древнего Рима и летним настроением. В программе — тематический буфет от «Снежинки», тирамису от Apolo Bistro с балкона, DJ-сет Яны Кучерявой и саксофон Ивана Sax, а также дегустация мороженого.",
+    "description": "Piano Battle — концерт-перформанс, где Антон Калиниченко и Максим Перов встретятся в музыкальной дуэли. В программе джаз, латино, поп, классика, импровизации и вокальные композиции Елены Голофеевой.",
     "source_city": "Севастополь",
     "source_channel": "artcafesnezhinka",
     "genre": "поп",
     "source_url": "https://t.me/artcafesnezhinka/1962",
-    "images": [
-      "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg",
-      "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg"
-    ],
+    "images": null,
+    "image": null,
+    "post_date": "2026-08-17T13:06:22+00:00"
+  },
+  {
+    "id": "802d1c57",
+    "date": "2026-08-23",
+    "time": "15:00",
+    "artist": "Яна Кучерявая, Иван Sax",
+    "event_type": "другое",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Римская ярмарка в «Снежинке» с тематическим буфетом, тирамису от Apolo Bistro, DJ-сетом Яны Кучерявой, саксофоном Ивана Sax и дегустацией мороженого.",
+    "source_city": "Севастополь",
+    "source_channel": "artcafesnezhinka",
+    "genre": "поп",
+    "source_url": "https://t.me/artcafesnezhinka/1962",
+    "images": null,
     "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg",
     "post_date": "2026-08-17T13:06:22+00:00"
   },
