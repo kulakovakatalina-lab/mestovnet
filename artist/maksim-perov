@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Максим Перов — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Максим Перов в Крыму (Ялта). 0 ближайших событий.">
+  <title>Максим Перов — концерты в Крыму, Ялта, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Максим Перов в Крыму (Ялта, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/maksim-perov">
-  <meta property="og:title" content="Максим Перов — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Максим Перов в Крыму (Ялта). 0 ближайших событий.">
+  <meta property="og:title" content="Максим Перов — концерты в Крыму, Ялта, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Максим Перов в Крыму (Ялта, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Максим Перов"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Перов",
+      "startDate": "2026-08-23T15:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Перов"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Большой тематический день с атмосферой Древнего Рима и летним настроением. В программе — тематический буфет от «Снежинки», тирамису от Apolo Bistro с балкона, DJ-сет Яны Кучерявой и саксофон Ивана Sax, а также дегустация мороженого.",
+      "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg"
     }
   ]
 }
@@ -1000,9 +1020,9 @@ footer {
     </div>
     <h1 class="genre-hero-title">Максим Перов</h1>
 <p class="venue-description">Трубач, участник дворцовых концертных программ в Ялте — «Песни любимого кино» и «Самая красивая музыка столетия» во дворце Дюльбер.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Севастополь</span></div>
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

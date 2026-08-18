@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="йоги Aura, Студия танцев, фитнеса, Гастродвор, в Ялте, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Анастасия Грас, Качи-Кальон, в Бахчисарае, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>йоги Aura, Студия танцев, фитнеса — Гастродвор, Ялта, 9 августа · Местов.Нет</title>
+<title>Анастасия Грас — Качи-Кальон, Бахчисарай, 16 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/79985fd5">
-<meta property="og:title" content="йоги Aura, Студия танцев, фитнеса — Гастродвор, Ялта, 9 августа · Местов.Нет">
-<meta property="og:description" content="йоги Aura, Студия танцев, фитнеса, Гастродвор, в Ялте, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/f564b79c">
+<meta property="og:title" content="Анастасия Грас — Качи-Кальон, Бахчисарай, 16 августа · Местов.Нет">
+<meta property="og:description" content="Анастасия Грас, Качи-Кальон, в Бахчисарае, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/07c67114e3a54a66d55143685a8a8caf.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "йоги Aura, Студия танцев, фитнеса",
-      "startDate": "2026-08-09T07:45:00+03:00",
+      "name": "Анастасия Грас",
+      "startDate": "2026-08-16T18:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Гастродвор",
+        "name": "Качи-Кальон",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Бахчисарай",
           "addressCountry": "RU"
         }
       },
-      "description": "Забег и танцы во Дворе. Студия танцев, фитнеса и йоги Aura проведут разминку перед стартом.",
+      "description": "Концерт в пещерном городе Качи-Кальон.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "йоги Aura, Студия танцев, фитнеса"
+        "name": "Анастасия Грас"
       },
-      "image": "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "йоги Aura, Студия танцев, фитнеса"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Бахчисарай", "item": "https://mestov.net/cities/bakhchisaray.html"}, {"@type": "ListItem", "position": 3, "name": "Анастасия Грас"}]}
 </script>
 </head>
 <body>

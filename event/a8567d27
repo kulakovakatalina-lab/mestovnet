@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Скрипка гуляет по Парижу (Матвей Блюмин), Снежинка, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина, Снежинка, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Скрипка гуляет по Парижу (Матвей Блюмин) — Снежинка, Севастополь, 9 августа · Местов.Нет</title>
+<title>Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина — Снежинка, Севастополь, 9 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/a8567d27">
-<meta property="og:title" content="Скрипка гуляет по Парижу (Матвей Блюмин) — Снежинка, Севастополь, 9 августа · Местов.Нет">
-<meta property="og:description" content="Скрипка гуляет по Парижу (Матвей Блюмин), Снежинка, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина — Снежинка, Севастополь, 9 августа · Местов.Нет">
+<meta property="og:description" content="Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина, Снежинка, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/870ddec1de045d0ce280fe14522a5391.jpg">
 <script type="application/ld+json">
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Скрипка гуляет по Парижу (Матвей Блюмин)",
+      "name": "Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина",
       "startDate": "2026-08-09T19:15:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Французская программа: песни Пиаф, Азнавура, Монтана, Дассена. Скрипка Матвея Блюмина, вокал, фортепиано и контрабас.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Скрипка гуляет по Парижу (Матвей Блюмин)"
+        "name": "Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина"
       },
       "image": "/images/events/870ddec1de045d0ce280fe14522a5391.jpg",
       "offers": {
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Скрипка гуляет по Парижу (Матвей Блюмин)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Скрипка гуляет по Парижу (Матвей Блюмин), Скрипка Матвея Блюмина"}]}
 </script>
 </head>
 <body>

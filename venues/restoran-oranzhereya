@@ -16,45 +16,45 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Джаз-трио «А3» — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь). 1 ближайших событий.">
-  <link rel="canonical" href="https://mestov.net/artist/dzhaz-trio-a3">
-  <meta property="og:title" content="Джаз-трио «А3» — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь). 1 ближайших событий.">
+  <title>ресторан «Оранжерея» — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в ресторан «Оранжерея», в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/restoran-oranzhereya">
+  <meta property="og:title" content="ресторан «Оранжерея» — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в ресторан «Оранжерея», в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MusicGroup",
-      "name": "Джаз-трио «А3»"
+      "@type": "MusicVenue",
+      "name": "ресторан «Оранжерея»",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Симферополь",
+        "addressCountry": "RU"
+      }
     },
     {
       "@type": "MusicEvent",
-      "name": "Джаз-трио «А3»",
-      "startDate": "2026-08-22T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джаз-трио «А3»"
-      },
+      "name": "Оркестр «Консонанс»",
+      "startDate": "2026-08-21T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
+        "name": "ресторан «Оранжерея»"
       },
-      "description": "Вечер интеллектуального джаза, где современное звучание встречается с мейнстримом. Сложные музыкальные решения, глубокие гармонии, импровизация и авторский взгляд на джазовые традиции — для тех, кто ценит качественную живую музыку.",
-      "image": "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg"
+      "description": "Летний Roof-Sound с живым звучанием. В программе – мировые чарты, симфо-рок и любимые русские песни в оркестровых аранжировках. Музыка, открытое небо и кухня ресторана «Оранжерея» для красивого вечера.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Оркестр «Консонанс»"
+      },
+      "image": "/images/events/8937e7129a039d484dde69da95c91279.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Джаз-трио «А3»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "ресторан «Оранжерея»"}]}
 </script>
   <style>
 
@@ -829,7 +829,8 @@ footer {
   pointer-events: none;
 }
 
-  /* ── Герой артиста (переиспользуем genre-hero/venue CSS) ── */
+  html { scroll-behavior: smooth; }
+  /* ── Герой заведения (genre-hero CSS из genre.html) ── */
   .genre-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -908,6 +909,50 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
+  .venue-hero-address-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .venue-hero-address-link:hover { color: var(--accent); }
+  .venue-map-wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
+  }
+  #venue-map {
+    width: 100%;
+    height: min(42vh, 360px);
+    min-height: 240px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+  .venue-map-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .balloon-card { min-width: 200px; }
+  .balloon-name { font-weight: 700; margin-bottom: 4px; }
+  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .balloon-route {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    transition: filter 0.12s;
+  }
+  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -931,6 +976,8 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
+  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
+  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1016,11 +1063,11 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · Артист
+      · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Джаз-трио «А3»</h1>
+    <h1 class="genre-hero-title">ресторан «Оранжерея»</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
+
   </div>
 <div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
@@ -1034,14 +1081,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
+
+
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
+
+
 <script>
-const ARTIST_ALIASES = ["Джаз-трио «А3»", "джаз-трио «А3»", "Джаз-трио «А3»"];
-const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
+const VENUE_ALIASES = ["ресторан «Оранжерея»", "ресторан «Оранжерея»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
@@ -1072,52 +1122,9 @@ function priceText(p) {
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
 
-// Разбивает поле artist так же, как build_artists.py: запятые верхнего
-// уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
-function splitArtistField(artist) {
-  const parts = [];
-  let depth = 0, current = '';
-  for (const ch of artist) {
-    if (ch === '(' || ch === '«') { depth++; current += ch; }
-    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
-    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
-    else { current += ch; }
-  }
-  parts.push(current);
-  return parts;
-}
-const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
-const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
-function artistParts(name) {
-  return name.split(ARTIST_JOIN_RE)
-    .map(s => s.trim())
-    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
-}
-function eventMatchesArtist(ev) {
-  const raw = ev.artist || '';
-  if (!raw) return false;
-  for (const part of splitArtistField(raw)) {
-    for (const name of artistParts(part.trim())) {
-      if (ARTIST_ALIAS_SET.has(name.trim())) return true;
-    }
-  }
-  return false;
-}
-function otherArtistNames(ev) {
-  const raw = ev.artist || '';
-  if (!raw) return [];
-  const names = [];
-  for (const part of splitArtistField(raw)) {
-    for (const name of artistParts(part.trim())) {
-      const n = name.trim();
-      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
-    }
-  }
-  return names;
-}
-
 function applySettings(data, settings) {
-  const hiddenSet = new Set(settings.hidden || []);
+  const hiddenSet    = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
@@ -1133,6 +1140,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url))  ev.cancelled   = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1143,11 +1151,11 @@ function eventRowHtml(ev, extraClass) {
   const genre = mapGenre(ev.genre);
   const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
   const price = ev.priceDisplay || priceText(ev.price);
-  const others = otherArtistNames(ev);
   const thumbHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.venue || ''}" loading="lazy">`
+    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
+  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
+  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1155,10 +1163,11 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.venue || '—'}</div>
+      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
-        ${others.length ? `<span>${others.join(', ')}</span><span class="row-venue-dot"></span>` : ''}
+        <span>${ev.venue || '—'}</span>
+        <span class="row-venue-dot"></span>
         <span>${ev.source_city || '—'}</span>
       </div>
     </div>
@@ -1208,9 +1217,10 @@ async function load() {
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched  = applySettings(data, settings);
     const now      = new Date();
+    const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
-      .filter(e => e.date && eventMatchesArtist(e))
+      .filter(e => e.date && e.venue && aliasSet.has(e.venue))
       .map(e => ({ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }))
       .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
 
@@ -1220,6 +1230,7 @@ async function load() {
     renderList(upcoming, 'events-list');
     renderArchive();
 
+    // Жанры в шапке — все жанры сайта, не только этого заведения
     const genreCounts = {};
     patched.forEach(e => { const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; });
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);
