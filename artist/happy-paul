@@ -47,7 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Музыкальный вечер"
+      "description": "Музыкальный вечер",
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -66,7 +67,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление Dim K. и Happy Paul."
+      "description": "Выступление Dim K. и Happy Paul.",
+      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
     }
   ]
 }

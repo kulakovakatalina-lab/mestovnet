@@ -48,7 +48,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Spahova"
-      }
+      },
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -62,7 +63,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Rita Taylor"
-      }
+      },
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -76,7 +78,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Happy Paul"
-      }
+      },
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -90,7 +93,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "EL"
-      }
+      },
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     }
   ]
 }

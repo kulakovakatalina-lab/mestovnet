@@ -700,8 +700,11 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+      "/images/events/163d6e394d389f50abc851d19c91c0b8.jpg"
+    ],
+    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -795,8 +798,11 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+      "/images/events/9e5baf522cf63908450a334911a57ac4.jpg"
+    ],
+    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -1018,8 +1024,11 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+      "/images/events/ee2f6c97f267cd392c397037240618fa.jpg"
+    ],
+    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -1056,8 +1065,11 @@
     "source_channel": "afisha_crimea",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2438",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
+      "/images/events/8843d590854d35e2a0bdea565656131c.jpg"
+    ],
+    "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
   },
   {
@@ -7270,8 +7282,10 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+    ],
+    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "756cf212"
   },
@@ -7287,8 +7301,10 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+    ],
+    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "49330dd0"
   },
@@ -7304,8 +7320,10 @@
     "source_channel": "massandrasun",
     "genre": "поп",
     "source_url": "https://t.me/massandrasun/2422",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+    ],
+    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "f5e6f453"
   },
@@ -7337,7 +7355,7 @@
     "source_channel": "massandrasun",
     "source_city": "Ялта",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "image": null,
+    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "cd20600c",
@@ -7354,7 +7372,7 @@
     "source_channel": "massandrasun",
     "source_city": "Ялта",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "image": null,
+    "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "22b47e82",
