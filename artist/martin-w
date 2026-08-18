@@ -47,7 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление Pasha Rhino и Spahova."
+      "description": "Выступление Pasha Rhino и Spahova.",
+      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -66,7 +67,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление Martin W."
+      "description": "Выступление Martin W.",
+      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
     }
   ]
 }
