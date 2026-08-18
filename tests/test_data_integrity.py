@@ -50,7 +50,7 @@ class TestEventsJson:
         пересекающиеся артисты на одну дату (критерии deduplicate_events из
         parser.py), но разные id. Регресс на случай 8b763d82/a564ed8d —
         одно расписание из разных постов канала попало в базу дважды."""
-        from parser import _artist_set, _venue_match
+        from parser import _events_are_duplicates
 
         dated = [e for e in events if e.get("date") and e.get("id")]
         dupes = []
@@ -59,12 +59,9 @@ class TestEventsJson:
                 a, b = dated[i], dated[j]
                 if a["date"] != b["date"]:
                     continue
-                ai, aj = _artist_set(a), _artist_set(b)
                 vi, vj = a.get("venue") or "", b.get("venue") or ""
                 ti, tj = a.get("time") or "", b.get("time") or ""
-                same_artist = bool(ai and aj and ai & aj)
-                same_venue_time = bool(vi and vj and _venue_match(vi, vj) and ti and tj and ti == tj)
-                if same_artist or same_venue_time:
+                if _events_are_duplicates(a, b):
                     dupes.append((a["id"], b["id"], a["date"], a.get("artist"), b.get("artist"),
                                   vi or vj, ti or tj))
         assert not dupes, (

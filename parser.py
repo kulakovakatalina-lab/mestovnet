@@ -1230,6 +1230,45 @@ def _artists_look_alike(a: str, b: str) -> bool:
     return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
 
 
+def _events_are_duplicates(a: dict, b: dict) -> bool:
+    """Единый критерий содержательного дубля для парсера и проверок данных."""
+    if not a.get("date") or a.get("date") != b.get("date"):
+        return False
+
+    ai, aj = _artist_set(a), _artist_set(b)
+    vi, vj = a.get("venue") or "", b.get("venue") or ""
+    ti, tj = a.get("time") or "", b.get("time") or ""
+    same_artist = bool(ai and aj and ai & aj)
+    same_venue = bool(vi and vj and _venue_match(vi, vj))
+    same_time = bool(ti and tj and ti == tj)
+
+    ci = (a.get("source_city") or "").strip().lower()
+    cj = (b.get("source_city") or "").strip().lower()
+    different_cities = bool(ci and cj and ci != cj)
+    if different_cities:
+        # Канал иногда проставляет свой город выездному событию. Через границу
+        # городов объединяем лишь при тройном подтверждении и общем постере,
+        # чтобы не склеить два настоящих концерта одного артиста в один день.
+        images_a = set(a.get("images") or ([a.get("image")] if a.get("image") else []))
+        images_b = set(b.get("images") or ([b.get("image")] if b.get("image") else []))
+        return same_artist and same_venue and same_time and bool(images_a & images_b)
+
+    if same_artist and (same_venue or not vi or not vj):
+        return True
+    if same_venue and _artists_look_alike(a.get("artist") or "", b.get("artist") or ""):
+        return True
+    if same_venue and same_time:
+        return True
+    if (ai or aj) and (not ai or not aj) and same_venue:
+        return True
+    if (ai or aj) and (not ai or not aj):
+        di = _normalize(a.get("description") or "")
+        dj = _normalize(b.get("description") or "")
+        return ((ai and any(name in dj for name in ai))
+                or (aj and any(name in di for name in aj)))
+    return False
+
+
 def _merge_group(group: list[dict]) -> dict:
     """Мёрджит группу событий: объединяет артистов, берёт лучшие поля."""
     merged = _merge_events(group)
@@ -1300,41 +1339,8 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
         for a in range(len(indices)):
             for b in range(a + 1, len(indices)):
                 i, j = indices[a], indices[b]
-                ci = (stage1[i].get("source_city") or "").strip()
-                cj = (stage1[j].get("source_city") or "").strip()
-                if ci and cj and ci.lower() != cj.lower():
-                    continue  # в разных городах это разные события
-                ai = _artist_set(stage1[i])
-                aj = _artist_set(stage1[j])
-                vi = stage1[i].get("venue") or ""
-                vj = stage1[j].get("venue") or ""
-                ti = stage1[i].get("time") or ""
-                tj = stage1[j].get("time") or ""
-                same_venue = bool(vi and vj and _venue_match(vi, vj))
-                if ai and aj and ai & aj and (same_venue or not vi or not vj):
-                    # Общий артист — дубль только на той же площадке
-                    # (либо если один из источников площадку не указал).
+                if _events_are_duplicates(stage1[i], stage1[j]):
                     union(i, j)
-                elif same_venue and _artists_look_alike(
-                    stage1[i].get("artist") or "",
-                    stage1[j].get("artist") or "",
-                ):
-                    union(i, j)
-                elif same_venue and ti and tj and ti == tj:
-                    # Одинаковые площадка + время → одно событие (даже если артисты названы по-разному)
-                    union(i, j)
-                elif (ai or aj) and (not ai or not aj) and same_venue:
-                    # Дубликат VK-зеркала: одна версия без артиста, но площадка
-                    # та же и дата та же — это зеркало Telegram-анонса без имён.
-                    union(i, j)
-                elif (ai or aj) and (not ai or not aj):
-                    # Одна версия без артиста, другая с артистом: сливаем, если
-                    # артист полной версии упоминается в описании пустой версии
-                    # (или наоборот) — это одна афиша, где имена названы в одном канале.
-                    di = _normalize(stage1[i].get("description") or "")
-                    dj = _normalize(stage1[j].get("description") or "")
-                    if (ai and any(n in dj for n in ai)) or (aj and any(n in di for n in aj)):
-                        union(i, j)
 
     groups: dict[int, list[dict]] = {}
     for i in range(n):
@@ -1820,7 +1826,11 @@ if __name__ == "__main__":
             current = json.load(f)
         _sanitize_event_dates(current)
         _sanitize_event_times(current)
-        valid, rejected = validate_events(current)
+        deduplicated = deduplicate_events(current)
+        if len(deduplicated) != len(current):
+            print(f"Дедупликация архива: {len(current)} → {len(deduplicated)} "
+                  f"(убрано: {len(current) - len(deduplicated)})")
+        valid, rejected = validate_events(deduplicated)
         _print_validation_report(len(current), len(valid), rejected)
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(valid, f, ensure_ascii=False, indent=2)

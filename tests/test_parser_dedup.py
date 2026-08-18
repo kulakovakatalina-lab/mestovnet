@@ -198,6 +198,20 @@ class TestDeduplicateEvents:
         ]
         assert len(deduplicate_events(events)) == 2
 
+    def test_wrong_source_city_merges_only_with_artist_venue_and_time_match(self):
+        base = {
+            "date": "2026-08-16",
+            "time": "18:30",
+            "artist": "Jazz Trio А3, Анна Шакель",
+            "venue": "Лабиринт Краснолесье",
+            "image": "/images/events/shared-poster.jpg",
+        }
+        events = [
+            {**base, "source_url": "https://example.test/1", "source_city": "Симферополь"},
+            {**base, "source_url": "https://example.test/2", "source_city": "Севастополь"},
+        ]
+        assert len(deduplicate_events(events)) == 1
+
     def test_same_url_different_dates_are_not_merged(self):
         base = {
             "source_url": "https://t.me/venue/weekly-poster",
