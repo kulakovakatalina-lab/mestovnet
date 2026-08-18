@@ -608,8 +608,7 @@
     "genre": "джаз",
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
-      "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/3b9ef9137658a49d55c3d62b33c1d373.jpg"
+      "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-16T06:13:47+00:00"
@@ -1567,24 +1566,24 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
+    "id": "8aeebfd5",
     "date": "2026-08-08",
     "time": "17:00",
     "artist": "Денайро",
     "event_type": "вечеринка",
-    "venue": "Усадьба Родное Гнездо",
-    "price": "2000",
-    "description": "Арбузная вечеринка с меню от бренд-шефа Павла Галича и музыкальными хитами в исполнении Денайро.",
-    "source_city": "Крым",
-    "source_channel": "usadbarodnoegnezdo",
+    "venue": "Усадьба «Родное гнездо»",
+    "price": "2000 ₽",
+    "description": "Арбузная вечеринка с специальным арбузным меню и живой музыкой под гитару от Денайро.",
+    "source_city": "Севастополь",
+    "source_channel": "rodnoegnezdo",
     "genre": "поп",
     "source_url": "https://t.me/usadbarodnoegnezdo/3496",
     "images": [
       "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
-      "/images/events/cfe5a902593adad89e406b50dfe409fe.jpg"
+      "/images/events/9db5eafce08a3f28ff43335f8bafe7e2.jpg"
     ],
     "image": "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
-    "post_date": "2026-08-08T15:29:17+00:00",
-    "id": "4c958311"
+    "post_date": "2026-08-11T08:52:20+00:00"
   },
   {
     "date": "2026-08-08",
@@ -7607,27 +7606,6 @@
     "post_date": "2026-08-07T17:01:55+00:00"
   },
   {
-    "id": "bd1455b1",
-    "date": "2026-08-16",
-    "time": "18:30",
-    "artist": "Джаз в лабиринте, Jazz Trio «А3», Анна Шакель",
-    "event_type": "концерт",
-    "venue": "Лабиринт Краснолесье",
-    "price": null,
-    "description": "Джазовые вечера в пространстве лабиринта.",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
-    "genre": "джаз",
-    "source_url": "https://vk.com/wall-214055536_2262",
-    "images": [
-      "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/4219f5dc1148cfc918f334aca454d833.jpg",
-      "/images/events/bdea390c39ff5281eeb657d10fbe60e9.jpg"
-    ],
-    "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-    "post_date": "2026-08-12T14:49:48+00:00"
-  },
-  {
     "date": "2026-08-29",
     "time": "16:00",
     "artist": "Ангелы Ладоги",
@@ -7716,26 +7694,6 @@
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
     "post_date": "2026-08-15T16:33:08+00:00"
-  },
-  {
-    "id": "8aeebfd5",
-    "date": "2026-08-08",
-    "time": "17:00",
-    "artist": "Денайро",
-    "event_type": "вечеринка",
-    "venue": "Усадьба «Родное гнездо»",
-    "price": "2000 ₽",
-    "description": "Арбузная вечеринка с специальным арбузным меню и живой музыкой под гитару от Денайро.",
-    "source_city": "Севастополь",
-    "source_channel": "rodnoegnezdo",
-    "genre": "поп",
-    "source_url": "https://vk.com/wall-211995271_1197",
-    "images": [
-      "/images/events/9db5eafce08a3f28ff43335f8bafe7e2.jpg",
-      "/images/events/cfe5a902593adad89e406b50dfe409fe.jpg"
-    ],
-    "image": "/images/events/9db5eafce08a3f28ff43335f8bafe7e2.jpg",
-    "post_date": "2026-08-11T08:52:20+00:00"
   },
   {
     "date": "2026-10-16",
