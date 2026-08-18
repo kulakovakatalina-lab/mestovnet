@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Оркестр «Консонанс», Оранжерея, в Симферополе, 21 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Оркестр «Консонанс», ресторан «Оранжерея», в Симферополе, 21 августа, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Оркестр «Консонанс» — Оранжерея, Симферополь, 21 августа · Местов.Нет</title>
+<title>Оркестр «Консонанс» — ресторан «Оранжерея», Симферополь, 21 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/008e41ba">
-<meta property="og:title" content="Оркестр «Консонанс» — Оранжерея, Симферополь, 21 августа · Местов.Нет">
-<meta property="og:description" content="Оркестр «Консонанс», Оранжерея, в Симферополе, 21 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Оркестр «Консонанс» — ресторан «Оранжерея», Симферополь, 21 августа · Местов.Нет">
+<meta property="og:description" content="Оркестр «Консонанс», ресторан «Оранжерея», в Симферополе, 21 августа, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/8937e7129a039d484dde69da95c91279.jpg">
 <script type="application/ld+json">
@@ -973,14 +973,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-08-21T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Оранжерея",
+        "name": "ресторан «Оранжерея»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Летний Roof-Sound: мировые чарты, симфо-рок и русские песни в оркестровых аранжировках под открытым небом.",
+      "description": "Летний Roof-Sound с живым звучанием. В программе – мировые чарты, симфо-рок и любимые русские песни в оркестровых аранжировках. Музыка, открытое небо и кухня ресторана «Оранжерея» для красивого вечера.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Оркестр «Консонанс»"

@@ -985,7 +985,13 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Даня"
       },
-      "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg"
+      "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "1000₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
