@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джокер, Молодость, в Севастополе, 16 октября, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Известные крымские музыканты, Севастополь, в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джокер — Молодость, Севастополь, 16 октября · Местов.Нет</title>
+<title>Известные крымские музыканты — Севастополь, 23 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,37 +958,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/3ff30188">
-<meta property="og:title" content="Джокер — Молодость, Севастополь, 16 октября · Местов.Нет">
-<meta property="og:description" content="Джокер, Молодость, в Севастополе, 16 октября, чт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4b6c5391">
+<meta property="og:title" content="Известные крымские музыканты — Севастополь, 23 августа · Местов.Нет">
+<meta property="og:description" content="Известные крымские музыканты, Севастополь, в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/7dd9a520435faa8ada79ef6744997054.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джокер",
-      "startDate": "2026-10-16T19:00:00+03:00",
+      "name": "Известные крымские музыканты",
+      "startDate": "2026-08-23T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Молодость",
+        "name": "Севастополь",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "О концерте «Я буду жить, — кричал он, — вечно!»\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами «Лесника», «Камнем по голове», «Мастер приглашает в гости», «\u0000Жаль нет ружья», «Ели мясо мужики», «Мертвый анархист», «Отец и маски», «Охотник» и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!",
+      "description": "Творческая дуэль на фортепиано двух маэстро. Известные крымские музыканты выйдут на сцену лицом к лицу, чтобы покорить публику произведениями самых разных жанров и стилей.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джокер"
+        "name": "Известные крымские музыканты"
       },
-      "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
+      "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 1000 ₽",
+        "name": "400–650 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джокер"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Известные крымские музыканты"}]}
 </script>
 </head>
 <body>
