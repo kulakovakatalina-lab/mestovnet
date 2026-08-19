@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 32,
+    "event_count": 34,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 25,
+    "event_count": 27,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 17,
+    "event_count": 18,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -94,7 +94,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 12,
+    "event_count": 11,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -251,6 +251,21 @@
     "lon": null
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 7,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinzavod-massandra",
     "name": "Винзавод Массандра",
     "city": "Ялта",
@@ -360,6 +375,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "mriya",
     "name": "Мрия",
     "city": "Ялта",
@@ -460,35 +489,6 @@
     ],
     "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 4,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -663,6 +663,20 @@
     "desc_baseline_count": 4,
     "lat": 44.684306,
     "lon": 33.69919
+  },
+  {
+    "slug": "golf-pole",
+    "name": "Гольф-поле",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Гольф-поле"
+    ],
+    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "otel-akvamarin",
@@ -1135,20 +1149,6 @@
     "lon": null
   },
   {
-    "slug": "golf-pole",
-    "name": "Гольф-поле",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Гольф-поле"
-    ],
-    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
-    "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "sky-beach-yalta",
     "name": "Sky Beach Ялта",
     "city": "Ялта",
@@ -1485,20 +1485,6 @@
     "lon": null
   },
   {
-    "slug": "kinozal-krymskogo-kinokontsertnogo-obedineniya",
-    "name": "кинозал Крымского киноконцертного объединения",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "кинозал Крымского киноконцертного объединения"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "yalta",
     "name": "Ялта",
     "city": "Ялта",
@@ -1632,6 +1618,62 @@
     "event_count": 1,
     "aliases": [
       "Качи-Кальон"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "labirint-krasnolese",
+    "name": "Лабиринт Краснолесье",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Лабиринт Краснолесье"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-im-a-p-chehova",
+    "name": "Дом-музей им. А. П. Чехова",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей им. А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "s-luchistoe",
+    "name": "с. Лучистое",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "с. Лучистое"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "simferopol",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Симферополь"
     ],
     "description": null,
     "desc_baseline_count": 0,

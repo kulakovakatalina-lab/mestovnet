@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Яна Кучерявая, Иван Sax, Арт-кафе «Снежинка», в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Евгения Сухачева, Рок-н-рольщики (Симферополь), в Симферополе, 18 августа, пн. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Яна Кучерявая, Иван Sax — Арт-кафе «Снежинка», Севастополь, 23 августа · Местов.Нет</title>
+<title>Евгения Сухачева — Рок-н-рольщики (Симферополь), 18 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/802d1c57">
-<meta property="og:title" content="Яна Кучерявая, Иван Sax — Арт-кафе «Снежинка», Севастополь, 23 августа · Местов.Нет">
-<meta property="og:description" content="Яна Кучерявая, Иван Sax, Арт-кафе «Снежинка», в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/7365769c">
+<meta property="og:title" content="Евгения Сухачева — Рок-н-рольщики (Симферополь), 18 августа · Местов.Нет">
+<meta property="og:description" content="Евгения Сухачева, Рок-н-рольщики (Симферополь), в Симферополе, 18 августа, пн. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/id3DjROtfnry6Q07JNrwB44UddVq_R-HJ6VzH8qiAzRvBTLDsW9dlR339viCuveTjH-l5S2EB3z2jFPEMcI1hP0dsgrsiIXMK4LtTf9SLIFn1PA4NNFgJ5wNXjSLfVlps9cF-fdS6UiKlZYiMp0Jl87M90kUhsg0-CAjsTadjgkulsiEpj9CHbbaReHwVBe-mTJPR3lgeGZWrc98EGR1656Rp1Pk1QJMmtFL2j9fZtxXJu7PhuKA_RAKO8JrEHqf-TvjGpuFpkI5FoiSMem5OSzBQSfs5IuLutTNBXqIQgtz-3vOHkCJQN0s_sNfGGJiNboBNOVGx5e6NqioXg5FbA">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Яна Кучерявая, Иван Sax",
-      "startDate": "2026-08-23T15:00:00+03:00",
+      "name": "Евгения Сухачева",
+      "startDate": "2026-08-18T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Римская ярмарка в «Снежинке» с тематическим буфетом, тирамису от Apolo Bistro, DJ-сетом Яны Кучерявой, саксофоном Ивана Sax и дегустацией мороженого.",
+      "description": "Музыкальное рок-лото – впервые в «Рок-н-рольщиках».",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Яна Кучерявая, Иван Sax"
+        "name": "Евгения Сухачева"
       },
-      "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg"
+      "image": "https://cdn4.telesco.pe/file/id3DjROtfnry6Q07JNrwB44UddVq_R-HJ6VzH8qiAzRvBTLDsW9dlR339viCuveTjH-l5S2EB3z2jFPEMcI1hP0dsgrsiIXMK4LtTf9SLIFn1PA4NNFgJ5wNXjSLfVlps9cF-fdS6UiKlZYiMp0Jl87M90kUhsg0-CAjsTadjgkulsiEpj9CHbbaReHwVBe-mTJPR3lgeGZWrc98EGR1656Rp1Pk1QJMmtFL2j9fZtxXJu7PhuKA_RAKO8JrEHqf-TvjGpuFpkI5FoiSMem5OSzBQSfs5IuLutTNBXqIQgtz-3vOHkCJQN0s_sNfGGJiNboBNOVGx5e6NqioXg5FbA",
+      "offers": {
+        "@type": "Offer",
+        "name": "300₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Яна Кучерявая, Иван Sax"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Евгения Сухачева"}]}
 </script>
 </head>
 <body>
