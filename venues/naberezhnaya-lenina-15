@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Симферополь — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Симферополь, в Симферополе. 2 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/simferopol">
-  <meta property="og:title" content="Симферополь — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Симферополь, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <title>Набережная Ленина, 15 — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Набережная Ленина, 15, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/naberezhnaya-lenina-15">
+  <meta property="og:title" content="Набережная Ленина, 15 — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Набережная Ленина, 15, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,48 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Симферополь",
+      "name": "Набережная Ленина, 15",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
+        "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Оркестр «Консонанс»",
-      "startDate": "2026-08-21T00:00:00+03:00",
+      "name": "Катя Зимцерла",
+      "startDate": "2026-08-27T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Симферополь"
+        "name": "Набережная Ленина, 15"
       },
-      "description": "Летний Roof-Sound с живым звучанием. В программе – мировые чарты, симфо-рок и любимые русские песни в оркестровых аранжировках. Музыка, открытое небо и кухня ресторана «Оранжерея» для красивого вечера.",
+      "description": "Вечер с вином, гастрономией и музыкой с винила.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Оркестр «Консонанс»"
+        "name": "Катя Зимцерла"
       },
-      "image": "/images/events/8937e7129a039d484dde69da95c91279.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель, джаз-трио «А3»",
-      "startDate": "2026-08-29T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Симферополь"
-      },
-      "description": "Анна Шакель и джаз-трио «А3»",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель, джаз-трио «А3»"
-      },
-      "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
+      "image": "/images/events/c9e1c00a98235498b247edd42e32a316.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Симферополь"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Набережная Ленина, 15"}]}
 </script>
   <style>
 
@@ -1078,13 +1063,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Симферополь</h1>
+    <h1 class="genre-hero-title">Набережная Ленина, 15</h1>
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1106,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Симферополь", "Симферополь"];
+const VENUE_ALIASES = ["Набережная Ленина, 15", "Набережная Ленина, 15"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
