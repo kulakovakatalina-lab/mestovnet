@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Симферополь — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Симферополь, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Симферополь, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/simferopol">
   <meta property="og:title" content="Симферополь — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Симферополь, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Симферополь, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -43,12 +43,27 @@
         "@type": "MusicVenue",
         "name": "Симферополь"
       },
-      "description": "Летний Roof-Sound с живым звучанием. В программе – мировые чарты, симфо-рок и любимые русские песни в оркестровых аранжировках.",
+      "description": "Летний Roof-Sound с живым звучанием. В программе – мировые чарты, симфо-рок и любимые русские песни в оркестровых аранжировках. Музыка, открытое небо и кухня ресторана «Оранжерея» для красивого вечера.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Оркестр «Консонанс»"
       },
-      "image": "/images/events/cd4a8c59dab6447ddf4f1f30ba267f86.jpg"
+      "image": "/images/events/8937e7129a039d484dde69da95c91279.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель, джаз-трио «А3»",
+      "startDate": "2026-08-29T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Симферополь"
+      },
+      "description": "Анна Шакель и джаз-трио «А3»",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель, джаз-трио «А3»"
+      },
+      "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     }
   ]
 }
@@ -1069,7 +1084,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
