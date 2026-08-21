@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER), Jam Club, в Симферополе, 15 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Концерт под куполом телескопа &#x27;Звёздная скрипка&#x27;, Научный, в Крыму, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER) — Jam Club, Симферополь, 15 августа · Местов.Нет</title>
+<title>Концерт под куполом телескопа &#x27;Звёздная скрипка&#x27; — Научный, Крым, 16 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/9bf6aca4">
-<meta property="og:title" content="EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER) — Jam Club, Симферополь, 15 августа · Местов.Нет">
-<meta property="og:description" content="EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER), Jam Club, в Симферополе, 15 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/29e866d1">
+<meta property="og:title" content="Концерт под куполом телескопа &#x27;Звёздная скрипка&#x27; — Научный, Крым, 16 августа · Местов.Нет">
+<meta property="og:description" content="Концерт под куполом телескопа &#x27;Звёздная скрипка&#x27;, Научный, в Крыму, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/5069fcc10995413c7ec96c5c9fb18bf7.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER)",
-      "startDate": "2026-08-15T20:00:00+03:00",
+      "name": "Концерт под куполом телескопа 'Звёздная скрипка'",
+      "startDate": "2026-08-16T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club",
+        "name": "Научный",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт группы The Meantraitors.",
+      "description": "Посещение дома-музея директора обсерватории в п. Научный, заведовавшего отделом физики Солнца, прогулка к солнечным телескопам с возможностью наблюдения (с использованием специального аппарата) солнца и его протуберанцев, изучение кусочков метеоритов с помощью увеличительного прибора, интересные истории и факты о них и об обсерватории.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER)"
+        "name": "Концерт под куполом телескопа 'Звёздная скрипка'"
       },
-      "image": "/images/events/5069fcc10995413c7ec96c5c9fb18bf7.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "150 р",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "EXISTENTER (нью-метал, Москва), ОПГ Годзилла (Керчь), The MEANTRAITORS, The Existenter, EXISTENTER (Москва), Red Stars (при участии EXISTENTER)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Концерт под куполом телескопа 'Звёздная скрипка'"}]}
 </script>
 </head>
 <body>

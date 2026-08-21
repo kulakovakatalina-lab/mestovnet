@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Матвей Блюмин, Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, в Крыму, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Rammlied, Jam Club, в Симферополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Матвей Блюмин — Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, Крым, 23 августа · Местов.Нет</title>
+<title>Rammlied — Jam Club, Симферополь, 30 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/82142496">
-<meta property="og:title" content="Матвей Блюмин — Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, Крым, 23 августа · Местов.Нет">
-<meta property="og:description" content="Матвей Блюмин, Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, в Крыму, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/130504f9">
+<meta property="og:title" content="Rammlied — Jam Club, Симферополь, 30 августа · Местов.Нет">
+<meta property="og:description" content="Rammlied, Jam Club, в Симферополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/b125065ae82c97f045b48a6ecdca567f.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-08-23T19:00:00+03:00",
+      "name": "Rammlied",
+      "startDate": "2026-08-30T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Крым",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление крымского скрипача-виртуоза Матвея Блюмина. Победитель Всероссийского телевизионного конкурса 'Синяя Птица', а также международных конкурсов в Италии, Румынии, Португалии, Швеции. В канун дня рождения посёлка Научный Матвей исполнит самые головокружительные по сложности и покоряющие своей красотой мелодии - произведения любимых композиторов первого директора КрАО А. Б. Северного - Бах, Вагнер, Чайковский, Рахманинов и др.",
+      "description": "RAMMSTEIN TRIBUTE by Rammlied. Бесплатный вход для подписчиков клуба.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
+        "name": "Rammlied"
       },
-      "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg"
+      "image": "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Матвей Блюмин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Rammlied"}]}
 </script>
 </head>
 <body>

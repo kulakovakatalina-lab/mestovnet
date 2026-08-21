@@ -33,22 +33,22 @@
     {
       "@type": "MusicEvent",
       "name": "EL",
-      "startDate": "2026-08-28T18:00–22:00:00+03:00",
+      "startDate": "2026-08-28T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "EL"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "бар El Capulco 0.0",
+        "name": "El Capulco 0.0, сектор 6",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление EL.",
-      "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg"
+      "description": "Музыкальный вечер",
+      "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
       "@type": "MusicEvent",

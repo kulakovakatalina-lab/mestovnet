@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Матвей Блюмин, Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, в Крыму, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Авторская программа Ирины Андреевой, Научный, в Крыму, 15 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Матвей Блюмин — Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, Крым, 23 августа · Местов.Нет</title>
+<title>Авторская программа Ирины Андреевой — Научный, Крым, 15 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/82142496">
-<meta property="og:title" content="Матвей Блюмин — Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, Крым, 23 августа · Местов.Нет">
-<meta property="og:description" content="Матвей Блюмин, Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н, в Крыму, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/69d94c38">
+<meta property="og:title" content="Авторская программа Ирины Андреевой — Научный, Крым, 15 августа · Местов.Нет">
+<meta property="og:description" content="Авторская программа Ирины Андреевой, Научный, в Крыму, 15 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-08-23T19:00:00+03:00",
+      "name": "Авторская программа Ирины Андреевой",
+      "startDate": "2026-08-15T16:45:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+        "name": "Научный",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление крымского скрипача-виртуоза Матвея Блюмина. Победитель Всероссийского телевизионного конкурса 'Синяя Птица', а также международных конкурсов в Италии, Румынии, Португалии, Швеции. В канун дня рождения посёлка Научный Матвей исполнит самые головокружительные по сложности и покоряющие своей красотой мелодии - произведения любимых композиторов первого директора КрАО А. Б. Северного - Бах, Вагнер, Чайковский, Рахманинов и др.",
+      "description": "Авторская программа Ирины Андреевой, где вы как будто попали в гости к давней знакомой, от первого лица узнаем об истории и традициях Крымской астрофизической обсерватории, людях, которые здесь жили и уникальности пространства, заглянем в уголки, куда обычно не водят экскурсии, посмотрим фотографии, которые как машина времени, перенесут нас к истокам создания обсерватории.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
+        "name": "Авторская программа Ирины Андреевой"
       },
-      "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg"
+      "image": "/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Матвей Блюмин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Авторская программа Ирины Андреевой"}]}
 </script>
 </head>
 <body>

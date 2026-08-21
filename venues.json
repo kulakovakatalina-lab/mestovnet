@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 34,
+    "event_count": 36,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 29,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 18,
+    "event_count": 19,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -156,6 +156,23 @@
     "lon": null
   },
   {
+    "slug": "mramornaya-peschera",
+    "name": "Мраморная пещера",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "Мраморная пещера",
+      "Пещера «Мраморная»",
+      "Пещера Мраморная",
+      "пещера «Мраморная»"
+    ],
+    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
+    "desc_baseline_count": 4,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "sevastopolskiy-tskii",
     "name": "Севастопольский ЦКиИ",
     "city": "Севастополь",
@@ -171,19 +188,17 @@
     "lon": 33.526829
   },
   {
-    "slug": "mramornaya-peschera",
-    "name": "Мраморная пещера",
-    "city": "Симферополь",
-    "address": "",
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
     "event_count": 9,
     "aliases": [
-      "Мраморная пещера",
-      "Пещера «Мраморная»",
-      "Пещера Мраморная",
-      "пещера «Мраморная»"
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
     ],
-    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
-    "desc_baseline_count": 4,
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -200,21 +215,6 @@
     "desc_baseline_count": 8,
     "lat": 44.938155,
     "lon": 34.09338
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 8,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "organnom-zale-livadia",
@@ -359,6 +359,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Крым",
@@ -373,20 +387,6 @@
     "desc_baseline_count": 5,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "mriya",
@@ -504,20 +504,6 @@
     ],
     "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "bar-el-capulco-0-0",
-    "name": "бар El Capulco 0.0",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "бар El Capulco 0.0"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -740,6 +726,20 @@
     "lon": 34.132019
   },
   {
+    "slug": "bar-el-capulco-0-0",
+    "name": "бар El Capulco 0.0",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "бар El Capulco 0.0"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "zvezdnyy",
     "name": "Звездный",
     "city": "Феодосия",
@@ -905,6 +905,20 @@
     "event_count": 2,
     "aliases": [
       "Локация 3 км от Научного"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Крым",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Научный"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1598,20 +1612,6 @@
     "lon": null
   },
   {
-    "slug": "peschera-mramornaya-s-mramornoe-simferopolskiy-rayon",
-    "name": "Пещера Мраморная, с. Мраморное, Симферопольский район",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Пещера Мраморная, с. Мраморное, Симферопольский район"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kachi-kalon",
     "name": "Качи-Кальон",
     "city": "Бахчисарай",
@@ -1675,6 +1675,34 @@
     "event_count": 1,
     "aliases": [
       "Набережная Ленина, 15"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "krysha-mira",
+    "name": "Крыша мира",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Крыша мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "feodosiya",
+    "name": "Феодосия",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Феодосия"
     ],
     "description": null,
     "desc_baseline_count": 0,

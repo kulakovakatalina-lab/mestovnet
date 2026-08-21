@@ -68,7 +68,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Happy Paul",
+      "name": "Happy Paul, EL",
       "startDate": "2026-08-28T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -77,7 +77,7 @@
       "description": "Музыкальный вечер",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Happy Paul"
+        "name": "Happy Paul, EL"
       },
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
