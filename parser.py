@@ -58,7 +58,10 @@ def download_image(url: str):
             f.write(resp.content)
         return f"/{local_path}"
     except Exception:
-        return url  # fallback: оставляем внешний URL
+        # Внешние URL Telegram часто одноразовые или недоступны из браузера
+        # посетителя. Карточка без постера лучше, чем ссылка, из-за которой
+        # целиком срывается публикация готовой афиши.
+        return None
 
 
 def _cache_key(text: str) -> str:
@@ -1414,6 +1417,35 @@ def _redistribute_images(events: list[dict]) -> int:
     return updated
 
 
+def _drop_unpublished_image_links(events: list[dict]) -> int:
+    """Убирает из событий постеры, которых нет среди публикуемых файлов.
+
+    Это защищает и новые загрузки, и архив: временная ссылка источника не
+    должна попадать в events.json, иначе проверка релиза справедливо считает
+    её отсутствующим локальным файлом.
+    """
+    removed = 0
+    prefix = f"/{IMAGES_DIR}/"
+    for event in events:
+        image = event.get("image")
+        if image and (not isinstance(image, str) or not image.startswith(prefix)
+                      or not os.path.isfile(image.lstrip("/"))):
+            event["image"] = None
+            removed += 1
+
+        images = event.get("images")
+        if images:
+            published = [path for path in images
+                         if isinstance(path, str) and path.startswith(prefix)
+                         and os.path.isfile(path.lstrip("/"))]
+            if published != images:
+                removed += len(images) - len(published)
+            event["images"] = published or None
+            if not event.get("image") and published:
+                event["image"] = published[0]
+    return removed
+
+
 def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
     """Скачивает все картинки из постов. Возвращает url -> [local_paths...]."""
     result = {}
@@ -1688,6 +1720,10 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
         print(f"Архив очищен: дат {old_invalid_dates}, "
               f"времён нормализовано {old_normalized_times}, очищено {old_invalid_times}")
 
+    missing_posters = _drop_unpublished_image_links(existing + all_events)
+    if missing_posters:
+        print(f"Убрано недоступных постеров: {missing_posters}")
+
     # Не фильтруем только по URL: один пост/страница может содержать
     # несколько дат. deduplicate_events склеит повторно полученные
     # карточки, но сохранит новые даты того же URL.
@@ -1832,6 +1868,9 @@ if __name__ == "__main__":
             current = json.load(f)
         _sanitize_event_dates(current)
         _sanitize_event_times(current)
+        missing_posters = _drop_unpublished_image_links(current)
+        if missing_posters:
+            print(f"Убрано недоступных постеров: {missing_posters}")
         deduplicated = deduplicate_events(current)
         if len(deduplicated) != len(current):
             print(f"Дедупликация архива: {len(current)} → {len(deduplicated)} "

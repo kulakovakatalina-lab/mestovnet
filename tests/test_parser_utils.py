@@ -20,6 +20,7 @@ from parser import (
     _valid_time_or_none,
     _event_validation_reason,
     _assign_event_images,
+    _drop_unpublished_image_links,
     validate_events,
     detect_genre,
     _detect_city,
@@ -374,6 +375,18 @@ def test_dry_run_does_not_persist_images(tmp_path):
         assert list(tmp_path.iterdir()) == []
     finally:
         parser_module.PERSIST_IMAGES = previous
+
+
+def test_missing_poster_does_not_leave_external_url(monkeypatch):
+    monkeypatch.setattr(parser_module.httpx, "get", lambda *args, **kwargs: (_ for _ in ()).throw(OSError("offline")))
+    assert parser_module.download_image("https://example.test/poster.jpg") is None
+
+
+def test_unpublished_poster_links_are_removed(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    events = [{"image": "https://example.test/poster.jpg", "images": ["https://example.test/poster.jpg"]}]
+    assert _drop_unpublished_image_links(events) == 2
+    assert events == [{"image": None, "images": None}]
 
 
 def test_explicit_event_location_overrides_channel_city():
