@@ -151,10 +151,9 @@
       "Симферополь"
     ],
     "venues": [
-      "пространство лабиринта Краснолесья",
-      "Арт-кафе «Снежинка»",
-      "Отель «Аквамарин»",
       "Снежинка",
+      "пространство лабиринта Краснолесья",
+      "Отель «Аквамарин»",
       "Севастополь",
       "Симферополь",
       "Ресторан «Мотивы»"
@@ -258,6 +257,28 @@
     "desc_baseline_count": 3
   },
   {
+    "slug": "domino",
+    "name": "Домино",
+    "aliases": [
+      "Группа «Домино»",
+      "Домино"
+    ],
+    "event_count": 6,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики (Симферополь)",
+      "Рок-н-рольщики (Севастополь)",
+      "Севастополь"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "martin-w",
     "name": "Martin W.",
     "aliases": [
@@ -279,6 +300,29 @@
     "desc_baseline_count": 4
   },
   {
+    "slug": "matvey-blyumin",
+    "name": "Матвей Блюмин",
+    "aliases": [
+      "Матвей Блюмин"
+    ],
+    "event_count": 6,
+    "cities": [
+      "Севастополь",
+      "Научный",
+      "Крым"
+    ],
+    "venues": [
+      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н",
+      "арт-кафе «Снежинка»",
+      "Севастополь"
+    ],
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-08-23",
+    "description": "Скрипач-виртуоз, победитель международных конкурсов, солист Московской и Петербургской филармоний. В Крыму играет в необычных местах: под куполом телескопа Крымской астрофизической обсерватории (проект «Космос Внутри») и с программой «Реинкарнация Паганини».",
+    "desc_baseline_count": 2
+  },
+  {
     "slug": "igor-simdyankin-s-kishom",
     "name": "Игорь Симдянкин с «КиШом»",
     "aliases": [
@@ -296,27 +340,6 @@
     ],
     "first_seen": "2026-08-14",
     "last_seen": "2026-08-29",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "domino",
-    "name": "Домино",
-    "aliases": [
-      "Группа «Домино»",
-      "Домино"
-    ],
-    "event_count": 5,
-    "cities": [
-      "Симферополь",
-      "Севастополь"
-    ],
-    "venues": [
-      "Рок-н-рольщики (Симферополь)",
-      "Рок-н-рольщики (Севастополь)"
-    ],
-    "first_seen": "2026-05-02",
-    "last_seen": "2026-08-22",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -432,27 +455,23 @@
     "desc_baseline_count": 5
   },
   {
-    "slug": "matvey-blyumin",
-    "name": "Матвей Блюмин",
+    "slug": "ichchi",
+    "name": "Иччи",
     "aliases": [
-      "Матвей Блюмин"
+      "ИЧЧИ",
+      "Иччи"
     ],
     "event_count": 5,
     "cities": [
-      "Севастополь",
-      "Научный",
-      "Крым"
+      "Симферополь"
     ],
     "venues": [
-      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н",
-      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
-      "арт-кафе «Снежинка»",
-      "Севастополь"
+      "Jam Club"
     ],
-    "first_seen": "2026-05-31",
-    "last_seen": "2026-08-23",
-    "description": "Скрипач-виртуоз, победитель международных конкурсов, солист Московской и Петербургской филармоний. В Крыму играет в необычных местах: под куполом телескопа Крымской астрофизической обсерватории (проект «Космос Внутри») и с программой «Реинкарнация Паганини».",
-    "desc_baseline_count": 2
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-22",
+    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
+    "desc_baseline_count": 3
   },
   {
     "slug": "dzhedzhe",
@@ -589,6 +608,24 @@
     "desc_baseline_count": 3
   },
   {
+    "slug": "red-stars",
+    "name": "Red Stars",
+    "aliases": [
+      "Red Stars"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "angle-of-wonders",
     "name": "Angle Of Wonders",
     "aliases": [
@@ -628,25 +665,6 @@
     "last_seen": "2026-10-18",
     "description": null,
     "desc_baseline_count": 0
-  },
-  {
-    "slug": "ichchi",
-    "name": "Иччи",
-    "aliases": [
-      "ИЧЧИ",
-      "Иччи"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-08-12",
-    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
-    "desc_baseline_count": 3
   },
   {
     "slug": "yuliya-bakshinskaya",
@@ -1181,6 +1199,24 @@
     "first_seen": "2026-04-26",
     "last_seen": "2026-08-23",
     "description": "Трубач, участник дворцовых концертных программ в Ялте — «Песни любимого кино» и «Самая красивая музыка столетия» во дворце Дюльбер.",
+    "desc_baseline_count": 2
+  },
+  {
+    "slug": "dinaminator",
+    "name": "Динаминатор",
+    "aliases": [
+      "Динаминатор"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-21",
+    "description": "Участники метал-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Modern Rock Heavy Fest.",
     "desc_baseline_count": 2
   },
   {
@@ -1891,24 +1927,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "red-stars",
-    "name": "Red Stars",
-    "aliases": [
-      "Red Stars"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-07-04",
-    "last_seen": "2026-07-24",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "gran",
     "name": "Грань",
     "aliases": [
@@ -2096,6 +2114,24 @@
     "last_seen": "2026-07-01",
     "description": "Трибьют-программа хитов «Сектора Газа». Летом — Дом офицеров флота в Севастополе и «Корабел» в Керчи.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "minerva",
+    "name": "Минерва",
+    "aliases": [
+      "Минерва"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-06-26",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "andrey-yasinskiy",
@@ -2294,24 +2330,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "dinaminator",
-    "name": "Динаминатор",
-    "aliases": [
-      "Динаминатор"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-05-08",
-    "description": "Участники метал-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Modern Rock Heavy Fest.",
-    "desc_baseline_count": 2
-  },
-  {
     "slug": "narrator",
     "name": "Нарратор",
     "aliases": [
@@ -2328,6 +2346,24 @@
     "last_seen": "2026-05-08",
     "description": "Симферопольская группа с фестивалей Jam Club: модерн-рок и метал.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "kabel-dzhek",
+    "name": "Кабель Джек",
+    "aliases": [
+      "Кабель Джек"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "chernyy-doktor-solnechnoy-doliny",
@@ -2446,6 +2482,25 @@
     "desc_baseline_count": 0
   },
   {
+    "slug": "iz-kraynosti-v-kraynost",
+    "name": "Из Крайности в Крайность",
+    "aliases": [
+      "Из Крайности в Крайность",
+      "Из крайности в крайность"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-21",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "gruppa-kino-v-ispolnenii-igorya-simdyankina",
     "name": "Группа «Кино» в исполнении Игоря Симдянкина",
     "aliases": [
@@ -2516,6 +2571,82 @@
     ],
     "first_seen": "2026-08-18",
     "last_seen": "2026-08-23",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "mega-rock-fest",
+    "name": "MEGA ROCK FEST",
+    "aliases": [
+      "MEGA ROCK FEST"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "Крыша мира"
+    ],
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "cupsize",
+    "name": "CUPSIZE",
+    "aliases": [
+      "CUPSIZE"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "Крыша мира"
+    ],
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "ksb-cover-show-by-slight-noise",
+    "name": "KSB COVER SHOW by Slight Noise",
+    "aliases": [
+      "KSB COVER SHOW by Slight Noise"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "Крыша мира"
+    ],
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "snimki",
+    "name": "СНИМКИ",
+    "aliases": [
+      "СНИМКИ"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Судак"
+    ],
+    "venues": [
+      "ТАВРИДА.АРТ",
+      "Таврида"
+    ],
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
     "description": null,
     "desc_baseline_count": 0
   }

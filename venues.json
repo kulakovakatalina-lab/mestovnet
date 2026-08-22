@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 36,
+    "event_count": 38,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 29,
+    "event_count": 28,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -90,21 +90,6 @@
     "lon": 34.1258
   },
   {
-    "slug": "art-kafe-snezhinka",
-    "name": "Арт-кафе «Снежинка»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 11,
-    "aliases": [
-      "Арт-кафе «Снежинка»",
-      "арт-кафе «Снежинка»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -156,6 +141,21 @@
     "lon": null
   },
   {
+    "slug": "art-kafe-snezhinka",
+    "name": "Арт-кафе «Снежинка»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "mramornaya-peschera",
     "name": "Мраморная пещера",
     "city": "Симферополь",
@@ -169,6 +169,21 @@
     ],
     "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
     "desc_baseline_count": 4,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 10,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -188,21 +203,6 @@
     "lon": 33.526829
   },
   {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 9,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "centrum",
     "name": "Centrum",
     "city": "Симферополь",
@@ -217,6 +217,23 @@
     "lon": 34.09338
   },
   {
+    "slug": "usadba-rodnoe-gnezdo",
+    "name": "Усадьба «Родное гнездо»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+      "Усадьба «Родное гнездо»",
+      "Усадьба Родное Гнездо",
+      "Усадьба Родное гнездо"
+    ],
+    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
+    "desc_baseline_count": 4,
+    "lat": 44.567516,
+    "lon": 33.728614
+  },
+  {
     "slug": "organnom-zale-livadia",
     "name": "Органном зале \"LIVADIA\"",
     "city": "Ялта",
@@ -229,23 +246,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "usadba-rodnoe-gnezdo",
-    "name": "Усадьба «Родное гнездо»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-      "Усадьба «Родное гнездо»",
-      "Усадьба Родное Гнездо",
-      "Усадьба Родное гнездо"
-    ],
-    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
-    "desc_baseline_count": 4,
-    "lat": 44.567516,
-    "lon": 33.728614
   },
   {
     "slug": "art-kovcheg",
@@ -389,6 +389,20 @@
     "lon": null
   },
   {
+    "slug": "snezhinka",
+    "name": "Снежинка",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Снежинка"
+    ],
+    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
+    "desc_baseline_count": 1,
+    "lat": 44.606638,
+    "lon": 33.522078
+  },
+  {
     "slug": "mriya",
     "name": "Мрия",
     "city": "Ялта",
@@ -520,20 +534,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "snezhinka",
-    "name": "Снежинка",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Снежинка"
-    ],
-    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
-    "desc_baseline_count": 1,
-    "lat": 44.606638,
-    "lon": 33.522078
   },
   {
     "slug": "btr-bar-tyazhelogo-roka",
@@ -905,6 +905,20 @@
     "event_count": 2,
     "aliases": [
       "Локация 3 км от Научного"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
+    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+    "city": "Крым",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1556,20 +1570,6 @@
     "lon": null
   },
   {
-    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
-    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "afisha-kryma",
     "name": "Афиша Крыма",
     "city": "Крым",
@@ -1703,6 +1703,34 @@
     "event_count": 1,
     "aliases": [
       "Феодосия"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzey-a-s-pushkina-v-gurzufe",
+    "name": "Музей А. С. Пушкина в Гурзуфе",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музей А. С. Пушкина в Гурзуфе"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "tavrida",
+    "name": "Таврида",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Таврида"
     ],
     "description": null,
     "desc_baseline_count": 0,
