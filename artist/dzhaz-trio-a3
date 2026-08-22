@@ -33,27 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Джаз-трио «А3»",
-      "startDate": "2026-08-22T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джаз-трио «А3»"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Вечер интеллектуального джаза, где современное звучание встречается с мейнстримом. Сложные музыкальные решения, глубокие гармонии, импровизация и авторский взгляд на джазовые традиции — для тех, кто ценит качественную живую музыку.",
-      "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Джаз-трио «А3»",
-      "startDate": "2026-08-22T21:00:00+03:00",
+      "startDate": "2026-08-22T17:30:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Джаз-трио «А3»"
@@ -67,8 +47,28 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Вечер инструментального классического джаза.",
+      "description": "Встреча в мастерской художника Анатолия Ярышкина, чтобы рассмотреть старые фотографии, запечатлевшие Севастополь, с комментариями историка Степана Самошина.",
       "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Джаз-трио «А3»",
+      "startDate": "2026-08-22T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Джаз-трио «А3»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Снежинка",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Заслуженный артист Крыма Виктор Никулин и джаз-трио «А3» исполнят программу, в которой встретятся разные направления и настроения джаза.",
+      "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg"
     },
     {
       "@type": "MusicEvent",
