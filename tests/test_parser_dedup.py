@@ -212,6 +212,19 @@ class TestDeduplicateEvents:
         ]
         assert len(deduplicate_events(events)) == 1
 
+    def test_regional_fallback_city_merges_with_specific_city(self):
+        """«Крым» у афишного канала — не конкурирующая площадка, а fallback."""
+        base = {
+            "date": "2026-08-29",
+            "artist": "Канальи, Танцующее средневековье",
+            "venue": "ДК в парке МО, ул. Свердлова, Ялта",
+        }
+        events = [
+            {**base, "source_url": "https://t.me/yalta/1", "source_city": "Ялта"},
+            {**base, "source_url": "https://t.me/crimea/1", "source_city": "Крым"},
+        ]
+        assert len(deduplicate_events(events)) == 1
+
     def test_same_url_different_dates_are_not_merged(self):
         base = {
             "source_url": "https://t.me/venue/weekly-poster",

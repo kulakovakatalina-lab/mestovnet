@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ДК в парке МО — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в ДК в парке МО, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в ДК в парке МО, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dk-v-parke-mo">
   <meta property="og:title" content="ДК в парке МО — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в ДК в парке МО, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в ДК в парке МО, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -50,21 +50,6 @@
         "name": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»"
       },
       "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»",
-      "startDate": "2026-08-29T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "ДК в парке МО"
-      },
-      "description": "В преддверии осени создадут атмосферу средневекового праздника фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»"
-      },
-      "image": "/images/events/71a35dd53ef2515262eb17e2fd6d4ea7.jpg"
     }
   ]
 }
@@ -1085,7 +1070,7 @@ footer {
 <div class="venue-address-block"><span class="venue-hero-address">ул. Свердлова, Ялта</span></div>
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
