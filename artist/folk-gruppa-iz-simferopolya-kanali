@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Кабель Джек — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Кабель Джек в Крыму (Симферополь). 1 ближайших событий.">
-  <link rel="canonical" href="https://mestov.net/artist/kabel-dzhek">
-  <meta property="og:title" content="Кабель Джек — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Кабель Джек в Крыму (Симферополь). 1 ближайших событий.">
+  <title>фолк-группа из Симферополя «Канальи» — концерты в Крыму, Ялта, Крым · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов фолк-группа из Симферополя «Канальи» в Крыму (Ялта, Крым). 2 ближайших событий.">
+  <link rel="canonical" href="https://mestov.net/artist/folk-gruppa-iz-simferopolya-kanali">
+  <meta property="og:title" content="фолк-группа из Симферополя «Канальи» — концерты в Крыму, Ялта, Крым · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов фолк-группа из Симферополя «Канальи» в Крыму (Ялта, Крым). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,32 +28,53 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Кабель Джек"
+      "name": "фолк-группа из Симферополя «Канальи»"
     },
     {
       "@type": "MusicEvent",
-      "name": "Кабель Джек",
-      "startDate": "2026-08-22T00:00:00+03:00",
+      "name": "фолк-группа из Симферополя «Канальи»",
+      "startDate": "2026-08-29T00:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Кабель Джек"
+        "name": "фолк-группа из Симферополя «Канальи»"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club",
+        "name": "ДК в парке МО, ул. Свердлова, Ялта",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт с участием исполнителей: Минерва, Outreal, Иччи."
+      "description": "Танцевальный концерт в Ялте с атмосферой средневековья. Фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье» создадут атмосферу средневекового праздника.",
+      "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "фолк-группа из Симферополя «Канальи»",
+      "startDate": "2026-08-29T00:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "фолк-группа из Симферополя «Канальи»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "ДК в парке МО, ул. Свердлова, Ялта",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "В преддверии осени создадут атмосферу средневекового праздника фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье».",
+      "image": "/images/events/71a35dd53ef2515262eb17e2fd6d4ea7.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Кабель Джек"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "фолк-группа из Симферополя «Канальи»"}]}
 </script>
   <style>
 
@@ -1017,11 +1038,11 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Кабель Джек</h1>
+    <h1 class="genre-hero-title">фолк-группа из Симферополя «Канальи»</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Крым</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1039,7 +1060,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Кабель Джек", "Кабель Джек"];
+const ARTIST_ALIASES = ["фолк-группа из Симферополя «Канальи»", "фолк-группа из Симферополя «Канальи»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

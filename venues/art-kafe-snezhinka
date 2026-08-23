@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,48 @@
         "name": "Антон Калиниченко, Максим Перов, Яна Кучерявая, Иван Sax"
       },
       "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Джаз-трио «А3», Анна Шакель",
+      "startDate": "2026-08-28T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Новый формат проекта «Джазовые вечера в Севастополе». Сначала — настоящий живой джаз и мировые хиты в исполнении джаз-трио «А3» и Анны Шакель. А затем сцена и зал объединятся: музыканты и гости вместе будут петь песни, которые знает каждый.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Джаз-трио «А3», Анна Шакель"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Трио Игоря Лавринского",
+      "startDate": "2026-08-29T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Музыкальное путешествие по XX веку: техасский блюз, свинг 30-х, рок-н-ролл 50-х и классические рок-баллады 70-х.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Трио Игоря Лавринского"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "«Южане»",
+      "startDate": "2026-08-30T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Вечер живой музыки, танцев, встреч, смеха и настоящего южного темперамента. Яркая музыкальная программа, танцевальные включения, интерактивы и ритмы.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "«Южане»"
+      }
     }
   ]
 }
@@ -1069,7 +1111,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

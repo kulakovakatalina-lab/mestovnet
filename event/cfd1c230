@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики (Симферополь), в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Денис (DZen), Демчиз, Домино — Рок-н-рольщики (Симферополь), 22 августа · Местов.Нет</title>
+<title>Денис (DZen), Демчиз, Домино — Рок-н-рольщики, Симферополь, 22 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,10 +959,10 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/cfd1c230">
-<meta property="og:title" content="Денис (DZen), Демчиз, Домино — Рок-н-рольщики (Симферополь), 22 августа · Местов.Нет">
-<meta property="og:description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики (Симферополь), в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Денис (DZen), Демчиз, Домино — Рок-н-рольщики, Симферополь, 22 августа · Местов.Нет">
+<meta property="og:description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b42317791e393ca1567b45c3ba38304d.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/c7274cd53286a605efca80684a652ecb.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -973,19 +973,25 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-08-22T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Рок-н-рольщики",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Нетленки русского рок-попа и неожиданные аранжировки в исполнении группы «Домино» (Севастополь)",
+      "description": "Группа «Домино» из Севастополя сыграет нетленки русского рок-попа и неожиданные мэшапы.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Денис (DZen), Демчиз, Домино"
       },
-      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
+      "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }

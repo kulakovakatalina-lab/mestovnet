@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек, Jam Club, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Денис (Dzen) Детков, Рок-н-рольщики (Севастополь), в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек — Jam Club, Симферополь, 22 августа · Местов.Нет</title>
+<title>Денис (Dzen) Детков — Рок-н-рольщики (Севастополь), 22 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,32 +958,34 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/de6c29c1">
-<meta property="og:title" content="MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек — Jam Club, Симферополь, 22 августа · Местов.Нет">
-<meta property="og:description" content="MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек, Jam Club, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/53bf1e26">
+<meta property="og:title" content="Денис (Dzen) Детков — Рок-н-рольщики (Севастополь), 22 августа · Местов.Нет">
+<meta property="og:description" content="Денис (Dzen) Детков, Рок-н-рольщики (Севастополь), в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://mestov.net/images/events/e45b41c63a80cdb921249b244feffd19.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек",
-      "startDate": "2026-08-22T00:00:00+03:00",
+      "name": "Денис (Dzen) Детков",
+      "startDate": "2026-08-22T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club",
+        "name": "Рок-н-рольщики (Севастополь)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт с участием исполнителей: Минерва, Outreal, Иччи.",
+      "description": "Танцуем и поём под нетленные хиты отечественного рок-попа в исполнении Дениса (Dzen) Деткова.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек"
+        "name": "Денис (Dzen) Детков"
       },
+      "image": "/images/events/e45b41c63a80cdb921249b244feffd19.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -995,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Денис (Dzen) Детков"}]}
 </script>
 </head>
 <body>

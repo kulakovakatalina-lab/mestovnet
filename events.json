@@ -363,7 +363,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -514,7 +514,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -608,7 +608,7 @@
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/b1e66aaff7103878ddf892b5e95d1745.jpg"
+      "/images/events/06a4b9c6d480864f5ec543baef01e62c.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-16T06:13:47+00:00"
@@ -662,7 +662,7 @@
     "source_url": "https://t.me/rocknroll_82/487",
     "images": [
       "/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg",
-      "/images/events/bba997c048ed11b43d56d7020fd2a136.jpg"
+      "/images/events/a8ae603a75d7ec35fe28d3c27f1dbfa8.jpg"
     ],
     "image": "/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg",
     "post_date": "2026-08-16T10:13:00+00:00"
@@ -702,7 +702,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -799,7 +799,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -844,18 +844,19 @@
     "time": "21:00",
     "artist": "Денис (DZen), Демчиз, Домино",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Нетленки русского рок-попа и неожиданные аранжировки в исполнении группы «Домино» (Севастополь)",
+    "venue": "Рок-н-рольщики",
+    "price": "бесплатно",
+    "description": "Группа «Домино» из Севастополя сыграет нетленки русского рок-попа и неожиданные мэшапы.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "русский рок",
-    "source_url": "https://t.me/rocknroll_92/7052",
+    "source_url": "https://t.me/rocknroll_82/505",
     "images": [
+      "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
       "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     ],
-    "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-20T08:56:33+00:00"
+    "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
+    "post_date": "2026-08-22T09:32:44+00:00"
   },
   {
     "id": "e12f7005",
@@ -1023,7 +1024,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -1064,7 +1065,7 @@
     "source_url": "https://t.me/massandrasun/2438",
     "images": [
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-      "/images/events/7030a6b03bb120d425fb732d379a68d0.jpg"
+      "/images/events/fab73072c409ef3da7a7a13bfe0bb1c4.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00"
@@ -1161,7 +1162,7 @@
       "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg"
     ],
     "image": "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg",
-    "post_date": "2026-08-22T04:35:07.473893+00:00"
+    "post_date": "2026-08-23T04:38:04.708263+00:00"
   },
   {
     "id": "8ce78df0",
@@ -1217,7 +1218,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
-    "post_date": "2026-08-22T04:35:07.473967+00:00"
+    "post_date": "2026-08-23T04:38:04.708360+00:00"
   },
   {
     "id": "3e656258",
@@ -1255,7 +1256,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg",
-    "post_date": "2026-08-22T04:35:09.796403+00:00"
+    "post_date": "2026-08-23T04:38:06.972237+00:00"
   },
   {
     "id": "59e0e5af",
@@ -1475,7 +1476,7 @@
       "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
     ],
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "post_date": "2026-08-22T04:35:03.314030+00:00"
+    "post_date": "2026-08-23T04:38:04.708223+00:00"
   },
   {
     "id": "136c757e",
@@ -6548,7 +6549,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1953",
     "images": [
       "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
-      "/images/events/59313a62034099556f657d270e244d2b.jpg"
+      "/images/events/1c69cfe95dd84678d855e81a51a280d6.jpg"
     ],
     "image": "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
     "post_date": "2026-08-14T17:49:49+00:00"
@@ -6568,7 +6569,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1953",
     "images": [
       "/images/events/ed019312c236485529361d254e1107cd.jpg",
-      "/images/events/43ebdc43648695a2818de3401ac60d5d.jpg"
+      "/images/events/465ce11971ea90e1584e2a3b2772f2e5.jpg"
     ],
     "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
     "post_date": "2026-08-16T09:42:05+00:00"
@@ -6622,7 +6623,7 @@
     "source_url": "https://t.me/afisha_crimea/8209",
     "images": [
       "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
-      "/images/events/62267cfe3c5f1f9d5f04e802973c7067.jpg"
+      "/images/events/3c97b5148e72b70b4df145ad93991c9c.jpg"
     ],
     "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
     "post_date": "2026-08-11T05:56:20+00:00"
@@ -7037,7 +7038,7 @@
     "source_url": "https://t.me/afisha_crimea/8231",
     "images": [
       "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-      "/images/events/93c9547801abf43ec1ffd616df7e9580.jpg"
+      "/images/events/d298c6a421a40b79b726810a57d45e4b.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00"
@@ -7057,7 +7058,7 @@
     "source_url": "https://t.me/afisha_crimea/8231",
     "images": [
       "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-      "/images/events/93c9547801abf43ec1ffd616df7e9580.jpg"
+      "/images/events/d298c6a421a40b79b726810a57d45e4b.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00"
@@ -7114,7 +7115,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6456",
     "images": [
       "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
-      "/images/events/3b38b732561bc8fbcb272b0023d54847.jpg"
+      "/images/events/24fae3c5f5495038283e9a1094372468.jpg"
     ],
     "image": "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
     "post_date": "2026-08-13T16:42:31+00:00"
@@ -7134,7 +7135,7 @@
     "source_url": "https://t.me/belbekma/1348",
     "images": [
       "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
-      "/images/events/2e3d4b7e713be55e24fd24fb2c1bf1e0.jpg"
+      "/images/events/4f51ad0322c59cf01aafa8eda7b4fac9.jpg"
     ],
     "image": "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
     "post_date": "2026-08-13T14:50:23+00:00"
@@ -7207,7 +7208,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6459",
     "images": [
       "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
-      "/images/events/8688a7c72aabfc6d7521fef2a807b510.jpg"
+      "/images/events/c686acafccab25fbe13a5d74ed8f7952.jpg"
     ],
     "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
     "post_date": "2026-08-21T11:58:15+00:00"
@@ -7463,7 +7464,7 @@
     "source_url": "https://t.me/skazhitejazz/1579",
     "images": [
       "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
-      "/images/events/50f43434cd72f0fecd192e8626f2e2e3.jpg"
+      "/images/events/24e04e862886353b3094afb66676286c.jpg"
     ],
     "image": "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
     "post_date": "2026-08-14T20:19:46+00:00"
@@ -7504,7 +7505,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-08-22T04:35:03.314005+00:00"
+    "post_date": "2026-08-23T04:38:04.708201+00:00"
   },
   {
     "id": "42567d5d",
@@ -7523,7 +7524,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-08-22T04:35:12.116761+00:00"
+    "post_date": "2026-08-23T04:38:09.042776+00:00"
   },
   {
     "id": "23d766b4",
@@ -7540,7 +7541,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6470",
     "images": [
       "/images/events/f70ff37c1e3b7dd92854c582b972bebb.jpg",
-      "/images/events/f5ccf2e5fb23791b175a58d088abf098.jpg"
+      "/images/events/16be23190c72e8f5673aa686f6d869c8.jpg"
     ],
     "image": "/images/events/f70ff37c1e3b7dd92854c582b972bebb.jpg",
     "post_date": "2026-08-20T17:03:53+00:00"
@@ -7599,7 +7600,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1962",
     "images": [
       "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
-      "/images/events/72fe1412d18b02ec7d1cd66beb78bc6a.jpg"
+      "/images/events/f39e1810c0c07f7a0a2ce4e7b75332ad.jpg"
     ],
     "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
     "post_date": "2026-08-21T14:27:08+00:00"
@@ -7638,7 +7639,7 @@
     "source_url": "https://t.me/concert_crimea/852",
     "images": [
       "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
-      "/images/events/6c292163595f7db0a525140245e013f9.jpg"
+      "/images/events/01233eee3f9adf6db3018225853db508.jpg"
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
     "post_date": "2026-08-15T16:33:08+00:00"
@@ -7660,7 +7661,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-08-22T04:35:07.473921+00:00"
+    "post_date": "2026-08-23T04:38:04.708282+00:00"
   },
   {
     "id": "33f2f962",
@@ -7750,7 +7751,7 @@
     "source_url": "https://t.me/afisha_crimea/8247",
     "images": [
       "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
-      "/images/events/6fa6ca540010b85843a3816b81f7b743.jpg"
+      "/images/events/8493232aed42fde69968aa166bff7db6.jpg"
     ],
     "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
     "post_date": "2026-08-21T17:03:52+00:00"
@@ -7806,7 +7807,7 @@
     "source_url": "https://t.me/koncertykrym/2260",
     "images": [
       "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
-      "/images/events/f973eba52223d0eb7987d5c2a08c5200.jpg"
+      "/images/events/8facb4cac908a7082e7eaafa5dd78a5e.jpg"
     ],
     "image": "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
     "post_date": "2026-08-18T13:02:01+00:00"
@@ -7917,7 +7918,7 @@
     "source_url": "https://t.me/rocknroll_92/7162",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/6fa6ca540010b85843a3816b81f7b743.jpg"
+      "/images/events/01e91957262f276dccd2d59b245ab2d5.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-21T17:03:52+00:00"
@@ -7954,7 +7955,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/9181b104f616d7aef9cfe509b26611fe.jpg"
+      "/images/events/01e91957262f276dccd2d59b245ab2d5.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -7974,7 +7975,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/9181b104f616d7aef9cfe509b26611fe.jpg"
+      "/images/events/01e91957262f276dccd2d59b245ab2d5.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -7994,7 +7995,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/9181b104f616d7aef9cfe509b26611fe.jpg"
+      "/images/events/01e91957262f276dccd2d59b245ab2d5.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -8036,23 +8037,6 @@
     "post_date": "2026-08-20T14:46:01+00:00"
   },
   {
-    "id": "de6c29c1",
-    "date": "2026-08-22",
-    "time": null,
-    "artist": "MEGA METAL FEST, ROCK, GRUNGE FEST, Минерва, Outreal, Иччи, Red Stars, Ватер линия, Кабель Джек",
-    "event_type": "фестиваль",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Концерт с участием исполнителей: Минерва, Outreal, Иччи.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "метал",
-    "source_url": "https://t.me/clubjam/1118",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-20T14:46:01+00:00"
-  },
-  {
     "id": "470475c6",
     "date": "2026-09-12",
     "time": null,
@@ -8067,7 +8051,7 @@
     "source_url": "https://t.me/clubjam/1116",
     "images": [
       "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
-      "/images/events/735a77671a9fabe5a362f0120a4d0a29.jpg"
+      "/images/events/16ca9a3f506b1d6a4038a2a934a26dae.jpg"
     ],
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
     "post_date": "2026-08-18T20:16:13+00:00"
@@ -8087,7 +8071,7 @@
     "source_url": "https://t.me/clubjam/1117",
     "images": [
       "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg",
-      "/images/events/62c2084b5e010b7cbe7141e968ed2c9b.jpg"
+      "/images/events/d3dcb16f9162129f7b9f59b8c3790bd2.jpg"
     ],
     "image": "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg",
     "post_date": "2026-08-20T12:27:27+00:00"
@@ -8127,7 +8111,7 @@
     "source_url": "https://t.me/rocknroll_82/491",
     "images": [
       "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
-      "/images/events/cd05b707ebbae50c83aec61e456718f5.jpg"
+      "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
     ],
     "image": "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
     "post_date": "2026-08-20T08:56:33+00:00"
@@ -8233,7 +8217,7 @@
     "source_url": "https://t.me/clubjam/1105",
     "images": [
       "/images/events/fed9332cbd6649302519e07d1b11f826.jpg",
-      "/images/events/eaa9bee26c247abe1079b25524b4f687.jpg"
+      "/images/events/045279ea9f86cd2fc1c26f319db32f98.jpg"
     ],
     "image": "/images/events/fed9332cbd6649302519e07d1b11f826.jpg",
     "post_date": "2026-08-15T13:26:25+00:00"
@@ -8256,6 +8240,7 @@
     "post_date": "2026-08-21T10:43:03+00:00"
   },
   {
+    "id": "ea9b92ce",
     "date": "2026-08-23",
     "time": "19:00",
     "artist": "Матвей Блюмин",
@@ -8263,14 +8248,16 @@
     "venue": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
     "price": null,
     "description": "Выступление крымского скрипача-виртуоза Матвея Блюмина, победителя Всероссийского телевизионного конкурса «Синяя Птица», а также международных конкурсов в Италии, Румынии, Португалии, Швеции. Произведения любимых композиторов первого директора КрАО А. Б. Северного — Бах, Вагнер, Чайковский, Рахманинов и др.",
-    "image": "/images/events/4de66c163bf4d036cf3365df15c6b3f4.jpg",
-    "images": null,
-    "source_channel": "dlyadushi_Crimea",
     "source_city": "Научный",
-    "post_date": "2026-08-20T10:07:13+00:00",
+    "source_channel": "dlyadushi_Crimea",
+    "genre": "фолк",
     "source_url": "https://t.me/dlyadushi_Crimea/6493",
-    "id": "ea9b92ce",
-    "genre": "фолк"
+    "images": [
+      "/images/events/4de66c163bf4d036cf3365df15c6b3f4.jpg",
+      "/images/events/44a58dc413e130622175fca97d558974.jpg"
+    ],
+    "image": "/images/events/4de66c163bf4d036cf3365df15c6b3f4.jpg",
+    "post_date": "2026-08-20T10:07:13+00:00"
   },
   {
     "date": "2026-08-22",
@@ -8290,6 +8277,7 @@
     "genre": "поп"
   },
   {
+    "id": "d3f6d3ad",
     "date": "2026-09-26",
     "time": "16:00",
     "artist": "Концерт с программой 'Я помню чудное мгновенье...' (романсы на стихи Пушкина)",
@@ -8297,14 +8285,16 @@
     "venue": "Музей А. С. Пушкина в Гурзуфе",
     "price": null,
     "description": "В программе – романсы Петра Чайковского, Сергея Рахманинова, Михаила Глинки и других композиторов на стихи великого поэта. Зрителей ждут лирические произведения, выразительные мелодии и истории о любви и чувствах.",
-    "image": "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
     "source_city": "Гурзуф",
-    "post_date": "2026-08-20T14:43:45+00:00",
+    "source_channel": "koncertykrym",
+    "genre": "поп",
     "source_url": "https://t.me/koncertykrym/2264",
-    "id": "d3f6d3ad",
-    "genre": "поп"
+    "images": [
+      "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
+      "/images/events/b407c26d8ee9264fc232444ea62938ab.jpg"
+    ],
+    "image": "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
+    "post_date": "2026-08-20T14:43:45+00:00"
   },
   {
     "id": "3e37f1db",
@@ -8322,5 +8312,185 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-19T11:15:49+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "time": null,
+    "artist": "RAMMSTEIN TRIBUTE",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Выступление группы, исполняющей песни RAMMSTEIN.",
+    "image": null,
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "source_url": "https://t.me/clubjam/1125",
+    "id": "ce9cbf8d",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-09-12",
+    "time": null,
+    "artist": "METALLICA TRIBUTE",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Выступление группы, исполняющей песни METALLICA.",
+    "image": null,
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "source_url": "https://t.me/clubjam/1125",
+    "id": "be1360d3",
+    "genre": "метал"
+  },
+  {
+    "date": "2026-10-09",
+    "time": null,
+    "artist": "AC/DC TRIBUTE",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Выступление группы, исполняющей песни AC/DC.",
+    "image": null,
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "source_url": "https://t.me/clubjam/1125",
+    "id": "fa1ea514",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-10-10",
+    "time": null,
+    "artist": "THE BEATLES TRIBUTE",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Выступление группы, исполняющей песни THE BEATLES.",
+    "image": null,
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "source_url": "https://t.me/clubjam/1125",
+    "id": "317a62df",
+    "genre": "рок"
+  },
+  {
+    "date": "2026-08-22",
+    "time": "18:00",
+    "artist": "Денис (Dzen) Детков",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Танцуем и поём под нетленные хиты отечественного рок-попа в исполнении Дениса (Dzen) Деткова.",
+    "image": "/images/events/e45b41c63a80cdb921249b244feffd19.jpg",
+    "images": [
+      "/images/events/e45b41c63a80cdb921249b244feffd19.jpg",
+      "/images/events/68bec5daf5983982a09f01bbb7f963f1.jpg",
+      "/images/events/dcb6b3c54916ca72f29215d055941307.jpg",
+      "/images/events/c549536d69c023dd83129dcb50e1711a.jpg",
+      "/images/events/83f73371cf5340dd0e405c4b47829a72.jpg",
+      "/images/events/c7c54a902dc3c0c92a95351817ced4bf.jpg"
+    ],
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-22T08:51:23+00:00",
+    "source_url": "https://t.me/rocknroll_92/7187",
+    "id": "53bf1e26",
+    "genre": "поп-рок"
+  },
+  {
+    "id": "6010156a",
+    "date": "2026-08-29",
+    "time": null,
+    "artist": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»",
+    "event_type": "концерт",
+    "venue": "ДК в парке МО, ул. Свердлова, Ялта",
+    "price": "Оплата по сердцу",
+    "description": "Танцевальный концерт в Ялте с атмосферой средневековья. Фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье» создадут атмосферу средневекового праздника.",
+    "source_city": "Ялта",
+    "source_channel": "crimea_event",
+    "genre": "фолк",
+    "source_url": "https://t.me/dlyadushi_Crimea/6504",
+    "images": [
+      "/images/events/52b536333671b86583e35c867a604bf4.jpg",
+      "/images/events/5c90f051ee4cfe8bdf4aeef49622bbda.jpg"
+    ],
+    "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
+    "post_date": "2026-08-22T19:58:41+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "time": null,
+    "artist": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»",
+    "event_type": "танцевальный концерт",
+    "venue": "ДК в парке МО, ул. Свердлова, Ялта",
+    "price": "Оплата по сердцу",
+    "description": "В преддверии осени создадут атмосферу средневекового праздника фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье».",
+    "image": "/images/events/71a35dd53ef2515262eb17e2fd6d4ea7.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-22T17:01:38+00:00",
+    "source_url": "https://t.me/afisha_crimea/8293",
+    "id": "b6f4c2a2",
+    "genre": "фолк"
+  },
+  {
+    "date": "2026-08-28",
+    "time": "19:00",
+    "artist": "Джаз-трио «А3», Анна Шакель",
+    "event_type": "вечеринка",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "700–1300 ₽",
+    "description": "Новый формат проекта «Джазовые вечера в Севастополе». Сначала — настоящий живой джаз и мировые хиты в исполнении джаз-трио «А3» и Анны Шакель. А затем сцена и зал объединятся: музыканты и гости вместе будут петь песни, которые знает каждый.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-22T19:17:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/1974",
+    "id": "9edea90f",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-29",
+    "time": "19:00",
+    "artist": "Трио Игоря Лавринского",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "600–800 ₽",
+    "description": "Музыкальное путешествие по XX веку: техасский блюз, свинг 30-х, рок-н-ролл 50-х и классические рок-баллады 70-х.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-22T19:17:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/1974",
+    "id": "318066b6",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-30",
+    "time": "19:00",
+    "artist": "«Южане»",
+    "event_type": "вечеринка",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "800–1200 ₽",
+    "description": "Вечер живой музыки, танцев, встреч, смеха и настоящего южного темперамента. Яркая музыкальная программа, танцевальные включения, интерактивы и ритмы.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-22T19:17:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/1974",
+    "id": "c187fe0e",
+    "genre": "другое"
   }
 ]
