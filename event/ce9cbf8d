@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="RAMMSTEIN TRIBUTE, Jam Club, в Симферополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Денис (DZen), Демчиз, Домино — Рок-н-рольщики, Симферополь, 22 августа · Местов.Нет</title>
+<title>RAMMSTEIN TRIBUTE — Jam Club, Симферополь, 30 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,34 +958,32 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/cfd1c230">
-<meta property="og:title" content="Денис (DZen), Демчиз, Домино — Рок-н-рольщики, Симферополь, 22 августа · Местов.Нет">
-<meta property="og:description" content="Денис (DZen), Демчиз, Домино, Рок-н-рольщики, в Симферополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/ce9cbf8d">
+<meta property="og:title" content="RAMMSTEIN TRIBUTE — Jam Club, Симферополь, 30 августа · Местов.Нет">
+<meta property="og:description" content="RAMMSTEIN TRIBUTE, Jam Club, в Симферополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/c7274cd53286a605efca80684a652ecb.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Денис (DZen), Демчиз, Домино",
-      "startDate": "2026-08-22T21:00:00+03:00",
+      "name": "RAMMSTEIN TRIBUTE",
+      "startDate": "2026-08-30T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Группа «Домино» из Севастополя сыграет нетленки русского рок-попа и неожиданные мэшапы.",
+      "description": "Выступление группы, исполняющей песни RAMMSTEIN.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Денис (DZen), Демчиз, Домино"
+        "name": "RAMMSTEIN TRIBUTE"
       },
-      "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -997,7 +995,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Денис (DZen), Демчиз, Домино"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "RAMMSTEIN TRIBUTE"}]}
 </script>
 </head>
 <body>

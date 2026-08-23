@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Снежинка — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Снежинка, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/snezhinka">
   <meta property="og:title" content="Снежинка — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Снежинка, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Джаз-трио «А3», Виктор Никулин",
-      "startDate": "2026-08-22T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Снежинка"
-      },
-      "description": "Заслуженный артист Крыма Виктор Никулин и джаз-трио «А3» исполнят программу, в которой встретятся разные направления и настроения джаза.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джаз-трио «А3», Виктор Никулин"
-      },
-      "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 <p class="venue-description">Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Три дня дождя — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/tri-dnya-dozhdya">
   <meta property="og:title" content="Три дня дождя — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Три дня дождя"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Три дня дождя",
-      "startDate": "2026-08-22T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Три дня дождя"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Centrum",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Группа «Три дня дождя» на Roof Live 2026. Романтика на фоне города\n\nГруппа «Три дня дождя» на Roof Live — это самый честный концерт на живой крыше твоего города.\n\nГотовьтесь ко встрече с коллективом, основанным Глебом Викторовым. «Три дня дождя» знакомы слушателю мрачной романтикой, живым звуком и честными текстами, которые стали настоящим голосом поколения и покорили огромные залы.\n\nНа концерте прозвучат как главные хиты, так и свежие треки из альбома «Висхолдинг». Это станет особой встречей под открытым небом: с атмосферой меланхолии, где каждый сможет услышать любимые песни и прочувствовать их по-новому.\n\nRoof Live — флагманский формат «Эфира», команда организаторов ставит перед собой цель не просто проводить концерты, а формировать устойчивую культурную инфраструктуру летних городских событий. Проект поддерживает живую сцену, создаёт лучшие возможности для встречи артистов со зрителями и объединяет аудиторию вокруг качественного музыкального контента.",
-      "image": "/images/events/553b66b9818479f49107b7b921dad133.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1042,7 +1022,7 @@ footer {
 <p class="venue-description">Одна из главных групп новой русской рок-сцены, основана Глебом Викторовым. В августе в Крыму: концерт на крыше Roof Live в Симферополе, «Муссон» в Севастополе и трибьют-шоу «Киномаёвки» на фестивале ТАВРИДА.АРТ.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

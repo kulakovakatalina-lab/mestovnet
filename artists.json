@@ -1,5 +1,31 @@
 [
   {
+    "slug": "anna-shakel",
+    "name": "Анна Шакель",
+    "aliases": [
+      "Анна Шакель"
+    ],
+    "event_count": 9,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "пространство лабиринта Краснолесья",
+      "Отель «Аквамарин»",
+      "Лабиринт Краснолесье",
+      "Арт-кафе «Снежинка»",
+      "Дворец Дюльбер",
+      "Симферополь",
+      "на природе",
+      "Гольф-поле"
+    ],
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-08-29",
+    "description": "Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.",
+    "desc_baseline_count": 4
+  },
+  {
     "slug": "krymskiy-akademicheskiy-simfonicheskiy-orkestr",
     "name": "Крымский академический симфонический оркестр",
     "aliases": [
@@ -55,10 +81,12 @@
     "desc_baseline_count": 8
   },
   {
-    "slug": "anna-shakel",
-    "name": "Анна Шакель",
+    "slug": "dzhaz-trio-a3",
+    "name": "Джаз-трио «А3»",
     "aliases": [
-      "Анна Шакель"
+      "Джаз-трио «А3»",
+      "джаз-трио «А3»",
+      "джаз-трио А3"
     ],
     "event_count": 8,
     "cities": [
@@ -66,18 +94,18 @@
       "Симферополь"
     ],
     "venues": [
+      "Снежинка",
       "пространство лабиринта Краснолесья",
       "Отель «Аквамарин»",
-      "Лабиринт Краснолесье",
-      "Дворец Дюльбер",
+      "Арт-кафе «Снежинка»",
+      "Севастополь",
       "Симферополь",
-      "на природе",
-      "Гольф-поле"
+      "Ресторан «Мотивы»"
     ],
-    "first_seen": "2026-05-08",
+    "first_seen": "2026-05-22",
     "last_seen": "2026-08-29",
-    "description": "Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.",
-    "desc_baseline_count": 4
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "yuliya-soprano",
@@ -136,32 +164,6 @@
     "last_seen": "2026-08-29",
     "description": "Диджей пляжных вечеринок Ялты: этнические программы Ethnic Vibe и дневные сеты в кафе Van Gogh на Массандровском пляже.",
     "desc_baseline_count": 3
-  },
-  {
-    "slug": "dzhaz-trio-a3",
-    "name": "Джаз-трио «А3»",
-    "aliases": [
-      "Джаз-трио «А3»",
-      "джаз-трио «А3»",
-      "джаз-трио А3"
-    ],
-    "event_count": 7,
-    "cities": [
-      "Севастополь",
-      "Симферополь"
-    ],
-    "venues": [
-      "Снежинка",
-      "пространство лабиринта Краснолесья",
-      "Отель «Аквамарин»",
-      "Севастополь",
-      "Симферополь",
-      "Ресторан «Мотивы»"
-    ],
-    "first_seen": "2026-05-22",
-    "last_seen": "2026-08-29",
-    "description": null,
-    "desc_baseline_count": 0
   },
   {
     "slug": "spahova",
@@ -269,8 +271,9 @@
       "Симферополь"
     ],
     "venues": [
-      "Рок-н-рольщики (Симферополь)",
       "Рок-н-рольщики (Севастополь)",
+      "Рок-н-рольщики (Симферополь)",
+      "Рок-н-рольщики",
       "Севастополь"
     ],
     "first_seen": "2026-05-02",
@@ -455,25 +458,6 @@
     "desc_baseline_count": 5
   },
   {
-    "slug": "ichchi",
-    "name": "Иччи",
-    "aliases": [
-      "ИЧЧИ",
-      "Иччи"
-    ],
-    "event_count": 5,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-08-22",
-    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
-    "desc_baseline_count": 3
-  },
-  {
     "slug": "dzhedzhe",
     "name": "Джедже",
     "aliases": [
@@ -608,24 +592,6 @@
     "desc_baseline_count": 3
   },
   {
-    "slug": "red-stars",
-    "name": "Red Stars",
-    "aliases": [
-      "Red Stars"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-07-04",
-    "last_seen": "2026-08-22",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "angle-of-wonders",
     "name": "Angle Of Wonders",
     "aliases": [
@@ -665,6 +631,25 @@
     "last_seen": "2026-10-18",
     "description": null,
     "desc_baseline_count": 0
+  },
+  {
+    "slug": "ichchi",
+    "name": "Иччи",
+    "aliases": [
+      "ИЧЧИ",
+      "Иччи"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-08-12",
+    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
+    "desc_baseline_count": 3
   },
   {
     "slug": "yuliya-bakshinskaya",
@@ -934,6 +919,24 @@
     "last_seen": "2026-07-25",
     "description": "Группа «САБ» из Ялты: «музыкальная ирония» и рок-поп на русском и английском, электрический состав. Играют в «Рок-н-рольщиках» Севастополя и Симферополя, вход обычно свободный.",
     "desc_baseline_count": 3
+  },
+  {
+    "slug": "red-stars",
+    "name": "Red Stars",
+    "aliases": [
+      "Red Stars"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-08-15",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "busha",
@@ -1908,6 +1911,25 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "denis-dzen-detkov",
+    "name": "Денис DZen Детков",
+    "aliases": [
+      "Денис (Dzen) Детков",
+      "Денис DZen Детков"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Рок-н-рольщики (Севастополь)"
+    ],
+    "first_seen": "2026-07-25",
+    "last_seen": "2026-08-22",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "kuznetsov",
     "name": "Kuznetsov",
     "aliases": [
@@ -2096,6 +2118,25 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "ac-dc-tribute",
+    "name": "AC/DC Tribute",
+    "aliases": [
+      "AC/DC TRIBUTE",
+      "AC/DC Tribute"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-07-03",
+    "last_seen": "2026-10-09",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "jawa",
     "name": "Jawa",
     "aliases": [
@@ -2114,24 +2155,6 @@
     "last_seen": "2026-07-01",
     "description": "Трибьют-программа хитов «Сектора Газа». Летом — Дом офицеров флота в Севастополе и «Корабел» в Керчи.",
     "desc_baseline_count": 2
-  },
-  {
-    "slug": "minerva",
-    "name": "Минерва",
-    "aliases": [
-      "Минерва"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-06-26",
-    "last_seen": "2026-08-22",
-    "description": null,
-    "desc_baseline_count": 0
   },
   {
     "slug": "andrey-yasinskiy",
@@ -2348,24 +2371,6 @@
     "desc_baseline_count": 2
   },
   {
-    "slug": "kabel-dzhek",
-    "name": "Кабель Джек",
-    "aliases": [
-      "Кабель Джек"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-08",
-    "last_seen": "2026-08-22",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "chernyy-doktor-solnechnoy-doliny",
     "name": "Черный доктор солнечной долины",
     "aliases": [
@@ -2424,6 +2429,25 @@
     "last_seen": "2026-05-03",
     "description": "Панк-футуристическая группа из Мытищ — четыре девушки и один парень. Весной отыграли в симферопольском Jam Club и ялтинском «Народном баре».",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "metallica-tribute",
+    "name": "Metallica Tribute",
+    "aliases": [
+      "METALLICA TRIBUTE",
+      "Metallica Tribute"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-09-12",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "danya",
@@ -2647,6 +2671,44 @@
     ],
     "first_seen": "2026-08-19",
     "last_seen": "2026-08-19",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "folk-gruppa-iz-simferopolya-kanali",
+    "name": "фолк-группа из Симферополя «Канальи»",
+    "aliases": [
+      "фолк-группа из Симферополя «Канальи»"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Крым"
+    ],
+    "venues": [
+      "ДК в парке МО, ул. Свердлова, Ялта"
+    ],
+    "first_seen": "2026-08-29",
+    "last_seen": "2026-08-29",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "tantsevalnoe-obedinenie-tantsuyuschee-srednevekove",
+    "name": "танцевальное объединение «Танцующее средневековье»",
+    "aliases": [
+      "танцевальное объединение «Танцующее средневековье»"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта",
+      "Крым"
+    ],
+    "venues": [
+      "ДК в парке МО, ул. Свердлова, Ялта"
+    ],
+    "first_seen": "2026-08-29",
+    "last_seen": "2026-08-29",
     "description": null,
     "desc_baseline_count": 0
   }

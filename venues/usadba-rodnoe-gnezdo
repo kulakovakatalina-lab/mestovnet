@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/usadba-rodnoe-gnezdo">
   <meta property="og:title" content="Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,36 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "итальянские песни",
-      "startDate": "2026-08-22T17:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Усадьба «Родное гнездо»"
-      },
-      "description": "Итальянская вечеринка с итальянскими песнями, ужином и танцами.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "итальянские песни"
-      },
-      "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Итальянская вечеринка",
-      "startDate": "2026-08-22T00:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Усадьба «Родное гнездо»"
-      },
-      "description": "Погружение в атмосферу Италии с итальянскими блюдами и вином.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Итальянская вечеринка"
-      },
-      "image": "/images/events/dddcc25063c0fa1edbb257517992641a.jpg"
     }
   ]
 }
@@ -1084,7 +1054,7 @@ footer {
 
 <p class="venue-description">Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

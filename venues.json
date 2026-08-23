@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 41,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 29,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 19,
+    "event_count": 18,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -90,6 +90,21 @@
     "lon": 34.1258
   },
   {
+    "slug": "art-kafe-snezhinka",
+    "name": "Арт-кафе «Снежинка»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 13,
+    "aliases": [
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -137,21 +152,6 @@
     ],
     "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
     "desc_baseline_count": 8,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "art-kafe-snezhinka",
-    "name": "Арт-кафе «Снежинка»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 10,
-    "aliases": [
-      "Арт-кафе «Снежинка»",
-      "арт-кафе «Снежинка»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -418,6 +418,20 @@
     "lon": 33.944698
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dvorets-kultury-rybakov",
     "name": "Дворец культуры рыбаков",
     "city": "Севастополь",
@@ -549,20 +563,6 @@
     "desc_baseline_count": 3,
     "lat": 44.567383,
     "lon": 33.525748
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "vinnyy-park-ponizovka",
@@ -933,6 +933,20 @@
     "event_count": 2,
     "aliases": [
       "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dk-v-parke-mo",
+    "name": "ДК в парке МО",
+    "city": "Ялта",
+    "address": "ул. Свердлова",
+    "event_count": 2,
+    "aliases": [
+      "ДК в парке МО, ул. Свердлова, Ялта"
     ],
     "description": null,
     "desc_baseline_count": 0,
