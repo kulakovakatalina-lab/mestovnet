@@ -912,20 +912,6 @@
     "lon": null
   },
   {
-    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
-    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
-    "city": "Крым",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "nauchnyy",
     "name": "Научный",
     "city": "Крым",
@@ -933,20 +919,6 @@
     "event_count": 2,
     "aliases": [
       "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "dk-v-parke-mo",
-    "name": "ДК в парке МО",
-    "city": "Ялта",
-    "address": "ул. Свердлова",
-    "event_count": 2,
-    "aliases": [
-      "ДК в парке МО, ул. Свердлова, Ялта"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1584,6 +1556,20 @@
     "lon": null
   },
   {
+    "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
+    "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "afisha-kryma",
     "name": "Афиша Крыма",
     "city": "Крым",
@@ -1745,6 +1731,20 @@
     "event_count": 1,
     "aliases": [
       "Таврида"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dk-v-parke-mo",
+    "name": "ДК в парке МО",
+    "city": "Ялта",
+    "address": "ул. Свердлова",
+    "event_count": 1,
+    "aliases": [
+      "ДК в парке МО, ул. Свердлова, Ялта"
     ],
     "description": null,
     "desc_baseline_count": 0,
