@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="итальянские песни, Итальянская вечеринка, Усадьба Родное Гнездо, в Крыму, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="итальянская вечеринка, Усадьба Родное гнездо, в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>итальянские песни, Итальянская вечеринка — Усадьба Родное Гнездо, Крым, 22 августа · Местов.Нет</title>
+<title>итальянская вечеринка — Усадьба Родное гнездо, Севастополь, 23 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,46 +958,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/0425e823">
-<meta property="og:title" content="итальянские песни, Итальянская вечеринка — Усадьба Родное Гнездо, Крым, 22 августа · Местов.Нет">
-<meta property="og:description" content="итальянские песни, Итальянская вечеринка, Усадьба Родное Гнездо, в Крыму, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/11f1afaf">
+<meta property="og:title" content="итальянская вечеринка — Усадьба Родное гнездо, Севастополь, 23 августа · Местов.Нет">
+<meta property="og:description" content="итальянская вечеринка, Усадьба Родное гнездо, в Севастополе, 23 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/0d6b95b0bf1c39e34345d9a8217ad9e5.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "итальянские песни, Итальянская вечеринка",
-      "startDate": "2026-08-22T17:00:00+03:00",
+      "name": "итальянская вечеринка",
+      "startDate": "2026-08-23T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Усадьба Родное Гнездо",
+        "name": "Усадьба Родное гнездо",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Крым",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Погружение в атмосферу Италии с итальянскими блюдами и вином.",
+      "description": "Итальянский вечер с вином, едой и атмосферой дома.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "итальянские песни, Итальянская вечеринка"
+        "name": "итальянская вечеринка"
       },
-      "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "6000₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/0d6b95b0bf1c39e34345d9a8217ad9e5.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "итальянские песни, Итальянская вечеринка"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "итальянская вечеринка"}]}
 </script>
 </head>
 <body>

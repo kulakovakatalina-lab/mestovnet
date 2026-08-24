@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="итальянские песни, Усадьба «Родное гнездо», в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Роман Курортный (Парень с пакетом), Рок-н-рольщики, в Симферополе, 18 августа, пн. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>итальянские песни — Усадьба «Родное гнездо», Севастополь, 22 августа · Местов.Нет</title>
+<title>Роман Курортный (Парень с пакетом) — Рок-н-рольщики, Симферополь, 18 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,37 +958,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/2565d6a4">
-<meta property="og:title" content="итальянские песни — Усадьба «Родное гнездо», Севастополь, 22 августа · Местов.Нет">
-<meta property="og:description" content="итальянские песни, Усадьба «Родное гнездо», в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4b3ab588">
+<meta property="og:title" content="Роман Курортный (Парень с пакетом) — Рок-н-рольщики, Симферополь, 18 августа · Местов.Нет">
+<meta property="og:description" content="Роман Курортный (Парень с пакетом), Рок-н-рольщики, в Симферополе, 18 августа, пн. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/443d29494e39534a667572f8d043d554.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "итальянские песни",
-      "startDate": "2026-08-22T17:00:00+03:00",
+      "name": "Роман Курортный (Парень с пакетом)",
+      "startDate": "2026-08-18T00:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Усадьба «Родное гнездо»",
+        "name": "Рок-н-рольщики",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Итальянская вечеринка с итальянскими песнями, ужином и танцами.",
+      "description": "Впервые на нашей сцене Роман Курортный (Парень с пакетом) с акустической программой из любимых рок-поп хитов на двух языках.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "итальянские песни"
+        "name": "Роман Курортный (Парень с пакетом)"
       },
-      "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
+      "image": "/images/events/443d29494e39534a667572f8d043d554.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "6000 ₽",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "итальянские песни"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Роман Курортный (Парень с пакетом)"}]}
 </script>
 </head>
 <body>
