@@ -373,6 +373,20 @@
     "lon": 35.016803
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Крым",
@@ -418,20 +432,6 @@
     "lon": 33.944698
   },
   {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "dvorets-kultury-rybakov",
     "name": "Дворец культуры рыбаков",
     "city": "Севастополь",
@@ -444,6 +444,21 @@
     "desc_baseline_count": 4,
     "lat": 44.584899,
     "lon": 33.435348
+  },
+  {
+    "slug": "krymskaya-astrofizicheskaya-observatoriya",
+    "name": "Крымская астрофизическая обсерватория",
+    "city": "Научный",
+    "address": "ул. Научная, 46, п. Научный, Бахчисарайский р-н",
+    "event_count": 4,
+    "aliases": [
+      "Крымская астрофизическая обсерватория",
+      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н"
+    ],
+    "description": "Крымская астрофизическая обсерватория РАН близ посёлка Научный, открыта для экскурсий и наблюдений. Под куполом старейшего телескопа обсерватории (рефлектор Zeiss-48) проходят концерты: скрипач-виртуоз Матвей Блюмин и иммерсивные концерты-погружения «Космос внутри» Андрея Ясинского — фортепиано, можжевеловые флейты и электроника под звёздным небом.",
+    "desc_baseline_count": 3,
+    "lat": 44.726326,
+    "lon": 34.015381
   },
   {
     "slug": "narodnyy-bar",
@@ -605,21 +620,6 @@
     "desc_baseline_count": 2,
     "lat": 44.606507,
     "lon": 33.520673
-  },
-  {
-    "slug": "krymskaya-astrofizicheskaya-observatoriya",
-    "name": "Крымская астрофизическая обсерватория",
-    "city": "Научный",
-    "address": "ул. Научная, 46, п. Научный, Бахчисарайский р-н",
-    "event_count": 3,
-    "aliases": [
-      "Крымская астрофизическая обсерватория",
-      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н"
-    ],
-    "description": "Крымская астрофизическая обсерватория РАН близ посёлка Научный, открыта для экскурсий и наблюдений. Под куполом старейшего телескопа обсерватории (рефлектор Zeiss-48) проходят концерты: скрипач-виртуоз Матвей Блюмин и иммерсивные концерты-погружения «Космос внутри» Андрея Ясинского — фортепиано, можжевеловые флейты и электроника под звёздным небом.",
-    "desc_baseline_count": 3,
-    "lat": 44.726326,
-    "lon": 34.015381
   },
   {
     "slug": "klub-belyy",
@@ -891,6 +891,20 @@
     "event_count": 2,
     "aliases": [
       "АНАПСКИЙ РАЙОН, СУПСЕХ"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "ekokemp-semena-belbekskaya-dolina",
+    "name": "экокемп Семена, Бельбекская долина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "экокемп Семена, Бельбекская долина"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1472,20 +1486,6 @@
     "lon": null
   },
   {
-    "slug": "ekokemp-semena-belbekskaya-dolina",
-    "name": "экокемп Семена, Бельбекская долина",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "экокемп Семена, Бельбекская долина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kvartal-kultur-mira",
     "name": "Квартал культур мира",
     "city": "Судак",
@@ -1745,6 +1745,20 @@
     "event_count": 1,
     "aliases": [
       "ДК в парке МО, ул. Свердлова, Ялта"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "minerva",
+    "name": "Минерва",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Минерва"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джаз-трио «А3», Виктор Никулин, Снежинка, в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин, Снежинка, в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джаз-трио «А3», Виктор Никулин — Снежинка, Севастополь, 22 августа · Местов.Нет</title>
+<title>Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин — Снежинка, Севастополь, 22 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/6b3d762a">
-<meta property="og:title" content="Джаз-трио «А3», Виктор Никулин — Снежинка, Севастополь, 22 августа · Местов.Нет">
-<meta property="og:description" content="Джаз-трио «А3», Виктор Никулин, Снежинка, в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин — Снежинка, Севастополь, 22 августа · Местов.Нет">
+<meta property="og:description" content="Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин, Снежинка, в Севастополе, 22 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg">
 <script type="application/ld+json">
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джаз-трио «А3», Виктор Никулин",
+      "name": "Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин",
       "startDate": "2026-08-22T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Заслуженный артист Крыма Виктор Никулин и джаз-трио «А3» исполнят программу, в которой встретятся разные направления и настроения джаза.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джаз-трио «А3», Виктор Никулин"
+        "name": "Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин"
       },
       "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
       "offers": {
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз-трио «А3», Виктор Никулин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джаз-трио «А3», Заслуженный артист Крыма Виктор Никулин"}]}
 </script>
 </head>
 <body>
