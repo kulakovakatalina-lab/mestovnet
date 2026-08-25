@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Матвей Блюмин, Крымская астрофизическая обсерватория, в Научном, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Живая музыка, API Балаклава, в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Матвей Блюмин — Крымская астрофизическая обсерватория, Научный, 23 августа · Местов.Нет</title>
+<title>Живая музыка — API Балаклава, Севастополь, 29 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/ea9b92ce">
-<meta property="og:title" content="Матвей Блюмин — Крымская астрофизическая обсерватория, Научный, 23 августа · Местов.Нет">
-<meta property="og:description" content="Матвей Блюмин, Крымская астрофизическая обсерватория, в Научном, 23 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/d0ee013a">
+<meta property="og:title" content="Живая музыка — API Балаклава, Севастополь, 29 августа · Местов.Нет">
+<meta property="og:description" content="Живая музыка, API Балаклава, в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/ddf7c3937177632a3122b7ae899e8453.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-08-23T19:00:00+03:00",
+      "name": "Живая музыка",
+      "startDate": "2026-08-29T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Крымская астрофизическая обсерватория",
+        "name": "API Балаклава",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Научный",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление крымского скрипача-виртуоза Матвея Блюмина под куполом старейшего телескопа обсерватории.",
+      "description": "Дегустация розовых вин с Дарьей Грибановой. Вечер будет сопровождаться живой музыкой.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
+        "name": "Живая музыка"
       },
-      "image": "/images/events/ddf7c3937177632a3122b7ae899e8453.jpg"
+      "image": "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "2000 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный", "item": "https://mestov.net/cities/nauchny.html"}, {"@type": "ListItem", "position": 3, "name": "Матвей Блюмин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Живая музыка"}]}
 </script>
 </head>
 <body>

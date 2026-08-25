@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Rammlied — Jam Club, Симферополь, 30 августа · Местов.Нет">
 <meta property="og:description" content="Rammlied, Jam Club, в Симферополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b125065ae82c97f045b48a6ecdca567f.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -970,7 +970,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Rammlied",
-      "startDate": "2026-08-30T00:00:00+03:00",
+      "startDate": "2026-08-30T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Rammlied"
       },
-      "image": "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg",
+      "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

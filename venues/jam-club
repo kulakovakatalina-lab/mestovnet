@@ -38,7 +38,7 @@
     {
       "@type": "MusicEvent",
       "name": "Rammlied",
-      "startDate": "2026-08-30T00:00:00+03:00",
+      "startDate": "2026-08-30T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
@@ -48,7 +48,7 @@
         "@type": "MusicGroup",
         "name": "Rammlied"
       },
-      "image": "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg"
+      "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
     },
     {
       "@type": "MusicEvent",
