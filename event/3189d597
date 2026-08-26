@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Юлия (сопрано), Антон Хромченко (скрипка), Органный зал &#x27;Livadia&#x27;, в Ялте, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Три дня дождя, Муссон, в Севастополе, 30 сентября, вт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Юлия (сопрано), Антон Хромченко (скрипка) — Органный зал &#x27;Livadia&#x27;, Ялта, 29 августа · Местов.Нет</title>
+<title>Три дня дождя — Муссон, Севастополь, 30 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,37 +958,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/17c2e17f">
-<meta property="og:title" content="Юлия (сопрано), Антон Хромченко (скрипка) — Органный зал &#x27;Livadia&#x27;, Ялта, 29 августа · Местов.Нет">
-<meta property="og:description" content="Юлия (сопрано), Антон Хромченко (скрипка), Органный зал &#x27;Livadia&#x27;, в Ялте, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/3189d597">
+<meta property="og:title" content="Три дня дождя — Муссон, Севастополь, 30 сентября · Местов.Нет">
+<meta property="og:description" content="Три дня дождя, Муссон, в Севастополе, 30 сентября, вт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/4df937fe72118443b70eccd0c378a340.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Юлия (сопрано), Антон Хромченко (скрипка)",
-      "startDate": "2026-08-29T17:00:00+03:00",
+      "name": "Три дня дождя",
+      "startDate": "2026-09-30T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Органный зал 'Livadia'",
+        "name": "Муссон",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+      "description": "О концерте Группа «Три дня дождя» отправляется в большой тур с презентацией нового альбома «Висхолдинг».\r\n\r\nКоллектив, основанный Глебом Викторовым и уже ставший одной из главных групп своего жанра, знаком слушателю мрачной романтикой, живым звуком и честными текстами, которые стали настоящим голосом поколения и покорили огромные залы.\r\n\r\nНа каждом концерте прозвучат как главные хиты, так и свежие треки из нового альбома «Висхолдинг». Это станет особой встречей с атмосферой меланхолии, где каждый сможет услышать любимые песни и прочувствовать их по-новому.\r\n\r\nПриготовьтесь к самому яркому событию этого года.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Юлия (сопрано), Антон Хромченко (скрипка)"
+        "name": "Три дня дождя"
       },
-      "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
+      "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "500 рублей",
+        "name": "от 2500 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Юлия (сопрано), Антон Хромченко (скрипка)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Три дня дождя"}]}
 </script>
 </head>
 <body>
