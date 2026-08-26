@@ -571,7 +571,7 @@
     "source_url": "https://t.me/rocknroll_82/466",
     "images": [
       "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
-      "/images/events/53612e39af0ea49e2c7d080a990649ae.jpg"
+      "/images/events/a0fd9420e81b0fd8d6a2dad5a0308a47.jpg"
     ],
     "image": "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
     "post_date": "2026-08-15T11:15:48+00:00"
@@ -608,7 +608,7 @@
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/77a2eb6ece73e01dc2094866df6561dc.jpg"
+      "/images/events/f124485404fc4fde121377b88b1f4714.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-16T06:13:47+00:00"
@@ -1161,7 +1161,7 @@
       "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg"
     ],
     "image": "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg",
-    "post_date": "2026-08-25T04:42:14.815262+00:00"
+    "post_date": "2026-08-26T04:40:42.979096+00:00"
   },
   {
     "id": "8ce78df0",
@@ -1217,7 +1217,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
-    "post_date": "2026-08-25T04:42:14.815327+00:00"
+    "post_date": "2026-08-26T04:40:42.979204+00:00"
   },
   {
     "id": "3e656258",
@@ -1255,7 +1255,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg",
-    "post_date": "2026-08-25T04:42:17.692370+00:00"
+    "post_date": "2026-08-26T04:40:45.611202+00:00"
   },
   {
     "id": "59e0e5af",
@@ -1475,7 +1475,7 @@
       "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
     ],
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "post_date": "2026-08-25T04:42:14.815159+00:00"
+    "post_date": "2026-08-26T04:40:42.979011+00:00"
   },
   {
     "id": "136c757e",
@@ -6548,7 +6548,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1953",
     "images": [
       "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
-      "/images/events/1a75cdc740b9d317e60e79274fce4a68.jpg"
+      "/images/events/843b4def46c922d93aa220f1d514bfcb.jpg"
     ],
     "image": "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
     "post_date": "2026-08-14T17:49:49+00:00"
@@ -6568,7 +6568,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1953",
     "images": [
       "/images/events/ed019312c236485529361d254e1107cd.jpg",
-      "/images/events/1a75cdc740b9d317e60e79274fce4a68.jpg"
+      "/images/events/843b4def46c922d93aa220f1d514bfcb.jpg"
     ],
     "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
     "post_date": "2026-08-16T09:42:05+00:00"
@@ -6760,7 +6760,7 @@
     "source_url": "https://t.me/clubjam/1099",
     "images": [
       "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
-      "/images/events/e2b091fbd220ec117ee6bd6b33a0a5ef.jpg"
+      "/images/events/b40061e5df2de09267b49e3e1200801a.jpg"
     ],
     "image": "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
     "post_date": "2026-08-12T10:37:31+00:00"
@@ -6779,7 +6779,8 @@
     "genre": "метал",
     "source_url": "https://t.me/clubjam/1104",
     "images": [
-      "/images/events/7ec6a8edf7e2d12f30fd5c9ce91acf91.jpg"
+      "/images/events/7ec6a8edf7e2d12f30fd5c9ce91acf91.jpg",
+      "/images/events/63efd63dda2b3e8a8fc703eba129162e.jpg"
     ],
     "image": "/images/events/7ec6a8edf7e2d12f30fd5c9ce91acf91.jpg",
     "post_date": "2026-08-14T10:11:44+00:00"
@@ -6936,38 +6937,42 @@
     "genre": "классика"
   },
   {
+    "id": "17c2e17f",
     "date": "2026-08-29",
     "time": "17:00",
     "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
     "event_type": "концерт",
-    "venue": "Органном зале \"LIVADIA\"",
+    "venue": "Органный зал 'Livadia'",
     "price": "500 рублей",
     "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
-    "source_channel": "dlyadushi_crimea",
     "source_city": "Ялта",
-    "post_date": "2026-07-29T17:21:48+00:00",
-    "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
-    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "genre": "классика",
     "source_url": "https://vk.com/wall-229006920_128",
-    "id": "17c2e17f",
-    "genre": "классика"
+    "images": [
+      "/images/events/4df937fe72118443b70eccd0c378a340.jpg"
+    ],
+    "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
+    "post_date": "2026-08-25T05:28:59+00:00"
   },
   {
+    "id": "fc1f7b84",
     "date": "2026-08-30",
     "time": "14:30",
     "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
     "event_type": "концерт",
-    "venue": "Органном зале \"LIVADIA\"",
+    "venue": "Органный зал 'Livadia'",
     "price": "500 рублей",
     "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
-    "source_channel": "dlyadushi_crimea",
     "source_city": "Ялта",
-    "post_date": "2026-07-29T17:21:48+00:00",
-    "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
-    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "genre": "классика",
     "source_url": "https://vk.com/wall-229006920_128",
-    "id": "fc1f7b84",
-    "genre": "классика"
+    "images": [
+      "/images/events/4df937fe72118443b70eccd0c378a340.jpg"
+    ],
+    "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
+    "post_date": "2026-08-25T05:28:59+00:00"
   },
   {
     "id": "79985fd5",
@@ -7037,7 +7042,7 @@
     "source_url": "https://t.me/afisha_crimea/8231",
     "images": [
       "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-      "/images/events/df5f5c4de37109aa633c0f330b8b814c.jpg"
+      "/images/events/bbde0d0ef08258c97269993c2b9cc722.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00"
@@ -7057,7 +7062,7 @@
     "source_url": "https://t.me/afisha_crimea/8231",
     "images": [
       "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-      "/images/events/df5f5c4de37109aa633c0f330b8b814c.jpg"
+      "/images/events/bbde0d0ef08258c97269993c2b9cc722.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00"
@@ -7114,7 +7119,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6456",
     "images": [
       "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
-      "/images/events/8696cacaf34cf2a976c82e94e98faafc.jpg"
+      "/images/events/1a3dee60f627be8d68f067e2cd3c19cb.jpg"
     ],
     "image": "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
     "post_date": "2026-08-13T16:42:31+00:00"
@@ -7134,7 +7139,7 @@
     "source_url": "https://t.me/belbekma/1348",
     "images": [
       "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
-      "/images/events/b759cfd1082d0d8436b7ec46df9e4b89.jpg"
+      "/images/events/8dc3ca510de15bd8e70f1b2a05ace83b.jpg"
     ],
     "image": "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
     "post_date": "2026-08-13T14:50:23+00:00"
@@ -7207,7 +7212,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6459",
     "images": [
       "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
-      "/images/events/ddf7c3937177632a3122b7ae899e8453.jpg"
+      "/images/events/db42595acbc2a688a82d04ce9edfa804.jpg"
     ],
     "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
     "post_date": "2026-08-21T11:58:15+00:00"
@@ -7463,7 +7468,7 @@
     "source_url": "https://t.me/skazhitejazz/1579",
     "images": [
       "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
-      "/images/events/af0e98c49effbb7d61f09c7bf236b1fe.jpg"
+      "/images/events/c8bd00d3d8c743b7d6c1ccefec7bc7ba.jpg"
     ],
     "image": "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
     "post_date": "2026-08-14T20:19:46+00:00"
@@ -7495,7 +7500,7 @@
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "от 1000 ₽",
-    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Симферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Симферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели м\u0000ясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
     "source_city": "Симферополь",
     "source_channel": "afisha_ru",
     "genre": "рок",
@@ -7504,7 +7509,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-08-25T04:42:14.815129+00:00"
+    "post_date": "2026-08-26T04:40:42.978983+00:00"
   },
   {
     "id": "42567d5d",
@@ -7523,7 +7528,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-08-25T04:42:20.115900+00:00"
+    "post_date": "2026-08-26T04:40:47.655735+00:00"
   },
   {
     "id": "23d766b4",
@@ -7599,7 +7604,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1962",
     "images": [
       "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
-      "/images/events/d58b50f99d918a0e5f4b7d080362ff4f.jpg"
+      "/images/events/8ac79081e9dde98344e24138ecca082f.jpg"
     ],
     "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
     "post_date": "2026-08-21T14:27:08+00:00"
@@ -7638,7 +7643,7 @@
     "source_url": "https://t.me/concert_crimea/852",
     "images": [
       "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
-      "/images/events/b948dd71a1215db9526922dd8009e1b0.jpg"
+      "/images/events/3160010ef6a799a7eeb0ae7ad81e80ee.jpg"
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
     "post_date": "2026-08-15T16:33:08+00:00"
@@ -7660,7 +7665,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-08-25T04:42:14.815284+00:00"
+    "post_date": "2026-08-26T04:40:42.979123+00:00"
   },
   {
     "id": "33f2f962",
@@ -7677,7 +7682,7 @@
     "source_url": "https://t.me/clubjam/1116",
     "images": [
       "/images/events/dca8169c5707f1eb0d128e664e52700f.jpg",
-      "/images/events/6444597067a1dd0590c0f7716c0270a1.jpg"
+      "/images/events/8230de9e4a427a9d451c99fbf7469888.jpg"
     ],
     "image": "/images/events/dca8169c5707f1eb0d128e664e52700f.jpg",
     "post_date": "2026-08-18T20:16:13+00:00"
@@ -7750,7 +7755,7 @@
     "source_url": "https://t.me/afisha_crimea/8247",
     "images": [
       "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
-      "/images/events/7bd889866f49cedfbda25b6eedc19436.jpg"
+      "/images/events/83100efa43cee722eadcbdbb82595abb.jpg"
     ],
     "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
     "post_date": "2026-08-22T10:28:07+00:00"
@@ -7799,17 +7804,17 @@
     "event_type": "концерт",
     "venue": "Дом-музей им. А. П. Чехова",
     "price": null,
-    "description": "Следующий концерт цикла «Чехов в музыке» – «Степь: Широта русской души и тишина природы». Музыка перенесёт слушателей в бескрайние просторы русской степи, где слышны величие природы, задумчивость путника и тихие размышления о жизни.",
+    "description": "Концерт «Степь: Широта русской души и тишина природы». В новой программе через музыку раскроются образы степи, дальней дороги, тишины природы и размышлений о жизни.",
     "source_city": "Ялта",
     "source_channel": "koncertykrym",
     "genre": "классика",
     "source_url": "https://t.me/koncertykrym/2260",
     "images": [
       "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
-      "/images/events/9e29ba499370cfcd1728306e526e41ed.jpg"
+      "/images/events/481fca4e066e5c34882e24cc6243adb0.jpg"
     ],
     "image": "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
-    "post_date": "2026-08-18T13:02:01+00:00"
+    "post_date": "2026-08-25T15:09:25+00:00"
   },
   {
     "id": "7a7bbf92",
@@ -7917,7 +7922,7 @@
     "source_url": "https://t.me/rocknroll_92/7162",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/92ce0c5abd69cf506a47377885628777.jpg"
+      "/images/events/6a9ff9e9733ba6db8356e0d0f1f6ea05.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-21T17:03:52+00:00"
@@ -7954,7 +7959,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/92ce0c5abd69cf506a47377885628777.jpg"
+      "/images/events/6a9ff9e9733ba6db8356e0d0f1f6ea05.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -7974,7 +7979,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/92ce0c5abd69cf506a47377885628777.jpg"
+      "/images/events/6a9ff9e9733ba6db8356e0d0f1f6ea05.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -7994,7 +7999,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/92ce0c5abd69cf506a47377885628777.jpg"
+      "/images/events/6a9ff9e9733ba6db8356e0d0f1f6ea05.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00"
@@ -8050,7 +8055,7 @@
     "source_url": "https://t.me/clubjam/1116",
     "images": [
       "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
-      "/images/events/ba2978fa7dd171e914b311c6b5423977.jpg"
+      "/images/events/b3711f73e46e67980cb2737d526506db.jpg"
     ],
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
     "post_date": "2026-08-24T11:16:43+00:00"
@@ -8070,7 +8075,7 @@
     "source_url": "https://t.me/clubjam/1117",
     "images": [
       "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-      "/images/events/b125065ae82c97f045b48a6ecdca567f.jpg"
+      "/images/events/069537d748b90e25ed9436b6dae7c75d.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
     "post_date": "2026-08-20T12:27:27+00:00"
@@ -8204,8 +8209,8 @@
   {
     "id": "59c88d94",
     "date": "2026-08-15",
-    "time": null,
-    "artist": "Red Stars, EXISTENTER, ОПГ Годзилла, The MEANTRAITORS",
+    "time": "20:00",
+    "artist": "The MEANTRAITORS, Red Stars (при участии EXISTENTER), MEANTRAITORS (при участии ОПГ Годзилла), The Existenter",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "150 р",
@@ -8213,12 +8218,12 @@
     "source_city": "Симферополь",
     "source_channel": "clubjam",
     "genre": "поп",
-    "source_url": "https://t.me/clubjam/1105",
+    "source_url": "https://t.me/clubjam/1102",
     "images": [
-      "/images/events/fed9332cbd6649302519e07d1b11f826.jpg",
-      "/images/events/748d7d7f5d5d4536180d1991b8c0df53.jpg"
+      "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
+      "/images/events/fed9332cbd6649302519e07d1b11f826.jpg"
     ],
-    "image": "/images/events/fed9332cbd6649302519e07d1b11f826.jpg",
+    "image": "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
     "post_date": "2026-08-15T13:26:25+00:00"
   },
   {
@@ -8242,7 +8247,7 @@
     "id": "d3f6d3ad",
     "date": "2026-09-26",
     "time": "16:00",
-    "artist": "Концерт с программой 'Я помню чудное мгновенье...' (романсы на стихи Пушкина), Концерт романсов на стихи Пушкина",
+    "artist": "Концерт с программой 'Я помню чудное мгновенье...' (романсы на стихи Пушкина), Концерт романсов на стихи Пушкина, Пушкин в музыке",
     "event_type": "концерт",
     "venue": "Музей А. С. Пушкина в Гурзуфе",
     "price": null,
@@ -8253,7 +8258,7 @@
     "source_url": "https://t.me/koncertykrym/2264",
     "images": [
       "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
-      "/images/events/43084eee12876bf512b5ba225cead87a.jpg"
+      "/images/events/b2f9e1d9121fb6bd3e14c6a54b842391.jpg"
     ],
     "image": "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
     "post_date": "2026-08-20T14:43:45+00:00"
@@ -8358,7 +8363,7 @@
     "source_url": "https://t.me/rocknroll_92/7187",
     "images": [
       "/images/events/e45b41c63a80cdb921249b244feffd19.jpg",
-      "/images/events/efd2d4f8c60dd545533ba9a74b860dd1.jpg"
+      "/images/events/1e114b02577a881d7e8ca08350b97980.jpg"
     ],
     "image": "/images/events/e45b41c63a80cdb921249b244feffd19.jpg",
     "post_date": "2026-08-22T08:51:23+00:00"
@@ -8378,7 +8383,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6504",
     "images": [
       "/images/events/52b536333671b86583e35c867a604bf4.jpg",
-      "/images/events/c92643ca573c3aa97be3420667b18fb1.jpg"
+      "/images/events/29c26a8fdeed03b7885fe0e047980f01.jpg"
     ],
     "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
     "post_date": "2026-08-22T19:58:41+00:00"
@@ -8508,6 +8513,7 @@
     "post_date": "2026-08-23T07:38:57+00:00"
   },
   {
+    "id": "d25216c6",
     "date": "2026-09-12",
     "time": "18:00",
     "artist": "Girls Jazz band",
@@ -8515,14 +8521,16 @@
     "venue": "винодельня «Valery Логинов и 12 друзей»",
     "price": null,
     "description": "Уникальный по атмосфере музыкальный вечер с Girls Jazz band — единственным женским джаз-бэндом на Юге России. В составе: Влада Ушакова — вокал, Наталия Белановская — саксофон, Ангелина Подгорная — фортепиано.",
-    "image": "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
     "source_city": "Крым",
-    "post_date": "2026-08-24T12:32:41+00:00",
+    "source_channel": "skazhitejazz",
+    "genre": "джаз",
     "source_url": "https://t.me/skazhitejazz/1580",
-    "id": "d25216c6",
-    "genre": "джаз"
+    "images": [
+      "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
+      "/images/events/734f867bc2183f9d972df5ce07b0a9c3.jpg"
+    ],
+    "image": "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
+    "post_date": "2026-08-24T12:32:41+00:00"
   },
   {
     "id": "d0ee013a",
@@ -8539,9 +8547,130 @@
     "source_url": "https://t.me/api_balaklava/1380",
     "images": [
       "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
-      "/images/events/50aafa0412b22214b9523b30b3b6b1b0.jpg"
+      "/images/events/13bb0c590895f4687e4e9fe088bf0204.jpg"
     ],
     "image": "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
     "post_date": "2026-08-24T13:45:01+00:00"
+  },
+  {
+    "date": "2026-08-25",
+    "time": "16:30",
+    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
+    "event_type": "концерт",
+    "venue": "Органный зал 'Livadia'",
+    "price": "500 рублей",
+    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+    "image": null,
+    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "source_url": "https://t.me/dlyadushi_Crimea/6514",
+    "id": "1618a11e",
+    "genre": "классика"
+  },
+  {
+    "date": "2026-08-27",
+    "time": "16:30",
+    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
+    "event_type": "концерт",
+    "venue": "Органный зал 'Livadia'",
+    "price": "500 рублей",
+    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+    "image": null,
+    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "source_url": "https://t.me/dlyadushi_Crimea/6514",
+    "id": "a76190da",
+    "genre": "классика"
+  },
+  {
+    "date": "2026-08-18",
+    "time": null,
+    "artist": "Джазовые вечера",
+    "event_type": "концерт",
+    "venue": "Севастополь Джаз",
+    "price": null,
+    "description": "Концерт джазовой музыки.",
+    "image": "/images/events/f09fd4cf4f878fe5df593c81c412486b.jpg",
+    "images": null,
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-18T14:32:33+00:00",
+    "source_url": "https://t.me/sevastopol_jazz/1292",
+    "id": "3cd68824",
+    "genre": "джаз"
+  },
+  {
+    "date": "2026-08-28",
+    "time": "11:00–14:00",
+    "artist": "Айван",
+    "event_type": "вечеринка",
+    "venue": "Есенин-центр Московского государственного музея С.А. Есенина",
+    "price": null,
+    "description": "Кофе в приятной компании, танцы с утра, розыгрыш подарков и специальные предложения от музея и кафе.",
+    "image": null,
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-25T13:59:10+00:00",
+    "source_url": "https://t.me/tavrida_art/21878",
+    "id": "354b3113",
+    "genre": "другое"
+  },
+  {
+    "date": "2026-08-23",
+    "time": null,
+    "artist": "музыкальные сеты в El Capulco 0.0",
+    "event_type": "концерт",
+    "venue": "El Capulco 0.0",
+    "price": null,
+    "description": "Музыкальные сеты в El Capulco 0.0",
+    "image": "/images/events/7d4006bb1b3d46854dacfbebaa588b6f.jpg",
+    "images": null,
+    "source_channel": "massandrasun",
+    "source_city": "Ялта",
+    "post_date": "2026-08-23T11:32:28+00:00",
+    "source_url": "https://t.me/massandrasun/2459",
+    "id": "ee4a0a06",
+    "genre": "поп"
+  },
+  {
+    "id": "a9b9a93b",
+    "date": "2026-08-29",
+    "time": "18:00",
+    "artist": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев",
+    "event_type": "концерт",
+    "venue": "Усадьба «Родное гнездо»",
+    "price": "1400 ₽",
+    "description": "Джазовый закат на виноградниках. В программе: Елена Голофеева - вокал, Виктор Никулин - саксофон, Максим Перов - клавиши, труба, Руслан Сейдалиев - ударные.",
+    "source_city": "Севастополь",
+    "source_channel": "rodnoegnezdo",
+    "genre": "джаз",
+    "source_url": "https://t.me/usadbarodnoegnezdo/3586",
+    "images": [
+      "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
+      "/images/events/093498034ec83f117f06de6b0083ccd1.jpg"
+    ],
+    "image": "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
+    "post_date": "2026-08-25T13:57:09+00:00"
+  },
+  {
+    "date": "2026-09-30",
+    "time": "20:00",
+    "artist": "Три дня дождя",
+    "venue": "Муссон",
+    "event_type": "концерт",
+    "price": "от 2500 ₽",
+    "description": "О концерте Группа «Три дня дождя» отправляется в большой тур с презентацией нового альбома «Висхолдинг».\r\n\r\nКоллектив, основанный Глебом Викторовым и уже ставший одной из главных групп своего жанра, знаком слушателю мрачной романтикой, живым звуком и честными текстами, которые стали настоящим голосом поколения и покорили огромные залы.\r\n\r\nНа каждом концерте прозвучат как главные хиты, так и свежие треки из нового альбома «Висхолдинг». Это станет особой встречей с атмосферой меланхолии, где каждый сможет услышать любимые песни и прочувствовать их по-новому.\r\n\r\nПриготовьтесь к самому яркому событию этого года.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-26T04:40:42.979068+00:00",
+    "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
+    "source_url": "https://www.afisha.ru/concert/tri-dnya-dozhdya-6024831/",
+    "genre": "рок",
+    "id": "3189d597"
   }
 ]

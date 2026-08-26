@@ -109,7 +109,7 @@
     "name": "El Capulco 0.0",
     "city": "Ялта",
     "address": "сектор 6",
-    "event_count": 11,
+    "event_count": 12,
     "aliases": [
       "El Capulco 0.0",
       "El Capulco 0.0, сектор 6"
@@ -203,6 +203,23 @@
     "lon": 33.526829
   },
   {
+    "slug": "usadba-rodnoe-gnezdo",
+    "name": "Усадьба «Родное гнездо»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 9,
+    "aliases": [
+      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+      "Усадьба «Родное гнездо»",
+      "Усадьба Родное Гнездо",
+      "Усадьба Родное гнездо"
+    ],
+    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
+    "desc_baseline_count": 4,
+    "lat": 44.567516,
+    "lon": 33.728614
+  },
+  {
     "slug": "centrum",
     "name": "Centrum",
     "city": "Симферополь",
@@ -217,35 +234,20 @@
     "lon": 34.09338
   },
   {
-    "slug": "usadba-rodnoe-gnezdo",
-    "name": "Усадьба «Родное гнездо»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 8,
-    "aliases": [
-      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-      "Усадьба «Родное гнездо»",
-      "Усадьба Родное Гнездо",
-      "Усадьба Родное гнездо"
-    ],
-    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
-    "desc_baseline_count": 4,
-    "lat": 44.567516,
-    "lon": 33.728614
-  },
-  {
-    "slug": "organnom-zale-livadia",
-    "name": "Органном зале \"LIVADIA\"",
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
     "city": "Ялта",
     "address": "",
-    "event_count": 8,
+    "event_count": 7,
     "aliases": [
-      "Органном зале \"LIVADIA\""
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
     ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
   },
   {
     "slug": "art-kovcheg",
@@ -264,22 +266,6 @@
     "desc_baseline_count": 7,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -373,6 +359,20 @@
     "lon": 35.016803
   },
   {
+    "slug": "organnom-zale-livadia",
+    "name": "Органном зале \"LIVADIA\"",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Органном зале \"LIVADIA\""
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "rok-n-rolschiki",
     "name": "Рок-н-рольщики",
     "city": "Симферополь",
@@ -444,6 +444,20 @@
     "desc_baseline_count": 4,
     "lat": 44.584899,
     "lon": 33.435348
+  },
+  {
+    "slug": "musson",
+    "name": "Муссон",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Муссон"
+    ],
+    "description": "За последние месяцы здесь прошло 3 концерта с платным входом — поп, метал и инди поровну, без выраженных резидентов сцены.",
+    "desc_baseline_count": 3,
+    "lat": 44.588803,
+    "lon": 33.489841
   },
   {
     "slug": "narodnyy-bar",
@@ -536,6 +550,20 @@
     "lon": null
   },
   {
+    "slug": "organnyy-zal-livadia",
+    "name": "Органный зал 'Livadia'",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Органный зал 'Livadia'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "plyazh-kafe-van-gogh",
     "name": "Пляж-кафе «Van Gogh»",
     "city": "Ялта",
@@ -577,20 +605,6 @@
     "desc_baseline_count": 3,
     "lat": 44.396253,
     "lon": 33.944912
-  },
-  {
-    "slug": "musson",
-    "name": "Муссон",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Муссон"
-    ],
-    "description": "За последние месяцы здесь прошло 3 концерта с платным входом — поп, метал и инди поровну, без выраженных резидентов сцены.",
-    "desc_baseline_count": 3,
-    "lat": 44.588803,
-    "lon": 33.489841
   },
   {
     "slug": "boombox",
@@ -1787,6 +1801,20 @@
     "event_count": 1,
     "aliases": [
       "API Балаклава"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "esenin-tsentr-moskovskogo-gosudarstvennogo-muzeya-s-a-esenina",
+    "name": "Есенин-центр Московского государственного музея С.А. Есенина",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Есенин-центр Московского государственного музея С.А. Есенина"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/usadba-rodnoe-gnezdo">
   <meta property="og:title" content="Усадьба «Родное гнездо» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Усадьба «Родное гнездо», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев",
+      "startDate": "2026-08-29T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Усадьба «Родное гнездо»"
+      },
+      "description": "Джазовый закат на виноградниках. В программе: Елена Голофеева - вокал, Виктор Никулин - саксофон, Максим Перов - клавиши, труба, Руслан Сейдалиев - ударные.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев"
+      },
+      "image": "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg"
     }
   ]
 }
@@ -1054,7 +1069,7 @@ footer {
 
 <p class="venue-description">Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.</p>
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">
