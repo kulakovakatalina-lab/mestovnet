@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "El Capulco 0.0, сектор 6",
+        "name": "El Capulco 0.0",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Музыкальный вечер",
+      "description": "Музыкальная программа в баре El Capulco 0.0.",
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     },
     {
@@ -60,14 +60,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "El Capulco 0.0, сектор 6",
+        "name": "El Capulco 0.0",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Музыкальный вечер",
+      "description": "Музыкальная программа в баре El Capulco 0.0.",
       "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     }
   ]

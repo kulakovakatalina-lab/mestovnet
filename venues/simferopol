@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Симферополь — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Симферополь, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Симферополь, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/simferopol">
   <meta property="og:title" content="Симферополь — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Симферополь, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Симферополь, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,36 @@
         "name": "Анна Шакель, джаз-трио «А3»"
       },
       "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "METALLICA tribute by Blackened",
+      "startDate": "2026-09-12T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Симферополь"
+      },
+      "description": "Концерт METALLICA tribute by Blackened.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "METALLICA tribute by Blackened"
+      },
+      "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "AC/DC tribute",
+      "startDate": "2026-10-09T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Симферополь"
+      },
+      "description": "Концерт AC/DC tribute.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "AC/DC tribute"
+      },
+      "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg"
     }
   ]
 }
@@ -1069,7 +1099,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

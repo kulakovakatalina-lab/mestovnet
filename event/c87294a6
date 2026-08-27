@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Максим Шеремет, Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет</title>
+<title>Максим Шеремет, Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,17 +959,18 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/c87294a6">
-<meta property="og:title" content="Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет">
-<meta property="og:description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Максим Шеремет, Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Симферополь), 29 августа · Местов.Нет">
+<meta property="og:description" content="Максим Шеремет, Игорь Симдянкин с «КиШом», Рок-н-рольщики (Симферополь), в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://mestov.net/images/events/b42317791e393ca1567b45c3ba38304d.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Игорь Симдянкин с «КиШом»",
-      "startDate": "2026-08-29T00:00:00+03:00",
+      "name": "Максим Шеремет, Игорь Симдянкин с «КиШом»",
+      "startDate": "2026-08-29T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики (Симферополь)",
@@ -979,17 +980,18 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Игорь Симдянкин выступает с трибьютом «КиШ».",
+      "description": "Большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Игорь Симдянкин с «КиШом»"
-      }
+        "name": "Максим Шеремет, Игорь Симдянкин с «КиШом»"
+      },
+      "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин с «КиШом»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Максим Шеремет, Игорь Симдянкин с «КиШом»"}]}
 </script>
 </head>
 <body>

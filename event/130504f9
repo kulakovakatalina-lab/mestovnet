@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "RAMMSTEIN TRIBUTE by Rammlied. Бесплатный вход для подписчиков клуба.",
+      "description": "RAMMSTEIN TRIBUTE by Rammlied.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Rammlied"
