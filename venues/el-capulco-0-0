@@ -44,7 +44,7 @@
         "@type": "MusicVenue",
         "name": "El Capulco 0.0"
       },
-      "description": "Музыкальный вечер",
+      "description": "Музыкальная программа в баре El Capulco 0.0.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Happy Paul, EL"
@@ -59,7 +59,7 @@
         "@type": "MusicVenue",
         "name": "El Capulco 0.0"
       },
-      "description": "Музыкальный вечер",
+      "description": "Музыкальная программа в баре El Capulco 0.0.",
       "performer": {
         "@type": "MusicGroup",
         "name": "EL"
