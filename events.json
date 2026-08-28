@@ -9651,7 +9651,7 @@
     "id": "130504f9",
     "date": "2026-08-30",
     "time": "19:00",
-    "artist": "Rammlied, RAMMSTEIN TRIBUTE",
+    "artist": "RAMMSTEIN tribute by Rammlied",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -9661,7 +9661,8 @@
     "genre": "рок",
     "source_url": "https://t.me/clubjam/1117",
     "images": [
-      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
+      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
+      "/images/events/61706d540f901354d59c21592cc4a894.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
     "post_date": "2026-08-27T14:29:13+00:00",
@@ -9922,50 +9923,6 @@
       "нет постера"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "id": "fa1ea514",
-    "date": "2026-10-09",
-    "time": null,
-    "artist": "AC/DC TRIBUTE",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Выступление группы, исполняющей песни AC/DC.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1125",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет постера"
-    ]
-  },
-  {
-    "id": "317a62df",
-    "date": "2026-10-10",
-    "time": null,
-    "artist": "THE BEATLES TRIBUTE",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Выступление группы, исполняющей песни THE BEATLES.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1125",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет постера"
-    ]
   },
   {
     "id": "6010156a",
@@ -10385,29 +10342,6 @@
     "review_reasons": []
   },
   {
-    "id": "18d5049c",
-    "date": "2026-08-30",
-    "time": null,
-    "artist": "RAMMSTEIN tribute by Rammlied",
-    "event_type": "другое",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "бесплатно",
-    "description": "Бесплатная дегустация авторских настоек.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "рок",
-    "source_url": "https://t.me/crimea_event/5631",
-    "images": [
-      "/images/events/61706d540f901354d59c21592cc4a894.jpg"
-    ],
-    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "post_date": "2026-08-26T16:12:08+00:00",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
     "date": "2026-08-30",
     "time": "18:30",
     "artist": "Андрей Ясинский",
@@ -10475,27 +10409,6 @@
       "нет цены"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "date": "2026-09-12",
-    "time": null,
-    "artist": "METALLICA tribute by Blackened",
-    "event_type": "трибьют",
-    "venue": "Симферополь",
-    "price": "бесплатно",
-    "description": "Концерт METALLICA tribute by Blackened.",
-    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "images": null,
-    "source_channel": "crimea_event",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-26T05:06:19+00:00",
-    "source_url": "https://t.me/crimea_event/5631",
-    "id": "19b4212a",
-    "genre": "метал",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
   },
   {
     "date": "2026-10-09",

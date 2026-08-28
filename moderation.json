@@ -71,42 +71,6 @@
     ]
   },
   {
-    "id": "fa1ea514",
-    "date": "2026-10-09",
-    "time": null,
-    "artist": "AC/DC TRIBUTE",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "трибьют",
-    "description": "Выступление группы, исполняющей песни AC/DC.",
-    "image": null,
-    "source_url": "https://t.me/clubjam/1125",
-    "reasons": [
-      "нет времени",
-      "нет постера"
-    ]
-  },
-  {
-    "id": "317a62df",
-    "date": "2026-10-10",
-    "time": null,
-    "artist": "THE BEATLES TRIBUTE",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "трибьют",
-    "description": "Выступление группы, исполняющей песни THE BEATLES.",
-    "image": null,
-    "source_url": "https://t.me/clubjam/1125",
-    "reasons": [
-      "нет времени",
-      "нет постера"
-    ]
-  },
-  {
     "id": "6010156a",
     "date": "2026-08-29",
     "time": null,
@@ -119,40 +83,6 @@
     "description": "Танцевальный концерт в Ялте с атмосферой средневековья. Фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье» создадут атмосферу средневекового праздника.",
     "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
     "source_url": "https://t.me/dlyadushi_Crimea/6504",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "id": "18d5049c",
-    "date": "2026-08-30",
-    "time": null,
-    "artist": "RAMMSTEIN tribute by Rammlied",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "другое",
-    "description": "Бесплатная дегустация авторских настоек.",
-    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "source_url": "https://t.me/crimea_event/5631",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "id": "19b4212a",
-    "date": "2026-09-12",
-    "time": null,
-    "artist": "METALLICA tribute by Blackened",
-    "venue": "Симферополь",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "метал",
-    "event_type": "трибьют",
-    "description": "Концерт METALLICA tribute by Blackened.",
-    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "source_url": "https://t.me/crimea_event/5631",
     "reasons": [
       "нет времени"
     ]
