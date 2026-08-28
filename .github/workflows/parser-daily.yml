@@ -1,11 +1,11 @@
 name: Parser daily
 
-# Запускает parser.py раз в день утром (04:00 UTC = 07:00 Крым),
+# Запускает parser.py раз в день ночью (01:00 UTC = 04:00 Крым),
 # генерирует страницы, пушит изменения в main, дожидается деплоя
 # и только после этого присылает Telegram-уведомление.
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch:
     inputs:
       days:
@@ -34,6 +34,8 @@ jobs:
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      MODERATION_WORKER_URL: ${{ secrets.MODERATION_WORKER_URL }}
+      MODERATION_SYNC_TOKEN: ${{ secrets.MODERATION_SYNC_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -65,6 +67,8 @@ jobs:
         run: |
           DAYS="${{ github.event.inputs.days || 14 }}"
           python parser.py --days "$DAYS"
+          python repair_event_data.py
+          python moderation_queue.py
 
       - name: Пересобрать реестры артистов и заведений
         run: |
@@ -153,6 +157,16 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python notify_new.py --before-dir /tmp/before --notify-empty
+        continue-on-error: true
+
+      - name: Отправить очередь модерации в Telegram
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python moderation_notify.py
         continue-on-error: true
 
       - name: Сообщить об ошибке ночного запуска

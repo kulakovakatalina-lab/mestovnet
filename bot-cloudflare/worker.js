@@ -14,6 +14,7 @@
 const SITE = "https://mestov.net";
 const EVENTS_URL = `${SITE}/events.json`;
 const SETTINGS_URL = `${SITE}/settings.json`;
+const MODERATION_URL = `${SITE}/moderation.json`;
 const MAX_EVENTS = 25;
 const HORIZON_DAYS = 7;
 
@@ -104,6 +105,26 @@ const getDraft = async (env, id) =>
   (await env.KV.get(`draft:${id}`, { type: "json" })) || { genres: [], cities: [], freq: "ondemand", weekday: 4 };
 const setDraft = (env, id, d) => env.KV.put(`draft:${id}`, JSON.stringify(d));
 const delDraft = (env, id) => env.KV.delete(`draft:${id}`);
+
+// Решения администратора по спорным карточкам. Они хранятся в KV, а ночной
+// парсер забирает их через защищённый endpoint Worker-а.
+const getModerationDecision = (env, eventId) => env.KV.get(`moderation:${eventId}`, { type: "json" });
+const setModerationDecision = (env, eventId, decision) =>
+  env.KV.put(`moderation:${eventId}`, JSON.stringify(decision));
+
+async function listModerationDecisions(env) {
+  const decisions = [];
+  let cursor;
+  do {
+    const list = await env.KV.list({ prefix: "moderation:", cursor });
+    for (const key of list.keys) {
+      const decision = await env.KV.get(key.name, { type: "json" });
+      if (decision) decisions.push(decision);
+    }
+    cursor = list.list_complete ? null : list.cursor;
+  } while (cursor);
+  return decisions;
+}
 
 // Подписки на напоминания об конкретных событиях («Хочу пойти»):
 //   evsub:<eventId>  -> [chatId, ...]   — кому напоминать про это событие
@@ -217,6 +238,13 @@ async function fetchEvents() {
   return out;
 }
 
+async function fetchModeration() {
+  const response = await fetch(MODERATION_URL);
+  if (!response.ok) throw new Error(`moderation fetch: ${response.status}`);
+  const data = await response.json();
+  return Array.isArray(data) ? data : [];
+}
+
 function filterEvents(events, genres, cities) {
   const today = crimeaParts().iso;
   const h = new Date(Date.now() + 3 * 3600 * 1000);
@@ -322,6 +350,25 @@ function reminderText(kind, e) {
 const btn = (text, data) => ({ text, callback_data: data });
 const MAIN_KB = { keyboard: [[{ text: BTN_MENU }, { text: BTN_DIGEST }]], resize_keyboard: true, is_persistent: true };
 const cancelEventKb = (eventId) => ({ inline_keyboard: [[btn("❌ Отменить напоминания", `ev:cancel:${eventId}`)]] });
+
+const moderationStartKb = () => ({ inline_keyboard: [[btn("Разобрать события ▶", "mod:next:0")]] });
+
+function moderationCard(event, position, total) {
+  const details = [
+    event.date && `📅 ${esc(event.date)}`,
+    event.artist && `<b>${esc(event.artist)}</b>`,
+    event.reasons?.length && `⚠️ ${event.reasons.map(esc).join(", ")}`,
+    event.source_url && `🔗 <a href="${esc(event.source_url)}">Открыть первоисточник</a>`,
+  ].filter(Boolean);
+  return `🔎 <b>Модерация ${position + 1}</b>\n\n${details.join("\n")}`;
+}
+
+function moderationCardKb(eventId, nextPosition) {
+  return { inline_keyboard: [
+    [btn("✅ Одобрить", `mod:a:${eventId}:${nextPosition}`), btn("❌ Отклонить", `mod:r:${eventId}:${nextPosition}`)],
+    [btn("Пропустить ›", `mod:next:${nextPosition}`)],
+  ]};
+}
 
 const mainMenuKb = () => ({
   inline_keyboard: [
@@ -488,6 +535,42 @@ async function handleEventStart(env, chatId, eventId) {
   await send(env, chatId, text, cancelEventKb(eventId));
 }
 
+async function showModerationCard(env, chatId, msgId, position) {
+  const queue = await fetchModeration();
+  while (position < queue.length) {
+    const event = queue[position];
+    const decision = await getModerationDecision(env, event.id);
+    if (!decision) {
+      await editText(env, chatId, msgId, moderationCard(event, position, queue.length),
+        moderationCardKb(event.id, position + 1));
+      return;
+    }
+    position++;
+  }
+  await editText(env, chatId, msgId,
+    "✅ В очереди больше нет неразобранных карточек. Одобренные события появятся после следующего ночного обновления сайта.",
+    null, false);
+}
+
+async function moderateEvent(env, cb, status, eventId, nextPosition) {
+  const queue = await fetchModeration();
+  const event = queue.find((item) => item.id === eventId);
+  if (!event) {
+    await answerCb(env, cb.id, "Карточка уже исчезла из очереди. Откройте следующую.", true);
+    await showModerationCard(env, cb.message.chat.id, cb.message.message_id, nextPosition);
+    return;
+  }
+  await setModerationDecision(env, eventId, {
+    event_id: eventId,
+    source_url: event.source_url || "",
+    reasons: event.reasons || [],
+    status,
+    decided_at: new Date().toISOString(),
+  });
+  await answerCb(env, cb.id, status === "approved" ? "Одобрено" : "Отклонено");
+  await showModerationCard(env, cb.message.chat.id, cb.message.message_id, nextPosition);
+}
+
 async function onCommand(env, chatId, userId, text) {
   const parts = text.split(/\s+/);
   const cmd = parts[0].replace("/", "").split("@")[0];
@@ -513,6 +596,12 @@ async function onCommand(env, chatId, userId, text) {
     }
   } else if (cmd === "stats") {
     await onStats(env, chatId, userId);
+  } else if (cmd === "moderation") {
+    if (userId !== Number(env.ADMIN_ID)) {
+      await send(env, chatId, "Команда доступна только администратору.", null, false);
+      return;
+    }
+    await send(env, chatId, "🔎 <b>Очередь модерации</b>\nНажми, чтобы начать разбор.", moderationStartKb());
   }
 }
 
@@ -521,6 +610,30 @@ async function onCallback(env, cb) {
   const chatId = cb.message.chat.id;
   const msgId = cb.message.message_id;
   const userId = cb.from.id;
+
+  if (data.startsWith("mod:")) {
+    if (userId !== Number(env.ADMIN_ID)) {
+      await answerCb(env, cb.id, "Модерация доступна только администратору.", true);
+      return;
+    }
+    if (data === "mod:start") {
+      await answerCb(env, cb.id);
+      await showModerationCard(env, chatId, msgId, 0);
+      return;
+    }
+    if (data.startsWith("mod:next:")) {
+      await answerCb(env, cb.id);
+      await showModerationCard(env, chatId, msgId, Number(data.slice("mod:next:".length)) || 0);
+      return;
+    }
+    const match = /^mod:([ar]):([^:]+):(\d+)$/.exec(data);
+    if (match) {
+      await moderateEvent(env, cb, match[1] === "a" ? "approved" : "rejected", match[2], Number(match[3]));
+      return;
+    }
+    return;
+  }
+
   await answerCb(env, cb.id);
 
   if (data === "cfg:start") {
@@ -662,6 +775,14 @@ async function runEventReminders(env) {
 // ---------------------------------------------------------------------------
 export default {
   async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    if (request.method === "GET" && url.pathname === "/moderation/decisions") {
+      const auth = request.headers.get("Authorization");
+      if (!env.MODERATION_SYNC_TOKEN || auth !== `Bearer ${env.MODERATION_SYNC_TOKEN}`) {
+        return new Response("forbidden", { status: 403 });
+      }
+      return Response.json({ decisions: await listModerationDecisions(env) });
+    }
     if (request.method === "POST") {
       if (env.WEBHOOK_SECRET &&
           request.headers.get("X-Telegram-Bot-Api-Secret-Token") !== env.WEBHOOK_SECRET) {

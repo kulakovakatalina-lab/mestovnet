@@ -1,0 +1,46 @@
+import json
+
+import moderation_queue
+
+
+def test_approved_event_with_same_issues_leaves_queue(tmp_path, monkeypatch):
+    events_path = tmp_path / "events.json"
+    queue_path = tmp_path / "moderation.json"
+    event = {
+        "id": "approved1", "source_url": "https://example.test/post",
+        "artist": "Артист", "date": "2026-09-01", "venue": "Клуб",
+        "time": "", "price": "", "image": "",
+    }
+    events_path.write_text(json.dumps([event]), encoding="utf-8")
+    monkeypatch.setattr(moderation_queue, "EVENTS", events_path)
+    monkeypatch.setattr(moderation_queue, "QUEUE", queue_path)
+    monkeypatch.setattr(moderation_queue, "load_decisions", lambda: [{
+        "event_id": "approved1", "source_url": event["source_url"],
+        "status": "approved", "reasons": ["нет времени", "нет цены", "нет постера"],
+        "decided_at": "2026-08-28T01:00:00Z",
+    }])
+
+    moderation_queue.main()
+
+    saved = json.loads(events_path.read_text(encoding="utf-8"))[0]
+    assert saved["needs_review"] is False
+    assert saved["moderation_status"] == "approved"
+    assert json.loads(queue_path.read_text(encoding="utf-8")) == []
+
+
+def test_rejected_event_stays_out_of_queue(tmp_path, monkeypatch):
+    events_path = tmp_path / "events.json"
+    queue_path = tmp_path / "moderation.json"
+    event = {"id": "rejected1", "source_url": "https://example.test/post", "artist": "Артист"}
+    events_path.write_text(json.dumps([event]), encoding="utf-8")
+    monkeypatch.setattr(moderation_queue, "EVENTS", events_path)
+    monkeypatch.setattr(moderation_queue, "QUEUE", queue_path)
+    monkeypatch.setattr(moderation_queue, "load_decisions", lambda: [{
+        "event_id": "rejected1", "source_url": event["source_url"], "status": "rejected",
+    }])
+
+    moderation_queue.main()
+
+    saved = json.loads(events_path.read_text(encoding="utf-8"))[0]
+    assert saved["needs_review"] is False
+    assert saved["moderation_status"] == "rejected"

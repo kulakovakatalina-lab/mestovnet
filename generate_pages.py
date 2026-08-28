@@ -199,7 +199,7 @@ def apply_settings(events: list[dict], settings: dict) -> list[dict]:
         url = e.get("source_url") or ""
 
         # Скрытые события исключаем полностью
-        if url in hidden or e.get("needs_review"):
+        if url in hidden or e.get("needs_review") or e.get("moderation_status") == "rejected":
             continue
 
         ev = dict(e)  # мелкая копия, нам хватает
