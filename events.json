@@ -18,10 +18,11 @@
     ],
     "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
     "post_date": "2026-08-08T12:53:03+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-09",
@@ -40,7 +41,8 @@
     "id": "caccae3e",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "a8567d27",
@@ -62,7 +64,8 @@
     "image": "/images/events/870ddec1de045d0ce280fe14522a5391.jpg",
     "post_date": "2026-08-05T11:51:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "a773ec81",
@@ -84,7 +87,8 @@
     "post_date": "2026-08-10",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-10",
@@ -103,7 +107,8 @@
     "id": "00ae5df9",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "5cb733bd",
@@ -124,7 +129,8 @@
     "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
     "post_date": "2026-08-11",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -143,7 +149,8 @@
     "id": "e7ad7862",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -162,7 +169,8 @@
     "id": "2fa5f9bb",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -181,7 +189,8 @@
     "id": "80de7880",
     "updated_at": "2026-07-22T04:30:06.898820+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -200,7 +209,8 @@
     "id": "2fb57618",
     "updated_at": "2026-06-30T04:22:37.413690+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -222,7 +232,8 @@
     "id": "1c9ec2a0",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "865f18cd",
@@ -244,7 +255,8 @@
     "post_date": "2026-08-12",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "1ef543fb",
@@ -266,7 +278,8 @@
     "post_date": "2026-08-12",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-12",
@@ -285,7 +298,8 @@
     "id": "d14c8230",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-13",
@@ -304,7 +318,8 @@
     "id": "c950e969",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "c9bac59d",
@@ -326,7 +341,8 @@
     "post_date": "2026-08-13",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "c53a5d10",
@@ -347,7 +363,8 @@
     "image": "/images/events/784f74edb8081edb7f33c9fd2eb54063.jpg",
     "post_date": "2026-08-09T12:38:03+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "742a18c6",
@@ -368,10 +385,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-14",
@@ -390,7 +408,8 @@
     "id": "3f63d368",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-14",
@@ -412,7 +431,8 @@
     "post_date": "2026-08-14",
     "id": "fa423a50",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-14",
@@ -434,7 +454,8 @@
     "post_date": "2026-08-14T05:36:00.764259+00:00",
     "id": "6f56a1bc",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "0b0db992",
@@ -456,7 +477,8 @@
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-14T19:15:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -474,11 +496,12 @@
     "genre": "джаз",
     "id": "6e9fa104",
     "updated_at": "2026-04-30T19:14:50+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -496,11 +519,12 @@
     "genre": "джаз",
     "id": "75254260",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "7e51b481",
@@ -521,10 +545,11 @@
     ],
     "image": "/images/events/db786528a97ef05d8fcaedde6e07d6f4.jpg",
     "post_date": "2026-08-06T12:19:17+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "9135013e",
@@ -545,10 +570,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -570,7 +596,8 @@
     "post_date": "2026-08-15T04:29:40.868656+00:00",
     "id": "be7ad445",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -589,7 +616,8 @@
     "id": "136320c2",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "cd775f75",
@@ -611,7 +639,8 @@
     "image": "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
     "post_date": "2026-08-15T11:15:48+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-16",
@@ -629,11 +658,12 @@
     "genre": "джаз",
     "id": "42da48cf",
     "updated_at": "2026-04-30T19:14:50+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "a719b813",
@@ -654,10 +684,11 @@
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-16T06:13:47+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-16",
@@ -676,7 +707,8 @@
     "id": "f449eda0",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-16",
@@ -695,7 +727,8 @@
     "id": "f49046ae",
     "updated_at": "2026-07-28T06:16:03.573849+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "53d59ddd",
@@ -717,7 +750,8 @@
     "image": "/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg",
     "post_date": "2026-08-16T10:13:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "008e41ba",
@@ -738,10 +772,11 @@
     ],
     "image": "/images/events/8937e7129a039d484dde69da95c91279.jpg",
     "post_date": "2026-08-07T10:10:33+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "a20ae461",
@@ -762,10 +797,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "15fd879d",
@@ -786,10 +822,11 @@
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-21T17:20:26+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "855b66bc",
@@ -810,10 +847,11 @@
     ],
     "image": "/images/events/3dc0febcbcbcf3f9a8af80f5c875b958.jpg",
     "post_date": "2026-08-20T14:43:45+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "4f1423cc",
@@ -834,11 +872,12 @@
     ],
     "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg",
     "post_date": "2026-08-07T17:01:55+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -857,7 +896,8 @@
     "id": "61bd6dcf",
     "updated_at": "2026-07-20T05:00:33.233234+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "fb78a24b",
@@ -878,10 +918,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-13T17:02:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -900,7 +941,8 @@
     "id": "475b28f4",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -919,7 +961,8 @@
     "id": "a500d197",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "cfd1c230",
@@ -941,7 +984,8 @@
     "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
     "post_date": "2026-08-22T09:32:44+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "e12f7005",
@@ -963,7 +1007,8 @@
     "post_date": "2026-08-23",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-23",
@@ -982,7 +1027,8 @@
     "id": "0f539d8d",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-24",
@@ -1004,7 +1050,8 @@
     "post_date": "2026-08-24",
     "id": "82cde712",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "b4b75a5d",
@@ -1026,7 +1073,8 @@
     "image": "/images/events/01873170526cb87b0894114f0f5ef245.jpg",
     "post_date": "2026-08-25T04:42:14.815237+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-25",
@@ -1048,7 +1096,8 @@
     "id": "42687b0b",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "0b89699e",
@@ -1070,7 +1119,8 @@
     "post_date": "2026-08-26",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-26",
@@ -1089,7 +1139,8 @@
     "id": "c27408ac",
     "updated_at": "2026-06-30T04:22:21.364037+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-27",
@@ -1108,7 +1159,8 @@
     "id": "951f996f",
     "updated_at": "2026-06-30T04:22:22.547517+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "782cdf22",
@@ -1128,10 +1180,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-27T05:59:59+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "3ea574df",
@@ -1152,10 +1205,11 @@
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-26T16:12:08+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "7cde7cba",
@@ -1175,10 +1229,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-27T05:59:59+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "c87294a6",
@@ -1199,10 +1254,11 @@
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-26T16:12:08+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-30",
@@ -1404,10 +1460,11 @@
     "genre": "классика",
     "id": "2de42511",
     "updated_at": "2026-07-26T11:29:00.761599+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "07dbf5d4",
@@ -1469,10 +1526,11 @@
     "genre": "поп",
     "id": "ead3fc25",
     "updated_at": "2026-06-30T04:22:27.332047+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-09-24",
@@ -1490,10 +1548,11 @@
     "genre": "поп",
     "id": "533162bc",
     "updated_at": "2026-06-30T04:22:27.332127+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-09-26",
@@ -1735,7 +1794,8 @@
     "image": "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
     "post_date": "2026-08-11T08:52:20+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -1754,7 +1814,8 @@
     "id": "d0ef93ba",
     "updated_at": "2026-07-14T03:34:09.065873+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -1776,7 +1837,8 @@
     "post_date": "2026-08-08T11:13:10+00:00",
     "id": "38700fa6",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "8efb317e",
@@ -1797,10 +1859,11 @@
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
     "post_date": "2026-08-11T15:17:35+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -1819,7 +1882,8 @@
     "id": "bfc5064d",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "1f6057bc",
@@ -1841,7 +1905,8 @@
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
     "post_date": "2026-08-08T10:53:42+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -1863,7 +1928,8 @@
     "post_date": "2026-08-07T10:00:47+00:00",
     "id": "df97d5dd",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -1882,7 +1948,8 @@
     "id": "ac0e017c",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -1901,7 +1968,8 @@
     "id": "8739c473",
     "updated_at": "2026-07-02T05:50:31.819543+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "fee50c0a",
@@ -1922,10 +1990,11 @@
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-07T08:09:44+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "cfd1ba69",
@@ -1947,7 +2016,8 @@
     "post_date": "2026-08-06",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "d94fa447",
@@ -1970,7 +2040,8 @@
     "post_date": "2026-08-05",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -1988,10 +2059,11 @@
     "genre": "классика",
     "id": "fb535329",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -2010,7 +2082,8 @@
     "id": "08eb1417",
     "updated_at": "2026-07-27T06:46:25.629334+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -2029,7 +2102,8 @@
     "id": "96b48a80",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -2047,11 +2121,12 @@
     "genre": "джаз",
     "id": "fe6c477a",
     "updated_at": "2026-04-13T07:39:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -2069,12 +2144,13 @@
     "genre": "другое",
     "id": "91320d8f",
     "updated_at": "2026-07-26T11:29:00.761599+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -2092,10 +2168,11 @@
     "genre": "классика",
     "id": "c0c55fe7",
     "updated_at": "2026-07-22T04:30:06.898820+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -2113,10 +2190,11 @@
     "genre": "поп",
     "id": "a1f90a79",
     "updated_at": "2026-07-04T09:32:45.310085+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -2135,7 +2213,8 @@
     "id": "01dc961d",
     "updated_at": "2026-07-24T06:39:58.799677+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -2154,7 +2233,8 @@
     "id": "12de58ae",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "1633413b",
@@ -2177,7 +2257,8 @@
     "post_date": "2026-07-31",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -2196,7 +2277,8 @@
     "id": "f6c94375",
     "updated_at": "2026-07-28T06:16:03.573849+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -2217,10 +2299,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-31T09:24:25+00:00",
     "id": "9bee1075",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "4bd9e72c",
@@ -2243,7 +2326,8 @@
     "post_date": "2026-07-27T06:38:27.494463+00:00",
     "updated_at": "2026-07-27T06:46:25.629334+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2261,11 +2345,12 @@
     "genre": "поп",
     "id": "1a434b65",
     "updated_at": "2026-07-24T06:39:58.799677+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2283,10 +2368,11 @@
     "genre": "поп",
     "id": "16e1554b",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2304,10 +2390,11 @@
     "genre": "джаз",
     "id": "dc0367a2",
     "updated_at": "2026-07-23T08:12:03.239668+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2325,10 +2412,11 @@
     "genre": "классика",
     "id": "59e69adb",
     "updated_at": "2026-07-23T08:12:03.239668+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2346,10 +2434,11 @@
     "genre": "джаз",
     "id": "fb014149",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2367,10 +2456,11 @@
     "genre": "классика",
     "id": "3b7b1075",
     "updated_at": "2026-07-26T11:29:00.761599+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2389,7 +2479,8 @@
     "id": "efc08d30",
     "updated_at": "2026-07-11T06:10:16.306506+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2408,7 +2499,8 @@
     "id": "6b292afd",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "74649dad",
@@ -2431,7 +2523,8 @@
     "post_date": "2026-07-26",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-26",
@@ -2453,10 +2546,11 @@
     "post_date": "2026-07-02T09:35:21+00:00",
     "id": "75d27e70",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-25",
@@ -2474,11 +2568,12 @@
     "genre": "метал",
     "id": "ce7879db",
     "updated_at": "2026-07-20T05:00:33.233234+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "db68ab6e",
@@ -2500,10 +2595,11 @@
     "image": "/images/events/5dbc4ae3aae094a265fe892ae168697b.jpg",
     "post_date": "2026-07-22T10:20:17+00:00",
     "updated_at": "2026-07-23T08:12:03.239668+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "31082f74",
@@ -2525,10 +2621,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-25",
@@ -2547,7 +2644,8 @@
     "id": "15937169",
     "updated_at": "2026-07-21T05:29:03.934719+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "f937c01c",
@@ -2570,7 +2668,8 @@
     "post_date": "2026-07-25",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-25",
@@ -2589,7 +2688,8 @@
     "id": "b87a457a",
     "updated_at": "2026-06-30T04:22:25.421071+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-25",
@@ -2608,7 +2708,8 @@
     "id": "7391a631",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-25",
@@ -2630,10 +2731,11 @@
     "post_date": "2026-07-23",
     "id": "6cc625c3",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-24",
@@ -2651,10 +2753,11 @@
     "genre": "поп",
     "id": "7d144cb4",
     "updated_at": "2026-07-22T04:30:06.898820+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "e980146b",
@@ -2676,10 +2779,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-24",
@@ -2698,7 +2802,8 @@
     "id": "b7316536",
     "updated_at": "2026-07-24T06:39:58.799677+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "f4c87da8",
@@ -2721,7 +2826,8 @@
     "post_date": "2026-07-24",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-24",
@@ -2740,7 +2846,8 @@
     "id": "9ac23ecf",
     "updated_at": "2026-07-21T05:29:03.934719+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-24",
@@ -2762,7 +2869,8 @@
     "id": "48be9f32",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-24",
@@ -2784,10 +2892,11 @@
     "post_date": "2026-07-23",
     "id": "0b07af12",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-23",
@@ -2805,11 +2914,12 @@
     "genre": "поп",
     "id": "5578131b",
     "updated_at": "2026-07-23T08:12:03.239668+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-23",
@@ -2827,10 +2937,11 @@
     "genre": "поп",
     "id": "e926e160",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-21",
@@ -2848,10 +2959,11 @@
     "genre": "метал",
     "id": "805ea8a1",
     "updated_at": "2026-07-21T05:29:03.934719+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2869,11 +2981,12 @@
     "genre": "поп",
     "id": "d70f91a7",
     "updated_at": "2026-07-09T15:44:27.878109+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет площадки"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2892,7 +3005,8 @@
     "id": "db2ae2a5",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2910,10 +3024,11 @@
     "genre": "поп",
     "id": "761edc15",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2931,10 +3046,11 @@
     "genre": "джаз",
     "id": "7fa1ca23",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2956,10 +3072,11 @@
     "post_date": "2026-07-02T09:35:21+00:00",
     "id": "bc0251ff",
     "updated_at": "2026-07-02T09:35:21+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-19",
@@ -2978,7 +3095,8 @@
     "id": "a486b46b",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-18",
@@ -2996,11 +3114,12 @@
     "genre": "фолк",
     "id": "a6271162",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет площадки"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "257e6c3a",
@@ -3023,7 +3142,8 @@
     "post_date": "2026-07-14",
     "updated_at": "2026-07-16T17:43:03.538011+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "0d702006",
@@ -3045,10 +3165,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "71e2c32c",
@@ -3071,7 +3192,8 @@
     "post_date": "2026-07-17T09:32:12+00:00",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-18",
@@ -3089,10 +3211,11 @@
     "genre": "поп",
     "id": "122e8378",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-18",
@@ -3111,7 +3234,8 @@
     "id": "11c32c50",
     "updated_at": "2026-07-15T16:43:18.018520+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-18",
@@ -3129,10 +3253,11 @@
     "genre": "поп",
     "id": "39b55798",
     "updated_at": "2026-06-30T04:22:40.510280+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-18",
@@ -3154,10 +3279,11 @@
     "post_date": "2026-07-14",
     "id": "c07a1be5",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "8360766c",
@@ -3179,10 +3305,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3201,7 +3328,8 @@
     "id": "81a30d90",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3219,10 +3347,11 @@
     "genre": "поп",
     "id": "feec4028",
     "updated_at": "2026-07-17T12:04:57.203987+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3241,7 +3370,8 @@
     "id": "853bea80",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3259,10 +3389,11 @@
     "genre": "авторская",
     "id": "f21c846e",
     "updated_at": "2026-07-15T16:43:18.018520+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3284,10 +3415,11 @@
     "post_date": "2026-07-14",
     "id": "8b0ba3dc",
     "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3306,7 +3438,8 @@
     "id": "50f844c2",
     "updated_at": "2026-06-30T04:22:26.388720+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-17",
@@ -3324,10 +3457,11 @@
     "genre": "поп",
     "id": "5fea63f1",
     "updated_at": "2026-07-16T17:43:03.538011+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-16",
@@ -3345,10 +3479,11 @@
     "genre": "поп",
     "id": "87082c4d",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-12",
@@ -3366,10 +3501,11 @@
     "genre": "поп",
     "id": "a4d010fa",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-12",
@@ -3388,7 +3524,8 @@
     "id": "d103a183",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-12",
@@ -3407,7 +3544,8 @@
     "id": "3595b715",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-12",
@@ -3430,7 +3568,8 @@
     "id": "13b3720a",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "e6607c6a",
@@ -3452,10 +3591,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3475,7 +3615,8 @@
     "id": "6e0d79ec",
     "updated_at": "2026-07-04T14:40:48+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3494,10 +3635,11 @@
     "genre": "классика",
     "id": "bb3195b6",
     "updated_at": "2026-07-04T17:05:43+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3516,7 +3658,8 @@
     "id": "e23bd27b",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3535,7 +3678,8 @@
     "id": "d7e57baa",
     "updated_at": "2026-07-09T15:44:27.878109+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3554,7 +3698,8 @@
     "id": "c66607ee",
     "updated_at": "2026-07-04T09:32:45.310085+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-11",
@@ -3577,7 +3722,8 @@
     "id": "6bb794ba",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "889e1262",
@@ -3600,7 +3746,8 @@
     "post_date": "2026-07-08T16:18:08+00:00",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-10",
@@ -3623,7 +3770,8 @@
     "id": "76856a1c",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-09",
@@ -3641,10 +3789,11 @@
     "genre": "поп",
     "id": "46029406",
     "updated_at": "2026-07-09T04:38:26.658096+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-09",
@@ -3663,7 +3812,8 @@
     "id": "732b94cd",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-08",
@@ -3682,7 +3832,8 @@
     "id": "e4458b51",
     "updated_at": "2026-06-30T04:22:33.552468+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-05",
@@ -3700,11 +3851,12 @@
     "genre": "джаз",
     "id": "095ea2fe",
     "updated_at": "2026-06-29T15:06:43+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет площадки"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "f7f2c0ba",
@@ -3726,10 +3878,11 @@
     "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
     "post_date": "2026-07-02T09:42:33+00:00",
     "updated_at": "2026-07-04T09:32:45.310085+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-05",
@@ -3752,7 +3905,8 @@
     "id": "3bd9b7fb",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-05",
@@ -3771,10 +3925,11 @@
     "genre": "поп",
     "id": "e0e535e1",
     "updated_at": "2026-07-01T15:42:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-04",
@@ -3797,7 +3952,8 @@
     "id": "cb010779",
     "updated_at": "2026-07-04T11:41:51+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-04",
@@ -3819,7 +3975,8 @@
     "id": "1055d54d",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-04",
@@ -3841,10 +3998,11 @@
     "post_date": "2026-07-02T07:18:01+00:00",
     "id": "76223b42",
     "updated_at": "2026-07-02T07:18:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-04",
@@ -3868,7 +4026,8 @@
     "id": "80e467be",
     "updated_at": "2026-07-03T11:37:47+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-04",
@@ -3887,10 +4046,11 @@
     "genre": "поп",
     "id": "e6f3da3c",
     "updated_at": "2026-07-01T15:42:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-03",
@@ -3909,7 +4069,8 @@
     "id": "ad9aef5c",
     "updated_at": "2026-05-07T13:47:39+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-03",
@@ -3928,7 +4089,8 @@
     "id": "6ba4e48c",
     "updated_at": "2026-06-30T04:22:38.472648+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-03",
@@ -3952,7 +4114,8 @@
     "id": "ee3201f1",
     "updated_at": "2026-07-03T11:37:47+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "0fcd10fd",
@@ -3973,10 +4136,11 @@
     "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
     "post_date": "2026-07-03T07:46:20+00:00",
     "updated_at": "2026-07-04T00:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-03",
@@ -3995,10 +4159,11 @@
     "genre": "поп",
     "id": "296cd22e",
     "updated_at": "2026-07-01T15:42:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-02",
@@ -4016,10 +4181,11 @@
     "genre": "авторская",
     "id": "bf792606",
     "updated_at": "2026-06-27T05:20:06+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-02",
@@ -4038,10 +4204,11 @@
     "genre": "поп",
     "id": "53df3f9c",
     "updated_at": "2026-07-01T15:42:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-01",
@@ -4059,11 +4226,12 @@
     "genre": "джаз",
     "id": "d7777ef5",
     "updated_at": "2026-04-13T07:39:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-01",
@@ -4082,7 +4250,8 @@
     "id": "4ef9b8c8",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-30",
@@ -4101,7 +4270,8 @@
     "id": "0f52d30c",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-28",
@@ -4119,7 +4289,8 @@
     "id": "5623440b",
     "updated_at": "2026-06-28T12:20:43+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4138,7 +4309,8 @@
     "id": "625ce153",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4157,7 +4329,8 @@
     "id": "7f7da373",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4176,7 +4349,8 @@
     "id": "7b4d0864",
     "updated_at": "2026-06-27T12:15:49+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4196,7 +4370,8 @@
     "id": "d2938292",
     "updated_at": "2026-06-22T13:01:13+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4218,11 +4393,12 @@
     "genre": "джаз",
     "id": "94e0202e",
     "updated_at": "2026-06-23T11:20:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-27",
@@ -4241,10 +4417,11 @@
     "genre": "джаз",
     "id": "35c59839",
     "updated_at": "2026-06-21T14:01:42+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-26",
@@ -4263,7 +4440,8 @@
     "id": "e60e24bd",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-26",
@@ -4282,11 +4460,12 @@
     "genre": "метал",
     "id": "6af765b8",
     "updated_at": "2026-06-26T12:37:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-26",
@@ -4305,10 +4484,11 @@
     "genre": "классика",
     "id": "2e9556da",
     "updated_at": "2026-06-25T08:02:30+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-25",
@@ -4327,7 +4507,8 @@
     "id": "600a5d89",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-24",
@@ -4346,7 +4527,8 @@
     "id": "49d1af1e",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "c4a80534",
@@ -4368,10 +4550,11 @@
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
     "post_date": "2026-06-23T09:38:23+00:00",
     "updated_at": "2026-06-23T09:38:23+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-23",
@@ -4390,7 +4573,8 @@
     "id": "86ed3238",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-21",
@@ -4409,10 +4593,11 @@
     "genre": "классика",
     "id": "cf0a6db4",
     "updated_at": "2026-05-20T12:41:34+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-21",
@@ -4431,11 +4616,12 @@
     "genre": "поп",
     "id": "a7b77ead",
     "updated_at": "2026-06-21T13:30:22+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-20",
@@ -4457,7 +4643,8 @@
     "id": "a76e9c2f",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-19",
@@ -4477,7 +4664,8 @@
     "id": "b18a7b01",
     "updated_at": "2026-05-23T08:53:22+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-19",
@@ -4497,7 +4685,8 @@
     "id": "4a035c03",
     "updated_at": "2026-05-20T20:07:23+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-14",
@@ -4515,10 +4704,11 @@
     "post_date": "2026-05-15T06:45:04+00:00",
     "id": "417574f4",
     "updated_at": "2026-05-15T06:45:04+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-13",
@@ -4537,7 +4727,8 @@
     "id": "883e2b58",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-07",
@@ -4556,7 +4747,8 @@
     "id": "1f208119",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-07",
@@ -4579,7 +4771,8 @@
     "id": "a2e9f541",
     "updated_at": "2026-05-25T07:48:59+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-07",
@@ -4602,7 +4795,8 @@
     "id": "f1c15df3",
     "updated_at": "2026-05-21T11:55:17+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-06",
@@ -4620,11 +4814,12 @@
     "genre": "поп",
     "id": "7c45dd53",
     "updated_at": "2026-05-13T06:55:03+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-06",
@@ -4642,10 +4837,11 @@
     "genre": "классика",
     "id": "749a146a",
     "updated_at": "2026-05-07T10:07:16+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-06-06",
@@ -4664,7 +4860,8 @@
     "id": "a4314b4d",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "93d47d57",
@@ -4686,10 +4883,11 @@
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
     "post_date": "2026-05-25T08:50:22+00:00",
     "updated_at": "2026-05-25T08:50:22+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-31",
@@ -4707,11 +4905,12 @@
     "genre": "классика",
     "id": "a5d5ce87",
     "updated_at": "2026-05-14T15:06:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-31",
@@ -4729,10 +4928,11 @@
     "genre": "поп",
     "id": "d9072908",
     "updated_at": "2026-05-10T17:20:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-31",
@@ -4751,10 +4951,11 @@
     "genre": "рок",
     "id": "20943b7b",
     "updated_at": "2026-05-19T13:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-31",
@@ -4775,10 +4976,11 @@
     "genre": "классика",
     "id": "b939ac43",
     "updated_at": "2026-05-19T16:30:41+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-31",
@@ -4801,7 +5003,8 @@
     "id": "0bd46674",
     "updated_at": "2026-05-25T07:43:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "37d71771",
@@ -4824,7 +5027,8 @@
     "post_date": "2026-05-24T15:36:35+00:00",
     "updated_at": "2026-07-06T16:43:38.138239+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4842,10 +5046,11 @@
     "genre": "классика",
     "id": "dd8e365a",
     "updated_at": "2026-05-12T16:01:29+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4864,7 +5069,8 @@
     "id": "9ca541b4",
     "updated_at": "2026-05-13T09:16:09+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4886,10 +5092,11 @@
     "post_date": "2026-05-10T17:20:46+00:00",
     "id": "e7112c66",
     "updated_at": "2026-05-10T17:20:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4912,7 +5119,8 @@
     "id": "4dbd153b",
     "updated_at": "2026-05-25T07:43:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4931,10 +5139,11 @@
     "genre": "другое",
     "id": "39cc8a63",
     "updated_at": "2026-05-25T17:02:19+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-30",
@@ -4954,7 +5163,8 @@
     "id": "ad0dec71",
     "updated_at": "2026-05-25T17:05:53+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-29",
@@ -4972,10 +5182,11 @@
     "genre": "поп",
     "id": "61afbb0f",
     "updated_at": "2026-05-10T17:20:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-29",
@@ -4998,7 +5209,8 @@
     "id": "d5569c55",
     "updated_at": "2026-05-25T07:43:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-29",
@@ -5017,10 +5229,11 @@
     "genre": "фолк",
     "id": "72738ac4",
     "updated_at": "2026-05-24T20:15:32+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-29",
@@ -5040,7 +5253,8 @@
     "id": "1ec77b5e",
     "updated_at": "2026-05-24T17:07:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-27",
@@ -5059,7 +5273,8 @@
     "id": "b1656fd7",
     "updated_at": "2026-05-11T08:34:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-26",
@@ -5078,7 +5293,8 @@
     "id": "8c87080d",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-24",
@@ -5095,11 +5311,12 @@
     "source_url": "https://t.me/crimea_event/5527",
     "id": "3fbc519e",
     "updated_at": "2026-05-10T04:03:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-24",
@@ -5121,11 +5338,12 @@
     "post_date": "2026-05-14T15:06:52+00:00",
     "id": "e8aceb0a",
     "updated_at": "2026-05-14T15:06:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "983db2bb",
@@ -5147,10 +5365,11 @@
     "image": "/images/events/c4a40541b3caced7883318ab7b4b1f09.jpg",
     "post_date": "2026-05-22T13:53:17+00:00",
     "updated_at": "2026-05-22T13:53:17+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-24",
@@ -5169,7 +5388,8 @@
     "id": "928bc808",
     "updated_at": "2026-05-11T09:04:47+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-24",
@@ -5188,7 +5408,8 @@
     "id": "697b2dc9",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-24",
@@ -5210,7 +5431,8 @@
     "id": "87ee3687",
     "updated_at": "2026-05-22T12:28:07+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5228,10 +5450,11 @@
     "genre": "этно",
     "id": "da41db32",
     "updated_at": "2026-05-15T05:46:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5250,7 +5473,8 @@
     "id": "7165b1e5",
     "updated_at": "2026-05-14T16:46:22+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5268,10 +5492,11 @@
     "genre": "поп",
     "id": "d65ae54e",
     "updated_at": "2026-05-09T11:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5293,7 +5518,8 @@
     "id": "b9d6de78",
     "updated_at": "2026-05-22T12:40:26+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5312,7 +5538,8 @@
     "id": "d159f520",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5330,11 +5557,12 @@
     "genre": "классика",
     "id": "75e9dc4f",
     "updated_at": "2026-04-27T09:12:17+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5353,10 +5581,11 @@
     "genre": "поп",
     "id": "e6fcb43b",
     "updated_at": "2026-05-21T10:32:50+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5375,7 +5604,8 @@
     "id": "ebb50c47",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-23",
@@ -5393,10 +5623,11 @@
     "genre": "поп",
     "id": "9d9ca947",
     "updated_at": "2026-05-10T19:45:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5414,10 +5645,11 @@
     "genre": "поп",
     "id": "edc7e62a",
     "updated_at": "2026-05-09T11:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5440,7 +5672,8 @@
     "id": "714dba03",
     "updated_at": "2026-05-16T16:49:37+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5462,10 +5695,11 @@
     "post_date": "2026-05-14T15:06:52+00:00",
     "id": "1d834d93",
     "updated_at": "2026-05-14T15:06:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5484,10 +5718,11 @@
     "genre": "поп",
     "id": "c0a5e517",
     "updated_at": "2026-05-19T11:01:28+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5506,7 +5741,8 @@
     "id": "c0928bc8",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-22",
@@ -5524,10 +5760,11 @@
     "genre": "инди",
     "id": "e1e34537",
     "updated_at": "2026-05-13T16:15:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-21",
@@ -5545,10 +5782,11 @@
     "genre": "классика",
     "id": "2ad81603",
     "updated_at": "2026-05-13T08:31:33+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-21",
@@ -5570,7 +5808,8 @@
     "id": "861ae535",
     "updated_at": "2026-05-17T14:50:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-20",
@@ -5593,7 +5832,8 @@
     "id": "f3d2f5ae",
     "updated_at": "2026-05-20T05:55:53+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-17",
@@ -5611,7 +5851,8 @@
     "id": "379b249e",
     "updated_at": "2026-05-13T14:50:05+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-17",
@@ -5633,10 +5874,11 @@
     "post_date": "2026-05-15T06:45:04+00:00",
     "id": "e8b6e9ff",
     "updated_at": "2026-05-15T06:45:04+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-17",
@@ -5654,10 +5896,11 @@
     "genre": "поп",
     "id": "b0cc98c0",
     "updated_at": "2026-05-09T11:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-17",
@@ -5675,10 +5918,11 @@
     "post_date": "2026-05-14T15:07:20+00:00",
     "id": "d87b00fc",
     "updated_at": "2026-05-14T15:07:20+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-17",
@@ -5697,7 +5941,8 @@
     "id": "5099ca20",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5715,10 +5960,11 @@
     "post_date": "2026-05-13T15:24:31+00:00",
     "id": "2850789e",
     "updated_at": "2026-05-13T15:24:31+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5736,10 +5982,11 @@
     "genre": "поп",
     "id": "018d2bb9",
     "updated_at": "2026-05-09T11:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5758,7 +6005,8 @@
     "id": "020aa105",
     "updated_at": "2026-05-15T05:46:07+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5777,7 +6025,8 @@
     "id": "b5b3bbb4",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5795,10 +6044,11 @@
     "genre": "классика",
     "id": "b978130d",
     "updated_at": "2026-05-15T17:01:20+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5817,7 +6067,8 @@
     "id": "0fe87b2f",
     "updated_at": "2026-05-14T12:23:50+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5836,7 +6087,8 @@
     "id": "c4c5a557",
     "updated_at": "2026-05-15T12:27:17+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5854,10 +6106,11 @@
     "genre": "поп",
     "id": "63a803e5",
     "updated_at": "2026-05-14T10:41:14+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-16",
@@ -5876,7 +6129,8 @@
     "id": "c4f27f80",
     "updated_at": "2026-05-11T07:58:12+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-15",
@@ -5895,7 +6149,8 @@
     "id": "eb108384",
     "updated_at": "2026-05-14T11:41:50+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-15",
@@ -5914,7 +6169,8 @@
     "id": "c1dc8779",
     "updated_at": "2026-05-15T14:32:27+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-15",
@@ -5932,10 +6188,11 @@
     "post_date": "2026-05-13T12:28:43+00:00",
     "id": "84f477ff",
     "updated_at": "2026-05-13T12:28:43+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-15",
@@ -5953,10 +6210,11 @@
     "genre": "поп",
     "id": "0ce3a8d6",
     "updated_at": "2026-05-13T07:35:57+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-15",
@@ -5975,7 +6233,8 @@
     "id": "249e6594",
     "updated_at": "2026-05-15T12:38:41+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-14",
@@ -5993,11 +6252,12 @@
     "genre": "классика",
     "id": "818fe08a",
     "updated_at": "2026-05-13T06:55:03+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-13",
@@ -6016,7 +6276,8 @@
     "id": "7f59a571",
     "updated_at": "2026-05-11T08:34:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-13",
@@ -6035,7 +6296,8 @@
     "id": "8b935ce2",
     "updated_at": "2026-05-13T06:55:03+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-12",
@@ -6053,11 +6315,12 @@
     "genre": "поп",
     "id": "b3f9fcc2",
     "updated_at": "2026-05-14T10:22:09+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-12",
@@ -6075,10 +6338,11 @@
     "genre": "классика",
     "id": "365c46b0",
     "updated_at": "2026-05-06T11:47:26+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-11",
@@ -6097,7 +6361,8 @@
     "id": "cc1c45f2",
     "updated_at": "2026-05-08T13:06:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-11",
@@ -6115,10 +6380,11 @@
     "genre": "классика",
     "id": "fda4d83e",
     "updated_at": "2026-05-07T17:02:26+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6136,10 +6402,11 @@
     "post_date": "2026-05-05T15:31:32+00:00",
     "id": "a60c2dfc",
     "updated_at": "2026-05-05T15:31:32+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6158,7 +6425,8 @@
     "id": "76cc0396",
     "updated_at": "2026-05-08T13:06:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6176,10 +6444,11 @@
     "post_date": "2026-05-09T11:59:02+00:00",
     "id": "e040e196",
     "updated_at": "2026-05-09T11:59:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6197,10 +6466,11 @@
     "genre": "классика",
     "id": "ab571935",
     "updated_at": "2026-05-06T17:01:33+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6219,7 +6489,8 @@
     "id": "851dc634",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-10",
@@ -6238,7 +6509,8 @@
     "id": "1ec39261",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6256,10 +6528,11 @@
     "genre": "поп",
     "id": "b0a68571",
     "updated_at": "2026-05-09T08:40:42+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6277,11 +6550,12 @@
     "genre": "поп",
     "id": "3fc65040",
     "updated_at": "2026-05-10T06:59:59+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6303,10 +6577,11 @@
     "image": "/images/events/6f49a07cd56f328db18fece4a98b3469.jpg",
     "post_date": "2026-05-09T09:27:06+00:00",
     "id": "51c5e741",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6325,7 +6600,8 @@
     "id": "4fb1e99e",
     "updated_at": "2026-05-08T13:06:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6343,10 +6619,11 @@
     "post_date": "2026-05-05T15:31:32+00:00",
     "id": "4ab91589",
     "updated_at": "2026-05-05T15:31:32+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6365,7 +6642,8 @@
     "id": "628f2f40",
     "updated_at": "2026-05-02T07:30:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6383,10 +6661,11 @@
     "post_date": "2026-05-04T09:52:40+00:00",
     "id": "f5fb7beb",
     "updated_at": "2026-05-04T09:52:40+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -6404,11 +6683,12 @@
     "genre": "классика",
     "id": "83b9bbda",
     "updated_at": "2026-05-02T08:33:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-08",
@@ -6427,7 +6707,8 @@
     "id": "bf85d01e",
     "updated_at": "2026-05-05T15:31:32+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-08",
@@ -6445,10 +6726,11 @@
     "post_date": "2026-05-06T11:35:33+00:00",
     "id": "b269b9e8",
     "updated_at": "2026-05-06T11:35:33+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "52d615fd",
@@ -6471,7 +6753,8 @@
     "post_date": "2026-05-07T19:44:01+00:00",
     "updated_at": "2026-05-07T19:44:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-08",
@@ -6489,10 +6772,11 @@
     "genre": "другое",
     "id": "811c7684",
     "updated_at": "2026-05-05T10:03:09+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-08",
@@ -6511,7 +6795,8 @@
     "id": "5ae886ac",
     "updated_at": "1970-01-01T00:00:00+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-06",
@@ -6530,7 +6815,8 @@
     "id": "36e3199a",
     "updated_at": "2026-05-11T08:34:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-05",
@@ -6548,11 +6834,12 @@
     "genre": "классика",
     "id": "7e87cb85",
     "updated_at": "2026-05-08T15:21:53+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-03",
@@ -6570,10 +6857,11 @@
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "b914efb4",
     "updated_at": "2026-04-24T17:39:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-03",
@@ -6591,10 +6879,11 @@
     "post_date": "2026-05-01T14:00:07+00:00",
     "id": "14b6676b",
     "updated_at": "2026-05-01T14:00:07+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-03",
@@ -6612,11 +6901,12 @@
     "post_date": "2026-05-03T13:54:40+00:00",
     "id": "f6c488eb",
     "updated_at": "2026-05-03T13:54:40+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-03",
@@ -6635,7 +6925,8 @@
     "id": "17bc7a9d",
     "updated_at": "2026-05-02T11:55:07+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "00f46ec4",
@@ -6656,7 +6947,8 @@
     "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
     "post_date": "2026-05-02T10:13:03+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "b87cb837",
@@ -6674,12 +6966,13 @@
     "images": null,
     "image": null,
     "post_date": "2026-04-29T17:23:27+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6697,10 +6990,11 @@
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "55aee146",
     "updated_at": "2026-04-24T17:39:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6722,7 +7016,8 @@
     "id": "11872108",
     "updated_at": "2026-05-04T06:08:46+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6745,7 +7040,8 @@
     "id": "7db77e8f",
     "updated_at": "2026-05-01T10:03:36+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6763,10 +7059,11 @@
     "genre": "метал",
     "id": "f5dae4f8",
     "updated_at": "2026-04-24T17:35:11+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6784,11 +7081,12 @@
     "genre": "другое",
     "id": "1f7bb45e",
     "updated_at": "2026-05-01T17:32:15+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6806,10 +7104,11 @@
     "genre": "поп",
     "id": "b86d18c0",
     "updated_at": "2026-04-30T15:00:00+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-02",
@@ -6827,10 +7126,11 @@
     "genre": "поп-рок",
     "id": "0548b7e1",
     "updated_at": "2026-05-02T11:03:09+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6848,11 +7148,12 @@
     "genre": "метал",
     "id": "55e49001",
     "updated_at": "2026-04-30T19:03:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6870,10 +7171,11 @@
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "a914aeb1",
     "updated_at": "2026-04-24T17:39:52+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6892,7 +7194,8 @@
     "id": "9ce55bd3",
     "updated_at": "2026-04-20T05:29:01+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6910,10 +7213,11 @@
     "post_date": "2026-04-28T05:43:20+00:00",
     "id": "edef7f34",
     "updated_at": "2026-04-28T05:43:20+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6931,10 +7235,11 @@
     "genre": "рок",
     "id": "e77e012d",
     "updated_at": "2026-05-01T11:16:43+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-01",
@@ -6952,10 +7257,11 @@
     "genre": "поп",
     "id": "5c1b507d",
     "updated_at": "2026-04-26T12:23:02+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-04-30",
@@ -6973,12 +7279,13 @@
     "genre": "джаз",
     "id": "c2593d44",
     "updated_at": "2026-04-30T13:59:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-04-26",
@@ -6996,11 +7303,12 @@
     "genre": "классика",
     "id": "6547b1bd",
     "updated_at": "2026-05-13T15:37:32+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-04-26",
@@ -7018,10 +7326,11 @@
     "genre": "классика",
     "id": "8850f70c",
     "updated_at": "2026-04-21T19:19:29+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-04-25",
@@ -7039,10 +7348,11 @@
     "genre": "хип-хоп",
     "id": "e902f592",
     "updated_at": "2026-04-20T05:48:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-09",
@@ -7061,7 +7371,8 @@
     "id": "d5e968f8",
     "genre": "поп",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-08",
@@ -7080,7 +7391,8 @@
     "id": "8b763d82",
     "updated_at": "2026-05-08T11:24:34+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-05-09",
@@ -7102,7 +7414,8 @@
     "id": "d6f7a5db",
     "updated_at": "2026-05-23T09:43:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -7121,7 +7434,8 @@
     "id": "09826b06",
     "genre": "поп",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "219dd212",
@@ -7143,7 +7457,8 @@
     "image": "/images/events/d0e1e7803779588b2e6871a5546bbbee.jpg",
     "post_date": "2026-08-04T07:56:23+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "8f8c4cef",
@@ -7165,7 +7480,8 @@
     "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg",
     "post_date": "2026-08-04T07:56:23+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "0e9150c1",
@@ -7187,7 +7503,8 @@
     "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg",
     "post_date": "2026-08-04T07:56:23+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -7209,7 +7526,8 @@
     "post_date": "2026-07-31T11:56:44+00:00",
     "id": "6a65cb44",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -7230,11 +7548,12 @@
     "image": "/images/events/23cac87b670cfc3e60f215c0f1eb5755.jpg",
     "post_date": "2026-08-01T08:05:16+00:00",
     "id": "5ddfb74f",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "город в описании не совпадает с карточкой"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -7261,10 +7580,11 @@
     ],
     "source_url": "https://t.me/dlyadushi_Crimea/6426",
     "id": "5c9347f5",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -7285,11 +7605,12 @@
     "image": "/images/events/4b663e90e6e6ba7211982183a1a944b8.jpg",
     "post_date": "2026-07-29T15:31:32+00:00",
     "id": "de41cd04",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -7310,12 +7631,13 @@
     "image": "/images/events/36968f7d27f3509bdaa756ae5aeb4411.jpg",
     "post_date": "2026-07-29T15:31:32+00:00",
     "id": "a2ede59b",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "город в описании не совпадает с карточкой"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "bce62a03",
@@ -7336,11 +7658,12 @@
     ],
     "image": "/images/events/c9df59d0efb36c201109ea81a55bb3b1.jpg",
     "post_date": "2026-08-04T17:07:10+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-28",
@@ -7358,10 +7681,11 @@
     "source_url": "https://t.me/skazhitejazz/1578",
     "id": "34c97325",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "df577a75",
@@ -7381,11 +7705,12 @@
     ],
     "image": "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg",
     "post_date": "2026-08-05T15:01:26+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -7404,7 +7729,8 @@
     "id": "17a35bb2",
     "genre": "блюз",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -7425,10 +7751,11 @@
     "image": "/images/events/b9c9a68f2691ddb80bccb591899325dc.jpg",
     "post_date": "2026-07-28T08:30:13+00:00",
     "id": "9974a3d5",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -7446,10 +7773,11 @@
     "source_url": "https://t.me/afisha_payberry/1610",
     "id": "a5b10d15",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-07",
@@ -7467,10 +7795,11 @@
     "source_url": "https://t.me/artcafesnezhinka/1941",
     "id": "57716bd2",
     "genre": "поп-рок",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -7488,10 +7817,11 @@
     "source_url": "https://t.me/artcafesnezhinka/1941",
     "id": "613d7dd7",
     "genre": "другое",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "cbfd43e3",
@@ -7512,7 +7842,8 @@
     "image": "/images/events/0af875f4a7edddeeef24bff75a03e7d1.jpg",
     "post_date": "2026-08-09T12:38:03+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "318336ec",
@@ -7534,7 +7865,8 @@
     "image": "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
     "post_date": "2026-08-14T17:49:49+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "80e8328d",
@@ -7556,7 +7888,8 @@
     "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
     "post_date": "2026-08-16T09:42:05+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-27",
@@ -7574,10 +7907,11 @@
     "source_url": "https://vk.com/wall-225094331_404",
     "id": "8114072d",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-31",
@@ -7595,11 +7929,12 @@
     "source_url": "https://vk.com/wall-214055536_2251",
     "id": "0e49b487",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "912feab7",
@@ -7621,7 +7956,8 @@
     "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
     "post_date": "2026-08-11T05:56:20+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-07-28",
@@ -7638,11 +7974,12 @@
     "images": null,
     "source_url": "https://t.me/koncertykrym/2232",
     "id": "6592dfe2",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -7659,10 +7996,11 @@
     "images": null,
     "source_url": "https://vk.com/wall-221587243_2456",
     "id": "2130c42f",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "fb15f052",
@@ -7682,10 +8020,11 @@
     ],
     "image": "/images/events/e8ddd2b57b4b3468e1362171ae995840.jpg",
     "post_date": "2026-08-05T11:51:48+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-03",
@@ -7702,12 +8041,13 @@
     "images": null,
     "source_url": "https://vk.com/wall-89840945_119288",
     "id": "d26fc075",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -7725,12 +8065,13 @@
     "source_url": "https://vk.com/wall-89840945_119274",
     "id": "427f98ae",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-16",
@@ -7748,11 +8089,12 @@
     "source_url": "https://t.me/belbekma/1347",
     "id": "d0eb3d86",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "40d4008e",
@@ -7773,10 +8115,11 @@
     ],
     "image": "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
     "post_date": "2026-08-12T10:37:31+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "8eca90e4",
@@ -7798,7 +8141,8 @@
     "image": "/images/events/7ec6a8edf7e2d12f30fd5c9ce91acf91.jpg",
     "post_date": "2026-08-14T10:11:44+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-14",
@@ -7816,7 +8160,8 @@
     "source_url": "https://t.me/afisha_crimea/8223",
     "id": "9353c76b",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-11",
@@ -7834,11 +8179,12 @@
     "source_url": "https://t.me/tavrida_art/21776",
     "id": "52c8990b",
     "genre": "фолк",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-04",
@@ -7857,7 +8203,8 @@
     "id": "b330d59b",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-06",
@@ -7876,7 +8223,8 @@
     "id": "8d27965e",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -7894,7 +8242,8 @@
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "eef44e1b",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -7913,7 +8262,8 @@
     "id": "7546d203",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -7932,7 +8282,8 @@
     "id": "376675f2",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -7951,7 +8302,8 @@
     "id": "960e71d4",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -7970,7 +8322,8 @@
     "id": "068bbb92",
     "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "17c2e17f",
@@ -8034,7 +8387,8 @@
     "image": "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg",
     "post_date": "2026-08-06T07:59:16+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "e6fe7eb6",
@@ -8055,11 +8409,12 @@
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "25f2784c",
@@ -8080,11 +8435,12 @@
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
     "post_date": "2026-08-15T05:38:56+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "0425e823",
@@ -8106,7 +8462,8 @@
     "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
     "post_date": "2026-08-21T16:31:38+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -8124,10 +8481,11 @@
     "source_url": "https://t.me/api_balaklava/1341",
     "id": "fd610694",
     "genre": "юмор",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "978b6f3b",
@@ -8149,7 +8507,8 @@
     "image": "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
     "post_date": "2026-08-13T16:42:31+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "2a2c2ecb",
@@ -8171,7 +8530,8 @@
     "image": "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
     "post_date": "2026-08-13T14:50:23+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -8193,7 +8553,8 @@
     "post_date": "2026-08-15T12:11:22+00:00",
     "id": "26914dc5",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-14",
@@ -8211,7 +8572,8 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6457",
     "id": "97cc5888",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -8230,7 +8592,8 @@
     "id": "0d620eb8",
     "genre": "авторская",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "82142496",
@@ -8251,10 +8614,11 @@
     ],
     "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
     "post_date": "2026-08-21T11:58:15+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-13",
@@ -8272,11 +8636,12 @@
     "source_url": "https://t.me/tavrida_art/21790",
     "id": "aecdb0c8",
     "genre": "фолк",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -8296,10 +8661,11 @@
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "fb372d92",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -8319,10 +8685,11 @@
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "756cf212",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-29",
@@ -8342,10 +8709,11 @@
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
     "id": "f5e6f453",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-16",
@@ -8363,10 +8731,11 @@
     "source_url": "https://t.me/massandrasun/2422",
     "id": "3ae0a52e",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-23",
@@ -8384,10 +8753,11 @@
     "source_url": "https://t.me/massandrasun/2422",
     "id": "cd20600c",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-30",
@@ -8405,10 +8775,11 @@
     "source_url": "https://t.me/massandrasun/2422",
     "id": "22b47e82",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-09",
@@ -8426,10 +8797,11 @@
     "source_url": "https://t.me/massandrasun/2422",
     "id": "e1cceb3c",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "40077741",
@@ -8451,7 +8823,8 @@
     "image": "/images/events/12a6b4dad704a4042d834328016ff669.jpg",
     "post_date": "2026-08-13T10:46:36+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-02",
@@ -8473,7 +8846,8 @@
     "post_date": "2026-08-09T09:06:10+00:00",
     "id": "05d047cd",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-01",
@@ -8494,10 +8868,11 @@
     "image": "/images/events/a8e4d5db3ad6494af227279d57337d8d.jpg",
     "post_date": "2026-08-01T12:00:38+00:00",
     "id": "e029f202",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -8515,10 +8890,11 @@
     "source_url": "https://t.me/afisha_crimea/8241",
     "id": "fb0d2a4e",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "1aab1574",
@@ -8539,11 +8915,12 @@
     ],
     "image": "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
     "post_date": "2026-08-14T20:19:46+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "beadeba5",
@@ -8563,11 +8940,12 @@
     ],
     "image": "/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg",
     "post_date": "2026-08-14T12:03:23+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "c42060a4",
@@ -8630,10 +9008,11 @@
     ],
     "image": "/images/events/f70ff37c1e3b7dd92854c582b972bebb.jpg",
     "post_date": "2026-08-20T17:03:53+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "64c922f0",
@@ -8654,11 +9033,12 @@
     ],
     "image": "/images/events/bdea390c39ff5281eeb657d10fbe60e9.jpg",
     "post_date": "2026-08-07T17:01:55+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "06b988f5",
@@ -8679,7 +9059,8 @@
     "image": "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg",
     "post_date": "2026-08-19T07:22:37+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "6b3d762a",
@@ -8701,7 +9082,8 @@
     "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
     "post_date": "2026-08-21T14:27:08+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "283fc5bf",
@@ -8722,7 +9104,8 @@
     "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg",
     "post_date": "2026-08-19T07:22:37+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "f564b79c",
@@ -8743,10 +9126,11 @@
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
     "post_date": "2026-08-15T16:33:08+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "3ff30188",
@@ -8788,10 +9172,11 @@
     ],
     "image": "/images/events/dca8169c5707f1eb0d128e664e52700f.jpg",
     "post_date": "2026-08-18T20:16:13+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "15eb01ab",
@@ -8809,12 +9194,13 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-14T19:15:16+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "d941bc41",
@@ -8832,12 +9218,13 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-14T19:15:16+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "7365769c",
@@ -8858,7 +9245,8 @@
     "image": "/images/events/013bd9e99f70fcfb5cb5fbdf78936a67.jpg",
     "post_date": "2026-08-18T17:29:50+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "4b6c5391",
@@ -8880,7 +9268,8 @@
     "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
     "post_date": "2026-08-22T10:28:07+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "bd1455b1",
@@ -8900,10 +9289,11 @@
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-12T14:49:48+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-08",
@@ -8921,10 +9311,11 @@
     "source_url": "https://t.me/sevastopol_jazz/1280",
     "id": "0f341913",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "9eeaeece",
@@ -8945,10 +9336,11 @@
     ],
     "image": "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
     "post_date": "2026-08-25T15:09:25+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "7a7bbf92",
@@ -8968,10 +9360,11 @@
     ],
     "image": "/images/events/2d95daf7b3ee4eada4e0c8fcc2110b69.jpg",
     "post_date": "2026-08-08T12:51:58+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "85e68c5d",
@@ -8991,10 +9384,11 @@
     ],
     "image": "/images/events/72137077ad5ad08f946770b7d3f22ff9.jpg",
     "post_date": "2026-08-12T10:12:43+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "7aefdb71",
@@ -9014,10 +9408,11 @@
     ],
     "image": "/images/events/532cfb2374261e5e74933835c85490ca.jpg",
     "post_date": "2026-08-10T13:48:22+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-09",
@@ -9035,10 +9430,11 @@
     "source_url": "https://vk.com/wall-221587243_2455",
     "id": "f73b27ab",
     "genre": "классика",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-05",
@@ -9056,12 +9452,13 @@
     "source_url": "https://vk.com/wall-89840945_119309",
     "id": "4acddb9f",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "53bf1e26",
@@ -9083,7 +9480,8 @@
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-22T10:28:07+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-23",
@@ -9101,10 +9499,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6469",
     "id": "8e52b70b",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "4d7732fe",
@@ -9200,7 +9599,8 @@
     "image": "/images/events/c9e1c00a98235498b247edd42e32a316.jpg",
     "post_date": "2026-08-19T10:50:20+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "bc595cf9",
@@ -9218,10 +9618,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-20T14:46:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "470475c6",
@@ -9287,7 +9688,8 @@
     "image": "/images/events/1f59c3666fff023a4bf6b63ca97f0d55.jpg",
     "post_date": "2026-08-20T08:01:18+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "7cd87068",
@@ -9309,7 +9711,8 @@
     "image": "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
     "post_date": "2026-08-23T10:44:28+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-15",
@@ -9327,10 +9730,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6469",
     "id": "69d94c38",
     "genre": "авторская",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "29e866d1",
@@ -9350,10 +9754,11 @@
     ],
     "image": "/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg",
     "post_date": "2026-08-14T18:56:29+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "a576fbb8",
@@ -9373,10 +9778,11 @@
     ],
     "image": "/images/events/ec441100134b01491c1a88e1e6633230.jpg",
     "post_date": "2026-08-20T12:12:38+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-23",
@@ -9394,10 +9800,11 @@
     "source_url": "https://vk.com/wall-221587243_2463",
     "id": "2d922be9",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-19",
@@ -9414,12 +9821,13 @@
     "post_date": "2026-08-19T11:15:49+00:00",
     "source_url": "https://vk.com/wall-89840945_119457",
     "id": "8a1ac1c5",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "59c88d94",
@@ -9441,7 +9849,8 @@
     "image": "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
     "post_date": "2026-08-15T13:26:25+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "e01efb60",
@@ -9459,10 +9868,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-21T10:43:03+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "d3f6d3ad",
@@ -9483,10 +9893,11 @@
     ],
     "image": "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
     "post_date": "2026-08-20T14:43:45+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "3e37f1db",
@@ -9504,12 +9915,13 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-19T11:15:49+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "fa1ea514",
@@ -9595,10 +10007,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-24T11:22:41+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "318066b6",
@@ -9616,10 +10029,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-24T11:22:41+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "c187fe0e",
@@ -9637,10 +10051,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-24T11:22:41+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "b74456ae",
@@ -9661,11 +10076,12 @@
     ],
     "image": "/images/events/9d10f491140e025d77a5ea8e70b3885e.jpg",
     "post_date": "2026-08-11T17:26:05+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "de6c29c1",
@@ -9683,11 +10099,12 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-20T14:46:01+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-18",
@@ -9705,10 +10122,11 @@
     "source_url": "https://vk.com/wall-237501275_96",
     "id": "4b3ab588",
     "genre": "поп-рок",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "11f1afaf",
@@ -9728,11 +10146,12 @@
     ],
     "image": "/images/events/0d6b95b0bf1c39e34345d9a8217ad9e5.jpg",
     "post_date": "2026-08-23T07:38:57+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "d25216c6",
@@ -9753,10 +10172,11 @@
     ],
     "image": "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
     "post_date": "2026-08-24T12:32:41+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "d0ee013a",
@@ -9796,10 +10216,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-25T05:28:59+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "a76190da",
@@ -9817,10 +10238,11 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-25T05:28:59+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "3cd68824",
@@ -9841,11 +10263,12 @@
     ],
     "image": "/images/events/f09fd4cf4f878fe5df593c81c412486b.jpg",
     "post_date": "2026-08-18T14:32:33+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-28",
@@ -9863,11 +10286,12 @@
     "source_url": "https://t.me/tavrida_art/21878",
     "id": "354b3113",
     "genre": "другое",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "ee4a0a06",
@@ -9888,11 +10312,12 @@
     ],
     "image": "/images/events/7d4006bb1b3d46854dacfbebaa588b6f.jpg",
     "post_date": "2026-08-23T11:32:28+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "a9b9a93b",
@@ -10001,10 +10426,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6528",
     "id": "28a74998",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-29",
@@ -10044,10 +10470,11 @@
     "source_url": "https://t.me/tavrida_art/21882",
     "id": "30b74b3a",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-12",

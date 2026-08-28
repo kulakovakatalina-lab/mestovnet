@@ -1,0 +1,1582 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110385036', 'ym');
+
+    ym(110385036, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110385036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<meta charset="utf-8">
+<meta name="description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Севастополь), в Севастополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Севастополь), 14 августа · Местов.Нет</title>
+<link rel="icon" type="image/png" href="/images/fav.png">
+<style>
+:root {
+  --bg:      oklch(99% 0.002 240);
+  --surface: oklch(100% 0 0);
+  --fg:      oklch(18% 0.012 250);
+  --muted:   oklch(54% 0.012 250);
+  --border:  oklch(92% 0.005 250);
+  --accent:  oklch(58% 0.18 255);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 16px;
+  --nav-h:     56px;
+  --gutter:    clamp(16px, 4vw, 48px);
+  --max-w:     1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: oklch(99% 0.002 240 / 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+  gap: 8px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  flex-shrink: 0;
+  color: var(--fg);
+}
+.nav-logo em { color: var(--accent); font-style: normal; }
+.nav-sep { width: 1px; height: 20px; background: var(--border); margin: 0 8px; flex-shrink: 0; }
+.nav-genres {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+}
+.nav-genres::-webkit-scrollbar { display: none; }
+.nav-genre {
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-genre:hover { color: var(--fg); background: var(--border); }
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
+.nav-genre.active {
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.08);
+}
+
+.genre-strip-mobile {
+  display: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 6px;
+  padding: 10px var(--gutter);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.genre-strip-mobile::-webkit-scrollbar { display: none; }
+.genre-strip-mobile a {
+  flex-shrink: 0;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.genre-strip-mobile a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.event-hero {
+  width: 100%;
+  position: relative;
+}
+.event-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 16px var(--gutter) 32px;
+}
+.event-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.12s;
+  margin-bottom: 24px;
+}
+.event-back:hover { color: var(--fg); }
+.event-back svg { width: 14px; height: 14px; flex-shrink: 0; }
+.event-hero-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.event-poster-col {
+  position: sticky;
+  top: calc(var(--nav-h) + 32px);
+  align-self: start;
+}
+.event-poster-wrap {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: oklch(22% 0.01 250);
+}
+.event-poster-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.event-poster-placeholder {
+  width: 100%;
+  min-height: 425px;
+  background: linear-gradient(135deg, oklch(22% 0.06 255) 0%, oklch(14% 0.04 270) 60%, oklch(18% 0.08 220) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-poster-placeholder svg {
+  width: 80px;
+  height: 80px;
+  opacity: 0.22;
+  color: #fff;
+}
+.carousel { position: relative; width: 100%; border-radius: var(--radius-lg); overflow: hidden; }
+.carousel-track { position: relative; }
+.carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s ease; }
+.carousel-slide.active { position: relative; opacity: 1; }
+.carousel-slide img { width: 100%; height: auto; display: block; }
+.carousel-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px; border: none; border-radius: 50%;
+  background: oklch(20% 0.02 250 / 0.7); color: #fff;
+  font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s; z-index: 2;
+}
+.carousel-btn:hover { background: oklch(30% 0.04 250 / 0.85); }
+.carousel-btn-prev { left: 10px; }
+.carousel-btn-next { right: 10px; }
+.carousel-dots { display: flex; gap: 8px; justify-content: center; padding: 14px 0; }
+.carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: oklch(70% 0.02 250 / 0.35); cursor: pointer; transition: background 0.2s; }
+.carousel-dot.active { background: var(--accent); }
+
+.event-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.event-info-genre {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
+.event-info-cancelled {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  background: oklch(55% 0.19 25);
+  color: #fff;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+.event-info-artist {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  color: var(--fg);
+}
+.event-info-artist-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+.artist-more-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+.artist-more-link:hover {
+  text-decoration: underline;
+}
+.event-info-venue {
+  font-size: 14px;
+  color: var(--muted);
+}
+.event-info-venue a, .venue-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s, color 0.15s;
+}
+.event-info-venue a:hover, .venue-name a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.event-info-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.event-info-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.event-info-meta-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.event-info-meta-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+}
+.event-info-meta-value.mono {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+.event-info-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.event-want-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: var(--font-body);
+  text-decoration: none;
+}
+.event-want-btn:hover { opacity: 0.85; }
+.event-want-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+.event-want-btn.is-going {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+.event-source-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.12s;
+  font-family: var(--font-body);
+  text-decoration: none;
+}
+.event-source-btn:hover { border-color: var(--fg); }
+.event-source-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+.event-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  padding: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
+.event-copy-btn:hover { border-color: var(--fg); color: var(--fg); }
+.event-copy-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter) clamp(48px, 8vw, 96px);
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+.event-main {
+  padding-top: 40px;
+}
+
+.event-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.event-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  color: var(--fg);
+  margin-bottom: 16px;
+}
+.event-subtitle {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 36px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.meta-cell {
+  background: var(--surface);
+  padding: 18px 20px;
+}
+.meta-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.meta-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+.meta-value.mono {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.about-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--fg);
+  margin-bottom: 16px;
+}
+.about-genre {
+  margin-bottom: 32px;
+}
+
+.artist-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.artist-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.artist-avatar svg { width: 24px; height: 24px; color: var(--muted); }
+.artist-avatar img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
+.artist-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+.artist-meta { font-size: 13px; color: var(--muted); }
+
+.venue-info {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.venue-name {
+  font-size: 14px;
+  color: var(--fg);
+  margin-bottom: 10px;
+}
+.event-venue-map-wrap { margin-top: 10px; }
+#event-venue-map {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.event-venue-map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--muted);
+  font-size: 13px;
+}
+.balloon-card { min-width: 180px; }
+.balloon-name { font-weight: 700; margin-bottom: 4px; }
+.balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.balloon-route {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  transition: filter 0.12s;
+}
+.balloon-route:hover { filter: brightness(1.08); }
+
+.event-sidebar {
+  padding-top: 40px;
+  position: sticky;
+  top: calc(var(--nav-h) + 24px);
+}
+
+.ticket-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 16px;
+}
+.ticket-price-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.ticket-price-value {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--fg);
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.ticket-price-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.ticket-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 -28px 24px;
+}
+
+.ticket-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.ticket-meta-row:last-of-type { margin-bottom: 24px; }
+.ticket-meta-key { color: var(--muted); }
+.ticket-meta-val {
+  font-weight: 500;
+  color: var(--fg);
+  text-align: right;
+}
+
+.ticket-org-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 20px;
+  background: var(--fg);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  text-decoration: none;
+}
+.ticket-org-btn:hover { opacity: 0.82; }
+.ticket-org-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+.ticket-note {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 14px;
+  line-height: 1.55;
+}
+
+.toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: var(--fg);
+  color: var(--bg);
+  padding: 10px 22px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.18s, transform 0.18s;
+  pointer-events: none;
+  z-index: 999;
+  white-space: nowrap;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.more-section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter) clamp(48px, 8vw, 80px);
+  border-top: 1px solid var(--border);
+  padding-top: 40px;
+}
+.more-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.more-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.more-link {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+}
+.more-link:hover { text-decoration: underline; }
+
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+@media (max-width: 860px) {
+  .more-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.load-more-wrap {
+  text-align: center;
+  margin-top: 24px;
+}
+.load-more-btn {
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 100px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.load-more-btn:hover {
+  background: var(--accent);
+  color: var(--surface);
+}
+.load-more-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.mini-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  transition: border-color 0.12s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+.mini-card:hover { border-color: oklch(80% 0.008 250); transform: translateY(-2px); }
+.mini-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.mini-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+.mini-img {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.mini-img svg { width: 28px; height: 28px; opacity: 0.3; color: #fff; }
+.bg-default { background: linear-gradient(135deg, oklch(22% 0.06 255), oklch(14% 0.04 270), oklch(18% 0.08 220)); }
+.mini-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.mini-body { padding: 14px 16px; }
+.mini-date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.mini-artist {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+.mini-venue { font-size: 12px; color: var(--muted); }
+
+.pill { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 0.02em; }
+.pill-jazz    { background: oklch(58% 0.18 255 / 0.10); color: var(--accent); }
+.pill-rock    { background: oklch(55% 0.15 15  / 0.10); color: oklch(50% 0.15 15); }
+.pill-folk    { background: oklch(50% 0.12 150 / 0.10); color: oklch(46% 0.12 150); }
+.pill-blues   { background: oklch(52% 0.14 270 / 0.10); color: oklch(50% 0.16 270); }
+.pill-classic { background: oklch(52% 0.10 60  / 0.10); color: oklch(46% 0.10 60); }
+.pill-pop     { background: oklch(58% 0.16 320 / 0.10); color: oklch(54% 0.16 320); }
+
+.bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
+.bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
+.bg-rock    { background: linear-gradient(135deg, oklch(22% 0.04 15),  oklch(32% 0.06 20)); }
+.bg-blues   { background: linear-gradient(135deg, oklch(22% 0.06 270), oklch(30% 0.10 265)); }
+.bg-classic { background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }
+.bg-pop     { background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }
+
+.loading { text-align: center; padding: 80px 0; color: var(--muted); font-size: 15px; }
+
+@media (max-width: 860px) {
+  .event-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .event-poster-col {
+    position: static;
+  }
+  .event-poster-wrap {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .event-back { display: none; }
+  .meta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .nav-genres, .nav-sep { display: none; }
+  .genre-strip-mobile { display: flex; }
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+  .more-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .more-grid { grid-template-columns: 1fr; }
+}
+
+/* —— Кнопка подписки в шапке —— */
+.nav-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: filter 0.12s, transform 0.1s;
+}
+.nav-cta:hover { filter: brightness(1.08); }
+.nav-cta:active { transform: scale(0.96); }
+.nav-cta:focus { outline: none; }
+.nav-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+/* —— Модалка подписки —— */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: oklch(18% 0.012 250 / 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 32px 32px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 70px oklch(18% 0.012 250 / 0.28);
+  transform: translateY(14px) scale(0.98);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-overlay.open .modal { transform: translateY(0) scale(1); }
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+  transition: background 0.12s, color 0.12s;
+}
+.modal-close:hover { background: var(--border); color: var(--fg); }
+.modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.1);
+  border-radius: 100px;
+}
+.modal-badge svg { width: 13px; height: 13px; }
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.modal-lead {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.modal-list { list-style: none; margin-bottom: 28px; }
+.modal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 9px 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  border-top: 1px solid var(--border);
+}
+.modal-list li:first-child { border-top: none; }
+.modal-list .ico {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: oklch(58% 0.18 255 / 0.12);
+  color: var(--accent);
+  font-size: 13px;
+}
+.modal-list b { font-weight: 600; }
+.modal-list span { color: var(--muted); }
+.modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius);
+  transition: filter 0.12s, transform 0.1s;
+}
+.modal-cta:hover { filter: brightness(1.08); }
+.modal-cta:active { transform: scale(0.99); }
+.modal-cta svg { width: 18px; height: 18px; }
+.modal-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+</style>
+<link rel="canonical" href="https://mestov.net/event/15eb01ab">
+<meta property="og:title" content="Игорь Симдянкин с «КиШом» — Рок-н-рольщики (Севастополь), 14 августа · Местов.Нет">
+<meta property="og:description" content="Игорь Симдянкин с «КиШом», Рок-н-рольщики (Севастополь), в Севастополе, 14 августа, чт. Билеты и подробности на Местов.Нет.">
+<meta property="og:type" content="article">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин с «КиШом»",
+      "startDate": "2026-08-14T00:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Игорь Симдянкин с трибьютом «КиШ».",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин с «КиШом»"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Симдянкин с «КиШом»"}]}
+</script>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">местов<em>.нет</em></a>
+  <div class="nav-sep"></div>
+  <div class="nav-genres" id="nav-genres"></div>
+  <a href="/map.html" class="nav-map-link">Карта</a>
+  <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+    <span>Подписаться</span>
+  </button>
+</nav>
+</nav>
+
+<div class="modal-overlay" id="sub-modal" role="dialog" aria-modal="true" aria-labelledby="sub-modal-title" onclick="if(event.target===this)closeSubModal()">
+  <div class="modal">
+    <button class="modal-close" type="button" onclick="closeSubModal()" aria-label="Закрыть">&times;</button>
+    <span class="modal-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+      Telegram-бот
+    </span>
+    <h2 class="modal-title" id="sub-modal-title">Концерты — прямо в Telegram</h2>
+    <p class="modal-lead">Бот «Местов.Нет» сам пришлёт подборку живой музыки Крыма — без листания афиш и пропущенных вечеров.</p>
+    <ul class="modal-list">
+      <li><span class="ico">♫</span><span><b>Под ваш вкус.</b> Выбираете жанры и города — приходит только то, что интересно.</span></li>
+      <li><span class="ico">↻</span><span><b>В удобном ритме.</b> Раз в день, раз в неделю или по запросу — как захотите.</span></li>
+      <li><span class="ico">✓</span><span><b>Бесплатно и без спама.</b> Только концерты, отписаться можно в одно касание.</span></li>
+    </ul>
+    <a class="modal-cta" href="https://t.me/mestovnet_bot" target="_blank" rel="noopener" onclick="closeSubModal()">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
+      Открыть в Telegram
+    </a>
+    <p class="modal-note">@mestovnet_bot · подписка за 10 секунд</p>
+  </div>
+</div>
+
+
+<div class="genre-strip-mobile" id="genre-strip-mobile"></div>
+
+<div id="content"><div class="loading">Загрузка...</div></div>
+
+<script>
+const GENRE_MAP = {
+  'джаз': 'jazz', 'рок': 'rock', 'русский рок': 'rock', 'панк-рок': 'rock',
+  'инди-рок': 'rock', 'метал': 'rock', 'инди': 'rock', 'авторская': 'rock',
+  'классика': 'classic', 'хоровая': 'classic', 'медитативная': 'classic',
+  'поп': 'pop', 'поп-рок': 'pop', 'лаунж': 'pop', 'хип-хоп': 'pop',
+  'каверы': 'pop', 'юмор': 'pop', 'шоу': 'pop', 'интерактив': 'pop',
+  'этно': 'folk', 'фолк-метал': 'folk', 'народная': 'folk',
+  'блюз': 'blues'
+};
+
+const GENRE_LABELS = {
+  jazz: 'Джаз', rock: 'Рок', folk: 'Фолк', blues: 'Блюз', classic: 'Классика', pop: 'Поп'
+};
+
+const MONTHS_GEN = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+const DOW_FULL = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+
+const starIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`;
+function posterFallback(img) {
+  const target = img.closest('.carousel-slide') || img.closest('.event-poster-wrap');
+  if (target) target.innerHTML = `<div class="event-poster-placeholder">${starIcon}</div>`;
+  else img.remove();
+}
+const genreIcon = (g) => {
+  const icons = {
+    jazz: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
+    rock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>`,
+    folk: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>`,
+    blues: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
+    classic: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3z"/></svg>`,
+    pop: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>`
+  };
+  return icons[g] || icons.jazz;
+};
+
+function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
+
+// Данные событий приходят из чужих каналов — экранируем перед вставкой в innerHTML.
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+// В src/href пускаем только http(s) и локальные пути (не //host).
+function safeUrl(u) {
+  u = String(u ?? '');
+  return /^(https?:\/\/|\/(?!\/))/i.test(u) ? escapeHtml(u) : '';
+}
+
+function parseDate(d) {
+  const parts = d.split('-');
+  return new Date(+parts[0], +parts[1] - 1, +parts[2]);
+}
+
+// Момент, до которого событие актуально: дата + время начала.
+// Без времени — до конца дня.
+function parseDateTime(e) {
+  const d = parseDate(e.date);
+  const m = e.time && e.time.match(/(\d{1,2}):(\d{2})/);
+  if (m) d.setHours(+m[1], +m[2], 0, 0);
+  else d.setHours(23, 59, 59, 0);
+  return d;
+}
+
+function priceText(p) {
+  if (!p) return 'Цена не указана';
+  const low = p.toLowerCase();
+  if (low.includes('бесплат') || low === 'вход свободный') return 'Вход свободный';
+  return p;
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+function handleCopyLink() {
+  const url = window.location.href;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => showToast('Ссылка скопирована'));
+  }
+}
+
+const WANT_TO_GO_BOT = 'mestovnet_bot';
+const wantToGoUrl = (id) => `https://t.me/${WANT_TO_GO_BOT}?start=event_${encodeURIComponent(id)}`;
+const isWantToGo = (id) => localStorage.getItem('want_' + id) === '1';
+
+function markWantToGo(id) {
+  localStorage.setItem('want_' + id, '1');
+  const btn = document.getElementById('wantBtn');
+  const icon = document.getElementById('wantBtnIcon');
+  if (btn) btn.classList.add('is-going');
+  if (icon) icon.innerHTML = '<path d="M20 6L9 17l-5-5"/>';
+}
+
+let allEvents = [];
+let allUpcoming = [];
+let currentEventId = null;
+let shownCount = 4;
+let venueByAlias = {};  // raw venue string → {slug, address}
+let artistByAlias = {};  // raw artist name → {slug, name}
+let isSameGenreList = false;
+
+// Разбивает поле artist так же, как build_artists.py/generate_pages.py:
+// запятые верхнего уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
+function splitArtistField(artist) {
+  const parts = [];
+  let depth = 0, current = '';
+  for (const ch of artist) {
+    if (ch === '(' || ch === '«') { depth++; current += ch; }
+    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
+    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
+    else { current += ch; }
+  }
+  parts.push(current);
+  return parts;
+}
+const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
+function artistParts(name) {
+  return name.split(ARTIST_JOIN_RE)
+    .map(s => s.trim())
+    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
+}
+function resolveArtists(rawArtist) {
+  const found = [];
+  const seen = new Set();
+  splitArtistField(rawArtist || '').forEach(part => {
+    artistParts(part.trim()).forEach(name => {
+      const a = artistByAlias[name.trim()];
+      if (a && !seen.has(a.slug)) { seen.add(a.slug); found.push(a); }
+    });
+  });
+  return found;
+}
+
+async function load() {
+  console.log('load started');
+  const params = new URLSearchParams(window.location.search);
+  let id = params.get('id');
+  if (!id) {
+    const m = window.location.pathname.match(/\/event\/([^\/]+)/);
+    if (m) id = decodeURIComponent(m[1]);
+  }
+  const idxFallback = parseInt(params.get('idx'));
+  console.log('id:', id, 'idx fallback:', idxFallback);
+
+  try {
+    const [res, settingsRes, venuesRes, artistsRes] = await Promise.all([
+      fetch('/events.json'),
+      fetch('/settings.json').catch(() => null),
+      fetch('/venues.json').catch(() => null),
+      fetch('/artists.json').catch(() => null)
+    ]);
+    console.log('fetch status:', res.status);
+    const data = await res.json();
+    console.log('data length:', data.length);
+
+    // Применяем настройки из settings.json
+    let settings = {};
+    if (settingsRes && settingsRes.ok) {
+      settings = await settingsRes.json().catch(() => ({}));
+    }
+    const hiddenSet   = new Set(settings.hidden || []);
+    const cancelledSet = new Set(settings.cancelled || []);
+    const ovNames     = settings.names        || {};
+    const ovTimes     = settings.times        || {};
+    const ovPrices    = settings.prices       || {};
+    const ovImages    = settings.images       || {};
+    const ovCities    = settings.cities       || {};
+    const ovVenues    = settings.venues       || {};
+    const ovDescs     = settings.descriptions || {};
+    const ovGenres    = settings.genres       || {};
+
+    if (venuesRes && venuesRes.ok) {
+      const venuesList = await venuesRes.json().catch(() => []);
+      venuesList.forEach(v => {
+        (v.aliases || []).forEach(alias => { venueByAlias[alias] = v; });
+        venueByAlias[v.name] = v;
+      });
+    }
+
+    if (artistsRes && artistsRes.ok) {
+      const artistsList = await artistsRes.json().catch(() => []);
+      artistsList.forEach(a => {
+        (a.aliases || []).forEach(alias => { artistByAlias[alias] = a; });
+        artistByAlias[a.name] = a;
+      });
+    }
+
+    function applySettings(e) {
+      const url = e.source_url || '';
+      if (hiddenSet.has(url)) return null;
+      const ev = { ...e };
+      if (url in ovNames)   ev.artist      = ovNames[url];
+      if (url in ovTimes)   ev.time        = ovTimes[url];
+      if (url in ovPrices)  ev.price       = ovPrices[url];
+      if (url in ovImages)  ev.image       = ovImages[url] === null ? null : ovImages[url];
+      if (url in ovCities)  ev.source_city = ovCities[url];
+      if (url in ovVenues)  ev.venue       = ovVenues[url];
+      if (url in ovDescs)   ev.description = ovDescs[url];
+      if (url in ovGenres)  ev.genre       = ovGenres[url];
+      if (cancelledSet.has(url)) ev.cancelled = true;
+      return ev;
+    }
+
+    const patched = data.map((e, i) => {
+      const ev = applySettings(e);
+      return ev ? { ...ev, _origIdx: i } : null;
+    });
+
+    const now = new Date();
+
+    const enrich = e => {
+      const d = e.date ? parseDate(e.date) : null;
+      return {
+        ...e,
+        dateObj: d,
+        genre: mapGenre(e.genre),
+        dateFmt: d ? {
+          day: String(d.getDate()).padStart(2, '0'),
+          month: MONTHS_GEN[d.getMonth()],
+          monthShort: ['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'][d.getMonth()],
+          dow: DOW_FULL[d.getDay()],
+          full: `${d.getDate()} ${MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}`
+        } : null,
+        priceDisplay: priceText(e.price),
+        globalIdx: e._origIdx
+      };
+    };
+
+    // все события (прошедшие + предстоящие, с датой и без), чтобы открывалась и страница архивного события
+    allEvents = patched.filter(Boolean).map(enrich);
+
+    const upcoming = allEvents
+      .filter(e => e.date && parseDateTime(e) >= now)
+      .sort((a, b) => a.dateObj - b.dateObj || (a.time || '').localeCompare(b.time || ''));
+
+    let event;
+    if (id) {
+      event = allEvents.find(e => e.id === id);
+    } else if (!isNaN(idxFallback)) {
+      event = allEvents.find(e => e.globalIdx === idxFallback);
+    }
+    event = event || upcoming[0];
+    if (!event) { document.getElementById('content').innerHTML = '<div class="loading">Событие не найдено</div>'; return; }
+
+    currentEventId = event.id;
+    const otherUpcoming = upcoming.filter(e => e.id !== currentEventId);
+    const sameGenre = otherUpcoming.filter(e => e.genre === event.genre);
+    isSameGenreList = sameGenre.length > 0;
+    allUpcoming = isSameGenreList ? sameGenre : otherUpcoming;
+    shownCount = 4;
+
+    renderNavGenres();
+    render(event);
+  } catch (err) {
+    console.error('load error:', err);
+    document.getElementById('content').innerHTML = '<div class="loading">Не удалось загрузить: ' + escapeHtml(err.message) + '</div>';
+  }
+}
+
+function render(event) {
+  document.title = `${event.artist || 'Мероприятие'} — Местов.Нет`;
+
+  const images = event.images && event.images.length ? event.images : (event.image ? [event.image] : []);
+  const posterHtml = images.length
+    ? `<div class="event-poster-wrap">${
+        images.length === 1
+          ? `<img src="${safeUrl(images[0])}" alt="${escapeHtml(event.artist)}" loading="lazy" onerror="posterFallback(this)">`
+          : `<div class="carousel" id="posterCarousel">
+              <div class="carousel-track" id="carouselTrack">
+                ${images.map((img, i) => `<div class="carousel-slide${i === 0 ? ' active' : ''}"><img src="${safeUrl(img)}" alt="${escapeHtml(event.artist)}" loading="lazy" onerror="posterFallback(this)"></div>`).join('')}
+              </div>
+              <button class="carousel-btn carousel-btn-prev" id="carouselPrev">&#8249;</button>
+              <button class="carousel-btn carousel-btn-next" id="carouselNext">&#8250;</button>
+              <div class="carousel-dots" id="carouselDots">
+                ${images.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}" data-slide="${i}"></span>`).join('')}
+              </div>
+            </div>`
+      }</div>`
+    : `<div class="event-poster-wrap"><div class="event-poster-placeholder">${starIcon}</div></div>`;
+
+  const visible = allUpcoming.slice(0, shownCount);
+  const moreCards = visible.map(e => `
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card${e.cancelled ? ' cancelled' : ''}">
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
+      <div class="mini-body">
+        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
+        <div class="mini-artist">${e.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
+      </div>
+    </a>
+  `).join('');
+
+  const html = `
+    <div class="event-hero">
+      <div class="event-hero-inner">
+        <a href="javascript:history.back()" class="event-back">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 3L5 8l5 5"/>
+          </svg>
+          Назад
+        </a>
+        <div class="event-hero-grid">
+          <div class="event-poster-col">${posterHtml}</div>
+          <div class="event-content-col">
+          <div class="event-info">
+            <span class="event-info-genre">${GENRE_LABELS[event.genre]}</span>
+            ${event.cancelled ? '<span class="cancelled-badge event-info-cancelled">Мероприятие отменено</span>' : ''}
+            <h1 class="event-info-artist">${escapeHtml(event.artist) || '—'}</h1>
+            <div class="event-info-venue">${(function(){
+              const vd = venueByAlias[event.venue || ''];
+              const name = escapeHtml(event.venue) || '—';
+              const city = escapeHtml(event.source_city) || '—';
+              return (vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name) + ' · ' + city;
+            })()}</div>
+            <div class="event-info-meta">
+              ${event.dateFmt ? `
+              <div class="event-info-meta-item">
+                <span class="event-info-meta-label">Дата</span>
+                <span class="event-info-meta-value">${event.dateFmt.full}</span>
+              </div>` : ''}
+              ${event.time ? `
+              <div class="event-info-meta-item">
+                <span class="event-info-meta-label">Начало</span>
+                <span class="event-info-meta-value mono">${escapeHtml(event.time)}</span>
+              </div>` : ''}
+              <div class="event-info-meta-item">
+                <span class="event-info-meta-label">Стоимость</span>
+                <span class="event-info-meta-value">${escapeHtml(event.priceDisplay)}</span>
+              </div>
+            </div>
+            <div class="event-info-actions">
+              ${(function(){
+                const going = isWantToGo(event.id);
+                const ticketIcon = '<path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 1 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 1 0 0-4V8z"/><line x1="10" y1="6" x2="10" y2="18" stroke-dasharray="2 2"/>';
+                const checkIcon = '<path d="M20 6L9 17l-5-5"/>';
+                return `
+              <a href="${wantToGoUrl(event.id)}" target="_blank" rel="noopener" class="event-want-btn${going ? ' is-going' : ''}" id="wantBtn" onclick="markWantToGo('${escapeHtml(event.id)}')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" id="wantBtnIcon">${going ? checkIcon : ticketIcon}</svg>
+                <span id="wantBtnText">Я пойду!</span>
+              </a>`;
+              })()}
+              <a href="${safeUrl(event.source_url) || '#'}" target="_blank" rel="noopener" class="event-source-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Источник
+              </a>
+              <button class="event-copy-btn" onclick="handleCopyLink()" aria-label="Скопировать ссылку" title="Скопировать ссылку">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="11" height="11" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="event-main">
+            <div class="section-label">О мероприятии</div>
+            <p class="about-text">${escapeHtml(event.description) || 'Информация уточняется.'}</p>
+            <div class="about-genre"><span class="pill pill-${event.genre}">${GENRE_LABELS[event.genre]}</span></div>
+            ${(function(){
+              const matched = resolveArtists(event.artist || '');
+              if (!matched.length) return '';
+              return `<div class="event-info-artist-links">` + matched.map(a =>
+                `<a href="/artist/${escapeHtml(a.slug)}" class="artist-more-link">${escapeHtml(a.name)}: подробнее</a>`
+              ).join('') + `</div>`;
+            })()}
+
+            ${(function(){
+              const vd = venueByAlias[event.venue || ''];
+              const hasCoords = vd && typeof vd.lat === 'number' && typeof vd.lon === 'number';
+              if (!hasCoords) return '';
+              const name = escapeHtml(event.venue) || '—';
+              const city = escapeHtml(event.source_city) || '—';
+              const nameHtml = vd ? `<a href="/venues/${escapeHtml(vd.slug)}">${name}</a>` : name;
+              const mapHtml = `<div class="event-venue-map-wrap"><div id="event-venue-map"><div class="event-venue-map-loading">Загрузка карты…</div></div></div>`;
+              return `<div class="section-label">Место проведения</div><div class="venue-info"><div class="venue-name">${nameHtml}, ${city}</div>${mapHtml}</div>`;
+            })()}
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-section">
+      <div class="more-header">
+        <div class="more-title">${isSameGenreList ? `Другие мероприятия в жанре «${GENRE_LABELS[event.genre]}»` : 'Другие мероприятия'}</div>
+      </div>
+      <div class="more-grid" id="more-grid">${moreCards}</div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">Показать ещё</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('content').innerHTML = html;
+  initCarousel();
+  updateLoadMoreBtn();
+  initVenueMap(venueByAlias[event.venue || ''], event.source_city);
+}
+
+let ymapsLoading = null;
+function loadYmaps() {
+  if (window.ymaps) return Promise.resolve();
+  if (!ymapsLoading) {
+    ymapsLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU';
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+  return ymapsLoading;
+}
+
+function initVenueMap(vd, city) {
+  const el = document.getElementById('event-venue-map');
+  if (!el || !vd || typeof vd.lat !== 'number' || typeof vd.lon !== 'number') return;
+  const lat = vd.lat, lon = vd.lon;
+  loadYmaps().then(() => ymaps.ready(() => {
+    if (!document.getElementById('event-venue-map')) return; // ушли со страницы, пока грузилась карта
+    el.innerHTML = '';
+    const addr = [vd.address, city].filter(Boolean).join(', ') || 'Крым';
+    const routeUrl = `https://yandex.ru/maps/?rtext=~${lat},${lon}`;
+    const balloonContent = `<div class="balloon-card">`
+      + `<div class="balloon-name">${escapeHtml(vd.name)}</div>`
+      + `<div class="balloon-addr">${escapeHtml(addr)}</div>`
+      + `<a class="balloon-route" href="${routeUrl}" target="_blank" rel="noopener">Как проехать?</a>`
+      + `</div>`;
+    const map = new ymaps.Map(el, { center: [lat, lon], zoom: 16, controls: ['zoomControl'] });
+    const placemark = new ymaps.Placemark([lat, lon], {
+      hintContent: vd.name,
+      balloonContent,
+    }, { preset: 'islands#blueDotIcon' });
+    map.geoObjects.add(placemark);
+    // Карта инициализируется в узкой карточке внутри CSS-грида — размер
+    // контейнера на момент создания карты может ещё измениться (шрифты,
+    // разметка). Яндекс.Карты сами не подстраиваются под ресайз контейнера.
+    requestAnimationFrame(() => map.container.fitToViewport());
+    window.addEventListener('resize', () => map.container.fitToViewport());
+  })).catch(() => {
+    if (el) el.innerHTML = '<div class="event-venue-map-loading">Не удалось загрузить карту</div>';
+  });
+}
+
+function initCarousel() {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  if (!slides.length) return;
+
+  let current = 0;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.slide)));
+  });
+  if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+}
+
+function loadMore() {
+  shownCount += 8;
+  renderMoreCards();
+  updateLoadMoreBtn();
+}
+
+function renderMoreCards() {
+  const visible = allUpcoming.slice(0, shownCount);
+  const moreCards = visible.map(e => `
+    <a href="/event/${escapeHtml(e.id)}" class="mini-card${e.cancelled ? ' cancelled' : ''}">
+      <div class="mini-img ${e.image ? 'bg-'+e.genre : 'bg-default'}">${e.image ? `<img src="${safeUrl(e.image)}" alt="${escapeHtml(e.artist)}" loading="lazy" onerror="this.parentElement.className='mini-img bg-default';this.parentElement.innerHTML=starIcon">` : starIcon}</div>
+      <div class="mini-body">
+        <div class="mini-date">${e.dateFmt.day} ${e.dateFmt.monthShort}${e.time ? ` · ${escapeHtml(e.time)}` : ''}</div>
+        <div class="mini-artist">${e.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${escapeHtml(e.artist) || '—'}</div>
+        <div class="mini-venue">${escapeHtml(e.venue) || '—'} · ${escapeHtml(e.source_city) || '—'}</div>
+      </div>
+    </a>
+  `).join('');
+  document.getElementById('more-grid').innerHTML = moreCards;
+}
+
+function updateLoadMoreBtn() {
+  const btn = document.getElementById('load-more-btn');
+  if (!btn) return;
+  if (shownCount >= allUpcoming.length) {
+    btn.disabled = true;
+    btn.textContent = 'Все загружены';
+  } else {
+    btn.disabled = false;
+    btn.textContent = `Показать ещё (${allUpcoming.length - shownCount})`;
+  }
+}
+
+function renderNavGenres() {
+  const counts = {};
+  const now = new Date();
+  allEvents.filter(e => e.date && parseDateTime(e) >= now)
+    .forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
+  const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];
+  const active = order.filter(g => counts[g]);
+
+  const navHtml = active.map(g =>
+    `<a href="/genre/${g}/" class="nav-genre">${GENRE_LABELS[g]}</a>`
+  ).join('');
+  document.getElementById('nav-genres').innerHTML = navHtml;
+
+  const mobileHtml = active.map(g =>
+    `<a href="/genre/${g}/">${GENRE_LABELS[g]}</a>`
+  ).join('');
+  document.getElementById('genre-strip-mobile').innerHTML = mobileHtml;
+}
+
+load();
+</script>
+<script>
+function openSubModal() {
+  document.getElementById('sub-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeSubModal() {
+  document.getElementById('sub-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSubModal();
+});
+</script>
+</body>
+</html>
