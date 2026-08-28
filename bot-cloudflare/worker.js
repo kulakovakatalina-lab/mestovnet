@@ -373,10 +373,14 @@ function moderationCard(event, position, total) {
 }
 
 function moderationFooter(event) {
-  return [
-    event.reasons?.length && `⚠️ ${event.reasons.map(esc).join(", ")}`,
-    event.source_url && `🔗 <a href="${esc(event.source_url)}">Открыть первоисточник</a>`,
-  ].filter(Boolean).join("\n");
+  const lines = [];
+  if (event.reasons && event.reasons.length) {
+    lines.push(`⚠️ ${event.reasons.map(esc).join(", ")}`);
+  }
+  if (event.source_url) {
+    lines.push(`🔗 <a href="${esc(event.source_url)}">Открыть первоисточник</a>`);
+  }
+  return lines.join("\n");
 }
 
 function splitForTelegram(text, limit = 4000) {
