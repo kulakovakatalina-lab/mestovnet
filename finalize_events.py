@@ -504,6 +504,32 @@ def _artists_look_alike(a: str, b: str) -> bool:
     return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
 
 
+def _artist_is_program_suffix_variant(a: str, b: str) -> bool:
+    """True для «Артист» / «Артист. Название программы», но не равных имён."""
+    ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
+    kb = _bare_artist_key(re.sub(r"\([^)]*\)", "", b))
+    if not ka or not kb or ka == kb:
+        return False
+    short, long = sorted((ka, kb), key=len)
+    return len(short.split()) >= 2 and long.startswith(short + " ")
+
+
+def _descriptions_look_alike(a: dict, b: dict) -> bool:
+    """Проверяет, описывают ли короткие анонсы одну программу.
+
+    Используется только при уже совпавших дате, городу и площадке: так
+    «Джазовый пикник на закате» и «Джазовый пикник на закате с дуэтом»
+    схлопываются, но два независимых концерта в одном клубе — нет.
+    """
+    left = _normalize(a.get("description") or "")
+    right = _normalize(b.get("description") or "")
+    if not left or not right:
+        return False
+    return len(min(left, right, key=len)) >= 18 and (
+        left in right or right in left
+    )
+
+
 _NON_MUSIC_PREFIXES = (
     "экскурсия", "лекция", "мастер-класс", "кинопоказ", "выставка", "standup", "стендап", "музлото",
 )
@@ -630,6 +656,13 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                     stage1[i].get("artist") or "",
                     stage1[j].get("artist") or "",
                 ):
+                    union(i, j)
+                elif ti and tj and ti == tj and _artist_is_program_suffix_variant(
+                    stage1[i].get("artist") or "",
+                    stage1[j].get("artist") or "",
+                ):
+                    union(i, j)
+                elif same_venue and _descriptions_look_alike(stage1[i], stage1[j]):
                     union(i, j)
                 elif same_venue and ti and tj and ti == tj:
                     union(i, j)

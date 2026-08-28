@@ -414,10 +414,10 @@ def test_single_event_keeps_image_album():
     assert events == [{"image": "one.jpg", "images": ["one.jpg", "two.jpg"]}]
 
 
-def test_multiple_events_share_only_a_single_post_image():
+def test_multiple_events_do_not_share_an_ambiguous_post_image():
     events = [{}, {}]
     _assign_event_images(events, ["schedule.jpg"], multi_image_post=False)
     assert events == [
-        {"image": "schedule.jpg", "images": None},
-        {"image": "schedule.jpg", "images": None},
+        {"image": None, "images": None},
+        {"image": None, "images": None},
     ]

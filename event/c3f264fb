@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Анна Шакель (вокал), Андрей Рыбальченко (фортепиано), Севастополь Джаз, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано), Севастополь Джаз, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Анна Шакель (вокал), Андрей Рыбальченко (фортепиано) — Севастополь Джаз, 9 августа · Местов.Нет</title>
+<title>Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано) — Севастополь Джаз, 9 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/c3f264fb">
-<meta property="og:title" content="Анна Шакель (вокал), Андрей Рыбальченко (фортепиано) — Севастополь Джаз, 9 августа · Местов.Нет">
-<meta property="og:description" content="Анна Шакель (вокал), Андрей Рыбальченко (фортепиано), Севастополь Джаз, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано) — Севастополь Джаз, 9 августа · Местов.Нет">
+<meta property="og:description" content="Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано), Севастополь Джаз, в Севастополе, 9 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg">
 <script type="application/ld+json">
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)",
+      "name": "Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)",
       "startDate": "2026-08-09T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Джазовый пикник на закате - большой летний вечер на огромном гольф-поле, где музыка встречается с природой и открытым небом.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)"
+        "name": "Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)"
       },
       "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg"
     }
@@ -991,7 +991,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)"}]}
 </script>
 </head>
 <body>

@@ -1,23 +1,23 @@
 [
   {
-    "id": "2695d548",
+    "id": "c3f264fb",
     "date": "2026-08-09",
-    "time": null,
-    "artist": "Джазовый пикник",
+    "time": "19:00",
+    "artist": "Джазовый пикник, Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)",
     "event_type": "концерт",
     "venue": "Севастополь Джаз",
     "price": null,
-    "description": "Джазовый пикник.",
+    "description": "Джазовый пикник на закате - большой летний вечер на огромном гольф-поле, где музыка встречается с природой и открытым небом.",
     "source_city": "Севастополь",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
-    "source_url": "https://t.me/sevastopol_jazz/1279",
+    "source_url": "https://t.me/sevastopol_jazz/1280",
     "images": [
-      "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg",
-      "/images/events/dae57d7e4e3eab8e7cea1c9db181d530.jpg"
+      "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
+      "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     ],
-    "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg",
-    "post_date": "2026-08-07T17:01:55+00:00"
+    "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
+    "post_date": "2026-08-08T12:53:03+00:00"
   },
   {
     "date": "2026-08-09",
@@ -35,26 +35,6 @@
     "genre": "поп",
     "id": "caccae3e",
     "updated_at": "1970-01-01T00:00:00+00:00"
-  },
-  {
-    "id": "c3f264fb",
-    "date": "2026-08-09",
-    "time": "19:00",
-    "artist": "Анна Шакель (вокал), Андрей Рыбальченко (фортепиано)",
-    "event_type": "концерт",
-    "venue": "Севастополь Джаз",
-    "price": null,
-    "description": "Джазовый пикник на закате - большой летний вечер на огромном гольф-поле, где музыка встречается с природой и открытым небом.",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
-    "genre": "джаз",
-    "source_url": "https://t.me/sevastopol_jazz/1280",
-    "images": [
-      "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
-      "/images/events/a6950247f71fd4caa0e44a61ae8fb2d1.jpg"
-    ],
-    "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
-    "post_date": "2026-08-08T12:53:03+00:00"
   },
   {
     "id": "a8567d27",
@@ -114,21 +94,23 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
+    "id": "5cb733bd",
     "date": "2026-08-11",
-    "time": null,
-    "artist": "Neverlove / Unlvd",
+    "time": "19:00",
+    "artist": "Neverlove / Unlvd, Unluvd",
     "event_type": "концерт",
     "venue": "Jam Club",
-    "price": "скидка по промокоду «jam»",
-    "description": "Акустический (анплагд) концерт Neverlove / Unlvd. Для подписчиков канала действует скидка по промокоду «jam».",
-    "source_channel": "clubjam",
+    "price": "от 1 800 ₽",
+    "description": "Neverlove с особенной программой Unluvd — Анплагд. Группа представит шоу, в котором знакомые треки прозвучат ближе, честнее и атмосфернее.\n\nНе пропустите Neverlove и их новое шоу Unluvd — Анплагд.",
     "source_city": "Симферополь",
-    "post_date": "2026-05-11T08:14:08+00:00",
-    "image": null,
-    "source_url": "https://t.me/clubjam/938",
+    "source_channel": "yandex_afisha",
     "genre": "поп",
-    "id": "f9a31350",
-    "updated_at": "2026-05-11T08:14:08+00:00"
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/neverlove-unluvd-anplagd?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg"
+    ],
+    "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
+    "post_date": "2026-08-11"
   },
   {
     "date": "2026-08-11",
@@ -162,23 +144,6 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/lida-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "2fa5f9bb",
-    "updated_at": "1970-01-01T00:00:00+00:00"
-  },
-  {
-    "date": "2026-08-11",
-    "time": "19:00",
-    "artist": "Unluvd, Neverlove",
-    "venue": "Jam Club",
-    "event_type": "концерт",
-    "price": "от 1 800 ₽",
-    "description": "Neverlove с особенной программой Unluvd — Анплагд. Группа представит шоу, в котором знакомые треки прозвучат ближе, честнее и атмосфернее.\n\nНе пропустите Neverlove и их новое шоу Unluvd — Анплагд.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-11",
-    "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/neverlove-unluvd-anplagd?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "genre": "поп",
-    "id": "5cb733bd",
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
@@ -560,7 +525,7 @@
     "id": "cd775f75",
     "date": "2026-08-15",
     "time": "18:00–04:00",
-    "artist": "Дима Позин, Игорь Симдянкин с «КиШом», Игорь Симдянкин с трибьютом группы «Кино»",
+    "artist": "Дима Позин, Игорь Симдянкин с «КиШом», Игорь Симдянкин с трибьютом группы «Кино», Группа «Кино» в исполнении Игоря Симдянкина",
     "event_type": "трибьют",
     "venue": "Рок-н-рольщики",
     "price": "бесплатно",
@@ -570,7 +535,8 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/466",
     "images": [
-      "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg"
+      "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
+      "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg"
     ],
     "image": "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
     "post_date": "2026-08-15T11:15:48+00:00"
@@ -1121,26 +1087,6 @@
     "updated_at": "1970-01-01T00:00:00+00:00"
   },
   {
-    "id": "259b8985",
-    "date": "2026-09-03",
-    "time": "19:00",
-    "artist": "Олена Уутай",
-    "event_type": "концерт",
-    "venue": "Центр культуры и искусства",
-    "price": "от 800 ₽",
-    "description": "Олена Уутай в Центр культуры и искусства, Севастополь.",
-    "source_city": "Севастополь",
-    "source_channel": "yandex_afisha",
-    "genre": "этно",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/olena-uutai?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "images": [
-      "/images/events/d48c4edd047fc58a1fa1ad14b4781e29.jpg"
-    ],
-    "image": "/images/events/d48c4edd047fc58a1fa1ad14b4781e29.jpg",
-    "post_date": "2026-09-03",
-    "updated_at": "1970-01-01T00:00:00+00:00"
-  },
-  {
     "id": "c055fb4b",
     "date": "2026-09-03",
     "time": "19:00",
@@ -1257,7 +1203,7 @@
     "id": "59e0e5af",
     "date": "2026-09-08",
     "time": "19:00",
-    "artist": "Хиты 2000-х. Караоке с оркестром, Кубанский казачий хор. Русь от края до края",
+    "artist": "Хиты 2000-х. Караоке с оркестром",
     "event_type": "концерт",
     "venue": "Дворец культуры профсоюзов",
     "price": "от 1 590 ₽",
@@ -1462,7 +1408,7 @@
     "event_type": "концерт",
     "venue": "Депо",
     "price": "от 1600 ₽",
-    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября.Набережные Челны. Депо. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
+    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
     "source_city": "Симферополь",
     "source_channel": "afisha_ru",
     "genre": "рок",
@@ -5766,43 +5712,29 @@
     "updated_at": "2026-05-02T11:55:07+00:00"
   },
   {
+    "id": "00f46ec4",
     "date": "2026-05-02",
-    "time": null,
-    "artist": "Что ты делаешь?!?!?!, Metallica Tribute",
-    "event_type": "концерт",
+    "time": "19:00",
+    "artist": "Metallica Tribute, Blackened, Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет",
+    "event_type": "трибьют",
     "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Панк-футуристическая группа из Мытищ (4 девушки и 1 парень) выступает в Jam Club. На разогреве местные группы Трипса и Крыши Нет.",
+    "price": "600р (бесплатно для подписчиков клуба + репост)",
+    "description": "Metallica Tribute by Blackened — 3 часа живого звука. Параллельно второй концерт во втором зале клуба.",
     "source_city": "Симферополь",
     "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/919",
-    "image": null,
-    "post_date": "2026-04-30T12:19:20+00:00",
-    "genre": "панк-рок",
-    "id": "94bd2366",
-    "updated_at": "2026-04-30T12:19:20+00:00"
+    "genre": "метал",
+    "source_url": "https://t.me/clubjam/923",
+    "images": [
+      "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg"
+    ],
+    "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
+    "post_date": "2026-05-02T10:13:03+00:00"
   },
   {
+    "id": "b87cb837",
     "date": "2026-05-02",
     "time": null,
-    "artist": "Май в ритме джаза",
-    "event_type": "фестиваль",
-    "venue": "Palmira Palace",
-    "price": null,
-    "description": "Открытие сезона — фестиваль «Май в ритме джаза»: живой джаз у моря в Palmira Palace. Организатор — «Скажите Джаз».",
-    "source_city": "Ялта",
-    "source_channel": "skazhitejazz",
-    "genre": "джаз",
-    "source_url": "https://t.me/skazhitejazz/1554",
-    "image": null,
-    "post_date": "2026-04-21T08:55:57+00:00",
-    "id": "75c7d12d",
-    "updated_at": "2026-04-21T08:55:57+00:00"
-  },
-  {
-    "date": "2026-05-02",
-    "time": null,
-    "artist": "Скажите Джаз",
+    "artist": "Май в ритме джаза, Скажите Джаз",
     "event_type": "фестиваль",
     "venue": "Palmira Palace Resort & SPA",
     "price": null,
@@ -5810,11 +5742,10 @@
     "source_city": "Ялта",
     "source_channel": "skazhitejazz",
     "genre": "джаз",
-    "source_url": "https://t.me/skazhitejazz/1561",
+    "source_url": "https://t.me/skazhitejazz/1554",
+    "images": null,
     "image": null,
-    "post_date": "2026-04-29T17:23:27+00:00",
-    "id": "b87cb837",
-    "updated_at": "2026-04-29T17:23:27+00:00"
+    "post_date": "2026-04-29T17:23:27+00:00"
   },
   {
     "date": "2026-05-02",
@@ -5924,23 +5855,6 @@
     "genre": "поп",
     "id": "b86d18c0",
     "updated_at": "2026-04-30T15:00:00+00:00"
-  },
-  {
-    "date": "2026-05-02",
-    "time": "19:00",
-    "artist": "Blackened, Что Ты Делаешь?!! (Москва), Трипса, Крыши Нет",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "600р (бесплатно для подписчиков клуба + репост)",
-    "description": "Metallica Tribute by Blackened — 3 часа живого звука. Параллельно второй концерт во втором зале клуба.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "source_url": "https://t.me/clubjam/923",
-    "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
-    "post_date": "2026-05-02T10:13:03+00:00",
-    "genre": "метал",
-    "id": "00f46ec4",
-    "updated_at": "2026-05-02T10:13:03+00:00"
   },
   {
     "date": "2026-05-02",
@@ -6675,23 +6589,6 @@
     "post_date": "2026-08-05T11:51:48+00:00"
   },
   {
-    "date": "2026-08-02",
-    "time": null,
-    "artist": "Дмитрий Зеленский, Любовь Фатеева, Ольга Плетнёва",
-    "event_type": "концерт",
-    "venue": "Севастополь",
-    "price": "500–600 ₽",
-    "description": "Инструментальное трио исполнит популярную классику, произведения из репертуара The Piano Guys и мировые хиты.",
-    "source_channel": "afisha_payberry",
-    "source_city": "Севастополь",
-    "post_date": "2026-07-28T08:30:13+00:00",
-    "image": "/images/events/f74f2d645c842714efeb163fe52c84fa.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-221587243_2445",
-    "id": "3248641f",
-    "genre": "поп"
-  },
-  {
     "date": "2026-08-03",
     "time": null,
     "artist": "Ася Зыкова",
@@ -6974,7 +6871,7 @@
     "id": "79985fd5",
     "date": "2026-08-09",
     "time": "07:45",
-    "artist": "йоги Aura, Студия танцев, фитнеса",
+    "artist": "йоги Aura, Студия танцев, фитнеса, Забег, танцы во Дворе",
     "event_type": "другое",
     "venue": "Гастродвор",
     "price": "бесплатно",
@@ -6984,44 +6881,11 @@
     "genre": "другое",
     "source_url": "https://vk.com/wall-212929583_954",
     "images": [
-      "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg"
+      "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg",
+      "/images/events/2897ebf7def40f15e032f6c68b90973e.jpg"
     ],
     "image": "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg",
     "post_date": "2026-08-06T07:59:16+00:00"
-  },
-  {
-    "date": "2026-08-09",
-    "time": "09:00",
-    "artist": "Забег, танцы во Дворе",
-    "event_type": "другое",
-    "venue": "Гастродвор",
-    "price": "бесплатно",
-    "description": "Забег и танцы во Дворе. Встречаемся на утреннем забеге, танцах и завтраке в отличной компании.",
-    "source_channel": "gastrodvor.yalta",
-    "source_city": "Ялта",
-    "post_date": "2026-07-29T11:55:42+00:00",
-    "image": "/images/events/2897ebf7def40f15e032f6c68b90973e.jpg",
-    "images": null,
-    "source_url": "https://vk.com/wall-212929583_950",
-    "id": "daff3856",
-    "genre": "другое"
-  },
-  {
-    "date": "2026-08-15",
-    "time": null,
-    "artist": "Группа «Кино» в исполнении Игоря Симдянкина",
-    "event_type": "трибьют",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "бесплатно",
-    "description": "День памяти Виктора Цоя: 36 лет как вечно живой. Большой акустический концерт группы «Кино» в исполнении харизматичного Игоря Симдянкина",
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-12T07:10:10+00:00",
-    "image": "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg",
-    "images": null,
-    "source_url": "https://t.me/rocknroll_82/459",
-    "id": "d57be3e6",
-    "genre": "рок"
   },
   {
     "id": "e6fe7eb6",
@@ -7924,24 +7788,24 @@
     "genre": "джаз"
   },
   {
-    "id": "8884d494",
+    "id": "4d7732fe",
     "date": "2026-08-28",
     "time": null,
     "artist": "Поющие джазовые вечера",
     "event_type": "концерт",
-    "venue": "Севастополь",
+    "venue": "Снежинка",
     "price": null,
-    "description": "«Поющие джазовые вечера»",
+    "description": "Джазовый вечер в 'Снежинке'.",
     "source_city": "Севастополь",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/abe3185f87157e4369733ffee2abea65.jpg"
+      "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-19T16:35:44+00:00"
+    "post_date": "2026-08-26T14:42:14+00:00"
   },
   {
     "id": "e5674032",
@@ -7949,7 +7813,7 @@
     "time": null,
     "artist": "Анна Шакель, джаз-трио «А3»",
     "event_type": "концерт",
-    "venue": "Симферополь",
+    "venue": "Ресторан «Мотивы»",
     "price": null,
     "description": "Анна Шакель и джаз-трио «А3»",
     "source_city": "Симферополь",
@@ -7964,24 +7828,24 @@
     "post_date": "2026-08-19T16:35:44+00:00"
   },
   {
-    "id": "8851abba",
+    "id": "f3007c9d",
     "date": "2026-08-30",
     "time": null,
-    "artist": "Джазовый пикник на закате",
+    "artist": "Джазовый пикник на закате, Дуэт с Анной",
     "event_type": "концерт",
-    "venue": "гольф-поле",
+    "venue": "Гольф-поле",
     "price": null,
-    "description": "Джазовый пикник на закате",
+    "description": "Джазовый пикник на закате с дуэтом.",
     "source_city": "Севастополь",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
       "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/6a9ff9e9733ba6db8356e0d0f1f6ea05.jpg"
+      "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-19T16:35:44+00:00"
+    "post_date": "2026-08-26T14:42:14+00:00"
   },
   {
     "id": "4546bee9",
@@ -8023,7 +7887,7 @@
     "id": "470475c6",
     "date": "2026-09-12",
     "time": null,
-    "artist": "Blackened",
+    "artist": "Blackened, METALLICA TRIBUTE",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -8033,8 +7897,7 @@
     "genre": "метал",
     "source_url": "https://t.me/clubjam/1116",
     "images": [
-      "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
-      "/images/events/4ed73eff593cd5bd68bd2e3070297ca1.jpg"
+      "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg"
     ],
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
     "post_date": "2026-08-24T11:16:43+00:00"
@@ -8043,7 +7906,7 @@
     "id": "130504f9",
     "date": "2026-08-30",
     "time": "19:00",
-    "artist": "Rammlied",
+    "artist": "Rammlied, RAMMSTEIN TRIBUTE",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -8053,8 +7916,7 @@
     "genre": "рок",
     "source_url": "https://t.me/clubjam/1117",
     "images": [
-      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-      "/images/events/dc3d093867caaaccfd3135083be3b8d5.jpg"
+      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
     "post_date": "2026-08-27T14:29:13+00:00"
@@ -8235,7 +8097,7 @@
     "description": "В программе – романсы Петра Чайковского, Сергея Рахманинова, Михаила Глинки и других композиторов на стихи великого поэта. Зрителей ждут лирические произведения, выразительные мелодии и истории о любви и чувствах.",
     "source_city": "Гурзуф",
     "source_channel": "koncertykrym",
-    "genre": "поп",
+    "genre": "классика",
     "source_url": "https://t.me/koncertykrym/2264",
     "images": [
       "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
@@ -8260,40 +8122,6 @@
     "images": null,
     "image": null,
     "post_date": "2026-08-19T11:15:49+00:00"
-  },
-  {
-    "id": "ce9cbf8d",
-    "date": "2026-08-30",
-    "time": null,
-    "artist": "RAMMSTEIN TRIBUTE",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Выступление группы, исполняющей песни RAMMSTEIN.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1125",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00"
-  },
-  {
-    "id": "be1360d3",
-    "date": "2026-09-12",
-    "time": null,
-    "artist": "METALLICA TRIBUTE",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Выступление группы, исполняющей песни METALLICA.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "метал",
-    "source_url": "https://t.me/clubjam/1125",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00"
   },
   {
     "id": "fa1ea514",
@@ -8718,47 +8546,6 @@
     "source_url": "https://t.me/afisha_crimea/8330",
     "id": "16a3fb56",
     "genre": "поп"
-  },
-  {
-    "id": "f3007c9d",
-    "date": "2026-08-30",
-    "time": null,
-    "artist": "Дуэт с Анной",
-    "event_type": "концерт",
-    "venue": "Гольф-поле",
-    "price": null,
-    "description": "Джазовый пикник на закате с дуэтом.",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
-    "genre": "джаз",
-    "source_url": "https://vk.com/wall-214055536_2289",
-    "images": [
-      "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg",
-      "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg",
-      "/images/events/abe3185f87157e4369733ffee2abea65.jpg"
-    ],
-    "image": "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg",
-    "post_date": "2026-08-26T14:42:14+00:00"
-  },
-  {
-    "id": "4d7732fe",
-    "date": "2026-08-28",
-    "time": null,
-    "artist": "Поющие джазовые вечера",
-    "event_type": "концерт",
-    "venue": "Снежинка",
-    "price": null,
-    "description": "Джазовый вечер в 'Снежинке'.",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
-    "genre": "джаз",
-    "source_url": "https://t.me/sevastopol_jazz/1298",
-    "images": [
-      "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg",
-      "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg"
-    ],
-    "image": "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg",
-    "post_date": "2026-08-26T14:42:14+00:00"
   },
   {
     "date": "2026-08-27",

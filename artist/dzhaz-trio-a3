@@ -59,7 +59,7 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Симферополь",
+        "name": "Ресторан «Мотивы»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
