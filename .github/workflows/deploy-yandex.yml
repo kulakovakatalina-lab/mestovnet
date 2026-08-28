@@ -84,7 +84,7 @@ jobs:
           mkdir -p _site
           # Файлы в корне
           cp index.html event.html genre.html map.html admin.html 404.html _site/
-          cp events.json settings.json venues.json cities.json artists.json _site/
+          cp events.json moderation.json settings.json venues.json cities.json artists.json _site/
           cp sitemap.xml robots.txt _site/
           cp yandex_c7b51fb2f9cdb188.html _site/
           # Папки целиком
@@ -197,6 +197,15 @@ jobs:
           events = json.load(open('/tmp/events.json'))
           assert isinstance(events, list) and len(events) > 0, 'events.json пуст'
           print(f'OK: {len(events)} событий')
+          "
+
+          echo "2b) moderation.json доступен и валиден"
+          curl -sfSL "$SITE/moderation.json$V" -o /tmp/moderation.json
+          python3 -c "
+          import json
+          queue = json.load(open('/tmp/moderation.json'))
+          assert isinstance(queue, list), 'moderation.json должен быть списком'
+          print(f'OK: {len(queue)} карточек на модерации')
           "
 
           echo "3) Первая страница события из sitemap открывается"
