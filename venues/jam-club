@@ -52,7 +52,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Rammlied, RAMMSTEIN TRIBUTE",
+      "name": "RAMMSTEIN tribute by Rammlied",
       "startDate": "2026-08-30T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -61,7 +61,7 @@
       "description": "RAMMSTEIN TRIBUTE by Rammlied.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Rammlied, RAMMSTEIN TRIBUTE"
+        "name": "RAMMSTEIN tribute by Rammlied"
       },
       "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
     },
