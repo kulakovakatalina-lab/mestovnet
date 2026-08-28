@@ -100,6 +100,40 @@ class TestBareArtistKey:
 
 
 class TestDeduplicateEvents:
+    def test_same_artist_variant_same_city_and_time_merges(self):
+        events = [
+            {
+                "source_url": "https://example.test/yandex",
+                "date": "2026-09-03", "time": "19:00",
+                "artist": "Олена Уутай", "venue": "Центр культуры и искусства",
+                "source_city": "Севастополь",
+            },
+            {
+                "source_url": "https://example.test/afisha",
+                "date": "2026-09-03", "time": "19:00",
+                "artist": "Олена Уутай. Магия Севера", "venue": "Севастопольский ЦКиИ",
+                "source_city": "Севастополь",
+            },
+        ]
+        assert len(deduplicate_events(events)) == 1
+
+    def test_same_venue_and_nested_description_merges_crosspost(self):
+        events = [
+            {
+                "source_url": "https://example.test/telegram",
+                "date": "2026-08-30", "artist": "Джазовый пикник на закате",
+                "venue": "Гольф-поле", "source_city": "Севастополь",
+                "description": "Джазовый пикник на закате",
+            },
+            {
+                "source_url": "https://example.test/vk",
+                "date": "2026-08-30", "artist": "Дуэт с Анной",
+                "venue": "гольф-поле", "source_city": "Севастополь",
+                "description": "Джазовый пикник на закате с дуэтом.",
+            },
+        ]
+        assert len(deduplicate_events(events)) == 1
+
     def test_typo_and_parenthetical_artist_merge_at_same_venue(self):
         base = {
             "date": "2026-08-16",

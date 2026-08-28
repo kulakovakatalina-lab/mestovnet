@@ -486,6 +486,11 @@ def extract_events_single(post: dict, channel_meta: dict, image_path: str) -> li
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
 Если по дням нет конкретных деталей — верни [].
 
+Не переноси название, дату, площадку, цену, описание или постер из другого
+поста в батче. Каждое поле события должно быть явно подтверждено ТЕКУЩИМ
+постом. Город сам по себе не является площадкой: если конкретное место не
+названо, верни venue: null.
+
 Верни JSON-массив событий. Если мероприятий нет — верни [].
 Верни только JSON, без пояснений."""
 
@@ -575,6 +580,11 @@ def extract_events_batch(posts: list[dict], channel_meta: dict) -> dict[str, lis
 
 Если пост содержит расписание/афишу на несколько дней — извлеки отдельное мероприятие на каждую дату ТОЛЬКО если для неё указан конкретный исполнитель/группа или другие детали (время, цена).
 Если по дням нет конкретных деталей — верни пустой массив [].
+
+Не переноси название, дату, площадку, цену, описание или постер между POST.
+Каждое поле события должно быть явно подтверждено именно тем POST, в ключе
+которого оно возвращается. Город не является площадкой: если место не
+названо, возвращай venue: null.
 
 Если мероприятий нет ни в одном посте — верни {{}}.
 Верни только JSON, без пояснений."""
@@ -1232,6 +1242,31 @@ def _artists_look_alike(a: str, b: str) -> bool:
     return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
 
 
+def _artist_is_program_suffix_variant(a: str, b: str) -> bool:
+    """True для «Артист» / «Артист. Название программы», но не равных имён."""
+    ka = _bare_artist_key(re.sub(r"\([^)]*\)", "", a))
+    kb = _bare_artist_key(re.sub(r"\([^)]*\)", "", b))
+    if not ka or not kb or ka == kb:
+        return False
+    short, long = sorted((ka, kb), key=len)
+    return len(short.split()) >= 2 and long.startswith(short + " ")
+
+
+def _descriptions_look_alike(a: dict, b: dict) -> bool:
+    """Сравнивает варианты короткого анонса одной программы.
+
+    Вызывается только после совпадения даты и площадки, поэтому не склеивает
+    независимые концерты, а ловит перепосты вроде «Джазового пикника» и
+    «Джазового пикника с дуэтом».
+    """
+    left = _normalize(a.get("description") or "")
+    right = _normalize(b.get("description") or "")
+    if not left or not right:
+        return False
+    short = min(left, right, key=len)
+    return len(short) >= 18 and (left in right or right in left)
+
+
 def _events_are_duplicates(a: dict, b: dict) -> bool:
     """Единый критерий содержательного дубля для парсера и проверок данных."""
     if not a.get("date") or a.get("date") != b.get("date"):
@@ -1264,10 +1299,31 @@ def _events_are_duplicates(a: dict, b: dict) -> bool:
 
     if same_artist and (same_venue or not vi or not vj):
         return True
+    # Витрины часто по-разному пишут название одной программы: «Олена Уутай»
+    # и «Олена Уутай. Магия Севера». Если артист совпадает нечётко, город и
+    # точное время одинаковы, это физически один концерт даже при разных
+    # вариантах названия площадки.
+    if same_time and _artist_is_program_suffix_variant(
+        a.get("artist") or "", b.get("artist") or ""
+    ):
+        return True
     if same_venue and _artists_look_alike(a.get("artist") or "", b.get("artist") or ""):
+        return True
+    if same_venue and _descriptions_look_alike(a, b):
         return True
     if same_venue and same_time:
         return True
+    if same_venue:
+        desc_a = _normalize(a.get("description") or "")
+        desc_b = _normalize(b.get("description") or "")
+        # «Blackened» и «Metallica tribute by Blackened» могут прийти из
+        # разных источников как название группы и как название программы.
+        # В этом случае название одного события прямо присутствует в
+        # описании другого; при совпавшей площадке и дате это дубль.
+        return bool(
+            (ai and any(name in desc_b for name in ai))
+            or (aj and any(name in desc_a for name in aj))
+        )
     if (ai or aj) and (not ai or not aj) and same_venue:
         return True
     if (ai or aj) and (not ai or not aj):
@@ -1476,9 +1532,9 @@ def _assign_event_images(events: list[dict], local_images: list[str], *, multi_i
     """Назначает постеры без предположений о невидимом содержимом картинок.
 
     Единственному событию можно отдать весь альбом. Для нескольких событий
-    один настоящий постер безопасно использовать как общую афишу. Если же и
-    событий, и картинок несколько, соответствие неоднозначно — лучше оставить
-    карточки без постера, чем показать чужую дату или другого исполнителя.
+    соответствие постера без визуального анализа неоднозначно — даже если
+    картинка в посте всего одна. Лучше оставить карточки без постера, чем
+    показать чужую дату или другого исполнителя.
     """
     if not events or not local_images:
         for event in events:
@@ -1495,7 +1551,7 @@ def _assign_event_images(events: list[dict], local_images: list[str], *, multi_i
             event["images"] = None
         return
     for event in events:
-        event["image"] = local_images[0]
+        event["image"] = None
         event["images"] = None
 
 
