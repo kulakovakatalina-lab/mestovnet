@@ -17,7 +17,11 @@
       "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg"
     ],
     "image": "/images/events/f220a1fc6f04d129b42f231b6e5cb172.jpg",
-    "post_date": "2026-08-08T12:53:03+00:00"
+    "post_date": "2026-08-08T12:53:03+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-09",
@@ -34,7 +38,9 @@
     "post_date": "2026-08-09",
     "genre": "поп",
     "id": "caccae3e",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "a8567d27",
@@ -54,7 +60,9 @@
       "/images/events/f8742abfaec57d2658539027cd76703f.jpg"
     ],
     "image": "/images/events/870ddec1de045d0ce280fe14522a5391.jpg",
-    "post_date": "2026-08-05T11:51:00+00:00"
+    "post_date": "2026-08-05T11:51:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "a773ec81",
@@ -74,7 +82,9 @@
     ],
     "image": "/images/events/427f2e6e36f241d4e4220b23580ce621.jpg",
     "post_date": "2026-08-10",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-10",
@@ -91,7 +101,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "00ae5df9",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "5cb733bd",
@@ -110,7 +122,9 @@
       "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg"
     ],
     "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
-    "post_date": "2026-08-11"
+    "post_date": "2026-08-11",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -127,7 +141,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "e7ad7862",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -144,7 +160,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/lida-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "2fa5f9bb",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -161,7 +179,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/khor-sretenskogo-monastyria-rossiya-u-nas-odna?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "хоровая",
     "id": "80de7880",
-    "updated_at": "2026-07-22T04:30:06.898820+00:00"
+    "updated_at": "2026-07-22T04:30:06.898820+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -178,7 +198,9 @@
     "source_url": "https://www.afisha.ru/concert/grigoriy-leps-2295879/",
     "genre": "поп",
     "id": "2fb57618",
-    "updated_at": "2026-06-30T04:22:37.413690+00:00"
+    "updated_at": "2026-06-30T04:22:37.413690+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -198,7 +220,9 @@
     "image": "/images/events/84ea039de29bcac109240d7eadd3d61f.jpg",
     "post_date": "2026-08-11",
     "id": "1c9ec2a0",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "865f18cd",
@@ -218,7 +242,9 @@
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-12",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "1ef543fb",
@@ -238,7 +264,9 @@
     ],
     "image": "/images/events/03bfb0863bc4a9adc17e6fa62e2f4ad0.jpg",
     "post_date": "2026-08-12",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-12",
@@ -255,7 +283,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/grigorii-leps-bkshow?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "d14c8230",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-13",
@@ -272,7 +302,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "c950e969",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "c9bac59d",
@@ -292,7 +324,9 @@
     ],
     "image": "/images/events/00d7ec0eb22495a01a9a621a459754a1.jpg",
     "post_date": "2026-08-13",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "c53a5d10",
@@ -311,7 +345,9 @@
       "/images/events/784f74edb8081edb7f33c9fd2eb54063.jpg"
     ],
     "image": "/images/events/784f74edb8081edb7f33c9fd2eb54063.jpg",
-    "post_date": "2026-08-09T12:38:03+00:00"
+    "post_date": "2026-08-09T12:38:03+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "742a18c6",
@@ -331,7 +367,11 @@
       "/images/events/aa9fc478e61bb1547ad1bbad38e8ff26.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-13T17:02:02+00:00"
+    "post_date": "2026-08-13T17:02:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-14",
@@ -348,7 +388,9 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/vladimir-zhdamirov-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "3f63d368",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-14",
@@ -368,7 +410,9 @@
     ],
     "image": "/images/events/24b1ef623050ed6cd67138099025047a.jpg",
     "post_date": "2026-08-14",
-    "id": "fa423a50"
+    "id": "fa423a50",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-14",
@@ -388,7 +432,9 @@
     ],
     "image": "/images/events/097cd737ab1aa699f30afafa57818b00.jpg",
     "post_date": "2026-08-14T05:36:00.764259+00:00",
-    "id": "6f56a1bc"
+    "id": "6f56a1bc",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "0b0db992",
@@ -408,7 +454,9 @@
       "/images/events/7b8f979a07d4955ba8b671aa1cde19d9.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-14T19:15:16+00:00"
+    "post_date": "2026-08-14T19:15:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -425,7 +473,12 @@
     "source_url": "https://t.me/skazhitejazz/1564",
     "genre": "джаз",
     "id": "6e9fa104",
-    "updated_at": "2026-04-30T19:14:50+00:00"
+    "updated_at": "2026-04-30T19:14:50+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-15",
@@ -442,7 +495,12 @@
     "image": "/images/events/0a61aac67e4e585c383868f6511f505e.jpg",
     "genre": "джаз",
     "id": "75254260",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "7e51b481",
@@ -462,7 +520,11 @@
       "/images/events/fccdd14f8d8368d73a8e42e79b98acd3.jpg"
     ],
     "image": "/images/events/db786528a97ef05d8fcaedde6e07d6f4.jpg",
-    "post_date": "2026-08-06T12:19:17+00:00"
+    "post_date": "2026-08-06T12:19:17+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "9135013e",
@@ -482,7 +544,11 @@
       "/images/events/aa9fc478e61bb1547ad1bbad38e8ff26.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-13T17:02:02+00:00"
+    "post_date": "2026-08-13T17:02:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-15",
@@ -502,7 +568,9 @@
     ],
     "image": "/images/events/cddd454127930809fde84bdafbf6e6dc.jpg",
     "post_date": "2026-08-15T04:29:40.868656+00:00",
-    "id": "be7ad445"
+    "id": "be7ad445",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -519,7 +587,9 @@
     "post_date": "2026-08-15",
     "genre": "хип-хоп",
     "id": "136320c2",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "cd775f75",
@@ -539,7 +609,9 @@
       "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg"
     ],
     "image": "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
-    "post_date": "2026-08-15T11:15:48+00:00"
+    "post_date": "2026-08-15T11:15:48+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-16",
@@ -556,7 +628,12 @@
     "source_url": "https://t.me/skazhitejazz/1564",
     "genre": "джаз",
     "id": "42da48cf",
-    "updated_at": "2026-04-30T19:14:50+00:00"
+    "updated_at": "2026-04-30T19:14:50+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "a719b813",
@@ -576,7 +653,11 @@
       "/images/events/80b251e916de2c2089deca1aff41c16b.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-    "post_date": "2026-08-16T06:13:47+00:00"
+    "post_date": "2026-08-16T06:13:47+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-16",
@@ -593,7 +674,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/polina-gagarina-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "f449eda0",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-16",
@@ -610,7 +693,9 @@
     "source_url": "https://www.afisha.ru/concert/scally-milano-6032074/",
     "genre": "хип-хоп",
     "id": "f49046ae",
-    "updated_at": "2026-07-28T06:16:03.573849+00:00"
+    "updated_at": "2026-07-28T06:16:03.573849+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "53d59ddd",
@@ -630,7 +715,9 @@
       "/images/events/a8ae603a75d7ec35fe28d3c27f1dbfa8.jpg"
     ],
     "image": "/images/events/db9238792b7a257ec7aeb78ccd78af81.jpg",
-    "post_date": "2026-08-16T10:13:00+00:00"
+    "post_date": "2026-08-16T10:13:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "008e41ba",
@@ -650,7 +737,11 @@
       "/images/events/cd4a8c59dab6447ddf4f1f30ba267f86.jpg"
     ],
     "image": "/images/events/8937e7129a039d484dde69da95c91279.jpg",
-    "post_date": "2026-08-07T10:10:33+00:00"
+    "post_date": "2026-08-07T10:10:33+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "a20ae461",
@@ -670,7 +761,11 @@
       "/images/events/aa9fc478e61bb1547ad1bbad38e8ff26.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-13T17:02:02+00:00"
+    "post_date": "2026-08-13T17:02:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "15fd879d",
@@ -690,7 +785,11 @@
       "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-21T17:20:26+00:00"
+    "post_date": "2026-08-21T17:20:26+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "855b66bc",
@@ -710,7 +809,11 @@
       "/images/events/f2e32c176d553f6c01e30956b8465517.jpg"
     ],
     "image": "/images/events/3dc0febcbcbcf3f9a8af80f5c875b958.jpg",
-    "post_date": "2026-08-20T14:43:45+00:00"
+    "post_date": "2026-08-20T14:43:45+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "4f1423cc",
@@ -730,7 +833,12 @@
       "/images/events/4219f5dc1148cfc918f334aca454d833.jpg"
     ],
     "image": "/images/events/69a2eb22bffcbcca0ec4749abe3b4246.jpg",
-    "post_date": "2026-08-07T17:01:55+00:00"
+    "post_date": "2026-08-07T17:01:55+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-22",
@@ -747,7 +855,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/party/sunset-vibes-2026?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "61bd6dcf",
-    "updated_at": "2026-07-20T05:00:33.233234+00:00"
+    "updated_at": "2026-07-20T05:00:33.233234+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "fb78a24b",
@@ -767,7 +877,11 @@
       "/images/events/aa9fc478e61bb1547ad1bbad38e8ff26.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-13T17:02:02+00:00"
+    "post_date": "2026-08-13T17:02:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-22",
@@ -784,7 +898,9 @@
     "post_date": "2026-08-22",
     "genre": "рок",
     "id": "475b28f4",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-22",
@@ -801,7 +917,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/irina-i-aleksandr-krug?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "a500d197",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "cfd1c230",
@@ -821,7 +939,9 @@
       "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
     ],
     "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
-    "post_date": "2026-08-22T09:32:44+00:00"
+    "post_date": "2026-08-22T09:32:44+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "e12f7005",
@@ -841,7 +961,9 @@
     ],
     "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
     "post_date": "2026-08-23",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-23",
@@ -858,7 +980,9 @@
     "post_date": "2026-08-23",
     "genre": "рок",
     "id": "0f539d8d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-24",
@@ -878,7 +1002,9 @@
     ],
     "image": "/images/events/1cc2be6cb736bc6efad2ed9aa723d576.jpg",
     "post_date": "2026-08-24",
-    "id": "82cde712"
+    "id": "82cde712",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "b4b75a5d",
@@ -898,7 +1024,9 @@
       "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
     ],
     "image": "/images/events/01873170526cb87b0894114f0f5ef245.jpg",
-    "post_date": "2026-08-25T04:42:14.815237+00:00"
+    "post_date": "2026-08-25T04:42:14.815237+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-25",
@@ -918,7 +1046,9 @@
     "image": "/images/events/89c039836f9198387fc0a6a596ad5de3.jpg",
     "post_date": "2026-08-25",
     "id": "42687b0b",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "0b89699e",
@@ -938,7 +1068,9 @@
     ],
     "image": "/images/events/81b8e499655fb4660eab2539a00eb535.jpg",
     "post_date": "2026-08-26",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-26",
@@ -955,7 +1087,9 @@
     "source_url": "https://www.afisha.ru/concert/lyubov-uspenskaya-2280306/",
     "genre": "поп",
     "id": "c27408ac",
-    "updated_at": "2026-06-30T04:22:21.364037+00:00"
+    "updated_at": "2026-06-30T04:22:21.364037+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-27",
@@ -972,7 +1106,9 @@
     "source_url": "https://www.afisha.ru/concert/lyubov-uspenskaya-2280306/",
     "genre": "поп",
     "id": "951f996f",
-    "updated_at": "2026-06-30T04:22:22.547517+00:00"
+    "updated_at": "2026-06-30T04:22:22.547517+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "782cdf22",
@@ -991,7 +1127,11 @@
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-27T05:59:59+00:00"
+    "post_date": "2026-08-27T05:59:59+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "3ea574df",
@@ -1011,7 +1151,11 @@
       "/images/events/cfeafb57cac4af73e289e064bfe7dced.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-26T16:12:08+00:00"
+    "post_date": "2026-08-26T16:12:08+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "7cde7cba",
@@ -1030,7 +1174,11 @@
       "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-27T05:59:59+00:00"
+    "post_date": "2026-08-27T05:59:59+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "c87294a6",
@@ -1050,7 +1198,11 @@
       "/images/events/cfeafb57cac4af73e289e064bfe7dced.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-26T16:12:08+00:00"
+    "post_date": "2026-08-26T16:12:08+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-30",
@@ -1067,7 +1219,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-glavnaia-muzyka-stoletiia-chast-2?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "метал",
     "id": "1a81de71",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+    "updated_at": "2026-07-23T08:12:03.239668+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-30",
@@ -1084,7 +1238,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/khaski-2026-08-30?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "34857b2d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "c055fb4b",
@@ -1103,7 +1259,9 @@
       "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg"
     ],
     "image": "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg",
-    "post_date": "2026-08-27T15:01:51.001295+00:00"
+    "post_date": "2026-08-27T15:01:51.001295+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "8ce78df0",
@@ -1122,7 +1280,9 @@
       "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
     ],
     "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg",
-    "post_date": "2026-08-22T04:35:03.314079+00:00"
+    "post_date": "2026-08-22T04:35:03.314079+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-09-06",
@@ -1139,7 +1299,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк",
     "id": "15bf75c9",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "9147e7cb",
@@ -1159,7 +1321,9 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
-    "post_date": "2026-08-27T15:01:53.051370+00:00"
+    "post_date": "2026-08-27T15:01:53.051370+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "3e656258",
@@ -1178,7 +1342,9 @@
       "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg"
     ],
     "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg",
-    "post_date": "2026-08-22T04:35:05.748381+00:00"
+    "post_date": "2026-08-22T04:35:05.748381+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "9c5a4abf",
@@ -1197,7 +1363,9 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg",
-    "post_date": "2026-08-27T15:01:56.202577+00:00"
+    "post_date": "2026-08-27T15:01:56.202577+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "59e0e5af",
@@ -1216,7 +1384,9 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-09-08"
+    "post_date": "2026-09-08",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-09-12",
@@ -1233,7 +1403,11 @@
     "image": "/images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg",
     "genre": "классика",
     "id": "2de42511",
-    "updated_at": "2026-07-26T11:29:00.761599+00:00"
+    "updated_at": "2026-07-26T11:29:00.761599+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "07dbf5d4",
@@ -1253,7 +1427,9 @@
       "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     ],
     "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
-    "post_date": "2026-09-18"
+    "post_date": "2026-09-18",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "5b51bcd1",
@@ -1273,7 +1449,9 @@
       "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     ],
     "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png",
-    "post_date": "2026-09-19"
+    "post_date": "2026-09-19",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-09-23",
@@ -1290,7 +1468,11 @@
     "source_url": "https://www.afisha.ru/concert/duet-para-6031954/",
     "genre": "поп",
     "id": "ead3fc25",
-    "updated_at": "2026-06-30T04:22:27.332047+00:00"
+    "updated_at": "2026-06-30T04:22:27.332047+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-09-24",
@@ -1307,7 +1489,11 @@
     "source_url": "https://www.afisha.ru/concert/duet-para-6031954/",
     "genre": "поп",
     "id": "533162bc",
-    "updated_at": "2026-06-30T04:22:27.332127+00:00"
+    "updated_at": "2026-06-30T04:22:27.332127+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-09-26",
@@ -1324,7 +1510,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/festival/festival-winepark?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "f560e22d",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-10-08",
@@ -1341,7 +1529,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "другое",
     "id": "a019cd85",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-10-20",
@@ -1358,7 +1548,9 @@
     "post_date": "2026-10-20",
     "genre": "фолк-метал",
     "id": "8b310aaf",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "f2113f78",
@@ -1378,7 +1570,9 @@
     ],
     "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg",
     "post_date": "2026-10-21",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "5488e4d2",
@@ -1398,7 +1592,9 @@
       "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
     ],
     "image": "/images/events/25d0e8d15cc663edb70bc99ef0eddfc6.jpg",
-    "post_date": "2026-11-03"
+    "post_date": "2026-11-03",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "4993369e",
@@ -1417,7 +1613,9 @@
       "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
     ],
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "post_date": "2026-08-27T15:01:51.001234+00:00"
+    "post_date": "2026-08-27T15:01:51.001234+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "136c757e",
@@ -1437,7 +1635,9 @@
       "/images/events/78bcb75dee03946b523a0f71e5affb3d.jpg"
     ],
     "image": "/images/events/8439b6dfa9dc0732c1213f4b754206c7.jpg",
-    "post_date": "2026-11-17"
+    "post_date": "2026-11-17",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2027-07-19",
@@ -1454,7 +1654,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "8d08e0ce",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2027-07-20",
@@ -1471,7 +1673,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "b2aaf09f",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2027-07-23",
@@ -1488,7 +1692,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "c90f59a9",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2027-07-24",
@@ -1505,7 +1711,9 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "7ac6d093",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "8aeebfd5",
@@ -1525,7 +1733,9 @@
       "/images/events/9db5eafce08a3f28ff43335f8bafe7e2.jpg"
     ],
     "image": "/images/events/786f3b4403256aa653efab94fae3327f.jpg",
-    "post_date": "2026-08-11T08:52:20+00:00"
+    "post_date": "2026-08-11T08:52:20+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-08",
@@ -1542,7 +1752,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "d0ef93ba",
-    "updated_at": "2026-07-14T03:34:09.065873+00:00"
+    "updated_at": "2026-07-14T03:34:09.065873+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-08",
@@ -1562,7 +1774,9 @@
     ],
     "image": "/images/events/d85d085b18ed0f87fd8433932daf11e7.jpg",
     "post_date": "2026-08-08T11:13:10+00:00",
-    "id": "38700fa6"
+    "id": "38700fa6",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "8efb317e",
@@ -1582,7 +1796,11 @@
       "/images/events/46dd4db15fe830546722c9a3330a2902.jpg"
     ],
     "image": "/images/events/9a82fb0194ae87e138eeaf2aa40438c2.jpg",
-    "post_date": "2026-08-11T15:17:35+00:00"
+    "post_date": "2026-08-11T15:17:35+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-08",
@@ -1599,7 +1817,9 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "фолк",
     "id": "bfc5064d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "1f6057bc",
@@ -1619,7 +1839,9 @@
       "/images/events/02126204ffa5415b16f9aaa4c0930db9.jpg"
     ],
     "image": "/images/events/c1cd5400928d6dff8b030bc7cba7eb36.jpg",
-    "post_date": "2026-08-08T10:53:42+00:00"
+    "post_date": "2026-08-08T10:53:42+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-07",
@@ -1639,7 +1861,9 @@
     ],
     "image": "/images/events/000f8a53df0742d2f74b10269ed99746.jpg",
     "post_date": "2026-08-07T10:00:47+00:00",
-    "id": "df97d5dd"
+    "id": "df97d5dd",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-07",
@@ -1656,7 +1880,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/nightwish-tribute-show?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "ac0e017c",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-07",
@@ -1673,7 +1899,9 @@
     "source_url": "https://www.afisha.ru/concert/avet-markaryan-6039976/",
     "genre": "поп",
     "id": "8739c473",
-    "updated_at": "2026-07-02T05:50:31.819543+00:00"
+    "updated_at": "2026-07-02T05:50:31.819543+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "fee50c0a",
@@ -1693,7 +1921,11 @@
       "/images/events/80af107999c43f269d7b8e363f81b076.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-07T08:09:44+00:00"
+    "post_date": "2026-08-07T08:09:44+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "cfd1ba69",
@@ -1713,7 +1945,9 @@
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
     "post_date": "2026-08-06",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "d94fa447",
@@ -1734,7 +1968,9 @@
     ],
     "image": "/images/events/560ea57dd4f5f8557cd28ddc63273d92.jpg",
     "post_date": "2026-08-05",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-02",
@@ -1751,7 +1987,11 @@
     "image": "/images/events/9f55d1b66acf96977c953be2a4376fe0.jpg",
     "genre": "классика",
     "id": "fb535329",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-02",
@@ -1768,7 +2008,9 @@
     "image": "/images/events/44b93c777ea4431b368a3bf234b9aa73.jpg",
     "genre": "поп",
     "id": "08eb1417",
-    "updated_at": "2026-07-27T06:46:25.629334+00:00"
+    "updated_at": "2026-07-27T06:46:25.629334+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-02",
@@ -1785,7 +2027,9 @@
     "post_date": "2026-08-02",
     "genre": "рок",
     "id": "96b48a80",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-01",
@@ -1802,7 +2046,12 @@
     "source_url": "https://t.me/skazhitejazz/1553",
     "genre": "джаз",
     "id": "fe6c477a",
-    "updated_at": "2026-04-13T07:39:52+00:00"
+    "updated_at": "2026-04-13T07:39:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -1819,7 +2068,13 @@
     "image": null,
     "genre": "другое",
     "id": "91320d8f",
-    "updated_at": "2026-07-26T11:29:00.761599+00:00"
+    "updated_at": "2026-07-26T11:29:00.761599+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -1836,7 +2091,11 @@
     "image": "/images/events/8e9783ebb7a1032f231c762afb000fb8.jpg",
     "genre": "классика",
     "id": "c0c55fe7",
-    "updated_at": "2026-07-22T04:30:06.898820+00:00"
+    "updated_at": "2026-07-22T04:30:06.898820+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -1853,7 +2112,11 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/taisiia-povalii-2026-07-31?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "a1f90a79",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "updated_at": "2026-07-04T09:32:45.310085+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-31",
@@ -1870,7 +2133,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/pogruzhenie-pod-zemlioi?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "01dc961d",
-    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+    "updated_at": "2026-07-24T06:39:58.799677+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-31",
@@ -1887,7 +2152,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/taisiia-povalii-2026-07-31?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "12de58ae",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "1633413b",
@@ -1908,7 +2175,9 @@
     ],
     "image": "/images/events/330d0accf79808e08686bc3dba50aaa5.jpg",
     "post_date": "2026-07-31",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-31",
@@ -1925,7 +2194,9 @@
     "image": "/images/events/dfb80641ae7644379da053cb9b00fe89.jpg",
     "genre": "русский рок",
     "id": "f6c94375",
-    "updated_at": "2026-07-28T06:16:03.573849+00:00"
+    "updated_at": "2026-07-28T06:16:03.573849+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-31",
@@ -1945,7 +2216,11 @@
     ],
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-31T09:24:25+00:00",
-    "id": "9bee1075"
+    "id": "9bee1075",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "4bd9e72c",
@@ -1966,7 +2241,9 @@
     ],
     "image": "/images/events/a931a0da4308526f14eba1b3b45b23ca.jpg",
     "post_date": "2026-07-27T06:38:27.494463+00:00",
-    "updated_at": "2026-07-27T06:46:25.629334+00:00"
+    "updated_at": "2026-07-27T06:46:25.629334+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-26",
@@ -1983,7 +2260,12 @@
     "image": "/images/events/31392cb31092ac55412039ca5bb87c2f.jpg",
     "genre": "поп",
     "id": "1a434b65",
-    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+    "updated_at": "2026-07-24T06:39:58.799677+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2000,7 +2282,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "16e1554b",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2017,7 +2303,11 @@
     "image": "/images/events/f817f7edc7b58c13551446ef97de1615.jpg",
     "genre": "джаз",
     "id": "dc0367a2",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+    "updated_at": "2026-07-23T08:12:03.239668+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2034,7 +2324,11 @@
     "image": "/images/events/a4cbd24c29fd001673bafe0d17f96c36.jpg",
     "genre": "классика",
     "id": "59e69adb",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+    "updated_at": "2026-07-23T08:12:03.239668+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2051,7 +2345,11 @@
     "image": "/images/events/10548fa8fc65217d17790b9c596bcc78.jpg",
     "genre": "джаз",
     "id": "fb014149",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2068,7 +2366,11 @@
     "image": "/images/events/1c16c721131076a652480008e4c6ce2b.jpg",
     "genre": "классика",
     "id": "3b7b1075",
-    "updated_at": "2026-07-26T11:29:00.761599+00:00"
+    "updated_at": "2026-07-26T11:29:00.761599+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-26",
@@ -2085,7 +2387,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/kontsert-pogruzhenie-pod-kupolom-teleskopa?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "efc08d30",
-    "updated_at": "2026-07-11T06:10:16.306506+00:00"
+    "updated_at": "2026-07-11T06:10:16.306506+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-26",
@@ -2102,7 +2406,9 @@
     "post_date": "2026-07-26",
     "genre": "поп",
     "id": "6b292afd",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "74649dad",
@@ -2123,7 +2429,9 @@
     ],
     "image": "/images/events/e6cb139ea7013442a7f07b5e35a4d5d7.jpg",
     "post_date": "2026-07-26",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-26",
@@ -2144,7 +2452,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "id": "75d27e70",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-25",
@@ -2161,7 +2473,12 @@
     "image": null,
     "genre": "метал",
     "id": "ce7879db",
-    "updated_at": "2026-07-20T05:00:33.233234+00:00"
+    "updated_at": "2026-07-20T05:00:33.233234+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет постера"
+    ]
   },
   {
     "id": "db68ab6e",
@@ -2182,7 +2499,11 @@
     ],
     "image": "/images/events/5dbc4ae3aae094a265fe892ae168697b.jpg",
     "post_date": "2026-07-22T10:20:17+00:00",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+    "updated_at": "2026-07-23T08:12:03.239668+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "31082f74",
@@ -2203,7 +2524,11 @@
     ],
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-25",
@@ -2220,7 +2545,9 @@
     "image": "/images/events/97028b70581036c0f1949058856bf625.jpg",
     "genre": "другое",
     "id": "15937169",
-    "updated_at": "2026-07-21T05:29:03.934719+00:00"
+    "updated_at": "2026-07-21T05:29:03.934719+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "f937c01c",
@@ -2241,7 +2568,9 @@
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-25",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-25",
@@ -2258,7 +2587,9 @@
     "source_url": "https://www.afisha.ru/concert/chestniy-6024572/",
     "genre": "хип-хоп",
     "id": "b87a457a",
-    "updated_at": "2026-06-30T04:22:25.421071+00:00"
+    "updated_at": "2026-06-30T04:22:25.421071+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-25",
@@ -2275,7 +2606,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/elbrus-dzhanmirzoyev-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "7391a631",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-25",
@@ -2296,7 +2629,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-23",
     "id": "6cc625c3",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-24",
@@ -2313,7 +2650,11 @@
     "image": "/images/events/1e973fa271d4611af9731ceb97b098dc.jpg",
     "genre": "поп",
     "id": "7d144cb4",
-    "updated_at": "2026-07-22T04:30:06.898820+00:00"
+    "updated_at": "2026-07-22T04:30:06.898820+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "e980146b",
@@ -2334,7 +2675,11 @@
     ],
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-16T17:48:55+00:00",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-24",
@@ -2351,7 +2696,9 @@
     "image": "/images/events/e405d627ed8b9e28c3b8cf2cf171d00e.jpg",
     "genre": "метал",
     "id": "b7316536",
-    "updated_at": "2026-07-24T06:39:58.799677+00:00"
+    "updated_at": "2026-07-24T06:39:58.799677+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "f4c87da8",
@@ -2372,7 +2719,9 @@
     ],
     "image": "/images/events/451270406988b08b5e25ffbabb5a6966.jpg",
     "post_date": "2026-07-24",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-24",
@@ -2389,7 +2738,9 @@
     "image": "/images/events/3d7756193db58af8fb3343e8465ed285.jpg",
     "genre": "классика",
     "id": "9ac23ecf",
-    "updated_at": "2026-07-21T05:29:03.934719+00:00"
+    "updated_at": "2026-07-21T05:29:03.934719+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-24",
@@ -2409,7 +2760,9 @@
     "image": "/images/events/bcac50f1bd91d3e061ab76edd84f4c29.jpg",
     "post_date": "2026-07-24",
     "id": "48be9f32",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-24",
@@ -2430,7 +2783,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-23",
     "id": "0b07af12",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-23",
@@ -2447,7 +2804,12 @@
     "image": "/images/events/2956a01b6f778e42ab2655b93265dc10.jpg",
     "genre": "поп",
     "id": "5578131b",
-    "updated_at": "2026-07-23T08:12:03.239668+00:00"
+    "updated_at": "2026-07-23T08:12:03.239668+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-23",
@@ -2464,7 +2826,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "e926e160",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-21",
@@ -2481,7 +2847,11 @@
     "image": "/images/events/c35ffbfcb24a80654f3dc025adcf319d.jpg",
     "genre": "метал",
     "id": "805ea8a1",
-    "updated_at": "2026-07-21T05:29:03.934719+00:00"
+    "updated_at": "2026-07-21T05:29:03.934719+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-07-19",
@@ -2498,7 +2868,12 @@
     "image": "/images/events/ababf3eefe84db3a23d490b1c08c17e3.jpg",
     "genre": "поп",
     "id": "d70f91a7",
-    "updated_at": "2026-07-09T15:44:27.878109+00:00"
+    "updated_at": "2026-07-09T15:44:27.878109+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет площадки"
+    ]
   },
   {
     "date": "2026-07-19",
@@ -2515,7 +2890,9 @@
     "image": "/images/events/a23657c68b8080f6630ac8bbfc1f384a.jpg",
     "genre": "поп",
     "id": "db2ae2a5",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-19",
@@ -2532,7 +2909,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "761edc15",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-19",
@@ -2549,7 +2930,11 @@
     "image": "/images/events/13746f1c0741fbb47a9c4dc86d772063.jpg",
     "genre": "джаз",
     "id": "7fa1ca23",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-19",
@@ -2570,7 +2955,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:21+00:00",
     "id": "bc0251ff",
-    "updated_at": "2026-07-02T09:35:21+00:00"
+    "updated_at": "2026-07-02T09:35:21+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-19",
@@ -2587,7 +2976,9 @@
     "post_date": "2026-07-19",
     "genre": "поп",
     "id": "a486b46b",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-18",
@@ -2604,7 +2995,12 @@
     "image": "/images/events/9c2e06f07c0edc3e7720874ed2de9658.jpg",
     "genre": "фолк",
     "id": "a6271162",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет площадки"
+    ]
   },
   {
     "id": "257e6c3a",
@@ -2625,7 +3021,9 @@
     ],
     "image": "/images/events/a23657c68b8080f6630ac8bbfc1f384a.jpg",
     "post_date": "2026-07-14",
-    "updated_at": "2026-07-16T17:43:03.538011+00:00"
+    "updated_at": "2026-07-16T17:43:03.538011+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "0d702006",
@@ -2646,7 +3044,11 @@
     ],
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "71e2c32c",
@@ -2667,7 +3069,9 @@
     ],
     "image": "/images/events/84e65f7c61e9d9369295770b64c36e78.jpg",
     "post_date": "2026-07-17T09:32:12+00:00",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-18",
@@ -2684,7 +3088,11 @@
     "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg",
     "genre": "поп",
     "id": "122e8378",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-18",
@@ -2701,7 +3109,9 @@
     "image": "/images/events/9f1e3a2deb611fa00d4b03bef32d2b91.jpg",
     "genre": "поп",
     "id": "11c32c50",
-    "updated_at": "2026-07-15T16:43:18.018520+00:00"
+    "updated_at": "2026-07-15T16:43:18.018520+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-18",
@@ -2718,7 +3128,11 @@
     "source_url": "https://www.afisha.ru/concert/tigo-rubi-6041727/",
     "genre": "поп",
     "id": "39b55798",
-    "updated_at": "2026-06-30T04:22:40.510280+00:00"
+    "updated_at": "2026-06-30T04:22:40.510280+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-18",
@@ -2739,7 +3153,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-14",
     "id": "c07a1be5",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "8360766c",
@@ -2760,7 +3178,11 @@
     ],
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-17",
@@ -2777,7 +3199,9 @@
     "image": "/images/events/39629e74f191b5ab2e794678e1c184e1.jpg",
     "genre": "рок",
     "id": "81a30d90",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-17",
@@ -2794,7 +3218,11 @@
     "image": "/images/events/39a8386ee10d2a8d7b6e0b9c68949f73.jpg",
     "genre": "поп",
     "id": "feec4028",
-    "updated_at": "2026-07-17T12:04:57.203987+00:00"
+    "updated_at": "2026-07-17T12:04:57.203987+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-17",
@@ -2811,7 +3239,9 @@
     "image": "/images/events/ca4810db5f3b474898c34688a6bb97b7.jpg",
     "genre": "рок",
     "id": "853bea80",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-17",
@@ -2828,7 +3258,11 @@
     "image": "/images/events/53fa37a20c5bf1bba5d21107d13171b5.jpg",
     "genre": "авторская",
     "id": "f21c846e",
-    "updated_at": "2026-07-15T16:43:18.018520+00:00"
+    "updated_at": "2026-07-15T16:43:18.018520+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-17",
@@ -2849,7 +3283,11 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-14",
     "id": "8b0ba3dc",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-17",
@@ -2866,7 +3304,9 @@
     "source_url": "https://www.afisha.ru/concert/vagram-vazyan-6038816/",
     "genre": "поп",
     "id": "50f844c2",
-    "updated_at": "2026-06-30T04:22:26.388720+00:00"
+    "updated_at": "2026-06-30T04:22:26.388720+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-17",
@@ -2883,7 +3323,11 @@
     "image": "/images/events/4fe42b9ddd50853166e15773639a38f6.jpg",
     "genre": "поп",
     "id": "5fea63f1",
-    "updated_at": "2026-07-16T17:43:03.538011+00:00"
+    "updated_at": "2026-07-16T17:43:03.538011+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-16",
@@ -2900,7 +3344,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "87082c4d",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-12",
@@ -2917,7 +3365,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "a4d010fa",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-12",
@@ -2934,7 +3386,9 @@
     "post_date": "2026-07-12",
     "genre": "поп",
     "id": "d103a183",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-12",
@@ -2951,7 +3405,9 @@
     "image": "/images/events/b1a706606b8243144d62a4ac5755c8e8.jpg",
     "genre": "русский рок",
     "id": "3595b715",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-12",
@@ -2972,7 +3428,9 @@
     "image": "/images/events/104c9d879fcbb8634de70c77404c75c0.jpg",
     "post_date": "2026-07-09T14:39:22+00:00",
     "id": "13b3720a",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "e6607c6a",
@@ -2993,7 +3451,11 @@
     ],
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-11",
@@ -3011,7 +3473,9 @@
     "source_url": "https://t.me/usadbarodnoegnezdo/3362",
     "genre": "поп",
     "id": "6e0d79ec",
-    "updated_at": "2026-07-04T14:40:48+00:00"
+    "updated_at": "2026-07-04T14:40:48+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-11",
@@ -3029,7 +3493,11 @@
     "source_url": "https://t.me/afisha_crimea/7911",
     "genre": "классика",
     "id": "bb3195b6",
-    "updated_at": "2026-07-04T17:05:43+00:00"
+    "updated_at": "2026-07-04T17:05:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-11",
@@ -3046,7 +3514,9 @@
     "image": "/images/events/67d0f1b4f3869e6ba0fdcb1d970a9732.jpg",
     "genre": "фолк",
     "id": "e23bd27b",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-11",
@@ -3063,7 +3533,9 @@
     "image": "/images/events/1ef3b0ef3e922ab707e2c04b13822e03.jpg",
     "genre": "авторская",
     "id": "d7e57baa",
-    "updated_at": "2026-07-09T15:44:27.878109+00:00"
+    "updated_at": "2026-07-09T15:44:27.878109+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-11",
@@ -3080,7 +3552,9 @@
     "image": "/images/events/f5a611e46865aedd2de37feebcf6a9e4.jpg",
     "genre": "авторская",
     "id": "c66607ee",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "updated_at": "2026-07-04T09:32:45.310085+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-11",
@@ -3101,7 +3575,9 @@
     "image": "/images/events/64fd2bb50cf2e2a609103072ff17c53f.jpg",
     "post_date": "2026-07-09T14:39:22+00:00",
     "id": "6bb794ba",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "889e1262",
@@ -3122,7 +3598,9 @@
     ],
     "image": "/images/events/cd04ccc4df96d812c9321cf9fb8e6c87.jpg",
     "post_date": "2026-07-08T16:18:08+00:00",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-10",
@@ -3143,7 +3621,9 @@
     "image": "/images/events/13e3eaf6f313e800ad89887e8298a816.jpg",
     "post_date": "2026-07-09T14:39:22+00:00",
     "id": "76856a1c",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-09",
@@ -3160,7 +3640,11 @@
     "image": "/images/events/e07aad6ffad3ac6b480ae6db3effe854.jpg",
     "genre": "поп",
     "id": "46029406",
-    "updated_at": "2026-07-09T04:38:26.658096+00:00"
+    "updated_at": "2026-07-09T04:38:26.658096+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-09",
@@ -3177,7 +3661,9 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/pro-art-show?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "классика",
     "id": "732b94cd",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-08",
@@ -3194,7 +3680,9 @@
     "source_url": "https://www.afisha.ru/concert/dzhoker-6040095/",
     "genre": "рок",
     "id": "e4458b51",
-    "updated_at": "2026-06-30T04:22:33.552468+00:00"
+    "updated_at": "2026-06-30T04:22:33.552468+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-05",
@@ -3211,7 +3699,12 @@
     "image": "/images/events/db4fa16adbc4107e307a931633293cdc.jpg",
     "genre": "джаз",
     "id": "095ea2fe",
-    "updated_at": "2026-06-29T15:06:43+00:00"
+    "updated_at": "2026-06-29T15:06:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет площадки"
+    ]
   },
   {
     "id": "f7f2c0ba",
@@ -3232,7 +3725,11 @@
     ],
     "image": "/images/events/24052074457cb6c80c25337c6936efa4.jpg",
     "post_date": "2026-07-02T09:42:33+00:00",
-    "updated_at": "2026-07-04T09:32:45.310085+00:00"
+    "updated_at": "2026-07-04T09:32:45.310085+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-05",
@@ -3253,7 +3750,9 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-02T09:35:05+00:00",
     "id": "3bd9b7fb",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-05",
@@ -3271,7 +3770,11 @@
     "source_url": "https://t.me/massandrasun/2322",
     "genre": "поп",
     "id": "e0e535e1",
-    "updated_at": "2026-07-01T15:42:07+00:00"
+    "updated_at": "2026-07-01T15:42:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-04",
@@ -3292,7 +3795,9 @@
     "image": "/images/events/a09753e98dcc112bd04f0c4f5b874ad3.jpg",
     "post_date": "2026-07-04T11:41:51+00:00",
     "id": "cb010779",
-    "updated_at": "2026-07-04T11:41:51+00:00"
+    "updated_at": "2026-07-04T11:41:51+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-04",
@@ -3312,7 +3817,9 @@
     "image": "/images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg",
     "post_date": "2026-07-04",
     "id": "1055d54d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-04",
@@ -3333,7 +3840,11 @@
     "image": "/images/events/83516cb087000eb2abb999b60c755072.jpg",
     "post_date": "2026-07-02T07:18:01+00:00",
     "id": "76223b42",
-    "updated_at": "2026-07-02T07:18:01+00:00"
+    "updated_at": "2026-07-02T07:18:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-04",
@@ -3355,7 +3866,9 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-03T11:37:47+00:00",
     "id": "80e467be",
-    "updated_at": "2026-07-03T11:37:47+00:00"
+    "updated_at": "2026-07-03T11:37:47+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-04",
@@ -3373,7 +3886,11 @@
     "source_url": "https://t.me/massandrasun/2322",
     "genre": "поп",
     "id": "e6f3da3c",
-    "updated_at": "2026-07-01T15:42:07+00:00"
+    "updated_at": "2026-07-01T15:42:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-03",
@@ -3390,7 +3907,9 @@
     "source_url": "https://t.me/clubjam/927",
     "genre": "каверы",
     "id": "ad9aef5c",
-    "updated_at": "2026-05-07T13:47:39+00:00"
+    "updated_at": "2026-05-07T13:47:39+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-03",
@@ -3407,7 +3926,9 @@
     "source_url": "https://www.afisha.ru/concert/letniy-vecher-koncertnye-istorii-dlya-vsiy-semi-6042753/",
     "genre": "поп",
     "id": "6ba4e48c",
-    "updated_at": "2026-06-30T04:22:38.472648+00:00"
+    "updated_at": "2026-06-30T04:22:38.472648+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-03",
@@ -3429,7 +3950,9 @@
     "image": "/images/events/7723ef4f01d21b32f52a505cec5e31aa.png",
     "post_date": "2026-07-03T11:37:47+00:00",
     "id": "ee3201f1",
-    "updated_at": "2026-07-03T11:37:47+00:00"
+    "updated_at": "2026-07-03T11:37:47+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "0fcd10fd",
@@ -3449,7 +3972,11 @@
     ],
     "image": "/images/events/949850d70e101bc822009aef7de8ecdc.jpg",
     "post_date": "2026-07-03T07:46:20+00:00",
-    "updated_at": "2026-07-04T00:00:00+00:00"
+    "updated_at": "2026-07-04T00:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-07-03",
@@ -3467,7 +3994,11 @@
     "source_url": "https://t.me/massandrasun/2322",
     "genre": "поп",
     "id": "296cd22e",
-    "updated_at": "2026-07-01T15:42:07+00:00"
+    "updated_at": "2026-07-01T15:42:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-02",
@@ -3484,7 +4015,11 @@
     "image": "/images/events/34eca39268a248507a407613c15c7d9e.jpg",
     "genre": "авторская",
     "id": "bf792606",
-    "updated_at": "2026-06-27T05:20:06+00:00"
+    "updated_at": "2026-06-27T05:20:06+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-02",
@@ -3502,7 +4037,11 @@
     "source_url": "https://t.me/massandrasun/2322",
     "genre": "поп",
     "id": "53df3f9c",
-    "updated_at": "2026-07-01T15:42:07+00:00"
+    "updated_at": "2026-07-01T15:42:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-01",
@@ -3519,7 +4058,12 @@
     "source_url": "https://t.me/skazhitejazz/1553",
     "genre": "джаз",
     "id": "d7777ef5",
-    "updated_at": "2026-04-13T07:39:52+00:00"
+    "updated_at": "2026-04-13T07:39:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-01",
@@ -3536,7 +4080,9 @@
     "post_date": "2026-07-01",
     "genre": "рок",
     "id": "4ef9b8c8",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-30",
@@ -3553,7 +4099,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/gruppa-jawa-sektor-gaza?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "рок",
     "id": "0f52d30c",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-28",
@@ -3569,7 +4117,9 @@
     "post_date": "2026-06-28T12:20:43+00:00",
     "image": "/images/events/c34f28e675c7684a44357c059640fa6d.jpg",
     "id": "5623440b",
-    "updated_at": "2026-06-28T12:20:43+00:00"
+    "updated_at": "2026-06-28T12:20:43+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-27",
@@ -3586,7 +4136,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-superkhity-90-kh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "625ce153",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-27",
@@ -3603,7 +4155,9 @@
     "source_url": "https://afisha.yandex.ru/kerch/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "метал",
     "id": "7f7da373",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-27",
@@ -3620,7 +4174,9 @@
     "image": "/images/events/ce3fd2e05706c479b9a0b8f50c065d7e.jpg",
     "genre": "поп-рок",
     "id": "7b4d0864",
-    "updated_at": "2026-06-27T12:15:49+00:00"
+    "updated_at": "2026-06-27T12:15:49+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-27",
@@ -3638,7 +4194,9 @@
     "source_url": "https://t.me/nb_yalta/1959",
     "genre": "рок",
     "id": "d2938292",
-    "updated_at": "2026-06-22T13:01:13+00:00"
+    "updated_at": "2026-06-22T13:01:13+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-27",
@@ -3659,7 +4217,12 @@
     "source_url": "https://t.me/sevastopol_jazz/1264",
     "genre": "джаз",
     "id": "94e0202e",
-    "updated_at": "2026-06-23T11:20:46+00:00"
+    "updated_at": "2026-06-23T11:20:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-27",
@@ -3677,7 +4240,11 @@
     "source_url": "https://t.me/afisha_payberry/1583",
     "genre": "джаз",
     "id": "35c59839",
-    "updated_at": "2026-06-21T14:01:42+00:00"
+    "updated_at": "2026-06-21T14:01:42+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-06-26",
@@ -3694,7 +4261,9 @@
     "image": "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg",
     "post_date": "2026-06-26",
     "id": "e60e24bd",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-26",
@@ -3712,7 +4281,12 @@
     "source_url": "https://t.me/clubjam/1026",
     "genre": "метал",
     "id": "6af765b8",
-    "updated_at": "2026-06-26T12:37:52+00:00"
+    "updated_at": "2026-06-26T12:37:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-26",
@@ -3730,7 +4304,11 @@
     "source_url": "https://t.me/afisha_payberry/1584",
     "genre": "классика",
     "id": "2e9556da",
-    "updated_at": "2026-06-25T08:02:30+00:00"
+    "updated_at": "2026-06-25T08:02:30+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-06-25",
@@ -3747,7 +4325,9 @@
     "post_date": "2026-06-25",
     "genre": "метал",
     "id": "600a5d89",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-24",
@@ -3764,7 +4344,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/adrenalinhouse-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "шоу",
     "id": "49d1af1e",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "c4a80534",
@@ -3785,7 +4367,11 @@
     ],
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
     "post_date": "2026-06-23T09:38:23+00:00",
-    "updated_at": "2026-06-23T09:38:23+00:00"
+    "updated_at": "2026-06-23T09:38:23+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-23",
@@ -3802,7 +4388,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/radio-tapok-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "метал",
     "id": "86ed3238",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-21",
@@ -3820,7 +4408,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6153",
     "genre": "классика",
     "id": "cf0a6db4",
-    "updated_at": "2026-05-20T12:41:34+00:00"
+    "updated_at": "2026-05-20T12:41:34+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-21",
@@ -3838,7 +4430,12 @@
     "source_url": "https://t.me/BelbekskayaYarmarka/2201",
     "genre": "поп",
     "id": "a7b77ead",
-    "updated_at": "2026-06-21T13:30:22+00:00"
+    "updated_at": "2026-06-21T13:30:22+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-06-20",
@@ -3858,7 +4455,9 @@
     "image": "/images/events/962846e2ec5bd9f8f8d4a947978294a3.jpg",
     "post_date": "2026-06-20",
     "id": "a76e9c2f",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-19",
@@ -3876,7 +4475,9 @@
     "source_url": "https://t.me/skazhitejazz/1566",
     "genre": "джаз",
     "id": "b18a7b01",
-    "updated_at": "2026-05-23T08:53:22+00:00"
+    "updated_at": "2026-05-23T08:53:22+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-19",
@@ -3894,7 +4495,9 @@
     "source_url": "https://t.me/clubjam/963",
     "genre": "панк-рок",
     "id": "4a035c03",
-    "updated_at": "2026-05-20T20:07:23+00:00"
+    "updated_at": "2026-05-20T20:07:23+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-14",
@@ -3911,7 +4514,11 @@
     "image": "/images/events/0dfbeaf433c2f45c3c10a70add7322ac.jpg",
     "post_date": "2026-05-15T06:45:04+00:00",
     "id": "417574f4",
-    "updated_at": "2026-05-15T06:45:04+00:00"
+    "updated_at": "2026-05-15T06:45:04+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-13",
@@ -3928,7 +4535,9 @@
     "image": "/images/events/53d3205a3cca65f7684260786329a531.jpg",
     "post_date": "2026-06-13",
     "id": "883e2b58",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-07",
@@ -3945,7 +4554,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/dzhaz-i-latina-v-tsvetushchikh-rozakh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "джаз",
     "id": "1f208119",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-07",
@@ -3966,7 +4577,9 @@
     "image": "/images/events/753793e34a98e41c9d2d7fd5c7bb279d.jpg",
     "post_date": "2026-05-25T07:48:59+00:00",
     "id": "a2e9f541",
-    "updated_at": "2026-05-25T07:48:59+00:00"
+    "updated_at": "2026-05-25T07:48:59+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-07",
@@ -3987,7 +4600,9 @@
     "image": "/images/events/0abd1defc70d50ab2fe4c104d8d2c0d7.jpg",
     "post_date": "2026-05-21T11:55:17+00:00",
     "id": "f1c15df3",
-    "updated_at": "2026-05-21T11:55:17+00:00"
+    "updated_at": "2026-05-21T11:55:17+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-06-06",
@@ -4004,7 +4619,12 @@
     "source_url": "https://t.me/belbekma/1237",
     "genre": "поп",
     "id": "7c45dd53",
-    "updated_at": "2026-05-13T06:55:03+00:00"
+    "updated_at": "2026-05-13T06:55:03+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-06",
@@ -4021,7 +4641,11 @@
     "source_url": "https://t.me/koncertykrym/2019",
     "genre": "классика",
     "id": "749a146a",
-    "updated_at": "2026-05-07T10:07:16+00:00"
+    "updated_at": "2026-05-07T10:07:16+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-06-06",
@@ -4038,7 +4662,9 @@
     "source_url": "https://afisha.yandex.ru/yalta/concert/sovremennaia-klassika-v-tsvetushchikh-rozakh?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "a4314b4d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "93d47d57",
@@ -4059,7 +4685,11 @@
     ],
     "image": "/images/events/c5cda2722a4cc238b5b5ccebe006c372.jpg",
     "post_date": "2026-05-25T08:50:22+00:00",
-    "updated_at": "2026-05-25T08:50:22+00:00"
+    "updated_at": "2026-05-25T08:50:22+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-31",
@@ -4076,7 +4706,12 @@
     "source_url": "https://t.me/sevastopol_jazz/1252",
     "genre": "классика",
     "id": "a5d5ce87",
-    "updated_at": "2026-05-14T15:06:52+00:00"
+    "updated_at": "2026-05-14T15:06:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-31",
@@ -4093,7 +4728,11 @@
     "source_url": "https://t.me/afisha_crimea/7425",
     "genre": "поп",
     "id": "d9072908",
-    "updated_at": "2026-05-10T17:20:46+00:00"
+    "updated_at": "2026-05-10T17:20:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-31",
@@ -4111,7 +4750,11 @@
     "source_url": "https://t.me/belbekma/1263",
     "genre": "рок",
     "id": "20943b7b",
-    "updated_at": "2026-05-19T13:59:02+00:00"
+    "updated_at": "2026-05-19T13:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-31",
@@ -4131,7 +4774,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6143",
     "genre": "классика",
     "id": "b939ac43",
-    "updated_at": "2026-05-19T16:30:41+00:00"
+    "updated_at": "2026-05-19T16:30:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-31",
@@ -4152,7 +4799,9 @@
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
     "id": "0bd46674",
-    "updated_at": "2026-05-25T07:43:16+00:00"
+    "updated_at": "2026-05-25T07:43:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "37d71771",
@@ -4173,7 +4822,9 @@
     ],
     "image": "/images/events/0d13dab9e7f9b9211d4ff97cd46a3952.jpg",
     "post_date": "2026-05-24T15:36:35+00:00",
-    "updated_at": "2026-07-06T16:43:38.138239+00:00"
+    "updated_at": "2026-07-06T16:43:38.138239+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-30",
@@ -4190,7 +4841,11 @@
     "source_url": "https://t.me/koncertykrym/2042",
     "genre": "классика",
     "id": "dd8e365a",
-    "updated_at": "2026-05-12T16:01:29+00:00"
+    "updated_at": "2026-05-12T16:01:29+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-30",
@@ -4207,7 +4862,9 @@
     "image": "/images/events/0617934ef4b131fbaf4000c68d2b0b17.jpg",
     "post_date": "2026-05-13T09:16:09+00:00",
     "id": "9ca541b4",
-    "updated_at": "2026-05-13T09:16:09+00:00"
+    "updated_at": "2026-05-13T09:16:09+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-30",
@@ -4228,7 +4885,11 @@
     "image": "/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg",
     "post_date": "2026-05-10T17:20:46+00:00",
     "id": "e7112c66",
-    "updated_at": "2026-05-10T17:20:46+00:00"
+    "updated_at": "2026-05-10T17:20:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-30",
@@ -4249,7 +4910,9 @@
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
     "id": "4dbd153b",
-    "updated_at": "2026-05-25T07:43:16+00:00"
+    "updated_at": "2026-05-25T07:43:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-30",
@@ -4267,7 +4930,11 @@
     "source_url": "https://t.me/afisha_crimea/7564",
     "genre": "другое",
     "id": "39cc8a63",
-    "updated_at": "2026-05-25T17:02:19+00:00"
+    "updated_at": "2026-05-25T17:02:19+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-30",
@@ -4285,7 +4952,9 @@
     "source_url": "https://t.me/usadbarodnoegnezdo/3230",
     "genre": "авторская",
     "id": "ad0dec71",
-    "updated_at": "2026-05-25T17:05:53+00:00"
+    "updated_at": "2026-05-25T17:05:53+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-29",
@@ -4302,7 +4971,11 @@
     "source_url": "https://t.me/afisha_crimea/7425",
     "genre": "поп",
     "id": "61afbb0f",
-    "updated_at": "2026-05-10T17:20:46+00:00"
+    "updated_at": "2026-05-10T17:20:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-29",
@@ -4323,7 +4996,9 @@
     "image": "/images/events/f9526bd8-ffbc-4dbb-9815-7a904423b73c.jpeg",
     "post_date": "2026-05-25T07:43:16+00:00",
     "id": "d5569c55",
-    "updated_at": "2026-05-25T07:43:16+00:00"
+    "updated_at": "2026-05-25T07:43:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-29",
@@ -4341,7 +5016,11 @@
     "source_url": "https://t.me/clubjam/969",
     "genre": "фолк",
     "id": "72738ac4",
-    "updated_at": "2026-05-24T20:15:32+00:00"
+    "updated_at": "2026-05-24T20:15:32+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-05-29",
@@ -4359,7 +5038,9 @@
     "source_url": "https://t.me/afisha_crimea/7552",
     "genre": "юмор",
     "id": "1ec77b5e",
-    "updated_at": "2026-05-24T17:07:01+00:00"
+    "updated_at": "2026-05-24T17:07:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-27",
@@ -4376,7 +5057,9 @@
     "source_url": "https://t.me/afisha_crimea/7427",
     "genre": "классика",
     "id": "b1656fd7",
-    "updated_at": "2026-05-11T08:34:01+00:00"
+    "updated_at": "2026-05-11T08:34:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-26",
@@ -4393,7 +5076,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/orkestr-pri-svechakh-aura-shou-legendy-mtv?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "8c87080d",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-24",
@@ -4409,7 +5094,12 @@
     "image": "/images/events/8e7a07e4b780d946023d79972b612da7.jpg",
     "source_url": "https://t.me/crimea_event/5527",
     "id": "3fbc519e",
-    "updated_at": "2026-05-10T04:03:01+00:00"
+    "updated_at": "2026-05-10T04:03:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-24",
@@ -4430,7 +5120,12 @@
     "image": "/images/events/5244a03ffba451fd63689c71bc7fc240.jpg",
     "post_date": "2026-05-14T15:06:52+00:00",
     "id": "e8aceb0a",
-    "updated_at": "2026-05-14T15:06:52+00:00"
+    "updated_at": "2026-05-14T15:06:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "983db2bb",
@@ -4451,7 +5146,11 @@
     ],
     "image": "/images/events/c4a40541b3caced7883318ab7b4b1f09.jpg",
     "post_date": "2026-05-22T13:53:17+00:00",
-    "updated_at": "2026-05-22T13:53:17+00:00"
+    "updated_at": "2026-05-22T13:53:17+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-24",
@@ -4468,7 +5167,9 @@
     "source_url": "https://t.me/krymskiye_dela/5423",
     "genre": "другое",
     "id": "928bc808",
-    "updated_at": "2026-05-11T09:04:47+00:00"
+    "updated_at": "2026-05-11T09:04:47+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-24",
@@ -4485,7 +5186,9 @@
     "post_date": null,
     "genre": "авторская",
     "id": "697b2dc9",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-24",
@@ -4505,7 +5208,9 @@
     "source_url": "https://t.me/rocknroll_92/6642",
     "genre": "рок",
     "id": "87ee3687",
-    "updated_at": "2026-05-22T12:28:07+00:00"
+    "updated_at": "2026-05-22T12:28:07+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-23",
@@ -4522,7 +5227,11 @@
     "source_url": "https://t.me/crimea_event/5537",
     "genre": "этно",
     "id": "da41db32",
-    "updated_at": "2026-05-15T05:46:07+00:00"
+    "updated_at": "2026-05-15T05:46:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-05-23",
@@ -4539,7 +5248,9 @@
     "image": "/images/events/67631f7f1ad48718dcabed1586aeb8d3.jpg",
     "post_date": "2026-05-14T16:46:22+00:00",
     "id": "7165b1e5",
-    "updated_at": "2026-05-14T16:46:22+00:00"
+    "updated_at": "2026-05-14T16:46:22+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-23",
@@ -4556,7 +5267,11 @@
     "source_url": "https://t.me/afisha_crimea/7419",
     "genre": "поп",
     "id": "d65ae54e",
-    "updated_at": "2026-05-09T11:59:02+00:00"
+    "updated_at": "2026-05-09T11:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-23",
@@ -4576,7 +5291,9 @@
     "image": "/images/events/daaccbac1d73c42ba02782b9892a84c5.jpg",
     "post_date": "2026-05-22T12:40:26+00:00",
     "id": "b9d6de78",
-    "updated_at": "2026-05-22T12:40:26+00:00"
+    "updated_at": "2026-05-22T12:40:26+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-23",
@@ -4593,7 +5310,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/chempiony-vysshei-ligi-kvn-komanda-soiuz?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "юмор",
     "id": "d159f520",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-23",
@@ -4610,7 +5329,12 @@
     "post_date": "2026-04-27T09:12:17+00:00",
     "genre": "классика",
     "id": "75e9dc4f",
-    "updated_at": "2026-04-27T09:12:17+00:00"
+    "updated_at": "2026-04-27T09:12:17+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-23",
@@ -4628,7 +5352,11 @@
     "source_url": "https://t.me/krongs/2518",
     "genre": "поп",
     "id": "e6fcb43b",
-    "updated_at": "2026-05-21T10:32:50+00:00"
+    "updated_at": "2026-05-21T10:32:50+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-23",
@@ -4645,7 +5373,9 @@
     "post_date": null,
     "genre": "русский рок",
     "id": "ebb50c47",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-23",
@@ -4662,7 +5392,11 @@
     "source_url": "https://t.me/krymskiye_dela/5418",
     "genre": "поп",
     "id": "9d9ca947",
-    "updated_at": "2026-05-10T19:45:01+00:00"
+    "updated_at": "2026-05-10T19:45:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-22",
@@ -4679,7 +5413,11 @@
     "source_url": "https://t.me/afisha_crimea/7419",
     "genre": "поп",
     "id": "edc7e62a",
-    "updated_at": "2026-05-09T11:59:02+00:00"
+    "updated_at": "2026-05-09T11:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-22",
@@ -4700,7 +5438,9 @@
     "image": "/images/events/8fb402b228029b96acad467b92f497d1.jpg",
     "post_date": "2026-05-16T16:49:37+00:00",
     "id": "714dba03",
-    "updated_at": "2026-05-16T16:49:37+00:00"
+    "updated_at": "2026-05-16T16:49:37+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-22",
@@ -4721,7 +5461,11 @@
     "image": "/images/events/4c03fb6febb991016da657da88e74f5d.jpg",
     "post_date": "2026-05-14T15:06:52+00:00",
     "id": "1d834d93",
-    "updated_at": "2026-05-14T15:06:52+00:00"
+    "updated_at": "2026-05-14T15:06:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-22",
@@ -4739,7 +5483,11 @@
     "source_url": "https://t.me/krongs/2514",
     "genre": "поп",
     "id": "c0a5e517",
-    "updated_at": "2026-05-19T11:01:28+00:00"
+    "updated_at": "2026-05-19T11:01:28+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-22",
@@ -4756,7 +5504,9 @@
     "post_date": null,
     "genre": "рок",
     "id": "c0928bc8",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-22",
@@ -4773,7 +5523,11 @@
     "source_url": "https://t.me/krymskiye_dela/5447",
     "genre": "инди",
     "id": "e1e34537",
-    "updated_at": "2026-05-13T16:15:01+00:00"
+    "updated_at": "2026-05-13T16:15:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-21",
@@ -4790,7 +5544,11 @@
     "source_url": "https://t.me/koncertykrym/2043",
     "genre": "классика",
     "id": "2ad81603",
-    "updated_at": "2026-05-13T08:31:33+00:00"
+    "updated_at": "2026-05-13T08:31:33+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-21",
@@ -4810,7 +5568,9 @@
     "image": "/images/events/14d84bbaa4b036f3fb0ee294eda210bb.jpg",
     "post_date": "2026-05-17T14:50:16+00:00",
     "id": "861ae535",
-    "updated_at": "2026-05-17T14:50:16+00:00"
+    "updated_at": "2026-05-17T14:50:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-20",
@@ -4831,7 +5591,9 @@
     "image": "/images/events/69fa684ea6fd63510ce4369a7309420a.jpg",
     "post_date": "2026-05-20T05:55:53+00:00",
     "id": "f3d2f5ae",
-    "updated_at": "2026-05-20T05:55:53+00:00"
+    "updated_at": "2026-05-20T05:55:53+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-17",
@@ -4847,7 +5609,9 @@
     "image": "/images/events/86646f1d2224578d3eae9dd2f2b91555.jpg",
     "source_url": "https://t.me/belbekma/1245",
     "id": "379b249e",
-    "updated_at": "2026-05-13T14:50:05+00:00"
+    "updated_at": "2026-05-13T14:50:05+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-17",
@@ -4868,7 +5632,11 @@
     "image": "/images/events/0dfbeaf433c2f45c3c10a70add7322ac.jpg",
     "post_date": "2026-05-15T06:45:04+00:00",
     "id": "e8b6e9ff",
-    "updated_at": "2026-05-15T06:45:04+00:00"
+    "updated_at": "2026-05-15T06:45:04+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-17",
@@ -4885,7 +5653,11 @@
     "source_url": "https://t.me/afisha_crimea/7419",
     "genre": "поп",
     "id": "b0cc98c0",
-    "updated_at": "2026-05-09T11:59:02+00:00"
+    "updated_at": "2026-05-09T11:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-17",
@@ -4902,7 +5674,11 @@
     "image": "/images/events/7b3952e56a1cf026f7968d63fe81046c.jpg",
     "post_date": "2026-05-14T15:07:20+00:00",
     "id": "d87b00fc",
-    "updated_at": "2026-05-14T15:07:20+00:00"
+    "updated_at": "2026-05-14T15:07:20+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-17",
@@ -4919,7 +5695,9 @@
     "post_date": null,
     "genre": "авторская",
     "id": "5099ca20",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-16",
@@ -4936,7 +5714,11 @@
     "image": "/images/events/3c51f6cd186edbfbc57ba9ec9dee8020.jpg",
     "post_date": "2026-05-13T15:24:31+00:00",
     "id": "2850789e",
-    "updated_at": "2026-05-13T15:24:31+00:00"
+    "updated_at": "2026-05-13T15:24:31+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-05-16",
@@ -4953,7 +5735,11 @@
     "source_url": "https://t.me/afisha_crimea/7419",
     "genre": "поп",
     "id": "018d2bb9",
-    "updated_at": "2026-05-09T11:59:02+00:00"
+    "updated_at": "2026-05-09T11:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-16",
@@ -4970,7 +5756,9 @@
     "source_url": "https://t.me/crimea_event/5537",
     "genre": "этно",
     "id": "020aa105",
-    "updated_at": "2026-05-15T05:46:07+00:00"
+    "updated_at": "2026-05-15T05:46:07+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-16",
@@ -4987,7 +5775,9 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/cherez-muzyku-k-svetu-2023-11-18?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "genre": "поп",
     "id": "b5b3bbb4",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-16",
@@ -5004,7 +5794,11 @@
     "source_url": "https://t.me/afisha_crimea/7451",
     "genre": "классика",
     "id": "b978130d",
-    "updated_at": "2026-05-15T17:01:20+00:00"
+    "updated_at": "2026-05-15T17:01:20+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-16",
@@ -5021,7 +5815,9 @@
     "source_url": "https://t.me/krongs/2508",
     "genre": "джаз",
     "id": "0fe87b2f",
-    "updated_at": "2026-05-14T12:23:50+00:00"
+    "updated_at": "2026-05-14T12:23:50+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-16",
@@ -5038,7 +5834,9 @@
     "image": "/images/events/167d59c1575d81d68ff742ab4116ec72.jpg",
     "post_date": "2026-05-15T12:27:17+00:00",
     "id": "c4c5a557",
-    "updated_at": "2026-05-15T12:27:17+00:00"
+    "updated_at": "2026-05-15T12:27:17+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-16",
@@ -5055,7 +5853,11 @@
     "source_url": "https://t.me/krongs/2507",
     "genre": "поп",
     "id": "63a803e5",
-    "updated_at": "2026-05-14T10:41:14+00:00"
+    "updated_at": "2026-05-14T10:41:14+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-16",
@@ -5072,7 +5874,9 @@
     "image": "/images/events/d23da52ba89a53ce66c54be8df1d7cac.jpg",
     "post_date": "2026-05-11T07:58:12+00:00",
     "id": "c4f27f80",
-    "updated_at": "2026-05-11T07:58:12+00:00"
+    "updated_at": "2026-05-11T07:58:12+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-15",
@@ -5089,7 +5893,9 @@
     "image": "/images/events/b1940abfb5148ab0873c08debc3dd043.jpg",
     "post_date": "2026-05-14T11:41:50+00:00",
     "id": "eb108384",
-    "updated_at": "2026-05-14T11:41:50+00:00"
+    "updated_at": "2026-05-14T11:41:50+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-15",
@@ -5106,7 +5912,9 @@
     "image": "/images/events/fa17705da3a6e1b26b21de6a9dde3b74.jpg",
     "post_date": "2026-05-15T14:32:27+00:00",
     "id": "c1dc8779",
-    "updated_at": "2026-05-15T14:32:27+00:00"
+    "updated_at": "2026-05-15T14:32:27+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-15",
@@ -5123,7 +5931,11 @@
     "image": "/images/events/91536aaa337c91576a8790659082f51d.jpg",
     "post_date": "2026-05-13T12:28:43+00:00",
     "id": "84f477ff",
-    "updated_at": "2026-05-13T12:28:43+00:00"
+    "updated_at": "2026-05-13T12:28:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-15",
@@ -5140,7 +5952,11 @@
     "source_url": "https://t.me/krymskiye_dela/5436",
     "genre": "поп",
     "id": "0ce3a8d6",
-    "updated_at": "2026-05-13T07:35:57+00:00"
+    "updated_at": "2026-05-13T07:35:57+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-15",
@@ -5157,7 +5973,9 @@
     "image": "/images/events/88541727edd2b16c3366205057be1ea2.jpg",
     "post_date": "2026-05-15T12:38:41+00:00",
     "id": "249e6594",
-    "updated_at": "2026-05-15T12:38:41+00:00"
+    "updated_at": "2026-05-15T12:38:41+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-14",
@@ -5174,7 +5992,12 @@
     "source_url": "https://t.me/belbekma/1237",
     "genre": "классика",
     "id": "818fe08a",
-    "updated_at": "2026-05-13T06:55:03+00:00"
+    "updated_at": "2026-05-13T06:55:03+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-13",
@@ -5191,7 +6014,9 @@
     "source_url": "https://t.me/afisha_crimea/7427",
     "genre": "классика",
     "id": "7f59a571",
-    "updated_at": "2026-05-11T08:34:01+00:00"
+    "updated_at": "2026-05-11T08:34:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-13",
@@ -5208,7 +6033,9 @@
     "image": "/images/events/883f9a5b20318eebca68100bb3ad4bc3.jpg",
     "post_date": "2026-05-13T06:55:03+00:00",
     "id": "8b935ce2",
-    "updated_at": "2026-05-13T06:55:03+00:00"
+    "updated_at": "2026-05-13T06:55:03+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-12",
@@ -5225,7 +6052,12 @@
     "source_url": "https://t.me/koncertykrym/2048",
     "genre": "поп",
     "id": "b3f9fcc2",
-    "updated_at": "2026-05-14T10:22:09+00:00"
+    "updated_at": "2026-05-14T10:22:09+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-12",
@@ -5242,7 +6074,11 @@
     "source_url": "https://t.me/koncertykrym/2018",
     "genre": "классика",
     "id": "365c46b0",
-    "updated_at": "2026-05-06T11:47:26+00:00"
+    "updated_at": "2026-05-06T11:47:26+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-11",
@@ -5259,7 +6095,9 @@
     "image": "/images/events/b91a705f499586dd86936bbe3c1063d2.jpg",
     "post_date": "2026-05-08T13:06:01+00:00",
     "id": "cc1c45f2",
-    "updated_at": "2026-05-08T13:06:01+00:00"
+    "updated_at": "2026-05-08T13:06:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-11",
@@ -5276,7 +6114,11 @@
     "source_url": "https://t.me/afisha_crimea/7410",
     "genre": "классика",
     "id": "fda4d83e",
-    "updated_at": "2026-05-07T17:02:26+00:00"
+    "updated_at": "2026-05-07T17:02:26+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-10",
@@ -5293,7 +6135,11 @@
     "image": "/images/events/4a67a118e30e092aaa9bde44d2105ec2.jpg",
     "post_date": "2026-05-05T15:31:32+00:00",
     "id": "a60c2dfc",
-    "updated_at": "2026-05-05T15:31:32+00:00"
+    "updated_at": "2026-05-05T15:31:32+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-10",
@@ -5310,7 +6156,9 @@
     "image": "/images/events/b91a705f499586dd86936bbe3c1063d2.jpg",
     "post_date": "2026-05-08T13:06:01+00:00",
     "id": "76cc0396",
-    "updated_at": "2026-05-08T13:06:01+00:00"
+    "updated_at": "2026-05-08T13:06:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-10",
@@ -5327,7 +6175,11 @@
     "image": "/images/events/41158b6bf7de8c15ef4bd0c59eadc9d1.jpg",
     "post_date": "2026-05-09T11:59:02+00:00",
     "id": "e040e196",
-    "updated_at": "2026-05-09T11:59:02+00:00"
+    "updated_at": "2026-05-09T11:59:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-10",
@@ -5344,7 +6196,11 @@
     "source_url": "https://t.me/afisha_crimea/7406",
     "genre": "классика",
     "id": "ab571935",
-    "updated_at": "2026-05-06T17:01:33+00:00"
+    "updated_at": "2026-05-06T17:01:33+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-10",
@@ -5361,7 +6217,9 @@
     "post_date": "2026-05-10",
     "genre": "инди",
     "id": "851dc634",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-10",
@@ -5378,7 +6236,9 @@
     "post_date": null,
     "genre": "рок",
     "id": "1ec39261",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-09",
@@ -5395,7 +6255,11 @@
     "source_url": "https://t.me/rocknroll_92/6577",
     "genre": "поп",
     "id": "b0a68571",
-    "updated_at": "2026-05-09T08:40:42+00:00"
+    "updated_at": "2026-05-09T08:40:42+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-05-09",
@@ -5412,7 +6276,12 @@
     "source_url": "https://t.me/rocknroll_92/6581",
     "genre": "поп",
     "id": "3fc65040",
-    "updated_at": "2026-05-10T06:59:59+00:00"
+    "updated_at": "2026-05-10T06:59:59+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-09",
@@ -5433,7 +6302,11 @@
     ],
     "image": "/images/events/6f49a07cd56f328db18fece4a98b3469.jpg",
     "post_date": "2026-05-09T09:27:06+00:00",
-    "id": "51c5e741"
+    "id": "51c5e741",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-05-09",
@@ -5450,7 +6323,9 @@
     "source_url": "https://t.me/afisha_crimea/7413",
     "genre": "классика",
     "id": "4fb1e99e",
-    "updated_at": "2026-05-08T13:06:01+00:00"
+    "updated_at": "2026-05-08T13:06:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-09",
@@ -5467,7 +6342,11 @@
     "image": "/images/events/4a67a118e30e092aaa9bde44d2105ec2.jpg",
     "post_date": "2026-05-05T15:31:32+00:00",
     "id": "4ab91589",
-    "updated_at": "2026-05-05T15:31:32+00:00"
+    "updated_at": "2026-05-05T15:31:32+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-09",
@@ -5484,7 +6363,9 @@
     "source_url": "https://www.instagram.com/p/DX0_XRKxsIU/",
     "genre": "русский рок",
     "id": "628f2f40",
-    "updated_at": "2026-05-02T07:30:00+00:00"
+    "updated_at": "2026-05-02T07:30:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-09",
@@ -5501,7 +6382,11 @@
     "image": "/images/events/0a2dabbcf9af1370d889f4e6118a955f.jpg",
     "post_date": "2026-05-04T09:52:40+00:00",
     "id": "f5fb7beb",
-    "updated_at": "2026-05-04T09:52:40+00:00"
+    "updated_at": "2026-05-04T09:52:40+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-09",
@@ -5518,7 +6403,12 @@
     "post_date": "2026-05-02T08:33:46+00:00",
     "genre": "классика",
     "id": "83b9bbda",
-    "updated_at": "2026-05-02T08:33:46+00:00"
+    "updated_at": "2026-05-02T08:33:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-08",
@@ -5535,7 +6425,9 @@
     "image": "/images/events/4a67a118e30e092aaa9bde44d2105ec2.jpg",
     "post_date": "2026-05-05T15:31:32+00:00",
     "id": "bf85d01e",
-    "updated_at": "2026-05-05T15:31:32+00:00"
+    "updated_at": "2026-05-05T15:31:32+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-08",
@@ -5552,7 +6444,11 @@
     "image": "/images/events/7a69a66e5c6c9162d2af57fec0c9e93a.jpg",
     "post_date": "2026-05-06T11:35:33+00:00",
     "id": "b269b9e8",
-    "updated_at": "2026-05-06T11:35:33+00:00"
+    "updated_at": "2026-05-06T11:35:33+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "52d615fd",
@@ -5573,7 +6469,9 @@
     ],
     "image": "/images/events/723be1e881e61799963f0189107eb321.jpg",
     "post_date": "2026-05-07T19:44:01+00:00",
-    "updated_at": "2026-05-07T19:44:01+00:00"
+    "updated_at": "2026-05-07T19:44:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-08",
@@ -5590,7 +6488,11 @@
     "source_url": "https://t.me/hp_band/81",
     "genre": "другое",
     "id": "811c7684",
-    "updated_at": "2026-05-05T10:03:09+00:00"
+    "updated_at": "2026-05-05T10:03:09+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-08",
@@ -5607,7 +6509,9 @@
     "post_date": "2026-05-08",
     "genre": "инди",
     "id": "5ae886ac",
-    "updated_at": "1970-01-01T00:00:00+00:00"
+    "updated_at": "1970-01-01T00:00:00+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-06",
@@ -5624,7 +6528,9 @@
     "source_url": "https://t.me/afisha_crimea/7427",
     "genre": "классика",
     "id": "36e3199a",
-    "updated_at": "2026-05-11T08:34:01+00:00"
+    "updated_at": "2026-05-11T08:34:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-05",
@@ -5641,7 +6547,12 @@
     "source_url": "https://t.me/koncertykrym/2028",
     "genre": "классика",
     "id": "7e87cb85",
-    "updated_at": "2026-05-08T15:21:53+00:00"
+    "updated_at": "2026-05-08T15:21:53+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-03",
@@ -5658,7 +6569,11 @@
     "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "b914efb4",
-    "updated_at": "2026-04-24T17:39:52+00:00"
+    "updated_at": "2026-04-24T17:39:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-03",
@@ -5675,7 +6590,11 @@
     "image": "/images/events/b31823392a202d6cb85c7518a4808047.jpg",
     "post_date": "2026-05-01T14:00:07+00:00",
     "id": "14b6676b",
-    "updated_at": "2026-05-01T14:00:07+00:00"
+    "updated_at": "2026-05-01T14:00:07+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-03",
@@ -5692,7 +6611,12 @@
     "image": null,
     "post_date": "2026-05-03T13:54:40+00:00",
     "id": "f6c488eb",
-    "updated_at": "2026-05-03T13:54:40+00:00"
+    "updated_at": "2026-05-03T13:54:40+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-03",
@@ -5709,7 +6633,9 @@
     "post_date": "2026-05-02T11:55:07+00:00",
     "genre": "панк-рок",
     "id": "17bc7a9d",
-    "updated_at": "2026-05-02T11:55:07+00:00"
+    "updated_at": "2026-05-02T11:55:07+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "00f46ec4",
@@ -5728,7 +6654,9 @@
       "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg"
     ],
     "image": "/images/events/91b2dd8ba8d94ef5957aa2a1773599bc.jpg",
-    "post_date": "2026-05-02T10:13:03+00:00"
+    "post_date": "2026-05-02T10:13:03+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "b87cb837",
@@ -5745,7 +6673,13 @@
     "source_url": "https://t.me/skazhitejazz/1554",
     "images": null,
     "image": null,
-    "post_date": "2026-04-29T17:23:27+00:00"
+    "post_date": "2026-04-29T17:23:27+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-02",
@@ -5762,7 +6696,11 @@
     "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "55aee146",
-    "updated_at": "2026-04-24T17:39:52+00:00"
+    "updated_at": "2026-04-24T17:39:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-02",
@@ -5782,7 +6720,9 @@
     "image": "/images/events/2d25427c7f1741422703e5c06864cd64.jpg",
     "post_date": "2026-05-04T06:08:46+00:00",
     "id": "11872108",
-    "updated_at": "2026-05-04T06:08:46+00:00"
+    "updated_at": "2026-05-04T06:08:46+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-02",
@@ -5803,7 +6743,9 @@
     "image": "/images/events/d7f2fe4aa1996a2d99615cde3da280b4.jpg",
     "post_date": "2026-05-01T10:03:36+00:00",
     "id": "7db77e8f",
-    "updated_at": "2026-05-01T10:03:36+00:00"
+    "updated_at": "2026-05-01T10:03:36+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-02",
@@ -5820,7 +6762,11 @@
     "source_url": "https://t.me/crimea_event/5512",
     "genre": "метал",
     "id": "f5dae4f8",
-    "updated_at": "2026-04-24T17:35:11+00:00"
+    "updated_at": "2026-04-24T17:35:11+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-02",
@@ -5837,7 +6783,12 @@
     "post_date": "2026-05-01T17:32:15+00:00",
     "genre": "другое",
     "id": "1f7bb45e",
-    "updated_at": "2026-05-01T17:32:15+00:00"
+    "updated_at": "2026-05-01T17:32:15+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-02",
@@ -5854,7 +6805,11 @@
     "post_date": "2026-04-30T15:00:00+00:00",
     "genre": "поп",
     "id": "b86d18c0",
-    "updated_at": "2026-04-30T15:00:00+00:00"
+    "updated_at": "2026-04-30T15:00:00+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-02",
@@ -5871,7 +6826,11 @@
     "source_url": "https://t.me/rocknroll_92/6537",
     "genre": "поп-рок",
     "id": "0548b7e1",
-    "updated_at": "2026-05-02T11:03:09+00:00"
+    "updated_at": "2026-05-02T11:03:09+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-01",
@@ -5888,7 +6847,12 @@
     "post_date": "2026-04-30T19:03:01+00:00",
     "genre": "метал",
     "id": "55e49001",
-    "updated_at": "2026-04-30T19:03:01+00:00"
+    "updated_at": "2026-04-30T19:03:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-01",
@@ -5905,7 +6869,11 @@
     "image": "/images/events/d0aa3726419c658020f656ece1c500c8.jpg",
     "post_date": "2026-04-24T17:39:52+00:00",
     "id": "a914aeb1",
-    "updated_at": "2026-04-24T17:39:52+00:00"
+    "updated_at": "2026-04-24T17:39:52+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-01",
@@ -5922,7 +6890,9 @@
     "source_url": "https://t.me/crimea_event/5501",
     "genre": "каверы",
     "id": "9ce55bd3",
-    "updated_at": "2026-04-20T05:29:01+00:00"
+    "updated_at": "2026-04-20T05:29:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-01",
@@ -5939,7 +6909,11 @@
     "image": "/images/events/5043019cbaba96ac6159eae279dbd866.jpg",
     "post_date": "2026-04-28T05:43:20+00:00",
     "id": "edef7f34",
-    "updated_at": "2026-04-28T05:43:20+00:00"
+    "updated_at": "2026-04-28T05:43:20+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-05-01",
@@ -5956,7 +6930,11 @@
     "post_date": "2026-05-01T11:16:43+00:00",
     "genre": "рок",
     "id": "e77e012d",
-    "updated_at": "2026-05-01T11:16:43+00:00"
+    "updated_at": "2026-05-01T11:16:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "date": "2026-05-01",
@@ -5973,7 +6951,11 @@
     "source_url": "https://t.me/hotel_yalta_intourist/2582",
     "genre": "поп",
     "id": "5c1b507d",
-    "updated_at": "2026-04-26T12:23:02+00:00"
+    "updated_at": "2026-04-26T12:23:02+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-04-30",
@@ -5990,7 +6972,13 @@
     "source_url": "https://t.me/skazhitejazz/1563",
     "genre": "джаз",
     "id": "c2593d44",
-    "updated_at": "2026-04-30T13:59:46+00:00"
+    "updated_at": "2026-04-30T13:59:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-04-26",
@@ -6007,7 +6995,12 @@
     "source_url": "https://t.me/koncertykrym/2044",
     "genre": "классика",
     "id": "6547b1bd",
-    "updated_at": "2026-05-13T15:37:32+00:00"
+    "updated_at": "2026-05-13T15:37:32+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-04-26",
@@ -6024,7 +7017,11 @@
     "source_url": "https://t.me/crimea_event/5509",
     "genre": "классика",
     "id": "8850f70c",
-    "updated_at": "2026-04-21T19:19:29+00:00"
+    "updated_at": "2026-04-21T19:19:29+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-04-25",
@@ -6041,7 +7038,11 @@
     "source_url": "https://t.me/crimea_event/5506",
     "genre": "хип-хоп",
     "id": "e902f592",
-    "updated_at": "2026-04-20T05:48:01+00:00"
+    "updated_at": "2026-04-20T05:48:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-09",
@@ -6058,7 +7059,9 @@
     "images": null,
     "source_url": "https://t.me/clubjam/1092",
     "id": "d5e968f8",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-08",
@@ -6075,7 +7078,9 @@
     "source_url": "https://t.me/rocknroll_92/6565",
     "genre": "поп-рок",
     "id": "8b763d82",
-    "updated_at": "2026-05-08T11:24:34+00:00"
+    "updated_at": "2026-05-08T11:24:34+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-05-09",
@@ -6095,7 +7100,9 @@
     "source_url": "https://t.me/rocknroll_92/6653",
     "genre": "поп-рок",
     "id": "d6f7a5db",
-    "updated_at": "2026-05-23T09:43:16+00:00"
+    "updated_at": "2026-05-23T09:43:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-31",
@@ -6112,7 +7119,9 @@
     "images": null,
     "source_url": "https://t.me/belbekma/1343",
     "id": "09826b06",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "219dd212",
@@ -6132,7 +7141,9 @@
       "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg"
     ],
     "image": "/images/events/d0e1e7803779588b2e6871a5546bbbee.jpg",
-    "post_date": "2026-08-04T07:56:23+00:00"
+    "post_date": "2026-08-04T07:56:23+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "8f8c4cef",
@@ -6152,7 +7163,9 @@
       "/images/events/d0e1e7803779588b2e6871a5546bbbee.jpg"
     ],
     "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg",
-    "post_date": "2026-08-04T07:56:23+00:00"
+    "post_date": "2026-08-04T07:56:23+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "0e9150c1",
@@ -6172,7 +7185,9 @@
       "/images/events/d0e1e7803779588b2e6871a5546bbbee.jpg"
     ],
     "image": "/images/events/06055a2ef1e93e643945eb54bd96a245.jpg",
-    "post_date": "2026-08-04T07:56:23+00:00"
+    "post_date": "2026-08-04T07:56:23+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-31",
@@ -6192,7 +7207,9 @@
     ],
     "image": "/images/events/4b70b0df966bf8003b98133eca821e9f.jpg",
     "post_date": "2026-07-31T11:56:44+00:00",
-    "id": "6a65cb44"
+    "id": "6a65cb44",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-01",
@@ -6212,7 +7229,12 @@
     ],
     "image": "/images/events/23cac87b670cfc3e60f215c0f1eb5755.jpg",
     "post_date": "2026-08-01T08:05:16+00:00",
-    "id": "5ddfb74f"
+    "id": "5ddfb74f",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "город в описании не совпадает с карточкой"
+    ]
   },
   {
     "date": "2026-08-07",
@@ -6238,7 +7260,11 @@
       "/images/events/ecdc9b591cbb2a521e9568474655b8b8.jpg"
     ],
     "source_url": "https://t.me/dlyadushi_Crimea/6426",
-    "id": "5c9347f5"
+    "id": "5c9347f5",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-31",
@@ -6258,7 +7284,12 @@
     ],
     "image": "/images/events/4b663e90e6e6ba7211982183a1a944b8.jpg",
     "post_date": "2026-07-29T15:31:32+00:00",
-    "id": "de41cd04"
+    "id": "de41cd04",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -6278,7 +7309,13 @@
     ],
     "image": "/images/events/36968f7d27f3509bdaa756ae5aeb4411.jpg",
     "post_date": "2026-07-29T15:31:32+00:00",
-    "id": "a2ede59b"
+    "id": "a2ede59b",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "город в описании не совпадает с карточкой"
+    ]
   },
   {
     "id": "bce62a03",
@@ -6298,7 +7335,12 @@
       "/images/events/4b828010306e6230234bcb41cdcaeaf8.jpg"
     ],
     "image": "/images/events/c9df59d0efb36c201109ea81a55bb3b1.jpg",
-    "post_date": "2026-08-04T17:07:10+00:00"
+    "post_date": "2026-08-04T17:07:10+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-07-28",
@@ -6315,7 +7357,11 @@
     "images": null,
     "source_url": "https://t.me/skazhitejazz/1578",
     "id": "34c97325",
-    "genre": "джаз"
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "df577a75",
@@ -6334,7 +7380,12 @@
       "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg"
     ],
     "image": "/images/events/cefb07b04d39fb6ae85b3034e9c397b8.jpg",
-    "post_date": "2026-08-05T15:01:26+00:00"
+    "post_date": "2026-08-05T15:01:26+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -6351,7 +7402,9 @@
     "images": null,
     "source_url": "https://t.me/crimea_event/5610",
     "id": "17a35bb2",
-    "genre": "блюз"
+    "genre": "блюз",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-02",
@@ -6371,7 +7424,11 @@
     ],
     "image": "/images/events/b9c9a68f2691ddb80bccb591899325dc.jpg",
     "post_date": "2026-07-28T08:30:13+00:00",
-    "id": "9974a3d5"
+    "id": "9974a3d5",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-07",
@@ -6388,7 +7445,11 @@
     "images": null,
     "source_url": "https://t.me/afisha_payberry/1610",
     "id": "a5b10d15",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-07",
@@ -6405,7 +7466,11 @@
     "images": null,
     "source_url": "https://t.me/artcafesnezhinka/1941",
     "id": "57716bd2",
-    "genre": "поп-рок"
+    "genre": "поп-рок",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-08",
@@ -6422,7 +7487,11 @@
     "images": null,
     "source_url": "https://t.me/artcafesnezhinka/1941",
     "id": "613d7dd7",
-    "genre": "другое"
+    "genre": "другое",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "cbfd43e3",
@@ -6441,7 +7510,9 @@
       "/images/events/0af875f4a7edddeeef24bff75a03e7d1.jpg"
     ],
     "image": "/images/events/0af875f4a7edddeeef24bff75a03e7d1.jpg",
-    "post_date": "2026-08-09T12:38:03+00:00"
+    "post_date": "2026-08-09T12:38:03+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "318336ec",
@@ -6461,7 +7532,9 @@
       "/images/events/2cb24e0c80baeadce6c855455d44f48c.jpg"
     ],
     "image": "/images/events/bebd1e3cc570b2f6529329e52a3c67d8.jpg",
-    "post_date": "2026-08-14T17:49:49+00:00"
+    "post_date": "2026-08-14T17:49:49+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "80e8328d",
@@ -6481,7 +7554,9 @@
       "/images/events/2cb24e0c80baeadce6c855455d44f48c.jpg"
     ],
     "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
-    "post_date": "2026-08-16T09:42:05+00:00"
+    "post_date": "2026-08-16T09:42:05+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-27",
@@ -6498,7 +7573,11 @@
     "images": null,
     "source_url": "https://vk.com/wall-225094331_404",
     "id": "8114072d",
-    "genre": "джаз"
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-07-31",
@@ -6515,7 +7594,12 @@
     "images": null,
     "source_url": "https://vk.com/wall-214055536_2251",
     "id": "0e49b487",
-    "genre": "джаз"
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "912feab7",
@@ -6535,7 +7619,9 @@
       "/images/events/decd7045f18e63368057f24676cfc6aa.jpg"
     ],
     "image": "/images/events/313abf9f1b5304c78e0f42fc18c9cdb8.jpg",
-    "post_date": "2026-08-11T05:56:20+00:00"
+    "post_date": "2026-08-11T05:56:20+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-07-28",
@@ -6551,7 +7637,12 @@
     "image": "/images/events/3af885034eb8e87274866853435b5d95.jpg",
     "images": null,
     "source_url": "https://t.me/koncertykrym/2232",
-    "id": "6592dfe2"
+    "id": "6592dfe2",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-08",
@@ -6567,7 +7658,11 @@
     "image": "/images/events/cd4a8c59dab6447ddf4f1f30ba267f86.jpg",
     "images": null,
     "source_url": "https://vk.com/wall-221587243_2456",
-    "id": "2130c42f"
+    "id": "2130c42f",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "fb15f052",
@@ -6586,7 +7681,11 @@
       "/images/events/e8ddd2b57b4b3468e1362171ae995840.jpg"
     ],
     "image": "/images/events/e8ddd2b57b4b3468e1362171ae995840.jpg",
-    "post_date": "2026-08-05T11:51:48+00:00"
+    "post_date": "2026-08-05T11:51:48+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-03",
@@ -6602,7 +7701,13 @@
     "image": null,
     "images": null,
     "source_url": "https://vk.com/wall-89840945_119288",
-    "id": "d26fc075"
+    "id": "d26fc075",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-08-01",
@@ -6619,7 +7724,13 @@
     "images": null,
     "source_url": "https://vk.com/wall-89840945_119274",
     "id": "427f98ae",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-08-16",
@@ -6636,7 +7747,12 @@
     "images": null,
     "source_url": "https://t.me/belbekma/1347",
     "id": "d0eb3d86",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "40d4008e",
@@ -6656,7 +7772,11 @@
       "/images/events/b40061e5df2de09267b49e3e1200801a.jpg"
     ],
     "image": "/images/events/af4202a97f6e1bd47fbfccad942bd9a2.jpg",
-    "post_date": "2026-08-12T10:37:31+00:00"
+    "post_date": "2026-08-12T10:37:31+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "8eca90e4",
@@ -6676,7 +7796,9 @@
       "/images/events/f70a5b91563476f5a1a5aa0a937d8077.jpg"
     ],
     "image": "/images/events/7ec6a8edf7e2d12f30fd5c9ce91acf91.jpg",
-    "post_date": "2026-08-14T10:11:44+00:00"
+    "post_date": "2026-08-14T10:11:44+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-14",
@@ -6692,7 +7814,9 @@
     "image": "/images/events/b6ab7f14632ea670b0b4cc7c3d88e63a.jpg",
     "images": null,
     "source_url": "https://t.me/afisha_crimea/8223",
-    "id": "9353c76b"
+    "id": "9353c76b",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",
@@ -6709,7 +7833,12 @@
     "images": null,
     "source_url": "https://t.me/tavrida_art/21776",
     "id": "52c8990b",
-    "genre": "фолк"
+    "genre": "фолк",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-04",
@@ -6726,7 +7855,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "b330d59b",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-06",
@@ -6743,7 +7874,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "8d27965e",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-01",
@@ -6759,7 +7892,9 @@
     "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
-    "id": "eef44e1b"
+    "id": "eef44e1b",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-02",
@@ -6776,7 +7911,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "7546d203",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-08",
@@ -6793,7 +7930,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "376675f2",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -6810,7 +7949,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "960e71d4",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-22",
@@ -6827,7 +7968,9 @@
     "images": null,
     "source_url": "https://vk.com/wall-229006920_128",
     "id": "068bbb92",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "17c2e17f",
@@ -6846,7 +7989,9 @@
       "/images/events/4df937fe72118443b70eccd0c378a340.jpg"
     ],
     "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
-    "post_date": "2026-08-25T05:28:59+00:00"
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "fc1f7b84",
@@ -6865,7 +8010,9 @@
       "/images/events/4df937fe72118443b70eccd0c378a340.jpg"
     ],
     "image": "/images/events/4df937fe72118443b70eccd0c378a340.jpg",
-    "post_date": "2026-08-25T05:28:59+00:00"
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "79985fd5",
@@ -6885,7 +8032,9 @@
       "/images/events/2897ebf7def40f15e032f6c68b90973e.jpg"
     ],
     "image": "/images/events/eba4efdf485f40a45202caab8ba4b0d9.jpg",
-    "post_date": "2026-08-06T07:59:16+00:00"
+    "post_date": "2026-08-06T07:59:16+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "e6fe7eb6",
@@ -6905,7 +8054,12 @@
       "/images/events/c2141c39568f0550376f697fc722f3db.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-    "post_date": "2026-08-15T05:38:56+00:00"
+    "post_date": "2026-08-15T05:38:56+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "25f2784c",
@@ -6925,7 +8079,12 @@
       "/images/events/c2141c39568f0550376f697fc722f3db.jpg"
     ],
     "image": "/images/events/d6409898f233f03f1881722e3be8d65c.jpg",
-    "post_date": "2026-08-15T05:38:56+00:00"
+    "post_date": "2026-08-15T05:38:56+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "0425e823",
@@ -6945,7 +8104,9 @@
       "/images/events/0357f70391ff1cc88ee65a1f1d16fdd0.jpg"
     ],
     "image": "/images/events/9b74f4ce7dfe0ff040c5a904ee4f3dd3.jpg",
-    "post_date": "2026-08-21T16:31:38+00:00"
+    "post_date": "2026-08-21T16:31:38+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-01",
@@ -6962,7 +8123,11 @@
     "images": null,
     "source_url": "https://t.me/api_balaklava/1341",
     "id": "fd610694",
-    "genre": "юмор"
+    "genre": "юмор",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "978b6f3b",
@@ -6982,7 +8147,9 @@
       "/images/events/1a3dee60f627be8d68f067e2cd3c19cb.jpg"
     ],
     "image": "/images/events/1c95ad138b8f64929e4839bcbd108ab9.jpg",
-    "post_date": "2026-08-13T16:42:31+00:00"
+    "post_date": "2026-08-13T16:42:31+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "2a2c2ecb",
@@ -7002,7 +8169,9 @@
       "/images/events/8dc3ca510de15bd8e70f1b2a05ace83b.jpg"
     ],
     "image": "/images/events/2cc94687c2ab906a344796c63c2e4f6e.jpg",
-    "post_date": "2026-08-13T14:50:23+00:00"
+    "post_date": "2026-08-13T14:50:23+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -7022,7 +8191,9 @@
     ],
     "image": "/images/events/e107cdd233ea56591bfb2a18f57999ac.jpg",
     "post_date": "2026-08-15T12:11:22+00:00",
-    "id": "26914dc5"
+    "id": "26914dc5",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-14",
@@ -7038,7 +8209,9 @@
     "image": "/images/events/dc27c01d0d48d9c574eea122367e785a.jpg",
     "images": null,
     "source_url": "https://t.me/dlyadushi_Crimea/6457",
-    "id": "97cc5888"
+    "id": "97cc5888",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -7055,7 +8228,9 @@
     "images": null,
     "source_url": "https://t.me/dlyadushi_Crimea/6457",
     "id": "0d620eb8",
-    "genre": "авторская"
+    "genre": "авторская",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "82142496",
@@ -7075,7 +8250,11 @@
       "/images/events/3e3f34ebded4bc354f79c499be747a52.jpg"
     ],
     "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
-    "post_date": "2026-08-21T11:58:15+00:00"
+    "post_date": "2026-08-21T11:58:15+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-13",
@@ -7092,7 +8271,12 @@
     "images": null,
     "source_url": "https://t.me/tavrida_art/21790",
     "id": "aecdb0c8",
-    "genre": "фолк"
+    "genre": "фолк",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-15",
@@ -7111,7 +8295,11 @@
     ],
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "id": "fb372d92"
+    "id": "fb372d92",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-22",
@@ -7130,7 +8318,11 @@
     ],
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "id": "756cf212"
+    "id": "756cf212",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-29",
@@ -7149,7 +8341,11 @@
     ],
     "image": "/images/events/825737c7f1f3c9d489ee22e9240a5786.jpg",
     "post_date": "2026-08-03T17:58:21+00:00",
-    "id": "f5e6f453"
+    "id": "f5e6f453",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-16",
@@ -7166,7 +8362,11 @@
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "3ae0a52e",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-23",
@@ -7183,7 +8383,11 @@
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "cd20600c",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-30",
@@ -7200,7 +8404,11 @@
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "22b47e82",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-09",
@@ -7217,7 +8425,11 @@
     "images": null,
     "source_url": "https://t.me/massandrasun/2422",
     "id": "e1cceb3c",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "40077741",
@@ -7237,7 +8449,9 @@
       "/images/events/05741771ed89105dd0d953d946ada962.jpg"
     ],
     "image": "/images/events/12a6b4dad704a4042d834328016ff669.jpg",
-    "post_date": "2026-08-13T10:46:36+00:00"
+    "post_date": "2026-08-13T10:46:36+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-02",
@@ -7257,7 +8471,9 @@
     ],
     "image": "/images/events/1b4bd7c47303de068c6bc7a0c93fc38e.jpg",
     "post_date": "2026-08-09T09:06:10+00:00",
-    "id": "05d047cd"
+    "id": "05d047cd",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-01",
@@ -7277,7 +8493,11 @@
     ],
     "image": "/images/events/a8e4d5db3ad6494af227279d57337d8d.jpg",
     "post_date": "2026-08-01T12:00:38+00:00",
-    "id": "e029f202"
+    "id": "e029f202",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-15",
@@ -7294,7 +8514,11 @@
     "images": null,
     "source_url": "https://t.me/afisha_crimea/8241",
     "id": "fb0d2a4e",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "1aab1574",
@@ -7314,7 +8538,12 @@
       "/images/events/2e636abc8a6a086b9d4f365253ff8d3a.jpg"
     ],
     "image": "/images/events/f1a58db272f1b1ff128afaa24e12f7b5.jpg",
-    "post_date": "2026-08-14T20:19:46+00:00"
+    "post_date": "2026-08-14T20:19:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "beadeba5",
@@ -7333,7 +8562,12 @@
       "/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg"
     ],
     "image": "/images/events/1738339c9b8e18a6521133bb84b2ddc4.jpg",
-    "post_date": "2026-08-14T12:03:23+00:00"
+    "post_date": "2026-08-14T12:03:23+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "c42060a4",
@@ -7352,7 +8586,9 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-08-27T15:01:51.001212+00:00"
+    "post_date": "2026-08-27T15:01:51.001212+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "42567d5d",
@@ -7371,7 +8607,9 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-08-27T15:01:57.979112+00:00"
+    "post_date": "2026-08-27T15:01:57.979112+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "23d766b4",
@@ -7391,7 +8629,11 @@
       "/images/events/9726a364a52105e51311dcef1e0cbf37.jpg"
     ],
     "image": "/images/events/f70ff37c1e3b7dd92854c582b972bebb.jpg",
-    "post_date": "2026-08-20T17:03:53+00:00"
+    "post_date": "2026-08-20T17:03:53+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "64c922f0",
@@ -7411,7 +8653,12 @@
       "/images/events/4219f5dc1148cfc918f334aca454d833.jpg"
     ],
     "image": "/images/events/bdea390c39ff5281eeb657d10fbe60e9.jpg",
-    "post_date": "2026-08-07T17:01:55+00:00"
+    "post_date": "2026-08-07T17:01:55+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "06b988f5",
@@ -7430,7 +8677,9 @@
       "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg"
     ],
     "image": "/images/events/5680c00abb61b1834a1e568fe4888af4.jpg",
-    "post_date": "2026-08-19T07:22:37+00:00"
+    "post_date": "2026-08-19T07:22:37+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "6b3d762a",
@@ -7450,7 +8699,9 @@
       "/images/events/0944e902766e512a0ded661d88f23dd6.jpg"
     ],
     "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
-    "post_date": "2026-08-21T14:27:08+00:00"
+    "post_date": "2026-08-21T14:27:08+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "283fc5bf",
@@ -7469,7 +8720,9 @@
       "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg"
     ],
     "image": "/images/events/6a2e35abb3eb24d600493f9b811b3917.jpg",
-    "post_date": "2026-08-19T07:22:37+00:00"
+    "post_date": "2026-08-19T07:22:37+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "f564b79c",
@@ -7489,7 +8742,11 @@
       "/images/events/a83736606cb80869c2e0934d5e096f46.jpg"
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
-    "post_date": "2026-08-15T16:33:08+00:00"
+    "post_date": "2026-08-15T16:33:08+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "3ff30188",
@@ -7508,7 +8765,9 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-08-27T15:01:51.001341+00:00"
+    "post_date": "2026-08-27T15:01:51.001341+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "33f2f962",
@@ -7528,7 +8787,11 @@
       "/images/events/8230de9e4a427a9d451c99fbf7469888.jpg"
     ],
     "image": "/images/events/dca8169c5707f1eb0d128e664e52700f.jpg",
-    "post_date": "2026-08-18T20:16:13+00:00"
+    "post_date": "2026-08-18T20:16:13+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "15eb01ab",
@@ -7545,7 +8808,13 @@
     "source_url": "https://t.me/rocknroll_82/478",
     "images": null,
     "image": null,
-    "post_date": "2026-08-14T19:15:16+00:00"
+    "post_date": "2026-08-14T19:15:16+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "d941bc41",
@@ -7562,7 +8831,13 @@
     "source_url": "https://t.me/rocknroll_82/478",
     "images": null,
     "image": null,
-    "post_date": "2026-08-14T19:15:16+00:00"
+    "post_date": "2026-08-14T19:15:16+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "7365769c",
@@ -7581,7 +8856,9 @@
       "/images/events/013bd9e99f70fcfb5cb5fbdf78936a67.jpg"
     ],
     "image": "/images/events/013bd9e99f70fcfb5cb5fbdf78936a67.jpg",
-    "post_date": "2026-08-18T17:29:50+00:00"
+    "post_date": "2026-08-18T17:29:50+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "4b6c5391",
@@ -7601,7 +8878,9 @@
       "/images/events/0a5dbfb9f41bdd9d744d36ad00d5a2c1.jpg"
     ],
     "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
-    "post_date": "2026-08-22T10:28:07+00:00"
+    "post_date": "2026-08-22T10:28:07+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "bd1455b1",
@@ -7620,7 +8899,11 @@
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-    "post_date": "2026-08-12T14:49:48+00:00"
+    "post_date": "2026-08-12T14:49:48+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-08",
@@ -7637,7 +8920,11 @@
     "post_date": "2026-08-08T12:53:03+00:00",
     "source_url": "https://t.me/sevastopol_jazz/1280",
     "id": "0f341913",
-    "genre": "джаз"
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "9eeaeece",
@@ -7657,7 +8944,11 @@
       "/images/events/67c8d9e6c2bc40a0c3a0cdf9b8cf6777.jpg"
     ],
     "image": "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
-    "post_date": "2026-08-25T15:09:25+00:00"
+    "post_date": "2026-08-25T15:09:25+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "7a7bbf92",
@@ -7676,7 +8967,11 @@
       "/images/events/2d95daf7b3ee4eada4e0c8fcc2110b69.jpg"
     ],
     "image": "/images/events/2d95daf7b3ee4eada4e0c8fcc2110b69.jpg",
-    "post_date": "2026-08-08T12:51:58+00:00"
+    "post_date": "2026-08-08T12:51:58+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "85e68c5d",
@@ -7695,7 +8990,11 @@
       "/images/events/72137077ad5ad08f946770b7d3f22ff9.jpg"
     ],
     "image": "/images/events/72137077ad5ad08f946770b7d3f22ff9.jpg",
-    "post_date": "2026-08-12T10:12:43+00:00"
+    "post_date": "2026-08-12T10:12:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "7aefdb71",
@@ -7714,7 +9013,11 @@
       "/images/events/532cfb2374261e5e74933835c85490ca.jpg"
     ],
     "image": "/images/events/532cfb2374261e5e74933835c85490ca.jpg",
-    "post_date": "2026-08-10T13:48:22+00:00"
+    "post_date": "2026-08-10T13:48:22+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-09",
@@ -7731,7 +9034,11 @@
     "post_date": "2026-08-06T14:44:42+00:00",
     "source_url": "https://vk.com/wall-221587243_2455",
     "id": "f73b27ab",
-    "genre": "классика"
+    "genre": "классика",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-05",
@@ -7748,7 +9055,13 @@
     "post_date": "2026-08-05T15:01:26+00:00",
     "source_url": "https://vk.com/wall-89840945_119309",
     "id": "4acddb9f",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "53bf1e26",
@@ -7768,7 +9081,9 @@
       "/images/events/e45b41c63a80cdb921249b244feffd19.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-22T10:28:07+00:00"
+    "post_date": "2026-08-22T10:28:07+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-23",
@@ -7785,7 +9100,11 @@
     "post_date": "2026-08-14T18:56:29+00:00",
     "source_url": "https://t.me/dlyadushi_Crimea/6469",
     "id": "8e52b70b",
-    "genre": "джаз"
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "4d7732fe",
@@ -7805,7 +9124,12 @@
       "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-26T14:42:14+00:00"
+    "post_date": "2026-08-26T14:42:14+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "e5674032",
@@ -7825,7 +9149,12 @@
       "/images/events/abe3185f87157e4369733ffee2abea65.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-19T16:35:44+00:00"
+    "post_date": "2026-08-19T16:35:44+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "f3007c9d",
@@ -7845,7 +9174,12 @@
       "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-26T14:42:14+00:00"
+    "post_date": "2026-08-26T14:42:14+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "4546bee9",
@@ -7864,7 +9198,9 @@
       "/images/events/c9e1c00a98235498b247edd42e32a316.jpg"
     ],
     "image": "/images/events/c9e1c00a98235498b247edd42e32a316.jpg",
-    "post_date": "2026-08-19T10:50:20+00:00"
+    "post_date": "2026-08-19T10:50:20+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "bc595cf9",
@@ -7881,7 +9217,11 @@
     "source_url": "https://t.me/clubjam/1118",
     "images": null,
     "image": null,
-    "post_date": "2026-08-20T14:46:01+00:00"
+    "post_date": "2026-08-20T14:46:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "470475c6",
@@ -7900,7 +9240,11 @@
       "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg"
     ],
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
-    "post_date": "2026-08-24T11:16:43+00:00"
+    "post_date": "2026-08-24T11:16:43+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "130504f9",
@@ -7919,7 +9263,9 @@
       "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-    "post_date": "2026-08-27T14:29:13+00:00"
+    "post_date": "2026-08-27T14:29:13+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "30a5d50a",
@@ -7939,7 +9285,9 @@
       "/images/events/d10c126258337b8b967cd9303cf4fdc5.jpg"
     ],
     "image": "/images/events/1f59c3666fff023a4bf6b63ca97f0d55.jpg",
-    "post_date": "2026-08-20T08:01:18+00:00"
+    "post_date": "2026-08-20T08:01:18+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "7cd87068",
@@ -7959,7 +9307,9 @@
       "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
     ],
     "image": "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
-    "post_date": "2026-08-23T10:44:28+00:00"
+    "post_date": "2026-08-23T10:44:28+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-15",
@@ -7976,7 +9326,11 @@
     "post_date": "2026-08-14T18:56:29+00:00",
     "source_url": "https://t.me/dlyadushi_Crimea/6469",
     "id": "69d94c38",
-    "genre": "авторская"
+    "genre": "авторская",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "29e866d1",
@@ -7995,7 +9349,11 @@
       "/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg"
     ],
     "image": "/images/events/6956758affdc06b16e7ea4f3e4d1fc9d.jpg",
-    "post_date": "2026-08-14T18:56:29+00:00"
+    "post_date": "2026-08-14T18:56:29+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "a576fbb8",
@@ -8014,7 +9372,11 @@
       "/images/events/ec441100134b01491c1a88e1e6633230.jpg"
     ],
     "image": "/images/events/ec441100134b01491c1a88e1e6633230.jpg",
-    "post_date": "2026-08-20T12:12:38+00:00"
+    "post_date": "2026-08-20T12:12:38+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-23",
@@ -8031,7 +9393,11 @@
     "post_date": "2026-08-18T07:37:30+00:00",
     "source_url": "https://vk.com/wall-221587243_2463",
     "id": "2d922be9",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-19",
@@ -8047,7 +9413,13 @@
     "source_city": "Судак",
     "post_date": "2026-08-19T11:15:49+00:00",
     "source_url": "https://vk.com/wall-89840945_119457",
-    "id": "8a1ac1c5"
+    "id": "8a1ac1c5",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "59c88d94",
@@ -8067,7 +9439,9 @@
       "/images/events/3989bf29b99ec57b1cb1baf134472b6f.jpg"
     ],
     "image": "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
-    "post_date": "2026-08-15T13:26:25+00:00"
+    "post_date": "2026-08-15T13:26:25+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "e01efb60",
@@ -8084,7 +9458,11 @@
     "source_url": "https://t.me/clubjam/1123",
     "images": null,
     "image": null,
-    "post_date": "2026-08-21T10:43:03+00:00"
+    "post_date": "2026-08-21T10:43:03+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "d3f6d3ad",
@@ -8104,7 +9482,11 @@
       "/images/events/7b6dd5deb4415ab77dc05c1d70c26588.jpg"
     ],
     "image": "/images/events/87f410068c4c1cebf659372ac4adcf40.jpg",
-    "post_date": "2026-08-20T14:43:45+00:00"
+    "post_date": "2026-08-20T14:43:45+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "3e37f1db",
@@ -8121,7 +9503,13 @@
     "source_url": "https://vk.com/wall-89840945_119450",
     "images": null,
     "image": null,
-    "post_date": "2026-08-19T11:15:49+00:00"
+    "post_date": "2026-08-19T11:15:49+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "fa1ea514",
@@ -8138,7 +9526,12 @@
     "source_url": "https://t.me/clubjam/1125",
     "images": null,
     "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00"
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет постера"
+    ]
   },
   {
     "id": "317a62df",
@@ -8155,7 +9548,12 @@
     "source_url": "https://t.me/clubjam/1125",
     "images": null,
     "image": null,
-    "post_date": "2026-08-22T11:27:46+00:00"
+    "post_date": "2026-08-22T11:27:46+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет постера"
+    ]
   },
   {
     "id": "6010156a",
@@ -8175,7 +9573,11 @@
       "/images/events/dd6b8ddf1d72b48403e0bc9c32678027.jpg"
     ],
     "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
-    "post_date": "2026-08-22T19:58:41+00:00"
+    "post_date": "2026-08-22T19:58:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "9edea90f",
@@ -8192,7 +9594,11 @@
     "source_url": "https://t.me/artcafesnezhinka/1974",
     "images": null,
     "image": null,
-    "post_date": "2026-08-24T11:22:41+00:00"
+    "post_date": "2026-08-24T11:22:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "318066b6",
@@ -8209,7 +9615,11 @@
     "source_url": "https://t.me/artcafesnezhinka/1974",
     "images": null,
     "image": null,
-    "post_date": "2026-08-24T11:22:41+00:00"
+    "post_date": "2026-08-24T11:22:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "c187fe0e",
@@ -8226,7 +9636,11 @@
     "source_url": "https://t.me/artcafesnezhinka/1974",
     "images": null,
     "image": null,
-    "post_date": "2026-08-24T11:22:41+00:00"
+    "post_date": "2026-08-24T11:22:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "b74456ae",
@@ -8246,7 +9660,12 @@
       "/images/events/1bc6b1c597a3802cc44e9d885616fc92.jpg"
     ],
     "image": "/images/events/9d10f491140e025d77a5ea8e70b3885e.jpg",
-    "post_date": "2026-08-11T17:26:05+00:00"
+    "post_date": "2026-08-11T17:26:05+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "de6c29c1",
@@ -8263,7 +9682,12 @@
     "source_url": "https://t.me/clubjam/1118",
     "images": null,
     "image": null,
-    "post_date": "2026-08-20T14:46:01+00:00"
+    "post_date": "2026-08-20T14:46:01+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет постера"
+    ]
   },
   {
     "date": "2026-08-18",
@@ -8280,7 +9704,11 @@
     "post_date": "2026-08-18T07:04:15+00:00",
     "source_url": "https://vk.com/wall-237501275_96",
     "id": "4b3ab588",
-    "genre": "поп-рок"
+    "genre": "поп-рок",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "11f1afaf",
@@ -8299,7 +9727,12 @@
       "/images/events/0d6b95b0bf1c39e34345d9a8217ad9e5.jpg"
     ],
     "image": "/images/events/0d6b95b0bf1c39e34345d9a8217ad9e5.jpg",
-    "post_date": "2026-08-23T07:38:57+00:00"
+    "post_date": "2026-08-23T07:38:57+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "d25216c6",
@@ -8319,7 +9752,11 @@
       "/images/events/8d46aa249eab6bc9e3f3156176e06ed5.jpg"
     ],
     "image": "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
-    "post_date": "2026-08-24T12:32:41+00:00"
+    "post_date": "2026-08-24T12:32:41+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "id": "d0ee013a",
@@ -8339,7 +9776,9 @@
       "/images/events/78d3c7c655a161866eeb871fd0dd1dec.jpg"
     ],
     "image": "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
-    "post_date": "2026-08-24T13:45:01+00:00"
+    "post_date": "2026-08-24T13:45:01+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "1618a11e",
@@ -8356,7 +9795,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6514",
     "images": null,
     "image": null,
-    "post_date": "2026-08-25T05:28:59+00:00"
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "a76190da",
@@ -8373,7 +9816,11 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6514",
     "images": null,
     "image": null,
-    "post_date": "2026-08-25T05:28:59+00:00"
+    "post_date": "2026-08-25T05:28:59+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера"
+    ]
   },
   {
     "id": "3cd68824",
@@ -8393,7 +9840,12 @@
       "/images/events/a8e33fe35e7c70d62f51a98031403fc9.jpg"
     ],
     "image": "/images/events/f09fd4cf4f878fe5df593c81c412486b.jpg",
-    "post_date": "2026-08-18T14:32:33+00:00"
+    "post_date": "2026-08-18T14:32:33+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-28",
@@ -8410,7 +9862,12 @@
     "post_date": "2026-08-25T13:59:10+00:00",
     "source_url": "https://t.me/tavrida_art/21878",
     "id": "354b3113",
-    "genre": "другое"
+    "genre": "другое",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
     "id": "ee4a0a06",
@@ -8430,7 +9887,12 @@
       "/images/events/c183b68e18ddc27d345be5d140460287.jpg"
     ],
     "image": "/images/events/7d4006bb1b3d46854dacfbebaa588b6f.jpg",
-    "post_date": "2026-08-23T11:32:28+00:00"
+    "post_date": "2026-08-23T11:32:28+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "id": "a9b9a93b",
@@ -8450,7 +9912,9 @@
       "/images/events/a7358cef3ac05a4382499337716ad848.jpg"
     ],
     "image": "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
-    "post_date": "2026-08-25T13:57:09+00:00"
+    "post_date": "2026-08-25T13:57:09+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "3189d597",
@@ -8469,7 +9933,9 @@
       "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
     ],
     "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
-    "post_date": "2026-08-27T15:01:51.001276+00:00"
+    "post_date": "2026-08-27T15:01:51.001276+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-28",
@@ -8489,7 +9955,9 @@
     "post_date": "2026-08-27T14:24:17+00:00",
     "source_url": "https://t.me/clubjam/1128",
     "id": "6c68fc3a",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "18d5049c",
@@ -8508,7 +9976,11 @@
       "/images/events/61706d540f901354d59c21592cc4a894.jpg"
     ],
     "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "post_date": "2026-08-26T16:12:08+00:00"
+    "post_date": "2026-08-26T16:12:08+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-08-30",
@@ -8528,7 +10000,11 @@
     "post_date": "2026-08-27T07:30:13+00:00",
     "source_url": "https://t.me/dlyadushi_Crimea/6528",
     "id": "28a74998",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-29",
@@ -8545,7 +10021,9 @@
     "post_date": "2026-08-26T04:53:30+00:00",
     "source_url": "https://t.me/afisha_crimea/8330",
     "id": "16a3fb56",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-27",
@@ -8565,7 +10043,11 @@
     "post_date": "2026-08-26T14:11:12+00:00",
     "source_url": "https://t.me/tavrida_art/21882",
     "id": "30b74b3a",
-    "genre": "поп"
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены"
+    ]
   },
   {
     "date": "2026-09-12",
@@ -8582,7 +10064,11 @@
     "post_date": "2026-08-26T05:06:19+00:00",
     "source_url": "https://t.me/crimea_event/5631",
     "id": "19b4212a",
-    "genre": "метал"
+    "genre": "метал",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-10-09",
@@ -8599,7 +10085,11 @@
     "post_date": "2026-08-26T05:06:19+00:00",
     "source_url": "https://t.me/crimea_event/5631",
     "id": "7b8801a2",
-    "genre": "рок"
+    "genre": "рок",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "id": "0a83b119",
@@ -8619,7 +10109,11 @@
       "/images/events/5360f5074ed2bb9885cc465867eb3408.jpg"
     ],
     "image": "/images/events/7a16732f4ed3a449c3266f852164a1fe.jpg",
-    "post_date": "2026-08-27T10:26:53+00:00"
+    "post_date": "2026-08-27T10:26:53+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
   },
   {
     "date": "2026-11-08",
@@ -8635,6 +10129,8 @@
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "genre": "рок",
-    "id": "a8eb22dd"
+    "id": "a8eb22dd",
+    "needs_review": false,
+    "review_reasons": []
   }
 ]
