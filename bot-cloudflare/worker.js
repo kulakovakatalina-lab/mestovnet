@@ -83,6 +83,11 @@ const send = (env, chatId, text, markup, html = true) =>
     link_preview_options: { is_disabled: true },
     ...(markup ? { reply_markup: markup } : {}),
   });
+const sendPhoto = (env, chatId, photo, caption = "") =>
+  tg(env, "sendPhoto", {
+    chat_id: chatId, photo, caption,
+    ...(caption ? { parse_mode: "HTML" } : {}),
+  });
 const editText = (env, chatId, msgId, text, markup, html = true) =>
   tg(env, "editMessageText", {
     chat_id: chatId, message_id: msgId, text,
@@ -355,12 +360,35 @@ const moderationStartKb = () => ({ inline_keyboard: [[btn("Разобрать с
 
 function moderationCard(event, position, total) {
   const details = [
-    event.date && `📅 ${esc(event.date)}`,
-    event.artist && `<b>${esc(event.artist)}</b>`,
+    `🔎 <b>Модерация ${position + 1} из ${total}</b>`,
+    "",
+    `<b>${esc(event.artist || "Без названия")}</b>`,
+    `📅 ${esc(event.date || "дата не указана")}${event.time ? ` · ${esc(event.time)}` : ""}`,
+    `📍 ${esc([event.source_city, event.venue].filter(Boolean).join(" · ") || "место не указано")}`,
+    `🎫 ${esc(event.price || "стоимость не указана")}`,
+    event.genre && `🎵 ${esc(event.genre)}`,
+    event.event_type && `Тип: ${esc(event.event_type)}`,
+  ].filter(Boolean);
+  return details.join("\n");
+}
+
+function moderationFooter(event) {
+  return [
     event.reasons?.length && `⚠️ ${event.reasons.map(esc).join(", ")}`,
     event.source_url && `🔗 <a href="${esc(event.source_url)}">Открыть первоисточник</a>`,
-  ].filter(Boolean);
-  return `🔎 <b>Модерация ${position + 1}</b>\n\n${details.join("\n")}`;
+  ].filter(Boolean).join("\n");
+}
+
+function splitForTelegram(text, limit = 4000) {
+  const chunks = [];
+  let rest = text;
+  while (rest.length > limit) {
+    const cut = Math.max(rest.lastIndexOf("\n", limit), rest.lastIndexOf(" ", limit), limit);
+    chunks.push(rest.slice(0, cut));
+    rest = rest.slice(cut).trimStart();
+  }
+  if (rest) chunks.push(rest);
+  return chunks;
 }
 
 function moderationCardKb(eventId, nextPosition) {
@@ -541,13 +569,24 @@ async function showModerationCard(env, chatId, msgId, position) {
     const event = queue[position];
     const decision = await getModerationDecision(env, event.id);
     if (!decision) {
-      await editText(env, chatId, msgId, moderationCard(event, position, queue.length),
+      const image = event.image && (event.image.startsWith("http") ? event.image : `${SITE}${event.image}`);
+      if (image) {
+        const poster = await sendPhoto(env, chatId, image, "🎨 <b>Постер события</b>");
+        if (!poster || !poster.ok) console.log("moderation poster failed", event.id);
+      }
+      await send(env, chatId, moderationCard(event, position, queue.length));
+      if (event.description) {
+        for (const part of splitForTelegram(event.description)) {
+          await send(env, chatId, `📝 <b>Описание</b>\n${esc(part)}`);
+        }
+      }
+      await send(env, chatId, moderationFooter(event) || "Проверьте карточку и примите решение.",
         moderationCardKb(event.id, position + 1));
       return;
     }
     position++;
   }
-  await editText(env, chatId, msgId,
+  await send(env, chatId,
     "✅ В очереди больше нет неразобранных карточек. Одобренные события появятся после следующего ночного обновления сайта.",
     null, false);
 }
@@ -568,6 +607,8 @@ async function moderateEvent(env, cb, status, eventId, nextPosition) {
     decided_at: new Date().toISOString(),
   });
   await answerCb(env, cb.id, status === "approved" ? "Одобрено" : "Отклонено");
+  await editText(env, cb.message.chat.id, cb.message.message_id,
+    status === "approved" ? "✅ Событие одобрено." : "❌ Событие отклонено.", null, false);
   await showModerationCard(env, cb.message.chat.id, cb.message.message_id, nextPosition);
 }
 
@@ -623,6 +664,7 @@ async function onCallback(env, cb) {
     }
     if (data.startsWith("mod:next:")) {
       await answerCb(env, cb.id);
+      await editMarkup(env, chatId, msgId, { inline_keyboard: [] });
       await showModerationCard(env, chatId, msgId, Number(data.slice("mod:next:".length)) || 0);
       return;
     }
