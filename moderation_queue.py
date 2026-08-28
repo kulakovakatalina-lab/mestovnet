@@ -80,8 +80,21 @@ def main() -> None:
             event.pop("moderated_at", None)
         if issues and not approved and not rejected:
             queue.append({
-                "id": event.get("id"), "date": event.get("date"),
-                "artist": event.get("artist"), "source_url": event.get("source_url"),
+                # В очередь кладём именно те данные, которые увидит посетитель
+                # сайта. Telegram-бот показывает эту карточку модератору до
+                # публикации, включая постер и полное описание.
+                "id": event.get("id"),
+                "date": event.get("date"),
+                "time": event.get("time"),
+                "artist": event.get("artist"),
+                "venue": event.get("venue"),
+                "source_city": event.get("source_city"),
+                "price": event.get("price"),
+                "genre": event.get("genre"),
+                "event_type": event.get("event_type"),
+                "description": event.get("description"),
+                "image": event.get("image"),
+                "source_url": event.get("source_url"),
                 "reasons": issues,
             })
     EVENTS.write_text(json.dumps(events, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
