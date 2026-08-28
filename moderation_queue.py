@@ -5,6 +5,7 @@ import os
 import re
 import urllib.error
 import urllib.request
+from datetime import date
 from pathlib import Path
 from typing import Optional
 
@@ -12,6 +13,10 @@ from typing import Optional
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
 CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта|Керчь|Феодосия|Судак|Гурзуф)\b", re.I)
+# Цена и постер полезны, но их отсутствие не должно останавливать публикацию:
+# цена часто отсутствует у бесплатных/донатных событий, а сайт умеет показать
+# аккуратную заглушку постера. Остальные неполные поля требуют решения человека.
+OPTIONAL_ISSUES = {"нет цены", "нет постера"}
 
 
 def load_decisions() -> list[dict]:
@@ -56,6 +61,7 @@ def decision_for(event: dict, by_id: dict, by_source: dict) -> Optional[dict]:
 
 def main() -> None:
     events = json.loads(EVENTS.read_text(encoding="utf-8"))
+    today = date.today().isoformat()
     decisions = load_decisions()
     by_id = {d.get("event_id"): d for d in decisions if d.get("event_id")}
     by_source = {d.get("source_url"): d for d in decisions if d.get("source_url")}
@@ -70,15 +76,23 @@ def main() -> None:
         # в очередь, а не будет опубликована по старому решению.
         approved = status == "approved" and decision.get("reasons", []) == issues
         rejected = status == "rejected"
-        event["needs_review"] = bool(issues) and not approved and not rejected
+        archived = bool(event.get("date")) and event["date"] < today
+        auto_approved = bool(issues) and set(issues).issubset(OPTIONAL_ISSUES)
+        event["needs_review"] = bool(issues) and not approved and not rejected and not archived and not auto_approved
         event["review_reasons"] = issues
         if approved or rejected:
             event["moderation_status"] = status
             event["moderated_at"] = decision.get("decided_at", "")
+        elif archived:
+            event["moderation_status"] = "archived"
+            event.pop("moderated_at", None)
+        elif auto_approved:
+            event["moderation_status"] = "approved"
+            event.pop("moderated_at", None)
         else:
             event.pop("moderation_status", None)
             event.pop("moderated_at", None)
-        if issues and not approved and not rejected:
+        if issues and not approved and not rejected and not archived and not auto_approved:
             queue.append({
                 # В очередь кладём именно те данные, которые увидит посетитель
                 # сайта. Telegram-бот показывает эту карточку модератору до
