@@ -108,9 +108,10 @@ class TestEventPages:
     def _sample(self, upcoming_events):
         return upcoming_events[:SAMPLE_SIZE]
 
-    def test_pages_exist_for_upcoming_events(self, upcoming_events, project_root):
+    def test_pages_exist_for_upcoming_events(self, upcoming_events, settings, project_root):
+        visible_events = apply_settings(upcoming_events, settings)
         missing = [
-            e["id"] for e in upcoming_events
+            e["id"] for e in visible_events
             if e["id"] not in KNOWN_MISSING_EVENT_PAGES
             and not (project_root / "event" / e["id"]).is_file()
         ]
@@ -187,11 +188,11 @@ class TestEventPages:
 
 
 class TestVenueAndCityPages:
-    def test_pages_exist_for_venues_with_events(self, venues, events, project_root):
+    def test_pages_exist_for_venues_with_events(self, venues, events, settings, project_root):
         # Реплицируем логику generate_pages.main(): venue_slug резолвится
         # по точному совпадению строки venue/alias, а не произвольным
         # пересечением множеств имён.
-        events_copy = [dict(e) for e in events]
+        events_copy = [dict(e) for e in apply_settings(events, settings)]
         resolve_venue_slugs(events_copy, build_venue_alias_lookup(venues))
         active_slugs = {e["venue_slug"] for e in events_copy if e.get("venue_slug")}
 
@@ -206,8 +207,9 @@ class TestVenueAndCityPages:
             f"Похоже, сайт нужно пересобрать: python3 generate_pages.py"
         )
 
-    def test_pages_exist_for_cities_with_events(self, cities, events, project_root):
-        active_cities = {e.get("source_city") for e in events if e.get("source_city")}
+    def test_pages_exist_for_cities_with_events(self, cities, events, settings, project_root):
+        visible_events = apply_settings(events, settings)
+        active_cities = {e.get("source_city") for e in visible_events if e.get("source_city")}
         missing = []
         for c in cities:
             # "Крым"/all — зонтичный псевдо-город, generate_pages.py его
@@ -220,10 +222,10 @@ class TestVenueAndCityPages:
 
 
 class TestArtistPages:
-    def test_pages_exist_for_artists_with_events(self, artists, events, project_root):
+    def test_pages_exist_for_artists_with_events(self, artists, events, settings, project_root):
         # Реплицируем логику generate_pages.main(): artist_slugs резолвится
         # тем же разбиением поля artist, что и при сборке реестра.
-        events_copy = [dict(e) for e in events]
+        events_copy = [dict(e) for e in apply_settings(events, settings)]
         resolve_artist_slugs(events_copy, build_artist_alias_lookup(artists))
         active_slugs = {s for e in events_copy for s in (e.get("artist_slugs") or [])}
 

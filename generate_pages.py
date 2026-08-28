@@ -199,7 +199,7 @@ def apply_settings(events: list[dict], settings: dict) -> list[dict]:
         url = e.get("source_url") or ""
 
         # Скрытые события исключаем полностью
-        if url in hidden:
+        if url in hidden or e.get("needs_review"):
             continue
 
         ev = dict(e)  # мелкая копия, нам хватает
@@ -264,7 +264,9 @@ def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
     time_disp = esc(time_) if time_ else "—"
     desc_html = f'<div class="card-description">{esc(desc)}</div>' if desc else ""
     img_html  = (f'<img class="card-thumb" src="{esc(image)}" alt="{esc(label)}"'
-                 f' loading="lazy" onerror="this.remove()">' if image else "")
+                 f' loading="lazy" onerror="this.remove()">' if image else
+                 '<div class="card-thumb card-thumb-fallback" aria-label="Постер отсутствует" '
+                 'style="display:grid;place-items:center;background:#14243a;color:#93c5fd;font-size:2rem">♫</div>')
     cls_extra = " cancelled" if cancelled else ""
 
     return (
