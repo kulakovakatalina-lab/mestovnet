@@ -341,7 +341,7 @@ class TestDeduplicateEvents:
         result = deduplicate_events(events)
         assert len(result) == 2
 
-    def test_venue_time_match(self):
+    def test_different_artists_at_same_venue_and_time_are_not_merged(self):
         events = [
             {
                 "source_url": "https://t.me/ch1/1",
@@ -365,7 +365,33 @@ class TestDeduplicateEvents:
             },
         ]
         result = deduplicate_events(events)
-        assert len(result) == 1
+        assert len(result) == 2
+
+    def test_same_artist_at_same_venue_but_different_times_are_not_merged(self):
+        base = {
+            "date": "2026-01-15",
+            "artist": "Артист А",
+            "venue": "Jam Club",
+            "source_city": "Симферополь",
+        }
+        events = [
+            {**base, "source_url": "https://t.me/ch1/1", "time": "18:00"},
+            {**base, "source_url": "https://t.me/ch2/1", "time": "21:00"},
+        ]
+        assert len(deduplicate_events(events)) == 2
+
+    def test_same_post_same_date_different_artists_are_not_merged(self):
+        base = {
+            "source_url": "https://t.me/venue/weekly-poster",
+            "date": "2026-08-21",
+            "venue": "Jam Club",
+            "source_city": "Симферополь",
+        }
+        events = [
+            {**base, "artist": "Группа А", "time": "18:00"},
+            {**base, "artist": "Группа Б", "time": "21:00"},
+        ]
+        assert len(deduplicate_events(events)) == 2
 
     def test_empty_list(self):
         assert deduplicate_events([]) == []
