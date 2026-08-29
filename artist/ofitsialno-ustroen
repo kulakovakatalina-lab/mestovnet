@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Официально Устроен", "Официально Устроен"];
+const ARTIST_ALIASES = ["Официально Устроен", "Официально устроен", "Официально Устроен"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

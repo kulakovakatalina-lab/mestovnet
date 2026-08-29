@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 42,
+    "event_count": 38,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 32,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -138,21 +138,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 11,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "teatr-im-a-p-chehova",
     "name": "Театр им. А.П. Чехова",
     "city": "Ялта",
@@ -188,21 +173,6 @@
     "lon": null
   },
   {
-    "slug": "sevastopolskiy-tskii",
-    "name": "Севастопольский ЦКиИ",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 9,
-    "aliases": [
-      "Севастопольский ЦКиИ",
-      "Центр культуры и искусства"
-    ],
-    "description": "За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.",
-    "desc_baseline_count": 7,
-    "lat": 44.610158,
-    "lon": 33.526829
-  },
-  {
     "slug": "usadba-rodnoe-gnezdo",
     "name": "Усадьба «Родное гнездо»",
     "city": "Севастополь",
@@ -220,6 +190,36 @@
     "lon": 33.728614
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 9,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "sevastopolskiy-tskii",
+    "name": "Севастопольский ЦКиИ",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "Севастопольский ЦКиИ",
+      "Центр культуры и искусства"
+    ],
+    "description": "За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.",
+    "desc_baseline_count": 7,
+    "lat": 44.610158,
+    "lon": 33.526829
+  },
+  {
     "slug": "centrum",
     "name": "Centrum",
     "city": "Симферополь",
@@ -232,22 +232,6 @@
     "desc_baseline_count": 8,
     "lat": 44.938155,
     "lon": 34.09338
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
   },
   {
     "slug": "art-kovcheg",
@@ -266,6 +250,36 @@
     "desc_baseline_count": 7,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -345,20 +359,6 @@
     "lon": null
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "organnom-zale-livadia",
     "name": "Органном зале \"LIVADIA\"",
     "city": "Ялта",
@@ -385,35 +385,6 @@
     "desc_baseline_count": 1,
     "lat": 44.606638,
     "lon": 33.522078
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "golf-pole",
-    "name": "Гольф-поле",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Гольф-поле",
-      "гольф-поле"
-    ],
-    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
-    "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "krongs",
@@ -447,13 +418,13 @@
     "lon": 33.944698
   },
   {
-    "slug": "simferopol",
-    "name": "Симферополь",
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
     "city": "Симферополь",
     "address": "",
     "event_count": 4,
     "aliases": [
-      "Симферополь"
+      "Рок-н-рольщики"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -501,20 +472,6 @@
     "desc_baseline_count": 4,
     "lat": 44.49128,
     "lon": 34.150075
-  },
-  {
-    "slug": "gastrodvor",
-    "name": "Гастродвор",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Гастродвор"
-    ],
-    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
-    "desc_baseline_count": 2,
-    "lat": 44.494636,
-    "lon": 34.166005
   },
   {
     "slug": "dvorets-dyulber",
@@ -694,6 +651,34 @@
     "lon": 33.69919
   },
   {
+    "slug": "golf-pole",
+    "name": "Гольф-поле",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Гольф-поле"
+    ],
+    "description": "Гольф-поле под Севастополем — камерные закатные концерты на открытом воздухе, например выступление Анны Шакель и Андрея Рыбальченко.",
+    "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "gastrodvor",
+    "name": "Гастродвор",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Гастродвор"
+    ],
+    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
+    "desc_baseline_count": 2,
+    "lat": 44.494636,
+    "lon": 34.166005
+  },
+  {
     "slug": "otel-akvamarin",
     "name": "Отель «Аквамарин»",
     "city": "Севастополь",
@@ -738,20 +723,18 @@
     "lon": null
   },
   {
-    "slug": "palmira-palace",
-    "name": "Palmira Palace",
-    "city": "Ялта",
+    "slug": "restoran-motivy",
+    "name": "Ресторан «Мотивы»",
+    "city": "Симферополь",
     "address": "",
     "event_count": 3,
     "aliases": [
-      "Palmira Palace",
-      "Palmira Palace Resort & SPA",
-      "Отель «Пальмира Палас»"
+      "Ресторан «Мотивы»"
     ],
-    "description": "В один день здесь прошло 3 джазовых концерта у моря — открытие сезона фестивалем «Май в ритме джаза» и джазовый фестиваль-маркет «Скажите Джаз» со свингом и латино.",
-    "desc_baseline_count": 3,
-    "lat": 44.441156,
-    "lon": 34.132019
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "bar-el-capulco-0-0",
@@ -792,6 +775,20 @@
     ],
     "description": "Фестиваль-маркет «Скажите Джаз» на берегу Чёрного моря в Коктебеле — два дня живого джаза, гастрономический маркет и закатные сеты.",
     "desc_baseline_count": 2,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "simferopol",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Симферополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -898,6 +895,21 @@
     "lon": 34.167981
   },
   {
+    "slug": "palmira-palace",
+    "name": "Palmira Palace",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Palmira Palace Resort & SPA",
+      "Отель «Пальмира Палас»"
+    ],
+    "description": "В один день здесь прошло 3 джазовых концерта у моря — открытие сезона фестивалем «Май в ритме джаза» и джазовый фестиваль-маркет «Скажите Джаз» со свингом и латино.",
+    "desc_baseline_count": 3,
+    "lat": 44.441156,
+    "lon": 34.132019
+  },
+  {
     "slug": "anapskiy-rayon-supseh",
     "name": "АНАПСКИЙ РАЙОН, СУПСЕХ",
     "city": "Крым",
@@ -919,6 +931,20 @@
     "event_count": 2,
     "aliases": [
       "экокемп Семена, Бельбекская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Квартал культур мира"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1430,20 +1456,6 @@
     "lon": null
   },
   {
-    "slug": "restoran-motivy",
-    "name": "Ресторан «Мотивы»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Ресторан «Мотивы»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "na-prirode",
     "name": "на природе",
     "city": "Севастополь",
@@ -1493,20 +1505,6 @@
     "event_count": 1,
     "aliases": [
       "Крымский республиканский клинический госпиталь для ветеранов войн"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Квартал культур мира"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1675,6 +1673,20 @@
     "event_count": 1,
     "aliases": [
       "с. Лучистое"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bolshoe-golf-pole",
+    "name": "Большое гольф-поле",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Большое гольф-поле"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1871,6 +1883,34 @@
     "event_count": 1,
     "aliases": [
       "ДК рыбаков"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "prostranstvo-ali-bair",
+    "name": "пространство «Али-Баир»",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "пространство «Али-Баир»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzykalnyy-teatr-respubliki-krym",
+    "name": "Музыкальный театр Республики Крым",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музыкальный театр Республики Крым"
     ],
     "description": null,
     "desc_baseline_count": 0,

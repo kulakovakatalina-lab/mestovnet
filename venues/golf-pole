@@ -1076,7 +1076,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Гольф-поле", "гольф-поле", "Гольф-поле"];
+const VENUE_ALIASES = ["Гольф-поле", "Гольф-поле"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

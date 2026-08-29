@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Юлия Бакшинская, Арт-кафе «Снежинка», в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев, Арт-кафе «Снежинка», в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Юлия Бакшинская — Арт-кафе «Снежинка», Севастополь, 16 августа · Местов.Нет</title>
+<title>Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев — Арт-кафе «Снежинка», Севастополь, 16 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/80e8328d">
-<meta property="og:title" content="Юлия Бакшинская — Арт-кафе «Снежинка», Севастополь, 16 августа · Местов.Нет">
-<meta property="og:description" content="Юлия Бакшинская, Арт-кафе «Снежинка», в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев — Арт-кафе «Снежинка», Севастополь, 16 августа · Местов.Нет">
+<meta property="og:description" content="Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев, Арт-кафе «Снежинка», в Севастополе, 16 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/ed019312c236485529361d254e1107cd.jpg">
 <script type="application/ld+json">
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Юлия Бакшинская",
+      "name": "Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев",
       "startDate": "2026-08-16T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Вечер авторской музыки молодой и талантливой певицы Юлии Бакшинской. Песни о любви, надежде, внутренней силе, хрупкости и тех чувствах, которые не всегда удаётся выразить обычными словами. Живой вокал, фортепиано, саксофон и ударные создадут тонкое и насыщенное звучание.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Юлия Бакшинская"
+        "name": "Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев"
       },
       "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
       "offers": {
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Юлия Бакшинская"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев"}]}
 </script>
 </head>
 <body>
