@@ -7,7 +7,7 @@
 import random
 import re
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from typing import Optional
 
 import httpx
@@ -175,15 +175,28 @@ def fetch_yandex_afisha_posts(city_slug: str, city_name: str) -> list[dict]:
     return posts
 
 
+def _is_within_horizon(date_value: str, today: date, days_back: int) -> bool:
+    """Проверяет, что событие приходится на заданный горизонт вперёд."""
+    try:
+        event_date = date.fromisoformat(date_value)
+    except (TypeError, ValueError):
+        return False
+    horizon = today + timedelta(days=max(days_back, 0))
+    return today <= event_date <= horizon
+
+
 def fetch_all_crimea(days_back: int = 90) -> list[dict]:
-    """Возвращает посты со всех крымских городов."""
+    """Возвращает события на сегодня и в пределах горизонта вперёд."""
     all_posts = []
+    today = date.today()
     for city in CITIES:
         try:
             posts = fetch_yandex_afisha_posts(city["slug"], city["name"])
             for p in posts:
+                if not _is_within_horizon(p.get("date"), today, days_back):
+                    continue
                 p["_city"] = city["name"]
-            all_posts.extend(posts)
+                all_posts.append(p)
             time.sleep(5)  # пауза между городами (увеличена для обхода rate limit)
         except Exception as e:
             print(f"  Ошибка {city['slug']}: {e}")
