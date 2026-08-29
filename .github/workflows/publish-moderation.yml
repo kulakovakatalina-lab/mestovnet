@@ -1,0 +1,52 @@
+name: Publish moderation decision
+
+# Worker запускает workflow сразу после одобрения или отклонения карточки.
+on:
+  workflow_dispatch:
+
+concurrency:
+  # Не пересекаться с ночным парсером: оба процесса меняют main.
+  group: site-publication
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      MODERATION_WORKER_URL: ${{ secrets.MODERATION_WORKER_URL }}
+      MODERATION_SYNC_TOKEN: ${{ secrets.MODERATION_SYNC_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Apply moderation decision
+        run: |
+          python moderation_queue.py
+          python build_venues.py
+          python build_artists.py
+          python generate_pages.py
+
+      - name: Commit and publish if changed
+        run: |
+          if git diff --quiet; then
+            echo "Decision was already published; nothing to commit."
+            exit 0
+          fi
+          git config user.name "MestovNet Bot"
+          git config user.email "mestovnet-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "moderation: publish decision"
+          git push origin HEAD:main
