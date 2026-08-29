@@ -15,7 +15,7 @@ on:
         type: string
 
 concurrency:
-  group: parser-daily
+  group: site-publication
   cancel-in-progress: false
 
 jobs:

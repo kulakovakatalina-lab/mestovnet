@@ -15,6 +15,8 @@ const SITE = "https://mestov.net";
 const EVENTS_URL = `${SITE}/events.json`;
 const SETTINGS_URL = `${SITE}/settings.json`;
 const MODERATION_URL = `${SITE}/moderation.json`;
+const GITHUB_API = "https://api.github.com";
+const MODERATION_PUBLISH_WORKFLOW = "publish-moderation.yml";
 const MAX_EVENTS = 25;
 const HORIZON_DAYS = 7;
 
@@ -116,6 +118,40 @@ const delDraft = (env, id) => env.KV.delete(`draft:${id}`);
 const getModerationDecision = (env, eventId) => env.KV.get(`moderation:${eventId}`, { type: "json" });
 const setModerationDecision = (env, eventId, decision) =>
   env.KV.put(`moderation:${eventId}`, JSON.stringify(decision));
+
+// Запускает короткую публикацию сразу после решения модератора. Если секрет
+// не настроен или GitHub временно недоступен, ночной запуск остаётся fallback.
+async function triggerModerationPublish(env) {
+  const token = env.GITHUB_MODERATION_TOKEN;
+  const repository = env.GITHUB_REPOSITORY || "kulakovakatalina-lab/mestovnet";
+  if (!token) {
+    console.log("GITHUB_MODERATION_TOKEN is not configured; waiting for nightly sync");
+    return false;
+  }
+  try {
+    const response = await fetch(
+      `${GITHUB_API}/repos/${repository}/actions/workflows/${MODERATION_PUBLISH_WORKFLOW}/dispatches`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      },
+    );
+    if (!response.ok) {
+      console.log("moderation publish dispatch failed", response.status, await response.text());
+      return false;
+    }
+    return true;
+  } catch (error) {
+    console.log("moderation publish dispatch error", error);
+    return false;
+  }
+}
 
 async function listModerationDecisions(env) {
   const decisions = [];
@@ -591,7 +627,7 @@ async function showModerationCard(env, chatId, msgId, position) {
     position++;
   }
   await send(env, chatId,
-    "✅ В очереди больше нет неразобранных карточек. Одобренные события появятся после следующего ночного обновления сайта.",
+    "✅ В очереди больше нет неразобранных карточек. Одобренные события публикуются автоматически.",
     null, false);
 }
 
@@ -610,9 +646,13 @@ async function moderateEvent(env, cb, status, eventId, nextPosition) {
     status,
     decided_at: new Date().toISOString(),
   });
+  const publishStarted = await triggerModerationPublish(env);
   await answerCb(env, cb.id, status === "approved" ? "Одобрено" : "Отклонено");
   await editText(env, cb.message.chat.id, cb.message.message_id,
-    status === "approved" ? "✅ Событие одобрено." : "❌ Событие отклонено.", null, false);
+    status === "approved"
+      ? (publishStarted ? "✅ Событие одобрено. Публикую на сайте…" : "✅ Событие одобрено.")
+      : (publishStarted ? "❌ Событие отклонено. Обновляю сайт…" : "❌ Событие отклонено."),
+    null, false);
   await showModerationCard(env, cb.message.chat.id, cb.message.message_id, nextPosition);
 }
 
