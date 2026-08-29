@@ -1231,7 +1231,7 @@ async function load() {
 
     function applySettings(e) {
       const url = e.source_url || '';
-      if (hiddenSet.has(url)) return null;
+      if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
       const ev = { ...e };
       if (url in ovNames)   ev.artist      = ovNames[url];
       if (url in ovTimes)   ev.time        = ovTimes[url];

@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Скажите Джаз",
-      "startDate": "2026-04-30T00:00:00+03:00",
+      "startDate": "2026-04-30",
       "location": {
         "@type": "MusicVenue",
         "name": "Скажите Джаз",
@@ -1229,7 +1229,7 @@ async function load() {
 
     function applySettings(e) {
       const url = e.source_url || '';
-      if (hiddenSet.has(url)) return null;
+      if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
       const ev = { ...e };
       if (url in ovNames)   ev.artist      = ovNames[url];
       if (url in ovTimes)   ev.time        = ovTimes[url];

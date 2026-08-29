@@ -16,7 +16,7 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+<meta name="description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 12 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Живая музыка и концерты в Симферополе — Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
@@ -794,7 +794,7 @@ footer {
 </style>
   <link rel="canonical" href="https://mestov.net/cities/simferopol.html">
 <meta property="og:title" content="Живая музыка и концерты в Симферополе — Местов.Нет">
-  <meta property="og:description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 13 событий в клубах, барах и на площадках. Обновляется ежедневно.">
+  <meta property="og:description" content="Афиша концертов и живой музыки в Симферополе: ближайшие 12 событий в клубах, барах и на площадках. Обновляется ежедневно.">
   <meta property="og:type" content="website">
   
   <script type="application/ld+json">
@@ -1100,32 +1100,6 @@ footer {
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ундервуд",
-      "startDate": "2026-11-09T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Музыкальный театр Республики Крым",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ундервуд"
-      },
-      "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-      "offers": {
-        "@type": "Offer",
-        "name": "от 1500 ₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
     }
   ]
 }
@@ -1330,7 +1304,10 @@ function applySettings(data, settings) {
   const ovGenres  = settings.genres       || {};
   return data.map((e, i) => {
     const url = e.source_url || '';
-    if (hiddenSet.has(url)) return null;
+    // events.json — внутренний реестр, поэтому до решения модератора
+    // карточка не должна просачиваться в динамическую главную страницу.
+    // Статический генератор применяет то же правило в apply_settings().
+    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = { ...e, _origIdx: i };
     if (url in ovNames)  ev.artist      = ovNames[url];
     if (url in ovTimes)  ev.time        = ovTimes[url];
@@ -1589,11 +1566,6 @@ load();
 </div>
 <div class="date-group"><h2>4 ноября, вт</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/yorsh-6025408/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Йорш</div><div class="card-venue">Депо<span class="city">· Симферополь</span></div><div class="card-description">ЙОРШ отмечает 20-летие большим туром: прозвучат хиты, редкие треки и песни из нового альбома.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1600 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/yorsh-6025408/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/bb54a38a265416de38aa9ce51fec7403.jpg" alt="Йорш" loading="lazy" onerror="this.remove()"></div></div>
-</div>
-<div class="date-group"><h2>9 ноября, вс</h2>
-<div class="card" onclick="window.open('https://www.afisha.ru/concert/undervud-6049724/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Ундервуд</div><div class="card-venue">Музыкальный театр Республики Крым<span class="city">· Симферополь</span></div><div class="card-description">О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.
-
-Не упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1500 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/undervud-6049724/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg" alt="Ундервуд" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>17 ноября, пн</h2>
 <div class="card" onclick="window.open('https://afisha.yandex.ru/simferopol/concert/sergey-penkin-2026?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Сергей Пенкин</div><div class="card-venue">Русский театр им. Горького<span class="city">· Симферополь</span></div><div class="card-description">Сергей Пенкин в Драматический театр им. Горького, Симферополь.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">от 3 000 ₽</span></div><div class="card-source"><a class="src-link" href="https://afisha.yandex.ru/simferopol/concert/sergey-penkin-2026?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Яндекс.Афиша</a></div></div><img class="card-thumb" src="/images/events/8439b6dfa9dc0732c1213f4b754206c7.jpg" alt="Сергей Пенкин" loading="lazy" onerror="this.remove()"></div></div>
