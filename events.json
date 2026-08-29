@@ -633,8 +633,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_82/466",
     "images": [
-      "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
-      "/images/events/4ae28d4a7072b883f648eefb948bb93c.jpg"
+      "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg"
     ],
     "image": "/images/events/1fa4a8f191aa42fc41826e9ae0154f33.jpg",
     "post_date": "2026-08-15T11:15:48+00:00",
@@ -680,7 +679,7 @@
     "source_url": "https://vk.com/wall-214055536_2258",
     "images": [
       "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
-      "/images/events/80b251e916de2c2089deca1aff41c16b.jpg"
+      "/images/events/122223819717af005ee5ec9528745cec.jpg"
     ],
     "image": "/images/events/71b1d0f6f6a875d971ea8249ff326ee4.jpg",
     "post_date": "2026-08-16T06:13:47+00:00",
@@ -811,17 +810,16 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": null,
-    "description": "Мировые и русские танцевальные хиты в мощном звучании группы «Проект-С» (Симферополь).",
+    "description": "Мировые и русские танцевальные хиты в мощном звучании группы «Проект-С»",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
-      "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
+      "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-21T17:20:26+00:00",
+    "post_date": "2026-08-23T10:45:19+00:00",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
@@ -970,19 +968,19 @@
     "time": "21:00",
     "artist": "Денис (DZen), Демчиз, Домино",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики",
+    "venue": "Рок-н-рольщики (Симферополь)",
     "price": "бесплатно",
-    "description": "Группа «Домино» из Севастополя сыграет нетленки русского рок-попа и неожиданные мэшапы.",
+    "description": "Нетленки русского рок-попа и неожиданные аранжировки в исполнении группы «Домино»",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "русский рок",
     "source_url": "https://t.me/rocknroll_82/505",
     "images": [
       "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
-      "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
+      "/images/events/06d5282b03e6d9e33f437436f728cab1.jpg"
     ],
     "image": "/images/events/c7274cd53286a605efca80684a652ecb.jpg",
-    "post_date": "2026-08-22T09:32:44+00:00",
+    "post_date": "2026-08-23T10:45:19+00:00",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "archived"
@@ -1184,7 +1182,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "3ea574df",
@@ -1194,22 +1192,22 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": null,
-    "description": "Группа «Кальвадос»: русский поп-рок и саундтреки из легендарных фильмов.",
+    "description": "Сегодня веселые и громкие группа «Кальвадос» с хитами русского поп-рока и саундтреками из легендарных фильмов. Не подпевать не получится!",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "поп-рок",
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
       "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/cfeafb57cac4af73e289e064bfe7dced.jpg"
+      "/images/events/5b84694f669a1d7ef885043609e81bd6.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-    "post_date": "2026-08-26T16:12:08+00:00",
+    "post_date": "2026-08-28T11:04:21+00:00",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "7cde7cba",
@@ -1249,8 +1247,7 @@
     "genre": "рок",
     "source_url": "https://t.me/rocknroll_92/7052",
     "images": [
-      "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
-      "/images/events/cfeafb57cac4af73e289e064bfe7dced.jpg"
+      "/images/events/b42317791e393ca1567b45c3ba38304d.jpg"
     ],
     "image": "/images/events/b42317791e393ca1567b45c3ba38304d.jpg",
     "post_date": "2026-08-26T16:12:08+00:00",
@@ -1315,7 +1312,7 @@
       "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg"
     ],
     "image": "/images/events/9e87256a320974dd10bcb25faa6434ce.jpg",
-    "post_date": "2026-08-27T15:01:51.001295+00:00",
+    "post_date": "2026-08-29T07:53:13.266519+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -1377,7 +1374,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg",
-    "post_date": "2026-08-27T15:01:53.051370+00:00",
+    "post_date": "2026-08-29T07:53:13.266581+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -1419,7 +1416,7 @@
       "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg"
     ],
     "image": "/images/events/3a1a2e4a186939b98d9ff28447a83826.jpg",
-    "post_date": "2026-08-27T15:01:56.202577+00:00",
+    "post_date": "2026-08-29T07:53:15.886795+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -1672,7 +1669,7 @@
       "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
     ],
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "post_date": "2026-08-27T15:01:51.001234+00:00",
+    "post_date": "2026-08-29T07:53:13.266447+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -7872,7 +7869,7 @@
     "id": "80e8328d",
     "date": "2026-08-16",
     "time": "19:00",
-    "artist": "Юлия Бакшинская",
+    "artist": "Юлия Бакшинская, Виталий Бакшинский, Антон Калиниченко, Леонид Ключанкин, Руслан Сейдалиев",
     "event_type": "концерт",
     "venue": "Арт-кафе «Снежинка»",
     "price": "600–800 ₽",
@@ -7883,7 +7880,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1953",
     "images": [
       "/images/events/ed019312c236485529361d254e1107cd.jpg",
-      "/images/events/2cb24e0c80baeadce6c855455d44f48c.jpg"
+      "/images/events/36776e830a344cc321b66a54c77dd298.jpg"
     ],
     "image": "/images/events/ed019312c236485529361d254e1107cd.jpg",
     "post_date": "2026-08-16T09:42:05+00:00",
@@ -8610,7 +8607,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6459",
     "images": [
       "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
-      "/images/events/3e3f34ebded4bc354f79c499be747a52.jpg"
+      "/images/events/79788ec2fab49adba8af9b50ef0b5737.jpg"
     ],
     "image": "/images/events/04cd822ff63017e70661f4153ba1ecf3.jpg",
     "post_date": "2026-08-21T11:58:15+00:00",
@@ -8964,7 +8961,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-08-27T15:01:51.001212+00:00",
+    "post_date": "2026-08-29T07:53:11.347738+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -8985,7 +8982,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-08-27T15:01:57.979112+00:00",
+    "post_date": "2026-08-29T07:53:18.253456+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -9077,7 +9074,7 @@
     "source_url": "https://t.me/artcafesnezhinka/1962",
     "images": [
       "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
-      "/images/events/0944e902766e512a0ded661d88f23dd6.jpg"
+      "/images/events/93d3175c42e1450d58ede50db26ce29c.jpg"
     ],
     "image": "/images/events/a8181daa069ffb9a78ae3b677f4ac7b7.jpg",
     "post_date": "2026-08-21T14:27:08+00:00",
@@ -9122,7 +9119,7 @@
     "source_url": "https://t.me/concert_crimea/852",
     "images": [
       "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
-      "/images/events/a83736606cb80869c2e0934d5e096f46.jpg"
+      "/images/events/c3d5c59fd9773128c70d5ac4daf5d859.jpg"
     ],
     "image": "/images/events/07c67114e3a54a66d55143685a8a8caf.jpg",
     "post_date": "2026-08-15T16:33:08+00:00",
@@ -9149,7 +9146,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-08-27T15:01:51.001341+00:00",
+    "post_date": "2026-08-29T07:53:13.266540+00:00",
     "needs_review": false,
     "review_reasons": []
   },
@@ -9263,7 +9260,7 @@
     "source_url": "https://t.me/afisha_crimea/8247",
     "images": [
       "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
-      "/images/events/0a5dbfb9f41bdd9d744d36ad00d5a2c1.jpg"
+      "/images/events/679ac41735c95b75da429074eefe4acd.jpg"
     ],
     "image": "/images/events/7dd9a520435faa8ada79ef6744997054.jpg",
     "post_date": "2026-08-22T10:28:07+00:00",
@@ -9332,7 +9329,7 @@
     "source_url": "https://t.me/koncertykrym/2260",
     "images": [
       "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
-      "/images/events/67c8d9e6c2bc40a0c3a0cdf9b8cf6777.jpg"
+      "/images/events/155e4709427b8570aa1d466fce5381d8.jpg"
     ],
     "image": "/images/events/6d0a5d5e88ceff2b499ecdfaf43aede3.jpg",
     "post_date": "2026-08-25T15:09:25+00:00",
@@ -9474,8 +9471,7 @@
     "genre": "поп-рок",
     "source_url": "https://t.me/rocknroll_92/7162",
     "images": [
-      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/e45b41c63a80cdb921249b244feffd19.jpg"
+      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-22T10:28:07+00:00",
@@ -9519,16 +9515,16 @@
     "genre": "джаз",
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
-      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/5f45ac7ff22391b0af0123cd01ba8ced.jpg"
+      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-26T14:42:14+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "e5674032",
@@ -9544,8 +9540,7 @@
     "genre": "джаз",
     "source_url": "https://t.me/sevastopol_jazz/1295",
     "images": [
-      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/abe3185f87157e4369733ffee2abea65.jpg"
+      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
     "post_date": "2026-08-19T16:35:44+00:00",
@@ -9558,27 +9553,26 @@
   {
     "id": "f3007c9d",
     "date": "2026-08-30",
-    "time": null,
+    "time": "18:00",
     "artist": "Джазовый пикник на закате, Дуэт с Анной",
     "event_type": "концерт",
-    "venue": "Гольф-поле",
+    "venue": "Большое гольф-поле",
     "price": null,
-    "description": "Джазовый пикник на закате с дуэтом.",
+    "description": "Джазовый пикник на закате. Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
     "source_city": "Севастополь",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
-    "source_url": "https://t.me/sevastopol_jazz/1295",
+    "source_url": "https://vk.com/wall-214055536_2294",
     "images": [
-      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-      "/images/events/c7ac3e0566350dbd0472d30a6ab189df.jpg"
+      "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     ],
     "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "post_date": "2026-08-26T14:42:14+00:00",
-    "needs_review": true,
+    "post_date": "2026-08-28T11:56:15+00:00",
+    "needs_review": false,
     "review_reasons": [
-      "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "4546bee9",
@@ -9638,7 +9632,8 @@
     "genre": "метал",
     "source_url": "https://t.me/clubjam/1116",
     "images": [
-      "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg"
+      "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
+      "/images/events/e843ffa5740e67b3b34decc8ca7e38d1.jpg"
     ],
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
     "post_date": "2026-08-24T11:16:43+00:00",
@@ -9661,8 +9656,7 @@
     "genre": "рок",
     "source_url": "https://t.me/clubjam/1117",
     "images": [
-      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-      "/images/events/61706d540f901354d59c21592cc4a894.jpg"
+      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
     "post_date": "2026-08-27T14:29:13+00:00",
@@ -9700,17 +9694,16 @@
     "event_type": "другое",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": "300₽",
-    "description": "Музыкальное лото: угадываем легендарные хиты, поём вместе и соревнуемся за звание главного меломана вечера. Ведущая Евгения Сухачёва. Победители получат настойки и коктейли от бара.",
+    "description": "Музыкальное лото! Угадываем легендарные хиты, поём вместе и соревнуемся за звание главного меломана вечера.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "интерактив",
     "source_url": "https://t.me/rocknroll_82/491",
     "images": [
-      "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
-      "/images/events/1a49d1feb252571832e9364c69b4017b.jpg"
+      "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg"
     ],
     "image": "/images/events/e5a307280cecade4bd1fa1bcfeb87d8f.jpg",
-    "post_date": "2026-08-23T10:44:28+00:00",
+    "post_date": "2026-08-23T10:45:19+00:00",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "archived"
@@ -9845,7 +9838,7 @@
     "source_url": "https://t.me/clubjam/1102",
     "images": [
       "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
-      "/images/events/3989bf29b99ec57b1cb1baf134472b6f.jpg"
+      "/images/events/050423f06ee0e37703f0bcd3ae36c641.jpg"
     ],
     "image": "/images/events/573967ccdca567e261f40feacf257d1f.jpg",
     "post_date": "2026-08-15T13:26:25+00:00",
@@ -9939,7 +9932,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6504",
     "images": [
       "/images/events/52b536333671b86583e35c867a604bf4.jpg",
-      "/images/events/dd6b8ddf1d72b48403e0bc9c32678027.jpg"
+      "/images/events/fd517ffd5aee8a6291b1c53d967ba82c.jpg"
     ],
     "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
     "post_date": "2026-08-22T19:58:41+00:00",
@@ -9968,7 +9961,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "318066b6",
@@ -10125,7 +10118,7 @@
     "source_url": "https://t.me/skazhitejazz/1580",
     "images": [
       "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
-      "/images/events/8d46aa249eab6bc9e3f3156176e06ed5.jpg"
+      "/images/events/0c35c0743e28d4819335d11de971cba9.jpg"
     ],
     "image": "/images/events/602c183df333579e09fb89bd21f2cffe.jpg",
     "post_date": "2026-08-24T12:32:41+00:00",
@@ -10150,7 +10143,7 @@
     "source_url": "https://t.me/api_balaklava/1380",
     "images": [
       "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
-      "/images/events/78d3c7c655a161866eeb871fd0dd1dec.jpg"
+      "/images/events/9c9a0d4756772710dfa5b69d4bd43696.jpg"
     ],
     "image": "/images/events/cf9a9e1c9310b0cbdae8b97a3a3c06d3.jpg",
     "post_date": "2026-08-24T13:45:01+00:00",
@@ -10216,7 +10209,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1292",
     "images": [
       "/images/events/f09fd4cf4f878fe5df593c81c412486b.jpg",
-      "/images/events/a8e33fe35e7c70d62f51a98031403fc9.jpg"
+      "/images/events/1f4bfbdeea3e0959be03830cc98485ef.jpg"
     ],
     "image": "/images/events/f09fd4cf4f878fe5df593c81c412486b.jpg",
     "post_date": "2026-08-18T14:32:33+00:00",
@@ -10248,7 +10241,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "ee4a0a06",
@@ -10265,7 +10258,7 @@
     "source_url": "https://t.me/massandrasun/2459",
     "images": [
       "/images/events/7d4006bb1b3d46854dacfbebaa588b6f.jpg",
-      "/images/events/c183b68e18ddc27d345be5d140460287.jpg"
+      "/images/events/5b6dfee03dd86133b1b22abe06a7dea6.jpg"
     ],
     "image": "/images/events/7d4006bb1b3d46854dacfbebaa588b6f.jpg",
     "post_date": "2026-08-23T11:32:28+00:00",
@@ -10291,7 +10284,7 @@
     "source_url": "https://t.me/usadbarodnoegnezdo/3586",
     "images": [
       "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
-      "/images/events/a7358cef3ac05a4382499337716ad848.jpg"
+      "/images/events/493b50edf0d09b7fd1448236090139ef.jpg"
     ],
     "image": "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
     "post_date": "2026-08-25T13:57:09+00:00",
@@ -10315,33 +10308,35 @@
       "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
     ],
     "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
-    "post_date": "2026-08-27T15:01:51.001276+00:00",
+    "post_date": "2026-08-29T07:53:13.266497+00:00",
     "needs_review": false,
     "review_reasons": []
   },
   {
+    "id": "6c68fc3a",
     "date": "2026-08-28",
     "time": "18:00",
-    "artist": "6 групп: Официально устроен, Магия слов, Red Stars, Из крайности в крайность, Dumonica",
+    "artist": "6 групп: Официально устроен, Магия слов, Red Stars, Из крайности в крайность, Dumonica, Найти",
     "event_type": "концерт",
     "venue": "Jam Club",
     "price": "бесплатно",
-    "description": "28 августа, пятница: 6 групп в 2 залах. Бесплатный вход для подписчиков клуба.",
-    "image": "/images/events/79a9a30a22d3d277b09e4a28367afd98.jpg",
+    "description": "В клубе проходят концерты шести групп в двух залах. После концертов — бесплатное рок-караоке до утра.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "поп",
+    "source_url": "https://t.me/clubjam/1128",
     "images": [
       "/images/events/79a9a30a22d3d277b09e4a28367afd98.jpg",
-      "/images/events/530c10ab6a88149ea79207f7dbb42ca2.jpg"
+      "/images/events/4e4858781e27af8889ffad112288933e.jpg"
     ],
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-27T14:24:17+00:00",
-    "source_url": "https://t.me/clubjam/1128",
-    "id": "6c68fc3a",
-    "genre": "поп",
+    "image": "/images/events/79a9a30a22d3d277b09e4a28367afd98.jpg",
+    "post_date": "2026-08-28T10:59:20+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
+    "id": "28a74998",
     "date": "2026-08-30",
     "time": "18:30",
     "artist": "Андрей Ясинский",
@@ -10349,17 +10344,16 @@
     "venue": "п Научный, ул Научная, 46",
     "price": null,
     "description": "Концерт-погружение с музыкой на редких инструментах.",
-    "image": "/images/events/95afe24e3de48f2eaf992b4b82e518b1.jpg",
+    "source_city": "Научный",
+    "source_channel": "dlyadushi_Crimea",
+    "genre": "поп",
+    "source_url": "https://t.me/dlyadushi_Crimea/6528",
     "images": [
       "/images/events/95afe24e3de48f2eaf992b4b82e518b1.jpg",
-      "/images/events/b06fc329f8f214241780b25406230467.jpg"
+      "/images/events/bafc9df0b6cf617e0df69aac9b70fc68.jpg"
     ],
-    "source_channel": "dlyadushi_Crimea",
-    "source_city": "Научный",
+    "image": "/images/events/95afe24e3de48f2eaf992b4b82e518b1.jpg",
     "post_date": "2026-08-27T07:30:13+00:00",
-    "source_url": "https://t.me/dlyadushi_Crimea/6528",
-    "id": "28a74998",
-    "genre": "поп",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
@@ -10386,6 +10380,7 @@
     "review_reasons": []
   },
   {
+    "id": "30b74b3a",
     "date": "2026-08-27",
     "time": "18:00",
     "artist": "группа «Т.М.И.К.»",
@@ -10393,17 +10388,16 @@
     "venue": "Театр «Маска»",
     "price": null,
     "description": "Финалисты проведут концерт группы «Т.М.И.К.»",
-    "image": "/images/events/5fbae19ad7339413f283dbc7c24c4398.jpg",
+    "source_city": "Судак",
+    "source_channel": "tavrida_art",
+    "genre": "поп",
+    "source_url": "https://t.me/tavrida_art/21882",
     "images": [
       "/images/events/5fbae19ad7339413f283dbc7c24c4398.jpg",
-      "/images/events/b07e92d6fc82c4f289d3e455e2f67eb4.jpg"
+      "/images/events/84c96fc537f2f8444c41a74841d75fca.jpg"
     ],
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
+    "image": "/images/events/5fbae19ad7339413f283dbc7c24c4398.jpg",
     "post_date": "2026-08-26T14:11:12+00:00",
-    "source_url": "https://t.me/tavrida_art/21882",
-    "id": "30b74b3a",
-    "genre": "поп",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
@@ -10411,6 +10405,7 @@
     "moderation_status": "archived"
   },
   {
+    "id": "7b8801a2",
     "date": "2026-10-09",
     "time": null,
     "artist": "AC/DC tribute",
@@ -10418,14 +10413,15 @@
     "venue": "Симферополь",
     "price": "бесплатно",
     "description": "Концерт AC/DC tribute.",
-    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
-    "images": null,
-    "source_channel": "crimea_event",
     "source_city": "Симферополь",
-    "post_date": "2026-08-26T05:06:19+00:00",
-    "source_url": "https://t.me/crimea_event/5631",
-    "id": "7b8801a2",
+    "source_channel": "crimea_event",
     "genre": "рок",
+    "source_url": "https://t.me/crimea_event/5631",
+    "images": [
+      "/images/events/61706d540f901354d59c21592cc4a894.jpg"
+    ],
+    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
+    "post_date": "2026-08-26T05:06:19+00:00",
     "needs_review": true,
     "review_reasons": [
       "нет времени"
@@ -10446,7 +10442,7 @@
     "source_url": "https://t.me/afisha_payberry/1621",
     "images": [
       "/images/events/7a16732f4ed3a449c3266f852164a1fe.jpg",
-      "/images/events/5360f5074ed2bb9885cc465867eb3408.jpg"
+      "/images/events/47bb16930187430250634b2af4a4715c.jpg"
     ],
     "image": "/images/events/7a16732f4ed3a449c3266f852164a1fe.jpg",
     "post_date": "2026-08-27T10:26:53+00:00",
@@ -10456,20 +10452,295 @@
     ]
   },
   {
+    "id": "a8eb22dd",
     "date": "2026-11-08",
     "time": "18:30",
     "artist": "Ундервуд",
+    "event_type": "концерт",
     "venue": "ДК рыбаков",
+    "price": "от 1500 ₽",
+    "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_ru",
+    "genre": "рок",
+    "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
+    "images": [
+      "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
+      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
+    ],
+    "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
+    "post_date": "2026-08-29T07:53:11.347763+00:00",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-08-27",
+    "time": "18:00",
+    "artist": "Официально устроен, Найти, Магия слов, Red Stars, Из крайности в крайность, Dumonica",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "СУПЕР РОК-ПЯТНИЦА: 2 ЗАЛА 2 КОНЦЕРТА 6 ГРУПП. Бесплатный вход для подписчиков клуба.",
+    "image": "/images/events/2cc935c11c3a6512acfad5699700c6ae.jpg",
+    "images": [
+      "/images/events/2cc935c11c3a6512acfad5699700c6ae.jpg",
+      "/images/events/cab279721c19191b5097d4dc0139c82e.jpg"
+    ],
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-27T18:56:46+00:00",
+    "source_url": "https://t.me/clubjam/1132",
+    "id": "ec1dd48e",
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-10-09",
+    "time": null,
+    "artist": "Back 'n Storm",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "AC/DC tribute by Back 'n Storm (Краснодар).",
+    "image": "/images/events/9c881a6d8364876d653404ed44fe75e5.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-27T17:37:37+00:00",
+    "source_url": "https://t.me/clubjam/1131",
+    "id": "19525d0a",
+    "genre": "рок",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "time": "18:00",
+    "artist": "Дмитрий Калинич",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Любимые рок-поп хиты в авторском исполнении Дмитрия Калинича",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-27T18:23:37+00:00",
+    "source_url": "https://t.me/rocknroll_92/7214",
+    "id": "d668cd9f",
+    "genre": "поп-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-08-29",
+    "time": "18:00",
+    "artist": "Максим Шеремет",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Нетленные хиты русского рока в исполнении Максима Шеремета",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-27T18:23:37+00:00",
+    "source_url": "https://t.me/rocknroll_92/7214",
+    "id": "9920c33b",
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-08-30",
+    "time": "21:00",
+    "artist": "Фёдор Старовойтов",
+    "event_type": "караоке",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Караоке с боссом! Финальный музыкальный беспредел этого лета. Любые песни – бесплатно. Ведущий Фёдор Старовойтов",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-27T18:23:37+00:00",
+    "source_url": "https://t.me/rocknroll_92/7214",
+    "id": "c6cbf0e4",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-08-25",
+    "time": "18:00",
+    "artist": "Дмитрий Калинич",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": null,
+    "description": "Пить настоечки и слушать хорошую музыку в авторском исполнении Дмитрия Калинича. Поиграем хиты разных лет.",
+    "image": "/images/events/ea09bbe494b933acd6962e5a6de5d06e.jpg",
+    "images": [
+      "/images/events/ea09bbe494b933acd6962e5a6de5d06e.jpg",
+      "/images/events/dfbd50fa19bf98606e4b82764e5ada70.jpg"
+    ],
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-28T10:45:21+00:00",
+    "source_url": "https://t.me/rocknroll_92/7224",
+    "id": "8258a849",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-08-25",
+    "time": "18:00",
+    "artist": "Кальвадос",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Группа «Кальвадос» с хитами русского поп-рока и саундтреками из легендарных фильмов.",
+    "image": "/images/events/c9bc87020e763834819cf1913769c9a4.jpg",
+    "images": [
+      "/images/events/c9bc87020e763834819cf1913769c9a4.jpg",
+      "/images/events/d2b82486fc2e235ec327bd11ab886c90.jpg",
+      "/images/events/1eb37e03c4223e932ba47aef2d3a496f.jpg",
+      "/images/events/9fdbba5094c175c6fe8f5a43f3b0322a.jpg"
+    ],
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-28T11:05:32+00:00",
+    "source_url": "https://t.me/rocknroll_82/553",
+    "id": "01865c9a",
+    "genre": "поп-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-08-30",
+    "time": "18:00",
+    "artist": "Джазовый пикник",
+    "event_type": "концерт",
+    "venue": "пространство «Али-Баир»",
+    "price": null,
+    "description": "Джазовый пикник на закате в пространстве «Али-Баир». Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
+    "image": "/images/events/ca548f869a5b3bcb50382e92d9a2d2e6.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-08-28T17:01:53+00:00",
+    "source_url": "https://t.me/afisha_crimea/8360",
+    "id": "76591123",
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "eae425be",
+    "date": "2026-08-29",
+    "time": null,
+    "artist": "Мотивы",
+    "event_type": "концерт",
+    "venue": "Ресторан «Мотивы»",
+    "price": null,
+    "description": "Встречаемся в ресторане «Мотивы»",
+    "source_city": "Симферополь",
+    "source_channel": "sevastopol_jazz",
+    "genre": "поп",
+    "source_url": "https://t.me/sevastopol_jazz/1298",
+    "images": null,
+    "image": null,
+    "post_date": "2026-08-26T14:42:14+00:00",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "time": null,
+    "artist": "группа МАРАГОРА, Юлия Пересильд",
+    "event_type": "концерт",
+    "venue": "ТАВРИДА.АРТ",
+    "price": null,
+    "description": "Концертный тур с программой 'Птица-Победа' в городах воинской славы.",
+    "image": "/images/events/f7aeb27a32dae3465d479ba30b76af25.jpg",
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-28T11:21:00+00:00",
+    "source_url": "https://t.me/tavrida_art/21904",
+    "id": "c4daa4ac",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-08-16",
+    "time": null,
+    "artist": "коллектив кавказского танца «АССА», фольклорный ансамбль «Совечёра», театр «Трикстер», ансамбль «Цветень»",
+    "event_type": "фестиваль",
+    "venue": "Квартал культур мира",
+    "price": null,
+    "description": "Выступления коллектива кавказского танца «АССА» и фольклорного ансамбля «Совечёра», спектакль «Лукоморье» от театра «Трикстер» и этно-поп программа ансамбля «Цветень»",
+    "image": null,
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-16T15:03:14+00:00",
+    "source_url": "https://vk.com/wall-89840945_119423",
+    "id": "b23eeea4",
+    "genre": "этно",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-11-09",
+    "time": "19:00",
+    "artist": "Ундервуд",
+    "venue": "Музыкальный театр Республики Крым",
     "event_type": "концерт",
     "price": "от 1500 ₽",
-    "description": "Позитивный формат «Нашего радио» без политики, пафоса и злости Долгоиграющий коллектив «Ундервуд» создает удобоваримые и максимально нейтральные рок-песни — записанные в среднем темпе, текстоцентричные композ\u0000иции, аполитичные, беззлобные, избегающие любых резких движений. Таким образом, «Ундервуд» представляет собой эталон продукции «Нашего радио» нулевых, эпохи «Uma2rmaH» и «Братьев Гримм», а уж преимущество это или недостаток, каждый решает сам.",
+    "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
     "source_channel": "afisha_ru",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-27T15:01:51.001380+00:00",
-    "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-29T07:53:13.266370+00:00",
+    "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "genre": "рок",
-    "id": "a8eb22dd",
+    "id": "e0fa138c",
     "needs_review": false,
     "review_reasons": []
   }

@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["AC/DC TRIBUTE", "AC/DC Tribute", "AC/DC tribute", "AC/DC Tribute"];
+const ARTIST_ALIASES = ["AC/DC Tribute", "AC/DC tribute", "AC/DC Tribute"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
