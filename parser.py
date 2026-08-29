@@ -1239,7 +1239,10 @@ def _artists_look_alike(a: str, b: str) -> bool:
         return False
     if ka in kb or kb in ka:
         return True
-    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
+    # 0.86 склеивал разные короткие названия с общим префиксом вроде
+    # «Артист А» / «Артист Б». Для опечаток нужен более строгий порог;
+    # варианты «артист + программа» обрабатываются отдельным правилом ниже.
+    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.93
 
 
 def _artist_is_program_suffix_variant(a: str, b: str) -> bool:
@@ -1267,6 +1270,16 @@ def _descriptions_look_alike(a: dict, b: dict) -> bool:
     return len(short) >= 18 and (left in right or right in left)
 
 
+def _times_are_compatible(left: str, right: str) -> bool:
+    """Возвращает True, если время не противоречит совпадению события.
+
+    Отсутствующее время не считаем конфликтом: один источник нередко знает
+    только дату. Два разных явно указанных времени — надёжный признак разных
+    сеансов, даже если артист и площадка совпадают.
+    """
+    return not left or not right or left == right
+
+
 def _events_are_duplicates(a: dict, b: dict) -> bool:
     """Единый критерий содержательного дубля для парсера и проверок данных."""
     if not a.get("date") or a.get("date") != b.get("date"):
@@ -1277,7 +1290,17 @@ def _events_are_duplicates(a: dict, b: dict) -> bool:
     ti, tj = a.get("time") or "", b.get("time") or ""
     same_artist = bool(ai and aj and ai & aj)
     same_venue = bool(vi and vj and _venue_match(vi, vj))
-    same_time = bool(ti and tj and ti == tj)
+    times_compatible = _times_are_compatible(ti, tj)
+    same_source = bool(a.get("source_url") and a.get("source_url") == b.get("source_url"))
+
+    # Один пост может содержать расписание нескольких концертов в один день.
+    # Поэтому URL+дата недостаточны: склеиваем только повтор одного и того же
+    # извлечения, когда имена не противоречат друг другу, а площадка и время
+    # либо совпадают, либо отсутствуют в одном из вариантов.
+    if same_source:
+        artists_compatible = same_artist or not ai or not aj
+        venues_compatible = not vi or not vj or same_venue
+        return artists_compatible and venues_compatible and times_compatible
 
     ci = (a.get("source_city") or "").strip().lower()
     cj = (b.get("source_city") or "").strip().lower()
@@ -1289,29 +1312,29 @@ def _events_are_duplicates(a: dict, b: dict) -> bool:
         # ещё время или общий постер здесь нельзя — их часто нет в репосте.
         regional_fallback = _canon_city(ci) == "Крым" or _canon_city(cj) == "Крым"
         if regional_fallback:
-            return same_artist and same_venue
+            return same_artist and same_venue and times_compatible
         # Канал иногда проставляет свой город выездному событию. Через границу
         # городов объединяем лишь при тройном подтверждении и общем постере,
         # чтобы не склеить два настоящих концерта одного артиста в один день.
         images_a = set(a.get("images") or ([a.get("image")] if a.get("image") else []))
         images_b = set(b.get("images") or ([b.get("image")] if b.get("image") else []))
-        return same_artist and same_venue and same_time and bool(images_a & images_b)
+        return same_artist and same_venue and bool(ti and tj and ti == tj) and bool(images_a & images_b)
 
-    if same_artist and (same_venue or not vi or not vj):
+    if same_artist and same_venue and times_compatible:
         return True
     # Витрины часто по-разному пишут название одной программы: «Олена Уутай»
     # и «Олена Уутай. Магия Севера». Если артист совпадает нечётко, город и
     # точное время одинаковы, это физически один концерт даже при разных
     # вариантах названия площадки.
-    if same_time and _artist_is_program_suffix_variant(
+    if ti and tj and ti == tj and _artist_is_program_suffix_variant(
         a.get("artist") or "", b.get("artist") or ""
     ):
         return True
-    if same_venue and _artists_look_alike(a.get("artist") or "", b.get("artist") or ""):
+    if same_venue and times_compatible and _artists_look_alike(
+        a.get("artist") or "", b.get("artist") or ""
+    ):
         return True
-    if same_venue and _descriptions_look_alike(a, b):
-        return True
-    if same_venue and same_time:
+    if same_venue and times_compatible and _descriptions_look_alike(a, b):
         return True
     if same_venue:
         desc_a = _normalize(a.get("description") or "")
@@ -1320,17 +1343,10 @@ def _events_are_duplicates(a: dict, b: dict) -> bool:
         # разных источников как название группы и как название программы.
         # В этом случае название одного события прямо присутствует в
         # описании другого; при совпавшей площадке и дате это дубль.
-        return bool(
+        return times_compatible and bool(
             (ai and any(name in desc_b for name in ai))
             or (aj and any(name in desc_a for name in aj))
         )
-    if (ai or aj) and (not ai or not aj) and same_venue:
-        return True
-    if (ai or aj) and (not ai or not aj):
-        di = _normalize(a.get("description") or "")
-        dj = _normalize(b.get("description") or "")
-        return ((ai and any(name in dj for name in ai))
-                or (aj and any(name in di for name in aj)))
     return False
 
 
@@ -1364,25 +1380,11 @@ def _merge_group(group: list[dict]) -> dict:
 
 
 def deduplicate_events(events: list[dict]) -> list[dict]:
-    # Этап 1: один URL + дата обычно означают одну карточку.
-    # Разные даты того же поста намеренно остаются разными событиями.
-    by_post: dict[tuple, list] = {}
-    no_url: list[dict] = []
-    for event in events:
-        url = event.get("source_url") or ""
-        date = event.get("date") or ""
-        if url and date:
-            by_post.setdefault((date, url), []).append(event)
-        else:
-            no_url.append(event)
+    # Union-Find объединяет только подтверждённые дубли. Нельзя предварительно
+    # схлопывать URL+дату: один недельный пост нередко содержит несколько
+    # концертов в один день.
+    stage1 = list(events)
 
-    stage1: list[dict] = []
-    for group in by_post.values():
-        stage1.append(_merge_group(group) if len(group) > 1 else group[0])
-    stage1.extend(no_url)
-
-    # Этап 2: Union-Find — объединяем события с пересекающимися артистами на одну дату.
-    # Это ловит случаи когда разные каналы перечисляют артистов одного фестиваля в разном порядке.
     n = len(stage1)
     parent = list(range(n))
 

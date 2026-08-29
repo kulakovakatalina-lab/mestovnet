@@ -501,7 +501,7 @@ def _artists_look_alike(a: str, b: str) -> bool:
         return False
     if ka in kb or kb in ka:
         return True
-    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.86
+    return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.93
 
 
 def _artist_is_program_suffix_variant(a: str, b: str) -> bool:
@@ -528,6 +528,11 @@ def _descriptions_look_alike(a: dict, b: dict) -> bool:
     return len(min(left, right, key=len)) >= 18 and (
         left in right or right in left
     )
+
+
+def _times_are_compatible(left: str, right: str) -> bool:
+    """Пустое время допускает кросс-пост, разные явные времена — нет."""
+    return not left or not right or left == right
 
 
 _NON_MUSIC_PREFIXES = (
@@ -605,19 +610,9 @@ def _merge_group(group: list[dict]) -> dict:
 
 
 def deduplicate_events(events: list[dict]) -> list[dict]:
-    by_post: dict[tuple, list] = {}
-    no_url: list[dict] = []
-    for event in events:
-        url = event.get("source_url") or ""
-        date = event.get("date") or ""
-        if url and date:
-            by_post.setdefault((date, url), []).append(event)
-        else:
-            no_url.append(event)
-    stage1: list[dict] = []
-    for group in by_post.values():
-        stage1.append(_merge_group(group) if len(group) > 1 else group[0])
-    stage1.extend(no_url)
+    # Не объединяем URL+дату заранее: один пост может анонсировать несколько
+    # отдельных событий в один день.
+    stage1 = list(events)
 
     n = len(stage1)
     parent = list(range(n))
@@ -650,9 +645,16 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                 ti = stage1[i].get("time") or ""
                 tj = stage1[j].get("time") or ""
                 same_venue = bool(vi and vj and _venue_match(vi, vj))
-                if ai and aj and ai & aj and (same_venue or not vi or not vj):
+                same_artist = bool(ai and aj and ai & aj)
+                times_compatible = _times_are_compatible(ti, tj)
+                same_source = bool(stage1[i].get("source_url") and
+                                   stage1[i].get("source_url") == stage1[j].get("source_url"))
+                if same_source and (same_artist or not ai or not aj) and \
+                        (not vi or not vj or same_venue) and times_compatible:
                     union(i, j)
-                elif same_venue and _artists_look_alike(
+                elif same_artist and same_venue and times_compatible:
+                    union(i, j)
+                elif same_venue and times_compatible and _artists_look_alike(
                     stage1[i].get("artist") or "",
                     stage1[j].get("artist") or "",
                 ):
@@ -662,9 +664,7 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
                     stage1[j].get("artist") or "",
                 ):
                     union(i, j)
-                elif same_venue and _descriptions_look_alike(stage1[i], stage1[j]):
-                    union(i, j)
-                elif same_venue and ti and tj and ti == tj:
+                elif same_venue and times_compatible and _descriptions_look_alike(stage1[i], stage1[j]):
                     union(i, j)
 
     groups: dict[int, list[dict]] = {}

@@ -46,9 +46,8 @@ class TestEventsJson:
         assert not dupes, f"Дублирующиеся id событий: {dupes}"
 
     def test_no_content_duplicates(self, events):
-        """Содержательные дубликаты: одинаковые дата+площадка+время или
-        пересекающиеся артисты на одну дату (критерии deduplicate_events из
-        parser.py), но разные id. Регресс на случай 8b763d82/a564ed8d —
+        """Содержательные дубликаты по консервативным критериям
+        deduplicate_events из parser.py, но разные id. Регресс на случай 8b763d82/a564ed8d —
         одно расписание из разных постов канала попало в базу дважды."""
         from parser import _events_are_duplicates
 
