@@ -1,6 +1,8 @@
 """Тесты парсера Яндекс.Афиши."""
 
-from fetch_yandex_afisha import _parse_date_time
+from datetime import date
+
+from fetch_yandex_afisha import _is_within_horizon, _parse_date_time
 
 
 class TestParseDateTime:
@@ -51,3 +53,19 @@ class TestParseDateTime:
             date, _ = _parse_date_time(f"5 {month_name}, 18:00")
             assert date is not None, f"Failed for month: {month_name}"
             assert expected in date, f"Expected {expected} in {date} for {month_name}"
+
+
+class TestHorizon:
+    def test_accepts_today_and_last_day_of_horizon(self):
+        today = date(2026, 8, 29)
+        assert _is_within_horizon("2026-08-29", today, 90)
+        assert _is_within_horizon("2026-11-27", today, 90)
+
+    def test_rejects_past_and_too_distant_dates(self):
+        today = date(2026, 8, 29)
+        assert not _is_within_horizon("2026-08-28", today, 90)
+        assert not _is_within_horizon("2026-11-28", today, 90)
+        assert not _is_within_horizon("2027-07-19", today, 90)
+
+    def test_rejects_invalid_date(self):
+        assert not _is_within_horizon("2026-02-30", date(2026, 8, 29), 90)
