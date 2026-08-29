@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Santier",
-      "startDate": "2026-08-29T14:00–22:00:00+03:00",
+      "startDate": "2026-08-29T14:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Santier"
@@ -53,7 +53,7 @@
     {
       "@type": "MusicEvent",
       "name": "Santier",
-      "startDate": "2026-08-30T18:00–22:00:00+03:00",
+      "startDate": "2026-08-30T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Santier"
@@ -1143,7 +1143,7 @@ function applySettings(data, settings) {
     descriptions: settings.descriptions||{}, genres: settings.genres||{} };
   return data.map((e, i) => {
     const url = e.source_url || '';
-    if (hiddenSet.has(url)) return null;
+    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = { ...e };
     if (url in ov.names)        ev.artist      = ov.names[url];
     if (url in ov.times)        ev.time        = ov.times[url];

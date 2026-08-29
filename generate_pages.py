@@ -312,6 +312,19 @@ def render_event_list(events: list, today: str, custom_names: Optional[dict] = N
 
 # ── JSON-LD ───────────────────────────────────────────────────────────────────
 
+def jsonld_start_date(event: dict) -> str:
+    """Возвращает корректный ISO-8601 startDate для schema.org.
+
+    В карточке время может быть диапазоном («14:00–22:00»). JSON-LD хранит
+    только начало события; при неизвестном времени точнее оставить дату без
+    выдуманного полуночного времени.
+    """
+    event_date = event.get("date") or ""
+    match = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", event.get("time") or "")
+    if not match:
+        return event_date
+    return f"{event_date}T{int(match.group(1)):02d}:{match.group(2)}:00+03:00"
+
 def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str:
     items = []
     for e in events[:30]:
@@ -324,11 +337,10 @@ def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str
 
         src_url = e.get("source_url") or ""
         custom_name = (custom_names or {}).get(src_url)
-        time_ = e.get("time") or "00:00"
         item: dict = {
             "@type":     "MusicEvent",
             "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
-            "startDate": f'{e["date"]}T{time_}:00+03:00',
+            "startDate": jsonld_start_date(e),
             "location":  {
                 "@type": "MusicVenue",
                 "name":  e.get("venue") or "Крым",
@@ -766,11 +778,10 @@ def make_venue_jsonld(venue: dict, upcoming: list[dict],
             continue
         src_url = e.get("source_url") or ""
         custom_name = (custom_names or {}).get(src_url)
-        time_ = e.get("time") or "00:00"
         item: dict = {
             "@type":     "MusicEvent",
             "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
-            "startDate": f'{e["date"]}T{time_}:00+03:00',
+            "startDate": jsonld_start_date(e),
             "location":  {"@type": "MusicVenue", "name": venue["name"]},
         }
         if e.get("description"):
@@ -1206,7 +1217,7 @@ function applySettings(data, settings) {{
     descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
   return data.map((e, i) => {{
     const url = e.source_url || '';
-    if (hiddenSet.has(url)) return null;
+    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = {{ ...e }};
     if (url in ov.names)        ev.artist      = ov.names[url];
     if (url in ov.times)        ev.time        = ov.times[url];
@@ -1336,11 +1347,10 @@ def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str,
             continue
         src_url = e.get("source_url") or ""
         custom_name = (custom_names or {}).get(src_url)
-        time_ = e.get("time") or "00:00"
         item: dict = {
             "@type":     "MusicEvent",
             "name":      custom_name or artist["name"],
-            "startDate": f'{e["date"]}T{time_}:00+03:00',
+            "startDate": jsonld_start_date(e),
             "performer": {"@type": "MusicGroup", "name": artist["name"]},
             "location":  {
                 "@type": "MusicVenue",
@@ -1705,7 +1715,7 @@ function applySettings(data, settings) {{
     descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
   return data.map((e, i) => {{
     const url = e.source_url || '';
-    if (hiddenSet.has(url)) return null;
+    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = {{ ...e }};
     if (url in ov.names)        ev.artist      = ov.names[url];
     if (url in ov.times)        ev.time        = ov.times[url];

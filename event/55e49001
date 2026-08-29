@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Черный Доктор Солнечной Долины, Angle Of Wonders, Иччи, Крыша Мира, Нарратор, Динаминатор",
-      "startDate": "2026-05-01T00:00:00+03:00",
+      "startDate": "2026-05-01",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -1235,7 +1235,7 @@ async function load() {
 
     function applySettings(e) {
       const url = e.source_url || '';
-      if (hiddenSet.has(url)) return null;
+      if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
       const ev = { ...e };
       if (url in ovNames)   ev.artist      = ovNames[url];
       if (url in ovTimes)   ev.time        = ovTimes[url];

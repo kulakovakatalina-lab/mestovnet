@@ -1046,7 +1046,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "Dim K., Happy Paul, Santier",
-      "startDate": "2026-08-29T14:00–22:00:00+03:00",
+      "startDate": "2026-08-29T14:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "бар El Capulco 0.0",
@@ -1066,7 +1066,7 @@ footer {
     {
       "@type": "MusicEvent",
       "name": "Santier",
-      "startDate": "2026-08-30T18:00–22:00:00+03:00",
+      "startDate": "2026-08-30T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Пляж-кафе «Van Gogh»",
@@ -1306,7 +1306,10 @@ function applySettings(data, settings) {
   const ovGenres  = settings.genres       || {};
   return data.map((e, i) => {
     const url = e.source_url || '';
-    if (hiddenSet.has(url)) return null;
+    // events.json — внутренний реестр, поэтому до решения модератора
+    // карточка не должна просачиваться в динамическую главную страницу.
+    // Статический генератор применяет то же правило в apply_settings().
+    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = { ...e, _origIdx: i };
     if (url in ovNames)  ev.artist      = ovNames[url];
     if (url in ovTimes)  ev.time        = ovTimes[url];

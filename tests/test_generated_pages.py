@@ -18,6 +18,7 @@ from generate_pages import (
     apply_settings,
     resolve_artist_slugs,
     resolve_venue_slugs,
+    jsonld_start_date,
 )
 from tests.conftest import (
     KNOWN_MISSING_ARTIST_PAGES,
@@ -48,6 +49,11 @@ def test_featured_event_date_does_not_depend_on_time(project_root):
     expected = "${ev.dateFmt.day} ${ev.dateFmt.month}${ev.time ?"
     assert expected in source
     assert "${ev.time ? `${ev.dateFmt.day}" not in source
+
+
+def test_jsonld_start_date_uses_only_the_start_of_a_time_range():
+    assert jsonld_start_date({"date": "2026-08-29", "time": "14:00–22:00"}) == "2026-08-29T14:00:00+03:00"
+    assert jsonld_start_date({"date": "2026-08-29", "time": None}) == "2026-08-29"
 
 
 class TestHomepageSeo:
