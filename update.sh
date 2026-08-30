@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 
 DAYS=${1:-14}
 
@@ -9,7 +10,8 @@ echo ""
 
 # 1. Парсинг
 echo ">>> Парсинг источников..."
-python3 parser.py --days "$DAYS"
+python3 parser.py --days "$DAYS" | tee parser_output.log
+python3 source_health.py --log parser_output.log
 python3 repair_event_data.py
 python3 moderation_queue.py
 echo ""
@@ -21,7 +23,7 @@ echo ""
 
 # 3. Коммит и деплой
 echo ">>> Деплой..."
-git add events.json moderation.json index.html cities/ genre/ venues/ artist/ event/ sitemap.xml robots.txt images/events/ settings.json
+git add events.json moderation.json moderation_decisions.json source_health.json index.html cities/ genre/ venues/ artist/ event/ sitemap.xml robots.txt images/events/ settings.json
 
 # Коммитим только если есть изменения
 if git diff --cached --quiet; then

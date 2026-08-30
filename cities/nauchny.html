@@ -986,6 +986,15 @@ function parseDate(d) {
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
 }
 
+function moscowNow() {
+  const values = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Moscow', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+  }).formatToParts(new Date()).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+  return new Date(+values.year, +values.month - 1, +values.day,
+                  +values.hour, +values.minute, +values.second);
+}
+
 // Момент, до которого событие актуально: дата + время начала.
 // Без времени — до конца дня.
 function parseDateTime(e) {
@@ -1037,7 +1046,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
-    if (cancelledSet.has(url)) ev.cancelled = true;
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1053,7 +1062,7 @@ async function load() {
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     if (citiesRes && citiesRes.ok) loadCities(await citiesRes.json().catch(() => []));
     const patched = applySettings(data, settings);
-    const now = new Date();
+    const now = moscowNow();
 
     allEvents = patched
       .filter(e => e.date && parseDateTime(e) >= now)

@@ -17,9 +17,10 @@ import json
 import os
 import re
 from collections import defaultdict
-from datetime import date, datetime
+from datetime import datetime
 from typing import Optional
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import parser as parser_mod  # переиспользуем _split_artist_field/_artist_parts
 
@@ -34,6 +35,8 @@ INDEX_FILE    = BASE_DIR / "index.html"
 EVENT_FILE    = BASE_DIR / "event.html"
 GENRE_FILE    = BASE_DIR / "genre.html"
 DOMAIN     = "https://mestov.net"
+MOSCOW_TZ = ZoneInfo("Europe/Moscow")
+GENERATED_PAGES_MANIFEST = BASE_DIR / ".generated-pages.json"
 
 # ── Жанры ────────────────────────────────────────────────────────────────────
 # Копия GENRE_MAP/GENRE_LABELS из genre.html — единственное место для правки на JS-стороне,
@@ -106,8 +109,64 @@ def strip_seo(src: str) -> str:
     src = re.sub(r'<div id="seo-content".*</div>\s*(?=</body>)', "", src, flags=re.DOTALL)
     return src
 
-def today_str() -> str:
-    return date.today().isoformat()
+def today_str(now: Optional[datetime] = None) -> str:
+    """Календарная дата проекта, независимо от часового пояса машины сборки."""
+    local_now = now.astimezone(MOSCOW_TZ) if now else datetime.now(MOSCOW_TZ)
+    return local_now.date().isoformat()
+
+
+def _valid_generated_page_path(raw_path: str) -> Optional[Path]:
+    """Разрешает только страницы, которыми владеет генератор подборок.
+
+    Архивные event/<id> и artist/<slug> намеренно не входят в этот список.
+    """
+    path = Path(raw_path)
+    if path.is_absolute() or ".." in path.parts:
+        return None
+    if len(path.parts) == 2 and path.parts[0] == "cities" and path.suffix == ".html":
+        return path
+    if len(path.parts) == 3 and path.parts[0] == "genre" and path.name == "index.html":
+        return path
+    if len(path.parts) == 2 and path.parts[0] == "venues" and not path.suffix:
+        return path
+    return None
+
+
+def load_generated_pages_manifest() -> set[Path]:
+    """Читает перечень страниц, созданных предыдущей сборкой.
+
+    Если манифеста ещё нет, ничего не удаляем: так ручные и исторические
+    файлы нельзя ошибочно принять за сгенерированные.
+    """
+    if not GENERATED_PAGES_MANIFEST.exists():
+        return set()
+    try:
+        entries = json.loads(GENERATED_PAGES_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        print("⚠️  Не удалось прочитать манифест сгенерированных страниц; очистка пропущена")
+        return set()
+    if not isinstance(entries, list):
+        return set()
+    return {path for raw in entries if isinstance(raw, str)
+            if (path := _valid_generated_page_path(raw)) is not None}
+
+
+def cleanup_stale_generated_pages(previous: set[Path], current: set[Path]) -> int:
+    """Удаляет только ранее сгенерированные и ставшие неактуальными подборки."""
+    removed = 0
+    for relative_path in previous - current:
+        path = BASE_DIR / relative_path
+        if path.is_file() or path.is_symlink():
+            path.unlink()
+            removed += 1
+    return removed
+
+
+def save_generated_pages_manifest(paths: set[Path]) -> None:
+    entries = sorted(path.as_posix() for path in paths)
+    temp = GENERATED_PAGES_MANIFEST.with_suffix(".tmp")
+    temp.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temp.replace(GENERATED_PAGES_MANIFEST)
 
 def fmt_date(ds: str) -> str:
     try:
@@ -221,7 +280,7 @@ def apply_settings(events: list[dict], settings: dict) -> list[dict]:
             ev["description"] = descs_ov[url]
         if url in genres_ov:
             ev["genre"] = genres_ov[url]
-        if url in cancelled_ov:
+        if url in cancelled_ov or ev.get("source_status") == "cancelled":
             ev["cancelled"] = True
 
         result.append(ev)
@@ -1194,6 +1253,14 @@ const DOW = ['вс','пн','вт','ср','чт','пт','сб'];
 
 function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
 function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
+function moscowNow() {{
+  const values = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {{
+    timeZone: 'Europe/Moscow', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+  }}).formatToParts(new Date()).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+  return new Date(+values.year, +values.month - 1, +values.day,
+                  +values.hour, +values.minute, +values.second);
+}}
 function parseDateTime(e) {{
   const d = parseDate(e.date);
   const m = e.time && e.time.match(/(\\d{{1,2}}):(\\d{{2}})/);
@@ -1227,7 +1294,7 @@ function applySettings(data, settings) {{
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url))  ev.cancelled   = true;
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -1303,7 +1370,7 @@ async function load() {{
     const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
     const patched  = applySettings(data, settings);
-    const now      = new Date();
+    const now      = moscowNow();
     const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
@@ -1649,6 +1716,14 @@ const DOW = ['вс','пн','вт','ср','чт','пт','сб'];
 
 function mapGenre(raw) {{ return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }}
 function parseDate(d) {{ const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }}
+function moscowNow() {{
+  const values = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {{
+    timeZone: 'Europe/Moscow', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+  }}).formatToParts(new Date()).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+  return new Date(+values.year, +values.month - 1, +values.day,
+                  +values.hour, +values.minute, +values.second);
+}}
 function parseDateTime(e) {{
   const d = parseDate(e.date);
   const m = e.time && e.time.match(/(\\d{{1,2}}):(\\d{{2}})/);
@@ -1710,6 +1785,7 @@ function otherArtistNames(ev) {{
 
 function applySettings(data, settings) {{
   const hiddenSet = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
     images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
     descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
@@ -1725,6 +1801,7 @@ function applySettings(data, settings) {{
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -1799,7 +1876,7 @@ async function load() {{
     const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
     const patched  = applySettings(data, settings);
-    const now      = new Date();
+    const now      = moscowNow();
 
     const all = patched
       .filter(e => e.date && eventMatchesArtist(e))
@@ -1906,6 +1983,8 @@ def main() -> None:
 
     today  = today_str()
     css    = extract_css()
+    previous_generated_pages = load_generated_pages_manifest()
+    current_generated_pages: set[Path] = set()
 
     # Города, для которых есть события. Берём только из справочника cities.json
     # (исключаем «Крым» — он на главной). Незнакомые значения игнорируем.
@@ -1938,6 +2017,7 @@ def main() -> None:
         page = make_city_page(city, events, cities_with_events, css, custom_names)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
+        current_generated_pages.add(Path("cities") / f"{slug}.html")
         city_events  = [e for e in events if e.get("source_city") == city]
         future_count = len([e for e in city_events if (e.get("date") or "") >= today])
         print(f"    ✓ cities/{slug}.html  ({future_count} событий)")
@@ -1953,6 +2033,7 @@ def main() -> None:
         slug_dir.mkdir(exist_ok=True)
         out = slug_dir / "index.html"
         out.write_text(page, encoding="utf-8")
+        current_generated_pages.add(Path("genre") / genre / "index.html")
         g_count = len([e for e in events
                        if map_genre(e.get("genre")) == genre and (e.get("date") or "") >= today])
         print(f"    ✓ genre/{genre}/  ({g_count} событий)")
@@ -1970,6 +2051,7 @@ def main() -> None:
         page = make_venue_page(venue, events, today, css, custom_names)
         out  = venues_dir / venue["slug"]  # без расширения .html
         out.write_text(page, encoding="utf-8")
+        current_generated_pages.add(Path("venues") / venue["slug"])
         v_upcoming = len([e for e in events
                           if e.get("venue_slug") == venue["slug"]
                           and (e.get("date") or "") >= today])
@@ -2002,16 +2084,6 @@ def main() -> None:
         generated_artist_slugs.append(artist["slug"])
         print(f"    ✓ artist/{artist['slug']}  "
               f"({a_upcoming} предстоящих, {a_past} прошедших)")
-    # Убираем файлы для артистов, которых больше нет в artists.json
-    current_artist_slugs = set(generated_artist_slugs)
-    artist_removed = 0
-    for f in artist_dir.iterdir():
-        if f.is_file() and f.name not in current_artist_slugs:
-            f.unlink()
-            artist_removed += 1
-    if artist_removed:
-        print(f"    (удалено устаревших страниц артистов: {artist_removed})")
-
     # 4. Генерируем страницы событий (event/{id} без расширения)
     events_dir = BASE_DIR / "event"
     events_dir.mkdir(exist_ok=True)
@@ -2025,15 +2097,18 @@ def main() -> None:
         out  = events_dir / eid  # без расширения
         out.write_text(page, encoding="utf-8")
         generated_event_ids.append(eid)
-    # Убираем файлы для событий, которых больше нет в events.json
-    current_ids = set(generated_event_ids)
-    removed = 0
-    for f in events_dir.iterdir():
-        if f.is_file() and f.name not in current_ids:
-            f.unlink()
-            removed += 1
     print(f"    ✓ event/  ({len(generated_event_ids)} страниц"
-          + (f", удалено устаревших: {removed}" if removed else "") + ")")
+          + ")")
+
+    # Сборщик владеет только подборками. Страницы event/ и artist/ — архив,
+    # поэтому никогда не включаются в очистку, даже если исходные записи
+    # когда-нибудь изменятся или будут скрыты.
+    stale_removed = cleanup_stale_generated_pages(
+        previous_generated_pages, current_generated_pages
+    )
+    save_generated_pages_manifest(current_generated_pages)
+    if stale_removed:
+        print(f"    (удалено устаревших страниц подборок: {stale_removed})")
 
     all_event_ids = [e["id"] for e in events if e.get("id")]
 

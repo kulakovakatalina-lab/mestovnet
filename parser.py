@@ -8,6 +8,7 @@ import re
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import httpx
 from bs4 import BeautifulSoup
@@ -24,6 +25,21 @@ IMAGES_DIR = "images/events"
 CACHE_DIR = ".cache"
 BATCH_SIZE = 10  # max posts per Claude call
 PERSIST_IMAGES = True
+
+MOSCOW_TZ = ZoneInfo("Europe/Moscow")
+
+
+def moscow_today(now: "datetime | None" = None) -> str:
+    """Текущая календарная дата афиши в часовом поясе проекта."""
+    return (now.astimezone(MOSCOW_TZ) if now else datetime.now(MOSCOW_TZ)).date().isoformat()
+
+_CANCELLATION_MARKERS = (
+    "отмен", "не состоится",
+)
+
+
+def _is_cancellation_text(text: str) -> bool:
+    return any(marker in (text or "").lower() for marker in _CANCELLATION_MARKERS)
 
 
 def download_image(url: str):
@@ -613,13 +629,15 @@ def fetch_instagram_posts_wrapper(username: str, days_back: int) -> list[dict]:
     return _fetch(username, days_back)
 
 
-def process_yandex_afisha(all_events: list, source_stats: dict = None):
+def process_yandex_afisha(all_events: list, source_stats: dict = None, source_updates: dict = None):
     from fetch_yandex_afisha import fetch_all_crimea, CITIES
     print("\nЯндекс.Афиша — крымские города...")
     posts = fetch_all_crimea()
     count = 0
     for post in posts:
         pre = post["_prefilled"]
+        if source_updates is not None:
+            source_updates[pre["source_url"]] = {"cancelled": _is_cancellation_text(post.get("text", ""))}
         event = {
             "date": pre["date"],
             "time": pre["time"],
@@ -669,13 +687,15 @@ def _normalize_afisha_genre(g):
     return g if g in _SITE_GENRES else None
 
 
-def process_afisha_ru(all_events: list, source_stats: dict = None):
+def process_afisha_ru(all_events: list, source_stats: dict = None, source_updates: dict = None):
     from fetch_afisha_ru import fetch_all_crimea
     print("\nАфиша (afisha.ru) — крымские города...")
     posts = fetch_all_crimea()
     count = 0
     for post in posts:
         pre = post["_prefilled"]
+        if source_updates is not None:
+            source_updates[pre["source_url"]] = {"cancelled": _is_cancellation_text(post.get("text", ""))}
         event = {
             "date": pre["date"],
             "time": pre["time"],
@@ -1145,6 +1165,30 @@ def _merge_events(group: list[dict]) -> dict:
     merged["image"] = all_images[0] if all_images else None
 
     merged["post_date"] = most_recent.get("post_date")
+
+    # Служебные признаки сверки источника не должны пропадать, когда на
+    # следующем прогоне свежая карточка склеивается с сохранённой. Иначе
+    # безопасно применённое автоматическое обновление внезапно уйдёт в
+    # модерацию при неизменившемся первоисточнике.
+    if any(e.get("auto_updated") for e in group):
+        merged["auto_updated"] = True
+        for e in group_sorted:
+            if e.get("auto_updated_fields"):
+                merged["auto_updated_fields"] = e["auto_updated_fields"]
+                break
+    checked_at = [e.get("source_last_checked_at") for e in group if e.get("source_last_checked_at")]
+    if checked_at:
+        merged["source_last_checked_at"] = max(checked_at)
+    # Если источник снова отдал карточку, это актуальная версия события и
+    # прежняя отмена больше не должна скрывать её. При единственной карточке
+    # (отменённый источник без новой версии) статус остаётся отменённым.
+    if len(group) > 1:
+        merged["source_status"] = "active"
+        merged.pop("cancelled", None)
+    elif most_recent.get("source_status"):
+        merged["source_status"] = most_recent["source_status"]
+        if most_recent.get("cancelled"):
+            merged["cancelled"] = True
     return merged
 
 
@@ -1428,6 +1472,73 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
     return [_merge_group(g) if len(g) > 1 else g[0] for g in groups.values()]
 
 
+def reconcile_source_updates(existing: list[dict], fresh: list[dict], source_updates: dict[str, dict],
+                             today=None) -> tuple[list[dict], list[dict]]:
+    """Автоматически применяет однозначные изменения уже опубликованных событий.
+
+    Сверка безопасна только когда у ссылки ровно одна будущая старая и одна
+    свежая карточка. Недельные афиши и прочие неоднозначные источники не
+    изменяются автоматически.
+    """
+    today = today or moscow_today()
+    old_by_url: dict[str, list[dict]] = {}
+    fresh_by_url: dict[str, list[dict]] = {}
+    for event in existing:
+        url = event.get("source_url")
+        if url and (event.get("date") or "") >= today:
+            old_by_url.setdefault(url, []).append(event)
+    for event in fresh:
+        url = event.get("source_url")
+        if url:
+            fresh_by_url.setdefault(url, []).append(event)
+
+    remove_old_ids: set[int] = set()
+    remove_fresh_ids: set[int] = set()
+    replacements: list[dict] = []
+    checked_at = datetime.now(timezone.utc).isoformat()
+    tracked = ("date", "time", "artist", "venue", "price", "description", "source_city", "event_type", "genre")
+
+    for url, update in source_updates.items():
+        old_group = old_by_url.get(url, [])
+        if not old_group:
+            continue
+        if update.get("cancelled"):
+            for old in old_group:
+                cancelled = dict(old)
+                cancelled["source_status"] = "cancelled"
+                cancelled["cancelled"] = True
+                cancelled["source_last_checked_at"] = checked_at
+                replacements.append(cancelled)
+                remove_old_ids.add(id(old))
+            for event in fresh_by_url.get(url, []):
+                remove_fresh_ids.add(id(event))
+            continue
+
+        new_group = fresh_by_url.get(url, [])
+        if len(old_group) != 1 or len(new_group) != 1:
+            continue
+        old, new = old_group[0], new_group[0]
+        changed_fields = [field for field in tracked if old.get(field) != new.get(field)]
+        # Редактирование отменённого поста обратно в актуальную карточку
+        # восстанавливает событие, даже если остальные поля не менялись.
+        if not changed_fields and old.get("source_status") != "cancelled":
+            continue
+        updated = dict(new)
+        updated["id"] = old.get("id")
+        updated["source_status"] = "active"
+        updated["source_last_checked_at"] = checked_at
+        updated["auto_updated"] = True
+        updated["auto_updated_fields"] = changed_fields
+        replacements.append(updated)
+        remove_old_ids.add(id(old))
+        remove_fresh_ids.add(id(new))
+
+    existing_out = [event for event in existing if id(event) not in remove_old_ids]
+    fresh_out = [event for event in fresh if id(event) not in remove_fresh_ids]
+    existing_out.extend(replacements)
+    return existing_out, fresh_out
+
+
 def _fetch_images_from_url(url: str) -> list[str]:
     """Fetches all image URLs from a Telegram post."""
     if not url or "t.me/" not in url:
@@ -1570,7 +1681,7 @@ def _assign_event_images(events: list[dict], local_images: list[str], *, multi_i
 
 
 def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK,
-                     source_stats: dict = None):
+                     source_stats: dict = None, source_updates: dict = None):
     for channel in channels:
         label = channel.get("username") or channel.get("domain") or str(channel.get("chat_id"))
         if source_stats is not None:
@@ -1590,6 +1701,13 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
         if not posts:
             print(f"  Найдено событий: 0          ")
             continue
+
+        if source_updates is not None:
+            for post in posts:
+                if post.get("url"):
+                    source_updates[post["url"]] = {
+                        "cancelled": _is_cancellation_text(post.get("text", "")),
+                    }
 
         # Разделяем: multi-image (отдельно) и single-image (батчим)
         multi_posts = [p for p in posts if p.get("images") and len(p["images"]) > 1]
@@ -1729,16 +1847,17 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
 
     all_events = []
     source_stats = {}
+    source_updates = {}
 
     process_channels(tg_channels, all_events, lambda ch: fetch_posts(ch["username"], days_back),
-                     days_back, source_stats)
+                     days_back, source_stats, source_updates)
 
     max_token = os.environ.get("MAX_BOT_TOKEN", "")
     active_max = [c for c in max_channels if c.get("chat_id")]
     if active_max and max_token:
         process_channels(
             active_max, all_events, lambda ch: fetch_max_posts(ch["chat_id"], max_token, days_back),
-            days_back, source_stats
+            days_back, source_stats, source_updates
         )
     elif active_max:
         print("\nMax-каналы настроены, но MAX_BOT_TOKEN не задан — пропускаю.")
@@ -1747,7 +1866,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     if vk_channels and vk_token:
         process_channels(
             vk_channels, all_events, lambda ch: fetch_vk_posts(ch["domain"], vk_token, days_back),
-            days_back, source_stats
+            days_back, source_stats, source_updates
         )
     elif vk_channels:
         print("\nVK-каналы настроены, но VK_SERVICE_TOKEN не задан — пропускаю.")
@@ -1763,9 +1882,9 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     elif ig_channels:
         print("\nInstagram-каналы настроены, но IG_USERNAME / IG_PASSWORD не заданы — пропускаю.")
 
-    process_yandex_afisha(all_events, source_stats)
+    process_yandex_afisha(all_events, source_stats, source_updates)
 
-    process_afisha_ru(all_events, source_stats)
+    process_afisha_ru(all_events, source_stats, source_updates)
 
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
     img_updated = 0 if dry_run else _redistribute_images(all_events)
@@ -1796,6 +1915,8 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     if old_invalid_dates or old_normalized_times or old_invalid_times:
         print(f"Архив очищен: дат {old_invalid_dates}, "
               f"времён нормализовано {old_normalized_times}, очищено {old_invalid_times}")
+
+    existing, all_events = reconcile_source_updates(existing, all_events, source_updates)
 
     missing_posters = _drop_unpublished_image_links(existing + all_events)
     if missing_posters:
