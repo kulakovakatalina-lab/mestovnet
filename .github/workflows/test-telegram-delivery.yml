@@ -1,0 +1,49 @@
+name: Test Telegram delivery
+
+# Ручная проверка, что секреты GitHub указывают на доступный Telegram-чат.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-test-message:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - name: Отправить тестовое сообщение
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          if not token or not chat_id:
+              raise RuntimeError("Не заданы TELEGRAM_BOT_TOKEN или TELEGRAM_CHAT_ID")
+
+          payload = json.dumps({
+              "chat_id": chat_id,
+              "text": (
+                  "✅ <b>Проверка доставки Местов.Нет</b>\n\n"
+                  "GitHub Actions успешно передал сообщение в этот чат."
+              ),
+              "parse_mode": "HTML",
+              "disable_web_page_preview": True,
+          }).encode()
+          request = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=payload,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              result = json.loads(response.read())
+          if not result.get("ok"):
+              raise RuntimeError("Telegram не принял тестовое сообщение")
+          print("Telegram принял тестовое сообщение для чата из TELEGRAM_CHAT_ID.")
+          PY
