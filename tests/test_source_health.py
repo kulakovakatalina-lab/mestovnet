@@ -2,7 +2,8 @@ import json
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from source_health import active_city_counts, build_snapshot, parse_parser_log
+from source_health import (active_city_counts, build_snapshot, configured_sources,
+                           coverage_by_city, parse_parser_log)
 
 
 def test_daily_workflow_creates_report_and_notifies_only_about_alerts():
@@ -56,3 +57,44 @@ def test_active_city_counts_skips_past_and_cancelled_events(tmp_path):
     ]), encoding="utf-8")
 
     assert active_city_counts(events, date(2026, 2, 1)) == {"Ялта": 1}
+
+
+def test_registry_keeps_source_identity_url_and_last_success(tmp_path):
+    channels = tmp_path / "channels.json"
+    channels.write_text(json.dumps({
+        "channels": [{"username": "club", "title": "Клуб", "city": "Ялта", "type": "venue"}],
+        "max_channels": [], "vk_channels": [], "instagram_channels": [],
+    }), encoding="utf-8")
+
+    configured = configured_sources(channels)
+    snapshot = build_snapshot(
+        configured, {"club": {"posts": 1, "extracted": 1, "accepted": 1, "merged": 0}},
+        {}, {}, {}, datetime(2026, 1, 1, tzinfo=timezone.utc), ["Ялта"],
+    )
+
+    club = snapshot["sources"]["club"]
+    assert {key: club[key] for key in ("city", "type", "url", "status")} == {
+        "city": "Ялта", "type": "venue", "url": "https://t.me/s/club", "status": "checked",
+    }
+    assert club["last_checked_at"] == club["last_successful_fetch_at"]
+
+
+def test_coverage_identifies_gaps_without_enabling_candidates():
+    coverage = coverage_by_city(
+        {"yalta": {"city": "Ялта"}, "regional": {"city": "Крым"}},
+        ["Ялта", "Керчь"],
+    )
+
+    assert coverage["Ялта"]["status"] == "covered"
+    assert coverage["Керчь"]["status"] == "regional_only"
+
+
+def test_coverage_alerts_only_on_regression_not_on_initial_gap():
+    configured = {"regional": {"title": "Крым", "kind": "web", "city": "Крым"}}
+    initial = build_snapshot(configured, {}, {}, {}, {}, datetime(2026, 1, 1, tzinfo=timezone.utc), ["Керчь"])
+    regressed = build_snapshot(configured, {}, {}, {"coverage": {"Керчь": {"status": "covered"}}}, {},
+                               datetime(2026, 1, 2, tzinfo=timezone.utc), ["Керчь"])
+
+    assert initial["coverage"]["Керчь"]["status"] == "regional_only"
+    assert not any(alert.get("city") == "Керчь" for alert in initial["alerts"])
+    assert regressed["alerts"][-1]["message"] == "город остался без локального источника"

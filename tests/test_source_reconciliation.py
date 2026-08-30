@@ -1,4 +1,5 @@
 import parser
+from datetime import datetime, timezone
 
 
 def test_single_fresh_source_event_is_updated_automatically():
@@ -97,3 +98,71 @@ def test_auto_update_marker_survives_unchanged_followup_run():
     assert merged[0]["id"] == "stable"
     assert merged[0]["auto_updated"] is True
     assert merged[0]["auto_updated_fields"] == ["time"]
+
+
+def test_old_telegram_post_is_rechecked_and_reconciled(monkeypatch):
+    url = "https://t.me/known_channel/123"
+    old = {"id": "stable", "source_url": url, "date": "2027-09-01", "time": "19:00",
+           "artist": "А", "venue": "Клуб"}
+    monkeypatch.setattr(parser, "fetch_telegram_post", lambda _: {
+        "url": url, "date": "2026-01-01T12:00:00+00:00", "text": "Концерт А перенесён",
+    })
+
+    def fake_process(channels, output, get_posts_fn, **kwargs):
+        post = get_posts_fn(channels[0])[0]
+        output.append({"source_url": post["url"], "date": "2027-09-08", "time": "20:00",
+                       "artist": "А", "venue": "Клуб"})
+
+    monkeypatch.setattr(parser, "process_channels", fake_process)
+    updates = {}
+    fresh = parser.recheck_published_telegram_sources(
+        [old], [{"username": "known_channel", "title": "Клуб", "city": "Ялта"}], updates,
+        today="2026-08-30", now=datetime(2026, 8, 30, tzinfo=timezone.utc),
+    )
+    existing, incoming = parser.reconcile_source_updates([old], fresh, updates, today="2026-08-30")
+
+    assert incoming == []
+    assert existing[0]["id"] == "stable"
+    assert existing[0]["date"] == "2027-09-08"
+    assert updates[url]["cancelled"] is False
+    assert old["source_last_checked_at"] == "2026-08-30T00:00:00+00:00"
+
+
+def test_old_weekly_poster_only_applies_explicit_cancellation(monkeypatch):
+    url = "https://t.me/known_channel/123"
+    old = [
+        {"id": "one", "source_url": url, "date": "2027-09-01", "artist": "А"},
+        {"id": "two", "source_url": url, "date": "2027-09-02", "artist": "Б"},
+    ]
+    monkeypatch.setattr(parser, "fetch_telegram_post", lambda _: {
+        "url": url, "date": "2026-01-01T12:00:00+00:00", "text": "Мероприятия отменены",
+    })
+    monkeypatch.setattr(parser, "process_channels", lambda *args, **kwargs: (_ for _ in ()).throw(
+        AssertionError("weekly poster must not be re-extracted automatically")
+    ))
+    updates = {}
+    fresh = parser.recheck_published_telegram_sources(
+        old, [{"username": "known_channel", "title": "Клуб", "city": "Ялта"}], updates,
+        today="2026-08-30", now=datetime(2026, 8, 30, tzinfo=timezone.utc),
+    )
+    existing, incoming = parser.reconcile_source_updates(old, fresh, updates, today="2026-08-30")
+
+    assert incoming == []
+    assert all(event["source_status"] == "cancelled" for event in existing)
+
+
+def test_recheck_skips_unknown_channels_and_recently_checked_posts(monkeypatch):
+    called = []
+    monkeypatch.setattr(parser, "fetch_telegram_post", lambda url: called.append(url))
+    events = [
+        {"source_url": "https://t.me/unknown/1", "date": "2027-09-01"},
+        {"source_url": "https://t.me/known/2", "date": "2027-09-01",
+         "source_last_checked_at": "2026-08-30T00:00:00+00:00"},
+    ]
+    fresh = parser.recheck_published_telegram_sources(
+        events, [{"username": "known", "title": "Клуб", "city": "Ялта"}], {},
+        today="2026-08-30", now=datetime(2026, 8, 30, 12, tzinfo=timezone.utc),
+    )
+
+    assert fresh == []
+    assert called == []

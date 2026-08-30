@@ -352,8 +352,33 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   color: var(--muted);
   line-height: 1.65;
   max-width: 460px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.hero-action-primary,
+.hero-action-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.1s, filter 0.12s, background 0.12s;
+}
+.hero-action-primary { color: #fff; background: var(--accent); }
+.hero-action-secondary { color: var(--fg); border: 1px solid var(--border); background: var(--surface); }
+.hero-action-primary:hover { filter: brightness(1.08); }
+.hero-action-secondary:hover { border-color: var(--fg); }
+.hero-action-primary:active,
+.hero-action-secondary:active { transform: scale(0.98); }
 
 .hero-stats {
   display: flex;
@@ -373,6 +398,121 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   color: var(--muted);
   margin-top: 4px;
   letter-spacing: 0.01em;
+}
+
+.coverage-section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 40px) var(--gutter);
+}
+.coverage-kicker {
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.coverage-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.coverage-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.1);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+.coverage-title { font-size: 14px; font-weight: 650; }
+.coverage-note { margin-top: 2px; font-size: 12px; color: var(--muted); }
+
+.intent-pills {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  margin-bottom: 18px;
+}
+.intent-pills::-webkit-scrollbar { display: none; }
+.intent-pill {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+.intent-pill:hover { color: var(--fg); border-color: var(--fg); }
+.intent-pill.active { color: #fff; border-color: var(--accent); background: var(--accent); }
+
+.value-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter) clamp(32px, 5vw, 56px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.value-card {
+  min-height: 210px;
+  padding: clamp(24px, 4vw, 36px);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.value-card-map { color: var(--bg); background: var(--fg); }
+.value-card-bot { color: #fff; background: var(--accent); }
+.value-card-kicker {
+  margin-bottom: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+.value-card-title {
+  margin-top: 32px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+.value-card-text { max-width: 460px; margin-top: 9px; font-size: 14px; line-height: 1.55; opacity: 0.72; }
+.value-card-link {
+  display: inline-flex;
+  margin-top: 22px;
+  padding: 9px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--surface);
+  color: var(--fg);
 }
 
 .featured {
@@ -791,6 +931,10 @@ footer {
   .genre-strip-mobile { display: flex; }
   .hero-title { letter-spacing: -0.03em; }
   .hero-stats { gap: 24px; }
+  .hero-actions { margin-bottom: 28px; }
+  .coverage-grid, .value-grid { grid-template-columns: 1fr; }
+  .coverage-grid { gap: 8px; }
+  .value-card { min-height: 190px; }
   .featured { padding: 24px; }
   .events-grid { grid-template-columns: 1fr; }
   .genre-grid { grid-template-columns: 1fr 1fr; }
@@ -798,7 +942,7 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .hero-stats { gap: 16px; }
+  .hero-stats { gap: 16px; flex-wrap: wrap; }
   .hero-stat-n { font-size: 26px; }
   .genre-grid { grid-template-columns: 1fr; }
 }
@@ -985,7 +1129,7 @@ footer {
   <a href="/map.html" class="nav-map-link">Карта</a>
   <button class="nav-cta" type="button" onclick="openSubModal()" aria-label="Подписаться на бота в Telegram">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.3c-.22 1.02-.83 1.27-1.69.79l-4.69-3.46-2.26 2.18c-.25.25-.46.46-.94.46l.34-4.77 8.68-7.84c.38-.34-.08-.53-.59-.19L6.7 12.55l-4.62-1.44c-1-.32-1.03-1.01.21-1.49l18.06-6.96c.84-.31 1.57.2 1.3 1.49z"/></svg>
-    <span>Подписаться</span>
+    <span>Своя подборка</span>
   </button>
 </nav>
 
