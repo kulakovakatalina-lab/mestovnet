@@ -50,6 +50,12 @@ class TestMapInDeploy:
             "map.html не упомянут в deploy-yandex.yml — не попадёт на прод при деплое"
         )
 
+    def test_workflow_does_not_copy_removed_admin_page(self, project_root):
+        workflow = (project_root / ".github" / "workflows" / "deploy-yandex.yml").read_text(encoding="utf-8")
+        assert "admin.html" not in workflow, (
+            "admin.html удалён из репозитория и не должен ломать сборку деплоя"
+        )
+
 
 class TestVenueCoordinates:
     """lat/lon добавляются geocode_venues.py (Nominatim) — не все площадки
