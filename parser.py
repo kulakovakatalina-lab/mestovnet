@@ -1298,7 +1298,19 @@ def _events_are_duplicates(a: dict, b: dict) -> bool:
     # извлечения, когда имена не противоречат друг другу, а площадка и время
     # либо совпадают, либо отсутствуют в одном из вариантов.
     if same_source:
-        artists_compatible = same_artist or not ai or not aj
+        # Один анонс может назвать группу по-разному: «Rammlied» и
+        # «RAMMSTEIN tribute by Rammlied». Это всё ещё один концерт, если
+        # площадка и время не противоречат друг другу. Не опираемся только
+        # на URL+дату: в афишном посте вполне могут быть разные артисты.
+        artists_compatible = (
+            same_artist
+            or not ai
+            or not aj
+            or _artists_look_alike(a.get("artist") or "", b.get("artist") or "")
+            or _artist_is_program_suffix_variant(
+                a.get("artist") or "", b.get("artist") or ""
+            )
+        )
         venues_compatible = not vi or not vj or same_venue
         return artists_compatible and venues_compatible and times_compatible
 

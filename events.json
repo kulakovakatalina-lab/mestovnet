@@ -9659,12 +9659,11 @@
     "genre": "рок",
     "source_url": "https://t.me/clubjam/1117",
     "images": [
-      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg"
+      "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
+      "/images/events/cc9a67049b08db2752d97ff395ebb495.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-    "post_date": "2026-08-27T14:29:13+00:00",
-    "needs_review": false,
-    "review_reasons": []
+    "post_date": "2026-08-27T14:29:13+00:00"
   },
   {
     "id": "30a5d50a",
@@ -10734,28 +10733,6 @@
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
     "post_date": "2026-08-30T06:25:52.758170+00:00",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
-    "id": "130504f9",
-    "date": "2026-08-30",
-    "time": "19:00",
-    "artist": "Rammlied",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Rammstein Tribute Rammlied. Уже все договорились на работе чтобы в понедельник у вас был выходной? После своего праздничного концерта участники собираются всю ночь тусить в клубе и отмечать свой д.р. участвуя в нашем культовом БЕСПЛАТНОМ РОК-КАРАОКЕ 'до первых троллейбусов и маршруток'.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1117",
-    "images": [
-      "/images/events/cc9a67049b08db2752d97ff395ebb495.jpg",
-      "/images/events/aba213c12afc7ad11f2e704067fc004f.jpg"
-    ],
-    "image": "/images/events/cc9a67049b08db2752d97ff395ebb495.jpg",
-    "post_date": "2026-08-27T14:29:13+00:00",
     "needs_review": false,
     "review_reasons": []
   },
