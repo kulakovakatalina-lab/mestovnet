@@ -21,6 +21,12 @@ load_dotenv(override=False)
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
 DAYS_BACK = 2
+# Точечная перепроверка старых анонсов не должна превращать обычный запуск
+# парсера в полный обход архива. Проверяем только ограниченное число публичных
+# Telegram-постов, а один и тот же пост — не чаще раза в сутки.
+MAX_SOURCE_RECHECKS_PER_RUN = 20
+SOURCE_RECHECK_INTERVAL = timedelta(hours=24)
+SOURCE_RECHECK_TIMEOUT = 10
 IMAGES_DIR = "images/events"
 CACHE_DIR = ".cache"
 BATCH_SIZE = 10  # max posts per Claude call
@@ -177,6 +183,64 @@ def fetch_posts(username: str, days_back: int) -> list[dict]:
         })
 
     return posts
+
+
+_TELEGRAM_POST_URL_RE = re.compile(r"^https://t\.me/([A-Za-z0-9_]{3,})/(\d+)(?:[/?#].*)?$")
+
+
+def fetch_telegram_post(source_url: str):
+    """Получает один публичный Telegram-пост без ограничения по дате.
+
+    URL строго валидируется: точечная сверка никогда не ходит по произвольным
+    ссылкам из архива. Отсутствующий/удалённый пост и сетевая ошибка не меняют
+    карточку — это отличается от явной отметки об отмене в доступном посте.
+    """
+    match = _TELEGRAM_POST_URL_RE.fullmatch(source_url or "")
+    if not match:
+        return None
+    username, post_id = match.groups()
+    try:
+        response = httpx.get(
+            source_url, headers={"User-Agent": "Mozilla/5.0"},
+            follow_redirects=True, timeout=SOURCE_RECHECK_TIMEOUT,
+        )
+        response.raise_for_status()
+    except Exception as exc:
+        print(f"  Не удалось перепроверить {source_url}: {exc}")
+        return None
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    expected_data_post = f"{username}/{post_id}"
+    message = next((item for item in soup.select(".tgme_widget_message")
+                    if item.get("data-post") == expected_data_post), None)
+    if message is None:
+        # Страница могла отдать заглушку, чужой пост или удалённый контент.
+        # Ничего не скрываем по одному этому признаку.
+        return None
+    time_tag = (message.select_one(".tgme_widget_message_date time[datetime]")
+                or message.select_one("time[datetime]"))
+    text_tag = message.select_one(".tgme_widget_message_text")
+    if not time_tag or not text_tag:
+        return None
+    try:
+        post_date = datetime.fromisoformat(time_tag["datetime"])
+    except (KeyError, ValueError):
+        return None
+
+    images = []
+    for image_tag in message.select(".tgme_widget_message_photo_wrap"):
+        style = image_tag.get("style", "")
+        if "url(" in style:
+            image_url = style.split("url('")[-1].split("')")[0]
+            if image_url and image_url not in images:
+                images.append(image_url)
+    return {
+        "date": post_date.isoformat(),
+        "text": text_tag.get_text(separator="\n").strip(),
+        "image": images[0] if images else None,
+        "images": images if len(images) > 1 else None,
+        "url": source_url,
+    }
 
 
 # --- LLM (OpenAI-совместимый API, по умолчанию Yandex AI Studio) ---
@@ -1539,6 +1603,88 @@ def reconcile_source_updates(existing: list[dict], fresh: list[dict], source_upd
     return existing_out, fresh_out
 
 
+def _source_recheck_due(event: dict, now: datetime) -> bool:
+    checked_at = event.get("source_last_checked_at")
+    if not checked_at:
+        return True
+    try:
+        checked = datetime.fromisoformat(str(checked_at).replace("Z", "+00:00"))
+        if checked.tzinfo is None:
+            checked = checked.replace(tzinfo=timezone.utc)
+    except ValueError:
+        return True
+    return now - checked.astimezone(timezone.utc) >= SOURCE_RECHECK_INTERVAL
+
+
+def recheck_published_telegram_sources(existing: list[dict], tg_channels: list[dict],
+                                       source_updates: dict[str, dict], today=None,
+                                       now=None) -> list[dict]:
+    """Точечно читает старые будущие Telegram-посты и возвращает новые карточки.
+
+    Результат следует передать в ``reconcile_source_updates`` вместе с обычной
+    выдачей. Безопасный режим: максимум ``MAX_SOURCE_RECHECKS_PER_RUN`` постов,
+    только известные каналы, только раз в сутки. Для афиши с несколькими
+    карточками из одного поста читается лишь признак отмены: автоматическое
+    переизвлечение там неоднозначно и может создать ложные дубли.
+    """
+    today = today or moscow_today()
+    now = now or datetime.now(timezone.utc)
+    channels_by_username = {str(channel.get("username")): channel for channel in tg_channels
+                            if channel.get("username")}
+    by_url: dict[str, list[dict]] = {}
+    for event in existing:
+        url = event.get("source_url") or ""
+        match = _TELEGRAM_POST_URL_RE.fullmatch(url)
+        if not match or (event.get("date") or "") < today or url in source_updates:
+            continue
+        username = match.group(1)
+        if username not in channels_by_username or not _source_recheck_due(event, now):
+            continue
+        by_url.setdefault(url, []).append(event)
+
+    # Сначала непроверенные посты, затем самые давно проверявшиеся. Это не даёт
+    # одному каналу вытеснять остальной архив при каждом запуске.
+    def recheck_order(item):
+        url, events = item
+        stamps = [event.get("source_last_checked_at") for event in events
+                  if event.get("source_last_checked_at")]
+        return (bool(stamps), min(stamps) if stamps else "", url)
+
+    selected = sorted(by_url.items(), key=recheck_order)[:MAX_SOURCE_RECHECKS_PER_RUN]
+    if not selected:
+        return []
+    print(f"\nТочечная сверка старых анонсов: до {len(selected)} постов")
+
+    posts_by_channel: dict[str, list[dict]] = {}
+    for source_url, old_group in selected:
+        post = fetch_telegram_post(source_url)
+        if post is None:
+            continue
+        # Даже если текст не изменился, сохраняем момент успешной проверки.
+        # Иначе каждый запуск снова выбирал бы один и тот же старый пост,
+        # не доходя до остальных анонсов из архива.
+        checked_at = now.astimezone(timezone.utc).isoformat()
+        for event in old_group:
+            event["source_last_checked_at"] = checked_at
+        source_updates[source_url] = {"cancelled": _is_cancellation_text(post.get("text", ""))}
+        # Отмена безопасно применяется ко всем карточкам из одного поста.
+        # Неотменённую недельную афишу не разбираем автоматически: при её
+        # редактуре нельзя однозначно сопоставить старые и новые строки.
+        if len(old_group) != 1 or source_updates[source_url]["cancelled"]:
+            continue
+        username = _TELEGRAM_POST_URL_RE.fullmatch(source_url).group(1)
+        posts_by_channel.setdefault(username, []).append(post)
+
+    refreshed = []
+    for username, posts in posts_by_channel.items():
+        channel = channels_by_username[username]
+        process_channels(
+            [channel], refreshed, lambda _channel, items=posts: items,
+            days_back=0, source_updates=source_updates,
+        )
+    return refreshed
+
+
 def _fetch_images_from_url(url: str) -> list[str]:
     """Fetches all image URLs from a Telegram post."""
     if not url or "t.me/" not in url:
@@ -1916,6 +2062,10 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
         print(f"Архив очищен: дат {old_invalid_dates}, "
               f"времён нормализовано {old_normalized_times}, очищено {old_invalid_times}")
 
+    # Обычный проход читает лишь несколько последних дней. Дополнительно
+    # перепроверяем ограниченную порцию уже опубликованных будущих анонсов,
+    # чтобы заметить правки и отмены старых постов.
+    all_events.extend(recheck_published_telegram_sources(existing, tg_channels, source_updates))
     existing, all_events = reconcile_source_updates(existing, all_events, source_updates)
 
     missing_posters = _drop_unpublished_image_links(existing + all_events)

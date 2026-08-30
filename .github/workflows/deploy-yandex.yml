@@ -71,6 +71,10 @@ jobs:
       AWS_DEFAULT_REGION: ru-central1
       ENDPOINT: https://storage.yandexcloud.net
       BUCKET: s3://mestov.net
+      # ID ресурса Cloud CDN не является секретом. Если он и ключ сервисного
+      # аккаунта заданы, деплой очищает CDN и ждёт завершения операции.
+      YC_CDN_RESOURCE_ID: ${{ vars.YC_CDN_RESOURCE_ID }}
+      YC_SA_JSON_CREDENTIALS: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -94,6 +98,9 @@ jobs:
           cp -r venues _site/
           cp -r event _site/
           cp -r artist _site/
+          # Маркер релиза нужен smoke-проверке: HTTP 200 и валидный JSON не
+          # доказывают, что Cloud CDN уже перестал отдавать прошлую версию.
+          printf '{"revision":"%s"}\n' "$(git rev-parse HEAD)" > _site/deployment.json
           echo "--- содержимое _site ---"
           ls -R _site | head -50
 
@@ -104,7 +111,10 @@ jobs:
             --delete \
             --cache-control "public, max-age=2592000"
 
-      - name: Залить JSON/XML/TXT с коротким кэшем
+      # Афиша, страницы и sitemap меняются при каждом обновлении. Браузер и
+      # CDN при настройке "Same as origin" обязаны перепроверять их у origin,
+      # а не показывать карточки из предыдущего запуска.
+      - name: Залить JSON/XML/TXT без хранения устаревшей версии
         run: |
           aws s3 sync _site "$BUCKET" \
             --endpoint-url "$ENDPOINT" \
@@ -113,7 +123,7 @@ jobs:
             --include "*.json" \
             --include "*.xml" \
             --include "*.txt" \
-            --cache-control "public, max-age=300"
+            --cache-control "no-cache, max-age=0, must-revalidate"
 
       # Без явного Content-Type aws s3 sync угадывает "text/html" без charset —
       # на компьютерах с не-UTF8 локалью браузер может не дождаться <meta charset>
@@ -131,7 +141,7 @@ jobs:
             --exclude "*.xml" \
             --exclude "*.txt" \
             --content-type "text/html; charset=utf-8" \
-            --cache-control "public, max-age=300"
+            --cache-control "no-cache, max-age=0, must-revalidate"
 
       - name: Залить страницы заведений (venues/) с явным Content-Type)
         run: |
@@ -139,7 +149,7 @@ jobs:
             --endpoint-url "$ENDPOINT" \
             --delete \
             --content-type "text/html; charset=utf-8" \
-            --cache-control "public, max-age=300"
+            --cache-control "no-cache, max-age=0, must-revalidate"
 
       - name: Залить страницы событий (event/) с явным Content-Type
         run: |
@@ -147,7 +157,7 @@ jobs:
             --endpoint-url "$ENDPOINT" \
             --delete \
             --content-type "text/html; charset=utf-8" \
-            --cache-control "public, max-age=300"
+            --cache-control "no-cache, max-age=0, must-revalidate"
 
       - name: Залить страницы артистов (artist/) с явным Content-Type
         run: |
@@ -155,7 +165,7 @@ jobs:
             --endpoint-url "$ENDPOINT" \
             --delete \
             --content-type "text/html; charset=utf-8" \
-            --cache-control "public, max-age=300"
+            --cache-control "no-cache, max-age=0, must-revalidate"
 
       # Настройка хостинга бакета: главная — index.html, ошибки — 404.html.
       # Идемпотентно: безопасно выполнять при каждом деплое.
@@ -166,32 +176,93 @@ jobs:
             --endpoint-url "$ENDPOINT" \
             --website-configuration '{"IndexDocument":{"Suffix":"index.html"},"ErrorDocument":{"Key":"404.html"}}'
 
-      # Smoke-проверка прода: если что-то сломано — прогон красный.
-      # ?v=RUN_ID должен обходить 5-минутный кэш CDN, но CDN (yccdn) не
-      # учитывает query string в ключе кэша и отдаёт cache HIT многочасовой
-      # давности даже с уникальным ?v= — сам факт "?v= обходит кэш" не
-      # подтверждается (see cache-status: HIT, last-modified на много часов
-      # раньше деплоя). Поэтому Content-Type (который выставляет именно наш
-      # aws s3 sync и который CDN может закэшировать в устаревшем виде)
-      # проверяем напрямую у origin (S3 API), а не через mestov.net —
-      # так тест проверяет то, что реально контролирует деплой, а не то,
-      # что в моменте отдаёт CDN.
+      # Static access keys дают доступ только к S3 API и не могут управлять
+      # Cloud CDN. При наличии отдельного сервисного аккаунта очищаем весь
+      # ресурс: так в кэше не останутся прежние HTML и JSON. Полная очистка
+      # намеренная: количество сгенерированных страниц динамическое, а
+      # частичный список путей легко сделает проблему незаметной снова.
+      - name: Получить IAM-токен для очистки Cloud CDN
+        id: issue-cdn-iam-token
+        if: ${{ env.YC_CDN_RESOURCE_ID != '' && env.YC_SA_JSON_CREDENTIALS != '' }}
+        uses: yc-actions/yc-iam-token@v1
+        with:
+          yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
+
+      - name: Очистить Cloud CDN и дождаться завершения
+        if: ${{ env.YC_CDN_RESOURCE_ID != '' && env.YC_SA_JSON_CREDENTIALS != '' }}
+        env:
+          YC_IAM_TOKEN: ${{ steps.issue-cdn-iam-token.outputs.token }}
+        run: |
+          set -euo pipefail
+          purge=$(curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Authorization: Bearer $YC_IAM_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data '{"paths":[]}' \
+            "https://cdn.api.cloud.yandex.net/cdn/v1/cache/${YC_CDN_RESOURCE_ID}:purge")
+          operation_id=$(printf '%s' "$purge" | python3 -c 'import json, sys; print(json.load(sys.stdin)["id"])')
+          echo "Запущена очистка Cloud CDN: $operation_id"
+
+          for attempt in $(seq 1 180); do
+            status=$(curl --fail-with-body --silent --show-error \
+              --header "Authorization: Bearer $YC_IAM_TOKEN" \
+              "https://operation.api.cloud.yandex.net/operations/${operation_id}")
+            state=$(printf '%s' "$status" | python3 -c '
+          import json, sys
+          operation = json.load(sys.stdin)
+          if operation.get("error"):
+              print("error")
+          elif operation.get("done"):
+              print("done")
+          else:
+              print("pending")
+          ')
+            case "$state" in
+              done) echo "Cloud CDN очищен"; break ;;
+              error) printf '%s\\n' "$status"; echo "FAIL: Cloud CDN не очистился"; exit 1 ;;
+              pending) sleep 5 ;;
+            esac
+            if [ "$attempt" = 180 ]; then
+              echo "FAIL: очистка Cloud CDN не завершилась за 15 минут"
+              exit 1
+            fi
+          done
+
+      - name: Предупредить о не настроенной очистке Cloud CDN
+        if: ${{ env.YC_CDN_RESOURCE_ID == '' || env.YC_SA_JSON_CREDENTIALS == '' }}
+        run: |
+          echo "::warning::Автоматическая очистка Cloud CDN не настроена. Заголовки origin запрещают кэширование изменяемых файлов, но CDN с пользовательским TTL может их игнорировать. Добавьте переменную YC_CDN_RESOURCE_ID и секрет YC_SA_JSON_CREDENTIALS."
+
+      # Smoke-проверка прода: маркер релиза сравнивается с SHA, который был
+      # загружен в бакет. В отличие от ?v= он действительно ловит случай,
+      # когда yccdn не учитывает query string и отдаёт старую версию.
       - name: Проверить сайт после деплоя
         run: |
           set -e
           SITE="https://mestov.net"
           ORIGIN="https://storage.yandexcloud.net/mestov.net"
-          V="?v=${{ github.run_id }}"
+          EXPECTED_RELEASE="$(git rev-parse HEAD)"
+
+          echo "0) CDN отдаёт текущий релиз"
+          curl -sfSL "$SITE/deployment.json" -o /tmp/deployment.json
+          EXPECTED_RELEASE="$EXPECTED_RELEASE" python3 -c "
+          import json, os
+          actual = json.load(open('/tmp/deployment.json')).get('revision')
+          expected = os.environ['EXPECTED_RELEASE']
+          assert actual == expected, f'CDN отдаёт {actual}, ожидался {expected}'
+          print(f'OK: {actual}')
+          "
 
           echo "1) Главная отвечает и содержит контент"
-          curl -sfSL "$SITE/$V" -o /tmp/home.html
+          curl -sfSL "$SITE/" -o /tmp/home.html
           grep -qi "местов" /tmp/home.html || { echo "FAIL: на главной нет названия сайта"; exit 1; }
 
           echo "1b) Content-Type главной (origin) содержит charset=utf-8 (без этого возможны кракозябры)"
           curl -sfSIL "$ORIGIN/index.html" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у главной нет charset=utf-8 в Content-Type"; exit 1; }
+          curl -sfSIL "$ORIGIN/index.html" | grep -i '^cache-control:' | grep -qi 'no-cache.*max-age=0.*must-revalidate' || { echo "FAIL: у главной неверный Cache-Control"; exit 1; }
 
           echo "2) events.json валиден и не пустой"
-          curl -sfSL "$SITE/events.json$V" -o /tmp/events.json
+          curl -sfSL "$SITE/events.json" -o /tmp/events.json
           python3 -c "
           import json
           events = json.load(open('/tmp/events.json'))
@@ -200,7 +271,7 @@ jobs:
           "
 
           echo "2b) moderation.json доступен и валиден"
-          curl -sfSL "$SITE/moderation.json$V" -o /tmp/moderation.json
+          curl -sfSL "$SITE/moderation.json" -o /tmp/moderation.json
           python3 -c "
           import json
           queue = json.load(open('/tmp/moderation.json'))
@@ -209,9 +280,9 @@ jobs:
           "
 
           echo "3) Первая страница события из sitemap открывается"
-          EVENT_URL=$(curl -sfSL "$SITE/sitemap.xml$V" | grep -o 'https://mestov.net/event/[^<]*' | head -1)
+          EVENT_URL=$(curl -sfSL "$SITE/sitemap.xml" | grep -o 'https://mestov.net/event/[^<]*' | head -1)
           if [ -n "$EVENT_URL" ]; then
-            curl -sfSL "$EVENT_URL$V" -o /tmp/event.html
+            curl -sfSL "$EVENT_URL" -o /tmp/event.html
             grep -qi "местов" /tmp/event.html || { echo "FAIL: страница события пустая: $EVENT_URL"; exit 1; }
             echo "OK: $EVENT_URL"
           else
@@ -219,9 +290,9 @@ jobs:
           fi
 
           echo "3b) Первая страница артиста из sitemap открывается"
-          ARTIST_URL=$(curl -sfSL "$SITE/sitemap.xml$V" | grep -o 'https://mestov.net/artist/[^<]*' | head -1)
+          ARTIST_URL=$(curl -sfSL "$SITE/sitemap.xml" | grep -o 'https://mestov.net/artist/[^<]*' | head -1)
           if [ -n "$ARTIST_URL" ]; then
-            curl -sfSL "$ARTIST_URL$V" -o /tmp/artist.html
+            curl -sfSL "$ARTIST_URL" -o /tmp/artist.html
             grep -qi "местов" /tmp/artist.html || { echo "FAIL: страница артиста пустая: $ARTIST_URL"; exit 1; }
             echo "OK: $ARTIST_URL"
           else
@@ -229,20 +300,20 @@ jobs:
           fi
 
           echo "4) Страница города открывается"
-          curl -sfSL "$SITE/cities/sevastopol.html$V" -o /tmp/city.html
+          curl -sfSL "$SITE/cities/sevastopol.html" -o /tmp/city.html
           grep -qi "местов" /tmp/city.html || { echo "FAIL: страница города пустая"; exit 1; }
           curl -sfSIL "$ORIGIN/cities/sevastopol.html" | grep -i '^content-type:' | grep -qi 'charset=utf-8' || { echo "FAIL: у страницы города нет charset=utf-8 в Content-Type"; exit 1; }
 
           echo "4b) Страница жанра открывается"
-          curl -sfSL "$SITE/genre/jazz/$V" -o /tmp/genre.html
+          curl -sfSL "$SITE/genre/jazz/" -o /tmp/genre.html
           grep -qi "местов" /tmp/genre.html || { echo "FAIL: страница жанра пустая"; exit 1; }
 
           echo "5) Страница 404 на месте и закрыта от индексации"
-          curl -sfSL "$SITE/404.html$V" -o /tmp/404.html
+          curl -sfSL "$SITE/404.html" -o /tmp/404.html
           grep -qi "noindex" /tmp/404.html || { echo "FAIL: в 404.html нет noindex"; exit 1; }
 
           echo "6) Страница карты открывается"
-          curl -sfSL "$SITE/map.html$V" -o /tmp/map.html
+          curl -sfSL "$SITE/map.html" -o /tmp/map.html
           grep -qi "местов" /tmp/map.html || { echo "FAIL: страница карты пустая"; exit 1; }
 
           echo "Все проверки прошли ✅"

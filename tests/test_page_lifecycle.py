@@ -4,7 +4,9 @@ from pathlib import Path
 import generate_pages
 from generate_pages import (
     cleanup_stale_generated_pages,
+    load_legacy_generated_pages_for_migration,
     load_generated_pages_manifest,
+    save_legacy_generated_pages_migration,
     save_generated_pages_manifest,
     today_str,
 )
@@ -49,6 +51,26 @@ def test_cleanup_only_removes_pages_recorded_by_previous_build(tmp_path, monkeyp
     assert archived_artist.exists()
 
 
+def test_legacy_venue_requires_its_old_generator_signature(tmp_path, monkeypatch):
+    monkeypatch.setattr(generate_pages, "BASE_DIR", tmp_path)
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MANIFEST", tmp_path / ".legacy.json"
+    )
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MIGRATION", tmp_path / ".migrated.json"
+    )
+    (tmp_path / "venues").mkdir()
+    venue = tmp_path / "venues" / "old"
+    venue.write_text(
+        '<link rel="canonical" href="https://mestov.net/venues/old">'
+        '<div class="genre-hero"></div><div id="events-list"></div>',
+        encoding="utf-8",
+    )
+    (tmp_path / ".legacy.json").write_text('["venues/old"]', encoding="utf-8")
+
+    assert load_legacy_generated_pages_for_migration() == {Path("venues/old")}
+
+
 def test_manifest_rejects_archive_paths_and_path_traversal(tmp_path, monkeypatch):
     monkeypatch.setattr(generate_pages, "BASE_DIR", tmp_path)
     manifest = tmp_path / ".generated-pages.json"
@@ -59,3 +81,61 @@ def test_manifest_rejects_archive_paths_and_path_traversal(tmp_path, monkeypatch
     )
 
     assert load_generated_pages_manifest() == {Path("cities/yalta.html")}
+
+
+def test_legacy_migration_only_adopts_explicit_verified_collection_pages(tmp_path, monkeypatch):
+    monkeypatch.setattr(generate_pages, "BASE_DIR", tmp_path)
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MANIFEST", tmp_path / ".legacy.json"
+    )
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MIGRATION", tmp_path / ".migrated.json"
+    )
+    (tmp_path / "cities").mkdir()
+    (tmp_path / "venues").mkdir()
+    (tmp_path / "event").mkdir()
+
+    city = tmp_path / "cities" / "old.html"
+    city.write_text(
+        '<link rel="canonical" href="https://mestov.net/cities/old.html">'
+        '<div id="city-filter"></div><div id="events-grid"></div>',
+        encoding="utf-8",
+    )
+    manual_venue = tmp_path / "venues" / "manual"
+    manual_venue.write_text("hand-written page", encoding="utf-8")
+    archived_event = tmp_path / "event" / "archive"
+    archived_event.write_text("archive", encoding="utf-8")
+    (tmp_path / ".legacy.json").write_text(
+        '["cities/old.html", "venues/manual", "event/archive", "../settings.json"]',
+        encoding="utf-8",
+    )
+
+    assert load_legacy_generated_pages_for_migration() == {Path("cities/old.html")}
+    assert cleanup_stale_generated_pages(
+        load_legacy_generated_pages_for_migration(), set()
+    ) == 1
+    assert not city.exists()
+    assert manual_venue.exists()
+    assert archived_event.exists()
+
+
+def test_legacy_migration_never_runs_again_after_recording_completion(tmp_path, monkeypatch):
+    monkeypatch.setattr(generate_pages, "BASE_DIR", tmp_path)
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MANIFEST", tmp_path / ".legacy.json"
+    )
+    monkeypatch.setattr(
+        generate_pages, "LEGACY_GENERATED_PAGES_MIGRATION", tmp_path / ".migrated.json"
+    )
+    (tmp_path / "cities").mkdir()
+    page = tmp_path / "cities" / "old.html"
+    page.write_text(
+        '<link rel="canonical" href="https://mestov.net/cities/old.html">'
+        '<div id="city-filter"></div><div id="events-grid"></div>',
+        encoding="utf-8",
+    )
+    (tmp_path / ".legacy.json").write_text('["cities/old.html"]', encoding="utf-8")
+
+    save_legacy_generated_pages_migration({Path("cities/old.html")})
+    assert load_legacy_generated_pages_for_migration() == set()
+    assert page.exists()

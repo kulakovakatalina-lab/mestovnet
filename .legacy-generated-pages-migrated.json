@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "removed": [
+    "venues/api-balaklava-terrasa",
+    "venues/art-klaster-tavrida",
+    "venues/art-rezidentsiya-faza",
+    "venues/dkit-chayka",
+    "venues/dom-muzey-a-s-pushkina-gurzuf",
+    "venues/dom-muzey-direktora-observatorii-v-p-nauchnyy",
+    "venues/gorod-molodyh-tvortsov",
+    "venues/kinozal-krymskogo-kinokontsertnogo-obedineniya",
+    "venues/kontserty-krym",
+    "venues/labirint",
+    "venues/lokatsiya-3-km-ot-nauchnogo",
+    "venues/lucky-winery",
+    "venues/mezhdunarodnyy-festival-molodezhi",
+    "venues/novoulyanovka-belbekskaya-dolina",
+    "venues/oranzhereya",
+    "venues/oranzhereya-simferopol",
+    "venues/peschera-mramornaya-s-mramornoe-simferopolskiy-rayon",
+    "venues/prostranstvo-ali-bair",
+    "venues/restoran-oranzhereya",
+    "venues/santa-barbara",
+    "venues/sudakskaya-krepost",
+    "venues/teatr-imeni-borisa-lavreneva",
+    "venues/tvorcheskaya-rezidentsiya-molodezh-moskvy-rodina",
+    "venues/u-konnogo-kluba-zolotaya-podkova",
+    "venues/vinogradnik-le-k2-selo-rodnoe"
+  ]
+}

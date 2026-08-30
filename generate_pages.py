@@ -37,6 +37,10 @@ GENRE_FILE    = BASE_DIR / "genre.html"
 DOMAIN     = "https://mestov.net"
 MOSCOW_TZ = ZoneInfo("Europe/Moscow")
 GENERATED_PAGES_MANIFEST = BASE_DIR / ".generated-pages.json"
+# Разовый инвентарь страниц, созданных старой сборкой до появления
+# .generated-pages.json. Он намеренно ограничен подборками, а не архивом.
+LEGACY_GENERATED_PAGES_MANIFEST = BASE_DIR / ".legacy-generated-pages.json"
+LEGACY_GENERATED_PAGES_MIGRATION = BASE_DIR / ".legacy-generated-pages-migrated.json"
 
 # ── Жанры ────────────────────────────────────────────────────────────────────
 # Копия GENRE_MAP/GENRE_LABELS из genre.html — единственное место для правки на JS-стороне,
@@ -167,6 +171,64 @@ def save_generated_pages_manifest(paths: set[Path]) -> None:
     temp = GENERATED_PAGES_MANIFEST.with_suffix(".tmp")
     temp.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(GENERATED_PAGES_MANIFEST)
+
+
+def _matches_legacy_generated_page(relative_path: Path) -> bool:
+    """Подтверждает, что кандидат похож на старую страницу сборщика.
+
+    Одного совпадения имени недостаточно: перед удалением требуем canonical URL
+    и характерный контейнер, который старый генератор добавлял в подборки.
+    """
+    path = BASE_DIR / relative_path
+    try:
+        content = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return False
+
+    canonical = f'<link rel="canonical" href="{DOMAIN}/{relative_path.as_posix()}'
+    if canonical not in content:
+        return False
+    if relative_path.parts[0] == "cities":
+        return 'id="city-filter"' in content and 'id="events-grid"' in content
+    if relative_path.parts[0] == "genre":
+        return 'id="events-grid"' in content and "genre-filter" in content
+    if relative_path.parts[0] == "venues":
+        # Исторические venue-страницы использовали общий genre-hero-шаблон.
+        return 'class="genre-hero"' in content and 'id="events-list"' in content
+    return False
+
+
+def load_legacy_generated_pages_for_migration() -> set[Path]:
+    """Возвращает подтверждённые страницы из разового инвентаря.
+
+    Миграция не запускается повторно и никогда не рассматривает event/ или
+    artist/: эти разделы являются постоянным архивом.
+    """
+    if LEGACY_GENERATED_PAGES_MIGRATION.exists() or not LEGACY_GENERATED_PAGES_MANIFEST.exists():
+        return set()
+    try:
+        entries = json.loads(LEGACY_GENERATED_PAGES_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        print("⚠️  Не удалось прочитать инвентарь старых страниц; миграция пропущена")
+        return set()
+    if not isinstance(entries, list):
+        return set()
+    candidates = {
+        path for raw in entries if isinstance(raw, str)
+        if (path := _valid_generated_page_path(raw)) is not None
+    }
+    return {path for path in candidates if _matches_legacy_generated_page(path)}
+
+
+def save_legacy_generated_pages_migration(removed: set[Path]) -> None:
+    """Фиксирует завершение разовой миграции только после безопасной очистки."""
+    payload = {
+        "version": 1,
+        "removed": sorted(path.as_posix() for path in removed),
+    }
+    temp = LEGACY_GENERATED_PAGES_MIGRATION.with_suffix(".tmp")
+    temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temp.replace(LEGACY_GENERATED_PAGES_MIGRATION)
 
 def fmt_date(ds: str) -> str:
     try:
@@ -2103,9 +2165,15 @@ def main() -> None:
     # Сборщик владеет только подборками. Страницы event/ и artist/ — архив,
     # поэтому никогда не включаются в очистку, даже если исходные записи
     # когда-нибудь изменятся или будут скрыты.
+    # Единственный раз подхватываем подтверждённые страницы старой сборки,
+    # созданные до появления основного манифеста. Список фиксирован в репозитории
+    # и дополнительно проверяется по содержимому файла.
+    legacy_generated_pages = load_legacy_generated_pages_for_migration()
     stale_removed = cleanup_stale_generated_pages(
-        previous_generated_pages, current_generated_pages
+        previous_generated_pages | legacy_generated_pages, current_generated_pages
     )
+    if not LEGACY_GENERATED_PAGES_MIGRATION.exists():
+        save_legacy_generated_pages_migration(legacy_generated_pages)
     save_generated_pages_manifest(current_generated_pages)
     if stale_removed:
         print(f"    (удалено устаревших страниц подборок: {stale_removed})")
