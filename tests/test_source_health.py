@@ -1,7 +1,16 @@
 import json
 from datetime import date, datetime, timezone
+from pathlib import Path
 
 from source_health import active_city_counts, build_snapshot, parse_parser_log
+
+
+def test_daily_workflow_creates_report_and_notifies_only_about_alerts():
+    workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "parser-daily.yml").read_text(encoding="utf-8")
+
+    assert 'python parser.py --days "$DAYS" | tee parser_output.log' in workflow
+    assert "python source_health.py --log parser_output.log" in workflow
+    assert "python source_health_notify.py" in workflow
 
 
 def test_parse_log_marks_fetch_error_and_keeps_report_counts(tmp_path):

@@ -66,7 +66,8 @@ jobs:
       - name: Запустить парсер
         run: |
           DAYS="${{ github.event.inputs.days || 14 }}"
-          python parser.py --days "$DAYS"
+          python parser.py --days "$DAYS" | tee parser_output.log
+          python source_health.py --log parser_output.log
           python repair_event_data.py
           python moderation_queue.py
 
@@ -167,6 +168,16 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python moderation_notify.py
+        continue-on-error: true
+
+      - name: Сообщить о проблемах источников в Telegram
+        if: >-
+          ${{ needs.parse-and-deploy.result == 'success' &&
+              (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python source_health_notify.py
         continue-on-error: true
 
       - name: Сообщить об ошибке ночного запуска
