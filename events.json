@@ -9663,7 +9663,9 @@
       "/images/events/cc9a67049b08db2752d97ff395ebb495.jpg"
     ],
     "image": "/images/events/537a787a2c5bc9f89e1c4c5c4e3142f0.jpg",
-    "post_date": "2026-08-27T14:29:13+00:00"
+    "post_date": "2026-08-27T14:29:13+00:00",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "30a5d50a",
