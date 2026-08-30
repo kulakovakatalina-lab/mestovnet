@@ -1032,9 +1032,9 @@
       "Симферополь"
     ],
     "venues": [
-      "БТР",
       "Депо",
-      "Boombox"
+      "Boombox",
+      "БТР"
     ],
     "first_seen": "2026-09-18",
     "last_seen": "2026-09-19",
@@ -2868,25 +2868,6 @@
     ],
     "first_seen": "2026-08-25",
     "last_seen": "2026-08-28",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "rammlied",
-    "name": "Rammlied",
-    "aliases": [
-      "Rammlied"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Крым Event",
-      "Jam Club"
-    ],
-    "first_seen": "2026-08-30",
-    "last_seen": "2026-08-30",
     "description": null,
     "desc_baseline_count": 0
   }
