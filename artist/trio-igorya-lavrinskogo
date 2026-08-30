@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Трио Игоря Лавринского — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Трио Игоря Лавринского в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Трио Игоря Лавринского в Крыму (Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/trio-igorya-lavrinskogo">
   <meta property="og:title" content="Трио Игоря Лавринского — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Трио Игоря Лавринского в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Трио Игоря Лавринского в Крыму (Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,25 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Трио Игоря Лавринского"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Трио Игоря Лавринского",
-      "startDate": "2026-08-29T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Трио Игоря Лавринского"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальное путешествие по XX веку: техасский блюз, свинг 30-х, рок-н-ролл 50-х и классические рок-баллады 70-х."
     }
   ]
 }
@@ -1021,7 +1002,7 @@ footer {
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

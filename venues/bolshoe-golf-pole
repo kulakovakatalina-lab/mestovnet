@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Большое гольф-поле — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Большое гольф-поле, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Большое гольф-поле — афиша в Крыму · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/bolshoe-golf-pole">
-  <meta property="og:title" content="Большое гольф-поле — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Большое гольф-поле, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Большое гольф-поле — афиша в Крыму · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "Большое гольф-поле",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Севастополь",
+        "addressLocality": "Крым",
         "addressCountry": "RU"
       }
     },
@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "Большое гольф-поле"
       },
-      "description": "Джазовый пикник на закате. Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
+      "description": "Джазовый пикник на закате в пространстве «Али-Баир». Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Джазовый пикник на закате, Дуэт с Анной"
@@ -54,7 +54,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Большое гольф-поле"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Большое гольф-поле"}]}
 </script>
   <style>
 
@@ -1063,7 +1063,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/sevastopol.html">Севастополь</a>
+      · <a href="/cities/all.html">Крым</a>
     </div>
     <h1 class="genre-hero-title">Большое гольф-поле</h1>
 

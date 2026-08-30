@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Большой акустический трибьют группы «Король и Шут» в исполнении Игоря Симдянкина.",
+      "description": "Большой акустический трибьют группы «Король и Шут»",
       "performer": {
         "@type": "MusicGroup",
         "name": "Максим Шеремет, Игорь Симдянкин с «КиШом»"

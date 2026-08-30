@@ -1,23 +1,5 @@
 [
   {
-    "id": "e5674032",
-    "date": "2026-08-29",
-    "time": null,
-    "artist": "Анна Шакель, джаз-трио «А3»",
-    "venue": "Ресторан «Мотивы»",
-    "source_city": "Симферополь",
-    "price": null,
-    "genre": "джаз",
-    "event_type": "концерт",
-    "description": "Анна Шакель и джаз-трио «А3»",
-    "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg",
-    "source_url": "https://t.me/sevastopol_jazz/1295",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
     "id": "470475c6",
     "date": "2026-09-12",
     "time": null,
@@ -30,23 +12,6 @@
     "description": "METALLICA TRIBUTE by Blackened. 3 часа любимых хитов и много нового материала Металлики.",
     "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
     "source_url": "https://t.me/clubjam/1116",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "id": "6010156a",
-    "date": "2026-08-29",
-    "time": null,
-    "artist": "фолк-группа из Симферополя «Канальи», танцевальное объединение «Танцующее средневековье»",
-    "venue": "ДК в парке МО, ул. Свердлова, Ялта",
-    "source_city": "Ялта",
-    "price": "Оплата по сердцу",
-    "genre": "фолк",
-    "event_type": "концерт",
-    "description": "Танцевальный концерт в Ялте с атмосферой средневековья. Фолк-группа из Симферополя «Канальи» и танцевальное объединение «Танцующее средневековье» создадут атмосферу средневекового праздника.",
-    "image": "/images/events/52b536333671b86583e35c867a604bf4.jpg",
-    "source_url": "https://t.me/dlyadushi_Crimea/6504",
     "reasons": [
       "нет времени"
     ]
@@ -69,23 +34,6 @@
     ]
   },
   {
-    "id": "0a83b119",
-    "date": "2026-08-29",
-    "time": null,
-    "artist": "Трио Игоря Лавринского",
-    "venue": "Севастополь",
-    "source_city": "Севастополь",
-    "price": "600 – 800 ₽",
-    "genre": "джаз",
-    "event_type": "концерт",
-    "description": "Техасский блюз, свинг 30-х, рок-баллады 70-х и танцевальный рок-н-ролл 50-х в одной программе. Живая импровизация, энергия и концерт, который каждый раз звучит по-новому.",
-    "image": "/images/events/7a16732f4ed3a449c3266f852164a1fe.jpg",
-    "source_url": "https://t.me/afisha_payberry/1621",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
     "id": "19525d0a",
     "date": "2026-10-09",
     "time": null,
@@ -103,21 +51,20 @@
     ]
   },
   {
-    "id": "eae425be",
-    "date": "2026-08-29",
+    "id": "caa7ca3d",
+    "date": "2026-08-30",
     "time": null,
-    "artist": "Мотивы",
-    "venue": "Ресторан «Мотивы»",
+    "artist": "Rammlied",
+    "venue": "Крым Event",
     "source_city": "Симферополь",
-    "price": null,
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Встречаемся в ресторане «Мотивы»",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "трибьют",
+    "description": "Концерт RAMMSTEIN tribute by Rammlied.",
     "image": null,
-    "source_url": "https://t.me/sevastopol_jazz/1298",
+    "source_url": "https://t.me/crimea_event/5631",
     "reasons": [
       "нет времени",
-      "нет цены",
       "нет постера"
     ]
   }
