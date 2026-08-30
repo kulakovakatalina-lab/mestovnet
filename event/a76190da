@@ -1094,6 +1094,15 @@ function parseDate(d) {
   return new Date(+parts[0], +parts[1] - 1, +parts[2]);
 }
 
+function moscowNow() {
+  const values = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Moscow', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+  }).formatToParts(new Date()).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+  return new Date(+values.year, +values.month - 1, +values.day,
+                  +values.hour, +values.minute, +values.second);
+}
+
 // Момент, до которого событие актуально: дата + время начала.
 // Без времени — до конца дня.
 function parseDateTime(e) {
@@ -1245,7 +1254,7 @@ async function load() {
       if (url in ovVenues)  ev.venue       = ovVenues[url];
       if (url in ovDescs)   ev.description = ovDescs[url];
       if (url in ovGenres)  ev.genre       = ovGenres[url];
-      if (cancelledSet.has(url)) ev.cancelled = true;
+      if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
       return ev;
     }
 
@@ -1254,7 +1263,7 @@ async function load() {
       return ev ? { ...ev, _origIdx: i } : null;
     });
 
-    const now = new Date();
+    const now = moscowNow();
 
     const enrich = e => {
       const d = e.date ? parseDate(e.date) : null;
@@ -1552,7 +1561,7 @@ function updateLoadMoreBtn() {
 
 function renderNavGenres() {
   const counts = {};
-  const now = new Date();
+  const now = moscowNow();
   allEvents.filter(e => e.date && parseDateTime(e) >= now)
     .forEach(e => { counts[e.genre] = (counts[e.genre] || 0) + 1; });
   const order = ['jazz', 'rock', 'folk', 'blues', 'classic', 'pop'];

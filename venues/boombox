@@ -1167,6 +1167,14 @@ const DOW = ['вс','пн','вт','ср','чт','пт','сб'];
 
 function mapGenre(raw) { return GENRE_MAP[raw?.toLowerCase()] || 'pop'; }
 function parseDate(d) { const p = d.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
+function moscowNow() {
+  const values = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Moscow', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+  }).formatToParts(new Date()).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+  return new Date(+values.year, +values.month - 1, +values.day,
+                  +values.hour, +values.minute, +values.second);
+}
 function parseDateTime(e) {
   const d = parseDate(e.date);
   const m = e.time && e.time.match(/(\d{1,2}):(\d{2})/);
@@ -1200,7 +1208,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url))  ev.cancelled   = true;
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1276,7 +1284,7 @@ async function load() {
     const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched  = applySettings(data, settings);
-    const now      = new Date();
+    const now      = moscowNow();
     const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
