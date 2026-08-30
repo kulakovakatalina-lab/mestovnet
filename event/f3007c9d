@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джазовый пикник на закате, Дуэт с Анной, Большое гольф-поле, в Севастополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Джазовый пикник на закате, Дуэт с Анной, Большое гольф-поле, в Крыму, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джазовый пикник на закате, Дуэт с Анной — Большое гольф-поле, Севастополь, 30 августа · Местов.Нет</title>
+<title>Джазовый пикник на закате, Дуэт с Анной — Большое гольф-поле, Крым, 30 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/f3007c9d">
-<meta property="og:title" content="Джазовый пикник на закате, Дуэт с Анной — Большое гольф-поле, Севастополь, 30 августа · Местов.Нет">
-<meta property="og:description" content="Джазовый пикник на закате, Дуэт с Анной, Большое гольф-поле, в Севастополе, 30 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Джазовый пикник на закате, Дуэт с Анной — Большое гольф-поле, Крым, 30 августа · Местов.Нет">
+<meta property="og:description" content="Джазовый пикник на закате, Дуэт с Анной, Большое гольф-поле, в Крыму, 30 августа, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg">
 <script type="application/ld+json">
@@ -976,11 +976,11 @@ a { color: inherit; text-decoration: none; }
         "name": "Большое гольф-поле",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "Джазовый пикник на закате. Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
+      "description": "Джазовый пикник на закате в пространстве «Али-Баир». Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Джазовый пикник на закате, Дуэт с Анной"
@@ -991,7 +991,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовый пикник на закате, Дуэт с Анной"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовый пикник на закате, Дуэт с Анной"}]}
 </script>
 </head>
 <body>

@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джокер, Камелот, в Керчи, 18 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Ирина Субракова, Для души | Крым, в Крыму, 3 августа, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джокер — Камелот, Керчь, 18 октября · Местов.Нет</title>
+<title>Ирина Субракова — Для души | Крым, 3 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,37 +958,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/42567d5d">
-<meta property="og:title" content="Джокер — Камелот, Керчь, 18 октября · Местов.Нет">
-<meta property="og:description" content="Джокер, Камелот, в Керчи, 18 октября, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/8a24bcbd">
+<meta property="og:title" content="Ирина Субракова — Для души | Крым, 3 августа · Местов.Нет">
+<meta property="og:description" content="Ирина Субракова, Для души | Крым, в Крыму, 3 августа, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/70536d7ef8abf50e4551f81a8fc071b8.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джокер",
-      "startDate": "2026-10-18T19:00:00+03:00",
+      "name": "Ирина Субракова",
+      "startDate": "2026-08-03T12:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Камелот",
+        "name": "Для души | Крым",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Керчь",
+          "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"\u0000Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
+      "description": "Бесплатная онлайн-лекция 'Как ваше состояние формирует отношения или почему любовь запускается внутри'.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джокер"
+        "name": "Ирина Субракова"
       },
-      "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
+      "image": "/images/events/70536d7ef8abf50e4551f81a8fc071b8.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 700 ₽",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Керчь", "item": "https://mestov.net/cities/kerch.html"}, {"@type": "ListItem", "position": 3, "name": "Джокер"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Ирина Субракова"}]}
 </script>
 </head>
 <body>

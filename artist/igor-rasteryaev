@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Игорь Растеряев — концерты в Крыму, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Игорь Растеряев в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
+  <title>Игорь Растеряев — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Игорь Растеряев в Крыму (Севастополь, Симферополь). 3 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/igor-rasteryaev">
-  <meta property="og:title" content="Игорь Растеряев — концерты в Крыму, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Игорь Растеряев в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
+  <meta property="og:title" content="Игорь Растеряев — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Игорь Растеряев в Крыму (Севастополь, Симферополь). 3 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -69,6 +69,26 @@
       },
       "description": "Игорь Растеряев в Boombox, Севастополь.",
       "image": "/images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Растеряев",
+      "startDate": "2026-09-19T20:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Растеряев"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "БТР",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Задушевные песни о Руси, казаках, народе и ратных подвигах Пронзительный хит Игоря Растеряева «Комбайнеры» стал ютьюб-сенсацией 2011 года — Россия узнала о харизматичном баянисте, который выдает аутентичные истории из жизни деревни и обычного народа.",
+      "image": "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     }
   ]
 }
@@ -1040,9 +1060,9 @@ footer {
     </div>
     <h1 class="genre-hero-title">Игорь Растеряев</h1>
 <p class="venue-description">Автор и исполнитель с гармонью, известный по «Комбайнёрам» и «Русской дороге». В сентябре — клубные концерты в Симферополе («Депо») и Севастополе (Boombox).</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

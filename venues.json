@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 39,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 32,
+    "event_count": 33,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -74,6 +74,21 @@
     "lon": 34.163783
   },
   {
+    "slug": "art-kafe-snezhinka",
+    "name": "Арт-кафе «Снежинка»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 14,
+    "aliases": [
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -88,21 +103,6 @@
     "desc_baseline_count": 8,
     "lat": 44.9474,
     "lon": 34.1258
-  },
-  {
-    "slug": "art-kafe-snezhinka",
-    "name": "Арт-кафе «Снежинка»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 13,
-    "aliases": [
-      "Арт-кафе «Снежинка»",
-      "арт-кафе «Снежинка»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "el-capulco-0-0",
@@ -403,6 +403,21 @@
     "lon": null
   },
   {
+    "slug": "btr-bar-tyazhelogo-roka",
+    "name": "БТР / Бар тяжёлого рока",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "БТР",
+      "БТР / Бар тяжёлого рока"
+    ],
+    "description": "За последний месяц здесь прошло 3 концерта с платным входом. Название говорит само за себя: весь репертуар — рок, включая большой сольный концерт хард-рок-легенды «Чёрный Кофе» с Дмитрием Варшавским.",
+    "desc_baseline_count": 3,
+    "lat": 44.567383,
+    "lon": 33.525748
+  },
+  {
     "slug": "mriya",
     "name": "Мрия",
     "city": "Ялта",
@@ -547,21 +562,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "btr-bar-tyazhelogo-roka",
-    "name": "БТР / Бар тяжёлого рока",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "БТР",
-      "БТР / Бар тяжёлого рока"
-    ],
-    "description": "За последний месяц здесь прошло 3 концерта с платным входом. Название говорит само за себя: весь репертуар — рок, включая большой сольный концерт хард-рок-легенды «Чёрный Кофе» с Дмитрием Варшавским.",
-    "desc_baseline_count": 3,
-    "lat": 44.567383,
-    "lon": 33.525748
   },
   {
     "slug": "vinnyy-park-ponizovka",
@@ -973,6 +973,20 @@
     "event_count": 2,
     "aliases": [
       "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "p-nauchnyy-ul-nauchnaya-46",
+    "name": "п Научный, ул Научная, 46",
+    "city": "Научный",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "п Научный, ул Научная, 46"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1682,7 +1696,7 @@
   {
     "slug": "bolshoe-golf-pole",
     "name": "Большое гольф-поле",
-    "city": "Севастополь",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -1834,20 +1848,6 @@
     "lon": null
   },
   {
-    "slug": "p-nauchnyy-ul-nauchnaya-46",
-    "name": "п Научный, ул Научная, 46",
-    "city": "Научный",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "п Научный, ул Научная, 46"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "otkrytaya-ploschadka-pod-gril-barom-triton",
     "name": "Открытая площадка под гриль-баром «Тритон»",
     "city": "Севастополь",
@@ -1890,20 +1890,6 @@
     "lon": null
   },
   {
-    "slug": "prostranstvo-ali-bair",
-    "name": "пространство «Али-Баир»",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "пространство «Али-Баир»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "muzykalnyy-teatr-respubliki-krym",
     "name": "Музыкальный театр Республики Крым",
     "city": "Симферополь",
@@ -1911,6 +1897,34 @@
     "event_count": 1,
     "aliases": [
       "Музыкальный театр Республики Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dlya-dushi-krym",
+    "name": "Для души | Крым",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Для души | Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "winepark",
+    "name": "Winepark",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Winepark"
     ],
     "description": null,
     "desc_baseline_count": 0,

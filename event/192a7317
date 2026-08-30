@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Джазовый пикник, пространство «Али-Баир», в Крыму, 30 августа, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Игорь Растеряев, БТР, в Севастополе, 19 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Джазовый пикник — пространство «Али-Баир», Крым, 30 августа · Местов.Нет</title>
+<title>Игорь Растеряев — БТР, Севастополь, 19 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/76591123">
-<meta property="og:title" content="Джазовый пикник — пространство «Али-Баир», Крым, 30 августа · Местов.Нет">
-<meta property="og:description" content="Джазовый пикник, пространство «Али-Баир», в Крыму, 30 августа, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/192a7317">
+<meta property="og:title" content="Игорь Растеряев — БТР, Севастополь, 19 сентября · Местов.Нет">
+<meta property="og:description" content="Игорь Растеряев, БТР, в Севастополе, 19 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/ca548f869a5b3bcb50382e92d9a2d2e6.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Джазовый пикник",
-      "startDate": "2026-08-30T18:00:00+03:00",
+      "name": "Игорь Растеряев",
+      "startDate": "2026-09-19T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "пространство «Али-Баир»",
+        "name": "БТР",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Крым",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Джазовый пикник на закате в пространстве «Али-Баир». Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
+      "description": "Задушевные песни о Руси, казаках, народе и ратных подвигах Пронзительный хит Игоря Растеряева «Комбайнеры» стал ютьюб-сенсацией 2011 года — Россия узнала о харизматичном баянисте, который выдает аутентичные истории из жизни деревни и обычного народа.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джазовый пикник"
+        "name": "Игорь Растеряев"
       },
-      "image": "/images/events/ca548f869a5b3bcb50382e92d9a2d2e6.jpg"
+      "image": "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "от 2800 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Джазовый пикник"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Игорь Растеряев"}]}
 </script>
 </head>
 <body>
