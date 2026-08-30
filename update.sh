@@ -21,7 +21,7 @@ echo ""
 
 # 3. Коммит и деплой
 echo ">>> Деплой..."
-git add events.json moderation.json index.html cities/ genre/ venues/ artist/ event/ sitemap.xml robots.txt images/events/ settings.json
+git add events.json moderation.json moderation_decisions.json index.html cities/ genre/ venues/ artist/ event/ sitemap.xml robots.txt images/events/ settings.json
 
 # Коммитим только если есть изменения
 if git diff --cached --quiet; then

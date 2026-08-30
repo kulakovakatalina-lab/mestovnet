@@ -221,7 +221,7 @@ def apply_settings(events: list[dict], settings: dict) -> list[dict]:
             ev["description"] = descs_ov[url]
         if url in genres_ov:
             ev["genre"] = genres_ov[url]
-        if url in cancelled_ov:
+        if url in cancelled_ov or ev.get("source_status") == "cancelled":
             ev["cancelled"] = True
 
         result.append(ev)
@@ -1227,7 +1227,7 @@ function applySettings(data, settings) {{
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url))  ev.cancelled   = true;
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -1710,6 +1710,7 @@ function otherArtistNames(ev) {{
 
 function applySettings(data, settings) {{
   const hiddenSet = new Set(settings.hidden || []);
+  const cancelledSet = new Set(settings.cancelled || []);
   const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
     images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
     descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
@@ -1725,6 +1726,7 @@ function applySettings(data, settings) {{
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
