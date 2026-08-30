@@ -1126,7 +1126,7 @@ function applySettings(data, settings) {
     if (url in ov.venues)       ev.venue       = ov.venues[url];
     if (url in ov.descriptions) ev.description = ov.descriptions[url];
     if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url))  ev.cancelled   = true;
+    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
