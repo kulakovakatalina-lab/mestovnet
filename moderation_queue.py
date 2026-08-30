@@ -1,6 +1,5 @@
 """Формирует очередь ручной проверки и применяет решения из Telegram."""
 
-import hashlib
 import json
 import os
 import re
@@ -13,7 +12,6 @@ from typing import Optional
 
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
-DECISIONS_CACHE = Path("moderation_decisions.json")
 CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта|Керчь|Феодосия|Судак|Гурзуф)\b", re.I)
 # Цена и постер полезны, но их отсутствие не должно останавливать публикацию:
 # цена часто отсутствует у бесплатных/донатных событий, а сайт умеет показать
@@ -21,16 +19,16 @@ CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта
 OPTIONAL_ISSUES = {"нет цены", "нет постера"}
 
 
-def load_decisions() -> Optional[list[dict]]:
+def load_decisions() -> list[dict]:
     """Забирает решения модератора из Cloudflare Worker.
 
-    None означает ошибку синхронизации. Это не то же самое, что успешный
-    пустой список решений: при сбое нельзя сбрасывать локальные статусы.
+    Без настроек Worker скрипт остаётся полностью локальным: новые карточки
+    попадают в очередь как прежде. Это удобно для локальной разработки.
     """
     base_url = os.environ.get("MODERATION_WORKER_URL", "").rstrip("/")
     token = os.environ.get("MODERATION_SYNC_TOKEN", "")
     if not base_url or not token:
-        return None
+        return []
     request = urllib.request.Request(
         f"{base_url}/moderation/decisions",
         headers={"Authorization": f"Bearer {token}"},
@@ -40,29 +38,8 @@ def load_decisions() -> Optional[list[dict]]:
             payload = json.load(response)
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as exc:
         print(f"Не удалось получить решения модерации: {exc}")
-        return None
-    if not isinstance(payload, dict) or not isinstance(payload.get("decisions", []), list):
-        print("Не удалось получить решения модерации: некорректный ответ Worker")
-        return None
-    return payload.get("decisions", [])
-
-
-def load_cached_decisions() -> list[dict]:
-    """Читает последнюю успешно синхронизированную копию решений."""
-    try:
-        data = json.loads(DECISIONS_CACHE.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
         return []
-    return data if isinstance(data, list) else []
-
-
-def save_cached_decisions(decisions: list[dict]) -> None:
-    """Атомарно сохраняет снимок только после успешной синхронизации."""
-    temporary = DECISIONS_CACHE.with_suffix(".tmp")
-    temporary.write_text(
-        json.dumps(decisions, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    temporary.replace(DECISIONS_CACHE)
+    return payload.get("decisions", []) if isinstance(payload, dict) else []
 
 
 def reasons(event: dict) -> list[str]:
@@ -78,137 +55,43 @@ def reasons(event: dict) -> list[str]:
     return result
 
 
-def event_fingerprint(event: dict, issues: list[str]) -> str:
-    """Отпечаток версии карточки, которую проверил модератор."""
-    fields = (
-        "id", "date", "time", "artist", "venue", "source_city", "source_url",
-        "price", "description", "event_type", "genre",
-    )
-    payload = {field: event.get(field) for field in fields}
-    payload["reasons"] = issues
-    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
-
-
-def _decision_signature(decision: dict) -> tuple:
-    return (
-        decision.get("event_id"), decision.get("status"),
-        tuple(decision.get("reasons", [])), decision.get("decided_at", ""),
-    )
-
-
-def enrich_remote_decisions(
-    remote: list[dict], cached: list[dict], events: list[dict]
-) -> list[dict]:
-    """Сохраняет fingerprint прежней версии, пока решение Worker не менялось."""
-    cached_by_id = {d.get("event_id"): d for d in cached if d.get("event_id")}
-    events_by_id = {e.get("id"): e for e in events if e.get("id")}
-    enriched = []
-    for raw in remote:
-        if not isinstance(raw, dict):
-            continue
-        decision = dict(raw)
-        event_id = decision.get("event_id")
-        previous = cached_by_id.get(event_id)
-        current = events_by_id.get(event_id)
-        if previous and _decision_signature(previous) == _decision_signature(decision):
-            fingerprint = previous.get("fingerprint")
-        else:
-            fingerprint = event_fingerprint(current, reasons(current)) if current else None
-        if fingerprint:
-            decision["fingerprint"] = fingerprint
-        enriched.append(decision)
-    return enriched
-
-
-def decision_for(event: dict, by_id: dict, legacy_by_source: dict) -> Optional[dict]:
-    """URL используется лишь для старых решений и только при одной карточке."""
-    return by_id.get(event.get("id")) or legacy_by_source.get(event.get("source_url"))
-
-
-def decision_embedded_in_event(event: dict) -> Optional[dict]:
-    """Фолбэк для старых events.json при недоступности Worker."""
-    status = event.get("moderation_status")
-    if status not in {"approved", "rejected"}:
-        return None
-    return {
-        "event_id": event.get("id"),
-        "status": status,
-        "reasons": event.get("moderation_decision_reasons", event.get("review_reasons", [])),
-        "decided_at": event.get("moderated_at", ""),
-        "fingerprint": event.get("moderation_decision_fingerprint"),
-    }
+def decision_for(event: dict, by_id: dict, by_source: dict) -> Optional[dict]:
+    return by_id.get(event.get("id")) or by_source.get(event.get("source_url"))
 
 
 def main() -> None:
     events = json.loads(EVENTS.read_text(encoding="utf-8"))
     today = date.today().isoformat()
-    remote_decisions = load_decisions()
-    cached_decisions = load_cached_decisions()
-    sync_failed = remote_decisions is None
-    if sync_failed:
-        decisions = cached_decisions
-        print("Модерация: Worker недоступен, использую локальный журнал решений.")
-    else:
-        decisions = enrich_remote_decisions(remote_decisions, cached_decisions, events)
-        save_cached_decisions(decisions)
+    decisions = load_decisions()
     by_id = {d.get("event_id"): d for d in decisions if d.get("event_id")}
-    event_url_counts: dict[str, int] = {}
-    for event in events:
-        url = event.get("source_url")
-        if url:
-            event_url_counts[url] = event_url_counts.get(url, 0) + 1
-    legacy_by_source = {
-        d.get("source_url"): d for d in decisions
-        if d.get("source_url") and not d.get("event_id")
-        and event_url_counts.get(d["source_url"]) == 1
-    }
+    by_source = {d.get("source_url"): d for d in decisions if d.get("source_url")}
     queue = []
     for event in events:
         issues = reasons(event)
-        decision = decision_for(event, by_id, legacy_by_source)
-        if decision is None and sync_failed:
-            decision = decision_embedded_in_event(event)
+        decision = decision_for(event, by_id, by_source)
         status = (decision or {}).get("status")
-        fingerprint = event_fingerprint(event, issues)
 
-        # Одобрение действует на конкретную версию карточки. У старых данных
-        # без fingerprint допускаем разовую миграцию только в офлайн-режиме.
-        legacy_approved = sync_failed and decision and not decision.get("fingerprint")
-        approved = status == "approved" and decision.get("reasons", []) == issues and (
-            decision.get("fingerprint") == fingerprint or legacy_approved
-        )
+        # Одобрение действует на тот набор замечаний, который видел
+        # модератор. Если парсер нашёл новую проблему, карточка вернётся
+        # в очередь, а не будет опубликована по старому решению.
+        approved = status == "approved" and decision.get("reasons", []) == issues
         rejected = status == "rejected"
         archived = bool(event.get("date")) and event["date"] < today
-        # Однозначно сверенные изменения существующей карточки применяются
-        # автоматически: это не новый LLM-кандидат, а обновление того же
-        # первоисточника с сохранённым event_id.
-        auto_approved = (
-            bool(event.get("auto_updated"))
-            or (bool(issues) and set(issues).issubset(OPTIONAL_ISSUES))
-        )
+        auto_approved = bool(issues) and set(issues).issubset(OPTIONAL_ISSUES)
         event["needs_review"] = bool(issues) and not approved and not rejected and not archived and not auto_approved
         event["review_reasons"] = issues
         if approved or rejected:
             event["moderation_status"] = status
             event["moderated_at"] = decision.get("decided_at", "")
-            event["moderation_decision_reasons"] = decision.get("reasons", [])
-            event["moderation_decision_fingerprint"] = fingerprint
         elif archived:
             event["moderation_status"] = "archived"
             event.pop("moderated_at", None)
-            event.pop("moderation_decision_reasons", None)
-            event.pop("moderation_decision_fingerprint", None)
         elif auto_approved:
             event["moderation_status"] = "approved"
             event.pop("moderated_at", None)
-            event.pop("moderation_decision_reasons", None)
-            event.pop("moderation_decision_fingerprint", None)
         else:
             event.pop("moderation_status", None)
             event.pop("moderated_at", None)
-            event.pop("moderation_decision_reasons", None)
-            event.pop("moderation_decision_fingerprint", None)
         if issues and not approved and not rejected and not archived and not auto_approved:
             queue.append({
                 # В очередь кладём именно те данные, которые увидит посетитель

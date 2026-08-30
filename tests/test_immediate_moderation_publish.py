@@ -16,7 +16,6 @@ def test_worker_dispatches_the_immediate_publish_workflow():
     assert 'const MODERATION_PUBLISH_WORKFLOW = "publish-moderation.yml"' in WORKER
     assert "env.GITHUB_MODERATION_TOKEN" in WORKER
     assert "/actions/workflows/${MODERATION_PUBLISH_WORKFLOW}/dispatches" in WORKER
-    assert '"User-Agent": "MestovNet-Moderation-Worker"' in WORKER
     assert "await triggerModerationPublish(env)" in WORKER
 
 

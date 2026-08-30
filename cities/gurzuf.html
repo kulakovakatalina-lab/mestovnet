@@ -1037,7 +1037,7 @@ function applySettings(data, settings) {
     if (url in ovVenues) ev.venue       = ovVenues[url];
     if (url in ovDescs)  ev.description = ovDescs[url];
     if (url in ovGenres) ev.genre       = ovGenres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (cancelledSet.has(url)) ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }

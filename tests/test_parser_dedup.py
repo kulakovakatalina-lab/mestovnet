@@ -12,7 +12,6 @@ from parser import (
     is_generic_artist,
     _split_artist_field,
     _venue_match,
-    reconcile_source_updates,
 )
 
 
