@@ -681,6 +681,17 @@ async function onCommand(env, chatId, userId, text) {
     }
   } else if (cmd === "stats") {
     await onStats(env, chatId, userId);
+  } else if (cmd === "publish_test") {
+    if (userId !== Number(env.ADMIN_ID)) {
+      await send(env, chatId, "Команда доступна только администратору.", null, false);
+      return;
+    }
+    const started = await triggerModerationPublish(env);
+    await send(env, chatId,
+      started
+        ? "✅ Тест публикации запущен. Проверь GitHub Actions: Publish moderation decision. Афиша не изменится, если новых решений нет."
+        : "⚠️ Не удалось запустить тест публикации. Проверь секрет GITHUB_MODERATION_TOKEN и логи Worker-а.",
+      null, false);
   } else if (cmd === "moderation") {
     if (userId !== Number(env.ADMIN_ID)) {
       await send(env, chatId, "Команда доступна только администратору.", null, false);
