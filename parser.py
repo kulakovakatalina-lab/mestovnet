@@ -786,6 +786,20 @@ def process_afisha_ru(all_events: list, source_stats: dict = None, source_update
         }
 
 
+def process_afisha_goroda(all_events: list, source_stats: dict = None, source_updates: dict = None):
+    from fetch_afisha_goroda import fetch_all_crimea
+    print("\nАфиша Города — Керчь, Феодосия, Евпатория...")
+    posts = fetch_all_crimea()
+    for post in posts:
+        pre = post["_prefilled"]
+        if source_updates is not None:
+            source_updates[pre["source_url"]] = {"cancelled": False}
+        all_events.append({"date": pre["date"], "time": pre["time"], "artist": pre["artist"], "venue": pre["venue"], "event_type": "концерт", "price": pre["price"], "description": pre["description"], "source_channel": "afisha_goroda", "source_city": post["_city"], "post_date": datetime.now(timezone.utc).isoformat(), "image": download_image(post.get("image")), "source_url": pre["source_url"]})
+    print(f"  Найдено событий: {len(posts)}")
+    if source_stats is not None:
+        source_stats["afisha_goroda"] = {"title": "Афиша Города", "posts": len(posts), "extracted": len(posts), "urls": {post["_prefilled"]["source_url"] for post in posts}}
+
+
 # Жанр по source_channel (если канал всегда одного жанра)
 _CHANNEL_GENRES: dict[str, str] = {
     "skazhitejazz": "джаз",
@@ -2031,6 +2045,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     process_yandex_afisha(all_events, source_stats, source_updates)
 
     process_afisha_ru(all_events, source_stats, source_updates)
+    process_afisha_goroda(all_events, source_stats, source_updates)
 
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
     img_updated = 0 if dry_run else _redistribute_images(all_events)

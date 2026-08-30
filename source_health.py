@@ -77,6 +77,10 @@ def configured_sources(channels_path: Path) -> dict[str, dict]:
         "title": "Afisha.ru", "kind": "web", "city": "Крым", "type": "afisha",
         "url": "https://www.afisha.ru/",
     })
+    sources.setdefault("afisha_goroda", {
+        "title": "Афиша Города", "kind": "web", "city": "Крым", "type": "afisha",
+        "url": "https://afishagoroda.ru/",
+    })
     return sources
 
 
