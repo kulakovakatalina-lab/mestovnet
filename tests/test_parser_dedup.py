@@ -174,6 +174,21 @@ class TestDeduplicateEvents:
         assert result[0]["artist"] == "Би-2"
         assert result[0]["venue"] == "Jam Club"
 
+    def test_same_post_merges_artist_and_tribute_title_variant(self):
+        base = {
+            "source_url": "https://t.me/clubjam/1117",
+            "date": "2026-08-30",
+            "time": "19:00",
+            "venue": "Jam Club",
+            "source_city": "Симферополь",
+        }
+        events = [
+            {**base, "artist": "RAMMSTEIN tribute by Rammlied"},
+            {**base, "artist": "Rammlied"},
+        ]
+
+        assert len(deduplicate_events(events)) == 1
+
     def test_different_urls_same_date_same_artist_merge(self):
         events = [
             {
