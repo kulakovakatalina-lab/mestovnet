@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Андрей Ясинский — концерты в Крыму, Научный, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/andrey-yasinskiy">
   <meta property="og:title" content="Андрей Ясинский — концерты в Крыму, Научный, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Андрей Ясинский"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Андрей Ясинский",
-      "startDate": "2026-08-30T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Андрей Ясинский"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "п Научный, ул Научная, 46",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Научный",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт-погружение с музыкой на редких инструментах.",
-      "image": "/images/events/95afe24e3de48f2eaf992b4b82e518b1.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
 <p class="venue-description">Автор концертов-погружений «Космос внутри»: фортепиано, можжевеловые флейты, окарина, ханг и другие редкие инструменты. Играет под куполом телескопа Крымской астрофизической обсерватории и в пещере «Мраморная».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Научный, Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "RAMMSTEIN TRIBUTE by Rammlied.",
+      "description": "Музыканты и техники RAMMSTEIN TRIBUTE готовят сегодня особое шоу для вас.",
       "performer": {
         "@type": "MusicGroup",
         "name": "RAMMSTEIN tribute by Rammlied"

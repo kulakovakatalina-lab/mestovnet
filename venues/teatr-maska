@@ -32,7 +32,8 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Судак",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "streetAddress": "Комсомольский проспект, 28"
       }
     }
   ]
@@ -1051,7 +1052,7 @@ footer {
       · <a href="/cities/sudak.html">Судак</a>
     </div>
     <h1 class="genre-hero-title">Театр «Маска»</h1>
-
+<div class="venue-address-block"><span class="venue-hero-address">Комсомольский проспект, 28, Судак</span></div>
 
   </div>
 
@@ -1076,7 +1077,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Театр «Маска»", "Театр «Маска»"];
+const VENUE_ALIASES = ["Театр «Маска», Комсомольский проспект, 28", "Театр «Маска»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
