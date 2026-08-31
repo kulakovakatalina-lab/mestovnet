@@ -1,22 +1,5 @@
 [
   {
-    "id": "470475c6",
-    "date": "2026-09-12",
-    "time": null,
-    "artist": "Blackened, METALLICA TRIBUTE",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "метал",
-    "event_type": "трибьют",
-    "description": "METALLICA TRIBUTE by Blackened. 3 часа любимых хитов и много нового материала Металлики.",
-    "image": "/images/events/6bde8f666b4d041424c7078bf0a816d4.jpg",
-    "source_url": "https://t.me/clubjam/1116",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
     "id": "7b8801a2",
     "date": "2026-10-09",
     "time": null,
@@ -34,38 +17,20 @@
     ]
   },
   {
-    "id": "19525d0a",
-    "date": "2026-10-09",
+    "id": "f4cad0ef",
+    "date": "2026-09-05",
     "time": null,
-    "artist": "Back 'n Storm",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "трибьют",
-    "description": "AC/DC tribute by Back 'n Storm (Краснодар).",
-    "image": "/images/events/9c881a6d8364876d653404ed44fe75e5.jpg",
-    "source_url": "https://t.me/clubjam/1131",
+    "artist": "Снежинки",
+    "venue": "Севастополь",
+    "source_city": "Севастополь",
+    "price": "1200–2900 ₽",
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Вечер на стыке поэзии, музыки и театра. Серебряный век. Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства. Ахматова, Блок, Цветаева, Мандельштам, Вертинский и гастрономическое сопровождение от «Снежинки». Количество мест ограничено.",
+    "image": "/images/events/c3308d44ba16ac4db92fb9999f126568.jpg",
+    "source_url": "https://t.me/afisha_payberry/1623",
     "reasons": [
       "нет времени"
-    ]
-  },
-  {
-    "id": "caa7ca3d",
-    "date": "2026-08-30",
-    "time": null,
-    "artist": "Rammlied",
-    "venue": "Крым Event",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "трибьют",
-    "description": "Концерт RAMMSTEIN tribute by Rammlied.",
-    "image": null,
-    "source_url": "https://t.me/crimea_event/5631",
-    "reasons": [
-      "нет времени",
-      "нет постера"
     ]
   }
 ]

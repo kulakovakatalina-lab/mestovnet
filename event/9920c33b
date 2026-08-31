@@ -979,7 +979,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Нетленные хиты русского рока в исполнении Максима Шеремета",
+      "description": "Вечер русского рока и Максим Шеремет",
       "performer": {
         "@type": "MusicGroup",
         "name": "Максим Шеремет"

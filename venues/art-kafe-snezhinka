@@ -37,16 +37,16 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "«Южане»",
-      "startDate": "2026-08-30T19:00:00+03:00",
+      "name": "Paranormal Jazz Trio",
+      "startDate": "2026-09-04T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Арт-кафе «Снежинка»"
       },
-      "description": "Вечеринка с живой музыкой, танцами и интерактивами.",
+      "description": "Авторская музыка, живой джаз от Paranormal Jazz Trio.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "«Южане»"
+        "name": "Paranormal Jazz Trio"
       }
     }
   ]

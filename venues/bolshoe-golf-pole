@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Большое гольф-поле — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/bolshoe-golf-pole">
   <meta property="og:title" content="Большое гольф-поле — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Большое гольф-поле, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Джазовый пикник на закате, Дуэт с Анной",
-      "startDate": "2026-08-30T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Большое гольф-поле"
-      },
-      "description": "Джазовый пикник на закате в пространстве «Али-Баир». Будем слушать джаз и всеми известные композиции, смотреть, как садится солнце, и просто хорошо проводить лето.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джазовый пикник на закате, Дуэт с Анной"
-      },
-      "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

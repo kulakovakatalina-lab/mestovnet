@@ -42,6 +42,21 @@
     "lon": 34.098202
   },
   {
+    "slug": "art-kafe-snezhinka",
+    "name": "Арт-кафе «Снежинка»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 17,
+    "aliases": [
+      "Арт-кафе «Снежинка»",
+      "арт-кафе «Снежинка»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
     "name": "Пляж-кафе Van Gogh, Массандровский пляж",
     "city": "Ялта",
@@ -62,7 +77,7 @@
     "name": "Концертный зал «Юбилейный»",
     "city": "Ялта",
     "address": "",
-    "event_count": 14,
+    "event_count": 15,
     "aliases": [
       "Концертный зал «Юбилейный»",
       "Малый зал концертного зала «Юбилейный»",
@@ -72,21 +87,6 @@
     "desc_baseline_count": 12,
     "lat": 44.492898,
     "lon": 34.163783
-  },
-  {
-    "slug": "art-kafe-snezhinka",
-    "name": "Арт-кафе «Снежинка»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 14,
-    "aliases": [
-      "Арт-кафе «Снежинка»",
-      "арт-кафе «Снежинка»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "depo",
@@ -120,6 +120,24 @@
     "lon": null
   },
   {
+    "slug": "teatr-im-a-p-chehova",
+    "name": "Театр им. А.П. Чехова",
+    "city": "Ялта",
+    "address": "Екатерининская ул., 13",
+    "event_count": 11,
+    "aliases": [
+      "Колонный зал театра им. А.П. Чехова",
+      "Театр им. А. П. Чехова",
+      "Театр им. А.П. Чехова",
+      "Театр имени А.П. Чехова, Екатерининская ул., 13",
+      "Ялтинский театр им. Чехова"
+    ],
+    "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
+    "desc_baseline_count": 8,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -138,22 +156,21 @@
     "lon": 36.427239
   },
   {
-    "slug": "teatr-im-a-p-chehova",
-    "name": "Театр им. А.П. Чехова",
-    "city": "Ялта",
-    "address": "Екатерининская ул., 13",
+    "slug": "usadba-rodnoe-gnezdo",
+    "name": "Усадьба «Родное гнездо»",
+    "city": "Севастополь",
+    "address": "",
     "event_count": 10,
     "aliases": [
-      "Колонный зал театра им. А.П. Чехова",
-      "Театр им. А. П. Чехова",
-      "Театр им. А.П. Чехова",
-      "Театр имени А.П. Чехова, Екатерининская ул., 13",
-      "Ялтинский театр им. Чехова"
+      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
+      "Усадьба «Родное гнездо»",
+      "Усадьба Родное Гнездо",
+      "Усадьба Родное гнездо"
     ],
-    "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
-    "desc_baseline_count": 8,
-    "lat": null,
-    "lon": null
+    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
+    "desc_baseline_count": 4,
+    "lat": 44.567516,
+    "lon": 33.728614
   },
   {
     "slug": "mramornaya-peschera",
@@ -173,28 +190,11 @@
     "lon": null
   },
   {
-    "slug": "usadba-rodnoe-gnezdo",
-    "name": "Усадьба «Родное гнездо»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 9,
-    "aliases": [
-      "Ресторан «Гнездо», Усадьба «Родное гнездо»",
-      "Усадьба «Родное гнездо»",
-      "Усадьба Родное Гнездо",
-      "Усадьба Родное гнездо"
-    ],
-    "description": "Винно-туристический комплекс среди виноградников под Севастополем с рестораном и дегустациями. По вечерам здесь звучит живая музыка: Анастасия Грас с ужином на закате, гитарные сеты от Денайро, а также тематические трибьюты — например «Hello, Louise!», программа по Луи Армстронгу с джаз-бэндом «Скажите Jazz» и Стивеном Митчеллом.",
-    "desc_baseline_count": 4,
-    "lat": 44.567516,
-    "lon": 33.728614
-  },
-  {
     "slug": "sevastopol",
     "name": "Севастополь",
     "city": "Севастополь",
     "address": "Матросский бульвар",
-    "event_count": 9,
+    "event_count": 10,
     "aliases": [
       "Севастополь",
       "Севастополь, Матросский бульвар"
@@ -387,6 +387,20 @@
     "lon": 33.522078
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Рок-н-рольщики"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Крым",
@@ -431,20 +445,6 @@
     "desc_baseline_count": 4,
     "lat": 44.399691,
     "lon": 33.944698
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "dvorets-kultury-rybakov",
@@ -987,6 +987,20 @@
     "event_count": 2,
     "aliases": [
       "п Научный, ул Научная, 46"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-kultury-korabel",
+    "name": "Дом культуры «Корабел»",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Дом культуры «Корабел»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1624,20 +1638,6 @@
     "lon": null
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kachi-kalon",
     "name": "Качи-Кальон",
     "city": "Бахчисарай",
@@ -1806,20 +1806,6 @@
     "lon": null
   },
   {
-    "slug": "vinodelnya-valery-loginov-i-12-druzey",
-    "name": "винодельня «Valery Логинов и 12 друзей»",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "винодельня «Valery Логинов и 12 друзей»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "api-balaklava",
     "name": "API Балаклава",
     "city": "Севастополь",
@@ -1865,10 +1851,10 @@
     "slug": "teatr-maska",
     "name": "Театр «Маска»",
     "city": "Судак",
-    "address": "",
+    "address": "Комсомольский проспект, 28",
     "event_count": 1,
     "aliases": [
-      "Театр «Маска»"
+      "Театр «Маска», Комсомольский проспект, 28"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1925,6 +1911,62 @@
     "event_count": 1,
     "aliases": [
       "Winepark"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinodelnya-valery-loginov-i-12-druzey",
+    "name": "винодельня «Valery Логинов и 12 друзей»",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "винодельня «Valery Логинов и 12 друзей»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kontsertnyy-zal-zvezdnyy",
+    "name": "Концертный зал «Звёздный»",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концертный зал «Звёздный»"
     ],
     "description": null,
     "desc_baseline_count": 0,

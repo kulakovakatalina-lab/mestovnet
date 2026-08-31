@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев, Усадьба «Родное гнездо», в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные), Усадьба «Родное гнездо», в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев — Усадьба «Родное гнездо», Севастополь, 29 августа · Местов.Нет</title>
+<title>Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные) — Усадьба «Родное гнездо», Севастополь, 29 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/a9b9a93b">
-<meta property="og:title" content="Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев — Усадьба «Родное гнездо», Севастополь, 29 августа · Местов.Нет">
-<meta property="og:description" content="Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев, Усадьба «Родное гнездо», в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные) — Усадьба «Родное гнездо», Севастополь, 29 августа · Местов.Нет">
+<meta property="og:description" content="Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные), Усадьба «Родное гнездо», в Севастополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg">
 <script type="application/ld+json">
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев",
+      "name": "Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные)",
       "startDate": "2026-08-29T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Джазовый закат на виноградниках. В программе: Елена Голофеева - вокал, Виктор Никулин - саксофон, Максим Перов - клавиши, труба, Руслан Сейдалиев - ударные.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев"
+        "name": "Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные)"
       },
       "image": "/images/events/a2f4d8545960df1ee3245239d97c5a60.jpg",
       "offers": {
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Елена Голофеева (вокал), Виктор Никулин (саксофон), Максим Перов (клавиши, труба), Руслан Сейдалиев (ударные)"}]}
 </script>
 </head>
 <body>
