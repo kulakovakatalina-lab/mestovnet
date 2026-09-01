@@ -1345,23 +1345,30 @@
     "review_reasons": []
   },
   {
+    "id": "15bf75c9",
     "date": "2026-09-06",
     "time": "19:00",
     "artist": "Шансон-парад",
-    "venue": "Театр им. А. П. Чехова",
     "event_type": "концерт",
+    "venue": "Театр им. А. П. Чехова",
     "price": "от 1 500 ₽",
     "description": "Шоу самого народного жанра! Мастера авторской песни и звёзды эстрады выступят на одной сцене!\n\nАфина со своими хитами от Радио Шансон и Ирина Шведова, только что закончившая выступление в программе НТВ «Суперстар! Битва сезонов!» с новыми хитами.\n\nВладимир Черняков удивит зрителей новым в жанре, но и, конечно, споёт свои хиты.\n\nТак же зрители услышат ещё много интересного. В исполнении Анатолия Полотно и Феди Карманова прозвучат фирменные песни, получившие народное признание «Поцелуй меня, удача» и «Денежки», которые зал будет петь вместе с артистами.\n\nСолист группы «Новая Русь» Александр Грауль исполнением песни «Златоглавая Русь» объединит и воодушевит зрителей, и соберёт овации зала.\n\nА Михаил Борисов (экс-солист гр. «Бутырка») и Елена Бакурова исполнят свои новые песни.\n\n«Шансон-парад» — это больше, чем просто концерт. Это встреча старых друзей, море любимых песен и неповторимая атмосфера, где царит дух настоящего шансона.\n\nТрадиционный праздник песни ждёт вас на концерте «Шансон-парад»!",
-    "source_channel": "yandex_afisha",
     "source_city": "Ялта",
-    "post_date": "2026-09-06",
-    "image": "/images/events/8d8fb493adb505ad23d6622ee419de8a.jpg",
-    "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "source_channel": "yandex_afisha",
     "genre": "фолк",
-    "id": "15bf75c9",
-    "updated_at": "1970-01-01T00:00:00+00:00",
-    "needs_review": false,
-    "review_reasons": []
+    "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/8d8fb493adb505ad23d6622ee419de8a.jpg",
+      "/images/events/d00a0985fd1dedb0d141f83470d632bd.jpg"
+    ],
+    "image": "/images/events/8d8fb493adb505ad23d6622ee419de8a.jpg",
+    "post_date": "2026-09-06",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "source_last_checked_at": "2026-09-01T06:14:34.536690+00:00",
+    "source_status": "active"
   },
   {
     "id": "9147e7cb",
@@ -11275,34 +11282,6 @@
     "moderated_at": "",
     "moderation_decision_reasons": [],
     "moderation_decision_fingerprint": "3fa4eca45539793d6d15503e7245fe83c7059ffa2454865d9a79df73f3eed826"
-  },
-  {
-    "date": "2026-09-06",
-    "time": "19:00",
-    "artist": "Концерт «Шансон Парад»",
-    "venue": "Театр им. А. П. Чехова",
-    "event_type": "концерт",
-    "price": "1500 - 5000",
-    "description": "Концерт «Шансон Парад» — концерт в Театр им. А. П. Чехова, Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-09-01T06:14:23.619303+00:00",
-    "image": "/images/events/d00a0985fd1dedb0d141f83470d632bd.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/koncert-shanson-parad-2026",
-    "id": "2d4b70e3",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-01T06:14:34.536690+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "83cda7d49fb3dd3907457b591a627e44ffb3743a7e126ba30eb10b90184f7156"
   },
   {
     "date": "2026-09-27",
