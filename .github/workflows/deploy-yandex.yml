@@ -110,6 +110,7 @@ jobs:
           aws s3 sync _site/images "$BUCKET/images" \
             --endpoint-url "$ENDPOINT" \
             --delete \
+            --size-only \
             --cache-control "public, max-age=2592000"
 
       # Афиша, страницы и sitemap меняются при каждом обновлении. Браузер и
