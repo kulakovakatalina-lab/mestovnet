@@ -118,6 +118,31 @@ class TestDeduplicateEvents:
         ]
         assert len(deduplicate_events(events)) == 1
 
+    def test_concert_prefix_in_title_merges_cross_source_duplicate(self):
+        """АфишаГорода добавляет «Концерт» перед названием программы."""
+        base = {
+            "date": "2026-09-06",
+            "time": "19:00",
+            "venue": "Театр им. А. П. Чехова",
+            "source_city": "Ялта",
+        }
+        events = [
+            {
+                **base,
+                "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad",
+                "artist": "Шансон-парад",
+            },
+            {
+                **base,
+                "source_url": "https://yalta.afishagoroda.ru/events/koncert-shanson-parad",
+                "artist": "Концерт «Шансон Парад»",
+            },
+        ]
+
+        result = deduplicate_events(events)
+        assert len(result) == 1
+        assert result[0]["artist"] == "Шансон-парад"
+
     def test_same_venue_and_nested_description_merges_crosspost(self):
         events = [
             {
