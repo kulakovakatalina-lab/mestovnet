@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Blackened — Jam Club, Симферополь, 12 сентября · Местов.Нет">
 <meta property="og:description" content="Blackened, Jam Club, в Симферополе, 12 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/f78bf06ae40524ef3eeb6203aced971b.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Blackened"
       },
-      "image": "/images/events/f78bf06ae40524ef3eeb6203aced971b.jpg",
+      "image": "/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

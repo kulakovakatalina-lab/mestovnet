@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Евгения Сухачева", "Евгения Сухачева"];
+const ARTIST_ALIASES = ["Евгения Сухачева", "Евгения Сухачёва", "Евгения Сухачева"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
