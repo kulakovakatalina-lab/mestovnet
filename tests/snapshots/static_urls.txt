@@ -24,5 +24,6 @@
 /cities/stary-krym.html
 /cities/sudak.html
 /cities/yalta.html
+/current-events/
 /robots.txt
 /sitemap.xml

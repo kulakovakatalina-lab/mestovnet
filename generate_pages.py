@@ -764,6 +764,45 @@ def make_event_page(event: dict, all_events: list[dict], today: str,
     return src
 
 
+def make_current_events_page(events: list[dict], today: str, css: str) -> str:
+    """Создаёт публичный список будущих событий для быстрого просмотра."""
+    upcoming = sorted(
+        (event for event in events if (event.get("date") or "") >= today),
+        key=lambda event: tuple(str(event.get(key) or "") for key in ("date", "time", "source_city", "artist")),
+    )
+    rows = []
+    for event in upcoming:
+        image = event.get("image") or ""
+        # Относительный путь работает и в локальном предпросмотре (file://),
+        # и на опубликованной странице /current-events/.
+        image_src = image if image.startswith("http") else f"..{image}" if image else ""
+        photo = (
+            f'<a href="{esc(image_src)}" target="_blank" rel="noopener"><img src="{esc(image_src)}" alt="Постер: {esc(event.get("artist") or "событие")}" loading="lazy"></a>'
+            if image_src else '<span class="no-photo">Нет постера</span>'
+        )
+        source = event.get("source_url") or ""
+        source_link = f'<a href="{esc(source)}" target="_blank" rel="noopener">Источник</a>' if source else "—"
+        event_id = event.get("id") or ""
+        rows.append(
+            "<tr>"
+            f"<td>{esc(fmt_date(event.get('date') or ''))}</td>"
+            f"<td>{esc(event.get('time') or '—')}</td>"
+            f"<td>{esc(event.get('venue') or '—')}</td>"
+            f"<td>{esc(event.get('source_city') or '—')}</td>"
+            f"<td><a href=\"{DOMAIN}/event/{esc(event_id)}\">{esc(event.get('artist') or 'Событие')}</a></td>"
+            f"<td class=\"photo\">{photo}</td><td>{source_link}</td></tr>"
+        )
+    body = "\n".join(rows) or '<tr><td colspan="7">Ближайших событий пока нет.</td></tr>'
+    return f'''<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Актуальные события — Местов.Нет</title>
+<meta name="description" content="Актуальная афиша живой музыки в Крыму: даты, площадки, постеры и ссылки на источники.">
+<link rel="canonical" href="{DOMAIN}/current-events/"><style>
+{css}
+body {{ background: var(--bg, #f8f8f6); color: var(--fg, #202225); }} main {{ max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; }} h1 {{ margin: 0 0 8px; }} .intro {{ color: var(--muted, #5f6368); margin: 0 0 28px; }} .back {{ display: inline-block; margin-bottom: 32px; color: var(--accent, #2468bb); }} .table-wrap {{ overflow-x: auto; border: 1px solid var(--border, #d6d8dc); border-radius: 12px; }} table {{ width: 100%; border-collapse: collapse; min-width: 980px; }} th, td {{ padding: 12px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--border, #d6d8dc); }} th {{ position: sticky; top: 0; background: var(--surface, #fff); color: var(--muted, #5f6368); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }} td.photo {{ width: 112px; }} td.photo img {{ display: block; width: 96px; height: 72px; object-fit: cover; border-radius: 6px; }} .no-photo {{ color: var(--muted, #5f6368); font-size: 13px; }}
+</style></head><body><main><a class="back" href="/">← На главную</a><h1>Актуальные события</h1><p class="intro">{len(upcoming)} событий начиная с {esc(fmt_date(today))}. Страница обновляется после каждой публикации афиши.</p><div class="table-wrap"><table><thead><tr><th>Дата</th><th>Время</th><th>Место</th><th>Город</th><th>Артист</th><th>Фото</th><th>Источник</th></tr></thead><tbody>{body}</tbody></table></div></main></body></html>'''
+
+
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
 def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = None) -> str:
@@ -2023,6 +2062,7 @@ def make_sitemap(cities: list[str], venue_slugs: Optional[list] = None,
                 f"<lastmod>{today}</lastmod></url>")
 
     lines.append(url(f"{DOMAIN}/", "daily", "1.0"))
+    lines.append(url(f"{DOMAIN}/current-events/", "daily", "0.9"))
     for c in sorted(cities):
         s = city_slug(c)
         lines.append(url(f"{DOMAIN}/cities/{s}.html", "daily", "0.8"))
@@ -2103,6 +2143,13 @@ def main() -> None:
     new_index = update_index(events, bool(css), custom_names)
     INDEX_FILE.write_text(new_index, encoding="utf-8")
     print("    ✓ index.html обновлён")
+
+    current_events_dir = BASE_DIR / "current-events"
+    current_events_dir.mkdir(exist_ok=True)
+    (current_events_dir / "index.html").write_text(
+        make_current_events_page(events, today, css), encoding="utf-8"
+    )
+    print("    ✓ current-events/")
 
     # 2. Генерируем страницы городов
     cities_dir = BASE_DIR / "cities"

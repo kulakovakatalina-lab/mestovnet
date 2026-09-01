@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Актуальные события — Местов.Нет</title>
+<meta name="description" content="Актуальная афиша живой музыки в Крыму: даты, площадки, постеры и ссылки на источники.">
+<link rel="canonical" href="https://mestov.net/current-events/"><style>
+
+:root {
+  --bg:      oklch(99% 0.002 240);
+  --surface: oklch(100% 0 0);
+  --fg:      oklch(18% 0.012 250);
+  --muted:   oklch(54% 0.012 250);
+  --border:  oklch(92% 0.005 250);
+  --accent:  oklch(58% 0.18 255);
+
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 16px;
+  --nav-h:     56px;
+  --gutter:    clamp(16px, 4vw, 48px);
+  --max-w:     1440px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; background: none; border: none; cursor: pointer; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: oklch(99% 0.002 240 / 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+  gap: 8px;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  flex-shrink: 0;
+  color: var(--fg);
+}
+.nav-logo em { color: var(--accent); font-style: normal; }
+
+.nav-sep { width: 1px; height: 20px; background: var(--border); margin: 0 8px; flex-shrink: 0; }
+
+.nav-genres {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+}
+.nav-genres::-webkit-scrollbar { display: none; }
+
+.nav-genre {
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-genre:hover { color: var(--fg); background: var(--border); }
+
+.nav-map-link {
+  flex-shrink: 0;
+  padding: 5px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-map-link:hover { color: var(--fg); background: var(--border); }
+
+.genre-strip-mobile {
+  display: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 6px;
+  padding: 10px var(--gutter);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.genre-strip-mobile::-webkit-scrollbar { display: none; }
+.genre-strip-mobile a {
+  flex-shrink: 0;
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: all 0.12s;
+}
+.genre-strip-mobile a:hover { border-color: var(--fg); color: var(--fg); }
+
+/* —— Кнопка подписки в шапке —— */
+.nav-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: filter 0.12s, transform 0.1s;
+}
+.nav-cta:hover { filter: brightness(1.08); }
+.nav-cta:active { transform: scale(0.96); }
+.nav-cta:focus { outline: none; }
+.nav-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+/* —— Модалка подписки —— */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: oklch(18% 0.012 250 / 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 32px 32px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 70px oklch(18% 0.012 250 / 0.28);
+  transform: translateY(14px) scale(0.98);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-overlay.open .modal { transform: translateY(0) scale(1); }
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+  transition: background 0.12s, color 0.12s;
+}
+.modal-close:hover { background: var(--border); color: var(--fg); }
+.modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.1);
+  border-radius: 100px;
+}
+.modal-badge svg { width: 13px; height: 13px; }
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.modal-lead {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.modal-list { list-style: none; margin-bottom: 28px; }
+.modal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 9px 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  border-top: 1px solid var(--border);
+}
+.modal-list li:first-child { border-top: none; }
+.modal-list .ico {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: oklch(58% 0.18 255 / 0.12);
+  color: var(--accent);
+  font-size: 13px;
+}
+.modal-list b { font-weight: 600; }
+.modal-list span { color: var(--muted); }
+.modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius);
+  transition: filter 0.12s, transform 0.1s;
+}
+.modal-cta:hover { filter: brightness(1.08); }
+.modal-cta:active { transform: scale(0.99); }
+.modal-cta svg { width: 18px; height: 18px; }
+.modal-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.hero {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(40px, 7vw, 72px) var(--gutter);
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5.5vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  color: var(--fg);
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 460px;
+  margin-bottom: 36px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 36px;
+}
+.hero-stat-n {
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.hero-stat-l {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+  letter-spacing: 0.01em;
+}
+
+.featured {
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-poster {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+.featured-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.featured-poster-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, oklch(22% 0.06 255) 0%, oklch(14% 0.04 270) 60%, oklch(18% 0.08 220) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured-poster-bg svg { opacity: 0.18; }
+.featured-poster::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--fg));
+  pointer-events: none;
+}
+
+.featured-body {
+  padding: 24px 32px 32px;
+  position: relative;
+}
+.featured-body::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.featured-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: oklch(75% 0 0);
+  margin-bottom: 16px;
+}
+.featured-genre {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+.featured-artist {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.featured-desc {
+  font-size: 14px;
+  color: oklch(72% 0 0);
+  line-height: 1.55;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.featured-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+.featured-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: oklch(80% 0 0);
+}
+.featured-meta-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  opacity: 0.55;
+}
+.featured-link {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+.featured-price {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: oklch(65% 0 0);
+  margin-top: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 var(--gutter);
+}
+
+.section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 56px) var(--gutter);
+}
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.section-link {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.section-link:hover { text-decoration: underline; }
+
+.city-pills {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+.city-pills::-webkit-scrollbar { display: none; }
+.city-pill {
+  flex-shrink: 0;
+  padding: 7px 16px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.12s;
+}
+.city-pill:hover { border-color: oklch(78% 0.01 250); color: var(--fg); }
+.city-pill.active {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--bg);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 12px;
+}
+
+.event-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color 0.12s, box-shadow 0.12s, transform 0.15s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.event-card:hover {
+  border-color: oklch(80% 0.008 250);
+  box-shadow: 0 4px 20px oklch(18% 0.012 250 / 0.05);
+  transform: translateY(-2px);
+}
+.event-card.cancelled { opacity: 0.55; filter: grayscale(0.5); }
+.event-card.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
+
+.cancelled-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: oklch(55% 0.19 25 / 0.12);
+  color: oklch(50% 0.19 25);
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: oklch(22% 0.01 250);
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.event-card:hover .card-img img { transform: scale(1.04); }
+
+.card-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.event-date-day {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.event-date-rest {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 3px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.pill-jazz    { background: oklch(58% 0.18 255 / 0.10); color: var(--accent); }
+.pill-rock    { background: oklch(55% 0.15 15  / 0.10); color: oklch(50% 0.15 15); }
+.pill-folk    { background: oklch(50% 0.12 150 / 0.10); color: oklch(46% 0.12 150); }
+.pill-blues   { background: oklch(52% 0.14 270 / 0.10); color: oklch(50% 0.16 270); }
+.pill-classic { background: oklch(52% 0.10 60  / 0.10); color: oklch(46% 0.10 60); }
+.pill-pop     { background: oklch(58% 0.16 320 / 0.10); color: oklch(54% 0.16 320); }
+
+.event-artist {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--fg);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.event-venue {
+  font-size: 13px;
+  color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.event-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+.event-time {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.event-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+}
+.genre-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.12s, background 0.12s;
+}
+.genre-card:hover {
+  border-color: var(--accent);
+  background: oklch(58% 0.18 255 / 0.03);
+}
+.genre-card-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.genre-card-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--fg);
+}
+.footer-logo em { color: var(--accent); font-style: normal; }
+.footer-note { font-size: 13px; color: var(--muted); }
+
+.bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
+.bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
+.bg-rock    { background: linear-gradient(135deg, oklch(22% 0.04 15),  oklch(32% 0.06 20)); }
+.bg-blues   { background: linear-gradient(135deg, oklch(22% 0.06 270), oklch(30% 0.10 265)); }
+.bg-classic { background: linear-gradient(135deg, oklch(28% 0.06 65),  oklch(36% 0.09 58)); }
+.bg-pop     { background: linear-gradient(135deg, oklch(30% 0.10 325), oklch(40% 0.14 310)); }
+.bg-default { background: linear-gradient(135deg, oklch(22% 0.06 255), oklch(14% 0.04 270), oklch(18% 0.08 220)); }
+
+.loading {
+  text-align: center;
+  padding: 80px 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr 380px; gap: 32px; }
+}
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-sub { max-width: 100%; }
+}
+
+@media (max-width: 600px) {
+  :root { --nav-h: 52px; }
+  .nav-genres, .nav-sep { display: none; }
+  .genre-strip-mobile { display: flex; }
+  .hero-title { letter-spacing: -0.03em; }
+  .hero-stats { gap: 24px; }
+  .featured { padding: 24px; }
+  .events-grid { grid-template-columns: 1fr; }
+  .genre-grid { grid-template-columns: 1fr 1fr; }
+  footer { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 420px) {
+  .hero-stats { gap: 16px; }
+  .hero-stat-n { font-size: 26px; }
+  .genre-grid { grid-template-columns: 1fr; }
+}
+
+.load-more-wrap {
+  text-align: center;
+  margin-top: 24px;
+}
+.load-more-btn {
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 100px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.load-more-btn:hover {
+  background: var(--accent);
+  color: var(--surface);
+}
+.load-more-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+body { background: var(--bg, #f8f8f6); color: var(--fg, #202225); } main { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; } h1 { margin: 0 0 8px; } .intro { color: var(--muted, #5f6368); margin: 0 0 28px; } .back { display: inline-block; margin-bottom: 32px; color: var(--accent, #2468bb); } .table-wrap { overflow-x: auto; border: 1px solid var(--border, #d6d8dc); border-radius: 12px; } table { width: 100%; border-collapse: collapse; min-width: 980px; } th, td { padding: 12px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--border, #d6d8dc); } th { position: sticky; top: 0; background: var(--surface, #fff); color: var(--muted, #5f6368); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; } td.photo { width: 112px; } td.photo img { display: block; width: 96px; height: 72px; object-fit: cover; border-radius: 6px; } .no-photo { color: var(--muted, #5f6368); font-size: 13px; }
+</style></head><body><main><a class="back" href="/">← На главную</a><h1>Актуальные события</h1><p class="intro">43 событий начиная с 1 сентября, пн. Страница обновляется после каждой публикации афиши.</p><div class="table-wrap"><table><thead><tr><th>Дата</th><th>Время</th><th>Место</th><th>Город</th><th>Артист</th><th>Фото</th><th>Источник</th></tr></thead><tbody><tr><td>3 сентября, ср</td><td>19:00</td><td>Севастопольский ЦКиИ</td><td>Севастополь</td><td><a href="https://mestov.net/event/c055fb4b">Олена Уутай. Магия Севера</a></td><td class="photo"><a href="../images/events/9e87256a320974dd10bcb25faa6434ce.jpg" target="_blank" rel="noopener"><img src="../images/events/9e87256a320974dd10bcb25faa6434ce.jpg" alt="Постер: Олена Уутай. Магия Севера" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/olena-uutay-magiya-severa-2218963/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>3 сентября, ср</td><td>20:00</td><td>Рок-н-рольщики, Симферополь, ул. Екатерининская, 14</td><td>Симферополь</td><td><a href="https://mestov.net/event/07e1ac0b">Эрануи Соболева</a></td><td class="photo"><a href="../images/events/7297d2089ffc1434b0e8607c06eaf82c.jpg" target="_blank" rel="noopener"><img src="../images/events/7297d2089ffc1434b0e8607c06eaf82c.jpg" alt="Постер: Эрануи Соболева" loading="lazy"></a></td><td><a href="https://vk.com/wall-208628049_1627" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>4 сентября, чт</td><td>19:00</td><td>Арт-кафе «Снежинка»</td><td>Севастополь</td><td><a href="https://mestov.net/event/283401e4">Paranormal Jazz Trio</a></td><td class="photo"><span class="no-photo">Нет постера</span></td><td><a href="https://t.me/artcafesnezhinka/1991" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>5 сентября, пт</td><td>20:00</td><td>Jam Club</td><td>Симферополь</td><td><a href="https://mestov.net/event/8ce78df0">Чёрный Кофе, Черный кофе</a></td><td class="photo"><a href="../images/events/a7bfea7a532afb2f87056ab106017b1d.jpg" target="_blank" rel="noopener"><img src="../images/events/a7bfea7a532afb2f87056ab106017b1d.jpg" alt="Постер: Чёрный Кофе, Черный кофе" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/cherniy-kofe-6022650/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>6 сентября, сб</td><td>19:00</td><td>Театр им. А. П. Чехова</td><td>Ялта</td><td><a href="https://mestov.net/event/2d4b70e3">Концерт «Шансон Парад»</a></td><td class="photo"><a href="../images/events/d00a0985fd1dedb0d141f83470d632bd.jpg" target="_blank" rel="noopener"><img src="../images/events/d00a0985fd1dedb0d141f83470d632bd.jpg" alt="Постер: Концерт «Шансон Парад»" loading="lazy"></a></td><td><a href="https://yalta.afishagoroda.ru/events/koncert-shanson-parad-2026" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>6 сентября, сб</td><td>19:00</td><td>Театр им. А. П. Чехова</td><td>Ялта</td><td><a href="https://mestov.net/event/15bf75c9">Шансон-парад</a></td><td class="photo"><a href="../images/events/8d8fb493adb505ad23d6622ee419de8a.jpg" target="_blank" rel="noopener"><img src="../images/events/8d8fb493adb505ad23d6622ee419de8a.jpg" alt="Постер: Шансон-парад" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>6 сентября, сб</td><td>20:00</td><td>БТР</td><td>Севастополь</td><td><a href="https://mestov.net/event/3e656258">Черный кофе</a></td><td class="photo"><a href="../images/events/a7bfea7a532afb2f87056ab106017b1d.jpg" target="_blank" rel="noopener"><img src="../images/events/a7bfea7a532afb2f87056ab106017b1d.jpg" alt="Постер: Черный кофе" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/cherniy-kofe-6022650/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>6 сентября, сб</td><td>20:00</td><td>Концертный зал «Юбилейный»</td><td>Ялта</td><td><a href="https://mestov.net/event/9147e7cb">Кубанский казачий хор. Русь от края до края</a></td><td class="photo"><a href="../images/events/a97cd76724082f57da1840f49628d5c1.jpg" target="_blank" rel="noopener"><img src="../images/events/a97cd76724082f57da1840f49628d5c1.jpg" alt="Постер: Кубанский казачий хор. Русь от края до края" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/yalta/concert/kubanskii-kazachii-khor-rus-ot-kraia-do-kraia?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>7 сентября, вс</td><td>20:00</td><td>Звездный</td><td>Феодосия</td><td><a href="https://mestov.net/event/9c5a4abf">Кубанский казачий хор. Русь от края до края!</a></td><td class="photo"><a href="../images/events/3a1a2e4a186939b98d9ff28447a83826.jpg" target="_blank" rel="noopener"><img src="../images/events/3a1a2e4a186939b98d9ff28447a83826.jpg" alt="Постер: Кубанский казачий хор. Русь от края до края!" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/kubanskiy-kazachiy-hor-rus-ot-kraya-do-kraya-6030267/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>8 сентября, пн</td><td>19:00</td><td>ДК профсоюзов</td><td>Симферополь</td><td><a href="https://mestov.net/event/59e0e5af">Хиты 2000-х. Караоке с оркестром</a></td><td class="photo"><a href="../images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" target="_blank" rel="noopener"><img src="../images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" alt="Постер: Хиты 2000-х. Караоке с оркестром" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>9 сентября, вт</td><td>19:00</td><td>Дом культуры «Корабел»</td><td>Керчь</td><td><a href="https://mestov.net/event/2292accf">Кубанский казачий хор. Русь от края до края</a></td><td class="photo"><a href="../images/events/7e11eb4bf6491ef94097976f966d8f85.jpg" target="_blank" rel="noopener"><img src="../images/events/7e11eb4bf6491ef94097976f966d8f85.jpg" alt="Постер: Кубанский казачий хор. Русь от края до края" loading="lazy"></a></td><td><a href="https://kerch.afishagoroda.ru/events/kubanskii-kazacii-xor-rus-ot-kraia-do-kraia-2" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>12 сентября, пт</td><td>—</td><td>Jam Club</td><td>Симферополь</td><td><a href="https://mestov.net/event/470475c6">Blackened</a></td><td class="photo"><a href="../images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg" target="_blank" rel="noopener"><img src="../images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg" alt="Постер: Blackened" loading="lazy"></a></td><td><a href="https://t.me/clubjam/1116" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>12 сентября, пт</td><td>15:00</td><td>Театр им. А.П. Чехова</td><td>Ялта</td><td><a href="https://mestov.net/event/2de42511">«Два сердца, одна мелодия»</a></td><td class="photo"><a href="../images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg" target="_blank" rel="noopener"><img src="../images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg" alt="Постер: «Два сердца, одна мелодия»" loading="lazy"></a></td><td><a href="https://t.me/koncertykrym/2226" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>12 сентября, пт</td><td>18:00</td><td>винодельня «Valery Логинов и 12 друзей»</td><td>Крым</td><td><a href="https://mestov.net/event/d25216c6">Girls Jazz band</a></td><td class="photo"><a href="../images/events/0bde6f01116473614be00f2d69a00875.jpg" target="_blank" rel="noopener"><img src="../images/events/0bde6f01116473614be00f2d69a00875.jpg" alt="Постер: Girls Jazz band" loading="lazy"></a></td><td><a href="https://t.me/skazhitejazz/1580" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>13 сентября, сб</td><td>18:30</td><td>Галерея им. Айвазовского</td><td>Феодосия</td><td><a href="https://mestov.net/event/71ede2ea">В гостях у Айвазовского</a></td><td class="photo"><a href="../images/events/d90b1152314506f95c8c19f49bb04dc0.jpg" target="_blank" rel="noopener"><img src="../images/events/d90b1152314506f95c8c19f49bb04dc0.jpg" alt="Постер: В гостях у Айвазовского" loading="lazy"></a></td><td><a href="https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>18 сентября, чт</td><td>20:00</td><td>Депо</td><td>Симферополь</td><td><a href="https://mestov.net/event/07dbf5d4">Игорь Растеряев</a></td><td class="photo"><a href="../images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png" target="_blank" rel="noopener"><img src="../images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png" alt="Постер: Игорь Растеряев" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/simferopol/concert/igor-rasteriaev-2026-09?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>19 сентября, пт</td><td>20:00</td><td>Boombox</td><td>Севастополь</td><td><a href="https://mestov.net/event/5b51bcd1">Игорь Растеряев</a></td><td class="photo"><a href="../images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png" target="_blank" rel="noopener"><img src="../images/events/f8f91ed5d88168169c5fe4a8ed0b4d65.png" alt="Постер: Игорь Растеряев" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/sevastopol/concert/igor-rasteriaev-2026-09?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>19 сентября, пт</td><td>20:00</td><td>БТР</td><td>Севастополь</td><td><a href="https://mestov.net/event/192a7317">Игорь Растеряев</a></td><td class="photo"><a href="../images/events/b4c7f75d511639d9a9e380f277bcb074.jpg" target="_blank" rel="noopener"><img src="../images/events/b4c7f75d511639d9a9e380f277bcb074.jpg" alt="Постер: Игорь Растеряев" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/igor-rasteryaev-6041004/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>23 сентября, вт</td><td>19:00</td><td>ДК профсоюзов</td><td>Симферополь</td><td><a href="https://mestov.net/event/ead3fc25">Дуэт «Пара»</a></td><td class="photo"><a href="../images/events/6d4b1e6774bfdd5fca90c6aa96fed2f7.jpg" target="_blank" rel="noopener"><img src="../images/events/6d4b1e6774bfdd5fca90c6aa96fed2f7.jpg" alt="Постер: Дуэт «Пара»" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/duet-para-6031954/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>24 сентября, ср</td><td>19:00</td><td>Ялтинский театр им. Чехова</td><td>Ялта</td><td><a href="https://mestov.net/event/533162bc">Дуэт «Пара»</a></td><td class="photo"><a href="../images/events/6d4b1e6774bfdd5fca90c6aa96fed2f7.jpg" target="_blank" rel="noopener"><img src="../images/events/6d4b1e6774bfdd5fca90c6aa96fed2f7.jpg" alt="Постер: Дуэт «Пара»" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/duet-para-6031954/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>26 сентября, пт</td><td>12:00</td><td>Винный парк (Понизовка)</td><td>Ялта</td><td><a href="https://mestov.net/event/f560e22d">Фестиваль Winepark</a></td><td class="photo"><a href="../images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg" target="_blank" rel="noopener"><img src="../images/events/8a8a35e4ccababa92ffb7d147648b27e.jpg" alt="Постер: Фестиваль Winepark" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/yalta/festival/festival-winepark?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>26 сентября, пт</td><td>12:00–21:00</td><td>Winepark</td><td>Ялта</td><td><a href="https://mestov.net/event/71e38abf">Вадим Самойлов</a></td><td class="photo"><a href="../images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg" target="_blank" rel="noopener"><img src="../images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg" alt="Постер: Вадим Самойлов" loading="lazy"></a></td><td><a href="https://t.me/afisha_crimea/8378" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>26 сентября, пт</td><td>16:00</td><td>Музей А. С. Пушкина в Гурзуфе</td><td>Гурзуф</td><td><a href="https://mestov.net/event/d3f6d3ad">Концерт с программой &#x27;Я помню чудное мгновенье...&#x27; (романсы на стихи Пушкина), Концерт романсов на стихи Пушкина, Пушкин в музыке</a></td><td class="photo"><a href="../images/events/87f410068c4c1cebf659372ac4adcf40.jpg" target="_blank" rel="noopener"><img src="../images/events/87f410068c4c1cebf659372ac4adcf40.jpg" alt="Постер: Концерт с программой &#x27;Я помню чудное мгновенье...&#x27; (романсы на стихи Пушкина), Концерт романсов на стихи Пушкина, Пушкин в музыке" loading="lazy"></a></td><td><a href="https://t.me/koncertykrym/2264" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>27 сентября, сб</td><td>18:00</td><td>Концертный зал «Юбилейный»</td><td>Ялта</td><td><a href="https://mestov.net/event/25d5326d">Джедже, Anjelina, Мали</a></td><td class="photo"><a href="../images/events/d76177e94c8032954c805e6857bc907f.jpg" target="_blank" rel="noopener"><img src="../images/events/d76177e94c8032954c805e6857bc907f.jpg" alt="Постер: Джедже, Anjelina, Мали" loading="lazy"></a></td><td><a href="https://yalta.afishagoroda.ru/events/anjelina-mali-i-dzedze-2026" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>28 сентября, вс</td><td>18:00</td><td>Концертный зал «Звёздный»</td><td>Феодосия</td><td><a href="https://mestov.net/event/37c38ac8">Джедже, Anjelina, Мали</a></td><td class="photo"><a href="../images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg" target="_blank" rel="noopener"><img src="../images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg" alt="Постер: Джедже, Anjelina, Мали" loading="lazy"></a></td><td><a href="https://feo.afishagoroda.ru/events/anjelina-mali-i-dzedze-1" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>30 сентября, вт</td><td>20:00</td><td>Муссон</td><td>Севастополь</td><td><a href="https://mestov.net/event/3189d597">Три дня дождя</a></td><td class="photo"><a href="../images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg" target="_blank" rel="noopener"><img src="../images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg" alt="Постер: Три дня дождя" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/tri-dnya-dozhdya-6024831/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>8 октября, ср</td><td>18:00</td><td>Театр им. А. П. Чехова</td><td>Ялта</td><td><a href="https://mestov.net/event/a019cd85">AdrenalinHouse</a></td><td class="photo"><a href="../images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" target="_blank" rel="noopener"><img src="../images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg" alt="Постер: AdrenalinHouse" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/yalta/concert/adrenalinhouse-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>9 октября, чт</td><td>—</td><td>Jam Club</td><td>Симферополь</td><td><a href="https://mestov.net/event/19525d0a">Back &#x27;n Storm</a></td><td class="photo"><a href="../images/events/99fcc7f64cf9c48e330ef117bc68dbba.jpg" target="_blank" rel="noopener"><img src="../images/events/99fcc7f64cf9c48e330ef117bc68dbba.jpg" alt="Постер: Back &#x27;n Storm" loading="lazy"></a></td><td><a href="https://t.me/clubjam/1131" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>16 октября, чт</td><td>19:00</td><td>Молодость</td><td>Севастополь</td><td><a href="https://mestov.net/event/3ff30188">Джокер</a></td><td class="photo"><a href="../images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg" target="_blank" rel="noopener"><img src="../images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg" alt="Постер: Джокер" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/dzhoker-6040095/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>17 октября, пт</td><td>20:00</td><td>Jam Club</td><td>Симферополь</td><td><a href="https://mestov.net/event/c42060a4">Джокер</a></td><td class="photo"><a href="../images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg" target="_blank" rel="noopener"><img src="../images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg" alt="Постер: Джокер" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/dzhoker-6048481/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>18 октября, сб</td><td>19:00</td><td>Камелот</td><td>Керчь</td><td><a href="https://mestov.net/event/42567d5d">Джокер</a></td><td class="photo"><a href="../images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg" target="_blank" rel="noopener"><img src="../images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg" alt="Постер: Джокер" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/dzhoker-6048497/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>20 октября, пн</td><td>20:00</td><td>Депо</td><td>Симферополь</td><td><a href="https://mestov.net/event/8b310aaf">Helvegen</a></td><td class="photo"><a href="../images/events/12216bbe04fad74b3da1812de62bad95.jpg" target="_blank" rel="noopener"><img src="../images/events/12216bbe04fad74b3da1812de62bad95.jpg" alt="Постер: Helvegen" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/simferopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>21 октября, вт</td><td>20:00</td><td>Boombox</td><td>Севастополь</td><td><a href="https://mestov.net/event/f2113f78">Helvegen</a></td><td class="photo"><a href="../images/events/12216bbe04fad74b3da1812de62bad95.jpg" target="_blank" rel="noopener"><img src="../images/events/12216bbe04fad74b3da1812de62bad95.jpg" alt="Постер: Helvegen" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/sevastopol/concert/helvegen-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>25 октября, сб</td><td>19:00</td><td>Дом культуры «Корабел»</td><td>Керчь</td><td><a href="https://mestov.net/event/7ee9b24f">Jawa. Хиты «Сектор Газа»</a></td><td class="photo"><a href="../images/events/a45148798317194e92ea5b4c16d2b2bd.jpg" target="_blank" rel="noopener"><img src="../images/events/a45148798317194e92ea5b4c16d2b2bd.jpg" alt="Постер: Jawa. Хиты «Сектор Газа»" loading="lazy"></a></td><td><a href="https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>3 ноября, пн</td><td>19:00</td><td>Boombox</td><td>Севастополь</td><td><a href="https://mestov.net/event/5488e4d2">Йорш</a></td><td class="photo"><a href="../images/events/25d0e8d15cc663edb70bc99ef0eddfc6.jpg" target="_blank" rel="noopener"><img src="../images/events/25d0e8d15cc663edb70bc99ef0eddfc6.jpg" alt="Постер: Йорш" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/sevastopol/concert/yorsh-tour?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>4 ноября, вт</td><td>19:00</td><td>Депо</td><td>Симферополь</td><td><a href="https://mestov.net/event/4993369e">Йорш</a></td><td class="photo"><a href="../images/events/bb54a38a265416de38aa9ce51fec7403.jpg" target="_blank" rel="noopener"><img src="../images/events/bb54a38a265416de38aa9ce51fec7403.jpg" alt="Постер: Йорш" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/yorsh-6025408/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>8 ноября, сб</td><td>18:30</td><td>ДК рыбаков</td><td>Севастополь</td><td><a href="https://mestov.net/event/a8eb22dd">Ундервуд</a></td><td class="photo"><a href="../images/events/50114af730500cc281b1bf2c73de8bf0.jpg" target="_blank" rel="noopener"><img src="../images/events/50114af730500cc281b1bf2c73de8bf0.jpg" alt="Постер: Ундервуд" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/undervud-6049724/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>9 ноября, вс</td><td>19:00</td><td>Музыкальный театр Республики Крым</td><td>Симферополь</td><td><a href="https://mestov.net/event/e0fa138c">Ундервуд</a></td><td class="photo"><a href="../images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg" target="_blank" rel="noopener"><img src="../images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg" alt="Постер: Ундервуд" loading="lazy"></a></td><td><a href="https://www.afisha.ru/concert/undervud-6049724/" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>17 ноября, пн</td><td>19:00</td><td>Русский театр им. Горького</td><td>Симферополь</td><td><a href="https://mestov.net/event/136c757e">Сергей Пенкин</a></td><td class="photo"><a href="../images/events/8439b6dfa9dc0732c1213f4b754206c7.jpg" target="_blank" rel="noopener"><img src="../images/events/8439b6dfa9dc0732c1213f4b754206c7.jpg" alt="Постер: Сергей Пенкин" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/simferopol/concert/sergey-penkin-2026?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>19 июля, вс</td><td>19:00</td><td>Музыкальный театр</td><td>Симферополь</td><td><a href="https://mestov.net/event/8d08e0ce">SHAMAN</a></td><td class="photo"><a href="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" target="_blank" rel="noopener"><img src="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="Постер: SHAMAN" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/simferopol/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>20 июля, пн</td><td>19:00</td><td>Дворец культуры рыбаков</td><td>Севастополь</td><td><a href="https://mestov.net/event/b2aaf09f">SHAMAN</a></td><td class="photo"><a href="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" target="_blank" rel="noopener"><img src="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="Постер: SHAMAN" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/sevastopol/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>23 июля, чт</td><td>20:00</td><td>Юбилейный</td><td>Ялта</td><td><a href="https://mestov.net/event/c90f59a9">SHAMAN</a></td><td class="photo"><a href="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" target="_blank" rel="noopener"><img src="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="Постер: SHAMAN" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/yalta/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr>
+<tr><td>24 июля, пт</td><td>19:00</td><td>Корабел</td><td>Керчь</td><td><a href="https://mestov.net/event/7ac6d093">SHAMAN</a></td><td class="photo"><a href="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" target="_blank" rel="noopener"><img src="../images/events/6f6f1118497bd756bada3426a51eb6ee.jpg" alt="Постер: SHAMAN" loading="lazy"></a></td><td><a href="https://afisha.yandex.ru/kerch/concert/shaman-30-let-na-stsene?source=selection-events&amp;rubricCode=concert&amp;refererSelection=main_page_landing&amp;refererSurface=selection" target="_blank" rel="noopener">Источник</a></td></tr></tbody></table></div></main></body></html>
