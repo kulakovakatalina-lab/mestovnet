@@ -1187,13 +1187,30 @@ def _translit_key(text: str) -> str:
     return "".join(_TRANSLIT.get(ch, ch) for ch in _normalize(text))
 
 
+def _artist_dedup_key(text: str) -> str:
+    """Ключ названия для сопоставления карточек из разных афиш.
+
+    Некоторые витрины отдают название события в поле ``artist`` с
+    редакционной приставкой: «Концерт „Шансон Парад“». Для поиска дубля это
+    тот же «Шансон-парад», поэтому убираем только *начальный* тип события.
+    Середину названия не трогаем: так не склеятся разные программы.
+    """
+    key = _normalize(text)
+    key = re.sub(
+        r"^(?:концерт|шоу программа|концертная программа|музыкальный вечер)\s+",
+        "",
+        key,
+    )
+    return key.strip()
+
+
 def _artist_set(event: dict) -> set:
     """Множество нормализованных имён артистов из события."""
     artist = event.get("artist") or ""
     names = set()
     for raw in _split_artist_field(artist):
         for name in _artist_parts(raw.strip()):
-            n = _normalize(name)
+            n = _artist_dedup_key(name)
             # убираем префиксы «группа», «band» для лучшего сравнения
             for prefix in ("группа ", "band ", "группа «", "«"):
                 if n.startswith(prefix):
@@ -1201,6 +1218,13 @@ def _artist_set(event: dict) -> set:
             if n:
                 names.add(n)
                 names.add(_translit_key(n))  # ловит кириллица/латиница дубли
+                # Дефисы после нормализации исчезают («Шансон-парад»), а в
+                # другой витрине между словами остаётся пробел («Шансон
+                # Парад»). Добавляем сжатый вариант только для сопоставления.
+                compact = re.sub(r"\s+", "", n)
+                if compact != n:
+                    names.add(compact)
+                    names.add(_translit_key(compact))
     return names
 
 
@@ -1492,15 +1516,14 @@ def _merge_group(group: list[dict]) -> dict:
     for e in group:
         for a in _split_artist_field(e.get("artist") or ""):
             for name in _artist_parts(a.strip()):
-                key = _normalize(name)
-                bare = _bare_artist_key(name)
+                bare = re.sub(r"\s+", "", _artist_dedup_key(_bare_artist_key(name)))
                 if not name or bare in seen:
                     continue
                 seen.add(bare)
                 # проверяем, не является ли это имя вариацией уже добавленного
                 is_sub = False
                 for other in artists[:]:
-                    obare = _bare_artist_key(other)
+                    obare = re.sub(r"\s+", "", _artist_dedup_key(_bare_artist_key(other)))
                     if bare and obare and (bare in obare or obare in bare):
                         if len(bare) >= len(obare):
                             artists.remove(other)
