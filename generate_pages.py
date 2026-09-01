@@ -166,6 +166,32 @@ def cleanup_stale_generated_pages(previous: set[Path], current: set[Path]) -> in
     return removed
 
 
+def cleanup_unpublished_event_pages(events_dir: Path, current_ids: set[str]) -> int:
+    """Удаляет страницы событий, исключённые из публичной витрины.
+
+    ``event/`` содержит только сгенерированные карточки с восьмизначным
+    идентификатором. При отправке карточки в модерацию её больше нет в
+    ``events`` после apply_settings, поэтому старую страницу нужно удалить,
+    иначе она останется доступной и нарушит уникальность SEO-метаданных.
+    """
+    removed = 0
+    for path in events_dir.iterdir():
+        if not path.is_file() or not re.fullmatch(r"[0-9a-f]{8}", path.name):
+            continue
+        if path.name in current_ids:
+            continue
+        canonical = f'{DOMAIN}/event/{path.name}'
+        try:
+            content = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        if f'<link rel="canonical" href="{canonical}">' not in content:
+            continue
+        path.unlink()
+        removed += 1
+    return removed
+
+
 def save_generated_pages_manifest(paths: set[Path]) -> None:
     entries = sorted(path.as_posix() for path in paths)
     temp = GENERATED_PAGES_MANIFEST.with_suffix(".tmp")
@@ -662,14 +688,17 @@ def make_genre_page(
 
 # ── Шаблон страницы события (event/{id} без расширения) ──────────────────────
 
-def make_event_page(event: dict, all_events: list[dict], today: str,
-                     custom_names: Optional[dict] = None) -> str:
-    """Генерирует страницу события на основе event.html (чистый URL /event/{id})."""
-    eid   = event["id"]
-    src_url  = event.get("source_url") or ""
-    artist   = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
-    venue    = event.get("venue") or ""
-    city     = event.get("source_city") or ""
+def event_meta(event: dict, custom_names: Optional[dict] = None) -> tuple[str, str]:
+    """Возвращает SEO-заголовок и описание карточки события.
+
+    Эта функция используется и очередью модерации. Благодаря общему расчёту
+    карточка с конфликтующими метаданными не может попасть в публикацию и
+    позже остановить деплой на проверке уникальности страниц.
+    """
+    src_url = event.get("source_url") or ""
+    artist = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
+    venue = event.get("venue") or ""
+    city = event.get("source_city") or ""
     city_prep = CITY_PREP.get(city, f"в {city}" if city else "")
 
     title = f"{artist} — {venue}" if venue else artist
@@ -687,6 +716,16 @@ def make_event_page(event: dict, all_events: list[dict], today: str,
     if event.get("date"):
         desc_parts.append(fmt_date(event["date"]))
     description = ", ".join(desc_parts) + ". Билеты и подробности на Местов.Нет."
+    return title, description
+
+def make_event_page(event: dict, all_events: list[dict], today: str,
+                     custom_names: Optional[dict] = None) -> str:
+    """Генерирует страницу события на основе event.html (чистый URL /event/{id})."""
+    eid   = event["id"]
+    src_url  = event.get("source_url") or ""
+    artist   = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
+    city     = event.get("source_city") or ""
+    title, description = event_meta(event, custom_names)
 
     canonical = f"{DOMAIN}/event/{eid}"
     jsonld    = make_jsonld_events([event], custom_names)
@@ -2159,8 +2198,11 @@ def main() -> None:
         out  = events_dir / eid  # без расширения
         out.write_text(page, encoding="utf-8")
         generated_event_ids.append(eid)
+    stale_event_pages = cleanup_unpublished_event_pages(events_dir, set(generated_event_ids))
     print(f"    ✓ event/  ({len(generated_event_ids)} страниц"
           + ")")
+    if stale_event_pages:
+        print(f"    (удалено непубликуемых страниц событий: {stale_event_pages})")
 
     # Сборщик владеет только подборками. Страницы event/ и artist/ — архив,
     # поэтому никогда не включаются в очистку, даже если исходные записи
