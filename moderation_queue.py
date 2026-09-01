@@ -10,15 +10,18 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
+from generate_pages import event_meta
 
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
 DECISIONS_CACHE = Path("moderation_decisions.json")
+SETTINGS = Path("settings.json")
 CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта|Керчь|Феодосия|Судак|Гурзуф)\b", re.I)
 # Цена и постер полезны, но их отсутствие не должно останавливать публикацию:
 # цена часто отсутствует у бесплатных/донатных событий, а сайт умеет показать
 # аккуратную заглушку постера. Остальные неполные поля требуют решения человека.
 OPTIONAL_ISSUES = {"нет цены", "нет постера"}
+SEO_COLLISION = "дубли мета-тегов: совпадают title и description"
 
 
 def load_decisions() -> Optional[list[dict]]:
@@ -91,6 +94,37 @@ def reasons(event: dict) -> list[str]:
     return result
 
 
+def seo_collision_ids(events: list[dict], custom_names: dict[str, str], settings: dict) -> set[str]:
+    """Находит карточки, которые дали бы одинаковые title и description.
+
+    Оставляем одну наиболее заполненную карточку. Остальные не удаляем: они
+    поступают в обычную очередь модерации с явной причиной, чтобы человек мог
+    сравнить первоисточники и отклонить дубль или исправить данные.
+    """
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for event in events:
+        if not event.get("id"):
+            continue
+        rendered = dict(event)
+        url = event.get("source_url") or ""
+        if url in settings.get("venues", {}):
+            rendered["venue"] = settings["venues"][url]
+        if url in settings.get("cities", {}):
+            rendered["source_city"] = settings["cities"][url]
+        groups.setdefault(event_meta(rendered, custom_names), []).append(event)
+
+    collision_ids: set[str] = set()
+    fields = ("artist", "venue", "source_city", "date", "time", "price", "description", "image")
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        keeper = max(group, key=lambda event: (
+            sum(bool(event.get(field)) for field in fields), str(event.get("id")),
+        ))
+        collision_ids.update(str(event["id"]) for event in group if event is not keeper)
+    return collision_ids
+
+
 def event_fingerprint(event: dict, issues: list[str]) -> str:
     """Отпечаток версии карточки, которую проверил модератор."""
     fields = (
@@ -155,6 +189,9 @@ def decision_embedded_in_event(event: dict) -> Optional[dict]:
 
 def main() -> None:
     events = json.loads(EVENTS.read_text(encoding="utf-8"))
+    settings = json.loads(SETTINGS.read_text(encoding="utf-8")) if SETTINGS.exists() else {}
+    custom_names = settings.get("names", {})
+    collision_ids = seo_collision_ids(events, custom_names, settings)
     today = date.today().isoformat()
     remote_decisions = load_decisions()
     cached_decisions = load_cached_decisions()
@@ -179,6 +216,9 @@ def main() -> None:
     queue = []
     for event in events:
         issues = reasons(event)
+        seo_collision = str(event.get("id")) in collision_ids
+        if seo_collision:
+            issues.append(SEO_COLLISION)
         decision = decision_for(event, by_id, legacy_by_source)
         if decision is None and sync_failed:
             decision = decision_embedded_in_event(event)
@@ -188,7 +228,7 @@ def main() -> None:
         # Одобрение действует на конкретную версию карточки. У старых данных
         # без fingerprint допускаем разовую миграцию только в офлайн-режиме.
         legacy_approved = sync_failed and decision and not decision.get("fingerprint")
-        approved = status == "approved" and decision.get("reasons", []) == issues and (
+        approved = not seo_collision and status == "approved" and decision.get("reasons", []) == issues and (
             decision.get("fingerprint") == fingerprint or legacy_approved
         )
         rejected = status == "rejected"
@@ -196,11 +236,11 @@ def main() -> None:
         # Однозначно сверенные изменения существующей карточки применяются
         # автоматически: это не новый LLM-кандидат, а обновление того же
         # первоисточника с сохранённым event_id.
-        auto_approved = (
+        auto_approved = not seo_collision and (
             bool(event.get("auto_updated"))
             or (bool(issues) and set(issues).issubset(OPTIONAL_ISSUES))
         )
-        event["needs_review"] = bool(issues) and not approved and not rejected and not archived and not auto_approved
+        event["needs_review"] = bool(issues) and not approved and not rejected and (seo_collision or not archived) and not auto_approved
         event["review_reasons"] = issues
         if approved or rejected:
             event["moderation_status"] = status
@@ -222,7 +262,7 @@ def main() -> None:
             event.pop("moderated_at", None)
             event.pop("moderation_decision_reasons", None)
             event.pop("moderation_decision_fingerprint", None)
-        if issues and not approved and not rejected and not archived and not auto_approved:
+        if issues and not approved and not rejected and (seo_collision or not archived) and not auto_approved:
             queue.append({
                 # В очередь кладём именно те данные, которые увидит посетитель
                 # сайта. Telegram-бот показывает эту карточку модератору до

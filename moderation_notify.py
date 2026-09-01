@@ -21,6 +21,15 @@ def main() -> None:
     if not queue:
         print("Очередь модерации пуста.")
         return
+    seo_collisions = sum(
+        1 for event in queue
+        if any("дубли мета-тегов" in reason for reason in event.get("reasons", []))
+    )
+    seo_note = (
+        f"\n\n⚠️ <b>{seo_collisions}</b> из них — дубли мета-тегов "
+        "(совпадают title и description). До решения они не публикуются."
+        if seo_collisions else ""
+    )
     payload = {
         "chat_id": chat_id,
         "parse_mode": "HTML",
@@ -29,6 +38,7 @@ def main() -> None:
             f"После ночного парсинга ждут решения: <b>{len(queue)}</b>.\n"
             "Открой карточки и одобряй или отклоняй их по одной. "
             "Одобренные события попадут в следующую ночную публикацию."
+            f"{seo_note}"
         ),
         "reply_markup": {"inline_keyboard": [[{
             "text": "Разобрать события ▶",
