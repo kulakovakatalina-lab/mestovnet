@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Кальвадос»", "Кальвадос", "Кальвадос"];
+const ARTIST_ALIASES = ["Группа 'Кальвадос'", "Группа «Кальвадос»", "Кальвадос", "Кальвадос"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

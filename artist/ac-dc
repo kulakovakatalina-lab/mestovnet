@@ -16,60 +16,25 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Дворец культуры профсоюзов — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дворец культуры профсоюзов, в Симферополе. 2 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/dvorets-kultury-profsoyuzov">
-  <meta property="og:title" content="Дворец культуры профсоюзов — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дворец культуры профсоюзов, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <title>AC/DC — концерты в Крыму, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов AC/DC в Крыму (Симферополь). 0 ближайших событий.">
+  <link rel="canonical" href="https://mestov.net/artist/ac-dc">
+  <meta property="og:title" content="AC/DC — концерты в Крыму, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов AC/DC в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MusicVenue",
-      "name": "Дворец культуры профсоюзов",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Хиты 2000-х. Караоке с оркестром",
-      "startDate": "2026-09-08T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дворец культуры профсоюзов"
-      },
-      "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Хиты 2000-х. Караоке с оркестром"
-      },
-      "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дуэт «Пара»",
-      "startDate": "2026-09-23T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дворец культуры профсоюзов"
-      },
-      "description": "О концерте Спешим вас обрадовать — концерт дуэта «Пара» состоится в вашем городе! Не упустите возможность насладиться потрясающим исполнением Зульфии Чотчаевой и Ислама Мальсуйгенова!\r\n\r\nЭтот дуэт зажигает сцену своей энергией и харизмой уже не первый год. Их песни моментально выходят на вершины музыкальных чартов и дарят слушателям массу положительных эмоций. Зульфия и Ислам великолепно совмещают кавказский колорит с современными трендами, создавая уникальное и неповторимое звучание, а их творчество глубоко трогает слушателей. На концерте будет представлен ряд популярных композиций дуэта, включая известную песню «Стоп, музыка», клип на которую получил более 100 миллионов просмотров на YouTube.\r\n\r\nНе упустите возможность услышать такие хиты как «Моря гладь», «Горячий кофе», «Убегая», «Небо» и многие другие. Мы приглашаем вас окунуться в атмосферу позитива и танцев на концерте «Пары». Приходите, чтобы в полной мере насладиться любимыми хитами танцевать и подпевать вместе с ними. Ждём вас на концерте дуэта «Пара»!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дуэт «Пара»"
-      },
-      "image": "/images/events/6d4b1e6774bfdd5fca90c6aa96fed2f7.jpg"
+      "@type": "MusicGroup",
+      "name": "AC/DC"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Дворец культуры профсоюзов"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "AC/DC"}]}
 </script>
   <style>
 
@@ -844,8 +809,7 @@ footer {
   pointer-events: none;
 }
 
-  html { scroll-behavior: smooth; }
-  /* ── Герой заведения (genre-hero CSS из genre.html) ── */
+  /* ── Герой артиста (переиспользуем genre-hero/venue CSS) ── */
   .genre-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -924,50 +888,6 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
   }
-  .venue-hero-address-link {
-    text-decoration: underline dotted;
-    text-underline-offset: 3px;
-    cursor: pointer;
-  }
-  .venue-hero-address-link:hover { color: var(--accent); }
-  .venue-map-wrap {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: clamp(20px, 3vw, 32px) var(--gutter) clamp(28px, 4vw, 44px);
-  }
-  #venue-map {
-    width: 100%;
-    height: min(42vh, 360px);
-    min-height: 240px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
-    scroll-margin-top: calc(var(--nav-h) + 16px);
-  }
-  .venue-map-loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: var(--muted);
-    font-size: 14px;
-  }
-  .balloon-card { min-width: 200px; }
-  .balloon-name { font-weight: 700; margin-bottom: 4px; }
-  .balloon-addr { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .balloon-route {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 14px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    background: var(--accent);
-    border-radius: var(--radius-sm);
-    transition: filter 0.12s;
-  }
-  .balloon-route:hover { filter: brightness(1.08); }
   /* ── event-row CSS (из genre.html) ── */
   .bg-jazz    { background: linear-gradient(135deg, oklch(22% 0.04 255), oklch(32% 0.08 255)); }
   .bg-folk    { background: linear-gradient(135deg, oklch(24% 0.04 155), oklch(34% 0.08 145)); }
@@ -991,8 +911,6 @@ footer {
   .event-row:hover { background: var(--surface); }
   .event-row.past { opacity: 0.5; filter: grayscale(0.4); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
   .event-row.past:hover { opacity: 1; filter: none; }
-  .event-row.cancelled { opacity: 0.55; filter: grayscale(0.5); transition: opacity 0.15s, filter 0.15s, background 0.12s; }
-  .event-row.cancelled:hover { opacity: 0.85; filter: grayscale(0.2); }
   .row-date { flex-shrink: 0; text-align: center; }
   .row-date-day { font-family: var(--font-mono); font-size: 32px; font-weight: 700; color: var(--fg); letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
   .row-date-month { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
@@ -1078,13 +996,13 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · Артист
     </div>
-    <h1 class="genre-hero-title">Дворец культуры профсоюзов</h1>
+    <h1 class="genre-hero-title">AC/DC</h1>
 
-<p class="venue-description">За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».</p>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1096,47 +1014,14 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
-
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
 <script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "Дворец культуры профсоюзов";
-  var addr = "Симферополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.964773,34.106607";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.964773, 34.106607],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.964773, 34.106607], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
-
-<script>
-const VENUE_ALIASES = ["ДК профсоюзов", "Дворец культуры профсоюзов", "Дворец культуры профсоюзов"];
+const ARTIST_ALIASES = ["AC/DC", "AC/DC"];
+const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
@@ -1175,8 +1060,52 @@ function priceText(p) {
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
 
+// Разбивает поле artist так же, как build_artists.py: запятые верхнего
+// уровня (не внутри скобок/«»), затем и/&/+/feat./ft./при участии/с участием.
+function splitArtistField(artist) {
+  const parts = [];
+  let depth = 0, current = '';
+  for (const ch of artist) {
+    if (ch === '(' || ch === '«') { depth++; current += ch; }
+    else if (ch === ')' || ch === '»') { depth = Math.max(0, depth - 1); current += ch; }
+    else if (ch === ',' && depth === 0) { parts.push(current); current = ''; }
+    else { current += ch; }
+  }
+  parts.push(current);
+  return parts;
+}
+const ARTIST_JOIN_RE = /\s+(и|&|\+|feat\.?|ft\.?|при участии|с участием)\s+/i;
+const ARTIST_JOIN_WORDS = new Set(['и','&','+','feat','feat.','ft','ft.','при участии','с участием']);
+function artistParts(name) {
+  return name.split(ARTIST_JOIN_RE)
+    .map(s => s.trim())
+    .filter(s => s && !ARTIST_JOIN_WORDS.has(s.toLowerCase()));
+}
+function eventMatchesArtist(ev) {
+  const raw = ev.artist || '';
+  if (!raw) return false;
+  for (const part of splitArtistField(raw)) {
+    for (const name of artistParts(part.trim())) {
+      if (ARTIST_ALIAS_SET.has(name.trim())) return true;
+    }
+  }
+  return false;
+}
+function otherArtistNames(ev) {
+  const raw = ev.artist || '';
+  if (!raw) return [];
+  const names = [];
+  for (const part of splitArtistField(raw)) {
+    for (const name of artistParts(part.trim())) {
+      const n = name.trim();
+      if (n && !ARTIST_ALIAS_SET.has(n) && !names.includes(n)) names.push(n);
+    }
+  }
+  return names;
+}
+
 function applySettings(data, settings) {
-  const hiddenSet    = new Set(settings.hidden || []);
+  const hiddenSet = new Set(settings.hidden || []);
   const cancelledSet = new Set(settings.cancelled || []);
   const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
     images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
@@ -1204,11 +1133,11 @@ function eventRowHtml(ev, extraClass) {
   const genre = mapGenre(ev.genre);
   const fmt   = ev.dateFmt || formatDate(parseDate(ev.date));
   const price = ev.priceDisplay || priceText(ev.price);
+  const others = otherArtistNames(ev);
   const thumbHtml = ev.image
-    ? `<img src="${ev.image}" alt="${ev.artist || ''}" loading="lazy">`
+    ? `<img src="${ev.image}" alt="${ev.venue || ''}" loading="lazy">`
     : `<div class="bg-${genre}" style="width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;">${genreIcon(genre)}</div>`;
-  const rowClass = ['event-row', ev.cancelled ? 'cancelled' : '', extraClass || ''].filter(Boolean).join(' ');
-  return `<a href="/event/${ev.id}" class="${rowClass}" data-genre="${genre}">
+  return `<a href="/event/${ev.id}" class="event-row${extraClass ? ' ' + extraClass : ''}" data-genre="${genre}">
     <div class="row-date">
       <div class="row-date-day">${fmt.day}</div>
       <div class="row-date-month">${fmt.month}</div>
@@ -1216,11 +1145,10 @@ function eventRowHtml(ev, extraClass) {
     </div>
     <div class="row-thumb">${thumbHtml}</div>
     <div>
-      <div class="row-artist">${ev.cancelled ? '<span class="cancelled-badge">Отменено</span> ' : ''}${ev.artist || '—'}</div>
+      <div class="row-artist">${ev.venue || '—'}</div>
       <div class="row-desc">${ev.description || ''}</div>
       <div class="row-venue">
-        <span>${ev.venue || '—'}</span>
-        <span class="row-venue-dot"></span>
+        ${others.length ? `<span>${others.join(', ')}</span><span class="row-venue-dot"></span>` : ''}
         <span>${ev.source_city || '—'}</span>
       </div>
     </div>
@@ -1270,10 +1198,9 @@ async function load() {
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     const patched  = applySettings(data, settings);
     const now      = moscowNow();
-    const aliasSet = new Set(VENUE_ALIASES);
 
     const all = patched
-      .filter(e => e.date && e.venue && aliasSet.has(e.venue))
+      .filter(e => e.date && eventMatchesArtist(e))
       .map(e => ({ ...e, dateFmt: formatDate(parseDate(e.date)), priceDisplay: priceText(e.price) }))
       .sort((a, b) => (a.date + (a.time||'')).localeCompare(b.date + (b.time||'')));
 
@@ -1283,7 +1210,6 @@ async function load() {
     renderList(upcoming, 'events-list');
     renderArchive();
 
-    // Жанры в шапке — все жанры сайта, не только этого заведения
     const genreCounts = {};
     patched.forEach(e => { const g = mapGenre(e.genre); genreCounts[g] = (genreCounts[g] || 0) + 1; });
     const activeGenres = ['jazz','rock','folk','blues','classic','pop'].filter(g => genreCounts[g]);

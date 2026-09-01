@@ -63,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Blackened"
       },
-      "image": "/images/events/f78bf06ae40524ef3eeb6203aced971b.jpg"
+      "image": "/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -73,12 +73,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Концерт AC/DC tribute by Back 'n Storm (Краснодар).",
+      "description": "AC/DC tribute by Back 'n Storm (Краснодар). Когда летом они играли у нас - это был невероятный шторм эмоций и стена звука.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Back 'n Storm"
       },
-      "image": "/images/events/a41beb9225a5bbfde4c5f7b2e8caf0b0.jpg"
+      "image": "/images/events/99fcc7f64cf9c48e330ef117bc68dbba.jpg"
     },
     {
       "@type": "MusicEvent",

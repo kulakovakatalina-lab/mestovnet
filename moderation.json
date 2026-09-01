@@ -17,18 +17,53 @@
     ]
   },
   {
-    "id": "f4cad0ef",
+    "id": "7b44fa9a",
+    "date": "2026-10-09",
+    "time": null,
+    "artist": "AC/DC",
+    "venue": "Крым Event",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "трибьют",
+    "description": "Концерт AC/DC tribute.",
+    "image": null,
+    "source_url": "https://t.me/crimea_event/5631",
+    "reasons": [
+      "нет времени",
+      "нет постера"
+    ]
+  },
+  {
+    "id": "32a8bf81",
     "date": "2026-09-05",
     "time": null,
-    "artist": "Снежинки",
+    "artist": "DJ-сеты",
+    "venue": "клубный пляж Ласпи",
+    "source_city": "Крым",
+    "price": "1500 ₽",
+    "genre": "поп",
+    "event_type": "вечеринка",
+    "description": "Большая вечеринка на клубном пляже Ласпи: электронная музыка, мощные DJ-сеты и атмосфера до самого утра.",
+    "image": "/images/events/5a5b847093c91cf31e87de7e444dcd8f.jpg",
+    "source_url": "https://vk.com/wall-221587243_2473",
+    "reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "5f3e2089",
+    "date": "2026-09-05",
+    "time": null,
+    "artist": "Ахматова, Блок, Цветаева, Мандельштам, Вертинский",
     "venue": "Севастополь",
     "source_city": "Севастополь",
     "price": "1200–2900 ₽",
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Вечер на стыке поэзии, музыки и театра. Серебряный век. Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства. Ахматова, Блок, Цветаева, Мандельштам, Вертинский и гастрономическое сопровождение от «Снежинки». Количество мест ограничено.",
-    "image": "/images/events/c3308d44ba16ac4db92fb9999f126568.jpg",
-    "source_url": "https://t.me/afisha_payberry/1623",
+    "genre": null,
+    "event_type": "другое",
+    "description": "Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства.",
+    "image": "/images/events/371e62babb6abd26e523f06aa06ab0ce.jpg",
+    "source_url": "https://vk.com/wall-221587243_2472",
     "reasons": [
       "нет времени"
     ]

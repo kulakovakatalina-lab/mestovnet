@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 18,
+    "event_count": 19,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -156,6 +156,21 @@
     "lon": 36.427239
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 11,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "usadba-rodnoe-gnezdo",
     "name": "Усадьба «Родное гнездо»",
     "city": "Севастополь",
@@ -190,14 +205,14 @@
     "lon": null
   },
   {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 10,
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "ул. Екатерининская, 14",
+    "event_count": 9,
     "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -385,20 +400,6 @@
     "desc_baseline_count": 1,
     "lat": 44.606638,
     "lon": 33.522078
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Рок-н-рольщики"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "krongs",
@@ -1967,6 +1968,20 @@
     "event_count": 1,
     "aliases": [
       "Концертный зал «Звёздный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "klubnyy-plyazh-laspi",
+    "name": "клубный пляж Ласпи",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "клубный пляж Ласпи"
     ],
     "description": null,
     "desc_baseline_count": 0,

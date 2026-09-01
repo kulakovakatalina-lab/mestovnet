@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "Winepark"
       },
-      "description": "Фестиваль Winepark. Концерт Вадима Самойлова, хиты «Агаты Кристи» на главной сцене.",
+      "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Вадим Самойлов"
       },
-      "image": "/images/events/8787c034ccee8c0282dfa0494d26b2f5.jpg"
+      "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg"
     }
   ]
 }
