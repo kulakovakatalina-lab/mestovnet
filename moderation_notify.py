@@ -9,6 +9,7 @@ from pathlib import Path
 
 QUEUE = Path("moderation.json")
 API = "https://api.telegram.org/bot{token}/sendMessage"
+CURRENT_EVENTS_URL = "https://mestov.net/current-events/"
 
 
 def main() -> None:
@@ -38,7 +39,7 @@ def main() -> None:
             f"После ночного парсинга ждут решения: <b>{len(queue)}</b>.\n"
             "Открой карточки и одобряй или отклоняй их по одной. "
             "Одобренные события попадут в следующую ночную публикацию."
-            f"{seo_note}"
+            f"{seo_note}\n\n<a href=\"{CURRENT_EVENTS_URL}\">Вся актуальная афиша</a>"
         ),
         "reply_markup": {"inline_keyboard": [[{
             "text": "Разобрать события ▶",

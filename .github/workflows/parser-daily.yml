@@ -206,6 +206,7 @@ jobs:
           text = (
               "⚠️ <b>Ночной запуск Местов.Нет завершился с ошибкой</b>\n\n"
               f"{problem}. Изменения на сайте могли не опубликоваться.\n"
+              '<a href="https://mestov.net/current-events/">Вся актуальная афиша</a>\n'
               f'<a href="{os.environ["RUN_URL"]}">Открыть логи запуска</a>'
           )
           data = json.dumps({
@@ -238,6 +239,7 @@ jobs:
 
           text = (
               "⚠️ <b>Ночной запуск Местов.Нет завершён, но подробный отчёт не сформирован</b>\n\n"
+              '<a href="https://mestov.net/current-events/">Вся актуальная афиша</a>\n'
               f'<a href="{os.environ["RUN_URL"]}">Открыть логи запуска</a>'
           )
           data = json.dumps({

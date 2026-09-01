@@ -33,6 +33,7 @@ import httpx
 import parser as parser_mod
 
 DOMAIN = "https://mestov.net"
+CURRENT_EVENTS_URL = f"{DOMAIN}/current-events/"
 
 FILES = ("events.json", "venues.json", "artists.json")
 
@@ -141,7 +142,10 @@ def build_message(before_dir: Path, after_dir: Path) -> Optional[str]:
     venue_lookup = build_alias_lookup(after["venues.json"])
     artist_lookup = build_alias_lookup(after["artists.json"])
 
-    lines = [f"<b>Новое на Местов.Нет ({len(new_events)}):</b>"]
+    lines = [
+        f"<b>Новое на Местов.Нет ({len(new_events)}):</b>",
+        f'<a href="{CURRENT_EVENTS_URL}">Вся актуальная афиша</a>',
+    ]
     for e in sorted(new_events, key=lambda x: (x.get("date") or "")):
         lines.append("")
         lines.extend(render_event_block(e, artist_lookup, venue_lookup))
@@ -180,7 +184,10 @@ def main() -> int:
         print("Новых событий нет — сообщение не отправлено.")
         return 0
     if message is None:
-        message = "<b>Местов.Нет:</b> ничего нового не найдено 🥱"
+        message = (
+            "<b>Местов.Нет:</b> ничего нового не найдено 🥱\n"
+            f'<a href="{CURRENT_EVENTS_URL}">Вся актуальная афиша</a>'
+        )
 
     print(message)
 

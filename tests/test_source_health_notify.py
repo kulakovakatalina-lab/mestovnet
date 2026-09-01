@@ -14,3 +14,4 @@ def test_build_message_lists_each_alert_and_escapes_html():
     assert "Проверьте источники" in message
     assert "club &lt;main&gt;" in message
     assert "Ялта" in message
+    assert "https://mestov.net/current-events/" in message

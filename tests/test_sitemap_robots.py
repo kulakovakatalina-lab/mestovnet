@@ -9,7 +9,7 @@ SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 # адрес без явного намерения (защита от «побились ссылки»). Динамические
 # event/venue/city URL сюда не входят — они естественно меняются каждый день.
 STATIC_URLS = sorted(
-    {"/", "/sitemap.xml", "/robots.txt", "/404.html"}
+    {"/", "/current-events/", "/sitemap.xml", "/robots.txt", "/404.html"}
     | {f"/cities/{slug}.html" for slug in CITY_SLUGS.values() if slug != "all"}
 )
 
@@ -118,6 +118,7 @@ class TestStaticUrlsStability:
         # проверяет test_generated_pages.py::test_pages_exist_for_cities_with_events).
         always_present = {
             "/": "index.html",
+            "/current-events/": "current-events/index.html",
             "/sitemap.xml": "sitemap.xml",
             "/robots.txt": "robots.txt",
             "/404.html": "404.html",

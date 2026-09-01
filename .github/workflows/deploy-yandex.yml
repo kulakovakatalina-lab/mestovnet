@@ -98,6 +98,7 @@ jobs:
           cp -r venues _site/
           cp -r event _site/
           cp -r artist _site/
+          cp -r current-events _site/
           # Маркер релиза нужен smoke-проверке: HTTP 200 и валидный JSON не
           # доказывают, что Cloud CDN уже перестал отдавать прошлую версию.
           printf '{"revision":"%s"}\n' "$(git rev-parse HEAD)" > _site/deployment.json

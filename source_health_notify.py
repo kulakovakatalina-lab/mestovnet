@@ -12,6 +12,7 @@ import httpx
 
 
 DEFAULT_REPORT = Path("source_health.json")
+CURRENT_EVENTS_URL = "https://mestov.net/current-events/"
 
 
 def load_report(path: Path) -> dict:
@@ -31,6 +32,7 @@ def build_message(report: dict) -> Optional[str]:
         subject = alert.get("source") or alert.get("city") or "Источник"
         message = alert.get("message") or "требует проверки"
         lines.append(f"• <b>{html.escape(str(subject))}</b>: {html.escape(str(message))}")
+    lines.append(f'\n<a href="{CURRENT_EVENTS_URL}">Вся актуальная афиша</a>')
     return "\n".join(lines)
 
 
