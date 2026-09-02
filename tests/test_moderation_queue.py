@@ -111,11 +111,11 @@ def test_worker_failure_preserves_cached_approval(tmp_path, monkeypatch):
     assert saved["needs_review"] is False
 
 
-def test_changed_event_requires_new_approval(tmp_path, monkeypatch):
+def test_changed_event_with_only_optional_issues_is_updated_automatically(tmp_path, monkeypatch):
     old = {
         "id": "approved1", "source_url": "https://example.test/post",
-        "artist": "Артист", "date": "2026-09-01", "venue": "Клуб",
-        "time": "", "price": "", "image": "",
+        "artist": "Артист", "date": "2099-09-01", "venue": "Клуб",
+        "time": "19:00", "price": "", "image": "",
     }
     event = {**old, "artist": "Другой артист"}
     issues = moderation_queue.reasons(old)
@@ -139,8 +139,8 @@ def test_changed_event_requires_new_approval(tmp_path, monkeypatch):
     moderation_queue.main()
 
     saved = json.loads(events_path.read_text(encoding="utf-8"))[0]
-    assert saved["needs_review"] is True
-    assert "moderation_status" not in saved
+    assert saved["needs_review"] is False
+    assert saved["moderation_status"] == "approved"
 
 
 def test_worker_failure_preserves_cached_rejection(tmp_path, monkeypatch):

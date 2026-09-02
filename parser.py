@@ -1640,6 +1640,37 @@ def reconcile_source_updates(existing: list[dict], fresh: list[dict], source_upd
     return existing_out, fresh_out
 
 
+def preserve_past_events(existing: list[dict], candidate: list[dict], today=None) -> list[dict]:
+    """Не даёт новым проходам парсера менять уже прошедшую афишу.
+
+    Источники иногда исправляют старые публикации или возвращают похожую
+    карточку с тем же днём. История сайта от этого не должна переписываться:
+    уточнения применяются только к событиям сегодняшнего дня и будущим.
+    """
+    today = today or moscow_today()
+    archived = {
+        event["id"]: dict(event)
+        for event in existing
+        if event.get("id") and (event.get("date") or "") < today
+    }
+    if not archived:
+        return candidate
+
+    result = []
+    seen_ids = set()
+    for event in candidate:
+        event_id = event.get("id")
+        if event_id in archived:
+            result.append(archived[event_id])
+            seen_ids.add(event_id)
+        else:
+            result.append(event)
+    # Если дедупликация ошибочно поглотила старую карточку, возвращаем её
+    # ровно в прежнем виде, а не создаём новую версию из свежих данных.
+    result.extend(event for event_id, event in archived.items() if event_id not in seen_ids)
+    return result
+
+
 def _source_recheck_due(event: dict, now: datetime) -> bool:
     checked_at = event.get("source_last_checked_at")
     if not checked_at:
@@ -2227,6 +2258,9 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     before_validation = len(merged)
     validation_candidates = list(merged)
     merged, rejected = validate_events(merged)
+    # Защита ставится после всех эвристик и проверки: ни дедупликация, ни
+    # очистка артистов не могут переписать архивные карточки.
+    merged = preserve_past_events(existing_before_cleanup, merged)
     _print_validation_report(before_validation, len(merged), rejected)
     _print_source_report(source_stats, validation_candidates, merged)
 

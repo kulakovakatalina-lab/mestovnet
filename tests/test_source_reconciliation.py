@@ -100,6 +100,32 @@ def test_auto_update_marker_survives_unchanged_followup_run():
     assert merged[0]["auto_updated_fields"] == ["time"]
 
 
+def test_past_event_is_restored_unchanged_after_deduplication():
+    old = {
+        "id": "archive", "date": "2026-08-20", "artist": "Старый артист",
+        "venue": "Клуб", "source_url": "https://example.test/old",
+    }
+    changed = {
+        "id": "archive", "date": "2026-08-20", "artist": "Новый артист",
+        "venue": "Клуб", "source_url": "https://example.test/new",
+    }
+
+    result = parser.preserve_past_events([old], [changed], today="2026-08-30")
+
+    assert result == [old]
+
+
+def test_past_event_removed_by_deduplication_is_restored():
+    old = {
+        "id": "archive", "date": "2026-08-20", "artist": "Артист",
+        "venue": "Клуб", "source_url": "https://example.test/old",
+    }
+
+    result = parser.preserve_past_events([old], [], today="2026-08-30")
+
+    assert result == [old]
+
+
 def test_old_telegram_post_is_rechecked_and_reconciled(monkeypatch):
     url = "https://t.me/known_channel/123"
     old = {"id": "stable", "source_url": url, "date": "2027-09-01", "time": "19:00",
