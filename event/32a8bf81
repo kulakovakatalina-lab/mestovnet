@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Анна Шакель, джаз-трио «А3», Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="DJ-сеты, клубный пляж Ласпи, в Крыму, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Анна Шакель, джаз-трио «А3» — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет</title>
+<title>DJ-сеты — клубный пляж Ласпи, Крым, 5 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/e5674032">
-<meta property="og:title" content="Анна Шакель, джаз-трио «А3» — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет">
-<meta property="og:description" content="Анна Шакель, джаз-трио «А3», Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/32a8bf81">
+<meta property="og:title" content="DJ-сеты — клубный пляж Ласпи, Крым, 5 сентября · Местов.Нет">
+<meta property="og:description" content="DJ-сеты, клубный пляж Ласпи, в Крыму, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/5a5b847093c91cf31e87de7e444dcd8f.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Анна Шакель, джаз-трио «А3»",
-      "startDate": "2026-08-29",
+      "name": "DJ-сеты",
+      "startDate": "2026-09-05",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «Мотивы»",
+        "name": "клубный пляж Ласпи",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "Анна Шакель и джаз-трио «А3»",
+      "description": "Большая вечеринка на клубном пляже Ласпи: электронная музыка, мощные DJ-сеты и атмосфера до самого утра.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Анна Шакель, джаз-трио «А3»"
+        "name": "DJ-сеты"
       },
-      "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
+      "image": "/images/events/5a5b847093c91cf31e87de7e444dcd8f.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "1500 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Анна Шакель, джаз-трио «А3»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "DJ-сеты"}]}
 </script>
 </head>
 <body>
