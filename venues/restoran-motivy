@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ресторан «Мотивы» — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «Мотивы», в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <title>Ресторан «Мотивы» — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Ресторан «Мотивы», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-motivy">
-  <meta property="og:title" content="Ресторан «Мотивы» — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «Мотивы», в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Ресторан «Мотивы» — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «Мотивы», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "Ресторан «Мотивы»",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
+        "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
     }
@@ -39,7 +39,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ресторан «Мотивы»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ресторан «Мотивы»"}]}
 </script>
   <style>
 
@@ -1048,7 +1048,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
     <h1 class="genre-hero-title">Ресторан «Мотивы»</h1>
 

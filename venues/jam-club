@@ -73,12 +73,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "AC/DC tribute by Back 'n Storm (Краснодар). Когда летом они играли у нас - это был невероятный шторм эмоций и стена звука.",
+      "description": "Концерт AC/DC tribute by Back 'n Storm.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Back 'n Storm"
       },
-      "image": "/images/events/99fcc7f64cf9c48e330ef117bc68dbba.jpg"
+      "image": "/images/events/53f7e59684d4012d472d8b22a95f1673.jpg"
     },
     {
       "@type": "MusicEvent",

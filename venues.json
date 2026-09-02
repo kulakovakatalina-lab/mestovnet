@@ -120,24 +120,6 @@
     "lon": null
   },
   {
-    "slug": "teatr-im-a-p-chehova",
-    "name": "Театр им. А.П. Чехова",
-    "city": "Ялта",
-    "address": "Екатерининская ул., 13",
-    "event_count": 11,
-    "aliases": [
-      "Колонный зал театра им. А.П. Чехова",
-      "Театр им. А. П. Чехова",
-      "Театр им. А.П. Чехова",
-      "Театр имени А.П. Чехова, Екатерининская ул., 13",
-      "Ялтинский театр им. Чехова"
-    ],
-    "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
-    "desc_baseline_count": 8,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -167,6 +149,24 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teatr-im-a-p-chehova",
+    "name": "Театр им. А.П. Чехова",
+    "city": "Ялта",
+    "address": "Екатерининская ул., 13",
+    "event_count": 10,
+    "aliases": [
+      "Колонный зал театра им. А.П. Чехова",
+      "Театр им. А. П. Чехова",
+      "Театр им. А.П. Чехова",
+      "Театр имени А.П. Чехова, Екатерининская ул., 13",
+      "Ялтинский театр им. Чехова"
+    ],
+    "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
+    "desc_baseline_count": 8,
     "lat": null,
     "lon": null
   },
@@ -249,6 +249,20 @@
     "lon": 34.09338
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -265,20 +279,6 @@
     "desc_baseline_count": 7,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "vinzavod-massandra",
@@ -724,20 +724,6 @@
     "lon": null
   },
   {
-    "slug": "restoran-motivy",
-    "name": "Ресторан «Мотивы»",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Ресторан «Мотивы»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "bar-el-capulco-0-0",
     "name": "бар El Capulco 0.0",
     "city": "Ялта",
@@ -909,6 +895,20 @@
     "desc_baseline_count": 3,
     "lat": 44.441156,
     "lon": 34.132019
+  },
+  {
+    "slug": "restoran-motivy",
+    "name": "Ресторан «Мотивы»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Ресторан «Мотивы»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "anapskiy-rayon-supseh",
@@ -1919,6 +1919,20 @@
     "lon": null
   },
   {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinodelnya-valery-loginov-i-12-druzey",
     "name": "винодельня «Valery Логинов и 12 друзей»",
     "city": "Крым",
@@ -1933,13 +1947,13 @@
     "lon": null
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
+    "slug": "klubnyy-plyazh-laspi",
+    "name": "клубный пляж Ласпи",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Камелот"
+      "клубный пляж Ласпи"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1975,13 +1989,13 @@
     "lon": null
   },
   {
-    "slug": "klubnyy-plyazh-laspi",
-    "name": "клубный пляж Ласпи",
+    "slug": "s-dobroe",
+    "name": "с. Доброе",
     "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "клубный пляж Ласпи"
+      "с. Доброе"
     ],
     "description": null,
     "desc_baseline_count": 0,

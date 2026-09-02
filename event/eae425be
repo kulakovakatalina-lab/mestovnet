@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Мотивы, Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Анна Шакель, джаз-трио «А3», Мотивы, Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мотивы — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет</title>
+<title>Анна Шакель, джаз-трио «А3», Мотивы — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,16 +959,17 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/eae425be">
-<meta property="og:title" content="Мотивы — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет">
-<meta property="og:description" content="Мотивы, Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Анна Шакель, джаз-трио «А3», Мотивы — Ресторан «Мотивы», Симферополь, 29 августа · Местов.Нет">
+<meta property="og:description" content="Анна Шакель, джаз-трио «А3», Мотивы, Ресторан «Мотивы», в Симферополе, 29 августа, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://mestov.net/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Мотивы",
+      "name": "Анна Шакель, джаз-трио «А3», Мотивы",
       "startDate": "2026-08-29",
       "location": {
         "@type": "MusicVenue",
@@ -982,14 +983,15 @@ a { color: inherit; text-decoration: none; }
       "description": "Встречаемся в ресторане «Мотивы»",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Мотивы"
-      }
+        "name": "Анна Шакель, джаз-трио «А3», Мотивы"
+      },
+      "image": "/images/events/c0aa873f040714ca39d7fab4f6aad24c.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Мотивы"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Анна Шакель, джаз-трио «А3», Мотивы"}]}
 </script>
 </head>
 <body>

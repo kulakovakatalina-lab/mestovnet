@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Три дня дождя — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
-  <link rel="canonical" href="https://mestov.net/artist/tri-dnya-dozhdya">
-  <meta property="og:title" content="Три дня дождя — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Три дня дождя в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
+  <title>Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
+  <link rel="canonical" href="https://mestov.net/artist/trio-a3">
+  <meta property="og:title" content="Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,13 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Три дня дождя"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Три дня дождя",
-      "startDate": "2026-09-30T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Три дня дождя"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Муссон",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "О концерте Группа «Три дня дождя» отправляется в большой тур с презентацией нового альбома «Висхолдинг».\r\n\r\nКоллектив, основанный Глебом Викторовым и уже ставший одной из главных групп своего жанра, знаком слушателю мрачной романтикой, живым звуком и честными текстами, которые стали настоящим голосом поколения и покорили огромные залы.\r\n\r\nНа каждом концерте прозвучат как главные хиты, так и свежие треки из нового альбома «Висхолдинг». Это станет особой встречей с атмосферой меланхолии, где каждый сможет услышать любимые песни и прочувствовать их по-новому.\r\n\r\nПриготовьтесь к самому яркому событию этого года.",
-      "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
+      "name": "Трио «А3»"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Три дня дождя"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Трио «А3»"}]}
 </script>
   <style>
 
@@ -1018,11 +998,11 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Три дня дождя</h1>
-<p class="venue-description">Одна из главных групп новой русской рок-сцены, основана Глебом Викторовым. В августе в Крыму: концерт на крыше Roof Live в Симферополе, «Муссон» в Севастополе и трибьют-шоу «Киномаёвки» на фестивале ТАВРИДА.АРТ.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
+    <h1 class="genre-hero-title">Трио «А3»</h1>
+
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1040,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Три дня дождя", "Три дня дождя"];
+const ARTIST_ALIASES = ["Трио «А3»", "Трио «А3»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
