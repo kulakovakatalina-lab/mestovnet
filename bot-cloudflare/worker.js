@@ -15,6 +15,10 @@ const SITE = "https://mestov.net";
 const EVENTS_URL = `${SITE}/events.json`;
 const SETTINGS_URL = `${SITE}/settings.json`;
 const MODERATION_URL = `${SITE}/moderation.json`;
+const EVENTS_API_PATH = "/api/events";
+const CATALOG_SYNC_PATH = "/internal/catalog-sync";
+const CATALOG_KEY = "catalog:events:v1";
+const PUBLIC_SITE_ORIGINS = new Set(["https://mestov.net", "https://www.mestov.net"]);
 const GITHUB_API = "https://api.github.com";
 const MODERATION_PUBLISH_WORKFLOW = "publish-moderation.yml";
 const MAX_EVENTS = 25;
@@ -60,6 +64,205 @@ const esc = (s) => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 function crimeaParts() {
   const d = new Date(Date.now() + 3 * 3600 * 1000);
   return { iso: d.toISOString().slice(0, 10), weekday: (d.getUTCDay() + 6) % 7 };
+}
+
+// ---------------------------------------------------------------------------
+// Публичный каталог событий
+// ---------------------------------------------------------------------------
+// KV содержит последний опубликованный снимок. Полный events.json остаётся
+// резервной копией и источником данных для генератора статических страниц.
+function catalogCorsHeaders(request) {
+  const origin = request.headers.get("Origin");
+  const headers = new Headers({
+    "Cache-Control": "public, max-age=60, s-maxage=300",
+    "Vary": "Origin",
+  });
+  if (origin && PUBLIC_SITE_ORIGINS.has(origin)) headers.set("Access-Control-Allow-Origin", origin);
+  return headers;
+}
+
+function catalogEvents(events, searchParams, now = crimeaParts().iso) {
+  const venue = (searchParams.get("venue") || "").trim().toLocaleLowerCase("ru-RU");
+  const city = (searchParams.get("city") || "").trim().toLocaleLowerCase("ru-RU");
+  const genre = (searchParams.get("genre") || "").trim().toLocaleLowerCase("ru-RU");
+  const includePast = searchParams.get("include") === "past";
+  const requestedLimit = Number.parseInt(searchParams.get("limit") || "100", 10);
+  const limit = Number.isFinite(requestedLimit) ? Math.min(Math.max(requestedLimit, 1), 200) : 100;
+
+  return events
+    .filter((event) => {
+      if (!event || typeof event !== "object" || !isoDate(event.date)) return false;
+      if (!includePast && event.date < now) return false;
+      if (venue && String(event.venue || "").trim().toLocaleLowerCase("ru-RU") !== venue) return false;
+      if (city && String(event.source_city || "").trim().toLocaleLowerCase("ru-RU") !== city) return false;
+      if (genre && String(event.genre || "").trim().toLocaleLowerCase("ru-RU") !== genre) return false;
+      return true;
+    })
+    .sort((a, b) => `${a.date}${a.time || ""}`.localeCompare(`${b.date}${b.time || ""}`))
+    .slice(0, limit);
+}
+
+async function eventsApiResponse(request, env) {
+  const snapshot = await env.KV.get(CATALOG_KEY, { type: "json" });
+  if (!snapshot || !Array.isArray(snapshot.events)) {
+    return Response.json(
+      { error: "catalog is not synchronized yet" },
+      { status: 503, headers: catalogCorsHeaders(request) },
+    );
+  }
+  return Response.json(catalogEvents(snapshot.events, new URL(request.url).searchParams), {
+    headers: catalogCorsHeaders(request),
+  });
+}
+
+async function catalogSyncResponse(request, env) {
+  if (!env.CATALOG_SYNC_TOKEN || request.headers.get("Authorization") !== `Bearer ${env.CATALOG_SYNC_TOKEN}`) {
+    return new Response("forbidden", { status: 403 });
+  }
+  let events;
+  try { events = await request.json(); } catch (_) { return Response.json({ error: "body must be a JSON array" }, { status: 400 }); }
+  if (!Array.isArray(events) || events.some((event) => !event || typeof event !== "object" || !isoDate(event.date))) {
+    return Response.json({ error: "events must be an array of dated event objects" }, { status: 400 });
+  }
+  await env.KV.put(CATALOG_KEY, JSON.stringify({ events, synchronized_at: new Date().toISOString() }));
+  return Response.json({ ok: true, events: events.length });
+}
+
+// ---------------------------------------------------------------------------
+// Закрытая еженедельная аналитика
+// ---------------------------------------------------------------------------
+const ANALYTICS_PATH = "/api/analytics/weekly";
+const REGION_ONLY_LOCATIONS = new Set(["крым"]);
+
+function isoDate(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const date = new Date(`${value}T00:00:00Z`);
+  return Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== value ? null : value;
+}
+
+function addDays(iso, days) {
+  const date = new Date(`${iso}T00:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
+function lastCompletedWeek(now = new Date()) {
+  // Europe/Moscow is UTC+3 year-round. getUTCDay() is calculated after the
+  // shift so a Sunday in Crimea remains Sunday even when the Worker is in UTC.
+  const crimeaNow = new Date(now.getTime() + 3 * 3600 * 1000);
+  const weekday = (crimeaNow.getUTCDay() + 6) % 7; // Monday = 0
+  const today = crimeaNow.toISOString().slice(0, 10);
+  const lastSunday = addDays(today, -(weekday + 1));
+  return { from: addDays(lastSunday, -6), to: lastSunday };
+}
+
+function analyticsPeriod(searchParams, now = new Date()) {
+  const fromParam = searchParams.get("date_from");
+  const toParam = searchParams.get("date_to");
+  if (!fromParam && !toParam) return lastCompletedWeek(now);
+  const from = isoDate(fromParam);
+  const to = isoDate(toParam);
+  if (!from || !to || from > to) return null;
+  return { from, to };
+}
+
+function isInPeriod(value, period) {
+  const day = typeof value === "string" ? value.slice(0, 10) : "";
+  return isoDate(day) !== null && day >= period.from && day <= period.to;
+}
+
+function analyticsSource(event) {
+  if (event.source_channel) return String(event.source_channel);
+  try { return new URL(event.source_url).hostname || "unknown"; } catch (_) { return "unknown"; }
+}
+
+function isUnknownLocation(event) {
+  const city = String(event.source_city || "").trim();
+  return !city || REGION_ONLY_LOCATIONS.has(city.toLocaleLowerCase("ru-RU"));
+}
+
+function buildWeeklyAnalytics(events, queue, decisions, period, generatedAt = new Date()) {
+  const previous = { from: addDays(period.from, -(Math.round((Date.parse(`${period.to}T00:00:00Z`) - Date.parse(`${period.from}T00:00:00Z`)) / 86400000) + 1)), to: addDays(period.from, -1) };
+  const currentEvents = events.filter((event) => isInPeriod(event.post_date, period));
+  const previousEvents = events.filter((event) => isInPeriod(event.post_date, previous));
+  const currentBySource = new Map();
+  const previousBySource = new Map();
+  const rejectedBySource = new Map();
+  const unknownBySource = new Map();
+  const increment = (map, key) => map.set(key, (map.get(key) || 0) + 1);
+  const sourceByUrl = new Map(events.concat(queue).filter((event) => event.source_url)
+    .map((event) => [event.source_url, analyticsSource(event)]));
+
+  for (const event of currentEvents) {
+    const source = analyticsSource(event);
+    increment(currentBySource, source);
+    if (isUnknownLocation(event)) increment(unknownBySource, source);
+  }
+  for (const event of previousEvents) increment(previousBySource, analyticsSource(event));
+  for (const decision of decisions) {
+    if (decision.status !== "rejected" || !isInPeriod(decision.decided_at, period)) continue;
+    increment(rejectedBySource, sourceByUrl.get(decision.source_url) || "unknown");
+  }
+
+  const sources = new Set([...currentBySource.keys(), ...previousBySource.keys(), ...rejectedBySource.keys()]);
+  const sourceRows = [...sources].map((source) => ({
+    source,
+    events_added: currentBySource.get(source) || 0,
+    previous_period: previousBySource.get(source) || 0,
+    rejected: rejectedBySource.get(source) || 0,
+    unknown_location: unknownBySource.get(source) || 0,
+  })).sort((a, b) => b.events_added - a.events_added || a.source.localeCompare(b.source, "ru"));
+
+  const cities = new Map();
+  const previousCities = new Map();
+  for (const event of currentEvents) if (!isUnknownLocation(event)) increment(cities, String(event.source_city).trim());
+  for (const event of previousEvents) if (!isUnknownLocation(event)) increment(previousCities, String(event.source_city).trim());
+  const cityRows = [...cities.entries()].map(([city, count]) => ({ city, events: count, previous_period: previousCities.get(city) || 0 }))
+    .sort((a, b) => b.events - a.events || a.city.localeCompare(b.city, "ru"));
+  const total = currentEvents.length;
+  const previousTotal = previousEvents.length;
+  const unmoderatedHasDates = queue.every((event) => isoDate((event.post_date || "").slice(0, 10)) !== null);
+
+  return {
+    period,
+    previous_period: previous,
+    events_added: {
+      total,
+      previous_period: previousTotal,
+      change_absolute: total - previousTotal,
+      change_percent: previousTotal ? Number((((total - previousTotal) / previousTotal) * 100).toFixed(1)) : null,
+    },
+    moderation: {
+      new_unmoderated: unmoderatedHasDates ? queue.filter((event) => isInPeriod(event.post_date, period)).length : null,
+      current_backlog: queue.length,
+      previous_backlog: null,
+    },
+    moderation_period_data_available: unmoderatedHasDates,
+    cities: cityRows,
+    unknown_location: currentEvents.filter(isUnknownLocation).length,
+    sources: sourceRows,
+    // В данных нет журнала правок карточки и признака публикации без правок.
+    source_quality_data_available: false,
+    generated_at: `${new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Moscow", dateStyle: "short", timeStyle: "medium", hour12: false }).format(generatedAt).replace(" ", "T")}+03:00`,
+  };
+}
+
+async function weeklyAnalyticsResponse(request, env, now = new Date()) {
+  if (!env.ANALYTICS_TOKEN || request.headers.get("Authorization") !== `Bearer ${env.ANALYTICS_TOKEN}`) {
+    return new Response("forbidden", { status: 403 });
+  }
+  const period = analyticsPeriod(new URL(request.url).searchParams, now);
+  if (!period) return Response.json({ error: "date_from and date_to must be valid YYYY-MM-DD dates, with date_from <= date_to" }, { status: 400 });
+  try {
+    const [eventsResponse, queue] = await Promise.all([fetch(EVENTS_URL), fetchModeration()]);
+    if (!eventsResponse.ok) throw new Error(`events fetch: ${eventsResponse.status}`);
+    const events = await eventsResponse.json();
+    const decisions = await listModerationDecisions(env);
+    return Response.json(buildWeeklyAnalytics(Array.isArray(events) ? events : [], queue, decisions, period, now));
+  } catch (error) {
+    console.log("weekly analytics failed", error);
+    return Response.json({ error: "analytics data is temporarily unavailable" }, { status: 503 });
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -875,6 +1078,20 @@ async function runEventReminders(env) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (request.method === "OPTIONS" && url.pathname === EVENTS_API_PATH) {
+      const headers = catalogCorsHeaders(request);
+      headers.set("Access-Control-Allow-Methods", "GET, OPTIONS");
+      return new Response(null, { status: 204, headers });
+    }
+    if (request.method === "GET" && url.pathname === EVENTS_API_PATH) {
+      return eventsApiResponse(request, env);
+    }
+    if (request.method === "POST" && url.pathname === CATALOG_SYNC_PATH) {
+      return catalogSyncResponse(request, env);
+    }
+    if (request.method === "GET" && url.pathname === ANALYTICS_PATH) {
+      return weeklyAnalyticsResponse(request, env);
+    }
     if (request.method === "GET" && url.pathname === "/moderation/decisions") {
       const auth = request.headers.get("Authorization");
       if (!env.MODERATION_SYNC_TOKEN || auth !== `Bearer ${env.MODERATION_SYNC_TOKEN}`) {
@@ -899,4 +1116,11 @@ export default {
     ctx.waitUntil(runCron(env));
     ctx.waitUntil(runEventReminders(env));
   },
+};
+
+// Named exports keep the date and authorization behaviour unit-testable. They
+// are ignored by Cloudflare Workers at runtime.
+export {
+  analyticsPeriod, buildWeeklyAnalytics, lastCompletedWeek, weeklyAnalyticsResponse,
+  catalogEvents, catalogSyncResponse, eventsApiResponse,
 };
