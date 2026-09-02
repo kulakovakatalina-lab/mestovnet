@@ -75,6 +75,8 @@ jobs:
       # аккаунта заданы, деплой очищает CDN и ждёт завершения операции.
       YC_CDN_RESOURCE_ID: ${{ vars.YC_CDN_RESOURCE_ID }}
       YC_SA_JSON_CREDENTIALS: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
+      CATALOG_WORKER_URL: ${{ secrets.MODERATION_WORKER_URL }}
+      CATALOG_SYNC_TOKEN: ${{ secrets.CATALOG_SYNC_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -319,3 +321,19 @@ jobs:
           grep -qi "местов" /tmp/map.html || { echo "FAIL: страница карты пустая"; exit 1; }
 
           echo "Все проверки прошли ✅"
+
+      - name: Синхронизировать каталог событий с Worker
+        if: ${{ env.CATALOG_WORKER_URL != '' && env.CATALOG_SYNC_TOKEN != '' }}
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Authorization: Bearer $CATALOG_SYNC_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data-binary @events.json \
+            "${CATALOG_WORKER_URL%/}/internal/catalog-sync"
+
+      - name: Предупредить о не настроенной синхронизации каталога
+        if: ${{ env.CATALOG_WORKER_URL == '' || env.CATALOG_SYNC_TOKEN == '' }}
+        run: |
+          echo "::warning::Синхронизация каталога с Worker не настроена: добавьте CATALOG_SYNC_TOKEN и MODERATION_WORKER_URL в Secrets. Сайт продолжит использовать events.json."
