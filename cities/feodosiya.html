@@ -1111,12 +1111,24 @@ function applySettings(data, settings) {
 
 async function load() {
   try {
-    const [res, settingsRes, citiesRes] = await Promise.all([
-      fetch('events.json'),
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch('https://mestov-bot.kulakovakatalina.workers.dev/api/events');
+        if (!response.ok) throw new Error(`events API: ${response.status}`);
+        const data = await response.json();
+        if (!Array.isArray(data)) throw new Error('events API returned a non-array response');
+        return data;
+      } catch (_) {
+        const response = await fetch('events.json');
+        if (!response.ok) throw new Error(`events fallback: ${response.status}`);
+        return response.json();
+      }
+    };
+    const [data, settingsRes, citiesRes] = await Promise.all([
+      fetchEvents(),
       fetch('settings.json').catch(() => null),
       fetch('cities.json').catch(() => null)
     ]);
-    const data = await res.json();
     const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     if (citiesRes && citiesRes.ok) loadCities(await citiesRes.json().catch(() => []));
     const patched = applySettings(data, settings);
