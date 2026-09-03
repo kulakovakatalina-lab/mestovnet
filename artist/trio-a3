@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
+  <title>Трио «А3» — концерты в Крыму, Крым, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Трио «А3» в Крыму (Крым, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/trio-a3">
-  <meta property="og:title" content="Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
+  <meta property="og:title" content="Трио «А3» — концерты в Крыму, Крым, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Трио «А3» в Крыму (Крым, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Трио «А3»"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Трио «А3»",
+      "startDate": "2026-09-13",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Трио «А3»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "с. Доброе",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Особенный вечер в самом большом живом лабиринте Крыма: выступят трио «А3» и вокалистка Анна Шекель.",
+      "image": "/images/events/d894eb3617ae5bce587b402e8a10aa1a.jpg"
     }
   ]
 }
@@ -1000,9 +1020,9 @@ footer {
     </div>
     <h1 class="genre-hero-title">Трио «А3»</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь</span></div>
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

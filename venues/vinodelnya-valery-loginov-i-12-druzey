@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>винодельня «Valery Логинов и 12 друзей» — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в винодельня «Valery Логинов и 12 друзей», в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <title>Винодельня «Valery Логинов и 12 друзей» — афиша в Крыму · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Винодельня «Valery Логинов и 12 друзей», в Крыму. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/vinodelnya-valery-loginov-i-12-druzey">
-  <meta property="og:title" content="винодельня «Valery Логинов и 12 друзей» — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в винодельня «Valery Логинов и 12 друзей», в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Винодельня «Valery Логинов и 12 друзей» — афиша в Крыму · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Винодельня «Valery Логинов и 12 друзей», в Крыму. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "винодельня «Valery Логинов и 12 друзей»",
+      "name": "Винодельня «Valery Логинов и 12 друзей»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Крым",
@@ -41,20 +41,20 @@
       "startDate": "2026-09-12T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "винодельня «Valery Логинов и 12 друзей»"
+        "name": "Винодельня «Valery Логинов и 12 друзей»"
       },
-      "description": "Уникальный по атмосфере музыкальный вечер с Girls Jazz band — единственный женский джаз-бэнд на Юге России! В составе: Влада Ушакова — вокал, Наталия Белановская — саксофон, Ангелина Подгорная — фортепиано.",
+      "description": "Джаз-концерт в исполнении очаровательного трио музыкантов - резидентов джазовых клубов и участниц джаз фестивалей.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Girls Jazz band"
       },
-      "image": "/images/events/41b7e5733fa5c5ad4d4b838cf420b26b.jpg"
+      "image": "/images/events/0d86da76bda1d979373a527b8e6cd833.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "винодельня «Valery Логинов и 12 друзей»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Винодельня «Valery Логинов и 12 друзей»"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/all.html">Крым</a>
     </div>
-    <h1 class="genre-hero-title">винодельня «Valery Логинов и 12 друзей»</h1>
+    <h1 class="genre-hero-title">Винодельня «Valery Логинов и 12 друзей»</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["винодельня «Valery Логинов и 12 друзей»", "винодельня «Valery Логинов и 12 друзей»"];
+const VENUE_ALIASES = ["Винодельня «Valery Логинов и 12 друзей»", "Винодельня «Valery Логинов и 12 друзей»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

@@ -54,37 +54,38 @@
     ]
   },
   {
-    "id": "09a6f1c9",
-    "date": "2026-09-05",
+    "id": "f62be61c",
+    "date": "2026-09-04",
     "time": null,
-    "artist": "Серебряный век",
-    "venue": "Севастополь",
-    "source_city": "Крым",
-    "price": "1200–2900 ₽",
-    "genre": "поп",
+    "artist": "Willy, Вика, Дмитрий Карпов (Крыша Мира), Денис Чёрный (Metallica Tribute), Даша Чеховская (Велес)",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "метал",
     "event_type": "концерт",
-    "description": "Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства. Ахматова, Блок, Цветаева, Мандельштам, Вертинский и гастрономическое сопровождение от «Снежинки». Количество мест ограничено.",
-    "image": "/images/events/1ac652478e7e3129c83d824f0cf13ca4.jpg",
-    "source_url": "https://t.me/afisha_payberry/1623",
+    "description": "ГРУППА ГРАНЬ И ДРУЗЬЯ: лучшие хиты всех времён и народов + авторские песни.",
+    "image": "/images/events/99f55dba3ec33b66e77d0371ae78ee4a.jpg",
+    "source_url": "https://t.me/clubjam/1138",
     "reasons": [
       "нет времени"
     ]
   },
   {
-    "id": "6e5cd85e",
-    "date": "2026-09-13",
+    "id": "6f733891",
+    "date": "2026-09-12",
     "time": null,
-    "artist": "Трио «А3», вокалистка Анна Шекель",
-    "venue": "с. Доброе",
-    "source_city": "Крым",
-    "price": "1300–2000 ₽",
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Особенный вечер в самом большом живом лабиринте Крыма: выступят трио «А3» и вокалистка Анна Шекель.",
-    "image": "/images/events/614af2557436c4fef87b1a71a66f4b4e.jpg",
-    "source_url": "https://t.me/afisha_payberry/1625",
+    "artist": "Blackened",
+    "venue": "Крым Event",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "метал",
+    "event_type": "трибьют",
+    "description": "Концерт с трибьютом METALLICA.",
+    "image": null,
+    "source_url": "https://t.me/crimea_event/5631",
     "reasons": [
-      "нет времени"
+      "нет времени",
+      "нет постера"
     ]
   }
 ]

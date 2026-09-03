@@ -988,7 +988,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/7e11eb4bf6491ef94097976f966d8f85.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "800 - 2200",
+        "name": "800 - 1800",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

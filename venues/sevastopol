@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Серебряный век",
+      "startDate": "2026-09-05",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь"
+      },
+      "description": "Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства. Ахматова, Блок, Цветаева, Мандельштам, Вертинский и гастрономическое сопровождение от «Снежинки». Количество мест ограничено.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Серебряный век"
+      },
+      "image": "/images/events/abf5d6c4f593052770ae7b51d16ff4af.jpg"
     }
   ]
 }
@@ -1055,7 +1070,7 @@ footer {
 <div class="venue-address-block"><span class="venue-hero-address">Матросский бульвар, Севастополь</span></div>
 
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

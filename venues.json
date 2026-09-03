@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 39,
     "aliases": [
       "Jam Club"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 19,
+    "event_count": 20,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -490,6 +490,20 @@
     "lon": 34.150075
   },
   {
+    "slug": "gastrodvor",
+    "name": "Гастродвор",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Гастродвор"
+    ],
+    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
+    "desc_baseline_count": 2,
+    "lat": 44.494636,
+    "lon": 34.166005
+  },
+  {
     "slug": "dvorets-dyulber",
     "name": "Дворец «Дюльбер»",
     "city": "Севастополь",
@@ -664,20 +678,6 @@
     "desc_baseline_count": 1,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "gastrodvor",
-    "name": "Гастродвор",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Гастродвор"
-    ],
-    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
-    "desc_baseline_count": 2,
-    "lat": 44.494636,
-    "lon": 34.166005
   },
   {
     "slug": "otel-akvamarin",
@@ -946,6 +946,21 @@
     "event_count": 2,
     "aliases": [
       "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "yalta",
+    "name": "Ялта",
+    "city": "Ялта",
+    "address": "Пушкинская 2А",
+    "event_count": 2,
+    "aliases": [
+      "Ялта",
+      "Ялта, Пушкинская 2А"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1541,20 +1556,6 @@
     "lon": null
   },
   {
-    "slug": "yalta",
-    "name": "Ялта",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Ялта"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "terrasa-api-bistro",
     "name": "терраса Api Bistro",
     "city": "Севастополь",
@@ -1919,13 +1920,13 @@
     "lon": null
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
+    "slug": "vinodelnya-valery-loginov-i-12-druzey",
+    "name": "Винодельня «Valery Логинов и 12 друзей»",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Камелот"
+      "Винодельня «Valery Логинов и 12 друзей»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1933,13 +1934,13 @@
     "lon": null
   },
   {
-    "slug": "vinodelnya-valery-loginov-i-12-druzey",
-    "name": "винодельня «Valery Логинов и 12 друзей»",
+    "slug": "s-dobroe",
+    "name": "с. Доброе",
     "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "винодельня «Valery Логинов и 12 друзей»"
+      "с. Доброе"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1954,6 +1955,20 @@
     "event_count": 1,
     "aliases": [
       "клубный пляж Ласпи"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1982,20 +1997,6 @@
     "event_count": 1,
     "aliases": [
       "Концертный зал «Звёздный»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "s-dobroe",
-    "name": "с. Доброе",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "с. Доброе"
     ],
     "description": null,
     "desc_baseline_count": 0,
