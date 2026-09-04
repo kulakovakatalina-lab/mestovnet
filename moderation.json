@@ -20,7 +20,7 @@
     "id": "7b44fa9a",
     "date": "2026-10-09",
     "time": null,
-    "artist": "AC/DC",
+    "artist": "AC/DC tribute",
     "venue": "Крым Event",
     "source_city": "Симферополь",
     "price": "бесплатно",
@@ -57,13 +57,13 @@
     "id": "f62be61c",
     "date": "2026-09-04",
     "time": null,
-    "artist": "Willy, Вика, Дмитрий Карпов (Крыша Мира), Денис Чёрный (Metallica Tribute), Даша Чеховская (Велес)",
+    "artist": "Willy, Вика, Дмитрий Карпов (Крыша Мира), Денис Чёрный (Metallica Tribute), Даша Чеховская (Велес), Группа Грань, друзья",
     "venue": "Jam Club",
     "source_city": "Симферополь",
     "price": "бесплатно",
     "genre": "метал",
     "event_type": "концерт",
-    "description": "ГРУППА ГРАНЬ И ДРУЗЬЯ: лучшие хиты всех времён и народов + авторские песни.",
+    "description": "Группа 'Грань' подготовила мега-джем с участием крутых гостей. На протяжении их огромного 3-х часового концерта с ними выступят: Вилли из 'Rammlied', Вика из 'Rammlied', Денис из 'Blackened', Дима из 'Крыши Мира', Даша из 'Велес', Андрей из 'Велес' и секретный артист.",
     "image": "/images/events/99f55dba3ec33b66e77d0371ae78ee4a.jpg",
     "source_url": "https://t.me/clubjam/1138",
     "reasons": [
@@ -74,7 +74,7 @@
     "id": "6f733891",
     "date": "2026-09-12",
     "time": null,
-    "artist": "Blackened",
+    "artist": "METALLICA tribute by Blackened",
     "venue": "Крым Event",
     "source_city": "Симферополь",
     "price": "бесплатно",
@@ -86,6 +86,78 @@
     "reasons": [
       "нет времени",
       "нет постера"
+    ]
+  },
+  {
+    "id": "c989d0c9",
+    "date": "2026-09-05",
+    "time": null,
+    "artist": "The Lone Dark Side, Black Tears",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "метал",
+    "event_type": "фестиваль",
+    "description": "Первый осенний METAL FEST в клубе Jam. На сцене 2 разноплановые топ-команды The Lone Dark Side (Symphonic Death Metal, Севастополь) и Black Tears (Alternative Metal, Симферополь).",
+    "image": "/images/events/733d3891737796b4211cfe20ad767cd7.jpg",
+    "source_url": "https://t.me/clubjam/1139",
+    "reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "cdb20876",
+    "date": "2026-09-04",
+    "time": null,
+    "artist": "Игорь Симдянкин",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "source_city": "Севастополь",
+    "price": null,
+    "genre": "поп-рок",
+    "event_type": "концерт",
+    "description": "Любимые русские рок-поп хиты в исполнении харизматичного Игоря Симдянкина",
+    "image": null,
+    "source_url": "https://t.me/rocknroll_92/7250",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
+  },
+  {
+    "id": "ca62d682",
+    "date": "2026-09-05",
+    "time": null,
+    "artist": "Дима Резник",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "source_city": "Севастополь",
+    "price": null,
+    "genre": "поп-рок",
+    "event_type": "концерт",
+    "description": "Талантливый Дима Резник с русским рок-попом девяностых, нулевых и современными песнями",
+    "image": null,
+    "source_url": "https://t.me/rocknroll_92/7250",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
+  },
+  {
+    "id": "edd40e98",
+    "date": "2026-09-05",
+    "time": null,
+    "artist": "Снежинки",
+    "venue": "Севастополь",
+    "source_city": "Севастополь",
+    "price": "1200–2900 ₽",
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Вечер на стыке поэзии, музыки и театра. Серебряный век. Премьера в Севастополе: лекция-перфоманс со стихами, романсами и историей искусства. Ахматова, Блок, Цветаева, Мандельштам, Вертинский и гастрономическое сопровождение от «Снежинки». Количество мест ограничено.",
+    "image": "/images/events/d65835dc2ef4ad481377cd20e443192f.jpg",
+    "source_url": "https://t.me/afisha_payberry/1624",
+    "reasons": [
+      "нет времени"
     ]
   }
 ]

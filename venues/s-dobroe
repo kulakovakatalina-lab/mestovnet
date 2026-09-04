@@ -37,7 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Трио «А3», вокалистка Анна Шекель",
+      "name": "трио «А3», Анна Шекель",
       "startDate": "2026-09-13",
       "location": {
         "@type": "MusicVenue",
@@ -46,9 +46,9 @@
       "description": "Особенный вечер в самом большом живом лабиринте Крыма: выступят трио «А3» и вокалистка Анна Шекель.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Трио «А3», вокалистка Анна Шекель"
+        "name": "трио «А3», Анна Шекель"
       },
-      "image": "/images/events/d894eb3617ae5bce587b402e8a10aa1a.jpg"
+      "image": "/images/events/1ef4bac9e21e7d718d4fcb3e248eb413.jpg"
     }
   ]
 }

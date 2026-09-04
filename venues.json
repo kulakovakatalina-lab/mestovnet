@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 39,
+    "event_count": 40,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 33,
+    "event_count": 35,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 20,
+    "event_count": 22,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 17,
+    "event_count": 19,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -120,6 +120,21 @@
     "lon": null
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 12,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -136,21 +151,6 @@
     "desc_baseline_count": 12,
     "lat": 45.300091,
     "lon": 36.427239
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 11,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -738,6 +738,20 @@
     "lon": null
   },
   {
+    "slug": "p-nauchnyy-ul-nauchnaya-46",
+    "name": "п Научный, ул Научная, 46",
+    "city": "Научный",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "п Научный, ул Научная, 46"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "zvezdnyy",
     "name": "Звездный",
     "city": "Феодосия",
@@ -996,13 +1010,13 @@
     "lon": null
   },
   {
-    "slug": "p-nauchnyy-ul-nauchnaya-46",
-    "name": "п Научный, ул Научная, 46",
-    "city": "Научный",
+    "slug": "dlya-dushi-krym",
+    "name": "Для души | Крым",
+    "city": "Крым",
     "address": "",
     "event_count": 2,
     "aliases": [
-      "п Научный, ул Научная, 46"
+      "Для души | Крым"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1892,20 +1906,6 @@
     "lon": null
   },
   {
-    "slug": "dlya-dushi-krym",
-    "name": "Для души | Крым",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Для души | Крым"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "winepark",
     "name": "Winepark",
     "city": "Ялта",
@@ -1920,13 +1920,27 @@
     "lon": null
   },
   {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinodelnya-valery-loginov-i-12-druzey",
-    "name": "Винодельня «Valery Логинов и 12 друзей»",
+    "name": "винодельня «Valery Логинов и 12 друзей»",
     "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Винодельня «Valery Логинов и 12 друзей»"
+      "винодельня «Valery Логинов и 12 друзей»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1955,20 +1969,6 @@
     "event_count": 1,
     "aliases": [
       "клубный пляж Ласпи"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,

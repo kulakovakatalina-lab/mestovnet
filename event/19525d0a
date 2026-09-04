@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет">
 <meta property="og:description" content="Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/a307a1a2cb891c07172046f8fd830fd4.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/6c3fd5ddaedce1e9403d5fe80c61a7ab.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -980,12 +980,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "AC/DC tribute by Back 'n Storm",
+      "description": "AC/DC tribute by Back 'n Storm (Краснодар).",
       "performer": {
         "@type": "MusicGroup",
         "name": "Back 'n Storm"
       },
-      "image": "/images/events/a307a1a2cb891c07172046f8fd830fd4.jpg",
+      "image": "/images/events/6c3fd5ddaedce1e9403d5fe80c61a7ab.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
