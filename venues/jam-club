@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -52,6 +52,21 @@
     },
     {
       "@type": "MusicEvent",
+      "name": "The Lone Dark Side, Black Tears",
+      "startDate": "2026-09-05",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "Первый осенний METAL FEST в клубе Jam. На сцене 2 разноплановые топ-команды The Lone Dark Side (Symphonic Death Metal, Севастополь) и Black Tears (Alternative Metal, Симферополь).",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "The Lone Dark Side, Black Tears"
+      },
+      "image": "/images/events/687dfd9a69fa1f12926f4bf4be1b63eb.jpg"
+    },
+    {
+      "@type": "MusicEvent",
       "name": "Blackened",
       "startDate": "2026-09-12",
       "location": {
@@ -78,7 +93,7 @@
         "@type": "MusicGroup",
         "name": "Back 'n Storm"
       },
-      "image": "/images/events/6c3fd5ddaedce1e9403d5fe80c61a7ab.jpg"
+      "image": "/images/events/5051139bcd5b1cd777e1f862e4e2c508.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1114,7 +1129,7 @@ footer {
 
 <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">

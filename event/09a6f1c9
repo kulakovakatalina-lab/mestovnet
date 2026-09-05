@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Серебряный век, Севастополь, в Крыму, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Серебряный век, Севастополь, в Севастополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Серебряный век — Севастополь, Крым, 5 сентября · Местов.Нет</title>
+<title>Серебряный век — Севастополь, 5 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,10 +959,10 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/09a6f1c9">
-<meta property="og:title" content="Серебряный век — Севастополь, Крым, 5 сентября · Местов.Нет">
-<meta property="og:description" content="Серебряный век, Севастополь, в Крыму, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Серебряный век — Севастополь, 5 сентября · Местов.Нет">
+<meta property="og:description" content="Серебряный век, Севастополь, в Севастополе, 5 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/abf5d6c4f593052770ae7b51d16ff4af.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/d525b6d6a80a6a2d7cb986a84054cf50.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -976,7 +976,7 @@ a { color: inherit; text-decoration: none; }
         "name": "Севастополь",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Крым",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Серебряный век"
       },
-      "image": "/images/events/abf5d6c4f593052770ae7b51d16ff4af.jpg",
+      "image": "/images/events/d525b6d6a80a6a2d7cb986a84054cf50.jpg",
       "offers": {
         "@type": "Offer",
         "name": "1200–2900 ₽",
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Серебряный век"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Серебряный век"}]}
 </script>
 </head>
 <body>
