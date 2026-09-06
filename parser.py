@@ -1371,6 +1371,17 @@ def validate_events(events: list[dict]) -> tuple[list[dict], Counter]:
     return accepted, rejected
 
 
+def discard_past_events(events: list[dict], today=None) -> list[dict]:
+    """Отбрасывает вновь найденные события, которые уже завершились.
+
+    Архивные карточки из events.json сюда не передаются: они сохраняются при
+    объединении с результатами нового прохода. Так сайт хранит историю, но
+    парсер не создаёт новые карточки задним числом.
+    """
+    today = today or moscow_today()
+    return [event for event in events if (event.get("date") or "") >= today]
+
+
 def _print_validation_report(total: int, accepted: int, rejected: Counter) -> None:
     print(f"Финальная проверка: принято {accepted} из {total}")
     for reason, count in rejected.items():
@@ -2144,6 +2155,12 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     # Не фильтруем только по URL: один пост/страница может содержать
     # несколько дат. deduplicate_events склеит повторно полученные
     # карточки, но сохранит новые даты того же URL.
+    past_found = len(all_events)
+    all_events = discard_past_events(all_events)
+    past_found -= len(all_events)
+    if past_found:
+        print(f"Отброшено новых прошедших событий: {past_found}")
+
     merged_raw = existing + all_events
 
     before2 = len(merged_raw)

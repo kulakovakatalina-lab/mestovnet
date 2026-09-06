@@ -44,6 +44,16 @@ def test_final_validation_accepts_complete_music_event():
     assert not rejected
 
 
+def test_parser_discards_new_past_events_but_keeps_today():
+    events = [
+        _valid_event(date="2026-09-05"),
+        _valid_event(date="2026-09-06"),
+        _valid_event(date="2026-09-07"),
+    ]
+    result = parser_module.discard_past_events(events, today="2026-09-06")
+    assert [event["date"] for event in result] == ["2026-09-06", "2026-09-07"]
+
+
 @pytest.mark.parametrize(("change", "reason"), [
     ({"date": None}, "missing_date"),
     ({"date": "20.08.2026"}, "invalid_date"),
