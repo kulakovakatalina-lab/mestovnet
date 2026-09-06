@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>клубный пляж Ласпи — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в клубный пляж Ласпи, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в клубный пляж Ласпи, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/klubnyy-plyazh-laspi">
   <meta property="og:title" content="клубный пляж Ласпи — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в клубный пляж Ласпи, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в клубный пляж Ласпи, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "DJ-сеты",
-      "startDate": "2026-09-05",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "клубный пляж Ласпи"
-      },
-      "description": "Большая вечеринка на клубном пляже Ласпи: электронная музыка, мощные DJ-сеты и атмосфера до самого утра.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "DJ-сеты"
-      },
-      "image": "/images/events/5a5b847093c91cf31e87de7e444dcd8f.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

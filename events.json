@@ -1343,7 +1343,8 @@
     "image": "/images/events/a7bfea7a532afb2f87056ab106017b1d.jpg",
     "post_date": "2026-08-22T04:35:03.314079+00:00",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "15bf75c9",
@@ -1352,10 +1353,10 @@
     "artist": "Шансон-парад",
     "event_type": "концерт",
     "venue": "Театр им. А. П. Чехова",
-    "price": "от 1 500 ₽",
-    "description": "Шоу самого народного жанра! Мастера авторской песни и звёзды эстрады выступят на одной сцене!\n\nАфина со своими хитами от Радио Шансон и Ирина Шведова, только что закончившая выступление в программе НТВ «Суперстар! Битва сезонов!» с новыми хитами.\n\nВладимир Черняков удивит зрителей новым в жанре, но и, конечно, споёт свои хиты.\n\nТак же зрители услышат ещё много интересного. В исполнении Анатолия Полотно и Феди Карманова прозвучат фирменные песни, получившие народное признание «Поцелуй меня, удача» и «Денежки», которые зал будет петь вместе с артистами.\n\nСолист группы «Новая Русь» Александр Грауль исполнением песни «Златоглавая Русь» объединит и воодушевит зрителей, и соберёт овации зала.\n\nА Михаил Борисов (экс-солист гр. «Бутырка») и Елена Бакурова исполнят свои новые песни.\n\n«Шансон-парад» — это больше, чем просто концерт. Это встреча старых друзей, море любимых песен и неповторимая атмосфера, где царит дух настоящего шансона.\n\nТрадиционный праздник песни ждёт вас на концерте «Шансон-парад»!",
+    "price": "1500 - 5000",
+    "description": "Концерт «Шансон Парад» — концерт в Театр им. А. П. Чехова, Ялта.",
     "source_city": "Ялта",
-    "source_channel": "yandex_afisha",
+    "source_channel": "afisha_goroda",
     "genre": "фолк",
     "source_url": "https://afisha.yandex.ru/yalta/concert/shanson-parad-2026-09-06?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
@@ -1363,7 +1364,7 @@
       "/images/events/d00a0985fd1dedb0d141f83470d632bd.jpg"
     ],
     "image": "/images/events/8d8fb493adb505ad23d6622ee419de8a.jpg",
-    "post_date": "2026-09-06",
+    "post_date": "2026-09-06T05:46:21.744447+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -10396,7 +10397,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-09-05T05:29:02.734938+00:00",
+    "post_date": "2026-09-06T05:46:07.025284+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10611,7 +10612,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-09-05T05:29:02.734971+00:00",
+    "post_date": "2026-09-06T05:46:07.025311+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10799,7 +10800,7 @@
       "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     ],
     "image": "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg",
-    "post_date": "2026-09-05T05:29:02.734905+00:00",
+    "post_date": "2026-09-06T05:46:07.025228+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10948,7 +10949,7 @@
     "source_url": "https://t.me/clubjam/1116",
     "images": [
       "/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg",
-      "/images/events/0aff7be0178472123d60694d8cf61f27.jpg"
+      "/images/events/f24aa200b7aba8fae1b3eed26dff82d0.jpg"
     ],
     "image": "/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg",
     "post_date": "2026-08-24T11:16:43+00:00",
@@ -11046,7 +11047,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-09-05T05:29:02.734696+00:00",
+    "post_date": "2026-09-06T05:46:07.025080+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11219,7 +11220,7 @@
       "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
     ],
     "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
-    "post_date": "2026-09-05T05:29:02.735098+00:00",
+    "post_date": "2026-09-06T05:46:07.025414+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11269,7 +11270,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-09-05T05:29:02.735188+00:00",
+    "post_date": "2026-09-06T05:46:07.025487+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11400,7 +11401,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "2669fd631f80ea896d182cccceec93ee1a85efec42e30ebeb5587e6e458ba7e7"
   },
   {
     "id": "c42060a4",
@@ -11419,7 +11425,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-09-05T05:29:02.735003+00:00",
+    "post_date": "2026-09-06T05:46:07.025337+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11447,7 +11453,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-09-05T05:29:02.735129+00:00",
+    "post_date": "2026-09-06T05:46:07.025439+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11499,12 +11505,13 @@
     "image": null,
     "post_date": "2026-09-03T12:40:02+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-04",
@@ -11552,7 +11559,13 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "526b380e45e68b5b418e7eee767cfc74e70e266dc70cfbb9b712874c79f74c79"
   },
   {
     "date": "2026-09-03",
@@ -11619,7 +11632,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "d48be019abfd2cb6cf9d7f96a62b4c2f519be5808b01d2c36832bef546eb9c65"
   },
   {
     "id": "29db4e3a",
@@ -11635,41 +11653,14 @@
     "genre": "классика",
     "source_url": "https://t.me/artcafesnezhinka/1991",
     "images": [
-      "/images/events/1035413c21c8610df88237bb71e7da02.jpg"
+      "/images/events/1035413c21c8610df88237bb71e7da02.jpg",
+      "/images/events/efc301797caaa092859e6623dd14045a.jpg"
     ],
     "image": "/images/events/1035413c21c8610df88237bb71e7da02.jpg",
     "post_date": "2026-09-04T17:08:43+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
-  },
-  {
-    "date": "2026-10-09",
-    "time": null,
-    "artist": "Back 'n Storm",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "AC/DC tribute by Back 'n Storm (Краснодар).",
-    "image": "/images/events/5051139bcd5b1cd777e1f862e4e2c508.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-08-27T17:37:37+00:00",
-    "source_url": "https://t.me/clubjam/1131",
-    "id": "19525d0a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
   },
   {
     "date": "2026-09-05",
@@ -11697,7 +11688,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "e92aa8f3d3055627745da8afa25c6059bfb80443ecf59d9054a1640ee4177026"
   },
   {
     "date": "2026-09-05",
@@ -11731,36 +11727,12 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-12",
-    "time": "18:00",
-    "artist": "Girls Jazz band",
-    "event_type": "концерт",
-    "venue": "винодельня «Valery Логинов и 12 друзей»",
-    "price": null,
-    "description": "Джаз-концерт в исполнении очаровательного трио музыкантов - резидентов джазовых клубов и участниц джаз фестивалей.",
-    "image": "/images/events/003db57877cbb1ad0c12aa0bfa99f439.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Крым",
-    "post_date": "2026-08-24T12:32:41+00:00",
-    "source_url": "https://t.me/skazhitejazz/1580",
-    "id": "d25216c6",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_decision_fingerprint": "2e26f0d6b230bde767261955ea29665eee5f8c873c01ee1479eb7adf16a3860b"
   },
   {
     "id": "09a6f1c9",
@@ -11792,195 +11764,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "6e5cd85e",
-    "date": "2026-09-13",
-    "time": null,
-    "artist": "трио «А3», вокалистка Анна Шекель",
-    "event_type": "концерт",
-    "venue": "с. Доброе",
-    "price": "1300–2000 ₽",
-    "description": "Особенный вечер в самом большом живом лабиринте Крыма: выступят трио «А3» и вокалистка Анна Шекель.",
-    "source_city": "Крым",
-    "source_channel": "afisha_payberry",
-    "genre": "поп",
-    "source_url": "https://t.me/afisha_payberry/1625",
-    "images": [
-      "/images/events/d54ed13e11977e7ffa3b43d8068967bf.jpg",
-      "/images/events/977d89e8d38295995972cc2d6cc64fd3.jpg"
-    ],
-    "image": "/images/events/d54ed13e11977e7ffa3b43d8068967bf.jpg",
-    "post_date": "2026-09-01T13:45:05+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-04",
-    "time": "19:00",
-    "artist": "Йорш",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1600 ₽",
-    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-05T05:29:02.735035+00:00",
-    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
-    "genre": "рок",
-    "id": "4993369e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-27",
-    "time": "18:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "venue": "Концертный зал «Юбилейный»",
-    "event_type": "концерт",
-    "price": "1000 - 3500",
-    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Юбилейный», Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-09-05T05:29:18.018948+00:00",
-    "image": "/images/events/d76177e94c8032954c805e6857bc907f.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/anjelina-mali-i-dzedze-2026",
-    "id": "25d5326d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "2292accf",
-    "date": "2026-09-09",
-    "time": "19:00",
-    "artist": "Кубанский казачий хор. Русь от края до края",
-    "event_type": "концерт",
-    "venue": "Дом культуры «Корабел»",
-    "price": "800 - 1800",
-    "description": "Кубанский казачий хор. Русь от края до края — концерт в Дом культуры «Корабел», Керчь.",
-    "source_city": "Керчь",
-    "source_channel": "afisha_goroda",
-    "genre": "поп",
-    "source_url": "https://kerch.afishagoroda.ru/events/kubanskii-kazacii-xor-rus-ot-kraia-do-kraia-2",
-    "images": [
-      "/images/events/7e11eb4bf6491ef94097976f966d8f85.jpg",
-      "/images/events/6b9194afeabb14a56bf5269d90c0bf1f.jpg"
-    ],
-    "image": "/images/events/7e11eb4bf6491ef94097976f966d8f85.jpg",
-    "post_date": "2026-09-05T05:29:18.019014+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом культуры «Корабел»",
-    "event_type": "концерт",
-    "price": "2000 - 3500",
-    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-09-05T05:29:18.019040+00:00",
-    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
-    "id": "7ee9b24f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-13",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1500 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-09-05T05:29:18.019066+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "71ede2ea",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-28",
-    "time": "18:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "venue": "Концертный зал «Звёздный»",
-    "event_type": "концерт",
-    "price": "2000 - 3000",
-    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Звёздный», Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-09-05T05:29:18.019092+00:00",
-    "image": "/images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/anjelina-mali-i-dzedze-1",
-    "id": "37c38ac8",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-05T05:29:26.473403+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_decision_fingerprint": "1c75bb68d02dd13b990a5fbfb8b6f9410fd625541949a212c653371381bb406c"
   },
   {
     "date": "2026-09-04",
@@ -12033,25 +11822,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2026-09-11",
-    "time": "18:00",
-    "artist": "Итальянская вечеринка 2.0",
-    "event_type": "вечеринка",
-    "venue": "Усадьба «Родное гнездо»",
-    "price": "6000 ₽/гость",
-    "description": "Обновлённое итальянское меню от Павла Галича, слепая дегустация вин с Владимиром Комоловым, приготовление пиццы в дровяной печи, конкурсы и призы от Усадьбы «Родное гнездо».",
-    "image": "/images/events/1d30ff9ec0bc8545a8e90f8aa4ecd8b2.jpg",
-    "images": null,
-    "source_channel": "rodnoegnezdo",
-    "source_city": "Севастополь",
-    "post_date": "2026-08-28T12:48:52+00:00",
-    "source_url": "https://vk.com/wall-211995271_1211",
-    "id": "feb36338",
-    "genre": "другое",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
     "date": "2026-08-29",
     "time": "18:00",
     "artist": "Елена Голофеева, Виктор Никулин, Максим Перов, Руслан Сейдалиев",
@@ -12070,5 +11840,371 @@
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "archived"
+  },
+  {
+    "date": "2026-10-09",
+    "time": null,
+    "artist": "Back 'n Storm",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "AC/DC tribute by Back 'n Storm (Краснодар).",
+    "image": "/images/events/5a0eea5b5871db8c96914cfaf419b46f.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-08-27T17:37:37+00:00",
+    "source_url": "https://t.me/clubjam/1131",
+    "id": "19525d0a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-12",
+    "time": "18:00",
+    "artist": "Girls Jazz band",
+    "event_type": "концерт",
+    "venue": "винодельня «Valery Логинов и 12 друзей»",
+    "price": null,
+    "description": "Уникальный по атмосфере музыкальный вечер с Girls Jazz band — единственный женский джаз-бэнд на Юге России! В составе: Влада Ушакова — вокал, Наталия Белановская — саксофон, Ангелина Подгорная — фортепиано.",
+    "image": "/images/events/6a5f2bcb42b309fab9460345db207ab3.jpg",
+    "images": null,
+    "source_channel": "skazhitejazz",
+    "source_city": "Крым",
+    "post_date": "2026-08-24T12:32:41+00:00",
+    "source_url": "https://t.me/skazhitejazz/1580",
+    "id": "d25216c6",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "6e5cd85e",
+    "date": "2026-09-13",
+    "time": null,
+    "artist": "трио «А3», вокалистка Анна Шекель",
+    "event_type": "концерт",
+    "venue": "с. Доброе",
+    "price": "1300–2000 ₽",
+    "description": "Особенный вечер в самом большом живом лабиринте Крыма: выступят трио «А3» и вокалистка Анна Шекель.",
+    "source_city": "Крым",
+    "source_channel": "afisha_payberry",
+    "genre": "поп",
+    "source_url": "https://t.me/afisha_payberry/1625",
+    "images": [
+      "/images/events/2529d225c02444fa4ed46cd1da7efde6.jpg",
+      "/images/events/977d89e8d38295995972cc2d6cc64fd3.jpg"
+    ],
+    "image": "/images/events/2529d225c02444fa4ed46cd1da7efde6.jpg",
+    "post_date": "2026-09-01T13:45:05+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-11",
+    "time": "18:00",
+    "artist": "Итальянская вечеринка 2.0",
+    "event_type": "вечеринка",
+    "venue": "Усадьба «Родное гнездо»",
+    "price": "6000 ₽/гость",
+    "description": "Обновлённое итальянское меню от Павла Галича, слепая дегустация вин с Владимиром Комоловым, приготовление пиццы в дровяной печи, конкурсы и призы от Усадьбы «Родное гнездо».",
+    "image": "/images/events/1d30ff9ec0bc8545a8e90f8aa4ecd8b2.jpg",
+    "images": null,
+    "source_channel": "rodnoegnezdo",
+    "source_city": "Севастополь",
+    "post_date": "2026-08-28T12:48:52+00:00",
+    "source_url": "https://vk.com/wall-211995271_1211",
+    "id": "feb36338",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "другое",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "19:00",
+    "artist": "Йорш",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1600 ₽",
+    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-09-06T05:46:07.025363+00:00",
+    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
+    "genre": "рок",
+    "id": "4993369e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-27",
+    "time": "18:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Концертный зал «Юбилейный»",
+    "event_type": "концерт",
+    "price": "1000 - 3500",
+    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Юбилейный», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-09-06T05:46:21.744566+00:00",
+    "image": "/images/events/d76177e94c8032954c805e6857bc907f.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/anjelina-mali-i-dzedze-2026",
+    "id": "25d5326d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "2292accf",
+    "date": "2026-09-09",
+    "time": "19:00",
+    "artist": "Кубанский казачий хор. Русь от края до края",
+    "event_type": "концерт",
+    "venue": "Дом культуры «Корабел»",
+    "price": "800 - 1800",
+    "description": "Кубанский казачий хор. Русь от края до края — концерт в Дом культуры «Корабел», Керчь.",
+    "source_city": "Керчь",
+    "source_channel": "afisha_goroda",
+    "genre": "поп",
+    "source_url": "https://kerch.afishagoroda.ru/events/kubanskii-kazacii-xor-rus-ot-kraia-do-kraia-2",
+    "images": [
+      "/images/events/7e11eb4bf6491ef94097976f966d8f85.jpg",
+      "/images/events/4855e68c8795bbd0f2cc4e6657d515ec.jpg"
+    ],
+    "image": "/images/events/7e11eb4bf6491ef94097976f966d8f85.jpg",
+    "post_date": "2026-09-06T05:46:21.744621+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом культуры «Корабел»",
+    "event_type": "концерт",
+    "price": "2000 - 3500",
+    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-09-06T05:46:21.744668+00:00",
+    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
+    "id": "7ee9b24f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-13",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "2000 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-09-06T05:46:21.744698+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "71ede2ea",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-28",
+    "time": "18:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Концертный зал «Звёздный»",
+    "event_type": "концерт",
+    "price": "2000 - 3000",
+    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Звёздный», Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-09-06T05:46:21.744719+00:00",
+    "image": "/images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/anjelina-mali-i-dzedze-1",
+    "id": "37c38ac8",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-06T05:46:33.590209+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "f40aa4df",
+    "date": "2026-09-13",
+    "time": "19:00",
+    "artist": "Марина Катамадзе",
+    "event_type": "другое",
+    "venue": "Арт-пространство 'Глубина'",
+    "price": null,
+    "description": "Показ пластического спектакля 'Безликая' Марины Катамадзе.",
+    "source_city": "Севастополь",
+    "source_channel": "dlyadushi_crimea",
+    "genre": null,
+    "source_url": "https://t.me/dlyadushi_Crimea/6557",
+    "images": [
+      "/images/events/26cd31fbed9237cda557d852ae3233a3.jpg",
+      "/images/events/d1fdcf186b2ff510d9e573389a95dc80.jpg"
+    ],
+    "image": "/images/events/26cd31fbed9237cda557d852ae3233a3.jpg",
+    "post_date": "2026-09-05T17:50:24+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-09",
+    "time": null,
+    "artist": "Известные артисты, начинающие исполнители",
+    "event_type": "концерт",
+    "venue": "ТАВРИДА.АРТ",
+    "price": null,
+    "description": "Гала-концерт второго сезона Всероссийского культурно-просветительского проекта «Голос поэта». Известные артисты и начинающие исполнители представят стихотворения русских поэтов в новых музыкальных аранжировках.",
+    "image": "/images/events/2997bc58d73e28f163ec829204996a69.jpg",
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-09-04T09:00:07+00:00",
+    "source_url": "https://t.me/tavrida_art/21986",
+    "id": "80b6a7e6",
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "date": "2026-09-05",
+    "time": null,
+    "artist": "Олена Уутай",
+    "event_type": "концерт",
+    "venue": "ТАВРИДА.АРТ",
+    "price": null,
+    "description": "Этно-музыкант Олена Уутай приехала в город с концертной программой.",
+    "image": "/images/events/d9a58bccc5c1e1546dff40e2d4f9e03b.jpg",
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-09-05T11:01:01+00:00",
+    "source_url": "https://t.me/tavrida_art/21989",
+    "id": "0bb9eda1",
+    "genre": "этно",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-09-09",
+    "time": "18:00",
+    "artist": "Голос поэта",
+    "event_type": "концерт",
+    "venue": "Национальный центр «Россия»",
+    "price": null,
+    "description": "Гала-концерт второго сезона Всероссийского культурно-просветительского проекта «Голос поэта». Известные артисты и начинающие исполнители представят стихотворения русских поэтов в новых музыкальных аранжировках.",
+    "image": null,
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-09-04T09:01:43+00:00",
+    "source_url": "https://vk.com/wall-89840945_119703",
+    "id": "e462a8b3",
+    "artist_is_generic": false,
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
   }
 ]

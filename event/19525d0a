@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет">
 <meta property="og:description" content="Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/5051139bcd5b1cd777e1f862e4e2c508.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/5a0eea5b5871db8c96914cfaf419b46f.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -985,7 +985,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Back 'n Storm"
       },
-      "image": "/images/events/5051139bcd5b1cd777e1f862e4e2c508.jpg",
+      "image": "/images/events/5a0eea5b5871db8c96914cfaf419b46f.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

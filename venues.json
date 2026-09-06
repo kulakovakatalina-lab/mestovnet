@@ -205,6 +205,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "rok-n-rolschiki",
     "name": "Рок-н-рольщики",
     "city": "Симферополь",
@@ -247,20 +261,6 @@
     "desc_baseline_count": 8,
     "lat": 44.938155,
     "lon": 34.09338
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 8,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "art-kovcheg",
@@ -2011,6 +2011,34 @@
     "event_count": 1,
     "aliases": [
       "Концертный зал «Звёздный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "art-prostranstvo-glubina",
+    "name": "Арт-пространство 'Глубина'",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Арт-пространство 'Глубина'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "natsionalnyy-tsentr-rossiya",
+    "name": "Национальный центр «Россия»",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Национальный центр «Россия»"
     ],
     "description": null,
     "desc_baseline_count": 0,
