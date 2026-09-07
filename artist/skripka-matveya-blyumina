@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
+  <title>скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/skripka-matveya-blyumina">
-  <meta property="og:title" content="Скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:title" content="скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,32 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Скрипка Матвея Блюмина"
+      "name": "скрипка Матвея Блюмина"
     },
     {
       "@type": "MusicEvent",
-      "name": "Скрипка Матвея Блюмина",
-      "startDate": "2026-09-06T19:00:00+03:00",
+      "name": "скрипка Матвея Блюмина",
+      "startDate": "2026-09-12T15:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Скрипка Матвея Блюмина"
+        "name": "скрипка Матвея Блюмина"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка», Большая Морская, 19",
+        "name": "Арт-кафе «Снежинка»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Французский музыкальный вечер в «Снежинке». В программе — легендарные французские мелодии Эдит Пиаф, Шарля Азнавура, Ива Монтана, Мирей Матье и Джо Дассена, а также современные хиты — Voilà, Je veux и другие. Особое место в программе займёт скрипка Матвея Блюмина: от нежных французских мотивов до виртуозной классики Паганини, Монти и Брамса.",
-      "image": "/images/events/1035413c21c8610df88237bb71e7da02.jpg"
+      "description": "Сиеста на винодельне Акчурина. Заключительное событие Итальянской трилогии."
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Скрипка Матвея Блюмина"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "скрипка Матвея Блюмина"}]}
 </script>
   <style>
 
@@ -1018,7 +1017,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Скрипка Матвея Блюмина</h1>
+    <h1 class="genre-hero-title">скрипка Матвея Блюмина</h1>
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
@@ -1040,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Скрипка Матвея Блюмина", "скрипка Матвея Блюмина", "Скрипка Матвея Блюмина"];
+const ARTIST_ALIASES = ["Скрипка Матвея Блюмина", "скрипка Матвея Блюмина", "скрипка Матвея Блюмина"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

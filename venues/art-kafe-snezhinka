@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,6 +33,62 @@
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Лючия Ротару, Антон Хромченко",
+      "startDate": "2026-09-11T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Музыкальный проект скрипача Антона Хромченко и ведущей Лючии Ротару. В программе — классика, мюзиклы, джаз и рок прошлого и нынешнего столетия.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Лючия Ротару, Антон Хромченко"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "скрипка Матвея Блюмина, DJ-сет Яны Кучерявой, саксофон Ивана Сычева",
+      "startDate": "2026-09-12T15:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Сиеста на винодельне Акчурина. Заключительное событие Итальянской трилогии.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "скрипка Матвея Блюмина, DJ-сет Яны Кучерявой, саксофон Ивана Сычева"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Джаз-трио А3",
+      "startDate": "2026-09-12T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "От неоклассики до сердца джаза. Три Андрея — один музыкальный вечер.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Джаз-трио А3"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анжелики Варум, Трибьют Леонида Агутина",
+      "startDate": "2026-09-13T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Песни Леонида Агутина и Анжелики Варум.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анжелики Варум, Трибьют Леонида Агутина"
       }
     }
   ]
@@ -1054,7 +1110,7 @@ footer {
 
 
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

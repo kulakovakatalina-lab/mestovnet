@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кубанский казачий хор — концерты в Крыму, Керчь, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Кубанский казачий хор в Крыму (Керчь, Севастополь, Ялта). 3 ближайших событий.">
+  <meta name="description" content="Расписание концертов Кубанский казачий хор в Крыму (Керчь, Севастополь, Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/kubanskiy-kazachiy-hor">
   <meta property="og:title" content="Кубанский казачий хор — концерты в Крыму, Керчь, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Кубанский казачий хор в Крыму (Керчь, Севастополь, Ялта). 3 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Кубанский казачий хор в Крыму (Керчь, Севастополь, Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Кубанский казачий хор"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Кубанский казачий хор",
-      "startDate": "2026-09-06T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Кубанский казачий хор"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Кубанский казачий хор. Русь от края до края — концерт в Концертный зал «Юбилейный», Ялта.",
-      "image": "/images/events/a97cd76724082f57da1840f49628d5c1.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1062,7 +1042,7 @@ footer {
 <p class="venue-description">Старейший и самый известный казачий хор России. В августе — большой крымский тур с духовно-патриотической программой «Русь от края до края!» к 214-му дню рождения коллектива: Ялта, Феодосия, Севастополь, Керчь.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Керчь, Севастополь, Ялта, Феодосия</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
