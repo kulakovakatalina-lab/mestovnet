@@ -20,6 +20,7 @@ load_dotenv(override=False)
 
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "events.json"
+EXCLUDED_VENUES_FILE = "excluded_venues.json"
 DAYS_BACK = 2
 # Точечная перепроверка старых анонсов не должна превращать обычный запуск
 # парсера в полный обход архива. Проверяем только ограниченное число публичных
@@ -1325,7 +1326,39 @@ _VALIDATION_LABELS = {
     "non_music": "не музыкальное событие",
     "unknown_city": "город отсутствует в справочнике",
     "missing_source": "нет ссылки на источник",
+    "excluded_venue": "заведение исключено (вне Крыма)",
 }
+
+
+def load_excluded_venue_keys(path: "str | None" = None) -> set[str]:
+    """Загружает точный стоп-лист площадок, которые находятся вне Крыма.
+
+    В списке хранятся исходные названия и их варианты; сопоставление идёт по
+    нормализованному названию площадки, без частичных совпадений.
+    """
+    path = path or EXCLUDED_VENUES_FILE
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return set()
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"⚠️  Не удалось прочитать стоп-лист заведений {path}: {exc}")
+        return set()
+
+    entries = data.get("venues", []) if isinstance(data, dict) else data
+    keys = set()
+    for entry in entries:
+        names = [entry] if isinstance(entry, str) else [
+            entry.get("name"), *(entry.get("aliases") or [])
+        ] if isinstance(entry, dict) else []
+        keys.update(_normalize_venue(name) for name in names if name)
+    return keys
+
+
+def _is_excluded_venue(event: dict) -> bool:
+    venue_key = _normalize_venue(event.get("venue") or "")
+    return bool(venue_key and venue_key in load_excluded_venue_keys())
 
 
 def _event_validation_reason(event: dict) -> "str | None":
@@ -1343,6 +1376,8 @@ def _event_validation_reason(event: dict) -> "str | None":
         return "artist_too_long"
     if _is_refusal_event(event):
         return "non_music"
+    if _is_excluded_venue(event):
+        return "excluded_venue"
     if _canon_city(event.get("source_city")) is None:
         return "unknown_city"
     if not (event.get("source_url") or "").strip():

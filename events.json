@@ -11956,35 +11956,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-09-12",
-    "time": "18:00",
-    "artist": "Girls Jazz band",
-    "event_type": "концерт",
-    "venue": "винодельня «Valery Логинов и 12 друзей»",
-    "price": null,
-    "description": "Джаз-концерт в исполнении очаровательного трио музыкантов - резидентов джазовых клубов и участниц джаз фестивалей.",
-    "image": "/images/events/e571f581d903957c312ebb74abc6e0d3.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Крым",
-    "post_date": "2026-08-24T12:32:41+00:00",
-    "source_url": "https://t.me/skazhitejazz/1580",
-    "id": "d25216c6",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-07T05:56:37.041527+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-09-09",
     "time": "18:00",
     "artist": "Голос поэта",

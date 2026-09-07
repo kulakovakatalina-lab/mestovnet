@@ -45,6 +45,22 @@ def test_final_validation_accepts_complete_music_event():
 
 
 def test_parser_discards_new_past_events_but_keeps_today():
+def test_final_validation_rejects_venue_from_stop_list(tmp_path, monkeypatch):
+    stop_list = tmp_path / "excluded_venues.json"
+    stop_list.write_text(
+        '{"venues": [{"name": "Винодельня за пределами Крыма"}]}',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(parser_module, "EXCLUDED_VENUES_FILE", str(stop_list))
+
+    events, rejected = validate_events([
+        _valid_event(venue="Винодельня за пределами Крыма")
+    ])
+
+    assert not events
+    assert rejected == {"excluded_venue": 1}
+
+
     events = [
         _valid_event(date="2026-09-05"),
         _valid_event(date="2026-09-06"),
