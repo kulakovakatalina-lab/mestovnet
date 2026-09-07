@@ -44,7 +44,6 @@ def test_final_validation_accepts_complete_music_event():
     assert not rejected
 
 
-def test_parser_discards_new_past_events_but_keeps_today():
 def test_final_validation_rejects_venue_from_stop_list(tmp_path, monkeypatch):
     stop_list = tmp_path / "excluded_venues.json"
     stop_list.write_text(
@@ -61,6 +60,7 @@ def test_final_validation_rejects_venue_from_stop_list(tmp_path, monkeypatch):
     assert rejected == {"excluded_venue": 1}
 
 
+def test_parser_discards_new_past_events_but_keeps_today():
     events = [
         _valid_event(date="2026-09-05"),
         _valid_event(date="2026-09-06"),
