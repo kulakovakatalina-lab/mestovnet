@@ -908,7 +908,32 @@ footer {
     },
     {
       "@type": "MusicEvent",
-      "name": "Back 'n Storm",
+      "name": "Анжелики Варум, Трибьют Леонида Агутина",
+      "startDate": "2026-09-13T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Песни Леонида Агутина и Анжелики Варум.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анжелики Варум, Трибьют Леонида Агутина"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "800–1100 ₽",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "AC/DC tribute by Back 'n Storm",
       "startDate": "2026-10-09",
       "location": {
         "@type": "MusicVenue",
@@ -919,12 +944,38 @@ footer {
           "addressCountry": "RU"
         }
       },
-      "description": "AC/DC tribute by Back 'n Storm.",
+      "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Вход для подписчиков бесплатный.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Back 'n Storm"
+        "name": "AC/DC tribute by Back 'n Storm"
       },
-      "image": "/images/events/b7c7e65704d1c477135415840b70e644.jpg",
+      "image": "/images/events/fba452d0f2a19212d2671d1c8f32ba69.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'",
+      "startDate": "2026-09-11T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Концерт, посвященный Red Hot Chili Peppers, в исполнении группы 'Хабанеро'. Вход бесплатный.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'"
+      },
+      "image": "/images/events/8918a5379200be5a0a59b292c8855be6.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -953,7 +1004,7 @@ footer {
       "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 1720 ₽",
+        "name": "от 1990 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -980,57 +1031,6 @@ footer {
       "offers": {
         "@type": "Offer",
         "name": "от 1600 ₽",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Хабанеро",
-      "startDate": "2026-09-11T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Хабанеро"
-      },
-      "image": "/images/events/63ebe3fa11f15555021ec5f778d9839c.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анжелики Варум, Трибьют Леонида Агутина",
-      "startDate": "2026-09-13T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Песни Леонида Агутина и Анжелики Варум.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анжелики Варум, Трибьют Леонида Агутина"
-      },
-      "offers": {
-        "@type": "Offer",
-        "name": "800–1100 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -1438,14 +1438,14 @@ document.addEventListener('keydown', e => {
 </script>
 <!--seo-content-->
 <div id="seo-content" style="display:none">
-<div class="date-group"><h2>8 сентября, пн</h2>
+<div class="date-group"><h2><span class="today-badge">Сегодня</span>8 сентября, пн</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Хиты 2000-х. Караоке с оркестром</div><div class="card-venue">ДК профсоюзов<span class="city">· Симферополь</span></div><div class="card-description">О концерте Мы знаем как вы любите петь !
 Представьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.
 На сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.
-Пойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1720 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" alt="Хиты 2000-х. Караоке с оркестром" loading="lazy" onerror="this.remove()"></div></div>
+Пойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1990 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg" alt="Хиты 2000-х. Караоке с оркестром" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>11 сентября, чт</h2>
-<div class="card" onclick="window.open('https://t.me/clubjam/1143','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Хабанеро</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Red Hot Chili Peppers Tribute от группы &#x27;Хабанеро&#x27;.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1143" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/63ebe3fa11f15555021ec5f778d9839c.jpg" alt="Хабанеро" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/clubjam/1143','_blank')"><div class="card-inner"><div class="card-time">18:00</div><div class="card-body"><div class="card-artist">Red Hot Chili Peppers Tribute от группы &#x27;Хабанеро&#x27;</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Концерт, посвященный Red Hot Chili Peppers, в исполнении группы &#x27;Хабанеро&#x27;. Вход бесплатный.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1143" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/8918a5379200be5a0a59b292c8855be6.jpg" alt="Red Hot Chili Peppers Tribute от группы &#x27;Хабанеро&#x27;" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>12 сентября, пт</h2>
 <div class="card" onclick="window.open('https://t.me/clubjam/1116','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Blackened</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">METALLICA TRIBUTE. 3 часа любимых хитов и много нового материала Металлики от лучшего трибьюта в Крыму!</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">метал</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1116" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/d0d7b65a89d2eb93dbe98ea423eafc5c.jpg" alt="Blackened" loading="lazy" onerror="this.remove()"></div></div>
@@ -1466,7 +1466,7 @@ document.addEventListener('keydown', e => {
 Приготовьтесь к самому яркому событию этого года.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 2500 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/tri-dnya-dozhdya-6024831/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg" alt="Три дня дождя" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>9 октября, чт</h2>
-<div class="card" onclick="window.open('https://t.me/clubjam/1131','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">Back &#x27;n Storm</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">AC/DC tribute by Back &#x27;n Storm.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1131" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/b7c7e65704d1c477135415840b70e644.jpg" alt="Back &#x27;n Storm" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card" onclick="window.open('https://t.me/clubjam/1131','_blank')"><div class="card-inner"><div class="card-time no-time">—</div><div class="card-body"><div class="card-artist">AC/DC tribute by Back &#x27;n Storm</div><div class="card-venue">Jam Club<span class="city">· Симферополь</span></div><div class="card-description">Концерт AC/DC в исполнении группы Back &#x27;n Storm. Вход для подписчиков бесплатный.</div><div class="card-footer"><span class="tag type">трибьют</span><span class="tag genre">рок</span><span class="tag free">бесплатно</span></div><div class="card-source"><a class="src-link" href="https://t.me/clubjam/1131" target="_blank" rel="noopener">@clubjam</a></div></div><img class="card-thumb" src="/images/events/fba452d0f2a19212d2671d1c8f32ba69.jpg" alt="AC/DC tribute by Back &#x27;n Storm" loading="lazy" onerror="this.remove()"></div></div>
 </div>
 <div class="date-group"><h2>16 октября, чт</h2>
 <div class="card" onclick="window.open('https://www.afisha.ru/concert/dzhoker-6040095/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Джокер</div><div class="card-venue">Молодость<span class="city">· Севастополь</span></div><div class="card-description">О концерте «Я буду жить, — кричал он, — вечно!»

@@ -37,18 +37,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Хабанеро",
+      "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'",
       "startDate": "2026-09-11T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'.",
+      "description": "Концерт, посвященный Red Hot Chili Peppers, в исполнении группы 'Хабанеро'. Вход бесплатный.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Хабанеро"
+        "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'"
       },
-      "image": "/images/events/63ebe3fa11f15555021ec5f778d9839c.jpg"
+      "image": "/images/events/8918a5379200be5a0a59b292c8855be6.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -67,18 +67,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Back 'n Storm",
+      "name": "AC/DC tribute by Back 'n Storm",
       "startDate": "2026-10-09",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "AC/DC tribute by Back 'n Storm.",
+      "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Вход для подписчиков бесплатный.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Back 'n Storm"
+        "name": "AC/DC tribute by Back 'n Storm"
       },
-      "image": "/images/events/b7c7e65704d1c477135415840b70e644.jpg"
+      "image": "/images/events/fba452d0f2a19212d2671d1c8f32ba69.jpg"
     },
     {
       "@type": "MusicEvent",

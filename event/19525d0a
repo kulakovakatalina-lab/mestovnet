@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="AC/DC tribute by Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет</title>
+<title>AC/DC tribute by Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,17 +959,17 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/19525d0a">
-<meta property="og:title" content="Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет">
-<meta property="og:description" content="Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="AC/DC tribute by Back &#x27;n Storm — Jam Club, Симферополь, 9 октября · Местов.Нет">
+<meta property="og:description" content="AC/DC tribute by Back &#x27;n Storm, Jam Club, в Симферополе, 9 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b7c7e65704d1c477135415840b70e644.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/fba452d0f2a19212d2671d1c8f32ba69.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Back 'n Storm",
+      "name": "AC/DC tribute by Back 'n Storm",
       "startDate": "2026-10-09",
       "location": {
         "@type": "MusicVenue",
@@ -980,12 +980,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "AC/DC tribute by Back 'n Storm.",
+      "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Вход для подписчиков бесплатный.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Back 'n Storm"
+        "name": "AC/DC tribute by Back 'n Storm"
       },
-      "image": "/images/events/b7c7e65704d1c477135415840b70e644.jpg",
+      "image": "/images/events/fba452d0f2a19212d2671d1c8f32ba69.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -997,7 +997,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Back 'n Storm"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "AC/DC tribute by Back 'n Storm"}]}
 </script>
 </head>
 <body>

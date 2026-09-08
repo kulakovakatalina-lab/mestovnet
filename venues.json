@@ -724,6 +724,21 @@
     "lon": null
   },
   {
+    "slug": "ekokemp-semena-belbekskaya-dolina",
+    "name": "экокемп Семена, Бельбекская долина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Экокемп «Семена», Бельбекская долина",
+      "экокемп Семена, Бельбекская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "bar-el-capulco-0-0",
     "name": "бар El Capulco 0.0",
     "city": "Ялта",
@@ -932,20 +947,6 @@
     "event_count": 2,
     "aliases": [
       "АНАПСКИЙ РАЙОН, СУПСЕХ"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "ekokemp-semena-belbekskaya-dolina",
-    "name": "экокемп Семена, Бельбекская долина",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "экокемп Семена, Бельбекская долина"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1983,20 +1984,6 @@
     "event_count": 1,
     "aliases": [
       "Арт-пространство 'Глубина'"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "vinodelnya-valery-loginov-i-12-druzey",
-    "name": "винодельня «Valery Логинов и 12 друзей»",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "винодельня «Valery Логинов и 12 друзей»"
     ],
     "description": null,
     "desc_baseline_count": 0,
