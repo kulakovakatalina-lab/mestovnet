@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/skripka-matveya-blyumina">
   <meta property="og:title" content="скрипка Матвея Блюмина — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов скрипка Матвея Блюмина в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -48,6 +48,25 @@
         }
       },
       "description": "Сиеста на винодельне Акчурина. Заключительное событие Итальянской трилогии."
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "скрипка Матвея Блюмина",
+      "startDate": "2026-09-12T15:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "скрипка Матвея Блюмина"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Винодельня Акчурина",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Сиеста на винодельне Акчурина. В программе: welcome drink, экскурсия по винодельне, дегустация урожая винограда 2026 года и живая музыка — DJ-сет Яны Кучерявой, саксофон Иван Сыч и скрипка Матвея Блюмина."
     }
   ]
 }
@@ -1021,7 +1040,7 @@ footer {
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

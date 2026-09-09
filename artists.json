@@ -78,8 +78,8 @@
       "Симферополь"
     ],
     "venues": [
-      "Ресторан «Мотивы»",
       "Арт-кафе «Снежинка»",
+      "Ресторан «Мотивы»",
       "Снежинка",
       "Севастополь",
       "Отель «Аквамарин»",
@@ -428,9 +428,9 @@
       "Крым"
     ],
     "venues": [
-      "Усадьба «Родное гнездо»",
       "Дворец «Дюльбер»",
-      "Арт-кафе «Снежинка»"
+      "Арт-кафе «Снежинка»",
+      "Усадьба «Родное гнездо»"
     ],
     "first_seen": "2026-04-26",
     "last_seen": "2026-08-30",
@@ -649,9 +649,9 @@
     "event_count": 5,
     "cities": [
       "Ялта",
-      "Севастополь",
       "Симферополь",
-      "Крым"
+      "Крым",
+      "Севастополь"
     ],
     "venues": [
       "Усадьба «Родное гнездо»",
@@ -677,14 +677,36 @@
       "Крым"
     ],
     "venues": [
-      "Усадьба «Родное гнездо»",
       "Дворец «Дюльбер»",
+      "Усадьба «Родное гнездо»",
       "Арт-кафе «Снежинка»"
     ],
     "first_seen": "2026-04-26",
     "last_seen": "2026-08-30",
     "description": "Участник концертов под открытым небом во дворце Дюльбер: «Песни любимого кино» и «Самая красивая музыка столетия» — вокал, фортепиано, труба и ударные с видом на море.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "skripka-matveya-blyumina",
+    "name": "скрипка Матвея Блюмина",
+    "aliases": [
+      "Скрипка Матвея Блюмина",
+      "скрипка Матвея Блюмина"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Арт-кафе «Снежинка», Большая Морская, 19",
+      "Снежинка",
+      "Винодельня Акчурина",
+      "Арт-кафе «Снежинка»"
+    ],
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-09-12",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "stiven-mitchell",
@@ -799,13 +821,13 @@
     "event_count": 4,
     "cities": [
       "Севастополь",
-      "Симферополь",
-      "Керчь"
+      "Керчь",
+      "Симферополь"
     ],
     "venues": [
       "Молодость",
-      "Jam Club",
-      "Камелот"
+      "Камелот",
+      "Jam Club"
     ],
     "first_seen": "2026-07-08",
     "last_seen": "2026-10-18",
@@ -832,6 +854,28 @@
     "desc_baseline_count": 3
   },
   {
+    "slug": "zhivaya-muzyka",
+    "name": "Живая музыка",
+    "aliases": [
+      "Живая музыка"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Ялта",
+      "Севастополь"
+    ],
+    "venues": [
+      "Отель «Ялта-Интурист»",
+      "API Балаклава",
+      "Рок-н-рольщики (Севастополь)",
+      "Отель Ялта-Интурист"
+    ],
+    "first_seen": "2026-06-28",
+    "last_seen": "2027-12-31",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "yuliya-bakshinskaya",
     "name": "Юлия Бакшинская",
     "aliases": [
@@ -852,25 +896,6 @@
     "last_seen": "2026-08-16",
     "description": "Вокалистка: киносаундтреки («Богемская рапсодия», Mamma Mia, «Красотка») и авторская программа «О самом сокровенном» — живой вокал с фортепиано, саксофоном и ударными в камерной атмосфере.",
     "desc_baseline_count": 2
-  },
-  {
-    "slug": "blackened",
-    "name": "Blackened",
-    "aliases": [
-      "Blackened"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club",
-      "Крым Event"
-    ],
-    "first_seen": "2026-05-02",
-    "last_seen": "2026-09-12",
-    "description": null,
-    "desc_baseline_count": 0
   },
   {
     "slug": "iz-kraynosti-v-kraynost",
@@ -926,27 +951,6 @@
     ],
     "first_seen": "2026-08-08",
     "last_seen": "2026-08-09",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "skripka-matveya-blyumina",
-    "name": "скрипка Матвея Блюмина",
-    "aliases": [
-      "Скрипка Матвея Блюмина",
-      "скрипка Матвея Блюмина"
-    ],
-    "event_count": 3,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Снежинка",
-      "Арт-кафе «Снежинка»",
-      "Арт-кафе «Снежинка», Большая Морская, 19"
-    ],
-    "first_seen": "2026-08-09",
-    "last_seen": "2026-09-12",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -1522,6 +1526,25 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "blackened",
+    "name": "Blackened",
+    "aliases": [
+      "Blackened"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "Крым Event"
+    ],
+    "first_seen": "2026-05-02",
+    "last_seen": "2026-08-12",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "kamernyy-orkestr-novaya-garmoniya",
     "name": "Камерный оркестр «Новая Гармония»",
     "aliases": [
@@ -2003,12 +2026,12 @@
     ],
     "event_count": 2,
     "cities": [
-      "Симферополь",
-      "Севастополь"
+      "Севастополь",
+      "Симферополь"
     ],
     "venues": [
-      "Депо",
-      "Boombox"
+      "Boombox",
+      "Депо"
     ],
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-04",
@@ -2376,25 +2399,6 @@
     "last_seen": "2026-07-04",
     "description": "Симферопольская группа, резидент Jam Club: трибьют-вечера и клубные рок-фестивали.",
     "desc_baseline_count": 2
-  },
-  {
-    "slug": "zhivaya-muzyka",
-    "name": "Живая музыка",
-    "aliases": [
-      "Живая музыка"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "API Балаклава",
-      "Рок-н-рольщики (Севастополь)"
-    ],
-    "first_seen": "2026-06-28",
-    "last_seen": "2026-08-29",
-    "description": null,
-    "desc_baseline_count": 0
   },
   {
     "slug": "aleksandr-vasilev",
@@ -3017,14 +3021,34 @@
     ],
     "event_count": 2,
     "cities": [
-      "Севастополь",
-      "Крым"
+      "Крым",
+      "Севастополь"
     ],
     "venues": [
       "Усадьба «Родное гнездо»"
     ],
     "first_seen": "2026-08-29",
     "last_seen": "2026-08-30",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "metallica-tribute-by-blackened",
+    "name": "METALLICA TRIBUTE by Blackened",
+    "aliases": [
+      "METALLICA TRIBUTE by Blackened",
+      "METALLICA tribute by Blackened"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club",
+      "Крым Event"
+    ],
+    "first_seen": "2026-09-12",
+    "last_seen": "2026-09-12",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -3044,6 +3068,25 @@
     ],
     "first_seen": "2026-09-05",
     "last_seen": "2026-09-05",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "dj-set-yany-kucheryavoy",
+    "name": "DJ-сет Яны Кучерявой",
+    "aliases": [
+      "DJ-сет Яны Кучерявой"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Винодельня Акчурина",
+      "Арт-кафе «Снежинка»"
+    ],
+    "first_seen": "2026-09-12",
+    "last_seen": "2026-09-12",
     "description": null,
     "desc_baseline_count": 0
   }

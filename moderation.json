@@ -107,5 +107,41 @@
       "нет времени",
       "нет цены"
     ]
+  },
+  {
+    "id": "64fac977",
+    "date": "2027-01-01",
+    "time": null,
+    "artist": "Живая музыка",
+    "venue": "Отель Ялта-Интурист",
+    "source_city": "Ялта",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Праздничные гуляния с живой музыкой в отеле 'Ялта-Интурист' в новогоднюю ночь.",
+    "image": "/images/events/c2acc9580aadd01b40b5ee2a10ff75ad.jpg",
+    "source_url": "https://t.me/hotel_yalta_intourist/2866",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "f088df4a",
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Живая музыка",
+    "venue": "Отель «Ялта-Интурист»",
+    "source_city": "Ялта",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Праздничные гуляния с живой музыкой.",
+    "image": "/images/events/12d154b7e1c1a7576e1c499099b524f1.jpg",
+    "source_url": "https://vk.com/wall-14722524_62100",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   }
 ]
