@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Отель «Ялта-Интурист» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Отель «Ялта-Интурист», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Отель «Ялта-Интурист», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/otel-yalta-inturist">
   <meta property="og:title" content="Отель «Ялта-Интурист» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Отель «Ялта-Интурист», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Отель «Ялта-Интурист», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Прогулочная аллея"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Живая музыка",
+      "startDate": "2027-01-01",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Отель «Ялта-Интурист»"
+      },
+      "description": "Праздничные гуляния с живой музыкой в отеле 'Ялта-Интурист' в новогоднюю ночь.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Живая музыка"
+      },
+      "image": "/images/events/ddca489982a9cf3ea696b2d7b8594966.jpg"
     }
   ]
 }
@@ -1055,7 +1070,7 @@ footer {
 <div class="venue-address-block"><span class="venue-hero-address">Прогулочная аллея, Ялта</span></div>
 <p class="venue-description">За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.</p>
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

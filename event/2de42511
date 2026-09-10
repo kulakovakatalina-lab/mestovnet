@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="«Два сердца, одна мелодия», Театр им. А.П. Чехова, в Ялте, 12 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="«Два сердца, одна мелодия», солисты, оркестр, Ялтинский театр имени А. П. Чехова, в Ялте, 12 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>«Два сердца, одна мелодия» — Театр им. А.П. Чехова, Ялта, 12 сентября · Местов.Нет</title>
+<title>«Два сердца, одна мелодия», солисты, оркестр — Ялтинский театр имени А. П. Чехова, Ялта, 12 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/2de42511">
-<meta property="og:title" content="«Два сердца, одна мелодия» — Театр им. А.П. Чехова, Ялта, 12 сентября · Местов.Нет">
-<meta property="og:description" content="«Два сердца, одна мелодия», Театр им. А.П. Чехова, в Ялте, 12 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="«Два сердца, одна мелодия», солисты, оркестр — Ялтинский театр имени А. П. Чехова, Ялта, 12 сентября · Местов.Нет">
+<meta property="og:description" content="«Два сердца, одна мелодия», солисты, оркестр, Ялтинский театр имени А. П. Чехова, в Ялте, 12 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg">
 <script type="application/ld+json">
@@ -969,21 +969,21 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "«Два сердца, одна мелодия»",
+      "name": "«Два сердца, одна мелодия», солисты, оркестр",
       "startDate": "2026-09-12T15:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Театр им. А.П. Чехова",
+        "name": "Ялтинский театр имени А. П. Чехова",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Крымское киноконцертное объединение представляет концерт лучших дуэтов из оперы, оперетты, мюзиклов и кино в исполнении солистов и оркестра.",
+      "description": "Концерт «Два сердца, одна мелодия» – гостей ждут знакомые и любимые дуэты из опер, оперетт, мюзиклов и кино в исполнении солистов и оркестра.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "«Два сердца, одна мелодия»"
+        "name": "«Два сердца, одна мелодия», солисты, оркестр"
       },
       "image": "/images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg"
     }
@@ -991,7 +991,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "«Два сердца, одна мелодия»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "«Два сердца, одна мелодия», солисты, оркестр"}]}
 </script>
 </head>
 <body>

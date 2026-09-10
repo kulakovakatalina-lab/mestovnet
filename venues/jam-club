@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'. Бесплатный вход. После концерта - бесплатное рок-караоке до утра.",
+      "description": "Концерт, посвященный Red Hot Chili Peppers, в исполнении группы 'Хабанеро'. Бесплатный вход.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'"
       },
-      "image": "/images/events/34051b7f980b5eb5dc123173bc47d221.jpg"
+      "image": "/images/events/4edd34c8f907d71d005191f5828e18fb.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -73,12 +73,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Концерт AC/DC tribute by Back 'n Storm. Вход для подписчиков бесплатный.",
+      "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Бесплатный вход для подписчиков.",
       "performer": {
         "@type": "MusicGroup",
         "name": "AC/DC tribute by Back 'n Storm"
       },
-      "image": "/images/events/4a518044e90abb14b8c03c987702cf2f.jpg"
+      "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg"
     },
     {
       "@type": "MusicEvent",

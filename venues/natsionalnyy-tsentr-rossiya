@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Национальный центр «Россия» — афиша в Судаке · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Национальный центр «Россия», в Судаке. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Национальный центр «Россия», в Судаке. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/natsionalnyy-tsentr-rossiya">
   <meta property="og:title" content="Национальный центр «Россия» — афиша в Судаке · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Национальный центр «Россия», в Судаке. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Национальный центр «Россия», в Судаке. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,20 +33,6 @@
         "@type": "PostalAddress",
         "addressLocality": "Судак",
         "addressCountry": "RU"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Голос поэта",
-      "startDate": "2026-09-09T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Национальный центр «Россия»"
-      },
-      "description": "Гала-концерт второго сезона Всероссийского культурно-просветительского проекта «Голос поэта». Известные артисты и начинающие исполнители представят стихотворения русских поэтов в новых музыкальных аранжировках.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Голос поэта"
       }
     }
   ]
@@ -1068,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
