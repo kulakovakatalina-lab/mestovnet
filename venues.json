@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 26,
+    "event_count": 27,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -741,6 +741,20 @@
     "lon": null
   },
   {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Квартал культур мира"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "bar-el-capulco-0-0",
     "name": "бар El Capulco 0.0",
     "city": "Ялта",
@@ -956,20 +970,6 @@
     "lon": null
   },
   {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Квартал культур мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "yalta",
     "name": "Ялта",
     "city": "Ялта",
@@ -1034,6 +1034,20 @@
     "event_count": 2,
     "aliases": [
       "Дом культуры «Корабел»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "park-mayakovskogo",
+    "name": "парк Маяковского",
+    "city": "Судак",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "парк Маяковского"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2049,6 +2063,20 @@
     "lon": null
   },
   {
+    "slug": "golf-pole-ali-bair",
+    "name": "Гольф-поле «Али Баир»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Гольф-поле «Али Баир»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2077,13 +2105,13 @@
     "lon": null
   },
   {
-    "slug": "golf-pole-ali-bair",
-    "name": "Гольф-поле «Али Баир»",
-    "city": "Севастополь",
-    "address": "",
+    "slug": "kostomuksha",
+    "name": "Костомукша",
+    "city": "Судак",
+    "address": "ул. Героев, 2",
     "event_count": 1,
     "aliases": [
-      "Гольф-поле «Али Баир»"
+      "Костомукша, ул. Героев, 2"
     ],
     "description": null,
     "desc_baseline_count": 0,

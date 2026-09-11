@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "экокемп Семена, Бельбекская долина"
       },
-      "description": "Можно приехать только на экстатик: суббота 19:30 (запись обязательна, стоимость 1000)",
+      "description": "Экстатик-дэнс с Юрием Гео.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Юрий Гео"
       },
-      "image": "/images/events/410f0f4419b2744e41251d1d7f4fd131.jpg"
+      "image": "/images/events/00d42b000f730ef674f060f1f38e8faa.jpg"
     }
   ]
 }

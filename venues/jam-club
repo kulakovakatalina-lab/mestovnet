@@ -37,18 +37,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'",
+      "name": "Хабанеро",
       "startDate": "2026-09-11T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Концерт, посвященный Red Hot Chili Peppers, в исполнении группы 'Хабанеро'. Бесплатный вход.",
+      "description": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'. Бесплатный вход! Сразу после концерта - бесплатное рок-караоке до утра!",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Red Hot Chili Peppers Tribute от группы 'Хабанеро'"
+        "name": "Хабанеро"
       },
-      "image": "/images/events/4edd34c8f907d71d005191f5828e18fb.jpg"
+      "image": "/images/events/d7f1b0f167acddfdd76bc28320cf5bbb.jpg"
     },
     {
       "@type": "MusicEvent",
