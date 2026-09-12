@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
+        "name": "арт-кафе «Снежинка»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "От неоклассики до сердца джаза. Три Андрея — один музыкальный вечер."
+      "description": "Джаз-трио «А3» с программой «Неоклассика и джаз»"
     }
   ]
 }

@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="В гостях у Айвазовского, Галерея им. Айвазовского, в Феодосии, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="В гостях у Айвазовского, Галерея им. Айвазовского, в Феодосии, 18 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>В гостях у Айвазовского — Галерея им. Айвазовского, Феодосия, 13 сентября · Местов.Нет</title>
+<title>В гостях у Айвазовского — Галерея им. Айвазовского, Феодосия, 18 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/71ede2ea">
-<meta property="og:title" content="В гостях у Айвазовского — Галерея им. Айвазовского, Феодосия, 13 сентября · Местов.Нет">
-<meta property="og:description" content="В гостях у Айвазовского, Галерея им. Айвазовского, в Феодосии, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="В гостях у Айвазовского — Галерея им. Айвазовского, Феодосия, 18 октября · Местов.Нет">
+<meta property="og:description" content="В гостях у Айвазовского, Галерея им. Айвазовского, в Феодосии, 18 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg">
 <script type="application/ld+json">
@@ -970,7 +970,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "В гостях у Айвазовского",
-      "startDate": "2026-09-13T18:30:00+03:00",
+      "startDate": "2026-10-18T18:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Галерея им. Айвазовского",
@@ -988,7 +988,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "2000 - 2300",
+        "name": "1200 - 2300",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

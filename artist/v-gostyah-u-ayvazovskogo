@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "В гостях у Айвазовского",
-      "startDate": "2026-09-13T18:30:00+03:00",
+      "startDate": "2026-10-18T18:30:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "В гостях у Айвазовского"

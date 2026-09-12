@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "METALLICA TRIBUTE by Blackened. Три часа любимых хитов и много нового материала Металлики от лучшего трибьюта в Крыму. Вход для подписчиков бесплатный.",
+      "description": "Концерт METALLICA by Blackened.",
       "performer": {
         "@type": "MusicGroup",
         "name": "METALLICA TRIBUTE by Blackened"

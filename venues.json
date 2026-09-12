@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 41,
+    "event_count": 42,
     "aliases": [
       "Jam Club"
     ],
@@ -90,6 +90,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 16,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -119,20 +133,6 @@
     "desc_baseline_count": 4,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 12,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "dk-korabel",
@@ -403,6 +403,20 @@
     "lon": 33.522078
   },
   {
+    "slug": "gastrodvor",
+    "name": "Гастродвор",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Гастродвор"
+    ],
+    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
+    "desc_baseline_count": 2,
+    "lat": 44.494636,
+    "lon": 34.166005
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Крым",
@@ -523,20 +537,6 @@
     "lon": null
   },
   {
-    "slug": "gastrodvor",
-    "name": "Гастродвор",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Гастродвор"
-    ],
-    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
-    "desc_baseline_count": 2,
-    "lat": 44.494636,
-    "lon": 34.166005
-  },
-  {
     "slug": "dvorets-dyulber",
     "name": "Дворец «Дюльбер»",
     "city": "Севастополь",
@@ -588,6 +588,20 @@
     "event_count": 4,
     "aliases": [
       "Пляж-кафе «Van Gogh»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "p-nauchnyy-ul-nauchnaya-46",
+    "name": "п Научный, ул Научная, 46",
+    "city": "Научный",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "п Научный, ул Научная, 46"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -769,13 +783,13 @@
     "lon": null
   },
   {
-    "slug": "p-nauchnyy-ul-nauchnaya-46",
-    "name": "п Научный, ул Научная, 46",
-    "city": "Научный",
+    "slug": "park-mayakovskogo",
+    "name": "парк Маяковского",
+    "city": "Судак",
     "address": "",
     "event_count": 3,
     "aliases": [
-      "п Научный, ул Научная, 46"
+      "парк Маяковского"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1034,20 +1048,6 @@
     "event_count": 2,
     "aliases": [
       "Дом культуры «Корабел»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "park-mayakovskogo",
-    "name": "парк Маяковского",
-    "city": "Судак",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "парк Маяковского"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2077,20 +2077,6 @@
     "lon": null
   },
   {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kontsertnyy-zal-zvezdnyy",
     "name": "Концертный зал «Звёздный»",
     "city": "Феодосия",
@@ -2105,13 +2091,13 @@
     "lon": null
   },
   {
-    "slug": "kostomuksha",
-    "name": "Костомукша",
-    "city": "Судак",
-    "address": "ул. Героев, 2",
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
     "event_count": 1,
     "aliases": [
-      "Костомукша, ул. Героев, 2"
+      "Галерея им. Айвазовского"
     ],
     "description": null,
     "desc_baseline_count": 0,
