@@ -54,7 +54,7 @@ jobs:
       - name: Снимок реестров «до»
         run: |
           mkdir -p /tmp/before
-          cp events.json venues.json artists.json /tmp/before/
+          cp events.json venues.json artists.json settings.json /tmp/before/
 
       - name: Сохранить снимок для отложенного уведомления
         uses: actions/upload-artifact@v4
@@ -124,7 +124,7 @@ jobs:
               (needs.deploy.result == 'success' || needs.deploy.result == 'skipped') }}
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ needs.parse-and-deploy.outputs.deploy_ref }}
 
       - name: Установить Python
         if: >-

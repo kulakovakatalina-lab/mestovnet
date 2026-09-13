@@ -31,6 +31,7 @@ from typing import Optional
 import httpx
 
 import parser as parser_mod
+from generate_pages import apply_settings
 
 DOMAIN = "https://mestov.net"
 CURRENT_EVENTS_URL = f"{DOMAIN}/current-events/"
@@ -134,7 +135,20 @@ def build_message(before_dir: Path, after_dir: Path) -> Optional[str]:
     before = {f: load(before_dir / f) for f in FILES}
     after = {f: load(after_dir / f) for f in FILES}
 
-    new_events = new_items(before["events.json"], after["events.json"], "id")
+    def published_events(directory: Path, events: list[dict]) -> list[dict]:
+        settings_path = directory / "settings.json"
+        settings = json.loads(settings_path.read_text(encoding="utf-8")) if settings_path.exists() else {}
+        return apply_settings(events, settings)
+
+    # Сравниваем опубликованные записи: одобренное после проверки событие
+    # тоже становится новым для читателя, даже если id уже был в реестре.
+    new_events = new_items(
+        published_events(before_dir, before["events.json"]),
+        published_events(after_dir, after["events.json"]),
+        "id",
+    )
+    new_events = [e for e in new_events
+                  if (after_dir / "event" / e["id"]).is_file()]
 
     if not new_events:
         return None
