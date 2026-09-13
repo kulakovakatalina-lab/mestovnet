@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ялтинский театр имени А. П. Чехова — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/yaltinskiy-teatr-imeni-a-p-chehova">
   <meta property="og:title" content="Ялтинский театр имени А. П. Чехова — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "«Два сердца, одна мелодия», солисты, оркестр",
-      "startDate": "2026-09-12T15:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ялтинский театр имени А. П. Чехова"
-      },
-      "description": "Концерт «Два сердца, одна мелодия» – гостей ждут знакомые и любимые дуэты из опер, оперетт, мюзиклов и кино в исполнении солистов и оркестра.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "«Два сердца, одна мелодия», солисты, оркестр"
-      },
-      "image": "/images/events/b4fd046e2c87eadc61483fc56459f8fe.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

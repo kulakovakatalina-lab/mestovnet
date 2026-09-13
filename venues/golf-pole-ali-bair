@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Гольф-поле «Али Баир» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Гольф-поле «Али Баир», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>гольф-поле «Али Баир» — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в гольф-поле «Али Баир», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/golf-pole-ali-bair">
-  <meta property="og:title" content="Гольф-поле «Али Баир» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Гольф-поле «Али Баир», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="гольф-поле «Али Баир» — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в гольф-поле «Али Баир», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Гольф-поле «Али Баир»",
+      "name": "гольф-поле «Али Баир»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
@@ -41,9 +41,9 @@
       "startDate": "2026-09-13T17:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Гольф-поле «Али Баир»"
+        "name": "гольф-поле «Али Баир»"
       },
-      "description": "Джазовый пикник на закате с участием Андрея Рыбальченко (фортепиано), Анны Шакель (вокал) и Дмитрия Байстрюченко (саксофон).",
+      "description": "Джазовый пикник на закате. В этот раз знакомые всем композиции - Стинг, Леонтьев, Deep Purple, Агутин… зазвучат в джазовом настроении",
       "performer": {
         "@type": "MusicGroup",
         "name": "Андрей Рыбальченко (фортепиано), Анна Шакель (вокал), Дмитрий Байстрюченко (саксофон)"
@@ -54,7 +54,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Гольф-поле «Али Баир»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "гольф-поле «Али Баир»"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Гольф-поле «Али Баир»</h1>
+    <h1 class="genre-hero-title">гольф-поле «Али Баир»</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Гольф-поле «Али Баир»", "Гольф-поле «Али Баир»"];
+const VENUE_ALIASES = ["гольф-поле «Али Баир»", "гольф-поле «Али Баир»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

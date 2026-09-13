@@ -1471,7 +1471,12 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет цены"
+    ],
+    "moderation_decision_fingerprint": "a45288d85cfc62a9135370f0b96d2803928ba0651b8e9cb6700ed1d94c59d3c8"
   },
   {
     "id": "07dbf5d4",
@@ -10402,7 +10407,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-09-12T05:37:49.200293+00:00",
+    "post_date": "2026-09-13T05:51:21.869734+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10617,7 +10622,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-09-12T05:37:49.200314+00:00",
+    "post_date": "2026-09-13T05:51:21.869760+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10805,7 +10810,7 @@
       "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg"
     ],
     "image": "/images/events/b4c7f75d511639d9a9e380f277bcb074.jpg",
-    "post_date": "2026-09-12T05:37:49.200250+00:00",
+    "post_date": "2026-09-13T05:51:21.869679+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10968,7 +10973,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "7fd510c2a85bf93739dbb86d1399d6edd17d7ead7e32336be51fcdffae575832"
   },
   {
     "date": "2026-09-26",
@@ -11197,7 +11207,7 @@
       "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg"
     ],
     "image": "/images/events/dadcaf21f8edde3f86df9e54732aa2dc.jpg",
-    "post_date": "2026-09-12T05:37:49.200390+00:00",
+    "post_date": "2026-09-13T05:51:21.869859+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -11273,11 +11283,12 @@
     "image": null,
     "post_date": "2026-08-26T05:06:19+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-22",
@@ -11897,7 +11908,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "f78c7d22fe033eac94320e033b0ffcb84b2aea8762c9eff21b511eb76cd03861"
   },
   {
     "id": "fd8ac102",
@@ -12065,7 +12081,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-09-12T05:37:49.200351+00:00",
+    "post_date": "2026-09-13T05:51:21.869810+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -12093,7 +12109,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-09-12T05:37:49.200409+00:00",
+    "post_date": "2026-09-13T05:51:21.869882+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -12121,7 +12137,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-09-12T05:37:49.200444+00:00",
+    "post_date": "2026-09-13T05:51:21.869927+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -12209,7 +12225,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "f05e30465e096f1887d94ae9ed6dfcef981b51aafecbc1d6d7fa77b3fe33cb48"
   },
   {
     "date": "2026-10-09",
@@ -12290,7 +12311,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "7c68580cc23bc812ae14be8fcc4b11201d1d825504d9522ec70669c8d9b16309"
   },
   {
     "date": "2026-09-13",
@@ -12334,7 +12360,7 @@
     "source_url": "https://t.me/koncertykrym/2298",
     "images": [
       "/images/events/1254baa38c24cdcb73b0a532aa118f21.jpg",
-      "/images/events/f1aed70fee94760c08e70952e86229f7.jpg"
+      "/images/events/93d823569e909146302533f3ead39b9b.jpg"
     ],
     "image": "/images/events/1254baa38c24cdcb73b0a532aa118f21.jpg",
     "post_date": "2026-09-09T14:45:16+00:00",
@@ -12424,36 +12450,6 @@
     "moderation_decision_fingerprint": "f61352aeaa5e61b620b35023f7fa52094650e46fd3ab8d833f6f7654d890776c"
   },
   {
-    "id": "ac77b082",
-    "date": "2026-09-13",
-    "time": "17:30",
-    "artist": "Андрей Рыбальченко (фортепиано), Анна Шакель (вокал), Дмитрий Байстрюченко (саксофон)",
-    "event_type": "концерт",
-    "venue": "Гольф-поле «Али Баир»",
-    "price": "бесплатно",
-    "description": "Джазовый пикник на закате с участием Андрея Рыбальченко (фортепиано), Анны Шакель (вокал) и Дмитрия Байстрюченко (саксофон).",
-    "source_city": "Севастополь",
-    "source_channel": "sevastopol_jazz",
-    "genre": "джаз",
-    "source_url": "https://vk.com/wall-214055536_2331",
-    "images": [
-      "/images/events/aff0d7b5bd84e486c3b72115ab3e09cb.jpg",
-      "/images/events/b7192447678fb58368fc18c0310e1e1f.jpg"
-    ],
-    "image": "/images/events/aff0d7b5bd84e486c3b72115ab3e09cb.jpg",
-    "post_date": "2026-09-10T13:14:04+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "source_last_checked_at": "2026-09-11T05:49:06.702897+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "id": "9887ec47",
     "date": "2026-09-13",
     "time": "21:00",
@@ -12474,7 +12470,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "da462c36bd18b37ed7967e324f48824bf83b7bed3977f0dfedb98f2c8740ed2f"
   },
   {
     "id": "bbf23ec7",
@@ -12517,29 +12518,31 @@
     "image": null,
     "post_date": "2026-09-10T13:04:01+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
+    "id": "772e9bd5",
     "date": "2026-09-13",
     "time": null,
-    "artist": "OTYKEN, AY YOLA, «Белорусские песняры», LIZWI, «7 станций», SPOKANI",
+    "artist": "OTYKEN, AY YOLA, «Белорусские песняры», LIZWI, «7 станций», SPOKANI, Таврида.АРТ",
     "event_type": "концерт",
     "venue": "парк Маяковского",
     "price": null,
     "description": "Выступления артистов лейбла «Таврида.АРТ», участников творческого молодёжного сообщества.",
-    "image": null,
-    "images": null,
-    "source_channel": "tavrida_art",
     "source_city": "Судак",
-    "post_date": "2026-09-10T13:04:01+00:00",
-    "source_url": "https://vk.com/wall-89840945_119956",
-    "id": "772e9bd5",
+    "source_channel": "tavrida_art",
     "genre": "другое",
+    "source_url": "https://vk.com/wall-89840945_119956",
+    "images": null,
+    "image": null,
+    "post_date": "2026-09-10T13:04:01+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
@@ -12571,196 +12574,10 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2027-01-01",
-    "time": null,
-    "artist": "Живая музыка",
-    "event_type": "концерт",
-    "venue": "Отель Ялта-Интурист",
-    "price": null,
-    "description": "Праздничные гуляния с живой музыкой в отеле 'Ялта-Интурист' в новогоднюю ночь.",
-    "image": "/images/events/b9c2efcd594d38fcd13f654403b538d1.jpg",
-    "images": [
-      "/images/events/b9c2efcd594d38fcd13f654403b538d1.jpg",
-      "/images/events/151f85a96d5aa60fd6a714e65ea44125.jpg",
-      "/images/events/511de29baa0f6df375d5cb1cf1977a06.jpg",
-      "/images/events/56b28554f91f942205b0ed0979fa8eac.jpg",
-      "/images/events/1fb05caff4e27b1b2d51ca19f22ac180.jpg"
-    ],
-    "source_channel": "hotel_yalta_intourist",
-    "source_city": "Ялта",
-    "post_date": "2026-09-08T10:00:56+00:00",
-    "source_url": "https://t.me/hotel_yalta_intourist/2866",
-    "id": "64fac977",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-29",
-    "time": "19:00",
-    "artist": "Музыка Киношедевров в сиянии тысячи свечей",
-    "venue": "ДК профсоюзов",
-    "event_type": "концерт",
-    "price": "от 1590 ₽",
-    "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-12T05:37:49.200273+00:00",
-    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
-    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
-    "genre": "классика",
-    "id": "641834f5",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-04",
-    "time": "19:00",
-    "artist": "Йорш",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1600 ₽",
-    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-12T05:37:49.200333+00:00",
-    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
-    "genre": "рок",
-    "id": "4993369e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-27",
-    "time": "18:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "venue": "Концертный зал «Юбилейный»",
-    "event_type": "концерт",
-    "price": "1000 - 3500",
-    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Юбилейный», Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-09-12T05:38:04.683912+00:00",
-    "image": "/images/events/d76177e94c8032954c805e6857bc907f.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/anjelina-mali-i-dzedze-2026",
-    "id": "25d5326d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом культуры «Корабел»",
-    "event_type": "концерт",
-    "price": "2000 - 3500",
-    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-09-12T05:38:04.684060+00:00",
-    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
-    "id": "7ee9b24f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-09-28",
-    "time": "18:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "venue": "Концертный зал «Звёздный»",
-    "event_type": "концерт",
-    "price": "2000 - 3000",
-    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Звёздный», Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-09-12T05:38:04.684079+00:00",
-    "image": "/images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/anjelina-mali-i-dzedze-1",
-    "id": "37c38ac8",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-18",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1200 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-09-12T05:38:04.684096+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "71ede2ea",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-12T05:38:12.932565+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "date",
-      "price",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [],
+    "moderation_decision_fingerprint": "c28b3803ca26ed0a18fcd336fd47180fb40c138d881c6aea842a0121556261a6"
   },
   {
     "date": "2026-09-12",
@@ -12778,38 +12595,12 @@
     "source_url": "https://t.me/clubjam/1146",
     "id": "957d09e0",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
-  },
-  {
-    "date": "2026-09-13",
-    "time": "18:30",
-    "artist": "Андрей Ясинский",
-    "event_type": "концерт",
-    "venue": "п Научный, ул Научная, 46",
-    "price": null,
-    "description": "Концерт-погружение с музыкой на редких инструментах. Музыкант-мультиинструменталист Андрей Ясинский исполнит космическую музыку.",
-    "image": "/images/events/99275078292d7ff2dc109f2dbf7ca54a.jpg",
-    "images": [
-      "/images/events/99275078292d7ff2dc109f2dbf7ca54a.jpg",
-      "/images/events/c601791185315901cd4dfa80034d769b.jpg",
-      "/images/events/750f396545fc860f5c7a9bba49d99e54.jpg",
-      "/images/events/5299459826c1fc310b00f6f3a4e3d245.jpg"
     ],
-    "source_channel": "dlyadushi_Crimea",
-    "source_city": "Научный",
-    "post_date": "2026-09-11T17:55:17+00:00",
-    "source_url": "https://t.me/dlyadushi_Crimea/6575",
-    "id": "232b259f",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "840133e3",
@@ -12931,6 +12722,105 @@
     ]
   },
   {
+    "id": "232b259f",
+    "date": "2026-09-13",
+    "time": "18:30",
+    "artist": "Андрей Ясинский",
+    "event_type": "концерт",
+    "venue": "Научный, ул Научная, 46",
+    "price": null,
+    "description": "Концерт-погружение с музыкой на редких инструментах под куполом телескопа.",
+    "source_city": "Научный",
+    "source_channel": "afisha_crimea",
+    "genre": "поп",
+    "source_url": "https://t.me/dlyadushi_Crimea/6575",
+    "images": [
+      "/images/events/b91a2cd243554c2abcd385189aa32337.jpg",
+      "/images/events/42654625a3a2745f095e7731dd0e0d4c.jpg"
+    ],
+    "image": "/images/events/b91a2cd243554c2abcd385189aa32337.jpg",
+    "post_date": "2026-09-12T17:02:12+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-01-01",
+    "time": null,
+    "artist": "Живая музыка",
+    "event_type": "концерт",
+    "venue": "Отель Ялта-Интурист",
+    "price": null,
+    "description": "Праздничные гуляния с живой музыкой в отеле 'Ялта-Интурист' в новогоднюю ночь.",
+    "image": "/images/events/81f05d08f0dd22dd5f68e8420aa370ae.jpg",
+    "images": [
+      "/images/events/81f05d08f0dd22dd5f68e8420aa370ae.jpg",
+      "/images/events/25f42222358ed28e8f3289a06d33ab0b.jpg",
+      "/images/events/f47a4e45fd103bd049d79cdee3de9d16.jpg",
+      "/images/events/33e9c7232258ceccf5e26092d076d508.jpg",
+      "/images/events/886ea6a470fcb6eaec17863e16ffacb0.jpg"
+    ],
+    "source_channel": "hotel_yalta_intourist",
+    "source_city": "Ялта",
+    "post_date": "2026-09-08T10:00:56+00:00",
+    "source_url": "https://t.me/hotel_yalta_intourist/2866",
+    "id": "64fac977",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "ac77b082",
+    "date": "2026-09-13",
+    "time": "17:30",
+    "artist": "Андрей Рыбальченко (фортепиано), Анна Шакель (вокал), Дмитрий Байстрюченко (саксофон)",
+    "event_type": "концерт",
+    "venue": "гольф-поле «Али Баир»",
+    "price": "бесплатно",
+    "description": "Джазовый пикник на закате. В этот раз знакомые всем композиции - Стинг, Леонтьев, Deep Purple, Агутин… зазвучат в джазовом настроении",
+    "source_city": "Севастополь",
+    "source_channel": "sevastopol_jazz",
+    "genre": "джаз",
+    "source_url": "https://vk.com/wall-214055536_2331",
+    "images": [
+      "/images/events/aff0d7b5bd84e486c3b72115ab3e09cb.jpg",
+      "/images/events/9b835c008bb3ece8395a3c4fea1f5d46.jpg"
+    ],
+    "image": "/images/events/aff0d7b5bd84e486c3b72115ab3e09cb.jpg",
+    "post_date": "2026-09-10T13:14:04+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
     "date": "2026-09-13",
     "time": null,
     "artist": "Рома Буш",
@@ -12945,10 +12835,169 @@
     "post_date": "2026-09-11T15:19:57+00:00",
     "source_url": "https://vk.com/wall-212929583_971",
     "id": "18767ec5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "другое",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-29",
+    "time": "19:00",
+    "artist": "Музыка Киношедевров в сиянии тысячи свечей",
+    "venue": "ДК профсоюзов",
+    "event_type": "концерт",
+    "price": "от 1590 ₽",
+    "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-09-13T05:51:21.869707+00:00",
+    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
+    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
+    "genre": "классика",
+    "id": "641834f5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "19:00",
+    "artist": "Йорш",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1600 ₽",
+    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-09-13T05:51:21.869785+00:00",
+    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
+    "genre": "рок",
+    "id": "4993369e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-27",
+    "time": "18:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Концертный зал «Юбилейный»",
+    "event_type": "концерт",
+    "price": "1000 - 3500",
+    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Юбилейный», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-09-13T05:51:34.468545+00:00",
+    "image": "/images/events/d76177e94c8032954c805e6857bc907f.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/anjelina-mali-i-dzedze-2026",
+    "id": "25d5326d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом культуры «Корабел»",
+    "event_type": "концерт",
+    "price": "2000 - 3500",
+    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-09-13T05:51:34.468713+00:00",
+    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
+    "id": "7ee9b24f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-09-28",
+    "time": "18:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Концертный зал «Звёздный»",
+    "event_type": "концерт",
+    "price": "2000 - 3000",
+    "description": "Anjelina, Мали и Джедже — концерт в Концертный зал «Звёздный», Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-09-13T05:51:34.468736+00:00",
+    "image": "/images/events/2a0ee2d69cea992d31e02ac40a00fc6d.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/anjelina-mali-i-dzedze-1",
+    "id": "37c38ac8",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-09-13T05:51:34.468757+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "71ede2ea",
+    "source_status": "active",
+    "source_last_checked_at": "2026-09-13T05:51:39.172501+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
   }
 ]

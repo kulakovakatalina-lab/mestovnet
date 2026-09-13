@@ -595,20 +595,6 @@
     "lon": null
   },
   {
-    "slug": "p-nauchnyy-ul-nauchnaya-46",
-    "name": "п Научный, ул Научная, 46",
-    "city": "Научный",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "п Научный, ул Научная, 46"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -776,6 +762,20 @@
     "event_count": 3,
     "aliases": [
       "бар El Capulco 0.0"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "p-nauchnyy-ul-nauchnaya-46",
+    "name": "п Научный, ул Научная, 46",
+    "city": "Научный",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "п Научный, ул Научная, 46"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2063,13 +2063,27 @@
     "lon": null
   },
   {
+    "slug": "nauchnyy-ul-nauchnaya-46",
+    "name": "Научный, ул Научная, 46",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Научный, ул Научная, 46"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "golf-pole-ali-bair",
-    "name": "Гольф-поле «Али Баир»",
+    "name": "гольф-поле «Али Баир»",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Гольф-поле «Али Баир»"
+      "гольф-поле «Али Баир»"
     ],
     "description": null,
     "desc_baseline_count": 0,

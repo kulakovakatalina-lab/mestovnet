@@ -40,15 +40,15 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "п Научный, ул Научная, 46",
+        "name": "Научный, ул Научная, 46",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Научный",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт-погружение с музыкой на редких инструментах. Музыкант-мультиинструменталист Андрей Ясинский исполнит космическую музыку.",
-      "image": "/images/events/99275078292d7ff2dc109f2dbf7ca54a.jpg"
+      "description": "Концерт-погружение с музыкой на редких инструментах под куполом телескопа.",
+      "image": "/images/events/b91a2cd243554c2abcd385189aa32337.jpg"
     }
   ]
 }
