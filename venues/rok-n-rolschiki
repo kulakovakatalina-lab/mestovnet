@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki">
   <meta property="og:title" content="Рок-н-рольщики — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,76 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU",
         "streetAddress": "ул. Екатерининская, 14"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Артём «Темень» Родионов",
+      "startDate": "2026-09-17T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Премьера! Впервые на нашей сцене Артём «Темень» Родионов с авторской музыкальной программой",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Артём «Темень» Родионов"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jokers Band",
+      "startDate": "2026-09-19T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Jokers Band show: мировые рок и рок-поп хиты в полном электрическом составе",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jokers Band"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Руслан Абдуллаев",
+      "startDate": "2026-09-20T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Премьера! Впервые на нашей сцене Руслан Абдуллаев с экспериментальным стилем игры на акустической гитаре. Легендарные отечественные и зарубежные хиты, Live Looping. Фингерстайл",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Руслан Абдуллаев"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Игорь Симдянкин",
+      "startDate": "2026-09-25T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Любимые русские рок-поп хиты в акустическом исполнении Игоря Симдянкина",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Игорь Симдянкин"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "группа «Домино»",
+      "startDate": "2026-09-26T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Хиты русского поп-рока и неожиданные аранжировки от группы «Домино»",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "группа «Домино»"
       }
     }
   ]
@@ -1055,7 +1125,7 @@ footer {
 <div class="venue-address-block"><span class="venue-hero-address">ул. Екатерининская, 14, Симферополь</span></div>
 
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">5</div><div class="genre-hero-count-label">событий</div></div>
 </div>
 
 <div class="events-list" id="events-list">
