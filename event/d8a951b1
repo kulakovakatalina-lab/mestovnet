@@ -962,7 +962,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="SERGEY BARIBYN — бар «Пятница» (Пушкинская, 2А), Ялта, 19 сентября · Местов.Нет">
 <meta property="og:description" content="SERGEY BARIBYN, бар «Пятница» (Пушкинская, 2А), в Ялте, 19 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/3d9d059f3bf31932e85be6abb5db1ba7.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/a9e81779ab13ddc718fa8e5e216aef73.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -980,12 +980,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Ночь качественной электронной музыки: встречаемся на танцполе с SERGEY BARIBYN. За пультом — DJ, который играет в клубах с 1997 года, музыкальный директор проекта Z.CITY, участник творческого объединения Portal Sound System и ведущий радио-шоу Weekendance. В его сете — глубокий Deep Techno и атмосферный Progressive House.",
+      "description": "Ночь качественной электронной музыки.",
       "performer": {
         "@type": "MusicGroup",
         "name": "SERGEY BARIBYN"
       },
-      "image": "/images/events/3d9d059f3bf31932e85be6abb5db1ba7.jpg"
+      "image": "/images/events/a9e81779ab13ddc718fa8e5e216aef73.jpg"
     }
   ]
 }

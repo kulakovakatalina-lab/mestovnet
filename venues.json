@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 22,
+    "event_count": 23,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -2090,6 +2090,20 @@
     "lon": null
   },
   {
+    "slug": "bar-pyatnitsa",
+    "name": "бар «Пятница»",
+    "city": "Ялта",
+    "address": "Пушкинская, 2А",
+    "event_count": 1,
+    "aliases": [
+      "бар «Пятница» (Пушкинская, 2А)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "kontsertnyy-zal-zvezdnyy",
     "name": "Концертный зал «Звёздный»",
     "city": "Феодосия",
@@ -2118,13 +2132,27 @@
     "lon": null
   },
   {
-    "slug": "bar-pyatnitsa",
-    "name": "бар «Пятница»",
-    "city": "Ялта",
-    "address": "Пушкинская, 2А",
+    "slug": "russkiy-dramaticheskiy-teatr",
+    "name": "Русский драматический театр",
+    "city": "Крым",
+    "address": "",
     "event_count": 1,
     "aliases": [
-      "бар «Пятница» (Пушкинская, 2А)"
+      "Русский драматический театр"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-p-chehova",
+    "name": "Дом-музей А. П. Чехова",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей А. П. Чехова"
     ],
     "description": null,
     "desc_baseline_count": 0,

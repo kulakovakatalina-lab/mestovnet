@@ -44,12 +44,12 @@
         "@type": "MusicVenue",
         "name": "бар «Пятница»"
       },
-      "description": "Ночь качественной электронной музыки: встречаемся на танцполе с SERGEY BARIBYN. За пультом — DJ, который играет в клубах с 1997 года, музыкальный директор проекта Z.CITY, участник творческого объединения Portal Sound System и ведущий радио-шоу Weekendance. В его сете — глубокий Deep Techno и атмосферный Progressive House.",
+      "description": "Ночь качественной электронной музыки.",
       "performer": {
         "@type": "MusicGroup",
         "name": "SERGEY BARIBYN"
       },
-      "image": "/images/events/3d9d059f3bf31932e85be6abb5db1ba7.jpg"
+      "image": "/images/events/a9e81779ab13ddc718fa8e5e216aef73.jpg"
     }
   ]
 }
