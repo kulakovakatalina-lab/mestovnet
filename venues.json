@@ -382,6 +382,7 @@
     "event_count": 6,
     "aliases": [
       "Отель «Ялта-Интурист»",
+      "Отель Ялта-Интурист",
       "Отель Ялта-Интурист, Прогулочная аллея",
       "Пляж «Изумрудный», Отель «Ялта-Интурист»",
       "Прогулочная аллея отеля Ялта-Интурист"
@@ -2104,6 +2105,34 @@
     "lon": null
   },
   {
+    "slug": "russkiy-dramaticheskiy-teatr",
+    "name": "Русский драматический театр",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Русский драматический театр"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-p-chehova",
+    "name": "Дом-музей А. П. Чехова",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "kontsertnyy-zal-zvezdnyy",
     "name": "Концертный зал «Звёздный»",
     "city": "Феодосия",
@@ -2132,27 +2161,13 @@
     "lon": null
   },
   {
-    "slug": "russkiy-dramaticheskiy-teatr",
-    "name": "Русский драматический театр",
-    "city": "Крым",
+    "slug": "labirint-krasnolesya",
+    "name": "Лабиринт Краснолесья",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Русский драматический театр"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "dom-muzey-a-p-chehova",
-    "name": "Дом-музей А. П. Чехова",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом-музей А. П. Чехова"
+      "Лабиринт Краснолесья"
     ],
     "description": null,
     "desc_baseline_count": 0,

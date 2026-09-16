@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Дом-музей А. П. Чехова — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <title>Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dom-muzey-a-p-chehova">
-  <meta property="og:title" content="Дом-музей А. П. Чехова — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "Дом-музей А. П. Чехова",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Крым",
+        "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
     },
@@ -48,13 +48,13 @@
         "@type": "MusicGroup",
         "name": "Екатерина Русакова, Анна Глушко, Георг Эннарис, Яков Головко, Марина Герман, Арзы Меджидова, Галина Волошина, Альфия Темирбулатова"
       },
-      "image": "/images/events/8e67dc2463db7f57ed107bfa7a34f09b.jpg"
+      "image": "/images/events/314cca59ebc3bdb60d576aca8e29c63b.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Дом-музей А. П. Чехова"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Дом-музей А. П. Чехова"}]}
 </script>
   <style>
 
@@ -1063,7 +1063,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/all.html">Крым</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Дом-музей А. П. Чехова</h1>
 
