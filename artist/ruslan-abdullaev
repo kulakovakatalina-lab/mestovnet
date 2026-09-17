@@ -40,7 +40,7 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",

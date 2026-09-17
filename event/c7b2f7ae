@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Артём «Темень» Родионов, Рок-н-рольщики, в Симферополе, 17 сентября, ср. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Артём «Темень» Родионов, Рок-н-рольщики (Симферополь), в Симферополе, 17 сентября, ср. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Артём «Темень» Родионов — Рок-н-рольщики, Симферополь, 17 сентября · Местов.Нет</title>
+<title>Артём «Темень» Родионов — Рок-н-рольщики (Симферополь), 17 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,8 +959,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/c7b2f7ae">
-<meta property="og:title" content="Артём «Темень» Родионов — Рок-н-рольщики, Симферополь, 17 сентября · Местов.Нет">
-<meta property="og:description" content="Артём «Темень» Родионов, Рок-н-рольщики, в Симферополе, 17 сентября, ср. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Артём «Темень» Родионов — Рок-н-рольщики (Симферополь), 17 сентября · Местов.Нет">
+<meta property="og:description" content="Артём «Темень» Родионов, Рок-н-рольщики (Симферополь), в Симферополе, 17 сентября, ср. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <script type="application/ld+json">
 {
@@ -972,7 +972,7 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-09-17T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
@@ -983,6 +983,12 @@ a { color: inherit; text-decoration: none; }
       "performer": {
         "@type": "MusicGroup",
         "name": "Артём «Темень» Родионов"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
       }
     }
   ]

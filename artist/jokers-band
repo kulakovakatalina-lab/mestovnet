@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Jokers Band show: мировые рок и рок-поп хиты в полном электрическом составе"
+      "description": "Jokers Band show: мировые рок и рок-поп хиты в полном электрическом составе. Не акустика"
     }
   ]
 }

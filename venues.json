@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 27,
+    "event_count": 31,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -104,21 +104,6 @@
     "lon": 35.016803
   },
   {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "ул. Екатерининская, 14",
-    "event_count": 15,
-    "aliases": [
-      "Рок-н-рольщики",
-      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -166,6 +151,21 @@
     "desc_baseline_count": 12,
     "lat": 45.300091,
     "lon": 36.427239
+  },
+  {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "ул. Екатерининская, 14",
+    "event_count": 11,
+    "aliases": [
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "usadba-rodnoe-gnezdo",
@@ -382,7 +382,6 @@
     "event_count": 6,
     "aliases": [
       "Отель «Ялта-Интурист»",
-      "Отель Ялта-Интурист",
       "Отель Ялта-Интурист, Прогулочная аллея",
       "Пляж «Изумрудный», Отель «Ялта-Интурист»",
       "Прогулочная аллея отеля Ялта-Интурист"
@@ -1034,6 +1033,20 @@
     "event_count": 2,
     "aliases": [
       "Для души | Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "winepark",
+    "name": "Winepark",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Winepark"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1937,20 +1950,6 @@
     "lon": null
   },
   {
-    "slug": "winepark",
-    "name": "Winepark",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Winepark"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "klubnyy-plyazh-laspi",
     "name": "клубный пляж Ласпи",
     "city": "Крым",
@@ -2014,20 +2013,6 @@
     "event_count": 1,
     "aliases": [
       "Национальный центр «Россия»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2119,6 +2104,20 @@
     "lon": null
   },
   {
+    "slug": "labirint-krasnolesya",
+    "name": "Лабиринт Краснолесья",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Лабиринт Краснолесья"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dom-muzey-a-p-chehova",
     "name": "Дом-музей А. П. Чехова",
     "city": "Ялта",
@@ -2126,6 +2125,20 @@
     "event_count": 1,
     "aliases": [
       "Дом-музей А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2154,20 +2167,6 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "labirint-krasnolesya",
-    "name": "Лабиринт Краснолесья",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Лабиринт Краснолесья"
     ],
     "description": null,
     "desc_baseline_count": 0,
