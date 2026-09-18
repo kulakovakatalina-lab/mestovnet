@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 35,
+    "event_count": 38,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -135,6 +135,23 @@
     "lon": null
   },
   {
+    "slug": "mramornaya-peschera",
+    "name": "Мраморная пещера",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 12,
+    "aliases": [
+      "Мраморная пещера",
+      "Пещера «Мраморная»",
+      "Пещера Мраморная",
+      "пещера «Мраморная»"
+    ],
+    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
+    "desc_baseline_count": 4,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -183,23 +200,6 @@
     "desc_baseline_count": 4,
     "lat": 44.567516,
     "lon": 33.728614
-  },
-  {
-    "slug": "mramornaya-peschera",
-    "name": "Мраморная пещера",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 11,
-    "aliases": [
-      "Мраморная пещера",
-      "Пещера «Мраморная»",
-      "Пещера Мраморная",
-      "пещера «Мраморная»"
-    ],
-    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
-    "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "sevastopol",
@@ -375,6 +375,20 @@
     "lon": null
   },
   {
+    "slug": "gastrodvor",
+    "name": "Гастродвор",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Гастродвор"
+    ],
+    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
+    "desc_baseline_count": 2,
+    "lat": 44.494636,
+    "lon": 34.166005
+  },
+  {
     "slug": "otel-yalta-inturist",
     "name": "Отель «Ялта-Интурист»",
     "city": "Ялта",
@@ -382,6 +396,7 @@
     "event_count": 6,
     "aliases": [
       "Отель «Ялта-Интурист»",
+      "Отель Ялта-Интурист",
       "Отель Ялта-Интурист, Прогулочная аллея",
       "Пляж «Изумрудный», Отель «Ялта-Интурист»",
       "Прогулочная аллея отеля Ялта-Интурист"
@@ -418,20 +433,6 @@
     "desc_baseline_count": 1,
     "lat": 44.606638,
     "lon": 33.522078
-  },
-  {
-    "slug": "gastrodvor",
-    "name": "Гастродвор",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Гастродвор"
-    ],
-    "description": "«Гастродвор» — многоформатное гастрономическое пространство в историческом здании на набережной Ялты.",
-    "desc_baseline_count": 2,
-    "lat": 44.494636,
-    "lon": 34.166005
   },
   {
     "slug": "krongs",
@@ -587,6 +588,20 @@
     "event_count": 4,
     "aliases": [
       "Пляж-кафе «Van Gogh»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "simferopol",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Симферополь"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -824,20 +839,6 @@
     "lon": null
   },
   {
-    "slug": "simferopol",
-    "name": "Симферополь",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Симферополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "russkiy-teatr-im-gorkogo",
     "name": "Русский театр им. Горького",
     "city": "Симферополь",
@@ -1033,20 +1034,6 @@
     "event_count": 2,
     "aliases": [
       "Для души | Крым"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "winepark",
-    "name": "Winepark",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Winepark"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1950,6 +1937,20 @@
     "lon": null
   },
   {
+    "slug": "winepark",
+    "name": "Winepark",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Winepark"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "klubnyy-plyazh-laspi",
     "name": "клубный пляж Ласпи",
     "city": "Крым",
@@ -2104,13 +2105,13 @@
     "lon": null
   },
   {
-    "slug": "labirint-krasnolesya",
-    "name": "Лабиринт Краснолесья",
-    "city": "Севастополь",
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Лабиринт Краснолесья"
+      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2120,7 +2121,7 @@
   {
     "slug": "dom-muzey-a-p-chehova",
     "name": "Дом-музей А. П. Чехова",
-    "city": "Ялта",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -2132,13 +2133,13 @@
     "lon": null
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
+    "slug": "labirint-krasnolesya",
+    "name": "Лабиринт Краснолесья",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Камелот"
+      "Лабиринт Краснолесья"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2167,6 +2168,20 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "galereya-iskusstv-mayya",
+    "name": "Галерея искусств «Майя»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея искусств «Майя»"
     ],
     "description": null,
     "desc_baseline_count": 0,

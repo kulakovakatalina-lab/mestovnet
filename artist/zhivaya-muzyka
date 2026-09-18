@@ -40,15 +40,15 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Отель «Ялта-Интурист»",
+        "name": "Отель Ялта-Интурист",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Праздничная музыка в отеле «Ялта-Интурист» в новогоднюю ночь.",
-      "image": "/images/events/333f0f4bc1b664d63808cbbc3c6c9e37.jpg"
+      "description": "Праздничные гуляния с живой музыкой в отеле 'Ялта-Интурист' в новогоднюю ночь.",
+      "image": "/images/events/571a93d3582b05911231bde6220cbe71.jpg"
     }
   ]
 }

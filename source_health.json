@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "checked_at": "2026-09-17T05:59:47.125921+00:00",
+  "checked_at": "2026-09-18T05:48:07.264616+00:00",
   "sources": {
     "belbekma": {
       "title": "Белбек",
@@ -8,14 +8,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://vk.com/belbekma",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "BelbekskayaYarmarka": {
       "title": "Белбекская Ярмарка",
@@ -23,9 +23,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://t.me/s/BelbekskayaYarmarka",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
-      "status": "error",
-      "error": "[Errno 104] Connection reset by peer"
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
+      "status": "checked",
+      "posts": 3,
+      "extracted": 0,
+      "accepted": 0,
+      "merged": 0,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 1
     },
     "hp_band": {
       "title": "HP Band",
@@ -33,14 +38,14 @@
       "city": "Крым",
       "type": "venue",
       "url": "https://t.me/s/hp_band",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "clubjam": {
       "title": "Jam Club",
@@ -48,13 +53,13 @@
       "city": "Симферополь",
       "type": "venue",
       "url": "https://t.me/s/clubjam",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 5,
       "extracted": 9,
       "accepted": 0,
       "merged": 7,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "nb_yalta": {
@@ -63,14 +68,14 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://t.me/s/nb_yalta",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "rocknroll_92": {
       "title": "Рок-н-рольщики (Севастополь)",
@@ -78,14 +83,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://t.me/s/rocknroll_92",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 7,
-      "extracted": 0,
-      "accepted": 0,
+      "posts": 5,
+      "extracted": 3,
+      "accepted": 3,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 3
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 0
     },
     "rocknroll_82": {
       "title": "Рок-н-рольщики (Симферополь)",
@@ -93,13 +98,13 @@
       "city": "Симферополь",
       "type": "venue",
       "url": "https://vk.com/rocknroll_82",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 12,
-      "extracted": 17,
-      "accepted": 4,
-      "merged": 13,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "posts": 11,
+      "extracted": 13,
+      "accepted": 3,
+      "merged": 9,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "dlyadushi_Crimea": {
@@ -108,13 +113,13 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://t.me/s/dlyadushi_Crimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 8,
-      "extracted": 3,
+      "posts": 5,
+      "extracted": 2,
       "accepted": 0,
-      "merged": 3,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "merged": 2,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "afisha_crimea": {
@@ -123,13 +128,13 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://t.me/s/afisha_crimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 6,
-      "extracted": 2,
+      "posts": 8,
+      "extracted": 3,
       "accepted": 1,
-      "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "merged": 1,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "sevastopol_jazz": {
@@ -138,13 +143,13 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://vk.com/sevastopol_jazz",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 6,
       "extracted": 6,
       "accepted": 1,
-      "merged": 4,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "merged": 2,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "grzntcrimea": {
@@ -153,14 +158,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://vk.com/grzntcrimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "purplecaseband": {
       "title": "Purple Case Band",
@@ -168,14 +173,14 @@
       "city": "Крым",
       "type": "venue",
       "url": "https://t.me/s/purplecaseband",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "skazhitejazz": {
       "title": "Скажите Джаз",
@@ -183,14 +188,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://vk.com/skazhitejazz",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "tavrida_art": {
       "title": "ТАВРИДА.АРТ",
@@ -198,13 +203,13 @@
       "city": "Судак",
       "type": "venue",
       "url": "https://vk.com/tavrida_art",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 72,
-      "extracted": 27,
+      "posts": 74,
+      "extracted": 16,
       "accepted": 0,
-      "merged": 23,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "merged": 15,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "sky_beach_yalta": {
@@ -213,14 +218,14 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://vk.com/sky_beach_yalta",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "hotel_yalta_intourist": {
       "title": "Отель Ялта-Интурист",
@@ -228,13 +233,13 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://vk.com/hotel_yalta_intourist",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 16,
+      "posts": 17,
       "extracted": 1,
       "accepted": 1,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "massandrasun": {
@@ -243,14 +248,14 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://t.me/s/massandrasun",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 1,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 7
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 8
     },
     "usadbarodnoegnezdo": {
       "title": "Усадьба Родное Гнездо",
@@ -258,9 +263,14 @@
       "city": "Крым",
       "type": "venue",
       "url": "https://t.me/s/usadbarodnoegnezdo",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
-      "status": "error",
-      "error": "[Errno 104] Connection reset by peer"
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
+      "status": "checked",
+      "posts": 6,
+      "extracted": 1,
+      "accepted": 0,
+      "merged": 1,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 0
     },
     "api_balaklava": {
       "title": "API Балаклава",
@@ -268,9 +278,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://t.me/s/api_balaklava",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
-      "status": "error",
-      "error": "[Errno 104] Connection reset by peer"
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
+      "status": "checked",
+      "posts": 2,
+      "extracted": 0,
+      "accepted": 0,
+      "merged": 0,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 1
     },
     "crimea_event": {
       "title": "Крым Event",
@@ -278,14 +293,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://vk.com/crimea_event",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "Svoi_ludi_crimea": {
       "title": "Свои Люди Крым",
@@ -293,14 +308,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://t.me/s/Svoi_ludi_crimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "koncertykrym": {
       "title": "Концерты Крым",
@@ -308,13 +323,13 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://t.me/s/koncertykrym",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 16,
-      "extracted": 6,
-      "accepted": 1,
+      "posts": 17,
+      "extracted": 7,
+      "accepted": 2,
       "merged": 5,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "afisha_payberry": {
@@ -323,14 +338,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://vk.com/afisha_payberry",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 5,
+      "posts": 6,
       "extracted": 0,
-      "accepted": 0,
+      "accepted": 1,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 11
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 12
     },
     "artcafesnezhinka": {
       "title": "Арт-кафе «Снежинка»",
@@ -338,9 +353,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://t.me/s/artcafesnezhinka",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
-      "status": "error",
-      "error": "[Errno 104] Connection reset by peer"
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
+      "status": "checked",
+      "posts": 7,
+      "extracted": 10,
+      "accepted": 1,
+      "merged": 3,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 0
     },
     "beliyclub": {
       "title": "Ночной клуб «Белый»",
@@ -348,14 +368,14 @@
       "city": "Евпатория",
       "type": "venue",
       "url": "https://t.me/s/beliyclub",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "krimmuzteatr": {
       "title": "Музыкальный театр РК",
@@ -363,14 +383,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://t.me/s/krimmuzteatr",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "vkussea": {
       "title": "Вкус нашего моря",
@@ -378,14 +398,14 @@
       "city": "Судак",
       "type": "venue",
       "url": "https://t.me/s/vkussea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 3,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "concert_crimea": {
       "title": "Музыка на закате",
@@ -393,14 +413,14 @@
       "city": "Бахчисарай",
       "type": "venue",
       "url": "https://t.me/s/concert_crimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "alushta_today": {
       "title": "Алушта Сегодня",
@@ -408,9 +428,14 @@
       "city": "Алушта",
       "type": "afisha",
       "url": "https://t.me/s/alushta_today",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
-      "status": "error",
-      "error": "[Errno 104] Connection reset by peer"
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
+      "status": "checked",
+      "posts": 5,
+      "extracted": 0,
+      "accepted": 0,
+      "merged": 0,
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 1
     },
     "HaiPetri": {
       "title": "Хай'Петри",
@@ -418,7 +443,7 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://max.ru/join/XLGyAA-3_jV-fbgxaCUQJOSnrIf7Oc1nvpoyZPyWCbg",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "not_checked"
     },
     "dlyadushi_crimea": {
@@ -427,14 +452,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://vk.com/dlyadushi_crimea",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 6,
+      "posts": 5,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 6
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 7
     },
     "gastrodvor.yalta": {
       "title": "Гастродвор",
@@ -442,13 +467,13 @@
       "city": "Ялта",
       "type": "venue",
       "url": "https://vk.com/gastrodvor.yalta",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 4,
-      "extracted": 1,
-      "accepted": 0,
+      "extracted": 2,
+      "accepted": 1,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "apibalaklava": {
@@ -457,14 +482,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://vk.com/apibalaklava",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "rodnoegnezdo": {
       "title": "Усадьба Родное гнездо",
@@ -472,13 +497,13 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://vk.com/rodnoegnezdo",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
-      "posts": 5,
+      "posts": 6,
       "extracted": 1,
       "accepted": 0,
       "merged": 1,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "konsolsport": {
@@ -487,14 +512,14 @@
       "city": "Симферополь",
       "type": "venue",
       "url": "https://vk.com/konsolsport",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "lucky_winery": {
       "title": "Lucky Winery",
@@ -502,14 +527,14 @@
       "city": "Бахчисарай",
       "type": "venue",
       "url": "https://vk.com/lucky_winery",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "7dolin": {
       "title": "7 Долин",
@@ -517,14 +542,14 @@
       "city": "Севастополь",
       "type": "venue",
       "url": "https://vk.com/7dolin",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "public210355908": {
       "title": "Бахчисарайский районный дом культуры",
@@ -532,14 +557,14 @@
       "city": "Бахчисарай",
       "type": "venue",
       "url": "https://vk.com/public210355908",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 9,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 8
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 9
     },
     "krymskiye_dela": {
       "title": "Крымские Дела",
@@ -547,7 +572,7 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://www.instagram.com/krymskiye_dela/",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "not_checked"
     },
     "yandex_afisha": {
@@ -556,14 +581,14 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://afisha.yandex.ru/",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 0,
       "extracted": 0,
       "accepted": 0,
       "merged": 0,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
-      "consecutive_zero_extractions": 18
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
+      "consecutive_zero_extractions": 19
     },
     "afisha_ru": {
       "title": "Afisha.ru",
@@ -571,13 +596,13 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://www.afisha.ru/",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 13,
       "extracted": 13,
       "accepted": 9,
       "merged": 3,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     },
     "afisha_goroda": {
@@ -586,20 +611,20 @@
       "city": "Крым",
       "type": "afisha",
       "url": "https://afishagoroda.ru/",
-      "last_checked_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_checked_at": "2026-09-18T05:48:07.264616+00:00",
       "status": "checked",
       "posts": 5,
       "extracted": 5,
       "accepted": 4,
       "merged": 1,
-      "last_successful_fetch_at": "2026-09-17T05:59:47.125921+00:00",
+      "last_successful_fetch_at": "2026-09-18T05:48:07.264616+00:00",
       "consecutive_zero_extractions": 0
     }
   },
   "cities": {
     "Гурзуф": 1,
     "Керчь": 3,
-    "Севастополь": 10,
+    "Севастополь": 13,
     "Симферополь": 18,
     "Судак": 2,
     "Феодосия": 2,
@@ -784,31 +809,6 @@
     }
   },
   "alerts": [
-    {
-      "level": "error",
-      "source": "BelbekskayaYarmarka",
-      "message": "источник недоступен"
-    },
-    {
-      "level": "error",
-      "source": "usadbarodnoegnezdo",
-      "message": "источник недоступен"
-    },
-    {
-      "level": "error",
-      "source": "api_balaklava",
-      "message": "источник недоступен"
-    },
-    {
-      "level": "error",
-      "source": "artcafesnezhinka",
-      "message": "источник недоступен"
-    },
-    {
-      "level": "error",
-      "source": "alushta_today",
-      "message": "источник недоступен"
-    },
     {
       "level": "warning",
       "source": "HaiPetri",
