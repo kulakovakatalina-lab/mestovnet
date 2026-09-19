@@ -1821,47 +1821,31 @@ def _fetch_images_from_url(url: str) -> list[str]:
 
 
 def _redistribute_images(events: list[dict]) -> int:
-    """Перескачивает картинки из постов и распределяет по событиям.
-    Нужно для старых событий из кэша/архива у которых одна картинка на всех.
-    Возвращает количество обновлённых событий."""
+    """Восстанавливает общие афиши актуальных событий, сохраняя назначенные."""
     by_url = {}
-    for e in events:
-        url = e.get("source_url", "")
-        if url and "t.me/" in url:
-            by_url.setdefault(url, []).append(e)
-
+    for event in events:
+        url = event.get("source_url", "")
+        if url:
+            by_url.setdefault(url, []).append(event)
     updated = 0
     for url, group in by_url.items():
-        # Один пост с несколькими событиями нельзя безопасно разложить по
-        # картинкам без анализа самих изображений. Не угадываем по позиции.
-        if len(group) != 1:
+        missing = [e for e in group if e.get("date", "") >= moscow_today()
+                   and not e.get("image") and not e.get("images")]
+        if not missing:
             continue
-        # Skip if already has multiple distinct images
-        existing = set()
-        for e in group:
-            for img in (e.get("images") or []):
-                existing.add(img)
-            if e.get("image"):
-                existing.add(e["image"])
-        if len(existing) > 1:
-            continue
-
-        raw_urls = _fetch_images_from_url(url)
-        if len(raw_urls) <= 1:
-            continue
-
-        local = []
-        for u in raw_urls:
-            p = download_image(u)
-            if p:
-                local.append(p)
-        if len(local) <= 1:
-            continue
-
-        group[0]["image"] = local[0]
-        group[0]["images"] = local
-        updated += 1
-
+        local = list(dict.fromkeys(
+            path for e in group
+            for path in ([e.get("image")] + list(e.get("images") or []))
+            if path and os.path.isfile(path.lstrip("/"))
+        ))
+        if not local:
+            for raw_url in _fetch_images_from_url(url):
+                path = download_image(raw_url)
+                if path and path not in local:
+                    local.append(path)
+        if local:
+            _assign_event_images(missing, local, multi_image_post=len(local) > 1)
+            updated += len(missing)
     return updated
 
 
@@ -1914,30 +1898,10 @@ def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
 
 
 def _assign_event_images(events: list[dict], local_images: list[str], *, multi_image_post: bool) -> None:
-    """Назначает постеры без предположений о невидимом содержимом картинок.
-
-    Единственному событию можно отдать весь альбом. Для нескольких событий
-    соответствие постера без визуального анализа неоднозначно — даже если
-    картинка в посте всего одна. Лучше оставить карточки без постера, чем
-    показать чужую дату или другого исполнителя.
-    """
-    if not events or not local_images:
-        for event in events:
-            event["image"] = None
-            event["images"] = None
-        return
-    if len(events) == 1:
-        events[0]["image"] = local_images[0]
-        events[0]["images"] = local_images if len(local_images) > 1 else None
-        return
-    if multi_image_post:
-        for event in events:
-            event["image"] = None
-            event["images"] = None
-        return
+    """Все события поста используют его общую афишу или полный альбом."""
     for event in events:
-        event["image"] = None
-        event["images"] = None
+        event["image"] = local_images[0] if local_images else None
+        event["images"] = list(local_images) if len(local_images) > 1 else None
 
 
 def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK,

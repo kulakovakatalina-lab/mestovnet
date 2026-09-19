@@ -425,12 +425,12 @@ def test_explicit_event_location_overrides_channel_city():
     assert resolve_city(event, channel) == "Симферополь"
 
 
-def test_multiple_events_from_image_album_do_not_guess_posters():
+def test_multiple_events_share_complete_source_album():
     events = [{}, {}]
     _assign_event_images(events, ["one.jpg", "two.jpg"], multi_image_post=True)
     assert events == [
-        {"image": None, "images": None},
-        {"image": None, "images": None},
+        {"image": "one.jpg", "images": ["one.jpg", "two.jpg"]},
+        {"image": "one.jpg", "images": ["one.jpg", "two.jpg"]},
     ]
 
 
@@ -440,10 +440,10 @@ def test_single_event_keeps_image_album():
     assert events == [{"image": "one.jpg", "images": ["one.jpg", "two.jpg"]}]
 
 
-def test_multiple_events_do_not_share_an_ambiguous_post_image():
+def test_multiple_events_share_single_source_image():
     events = [{}, {}]
     _assign_event_images(events, ["schedule.jpg"], multi_image_post=False)
     assert events == [
-        {"image": None, "images": None},
-        {"image": None, "images": None},
+        {"image": "schedule.jpg", "images": None},
+        {"image": "schedule.jpg", "images": None},
     ]
