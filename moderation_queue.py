@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Optional
 
 from generate_pages import event_meta
+from parser import is_placeholder_title
 
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
@@ -83,6 +84,8 @@ def save_cached_decisions(decisions: list[dict]) -> bool:
 
 def reasons(event: dict) -> list[str]:
     result = []
+    if is_placeholder_title(event.get("artist")):
+        result.append("нет названия")
     for field, label in (("time", "нет времени"), ("venue", "нет площадки"),
                          ("price", "нет цены"), ("image", "нет постера")):
         if not event.get(field):
@@ -215,7 +218,11 @@ def main() -> None:
     }
     queue = []
     for event in events:
-        issues = reasons(event)
+        reviewed = dict(event)
+        url = event.get("source_url") or ""
+        if url in custom_names:
+            reviewed["artist"] = custom_names[url]
+        issues = reasons(reviewed)
         seo_collision = str(event.get("id")) in collision_ids
         if seo_collision:
             issues.append(SEO_COLLISION)
@@ -236,7 +243,7 @@ def main() -> None:
         # Однозначно сверенные изменения существующей карточки применяются
         # автоматически: это не новый LLM-кандидат, а обновление того же
         # первоисточника с сохранённым event_id.
-        auto_approved = not seo_collision and (
+        auto_approved = not seo_collision and "нет названия" not in issues and (
             bool(event.get("auto_updated"))
             or (bool(issues) and set(issues).issubset(OPTIONAL_ISSUES))
         )

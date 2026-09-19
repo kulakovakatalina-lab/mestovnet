@@ -257,7 +257,7 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 НЕ включай в результат:
 - мастер-классы, интенсивы, курсы, обучение, танцевальные классы;
 - «дни свободного творчества», открытые микрофоны без конкретных исполнителей;
-- выставки, кинопоказы, лекции, ярмарки (если нет живой музыки);
+- выставки, кинопоказы, лекции, ярмарки, встречи с режиссёрами о кино (если нет живой музыки);
 - общие анонсы без конкретного исполнителя/группы на конкретную дату;
 - экскурсии, музеи, прогулки, спортивные забеги, вечеринки без музыки, рекламу отеля;
 - музыкальное лото, музлото, музыкальные квизы и игры с угадыванием хитов;
@@ -352,6 +352,16 @@ def _parse_claude_json(raw: str):
         return json.loads(raw)
     except json.JSONDecodeError:
         return None
+
+
+_PLACEHOLDER_TITLES = {
+    "", "не указано", "не указан", "неизвестно", "без названия",
+    "null", "none", "undefined", "nan",
+}
+
+
+def is_placeholder_title(value) -> bool:
+    return " ".join(str(value or "").casefold().split()) in _PLACEHOLDER_TITLES
 
 
 _SCALAR_FIELDS = (
@@ -474,6 +484,13 @@ def _is_refusal_event(e: dict) -> bool:
     if any(m in desc for m in _REFUSAL_MARKERS):
         return True
     if any(m in desc for m in _NON_MUSIC_MARKERS):
+        return True
+    # Встречи о кино могут прийти как «другое», без имени в artist.
+    cinema_meeting = "встреч" in desc and any(word in desc for word in (
+        "режисс", "киноиндустр", "вопросы о кино", "сценарист",
+    ))
+    live_music = any(word in desc for word in ("концерт", "живой музык", "живая музыка", "выступление группы", "джем"))
+    if cinema_meeting and not live_music:
         return True
     artist = _normalize(e.get("artist") or "")
     event_type = _normalize(e.get("event_type") or "")
@@ -1368,7 +1385,7 @@ def _event_validation_reason(event: dict) -> "str | None":
     if _valid_date_or_none(event.get("date")) is None:
         return "invalid_date"
     artist = (event.get("artist") or "").strip()
-    if not artist:
+    if is_placeholder_title(artist):
         return "missing_artist"
     if _all_artists_generic(artist):
         return "generic_artist"
