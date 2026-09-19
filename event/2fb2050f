@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Встречаемся на 'Забеге и танцах во Дворе' в коллаборации с Фестивалем WINEPARK. В гостях - COFFEE RUN PARTY.",
+      "description": "Встречаемся на 'Забеге и танцах во Дворе'. Начинаем воскресное утро с бега, движения и музыки. В гостях - COFFEE RUN PARTY.",
       "performer": {
         "@type": "MusicGroup",
         "name": "COFFEE RUN PARTY"

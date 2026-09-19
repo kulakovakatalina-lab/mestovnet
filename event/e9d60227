@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Вадим Самойлов, Winepark, в Ялте, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="ДАНИЛА ЛИНДЭЛЕ, Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь, в Симферополе, 25 сентября, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Вадим Самойлов — Winepark, Ялта, 26 сентября · Местов.Нет</title>
+<title>ДАНИЛА ЛИНДЭЛЕ — Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь, 25 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -958,40 +958,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/05c4100f">
-<meta property="og:title" content="Вадим Самойлов — Winepark, Ялта, 26 сентября · Местов.Нет">
-<meta property="og:description" content="Вадим Самойлов, Winepark, в Ялте, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/e9d60227">
+<meta property="og:title" content="ДАНИЛА ЛИНДЭЛЕ — Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь, 25 сентября · Местов.Нет">
+<meta property="og:description" content="ДАНИЛА ЛИНДЭЛЕ, Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь, в Симферополе, 25 сентября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/b09186046993a0083f59e4a269a20f2e.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Вадим Самойлов",
-      "startDate": "2026-09-26T12:00:00+03:00",
+      "name": "ДАНИЛА ЛИНДЭЛЕ",
+      "startDate": "2026-09-25T18:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Winepark",
+        "name": "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
+      "description": "Вечер поэзии и прозы о любви, душе, иллюзиях, внутренней свободе и той незримой силе, которая всегда рядом с нами. Зрители становятся частью происходящего. В течение встречи каждый достает стихотворение из шкатулки. Никто не знает заранее, какие стихи прозвучат и какое достанется именно вам.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Вадим Самойлов"
+        "name": "ДАНИЛА ЛИНДЭЛЕ"
       },
-      "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg"
+      "image": "/images/events/b09186046993a0083f59e4a269a20f2e.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "1000 рублей",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Вадим Самойлов"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "ДАНИЛА ЛИНДЭЛЕ"}]}
 </script>
 </head>
 <body>

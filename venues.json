@@ -57,6 +57,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 17,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "kontsertnyy-zal-yubileynyy",
     "name": "Концертный зал «Юбилейный»",
     "city": "Ялта",
@@ -88,20 +102,6 @@
     "desc_baseline_count": 16,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 16,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "depo",
@@ -956,6 +956,21 @@
     "lon": 34.132019
   },
   {
+    "slug": "yoga-hall-ashram",
+    "name": "Yoga Hall Ashram",
+    "city": "Севастополь",
+    "address": "ул. Богдана Хмельницкого, 20",
+    "event_count": 2,
+    "aliases": [
+      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20",
+      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "restoran-motivy",
     "name": "Ресторан «Мотивы»",
     "city": "Севастополь",
@@ -1034,6 +1049,20 @@
     "event_count": 2,
     "aliases": [
       "Для души | Крым"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "winepark",
+    "name": "Winepark",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Winepark"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1489,20 +1518,6 @@
     "lon": null
   },
   {
-    "slug": "yoga-hall-ashram",
-    "name": "Yoga Hall Ashram",
-    "city": "Севастополь",
-    "address": "ул. Богдана Хмельницкого, 20",
-    "event_count": 1,
-    "aliases": [
-      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "teplo-tvoya-territoriya",
     "name": "ТЕпЛО. Твоя территория",
     "city": "Севастополь",
@@ -1937,20 +1952,6 @@
     "lon": null
   },
   {
-    "slug": "winepark",
-    "name": "Winepark",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Winepark"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "klubnyy-plyazh-laspi",
     "name": "клубный пляж Ласпи",
     "city": "Крым",
@@ -2119,9 +2120,23 @@
     "lon": null
   },
   {
+    "slug": "galereya-iskusstv-mayya",
+    "name": "Галерея искусств «Майя»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея искусств «Майя»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dom-muzey-a-p-chehova",
     "name": "Дом-музей А. П. Чехова",
-    "city": "Крым",
+    "city": "Ялта",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -2175,13 +2190,27 @@
     "lon": null
   },
   {
-    "slug": "galereya-iskusstv-mayya",
-    "name": "Галерея искусств «Майя»",
-    "city": "Ялта",
+    "slug": "restoran-barkas-na-parkovoy",
+    "name": "Ресторан Баркас на Парковой",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Галерея искусств «Майя»"
+      "Ресторан Баркас на Парковой"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "yoga-holl-ashram",
+    "name": "Йога холл АШРАМ",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Йога холл АШРАМ"
     ],
     "description": null,
     "desc_baseline_count": 0,

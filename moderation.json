@@ -17,6 +17,24 @@
     ]
   },
   {
+    "id": "05c4100f",
+    "date": "2026-09-26",
+    "time": "12:00–21:00",
+    "artist": "Вадим Самойлов",
+    "venue": "Winepark",
+    "source_city": "Ялта",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
+    "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg",
+    "source_url": "https://t.me/afisha_crimea/8378",
+    "reasons": [
+      "нет цены",
+      "дубли мета-тегов: совпадают title и description"
+    ]
+  },
+  {
     "id": "7b44fa9a",
     "date": "2026-10-09",
     "time": null,
@@ -129,20 +147,40 @@
     ]
   },
   {
-    "id": "960222b9",
-    "date": "2026-09-18",
-    "time": null,
-    "artist": "Мимла Же",
-    "venue": "Симферополь",
-    "source_city": "Симферополь",
-    "price": "800 ₽",
-    "genre": "авторская",
+    "id": "05c4100f",
+    "date": "2026-09-26",
+    "time": "20:00",
+    "artist": "Вадим Самойлов",
+    "venue": "Winepark",
+    "source_city": "Ялта",
+    "price": null,
+    "genre": "поп",
     "event_type": "концерт",
-    "description": "«Уже». Поэтическо-музыкальный моноспектакль Мимлы Же. Авторская экспериментальная постановка из четырёх стихотворных сказок, где простые рифмы, самоирония и светлая грусть встречаются с глубокими смыслами.",
-    "image": "/images/events/969153d773a3b21b769c5284b613408f.jpg",
-    "source_url": "https://t.me/afisha_payberry/1633",
+    "description": "Концерт Вадима Самойлова, будут исполнены хиты 'Агаты Кристи'.",
+    "image": "/images/events/42909dbc1043cf56e35a1f556e7aee7e.jpg",
+    "source_url": "https://t.me/afisha_crimea/8546",
     "reasons": [
-      "нет времени"
+      "нет цены",
+      "дубли мета-тегов: совпадают title и description"
+    ]
+  },
+  {
+    "id": "3e5c631c",
+    "date": "2026-10-20",
+    "time": null,
+    "artist": "Исполняй",
+    "venue": "ТАВРИДА.АРТ",
+    "source_city": "Судак",
+    "price": null,
+    "genre": "авторская",
+    "event_type": "фестиваль",
+    "description": "II Всероссийский фестиваль авторской песни «Исполняй»",
+    "image": null,
+    "source_url": "https://vk.com/wall-89840945_120240",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
     ]
   }
 ]

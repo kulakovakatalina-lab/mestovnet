@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Winepark — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Winepark, в Ялте. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/winepark">
-  <meta property="og:title" content="Winepark — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Winepark, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <title>Йога холл АШРАМ — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Йога холл АШРАМ, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/yoga-holl-ashram">
+  <meta property="og:title" content="Йога холл АШРАМ — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Йога холл АШРАМ, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Winepark",
+      "name": "Йога холл АШРАМ",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ялта",
+        "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Вадим Самойлов",
-      "startDate": "2026-09-26T12:00:00+03:00",
+      "name": "Данила Линдэле",
+      "startDate": "2026-09-25T18:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Winepark"
+        "name": "Йога холл АШРАМ"
       },
-      "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
+      "description": "Вечер поэзии и прозы о любви, душе, иллюзиях, внутренней свободе и той незримой силе, которая всегда рядом с нами. Зрители становятся частью происходящего.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Вадим Самойлов"
+        "name": "Данила Линдэле"
       },
-      "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg"
+      "image": "/images/events/5d9d3a752c30cdb5021fa4a16c24f290.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Winepark"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Йога холл АШРАМ"}]}
 </script>
   <style>
 
@@ -1063,9 +1063,9 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/yalta.html">Ялта</a>
+      · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Winepark</h1>
+    <h1 class="genre-hero-title">Йога холл АШРАМ</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Winepark", "Winepark"];
+const VENUE_ALIASES = ["Йога холл АШРАМ", "Йога холл АШРАМ"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
