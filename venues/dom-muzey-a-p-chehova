@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dom-muzey-a-p-chehova">
   <meta property="og:title" content="Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Екатерина Русакова, Анна Глушко, Георг Эннарис, Яков Головко, Марина Герман, Арзы Меджидова, Галина Волошина, Альфия Темирбулатова",
-      "startDate": "2026-09-19T16:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дом-музей А. П. Чехова"
-      },
-      "description": "В рамках цикла «Чехов в музыке» прозвучит концерт по мотивам знаменитой «Дамы с собачкой». Историю героев помогут раскрыть музыка, вокал и художественное слово.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Екатерина Русакова, Анна Глушко, Георг Эннарис, Яков Головко, Марина Герман, Арзы Меджидова, Галина Волошина, Альфия Темирбулатова"
-      },
-      "image": "/images/events/782b63925069fd525bd5a7c2d25bcc6c.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

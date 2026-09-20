@@ -17,24 +17,6 @@
     ]
   },
   {
-    "id": "05c4100f",
-    "date": "2026-09-26",
-    "time": "12:00–21:00",
-    "artist": "Вадим Самойлов",
-    "venue": "Winepark",
-    "source_city": "Ялта",
-    "price": null,
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
-    "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg",
-    "source_url": "https://t.me/afisha_crimea/8378",
-    "reasons": [
-      "нет цены",
-      "дубли мета-тегов: совпадают title и description"
-    ]
-  },
-  {
     "id": "7b44fa9a",
     "date": "2026-10-09",
     "time": null,
@@ -45,11 +27,10 @@
     "genre": "рок",
     "event_type": "трибьют",
     "description": "Концерт AC/DC tribute.",
-    "image": null,
+    "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
     "source_url": "https://t.me/crimea_event/5631",
     "reasons": [
-      "нет времени",
-      "нет постера"
+      "нет времени"
     ]
   },
   {
@@ -104,6 +85,7 @@
     "image": null,
     "source_url": "https://vk.com/wall-89840945_119589",
     "reasons": [
+      "нет названия",
       "нет времени",
       "нет цены",
       "нет постера"
