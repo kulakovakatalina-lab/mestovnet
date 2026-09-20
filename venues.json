@@ -108,7 +108,7 @@
     "name": "Депо",
     "city": "Симферополь",
     "address": "ул. Киевская, д. 4н",
-    "event_count": 13,
+    "event_count": 14,
     "aliases": [
       "Депо",
       "Клуб ДЕПО",
@@ -235,6 +235,21 @@
     "lon": null
   },
   {
+    "slug": "dvorets-kultury-profsoyuzov",
+    "name": "Дворец культуры профсоюзов",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "ДК профсоюзов",
+      "Дворец культуры профсоюзов"
+    ],
+    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
+    "desc_baseline_count": 5,
+    "lat": 44.964773,
+    "lon": 34.106607
+  },
+  {
     "slug": "sevastopolskiy-tskii",
     "name": "Севастопольский ЦКиИ",
     "city": "Севастополь",
@@ -262,21 +277,6 @@
     "desc_baseline_count": 8,
     "lat": 44.938155,
     "lon": 34.09338
-  },
-  {
-    "slug": "dvorets-kultury-profsoyuzov",
-    "name": "Дворец культуры профсоюзов",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "ДК профсоюзов",
-      "Дворец культуры профсоюзов"
-    ],
-    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
-    "desc_baseline_count": 5,
-    "lat": 44.964773,
-    "lon": 34.106607
   },
   {
     "slug": "art-kovcheg",
@@ -971,6 +971,21 @@
     "lon": null
   },
   {
+    "slug": "teplo-tvoya-territoriya",
+    "name": "ТЕпЛО. Твоя территория",
+    "city": "Севастополь",
+    "address": "ул. Поликуровская, 25",
+    "event_count": 2,
+    "aliases": [
+      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25",
+      "Тепло. Твоя территория"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "restoran-motivy",
     "name": "Ресторан «Мотивы»",
     "city": "Севастополь",
@@ -1514,20 +1529,6 @@
     ],
     "description": "Винзавод «Массандра» — один из старейших и известнейших винных заводов Крыма с историческими подвалами.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "teplo-tvoya-territoriya",
-    "name": "ТЕпЛО. Твоя территория",
-    "city": "Севастополь",
-    "address": "ул. Поликуровская, 25",
-    "event_count": 1,
-    "aliases": [
-      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -2211,6 +2212,20 @@
     "event_count": 1,
     "aliases": [
       "Йога холл АШРАМ"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
+    "name": "Егоровский зал Центра виноделия «Массандра»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Егоровский зал Центра виноделия «Массандра»"
     ],
     "description": null,
     "desc_baseline_count": 0,

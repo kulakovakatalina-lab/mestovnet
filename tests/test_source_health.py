@@ -9,7 +9,7 @@ from source_health import (active_city_counts, build_snapshot, configured_source
 def test_daily_workflow_creates_report_and_notifies_only_about_alerts():
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "parser-daily.yml").read_text(encoding="utf-8")
 
-    assert 'python parser.py --days "$DAYS" | tee parser_output.log' in workflow
+    assert 'python -u parser.py --days "$DAYS" 2>&1 | tee parser_output.log' in workflow
     assert "python source_health.py --log parser_output.log" in workflow
     assert "python source_health_notify.py" in workflow
 

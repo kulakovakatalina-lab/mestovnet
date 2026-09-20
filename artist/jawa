@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jawa — концерты в Крыму, Керчь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Jawa в Крыму (Керчь, Севастополь). 1 ближайших событий.">
+  <title>Jawa — концерты в Крыму, Керчь, Симферополь, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/jawa">
-  <meta property="og:title" content="Jawa — концерты в Крыму, Керчь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Jawa в Крыму (Керчь, Севастополь). 1 ближайших событий.">
+  <meta property="og:title" content="Jawa — концерты в Крыму, Керчь, Симферополь, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Jawa"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jawa",
+      "startDate": "2026-10-23T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jawa"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дворец культуры профсоюзов",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Группа Jawa с участием музыкантов «Сектора Газа» исполнит хиты группы во Дворце культуры профсоюзов в Симферополе. Начало в 19:00.",
+      "image": "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1020,9 +1040,9 @@ footer {
     </div>
     <h1 class="genre-hero-title">Jawa</h1>
 <p class="venue-description">Трибьют-программа хитов «Сектора Газа». Летом — Дом офицеров флота в Севастополе и «Корабел» в Керчи.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Керчь, Севастополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Керчь, Симферополь, Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

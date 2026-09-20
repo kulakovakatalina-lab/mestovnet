@@ -65,8 +65,9 @@ jobs:
 
       - name: Запустить парсер
         run: |
+          set -euo pipefail
           DAYS="${{ github.event.inputs.days || 14 }}"
-          python parser.py --days "$DAYS" | tee parser_output.log
+          python -u parser.py --days "$DAYS" 2>&1 | tee parser_output.log
           python source_health.py --log parser_output.log
           python repair_event_data.py
           python moderation_queue.py

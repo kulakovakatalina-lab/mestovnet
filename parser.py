@@ -1846,7 +1846,7 @@ def _redistribute_images(events: list[dict]) -> int:
             by_url.setdefault(url, []).append(event)
     updated = 0
     for url, group in by_url.items():
-        missing = [e for e in group if e.get("date", "") >= moscow_today()
+        missing = [e for e in group if (e.get("date") or "") >= moscow_today()
                    and not e.get("image") and not e.get("images")]
         if not missing:
             continue
@@ -2128,15 +2128,16 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     process_afisha_ru(all_events, source_stats, source_updates)
     process_afisha_goroda(all_events, source_stats, source_updates)
 
+    invalid_dates = _sanitize_event_dates(all_events)
+    if invalid_dates:
+        print(f"Очищено некорректных дат: {invalid_dates}")
+
     # Перераспределяем картинки: скачиваем все из постов и назначаем разным событиям
     img_updated = 0 if dry_run else _redistribute_images(all_events)
     if img_updated:
         print(f"Картинки обновлены: {img_updated} событий")
 
     before = len(all_events)
-    invalid_dates = _sanitize_event_dates(all_events)
-    if invalid_dates:
-        print(f"Очищено некорректных дат: {invalid_dates}")
     normalized_times, invalid_times = _sanitize_event_times(all_events)
     if normalized_times or invalid_times:
         print(f"Время: нормализовано {normalized_times}, очищено {invalid_times}")

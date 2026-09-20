@@ -27,3 +27,15 @@ def test_restore_failure_leaves_event_unchanged(monkeypatch):
     monkeypatch.setattr(parser, "_fetch_images_from_url", lambda url: [])
     assert parser._redistribute_images(events) == 0
     assert events == [{"date": "2999-01-01", "source_url": "source"}]
+
+
+def test_restore_skips_null_and_missing_dates_without_losing_valid_events(monkeypatch):
+    events = [{"date": None, "source_url": "source"},
+              {"source_url": "source"},
+              {"date": "", "source_url": "source"},
+              {"date": "2999-01-01", "source_url": "source"}]
+    monkeypatch.setattr(parser, "_fetch_images_from_url", lambda url: ["poster"])
+    monkeypatch.setattr(parser, "download_image", lambda url: "/images/events/shared.jpg")
+    assert parser._redistribute_images(events) == 1
+    assert all("image" not in event for event in events[:3])
+    assert events[3]["image"] == "/images/events/shared.jpg"
