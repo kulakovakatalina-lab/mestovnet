@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <title>Анна Шакель — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel">
-  <meta property="og:title" content="Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:title" content="Анна Шакель — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Шакель"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель",
-      "startDate": "2026-09-27T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Егоровский зал Центра виноделия «Массандра»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Джаз-трио «А3» и Анна Шакель представят программу «Ритм & Грув» в Егоровском зале Центра виноделия «Массандра». Начало в 18:00.",
-      "image": "/images/events/5da972b050dec4673b04ba8b59c35089.jpg"
     }
   ]
 }
@@ -1020,9 +1000,9 @@ footer {
     </div>
     <h1 class="genre-hero-title">Анна Шакель</h1>
 <p class="venue-description">Севастопольская джазовая вокалистка. Выступает с джазовым трио «А3» на открытых площадках — во дворце Дюльбер, отеле «Аквамарин», на гольф-поле — и на «поющих» джазовых вечерах, где зрители подпевают музыкантам.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь, Ялта</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

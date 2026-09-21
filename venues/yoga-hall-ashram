@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yoga Hall Ashram — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Yoga Hall Ashram, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Yoga Hall Ashram, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/yoga-hall-ashram">
   <meta property="og:title" content="Yoga Hall Ashram — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Yoga Hall Ashram, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Yoga Hall Ashram, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Богдана Хмельницкого, 20"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "ДАНИЛА ЛИНДЭЛЕ",
-      "startDate": "2026-09-25T18:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Yoga Hall Ashram"
-      },
-      "description": "Вечер поэзии и прозы о любви, душе, иллюзиях, внутренней свободе и той незримой силе, которая всегда рядом с нами. Зрители становятся частью происходящего. В течение встречи каждый достает стихотворение из шкатулки. Никто не знает заранее, какие стихи прозвучат и какое достанется именно вам.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "ДАНИЛА ЛИНДЭЛЕ"
-      },
-      "image": "/images/events/b09186046993a0083f59e4a269a20f2e.jpg"
     }
   ]
 }
@@ -1070,7 +1055,7 @@ footer {
 <div class="venue-address-block"><span class="venue-hero-address">ул. Богдана Хмельницкого, 20, Севастополь</span></div>
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
@@ -1092,7 +1077,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Yoga Hall Ashram, ул. Богдана Хмельницкого, 20", "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь", "Yoga Hall Ashram"];
+const VENUE_ALIASES = ["Yoga Hall Ashram, ул. Богдана Хмельницкого, 20", "Yoga Hall Ashram"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

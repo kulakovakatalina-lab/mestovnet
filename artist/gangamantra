@@ -40,15 +40,15 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Тепло. Твоя территория",
+        "name": "Пространство «ТЕпЛо. Твоя территория»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт авторской музыки крымской группы GangaMantra в пространстве «Тепло. Твоя территория» в Ялте. Начало в 19:30, билеты от 800 рублей.",
-      "image": "/images/events/7f409656d346faacfa97d6b3c84a90d3.jpg"
+      "description": "Дорогие наши. Мы вернулись с гастролей и соскучились по вам! По вашим улыбкам и внимательному присутствию. По поющим вместе людям. Поэтому, решили организовать концерт. Давайте праздновать осень вместе.",
+      "image": "/images/events/fa1170da61bc965c02c858887ff80bdd.jpg"
     }
   ]
 }
@@ -1040,7 +1040,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["GangaMantra", "GangaMantra"];
+const ARTIST_ALIASES = ["GangaMantra", "Gangamantra", "GangaMantra"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

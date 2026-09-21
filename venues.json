@@ -57,20 +57,6 @@
     "lon": null
   },
   {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 17,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
-  },
-  {
     "slug": "kontsertnyy-zal-yubileynyy",
     "name": "Концертный зал «Юбилейный»",
     "city": "Ялта",
@@ -104,6 +90,20 @@
     "lon": null
   },
   {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 15,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
+  },
+  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -120,6 +120,23 @@
     "lon": 34.1258
   },
   {
+    "slug": "mramornaya-peschera",
+    "name": "Мраморная пещера",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 13,
+    "aliases": [
+      "Мраморная пещера",
+      "Пещера «Мраморная»",
+      "Пещера Мраморная",
+      "пещера «Мраморная»"
+    ],
+    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
+    "desc_baseline_count": 4,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -130,23 +147,6 @@
       "El Capulco 0.0, сектор 6"
     ],
     "description": "Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ's, Scream (виниловый сет), Pasha Rhino и Gretta.",
-    "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "mramornaya-peschera",
-    "name": "Мраморная пещера",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 12,
-    "aliases": [
-      "Мраморная пещера",
-      "Пещера «Мраморная»",
-      "Пещера Мраморная",
-      "пещера «Мраморная»"
-    ],
-    "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
     "desc_baseline_count": 4,
     "lat": null,
     "lon": null
@@ -396,7 +396,6 @@
     "event_count": 6,
     "aliases": [
       "Отель «Ялта-Интурист»",
-      "Отель Ялта-Интурист",
       "Отель Ялта-Интурист, Прогулочная аллея",
       "Пляж «Изумрудный», Отель «Ялта-Интурист»",
       "Прогулочная аллея отеля Ялта-Интурист"
@@ -755,20 +754,6 @@
     "lon": null
   },
   {
-    "slug": "kvartal-kultur-mira",
-    "name": "Квартал культур мира",
-    "city": "Судак",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Квартал культур мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "bar-el-capulco-0-0",
     "name": "бар El Capulco 0.0",
     "city": "Ялта",
@@ -790,6 +775,20 @@
     "event_count": 3,
     "aliases": [
       "п Научный, ул Научная, 46"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kvartal-kultur-mira",
+    "name": "Квартал культур мира",
+    "city": "Судак",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Квартал культур мира"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -954,36 +953,6 @@
     "desc_baseline_count": 3,
     "lat": 44.441156,
     "lon": 34.132019
-  },
-  {
-    "slug": "yoga-hall-ashram",
-    "name": "Yoga Hall Ashram",
-    "city": "Севастополь",
-    "address": "ул. Богдана Хмельницкого, 20",
-    "event_count": 2,
-    "aliases": [
-      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20",
-      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20, Симферополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "teplo-tvoya-territoriya",
-    "name": "ТЕпЛО. Твоя территория",
-    "city": "Севастополь",
-    "address": "ул. Поликуровская, 25",
-    "event_count": 2,
-    "aliases": [
-      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25",
-      "Тепло. Твоя территория"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "restoran-motivy",
@@ -1529,6 +1498,34 @@
     ],
     "description": "Винзавод «Массандра» — один из старейших и известнейших винных заводов Крыма с историческими подвалами.",
     "desc_baseline_count": 1,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "yoga-hall-ashram",
+    "name": "Yoga Hall Ashram",
+    "city": "Севастополь",
+    "address": "ул. Богдана Хмельницкого, 20",
+    "event_count": 1,
+    "aliases": [
+      "Yoga Hall Ashram, ул. Богдана Хмельницкого, 20"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teplo-tvoya-territoriya",
+    "name": "ТЕпЛО. Твоя территория",
+    "city": "Севастополь",
+    "address": "ул. Поликуровская, 25",
+    "event_count": 1,
+    "aliases": [
+      "ТЕпЛО. Твоя территория, ул. Поликуровская, 25"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -2163,34 +2160,6 @@
     "lon": null
   },
   {
-    "slug": "kontsertnyy-zal-zvezdnyy",
-    "name": "Концертный зал «Звёздный»",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Концертный зал «Звёздный»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "restoran-barkas-na-parkovoy",
     "name": "Ресторан Баркас на Парковой",
     "city": "Севастополь",
@@ -2198,6 +2167,20 @@
     "event_count": 1,
     "aliases": [
       "Ресторан Баркас на Парковой"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "prostranstvo-teplo-tvoya-territoriya",
+    "name": "Пространство «ТЕпЛо. Твоя территория»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Пространство «ТЕпЛо. Твоя территория»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2219,13 +2202,27 @@
     "lon": null
   },
   {
-    "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
-    "name": "Егоровский зал Центра виноделия «Массандра»",
-    "city": "Ялта",
+    "slug": "kontsertnyy-zal-zvezdnyy",
+    "name": "Концертный зал «Звёздный»",
+    "city": "Феодосия",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Егоровский зал Центра виноделия «Массандра»"
+      "Концертный зал «Звёздный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея им. Айвазовского"
     ],
     "description": null,
     "desc_baseline_count": 0,

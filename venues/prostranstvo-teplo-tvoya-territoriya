@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Егоровский зал Центра виноделия «Массандра» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Егоровский зал Центра виноделия «Массандра», в Ялте. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/egorovskiy-zal-tsentra-vinodeliya-massandra">
-  <meta property="og:title" content="Егоровский зал Центра виноделия «Массандра» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Егоровский зал Центра виноделия «Массандра», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <title>Пространство «ТЕпЛо. Твоя территория» — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Пространство «ТЕпЛо. Твоя территория», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/prostranstvo-teplo-tvoya-territoriya">
+  <meta property="og:title" content="Пространство «ТЕпЛо. Твоя территория» — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Пространство «ТЕпЛо. Твоя территория», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Егоровский зал Центра виноделия «Массандра»",
+      "name": "Пространство «ТЕпЛо. Твоя территория»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
@@ -37,24 +37,24 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Джаз-трио «А3» и Анна Шакель",
-      "startDate": "2026-09-27T18:00:00+03:00",
+      "name": "Gangamantra",
+      "startDate": "2026-09-26T19:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Егоровский зал Центра виноделия «Массандра»"
+        "name": "Пространство «ТЕпЛо. Твоя территория»"
       },
-      "description": "Джаз-трио «А3» и Анна Шакель представят программу «Ритм & Грув» в Егоровском зале Центра виноделия «Массандра». Начало в 18:00.",
+      "description": "Дорогие наши. Мы вернулись с гастролей и соскучились по вам! По вашим улыбкам и внимательному присутствию. По поющим вместе людям. Поэтому, решили организовать концерт. Давайте праздновать осень вместе.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джаз-трио «А3» и Анна Шакель"
+        "name": "Gangamantra"
       },
-      "image": "/images/events/5da972b050dec4673b04ba8b59c35089.jpg"
+      "image": "/images/events/fa1170da61bc965c02c858887ff80bdd.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Егоровский зал Центра виноделия «Массандра»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Пространство «ТЕпЛо. Твоя территория»"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Егоровский зал Центра виноделия «Массандра»</h1>
+    <h1 class="genre-hero-title">Пространство «ТЕпЛо. Твоя территория»</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Егоровский зал Центра виноделия «Массандра»", "Егоровский зал Центра виноделия «Массандра»"];
+const VENUE_ALIASES = ["Пространство «ТЕпЛо. Твоя территория»", "Пространство «ТЕпЛо. Твоя территория»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
