@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 42,
+    "event_count": 43,
     "aliases": [
       "Jam Club"
     ],
@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 23,
+    "event_count": 24,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -61,7 +61,7 @@
     "name": "Концертный зал «Юбилейный»",
     "city": "Ялта",
     "address": "",
-    "event_count": 16,
+    "event_count": 17,
     "aliases": [
       "Концертный зал «Юбилейный»",
       "Малый зал концертного зала «Юбилейный»",
@@ -72,6 +72,20 @@
     "desc_baseline_count": 12,
     "lat": 44.492898,
     "lon": 34.163783
+  },
+  {
+    "slug": "tavrida-art",
+    "name": "ТАВРИДА.АРТ",
+    "city": "Судак",
+    "address": "",
+    "event_count": 17,
+    "aliases": [
+      "ТАВРИДА.АРТ"
+    ],
+    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
+    "desc_baseline_count": 3,
+    "lat": 44.835312,
+    "lon": 35.016803
   },
   {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
@@ -88,20 +102,6 @@
     "desc_baseline_count": 16,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "tavrida-art",
-    "name": "ТАВРИДА.АРТ",
-    "city": "Судак",
-    "address": "",
-    "event_count": 15,
-    "aliases": [
-      "ТАВРИДА.АРТ"
-    ],
-    "description": "В один день здесь прошло 3 концерта — площадка арт-кластера «Таврида»: трансляция открытия «Киномаёвки» с выступлением балета, фестиваль молодого искусства и трибьют-шоу, посвящённое дилогии «Брат».",
-    "desc_baseline_count": 3,
-    "lat": 44.835312,
-    "lon": 35.016803
   },
   {
     "slug": "depo",
@@ -2174,6 +2174,20 @@
     "lon": null
   },
   {
+    "slug": "kontsertnyy-zal-zvezdnyy",
+    "name": "Концертный зал «Звёздный»",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концертный зал «Звёздный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "prostranstvo-teplo-tvoya-territoriya",
     "name": "Пространство «ТЕпЛо. Твоя территория»",
     "city": "Ялта",
@@ -2202,20 +2216,6 @@
     "lon": null
   },
   {
-    "slug": "kontsertnyy-zal-zvezdnyy",
-    "name": "Концертный зал «Звёздный»",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Концертный зал «Звёздный»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2223,6 +2223,20 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-s-pushkina-gurzuf",
+    "name": "Дом-музей А. С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей А. С. Пушкина"
     ],
     "description": null,
     "desc_baseline_count": 0,
