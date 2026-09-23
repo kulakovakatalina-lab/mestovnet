@@ -152,6 +152,21 @@
     "lon": null
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 12,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -200,21 +215,6 @@
     "desc_baseline_count": 4,
     "lat": 44.567516,
     "lon": 33.728614
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 11,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -2188,6 +2188,20 @@
     "lon": null
   },
   {
+    "slug": "dom-muzey-a-s-pushkina-gurzuf",
+    "name": "Дом-музей А. С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Дом-музей А. С. Пушкина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "prostranstvo-teplo-tvoya-territoriya",
     "name": "Пространство «ТЕпЛо. Твоя территория»",
     "city": "Ялта",
@@ -2223,20 +2237,6 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "dom-muzey-a-s-pushkina-gurzuf",
-    "name": "Дом-музей А. С. Пушкина",
-    "city": "Гурзуф",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом-музей А. С. Пушкина"
     ],
     "description": null,
     "desc_baseline_count": 0,
