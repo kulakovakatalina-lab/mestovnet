@@ -13979,5 +13979,30 @@
       "нет цены"
     ],
     "moderation_status": "archived"
+  },
+  {
+    "date": "2026-09-27",
+    "time": "18:00",
+    "artist": "Джаз-трио «А3» и Анна Шакель",
+    "venue": "Егоровский зал Центра виноделия «Массандра»",
+    "source_city": "Ялта",
+    "price": "1100 ₽",
+    "source_url": "https://afisha.payberry.ru/jazz_massandra",
+    "event_type": "концерт",
+    "description": "Джаз-трио «А3» и Анна Шакель представят программу «Ритм & Грув» в Егоровском зале Центра виноделия «Массандра». Начало в 18:00.",
+    "genre": "джаз",
+    "source_channel": "sevastopol_jazz",
+    "ticket_url": "https://afisha.payberry.ru/jazz_massandra",
+    "id": "0a587043",
+    "image": "/images/events/5da972b050dec4673b04ba8b59c35089.jpg",
+    "images": [
+      "/images/events/5da972b050dec4673b04ba8b59c35089.jpg"
+    ],
+    "needs_review": false,
+    "moderation_status": "approved",
+    "review_reasons": [],
+    "moderation_decision_reasons": [],
+    "moderation_decision_fingerprint": "488b983dee62570217156da60a535194cc023ac9a3d052ec1a57011814d20d00",
+    "moderated_at": "2026-09-20T17:38:38.861360+00:00"
   }
 ]

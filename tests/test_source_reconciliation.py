@@ -192,3 +192,15 @@ def test_recheck_skips_unknown_channels_and_recently_checked_posts(monkeypatch):
 
     assert fresh == []
     assert called == []
+
+
+def test_incomplete_or_past_extraction_does_not_erase_published_future_event():
+    old = {"id": "confirmed", "source_url": "https://example.test/monthly-poster",
+           "date": "2026-09-27", "artist": "Джаз-трио А3", "venue": "Массандра"}
+    for changes in ({"date": None}, {"date": "invalid"}, {"date": "2026-09-12"}, {"artist": None}):
+        fresh = {**old, **changes}
+        existing, incoming = parser.reconcile_source_updates(
+            [old], [fresh], {old["source_url"]: {"cancelled": False}}, today="2026-09-23"
+        )
+        assert existing == [old]
+        assert incoming == [fresh]

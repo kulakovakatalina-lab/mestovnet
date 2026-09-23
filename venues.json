@@ -2242,5 +2242,19 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
+    "name": "Егоровский зал Центра виноделия «Массандра»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Егоровский зал Центра виноделия «Массандра»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]

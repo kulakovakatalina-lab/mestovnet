@@ -1682,6 +1682,15 @@ def reconcile_source_updates(existing: list[dict], fresh: list[dict], source_upd
         if len(old_group) != 1 or len(new_group) != 1:
             continue
         old, new = old_group[0], new_group[0]
+        # Неполное распознавание афиши не отменяет подтверждённый анонс.
+        # Отмены обрабатываются выше только по явному сигналу источника.
+        new_date = new.get("date")
+        try:
+            valid_date = isinstance(new_date, str) and date.fromisoformat(new_date).isoformat() == new_date
+        except ValueError:
+            valid_date = False
+        if not valid_date or new_date < today or not new.get("artist"):
+            continue
         changed_fields = [field for field in tracked if old.get(field) != new.get(field)]
         # Редактирование отменённого поста обратно в актуальную карточку
         # восстанавливает событие, даже если остальные поля не менялись.
