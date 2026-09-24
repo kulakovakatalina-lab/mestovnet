@@ -280,7 +280,7 @@ _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-ка�
 - artist: название группы/исполнителя или null
 - event_type: "концерт" / "джем" / "трибьют" / "вечеринка" / "фестиваль" / "другое"
 - venue: конкретное место проведения или null
-- city: город Крыма или null
+- city: фактический город проведения, в том числе вне Крыма, или null. Не подменяй город проведения городом канала или родным городом исполнителя.
 - price: цена, "бесплатно" или null
 - description: 1-2 предложения"""
 
@@ -1098,8 +1098,23 @@ def _detect_city(text: str):
     return None
 
 
-def resolve_city(event: dict, channel: dict) -> str:
-    """Определяет город события — всегда каноническое имя из справочника или «Крым»."""
+def resolve_city(event: dict, channel: dict, source_text: str = "") -> str:
+    """Сохраняет явный город: неизвестный город отклонит финальная проверка."""
+    raw_city = (event.get("city") or "").strip()
+    if raw_city and not _canon_city(raw_city):
+        return raw_city
+    # Локация в исходном анонсе важнее регионального fallback модели.
+    # Не реагируем на родной город музыкантов в скобках или в биографии.
+    location = re.search(
+        r"(?im)^\s*(?:📍\s*|(?:место|адрес)\s*:\s*)(?:г\.?\s*)?"
+        r"(Новороссийск)(?:е|а)?\b", source_text,
+    )
+    source_location_applies = (
+        location and _canon_city(raw_city) in (None, "Крым")
+        and len(re.findall(r"(?im)^\s*(?:📍|(?:место|адрес)\s*:)", source_text)) == 1
+    )
+    if source_location_applies or re.search(r"(?i)\bНовороссийск(?:е|а)?\b", event.get("venue") or ""):
+        return "Новороссийск"
     ch = _canon_city(channel.get("city"))
     # Канал может анонсировать выездное событие. Явно указанная
     # локация надёжнее города-владельца канала.
@@ -1344,6 +1359,7 @@ _VALIDATION_LABELS = {
     "unknown_city": "город отсутствует в справочнике",
     "missing_source": "нет ссылки на источник",
     "excluded_venue": "заведение исключено (вне Крыма)",
+    "excluded_source": "анонс исключён (вне Крыма)",
 }
 
 
@@ -1378,6 +1394,19 @@ def _is_excluded_venue(event: dict) -> bool:
     return bool(venue_key and venue_key in load_excluded_venue_keys())
 
 
+def _is_excluded_source(event: dict) -> bool:
+    """Точечные исключения постов не отключают весь афишный канал."""
+    path = os.path.join(os.path.dirname(__file__), "excluded_sources.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            entries = json.load(f)
+    except FileNotFoundError:
+        return False
+    def key(url):
+        return (url or "").rstrip("/").replace("https://vk.ru/", "https://vk.com/")
+    return key(event.get("source_url")) in {key(entry["url"]) for entry in entries}
+
+
 def _event_validation_reason(event: dict) -> "str | None":
     """Возвращает первую причину отказа или None для готового события."""
     if not event.get("date"):
@@ -1393,6 +1422,8 @@ def _event_validation_reason(event: dict) -> "str | None":
         return "artist_too_long"
     if _is_refusal_event(event):
         return "non_music"
+    if _is_excluded_source(event):
+        return "excluded_source"
     if _is_excluded_venue(event):
         return "excluded_venue"
     if _canon_city(event.get("source_city")) is None:
@@ -1986,7 +2017,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
             _assign_event_images(events, local, multi_image_post=True)
             for event in events:
                 event["source_channel"] = label
-                event["source_city"] = resolve_city(event, channel)
+                event["source_city"] = resolve_city(event, channel, post.get("text") or "")
                 event.pop("city", None)
                 if not event.get("venue"):
                     event["venue"] = channel["title"]
@@ -2017,7 +2048,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
 
                     for event in events:
                         event["source_channel"] = label
-                        event["source_city"] = resolve_city(event, channel)
+                        event["source_city"] = resolve_city(event, channel, post.get("text") or "")
                         event.pop("city", None)
                         if not event.get("venue"):
                             event["venue"] = channel["title"]

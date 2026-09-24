@@ -13965,28 +13965,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Запрещённые Барабанщики",
-    "event_type": "концерт",
-    "venue": "Скажите Джаз",
-    "price": null,
-    "description": "«Запрещённые Барабанщики» выступят на сцене с презентацией нового альбома «Куба». Фирменный drum&drive, латинский дух и кубинские ритмы.",
-    "image": "/images/events/c9cde27366dd530d4bb83df469cf3462.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Крым",
-    "post_date": "2026-09-23T18:34:52+00:00",
-    "source_url": "https://t.me/skazhitejazz/1583",
-    "id": "465c26fa",
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-10-04",
     "time": "19:00",
     "artist": "Классическая музыка",
@@ -14008,28 +13986,6 @@
     "source_url": "https://t.me/koncertykrym/2311",
     "id": "a131caba",
     "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Запрещённые Барабанщики",
-    "event_type": "концерт",
-    "venue": "Пена Паб",
-    "price": null,
-    "description": "Гастрольный тур с презентацией нового альбома 'Куба'. Фирменный drum&drive, латинский дух и кубинские ритмы. Старые хиты зазвучат свежо и непринуждённо в новых аранжировках.",
-    "image": "/images/events/322cc62e777fc46fb44b9695a7597643.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Крым",
-    "post_date": "2026-09-23T18:35:19+00:00",
-    "source_url": "https://vk.com/wall-225094331_406",
-    "id": "55a6a173",
-    "genre": "джаз",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
