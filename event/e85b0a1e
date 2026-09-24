@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="группа «Домино», Рок-н-рольщики, в Симферополе, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="А3, Анна Шакель, Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>группа «Домино» — Рок-н-рольщики, Симферополь, 26 сентября · Местов.Нет</title>
+<title>А3, Анна Шакель — Массандра, Севастополь, 27 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,38 +959,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/3c4204c9">
-<meta property="og:title" content="группа «Домино» — Рок-н-рольщики, Симферополь, 26 сентября · Местов.Нет">
-<meta property="og:description" content="группа «Домино», Рок-н-рольщики, в Симферополе, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/e85b0a1e">
+<meta property="og:title" content="А3, Анна Шакель — Массандра, Севастополь, 27 сентября · Местов.Нет">
+<meta property="og:description" content="А3, Анна Шакель, Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://mestov.net/images/events/e4c3725c475ca3a73ff6b4a7f14cceba.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "группа «Домино»",
-      "startDate": "2026-09-26T21:00:00+03:00",
+      "name": "А3, Анна Шакель",
+      "startDate": "2026-09-27T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики",
+        "name": "Массандра",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Хиты русского поп-рока и неожиданные аранжировки от группы «Домино»",
+      "description": "Джазовые вечера в Массандре возвращаются с новой программой «Ритм & Грув». Вас ждёт яркая палитра музыки: от соула, который затронет самые тонкие струны души, до ритмичного и чувственного фанка. Это будет гармоничное сочетание виртуозного исполнения и глубоких эмоций от ведущих джазовых музыкантов Крыма.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "группа «Домино»"
-      }
+        "name": "А3, Анна Шакель"
+      },
+      "image": "/images/events/e4c3725c475ca3a73ff6b4a7f14cceba.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "группа «Домино»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "А3, Анна Шакель"}]}
 </script>
 </head>
 <body>

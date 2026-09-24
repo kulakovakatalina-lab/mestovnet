@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 31,
+    "event_count": 33,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -185,21 +185,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "ул. Екатерининская, 14",
-    "event_count": 11,
-    "aliases": [
-      "Рок-н-рольщики",
-      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "usadba-rodnoe-gnezdo",
     "name": "Усадьба «Родное гнездо»",
     "city": "Севастополь",
@@ -231,6 +216,21 @@
     ],
     "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
     "desc_baseline_count": 8,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "ул. Екатерининская, 14",
+    "event_count": 9,
+    "aliases": [
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -279,6 +279,22 @@
     "lon": 34.09338
   },
   {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 7,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
+  },
+  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -295,22 +311,6 @@
     "desc_baseline_count": 7,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 6,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -911,6 +911,20 @@
     "lon": 34.245444
   },
   {
+    "slug": "livadiyskiy-dvorets",
+    "name": "Ливадийский дворец",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Ливадийский дворец"
+    ],
+    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
+    "desc_baseline_count": 1,
+    "lat": 44.467678,
+    "lon": 34.143826
+  },
+  {
     "slug": "skelskaya-peschera",
     "name": "Скельская пещера",
     "city": "Севастополь",
@@ -1388,20 +1402,6 @@
     "desc_baseline_count": 1,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "livadiyskiy-dvorets",
-    "name": "Ливадийский дворец",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Ливадийский дворец"
-    ],
-    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
-    "desc_baseline_count": 1,
-    "lat": 44.467678,
-    "lon": 34.143826
   },
   {
     "slug": "krymskiy-etnograficheskiy-muzey",
@@ -2202,6 +2202,20 @@
     "lon": null
   },
   {
+    "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
+    "name": "Егоровский зал Центра виноделия «Массандра»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Егоровский зал Центра виноделия «Массандра»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "prostranstvo-teplo-tvoya-territoriya",
     "name": "Пространство «ТЕпЛо. Твоя территория»",
     "city": "Ялта",
@@ -2244,13 +2258,13 @@
     "lon": null
   },
   {
-    "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
-    "name": "Егоровский зал Центра виноделия «Массандра»",
-    "city": "Ялта",
+    "slug": "pena-pab",
+    "name": "Пена Паб",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Егоровский зал Центра виноделия «Массандра»"
+      "Пена Паб"
     ],
     "description": null,
     "desc_baseline_count": 0,
