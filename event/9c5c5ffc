@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Манекен, Inkoda, О.Р.Е.В.О., Red Stars — Jam Club, Симферополь, 25 сентября · Местов.Нет">
 <meta property="og:description" content="Манекен, Inkoda, О.Р.Е.В.О., Red Stars, Jam Club, в Симферополе, 25 сентября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/58c3300e2c1df45dd4127637c7f80be0.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/0c0ca908dcf32e6eca9b7022324a772a.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -971,7 +971,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Манекен, Inkoda, О.Р.Е.В.О., Red Stars",
-      "startDate": "2026-09-25T18:00:00+03:00",
+      "startDate": "2026-09-25",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Группа 'Манекен' из Ялты отмечает юбилей. Поддержат их группы Inkoda, О.Р.Е.В.О. и Red Stars. После концерта - бесплатное рок-караоке до утра.",
+      "description": "В Jam Club выступит группа 'Манекен' из Ялты, а также группы Inkoda, О.Р.Е.В.О. и Red Stars. После концерта - бесплатное рок-караоке до утра.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Манекен, Inkoda, О.Р.Е.В.О., Red Stars"
       },
-      "image": "/images/events/58c3300e2c1df45dd4127637c7f80be0.jpg",
+      "image": "/images/events/0c0ca908dcf32e6eca9b7022324a772a.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

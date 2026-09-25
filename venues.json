@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 43,
+    "event_count": 45,
     "aliases": [
       "Jam Club"
     ],
@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 41,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -137,6 +137,22 @@
     "lon": null
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 13,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар",
+      "Севастополь, наб. Адмирала Клокачева, 16"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -148,21 +164,6 @@
     ],
     "description": "Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ's, Scream (виниловый сет), Pasha Rhino и Gretta.",
     "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 12,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -2251,20 +2252,6 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "pena-pab",
-    "name": "Пена Паб",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Пена Паб"
     ],
     "description": null,
     "desc_baseline_count": 0,

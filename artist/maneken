@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Манекен",
-      "startDate": "2026-09-25T18:00:00+03:00",
+      "startDate": "2026-09-25",
       "performer": {
         "@type": "MusicGroup",
         "name": "Манекен"
@@ -47,8 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Группа 'Манекен' из Ялты отмечает юбилей. Поддержат их группы Inkoda, О.Р.Е.В.О. и Red Stars. После концерта - бесплатное рок-караоке до утра.",
-      "image": "/images/events/58c3300e2c1df45dd4127637c7f80be0.jpg"
+      "description": "В Jam Club выступит группа 'Манекен' из Ялты, а также группы Inkoda, О.Р.Е.В.О. и Red Stars. После концерта - бесплатное рок-караоке до утра.",
+      "image": "/images/events/0c0ca908dcf32e6eca9b7022324a772a.jpg"
     }
   ]
 }

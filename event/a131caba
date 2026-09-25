@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Классическая музыка — Ливадийский дворец, Ялта, 4 октября · Местов.Нет">
 <meta property="og:description" content="Классическая музыка, Ливадийский дворец, в Ялте, 4 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/d328b08d91e7bfb7aca550032b82cee9.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/aba5bc9b050066cd4e9c7f82cd56e5b7.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Вечер классики в Ливадийском дворце с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
+      "description": "Вечер классики с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Классическая музыка"
       },
-      "image": "/images/events/d328b08d91e7bfb7aca550032b82cee9.jpg"
+      "image": "/images/events/aba5bc9b050066cd4e9c7f82cd56e5b7.jpg"
     }
   ]
 }

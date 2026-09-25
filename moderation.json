@@ -90,25 +90,6 @@
     ]
   },
   {
-    "id": "462a304f",
-    "date": "2026-09-24",
-    "time": null,
-    "artist": "Здравоохранение. Крым 2026",
-    "venue": "Отель «Ялта-Интурист»",
-    "source_city": "Ялта",
-    "price": null,
-    "genre": "фолк",
-    "event_type": "фестиваль",
-    "description": "XI Международная медицинская выставка «Здравоохранение. Крым 2026»",
-    "image": null,
-    "source_url": "https://t.me/hotel_yalta_intourist/2885",
-    "reasons": [
-      "нет времени",
-      "нет цены",
-      "нет постера"
-    ]
-  },
-  {
     "id": "3c4204c9",
     "date": "2026-09-26",
     "time": "21:00",
@@ -179,6 +160,93 @@
       "нет времени",
       "нет цены",
       "нет постера"
+    ]
+  },
+  {
+    "id": "c251259a",
+    "date": "2026-09-26",
+    "time": null,
+    "artist": "EVTERPE, LONE DARK SIDE, McKENZIE HILLS",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "метал",
+    "event_type": "фестиваль",
+    "description": "В Jam Club выступит метал-банда EVTERPE, а также гости - LONE DARK SIDE и McKENZIE HILLS. После концерта - бесплатное рок-караоке до утра.",
+    "image": "/images/events/57fcd14ac240f1f33a58b608ff4e5060.jpg",
+    "source_url": "https://t.me/clubjam/1151",
+    "reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "39c9fe40",
+    "date": "2026-09-26",
+    "time": null,
+    "artist": "Black Tears, Dumonica, Vaira",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "фестиваль",
+    "description": "Фестиваль 'Верни мне мой 2007й фест!' с участием Black Tears, Dumonica и Vaira. После концерта - бесплатное рок-караоке до утра.",
+    "image": "/images/events/be2e66e39d6dd4ecbeffbe1755c68e71.jpg",
+    "source_url": "https://t.me/clubjam/1152",
+    "reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "b2febd2c",
+    "date": "2026-09-25",
+    "time": null,
+    "artist": "Максим Шеремет",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "source_city": "Севастополь",
+    "price": null,
+    "genre": "русский рок",
+    "event_type": "концерт",
+    "description": "Максим Шеремет и каверы на лучшие отечественные рок-хиты. Акустика",
+    "image": "/images/events/7601aa25db9ccaf30e28815f0af4f206.jpg",
+    "source_url": "https://t.me/rocknroll_92/7382",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "be1daec6",
+    "date": "2026-09-26",
+    "time": null,
+    "artist": "группа «САБ»",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "source_city": "Севастополь",
+    "price": null,
+    "genre": "поп-рок",
+    "event_type": "концерт",
+    "description": "Музыкальная ирония, рок и поп-рок на двух языках в мощном звучании группы «САБ». Не акустика",
+    "image": "/images/events/7601aa25db9ccaf30e28815f0af4f206.jpg",
+    "source_url": "https://t.me/rocknroll_92/7382",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "3fe87972",
+    "date": "2026-09-27",
+    "time": null,
+    "artist": "Фёдор Старовойтов",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "source_city": "Севастополь",
+    "price": "бесплатно",
+    "genre": "поп",
+    "event_type": "вечеринка",
+    "description": "Караоке с боссом! Музыкальная анархия и никаких правил: песни и вход – бесплатно. Ведущий Фёдор Старовойтов",
+    "image": "/images/events/7601aa25db9ccaf30e28815f0af4f206.jpg",
+    "source_url": "https://t.me/rocknroll_92/7382",
+    "reasons": [
+      "нет времени"
     ]
   }
 ]

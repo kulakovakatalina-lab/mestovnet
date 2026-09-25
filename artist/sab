@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «САБ»", "САБ", "САБ"];
+const ARTIST_ALIASES = ["Группа «САБ»", "САБ", "группа «САБ»", "САБ"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
