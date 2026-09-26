@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Крымский академический симфонический оркестр, Концертный зал «Юбилейный», в Ялте, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Крымский академический симфонический оркестр, КЗ «Юбилейный», в Крыму, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Крымский академический симфонический оркестр — Концертный зал «Юбилейный», Ялта, 26 сентября · Местов.Нет</title>
+<title>Крымский академический симфонический оркестр — КЗ «Юбилейный», Крым, 26 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/1270709f">
-<meta property="og:title" content="Крымский академический симфонический оркестр — Концертный зал «Юбилейный», Ялта, 26 сентября · Местов.Нет">
-<meta property="og:description" content="Крымский академический симфонический оркестр, Концертный зал «Юбилейный», в Ялте, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Крымский академический симфонический оркестр — КЗ «Юбилейный», Крым, 26 сентября · Местов.Нет">
+<meta property="og:description" content="Крымский академический симфонический оркестр, КЗ «Юбилейный», в Крыму, 26 сентября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/2495337bb51c8ac2b59d7453c39f3244.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-09-26T17:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Концертный зал «Юбилейный»",
+        "name": "КЗ «Юбилейный»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Ялта",
+          "addressLocality": "Крым",
           "addressCountry": "RU"
         }
       },
-      "description": "Яркая и темпераментная программа подарит хорошее настроение и позволит услышать знакомые танцевальные мелодии в исполнении крымского академического симфонического оркестра. В программе – музыка, в которой оживают самые разные танцевальные традиции.",
+      "description": "Концерт «Симфония танца». Музыка, ритм и движение – всё это встретится на одной сцене. Крымский академический симфонический оркестр приглашает на концерт, где классическое звучание наполнится энергией танца.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Крымский академический симфонический оркестр"
@@ -992,7 +992,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Крымский академический симфонический оркестр"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Крымский академический симфонический оркестр"}]}
 </script>
 </head>
 <body>

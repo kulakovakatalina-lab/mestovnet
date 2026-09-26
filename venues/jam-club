@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,18 +37,33 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Манекен, Inkoda, О.Р.Е.В.О., Red Stars",
-      "startDate": "2026-09-25",
+      "name": "EVTERPE, LONE DARK SIDE, McKENZIE HILLS",
+      "startDate": "2026-09-26",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "В Jam Club выступит группа 'Манекен' из Ялты, а также группы Inkoda, О.Р.Е.В.О. и Red Stars. После концерта - бесплатное рок-караоке до утра.",
+      "description": "В Jam Club выступит метал-банда из Темрюка EVTERPE, а также гости LONE DARK SIDE и McKENZIE HILLS. После концерта — бесплатное рок-караоке до утра.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Манекен, Inkoda, О.Р.Е.В.О., Red Stars"
+        "name": "EVTERPE, LONE DARK SIDE, McKENZIE HILLS"
       },
-      "image": "/images/events/0c0ca908dcf32e6eca9b7022324a772a.jpg"
+      "image": "/images/events/a482e3d82c7f47460a15e5955b622c04.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Black Tears, Dumonica, Vaira",
+      "startDate": "2026-09-26",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "Фестиваль 'Верни мне мой 2007й фест!' На сцене: Black Tears, Dumonica, Vaira. После концерта — бесплатное рок-караоке до утра.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Black Tears, Dumonica, Vaira"
+      },
+      "image": "/images/events/77c48a3c8a1d340ef48e77f8a6f0e43a.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1099,7 +1114,7 @@ footer {
 
 <p class="venue-description">За два с лишним года здесь сыграли больше 25 концертов, в основном рок, метал и панк — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до тематических Grunge Fest и Metal Mania Fest. Среди трибьютов — Nirvana, AC/DC, The Beatles, «Ария» (Мираж Огня) и «Король и Шут» (Велес). Чаще других выступают Иччи, Нарратор, Динаминатор, Angle Of Wonders и Крыша мира. Здесь же проходили сольники «Чёрного Кофе» с Дмитрием Варшавским. Вход в основном бесплатный для подписчиков паблика клуба.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">

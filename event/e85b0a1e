@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Анна Шакель, Джаз-трио «А3», Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Анна Шакель, Джаз-трио «А3», центр виноделия Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Анна Шакель, Джаз-трио «А3» — Массандра, Севастополь, 27 сентября · Местов.Нет</title>
+<title>Анна Шакель, Джаз-трио «А3» — центр виноделия Массандра, Севастополь, 27 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/e85b0a1e">
-<meta property="og:title" content="Анна Шакель, Джаз-трио «А3» — Массандра, Севастополь, 27 сентября · Местов.Нет">
-<meta property="og:description" content="Анна Шакель, Джаз-трио «А3», Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Анна Шакель, Джаз-трио «А3» — центр виноделия Массандра, Севастополь, 27 сентября · Местов.Нет">
+<meta property="og:description" content="Анна Шакель, Джаз-трио «А3», центр виноделия Массандра, в Севастополе, 27 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/e4c3725c475ca3a73ff6b4a7f14cceba.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-09-27T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Массандра",
+        "name": "центр виноделия Массандра",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Джазовые вечера в Массандре возвращаются с новой программой «Ритм & Грув». Вас ждёт яркая палитра музыки: от соула до ритмичного и чувственного фанка. Это будет гармоничное сочетание виртуозного исполнения и глубоких эмоций от ведущих джазовых музыкантов Крыма.",
+      "description": "Джаз-трио «А3» и Анна Шакель выступят с новой программой.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Анна Шакель, Джаз-трио «А3»"

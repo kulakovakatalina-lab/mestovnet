@@ -57,23 +57,6 @@
     "lon": null
   },
   {
-    "slug": "kontsertnyy-zal-yubileynyy",
-    "name": "Концертный зал «Юбилейный»",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 17,
-    "aliases": [
-      "Концертный зал «Юбилейный»",
-      "Малый зал концертного зала «Юбилейный»",
-      "Юбилейный",
-      "концертный зал «Юбилейный»"
-    ],
-    "description": "За последние месяцы здесь прошло 13 концертов с платным входом. Афиша — гастрольная эстрада высшего звена: SHAMAN, Таисия Повалий и большой сольный концерт Григория Лепса.",
-    "desc_baseline_count": 12,
-    "lat": 44.492898,
-    "lon": 34.163783
-  },
-  {
     "slug": "tavrida-art",
     "name": "ТАВРИДА.АРТ",
     "city": "Судак",
@@ -86,6 +69,23 @@
     "desc_baseline_count": 3,
     "lat": 44.835312,
     "lon": 35.016803
+  },
+  {
+    "slug": "kontsertnyy-zal-yubileynyy",
+    "name": "Концертный зал «Юбилейный»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 16,
+    "aliases": [
+      "Концертный зал «Юбилейный»",
+      "Малый зал концертного зала «Юбилейный»",
+      "Юбилейный",
+      "концертный зал «Юбилейный»"
+    ],
+    "description": "За последние месяцы здесь прошло 13 концертов с платным входом. Афиша — гастрольная эстрада высшего звена: SHAMAN, Таисия Повалий и большой сольный концерт Григория Лепса.",
+    "desc_baseline_count": 12,
+    "lat": 44.492898,
+    "lon": 34.163783
   },
   {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
@@ -221,6 +221,21 @@
     "lon": null
   },
   {
+    "slug": "dvorets-kultury-profsoyuzov",
+    "name": "Дворец культуры профсоюзов",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 9,
+    "aliases": [
+      "ДК профсоюзов",
+      "Дворец культуры профсоюзов"
+    ],
+    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
+    "desc_baseline_count": 5,
+    "lat": 44.964773,
+    "lon": 34.106607
+  },
+  {
     "slug": "rok-n-rolschiki",
     "name": "Рок-н-рольщики",
     "city": "Симферополь",
@@ -234,21 +249,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "dvorets-kultury-profsoyuzov",
-    "name": "Дворец культуры профсоюзов",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 8,
-    "aliases": [
-      "ДК профсоюзов",
-      "Дворец культуры профсоюзов"
-    ],
-    "description": "За последние три месяца тут прошло 5 концертов с платным входом. Показывали световое шоу «Симфония оживших картин» с оркестром и свечами, выступал Владимир Ждамиров из «Бутырки».",
-    "desc_baseline_count": 5,
-    "lat": 44.964773,
-    "lon": 34.106607
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -280,22 +280,6 @@
     "lon": 34.09338
   },
   {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
-  },
-  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -312,6 +296,22 @@
     "desc_baseline_count": 7,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.497666,
+    "lon": 34.1713
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -2189,6 +2189,20 @@
     "lon": null
   },
   {
+    "slug": "kz-yubileynyy",
+    "name": "КЗ «Юбилейный»",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "КЗ «Юбилейный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dom-muzey-a-s-pushkina-gurzuf",
     "name": "Дом-музей А. С. Пушкина",
     "city": "Гурзуф",
@@ -2217,13 +2231,13 @@
     "lon": null
   },
   {
-    "slug": "prostranstvo-teplo-tvoya-territoriya",
-    "name": "Пространство «ТЕпЛо. Твоя территория»",
-    "city": "Ялта",
+    "slug": "tsentr-vinodeliya-massandra",
+    "name": "центр виноделия Массандра",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Пространство «ТЕпЛо. Твоя территория»"
+      "центр виноделия Массандра"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2238,6 +2252,20 @@
     "event_count": 1,
     "aliases": [
       "Йога холл АШРАМ"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "prostranstvo-teplo-tvoya-territoriya",
+    "name": "Пространство «ТЕпЛо. Твоя территория»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Пространство «ТЕпЛо. Твоя территория»"
     ],
     "description": null,
     "desc_baseline_count": 0,
