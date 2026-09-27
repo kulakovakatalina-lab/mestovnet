@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Winepark — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Winepark, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Winepark, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/winepark">
   <meta property="og:title" content="Winepark — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Winepark, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Winepark, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Вадим Самойлов",
-      "startDate": "2026-09-26T12:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Winepark"
-      },
-      "description": "Концерт Вадима Самойлова с хитами 'Агаты Кристи' на главной сцене.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Вадим Самойлов"
-      },
-      "image": "/images/events/ee68b1619b3a46c2db82034e7c41ab25.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
