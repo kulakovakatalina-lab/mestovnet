@@ -3091,12 +3091,12 @@
     ],
     "event_count": 2,
     "cities": [
-      "Феодосия",
-      "Крым"
+      "Крым",
+      "Феодосия"
     ],
     "venues": [
-      "Галерея им. Айвазовского",
-      "Феодосия"
+      "Феодосия",
+      "Галерея им. Айвазовского"
     ],
     "first_seen": "2026-08-22",
     "last_seen": "2026-10-18",
@@ -3471,6 +3471,26 @@
     ],
     "first_seen": "2026-09-12",
     "last_seen": "2026-09-13",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "gruppa-jawa-hity-gruppy-sektor-gaza",
+    "name": "Группа Jawa. Хиты группы «Сектор Газа»",
+    "aliases": [
+      "Группа Jawa. Хиты группы «Сектор Газа»"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Дом офицеров флота",
+      "ДК профсоюзов"
+    ],
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-24",
     "description": null,
     "desc_baseline_count": 0
   }
