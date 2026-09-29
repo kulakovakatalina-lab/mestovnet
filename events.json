@@ -10387,7 +10387,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-09-28T06:32:22.401258+00:00",
+    "post_date": "2026-09-29T06:47:59.712932+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10602,7 +10602,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-09-28T06:32:22.401284+00:00",
+    "post_date": "2026-09-29T06:47:59.712958+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -12042,7 +12042,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-09-28T06:32:22.401417+00:00",
+    "post_date": "2026-09-29T06:48:01.648703+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -12138,38 +12138,36 @@
     "moderation_decision_fingerprint": "f05e30465e096f1887d94ae9ed6dfcef981b51aafecbc1d6d7fa77b3fe33cb48"
   },
   {
+    "id": "19525d0a",
     "date": "2026-10-09",
     "time": null,
     "artist": "AC/DC tribute by Back 'n Storm",
     "event_type": "трибьют",
     "venue": "Jam Club",
     "price": "бесплатно",
-    "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Бесплатный вход для подписчиков.",
-    "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg",
-    "images": null,
-    "source_channel": "clubjam",
+    "description": "Трибьют AC/DC от группы Back 'n Storm.",
     "source_city": "Симферополь",
-    "post_date": "2026-08-27T17:37:37+00:00",
+    "source_channel": "clubjam",
+    "genre": "рок",
     "source_url": "https://t.me/clubjam/1131",
-    "id": "19525d0a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-09-10T05:49:03.953744+00:00",
+    "images": [
+      "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg",
+      "/images/events/951ea087033a2cbaf751d73850e7d90b.jpg"
+    ],
+    "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg",
+    "post_date": "2026-09-28T13:02:03+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description",
       "genre"
     ],
-    "genre": "рок",
+    "source_last_checked_at": "2026-09-10T05:49:03.953744+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "1b46acd66e66dec69dfcebb52633480ddd87835571f21361a88d81f76dca27f7"
+    "moderation_status": "approved"
   },
   {
     "id": "5d28fa6b",
@@ -12297,11 +12295,12 @@
     "source_url": "https://vk.com/wall-89840945_119587",
     "id": "2b98d168",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "906a60c7",
@@ -13028,7 +13027,7 @@
       "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
     ],
     "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-09-28T06:32:22.401366+00:00",
+    "post_date": "2026-09-29T06:47:59.712983+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -13087,7 +13086,7 @@
       "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
     ],
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-09-28T06:32:22.401463+00:00",
+    "post_date": "2026-09-29T06:48:01.648817+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -14146,7 +14145,29 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-09-28T06:32:22.401164+00:00",
+    "post_date": "2026-09-29T06:47:59.712841+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "id": "6257b059",
+    "date": "2026-10-24",
+    "time": "19:00",
+    "artist": "Группа Jawa. Хиты группы «Сектор Газа»",
+    "event_type": "концерт",
+    "venue": "Дом офицеров флота",
+    "price": "от 2300 ₽",
+    "description": "О концерте Владимир Лобанов и группа JAWA, проект непосредственного участника и легендарного гитариста \"золотого\" состава группы «Сектор газа» — Владимира Лобанова.\r\n\r\nВ большой концертной программе, при участии легендарной вокалистки Татьяны Фатеевой, прозвучат лучшие хиты проверенные временем.\r\n\r\nВладимир Лобанов и группа JAWA, вместе с Татьяной Фатеевой, исполняя песни «Сектор Газа» в концертном варианте, по воспоминаниям самого Владимира, помогают отойти от реальности и возвращают нас в эпоху девяностых.\r\n\r\nКаждое выступление группы посвящается бессменному лидеру Юрию Клинских (Хой) и всем музыкантам, принимавшим участие в грандиозном проекте «Сектор газа».",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_ru",
+    "genre": "рок",
+    "source_url": "https://www.afisha.ru/concert/gruppa-jawa-hity-gruppy-sektor-gaza-6035337/",
+    "images": [
+      "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
+    ],
+    "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
+    "post_date": "2026-09-29T06:47:59.712876+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14158,14 +14179,14 @@
     "event_type": "концерт",
     "venue": "Ливадийский дворец",
     "price": null,
-    "description": "Вечер классики в Ливадийском дворце с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
-    "image": "/images/events/0b24700560181aa248f026e26ec46d5d.jpg",
+    "description": "Вечер классики с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
+    "image": "/images/events/13fb47492e4a5db0447aa4d6bae7b279.jpg",
     "images": [
-      "/images/events/0b24700560181aa248f026e26ec46d5d.jpg",
-      "/images/events/eebc140f5964310e83b4905ca35ebfa0.jpg",
-      "/images/events/c86d36bb7b6c2d06dfb648edcc789a98.jpg",
-      "/images/events/2d5e6fa14080d4f845fef466fee3cf81.jpg",
-      "/images/events/1ca3ba9d8126a6ef11075c68c2813c4f.jpg"
+      "/images/events/13fb47492e4a5db0447aa4d6bae7b279.jpg",
+      "/images/events/26a5a6f797e95feff6dd6ba37d65eb4b.jpg",
+      "/images/events/64f5e5bef61c3aa1f4c59f3c84197d5a.jpg",
+      "/images/events/4714dcf6136ca606435f5c8a9774f26d.jpg",
+      "/images/events/eea81bdaf8176d331b44bba417348ae1.jpg"
     ],
     "source_channel": "koncertykrym",
     "source_city": "Ялта",
@@ -14173,7 +14194,7 @@
     "source_url": "https://t.me/koncertykrym/2311",
     "id": "a131caba",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description",
@@ -14196,17 +14217,16 @@
     "description": "О концерте ПРО.АРТ — современный художественный проект на пересечении музыки, живописи и визуальной эстетики. Впервые в России зрителю предлагают формат, в котором оркестр при свечах, ожившие картины и световая режиссура соединяются в единое диджитал-шоу.\r\nВ основе шоу — большая художественная идея, выстроенная как путешествие по ключевым эпохам, странам и образам мировой культуры. Проект охватывает 13 стран  и разворачивается как маршрут от истоков искусства к современности: от пещер Ласко и Альтамиры, античной пластики и готических соборов до Боттичелли, Рафаэля, Леонардо да Винчи, Пикассо и мастеров авангарда.\r\nПРО.АРТ объединяет в одном вечере произведения, которые обычно существуют в разных музеях и странах всего мира  превращая их в единое эмоциональное переживание, выстраивая в сюжетную линию эволюцию искусства.\r\nСреди визуальных образов — «Рождение Венеры» Боттичелли, «Тайная вечеря» Леонардо да Винчи, «Сотворение Адама» Микеланджело, «Бурлаки на Волге» Репина, «Грачи прилетели» Саврасова, «Утро в сосновом лесу» Шишкина, «Впечатление. Восходящее солнце» и «Кувшинки» Моне, «Звездная ночь», «Подсолнухи» и «Ирисы» Ван Гога, «Постоянство памяти» Дали, «Крик» Мунка, работы Магритта, Миро, Пикассо, Дюшана и Джакомо Балла.\r\nВ музыкальной программе — Моцарт, Бах, Ханс Циммер, Томас Ньюман, Александр Деспла, Людовико Эйнауди, Джеймс Ньютон Ховард, Янн Тьерсен, Клинт Мэнселл, Хильдур Гуднадоуттир, Daft Punk и Макс Рихтер. Знакомые музыкальные темы усиливают визуальные образы и создают цельную художественную драматургию, в которой музыка, свет и ожившие полотна работают как единое целое.\r\nПРО.АРТ задуман не как разовое событие, а как серия художественных спектаклей, наполняющих зрителей эмоциями и ценностью истории искусств.\r\nИскусство приглашает вас на свидание!  Формат, который уже выбрали 100 000+ зрителей.",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-09-28T06:32:22.401014+00:00",
+    "post_date": "2026-09-29T06:47:59.712704+00:00",
     "image": "/images/events/ee20348a261de97f1aa8cc2577c9dcc6.jpg",
     "source_url": "https://www.afisha.ru/concert/pro-art-ozhivshie-kartiny-i-orkestr-pri-svechah-6026492/",
     "genre": "панк-рок",
     "id": "ed28c5d6",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
-      "price",
       "genre"
     ],
     "needs_review": false,
@@ -14223,13 +14243,13 @@
     "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-09-28T06:32:22.401228+00:00",
+    "post_date": "2026-09-29T06:47:59.712905+00:00",
     "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
     "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
     "genre": "классика",
     "id": "641834f5",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14248,13 +14268,13 @@
     "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-09-28T06:32:22.401340+00:00",
+    "post_date": "2026-09-29T06:47:59.713008+00:00",
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
     "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
     "genre": "рок",
     "id": "4993369e",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -14273,12 +14293,12 @@
     "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
     "source_channel": "afisha_goroda",
     "source_city": "Керчь",
-    "post_date": "2026-09-28T06:32:36.712255+00:00",
+    "post_date": "2026-09-29T06:48:15.994816+00:00",
     "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
     "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
     "id": "7ee9b24f",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14298,12 +14318,12 @@
     "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
     "source_channel": "afisha_goroda",
     "source_city": "Феодосия",
-    "post_date": "2026-09-28T06:32:36.712285+00:00",
+    "post_date": "2026-09-29T06:48:15.994844+00:00",
     "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
     "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
     "id": "71ede2ea",
     "source_status": "active",
-    "source_last_checked_at": "2026-09-28T06:32:38.057631+00:00",
+    "source_last_checked_at": "2026-09-29T06:48:17.222625+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14314,20 +14334,41 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-24",
-    "time": "19:00",
-    "artist": "Группа Jawa. Хиты группы «Сектор Газа»",
-    "venue": "Дом офицеров флота",
+    "date": "2026-09-30",
+    "time": null,
+    "artist": "Любовь Фатеева",
     "event_type": "концерт",
-    "price": "от 2300 ₽",
-    "description": "О концерте Владимир Лобанов и группа JAWA, проект непосредственного участника и легендарного гитариста \"золотого\" состава группы «Сектор газа» — Владимира Лобанова.\r\n\r\nВ большой концертной программе, при участии легендарной вокалистки Татьяны Фатеевой, прозвучат лучшие хиты проверенные временем.\r\n\r\nВладимир Лобанов и группа JAWA, вместе с Татьяной Фатеевой, исполняя песни «Сектор Газа» в концертном варианте, по воспоминаниям самого Владимира, помогают отойти от реальности и возвращают нас в эпоху девяностых.\r\n\r\nКаждое выступление группы посвящается бессменному лидеру Юрию Клинских (Хой) и всем музыкантам, принимавшим участие в грандиозном проекте «Сектор газа».",
-    "source_channel": "afisha_ru",
+    "venue": "Севастополь",
+    "price": "200 ₽",
+    "description": "Любовь Фатеева исполнит мировые хиты и авторские аранжировки известных песен.",
+    "image": "/images/events/8379224319f4c3cd1653dafa450ec781.jpg",
+    "images": null,
+    "source_channel": "afisha_payberry",
     "source_city": "Севастополь",
-    "post_date": "2026-09-28T06:32:22.401199+00:00",
-    "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "source_url": "https://www.afisha.ru/concert/gruppa-jawa-hity-gruppy-sektor-gaza-6035337/",
-    "genre": "рок",
-    "id": "6257b059",
+    "post_date": "2026-09-28T14:37:44+00:00",
+    "source_url": "https://t.me/afisha_payberry/1640",
+    "id": "7c4ecf86",
+    "genre": "авторская",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "date": "2026-10-31",
+    "time": "18:00",
+    "artist": "Halloween в Симферополе!",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 450 ₽",
+    "description": "О концерте Симферополь\r\n31 октября встречаемся в клубе Д\u0000епо, чтобы пощекотать свои нервишки!\r\n\r\nНа мероприятии вас будет ждать:\r\n- Стол с гаданиями на картах таро 🃏\r\n- Розыгрыш 5.000р за лучший костюм\r\n- Страх и ужас на каждом шагу 🩸\r\n- Лушчие диджеи\r\n\r\nЕсли вы не боитесь, то 31 октября ждём вас 🕷️ Зайти смогут только самые смелые\r\n\r\nДата: 31 октября\r\nВремя: 17:00-22:00\r\nМесто: @Депо\r\nFC: 16+",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-09-29T06:47:59.713060+00:00",
+    "image": "/images/events/69e1def9a4ff60f572b87dc556f1d2ca.jpg",
+    "source_url": "https://www.afisha.ru/concert/halloween-v-simferopole-6053529/",
+    "genre": "поп",
+    "id": "7da6a4ea",
     "needs_review": false,
     "review_reasons": []
   },

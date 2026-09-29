@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Концерт AC/DC в исполнении группы Back 'n Storm. Бесплатный вход для подписчиков.",
+      "description": "Трибьют AC/DC от группы Back 'n Storm.",
       "performer": {
         "@type": "MusicGroup",
         "name": "AC/DC tribute by Back 'n Storm"

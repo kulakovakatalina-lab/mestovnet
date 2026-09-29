@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Депо — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Депо, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/depo">
   <meta property="og:title" content="Депо — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Депо, в Симферополе. 4 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -50,6 +50,21 @@
         "name": "Helvegen"
       },
       "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Halloween в Симферополе!",
+      "startDate": "2026-10-31T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Депо"
+      },
+      "description": "О концерте Симферополь\r\n31 октября встречаемся в клубе Д\u0000епо, чтобы пощекотать свои нервишки!\r\n\r\nНа мероприятии вас будет ждать:\r\n- Стол с гаданиями на картах таро 🃏\r\n- Розыгрыш 5.000р за лучший костюм\r\n- Страх и ужас на каждом шагу 🩸\r\n- Лушчие диджеи\r\n\r\nЕсли вы не боитесь, то 31 октября ждём вас 🕷️ Зайти смогут только самые смелые\r\n\r\nДата: 31 октября\r\nВремя: 17:00-22:00\r\nМесто: @Депо\r\nFC: 16+",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Halloween в Симферополе!"
+      },
+      "image": "/images/events/69e1def9a4ff60f572b87dc556f1d2ca.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1100,7 +1115,7 @@ footer {
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Киевская, д. 4н, Симферополь</a></div>
 <p class="venue-description">За чуть больше года в «Депо» сыграли 9 концертов с платным входом. Разброс широкий: сольники армянской эстрады — Ваграм Вазян, Авет Маркарян — соседствуют с Крымским Рэп Фестивалем и хедлайнером Казяном.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">3</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
