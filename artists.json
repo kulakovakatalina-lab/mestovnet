@@ -722,6 +722,26 @@
     "desc_baseline_count": 0
   },
   {
+    "slug": "ichchi",
+    "name": "Иччи",
+    "aliases": [
+      "ИЧЧИ",
+      "ИччИ",
+      "Иччи"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-10-02",
+    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
+    "desc_baseline_count": 3
+  },
+  {
     "slug": "anna-shakel-vokal",
     "name": "Анна Шакель (вокал)",
     "aliases": [
@@ -998,25 +1018,6 @@
     "desc_baseline_count": 3
   },
   {
-    "slug": "ichchi",
-    "name": "Иччи",
-    "aliases": [
-      "ИЧЧИ",
-      "Иччи"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-08-12",
-    "description": "Симферопольская группа, резидент Jam Club: играют на клубных рок-фестивалях — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до ROCK FEST — и трибьют-вечерах.",
-    "desc_baseline_count": 3
-  },
-  {
     "slug": "jawa",
     "name": "Jawa",
     "aliases": [
@@ -1029,10 +1030,10 @@
       "Симферополь"
     ],
     "venues": [
+      "Дом культуры «Корабел»",
       "Корабел",
       "Дом офицеров флота",
-      "Дворец культуры профсоюзов",
-      "Дом культуры «Корабел»"
+      "Дворец культуры профсоюзов"
     ],
     "first_seen": "2026-06-30",
     "last_seen": "2026-10-25",
@@ -1081,6 +1082,28 @@
     "last_seen": "2026-09-20",
     "description": "Этно-джазовые программы с восточными мотивами: дворец Дюльбер в Кореизе и камерные концерты на закате в долине под Севастополем.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "paranormal-jazz-trio",
+    "name": "Paranormal Jazz Trio",
+    "aliases": [
+      "Paranormal Jazz Trio"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Севастополь",
+      "Крым"
+    ],
+    "venues": [
+      "Снежинка",
+      "Севастополь",
+      "Арт-кафе «Снежинка»",
+      "Кронгс"
+    ],
+    "first_seen": "2026-05-16",
+    "last_seen": "2026-10-02",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "iz-kraynosti-v-kraynost",
@@ -1507,6 +1530,24 @@
     "desc_baseline_count": 2
   },
   {
+    "slug": "struktura",
+    "name": "Структура",
+    "aliases": [
+      "Структура"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-15",
+    "last_seen": "2026-10-02",
+    "description": "Симферопольская группа, резидент Jam Club: трибьют-вечера и клубные рок-фестивали.",
+    "desc_baseline_count": 2
+  },
+  {
     "slug": "ac-dc-tribute",
     "name": "AC/DC tribute",
     "aliases": [
@@ -1685,6 +1726,26 @@
     "first_seen": "2026-05-01",
     "last_seen": "2026-08-21",
     "description": "Участники метал-фестивалей Jam Club в Симферополе — от «РОК РЕГГИ ГРАНЖ БЛЮЗ МЕТАЛ ФЕСТа» до Modern Rock Heavy Fest.",
+    "desc_baseline_count": 2
+  },
+  {
+    "slug": "chernyy-doktor-solnechnoy-doliny",
+    "name": "Черный доктор солнечной долины",
+    "aliases": [
+      "Черный Доктор Солнечной Долины",
+      "Черный доктор солнечной долины",
+      "Чёрный Доктор Солнечной Долины"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-10-02",
+    "description": "Участники метал-фестивалей Jam Club в Симферополе.",
     "desc_baseline_count": 2
   },
   {
@@ -2505,24 +2566,6 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "struktura",
-    "name": "Структура",
-    "aliases": [
-      "Структура"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-07-04",
-    "description": "Симферопольская группа, резидент Jam Club: трибьют-вечера и клубные рок-фестивали.",
-    "desc_baseline_count": 2
-  },
-  {
     "slug": "aleksandr-vasilev",
     "name": "Александр Васильев",
     "aliases": [
@@ -2738,26 +2781,6 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "paranormal-jazz-trio",
-    "name": "Paranormal Jazz Trio",
-    "aliases": [
-      "Paranormal Jazz Trio"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь",
-      "Крым"
-    ],
-    "venues": [
-      "Арт-кафе «Снежинка»",
-      "Кронгс"
-    ],
-    "first_seen": "2026-05-16",
-    "last_seen": "2026-09-04",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "the-hatters",
     "name": "The Hatters",
     "aliases": [
@@ -2793,25 +2816,6 @@
     "first_seen": "2026-05-01",
     "last_seen": "2026-05-08",
     "description": "Симферопольская группа с фестивалей Jam Club: модерн-рок и метал.",
-    "desc_baseline_count": 2
-  },
-  {
-    "slug": "chernyy-doktor-solnechnoy-doliny",
-    "name": "Черный доктор солнечной долины",
-    "aliases": [
-      "Черный Доктор Солнечной Долины",
-      "Черный доктор солнечной долины"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-05-08",
-    "description": "Участники метал-фестивалей Jam Club в Симферополе.",
     "desc_baseline_count": 2
   },
   {
@@ -2947,6 +2951,24 @@
     ],
     "first_seen": "2026-08-05",
     "last_seen": "2026-08-05",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "saint-devils",
+    "name": "Saint Devils",
+    "aliases": [
+      "Saint Devils"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-10-02",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -3491,6 +3513,25 @@
     ],
     "first_seen": "2026-10-23",
     "last_seen": "2026-10-24",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "lyubov-fateeva",
+    "name": "Любовь Фатеева",
+    "aliases": [
+      "Любовь Фатеева"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Севастополь",
+      "Афиша PayBerry"
+    ],
+    "first_seen": "2026-09-30",
+    "last_seen": "2026-09-30",
     "description": null,
     "desc_baseline_count": 0
   }

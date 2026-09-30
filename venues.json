@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 45,
+    "event_count": 46,
     "aliases": [
       "Jam Club"
     ],
@@ -124,7 +124,7 @@
     "name": "Севастополь",
     "city": "Севастополь",
     "address": "Матросский бульвар",
-    "event_count": 14,
+    "event_count": 15,
     "aliases": [
       "Севастополь",
       "Севастополь, Матросский бульвар",
@@ -344,6 +344,20 @@
     "lon": null
   },
   {
+    "slug": "snezhinka",
+    "name": "Снежинка",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Снежинка"
+    ],
+    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
+    "desc_baseline_count": 1,
+    "lat": 44.606638,
+    "lon": 33.522078
+  },
+  {
     "slug": "dom-muzey-a-p-chehova-belaya-dacha",
     "name": "Дом-музей А.П. Чехова (Белая дача)",
     "city": "Ялта",
@@ -419,20 +433,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "snezhinka",
-    "name": "Снежинка",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Снежинка"
-    ],
-    "description": "Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.",
-    "desc_baseline_count": 1,
-    "lat": 44.606638,
-    "lon": 33.522078
   },
   {
     "slug": "krongs",
