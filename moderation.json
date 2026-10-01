@@ -128,71 +128,56 @@
     ]
   },
   {
-    "id": "dc66a98a",
-    "date": "2026-10-02",
+    "id": "360551b2",
+    "date": "2026-10-03",
     "time": null,
-    "artist": "ещё пара групп-сюрпризов, Крыша Мира, Чёрный Доктор Солнечной Долины, ИччИ, Структура, Saint Devils",
+    "artist": "БАЙК-РОК ГРУППА МИНА",
     "venue": "Jam Club",
     "source_city": "Симферополь",
     "price": "бесплатно",
     "genre": "рок",
     "event_type": "концерт",
-    "description": "Симферопольская группа ИччИ отмечает день рождения. В клубе тепло и уютно, двери с 18:00. Для подписчиков клуба вход бесплатный! + Бесплатное рок-караоке до утра!",
-    "image": "/images/events/e139d23305d766126f8d1a28b1987aff.jpg",
-    "source_url": "https://t.me/clubjam/1156",
+    "description": "Большой сольный концерт в 3х отделениях.",
+    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+    "source_url": "https://t.me/clubjam/1158",
     "reasons": [
       "нет времени"
     ]
   },
   {
-    "id": "e1411024",
-    "date": "2026-10-02",
+    "id": "7816a324",
+    "date": "2026-10-03",
     "time": null,
-    "artist": "Paranormal Jazz Trio",
-    "venue": "Севастополь",
-    "source_city": "Севастополь",
-    "price": "300–500 ₽",
-    "genre": "джаз",
+    "artist": "Black Tears | Red Stars",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
     "event_type": "концерт",
-    "description": "Авторский джаз с фортепиано, контрабасом и барабанами.",
-    "image": "/images/events/7db7f8b04e6155a479dd1eddaf7ef7f6.jpg",
-    "source_url": "https://t.me/afisha_payberry/1641",
+    "description": "На сцене: Black Tears | Red Stars. Двери с 18, вход бесплатный. После концерта - бесплатное рок-караоке до 6 утра.",
+    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+    "source_url": "https://t.me/clubjam/1158",
     "reasons": [
       "нет времени"
     ]
   },
   {
-    "id": "7940ff36",
-    "date": "2026-10-02",
+    "id": "517ef286",
+    "date": "2026-10-20",
     "time": null,
-    "artist": "Paranormal Jazz Trio",
-    "venue": "Снежинка",
-    "source_city": "Севастополь",
-    "price": "300–500 ₽",
-    "genre": "джаз",
-    "event_type": "концерт",
-    "description": "Новая программа с авторскими композициями и живым инструментальным звучанием. Фортепиано, контрабас и барабаны.",
-    "image": "/images/events/ddb57a66237face00ca218a612048894.jpg",
-    "source_url": "https://vk.com/wall-221587243_2489",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "id": "24781436",
-    "date": "2026-09-30",
-    "time": null,
-    "artist": "Любовь Фатеева",
-    "venue": "Афиша PayBerry",
-    "source_city": "Севастополь",
-    "price": "200 ₽",
+    "artist": "Авторские произведения",
+    "venue": "ТАВРИДА.АРТ",
+    "source_city": "Судак",
+    "price": null,
     "genre": "авторская",
-    "event_type": "концерт",
-    "description": "Любовь Фатеева исполнит мировые хиты и авторские аранжировки известных песен. Живой звук и уютная атмосфера для красивого вечера.",
-    "image": "/images/events/037294e6300b19c9fffc196a671c229f.jpg",
-    "source_url": "https://vk.com/wall-221587243_2487",
+    "event_type": "фестиваль",
+    "description": "II Всероссийский фестиваль авторской песни «Исполняй»",
+    "image": null,
+    "source_url": "https://vk.com/wall-89840945_120240",
     "reasons": [
-      "нет времени"
+      "нет времени",
+      "нет цены",
+      "нет постера"
     ]
   }
 ]

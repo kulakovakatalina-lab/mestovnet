@@ -38,18 +38,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Любовь Фатеева",
-      "startDate": "2026-09-30",
+      "name": "Paranormal Jazz Trio",
+      "startDate": "2026-10-02",
       "location": {
         "@type": "MusicVenue",
         "name": "Севастополь"
       },
-      "description": "Любовь Фатеева исполнит мировые хиты и авторские аранжировки известных песен.",
+      "description": "Новая программа с авторскими композициями и живым инструментальным звучанием.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Любовь Фатеева"
+        "name": "Paranormal Jazz Trio"
       },
-      "image": "/images/events/33acf24d30c317f26966bd0e86f6d1e2.jpg"
+      "image": "/images/events/58c1e5e6558fbb7dd58c0eeeb88f9627.jpg"
     }
   ]
 }

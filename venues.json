@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 46,
+    "event_count": 48,
     "aliases": [
       "Jam Club"
     ],
@@ -61,7 +61,7 @@
     "name": "ТАВРИДА.АРТ",
     "city": "Судак",
     "address": "",
-    "event_count": 17,
+    "event_count": 18,
     "aliases": [
       "ТАВРИДА.АРТ"
     ],
@@ -712,6 +712,20 @@
     "lon": 33.460754
   },
   {
+    "slug": "livadiyskiy-dvorets",
+    "name": "Ливадийский дворец",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Ливадийский дворец"
+    ],
+    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
+    "desc_baseline_count": 1,
+    "lat": 44.467678,
+    "lon": 34.143826
+  },
+  {
     "slug": "kinoteatr-pobeda",
     "name": "Кинотеатр «Победа»",
     "city": "Севастополь",
@@ -912,20 +926,6 @@
     "lon": 34.245444
   },
   {
-    "slug": "livadiyskiy-dvorets",
-    "name": "Ливадийский дворец",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Ливадийский дворец"
-    ],
-    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
-    "desc_baseline_count": 1,
-    "lat": 44.467678,
-    "lon": 34.143826
-  },
-  {
     "slug": "skelskaya-peschera",
     "name": "Скельская пещера",
     "city": "Севастополь",
@@ -1076,6 +1076,20 @@
     "event_count": 2,
     "aliases": [
       "Дом культуры «Корабел»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-s-pushkina-gurzuf",
+    "name": "Дом-музей А. С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Дом-музей А. С. Пушкина"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2105,20 +2119,6 @@
     "lon": null
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "galereya-iskusstv-mayya",
     "name": "Галерея искусств «Майя»",
     "city": "Ялта",
@@ -2203,20 +2203,6 @@
     "lon": null
   },
   {
-    "slug": "dom-muzey-a-s-pushkina-gurzuf",
-    "name": "Дом-музей А. С. Пушкина",
-    "city": "Гурзуф",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом-музей А. С. Пушкина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
     "name": "Егоровский зал Центра виноделия «Массандра»",
     "city": "Ялта",
@@ -2266,6 +2252,20 @@
     "event_count": 1,
     "aliases": [
       "Пространство «ТЕпЛо. Твоя территория»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Любовь Фатеева — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/lyubov-fateeva">
   <meta property="og:title" content="Любовь Фатеева — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Любовь Фатеева"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Любовь Фатеева",
-      "startDate": "2026-09-30",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Любовь Фатеева"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастополь",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Любовь Фатеева исполнит мировые хиты и авторские аранжировки известных песен.",
-      "image": "/images/events/33acf24d30c317f26966bd0e86f6d1e2.jpg"
     }
   ]
 }
@@ -1022,7 +1002,7 @@ footer {
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">
