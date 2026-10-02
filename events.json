@@ -10387,7 +10387,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-10-01T07:07:22.982064+00:00",
+    "post_date": "2026-10-02T06:56:20.697517+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10602,7 +10602,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-10-01T07:07:22.982098+00:00",
+    "post_date": "2026-10-02T06:56:20.697554+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -12042,7 +12042,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-10-01T07:07:22.982292+00:00",
+    "post_date": "2026-10-02T06:56:20.697733+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -12152,7 +12152,7 @@
     "source_url": "https://t.me/clubjam/1131",
     "images": [
       "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg",
-      "/images/events/bf083bcc421d839fa1be0edbd1b542b1.jpg"
+      "/images/events/8f2a44ead7ed7e7b927c623cac01bd80.jpg"
     ],
     "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg",
     "post_date": "2026-09-28T13:02:03+00:00",
@@ -13011,37 +13011,6 @@
     "moderation_decision_fingerprint": "bd56bcbcfab19374bdec3865ddfd4e4336d90c44f123fd0d3862e4faa0fa9614"
   },
   {
-    "id": "c42060a4",
-    "date": "2026-10-17",
-    "time": "20:00",
-    "artist": "Джокер",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "от 1000 ₽",
-    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Симферополь, к\u0000луб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
-    "source_city": "Симферополь",
-    "source_channel": "afisha_ru",
-    "genre": "рок",
-    "source_url": "https://www.afisha.ru/concert/dzhoker-6048481/",
-    "images": [
-      "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
-    ],
-    "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
-    "post_date": "2026-09-30T06:30:34.096862+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "source_last_checked_at": "2026-09-17T05:59:46.845918+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "00a9964709a7d387ab5e44931beec6a2ad5af6f7c11b331e8c243cb7ac0cab24"
-  },
-  {
     "id": "3189d597",
     "date": "2026-09-30",
     "time": "20:00",
@@ -13656,7 +13625,7 @@
     "id": "3e5c631c",
     "date": "2026-10-20",
     "time": null,
-    "artist": "Исполняй",
+    "artist": "Исполняй, Авторские произведения",
     "event_type": "фестиваль",
     "venue": "ТАВРИДА.АРТ",
     "price": null,
@@ -13693,12 +13662,13 @@
     "id": "1275c013",
     "artist_is_generic": false,
     "genre": "рок",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "id": "0a587043",
@@ -14120,7 +14090,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-01T07:07:22.981861+00:00",
+    "post_date": "2026-10-02T06:56:20.697296+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14142,7 +14112,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-01T07:07:22.981983+00:00",
+    "post_date": "2026-10-02T06:56:20.697428+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14234,73 +14204,6 @@
   {
     "date": "2026-10-02",
     "time": null,
-    "artist": "ещё пара групп-сюрпризов, Крыша Мира, Чёрный Доктор Солнечной Долины, ИччИ, Структура, Saint Devils",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Симферопольская группа ИччИ отмечает день рождения. В клубе тепло и уютно, двери с 18:00. Для подписчиков клуба вход бесплатный! + бесплатное рок-караоке до утра!",
-    "image": "/images/events/5ed02e575eeafb15e9f728b56fe49b5e.jpg",
-    "images": [
-      "/images/events/5ed02e575eeafb15e9f728b56fe49b5e.jpg",
-      "/images/events/195f7e93e06b601573ce3c3e08c8d93b.jpg"
-    ],
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-29T10:42:53+00:00",
-    "source_url": "https://t.me/clubjam/1156",
-    "id": "dc66a98a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-04",
-    "time": "19:00",
-    "artist": "Классическая музыка",
-    "event_type": "концерт",
-    "venue": "Ливадийский дворец",
-    "price": null,
-    "description": "Вечер классики с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
-    "image": "/images/events/722a826f438402e4f11baf48ee6e2c0a.jpg",
-    "images": [
-      "/images/events/722a826f438402e4f11baf48ee6e2c0a.jpg",
-      "/images/events/1b77bec3ce422a121c310acbd05a6407.jpg",
-      "/images/events/58f03c0e33eb9ba7c21dfcdf5fc1f118.jpg",
-      "/images/events/f727a4ebc6c476d88760c0dceeeb1613.jpg",
-      "/images/events/253f10fdd50a4eceb8297ed21b6ddd41.jpg"
-    ],
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-09-23T09:56:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2311",
-    "id": "a131caba",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-02",
-    "time": null,
     "artist": "Paranormal Jazz Trio",
     "event_type": "концерт",
     "venue": "Севастополь",
@@ -14325,6 +14228,180 @@
     "review_reasons": [
       "нет времени"
     ],
+    "moderation_status": "approved",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "6c7788c1ad9f1c864309a60aa4ff75b8dfd8a3bcef30e69304bc73499828fb64"
+  },
+  {
+    "id": "360551b2",
+    "date": "2026-10-03",
+    "time": null,
+    "artist": "БАЙК-РОК ГРУППА МИНА",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Большой сольный концерт в 3х отделениях.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1158",
+    "images": [
+      "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+      "/images/events/6304026ef4a30d8974e58394e1734b4e.jpg"
+    ],
+    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+    "post_date": "2026-09-30T19:21:49+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "7816a324",
+    "date": "2026-10-03",
+    "time": null,
+    "artist": "Black Tears | Red Stars",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "На сцене: Black Tears | Red Stars. Двери с 18, вход бесплатный. После концерта - бесплатное рок-караоке до 6 утра.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1158",
+    "images": [
+      "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+      "/images/events/6304026ef4a30d8974e58394e1734b4e.jpg"
+    ],
+    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
+    "post_date": "2026-09-30T19:21:49+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "38661c06",
+    "date": "2026-10-31",
+    "time": "16:00",
+    "artist": "Пушкин, его современники. Музыкальные диалоги",
+    "event_type": "концерт",
+    "venue": "Дом-музей А. С. Пушкина",
+    "price": null,
+    "description": "Концерт «Пушкин и его современники. Музыкальные диалоги» – произведения композиторов, чьи мелодии были частью музыкального пространства пушкинской эпохи.",
+    "source_city": "Гурзуф",
+    "source_channel": "koncertykrym",
+    "genre": "поп",
+    "source_url": "https://t.me/koncertykrym/2326",
+    "images": [
+      "/images/events/acee93c2ca663502a17569a6ff7ef20e.jpg",
+      "/images/events/998dd43075fa9155c5c49f5298c852c2.jpg"
+    ],
+    "image": "/images/events/acee93c2ca663502a17569a6ff7ef20e.jpg",
+    "post_date": "2026-09-29T16:05:21+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "09954bc6",
+    "date": "2026-10-04",
+    "time": "19:00",
+    "artist": "Музыка, свечи",
+    "event_type": "концерт",
+    "venue": "Ливадийский дворец",
+    "price": null,
+    "description": "Концерт «Музыка и свечи» – приглашение волонтёров для помощи в организации мероприятия.",
+    "source_city": "Ялта",
+    "source_channel": "koncertykrym",
+    "genre": "поп",
+    "source_url": "https://t.me/koncertykrym/2328",
+    "images": [
+      "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg",
+      "/images/events/fb04cb862aed1b0867f818978a5812fe.jpg"
+    ],
+    "image": "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg",
+    "post_date": "2026-09-30T15:33:45+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-02",
+    "time": null,
+    "artist": "ещё пара групп-сюрпризов, Крыша Мира, Чёрный Доктор Солнечной Долины, ИччИ, Структура, Saint Devils",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "В пятницу симферопольская группа ИччИ отмечает день рождения. В клубе выступят несколько музыкальных групп. Для подписчиков клуба вход бесплатный и организовано бесплатное рок-караоке до утра.",
+    "image": "/images/events/2b62520a751d9aab2ef2945ce1fd4ca8.jpg",
+    "images": [
+      "/images/events/2b62520a751d9aab2ef2945ce1fd4ca8.jpg",
+      "/images/events/602e7d4452ac1923899e5c237232de58.jpg"
+    ],
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-09-29T10:42:53+00:00",
+    "source_url": "https://t.me/clubjam/1156",
+    "id": "dc66a98a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-04",
+    "time": "19:00",
+    "artist": "Классическая музыка",
+    "event_type": "концерт",
+    "venue": "Ливадийский дворец",
+    "price": null,
+    "description": "Вечер классики с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
+    "image": "/images/events/dee9df1c5db84b4ff4916747ee648cf1.jpg",
+    "images": [
+      "/images/events/dee9df1c5db84b4ff4916747ee648cf1.jpg",
+      "/images/events/c7a7b3490554dd52d7876b9c1e710c56.jpg",
+      "/images/events/3d21f41563f39b5b999a01a859123528.jpg",
+      "/images/events/331c791091435179c0d4c4f8680a89a2.jpg",
+      "/images/events/ed42dd49ef511ddadd260c18b6b09daa.jpg"
+    ],
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-09-23T09:56:01+00:00",
+    "source_url": "https://t.me/koncertykrym/2311",
+    "id": "a131caba",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
     "moderation_status": "approved"
   },
   {
@@ -14343,7 +14420,7 @@
     "source_url": "https://vk.com/wall-221587243_2489",
     "id": "7940ff36",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14365,16 +14442,41 @@
     "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-10-01T07:07:22.982028+00:00",
+    "post_date": "2026-10-02T06:56:20.697477+00:00",
     "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
     "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
     "genre": "классика",
     "id": "641834f5",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-17",
+    "time": "20:00",
+    "artist": "Джокер",
+    "venue": "Jam Club",
+    "event_type": "концерт",
+    "price": "от 1000 ₽",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Сим\u0000ферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-02T06:56:20.697589+00:00",
+    "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg",
+    "source_url": "https://www.afisha.ru/concert/dzhoker-6048481/",
+    "genre": "рок",
+    "id": "c42060a4",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
     ],
     "needs_review": false,
     "review_reasons": [],
@@ -14390,13 +14492,13 @@
     "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-10-01T07:07:22.982130+00:00",
+    "post_date": "2026-10-02T06:56:20.697625+00:00",
     "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
     "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
     "genre": "рок",
     "id": "4993369e",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -14415,13 +14517,13 @@
     "description": "О концерте Симферополь\r\n31 октября встречаемся в клубе Депо, чтобы пощекотать свои нервишки!\r\n\r\nНа мероприятии вас будет ждать:\r\n- Стол с гаданиями на картах таро 🃏\r\n- Розыгрыш 5.000р за лучший костюм\r\n- Страх и ужас на каждом шагу 🩸\r\n- Лушчие диджеи\r\n\r\nЕсли вы не боитесь, то 31 октября ждём вас 🕷️ Зайти смогут только самые смелые\r\n\r\nДата: 31 октября\r\nВремя: 17:00-22:00\r\nМесто: @Депо\r\nFC: 16+",
     "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-10-01T07:07:22.982258+00:00",
+    "post_date": "2026-10-02T06:56:20.697698+00:00",
     "image": "/images/events/69e1def9a4ff60f572b87dc556f1d2ca.jpg",
     "source_url": "https://www.afisha.ru/concert/halloween-v-simferopole-6053529/",
     "genre": "поп",
     "id": "7da6a4ea",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14439,16 +14541,16 @@
     "venue": "Камелот",
     "event_type": "концерт",
     "price": "от 700 ₽",
-    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жи\u0000ть, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
     "source_channel": "afisha_ru",
     "source_city": "Керчь",
-    "post_date": "2026-10-01T07:07:22.982353+00:00",
+    "post_date": "2026-10-02T06:56:20.697800+00:00",
     "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
     "source_url": "https://www.afisha.ru/concert/dzhoker-6048497/",
     "genre": "рок",
     "id": "42567d5d",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -14467,12 +14569,12 @@
     "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
     "source_channel": "afisha_goroda",
     "source_city": "Керчь",
-    "post_date": "2026-10-01T07:07:37.457893+00:00",
+    "post_date": "2026-10-02T06:56:35.785368+00:00",
     "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
     "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
     "id": "7ee9b24f",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14492,12 +14594,12 @@
     "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
     "source_channel": "afisha_goroda",
     "source_city": "Феодосия",
-    "post_date": "2026-10-01T07:07:37.457926+00:00",
+    "post_date": "2026-10-02T06:56:35.785404+00:00",
     "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
     "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
     "id": "71ede2ea",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-01T07:07:38.947478+00:00",
+    "source_last_checked_at": "2026-10-02T06:56:37.248775+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -14506,123 +14608,6 @@
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-03",
-    "time": null,
-    "artist": "БАЙК-РОК ГРУППА МИНА",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Большой сольный концерт в 3х отделениях.",
-    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
-    "images": [
-      "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
-      "/images/events/bde50a2d0635109f4ce657f2dbbcde2c.jpg"
-    ],
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-30T19:21:49+00:00",
-    "source_url": "https://t.me/clubjam/1158",
-    "id": "360551b2",
-    "genre": "рок",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "time": null,
-    "artist": "Black Tears | Red Stars",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "На сцене: Black Tears | Red Stars. Двери с 18, вход бесплатный. После концерта - бесплатное рок-караоке до 6 утра.",
-    "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
-    "images": [
-      "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
-      "/images/events/bde50a2d0635109f4ce657f2dbbcde2c.jpg"
-    ],
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-09-30T19:21:49+00:00",
-    "source_url": "https://t.me/clubjam/1158",
-    "id": "7816a324",
-    "genre": "рок",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "time": "16:00",
-    "artist": "Пушкин и его современники. Музыкальные диалоги",
-    "event_type": "концерт",
-    "venue": "Дом-музей А. С. Пушкина",
-    "price": null,
-    "description": "Концерт «Пушкин и его современники. Музыкальные диалоги» – произведения композиторов, чьи мелодии были частью музыкального пространства пушкинской эпохи.",
-    "image": "/images/events/acee93c2ca663502a17569a6ff7ef20e.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Гурзуф",
-    "post_date": "2026-09-29T16:05:21+00:00",
-    "source_url": "https://t.me/koncertykrym/2326",
-    "id": "38661c06",
-    "artist_is_generic": false,
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-04",
-    "time": "19:00",
-    "artist": "Музыка и свечи",
-    "event_type": "концерт",
-    "venue": "Ливадийский дворец",
-    "price": null,
-    "description": "Концерт «Музыка и свечи» – приглашение волонтёров для помощи в организации мероприятия.",
-    "image": "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-09-30T15:33:45+00:00",
-    "source_url": "https://t.me/koncertykrym/2328",
-    "id": "09954bc6",
-    "artist_is_generic": false,
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-20",
-    "time": null,
-    "artist": "Авторские произведения",
-    "event_type": "фестиваль",
-    "venue": "ТАВРИДА.АРТ",
-    "price": null,
-    "description": "II Всероссийский фестиваль авторской песни «Исполняй»",
-    "image": null,
-    "images": null,
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-09-18T10:09:37+00:00",
-    "source_url": "https://vk.com/wall-89840945_120240",
-    "id": "517ef286",
-    "genre": "авторская",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет цены",
-      "нет постера"
-    ]
   },
   {
     "date": "2026-08-11",

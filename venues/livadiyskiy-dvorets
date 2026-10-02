@@ -37,6 +37,21 @@
     },
     {
       "@type": "MusicEvent",
+      "name": "Музыка, свечи",
+      "startDate": "2026-10-04T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ливадийский дворец"
+      },
+      "description": "Концерт «Музыка и свечи» – приглашение волонтёров для помощи в организации мероприятия.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Музыка, свечи"
+      },
+      "image": "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg"
+    },
+    {
+      "@type": "MusicEvent",
       "name": "Классическая музыка",
       "startDate": "2026-10-04T19:00:00+03:00",
       "location": {
@@ -48,22 +63,7 @@
         "@type": "MusicGroup",
         "name": "Классическая музыка"
       },
-      "image": "/images/events/722a826f438402e4f11baf48ee6e2c0a.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Музыка и свечи",
-      "startDate": "2026-10-04T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ливадийский дворец"
-      },
-      "description": "Концерт «Музыка и свечи» – приглашение волонтёров для помощи в организации мероприятия.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Музыка и свечи"
-      },
-      "image": "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg"
+      "image": "/images/events/dee9df1c5db84b4ff4916747ee648cf1.jpg"
     }
   ]
 }
