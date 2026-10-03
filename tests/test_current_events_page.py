@@ -1,7 +1,13 @@
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-from generate_pages import make_current_events_page
+from generate_pages import fmt_date, make_current_events_page
+
+
+def test_weekday_labels_match_calendar():
+    assert fmt_date("2026-10-03") == "3 октября, сб"
+    assert fmt_date("2026-10-04") == "4 октября, вс"
+    assert fmt_date("2026-10-05") == "5 октября, пн"
 
 
 def test_current_events_page_shows_image_and_source_link():
