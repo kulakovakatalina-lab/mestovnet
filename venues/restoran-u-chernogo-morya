@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-u-chernogo-morya">
   <meta property="og:title" content="Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Севастопольский эстрадный оркестр Валентина Таева",
+      "startDate": "2026-11-06T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»"
+      },
+      "description": "«Рок-хиты. Поём с оркестром. 2.0» — караоке-концерт с Севастопольским эстрадным оркестром Валентина Таева. Песни «Короля и Шута», «Мумий Тролля», ДДТ, «Чиж & Co» и «Зверей». Севастополь, ул. Ленина, 8.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Севастопольский эстрадный оркестр Валентина Таева"
+      },
+      "image": "/images/events/b508493642a4d866d229aa8d1b1ce39e.jpg"
     }
   ]
 }
@@ -1054,7 +1069,7 @@ footer {
 
 
   </div>
-
+<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
 </div>
 
 <div class="events-list" id="events-list">

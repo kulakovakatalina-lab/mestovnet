@@ -14424,5 +14424,46 @@
       "нет цены"
     ],
     "moderation_status": "archived"
+  },
+  {
+    "time": "20:00",
+    "artist": "Севастопольский эстрадный оркестр Валентина Таева",
+    "event_type": "концерт",
+    "price": null,
+    "source_channel": "u_blacksea_rest",
+    "genre": "русский рок",
+    "source_url": "https://vk.com/wall-233167471_981",
+    "needs_review": false,
+    "moderation_status": "approved",
+    "date": "2026-11-06",
+    "venue": "Ресторан «У Чёрного моря»",
+    "source_city": "Севастополь",
+    "description": "«Рок-хиты. Поём с оркестром. 2.0» — караоке-концерт с Севастопольским эстрадным оркестром Валентина Таева. Песни «Короля и Шута», «Мумий Тролля», ДДТ, «Чиж & Co» и «Зверей». Севастополь, ул. Ленина, 8.",
+    "image": "/images/events/b508493642a4d866d229aa8d1b1ce39e.jpg",
+    "review_reasons": [
+      "нет цены"
+    ],
+    "id": "cbe6bb6e"
+  },
+  {
+    "time": "20:00",
+    "artist": "Севастопольский эстрадный оркестр Валентина Таева",
+    "event_type": "концерт",
+    "price": null,
+    "source_channel": "u_blacksea_rest",
+    "genre": "русский рок",
+    "source_url": "https://vk.com/wall-233167471_981",
+    "needs_review": false,
+    "moderation_status": "approved",
+    "date": "2026-11-07",
+    "venue": "Депо",
+    "source_city": "Симферополь",
+    "description": "«Рок-хиты. Поём с оркестром. 2.0» — караоке-концерт с Севастопольским эстрадным оркестром Валентина Таева. Песни «Короля и Шута», «Мумий Тролля», ДДТ, «Чиж & Co» и «Зверей». Симферополь, ул. Киевская, 4.",
+    "image": null,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "id": "0409cc68"
   }
 ]

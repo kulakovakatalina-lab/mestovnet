@@ -942,6 +942,27 @@
     "desc_baseline_count": 0
   },
   {
+    "slug": "sevastopolskiy-estradnyy-orkestr-valentina-taeva",
+    "name": "Севастопольский эстрадный оркестр Валентина Таева",
+    "aliases": [
+      "Севастопольский эстрадный оркестр Валентина Таева"
+    ],
+    "event_count": 4,
+    "cities": [
+      "Симферополь",
+      "Севастополь"
+    ],
+    "venues": [
+      "Ресторан «У Чёрного моря»",
+      "Депо",
+      "Клуб ДЕПО, ул. Киевская, д. 4н"
+    ],
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-11-07",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "krymskiy-kamernyy-orkestr-novaya-garmoniya",
     "name": "Крымский камерный оркестр «Новая Гармония»",
     "aliases": [
@@ -2355,26 +2376,6 @@
     "last_seen": "2026-08-01",
     "description": "Известная эстрадная певица. Летние концерты — Музыкальный театр в Симферополе и ялтинский «Юбилейный».",
     "desc_baseline_count": 2
-  },
-  {
-    "slug": "sevastopolskiy-estradnyy-orkestr-valentina-taeva",
-    "name": "Севастопольский эстрадный оркестр Валентина Таева",
-    "aliases": [
-      "Севастопольский эстрадный оркестр Валентина Таева"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь",
-      "Симферополь"
-    ],
-    "venues": [
-      "Ресторан «У Чёрного моря»",
-      "Клуб ДЕПО, ул. Киевская, д. 4н"
-    ],
-    "first_seen": "2026-07-12",
-    "last_seen": "2026-07-31",
-    "description": null,
-    "desc_baseline_count": 0
   },
   {
     "slug": "chestnyy",
