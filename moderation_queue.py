@@ -37,7 +37,10 @@ def load_decisions() -> Optional[list[dict]]:
         return None
     request = urllib.request.Request(
         f"{base_url}/moderation/decisions",
-        headers={"Authorization": f"Bearer {token}"},
+        headers={
+            "Authorization": f"Bearer {token}",
+            "User-Agent": "MestovNet-Moderation-Sync/1.0",
+        },
     )
     try:
         with urllib.request.urlopen(request, timeout=15) as response:
