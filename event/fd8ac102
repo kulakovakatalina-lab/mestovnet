@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Анжелики Варум, Трибьют Леонида Агутина, Арт-кафе «Снежинка», в Севастополе, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Трибьют Леонида Агутина и Анжелики Варум, Арт-кафе «Снежинка», в Севастополе, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Анжелики Варум, Трибьют Леонида Агутина — Арт-кафе «Снежинка», Севастополь, 13 сентября · Местов.Нет</title>
+<title>Трибьют Леонида Агутина и Анжелики Варум — Арт-кафе «Снежинка», Севастополь, 13 сентября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/fd8ac102">
-<meta property="og:title" content="Анжелики Варум, Трибьют Леонида Агутина — Арт-кафе «Снежинка», Севастополь, 13 сентября · Местов.Нет">
-<meta property="og:description" content="Анжелики Варум, Трибьют Леонида Агутина, Арт-кафе «Снежинка», в Севастополе, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Трибьют Леонида Агутина и Анжелики Варум — Арт-кафе «Снежинка», Севастополь, 13 сентября · Местов.Нет">
+<meta property="og:description" content="Трибьют Леонида Агутина и Анжелики Варум, Арт-кафе «Снежинка», в Севастополе, 13 сентября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <script type="application/ld+json">
 {
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Анжелики Варум, Трибьют Леонида Агутина",
+      "name": "Трибьют Леонида Агутина и Анжелики Варум",
       "startDate": "2026-09-13T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,7 +983,7 @@ a { color: inherit; text-decoration: none; }
       "description": "Песни Леонида Агутина и Анжелики Варум.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Анжелики Варум, Трибьют Леонида Агутина"
+        "name": "Трибьют Леонида Агутина и Анжелики Варум"
       },
       "offers": {
         "@type": "Offer",
@@ -996,7 +996,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Анжелики Варум, Трибьют Леонида Агутина"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Трибьют Леонида Агутина и Анжелики Варум"}]}
 </script>
 </head>
 <body>
