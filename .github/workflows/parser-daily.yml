@@ -66,10 +66,12 @@ jobs:
           retention-days: 1
 
       - name: Запустить парсер
+        env:
+          PARSER_SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
           DAYS="${{ github.event.inputs.days || 14 }}"
-          if [ "${{ github.event.schedule }}" = "43 2 * * *" ]; then DAYS=2; fi
+          if [ "${PARSER_SCHEDULE:-}" = "43 2 * * *" ]; then DAYS=2; fi
           python -u parser.py --days "$DAYS" 2>&1 | tee parser_output.log
           python repair_event_data.py
           python moderation_queue.py
