@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Снежинка — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Снежинка, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/snezhinka">
   <meta property="og:title" content="Снежинка — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Снежинка, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Снежинка, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Paranormal Jazz Trio",
-      "startDate": "2026-10-02",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Снежинка"
-      },
-      "description": "Новая программа с авторскими композициями и живым инструментальным звучанием. Фортепиано, контрабас и барабаны.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Paranormal Jazz Trio"
-      },
-      "image": "/images/events/ddb57a66237face00ca218a612048894.jpg"
     }
   ]
 }
@@ -1069,7 +1054,7 @@ footer {
 
 <p class="venue-description">Площадка в Севастополе для живых концертов популярной музыки — вокал под гитару, клавиши, саксофон и ударные.</p>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">1</div><div class="genre-hero-count-label">событие</div></div>
+
 </div>
 
 <div class="events-list" id="events-list">

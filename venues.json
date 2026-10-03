@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 24,
+    "event_count": 25,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -2280,6 +2280,20 @@
     "event_count": 1,
     "aliases": [
       "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
+    "name": "Бахчисарайский районный дом культуры",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Бахчисарайский районный дом культуры"
     ],
     "description": null,
     "desc_baseline_count": 0,

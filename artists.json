@@ -1495,14 +1495,14 @@
     ],
     "event_count": 3,
     "cities": [
-      "Керчь",
       "Севастополь",
-      "Симферополь"
+      "Симферополь",
+      "Керчь"
     ],
     "venues": [
-      "Камелот",
       "Молодость",
-      "Jam Club"
+      "Jam Club",
+      "Камелот"
     ],
     "first_seen": "2026-07-08",
     "last_seen": "2026-10-18",
@@ -3365,6 +3365,42 @@
     ],
     "first_seen": "2026-09-05",
     "last_seen": "2026-09-05",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "anzheliki-varum",
+    "name": "Анжелики Варум",
+    "aliases": [
+      "Анжелики Варум"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Арт-кафе «Снежинка»"
+    ],
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-10-03",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "tribyut-leonida-agutina",
+    "name": "Трибьют Леонида Агутина",
+    "aliases": [
+      "Трибьют Леонида Агутина"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Арт-кафе «Снежинка»"
+    ],
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-10-03",
     "description": null,
     "desc_baseline_count": 0
   },
