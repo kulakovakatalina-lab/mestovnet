@@ -10,6 +10,7 @@ from pathlib import Path
 QUEUE = Path("moderation.json")
 API = "https://api.telegram.org/bot{token}/sendMessage"
 CURRENT_EVENTS_URL = "https://mestov.net/current-events/"
+MODERATION_BOT_URL = "https://t.me/mestovnet_bot?start=moderation"
 
 
 def main() -> None:
@@ -43,7 +44,7 @@ def main() -> None:
         ),
         "reply_markup": {"inline_keyboard": [[{
             "text": "Разобрать события ▶",
-            "callback_data": "mod:start",
+            "url": MODERATION_BOT_URL,
         }]]},
     }
     request = urllib.request.Request(
