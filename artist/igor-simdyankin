@@ -1002,7 +1002,7 @@ footer {
 <p class="venue-description">Один из самых активных артистов севастопольской барной сцены: акустические квартирники в «Рок-н-рольщиках» почти каждый месяц, вход обычно свободный. Играет русский рок и поп-рок; фирменная программа — акустический трибьют «Короля и Шута» ко дню памяти Михаила Горшенёва, с которой выступает и в Севастополе, и в Симферополе.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
   </div>
-
+<div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1168,6 +1168,18 @@ function renderList(events, containerId, extraClass) {
     : '<div class="loading">Нет событий</div>';
 }
 
+function renderUpcomingCount(count) {
+  const el = document.getElementById('upcoming-count');
+  if (!el) return;
+  const lastTwo = count % 100;
+  const last = count % 10;
+  const word = lastTwo >= 11 && lastTwo <= 14 ? 'событий'
+    : last === 1 ? 'событие' : last >= 2 && last <= 4 ? 'события' : 'событий';
+  el.innerHTML = count
+    ? `<div class="genre-hero-count">${count}</div><div class="genre-hero-count-label">${word}</div>`
+    : '';
+}
+
 let pastEvents = [];
 let pastExpanded = false;
 
@@ -1208,6 +1220,7 @@ async function load() {
     pastEvents     = all.filter(e => parseDateTime(e) <  now).reverse();
 
     renderList(upcoming, 'events-list');
+    renderUpcomingCount(upcoming.length);
     renderArchive();
 
     const genreCounts = {};

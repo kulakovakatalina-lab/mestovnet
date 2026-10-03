@@ -1105,15 +1105,9 @@ ymaps.ready(function() {{
 </script>''' if has_coords else ""
     )
 
-    # Кол-во актуальных событий — справа
-    event_count  = len(upcoming)
-    count_word   = "событие" if event_count == 1 else "события" if event_count < 5 else "событий"
-    hero_right   = (
-        f'<div class="genre-hero-meta">'
-        f'<div class="genre-hero-count">{event_count}</div>'
-        f'<div class="genre-hero-count-label">{count_word}</div>'
-        f'</div>'
-    ) if event_count else ""
+    # Список фильтруется по текущему времени в браузере: счётчик заполняется
+    # одновременно с ним, иначе после начала сегодняшнего события он устаревает.
+    hero_right = '<div class="genre-hero-meta" id="upcoming-count"></div>'
 
     aliases_json = _json.dumps(aliases, ensure_ascii=False)
     eyebrow_city = (f'· <a href="/cities/{city_slug(city)}.html">{esc(city)}</a>' if city else "· Крым")
@@ -1482,6 +1476,18 @@ function renderList(events, containerId, extraClass) {{
     : '<div class="loading">Нет событий</div>';
 }}
 
+function renderUpcomingCount(count) {{
+  const el = document.getElementById('upcoming-count');
+  if (!el) return;
+  const lastTwo = count % 100;
+  const last = count % 10;
+  const word = lastTwo >= 11 && lastTwo <= 14 ? 'событий'
+    : last === 1 ? 'событие' : last >= 2 && last <= 4 ? 'события' : 'событий';
+  el.innerHTML = count
+    ? `<div class="genre-hero-count">${{count}}</div><div class="genre-hero-count-label">${{word}}</div>`
+    : '';
+}}
+
 let pastEvents = [];
 let pastExpanded = false;
 
@@ -1523,6 +1529,7 @@ async function load() {{
     pastEvents     = all.filter(e => parseDateTime(e) <  now).reverse();
 
     renderList(upcoming, 'events-list');
+    renderUpcomingCount(upcoming.length);
     renderArchive();
 
     // Жанры в шапке — все жанры сайта, не только этого заведения
@@ -1620,14 +1627,7 @@ def make_artist_page(artist: dict, all_events: list[dict], today: str,
     else:
         cities_block = ""
 
-    event_count  = len(upcoming)
-    count_word   = "событие" if event_count == 1 else "события" if event_count < 5 else "событий"
-    hero_right   = (
-        f'<div class="genre-hero-meta">'
-        f'<div class="genre-hero-count">{event_count}</div>'
-        f'<div class="genre-hero-count-label">{count_word}</div>'
-        f'</div>'
-    ) if event_count else ""
+    hero_right = '<div class="genre-hero-meta" id="upcoming-count"></div>'
 
     aliases_json = _json.dumps(aliases, ensure_ascii=False)
     nav_block    = _extract_nav_block()
@@ -1988,6 +1988,18 @@ function renderList(events, containerId, extraClass) {{
     : '<div class="loading">Нет событий</div>';
 }}
 
+function renderUpcomingCount(count) {{
+  const el = document.getElementById('upcoming-count');
+  if (!el) return;
+  const lastTwo = count % 100;
+  const last = count % 10;
+  const word = lastTwo >= 11 && lastTwo <= 14 ? 'событий'
+    : last === 1 ? 'событие' : last >= 2 && last <= 4 ? 'события' : 'событий';
+  el.innerHTML = count
+    ? `<div class="genre-hero-count">${{count}}</div><div class="genre-hero-count-label">${{word}}</div>`
+    : '';
+}}
+
 let pastEvents = [];
 let pastExpanded = false;
 
@@ -2028,6 +2040,7 @@ async function load() {{
     pastEvents     = all.filter(e => parseDateTime(e) <  now).reverse();
 
     renderList(upcoming, 'events-list');
+    renderUpcomingCount(upcoming.length);
     renderArchive();
 
     const genreCounts = {{}};
