@@ -7,18 +7,21 @@
 до того, как она станет незаметной из-за архивного объединения events.json.
 """
 import argparse
+import html
 import json
 import re
 from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 
 DEFAULT_CHANNELS = Path("channels.json")
 DEFAULT_CITIES = Path("cities.json")
 DEFAULT_EVENTS = Path("events.json")
 DEFAULT_SNAPSHOT = Path("source_health.json")
+DEFAULT_CURRENT_EVENTS = Path("current-events/index.html")
 
 _REPORT_LINE = re.compile(
     r"^(?P<label>.+?) \((?P<title>.*?)\): постов (?P<posts>\d+), "
@@ -26,6 +29,18 @@ _REPORT_LINE = re.compile(
     r"склеено дублей (?P<merged>\d+), отклонено (?P<rejected>.*)$"
 )
 _READING_LINE = re.compile(r"^Читаю (?P<label>.+?) \(")
+_EXPLICIT_ANNOUNCEMENT = re.compile(r"^[ \t]*Проверить анонс: (https://t\.me/[A-Za-z0-9_]+/\d+)$", re.MULTILINE)
+_PUBLISHED_SOURCE = re.compile(r'href="(https://t\.me/[A-Za-z0-9_]+/\d+)"')
+
+
+def missing_explicit_announcements(log_path: Optional[Path], page_path: Path) -> list[str]:
+    """Находит ясные анонсы, которым не досталось строки в публичной афише."""
+    if not log_path or not log_path.exists() or not page_path.exists():
+        return []
+    expected = set(_EXPLICIT_ANNOUNCEMENT.findall(log_path.read_text(encoding="utf-8")))
+    page = html.unescape(page_path.read_text(encoding="utf-8"))
+    published = set(_PUBLISHED_SOURCE.findall(page))
+    return sorted(expected - published)
 
 
 def _source_label(channel: dict) -> str:
@@ -226,13 +241,21 @@ def main() -> int:
     argp.add_argument("--cities", type=Path, default=DEFAULT_CITIES)
     argp.add_argument("--events", type=Path, default=DEFAULT_EVENTS)
     argp.add_argument("--snapshot", type=Path, default=DEFAULT_SNAPSHOT)
-    argp.add_argument("--today", type=date.fromisoformat, default=date.today(), help="YYYY-MM-DD; для проверки")
+    argp.add_argument("--current-events", type=Path, default=DEFAULT_CURRENT_EVENTS)
+    argp.add_argument("--today", type=date.fromisoformat,
+                      default=datetime.now(ZoneInfo("Europe/Moscow")).date(),
+                      help="YYYY-MM-DD; для проверки")
     args = argp.parse_args()
 
     stats, errors = parse_parser_log(args.log)
     snapshot = build_snapshot(configured_sources(args.channels), stats, errors,
                               _load_snapshot(args.snapshot), active_city_counts(args.events, args.today),
                               datetime.now(timezone.utc), supported_cities(args.cities))
+    for url in missing_explicit_announcements(args.log, args.current_events):
+        snapshot["alerts"].append({
+            "level": "warning", "source": url,
+            "message": "концерт из поста не опубликован в актуальной афише",
+        })
     save_snapshot(args.snapshot, snapshot)
     print(f"=== Контроль источников: {len(snapshot['sources'])} ===")
     for alert in snapshot["alerts"]:

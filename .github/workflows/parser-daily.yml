@@ -1,11 +1,13 @@
 name: Parser daily
 
-# Запускает parser.py раз в день ночью (01:00 UTC = 04:00 Крым),
+# Основной ночной запуск — 02:17 по Москве, короткая повторная проверка — 05:43.
+# Время вне начала часа снижает риск задержки расписания GitHub Actions.
 # генерирует страницы, пушит изменения в main, дожидается деплоя
 # и только после этого присылает Telegram-уведомление.
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "17 23 * * *"
+    - cron: "43 2 * * *"
   workflow_dispatch:
     inputs:
       days:
@@ -67,8 +69,8 @@ jobs:
         run: |
           set -euo pipefail
           DAYS="${{ github.event.inputs.days || 14 }}"
+          if [ "${{ github.event.schedule }}" = "43 2 * * *" ]; then DAYS=2; fi
           python -u parser.py --days "$DAYS" 2>&1 | tee parser_output.log
-          python source_health.py --log parser_output.log
           python repair_event_data.py
           python moderation_queue.py
 
@@ -80,6 +82,7 @@ jobs:
       - name: Сгенерировать страницы
         run: |
           python generate_pages.py
+          python source_health.py --log parser_output.log
 
       - name: Закоммитить и запушить
         id: commit

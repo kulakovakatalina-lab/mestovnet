@@ -2,7 +2,18 @@
 
 import pytest
 
-from parser import _extract_artist_from_description, _fallback_artist
+from parser import _artist_parts, _extract_artist_from_description, _fallback_artist
+
+
+def test_tribute_title_keeps_both_honorees_in_source_order():
+    title = "Трибьют Леонида Агутина и Анжелики Варум"
+    assert _artist_parts(title) == [title]
+    assert _artist_parts("Музыкальный городок — " + title.lower()) == [
+        "Музыкальный городок — " + title.lower()
+    ]
+    assert _artist_parts("Леонид Агутин и Анжелика Варум") == [
+        "Леонид Агутин", "Анжелика Варум"
+    ]
 
 
 class TestExtractArtistFromDescription:

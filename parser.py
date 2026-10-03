@@ -49,6 +49,37 @@ def _is_cancellation_text(text: str) -> bool:
     return any(marker in (text or "").lower() for marker in _CANCELLATION_MARKERS)
 
 
+_EXPLICIT_CONCERT_DATE = re.compile(
+    r"\b([0-3]?\d)\s+(января|февраля|марта|апреля|мая|июня|июля|августа|"
+    r"сентября|октября|ноября|декабря)(?:\s+(20\d{2}))?\b", re.IGNORECASE,
+)
+_EXPLICIT_CONCERT_TIME = re.compile(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b")
+_MONTH_NUMBER = {name: month for month, name in enumerate(
+    ("января", "февраля", "марта", "апреля", "мая", "июня", "июля",
+     "августа", "сентября", "октября", "ноября", "декабря"), 1
+)}
+
+
+def _explicit_future_concert(post: dict, today: str | None = None) -> bool:
+    """Узкий сигнал для повторной попытки: концерт с датой и временем."""
+    text = post.get("text") or ""
+    if _is_cancellation_text(text) or not re.search(r"\b(?:концерт|трибьют)\b", text, re.IGNORECASE):
+        return False
+    match = _EXPLICIT_CONCERT_DATE.search(text)
+    if not match or not _EXPLICIT_CONCERT_TIME.search(text):
+        return False
+    try:
+        published = datetime.fromisoformat(post["date"]).astimezone(MOSCOW_TZ).date()
+        year = int(match[3]) if match[3] else published.year
+        announced = date(year, _MONTH_NUMBER[match[2].lower()], int(match[1]))
+        if not match[3] and announced < published:
+            announced = announced.replace(year=year + 1)
+    except (KeyError, TypeError, ValueError):
+        return False
+    return (0 <= (announced - published).days <= 60
+            and announced.isoformat() >= (today or moscow_today()))
+
+
 def download_image(url: str):
     """Скачивает картинку локально, возвращает путь вида /images/events/<hash>.<ext>."""
     if not url:
@@ -1198,6 +1229,10 @@ _ARTIST_JOIN_WORDS = {"и", "&", "+", "feat", "feat.", "ft", "ft.",
 
 def _artist_parts(name: str) -> list[str]:
     """Разбивает строку артиста на отдельные имена по разделителям."""
+    # В названии трибьюта «и» соединяет авторов песен, а не участников
+    # концерта. Сохраняем всю формулировку источника и её порядок.
+    if re.search(r"(?:^|[—–:])\s*трибьют\b", name, re.IGNORECASE):
+        return [name.strip()]
     # Режем по « и », « & », « + », «feat.», «ft.», «при участии», «с участием».
     # Запятую НЕ трогаем — она может быть частью названия или перечисления инструментов.
     result = _ARTIST_JOIN_RE.split(name)
@@ -1983,6 +2018,12 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
             print(f"  Найдено событий: 0          ")
             continue
 
+        explicit_urls = {post["url"] for post in posts
+                         if channel.get("type") == "venue" and post.get("url")
+                         and _explicit_future_concert(post)}
+        for url in sorted(explicit_urls):
+            print(f"  Проверить анонс: {url}")
+
         if source_updates is not None:
             for post in posts:
                 if post.get("url"):
@@ -2008,8 +2049,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                     local.append(p)
 
             if not local:
-                print(" нет картинок")
-                continue
+                print(" нет картинок; разбираю текст", end="")
 
             events = extract_events_multi(post, channel, local)
             print(f" +{len(events)}")
@@ -2044,6 +2084,13 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                     post_url = post.get("url") or ""
                     events = batch_result.get(post_url, [])
                     local_images = images_map.get(post_url, [])
+                    if not events and post_url in explicit_urls:
+                        # Батч может пропустить отдельный короткий анонс.
+                        # Повторяем только очевидные будущие концерты отдельно.
+                        events = extract_events_single(
+                            post, channel, local_images[0] if local_images else ""
+                        )
+                        print(f"  Повторная проверка {post_url}: {len(events)} событий")
                     _assign_event_images(events, local_images, multi_image_post=False)
 
                     for event in events:

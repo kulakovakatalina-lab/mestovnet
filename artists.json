@@ -3369,28 +3369,10 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "tribyut-leonida-agutina",
-    "name": "Трибьют Леонида Агутина",
+    "slug": "tribyut-leonida-agutina-i-anzheliki-varum",
+    "name": "Трибьют Леонида Агутина и Анжелики Варум",
     "aliases": [
-      "Трибьют Леонида Агутина"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Арт-кафе «Снежинка»"
-    ],
-    "first_seen": "2026-09-13",
-    "last_seen": "2026-10-03",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "anzheliki-varum",
-    "name": "Анжелики Варум",
-    "aliases": [
-      "Анжелики Варум"
+      "Трибьют Леонида Агутина и Анжелики Варум"
     ],
     "event_count": 2,
     "cities": [
