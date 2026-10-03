@@ -3369,10 +3369,10 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "anzheliki-varum",
-    "name": "Анжелики Варум",
+    "slug": "tribyut-leonida-agutina",
+    "name": "Трибьют Леонида Агутина",
     "aliases": [
-      "Анжелики Варум"
+      "Трибьют Леонида Агутина"
     ],
     "event_count": 2,
     "cities": [
@@ -3387,10 +3387,10 @@
     "desc_baseline_count": 0
   },
   {
-    "slug": "tribyut-leonida-agutina",
-    "name": "Трибьют Леонида Агутина",
+    "slug": "anzheliki-varum",
+    "name": "Анжелики Варум",
     "aliases": [
-      "Трибьют Леонида Агутина"
+      "Анжелики Варум"
     ],
     "event_count": 2,
     "cities": [
