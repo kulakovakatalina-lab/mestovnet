@@ -6,8 +6,9 @@
      «DJ-сет», «Музыкальное лото» и т.п. не считаются артистами.
   2. Разбирает поле artist на отдельные имена (запятая + _artist_parts:
      и/&/+/feat./ft./при участии/с участием).
-  3. Группирует упоминания по норм-ключу (регистр/кавычки/ё, без префиксов
-     «группа»/«band») и транслит-ключу (кириллица ⇄ латиница, SHAMAN/ШАМАН),
+  3. Группирует упоминания по норм-ключу (регистр/кавычки/ё, без служебных
+     слов «группа»/«группы» и префикса «band») и транслит-ключу
+     (кириллица ⇄ латиница, SHAMAN/ШАМАН),
      плюс курируемые слияния MERGE_GROUPS.
   4. Кросс-сверяет кандидатов с venues.json (имя/алиасы) — совпадение
      с площадкой исключает кандидата из артистов (см. отчёт).
@@ -64,20 +65,34 @@ EXCLUDE_ARTISTS: set[str] = {
     "дегустация настоек",
 }
 
+CURATED_ALIASES: dict[str, list[str]] = {
+    "jawa": ["Группа Jawa. Хиты группы «Сектор Газа»"],
+}
+
+GROUP_WORD_FORMS = {"группа", "группы", "группу", "группе", "группой", "группою"}
+
+
+def norm_key(name: str) -> str:
+    n = parser_mod._normalize(name)
+    # «Группа Jawa» и «Jawa», а также «хиты группы Сектор Газа» и
+    # «хиты Сектор Газа» должны давать один ключ. Удаляем только отдельные
+    # служебные слова, не части названий вроде «Группировка».
+    words = [word for word in n.split() if word not in GROUP_WORD_FORMS]
+    if words and words[0] == "band":
+        words = words[1:]
+    return " ".join(words) or n
+
+
+def has_group_word(name: str) -> bool:
+    return bool(set(parser_mod._normalize(name).split()) & GROUP_WORD_FORMS)
+
+
 MERGE_MAP: dict[str, str] = {}
 MERGE_NAME: dict[str, str] = {}
 for cid, name, keys in MERGE_GROUPS:
     MERGE_NAME[cid] = name
     for k in keys:
-        MERGE_MAP[k] = cid
-
-
-def norm_key(name: str) -> str:
-    n = parser_mod._normalize(name)
-    for prefix in ("группа ", "band ", "группа «", "«"):
-        if n.startswith(prefix):
-            n = n[len(prefix):].strip()
-    return n
+        MERGE_MAP[norm_key(k)] = cid
 
 
 def translit_key(name: str) -> str:
@@ -134,12 +149,18 @@ def main():
     # момент последней ручной правки описания, для детекта дрейфа.
     prev_by_slug: dict[str, dict] = {}
     prev_by_name: dict[str, dict] = {}
+    prev_by_norm: dict[str, list[dict]] = defaultdict(list)
     if OUT_FILE.exists():
         for prev in json.loads(OUT_FILE.read_text(encoding="utf-8")):
             if prev.get("slug"):
                 prev_by_slug[prev["slug"]] = prev
             if prev.get("name"):
                 prev_by_name[prev["name"]] = prev
+            for variant in {prev.get("name"), *prev.get("aliases", [])}:
+                if variant:
+                    key = norm_key(variant)
+                    if prev not in prev_by_norm[key]:
+                        prev_by_norm[key].append(prev)
 
     # is_generic_artist проверяет ПОЛЕ ЦЕЛИКОМ — событие вида «Фёдор Старовойтов,
     # Вечеринка» им не ловится (в поле есть и реальное имя). Поэтому отдельно
@@ -248,7 +269,16 @@ def main():
             if e.get("date"):
                 dates.append(e["date"])
 
-        slug = slugify(canon_name)
+        # Новые имена со служебным словом «группа» получают адрес без него.
+        # Если страница уже была опубликована, сохраняем прежний адрес при
+        # изменении самого частого написания имени.
+        group_variant = any(has_group_word(name) for name in variant_names)
+        preferred_slug = slugify(norm_key(canon_name) if group_variant else canon_name)
+        previous = prev_by_norm.get(nk, [])
+        prior = next((p for p in previous if p.get("slug") == preferred_slug), None)
+        if not prior and previous:
+            prior = previous[0]
+        slug = prior["slug"] if prior else preferred_slug
         if slug in slug_seen:
             slug = f"{slug}-{len(artists)}"
         slug_seen[slug] = True
@@ -261,10 +291,14 @@ def main():
         elif not description:
             baseline = 0
 
+        aliases = set(variant_names)
+        if curated_cid:
+            aliases.update(CURATED_ALIASES.get(curated_cid, []))
+
         artists.append({
             "slug": slug,
             "name": canon_name,
-            "aliases": sorted(set(variant_names)),
+            "aliases": sorted(aliases),
             "event_count": event_count,
             "cities": [c for c, _ in cities.most_common()],
             "venues": [v for v, _ in venues_played.most_common()],

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jawa — концерты в Крыму, Керчь, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 4 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/jawa">
   <meta property="og:title" content="Jawa — концерты в Крыму, Керчь, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Jawa в Крыму (Керчь, Симферополь, Севастополь). 4 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,46 @@
       },
       "description": "Группа Jawa с участием музыкантов «Сектора Газа» исполнит хиты группы во Дворце культуры профсоюзов в Симферополе. Начало в 19:00.",
       "image": "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jawa",
+      "startDate": "2026-10-23T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jawa"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "ДК профсоюзов",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "О концерте Владимир Лобанов и группа JAWA, проект непосредственного участника и легендарного гитариста \"золотого\" состава группы «Сектор газа» — Владимира Лобанова.\r\n\r\nВ большой концертной программе, при участии легендарной вокалистки Татьяны Фатеевой, прозвучат лучшие хиты проверенные временем.\r\n\r\nВладимир Лобанов и группа JAWA, вместе с Татьяной Фатеевой, исполняя песни «Сектор Газа» в концертном варианте, по воспоминаниям самого Владимира, помогают отойти от реальности и возвращают нас в эпоху девяностых.\r\n\r\nКа\u0000ждое выступление группы посвящается бессменному лидеру Юрию Клинских (Хой) и всем музыкантам, принимавшим участие в грандиозном проекте «Сектор газа».",
+      "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jawa",
+      "startDate": "2026-10-24T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jawa"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дом офицеров флота",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "О концерте Владимир Лобанов и группа JAWA, проект непосредственного участника и легендарного гитариста \"золотого\" состава группы «Сектор газа» — Владимира Лобанова.\r\n\r\nВ большой концертной программе, при участии легендарной вокалистки Татьяны Фатеевой, прозвучат лучшие хиты проверенные временем.\r\n\r\nВладимир Лобанов и группа JAWA, вместе с Татьяной Фатеевой, исполняя песни «Сектор Газа» в концертном варианте, по воспоминаниям самого Владимира, помогают отойти от реальности и возвращают нас в эпоху девяностых.\r\n\r\nКа\u0000ждое выступление группы посвящается бессменному лидеру Юрию Клинских (Хой) и всем музыкантам, принимавшим участие в грандиозном проекте «Сектор газа».",
+      "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1042,7 +1082,7 @@ footer {
 <p class="venue-description">Трибьют-программа хитов «Сектора Газа». Летом — Дом офицеров флота в Севастополе и «Корабел» в Керчи.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Керчь, Симферополь, Севастополь</span></div>
   </div>
-<div class="genre-hero-meta"><div class="genre-hero-count">2</div><div class="genre-hero-count-label">события</div></div>
+<div class="genre-hero-meta"><div class="genre-hero-count">4</div><div class="genre-hero-count-label">события</div></div>
 </div>
 
 <div class="events-list" id="events-list">
@@ -1060,7 +1100,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Jawa. Хиты «Сектор Газа»", "Jawa"];
+const ARTIST_ALIASES = ["Jawa. Хиты «Сектор Газа»", "Группа Jawa. Хиты группы «Сектор Газа»", "Jawa"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

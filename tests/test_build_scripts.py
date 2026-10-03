@@ -91,6 +91,97 @@ class TestBuildVenuesPreservesManualFields:
 
 
 class TestBuildArtistsPreservesManualFields:
+    @pytest.mark.parametrize("variant", [
+        "Группа Маяк. Хиты группы Пламя",
+        "Маяк. Хиты группы Пламя",
+        "Маяк. Хиты Пламя",
+        "Маяк. Хиты группой Пламя",
+    ])
+    def test_group_word_forms_do_not_change_artist_key(self, variant):
+        from build_artists import norm_key
+
+        assert norm_key(variant) == norm_key("Маяк. Хиты Пламя")
+        assert norm_key("Группировка") != norm_key("ировка")
+
+    def test_new_artist_program_titles_share_one_page(self, tmp_path, monkeypatch):
+        import build_artists
+
+        monkeypatch.setattr(build_artists, "EVENTS_FILE", tmp_path / "events.json")
+        monkeypatch.setattr(build_artists, "VENUES_FILE", tmp_path / "venues.json")
+        monkeypatch.setattr(build_artists, "OUT_FILE", tmp_path / "artists.json")
+        variants = ["Группа Маяк. Хиты группы Пламя", "Маяк. Хиты Пламя"]
+        events = [
+            {"artist": title, "date": f"2026-10-{23 + i}"}
+            for i, title in enumerate(variants)
+        ]
+        (tmp_path / "events.json").write_text(
+            json.dumps(events, ensure_ascii=False), encoding="utf-8"
+        )
+        (tmp_path / "venues.json").write_text("[]", encoding="utf-8")
+        (tmp_path / "artists.json").write_text("[]", encoding="utf-8")
+
+        build_artists.main()
+        artists = json.loads((tmp_path / "artists.json").read_text(encoding="utf-8"))
+
+        assert len(artists) == 1
+        assert artists[0]["slug"] == "mayak-hity-plamya"
+        assert artists[0]["event_count"] == 2
+        assert set(variants) == set(artists[0]["aliases"])
+
+    def test_existing_group_page_keeps_its_address(self, tmp_path, monkeypatch):
+        import build_artists
+
+        monkeypatch.setattr(build_artists, "EVENTS_FILE", tmp_path / "events.json")
+        monkeypatch.setattr(build_artists, "VENUES_FILE", tmp_path / "venues.json")
+        monkeypatch.setattr(build_artists, "OUT_FILE", tmp_path / "artists.json")
+        old_name = "Группа Маяк. Хиты группы Пламя"
+        new_name = "Маяк. Хиты Пламя"
+        (tmp_path / "events.json").write_text(json.dumps([
+            {"artist": new_name, "date": "2026-10-24"},
+            {"artist": new_name, "date": "2026-10-25"},
+        ], ensure_ascii=False), encoding="utf-8")
+        (tmp_path / "venues.json").write_text("[]", encoding="utf-8")
+        (tmp_path / "artists.json").write_text(json.dumps([{
+            "slug": "gruppa-mayak-hity-gruppy-plamya",
+            "name": old_name,
+            "aliases": [old_name],
+            "event_count": 1,
+        }], ensure_ascii=False), encoding="utf-8")
+
+        build_artists.main()
+        artists = json.loads((tmp_path / "artists.json").read_text(encoding="utf-8"))
+
+        assert len(artists) == 1
+        assert artists[0]["slug"] == "gruppa-mayak-hity-gruppy-plamya"
+
+    def test_jawa_program_titles_share_one_artist(self, tmp_path, monkeypatch):
+        import build_artists
+
+        monkeypatch.setattr(build_artists, "EVENTS_FILE", tmp_path / "events.json")
+        monkeypatch.setattr(build_artists, "VENUES_FILE", tmp_path / "venues.json")
+        monkeypatch.setattr(build_artists, "OUT_FILE", tmp_path / "artists.json")
+        variants = [
+            "Jawa. Хиты «Сектор Газа»",
+            "Группа Jawa. Хиты группы «Сектор Газа»",
+        ]
+        events = [
+            {"artist": title, "date": f"2026-10-{23 + i}", "source_city": "Симферополь"}
+            for i, title in enumerate(variants)
+        ]
+        (tmp_path / "events.json").write_text(
+            json.dumps(events, ensure_ascii=False), encoding="utf-8"
+        )
+        (tmp_path / "venues.json").write_text("[]", encoding="utf-8")
+        (tmp_path / "artists.json").write_text("[]", encoding="utf-8")
+
+        build_artists.main()
+        artists = json.loads((tmp_path / "artists.json").read_text(encoding="utf-8"))
+
+        assert len(artists) == 1
+        assert artists[0]["slug"] == "jawa"
+        assert artists[0]["event_count"] == 2
+        assert set(variants) <= set(artists[0]["aliases"])
+
     def test_description_survives_rebuild(self, tmp_path, artists, events):
         _copy_for_build(tmp_path)
         _run(tmp_path, "build_artists.py")
