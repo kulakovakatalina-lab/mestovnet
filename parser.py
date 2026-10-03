@@ -59,6 +59,66 @@ _MONTH_NUMBER = {name: month for month, name in enumerate(
      "августа", "сентября", "октября", "ноября", "декабря"), 1
 )}
 
+_SCHEDULE_LINE = re.compile(
+    r"(?m)^\s*([0-3]?\d)\s+(января|февраля|марта|апреля|мая|июня|июля|августа|"
+    r"сентября|октября|ноября|декабря)\s*[|—–-]\s*([01]?\d|2[0-3]):([0-5]\d)\s*$",
+    re.IGNORECASE,
+)
+_MUSIC_SCHEDULE_CUE = re.compile(
+    r"концерт|трибьют|джаз|джем|пианист|музыкальн|piano|вокал|трио|группа",
+    re.IGNORECASE,
+)
+
+
+def _schedule_music_sections(post: dict, today: str | None = None) -> list[dict]:
+    """Явные музыкальные пункты датированной программы для проверки покрытия."""
+    text = post.get("text") or ""
+    if _is_cancellation_text(text):
+        return []
+    try:
+        published = datetime.fromisoformat(post["date"]).astimezone(MOSCOW_TZ).date()
+    except (KeyError, TypeError, ValueError):
+        return []
+    headings = list(_SCHEDULE_LINE.finditer(text))
+    sections = []
+    for index, heading in enumerate(headings):
+        body = text[heading.start():headings[index + 1].start() if index + 1 < len(headings) else len(text)]
+        if not _MUSIC_SCHEDULE_CUE.search(body):
+            continue
+        try:
+            announced = date(published.year, _MONTH_NUMBER[heading[2].lower()], int(heading[1]))
+            if announced < published:
+                announced = announced.replace(year=published.year + 1)
+        except ValueError:
+            continue
+        if 0 <= (announced - published).days <= 60 and announced.isoformat() >= (today or moscow_today()):
+            sections.append({"date": announced.isoformat(),
+                             "time": f"{int(heading[3]):02d}:{heading[4]}", "text": body.strip()})
+    return sections
+
+
+def _recover_schedule_events(post: dict, channel: dict, events: list[dict],
+                             sections: list[dict], image_path: str) -> list[dict]:
+    """Повторяет пропущенные пункты расписания по одному, без большого альбома."""
+    result = list(events)
+    for section in sections:
+        matches = [event for event in result if event.get("date") == section["date"]]
+        if len(matches) == 1 and not matches[0].get("time"):
+            matches[0]["time"] = section["time"]
+        if any(event.get("date") == section["date"] and event.get("time") == section["time"]
+               for event in result):
+            continue
+        recovered = extract_events_single({**post, "text": section["text"]}, channel, image_path)
+        recovered = [event for event in recovered if event.get("date") == section["date"]]
+        for event in recovered:
+            event["time"] = section["time"]
+        if recovered:
+            print(f"  Восстановлен пункт программы: {post.get('url')} {section['date']} {section['time']}")
+            result.extend(recovered)
+        else:
+            print(f"  Не найден пункт программы: {post.get('url')} {section['date']} {section['time']}")
+    return result
+
 
 def _explicit_future_concert(post: dict, today: str | None = None) -> bool:
     """Узкий сигнал для повторной попытки: концерт с датой и временем."""
@@ -2023,6 +2083,13 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                          and _explicit_future_concert(post)}
         for url in sorted(explicit_urls):
             print(f"  Проверить анонс: {url}")
+        schedule_sections = {
+            post["url"]: _schedule_music_sections(post)
+            for post in posts if channel.get("type") == "venue" and post.get("url")
+        }
+        for url, sections in schedule_sections.items():
+            for section in sections:
+                print(f"  Проверить программу: {url} {section['date']} {section['time']}")
 
         if source_updates is not None:
             for post in posts:
@@ -2052,6 +2119,10 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 print(" нет картинок; разбираю текст", end="")
 
             events = extract_events_multi(post, channel, local)
+            events = _recover_schedule_events(
+                post, channel, events, schedule_sections.get(post_url, []),
+                local[0] if local else "",
+            )
             print(f" +{len(events)}")
 
             _assign_event_images(events, local, multi_image_post=True)
@@ -2091,6 +2162,10 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                             post, channel, local_images[0] if local_images else ""
                         )
                         print(f"  Повторная проверка {post_url}: {len(events)} событий")
+                    events = _recover_schedule_events(
+                        post, channel, events, schedule_sections.get(post_url, []),
+                        local_images[0] if local_images else "",
+                    )
                     _assign_event_images(events, local_images, multi_image_post=False)
 
                     for event in events:

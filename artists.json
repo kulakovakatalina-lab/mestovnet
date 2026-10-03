@@ -1030,10 +1030,10 @@
       "Севастополь"
     ],
     "venues": [
-      "Дом культуры «Корабел»",
       "Дворец культуры профсоюзов",
       "Корабел",
-      "Дом офицеров флота"
+      "Дом офицеров флота",
+      "Дом культуры «Корабел»"
     ],
     "first_seen": "2026-06-30",
     "last_seen": "2026-10-25",
@@ -3308,6 +3308,24 @@
     ],
     "first_seen": "2026-08-29",
     "last_seen": "2026-08-30",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "piano-battle",
+    "name": "Piano Battle",
+    "aliases": [
+      "Piano Battle"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Арт-кафе «Снежинка»"
+    ],
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-10-04",
     "description": null,
     "desc_baseline_count": 0
   },

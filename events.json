@@ -14281,6 +14281,26 @@
     "moderation_status": "approved"
   },
   {
+    "date": "2026-10-04",
+    "time": "19:00",
+    "artist": "Piano Battle",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "500–800 ₽",
+    "description": "Концерт-перформанс: музыкальная дуэль пианистов Антона Калиниченко и Олега Никулина. Джаз, латино, поп, классика и импровизация. Специальный гость — Елена Голофеева.",
+    "image": "/images/events/f388f52830249c990d994bbc6e661228.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-09-29T11:59:33+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2034",
+    "id": "89bd0b64",
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
     "date": "2026-10-25",
     "time": "19:00",
     "artist": "Jawa. Хиты «Сектор Газа»",

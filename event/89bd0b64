@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Black Tears | Red Stars, Jam Club, в Симферополе, 3 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Piano Battle, Арт-кафе «Снежинка», в Севастополе, 4 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Black Tears | Red Stars — Jam Club, Симферополь, 3 октября · Местов.Нет</title>
+<title>Piano Battle — Арт-кафе «Снежинка», Севастополь, 4 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/7816a324">
-<meta property="og:title" content="Black Tears | Red Stars — Jam Club, Симферополь, 3 октября · Местов.Нет">
-<meta property="og:description" content="Black Tears | Red Stars, Jam Club, в Симферополе, 3 октября, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/89bd0b64">
+<meta property="og:title" content="Piano Battle — Арт-кафе «Снежинка», Севастополь, 4 октября · Местов.Нет">
+<meta property="og:description" content="Piano Battle, Арт-кафе «Снежинка», в Севастополе, 4 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/a039fc17e62af97088019576ecfad1eb.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/f388f52830249c990d994bbc6e661228.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Black Tears | Red Stars",
-      "startDate": "2026-10-03",
+      "name": "Piano Battle",
+      "startDate": "2026-10-04T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Jam Club",
+        "name": "Арт-кафе «Снежинка»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "На сцене: Black Tears | Red Stars. Двери с 18, вход бесплатный. После концерта - бесплатное рок-караоке до 6 утра.",
+      "description": "Концерт-перформанс: музыкальная дуэль пианистов Антона Калиниченко и Олега Никулина. Джаз, латино, поп, классика и импровизация. Специальный гость — Елена Голофеева.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Black Tears | Red Stars"
+        "name": "Piano Battle"
       },
-      "image": "/images/events/a039fc17e62af97088019576ecfad1eb.jpg",
+      "image": "/images/events/f388f52830249c990d994bbc6e661228.jpg",
       "offers": {
         "@type": "Offer",
-        "price": "0",
+        "name": "500–800 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Black Tears | Red Stars"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Piano Battle"}]}
 </script>
 </head>
 <body>

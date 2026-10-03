@@ -30,7 +30,12 @@ _REPORT_LINE = re.compile(
 )
 _READING_LINE = re.compile(r"^Читаю (?P<label>.+?) \(")
 _EXPLICIT_ANNOUNCEMENT = re.compile(r"^[ \t]*Проверить анонс: (https://t\.me/[A-Za-z0-9_]+/\d+)$", re.MULTILINE)
+_SCHEDULE_SLOT = re.compile(
+    r"^[ \t]*Проверить программу: (https://t\.me/([A-Za-z0-9_]+)/\d+) "
+    r"(\d{4}-\d{2}-\d{2}) ([0-2]\d:[0-5]\d)$", re.MULTILINE,
+)
 _PUBLISHED_SOURCE = re.compile(r'href="(https://t\.me/[A-Za-z0-9_]+/\d+)"')
+_PUBLISHED_EVENT = re.compile(r'href="https://mestov\.net/event/([0-9a-f]{8})"')
 
 
 def missing_explicit_announcements(log_path: Optional[Path], page_path: Path) -> list[str]:
@@ -41,6 +46,25 @@ def missing_explicit_announcements(log_path: Optional[Path], page_path: Path) ->
     page = html.unescape(page_path.read_text(encoding="utf-8"))
     published = set(_PUBLISHED_SOURCE.findall(page))
     return sorted(expected - published)
+
+
+def missing_schedule_slots(log_path: Optional[Path], events_path: Path,
+                           page_path: Path) -> list[tuple[str, str, str]]:
+    """Проверяет каждую музыкальную дату программы, а не только ссылку на пост."""
+    if not log_path or not log_path.exists() or not events_path.exists() or not page_path.exists():
+        return []
+    expected = set(_SCHEDULE_SLOT.findall(log_path.read_text(encoding="utf-8")))
+    if not expected:
+        return []
+    try:
+        events = json.loads(events_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return [(url, day, time) for url, _, day, time in sorted(expected)]
+    published_ids = set(_PUBLISHED_EVENT.findall(page_path.read_text(encoding="utf-8")))
+    covered = {(event.get("source_channel"), event.get("date"), event.get("time"))
+               for event in events if event.get("id") in published_ids}
+    return [(url, day, time) for url, channel, day, time in sorted(expected)
+            if (channel, day, time) not in covered]
 
 
 def _source_label(channel: dict) -> str:
@@ -255,6 +279,11 @@ def main() -> int:
         snapshot["alerts"].append({
             "level": "warning", "source": url,
             "message": "концерт из поста не опубликован в актуальной афише",
+        })
+    for url, day, time in missing_schedule_slots(args.log, args.events, args.current_events):
+        snapshot["alerts"].append({
+            "level": "warning", "source": url,
+            "message": f"музыкальное событие {day} в {time} из программы не опубликовано",
         })
     save_snapshot(args.snapshot, snapshot)
     print(f"=== Контроль источников: {len(snapshot['sources'])} ===")
