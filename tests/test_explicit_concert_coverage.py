@@ -3,7 +3,7 @@
 import json
 
 import parser
-from source_health import missing_explicit_announcements, missing_schedule_slots
+from source_health import missing_explicit_announcements, missing_schedule_slots, unmatched_posters
 
 
 POST = {
@@ -31,6 +31,15 @@ WEEKLY_POST = {
     ),
     "images": ["first", "second"],
 }
+
+
+def test_weekly_sections_include_music_and_exclude_cinema_and_lecture():
+    sections = parser._schedule_music_sections(WEEKLY_POST, today="2026-09-29")
+    assert [(section["date"], section["time"]) for section in sections] == [
+        ("2026-10-02", "19:00"),
+        ("2026-10-03", "19:00"),
+        ("2026-10-04", "19:00"),
+    ]
 
 
 def test_explicit_future_concert_excludes_recaps_and_cancellations():
@@ -79,7 +88,9 @@ def test_publication_check_finds_missing_source(tmp_path):
 def test_weekly_schedule_retries_each_missing_music_event(monkeypatch):
     monkeypatch.setattr(parser, "moscow_today", lambda: "2026-10-03")
     monkeypatch.setattr(parser, "download_image", lambda url: None)
-    monkeypatch.setattr(parser, "extract_events_multi", lambda post, channel, images: [])
+    monkeypatch.setattr(parser, "extract_events_multi", lambda post, channel, images: (_ for _ in ()).throw(
+        AssertionError("Нельзя смешивать текст разных пунктов программы")
+    ))
 
     def extract_section(post, channel, image):
         return [{"date": "2026-10-03", "artist": "Трибьют"}] if "Музыкальный городок" in post["text"] else [
@@ -133,3 +144,12 @@ def test_publication_check_catches_missing_date_inside_weekly_post(tmp_path):
     page.write_text(page.read_text() + '<a href="https://mestov.net/event/1234abcd">Piano Battle</a>',
                     encoding="utf-8")
     assert missing_schedule_slots(log, data, page) == []
+
+
+def test_unmatched_weekly_poster_is_reported(tmp_path):
+    log = tmp_path / "parser.log"
+    log.write_text("  Не сопоставлен постер: https://t.me/artcafesnezhinka/2034 "
+                   "2026-10-04 Piano Battle\n", encoding="utf-8")
+    assert unmatched_posters(log) == [
+        ("https://t.me/artcafesnezhinka/2034", "2026-10-04", "Piano Battle")
+    ]

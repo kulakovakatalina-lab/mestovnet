@@ -425,13 +425,40 @@ def test_explicit_event_location_overrides_channel_city():
     assert resolve_city(event, channel) == "Симферополь"
 
 
-def test_multiple_events_share_complete_source_album():
-    events = [{}, {}]
-    _assign_event_images(events, ["one.jpg", "two.jpg"], multi_image_post=True)
-    assert events == [
-        {"image": "one.jpg", "images": ["one.jpg", "two.jpg"]},
-        {"image": "one.jpg", "images": ["one.jpg", "two.jpg"]},
+def test_weekly_album_assigns_each_music_poster_to_its_event(monkeypatch):
+    posters = {
+        "overview.jpg": "Расписание событий 28.09-04.10",
+        "cinema.jpg": "01|10 20:00 Кино на стене Вам письмо",
+        "jazz.jpg": "PARANORMAL JAZZ TRIO 2.10 19:00",
+        "tribute.jpg": "03/10 19:00 Трибьют Леонида Агутина и Анжелики Варум",
+        "piano.jpg": "PIANO BATTLE 04|10 19:00 Антон Калиниченко Олег Никулин",
+        "lecture.jpg": "07/10 18:30 Беседы об искусстве",
+    }
+    monkeypatch.setattr(parser_module, "_ocr_image_text", posters.__getitem__)
+    events = [
+        {"date": "2026-10-02", "artist": "Paranormal Jazz Trio"},
+        {"date": "2026-10-03", "artist": "Трибьют Леонида Агутина и Анжелики Варум"},
+        {"date": "2026-10-04", "artist": "Piano Battle"},
     ]
+    _assign_event_images(events, list(posters), multi_image_post=True)
+    assert [event["image"] for event in events] == ["jazz.jpg", "tribute.jpg", "piano.jpg"]
+    assert all(event["images"] is None for event in events)
+
+
+def test_uncertain_multi_event_poster_is_not_assigned(monkeypatch):
+    monkeypatch.setattr(parser_module, "_ocr_image_text", lambda path: "Расписание событий 28.09-04.10")
+    events = [{"date": "2026-10-03", "artist": "Трибьют"},
+              {"date": "2026-10-04", "artist": "Piano Battle"}]
+    _assign_event_images(events, ["overview.jpg"], multi_image_post=True)
+    assert all(event["image"] is None and event["images"] is None for event in events)
+
+
+def test_poster_date_time_and_music_cue_cover_decorative_title(monkeypatch):
+    monkeypatch.setattr(parser_module, "_ocr_image_text", lambda path: "03/10 19:00 Концерт")
+    events = [{"date": "2026-10-03", "time": "19:00", "artist": "Анжелика Варум"},
+              {"date": "2026-10-04", "time": "19:00", "artist": "Piano Battle"}]
+    _assign_event_images(events, ["tribute.jpg"], multi_image_post=True)
+    assert [event["image"] for event in events] == ["tribute.jpg", None]
 
 
 def test_single_event_keeps_image_album():

@@ -5,9 +5,11 @@ import json
 import mimetypes
 import os
 import re
+import subprocess
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -65,7 +67,7 @@ _SCHEDULE_LINE = re.compile(
     re.IGNORECASE,
 )
 _MUSIC_SCHEDULE_CUE = re.compile(
-    r"концерт|трибьют|джаз|джем|пианист|музыкальн|piano|вокал|трио|группа",
+    r"концерт|трибьют|джаз|jazz|джем|пианист|музыкальн|piano|вокал|трио|группа",
     re.IGNORECASE,
 )
 
@@ -2049,11 +2051,97 @@ def _download_all_images(posts: list[dict]) -> dict[str, list[str]]:
     return result
 
 
+def _ocr_image_text(image_path: str) -> str:
+    """Читает текст афиши локально; ошибка OCR не превращается в чужой постер."""
+    path = Path(image_path.lstrip("/"))
+    if not path.is_file():
+        return ""
+    try:
+        result = subprocess.run(
+            ["tesseract", str(path), "stdout", "-l", "rus+eng", "--psm", "11"],
+            capture_output=True, text=True, timeout=25, check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return ""
+    return result.stdout if result.returncode == 0 else ""
+
+
+_POSTER_DATE = re.compile(r"(?<!\w)([0-3\dOО]{1,2})\s*[./|\\-]\s*([0-1\dOО]{1,2})(?!\d)", re.IGNORECASE)
+_POSTER_MONTH = re.compile(
+    r"(?<!\w)([0-3]?\d)\s+(января|февраля|марта|апреля|мая|июня|июля|августа|"
+    r"сентября|октября|ноября|декабря)", re.IGNORECASE,
+)
+_POSTER_TIME = re.compile(r"(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?!\d)")
+_GENERIC_POSTER_WORDS = {"концерт", "трибьют", "группа", "проект", "программа",
+                         "музыкальный", "музыкальная", "вечер", "трио", "шоу"}
+
+
+def _poster_dates(text: str) -> set[tuple[int, int]]:
+    dates = set()
+    for match in _POSTER_DATE.finditer(text):
+        try:
+            day = int(match[1].replace("O", "0").replace("О", "0").replace("o", "0").replace("о", "0"))
+            month = int(match[2].replace("O", "0").replace("О", "0").replace("o", "0").replace("о", "0"))
+            date(2000, month, day)
+        except ValueError:
+            continue
+        dates.add((day, month))
+    for match in _POSTER_MONTH.finditer(text):
+        dates.add((int(match[1]), _MONTH_NUMBER[match[2].lower()]))
+    return dates
+
+
+def _poster_artist_overlap(artist: str, poster_text: str) -> int:
+    title_tokens = {word for word in re.findall(r"[a-zа-яё]{4,}", (artist or "").lower().replace("ё", "е"))
+                    if word not in _GENERIC_POSTER_WORDS}
+    poster_tokens = set(re.findall(r"[a-zа-яё]{4,}", poster_text.lower().replace("ё", "е")))
+    return sum(any(word == other or (len(word) >= 5 and len(other) >= 5
+                                    and difflib.SequenceMatcher(None, word, other).ratio() >= 0.8)
+                   for other in poster_tokens) for word in title_tokens)
+
+
+def _poster_has_event_time(event: dict, poster_text: str) -> bool:
+    wanted = event.get("time")
+    return bool(wanted and any(f"{int(hour):02d}:{minute}" == wanted
+                               for hour, minute in _POSTER_TIME.findall(poster_text)))
+
+
 def _assign_event_images(events: list[dict], local_images: list[str], *, multi_image_post: bool) -> None:
-    """Все события поста используют его общую афишу или полный альбом."""
-    for event in events:
-        event["image"] = local_images[0] if local_images else None
-        event["images"] = list(local_images) if len(local_images) > 1 else None
+    """Сопоставляет афиши по напечатанным дате и исполнителю, без угадывания по порядку."""
+    if not events:
+        return
+    if not multi_image_post or len(events) == 1:
+        for event in events:
+            event["image"] = local_images[0] if local_images else None
+            event["images"] = list(local_images) if len(local_images) > 1 else None
+        return
+
+    matched: dict[int, list[str]] = {index: [] for index in range(len(events))}
+    for image_path in local_images:
+        poster_text = _ocr_image_text(image_path)
+        poster_dates = _poster_dates(poster_text)
+        # Общая обложка с диапазоном дат не является афишей отдельного концерта.
+        if len(poster_dates) != 1:
+            continue
+        claims = []
+        for index, event in enumerate(events):
+            try:
+                event_day = date.fromisoformat(event["date"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if (event_day.day, event_day.month) != next(iter(poster_dates)):
+                continue
+            if (_poster_artist_overlap(event.get("artist") or "", poster_text)
+                    or (_poster_has_event_time(event, poster_text)
+                        and _MUSIC_SCHEDULE_CUE.search(poster_text))):
+                claims.append(index)
+        if len(claims) == 1:
+            matched[claims[0]].append(image_path)
+
+    for index, event in enumerate(events):
+        images = matched[index]
+        event["image"] = images[0] if images else None
+        event["images"] = images if len(images) > 1 else None
 
 
 def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_BACK,
@@ -2118,15 +2206,20 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
             if not local:
                 print(" нет картинок; разбираю текст", end="")
 
-            events = extract_events_multi(post, channel, local)
+            sections = schedule_sections.get(post_url, [])
+            # Для подробной недельной программы каждый раздел читается отдельно:
+            # модель не смешивает цену и описание соседних концертов.
+            events = [] if len(sections) > 1 else extract_events_multi(post, channel, local)
             events = _recover_schedule_events(
-                post, channel, events, schedule_sections.get(post_url, []),
+                post, channel, events, sections,
                 local[0] if local else "",
             )
             print(f" +{len(events)}")
 
             _assign_event_images(events, local, multi_image_post=True)
             for event in events:
+                if len(sections) > 1 and local and not event.get("image"):
+                    print(f"  Не сопоставлен постер: {post_url} {event.get('date')} {event.get('artist')}")
                 event["source_channel"] = label
                 event["source_city"] = resolve_city(event, channel, post.get("text") or "")
                 event.pop("city", None)
@@ -2153,7 +2246,8 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
 
                 for post in batch:
                     post_url = post.get("url") or ""
-                    events = batch_result.get(post_url, [])
+                    sections = schedule_sections.get(post_url, [])
+                    events = [] if len(sections) > 1 else batch_result.get(post_url, [])
                     local_images = images_map.get(post_url, [])
                     if not events and post_url in explicit_urls:
                         # Батч может пропустить отдельный короткий анонс.
@@ -2163,7 +2257,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                         )
                         print(f"  Повторная проверка {post_url}: {len(events)} событий")
                     events = _recover_schedule_events(
-                        post, channel, events, schedule_sections.get(post_url, []),
+                        post, channel, events, sections,
                         local_images[0] if local_images else "",
                     )
                     _assign_event_images(events, local_images, multi_image_post=False)

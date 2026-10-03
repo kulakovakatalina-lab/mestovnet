@@ -34,6 +34,10 @@ _SCHEDULE_SLOT = re.compile(
     r"^[ \t]*Проверить программу: (https://t\.me/([A-Za-z0-9_]+)/\d+) "
     r"(\d{4}-\d{2}-\d{2}) ([0-2]\d:[0-5]\d)$", re.MULTILINE,
 )
+_UNMATCHED_POSTER = re.compile(
+    r"^[ \t]*Не сопоставлен постер: (https://t\.me/[A-Za-z0-9_]+/\d+) "
+    r"(\d{4}-\d{2}-\d{2}) (.+)$", re.MULTILINE,
+)
 _PUBLISHED_SOURCE = re.compile(r'href="(https://t\.me/[A-Za-z0-9_]+/\d+)"')
 _PUBLISHED_EVENT = re.compile(r'href="https://mestov\.net/event/([0-9a-f]{8})"')
 
@@ -65,6 +69,12 @@ def missing_schedule_slots(log_path: Optional[Path], events_path: Path,
                for event in events if event.get("id") in published_ids}
     return [(url, day, time) for url, channel, day, time in sorted(expected)
             if (channel, day, time) not in covered]
+
+
+def unmatched_posters(log_path: Optional[Path]) -> list[tuple[str, str, str]]:
+    if not log_path or not log_path.exists():
+        return []
+    return sorted(set(_UNMATCHED_POSTER.findall(log_path.read_text(encoding="utf-8"))))
 
 
 def _source_label(channel: dict) -> str:
@@ -284,6 +294,11 @@ def main() -> int:
         snapshot["alerts"].append({
             "level": "warning", "source": url,
             "message": f"музыкальное событие {day} в {time} из программы не опубликовано",
+        })
+    for url, day, artist in unmatched_posters(args.log):
+        snapshot["alerts"].append({
+            "level": "warning", "source": url,
+            "message": f"не удалось сопоставить афишу с событием {day}: {artist}",
         })
     save_snapshot(args.snapshot, snapshot)
     print(f"=== Контроль источников: {len(snapshot['sources'])} ===")
