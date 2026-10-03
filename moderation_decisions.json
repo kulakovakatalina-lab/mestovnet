@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "event_id": "05c4100f",
+    "source_url": "https://t.me/afisha_crimea/8546",
+    "reasons": [
+      "нет цены",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-03T07:35:26.150Z",
+    "fingerprint": "d93f396f0bcb447fd7f482b4686c8e9996f78d321766e5b95d730ce969aff919"
+  },
+  {
+    "event_id": "0a83b119",
+    "source_url": "https://t.me/afisha_payberry/1621",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-08-29T15:51:45.747Z",
+    "fingerprint": "13c3972c0e09b31d1e58d01753697e725e4b47c7f586884fd0ac59a66406fe21"
+  },
+  {
+    "event_id": "19525d0a",
+    "source_url": "https://t.me/clubjam/1131",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-29T15:51:54.830Z",
+    "fingerprint": "2b984cc7ca1f95766c789ed19ecbb4f4bb18c341c4dddac1c85199eb2c250171"
+  },
+  {
+    "event_id": "360551b2",
+    "source_url": "https://t.me/clubjam/1158",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-10-03T07:36:17.716Z",
+    "fingerprint": "fbb685d3e43c202ad7c5aa2ce83b757d35a3f165ff9c9af08d39a45f850a6806"
+  },
+  {
+    "event_id": "3e5c631c",
+    "source_url": "https://vk.com/wall-89840945_120240",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-03T07:35:59.903Z",
+    "fingerprint": "acf71dc036d1d674f477dffa3122c25e259faf32dba602574c4efab33360f3be"
+  },
+  {
+    "event_id": "470475c6",
+    "source_url": "https://t.me/clubjam/1116",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-29T15:49:45.116Z",
+    "fingerprint": "7fd510c2a85bf93739dbb86d1399d6edd17d7ead7e32336be51fcdffae575832"
+  },
+  {
+    "event_id": "6010156a",
+    "source_url": "https://t.me/dlyadushi_Crimea/6504",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-29T15:50:05.457Z",
+    "fingerprint": "073d7426bd5658d11be2e1413fec6a1ee463c2362fbed7839d891059e5708691"
+  },
+  {
+    "event_id": "69a076bd",
+    "source_url": "https://vk.com/wall-210355908_1267",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-03T07:37:13.156Z",
+    "fingerprint": "acc6f3ca95ca0e86a4260f8a5b2c905f207ec1106cb11aaa80ffa08b9a8c09be"
+  },
+  {
+    "event_id": "742a18c6",
+    "source_url": "https://t.me/massandrasun/2438",
+    "reasons": [
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-28T11:45:19.392Z",
+    "fingerprint": "eaff141b93e87cb42c05810bcac16a68b2f40c0bb52b159b54e5a16ae9d48ec8"
+  },
+  {
+    "event_id": "772b1314",
+    "source_url": "https://t.me/rocknroll_82/581",
+    "reasons": [
+      "нет цены",
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-03T07:35:13.640Z",
+    "fingerprint": "d7f7d566b860624477b324b42c1d0827520517f708f306489e072719d0f9944f"
+  },
+  {
+    "event_id": "7816a324",
+    "source_url": "https://t.me/clubjam/1158",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-10-03T07:36:26.426Z",
+    "fingerprint": "d6a859e4e484a9448867114622abdef4be69963b21b96d7ebfe2ea536a15701b"
+  },
+  {
+    "event_id": "7b44fa9a",
+    "source_url": "https://t.me/crimea_event/5631",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-10-03T07:34:49.328Z",
+    "fingerprint": "1846fcd5947c755d2d5f9007bf686109770571af40ad57a28aa8748b9dfafdc1"
+  },
+  {
+    "event_id": "7b8801a2",
+    "source_url": "https://t.me/crimea_event/5631",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-08-29T15:50:31.183Z",
+    "fingerprint": "22a2781f67d225598910218a7f871bc7d508fea2b86caa05e24b4d3a6c613b1e"
+  },
+  {
+    "event_id": "abdc967e",
+    "source_url": "https://vk.com/wall-237501275_108",
+    "reasons": [
+      "нет цены",
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-03T07:35:06.933Z",
+    "fingerprint": "7ba227b3e08a0814ef5f41072ed72130f7fa9be592fbd9cd77eb6dd106e0fe7a"
+  },
+  {
+    "event_id": "c3f264fb",
+    "source_url": "https://t.me/sevastopol_jazz/1280",
+    "reasons": [
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-28T11:45:02.808Z",
+    "fingerprint": "b51eac526a8d71245416f56173107bd62f7083fbc1c1f3d24acef9a46c174b3f"
+  },
+  {
+    "event_id": "e5674032",
+    "source_url": "https://t.me/sevastopol_jazz/1295",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-08-29T15:49:23.607Z"
+  },
+  {
+    "event_id": "eae425be",
+    "source_url": "https://t.me/sevastopol_jazz/1298",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-08-29T15:52:00.040Z",
+    "fingerprint": "3d4b9c9276b8be69cd5443870233591a23faee30acae28ae7d8a157652c73f3e"
+  }
+]

@@ -22,7 +22,12 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "approved",
+    "moderated_at": "2026-08-28T11:45:02.808Z",
+    "moderation_decision_reasons": [
+      "нет цены"
+    ],
+    "moderation_decision_fingerprint": "b51eac526a8d71245416f56173107bd62f7083fbc1c1f3d24acef9a46c174b3f"
   },
   {
     "date": "2026-08-09",
@@ -389,7 +394,12 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "approved",
+    "moderated_at": "2026-08-28T11:45:19.392Z",
+    "moderation_decision_reasons": [
+      "нет цены"
+    ],
+    "moderation_decision_fingerprint": "eaff141b93e87cb42c05810bcac16a68b2f40c0bb52b159b54e5a16ae9d48ec8"
   },
   {
     "date": "2026-08-14",
@@ -1373,10 +1383,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "3f26f76f989969fdd780d8b4329308c2bac75537e1d351b0c8e86946274856cd"
+    "moderation_status": "archived"
   },
   {
     "id": "9147e7cb",
@@ -1471,12 +1478,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "a45288d85cfc62a9135370f0b96d2803928ba0651b8e9cb6700ed1d94c59d3c8"
+    "moderation_status": "archived"
   },
   {
     "id": "07dbf5d4",
@@ -1546,12 +1548,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "fe0fb6398e197f664d8ee2b19f5586151593fdc56a506a6eea3191ec655dbab1"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-24",
@@ -1573,12 +1570,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "a20ac4aa554a29448fceb7173459bb2355a4c458d01eba0d91fa5e20e82bcce0"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-26",
@@ -8773,12 +8765,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "8d194eefd8e306f1eef09048d6af6794ef8a8c23bffea62ab2b3d99b2214faf1"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-09",
@@ -8969,12 +8956,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "1fb23ee12154410aef8423226567e5b502eb7cba23deaf0c439564281a3785be"
+    "moderation_status": "archived"
   },
   {
     "id": "64c922f0",
@@ -9501,7 +9483,14 @@
       "нет времени",
       "нет цены"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "rejected",
+    "moderated_at": "2026-08-29T15:52:00.040Z",
+    "moderation_decision_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "3d4b9c9276b8be69cd5443870233591a23faee30acae28ae7d8a157652c73f3e"
   },
   {
     "id": "f3007c9d",
@@ -9828,12 +9817,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "82631b51b385b5b85380b235163f4723672d97b088e40cd805e50b88cecb1b0f"
+    "moderation_status": "archived"
   },
   {
     "id": "3e37f1db",
@@ -9883,7 +9867,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "approved",
+    "moderated_at": "2026-08-29T15:50:05.457Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "073d7426bd5658d11be2e1413fec6a1ee463c2362fbed7839d891059e5708691"
   },
   {
     "id": "9edea90f",
@@ -10268,12 +10257,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "412421488be01e4bef296d7f059f0c7fde6f44b5787b0b02f309af6dc40de012"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-29",
@@ -10338,10 +10322,16 @@
     ],
     "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
     "post_date": "2026-08-26T05:06:19+00:00",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "rejected",
+    "moderated_at": "2026-08-29T15:50:31.183Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "22a2781f67d225598910218a7f871bc7d508fea2b86caa05e24b4d3a6c613b1e"
   },
   {
     "id": "0a83b119",
@@ -10367,7 +10357,12 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "rejected",
+    "moderated_at": "2026-08-29T15:51:45.747Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "13c3972c0e09b31d1e58d01753697e725e4b47c7f586884fd0ac59a66406fe21"
   },
   {
     "id": "a8eb22dd",
@@ -10481,12 +10476,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "dfe06e110d2318534797f32eb2f8410a1307aebd6c3229afe804b01230fb37c4"
+    "moderation_status": "archived"
   },
   {
     "id": "8258a849",
@@ -10868,12 +10858,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "a08de59df7367e4b7190d7d210d74e9ffc2d2c0720f9c71b1125f2f8a0343e1d"
+    "moderation_status": "archived"
   },
   {
     "id": "a37d7c13",
@@ -10955,7 +10940,7 @@
       "нет времени"
     ],
     "moderation_status": "approved",
-    "moderated_at": "",
+    "moderated_at": "2026-08-29T15:49:45.116Z",
     "moderation_decision_reasons": [
       "нет времени"
     ],
@@ -10992,12 +10977,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "d6acef43f1253c926259fad26bee0b045b1d90566ba917e1bda3d94802206614"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-08-05",
@@ -11073,10 +11053,16 @@
     "image": "/images/events/61706d540f901354d59c21592cc4a894.jpg",
     "post_date": "2026-08-26T05:06:19+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "approved",
+    "moderated_at": "2026-10-03T07:34:49.328Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "1846fcd5947c755d2d5f9007bf686109770571af40ad57a28aa8748b9dfafdc1"
   },
   {
     "id": "07e1ac0b",
@@ -11143,13 +11129,20 @@
     "image": null,
     "post_date": "2026-08-26T16:09:39+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера",
       "дубли мета-тегов: совпадают title и description"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-03T07:35:06.933Z",
+    "moderation_decision_reasons": [
+      "нет цены",
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "moderation_decision_fingerprint": "11c5452d496276180f16905b2f5faf8765ceab05b725a7523a468a475f23eadb"
   },
   {
     "id": "4380bb8e",
@@ -11317,12 +11310,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "2669fd631f80ea896d182cccceec93ee1a85efec42e30ebeb5587e6e458ba7e7"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-04",
@@ -11389,13 +11377,20 @@
     "source_url": "https://t.me/rocknroll_82/581",
     "id": "772b1314",
     "genre": "поп-рок",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "нет постера",
       "дубли мета-тегов: совпадают title и description"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-03T07:35:13.640Z",
+    "moderation_decision_reasons": [
+      "нет цены",
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "moderation_decision_fingerprint": "7df91ebd7e1fa944a0b5a839429a1b97fbf0700fc5620b6734efb1cf8f57b809"
   },
   {
     "id": "fde01463",
@@ -11419,13 +11414,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "526b380e45e68b5b418e7eee767cfc74e70e266dc70cfbb9b712874c79f74c79"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-03",
@@ -11492,12 +11481,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "d48be019abfd2cb6cf9d7f96a62b4c2f519be5808b01d2c36832bef546eb9c65"
+    "moderation_status": "archived"
   },
   {
     "id": "29db4e3a",
@@ -11549,12 +11533,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "e92aa8f3d3055627745da8afa25c6059bfb80443ecf59d9054a1640ee4177026"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-05",
@@ -11588,12 +11567,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "2e26f0d6b230bde767261955ea29665eee5f8c873c01ee1479eb7adf16a3860b"
+    "moderation_status": "archived"
   },
   {
     "id": "09a6f1c9",
@@ -11625,12 +11599,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "1c75bb68d02dd13b990a5fbfb8b6f9410fd625541949a212c653371381bb406c"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-04",
@@ -11731,12 +11700,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "bb33b4194f70f0338ac9240f9453a858711eeee40e528679090557681e673d4c"
+    "moderation_status": "archived"
   },
   {
     "id": "f40aa4df",
@@ -11762,12 +11726,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "8254a2df6704038988e476f67ec5ddc56bb13d3c195ec5efb89240f07b62af54"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-09",
@@ -11836,12 +11795,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "b2737ca380b0fa0760d3dbe62aac0470c66082f82529bab0c1b6572ecc9f0317"
+    "moderation_status": "archived"
   },
   {
     "id": "e9e27ced",
@@ -11864,12 +11818,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "f78c7d22fe033eac94320e033b0ffcb84b2aea8762c9eff21b511eb76cd03861"
+    "moderation_status": "archived"
   },
   {
     "id": "fd8ac102",
@@ -11914,12 +11863,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "44d127af9476adfb5f7a4bfe3c9db69dd8aaf001c1d1da4ae38c26a2ffe81ed4"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-12",
@@ -11948,12 +11892,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "8359ea9a6605429db42ccd3b9e4283ac4d8f74f576813ba3f219de925dcc5135"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-09",
@@ -11984,13 +11923,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "d20e639c721fa4434827cd379b050ed9de025ad7bd9ee1cf488d84594a7aaf85"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-08",
@@ -12015,10 +11948,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "12c436ac3b131d672d65da4ddf1eb3bc168fb55662ef9413a8948aa12e6feb94"
+    "moderation_status": "archived"
   },
   {
     "id": "3ff30188",
@@ -12046,10 +11976,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "0a4f3703d2f6a9b8d9fb2f62d1c675b60412c61a488ae64e38d60513ae89fb8c"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-09-09",
@@ -12075,10 +12002,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "5b9b813707177a5cccff5761149ca9ed04e2c961524d8dfb3b4da779454ff573"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-09",
@@ -12100,12 +12024,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "bca23fa8804406d5cde6793c89069075d41c658d33b14469655fbf8b14d23bf7"
+    "moderation_status": "archived"
   },
   {
     "id": "21b78223",
@@ -12128,12 +12047,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "f05e30465e096f1887d94ae9ed6dfcef981b51aafecbc1d6d7fa77b3fe33cb48"
+    "moderation_status": "archived"
   },
   {
     "id": "19525d0a",
@@ -12166,7 +12080,7 @@
       "нет времени"
     ],
     "moderation_status": "approved",
-    "moderated_at": "",
+    "moderated_at": "2026-08-29T15:51:54.830Z",
     "moderation_decision_reasons": [
       "нет времени"
     ],
@@ -12217,12 +12131,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "7c68580cc23bc812ae14be8fcc4b11201d1d825504d9522ec70669c8d9b16309"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-13",
@@ -12244,12 +12153,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "db17f08f946b01b7b39525c312ade2ebe67b844e31f4f2be4f9b9f061f6d39e6"
+    "moderation_status": "archived"
   },
   {
     "id": "ff58be19",
@@ -12275,12 +12179,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "f717634e4e490d29c44a7289a71bbf62932175f8d4ff6553c4704830a95dac31"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-28",
@@ -12334,10 +12233,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "f61352aeaa5e61b620b35023f7fa52094650e46fd3ab8d833f6f7654d890776c"
+    "moderation_status": "archived"
   },
   {
     "id": "9887ec47",
@@ -12360,12 +12256,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "da462c36bd18b37ed7967e324f48824bf83b7bed3977f0dfedb98f2c8740ed2f"
+    "moderation_status": "archived"
   },
   {
     "id": "bbf23ec7",
@@ -12465,10 +12356,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "c28b3803ca26ed0a18fcd336fd47180fb40c138d881c6aea842a0121556261a6"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-12",
@@ -12515,13 +12403,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "f102982260b49cacd6db0e9298f25440c7eea743150d8bef50075aeefea91aad"
+    "moderation_status": "archived"
   },
   {
     "id": "1632d443",
@@ -12545,13 +12427,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "699ad27454563bbf7205e9806a7b70faab775938ef70dac5df6e006f362783f7"
+    "moderation_status": "archived"
   },
   {
     "id": "f7fda538",
@@ -12575,13 +12451,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "72c9c350517f959d9b386c066571867813491bfad44e54db94db826f3534b965"
+    "moderation_status": "archived"
   },
   {
     "id": "7170221e",
@@ -12605,13 +12475,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "fe94b06dc707a959d75300a4e4fa91122b91b5d9add26598b404d531fe7c0481"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-13",
@@ -12668,12 +12532,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "af3ef63512b2ebc4c8ec8790d26422c717db0c2a9c3ae30a406829780c795f18"
+    "moderation_status": "archived"
   },
   {
     "id": "ac77b082",
@@ -12704,10 +12563,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "62342c5f842f1444a44a7d8220d023cb9497c25e8e0c815fc0551ec0f9f95722"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-13",
@@ -12735,12 +12591,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "621a4083a4b459ff207fe2361c9b7f03e29eb8238e4816fbb445f62debac9a11"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-24",
@@ -12788,12 +12639,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "4701a97c0a29dcd5f5c3af49ada846c66a7d0daef7c1d5490739410ffc55d622"
+    "moderation_status": "archived"
   },
   {
     "id": "65ded5fd",
@@ -12816,12 +12662,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "1333fe6a442fd8a5848c4563a75d6892763d4182b088fba362d7b948c6d9afca"
+    "moderation_status": "archived"
   },
   {
     "id": "4ff59dd8",
@@ -12844,12 +12685,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "b74525cc7c8b6b96f0147e3f94303294ad431a2e528585529398343e9478f115"
+    "moderation_status": "archived"
   },
   {
     "id": "01daee29",
@@ -12872,12 +12708,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "126ecdea67c579a0e693b80e864fd06686242a3e7f043472cf208bc8bd4bc4a0"
+    "moderation_status": "archived"
   },
   {
     "id": "2cfea4c7",
@@ -12956,12 +12787,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "fd95f15425e323af6af2af51d75f8c8595d116250a93fcab41ff0a1dcee93604"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-15",
@@ -13006,12 +12832,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "bd56bcbcfab19374bdec3865ddfd4e4336d90c44f123fd0d3862e4faa0fa9614"
+    "moderation_status": "archived"
   },
   {
     "id": "3189d597",
@@ -13039,10 +12860,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "0cc37c7caedc5981596fcbf06fe247a70e4acc192d240588b4bb40567aed1ada"
+    "moderation_status": "archived"
   },
   {
     "id": "64fac977",
@@ -13076,13 +12894,7 @@
       "нет времени",
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "d4e2a734347dc48de461e7b782d62fb4a32aea690034a1055d7d53349086ef72"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-09-18",
@@ -13104,12 +12916,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "2aab54c80e7b4e0e362ddaa3c31f8eebab09cc2dae5cdc17be42875171f80bcf"
+    "moderation_status": "archived"
   },
   {
     "id": "14089d7f",
@@ -13132,12 +12939,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "8198d0c9c362171a2888c103456126fe22485d596b070675165f11ec0a865d07"
+    "moderation_status": "archived"
   },
   {
     "id": "6a2b7c1d",
@@ -13160,12 +12962,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет постера"
-    ],
-    "moderation_decision_fingerprint": "caa3d4a16bd2b32ecac1ea8ea5597e18d9946990b0c49cb7041f35da37c5ab2a"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-18",
@@ -13219,10 +13016,7 @@
     "genre": "классика",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "6c61a2b0175218a277357ab12cf66ab52972552d96358afaf4dcfe830b67cbc0"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-19",
@@ -13253,12 +13047,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "4b0c6dcd769860d3566df7ebd1e2ccdcee2bdf87a05b7286c378d3c9fc735b63"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-19",
@@ -13289,12 +13078,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "e68f20ab02438fd5d441d625114aa3703a9b710b177c39ce55cd53fe322830e5"
+    "moderation_status": "archived"
   },
   {
     "id": "097b5846",
@@ -13324,12 +13108,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "f190ec4ed80556d7175188b096ce1f9336ca06cea552637030f3a8a1d5bf6416"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-20",
@@ -13358,12 +13137,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "c6c13838d9e0c335347b1971bcfeafeca91a55ba7b974399aa8bdf1d3911c137"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-19",
@@ -13391,12 +13165,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "576532f11276ca70a4ac2fbe6dc7d230d473af0ce30e45d6d282b275aa2fac0a"
+    "moderation_status": "archived"
   },
   {
     "id": "05c4100f",
@@ -13418,12 +13187,18 @@
     "image": "/images/events/42909dbc1043cf56e35a1f556e7aee7e.jpg",
     "post_date": "2026-09-22T12:14:12+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
       "дубли мета-тегов: совпадают title и description"
     ],
-    "moderation_status": "archived"
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-03T07:35:26.150Z",
+    "moderation_decision_reasons": [
+      "нет цены",
+      "дубли мета-тегов: совпадают title и description"
+    ],
+    "moderation_decision_fingerprint": "42af5f0f3a05141947ee49c7b7cf2b6f71eb98efa70272cb6c13428de6458056"
   },
   {
     "artist": "Ночные грузчики",
@@ -13444,11 +13219,7 @@
       "/images/events/9e643e8d7a8a198a258b19b7842dc014.jpg"
     ],
     "needs_review": false,
-    "moderation_status": "approved",
-    "review_reasons": [],
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "f9189f7bce657df8348cb919ee8ce583742e99f400e201848c27a2bd6756f15a",
-    "moderated_at": "2026-09-20T17:38:39.054513+00:00"
+    "review_reasons": []
   },
   {
     "artist": "Jawa. Хиты «Сектор Газа»",
@@ -13469,11 +13240,7 @@
       "/images/events/cc3a3f27558985d459629e1973ea2f18.jpg"
     ],
     "needs_review": false,
-    "moderation_status": "approved",
-    "review_reasons": [],
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "31ef373a7436923294ab383d96665100ebbc14f56431c17a377a517538a9b2fe",
-    "moderated_at": "2026-09-20T17:38:39.272779+00:00"
+    "review_reasons": []
   },
   {
     "date": "2026-09-28",
@@ -13499,10 +13266,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "e962802845ded2671ab4a3606209e400103aae8d852e1eb7728d52c4f624f48a"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-27",
@@ -13531,12 +13295,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "42b5aa42261282fb5e6f5df3909d3f687b85f50681a8d95973ce8dd932bb4b25"
+    "moderation_status": "archived"
   },
   {
     "id": "1270709f",
@@ -13562,12 +13321,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "090e6d0758b6fe36773118cba4e84fb0e1c78c558621abfca9c0ae3efbf74969"
+    "moderation_status": "archived"
   },
   {
     "id": "f8d29bf9",
@@ -13593,12 +13347,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "566f00ca094e499d1490d04b8860e01cc9e64042705a16d2f465c92530d405c1"
+    "moderation_status": "archived"
   },
   {
     "id": "c0515544",
@@ -13641,12 +13390,20 @@
     "image": null,
     "post_date": "2026-09-18T10:09:37+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-03T07:35:59.903Z",
+    "moderation_decision_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "acf71dc036d1d674f477dffa3122c25e259faf32dba602574c4efab33360f3be"
   },
   {
     "date": "2026-10-01",
@@ -13721,12 +13478,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "5d3bd20fc2e4367ea5aed545569ba2ab08868ae809e62ea7fbebe999c888bd7f"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-25",
@@ -13756,12 +13508,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "7d6ff7a426365277bbf58dca4d8a441be50da1b43802bc00a1bb45538683251b"
+    "moderation_status": "archived"
   },
   {
     "id": "fbe57b50",
@@ -13792,12 +13539,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "998c697c50ea804116a6edf665c087d85620035bea317d1261b0b4eb31e0e335"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-25",
@@ -13822,10 +13564,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "d3ff0afe71cc7913b0ec1868184a57db436c4c02f17fec42e264d1ed4607e8ef"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-25",
@@ -13936,10 +13675,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "6be014a979c4a25fd58377d565de4c43f28ace44e0cab4b6eb9f3ae3b37778c3"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-26",
@@ -13968,12 +13704,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "bda21b705deeefd645c7f3f3d43870757d58b7c6cc1ee6c2a3a2c4c9c8766326"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-26",
@@ -14002,12 +13733,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "b3582006b18c784145b173986cd738fbb97ea2acb5dd4d411e3479be86d91653"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-26",
@@ -14040,12 +13766,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "a1e2e70d5b017ffaf59649fe63b7eb5f222708145345785a4377cfa539594258"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-27",
@@ -14071,10 +13792,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "e1b3f6ad5e1c4890412cdab1fe182838b8bb46732ab7d54a6ceb4f6dad935edc"
+    "moderation_status": "archived"
   },
   {
     "id": "44bdf455",
@@ -14144,10 +13862,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "6fe5afc3a8dd547ab6d853de8aaa17d98c1adb81070cf377e6e7be2dc71c80a0"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-30",
@@ -14175,12 +13890,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "e046eae49f786ea5f49d472b40cfbed4f7a690827b5aaeccd07be758162d3591"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-09-30",
@@ -14231,12 +13941,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "6c7788c1ad9f1c864309a60aa4ff75b8dfd8a3bcef30e69304bc73499828fb64"
+    "moderation_status": "archived"
   },
   {
     "id": "360551b2",
@@ -14258,10 +13963,16 @@
     "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
     "post_date": "2026-09-30T19:21:49+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "approved",
+    "moderated_at": "2026-10-03T07:36:17.716Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "fbb685d3e43c202ad7c5aa2ce83b757d35a3f165ff9c9af08d39a45f850a6806"
   },
   {
     "id": "7816a324",
@@ -14283,10 +13994,16 @@
     "image": "/images/events/5b6a25d2b3bc6d5fb6834a839c8d12ca.jpg",
     "post_date": "2026-09-30T19:21:49+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "approved",
+    "moderated_at": "2026-10-03T07:36:26.426Z",
+    "moderation_decision_reasons": [
+      "нет времени"
+    ],
+    "moderation_decision_fingerprint": "d6a859e4e484a9448867114622abdef4be69963b21b96d7ebfe2ea536a15701b"
   },
   {
     "id": "38661c06",
@@ -14312,12 +14029,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "dac00fce5147bbe663907c0d7b4e023be6791c6b9696fe10c1809441dc0cda49"
+    "moderation_status": "approved"
   },
   {
     "id": "09954bc6",
@@ -14343,12 +14055,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "78362800ca16879945211048b13f1cd722051a5c6a499c0368f7dc6b6d384f45"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-02",
@@ -14381,12 +14088,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "05cef173034965640963c48330efa9c12c03c60c3ac90b86e28f12f0653d1753"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-02",
@@ -14414,12 +14116,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "d0e7dbb87ac83abec0be6fec628f016ce88602dd8905682da300bd1ab5f52491"
+    "moderation_status": "archived"
   },
   {
     "id": "c42060a4",
@@ -14447,10 +14144,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "486316469531a5fe6d106635f7c3566c5254a56db39bbcbd2d0a13881cc1a165"
+    "moderation_status": "approved"
   },
   {
     "id": "42567d5d",
@@ -14478,10 +14172,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "487a12b86e0625f164d56787108d50de749e1919113a2093dbfff8d36bea7c0d"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-04",
@@ -14516,12 +14207,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "516175ba1c626236ef84cefd2b356f19811b31df9ab6718e40b667eed1416fe8"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-29",
@@ -14546,10 +14232,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "c8e86a5628f6f2fc7da89d86f1b2af364ef2df50143cce8152467271d8706f04"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-11-04",
@@ -14574,10 +14257,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "49a020cea1dc3f6a8f52d66ccfc5fdd048d5c24d2650a1943f3c72f809d312b1"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-31",
@@ -14604,12 +14284,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "d2b5103efbd6ddb404d6cdcf65326c2c3a6df3b879e5c936928083b5b4ef700c"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-25",
@@ -14634,10 +14309,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "a235f31cf12a492b0f45ad9758078d746105d910b0e0541097770c4fd5f30521"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-18",
@@ -14662,10 +14334,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [],
-    "moderation_decision_fingerprint": "9978cc7f5f78466923b2263f0c570e73417ee281a7e216c67934ea666c5a7fc2"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-03",
@@ -14687,12 +14356,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "a01d10f70986d5c2339af2a31a6bf602f67dd6176e2b9f9028ecfdc9f018970e"
+    "moderation_status": "approved"
   },
   {
     "date": "2026-10-25",
@@ -14710,11 +14374,18 @@
     "source_url": "https://vk.com/wall-210355908_1267",
     "id": "69a076bd",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-03T07:37:13.156Z",
+    "moderation_decision_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_decision_fingerprint": "acc6f3ca95ca0e86a4260f8a5b2c905f207ec1106cb11aaa80ffa08b9a8c09be"
   },
   {
     "date": "2026-08-11",
