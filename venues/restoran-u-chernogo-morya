@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 4 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-u-chernogo-morya">
   <meta property="og:title" content="Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -95,6 +95,21 @@
         "name": "Севастопольский эстрадный оркестр Валентина Таева"
       },
       "image": "/images/events/b508493642a4d866d229aa8d1b1ce39e.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "DJ, Ирина Депутович",
+      "startDate": "2026-12-31",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»"
+      },
+      "description": "Новогодняя ночь 2027: Музыка, Свет и Вкус! Выступление Ирины Депутович + DJ, лазерное шоу с дымом, танцевально-световое шоу и танцы до утра, новогодний квиз и лотерея призов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "DJ, Ирина Депутович"
+      },
+      "image": "/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg"
     }
   ]
 }
@@ -1167,7 +1182,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Ресторан 'У Чёрного моря'", "Ресторан «У Чёрного моря»", "Ресторан «У Чёрного моря»"];
+const VENUE_ALIASES = ["Ресто-бар «У Чёрного моря»", "Ресторан 'У Чёрного моря'", "Ресторан «У Чёрного моря»", "Ресторан «У Чёрного моря»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

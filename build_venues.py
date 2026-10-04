@@ -55,6 +55,9 @@ MERGE_GROUPS = [
         "корабел", "кдк корабел",
         "дк корабел, малый зал", "дк корабел, театральный зал",
     ]),
+    ("restoran-u-chernogo-morya", "Ресторан «У Чёрного моря»", "Севастополь", [
+        "ресторан у черного моря", "ресто-бар у черного моря",
+    ]),
     ("krongs", "Krongs", "Севастополь", ["krongs", "кронгс", "кронгс паб"]),
     ("santa-barbara", "Санта Барбара", "Симферополь", [
         "santa barbara", "санта барбара",
@@ -182,7 +185,6 @@ VERIFIED_ADDRESS_BY_SLUG = {
     "galereya-iskusstv-mayya": "ул. Пушкинская, 9Б",
     "restoran-barkas-na-parkovoy": "ул. Парковая, 3",
     "bahchisarayskiy-rayonnyy-dom-kultury": "ул. Симферопольская, 15",
-    "resto-bar-u-chernogo-morya": "ул. Ленина, 8",
     "vinzavod-massandra": "ул. Винодела Егорова, 9",
     "egorovskiy-zal-vinzavoda-massandra": "ул. Винодела Егорова, 9",
     "egorovskiy-zal-tsentra-vinodeliya-massandra": "ул. Винодела Егорова, 9",

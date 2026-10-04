@@ -37,6 +37,10 @@ GENRE_FILE    = BASE_DIR / "genre.html"
 DOMAIN     = "https://mestov.net"
 MOSCOW_TZ = ZoneInfo("Europe/Moscow")
 GENERATED_PAGES_MANIFEST = BASE_DIR / ".generated-pages.json"
+# Старые адреса объединённых заведений остаются доступными как переходы.
+VENUE_PAGE_REDIRECTS = {
+    "resto-bar-u-chernogo-morya": "restoran-u-chernogo-morya",
+}
 # Разовый инвентарь страниц, созданных старой сборкой до появления
 # .generated-pages.json. Он намеренно ограничен подборками, а не архивом.
 LEGACY_GENERATED_PAGES_MANIFEST = BASE_DIR / ".legacy-generated-pages.json"
@@ -881,6 +885,23 @@ def load_venues() -> list[dict]:
     if VENUES_FILE.exists():
         return json.loads(VENUES_FILE.read_text(encoding="utf-8"))
     return []
+
+
+def make_venue_redirect_page(venue: dict) -> str:
+    path = f"/venues/{venue['slug']}"
+    canonical = f"{DOMAIN}{path}"
+    name = esc(venue["name"])
+    return (
+        '<!doctype html>\n<html lang="ru">\n<head>\n'
+        '<meta charset="utf-8">\n'
+        f'<link rel="canonical" href="{canonical}">\n'
+        '<meta name="robots" content="noindex, follow">\n'
+        f'<meta http-equiv="refresh" content="0; url={path}">\n'
+        f'<script>location.replace({json.dumps(path)});</script>\n'
+        '</head>\n<body>\n'
+        f'<p>Страница площадки перемещена: <a href="{path}">{name}</a>.</p>\n'
+        '</body>\n</html>\n'
+    )
 
 
 def build_venue_alias_lookup(venues: list[dict]) -> dict[str, str]:
@@ -2223,6 +2244,15 @@ def main() -> None:
         generated_venue_slugs.append(venue["slug"])
         print(f"    ✓ venues/{venue['slug']}  "
               f"({v_upcoming} предстоящих, {v_past} прошедших)")
+
+    venue_by_slug = {venue["slug"]: venue for venue in venues_with_events}
+    for old_slug, canonical_slug in VENUE_PAGE_REDIRECTS.items():
+        canonical_venue = venue_by_slug.get(canonical_slug)
+        if canonical_venue is None:
+            continue
+        out = venues_dir / old_slug
+        out.write_text(make_venue_redirect_page(canonical_venue), encoding="utf-8")
+        current_generated_pages.add(Path("venues") / old_slug)
 
     # 3b. Генерируем страницы артистов (artist/{slug} без расширения)
     artist_dir = BASE_DIR / "artist"

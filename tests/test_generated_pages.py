@@ -56,6 +56,24 @@ def test_jsonld_start_date_uses_only_the_start_of_a_time_range():
     assert jsonld_start_date({"date": "2026-08-29", "time": None}) == "2026-08-29"
 
 
+def test_black_sea_old_venue_url_redirects_to_single_card(venues, project_root):
+    by_slug = {venue["slug"]: venue for venue in venues}
+    assert "resto-bar-u-chernogo-morya" not in by_slug
+    canonical_slug = "restoran-u-chernogo-morya"
+    assert build_venue_alias_lookup(venues)["Ресто-бар «У Чёрного моря»"] == canonical_slug
+
+    old_page = _soup(project_root / "venues" / "resto-bar-u-chernogo-morya")
+    canonical_url = f"{DOMAIN}/venues/{canonical_slug}"
+    assert old_page.find("link", rel="canonical").get("href") == canonical_url
+    assert old_page.find("meta", attrs={"http-equiv": "refresh"}).get("content") == (
+        f"0; url=/venues/{canonical_slug}"
+    )
+    assert canonical_url in (project_root / "sitemap.xml").read_text(encoding="utf-8")
+    assert f"{DOMAIN}/venues/resto-bar-u-chernogo-morya" not in (
+        project_root / "sitemap.xml"
+    ).read_text(encoding="utf-8")
+
+
 class TestHomepageSeo:
     def test_description_and_open_graph_have_current_event_count(
         self, events, settings, today_str, project_root

@@ -394,8 +394,9 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 6,
+    "event_count": 7,
     "aliases": [
+      "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»"
     ],
@@ -2285,20 +2286,6 @@
     "desc_baseline_count": 0,
     "lat": 44.755291,
     "lon": 33.857871
-  },
-  {
-    "slug": "resto-bar-u-chernogo-morya",
-    "name": "Ресто-бар «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 1,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "galereya-im-ayvazovskogo",

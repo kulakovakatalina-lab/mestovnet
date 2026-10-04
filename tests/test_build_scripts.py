@@ -90,6 +90,25 @@ class TestBuildVenuesPreservesManualFields:
         )
 
 
+def test_black_sea_venue_variants_merge_on_rebuild(tmp_path, events):
+    _copy_for_build(tmp_path)
+    _run(tmp_path, "build_venues.py")
+    venues = json.loads((tmp_path / "venues.json").read_text(encoding="utf-8"))
+    by_slug = {venue["slug"]: venue for venue in venues}
+    assert "resto-bar-u-chernogo-morya" not in by_slug
+    canonical = by_slug["restoran-u-chernogo-morya"]
+    variants = {
+        "Ресторан 'У Чёрного моря'",
+        "Ресторан «У Чёрного моря»",
+        "Ресто-бар «У Чёрного моря»",
+    }
+    assert variants <= set(canonical["aliases"])
+    assert canonical["event_count"] == sum(
+        event.get("venue") in variants for event in events
+    )
+    assert (canonical["lat"], canonical["lon"]) == (44.614484, 33.525136)
+
+
 class TestBuildArtistsPreservesManualFields:
     @pytest.mark.parametrize("variant", [
         "Группа Маяк. Хиты группы Пламя",
