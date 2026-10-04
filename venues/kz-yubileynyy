@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>КЗ «Юбилейный» — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <title>КЗ «Юбилейный» — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kz-yubileynyy">
-  <meta property="og:title" content="КЗ «Юбилейный» — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="КЗ «Юбилейный» — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "КЗ «Юбилейный»",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Крым",
+        "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
     }
@@ -39,7 +39,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "КЗ «Юбилейный»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "КЗ «Юбилейный»"}]}
 </script>
   <style>
 
@@ -1048,7 +1048,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/all.html">Крым</a>
+      · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">КЗ «Юбилейный»</h1>
 
@@ -1066,14 +1066,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "КЗ «Юбилейный»";
+  var addr = "Ялта";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.492898,34.163783";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.492898, 34.163783],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.492898, 34.163783], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["КЗ «Юбилейный»", "КЗ «Юбилейный»"];

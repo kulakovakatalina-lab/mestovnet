@@ -55,7 +55,7 @@ MERGE_GROUPS = [
         "корабел", "кдк корабел",
         "дк корабел, малый зал", "дк корабел, театральный зал",
     ]),
-    ("krongs", "Krongs", "Крым", ["krongs", "кронгс", "кронгс паб"]),
+    ("krongs", "Krongs", "Севастополь", ["krongs", "кронгс", "кронгс паб"]),
     ("santa-barbara", "Санта Барбара", "Симферополь", [
         "santa barbara", "санта барбара",
     ]),
@@ -96,7 +96,7 @@ MERGE_GROUPS = [
         "эко-пространство али-баир, байдарская долина (с. широкое)",
         "байдарская долина, alibair",
     ]),
-    ("paniya-park", "Пания Парк", "Севастополь", [
+    ("paniya-park", "Пания Парк", "Бахчисарайский район", [
         "пания парк, деревня мастеров, с. соколиное",
         "таверна дирижабль, пания парк, деревня мастеров",
     ]),
@@ -146,6 +146,48 @@ for cid, nm, ct, keys in MERGE_GROUPS:
     MERGE_META[cid] = (nm, ct)
     for k in keys:
         MERGE_MAP[k] = cid
+
+# Исправления городов, проверенные по адресам площадок. source_city у части
+# событий указывает город канала, а не место проведения.
+VERIFIED_CITY_BY_SLUG = {
+    "dvorets-dyulber": "Ялта",
+    "restoran-motivy": "Симферополь",
+    "polyana-vkusov-yarmarochnoe-pole-paniya-park": "Бахчисарайский район",
+    "yoga-hall-ashram": "Симферополь",
+    "teplo-tvoya-territoriya": "Ялта",
+    "krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn": "Симферополь",
+    "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n": "Научный",
+    "ekokemp-semena": "Бахчисарайский район",
+    "ekokemp-semena-belbekskaya-dolina": "Бахчисарайский район",
+    "klubnyy-plyazh-laspi": "Севастополь",
+    "kerch-dk-korabel": "Керчь",
+    "kz-yubileynyy": "Ялта",
+    "tsentr-vinodeliya-massandra": "Ялта",
+}
+VERIFIED_ADDRESS_BY_SLUG = {
+    "restoran-u-chernogo-morya": "ул. Ленина, 8",
+    "dom-kultury-korabel": "ул. Орджоникидзе, 88",
+    "nasledie": "ул. Гурзуфская, 13",
+    "kamelot": "ул. Свердлова, 7",
+    "ekokemp-semena": "с. Поляна",
+    "ekokemp-semena-belbekskaya-dolina": "с. Поляна",
+    "klubnyy-plyazh-laspi": "Ласпи, 20А",
+    "otkrytaya-ploschadka-pod-gril-barom-triton": "ул. Ефремова, 38",
+    "yaltinskiy-teatr-imeni-a-p-chehova": "ул. Екатерининская, 13",
+    "art-kafe-snezhinka-bolshaya-morskaya-19": "ул. Большая Морская, 19",
+    "art-prostranstvo-glubina": "ул. Большая Морская, 23",
+    "kerch-dk-korabel": "ул. Орджоникидзе, 88",
+    "vinodelnya-akchurina": "с. Хмельницкое",
+    "bar-pyatnitsa": "ул. Пушкинская, 2А",
+    "galereya-iskusstv-mayya": "ул. Пушкинская, 9Б",
+    "restoran-barkas-na-parkovoy": "ул. Парковая, 3",
+    "bahchisarayskiy-rayonnyy-dom-kultury": "ул. Симферопольская, 15",
+    "resto-bar-u-chernogo-morya": "ул. Ленина, 8",
+    "vinzavod-massandra": "ул. Винодела Егорова, 9",
+    "egorovskiy-zal-vinzavoda-massandra": "ул. Винодела Егорова, 9",
+    "egorovskiy-zal-tsentra-vinodeliya-massandra": "ул. Винодела Егорова, 9",
+    "tsentr-vinodeliya-massandra": "ул. Винодела Егорова, 9",
+}
 
 TRANSLIT = {
     "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e",
@@ -294,6 +336,8 @@ def main():
         if slug in slug_seen:  # разрулим коллизии слагов
             slug = f"{slug}-{slugify(city) or len(venues)}"
         slug_seen[slug] = True
+        city = VERIFIED_CITY_BY_SLUG.get(slug, city)
+        address = VERIFIED_ADDRESS_BY_SLUG.get(slug, address)
 
         event_count = len(items)
         prev = prev_by_slug.get(slug) or prev_by_namecity.get((name, city)) or {}

@@ -1066,14 +1066,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Дом-музей А.С. Пушкина";
+  var addr = "Гурзуф";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.539802,34.274541";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.539802, 34.274541],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.539802, 34.274541], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["Дом-музей А.С. Пушкина", "Дом-музей А.С. Пушкина"];

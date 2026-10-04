@@ -32,7 +32,8 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "streetAddress": "ул. Винодела Егорова, 9"
       }
     }
   ]
@@ -1051,7 +1052,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Винзавод Массандра</h1>
-
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Винодела Егорова, 9, Ялта</a></div>
 <p class="venue-description">Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
@@ -1082,8 +1083,8 @@ ymaps.ready(function() {
     });
   }
   var name = "Винзавод Массандра";
-  var addr = "Ялта";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.497666,34.1713";
+  var addr = "ул. Винодела Егорова, 9, Ялта";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.51786,34.186504";
   var el = document.getElementById('venue-map');
   if (!el) return;
   el.innerHTML = '';
@@ -1093,11 +1094,11 @@ ymaps.ready(function() {
     + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
     + '</div>';
   var map = new ymaps.Map(el, {
-    center: [44.497666, 34.1713],
+    center: [44.51786, 34.186504],
     zoom: 16,
     controls: ['zoomControl'],
   });
-  var placemark = new ymaps.Placemark([44.497666, 34.1713], {
+  var placemark = new ymaps.Placemark([44.51786, 34.186504], {
     hintContent: name,
     balloonContent: balloonContent,
   }, { preset: 'islands#blueDotIcon' });

@@ -53,8 +53,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.606638,
+    "lon": 33.522078
   },
   {
     "slug": "tavrida-art",
@@ -116,8 +116,8 @@
     ],
     "description": "Пляжный DJ-бар на Массандровском пляже в Ялте, работает ежедневно с 12:00 до 22:00 в тёплый сезон (с мая). Резиденты — Martin W., Scream, Pasha Rhino, Kardys, Kuznetsov, Busha, Spahova и другие — играют хаус и танцевальную электронику, иногда с тематическими вечеринками вроде Jazzy Brut или We Love House.",
     "desc_baseline_count": 16,
-    "lat": null,
-    "lon": null
+    "lat": 44.498096,
+    "lon": 34.178866
   },
   {
     "slug": "sevastopol",
@@ -149,8 +149,8 @@
     ],
     "description": "Пещера на плато Чатыр-Даг с концертным залом «Звуковой сплав» — необычная площадка для академической музыки под землёй. Здесь регулярно выступает Крымский академический симфонический оркестр (полным и камерным составом) и крымский камерный оркестр «Новая Гармония», а также проходили immersive-концерты Андрея Ясинского «Космос внутри».",
     "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
+    "lat": 44.797184,
+    "lon": 34.279458
   },
   {
     "slug": "el-capulco-0-0",
@@ -164,8 +164,8 @@
     ],
     "description": "Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ's, Scream (виниловый сет), Pasha Rhino и Gretta.",
     "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
+    "lat": 44.497569,
+    "lon": 34.17698
   },
   {
     "slug": "dk-korabel",
@@ -232,8 +232,8 @@
     ],
     "description": "За последние месяцы театр принял 8 концертов. Дважды выступал AdrenalinHouse, играл Крымский академический симфонический оркестр, прошёл вечер русского шансона с Владимиром Ждамировым. Вход платный.",
     "desc_baseline_count": 8,
-    "lat": null,
-    "lon": null
+    "lat": 44.492566,
+    "lon": 34.162337
   },
   {
     "slug": "rok-n-rolschiki",
@@ -247,8 +247,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.951251,
+    "lon": 34.098202
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -309,14 +309,14 @@
     ],
     "description": "За последний месяц здесь сыграли 7 концертов, часть — с бесплатным входом. Небольшая площадка с постоянными резидентами: Андрей Танзю и Карина Клавихо выступали здесь по три раза, заходил и Александр Васильев. Жанрово — микс хип-хопа и этники.",
     "desc_baseline_count": 7,
-    "lat": null,
-    "lon": null
+    "lat": 44.5635288,
+    "lon": 33.8904656
   },
   {
     "slug": "vinzavod-massandra",
     "name": "Винзавод Массандра",
     "city": "Ялта",
-    "address": "",
+    "address": "ул. Винодела Егорова, 9",
     "event_count": 6,
     "aliases": [
       "Винзавод Массандра",
@@ -325,8 +325,8 @@
     ],
     "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
     "desc_baseline_count": 3,
-    "lat": 44.497666,
-    "lon": 34.1713
+    "lat": 44.51786,
+    "lon": 34.186504
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -340,8 +340,8 @@
     ],
     "description": "За последние три месяца в театре прошло 5 концертов с платным входом — гастрольная площадка: заезжал SHAMAN, был премьерный вечер Ирины Круг, играли финалисты «ВИА Суперстар» — «Лесоповал».",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
+    "lat": 44.948617,
+    "lon": 34.100806
   },
   {
     "slug": "snezhinka",
@@ -386,8 +386,8 @@
     ],
     "description": "За последний месяц здесь прошло 4 концерта. Здесь совмещают музыку и вино: фестиваль крымского виноделия «Винная Маёвка» в Байдарской долине — круговая дегустация вин от 35+ производителей плюс концерт каверов.",
     "desc_baseline_count": 4,
-    "lat": null,
-    "lon": null
+    "lat": 44.468143,
+    "lon": 33.776985
   },
   {
     "slug": "gastrodvor",
@@ -417,8 +417,8 @@
     ],
     "description": "За чуть больше года здесь прошло 5 концертов. Отельная площадка живёт праздничным календарём: на 9 Мая и Первомай на Прогулочной аллее играл духовой оркестр Touch the Wind, с конкурсами и анимацией для гостей, а дважды выступал Крымский академический симфонический оркестр.",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
+    "lat": 44.503057,
+    "lon": 34.190144
   },
   {
     "slug": "organnom-zale-livadia",
@@ -431,13 +431,13 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.475488,
+    "lon": 34.143145
   },
   {
     "slug": "krongs",
     "name": "Krongs",
-    "city": "Крым",
+    "city": "Севастополь",
     "address": "",
     "event_count": 5,
     "aliases": [
@@ -447,8 +447,8 @@
     ],
     "description": "За неделю здесь прошло 5 концертов — почти все поп, без узнаваемых резидентов. Данных пока мало для более подробного портрета.",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
+    "lat": 44.613253,
+    "lon": 33.520121
   },
   {
     "slug": "btr-bar-tyazhelogo-roka",
@@ -539,7 +539,7 @@
   {
     "slug": "dvorets-dyulber",
     "name": "Дворец «Дюльбер»",
-    "city": "Севастополь",
+    "city": "Ялта",
     "address": "",
     "event_count": 4,
     "aliases": [
@@ -548,8 +548,8 @@
     ],
     "description": "За последний месяц здесь прошло 5 концертов — камерные вечера с одним и тем же составом музыкантов: Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Руслан Сейдалиев и Максим Перов играли здесь по два раза каждый. Среди программ — «Песни любимого кино»: вокал, фортепиано, труба и ударные.",
     "desc_baseline_count": 5,
-    "lat": null,
-    "lon": null
+    "lat": 44.429442,
+    "lon": 34.096119
   },
   {
     "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo",
@@ -577,8 +577,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.475488,
+    "lon": 34.143145
   },
   {
     "slug": "plyazh-kafe-van-gogh",
@@ -591,8 +591,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.498096,
+    "lon": 34.178866
   },
   {
     "slug": "simferopol",
@@ -640,7 +640,7 @@
     "slug": "restoran-u-chernogo-morya",
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Ленина, 8",
     "event_count": 3,
     "aliases": [
       "Ресторан 'У Чёрного моря'",
@@ -648,8 +648,8 @@
     ],
     "description": "",
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.614484,
+    "lon": 33.525136
   },
   {
     "slug": "krymskaya-astrofizicheskaya-observatoriya",
@@ -771,8 +771,8 @@
   {
     "slug": "ekokemp-semena-belbekskaya-dolina",
     "name": "экокемп Семена, Бельбекская долина",
-    "city": "Севастополь",
-    "address": "",
+    "city": "Бахчисарайский район",
+    "address": "с. Поляна",
     "event_count": 3,
     "aliases": [
       "Экокемп «Семена», Бельбекская долина",
@@ -780,8 +780,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.556199,
+    "lon": 33.887908
   },
   {
     "slug": "bar-el-capulco-0-0",
@@ -794,8 +794,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.497569,
+    "lon": 34.17698
   },
   {
     "slug": "p-nauchnyy-ul-nauchnaya-46",
@@ -808,8 +808,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.726326,
+    "lon": 34.015381
   },
   {
     "slug": "kvartal-kultur-mira",
@@ -972,7 +972,7 @@
   {
     "slug": "restoran-motivy",
     "name": "Ресторан «Мотивы»",
-    "city": "Севастополь",
+    "city": "Симферополь",
     "address": "",
     "event_count": 2,
     "aliases": [
@@ -980,8 +980,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.951057,
+    "lon": 34.099716
   },
   {
     "slug": "anapskiy-rayon-supseh",
@@ -1065,22 +1065,22 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.396356,
+    "lon": 33.945335
   },
   {
     "slug": "dom-kultury-korabel",
     "name": "Дом культуры «Корабел»",
     "city": "Керчь",
-    "address": "",
+    "address": "ул. Орджоникидзе, 88",
     "event_count": 2,
     "aliases": [
       "Дом культуры «Корабел»"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 45.300079,
+    "lon": 36.427175
   },
   {
     "slug": "dom-muzey-a-s-pushkina-gurzuf",
@@ -1093,8 +1093,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.539802,
+    "lon": 34.274541
   },
   {
     "slug": "nebar",
@@ -1121,8 +1121,8 @@
     ],
     "description": "Концертная площадка «МОРЕ» в Коктебеле — летняя сцена с ресторанным фудкортом и кинотеатром под открытым небом.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.964546,
+    "lon": 35.258032
   },
   {
     "slug": "prostranstvo-labirinta-krasnolesya",
@@ -1135,8 +1135,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.853248,
+    "lon": 34.23078
   },
   {
     "slug": "dom-muzey-a-s-pushkina",
@@ -1149,22 +1149,22 @@
     ],
     "description": "",
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.539802,
+    "lon": 34.274541
   },
   {
     "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
     "name": "Ялтинский театр имени А. П. Чехова",
     "city": "Ялта",
-    "address": "",
+    "address": "ул. Екатерининская, 13",
     "event_count": 1,
     "aliases": [
       "Ялтинский театр имени А. П. Чехова"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.492566,
+    "lon": 34.162337
   },
   {
     "slug": "ribiza",
@@ -1191,8 +1191,8 @@
     ],
     "description": "За последние три месяца здесь прошло 3 концерта с платным входом. Регулярно проходит «Музыкальное лото» — интерактивная вечеринка с угадыванием хитов на экране и атмосферой массового караоке, больше 100 песен за вечер.",
     "desc_baseline_count": 3,
-    "lat": null,
-    "lon": null
+    "lat": 44.590265,
+    "lon": 33.459747
   },
   {
     "slug": "antikvarno-hudozhestvennaya-galereya-stiks",
@@ -1247,8 +1247,8 @@
     ],
     "description": "Пляж в Ялте, где проходят фестивали под открытым небом — например трёхдневный пляжный фестиваль с DJ-сетами, танцевальными баттлами и живыми выступлениями (YSJ «Маяк», Spahova, Martin W., Happy Paul).",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.497409,
+    "lon": 34.176962
   },
   {
     "slug": "hungry-bird",
@@ -1275,8 +1275,8 @@
     ],
     "description": "Феодосийский городской дом культуры — учреждение культуры с 1953 года с залом на 220 мест.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 45.030326,
+    "lon": 35.383237
   },
   {
     "slug": "teatr-imeni-a-s-pushkina",
@@ -1331,13 +1331,13 @@
     ],
     "description": "Концерт-холл «Хрустальный» при отеле «Ялта-Интурист» — камерная сцена для академической музыки, например программа Крымского академического симфонического оркестра «Музыка и свечи. На краю эмоций» (от Прокофьева до Пьяццоллы).",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.503057,
+    "lon": 34.190144
   },
   {
     "slug": "polyana-vkusov-yarmarochnoe-pole-paniya-park",
     "name": "Поляна Вкусов, Ярмарочное Поле, Пания Парк",
-    "city": "Севастополь",
+    "city": "Бахчисарайский район",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -1345,8 +1345,8 @@
     ],
     "description": "Тайский ночной рынок под открытым небом в Севастополе (Поляна Вкусов / Ярмарочное Поле / Пания Парк) — здесь звучит живая музыка, например выступление коллектива «Ритмы Сердца».",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.554346,
+    "lon": 33.954047
   },
   {
     "slug": "sky-beach-yalta",
@@ -1393,7 +1393,7 @@
   {
     "slug": "paniya-park",
     "name": "Пания Парк",
-    "city": "Севастополь",
+    "city": "Бахчисарайский район",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -1401,8 +1401,8 @@
     ],
     "description": "Пания Парк — этническое пространство с ярмарками, мастер-классами и площадками для культурных мероприятий.",
     "desc_baseline_count": 2,
-    "lat": null,
-    "lon": null
+    "lat": 44.554346,
+    "lon": 33.954047
   },
   {
     "slug": "7-dolin",
@@ -1471,22 +1471,22 @@
     ],
     "description": "Камерная площадка в Севастополе для вечеров живой музыки — например выступление вокалистки Татьяны Асланиди с гитаристом Александром Санчесом.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.597559,
+    "lon": 33.462673
   },
   {
     "slug": "nasledie",
     "name": "Наследие",
     "city": "Симферополь",
-    "address": "",
+    "address": "ул. Гурзуфская, 13",
     "event_count": 1,
     "aliases": [
       "Наследие"
     ],
     "description": "Площадка в Симферополе, где выступала группа The Hatters.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.941062,
+    "lon": 34.136094
   },
   {
     "slug": "pamyatnik-zatoplennym-korablyam",
@@ -1506,20 +1506,20 @@
     "slug": "egorovskiy-zal-vinzavoda-massandra",
     "name": "Егоровский зал винзавода Массандра",
     "city": "Ялта",
-    "address": "",
+    "address": "ул. Винодела Егорова, 9",
     "event_count": 1,
     "aliases": [
       "Егоровский зал винзавода Массандра"
     ],
     "description": "Винзавод «Массандра» — один из старейших и известнейших винных заводов Крыма с историческими подвалами.",
     "desc_baseline_count": 1,
-    "lat": null,
-    "lon": null
+    "lat": 44.51786,
+    "lon": 34.186504
   },
   {
     "slug": "yoga-hall-ashram",
     "name": "Yoga Hall Ashram",
-    "city": "Севастополь",
+    "city": "Симферополь",
     "address": "ул. Богдана Хмельницкого, 20",
     "event_count": 1,
     "aliases": [
@@ -1527,13 +1527,13 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.957712,
+    "lon": 34.105548
   },
   {
     "slug": "teplo-tvoya-territoriya",
     "name": "ТЕпЛО. Твоя территория",
-    "city": "Севастополь",
+    "city": "Ялта",
     "address": "ул. Поликуровская, 25",
     "event_count": 1,
     "aliases": [
@@ -1541,8 +1541,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.500733,
+    "lon": 34.180249
   },
   {
     "slug": "art-studiya-faza",
@@ -1555,8 +1555,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.601656,
+    "lon": 33.52077
   },
   {
     "slug": "dom-muzey-e-nagaevskoy-i-a-romma",
@@ -1569,8 +1569,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.745621,
+    "lon": 33.885885
   },
   {
     "slug": "na-prirode",
@@ -1617,7 +1617,7 @@
   {
     "slug": "krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn",
     "name": "Крымский республиканский клинический госпиталь для ветеранов войн",
-    "city": "Крым",
+    "city": "Симферополь",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -1625,8 +1625,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.968641,
+    "lon": 34.095938
   },
   {
     "slug": "terrasa-api-bistro",
@@ -1639,8 +1639,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.52909,
+    "lon": 33.637245
   },
   {
     "slug": "konnyy-klub-zolotaya-podkova",
@@ -1653,27 +1653,27 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.742973,
+    "lon": 34.400501
   },
   {
     "slug": "ekokemp-semena",
     "name": "экокемп Семена",
-    "city": "Севастополь",
-    "address": "",
+    "city": "Бахчисарайский район",
+    "address": "с. Поляна",
     "event_count": 1,
     "aliases": [
       "экокемп Семена"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.556199,
+    "lon": 33.887908
   },
   {
     "slug": "teleskop-zeiss-48-ul-nauchnaya-46-p-nauchnyy-bahchisarayskiy-r-n",
     "name": "Телескоп Zeiss-48, ул Научная, 46, п Научный, Бахчисарайский р-н",
-    "city": "Крым",
+    "city": "Научный",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -1681,8 +1681,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.726326,
+    "lon": 34.015381
   },
   {
     "slug": "afisha-kryma",
@@ -1737,8 +1737,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.853248,
+    "lon": 34.23078
   },
   {
     "slug": "dom-muzey-im-a-p-chehova",
@@ -1751,8 +1751,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.491162,
+    "lon": 34.141539
   },
   {
     "slug": "s-luchistoe",
@@ -1779,8 +1779,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.468143,
+    "lon": 33.776985
   },
   {
     "slug": "naberezhnaya-lenina-15",
@@ -1793,8 +1793,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.494701,
+    "lon": 34.166155
   },
   {
     "slug": "krysha-mira",
@@ -1835,8 +1835,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.539802,
+    "lon": 34.274541
   },
   {
     "slug": "tavrida",
@@ -1891,8 +1891,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.529136,
+    "lon": 33.63709
   },
   {
     "slug": "esenin-tsentr-moskovskogo-gosudarstvennogo-muzeya-s-a-esenina",
@@ -1912,15 +1912,15 @@
     "slug": "otkrytaya-ploschadka-pod-gril-barom-triton",
     "name": "Открытая площадка под гриль-баром «Тритон»",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Ефремова, 38",
     "event_count": 1,
     "aliases": [
       "Открытая площадка под гриль-баром «Тритон»"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.608194,
+    "lon": 33.48307
   },
   {
     "slug": "teatr-maska",
@@ -1947,8 +1947,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.584411,
+    "lon": 33.434823
   },
   {
     "slug": "muzykalnyy-teatr-respubliki-krym",
@@ -1961,36 +1961,36 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.948617,
+    "lon": 34.100806
   },
   {
     "slug": "klubnyy-plyazh-laspi",
     "name": "клубный пляж Ласпи",
-    "city": "Крым",
-    "address": "",
+    "city": "Севастополь",
+    "address": "Ласпи, 20А",
     "event_count": 1,
     "aliases": [
       "клубный пляж Ласпи"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.412599,
+    "lon": 33.715947
   },
   {
     "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
     "name": "Арт-кафе «Снежинка», Большая Морская, 19",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Большая Морская, 19",
     "event_count": 1,
     "aliases": [
       "Арт-кафе «Снежинка», Большая Морская, 19"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.606638,
+    "lon": 33.522078
   },
   {
     "slug": "s-dobroe",
@@ -2010,15 +2010,15 @@
     "slug": "art-prostranstvo-glubina",
     "name": "Арт-пространство 'Глубина'",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Большая Морская, 23",
     "event_count": 1,
     "aliases": [
       "Арт-пространство 'Глубина'"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.605759,
+    "lon": 33.522683
   },
   {
     "slug": "natsionalnyy-tsentr-rossiya",
@@ -2037,30 +2037,30 @@
   {
     "slug": "kerch-dk-korabel",
     "name": "Керчь, ДК 'Корабел'",
-    "city": "Крым",
-    "address": "",
+    "city": "Керчь",
+    "address": "ул. Орджоникидзе, 88",
     "event_count": 1,
     "aliases": [
       "Керчь, ДК 'Корабел'"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 45.300079,
+    "lon": 36.427175
   },
   {
     "slug": "vinodelnya-akchurina",
     "name": "Винодельня Акчурина",
     "city": "Севастополь",
-    "address": "",
+    "address": "с. Хмельницкое",
     "event_count": 1,
     "aliases": [
       "Винодельня Акчурина"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.550092,
+    "lon": 33.660846
   },
   {
     "slug": "nauchnyy-ul-nauchnaya-46",
@@ -2073,8 +2073,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.726326,
+    "lon": 34.015381
   },
   {
     "slug": "golf-pole-ali-bair",
@@ -2087,22 +2087,22 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.468143,
+    "lon": 33.776985
   },
   {
     "slug": "bar-pyatnitsa",
     "name": "бар «Пятница»",
     "city": "Ялта",
-    "address": "Пушкинская, 2А",
+    "address": "ул. Пушкинская, 2А",
     "event_count": 1,
     "aliases": [
       "бар «Пятница» (Пушкинская, 2А)"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.490072,
+    "lon": 34.159831
   },
   {
     "slug": "russkiy-dramaticheskiy-teatr",
@@ -2122,15 +2122,15 @@
     "slug": "galereya-iskusstv-mayya",
     "name": "Галерея искусств «Майя»",
     "city": "Ялта",
-    "address": "",
+    "address": "ул. Пушкинская, 9Б",
     "event_count": 1,
     "aliases": [
       "Галерея искусств «Майя»"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.490592,
+    "lon": 34.159768
   },
   {
     "slug": "dom-muzey-a-p-chehova",
@@ -2143,8 +2143,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.491162,
+    "lon": 34.141539
   },
   {
     "slug": "labirint-krasnolesya",
@@ -2157,22 +2157,22 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.853248,
+    "lon": 34.23078
   },
   {
     "slug": "restoran-barkas-na-parkovoy",
     "name": "Ресторан Баркас на Парковой",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Парковая, 3",
     "event_count": 1,
     "aliases": [
       "Ресторан Баркас на Парковой"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.609186,
+    "lon": 33.462226
   },
   {
     "slug": "kontsertnyy-zal-zvezdnyy",
@@ -2185,13 +2185,13 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 45.038711,
+    "lon": 35.381104
   },
   {
     "slug": "kz-yubileynyy",
     "name": "КЗ «Юбилейный»",
-    "city": "Крым",
+    "city": "Ялта",
     "address": "",
     "event_count": 1,
     "aliases": [
@@ -2199,36 +2199,36 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.492898,
+    "lon": 34.163783
   },
   {
     "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",
     "name": "Егоровский зал Центра виноделия «Массандра»",
     "city": "Ялта",
-    "address": "",
+    "address": "ул. Винодела Егорова, 9",
     "event_count": 1,
     "aliases": [
       "Егоровский зал Центра виноделия «Массандра»"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.51786,
+    "lon": 34.186504
   },
   {
     "slug": "tsentr-vinodeliya-massandra",
     "name": "центр виноделия Массандра",
-    "city": "Севастополь",
-    "address": "",
+    "city": "Ялта",
+    "address": "ул. Винодела Егорова, 9",
     "event_count": 1,
     "aliases": [
       "центр виноделия Массандра"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.51786,
+    "lon": 34.186504
   },
   {
     "slug": "yoga-holl-ashram",
@@ -2241,8 +2241,8 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.957712,
+    "lon": 34.105548
   },
   {
     "slug": "prostranstvo-teplo-tvoya-territoriya",
@@ -2255,36 +2255,36 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.500733,
+    "lon": 34.180249
   },
   {
     "slug": "kamelot",
     "name": "Камелот",
     "city": "Керчь",
-    "address": "",
+    "address": "ул. Свердлова, 7",
     "event_count": 1,
     "aliases": [
       "Камелот"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 45.347114,
+    "lon": 36.471387
   },
   {
     "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
     "name": "Бахчисарайский районный дом культуры",
     "city": "Бахчисарай",
-    "address": "",
+    "address": "ул. Симферопольская, 15",
     "event_count": 1,
     "aliases": [
       "Бахчисарайский районный дом культуры"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.755291,
+    "lon": 33.857871
   },
   {
     "slug": "galereya-im-ayvazovskogo",
@@ -2297,21 +2297,21 @@
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 45.032421,
+    "lon": 35.382656
   },
   {
     "slug": "resto-bar-u-chernogo-morya",
     "name": "Ресто-бар «У Чёрного моря»",
     "city": "Севастополь",
-    "address": "",
+    "address": "ул. Ленина, 8",
     "event_count": 1,
     "aliases": [
       "Ресто-бар «У Чёрного моря»"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "lat": 44.614484,
+    "lon": 33.525136
   }
 ]

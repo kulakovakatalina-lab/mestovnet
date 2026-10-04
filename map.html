@@ -413,7 +413,7 @@ footer {
 
 <div class="map-filters">
   <label class="switch-row">
-    <button class="switch" id="filter-switch" type="button" role="switch" aria-checked="true">
+    <button class="switch" id="filter-switch" type="button" role="switch" aria-checked="false">
       <span class="switch-thumb"></span>
     </button>
     <span class="switch-label">Только с концертами в афише</span>
@@ -499,7 +499,7 @@ function countUpcomingByVenue(events, settings, venueLookup) {
 let mapInstance = null;
 let clustererInstance = null;
 let allPlacemarkVenues = [];
-let onlyWithEvents = true; // по умолчанию скрываем площадки без предстоящих концертов
+let onlyWithEvents = false; // по умолчанию показываем все площадки с координатами
 
 function makePlacemark(v) {
   const url = `/venues/${v.slug}`;

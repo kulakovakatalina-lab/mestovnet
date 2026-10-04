@@ -1052,7 +1052,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">Массандровский пляж</h1>
-<div class="venue-address-block"><span class="venue-hero-address">сектор 7 «Ковёр», Ялта</span></div>
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">сектор 7 «Ковёр», Ялта</a></div>
 <p class="venue-description">Пляж в Ялте, где проходят фестивали под открытым небом — например трёхдневный пляжный фестиваль с DJ-сетами, танцевальными баттлами и живыми выступлениями (YSJ «Маяк», Spahova, Martin W., Happy Paul).</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
@@ -1067,14 +1067,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Массандровский пляж";
+  var addr = "сектор 7 «Ковёр», Ялта";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.497409,34.176962";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.497409, 34.176962],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.497409, 34.176962], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["Массандровский пляж, сектор 7 «Ковёр»", "Массандровский пляж"];

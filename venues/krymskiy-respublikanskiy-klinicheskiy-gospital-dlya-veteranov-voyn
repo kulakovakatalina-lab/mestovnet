@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Крымский республиканский клинический госпиталь для ветеранов войн — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Крымский республиканский клинический госпиталь для ветеранов войн, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <title>Крымский республиканский клинический госпиталь для ветеранов войн — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Крымский республиканский клинический госпиталь для ветеранов войн, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn">
-  <meta property="og:title" content="Крымский республиканский клинический госпиталь для ветеранов войн — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Крымский республиканский клинический госпиталь для ветеранов войн, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="Крымский республиканский клинический госпиталь для ветеранов войн — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Крымский республиканский клинический госпиталь для ветеранов войн, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
       "name": "Крымский республиканский клинический госпиталь для ветеранов войн",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Крым",
+        "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
     }
@@ -39,7 +39,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крым", "item": "https://mestov.net/cities/all.html"}, {"@type": "ListItem", "position": 3, "name": "Крымский республиканский клинический госпиталь для ветеранов войн"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Крымский республиканский клинический госпиталь для ветеранов войн"}]}
 </script>
   <style>
 
@@ -1048,7 +1048,7 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/all.html">Крым</a>
+      · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">Крымский республиканский клинический госпиталь для ветеранов войн</h1>
 
@@ -1066,14 +1066,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Крымский республиканский клинический госпиталь для ветеранов войн";
+  var addr = "Симферополь";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.968641,34.095938";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.968641, 34.095938],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.968641, 34.095938], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["Крымский республиканский клинический госпиталь для ветеранов войн", "Крымский республиканский клинический госпиталь для ветеранов войн"];

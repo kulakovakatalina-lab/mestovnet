@@ -1052,7 +1052,7 @@ footer {
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
     <h1 class="genre-hero-title">El Capulco 0.0</h1>
-<div class="venue-address-block"><span class="venue-hero-address">сектор 6, Ялта</span></div>
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">сектор 6, Ялта</a></div>
 <p class="venue-description">Летняя площадка в Ялте с программой вечеров: DJ-сеты, конкурсы и танцевальная музыка. Здесь выступали South DJ&#x27;s, Scream (виниловый сет), Pasha Rhino и Gretta.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
@@ -1067,14 +1067,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "El Capulco 0.0";
+  var addr = "сектор 6, Ялта";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~44.497569,34.17698";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [44.497569, 34.17698],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([44.497569, 34.17698], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["El Capulco 0.0", "El Capulco 0.0, сектор 6", "El Capulco 0.0"];

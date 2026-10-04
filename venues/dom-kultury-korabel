@@ -32,7 +32,8 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Керчь",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "streetAddress": "ул. Орджоникидзе, 88"
       }
     },
     {
@@ -1066,7 +1067,7 @@ footer {
       · <a href="/cities/kerch.html">Керчь</a>
     </div>
     <h1 class="genre-hero-title">Дом культуры «Корабел»</h1>
-
+<div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Орджоникидзе, 88, Керчь</a></div>
 
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
@@ -1081,14 +1082,44 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-
+<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(function() {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  var name = "Дом культуры «Корабел»";
+  var addr = "ул. Орджоникидзе, 88, Керчь";
+  var routeUrl = "https://yandex.ru/maps/?rtext=~45.300079,36.427175";
+  var el = document.getElementById('venue-map');
+  if (!el) return;
+  el.innerHTML = '';
+  var balloonContent = '<div class="balloon-card">'
+    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
+    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
+    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
+    + '</div>';
+  var map = new ymaps.Map(el, {
+    center: [45.300079, 36.427175],
+    zoom: 16,
+    controls: ['zoomControl'],
+  });
+  var placemark = new ymaps.Placemark([45.300079, 36.427175], {
+    hintContent: name,
+    balloonContent: balloonContent,
+  }, { preset: 'islands#blueDotIcon' });
+  map.geoObjects.add(placemark);
+});
+</script>
 
 <script>
 const VENUE_ALIASES = ["Дом культуры «Корабел»", "Дом культуры «Корабел»"];
