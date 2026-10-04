@@ -2273,6 +2273,20 @@
     "lon": null
   },
   {
+    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
+    "name": "Бахчисарайский районный дом культуры",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Бахчисарайский районный дом культуры"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2287,13 +2301,13 @@
     "lon": null
   },
   {
-    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
-    "name": "Бахчисарайский районный дом культуры",
-    "city": "Бахчисарай",
+    "slug": "resto-bar-u-chernogo-morya",
+    "name": "Ресто-бар «У Чёрного моря»",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Бахчисарайский районный дом культуры"
+      "Ресто-бар «У Чёрного моря»"
     ],
     "description": null,
     "desc_baseline_count": 0,

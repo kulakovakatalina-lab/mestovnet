@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Олег Никулин — концерты в Крыму, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Олег Никулин в Крыму (Крым). 0 ближайших событий.">
+  <title>Олег Никулин — концерты в Крыму, Крым, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Олег Никулин в Крыму (Крым, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/oleg-nikulin">
-  <meta property="og:title" content="Олег Никулин — концерты в Крыму, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Олег Никулин в Крыму (Крым). 0 ближайших событий.">
+  <meta property="og:title" content="Олег Никулин — концерты в Крыму, Крым, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Олег Никулин в Крыму (Крым, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Олег Никулин"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Олег Никулин",
+      "startDate": "2026-10-04T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Олег Никулин"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Музыкальная дуэль двух пианистов — Антона Калиниченко и Олега Никулина. Джаз, латино, поп и классика, неожиданные задания, импровизации и музыкальные раунды. А победителя определите вы — зрители. Специальный гость вечера — Елена Голофеева.",
+      "image": "/images/events/d3576830911a4c1f97692ffd9ef123c0.jpg"
     }
   ]
 }
@@ -1000,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Олег Никулин</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
