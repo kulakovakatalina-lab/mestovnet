@@ -136,6 +136,17 @@
     "fingerprint": "22a2781f67d225598910218a7f871bc7d508fea2b86caa05e24b4d3a6c613b1e"
   },
   {
+    "event_id": "9dd6645a",
+    "source_url": "https://vk.com/wall-233167471_1000",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-10-04T05:08:44.250Z",
+    "fingerprint": "3adf4456bb9b3a223a418dfe383340e2c4c285a054c112494024d3420dd2e23a"
+  },
+  {
     "event_id": "abdc967e",
     "source_url": "https://vk.com/wall-237501275_108",
     "reasons": [
