@@ -181,6 +181,25 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 }
 .balloon-more:hover { filter: brightness(1.08); }
 
+.cluster-venue-list {
+  width: min(320px, calc(100vw - 100px));
+  max-height: min(360px, 50vh);
+  overflow-y: auto;
+}
+.cluster-venue {
+  display: block;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.cluster-venue:last-child { border-bottom: none; }
+.cluster-venue:hover, .cluster-venue:focus-visible { background: oklch(58% 0.18 255 / 0.08); }
+.cluster-venue-name { display: block; font-weight: 700; color: var(--fg); }
+.cluster-venue-addr, .cluster-venue-count {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .map-filters {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -502,7 +521,7 @@ let allPlacemarkVenues = [];
 let onlyWithEvents = false; // по умолчанию показываем все площадки с координатами
 
 function makePlacemark(v) {
-  const url = `/venues/${v.slug}`;
+  const url = `/venues/${encodeURIComponent(v.slug)}`;
   const countText = v.upcomingCount
     ? `${v.upcomingCount} ${pluralRu(v.upcomingCount, 'концерт', 'концерта', 'концертов')} в афише`
     : 'нет концертов в афише';
@@ -513,10 +532,16 @@ function makePlacemark(v) {
       <div class="balloon-count">${countText}</div>
       <a class="balloon-more" href="${url}">Подробнее</a>
     </div>`;
+  const clusterItem = `
+    <a class="cluster-venue" href="${url}">
+      <span class="cluster-venue-name">${escapeHtml(v.name)}</span>
+      <span class="cluster-venue-addr">${escapeHtml(v.address || v.city || '')}</span>
+      <span class="cluster-venue-count">${countText}</span>
+    </a>`;
 
   return new ymaps.Placemark(
     [v.lat, v.lon],
-    { hintContent: v.name, balloonContent },
+    { hintContent: v.name, balloonContent, clusterItem },
     { preset: 'islands#blueDotIcon' }
   );
 }
@@ -556,9 +581,21 @@ function initMap(venues) {
     controls: ['zoomControl', 'geolocationControl'],
   });
 
+  const clusterListLayout = ymaps.templateLayoutFactory.createClass(
+    '<div class="cluster-venue-list">' +
+    '{% for geoObject in properties.geoObjects %}' +
+    '{{ geoObject.properties.clusterItem|raw }}' +
+    '{% endfor %}' +
+    '</div>'
+  );
+
   clustererInstance = new ymaps.Clusterer({
     preset: 'islands#invertedBlueClusterIcons',
     groupByCoordinates: false,
+    clusterBalloonContentLayout: clusterListLayout,
+    clusterBalloonPanelMaxMapArea: 0,
+    clusterBalloonMaxWidth: 360,
+    clusterBalloonMaxHeight: 400,
   });
   mapInstance.geoObjects.add(clustererInstance);
 
