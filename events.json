@@ -9541,28 +9541,6 @@
     "moderation_status": "archived"
   },
   {
-    "id": "bc595cf9",
-    "date": "2026-08-21",
-    "time": "18:00",
-    "artist": "MEGA ROCK FEST, CUPSIZE, KSB COVER SHOW by Slight Noise",
-    "event_type": "фестиваль",
-    "venue": "Крыша мира",
-    "price": "бесплатно",
-    "description": "Концерт с участием исполнителей: Динаминатор, Из крайности в крайность.",
-    "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1118",
-    "images": null,
-    "image": null,
-    "post_date": "2026-08-20T14:46:01+00:00",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "archived"
-  },
-  {
     "id": "130504f9",
     "date": "2026-08-30",
     "time": "19:00",
@@ -9776,7 +9754,7 @@
     "id": "e01efb60",
     "date": "2026-08-21",
     "time": "00:00",
-    "artist": "Крыша мира, Динаминатор, Из крайности в крайность, CUPSIZE, KSB COVER SHOW by Slight Noise, MEGA ROCK FEST",
+    "artist": "Крыша мира, Динаминатор, Из крайности в крайность, CUPSIZE, KSB COVER SHOW by Slight Noise",
     "event_type": "фестиваль",
     "venue": "Jam Club",
     "price": "бесплатно",
@@ -9973,9 +9951,9 @@
     "id": "de6c29c1",
     "date": "2026-08-22",
     "time": null,
-    "artist": "MEGA METAL FEST, ROCK, GRUNGE FEST",
+    "artist": "Outreal, Иччи, Минерва",
     "event_type": "фестиваль",
-    "venue": "Минерва",
+    "venue": "Jam Club",
     "price": "бесплатно",
     "description": "Концерт с участием исполнителей: Outreal, Иччи, Минерва.",
     "source_city": "Симферополь",
@@ -10137,29 +10115,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2026-08-28",
-    "time": "11:00–14:00",
-    "artist": "Айван",
-    "event_type": "вечеринка",
-    "venue": "Есенин-центр Московского государственного музея С.А. Есенина",
-    "price": null,
-    "description": "Кофе в приятной компании, танцы с утра, розыгрыш подарков и специальные предложения от музея и кафе.",
-    "image": null,
-    "images": null,
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-25T13:59:10+00:00",
-    "source_url": "https://t.me/tavrida_art/21878",
-    "id": "354b3113",
-    "genre": "другое",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "archived"
-  },
-  {
     "id": "ee4a0a06",
     "date": "2026-08-23",
     "time": null,
@@ -10277,31 +10232,6 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "archived"
-  },
-  {
-    "id": "30b74b3a",
-    "date": "2026-08-27",
-    "time": "18:00",
-    "artist": "группа «Т.М.И.К.»",
-    "event_type": "концерт",
-    "venue": "Театр «Маска», Комсомольский проспект, 28",
-    "price": null,
-    "description": "Финалисты проведут концерт группы «Т.М.И.К.», а зрители услышат, как звучит работа лучших молодых FOH-звукорежиссёров.",
-    "source_city": "Судак",
-    "source_channel": "tavrida_art",
-    "genre": "поп",
-    "source_url": "https://t.me/tavrida_art/21882",
-    "images": [
-      "/images/events/5fbae19ad7339413f283dbc7c24c4398.jpg"
-    ],
-    "image": "/images/events/5fbae19ad7339413f283dbc7c24c4398.jpg",
-    "post_date": "2026-08-26T14:13:37+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
     "moderation_status": "archived"
   },
   {
