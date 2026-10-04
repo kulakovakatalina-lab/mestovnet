@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 48,
+    "event_count": 49,
     "aliases": [
       "Jam Club"
     ],
@@ -295,6 +295,22 @@
     "lon": 33.525728
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 7,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "art-kovcheg",
     "name": "Арт-Ковчег",
     "city": "Бахчисарайский район, с. Путиловка",
@@ -388,22 +404,6 @@
     "desc_baseline_count": 4,
     "lat": 44.468143,
     "lon": 33.776985
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 7,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "gastrodvor",
@@ -1798,20 +1798,6 @@
     "lon": 34.166155
   },
   {
-    "slug": "krysha-mira",
-    "name": "Крыша мира",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Крыша мира"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "feodosiya",
     "name": "Феодосия",
     "city": "Крым",
@@ -1868,20 +1854,6 @@
     "lon": null
   },
   {
-    "slug": "minerva",
-    "name": "Минерва",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Минерва"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "api-balaklava",
     "name": "API Балаклава",
     "city": "Севастополь",
@@ -1896,20 +1868,6 @@
     "lon": 33.63709
   },
   {
-    "slug": "esenin-tsentr-moskovskogo-gosudarstvennogo-muzeya-s-a-esenina",
-    "name": "Есенин-центр Московского государственного музея С.А. Есенина",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Есенин-центр Московского государственного музея С.А. Есенина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "otkrytaya-ploschadka-pod-gril-barom-triton",
     "name": "Открытая площадка под гриль-баром «Тритон»",
     "city": "Севастополь",
@@ -1922,20 +1880,6 @@
     "desc_baseline_count": 0,
     "lat": 44.608194,
     "lon": 33.48307
-  },
-  {
-    "slug": "teatr-maska",
-    "name": "Театр «Маска»",
-    "city": "Судак",
-    "address": "Комсомольский проспект, 28",
-    "event_count": 1,
-    "aliases": [
-      "Театр «Маска», Комсомольский проспект, 28"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "dk-rybakov",

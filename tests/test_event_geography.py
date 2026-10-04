@@ -47,3 +47,35 @@ def test_new_pena_pub_announcement_is_excluded(published_events):
 def test_multi_city_post_does_not_override_explicit_crimean_stop():
     assert resolve_city({'city': 'Ялта'}, {'city': 'Крым'},
                         '📍 г. Новороссийск Пена Паб\n📍 г. Ялта Театр Чехова') == 'Ялта'
+
+
+@pytest.mark.parametrize('source_url', [
+    'https://t.me/tavrida_art/21878',
+    'https://t.me/tavrida_art/21882',
+])
+def test_moscow_announcements_are_excluded_by_exact_source(source_url):
+    event = {
+        'date': '2026-08-28',
+        'artist': 'Айван',
+        'venue': 'Jam Club',
+        'source_city': 'Судак',
+        'source_url': source_url,
+    }
+    assert validate_events([event])[1] == {'excluded_source': 1}
+    event['source_url'] = 'https://t.me/tavrida_art/99999'
+    assert validate_events([event])[0] == [event]
+
+
+@pytest.mark.parametrize('venue', [
+    'Есенин-центр Московского государственного музея С.А. Есенина',
+    'Театр «Маска», Комсомольский проспект, 28',
+])
+def test_moscow_venues_are_excluded_on_new_posts(venue):
+    event = {
+        'date': '2026-08-28',
+        'artist': 'Айван',
+        'venue': venue,
+        'source_city': 'Судак',
+        'source_url': 'https://t.me/tavrida_art/99999',
+    }
+    assert validate_events([event])[1] == {'excluded_venue': 1}
