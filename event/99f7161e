@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Ундервуд, Музыкальный театр Республики Крым, в Симферополе, 9 ноября, пн. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Ирина Депутович, Ресторан «У Чёрного моря», в Севастополе, 8 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ундервуд — Музыкальный театр Республики Крым, Симферополь, 9 ноября · Местов.Нет</title>
+<title>Ирина Депутович — Ресторан «У Чёрного моря», Севастополь, 8 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/e0fa138c">
-<meta property="og:title" content="Ундервуд — Музыкальный театр Республики Крым, Симферополь, 9 ноября · Местов.Нет">
-<meta property="og:description" content="Ундервуд, Музыкальный театр Республики Крым, в Симферополе, 9 ноября, пн. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/99f7161e">
+<meta property="og:title" content="Ирина Депутович — Ресторан «У Чёрного моря», Севастополь, 8 октября · Местов.Нет">
+<meta property="og:description" content="Ирина Депутович, Ресторан «У Чёрного моря», в Севастополе, 8 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/55543644108e86d5c79614726039781c.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Ундервуд",
-      "startDate": "2026-11-09T19:00:00+03:00",
+      "name": "Ирина Депутович",
+      "startDate": "2026-10-08T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Музыкальный театр Республики Крым",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушате\u0000лям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
+      "description": "Вечеринка «Привет из нулевых!» Живое исполнение любимых песен Ириной Депутович + КАРАОКЕ.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Ундервуд"
+        "name": "Ирина Депутович"
       },
-      "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
+      "image": "/images/events/55543644108e86d5c79614726039781c.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 1500 ₽",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ундервуд"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ирина Депутович"}]}
 </script>
 </head>
 <body>

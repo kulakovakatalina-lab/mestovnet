@@ -390,6 +390,21 @@
     "lon": 33.776985
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 6,
+    "aliases": [
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "gastrodvor",
     "name": "Гастродвор",
     "city": "Ялта",
@@ -635,21 +650,6 @@
     "desc_baseline_count": 2,
     "lat": 44.606507,
     "lon": 33.520673
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 3,
-    "aliases": [
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "krymskaya-astrofizicheskaya-observatoriya",
@@ -2287,6 +2287,20 @@
     "lon": 33.857871
   },
   {
+    "slug": "resto-bar-u-chernogo-morya",
+    "name": "Ресто-бар «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 1,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2301,17 +2315,17 @@
     "lon": 35.382656
   },
   {
-    "slug": "resto-bar-u-chernogo-morya",
-    "name": "Ресто-бар «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
+    "slug": "bolshoy-zal-moskovskoy-konservatorii",
+    "name": "Большой зал Московской консерватории",
+    "city": "Судак",
+    "address": "",
     "event_count": 1,
     "aliases": [
-      "Ресто-бар «У Чёрного моря»"
+      "Большой зал Московской консерватории"
     ],
     "description": null,
     "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
+    "lat": null,
+    "lon": null
   }
 ]

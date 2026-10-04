@@ -1908,6 +1908,45 @@
     "desc_baseline_count": 0
   },
   {
+    "slug": "lyubov-fateeva",
+    "name": "Любовь Фатеева",
+    "aliases": [
+      "Любовь Фатеева"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Севастополь",
+      "Афиша PayBerry",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "first_seen": "2026-09-30",
+    "last_seen": "2026-10-07",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "irina-deputovich",
+    "name": "Ирина Депутович",
+    "aliases": [
+      "Ирина Депутович"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Ресторан «У Чёрного моря»",
+      "Ресто-бар «У Чёрного моря»"
+    ],
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-12-31",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "nensi",
     "name": "Нэнси",
     "aliases": [
@@ -3118,12 +3157,12 @@
     ],
     "event_count": 2,
     "cities": [
-      "Крым",
-      "Феодосия"
+      "Феодосия",
+      "Крым"
     ],
     "venues": [
-      "Феодосия",
-      "Галерея им. Айвазовского"
+      "Галерея им. Айвазовского",
+      "Феодосия"
     ],
     "first_seen": "2026-08-22",
     "last_seen": "2026-10-18",
@@ -3516,25 +3555,6 @@
     ],
     "first_seen": "2026-09-12",
     "last_seen": "2026-09-13",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "lyubov-fateeva",
-    "name": "Любовь Фатеева",
-    "aliases": [
-      "Любовь Фатеева"
-    ],
-    "event_count": 2,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Севастополь",
-      "Афиша PayBerry"
-    ],
-    "first_seen": "2026-09-30",
-    "last_seen": "2026-09-30",
     "description": null,
     "desc_baseline_count": 0
   }

@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>В гостях у Айвазовского — концерты в Крыму, Феодосия, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов В гостях у Айвазовского в Крыму (Феодосия, Крым). 1 ближайших событий.">
-  <link rel="canonical" href="https://mestov.net/artist/v-gostyah-u-ayvazovskogo">
-  <meta property="og:title" content="В гостях у Айвазовского — концерты в Крыму, Феодосия, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов В гостях у Айвазовского в Крыму (Феодосия, Крым). 1 ближайших событий.">
+  <title>Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 3 ближайших событий.">
+  <link rel="canonical" href="https://mestov.net/artist/irina-deputovich">
+  <meta property="og:title" content="Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 3 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,73 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "В гостях у Айвазовского"
+      "name": "Ирина Депутович"
     },
     {
       "@type": "MusicEvent",
-      "name": "В гостях у Айвазовского",
-      "startDate": "2026-10-18T18:30:00+03:00",
+      "name": "Ирина Депутович",
+      "startDate": "2026-10-08T19:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
-        "name": "В гостях у Айвазовского"
+        "name": "Ирина Депутович"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Галерея им. Айвазовского",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Феодосия",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-      "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg"
+      "description": "Вечеринка «Привет из нулевых!» Живое исполнение любимых песен Ириной Депутович + КАРАОКЕ.",
+      "image": "/images/events/55543644108e86d5c79614726039781c.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Ирина Депутович",
+      "startDate": "2026-10-10T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Ирина Депутович"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "«РЕТРО-ВЕЧЕРИНКА» с Ириной Депутович Дискотека 80–90-х + КАРАОКЕ + розыгрыш коктейлей!",
+      "image": "/images/events/55543644108e86d5c79614726039781c.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Ирина Депутович",
+      "startDate": "2026-12-31",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Ирина Депутович"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресто-бар «У Чёрного моря»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Новогодняя ночь 2027: Музыка, Свет и Вкус! Выступление Ирины Депутович + DJ, лазерное шоу с дымом, танцевально-световое шоу и танцы до утра, новогодний квиз и лотерея призов.",
+      "image": "/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "В гостях у Айвазовского"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ирина Депутович"}]}
 </script>
   <style>
 
@@ -1018,9 +1058,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">В гостях у Айвазовского</h1>
+    <h1 class="genre-hero-title">Ирина Депутович</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Феодосия, Крым</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
@@ -1040,7 +1080,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["В гостях у Айвазовского", "В гостях у Айвазовского"];
+const ARTIST_ALIASES = ["Ирина Депутович", "Ирина Депутович"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
