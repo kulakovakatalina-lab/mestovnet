@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Крымский камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Крымский камерный оркестр «Новая Гармония» в Крыму (Крым, Симферополь). 0 ближайших событий.">
+  <title>Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/krymskiy-kamernyy-orkestr-novaya-garmoniya">
-  <meta property="og:title" content="Крымский камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр «Новая Гармония» в Крыму (Крым, Симферополь). 0 ближайших событий.">
+  <meta property="og:title" content="Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,13 +28,33 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Крымский камерный оркестр «Новая Гармония»"
+      "name": "Крымский камерный оркестр «Новая гармония»"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Крымский камерный оркестр «Новая гармония»",
+      "startDate": "2026-10-10T17:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Крымский камерный оркестр «Новая гармония»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Пещера «Мраморная»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Крымский камерный оркестр «Новая гармония» и дирижер Денис Карлов исполнят программу «Звуковой сплав 6», где классика переплетается с современными хитами.",
+      "image": "/images/events/4cccca024bf090527f4649b63b8ee0e0.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крымский камерный оркестр «Новая Гармония»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Крымский камерный оркестр «Новая гармония»"}]}
 </script>
   <style>
 
@@ -998,7 +1018,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Крымский камерный оркестр «Новая Гармония»</h1>
+    <h1 class="genre-hero-title">Крымский камерный оркестр «Новая гармония»</h1>
 
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Симферополь</span></div>
   </div>
@@ -1020,7 +1040,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Крымский камерный оркестр «Новая Гармония»", "Крымский камерный оркестр «Новая гармония»", "Крымский камерный оркестр «Новая Гармония»"];
+const ARTIST_ALIASES = ["Крымский камерный оркестр «Новая Гармония»", "Крымский камерный оркестр «Новая гармония»", "Крымский камерный оркестр «Новая гармония»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

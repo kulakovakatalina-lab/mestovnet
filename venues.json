@@ -140,7 +140,7 @@
     "name": "Мраморная пещера",
     "city": "Симферополь",
     "address": "",
-    "event_count": 13,
+    "event_count": 14,
     "aliases": [
       "Мраморная пещера",
       "Пещера «Мраморная»",
@@ -301,7 +301,6 @@
     "address": "ул. Ленина, 8",
     "event_count": 7,
     "aliases": [
-      "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»"
     ],
@@ -2204,20 +2203,6 @@
     "lon": 34.180249
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "ул. Свердлова, 7",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.347114,
-    "lon": 36.471387
-  },
-  {
     "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
     "name": "Бахчисарайский районный дом культуры",
     "city": "Бахчисарай",
@@ -2230,6 +2215,34 @@
     "desc_baseline_count": 0,
     "lat": 44.755291,
     "lon": 33.857871
+  },
+  {
+    "slug": "bolshoy-zal-moskovskoy-konservatorii",
+    "name": "Большой зал Московской консерватории",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Большой зал Московской консерватории"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "ул. Свердлова, 7",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.347114,
+    "lon": 36.471387
   },
   {
     "slug": "galereya-im-ayvazovskogo",
@@ -2246,17 +2259,17 @@
     "lon": 35.382656
   },
   {
-    "slug": "bolshoy-zal-moskovskoy-konservatorii",
-    "name": "Большой зал Московской консерватории",
-    "city": "Судак",
+    "slug": "dk-korabel-kerch",
+    "name": "ДК «Корабел»",
+    "city": "Керчь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Большой зал Московской консерватории"
+      "ДК «Корабел»"
     ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
+    "description": "За чуть больше года здесь прошло 12 концертов — это площадка для гастролей больших имён, а не камерных квартирников. Выступал SHAMAN, играл Владимир Ждамиров из «Бутырки», приезжали финалисты шоу «ВИА Суперстар» — группа «Лесоповал». Билеты в основном платные.",
+    "desc_baseline_count": 12,
+    "lat": 45.300091,
+    "lon": 36.427239
   }
 ]

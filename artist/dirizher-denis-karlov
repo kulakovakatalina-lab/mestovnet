@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>дирижер Денис Карлов — концерты в Крыму, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов дирижер Денис Карлов в Крыму (Крым). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов дирижер Денис Карлов в Крыму (Крым). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/dirizher-denis-karlov">
   <meta property="og:title" content="дирижер Денис Карлов — концерты в Крыму, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов дирижер Денис Карлов в Крыму (Крым). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов дирижер Денис Карлов в Крыму (Крым). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "дирижер Денис Карлов"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "дирижер Денис Карлов",
+      "startDate": "2026-10-10T17:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "дирижер Денис Карлов"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Пещера «Мраморная»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Крымский камерный оркестр «Новая гармония» и дирижер Денис Карлов исполнят программу «Звуковой сплав 6», где классика переплетается с современными хитами.",
+      "image": "/images/events/4cccca024bf090527f4649b63b8ee0e0.jpg"
     }
   ]
 }

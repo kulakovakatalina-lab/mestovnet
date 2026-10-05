@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Антон Калиниченко, Олег Никулин, Елена Голофеева",
-      "startDate": "2026-10-04T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»"
-      },
-      "description": "Музыкальная дуэль двух пианистов — Антона Калиниченко и Олега Никулина. Джаз, латино, поп и классика, неожиданные задания, импровизации и музыкальные раунды. А победителя определите вы — зрители. Специальный гость вечера — Елена Голофеева.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Антон Калиниченко, Олег Никулин, Елена Голофеева"
-      },
-      "image": "/images/events/d3576830911a4c1f97692ffd9ef123c0.jpg"
     }
   ]
 }

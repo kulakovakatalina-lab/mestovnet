@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Елена Голофеева — концерты в Крыму, Севастополь, Ялта, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Елена Голофеева в Крыму (Севастополь, Ялта, Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Елена Голофеева в Крыму (Севастополь, Ялта, Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/elena-golofeeva">
   <meta property="og:title" content="Елена Голофеева — концерты в Крыму, Севастополь, Ялта, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Елена Голофеева в Крыму (Севастополь, Ялта, Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Елена Голофеева в Крыму (Севастополь, Ялта, Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Елена Голофеева"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Елена Голофеева",
-      "startDate": "2026-10-04T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Елена Голофеева"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальная дуэль двух пианистов — Антона Калиниченко и Олега Никулина. Джаз, латино, поп и классика, неожиданные задания, импровизации и музыкальные раунды. А победителя определите вы — зрители. Специальный гость вечера — Елена Голофеева.",
-      "image": "/images/events/d3576830911a4c1f97692ffd9ef123c0.jpg"
     }
   ]
 }

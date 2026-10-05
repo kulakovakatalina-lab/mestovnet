@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ливадийский дворец — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/livadiyskiy-dvorets">
   <meta property="og:title" content="Ливадийский дворец — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,36 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Музыка, свечи",
-      "startDate": "2026-10-04T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ливадийский дворец"
-      },
-      "description": "Концерт «Музыка и свечи» – приглашение волонтёров для помощи в организации мероприятия.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Музыка, свечи"
-      },
-      "image": "/images/events/74ffd9d07e2fbe3e6c9469221b6c7e1f.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Классическая музыка",
-      "startDate": "2026-10-04T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ливадийский дворец"
-      },
-      "description": "Вечер классики с музыкой Боккерини, Штрауса, Гаде, Оффенбаха и других композиторов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Классическая музыка"
-      },
-      "image": "/images/events/b5175cb6e1d5a0abe1f889a3fb2c7a88.jpg"
     }
   ]
 }
