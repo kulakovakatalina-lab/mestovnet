@@ -251,6 +251,21 @@
     "lon": 34.098202
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 9,
+    "aliases": [
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "sevastopolskiy-tskii",
     "name": "Севастопольский ЦКиИ",
     "city": "Севастополь",
@@ -293,21 +308,6 @@
     "desc_baseline_count": 4,
     "lat": 44.614062,
     "lon": 33.525728
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 7,
-    "aliases": [
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "art-kovcheg",
@@ -1095,6 +1095,20 @@
     "desc_baseline_count": 0,
     "lat": 44.539802,
     "lon": 34.274541
+  },
+  {
+    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
+    "name": "Бахчисарайский районный дом культуры",
+    "city": "Бахчисарай",
+    "address": "ул. Симферопольская, 15",
+    "event_count": 2,
+    "aliases": [
+      "Бахчисарайский районный дом культуры"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.755291,
+    "lon": 33.857871
   },
   {
     "slug": "nebar",
@@ -2203,20 +2217,6 @@
     "lon": 34.180249
   },
   {
-    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
-    "name": "Бахчисарайский районный дом культуры",
-    "city": "Бахчисарай",
-    "address": "ул. Симферопольская, 15",
-    "event_count": 1,
-    "aliases": [
-      "Бахчисарайский районный дом культуры"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.755291,
-    "lon": 33.857871
-  },
-  {
     "slug": "bolshoy-zal-moskovskoy-konservatorii",
     "name": "Большой зал Московской консерватории",
     "city": "Судак",
@@ -2229,6 +2229,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "dk-korabel-kerch",
+    "name": "ДК «Корабел»",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "ДК «Корабел»"
+    ],
+    "description": "За чуть больше года здесь прошло 12 концертов — это площадка для гастролей больших имён, а не камерных квартирников. Выступал SHAMAN, играл Владимир Ждамиров из «Бутырки», приезжали финалисты шоу «ВИА Суперстар» — группа «Лесоповал». Билеты в основном платные.",
+    "desc_baseline_count": 12,
+    "lat": 45.300091,
+    "lon": 36.427239
   },
   {
     "slug": "kamelot",
@@ -2257,19 +2271,5 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
-  },
-  {
-    "slug": "dk-korabel-kerch",
-    "name": "ДК «Корабел»",
-    "city": "Керчь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "ДК «Корабел»"
-    ],
-    "description": "За чуть больше года здесь прошло 12 концертов — это площадка для гастролей больших имён, а не камерных квартирников. Выступал SHAMAN, играл Владимир Ждамиров из «Бутырки», приезжали финалисты шоу «ВИА Суперстар» — группа «Лесоповал». Билеты в основном платные.",
-    "desc_baseline_count": 12,
-    "lat": 45.300091,
-    "lon": 36.427239
   }
 ]
