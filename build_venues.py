@@ -136,6 +136,13 @@ MERGE_GROUPS = [
         "кафе van gogh, массандровский пляж",
     ]),
 ]
+
+# Старые названия, которые должны оставаться алиасами даже после удаления
+# последнего события с таким написанием. Они также сохраняют старые URL.
+PERSISTENT_ALIASES_BY_SLUG = {
+    "restoran-u-chernogo-morya": {"Ресто-бар «У Чёрного моря»"},
+}
+
 # Строки, которые не являются заведениями (фестивали/организаторы/каналы).
 # Им карточка не создаётся, события остаются без ссылки на заведение.
 EXCLUDE_KEYS = {
@@ -331,13 +338,14 @@ def main():
             city = city[0][0] if city else ""
         # адрес — первый найденный
         address = next((a for _, _, a in items if a), "")
-        # алиасы — все варианты исходной строки venue
-        aliases = sorted({(e.get("venue") or "").strip() for e, _, _ in items})
+        # алиасы — варианты из событий и проверенные исторические названия
+        aliases = {(e.get("venue") or "").strip() for e, _, _ in items}
 
         slug = slugify(name)
         if slug in slug_seen:  # разрулим коллизии слагов
             slug = f"{slug}-{slugify(city) or len(venues)}"
         slug_seen[slug] = True
+        aliases = sorted(aliases | PERSISTENT_ALIASES_BY_SLUG.get(slug, set()))
         city = VERIFIED_CITY_BY_SLUG.get(slug, city)
         address = VERIFIED_ADDRESS_BY_SLUG.get(slug, address)
 
