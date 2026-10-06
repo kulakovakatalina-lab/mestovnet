@@ -31,6 +31,18 @@
     "fingerprint": "2b984cc7ca1f95766c789ed19ecbb4f4bb18c341c4dddac1c85199eb2c250171"
   },
   {
+    "event_id": "2c0046e8",
+    "source_url": "https://vk.com/wall-89840945_120480",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-10-06T04:16:23.754Z",
+    "fingerprint": "157acd47fb1ba7cfaf2168f3cd2c29df1e6200cecb31f2039cdbca64e7d66152"
+  },
+  {
     "event_id": "360551b2",
     "source_url": "https://t.me/clubjam/1158",
     "reasons": [

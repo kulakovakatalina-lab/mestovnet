@@ -14689,12 +14689,20 @@
     "id": "2c0046e8",
     "artist_is_generic": false,
     "genre": "хип-хоп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "rejected",
+    "moderated_at": "2026-10-06T04:16:23.754Z",
+    "moderation_decision_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_decision_fingerprint": "157acd47fb1ba7cfaf2168f3cd2c29df1e6200cecb31f2039cdbca64e7d66152"
   },
   {
     "date": "2026-08-11",
