@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Максим Перов — Усадьба «Родное гнездо», Севастополь, 10 октября · Местов.Нет">
 <meta property="og:description" content="Максим Перов, Усадьба «Родное гнездо», в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/2714e340e29b87de4f52eb1e45e70194.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/2b85552bb5d5ef17e0ba927411d5c19c.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,15 +981,15 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Вечер живой музыки с фортепиано и трубой. Виноградники, закат и музыка специально для этого осеннего вечера.",
+      "description": "Вечер живой музыки с фортепиано и трубой. Виноградники, закат и музыка специально для этого осеннего вечера. Дети до 11 лет — бесплатно.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Максим Перов"
       },
-      "image": "/images/events/2714e340e29b87de4f52eb1e45e70194.jpg",
+      "image": "/images/events/2b85552bb5d5ef17e0ba927411d5c19c.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "1000 ₽, дети до 11 лет - бесплатно",
+        "name": "1000 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

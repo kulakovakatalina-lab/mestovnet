@@ -2336,6 +2336,29 @@ def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
                   f"{e.get('venue') or 'без площадки'} | {e.get('source_city') or ''}")
 
 
+def _apply_manual_event_overrides(events: list[dict], settings_path: str = "settings.json") -> None:
+    """Сохраняет ручные правки цены и постера при повторном сборе источников."""
+    try:
+        with open(settings_path, encoding="utf-8") as f:
+            settings = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return
+
+    prices = settings.get("prices") or {}
+    images = settings.get("images") or {}
+    descriptions = settings.get("descriptions") or {}
+    for event in events:
+        url = event.get("source_url") or ""
+        if url in prices:
+            event["price"] = prices[url]
+        if url in descriptions:
+            event["description"] = descriptions[url]
+        if url in images:
+            image = images[url]
+            event["image"] = image
+            event["images"] = [image] if image else None
+
+
 def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     global PERSIST_IMAGES
     previous_persist_images = PERSIST_IMAGES
@@ -2551,6 +2574,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     # Защита ставится после всех эвристик и проверки: ни дедупликация, ни
     # очистка артистов не могут переписать архивные карточки.
     merged = preserve_past_events(existing_before_cleanup, merged)
+    _apply_manual_event_overrides(merged)
     _print_validation_report(before_validation, len(merged), rejected)
     _print_source_report(source_stats, validation_candidates, merged)
 
@@ -2586,6 +2610,7 @@ if __name__ == "__main__":
             print(f"Дедупликация архива: {len(current)} → {len(deduplicated)} "
                   f"(убрано: {len(current) - len(deduplicated)})")
         valid, rejected = validate_events(deduplicated)
+        _apply_manual_event_overrides(valid)
         _print_validation_report(len(current), len(valid), rejected)
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(valid, f, ensure_ascii=False, indent=2)

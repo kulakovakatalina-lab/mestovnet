@@ -93,6 +93,27 @@ def _pages_to_check(sample_event, sample_venue, sample_city):
 
 
 class TestLayout:
+    def test_maksim_perov_has_paid_entry_and_one_large_poster(
+        self, live_server, browser, project_root,
+    ):
+        event_id = "3da32f59"
+        if not (project_root / "event" / event_id).is_file():
+            pytest.skip("Страница события отсутствует")
+
+        page = browser.new_page(viewport=VIEWPORTS["desktop"])
+        page.goto(f"{live_server}/event/{event_id}", wait_until="networkidle")
+        page.wait_for_selector("h1.event-info-artist", timeout=5000)
+        price = page.locator(".event-info-meta-value").all_inner_texts()
+        posters = page.locator(".event-poster-wrap img").evaluate_all(
+            "images => images.map(image => image.getAttribute('src'))"
+        )
+        carousel_count = page.locator("#posterCarousel").count()
+        page.close()
+
+        assert "1000 ₽" in price
+        assert posters == ["/images/events/2b85552bb5d5ef17e0ba927411d5c19c.jpg"]
+        assert carousel_count == 0
+
     def test_past_event_with_restored_date_shows_its_date(
         self, live_server, browser, events, project_root,
     ):

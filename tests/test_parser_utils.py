@@ -1,5 +1,7 @@
 """Тесты утилитарных функций parser.py: normalize, venue_match, artist_parts, detect_genre, detect_city."""
 
+import json
+
 import pytest
 import parser as parser_module
 
@@ -474,3 +476,27 @@ def test_multiple_events_share_single_source_image():
         {"image": "schedule.jpg", "images": None},
         {"image": "schedule.jpg", "images": None},
     ]
+
+
+def test_manual_event_overrides_replace_duplicate_album_and_price(tmp_path):
+    url = "https://t.me/usadbarodnoegnezdo/3679"
+    settings_path = tmp_path / "settings.json"
+    settings_path.write_text(json.dumps({
+        "prices": {url: "1000 ₽"},
+        "images": {url: "large.jpg"},
+        "descriptions": {url: "Дети до 11 лет — бесплатно."},
+    }), encoding="utf-8")
+    events = [{
+        "source_url": url,
+        "price": "1000 ₽, дети до 11 лет - бесплатно",
+        "image": "small.jpg",
+        "images": ["small.jpg", "large.jpg"],
+    }, {"source_url": "https://example.com/other", "image": "other.jpg"}]
+
+    parser_module._apply_manual_event_overrides(events, str(settings_path))
+
+    assert events[0]["price"] == "1000 ₽"
+    assert events[0]["description"] == "Дети до 11 лет — бесплатно."
+    assert events[0]["image"] == "large.jpg"
+    assert events[0]["images"] == ["large.jpg"]
+    assert events[1] == {"source_url": "https://example.com/other", "image": "other.jpg"}
