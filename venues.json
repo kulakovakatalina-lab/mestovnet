@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 49,
+    "event_count": 51,
     "aliases": [
       "Jam Club"
     ],
@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 26,
+    "event_count": 28,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -1070,6 +1070,20 @@
     "lon": 33.945335
   },
   {
+    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
+    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
+    "city": "Севастополь",
+    "address": "ул. Большая Морская, 19",
+    "event_count": 2,
+    "aliases": [
+      "Арт-кафе «Снежинка», Большая Морская, 19"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.606638,
+    "lon": 33.522078
+  },
+  {
     "slug": "dom-kultury-korabel",
     "name": "Дом культуры «Корабел»",
     "city": "Керчь",
@@ -1938,20 +1952,6 @@
     "lon": 33.715947
   },
   {
-    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
-    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
-    "city": "Севастополь",
-    "address": "ул. Большая Морская, 19",
-    "event_count": 1,
-    "aliases": [
-      "Арт-кафе «Снежинка», Большая Морская, 19"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.606638,
-    "lon": 33.522078
-  },
-  {
     "slug": "s-dobroe",
     "name": "с. Доброе",
     "city": "Крым",
@@ -2246,6 +2246,20 @@
     "lon": 36.427239
   },
   {
+    "slug": "novosibirsk",
+    "name": "Новосибирск",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Новосибирск"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "kamelot",
     "name": "Камелот",
     "city": "Керчь",
@@ -2272,19 +2286,5 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
-  },
-  {
-    "slug": "novosibirsk",
-    "name": "Новосибирск",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Новосибирск"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   }
 ]

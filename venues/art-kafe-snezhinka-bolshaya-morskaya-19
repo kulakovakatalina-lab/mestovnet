@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка», Большая Морская, 19 — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka-bolshaya-morskaya-19">
   <meta property="og:title" content="Арт-кафе «Снежинка», Большая Морская, 19 — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Большая Морская, 19"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Матвей Блюмин, фортепианное трио",
+      "startDate": "2026-10-11T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка», Большая Морская, 19"
+      },
+      "description": "Вечер великих шедевров классической музыки: Моцарт, Шуберт, Бетховен, Вивальди, Сарасате и другие композиторы. Скрипка, виолончель и фортепиано встретятся в разных составах — от дуэта до камерного квартета.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Матвей Блюмин, фортепианное трио"
+      },
+      "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
     }
   ]
 }

@@ -16,5 +16,39 @@
       "нет времени",
       "нет цены"
     ]
+  },
+  {
+    "id": "2973c149",
+    "date": "2026-10-06",
+    "time": null,
+    "artist": "Back 'n Storm (Краснодар) tribute AC/DC",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "трибьют",
+    "description": "Tribute by Back 'n Storm (Краснодар) к группе AC/DC. Вход бесплатный для подписчиков, бесплатное рок-караоке до утра.",
+    "image": "/images/events/27690532a9fc0d8aa0950e60d138d66d.jpg",
+    "source_url": "https://t.me/clubjam/1164",
+    "reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "9cfcc6ce",
+    "date": "2026-10-07",
+    "time": null,
+    "artist": "Get Back tribute The Beatles",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "трибьют",
+    "description": "Tribute by Get Back к группе The Beatles. Вход бесплатный для подписчиков, бесплатное рок-караоке до утра.",
+    "image": "/images/events/79d34fbb7f0f070e653d83f153874bb4.jpg",
+    "source_url": "https://t.me/clubjam/1165",
+    "reasons": [
+      "нет времени"
+    ]
   }
 ]

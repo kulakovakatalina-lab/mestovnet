@@ -981,7 +981,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Вечеринка «Привет из нулевых!» Живое исполнение любимых песен Ириной Депутович + КАРАОКЕ.",
+      "description": "живое исполнение любимых песен, караоке, скидка 20% на мангал.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Ирина Депутович"
@@ -989,7 +989,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/55543644108e86d5c79614726039781c.jpg",
       "offers": {
         "@type": "Offer",
-        "price": "0",
+        "name": "бесплатно со скидкой 20% на мангал",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

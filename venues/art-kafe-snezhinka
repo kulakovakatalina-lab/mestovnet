@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,36 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Андрей Гнатюк, Татьяна Сафронова",
+      "startDate": "2026-10-09T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Тёплый камерный вечер с Татьяной Сафроновой и Андреем Гнатюком. Нежный джаз, лёгкий лаунж и знакомые мелодии в мягком осеннем звучании — музыка для спокойного вечера и красивого настроения.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Андрей Гнатюк, Татьяна Сафронова"
+      },
+      "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Елена Голофеева, Андрей Рыбальченко",
+      "startDate": "2026-10-10T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Джаз, знакомые песни и любимые композиции, которые прозвучат по-новому. Перед концертом можно будет послушать джаз на виниле из коллекции Андрея Рыбальченко и поговорить о музыке и любимых записях. Затем — сам концерт, где фортепиано и голос ведут свой музыкальный диалог.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Елена Голофеева, Андрей Рыбальченко"
+      },
+      "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
     }
   ]
 }

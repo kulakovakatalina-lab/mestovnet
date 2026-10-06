@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа Jawa. Хиты группы «Сектор Газа», ДК «Корабел», в Керчи, 25 октября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Елена Голофеева, Андрей Рыбальченко, Арт-кафе «Снежинка», в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа Jawa. Хиты группы «Сектор Газа» — ДК «Корабел», Керчь, 25 октября · Местов.Нет</title>
+<title>Елена Голофеева, Андрей Рыбальченко — Арт-кафе «Снежинка», Севастополь, 10 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/3711acc2">
-<meta property="og:title" content="Группа Jawa. Хиты группы «Сектор Газа» — ДК «Корабел», Керчь, 25 октября · Местов.Нет">
-<meta property="og:description" content="Группа Jawa. Хиты группы «Сектор Газа», ДК «Корабел», в Керчи, 25 октября, вс. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/86c08e47">
+<meta property="og:title" content="Елена Голофеева, Андрей Рыбальченко — Арт-кафе «Снежинка», Севастополь, 10 октября · Местов.Нет">
+<meta property="og:description" content="Елена Голофеева, Андрей Рыбальченко, Арт-кафе «Снежинка», в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/ffed55efd727f5eb180d701f59750aef.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Группа Jawa. Хиты группы «Сектор Газа»",
-      "startDate": "2026-10-25T19:00:00+03:00",
+      "name": "Елена Голофеева, Андрей Рыбальченко",
+      "startDate": "2026-10-10T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "ДК «Корабел»",
+        "name": "Арт-кафе «Снежинка»",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Керчь",
+          "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "О концерте Владимир Лобанов и группа JAWA, проект непосредственного участника и легендарного гитариста \"золотого\" состава группы «Сектор газа» — Владимира Лобанова.\r\n\r\nВ большой концертной программе, при участии легендарной вокалистки Татьяны Фатеевой, прозвучат лучшие хиты проверенные временем.\r\n\r\nВладимир Лобанов и группа JAWA, вместе с Татьяной Фатеевой, исполняя песни «Сектор Газа» в концертном варианте, по воспоминаниям самого Владимира, помогают отойти от реальности и возвращают нас в эпоху девяност\u0000ых.\r\n\r\nКаждое выступление группы посвящается бессменному лидеру Юрию Клинских (Хой) и всем музыкантам, принимавшим участие в грандиозном проекте «Сектор газа».",
+      "description": "Джаз, знакомые песни и любимые композиции, которые прозвучат по-новому. Перед концертом можно будет послушать джаз на виниле из коллекции Андрея Рыбальченко и поговорить о музыке и любимых записях. Затем — сам концерт, где фортепиано и голос ведут свой музыкальный диалог.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Группа Jawa. Хиты группы «Сектор Газа»"
+        "name": "Елена Голофеева, Андрей Рыбальченко"
       },
-      "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
+      "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 2000 ₽",
+        "name": "500–700 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Керчь", "item": "https://mestov.net/cities/kerch.html"}, {"@type": "ListItem", "position": 3, "name": "Группа Jawa. Хиты группы «Сектор Газа»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Елена Голофеева, Андрей Рыбальченко"}]}
 </script>
 </head>
 <body>

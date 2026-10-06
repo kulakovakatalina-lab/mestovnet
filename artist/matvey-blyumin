@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Матвей Блюмин — концерты в Крыму, Севастополь, Крым, Научный · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/matvey-blyumin">
   <meta property="og:title" content="Матвей Блюмин — концерты в Крыму, Севастополь, Крым, Научный · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Матвей Блюмин"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Матвей Блюмин",
+      "startDate": "2026-10-11T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Матвей Блюмин"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка», Большая Морская, 19",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Вечер великих шедевров классической музыки: Моцарт, Шуберт, Бетховен, Вивальди, Сарасате и другие композиторы. Скрипка, виолончель и фортепиано встретятся в разных составах — от дуэта до камерного квартета.",
+      "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
     }
   ]
 }
