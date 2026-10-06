@@ -37,7 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "AC/DC tribute by Back 'n Storm",
+      "name": "AC/DC tribute by Back 'n Storm, Back 'n Storm (AC/DC tribute)",
       "startDate": "2026-10-09",
       "location": {
         "@type": "MusicVenue",
@@ -46,7 +46,7 @@
       "description": "Трибьют AC/DC от группы Back 'n Storm.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "AC/DC tribute by Back 'n Storm"
+        "name": "AC/DC tribute by Back 'n Storm, Back 'n Storm (AC/DC tribute)"
       },
       "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg"
     },
