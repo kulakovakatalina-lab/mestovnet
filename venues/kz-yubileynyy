@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>КЗ «Юбилейный» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kz-yubileynyy">
   <meta property="og:title" content="КЗ «Юбилейный» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова",
+      "startDate": "2026-10-20T15:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "КЗ «Юбилейный»"
+      },
+      "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность. На сцене – солисты и фортепиано.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова"
+      },
+      "image": "/images/events/a62cefe2adfb8be1c911a1816ea92138.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка», Большая Морская, 19 — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka-bolshaya-morskaya-19">
   <meta property="og:title" content="Арт-кафе «Снежинка», Большая Морская, 19 — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -50,6 +50,21 @@
         "name": "Матвей Блюмин, фортепианное трио"
       },
       "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Ольга Панкратова, Егор Криштопа",
+      "startDate": "2026-10-24T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка», Большая Морская, 19"
+      },
+      "description": "Иммерсивный концерт-рассказ «Над розовым морем» с участием заслуженной артистки России Ольги Панкратовой и пианиста Егора Криштопы. Прозвучат любимые песни начала XX века.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Ольга Панкратова, Егор Криштопа"
+      },
+      "image": "/images/events/74cd837bacf4c653c61bbb410292c87f.jpg"
     }
   ]
 }

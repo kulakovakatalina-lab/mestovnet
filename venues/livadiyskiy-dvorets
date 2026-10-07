@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ливадийский дворец — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/livadiyskiy-dvorets">
   <meta property="og:title" content="Ливадийский дворец — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ливадийский дворец, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Музыка и свечи",
+      "startDate": "2026-11-07T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ливадийский дворец"
+      },
+      "description": "Продолжаем цикл концертов «Музыка и свечи» и приглашаем на следующую встречу в Ливадийском дворце.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Музыка и свечи"
+      },
+      "image": "/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg"
     }
   ]
 }

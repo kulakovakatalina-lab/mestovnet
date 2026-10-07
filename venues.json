@@ -583,6 +583,20 @@
     "lon": 34.097093
   },
   {
+    "slug": "livadiyskiy-dvorets",
+    "name": "Ливадийский дворец",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Ливадийский дворец"
+    ],
+    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
+    "desc_baseline_count": 1,
+    "lat": 44.467678,
+    "lon": 34.143826
+  },
+  {
     "slug": "organnyy-zal-livadia",
     "name": "Органный зал 'Livadia'",
     "city": "Ялта",
@@ -728,20 +742,6 @@
     "lon": 33.460754
   },
   {
-    "slug": "livadiyskiy-dvorets",
-    "name": "Ливадийский дворец",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Ливадийский дворец"
-    ],
-    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
-    "desc_baseline_count": 1,
-    "lat": 44.467678,
-    "lon": 34.143826
-  },
-  {
     "slug": "kinoteatr-pobeda",
     "name": "Кинотеатр «Победа»",
     "city": "Севастополь",
@@ -825,6 +825,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
+    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
+    "city": "Севастополь",
+    "address": "ул. Большая Морская, 19",
+    "event_count": 3,
+    "aliases": [
+      "Арт-кафе «Снежинка», Большая Морская, 19"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.606638,
+    "lon": 33.522078
   },
   {
     "slug": "park-mayakovskogo",
@@ -1070,20 +1084,6 @@
     "lon": 33.945335
   },
   {
-    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
-    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
-    "city": "Севастополь",
-    "address": "ул. Большая Морская, 19",
-    "event_count": 2,
-    "aliases": [
-      "Арт-кафе «Снежинка», Большая Морская, 19"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.606638,
-    "lon": 33.522078
-  },
-  {
     "slug": "dom-kultury-korabel",
     "name": "Дом культуры «Корабел»",
     "city": "Керчь",
@@ -1096,6 +1096,20 @@
     "desc_baseline_count": 0,
     "lat": 45.300079,
     "lon": 36.427175
+  },
+  {
+    "slug": "kz-yubileynyy",
+    "name": "КЗ «Юбилейный»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "КЗ «Юбилейный»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.492898,
+    "lon": 34.163783
   },
   {
     "slug": "dom-muzey-a-s-pushkina-gurzuf",
@@ -2146,20 +2160,6 @@
     "desc_baseline_count": 0,
     "lat": 45.038711,
     "lon": 35.381104
-  },
-  {
-    "slug": "kz-yubileynyy",
-    "name": "КЗ «Юбилейный»",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "КЗ «Юбилейный»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.492898,
-    "lon": 34.163783
   },
   {
     "slug": "egorovskiy-zal-tsentra-vinodeliya-massandra",

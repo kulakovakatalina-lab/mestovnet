@@ -820,8 +820,8 @@
     ],
     "venues": [
       "Дворец «Дюльбер»",
-      "Лабиринт Краснолесья",
       "Арт-кафе «Снежинка»",
+      "Лабиринт Краснолесья",
       "на природе",
       "Гольф-поле"
     ],
@@ -3537,6 +3537,42 @@
     ],
     "first_seen": "2026-09-12",
     "last_seen": "2026-09-13",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "muzyka",
+    "name": "Музыка",
+    "aliases": [
+      "Музыка"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Ливадийский дворец"
+    ],
+    "first_seen": "2026-10-04",
+    "last_seen": "2026-11-07",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "svechi",
+    "name": "свечи",
+    "aliases": [
+      "свечи"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Ялта"
+    ],
+    "venues": [
+      "Ливадийский дворец"
+    ],
+    "first_seen": "2026-10-04",
+    "last_seen": "2026-11-07",
     "description": null,
     "desc_baseline_count": 0
   },

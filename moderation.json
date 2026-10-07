@@ -1,40 +1,5 @@
 [
   {
-    "id": "f75b8474",
-    "date": "2026-10-06",
-    "time": null,
-    "artist": "Лаунж-музыка",
-    "venue": "Ресторан «У Чёрного моря»",
-    "source_city": "Севастополь",
-    "price": null,
-    "genre": "лаунж",
-    "event_type": "другое",
-    "description": "Лаунж-музыка, семейные настольные игры, детский уголок.",
-    "image": "/images/events/55543644108e86d5c79614726039781c.jpg",
-    "source_url": "https://vk.com/wall-233167471_1012",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
-    "id": "2973c149",
-    "date": "2026-10-06",
-    "time": null,
-    "artist": "Back 'n Storm (Краснодар) tribute AC/DC",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "бесплатно",
-    "genre": "рок",
-    "event_type": "трибьют",
-    "description": "Tribute by Back 'n Storm (Краснодар) к группе AC/DC. Вход бесплатный для подписчиков, бесплатное рок-караоке до утра.",
-    "image": "/images/events/27690532a9fc0d8aa0950e60d138d66d.jpg",
-    "source_url": "https://t.me/clubjam/1164",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
     "id": "9cfcc6ce",
     "date": "2026-10-07",
     "time": null,
