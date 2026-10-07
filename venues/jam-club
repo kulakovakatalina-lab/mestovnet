@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Get Back",
+      "startDate": "2026-10-08",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "THE BEATLES TRIBUTE by Get Back. Вход бесплатный! Бесплатное рок-караоке до утра!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Get Back"
+      },
+      "image": "/images/events/1976e6104a991596d88e9d351e96b45e.jpg"
     },
     {
       "@type": "MusicEvent",

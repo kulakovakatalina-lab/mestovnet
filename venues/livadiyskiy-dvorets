@@ -37,7 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Музыка и свечи",
+      "name": "свечи, Музыка",
       "startDate": "2026-11-07T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -46,7 +46,7 @@
       "description": "Продолжаем цикл концертов «Музыка и свечи» и приглашаем на следующую встречу в Ливадийском дворце.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Музыка и свечи"
+        "name": "свечи, Музыка"
       },
       "image": "/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg"
     }
