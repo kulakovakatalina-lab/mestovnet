@@ -1610,7 +1610,7 @@
       "/images/events/787847adb95f9e487e04764282c930f5.jpg"
     ],
     "image": "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg",
-    "post_date": "2026-10-08T02:53:15.623253+00:00",
+    "post_date": "2026-10-08T09:31:54.539940+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10319,7 +10319,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-10-08T02:53:01.360987+00:00",
+    "post_date": "2026-10-08T09:31:41.104381+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10529,7 +10529,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-10-08T02:53:01.361003+00:00",
+    "post_date": "2026-10-08T09:31:41.104409+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -11904,7 +11904,7 @@
       "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg"
     ],
     "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
-    "post_date": "2026-10-08T02:53:01.361049+00:00",
+    "post_date": "2026-10-08T09:31:41.104491+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -13743,7 +13743,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-08T02:53:01.360875+00:00",
+    "post_date": "2026-10-08T09:31:41.104196+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -13765,7 +13765,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-08T02:53:01.360948+00:00",
+    "post_date": "2026-10-08T09:31:41.104312+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14677,64 +14677,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "42567d5d",
-    "date": "2026-10-18",
-    "time": "19:00",
-    "artist": "Джокер",
-    "event_type": "концерт",
-    "venue": "Камелот",
-    "price": "от 700 ₽",
-    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жи\u0000ть, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
-    "source_city": "Керчь",
-    "source_channel": "afisha_ru",
-    "genre": "рок",
-    "source_url": "https://www.afisha.ru/concert/dzhoker-6048497/",
-    "images": [
-      "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg"
-    ],
-    "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
-    "post_date": "2026-10-08T02:53:01.361078+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "source_last_checked_at": "2026-10-07T09:18:07.459045+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "e2ee70f0",
-    "date": "2026-10-24",
-    "time": "19:00",
-    "artist": "Ольга Панкратова, Егор Криштопа",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка», Большая Морская, 19",
-    "price": "1500–3500 рублей",
-    "description": "Иммерсивный концерт-рассказ «Над розовым морем» с участием заслуженной артистки России Ольги Панкратовой и пианиста Егора Криштопы. Прозвучат любимые песни начала XX века.",
-    "source_city": "Севастополь",
-    "source_channel": "dlyadushi_crimea",
-    "genre": "панк-рок",
-    "source_url": "https://t.me/dlyadushi_Crimea/6616",
-    "images": [
-      "/images/events/6fea846c8c0bccde831ea69c2faf922a.jpg",
-      "/images/events/0d0d587376fe4d813c1258bafd80df03.jpg",
-      "/images/events/e4ab1b2e288aa9a68945722484d73921.jpg"
-    ],
-    "image": "/images/events/6fea846c8c0bccde831ea69c2faf922a.jpg",
-    "post_date": "2026-10-06T15:40:32+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "id": "3da32f59",
     "date": "2026-10-10",
     "time": "16:00",
@@ -14765,135 +14707,7 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-20",
-    "time": "15:00",
-    "artist": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова",
-    "event_type": "концерт",
-    "venue": "КЗ «Юбилейный»",
-    "price": null,
-    "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность.",
-    "image": "/images/events/ae8a5eeac134857b167200f45427eee6.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-10-06T12:15:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2334",
-    "id": "24a0725e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-29",
-    "time": "19:00",
-    "artist": "Музыка Киношедевров в сиянии тысячи свечей",
-    "venue": "ДК профсоюзов",
-    "event_type": "концерт",
-    "price": "от 1590 ₽",
-    "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-08T02:53:01.360970+00:00",
-    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
-    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
-    "genre": "классика",
-    "id": "641834f5",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-04",
-    "time": "19:00",
-    "artist": "Йорш",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1600 ₽",
-    "description": "ЙОРШ отмечает 20-летие большим туром: прозвучат хиты, редкие треки и песни из нового альбома.",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-08T02:53:01.361018+00:00",
-    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
-    "genre": "рок",
-    "id": "4993369e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом культуры «Корабел»",
-    "event_type": "концерт",
-    "price": "2000 - 3500",
-    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-10-08T02:53:16.458408+00:00",
-    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
-    "id": "7ee9b24f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-18",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "2000 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-10-08T02:53:16.458440+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "71ede2ea",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-08T02:53:19.199987+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
+    "id": "e7322c1c",
     "date": "2026-10-10",
     "time": "16:30",
     "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
@@ -14901,14 +14715,14 @@
     "venue": "Органный зал 'Livadia'",
     "price": "500 рублей",
     "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
-    "image": null,
-    "images": null,
-    "source_channel": "dlyadushi_Crimea",
     "source_city": "Ялта",
-    "post_date": "2026-10-07T20:45:48+00:00",
-    "source_url": "https://t.me/dlyadushi_Crimea/6617",
-    "id": "e7322c1c",
+    "source_channel": "dlyadushi_Crimea",
     "genre": "классика",
+    "source_url": "https://t.me/dlyadushi_Crimea/6617",
+    "images": null,
+    "image": null,
+    "post_date": "2026-10-07T20:45:48+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -14975,10 +14789,66 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6617",
     "id": "d9059074",
     "genre": "классика",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ]
+  },
+  {
+    "id": "5f0793f3",
+    "date": "2026-10-24",
+    "time": "16:00",
+    "artist": "Чехов в музыке",
+    "event_type": "концерт",
+    "venue": "Дом-музей А. П. Чехова",
+    "price": null,
+    "description": "Гала-концерт цикла «Чехов в музыке». Четыре произведения, четыре истории и четыре разных грани чеховского мира встретятся в одной программе.",
+    "source_city": "Ялта",
+    "source_channel": "koncertykrym",
+    "genre": "классика",
+    "source_url": "https://t.me/koncertykrym/2338",
+    "images": [
+      "/images/events/2b62044a9b8e2f782dad57cdd09975ef.jpg"
+    ],
+    "image": "/images/events/2b62044a9b8e2f782dad57cdd09975ef.jpg",
+    "post_date": "2026-10-07T13:30:01+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
-      "нет постера"
+      "нет цены"
     ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "e2ee70f0",
+    "date": "2026-10-24",
+    "time": "19:00",
+    "artist": "Ольга Панкратова, Егор Криштопа",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка», Большая Морская, 19",
+    "price": "1500–3500 рублей",
+    "description": "Иммерсивный концерт-рассказ «Над розовым морем» с участием заслуженной артистки России Ольги Панкратовой и пианиста Егора Криштопы. Прозвучат любимые песни начала XX века. Это спектакль без сцены, кино без экрана, концерт без границ.",
+    "source_city": "Севастополь",
+    "source_channel": "dlyadushi_crimea",
+    "genre": "панк-рок",
+    "source_url": "https://t.me/dlyadushi_Crimea/6616",
+    "images": [
+      "/images/events/6fea846c8c0bccde831ea69c2faf922a.jpg",
+      "/images/events/0d0d587376fe4d813c1258bafd80df03.jpg",
+      "/images/events/e4ab1b2e288aa9a68945722484d73921.jpg"
+    ],
+    "image": "/images/events/6fea846c8c0bccde831ea69c2faf922a.jpg",
+    "post_date": "2026-10-06T15:40:32+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
@@ -14988,7 +14858,7 @@
     "event_type": "концерт",
     "venue": "ресторан «Чайка на Пляже»",
     "price": null,
-    "description": "Концерт участников группы ADRENALIN HOUSE Сони Сафаровой и Никиты Шульгина.",
+    "description": "Концерт участников группы ADRENALIN HOUSE в рамках празднования дня рождения 'Чайка дети'.",
     "image": "/images/events/66d296531ee1655b38816ccde048ec49.jpg",
     "images": null,
     "source_channel": "afisha_crimea",
@@ -14996,6 +14866,14 @@
     "post_date": "2026-10-07T17:02:28+00:00",
     "source_url": "https://t.me/afisha_crimea/8766",
     "id": "1044d06f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [
@@ -15018,6 +14896,12 @@
     "post_date": "2026-10-07T14:08:32+00:00",
     "source_url": "https://t.me/sevastopol_jazz/1322",
     "id": "8e43df2b",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [
@@ -15026,21 +14910,28 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-24",
-    "time": "16:00",
-    "artist": "Чехов в музыке",
+    "date": "2026-10-20",
+    "time": "15:00",
+    "artist": "Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова",
     "event_type": "концерт",
-    "venue": "Дом-музей А. П. Чехова",
+    "venue": "КЗ «Юбилейный»",
     "price": null,
-    "description": "Гала-концерт цикла «Чехов в музыке». Четыре произведения, четыре истории и четыре разных грани чеховского мира встретятся в одной программе.",
-    "image": "/images/events/2b62044a9b8e2f782dad57cdd09975ef.jpg",
+    "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность. В этот вечер поговорим о чувствах на языке Чайковского, Рахманинова и других великих русских композиторов, чьи произведения находят отклик в сердце каждого.",
+    "image": "/images/events/ae8a5eeac134857b167200f45427eee6.jpg",
     "images": null,
     "source_channel": "koncertykrym",
     "source_city": "Ялта",
-    "post_date": "2026-10-07T13:30:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2338",
-    "id": "5f0793f3",
-    "artist_is_generic": false,
+    "post_date": "2026-10-06T12:15:01+00:00",
+    "source_url": "https://t.me/koncertykrym/2334",
+    "id": "24a0725e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
     "genre": "классика",
     "needs_review": false,
     "review_reasons": [
@@ -15066,11 +14957,92 @@
     "post_date": "2026-10-07T15:28:05+00:00",
     "source_url": "https://t.me/concert_crimea/867",
     "id": "ab5d19a0",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
     ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-29",
+    "time": "19:00",
+    "artist": "Музыка Киношедевров в сиянии тысячи свечей",
+    "venue": "ДК профсоюзов",
+    "event_type": "концерт",
+    "price": "от 1590 ₽",
+    "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-08T09:31:41.104349+00:00",
+    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
+    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
+    "genre": "классика",
+    "id": "641834f5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "19:00",
+    "artist": "Йорш",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1600 ₽",
+    "description": "ЙОРШ отмечает 20-летие большим туром: прозвучат хиты, редкие треки и песни из нового альбома.",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-08T09:31:41.104436+00:00",
+    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
+    "genre": "рок",
+    "id": "4993369e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "19:00",
+    "artist": "Джокер",
+    "venue": "Камелот",
+    "event_type": "концерт",
+    "price": "от 700 ₽",
+    "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 18 октября (вск) - Керчь, Камелот\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Керчь: ул. Свердлова, 7",
+    "source_channel": "afisha_ru",
+    "source_city": "Керчь",
+    "post_date": "2026-10-08T09:31:41.104543+00:00",
+    "image": "/images/events/8e3e93b6f5fe301c09046d0bd90408e8.jpg",
+    "source_url": "https://www.afisha.ru/concert/dzhoker-6048497/",
+    "genre": "рок",
+    "id": "42567d5d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
@@ -15083,13 +15055,155 @@
     "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
     "source_channel": "afisha_goroda",
     "source_city": "Ялта",
-    "post_date": "2026-10-08T02:53:15.623323+00:00",
+    "post_date": "2026-10-08T09:31:54.540061+00:00",
     "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
     "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
     "id": "1b488e3a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом культуры «Корабел»",
+    "event_type": "концерт",
+    "price": "2000 - 3500",
+    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-10-08T09:31:54.540096+00:00",
+    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
+    "id": "7ee9b24f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "2000 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-08T09:31:54.540163+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "71ede2ea",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-08T09:31:58.567515+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-10",
+    "time": "18:00",
+    "artist": "Дэнза, Дмитрий Швабенланд, Александр Черноусов, Дмитрий Смирнов",
+    "event_type": "концерт",
+    "venue": "Арт-Ковчег, Бахчисарайский район, с. Путиловка",
+    "price": "бесплатно",
+    "description": "Концерт с участием Дэнзы, Дмитрия Швабенланда, Александра Черноусова и Дмитрия Смирнова.",
+    "image": "/images/events/761f4eb53949974ddc39a3938a5eb20a.jpg",
+    "images": null,
+    "source_channel": "belbekma",
+    "source_city": "Бахчисарай",
+    "post_date": "2026-10-07T06:45:00+00:00",
+    "source_url": "https://t.me/belbekma/1361",
+    "id": "1f4d2681",
     "genre": "поп",
     "needs_review": false,
     "review_reasons": []
+  },
+  {
+    "date": "2026-10-15",
+    "time": "16:30",
+    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
+    "event_type": "концерт",
+    "venue": "Органный зал 'Livadia'",
+    "price": "500 рублей",
+    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+    "image": null,
+    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-10-07T20:45:48+00:00",
+    "source_url": "https://t.me/dlyadushi_Crimea/6617",
+    "id": "d9059074",
+    "genre": "классика",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера",
+      "дубли мета-тегов: совпадают title и description"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "time": "17:00",
+    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
+    "event_type": "концерт",
+    "venue": "Органный зал 'Livadia'",
+    "price": "500 рублей",
+    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+    "image": null,
+    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-10-07T20:45:48+00:00",
+    "source_url": "https://t.me/dlyadushi_Crimea/6617",
+    "id": "26ee0456",
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "14:30",
+    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
+    "event_type": "концерт",
+    "venue": "Органный зал 'Livadia'",
+    "price": "500 рублей",
+    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
+    "image": null,
+    "images": null,
+    "source_channel": "dlyadushi_Crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-10-07T20:45:48+00:00",
+    "source_url": "https://t.me/dlyadushi_Crimea/6617",
+    "id": "b020a86b",
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-11",

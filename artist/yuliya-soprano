@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Юлия (сопрано) — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Юлия (сопрано) в Крыму (Ялта). 4 ближайших событий.">
+  <meta name="description" content="Расписание концертов Юлия (сопрано) в Крыму (Ялта). 5 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/yuliya-soprano">
   <meta property="og:title" content="Юлия (сопрано) — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Юлия (сопрано) в Крыму (Ялта). 4 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Юлия (сопрано) в Крыму (Ялта). 5 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -90,7 +90,26 @@
     {
       "@type": "MusicEvent",
       "name": "Юлия (сопрано)",
-      "startDate": "2026-10-15T14:30:00+03:00",
+      "startDate": "2026-10-17T17:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Юлия (сопрано)"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Органный зал 'Livadia'",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя."
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Юлия (сопрано)",
+      "startDate": "2026-10-18T14:30:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Юлия (сопрано)"

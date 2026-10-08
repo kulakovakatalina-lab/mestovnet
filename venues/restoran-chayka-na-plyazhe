@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "ресторан «Чайка на Пляже»"
       },
-      "description": "Концерт участников группы ADRENALIN HOUSE Сони Сафаровой и Никиты Шульгина.",
+      "description": "Концерт участников группы ADRENALIN HOUSE в рамках празднования дня рождения 'Чайка дети'.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Соня Сафарова, Никита Шульгин (ADRENALIN HOUSE)"

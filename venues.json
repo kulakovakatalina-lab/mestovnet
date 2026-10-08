@@ -203,6 +203,20 @@
     "lon": 36.427239
   },
   {
+    "slug": "organnyy-zal-livadia",
+    "name": "Органный зал 'Livadia'",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 11,
+    "aliases": [
+      "Органный зал 'Livadia'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.475488,
+    "lon": 34.143145
+  },
+  {
     "slug": "dvorets-kultury-profsoyuzov",
     "name": "Дворец культуры профсоюзов",
     "city": "Симферополь",
@@ -296,18 +310,22 @@
     "lon": 34.09338
   },
   {
-    "slug": "organnyy-zal-livadia",
-    "name": "Органный зал 'Livadia'",
-    "city": "Ялта",
+    "slug": "art-kovcheg",
+    "name": "Арт-Ковчег",
+    "city": "Бахчисарайский район, с. Путиловка",
     "address": "",
     "event_count": 8,
     "aliases": [
-      "Органный зал 'Livadia'"
+      "Арт-Ковчег",
+      "Арт-Ковчег, Бахчисарайский район, с. Путиловка",
+      "Арт-Ковчег, с. Путиловка",
+      "Арт-Ковчег, с. Путиловка, Бахчисарайский район",
+      "Арт-ковчег"
     ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.475488,
-    "lon": 34.143145
+    "description": "За последний месяц здесь сыграли 7 концертов, часть — с бесплатным входом. Небольшая площадка с постоянными резидентами: Андрей Танзю и Карина Клавихо выступали здесь по три раза, заходил и Александр Васильев. Жанрово — микс хип-хопа и этники.",
+    "desc_baseline_count": 7,
+    "lat": 44.5635288,
+    "lon": 33.8904656
   },
   {
     "slug": "vinzavod-massandra",
@@ -340,24 +358,6 @@
     "desc_baseline_count": 4,
     "lat": 44.614062,
     "lon": 33.525728
-  },
-  {
-    "slug": "art-kovcheg",
-    "name": "Арт-Ковчег",
-    "city": "Бахчисарайский район, с. Путиловка",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Арт-Ковчег",
-      "Арт-Ковчег, Бахчисарайский район, с. Путиловка",
-      "Арт-Ковчег, с. Путиловка",
-      "Арт-Ковчег, с. Путиловка, Бахчисарайский район",
-      "Арт-ковчег"
-    ],
-    "description": "За последний месяц здесь сыграли 7 концертов, часть — с бесплатным входом. Небольшая площадка с постоянными резидентами: Андрей Танзю и Карина Клавихо выступали здесь по три раза, заходил и Александр Васильев. Жанрово — микс хип-хопа и этники.",
-    "desc_baseline_count": 7,
-    "lat": 44.5635288,
-    "lon": 33.8904656
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -2247,34 +2247,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "ул. Свердлова, 7",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.347114,
-    "lon": 36.471387
-  },
-  {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.032421,
-    "lon": 35.382656
-  },
-  {
     "slug": "restoran-chayka-na-plyazhe",
     "name": "ресторан «Чайка на Пляже»",
     "city": "Ялта",
@@ -2301,5 +2273,33 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "ул. Свердлова, 7",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.347114,
+    "lon": 36.471387
+  },
+  {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.032421,
+    "lon": 35.382656
   }
 ]

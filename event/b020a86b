@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова, КЗ «Юбилейный», в Ялте, 20 октября, вт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Юлия (сопрано), Антон Хромченко (скрипка), Органный зал &#x27;Livadia&#x27;, в Ялте, 18 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова — КЗ «Юбилейный», Ялта, 20 октября · Местов.Нет</title>
+<title>Юлия (сопрано), Антон Хромченко (скрипка) — Органный зал &#x27;Livadia&#x27;, Ялта, 18 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,40 +959,44 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/24a0725e">
-<meta property="og:title" content="Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова — КЗ «Юбилейный», Ялта, 20 октября · Местов.Нет">
-<meta property="og:description" content="Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова, КЗ «Юбилейный», в Ялте, 20 октября, вт. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/b020a86b">
+<meta property="og:title" content="Юлия (сопрано), Антон Хромченко (скрипка) — Органный зал &#x27;Livadia&#x27;, Ялта, 18 октября · Местов.Нет">
+<meta property="og:description" content="Юлия (сопрано), Антон Хромченко (скрипка), Органный зал &#x27;Livadia&#x27;, в Ялте, 18 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/ae8a5eeac134857b167200f45427eee6.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова",
-      "startDate": "2026-10-20T15:00:00+03:00",
+      "name": "Юлия (сопрано), Антон Хромченко (скрипка)",
+      "startDate": "2026-10-18T14:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "КЗ «Юбилейный»",
+        "name": "Органный зал 'Livadia'",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность. В этот вечер поговорим о чувствах на языке Чайковского, Рахманинова и других великих русских композиторов, чьи произведения находят отклик в сердце каждого.",
+      "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова"
+        "name": "Юлия (сопрано), Антон Хромченко (скрипка)"
       },
-      "image": "/images/events/ae8a5eeac134857b167200f45427eee6.jpg"
+      "offers": {
+        "@type": "Offer",
+        "name": "500 рублей",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Д. Храмова, солисты А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, фортепиано: А. Темирбулатова"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Юлия (сопрано), Антон Хромченко (скрипка)"}]}
 </script>
 </head>
 <body>
