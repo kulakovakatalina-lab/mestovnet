@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова — КЗ «Юбилейный», Ялта, 20 октября · Местов.Нет">
 <meta property="og:description" content="А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова, КЗ «Юбилейный», в Ялте, 20 октября, вт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/a62cefe2adfb8be1c911a1816ea92138.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/ae8a5eeac134857b167200f45427eee6.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность. На сцене – солисты и фортепиано.",
+      "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность.",
       "performer": {
         "@type": "MusicGroup",
         "name": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова"
       },
-      "image": "/images/events/a62cefe2adfb8be1c911a1816ea92138.jpg"
+      "image": "/images/events/ae8a5eeac134857b167200f45427eee6.jpg"
     }
   ]
 }

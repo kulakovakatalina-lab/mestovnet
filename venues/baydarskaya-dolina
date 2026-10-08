@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Байдарская долина — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/baydarskaya-dolina">
   <meta property="og:title" content="Байдарская долина — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анастасия Грас",
+      "startDate": "2026-10-10T14:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Байдарская долина"
+      },
+      "description": "Концерт в осеннем буковом лесу в Байдарской долине. Песни и музыка в исполнении Анастасии Грас.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анастасия Грас"
+      },
+      "image": "/images/events/430a5cd1f33cbbe9711843bcd82a40d3.jpg"
     }
   ]
 }

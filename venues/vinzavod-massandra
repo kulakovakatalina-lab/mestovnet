@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Винзавод Массандра — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/vinzavod-massandra">
   <meta property="og:title" content="Винзавод Массандра — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Винодела Егорова, 9"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Концерт «Музыкальные истины»",
+      "startDate": "2026-11-07T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Винзавод Массандра"
+      },
+      "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Концерт «Музыкальные истины»"
+      },
+      "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg"
     }
   ]
 }
@@ -1107,7 +1122,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Винзавод Массандра", "Массандра", "Севастополь Джаз", "Винзавод Массандра"];
+const VENUE_ALIASES = ["Винзавод «Массандра»", "Винзавод Массандра", "Массандра", "Севастополь Джаз", "Винзавод Массандра"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

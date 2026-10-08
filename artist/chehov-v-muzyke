@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Чехов в музыке — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Чехов в музыке в Крыму (Ялта). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Чехов в музыке в Крыму (Ялта). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/chehov-v-muzyke">
   <meta property="og:title" content="Чехов в музыке — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Чехов в музыке в Крыму (Ялта). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Чехов в музыке в Крыму (Ялта). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Чехов в музыке"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Чехов в музыке",
+      "startDate": "2026-10-24T16:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Чехов в музыке"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дом-музей А. П. Чехова",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Гала-концерт цикла «Чехов в музыке». Четыре произведения, четыре истории и четыре разных грани чеховского мира встретятся в одной программе.",
+      "image": "/images/events/2b62044a9b8e2f782dad57cdd09975ef.jpg"
     }
   ]
 }

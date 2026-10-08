@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dom-muzey-a-p-chehova">
   <meta property="og:title" content="Дом-музей А. П. Чехова — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Дом-музей А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Чехов в музыке",
+      "startDate": "2026-10-24T16:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дом-музей А. П. Чехова"
+      },
+      "description": "Гала-концерт цикла «Чехов в музыке». Четыре произведения, четыре истории и четыре разных грани чеховского мира встретятся в одной программе.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Чехов в музыке"
+      },
+      "image": "/images/events/2b62044a9b8e2f782dad57cdd09975ef.jpg"
     }
   ]
 }

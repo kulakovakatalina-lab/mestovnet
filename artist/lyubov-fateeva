@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Любовь Фатеева — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/lyubov-fateeva">
   <meta property="og:title" content="Любовь Фатеева — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Любовь Фатеева в Крыму (Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Любовь Фатеева"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Любовь Фатеева",
-      "startDate": "2026-10-07T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Любовь Фатеева"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "«Романтика. Вечер. Виолончель». Живой звук виолончели в сочетании с мировыми хитами создаст неповторимую атмосферу.",
-      "image": "/images/events/55543644108e86d5c79614726039781c.jpg"
     }
   ]
 }

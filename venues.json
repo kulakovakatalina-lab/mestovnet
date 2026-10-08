@@ -296,6 +296,37 @@
     "lon": 34.09338
   },
   {
+    "slug": "organnyy-zal-livadia",
+    "name": "Органный зал 'Livadia'",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 8,
+    "aliases": [
+      "Органный зал 'Livadia'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.475488,
+    "lon": 34.143145
+  },
+  {
+    "slug": "vinzavod-massandra",
+    "name": "Винзавод Массандра",
+    "city": "Ялта",
+    "address": "ул. Винодела Егорова, 9",
+    "event_count": 7,
+    "aliases": [
+      "Винзавод «Массандра»",
+      "Винзавод Массандра",
+      "Массандра",
+      "Севастополь Джаз"
+    ],
+    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
+    "desc_baseline_count": 3,
+    "lat": 44.51786,
+    "lon": 34.186504
+  },
+  {
     "slug": "dom-ofitserov-flota",
     "name": "Дом офицеров флота",
     "city": "Севастополь",
@@ -327,22 +358,6 @@
     "desc_baseline_count": 7,
     "lat": 44.5635288,
     "lon": 33.8904656
-  },
-  {
-    "slug": "vinzavod-massandra",
-    "name": "Винзавод Массандра",
-    "city": "Ялта",
-    "address": "ул. Винодела Егорова, 9",
-    "event_count": 6,
-    "aliases": [
-      "Винзавод Массандра",
-      "Массандра",
-      "Севастополь Джаз"
-    ],
-    "description": "Винзавод в Массандре под Ялтой — площадка для летних концертов и фестивалей под открытым небом (билеты и анонсы на sevjazz.ru), например однодневный джазовый фестиваль «Массандра.Джаз».",
-    "desc_baseline_count": 3,
-    "lat": 44.51786,
-    "lon": 34.186504
   },
   {
     "slug": "krymskiy-muzykalnyy-teatr",
@@ -595,20 +610,6 @@
     "desc_baseline_count": 1,
     "lat": 44.467678,
     "lon": 34.143826
-  },
-  {
-    "slug": "organnyy-zal-livadia",
-    "name": "Органный зал 'Livadia'",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Органный зал 'Livadia'"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.475488,
-    "lon": 34.143145
   },
   {
     "slug": "plyazh-kafe-van-gogh",
@@ -1013,6 +1014,20 @@
     "lon": null
   },
   {
+    "slug": "baydarskaya-dolina",
+    "name": "Байдарская долина",
+    "city": "Крым",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Байдарская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "yalta",
     "name": "Ялта",
     "city": "Ялта",
@@ -1096,6 +1111,20 @@
     "desc_baseline_count": 0,
     "lat": 45.300079,
     "lon": 36.427175
+  },
+  {
+    "slug": "dom-muzey-a-p-chehova",
+    "name": "Дом-музей А. П. Чехова",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Дом-музей А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.491162,
+    "lon": 34.141539
   },
   {
     "slug": "kz-yubileynyy",
@@ -1644,20 +1673,6 @@
     "lon": null
   },
   {
-    "slug": "baydarskaya-dolina",
-    "name": "Байдарская долина",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Байдарская долина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "krymskiy-respublikanskiy-klinicheskiy-gospital-dlya-veteranov-voyn",
     "name": "Крымский республиканский клинический госпиталь для ветеранов войн",
     "city": "Симферополь",
@@ -2106,20 +2121,6 @@
     "lon": 34.159768
   },
   {
-    "slug": "dom-muzey-a-p-chehova",
-    "name": "Дом-музей А. П. Чехова",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Дом-музей А. П. Чехова"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.491162,
-    "lon": 34.141539
-  },
-  {
     "slug": "labirint-krasnolesya",
     "name": "Лабиринт Краснолесья",
     "city": "Севастополь",
@@ -2246,20 +2247,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "novosibirsk",
-    "name": "Новосибирск",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Новосибирск"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kamelot",
     "name": "Камелот",
     "city": "Керчь",
@@ -2286,5 +2273,33 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "restoran-chayka-na-plyazhe",
+    "name": "ресторан «Чайка на Пляже»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "ресторан «Чайка на Пляже»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "golf-pole-v-baydarskoy-doline",
+    "name": "Гольф-поле в Байдарской долине",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Гольф-поле в Байдарской долине"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]
