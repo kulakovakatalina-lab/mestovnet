@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,22 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Get Back",
-      "startDate": "2026-10-08",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "THE BEATLES TRIBUTE by Get Back. Вход бесплатный! Бесплатное рок-караоке до утра!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Get Back"
-      },
-      "image": "/images/events/1976e6104a991596d88e9d351e96b45e.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "AC/DC tribute by Back 'n Storm, Back 'n Storm (AC/DC tribute)",
+      "name": "Back 'n Storm (AC/DC tribute), AC/DC tribute by Back 'n Storm (Краснодар)",
       "startDate": "2026-10-09",
       "location": {
         "@type": "MusicVenue",
@@ -61,7 +46,7 @@
       "description": "Трибьют AC/DC от группы Back 'n Storm.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "AC/DC tribute by Back 'n Storm, Back 'n Storm (AC/DC tribute)"
+        "name": "Back 'n Storm (AC/DC tribute), AC/DC tribute by Back 'n Storm (Краснодар)"
       },
       "image": "/images/events/ce769a1f27bdbeac1a5db6c9d9a736b4.jpg"
     },
@@ -73,7 +58,7 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - Сим\u0000ферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
+      "description": "О концерте Король и Шут. Панк-Шоу!\r\n📍 17 октября (сбт) - \u0000Симферополь, клуб JAM\r\n\r\n\"Я буду жить, — кричал он, — вечно!\"\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами \"Лесника\", \"Камнем по голове\" \"Мастер приглашает в гости\", \"Жаль нет ружья\", \"Ели мясо мужики\", \"Мертвый анархист\", \"Отец и маски\" , \"Охотник\" и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда ДЖОКЕР (Сочи)!\r\n\r\n📍 Симферополь: ул Горького, 5",
       "performer": {
         "@type": "MusicGroup",
         "name": "Джокер"

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get Back — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Get Back в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Get Back в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/get-back">
   <meta property="og:title" content="Get Back — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Get Back в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Get Back в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Get Back"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Get Back",
-      "startDate": "2026-10-08",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Get Back"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "THE BEATLES TRIBUTE by Get Back. Вход бесплатный! Бесплатное рок-караоке до утра!",
-      "image": "/images/events/1976e6104a991596d88e9d351e96b45e.jpg"
     }
   ]
 }

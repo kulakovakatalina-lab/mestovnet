@@ -37,18 +37,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Соня Сафарова, Никита Шульгин (ADRENALIN HOUSE)",
+      "name": "Соня Сафарова, Никита Шульгин (Адреналин Хаус)",
       "startDate": "2026-10-11T15:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "ресторан «Чайка на Пляже»"
       },
-      "description": "Концерт участников группы ADRENALIN HOUSE в рамках празднования дня рождения 'Чайка дети'.",
+      "description": "Концерт участников группы Адреналин Хаус — Сони Сафаровой и Никиты Шульгина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Соня Сафарова, Никита Шульгин (ADRENALIN HOUSE)"
+        "name": "Соня Сафарова, Никита Шульгин (Адреналин Хаус)"
       },
-      "image": "/images/events/66d296531ee1655b38816ccde048ec49.jpg"
+      "image": "/images/events/693516789e7d5b9b06f30d8d11fb6648.jpg"
     }
   ]
 }

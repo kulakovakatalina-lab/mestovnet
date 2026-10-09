@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Байдарская долина — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/baydarskaya-dolina">
   <meta property="og:title" content="Байдарская долина — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Крыму. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -48,7 +48,22 @@
         "@type": "MusicGroup",
         "name": "Анастасия Грас"
       },
-      "image": "/images/events/430a5cd1f33cbbe9711843bcd82a40d3.jpg"
+      "image": "/images/events/97c02922b799300d4c27d847592e0426.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)",
+      "startDate": "2026-10-11T16:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Байдарская долина"
+      },
+      "description": "Осенний вечер с Анной Шакель и Андреем Рыбальченко. Встреча заката под музыку у костра.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)"
+      },
+      "image": "/images/events/ad7641bd164648cb33812a3f0acf0344.jpg"
     }
   ]
 }

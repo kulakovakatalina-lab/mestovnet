@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdrenalinHouse — концерты в Крыму, Ялта, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов AdrenalinHouse в Крыму (Ялта, Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов AdrenalinHouse в Крыму (Ялта, Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/adrenalinhouse">
   <meta property="og:title" content="AdrenalinHouse — концерты в Крыму, Ялта, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов AdrenalinHouse в Крыму (Ялта, Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов AdrenalinHouse в Крыму (Ялта, Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "AdrenalinHouse"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "AdrenalinHouse",
-      "startDate": "2026-10-08T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "AdrenalinHouse"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Театр им. А. П. Чехова",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "AdrenalinHouse — концерт в Театр им. А. П. Чехова, Ялта.",
-      "image": "/images/events/c7b185c8c1a4ce8c8021220eda1eb659.jpg"
     }
   ]
 }

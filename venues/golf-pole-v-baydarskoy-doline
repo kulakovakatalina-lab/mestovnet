@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Гольф-поле в Байдарской долине — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Гольф-поле в Байдарской долине, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>гольф-поле в Байдарской долине — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в гольф-поле в Байдарской долине, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/golf-pole-v-baydarskoy-doline">
-  <meta property="og:title" content="Гольф-поле в Байдарской долине — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Гольф-поле в Байдарской долине, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="гольф-поле в Байдарской долине — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в гольф-поле в Байдарской долине, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Гольф-поле в Байдарской долине",
+      "name": "гольф-поле в Байдарской долине",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
@@ -41,20 +41,20 @@
       "startDate": "2026-10-11T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Гольф-поле в Байдарской долине"
+        "name": "гольф-поле в Байдарской долине"
       },
       "description": "Вечер 'Музыка у костра' с участием Анны Шакель и Андрея Рыбальченко. Мероприятие на природе с костром и музыкой.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)"
       },
-      "image": "/images/events/349115b9daf319ab632c1579ac9ddf49.jpg"
+      "image": "/images/events/20e8380159bc82b419a85b6f6074e3ca.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Гольф-поле в Байдарской долине"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "гольф-поле в Байдарской долине"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Гольф-поле в Байдарской долине</h1>
+    <h1 class="genre-hero-title">гольф-поле в Байдарской долине</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Гольф-поле в Байдарской долине", "Гольф-поле в Байдарской долине"];
+const VENUE_ALIASES = ["гольф-поле в Байдарской долине", "гольф-поле в Байдарской долине"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

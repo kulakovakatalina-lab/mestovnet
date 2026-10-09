@@ -232,6 +232,22 @@
     "lon": 34.106607
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 10,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "teatr-im-a-p-chehova",
     "name": "Театр им. А.П. Чехова",
     "city": "Ялта",
@@ -263,22 +279,6 @@
     "desc_baseline_count": 0,
     "lat": 44.951251,
     "lon": 34.098202
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 9,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -771,6 +771,20 @@
     "lon": null
   },
   {
+    "slug": "baydarskaya-dolina",
+    "name": "Байдарская долина",
+    "city": "Крым",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Байдарская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "ekokemp-semena-belbekskaya-dolina",
     "name": "экокемп Семена, Бельбекская долина",
     "city": "Бахчисарайский район",
@@ -1007,20 +1021,6 @@
     "event_count": 2,
     "aliases": [
       "АНАПСКИЙ РАЙОН, СУПСЕХ"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "baydarskaya-dolina",
-    "name": "Байдарская долина",
-    "city": "Крым",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Байдарская долина"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2247,6 +2247,20 @@
     "lon": 36.427239
   },
   {
+    "slug": "kamelot",
+    "name": "Камелот",
+    "city": "Керчь",
+    "address": "ул. Свердлова, 7",
+    "event_count": 1,
+    "aliases": [
+      "Камелот"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.347114,
+    "lon": 36.471387
+  },
+  {
     "slug": "restoran-chayka-na-plyazhe",
     "name": "ресторан «Чайка на Пляже»",
     "city": "Ялта",
@@ -2262,31 +2276,17 @@
   },
   {
     "slug": "golf-pole-v-baydarskoy-doline",
-    "name": "Гольф-поле в Байдарской долине",
+    "name": "гольф-поле в Байдарской долине",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Гольф-поле в Байдарской долине"
+      "гольф-поле в Байдарской долине"
     ],
     "description": null,
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "kamelot",
-    "name": "Камелот",
-    "city": "Керчь",
-    "address": "ул. Свердлова, 7",
-    "event_count": 1,
-    "aliases": [
-      "Камелот"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.347114,
-    "lon": 36.471387
   },
   {
     "slug": "galereya-im-ayvazovskogo",
@@ -2301,5 +2301,33 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "servas",
+    "name": "СерВас",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "СерВас"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "starinnaya-biblioteka",
+    "name": "старинная библиотека",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "старинная библиотека"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]

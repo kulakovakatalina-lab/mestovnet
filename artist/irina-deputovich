@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 3 ближайших событий.">
+  <meta name="description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/irina-deputovich">
   <meta property="og:title" content="Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 3 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Ирина Депутович"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ирина Депутович",
-      "startDate": "2026-10-08T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ирина Депутович"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "живое исполнение любимых песен, караоке, скидка 20% на мангал.",
-      "image": "/images/events/55543644108e86d5c79614726039781c.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -80,14 +60,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "Ресто-бар «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Новогодняя ночь 2027: Музыка, Свет и Вкус! Выступление Ирины Депутович + DJ. Лазерное шоу с дымом (ожившая сцена!). Танцевально-световое шоу и танцы до утра. Новогодний квиз и лотерея призов. Дед Мороз и Снегурочка для детей и взрослых.",
+      "description": "Выступление Ирины Депутович + DJ; лазерное шоу с дымом; танцевально-световое шоу и танцы до утра; новогодний квиз и лотерея призов.",
       "image": "/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg"
     }
   ]

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Шакель (вокал) — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel-vokal">
   <meta property="og:title" content="Анна Шакель (вокал) — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -40,7 +40,7 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Гольф-поле в Байдарской долине",
+        "name": "гольф-поле в Байдарской долине",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
@@ -48,7 +48,27 @@
         }
       },
       "description": "Вечер 'Музыка у костра' с участием Анны Шакель и Андрея Рыбальченко. Мероприятие на природе с костром и музыкой.",
-      "image": "/images/events/349115b9daf319ab632c1579ac9ddf49.jpg"
+      "image": "/images/events/20e8380159bc82b419a85b6f6074e3ca.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель (вокал)",
+      "startDate": "2026-10-11T16:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель (вокал)"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Байдарская долина",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Осенний вечер с Анной Шакель и Андреем Рыбальченко. Встреча заката под музыку у костра.",
+      "image": "/images/events/ad7641bd164648cb33812a3f0acf0344.jpg"
     }
   ]
 }
