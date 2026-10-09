@@ -14653,28 +14653,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-15",
-    "time": "14:30",
-    "artist": "Юлия (сопрано), Антон Хромченко (скрипка)",
-    "event_type": "концерт",
-    "venue": "Органный зал 'Livadia'",
-    "price": "500 рублей",
-    "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя.",
-    "image": null,
-    "images": null,
-    "source_channel": "dlyadushi_Crimea",
-    "source_city": "Ялта",
-    "post_date": "2026-10-07T20:45:48+00:00",
-    "source_url": "https://t.me/dlyadushi_Crimea/6617",
-    "id": "d9059074",
-    "genre": "классика",
-    "needs_review": true,
-    "review_reasons": [
-      "нет постера",
-      "дубли мета-тегов: совпадают title и description"
-    ]
-  },
-  {
     "id": "5f0793f3",
     "date": "2026-10-24",
     "time": "16:00",

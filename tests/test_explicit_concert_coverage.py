@@ -31,6 +31,19 @@ WEEKLY_POST = {
     ),
     "images": ["first", "second"],
 }
+LIVADIA_POST = {
+    "url": "https://t.me/dlyadushi_Crimea/6617",
+    "date": "2026-10-07T20:45:48+00:00",
+    "text": (
+        "КОНЦЕРТЫ В ОРГАННОМ ЗАЛЕ LIVADIA\n"
+        "РАСПИСАНИЕ КОНЦЕРТОВ НА ОКТЯБРЬ\n"
+        "Вторник\n1️⃣3️⃣.1️⃣0️⃣\n2️⃣0️⃣.1️⃣0️⃣\n2️⃣7️⃣.1️⃣0️⃣\n🕰️ Начало в 16:30\n"
+        "Четверг\n0️⃣8️⃣.1️⃣0️⃣\n1️⃣5️⃣.1️⃣0️⃣\n2️⃣2️⃣.1️⃣0️⃣\n2️⃣9️⃣.1️⃣0️⃣\n🕰️ Начало в 16:30\n"
+        "Суббота\n1️⃣0️⃣.1️⃣0️⃣\n1️⃣7️⃣.1️⃣0️⃣\n2️⃣4️⃣.1️⃣0️⃣\n3️⃣1️⃣.1️⃣0️⃣\n🕰️ Начало в 17:00\n"
+        "Воскресенье\n1️⃣1️⃣.1️⃣0️⃣\n1️⃣8️⃣.1️⃣0️⃣\n2️⃣5️⃣.1️⃣0️⃣\n🕰️ Начало в 14:30\n"
+    ),
+    "images": ["first", "second"],
+}
 
 
 def test_weekly_sections_include_music_and_exclude_cinema_and_lecture():
@@ -40,6 +53,31 @@ def test_weekly_sections_include_music_and_exclude_cinema_and_lecture():
         ("2026-10-03", "19:00"),
         ("2026-10-04", "19:00"),
     ]
+
+
+def test_livadia_weekday_blocks_assign_time_to_their_own_dates():
+    slots = parser._weekday_schedule_slots(LIVADIA_POST)
+    assert slots["2026-10-15"] == {"16:30"}
+    assert slots["2026-10-18"] == {"14:30"}
+    assert "14:30" not in slots["2026-10-15"]
+
+
+def test_livadia_extraction_corrects_false_second_show(monkeypatch):
+    monkeypatch.setattr(parser, "download_image", lambda url: None)
+    monkeypatch.setattr(parser, "extract_events_multi", lambda post, channel, images: [
+        {"date": "2026-10-15", "time": "14:30", "artist": "Юлия, Антон Хромченко",
+         "venue": "Органный зал Livadia"},
+        {"date": "2026-10-15", "time": "16:30", "artist": "Юлия, Антон Хромченко",
+         "venue": "Органный зал Livadia"},
+    ])
+    events = []
+    parser.process_channels(
+        [{"username": "dlyadushi_Crimea", "title": "Для души | Крым",
+          "city": "Крым", "type": "afisha"}],
+        events, lambda channel: [LIVADIA_POST],
+    )
+    assert [event["time"] for event in events] == ["16:30", "16:30"]
+    assert len(parser.deduplicate_events(events)) == 1
 
 
 def test_explicit_future_concert_excludes_recaps_and_cancellations():

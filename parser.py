@@ -70,6 +70,64 @@ _MUSIC_SCHEDULE_CUE = re.compile(
     r"концерт|трибьют|джаз|jazz|джем|пианист|музыкальн|piano|вокал|трио|группа",
     re.IGNORECASE,
 )
+_KEYCAP_DIGIT = re.compile(r"([0-9])\ufe0f?\u20e3")
+_WEEKDAY_HEADING = re.compile(
+    r"(?im)^[ \t]*(понедельник|вторник|среда|четверг|пятница|суббота|воскресенье)[ \t]*$"
+)
+_WEEKDAY_NUMBER = {
+    name: number for number, name in enumerate(
+        ("понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье")
+    )
+}
+_NUMERIC_SCHEDULE_DATE = re.compile(
+    r"(?<!\d)([0-3]?\d)\s*[./]\s*([01]?\d)(?:\s*[./]\s*(20\d{2}))?(?!\d)"
+)
+_WEEKDAY_SCHEDULE_TIME = re.compile(
+    r"\bначало\s+в\s*([01]?\d|2[0-3]):([0-5]\d)\b", re.IGNORECASE
+)
+
+
+def _weekday_schedule_slots(post: dict) -> dict[str, set[str]]:
+    """Время каждой даты в расписании с группами по дням недели."""
+    text = _KEYCAP_DIGIT.sub(r"\1", post.get("text") or "")
+    if not re.search(r"расписание\s+концертов", text, re.IGNORECASE):
+        return {}
+    headings = list(_WEEKDAY_HEADING.finditer(text))
+    if len(headings) < 2:
+        return {}
+    try:
+        published = datetime.fromisoformat(post["date"]).astimezone(MOSCOW_TZ).date()
+    except (KeyError, TypeError, ValueError):
+        return {}
+
+    slots: dict[str, set[str]] = {}
+    for index, heading in enumerate(headings):
+        body = text[heading.end():headings[index + 1].start() if index + 1 < len(headings) else len(text)]
+        time_match = _WEEKDAY_SCHEDULE_TIME.search(body)
+        if not time_match:
+            continue
+        announced_time = f"{int(time_match[1]):02d}:{time_match[2]}"
+        for match in _NUMERIC_SCHEDULE_DATE.finditer(body[:time_match.start()]):
+            try:
+                announced = date(int(match[3]) if match[3] else published.year,
+                                 int(match[2]), int(match[1]))
+                if not match[3] and announced < published:
+                    announced = announced.replace(year=published.year + 1)
+            except ValueError:
+                continue
+            if (announced.weekday() == _WEEKDAY_NUMBER[heading[1].lower()]
+                    and 0 <= (announced - published).days <= 60):
+                slots.setdefault(announced.isoformat(), set()).add(announced_time)
+    return slots
+
+
+def _apply_weekday_schedule_times(post: dict, events: list[dict]) -> None:
+    """Исправляет время, если исходное расписание даёт для даты один слот."""
+    slots = _weekday_schedule_slots(post)
+    for event in events:
+        allowed = slots.get(event.get("date"))
+        if allowed and len(allowed) == 1:
+            event["time"] = next(iter(allowed))
 
 
 def _schedule_music_sections(post: dict, today: str | None = None) -> list[dict]:
@@ -2214,6 +2272,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 post, channel, events, sections,
                 local[0] if local else "",
             )
+            _apply_weekday_schedule_times(post, events)
             print(f" +{len(events)}")
 
             _assign_event_images(events, local, multi_image_post=True)
@@ -2260,6 +2319,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                         post, channel, events, sections,
                         local_images[0] if local_images else "",
                     )
+                    _apply_weekday_schedule_times(post, events)
                     _assign_event_images(events, local_images, multi_image_post=False)
 
                     for event in events:
