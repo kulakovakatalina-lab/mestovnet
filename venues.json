@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 51,
+    "event_count": 52,
     "aliases": [
       "Jam Club"
     ],
@@ -124,7 +124,7 @@
     "name": "Севастополь",
     "city": "Севастополь",
     "address": "Матросский бульвар",
-    "event_count": 15,
+    "event_count": 16,
     "aliases": [
       "Севастополь",
       "Севастополь, Матросский бульвар",
@@ -898,6 +898,20 @@
     "lon": null
   },
   {
+    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
+    "name": "Ялтинский театр имени А. П. Чехова",
+    "city": "Ялта",
+    "address": "ул. Екатерининская, 13",
+    "event_count": 2,
+    "aliases": [
+      "Ялтинский театр имени А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.492566,
+    "lon": 34.162337
+  },
+  {
     "slug": "russkiy-teatr-im-gorkogo",
     "name": "Русский театр им. Горького",
     "city": "Симферополь",
@@ -1223,20 +1237,6 @@
     "desc_baseline_count": 0,
     "lat": 44.539802,
     "lon": 34.274541
-  },
-  {
-    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
-    "name": "Ялтинский театр имени А. П. Чехова",
-    "city": "Ялта",
-    "address": "ул. Екатерининская, 13",
-    "event_count": 1,
-    "aliases": [
-      "Ялтинский театр имени А. П. Чехова"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.492566,
-    "lon": 34.162337
   },
   {
     "slug": "ribiza",
@@ -2275,13 +2275,27 @@
     "lon": null
   },
   {
-    "slug": "golf-pole-v-baydarskoy-doline",
-    "name": "гольф-поле в Байдарской долине",
+    "slug": "starinnaya-biblioteka",
+    "name": "старинная библиотека",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "гольф-поле в Байдарской долине"
+      "старинная библиотека"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "golf-pole-v-baydarskoy-doline",
+    "name": "Гольф-поле в Байдарской долине",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Гольф-поле в Байдарской долине"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2301,33 +2315,5 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
-  },
-  {
-    "slug": "servas",
-    "name": "СерВас",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "СерВас"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "starinnaya-biblioteka",
-    "name": "старинная библиотека",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "старинная библиотека"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   }
 ]

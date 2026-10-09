@@ -39,7 +39,7 @@
     "id": "8e6b3c6e",
     "date": "2026-10-17",
     "time": null,
-    "artist": "Матвей Блюмин",
+    "artist": "Матвей Блюмин, Евгения Литвинова",
     "venue": "старинная библиотека",
     "source_city": "Севастополь",
     "price": "950 ₽",
@@ -69,6 +69,23 @@
       "нет времени",
       "нет цены",
       "нет постера"
+    ]
+  },
+  {
+    "id": "b4b21897",
+    "date": "2026-10-09",
+    "time": null,
+    "artist": "Караруса, Kontseptsita ND, Кабель Джек",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "рок",
+    "event_type": "фестиваль",
+    "description": "РОК ФЕСТ. Презентация проекта",
+    "image": "/images/events/3255e6146dd55de06817036126ecef22.jpg",
+    "source_url": "https://t.me/clubjam/1167",
+    "reasons": [
+      "нет времени"
     ]
   }
 ]
