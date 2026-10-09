@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Трибьют AC/DC от группы Back 'n Storm.",
+      "description": "AC/DC TRIBUTE",
       "performer": {
         "@type": "MusicGroup",
         "name": "Back 'n Storm (AC/DC tribute), AC/DC tribute by Back 'n Storm (Краснодар)"

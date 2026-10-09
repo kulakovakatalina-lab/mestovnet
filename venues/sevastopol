@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "RAman",
+      "startDate": "2026-10-10T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь"
+      },
+      "description": "Танцевальная диско лихорадка. Приходите послушать, потанцевать и разделить этот вечер с теми, кто тоже чувствует музыку сердцем!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "RAman"
+      },
+      "image": "/images/events/13c45b5b50fc52e6ff1e124e3f6b8303.jpg"
     }
   ]
 }

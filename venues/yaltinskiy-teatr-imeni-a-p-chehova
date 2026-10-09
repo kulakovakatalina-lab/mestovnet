@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ялтинский театр имени А. П. Чехова — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/yaltinskiy-teatr-imeni-a-p-chehova">
   <meta property="og:title" content="Ялтинский театр имени А. П. Чехова — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ялтинский театр имени А. П. Чехова, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Екатерининская, 13"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Вдохновение",
+      "startDate": "2026-11-14T15:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ялтинский театр имени А. П. Чехова"
+      },
+      "description": "Концерт, посвящённый завораживающему искусству бельканто. Струнный ансамбль «Вдохновение» станет музыкальной основой вечера, дополняя выступления солистов живым звучанием струнных инструментов. В программе – музыка Пуччини, Доницетти и других композиторов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Вдохновение"
+      },
+      "image": "/images/events/4a6d6600adf3af5d1ae0ec4373cf9007.jpg"
     }
   ]
 }
