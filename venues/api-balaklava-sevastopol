@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>СерВас — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в СерВас, в Севастополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/servas">
-  <meta property="og:title" content="СерВас — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в СерВас, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Api Balaklava — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Api Balaklava, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/api-balaklava-sevastopol">
+  <meta property="og:title" content="Api Balaklava — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Api Balaklava, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "СерВас",
+      "name": "Api Balaklava",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
@@ -37,24 +37,24 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "RAman",
-      "startDate": "2026-10-10T21:00:00+03:00",
+      "name": "диджей",
+      "startDate": "2026-10-18",
       "location": {
         "@type": "MusicVenue",
-        "name": "СерВас"
+        "name": "Api Balaklava"
       },
-      "description": "Танцевальная диско лихорадка с DJ RAman.",
+      "description": "Гриль-вечер с мясом и овощами на огне, живой гитарой и музыкой от диджея.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "RAman"
+        "name": "диджей"
       },
-      "image": "/images/events/168c36ee15ec1c6a8691b1ff586a23bd.jpg"
+      "image": "/images/events/d7610ec5bc8b1cc93c526b9722cb9210.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "СерВас"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Api Balaklava"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">СерВас</h1>
+    <h1 class="genre-hero-title">Api Balaklava</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["СерВас", "СерВас"];
+const VENUE_ALIASES = ["Api Balaklava", "Api Balaklava"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

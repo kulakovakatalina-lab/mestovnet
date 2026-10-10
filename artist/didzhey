@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>диджей — концерты в Крыму, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов диджей в Крыму (Севастополь, Ялта). 0 ближайших событий.">
+  <title>диджей — концерты в Крыму, Ялта, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов диджей в Крыму (Ялта, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/didzhey">
-  <meta property="og:title" content="диджей — концерты в Крыму, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов диджей в Крыму (Севастополь, Ялта). 0 ближайших событий.">
+  <meta property="og:title" content="диджей — концерты в Крыму, Ялта, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов диджей в Крыму (Ялта, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "диджей"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "диджей",
+      "startDate": "2026-10-18",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "диджей"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Api Balaklava",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Гриль-вечер с мясом и овощами на огне, живой гитарой и музыкой от диджея.",
+      "image": "/images/events/d7610ec5bc8b1cc93c526b9722cb9210.jpg"
     }
   ]
 }
@@ -1000,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">диджей</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Ялта</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

@@ -27,6 +27,7 @@
   <url><loc>https://mestov.net/venues/antichnyy-teatr-hersones-tavricheskiy</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/antikvarno-hudozhestvennaya-galereya-stiks</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/api-balaklava</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://mestov.net/venues/api-balaklava-sevastopol</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kafe-snezhinka</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kafe-snezhinka-bolshaya-morskaya-19</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/art-kovcheg</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
@@ -148,7 +149,6 @@
   <url><loc>https://mestov.net/venues/russkiy-teatr-im-gorkogo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/s-dobroe</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/s-luchistoe</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://mestov.net/venues/servas</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/sevastopol</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/sevastopolskiy-tskii</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/venues/sevgu</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
@@ -236,6 +236,7 @@
   <url><loc>https://mestov.net/artist/estradno-duhovoy-orkestr</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/artist/etno-dzhaz</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/artist/evgeniy-gromov</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://mestov.net/artist/evgeniya-litvinova</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/artist/evgeniya-suhacheva</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/artist/faberge-jazz-duo</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/artist/fedor-starovoytov</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-10-10</lastmod></url>
@@ -890,6 +891,7 @@
   <url><loc>https://mestov.net/event/d795224a</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/event/d7c8bcfa</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/event/d7e57baa</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://mestov.net/event/d80cf6f7</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/event/d87b00fc</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/event/d8a951b1</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://mestov.net/event/d9059074</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-10-10</lastmod></url>

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "RAman",
+      "startDate": "2026-10-10T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь"
+      },
+      "description": "Танцевальная диско лихорадка в «СерВас». За пультом — RAman: драйв, душа и танцы в стиле диско до последнего трека. Настроение на весь вечер гарантировано!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "RAman"
+      },
+      "image": "/images/events/168c36ee15ec1c6a8691b1ff586a23bd.jpg"
     }
   ]
 }

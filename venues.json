@@ -2275,20 +2275,6 @@
     "lon": null
   },
   {
-    "slug": "servas",
-    "name": "СерВас",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "СерВас"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "golf-pole-v-baydarskoy-doline",
     "name": "Гольф-поле в Байдарской долине",
     "city": "Севастополь",
@@ -2317,20 +2303,6 @@
     "lon": null
   },
   {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.032421,
-    "lon": 35.382656
-  },
-  {
     "slug": "api-balaklava-sevastopol",
     "name": "Api Balaklava",
     "city": "Севастополь",
@@ -2343,5 +2315,19 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.032421,
+    "lon": 35.382656
   }
 ]
