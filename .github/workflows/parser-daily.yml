@@ -91,6 +91,9 @@ jobs:
           python generate_pages.py
           python source_health.py --log parser_output.log
 
+      - name: Установить браузер для Playwright
+        run: playwright install --with-deps chromium
+
       - name: Проверить данные и страницы до коммита
         run: pytest tests/ -q
 
