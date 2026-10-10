@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Домино — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/domino">
   <meta property="og:title" content="Домино — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Домино"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Домино",
+      "startDate": "2026-10-10T21:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Домино"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино». Не акустика",
+      "image": "/images/events/91138a4c46cfbbde9035d19be1ce9e22.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Антон Хромченко (скрипка) — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Антон Хромченко (скрипка) в Крыму (Ялта). 5 ближайших событий.">
+  <meta name="description" content="Расписание концертов Антон Хромченко (скрипка) в Крыму (Ялта). 6 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anton-hromchenko-skripka">
   <meta property="og:title" content="Антон Хромченко (скрипка) — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Антон Хромченко (скрипка) в Крыму (Ялта). 5 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Антон Хромченко (скрипка) в Крыму (Ялта). 6 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -72,6 +72,25 @@
       "@type": "MusicEvent",
       "name": "Антон Хромченко (скрипка)",
       "startDate": "2026-10-14T17:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Антон Хромченко (скрипка)"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Органный зал 'Livadia'",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Концерт с исполнением произведений великих композиторов: Баха, Вивальди, Морриконе, Перселла, Мендельсона Сен-Санса, Генделя."
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Антон Хромченко (скрипка)",
+      "startDate": "2026-10-15T16:30:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Антон Хромченко (скрипка)"

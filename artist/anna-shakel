@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel">
   <meta property="og:title" content="Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Шакель"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель",
+      "startDate": "2026-10-11T16:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Гольф-поле в Байдарской долине",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Вечер 'Музыка у костра' с участием Анны Шакель (вокал) и Андрея Рыбальченко (клавишные).",
+      "image": "/images/events/8eb52a0d4e8cee998a287fea68d6db1d.jpg"
     }
   ]
 }

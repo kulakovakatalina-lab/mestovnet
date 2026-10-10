@@ -203,20 +203,6 @@
     "lon": 36.427239
   },
   {
-    "slug": "organnyy-zal-livadia",
-    "name": "Органный зал 'Livadia'",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 11,
-    "aliases": [
-      "Органный зал 'Livadia'"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.475488,
-    "lon": 34.143145
-  },
-  {
     "slug": "dvorets-kultury-profsoyuzov",
     "name": "Дворец культуры профсоюзов",
     "city": "Симферополь",
@@ -232,20 +218,33 @@
     "lon": 34.106607
   },
   {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "ул. Екатерининская, 14",
     "event_count": 10,
     "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
     ],
-    "description": "",
+    "description": null,
     "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
+    "lat": 44.951251,
+    "lon": 34.098202
+  },
+  {
+    "slug": "organnyy-zal-livadia",
+    "name": "Органный зал 'Livadia'",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "Органный зал 'Livadia'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.475488,
+    "lon": 34.143145
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -266,19 +265,20 @@
     "lon": 34.162337
   },
   {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "ул. Екатерининская, 14",
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
     "event_count": 9,
     "aliases": [
-      "Рок-н-рольщики",
-      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
     ],
-    "description": null,
+    "description": "",
     "desc_baseline_count": 0,
-    "lat": 44.951251,
-    "lon": 34.098202
+    "lat": 44.614484,
+    "lon": 33.525136
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -612,6 +612,20 @@
     "lon": 34.143826
   },
   {
+    "slug": "baydarskaya-dolina",
+    "name": "Байдарская долина",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Байдарская долина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "plyazh-kafe-van-gogh",
     "name": "Пляж-кафе «Van Gogh»",
     "city": "Ялта",
@@ -767,20 +781,6 @@
     ],
     "description": "За один уик-энд здесь прошло 3 концерта в трёх разных жанрах — этно, джаз и поп. Данных пока мало для более подробного портрета.",
     "desc_baseline_count": 3,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "baydarskaya-dolina",
-    "name": "Байдарская долина",
-    "city": "Крым",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Байдарская долина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
     "lat": null,
     "lon": null
   },
@@ -2275,13 +2275,13 @@
     "lon": null
   },
   {
-    "slug": "starinnaya-biblioteka",
-    "name": "старинная библиотека",
+    "slug": "servas",
+    "name": "СерВас",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "старинная библиотека"
+      "СерВас"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2303,6 +2303,20 @@
     "lon": null
   },
   {
+    "slug": "starinnaya-biblioteka",
+    "name": "старинная библиотека",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "старинная библиотека"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2315,5 +2329,19 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "api-balaklava-sevastopol",
+    "name": "Api Balaklava",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Api Balaklava"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]

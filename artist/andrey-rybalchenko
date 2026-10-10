@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Андрей Рыбальченко — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/andrey-rybalchenko">
   <meta property="og:title" content="Андрей Рыбальченко — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,26 @@
       },
       "description": "Джаз, знакомые песни и любимые композиции, которые прозвучат по-новому. Перед концертом можно будет послушать джаз на виниле из коллекции Андрея Рыбальченко и поговорить о музыке и любимых записях. Затем — сам концерт, где фортепиано и голос ведут свой музыкальный диалог.",
       "image": "/images/events/ffed55efd727f5eb180d701f59750aef.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Андрей Рыбальченко",
+      "startDate": "2026-10-11T16:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Андрей Рыбальченко"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Гольф-поле в Байдарской долине",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Вечер 'Музыка у костра' с участием Анны Шакель (вокал) и Андрея Рыбальченко (клавишные).",
+      "image": "/images/events/8eb52a0d4e8cee998a287fea68d6db1d.jpg"
     }
   ]
 }

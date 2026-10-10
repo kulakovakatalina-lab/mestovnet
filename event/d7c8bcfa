@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="RAman, Севастополь, наб. Адмирала Клокачева, 16, в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="RAman, СерВас, в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RAman — Севастополь, наб. Адмирала Клокачева, 16, 10 октября · Местов.Нет</title>
+<title>RAman — СерВас, Севастополь, 10 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,10 +960,10 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/d7c8bcfa">
-<meta property="og:title" content="RAman — Севастополь, наб. Адмирала Клокачева, 16, 10 октября · Местов.Нет">
-<meta property="og:description" content="RAman, Севастополь, наб. Адмирала Клокачева, 16, в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="RAman — СерВас, Севастополь, 10 октября · Местов.Нет">
+<meta property="og:description" content="RAman, СерВас, в Севастополе, 10 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/13c45b5b50fc52e6ff1e124e3f6b8303.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/168c36ee15ec1c6a8691b1ff586a23bd.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -974,19 +974,19 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-10-10T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Севастополь, наб. Адмирала Клокачева, 16",
+        "name": "СерВас",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Танцевальная диско лихорадка. Приходите послушать, потанцевать и разделить этот вечер с теми, кто тоже чувствует музыку сердцем!",
+      "description": "Танцевальная диско лихорадка с DJ RAman.",
       "performer": {
         "@type": "MusicGroup",
         "name": "RAman"
       },
-      "image": "/images/events/13c45b5b50fc52e6ff1e124e3f6b8303.jpg"
+      "image": "/images/events/168c36ee15ec1c6a8691b1ff586a23bd.jpg"
     }
   ]
 }
