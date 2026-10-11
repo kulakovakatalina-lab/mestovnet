@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Живая музыка — концерты в Крыму, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/zhivaya-muzyka">
   <meta property="og:title" content="Живая музыка — концерты в Крыму, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Живая музыка"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Живая музыка",
+      "startDate": "2026-10-11T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Живая музыка"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Классический квиз «Музыкальный ринг». Атмосферу вечера дополнит живая музыка.",
+      "image": "/images/events/22b50b6ca4f0ae3470aaab18d7ecb1a1.jpg"
     },
     {
       "@type": "MusicEvent",

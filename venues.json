@@ -71,6 +71,22 @@
     "lon": 35.016803
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 17,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар",
+      "Севастополь, наб. Адмирала Клокачева, 16"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "depo",
     "name": "Депо",
     "city": "Симферополь",
@@ -118,22 +134,6 @@
     "desc_baseline_count": 16,
     "lat": 44.498096,
     "lon": 34.178866
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 16,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар",
-      "Севастополь, наб. Адмирала Клокачева, 16"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "mramornaya-peschera",
@@ -185,6 +185,21 @@
     "lon": 33.728614
   },
   {
+    "slug": "organnyy-zal-livadia",
+    "name": "Органный зал 'Livadia'",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 12,
+    "aliases": [
+      "Органный зал \"LIVADIA\"",
+      "Органный зал 'Livadia'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.475488,
+    "lon": 34.143145
+  },
+  {
     "slug": "dk-korabel",
     "name": "ДК «Корабел»",
     "city": "Керчь",
@@ -233,18 +248,20 @@
     "lon": 34.098202
   },
   {
-    "slug": "organnyy-zal-livadia",
-    "name": "Органный зал 'Livadia'",
-    "city": "Ялта",
-    "address": "",
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
     "event_count": 10,
     "aliases": [
-      "Органный зал 'Livadia'"
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
     ],
-    "description": null,
+    "description": "",
     "desc_baseline_count": 0,
-    "lat": 44.475488,
-    "lon": 34.143145
+    "lat": 44.614484,
+    "lon": 33.525136
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -263,22 +280,6 @@
     "desc_baseline_count": 8,
     "lat": 44.492566,
     "lon": 34.162337
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 9,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -1147,6 +1148,7 @@
     "address": "",
     "event_count": 2,
     "aliases": [
+      "КЗ 'Юбилейный'",
       "КЗ «Юбилейный»"
     ],
     "description": null,
@@ -2275,27 +2277,13 @@
     "lon": null
   },
   {
-    "slug": "golf-pole-v-baydarskoy-doline",
-    "name": "Гольф-поле в Байдарской долине",
+    "slug": "golf-pole-baydary",
+    "name": "гольф-поле «Байдары»",
     "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Гольф-поле в Байдарской долине"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "starinnaya-biblioteka",
-    "name": "старинная библиотека",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "старинная библиотека"
+      "гольф-поле «Байдары»"
     ],
     "description": null,
     "desc_baseline_count": 0,

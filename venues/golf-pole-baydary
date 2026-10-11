@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>старинная библиотека — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в старинная библиотека, в Севастополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/starinnaya-biblioteka">
-  <meta property="og:title" content="старинная библиотека — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в старинная библиотека, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>гольф-поле «Байдары» — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/golf-pole-baydary">
+  <meta property="og:title" content="гольф-поле «Байдары» — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "старинная библиотека",
+      "name": "гольф-поле «Байдары»",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
@@ -37,24 +37,24 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Матвей Блюмин, Евгения Литвинова",
-      "startDate": "2026-10-17",
+      "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)",
+      "startDate": "2026-10-11T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "старинная библиотека"
+        "name": "гольф-поле «Байдары»"
       },
-      "description": "Скрипка, фортепиано и музыка Бетховена, Чайковского, Брамса, Вагнера и Пуччини в интерьерах, которые усиливают впечатление от каждого произведения. Матвей Блюмин и Евгения Литвинова проведут слушателей через музыку XIX века – от нежности до настоящей драмы.",
+      "description": "Осенний закат, любимые мелодии и пикник на природе.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Матвей Блюмин, Евгения Литвинова"
+        "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)"
       },
-      "image": "/images/events/cd9ff1058ccb99658941b5076e5c4e89.jpg"
+      "image": "/images/events/28ec1c408d0ce6d8061c91f1f362ab9c.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "старинная библиотека"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "гольф-поле «Байдары»"}]}
 </script>
   <style>
 
@@ -1065,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">старинная библиотека</h1>
+    <h1 class="genre-hero-title">гольф-поле «Байдары»</h1>
 
 
   </div>
@@ -1091,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["старинная библиотека", "старинная библиотека"];
+const VENUE_ALIASES = ["гольф-поле «Байдары»", "гольф-поле «Байдары»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

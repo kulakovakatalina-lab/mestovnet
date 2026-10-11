@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Матвей Блюмин, Евгения Литвинова, старинная библиотека, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Матвей Блюмин, Евгения Литвинова, Севастополь, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Матвей Блюмин, Евгения Литвинова — старинная библиотека, Севастополь, 17 октября · Местов.Нет</title>
+<title>Матвей Блюмин, Евгения Литвинова — Севастополь, 17 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/8e6b3c6e">
-<meta property="og:title" content="Матвей Блюмин, Евгения Литвинова — старинная библиотека, Севастополь, 17 октября · Местов.Нет">
-<meta property="og:description" content="Матвей Блюмин, Евгения Литвинова, старинная библиотека, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Матвей Блюмин, Евгения Литвинова — Севастополь, 17 октября · Местов.Нет">
+<meta property="og:description" content="Матвей Блюмин, Евгения Литвинова, Севастополь, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/cd9ff1058ccb99658941b5076e5c4e89.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-10-17",
       "location": {
         "@type": "MusicVenue",
-        "name": "старинная библиотека",
+        "name": "Севастополь",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Скрипка, фортепиано и музыка Бетховена, Чайковского, Брамса, Вагнера и Пуччини в интерьерах, которые усиливают впечатление от каждого произведения. Матвей Блюмин и Евгения Литвинова проведут слушателей через музыку XIX века – от нежности до настоящей драмы.",
+      "description": "Скрипка, фортепиано и музыка Бетховена, Чайковского, Брамса, Вагнера и Пуччини в интерьерах, которые усиливают впечатление от каждого произведения.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Матвей Блюмин, Евгения Литвинова"

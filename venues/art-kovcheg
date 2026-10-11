@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-Ковчег — афиша в Бахчисарайский район, с. Путиловка · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-Ковчег, в Бахчисарайский район, с. Путиловка. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-Ковчег, в Бахчисарайский район, с. Путиловка. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kovcheg">
   <meta property="og:title" content="Арт-Ковчег — афиша в Бахчисарайский район, с. Путиловка · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-Ковчег, в Бахчисарайский район, с. Путиловка. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-Ковчег, в Бахчисарайский район, с. Путиловка. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Бахчисарайский район, с. Путиловка",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дэнза, Дмитрий Швабенланд, Александр Черноусов, Дмитрий Смирнов",
-      "startDate": "2026-10-10T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-Ковчег"
-      },
-      "description": "Очень живой концерт с участием Дэнзы, Дмитрия Швабенланда, Александра Черноусова и Дмитрия Смирнова.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дэнза, Дмитрий Швабенланд, Александр Черноусов, Дмитрий Смирнов"
-      },
-      "image": "/images/events/c18cc3a1abe0d1f97079b87d51e653c0.jpg"
     }
   ]
 }

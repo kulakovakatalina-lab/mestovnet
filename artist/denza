@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дэнза — концерты в Крыму, Бахчисарай · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Дэнза в Крыму (Бахчисарай). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Дэнза в Крыму (Бахчисарай). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/denza">
   <meta property="og:title" content="Дэнза — концерты в Крыму, Бахчисарай · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Дэнза в Крыму (Бахчисарай). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Дэнза в Крыму (Бахчисарай). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Дэнза"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дэнза",
-      "startDate": "2026-10-10T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дэнза"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-Ковчег, Бахчисарайский район, с. Путиловка",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Бахчисарай",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Очень живой концерт с участием Дэнзы, Дмитрия Швабенланда, Александра Черноусова и Дмитрия Смирнова.",
-      "image": "/images/events/c18cc3a1abe0d1f97079b87d51e653c0.jpg"
     }
   ]
 }

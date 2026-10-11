@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Байдарская долина — афиша в Бахчисарае · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Бахчисарае. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Байдарская долина, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/baydarskaya-dolina">
   <meta property="og:title" content="Байдарская долина — афиша в Бахчисарае · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Бахчисарае. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Байдарская долина, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,36 +34,6 @@
         "addressLocality": "Бахчисарай",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анастасия Грас",
-      "startDate": "2026-10-10T14:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Байдарская долина"
-      },
-      "description": "Концерт в осеннем буковом лесу в Байдарской долине. Песни и музыка в исполнении Анастасии Грас.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анастасия Грас"
-      },
-      "image": "/images/events/01e4467cca42cde14046703d0b8fa0f4.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дэвид Вагонер",
-      "startDate": "2026-10-10T14:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Байдарская долина"
-      },
-      "description": "Концерт в лесу с чтением стихотворения и музыкальным сопровождением.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дэвид Вагонер"
-      },
-      "image": "/images/events/15b9edbdc0aaa25aac14e8ac801c7c21.jpg"
     },
     {
       "@type": "MusicEvent",
