@@ -10320,7 +10320,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-10-12T02:38:05.288051+00:00",
+    "post_date": "2026-10-12T09:50:34.047411+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10530,7 +10530,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-10-12T02:38:05.288081+00:00",
+    "post_date": "2026-10-12T09:50:34.047442+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -13744,7 +13744,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-12T02:38:05.287958+00:00",
+    "post_date": "2026-10-12T09:50:34.047315+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -13766,7 +13766,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-12T02:38:05.287991+00:00",
+    "post_date": "2026-10-12T09:50:34.047349+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14331,7 +14331,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-12T02:38:05.288022+00:00",
+    "post_date": "2026-10-12T09:50:34.047380+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -15464,81 +15464,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-07",
-    "time": "18:00",
-    "artist": "Концерт «Музыкальные истины»",
-    "venue": "Винзавод «Массандра»",
-    "event_type": "концерт",
-    "price": "1100 - 2000",
-    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-10-12T02:38:20.082772+00:00",
-    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
-    "id": "1b488e3a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-12T02:38:21.724168+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом культуры «Корабел»",
-    "event_type": "концерт",
-    "price": "2000 - 3500",
-    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-10-12T02:38:20.082922+00:00",
-    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
-    "id": "7ee9b24f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-12T02:38:21.724168+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-18",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "2000 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-10-12T02:38:20.082965+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "71ede2ea",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-12T02:38:21.724168+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-10-14",
     "time": "19:00",
     "artist": "виолончель (Любовь Фатеева)",
@@ -15558,6 +15483,7 @@
     "review_reasons": []
   },
   {
+    "id": "550cc90f",
     "date": "2026-10-18",
     "time": "19:00",
     "artist": "Ирина Депутович",
@@ -15565,14 +15491,155 @@
     "venue": "Ресторан «У Чёрного моря»",
     "price": "бесплатно",
     "description": "«Угадай мелодию» с Ириной Депутович, живая музыка и призы. −30% на коктейли.",
-    "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
     "source_city": "Севастополь",
-    "post_date": "2026-10-11T07:24:05+00:00",
-    "source_url": "https://vk.com/wall-233167471_1038",
-    "id": "550cc90f",
+    "source_channel": "u_blacksea_rest",
     "genre": "поп",
+    "source_url": "https://vk.com/wall-233167471_1038",
+    "images": [
+      "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg"
+    ],
+    "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg",
+    "post_date": "2026-10-11T07:24:05+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-11-07",
+    "time": "18:00",
+    "artist": "Концерт «Музыкальные истины»",
+    "venue": "Винзавод «Массандра»",
+    "event_type": "концерт",
+    "price": "1100 - 2000",
+    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-10-12T09:50:49.288875+00:00",
+    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
+    "id": "1b488e3a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-12T09:50:52.079040+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом культуры «Корабел»",
+    "event_type": "концерт",
+    "price": "2000 - 3500",
+    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-10-12T09:50:49.289002+00:00",
+    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
+    "id": "7ee9b24f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-12T09:50:52.079040+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "2000 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-12T09:50:49.289036+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "71ede2ea",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-12T09:50:52.079040+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "80c290bb",
+    "date": "2026-10-16",
+    "time": "19:00",
+    "artist": "Живая музыка",
+    "event_type": "концерт",
+    "venue": "Apolo Bistro",
+    "price": "4 500 ₽",
+    "description": "Гастрономический ужин с живой музыкой.",
+    "source_city": "Севастополь",
+    "source_channel": "rodnoegnezdo",
+    "genre": "поп",
+    "source_url": "https://t.me/usadbarodnoegnezdo/3706",
+    "images": [
+      "/images/events/eea9a3c727a0baf784e5131d7ce0166c.jpg",
+      "/images/events/5834b7c2c7734424f28c17f3068570bb.jpg"
+    ],
+    "image": "/images/events/eea9a3c727a0baf784e5131d7ce0166c.jpg",
+    "post_date": "2026-10-12T05:50:01+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-10-18",
+    "time": "19:00",
+    "artist": "Кристина Кушнир, Сергей Аниканов",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка», Большая Морская, 19",
+    "price": "500–700 ₽",
+    "description": "ВЕЧЕР РОМАНСОВ В «СНЕЖИНКЕ»\nПриглашаем вас на вечер, наполненный красивой музыкой, искренними чувствами и мелодиями, которые хочется слушать, затаив дыхание. В программе — русские старинные романсы, городской и цыганский романсы, современные произведения и любимые мелодии из кинофильмов.",
+    "image": "/images/events/eeca403344d47c19c48f5f34d9570ee5.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-10-12T05:49:25+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2049",
+    "id": "05217555",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "id": "7b6355df",
+    "date": "2026-10-14",
+    "time": "19:00",
+    "artist": "Любовь Фатеева (виолончель)",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "бесплатно",
+    "description": "«Немного о роке и не только», виолончель. −20% на горячие рыбные блюда.",
+    "source_city": "Севастополь",
+    "source_channel": "u_blacksea_rest",
+    "genre": "рок",
+    "source_url": "https://vk.com/wall-233167471_1038",
+    "images": [
+      "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg"
+    ],
+    "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg",
+    "post_date": "2026-10-12T08:29:00+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": []
   },

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 4 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-u-chernogo-morya">
   <meta property="og:title" content="Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 4 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -48,6 +48,21 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "виолончель (Любовь Фатеева)"
+      },
+      "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Любовь Фатеева (виолончель)",
+      "startDate": "2026-10-14T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»"
+      },
+      "description": "«Немного о роке и не только», виолончель. −20% на горячие рыбные блюда.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Любовь Фатеева (виолончель)"
       },
       "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg"
     },
