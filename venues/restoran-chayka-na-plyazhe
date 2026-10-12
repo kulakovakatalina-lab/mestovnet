@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ресторан «Чайка на Пляже» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в ресторан «Чайка на Пляже», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в ресторан «Чайка на Пляже», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-chayka-na-plyazhe">
   <meta property="og:title" content="ресторан «Чайка на Пляже» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в ресторан «Чайка на Пляже», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в ресторан «Чайка на Пляже», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Соня Сафарова, Никита Шульгин (Адреналин Хаус)",
-      "startDate": "2026-10-11T15:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "ресторан «Чайка на Пляже»"
-      },
-      "description": "Концерт участников группы Адреналин Хаус — Сони Сафаровой и Никиты Шульгина.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Соня Сафарова, Никита Шульгин (Адреналин Хаус)"
-      },
-      "image": "/images/events/8066ae1d2af14692442ae9304e4cc952.jpg"
     }
   ]
 }

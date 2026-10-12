@@ -185,6 +185,22 @@
     "lon": 33.728614
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 12,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "",
+    "desc_baseline_count": 0,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "organnyy-zal-livadia",
     "name": "Органный зал 'Livadia'",
     "city": "Ялта",
@@ -246,22 +262,6 @@
     "desc_baseline_count": 0,
     "lat": 44.951251,
     "lon": 34.098202
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 10,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "",
-    "desc_baseline_count": 0,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -1148,7 +1148,6 @@
     "address": "",
     "event_count": 2,
     "aliases": [
-      "КЗ 'Юбилейный'",
       "КЗ «Юбилейный»"
     ],
     "description": null,

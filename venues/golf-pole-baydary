@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>гольф-поле «Байдары» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/golf-pole-baydary">
   <meta property="og:title" content="гольф-поле «Байдары» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в гольф-поле «Байдары», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)",
-      "startDate": "2026-10-11T16:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "гольф-поле «Байдары»"
-      },
-      "description": "Осенний закат, любимые мелодии и пикник на природе.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель (вокал), Андрей Рыбальченко (клавишные)"
-      },
-      "image": "/images/events/28ec1c408d0ce6d8061c91f1f362ab9c.jpg"
     }
   ]
 }

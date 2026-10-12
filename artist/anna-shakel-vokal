@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Шакель (вокал) — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel-vokal">
   <meta property="og:title" content="Анна Шакель (вокал) — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Шакель (вокал) в Крыму (Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,46 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Шакель (вокал)"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель (вокал)",
-      "startDate": "2026-10-11T16:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель (вокал)"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Байдарская долина",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Осенний вечер с Анной Шакель и Андреем Рыбальченко в Байдарской долине. Время, когда природа становится тише, а краски — глубже. Солнце уже не обжигает, а мягко ложится на склоны. Ближе к вечеру мы уедем из города и по узкой грунтовой дороге попадём на огромное гольф-поле. Вокруг — Байдарская долина. День будет медленно клониться к вечеру, над горами начнёт меняться свет, станет прохладнее. Зажжём костёр и вместе встретим закат — под потрескивание дров и музыку.",
-      "image": "/images/events/ad7641bd164648cb33812a3f0acf0344.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель (вокал)",
-      "startDate": "2026-10-11T16:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель (вокал)"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "гольф-поле «Байдары»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Осенний закат, любимые мелодии и пикник на природе.",
-      "image": "/images/events/28ec1c408d0ce6d8061c91f1f362ab9c.jpg"
     }
   ]
 }

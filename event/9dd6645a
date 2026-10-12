@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="DJ, Ирина Депутович, Ресто-бар «У Чёрного моря», в Севастополе, 1 января, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="DJ, Ирина Депутович, Ресторан «У Чёрного моря», в Севастополе, 1 января, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DJ, Ирина Депутович — Ресто-бар «У Чёрного моря», Севастополь, 1 января · Местов.Нет</title>
+<title>DJ, Ирина Депутович — Ресторан «У Чёрного моря», Севастополь, 1 января · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/9dd6645a">
-<meta property="og:title" content="DJ, Ирина Депутович — Ресто-бар «У Чёрного моря», Севастополь, 1 января · Местов.Нет">
-<meta property="og:description" content="DJ, Ирина Депутович, Ресто-бар «У Чёрного моря», в Севастополе, 1 января, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="DJ, Ирина Депутович — Ресторан «У Чёрного моря», Севастополь, 1 января · Местов.Нет">
+<meta property="og:description" content="DJ, Ирина Депутович, Ресторан «У Чёрного моря», в Севастополе, 1 января, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2027-01-01",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресто-бар «У Чёрного моря»",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Новогодняя ночь 2027: Музыка, Свет и Вкус! Выступление Ирины Депутович + DJ, лазерное шоу с дымом, танцевально-световое шоу и танцы до утра, новогодний квиз и лотерея призов.",
+      "description": "Выступление Ирины Депутович + DJ, лазерное шоу с дымом, танцевально-световое шоу и танцы до утра, новогодний квиз и лотерея призов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "DJ, Ирина Депутович"
@@ -989,7 +989,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "13 000 ₽ (взрослый), 7 000 ₽ (ребенок)",
+        "name": "13 000 ₽ (взрослый), 7 000 ₽ (ребёнок) для основного зала; 10 000 ₽ (взрослый), 6 000 ₽ (ребёнок) для обогреваемого дворика",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
