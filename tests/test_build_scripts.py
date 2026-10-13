@@ -103,8 +103,10 @@ def test_black_sea_venue_variants_merge_on_rebuild(tmp_path, events):
         "Ресто-бар «У Чёрного моря»",
     }
     assert variants <= set(canonical["aliases"])
+    # Count every spelling merged by the builder, including new address variants.
+    merged_names = set(canonical["aliases"])
     assert canonical["event_count"] == sum(
-        event.get("venue") in variants for event in events
+        event.get("venue") in merged_names for event in events
     )
     assert (canonical["lat"], canonical["lon"]) == (44.614484, 33.525136)
 
