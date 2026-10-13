@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь). 0 ближайших событий.">
+  <title>Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь, Феодосия · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь, Феодосия). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/krymskiy-kamernyy-orkestr-novaya-garmoniya">
-  <meta property="og:title" content="Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь). 0 ближайших событий.">
+  <meta property="og:title" content="Крымский камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Симферополь, Феодосия · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Крымский камерный оркестр «Новая гармония» в Крыму (Крым, Симферополь, Феодосия). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Крымский камерный оркестр «Новая гармония»"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Крымский камерный оркестр «Новая гармония»",
+      "startDate": "2026-10-18T18:30:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Крымский камерный оркестр «Новая гармония»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Картинная галерея им. И.К. Айвазовского (Феодосия, пр-т Айвазовского 15)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Феодосия",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Крымский камерный оркестр «Новая гармония» под руководством главного дирижера Дениса Карлова представит программу, где встретятся утонченность Моцарта, страсть Сарасате и огненная «Испанская рапсодия» Листа, солирует Элеонора Царевская.",
+      "image": "/images/events/46ec15625fff6e9a893df8ad71950247.jpg"
     }
   ]
 }
@@ -1000,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Крымский камерный оркестр «Новая гармония»</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Симферополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Симферополь, Феодосия</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

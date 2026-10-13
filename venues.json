@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 28,
+    "event_count": 30,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -140,7 +140,7 @@
     "name": "Мраморная пещера",
     "city": "Симферополь",
     "address": "",
-    "event_count": 14,
+    "event_count": 15,
     "aliases": [
       "Мраморная пещера",
       "Пещера «Мраморная»",
@@ -157,7 +157,7 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 13,
+    "event_count": 14,
     "aliases": [
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
@@ -541,6 +541,20 @@
     "lon": 33.489841
   },
   {
+    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
+    "name": "Ялтинский театр имени А. П. Чехова",
+    "city": "Ялта",
+    "address": "ул. Екатерининская, 13",
+    "event_count": 4,
+    "aliases": [
+      "Ялтинский театр имени А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.492566,
+    "lon": 34.162337
+  },
+  {
     "slug": "narodnyy-bar",
     "name": "Народный бар",
     "city": "Ялта",
@@ -815,6 +829,22 @@
     "lon": 33.887908
   },
   {
+    "slug": "yalta",
+    "name": "Ялта",
+    "city": "Ялта",
+    "address": "Пушкинская 2А",
+    "event_count": 3,
+    "aliases": [
+      "Ялта",
+      "Ялта, Пушкинская 2А",
+      "Ялта, ул. Свердлова, 34Б, здание напротив"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "bar-el-capulco-0-0",
     "name": "бар El Capulco 0.0",
     "city": "Ялта",
@@ -897,20 +927,6 @@
     "desc_baseline_count": 2,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
-    "name": "Ялтинский театр имени А. П. Чехова",
-    "city": "Ялта",
-    "address": "ул. Екатерининская, 13",
-    "event_count": 2,
-    "aliases": [
-      "Ялтинский театр имени А. П. Чехова"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.492566,
-    "lon": 34.162337
   },
   {
     "slug": "russkiy-teatr-im-gorkogo",
@@ -1043,21 +1059,6 @@
     "lon": null
   },
   {
-    "slug": "yalta",
-    "name": "Ялта",
-    "city": "Ялта",
-    "address": "Пушкинская 2А",
-    "event_count": 2,
-    "aliases": [
-      "Ялта",
-      "Ялта, Пушкинская 2А"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "lokatsiya-3-km-ot-nauchnogo",
     "name": "Локация 3 км от Научного",
     "city": "Научный",
@@ -1182,6 +1183,34 @@
     "desc_baseline_count": 0,
     "lat": 44.755291,
     "lon": 33.857871
+  },
+  {
+    "slug": "sevastopolskiy-tsentr-kultury-i-iskusstva",
+    "name": "Севастопольский центр культуры и искусства",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Севастопольский центр культуры и искусства"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzykalnoe-uchilische-imeni-p-i-chaykovskogo",
+    "name": "Музыкальное училище имени П. И. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Музыкальное училище имени П. И. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "nebar",
@@ -2304,6 +2333,20 @@
     "lon": null
   },
   {
+    "slug": "apolo-bistro",
+    "name": "Apolo Bistro",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Apolo Bistro"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2318,13 +2361,13 @@
     "lon": 35.382656
   },
   {
-    "slug": "apolo-bistro",
-    "name": "Apolo Bistro",
-    "city": "Севастополь",
-    "address": "",
+    "slug": "kartinnaya-galereya-im-i-k-ayvazovskogo",
+    "name": "Картинная галерея им. И.К. Айвазовского",
+    "city": "Феодосия",
+    "address": "Феодосия, пр-т Айвазовского 15",
     "event_count": 1,
     "aliases": [
-      "Apolo Bistro"
+      "Картинная галерея им. И.К. Айвазовского (Феодосия, пр-т Айвазовского 15)"
     ],
     "description": null,
     "desc_baseline_count": 0,

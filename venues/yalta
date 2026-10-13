@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ялта — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ялта, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ялта, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/yalta">
   <meta property="og:title" content="Ялта — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ялта, в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ялта, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Пушкинская 2А"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Tabor Band»), Дэнза (автор-исполнитель, музыкант группы «Чудеса",
+      "startDate": "2026-10-17T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ялта"
+      },
+      "description": "Очень живой концерт - совместный проект вокалиста группы «Чудеса & Tabor Band» и музыкантов Бельбекской долины.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Tabor Band»), Дэнза (автор-исполнитель, музыкант группы «Чудеса"
+      },
+      "image": "/images/events/9999576751f27b697cdd85ab772d62be.jpg"
     }
   ]
 }
@@ -1077,7 +1092,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Ялта", "Ялта, Пушкинская 2А", "Ялта"];
+const VENUE_ALIASES = ["Ялта", "Ялта, Пушкинская 2А", "Ялта, ул. Свердлова, 34Б, здание напротив", "Ялта"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

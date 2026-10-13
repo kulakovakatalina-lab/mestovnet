@@ -554,6 +554,29 @@
     "desc_baseline_count": 4
   },
   {
+    "slug": "krymskiy-kamernyy-orkestr-novaya-garmoniya",
+    "name": "Крымский камерный оркестр «Новая гармония»",
+    "aliases": [
+      "Крымский камерный оркестр «Новая Гармония»",
+      "Крымский камерный оркестр «Новая гармония»"
+    ],
+    "event_count": 6,
+    "cities": [
+      "Крым",
+      "Симферополь",
+      "Феодосия"
+    ],
+    "venues": [
+      "Пещера «Мраморная»",
+      "Мраморная пещера",
+      "Картинная галерея им. И.К. Айвазовского (Феодосия, пр-т Айвазовского 15)"
+    ],
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-10-18",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
     "slug": "anastasiya-gras",
     "name": "Анастасия Грас",
     "aliases": [
@@ -777,27 +800,6 @@
     "desc_baseline_count": 4
   },
   {
-    "slug": "krymskiy-kamernyy-orkestr-novaya-garmoniya",
-    "name": "Крымский камерный оркестр «Новая гармония»",
-    "aliases": [
-      "Крымский камерный оркестр «Новая Гармония»",
-      "Крымский камерный оркестр «Новая гармония»"
-    ],
-    "event_count": 5,
-    "cities": [
-      "Крым",
-      "Симферополь"
-    ],
-    "venues": [
-      "Пещера «Мраморная»",
-      "Мраморная пещера"
-    ],
-    "first_seen": "2026-07-11",
-    "last_seen": "2026-10-10",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
     "slug": "pasha-rhino",
     "name": "Pasha Rhino",
     "aliases": [
@@ -879,6 +881,24 @@
     "last_seen": "2026-10-10",
     "description": "Этно-джазовые программы с восточными мотивами: дворец Дюльбер в Кореизе и камерные концерты на закате в долине под Севастополем.",
     "desc_baseline_count": 2
+  },
+  {
+    "slug": "irina-deputovich",
+    "name": "Ирина Депутович",
+    "aliases": [
+      "Ирина Депутович"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Севастополь"
+    ],
+    "venues": [
+      "Ресторан «У Чёрного моря»"
+    ],
+    "first_seen": "2026-10-08",
+    "last_seen": "2027-01-01",
+    "description": null,
+    "desc_baseline_count": 0
   },
   {
     "slug": "andrey-rybalchenko-fortepiano",
@@ -1214,24 +1234,6 @@
     ],
     "first_seen": "2026-08-12",
     "last_seen": "2026-08-28",
-    "description": null,
-    "desc_baseline_count": 0
-  },
-  {
-    "slug": "irina-deputovich",
-    "name": "Ирина Депутович",
-    "aliases": [
-      "Ирина Депутович"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Севастополь"
-    ],
-    "venues": [
-      "Ресторан «У Чёрного моря»"
-    ],
-    "first_seen": "2026-10-08",
-    "last_seen": "2027-01-01",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -2031,6 +2033,50 @@
     ],
     "first_seen": "2026-09-30",
     "last_seen": "2026-10-07",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "skazki-s-orkestrom",
+    "name": "Сказки с оркестром",
+    "aliases": [
+      "Сказки с оркестром"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Севастополь",
+      "Симферополь",
+      "Ялта"
+    ],
+    "venues": [
+      "Севастопольский центр культуры и искусства",
+      "Музыкальное училище имени П. И. Чайковского",
+      "Ялтинский театр имени А. П. Чехова"
+    ],
+    "first_seen": "2026-10-17",
+    "last_seen": "2026-10-25",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "vivat-virtuozy",
+    "name": "Виват виртуозы!",
+    "aliases": [
+      "Виват виртуозы!"
+    ],
+    "event_count": 3,
+    "cities": [
+      "Ялта",
+      "Севастополь",
+      "Симферополь"
+    ],
+    "venues": [
+      "Ялтинский театр имени А. П. Чехова",
+      "Севастопольский центр культуры и искусства",
+      "Музыкальное училище имени П. И. Чайковского"
+    ],
+    "first_seen": "2026-10-17",
+    "last_seen": "2026-10-25",
     "description": null,
     "desc_baseline_count": 0
   },
@@ -3641,6 +3687,25 @@
     ],
     "first_seen": "2026-09-12",
     "last_seen": "2026-09-13",
+    "description": null,
+    "desc_baseline_count": 0
+  },
+  {
+    "slug": "rezonans",
+    "name": "Резонанс",
+    "aliases": [
+      "Резонанс"
+    ],
+    "event_count": 2,
+    "cities": [
+      "Крым",
+      "Симферополь"
+    ],
+    "venues": [
+      "Мраморная пещера"
+    ],
+    "first_seen": "2026-09-19",
+    "last_seen": "2026-10-24",
     "description": null,
     "desc_baseline_count": 0
   },

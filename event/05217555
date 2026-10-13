@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Кристина Кушнир, Сергей Аниканов — Арт-кафе «Снежинка», Большая Морская, 19, Севастополь, 18 октября · Местов.Нет">
 <meta property="og:description" content="Кристина Кушнир, Сергей Аниканов, Арт-кафе «Снежинка», Большая Морская, 19, в Севастополе, 18 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/eeca403344d47c19c48f5f34d9570ee5.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/741ee2d90e55ee85cf8151d853a13a59.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "ВЕЧЕР РОМАНСОВ В «СНЕЖИНКЕ»\nПриглашаем вас на вечер, наполненный красивой музыкой, искренними чувствами и мелодиями, которые хочется слушать, затаив дыхание. В программе — русские старинные романсы, городской и цыганский романсы, современные произведения и любимые мелодии из кинофильмов.",
+      "description": "Вечер романсов в «Снежинке». В программе — русские старинные романсы, городской и цыганский романсы, современные произведения и любимые мелодии из кинофильмов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Кристина Кушнир, Сергей Аниканов"
       },
-      "image": "/images/events/eeca403344d47c19c48f5f34d9570ee5.jpg",
+      "image": "/images/events/741ee2d90e55ee85cf8151d853a13a59.jpg",
       "offers": {
         "@type": "Offer",
         "name": "500–700 ₽",
