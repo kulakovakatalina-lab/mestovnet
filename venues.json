@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 52,
+    "event_count": 53,
     "aliases": [
       "Jam Club"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 35,
+    "event_count": 36,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -57,22 +57,6 @@
     "lon": 33.522078
   },
   {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 18,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар",
-      "Севастополь, наб. Адмирала Клокачева, 16"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "tavrida-art",
     "name": "ТАВРИДА.АРТ",
     "city": "Судак",
@@ -85,6 +69,22 @@
     "desc_baseline_count": 3,
     "lat": 44.835312,
     "lon": 35.016803
+  },
+  {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 17,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар",
+      "Севастополь, наб. Адмирала Клокачева, 16"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "depo",

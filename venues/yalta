@@ -38,7 +38,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Tabor Band»), Дэнза (автор-исполнитель, музыкант группы «Чудеса",
+      "name": "Денза",
       "startDate": "2026-10-17T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -47,9 +47,9 @@
       "description": "Очень живой концерт - совместный проект вокалиста группы «Чудеса & Tabor Band» и музыкантов Бельбекской долины.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Tabor Band»), Дэнза (автор-исполнитель, музыкант группы «Чудеса"
+        "name": "Денза"
       },
-      "image": "/images/events/9999576751f27b697cdd85ab772d62be.jpg"
+      "image": "/images/events/91f2abaee6459fc11d40d31466b6f0e3.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Денайро — концерты в Крыму, Севастополь, Симферополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Симферополь, Крым). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Денайро в Крыму (Севастополь, Симферополь, Крым). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/denayro">
   <meta property="og:title" content="Денайро — концерты в Крыму, Севастополь, Симферополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Симферополь, Крым). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Денайро в Крыму (Севастополь, Симферополь, Крым). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Денайро"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Денайро",
+      "startDate": "2026-10-16T21:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Денайро"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Рок-поп хиты и живые инструменты.",
+      "image": "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg"
     }
   ]
 }

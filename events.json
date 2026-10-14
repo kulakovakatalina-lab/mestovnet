@@ -10320,7 +10320,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-10-14T02:11:57.313886+00:00",
+    "post_date": "2026-10-14T08:06:04.020733+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10530,7 +10530,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
-    "post_date": "2026-10-14T02:11:57.313908+00:00",
+    "post_date": "2026-10-14T08:06:04.020751+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -13744,7 +13744,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-14T02:11:57.313816+00:00",
+    "post_date": "2026-10-14T08:06:04.020679+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -13766,7 +13766,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-14T02:11:57.313840+00:00",
+    "post_date": "2026-10-14T08:06:04.020699+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -14331,7 +14331,7 @@
       "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg"
     ],
     "image": "/images/events/51c85310cf24741aebf94004c9fa0fc6.jpg",
-    "post_date": "2026-10-14T02:11:57.313863+00:00",
+    "post_date": "2026-10-14T08:06:04.020716+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -15391,25 +15391,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-17",
-    "time": "18:00",
-    "artist": "Tabor Band»), Дэнза (автор-исполнитель, музыкант группы «Чудеса",
-    "event_type": "концерт",
-    "venue": "Ялта, ул. Свердлова, 34Б, здание напротив",
-    "price": "1000 рублей",
-    "description": "Очень живой концерт - совместный проект вокалиста группы «Чудеса & Tabor Band» и музыкантов Бельбекской долины.",
-    "image": "/images/events/9999576751f27b697cdd85ab772d62be.jpg",
-    "images": null,
-    "source_channel": "crimea_event",
-    "source_city": "Ялта",
-    "post_date": "2026-10-13T06:21:35+00:00",
-    "source_url": "https://t.me/crimea_event/5651",
-    "id": "6e1746f2",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
     "id": "d6c19fc2",
     "date": "2026-10-17",
     "time": "14:00",
@@ -15424,7 +15405,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
@@ -15450,7 +15431,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
@@ -15476,7 +15457,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
@@ -15502,7 +15483,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
@@ -15528,7 +15509,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
@@ -15554,36 +15535,10 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/11c97cbb120b090b5bc99c3024291f5c.jpg"
+      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-12T11:30:01+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "71e792ef",
-    "date": "2026-10-24",
-    "time": "17:00",
-    "artist": "Резонанс",
-    "event_type": "концерт",
-    "venue": "Мраморная пещера",
-    "price": null,
-    "description": "Последний концерт сезона в Мраморной пещере 'Резонанс'.",
-    "source_city": "Симферополь",
-    "source_channel": "koncertykrym",
-    "genre": "поп",
-    "source_url": "https://t.me/koncertykrym/2341",
-    "images": [
-      "/images/events/ee09a331ece5c692b98838d85654beac.jpg",
-      "/images/events/3b21e9794df4858c251076e08ff32c4c.jpg"
-    ],
-    "image": "/images/events/ee09a331ece5c692b98838d85654beac.jpg",
-    "post_date": "2026-10-12T15:25:20+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [
@@ -15802,39 +15757,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "f532b387",
-    "date": "2026-10-14",
-    "time": null,
-    "artist": "Милова Мира, Кристина Поштарук",
-    "event_type": "другое",
-    "venue": "Севастополь",
-    "price": "1000 ₽",
-    "description": "Вечер женской поэзии «Голос женщины в стихах…». Живое чтение, авторские стихи и фортепиано в камерной атмосфере.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_payberry",
-    "genre": "классика",
-    "source_url": "https://t.me/afisha_payberry/1650",
-    "images": [
-      "/images/events/7de071fa57048f2711af1a81c92e8999.jpg",
-      "/images/events/4527978c6f5ea621edff1d1b5f63ef58.jpg"
-    ],
-    "image": "/images/events/7de071fa57048f2711af1a81c92e8999.jpg",
-    "post_date": "2026-10-12T12:01:36+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-14T02:12:14.277466+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "description",
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-10-18",
     "time": "19:00",
     "artist": "Кристина Кушнир, Сергей Аниканов",
@@ -15862,110 +15784,7 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-10-15",
-    "time": "19:00",
-    "artist": "Ирина Депутович",
-    "event_type": "вечеринка",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": null,
-    "description": "РЕТРО-ВЕЧЕРИНКА с Ириной Депутович. Дискотека 80-90-х, караоке, розыгрыш коктейлей.",
-    "image": "/images/events/8bc0bb85d8ab8143f8046cf8707d9d63.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-10-13T07:29:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1049",
-    "id": "4d65b73b",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-14T02:12:14.277466+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-07",
-    "time": "18:00",
-    "artist": "Концерт «Музыкальные истины»",
-    "venue": "Винзавод «Массандра»",
-    "event_type": "концерт",
-    "price": "1100 - 2000",
-    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-10-14T02:12:12.276960+00:00",
-    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
-    "id": "1b488e3a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-14T02:12:14.277466+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "artist": "Jawa. Хиты «Сектор Газа»",
-    "venue": "Дом культуры «Корабел»",
-    "event_type": "концерт",
-    "price": "2000 - 3500",
-    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-10-14T02:12:12.277075+00:00",
-    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
-    "id": "7ee9b24f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-14T02:12:14.277466+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-18",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1200 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-10-14T02:12:12.277101+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "71ede2ea",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-14T02:12:14.277466+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
+    "id": "19b4c522",
     "date": "2026-10-16",
     "time": null,
     "artist": "Дима Резник",
@@ -15973,14 +15792,14 @@
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
     "description": "Дима Резник с русским рок-попом девяностых, нулевых и современными песнями",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-10-13T17:16:18+00:00",
-    "source_url": "https://t.me/rocknroll_92/7526",
-    "id": "19b4c522",
+    "source_channel": "rocknroll_92",
     "genre": "поп-рок",
+    "source_url": "https://t.me/rocknroll_92/7526",
+    "images": null,
+    "image": null,
+    "post_date": "2026-10-13T17:16:18+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
@@ -15988,6 +15807,7 @@
     ]
   },
   {
+    "id": "060d3046",
     "date": "2026-10-17",
     "time": null,
     "artist": "группа «Денайро»",
@@ -15995,14 +15815,14 @@
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
     "description": "Премьера! Впервые на нашей сцене группа «Денайро» с рок-поп хитами. Не акустика. Приходите знакомиться!",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-10-13T17:16:18+00:00",
-    "source_url": "https://t.me/rocknroll_92/7526",
-    "id": "060d3046",
+    "source_channel": "rocknroll_92",
     "genre": "поп-рок",
+    "source_url": "https://t.me/rocknroll_92/7526",
+    "images": null,
+    "image": null,
+    "post_date": "2026-10-13T17:16:18+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
@@ -16010,6 +15830,7 @@
     ]
   },
   {
+    "id": "12df288a",
     "date": "2026-10-18",
     "time": null,
     "artist": "Паша Грей",
@@ -16017,14 +15838,14 @@
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
     "description": "Авторский камеди-рок и каверы на зарубежный и русский рок в исполнении кибер-менестреля Паши Грея. Акустика",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-10-13T17:16:18+00:00",
-    "source_url": "https://t.me/rocknroll_92/7526",
-    "id": "12df288a",
+    "source_channel": "rocknroll_92",
     "genre": "русский рок",
+    "source_url": "https://t.me/rocknroll_92/7526",
+    "images": null,
+    "image": null,
+    "post_date": "2026-10-13T17:16:18+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
@@ -16054,6 +15875,7 @@
     "moderation_status": "approved"
   },
   {
+    "id": "3c7b9cb7",
     "date": "2026-10-17",
     "time": "21:00",
     "artist": "Jokers Band",
@@ -16061,13 +15883,248 @@
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": null,
     "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "поп-рок",
+    "source_url": "https://vk.com/wall-237501275_173",
+    "images": [
+      "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg"
+    ],
+    "image": "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg",
+    "post_date": "2026-10-13T17:00:58+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-17",
+    "time": "18:00",
+    "artist": "Денза",
+    "event_type": "концерт",
+    "venue": "Ялта, ул. Свердлова, 34Б, здание напротив",
+    "price": "1000 рублей",
+    "description": "Очень живой концерт - совместный проект вокалиста группы «Чудеса & Tabor Band» и музыкантов Бельбекской долины.",
+    "image": "/images/events/91f2abaee6459fc11d40d31466b6f0e3.jpg",
+    "images": null,
+    "source_channel": "crimea_event",
+    "source_city": "Ялта",
+    "post_date": "2026-10-13T06:21:35+00:00",
+    "source_url": "https://t.me/crimea_event/5651",
+    "id": "6e1746f2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-24",
+    "time": "17:00",
+    "artist": "Резонанс",
+    "event_type": "концерт",
+    "venue": "Мраморная пещера",
+    "price": null,
+    "description": "Последний концерт сезона в Мраморной пещере 'Резонанс'.",
+    "image": "/images/events/b7916d9f7de830f6e801cb60fcb7c0ba.jpg",
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-12T15:25:20+00:00",
+    "source_url": "https://t.me/koncertykrym/2341",
+    "id": "71e792ef",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "f532b387",
+    "date": "2026-10-14",
+    "time": null,
+    "artist": "Милова Мира, Кристина Поштарук",
+    "event_type": "другое",
+    "venue": "Афиша PayBerry",
+    "price": "1000 ₽",
+    "description": "Живое чтение, авторские стихи и фортепиано в камерной атмосфере. Милова Мира и Кристина Поштарук прочтут тексты о чувствах, внутренней силе и том, о чём не всегда получается сказать вслух.",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_payberry",
+    "genre": "классика",
+    "source_url": "https://t.me/afisha_payberry/1650",
+    "images": [
+      "/images/events/7de071fa57048f2711af1a81c92e8999.jpg",
+      "/images/events/4527978c6f5ea621edff1d1b5f63ef58.jpg"
+    ],
+    "image": "/images/events/7de071fa57048f2711af1a81c92e8999.jpg",
+    "post_date": "2026-10-12T12:01:36+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-15",
+    "time": "19:00",
+    "artist": "Ирина Депутович",
+    "event_type": "вечеринка",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": null,
+    "description": "РЕТРО-ВЕЧЕРИНКА с Ириной Депутович. В программе: дискотека 80-90-х, караоке, розыгрыш коктейлей.",
+    "image": "/images/events/8bc0bb85d8ab8143f8046cf8707d9d63.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-10-13T07:29:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1049",
+    "id": "4d65b73b",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-07",
+    "time": "18:00",
+    "artist": "Концерт «Музыкальные истины»",
+    "venue": "Винзавод «Массандра»",
+    "event_type": "концерт",
+    "price": "1100 - 2000",
+    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-10-14T08:06:18.509744+00:00",
+    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
+    "id": "1b488e3a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "artist": "Jawa. Хиты «Сектор Газа»",
+    "venue": "Дом культуры «Корабел»",
+    "event_type": "концерт",
+    "price": "2000 - 3500",
+    "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-10-14T08:06:18.509877+00:00",
+    "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/jawa-xity-sektor-gaza-1",
+    "id": "7ee9b24f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-18",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-14T08:06:18.509899+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "71ede2ea",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-14T08:06:21.343199+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-24",
+    "time": "18:00",
+    "artist": "настоящий Сан Саныч Андрюшкин, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, NIRVANA TRIBUTE by Paper Plain",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале. Для подписчиков клуба вход на всё бесплатный! Сразу после концерта - бесплатное рок-караоке до 6 утра.",
+    "image": "/images/events/525601b1998eda251fd89531f05efc3a.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-13T18:54:04+00:00",
+    "source_url": "https://t.me/clubjam/1172",
+    "id": "ea236ad9",
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-10-16",
+    "time": "21:00",
+    "artist": "группа «Денайро»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Рок-поп хиты и живые инструменты.",
     "image": "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg",
     "images": null,
     "source_channel": "rocknroll_82",
     "source_city": "Симферополь",
     "post_date": "2026-10-13T17:00:58+00:00",
     "source_url": "https://vk.com/wall-237501275_173",
-    "id": "3c7b9cb7",
+    "id": "49e3c711",
     "genre": "поп-рок",
     "needs_review": false,
     "review_reasons": [

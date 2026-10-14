@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,21 @@
         "name": "Джокер"
       },
       "image": "/images/events/d15b9652a16d2ccce7f26fa6b5e1b1c7.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "настоящий Сан Саныч Андрюшкин, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, NIRVANA TRIBUTE by Paper Plain",
+      "startDate": "2026-10-24T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале. Для подписчиков клуба вход на всё бесплатный! Сразу после концерта - бесплатное рок-караоке до 6 утра.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "настоящий Сан Саныч Андрюшкин, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, NIRVANA TRIBUTE by Paper Plain"
+      },
+      "image": "/images/events/525601b1998eda251fd89531f05efc3a.jpg"
     }
   ]
 }
