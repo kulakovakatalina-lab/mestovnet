@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 41,
+    "event_count": 44,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 33,
+    "event_count": 35,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -57,6 +57,22 @@
     "lon": 33.522078
   },
   {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 18,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар",
+      "Севастополь, наб. Адмирала Клокачева, 16"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "tavrida-art",
     "name": "ТАВРИДА.АРТ",
     "city": "Судак",
@@ -69,22 +85,6 @@
     "desc_baseline_count": 3,
     "lat": 44.835312,
     "lon": 35.016803
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 17,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар",
-      "Севастополь, наб. Адмирала Клокачева, 16"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "depo",
@@ -157,7 +157,7 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 14,
+    "event_count": 13,
     "aliases": [
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
@@ -467,6 +467,20 @@
     "lon": 34.143145
   },
   {
+    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
+    "name": "Ялтинский театр имени А. П. Чехова",
+    "city": "Ялта",
+    "address": "ул. Екатерининская, 13",
+    "event_count": 5,
+    "aliases": [
+      "Ялтинский театр имени А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.492566,
+    "lon": 34.162337
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Севастополь",
@@ -541,20 +555,6 @@
     "lon": 33.489841
   },
   {
-    "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
-    "name": "Ялтинский театр имени А. П. Чехова",
-    "city": "Ялта",
-    "address": "ул. Екатерининская, 13",
-    "event_count": 4,
-    "aliases": [
-      "Ялтинский театр имени А. П. Чехова"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.492566,
-    "lon": 34.162337
-  },
-  {
     "slug": "narodnyy-bar",
     "name": "Народный бар",
     "city": "Ялта",
@@ -611,20 +611,6 @@
     "desc_baseline_count": 5,
     "lat": 44.959953,
     "lon": 34.097093
-  },
-  {
-    "slug": "livadiyskiy-dvorets",
-    "name": "Ливадийский дворец",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Ливадийский дворец"
-    ],
-    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
-    "desc_baseline_count": 1,
-    "lat": 44.467678,
-    "lon": 34.143826
   },
   {
     "slug": "baydarskaya-dolina",
@@ -784,6 +770,20 @@
     "desc_baseline_count": 3,
     "lat": 44.606527,
     "lon": 33.460754
+  },
+  {
+    "slug": "livadiyskiy-dvorets",
+    "name": "Ливадийский дворец",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Ливадийский дворец"
+    ],
+    "description": "Ливадийский дворец-музей — бывшая летняя резиденция Романовых, место Ялтинской конференции 1945 года.",
+    "desc_baseline_count": 1,
+    "lat": 44.467678,
+    "lon": 34.143826
   },
   {
     "slug": "kinoteatr-pobeda",
@@ -2319,13 +2319,13 @@
     "lon": null
   },
   {
-    "slug": "api-balaklava-sevastopol",
-    "name": "Api Balaklava",
-    "city": "Севастополь",
-    "address": "",
+    "slug": "kartinnaya-galereya-im-i-k-ayvazovskogo",
+    "name": "Картинная галерея им. И.К. Айвазовского",
+    "city": "Феодосия",
+    "address": "Феодосия, пр-т Айвазовского 15",
     "event_count": 1,
     "aliases": [
-      "Api Balaklava"
+      "Картинная галерея им. И.К. Айвазовского (Феодосия, пр-т Айвазовского 15)"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2335,11 +2335,25 @@
   {
     "slug": "apolo-bistro",
     "name": "Apolo Bistro",
-    "city": "Севастополь",
+    "city": "Крым",
     "address": "",
     "event_count": 1,
     "aliases": [
       "Apolo Bistro"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "api-balaklava-sevastopol",
+    "name": "Api Balaklava",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Api Balaklava"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2359,19 +2373,5 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
-  },
-  {
-    "slug": "kartinnaya-galereya-im-i-k-ayvazovskogo",
-    "name": "Картинная галерея им. И.К. Айвазовского",
-    "city": "Феодосия",
-    "address": "Феодосия, пр-т Айвазовского 15",
-    "event_count": 1,
-    "aliases": [
-      "Картинная галерея им. И.К. Айвазовского (Феодосия, пр-т Айвазовского 15)"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   }
 ]

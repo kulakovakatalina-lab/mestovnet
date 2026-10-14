@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="свечи, Музыка, Ливадийский дворец, в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Чехов в музыке, Дом-музей А. П. Чехова, в Ялте, 24 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>свечи, Музыка — Ливадийский дворец, Ялта, 7 ноября · Местов.Нет</title>
+<title>Чехов в музыке — Дом-музей А. П. Чехова, Ялта, 24 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,39 +960,39 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/04d4627a">
-<meta property="og:title" content="свечи, Музыка — Ливадийский дворец, Ялта, 7 ноября · Местов.Нет">
-<meta property="og:description" content="свечи, Музыка, Ливадийский дворец, в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Чехов в музыке — Дом-музей А. П. Чехова, Ялта, 24 октября · Местов.Нет">
+<meta property="og:description" content="Чехов в музыке, Дом-музей А. П. Чехова, в Ялте, 24 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/4c97952b3c448e5bc74de59146accd4c.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "свечи, Музыка",
-      "startDate": "2026-11-07T18:00:00+03:00",
+      "name": "Чехов в музыке",
+      "startDate": "2026-10-24T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ливадийский дворец",
+        "name": "Дом-музей А. П. Чехова",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Продолжаем цикл концертов «Музыка и свечи» и приглашаем на следующую встречу в Ливадийском дворце.",
+      "description": "Гала-концерт цикла «Чехов в музыке». Четыре произведения, четыре истории и четыре разных грани чеховского мира встретятся в одной программе.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "свечи, Музыка"
+        "name": "Чехов в музыке"
       },
-      "image": "/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg"
+      "image": "/images/events/4c97952b3c448e5bc74de59146accd4c.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "свечи, Музыка"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Чехов в музыке"}]}
 </script>
 </head>
 <body>

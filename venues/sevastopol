@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Милова Мира, Кристина Поштарук",
+      "startDate": "2026-10-14",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь"
+      },
+      "description": "Вечер женской поэзии «Голос женщины в стихах…». Живое чтение, авторские стихи и фортепиано в камерной атмосфере.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Милова Мира, Кристина Поштарук"
+      },
+      "image": "/images/events/7de071fa57048f2711af1a81c92e8999.jpg"
     },
     {
       "@type": "MusicEvent",

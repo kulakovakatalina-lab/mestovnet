@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="виолончель (Любовь Фатеева), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Jokers Band, Рок-н-рольщики (Симферополь), в Симферополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>виолончель (Любовь Фатеева) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет</title>
+<title>Jokers Band — Рок-н-рольщики (Симферополь), 17 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,46 +959,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/81d27e1c">
-<meta property="og:title" content="виолончель (Любовь Фатеева) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет">
-<meta property="og:description" content="виолончель (Любовь Фатеева), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/3c7b9cb7">
+<meta property="og:title" content="Jokers Band — Рок-н-рольщики (Симферополь), 17 октября · Местов.Нет">
+<meta property="og:description" content="Jokers Band, Рок-н-рольщики (Симферополь), в Симферополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/2f40564ccf3d786fb2e1567c45792159.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "виолончель (Любовь Фатеева)",
-      "startDate": "2026-10-14T19:00:00+03:00",
+      "name": "Jokers Band",
+      "startDate": "2026-10-17T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "Рок-н-рольщики (Симферополь)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "«Немного о роке и не только», виолончель. −20% на горячую рыбу.",
+      "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "виолончель (Любовь Фатеева)"
+        "name": "Jokers Band"
       },
-      "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "RUB",
-        "availability": "https://schema.org/InStock"
-      }
+      "image": "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "виолончель (Любовь Фатеева)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Jokers Band"}]}
 </script>
 </head>
 <body>

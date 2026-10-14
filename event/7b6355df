@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Любовь Фатеева (виолончель), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="виолончель (Любовь Фатеева), Любовь Фатеева (виолончель), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Любовь Фатеева (виолончель) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет</title>
+<title>виолончель (Любовь Фатеева), Любовь Фатеева (виолончель) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/7b6355df">
-<meta property="og:title" content="Любовь Фатеева (виолончель) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет">
-<meta property="og:description" content="Любовь Фатеева (виолончель), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="виолончель (Любовь Фатеева), Любовь Фатеева (виолончель) — Ресторан «У Чёрного моря», Севастополь, 14 октября · Местов.Нет">
+<meta property="og:description" content="виолончель (Любовь Фатеева), Любовь Фатеева (виолончель), Ресторан «У Чёрного моря», в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/2f40564ccf3d786fb2e1567c45792159.jpg">
 <script type="application/ld+json">
@@ -970,7 +970,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Любовь Фатеева (виолончель)",
+      "name": "виолончель (Любовь Фатеева), Любовь Фатеева (виолончель)",
       "startDate": "2026-10-14T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -984,7 +984,7 @@ a { color: inherit; text-decoration: none; }
       "description": "«Немного о роке и не только», виолончель. −20% на горячие рыбные блюда.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Любовь Фатеева (виолончель)"
+        "name": "виолончель (Любовь Фатеева), Любовь Фатеева (виолончель)"
       },
       "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg",
       "offers": {
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Любовь Фатеева (виолончель)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "виолончель (Любовь Фатеева), Любовь Фатеева (виолончель)"}]}
 </script>
 </head>
 <body>

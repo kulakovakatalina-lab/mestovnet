@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Матвей Блюмин, Афиша PayBerry, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Милова Мира, Кристина Поштарук, Севастополь, в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Матвей Блюмин — Афиша PayBerry, Севастополь, 17 октября · Местов.Нет</title>
+<title>Милова Мира, Кристина Поштарук — Севастополь, 14 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/96f58b5d">
-<meta property="og:title" content="Матвей Блюмин — Афиша PayBerry, Севастополь, 17 октября · Местов.Нет">
-<meta property="og:description" content="Матвей Блюмин, Афиша PayBerry, в Севастополе, 17 октября, сб. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/f532b387">
+<meta property="og:title" content="Милова Мира, Кристина Поштарук — Севастополь, 14 октября · Местов.Нет">
+<meta property="og:description" content="Милова Мира, Кристина Поштарук, Севастополь, в Севастополе, 14 октября, ср. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b8b75ac99b5a6a0ed47f97cb3140c28e.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/7de071fa57048f2711af1a81c92e8999.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-10-17",
+      "name": "Милова Мира, Кристина Поштарук",
+      "startDate": "2026-10-14",
       "location": {
         "@type": "MusicVenue",
-        "name": "Афиша PayBerry",
+        "name": "Севастополь",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Скрипка, фортепиано и музыка Бетховена, Чайковского, Брамса, Вагнера и Пуччини в интерьерах, которые усиливают впечатление от каждого произведения. Матвей Блюмин и Евгения Литвинова проведут слушателей через музыку XIX века – от нежности до настоящей драмы.",
+      "description": "Вечер женской поэзии «Голос женщины в стихах…». Живое чтение, авторские стихи и фортепиано в камерной атмосфере.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
+        "name": "Милова Мира, Кристина Поштарук"
       },
-      "image": "/images/events/b8b75ac99b5a6a0ed47f97cb3140c28e.jpg",
+      "image": "/images/events/7de071fa57048f2711af1a81c92e8999.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "950 ₽",
+        "name": "1000 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Матвей Блюмин"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Милова Мира, Кристина Поштарук"}]}
 </script>
 </head>
 <body>
