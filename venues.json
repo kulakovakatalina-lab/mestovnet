@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 35,
+    "event_count": 34,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -2361,20 +2361,6 @@
     "lon": null
   },
   {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 45.032421,
-    "lon": 35.382656
-  },
-  {
     "slug": "kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n",
     "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
     "city": "Научный",
@@ -2401,5 +2387,19 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Галерея им. Айвазовского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 45.032421,
+    "lon": 35.382656
   }
 ]
