@@ -15622,31 +15622,6 @@
     ]
   },
   {
-    "id": "144c14a0",
-    "date": "2026-10-16",
-    "time": "21:00",
-    "artist": "Jokers Band",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Jokers Band show: мировые рок-поп хиты в полном электрическом составе.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "поп-рок",
-    "source_url": "https://vk.com/wall-237501275_173",
-    "images": [
-      "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg"
-    ],
-    "image": "/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg",
-    "post_date": "2026-10-13T17:00:58+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "id": "3c7b9cb7",
     "date": "2026-10-17",
     "time": "21:00",
