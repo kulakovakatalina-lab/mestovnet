@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki">
   <meta property="og:title" content="Рок-н-рольщики — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,36 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Екатерининская, 14"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jokers Band",
+      "startDate": "2026-10-17T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Невероятные Jokers Band Show!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jokers Band"
+      },
+      "image": "/images/events/ecf29f3a784c0650811b9bb954e9868b.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Евгения Сухачева",
+      "startDate": "2026-10-18T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики"
+      },
+      "description": "Музыкальное рок-лото – вновь в «Рок-н-рольщиках»! Вспомним песни, под которые мы когда-то влюблялись, расставались и взрослели.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Евгения Сухачева"
+      },
+      "image": "/images/events/cc123df535aa77f575c3fbaf1dc92c78.jpg"
     }
   ]
 }

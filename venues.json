@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 36,
+    "event_count": 35,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -184,6 +184,21 @@
     "lon": 34.17698
   },
   {
+    "slug": "rok-n-rolschiki",
+    "name": "Рок-н-рольщики",
+    "city": "Симферополь",
+    "address": "ул. Екатерининская, 14",
+    "event_count": 12,
+    "aliases": [
+      "Рок-н-рольщики",
+      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.951251,
+    "lon": 34.098202
+  },
+  {
     "slug": "usadba-rodnoe-gnezdo",
     "name": "Усадьба «Родное гнездо»",
     "city": "Севастополь",
@@ -247,21 +262,6 @@
     "desc_baseline_count": 5,
     "lat": 44.964773,
     "lon": 34.106607
-  },
-  {
-    "slug": "rok-n-rolschiki",
-    "name": "Рок-н-рольщики",
-    "city": "Симферополь",
-    "address": "ул. Екатерининская, 14",
-    "event_count": 10,
-    "aliases": [
-      "Рок-н-рольщики",
-      "Рок-н-рольщики, Симферополь, ул. Екатерининская, 14"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.951251,
-    "lon": 34.098202
   },
   {
     "slug": "teatr-im-a-p-chehova",
@@ -527,6 +527,20 @@
     "lon": 33.944698
   },
   {
+    "slug": "simferopol",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Симферополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dvorets-kultury-rybakov",
     "name": "Дворец культуры рыбаков",
     "city": "Севастополь",
@@ -567,6 +581,20 @@
     "desc_baseline_count": 4,
     "lat": 44.49128,
     "lon": 34.150075
+  },
+  {
+    "slug": "belbek",
+    "name": "Белбек",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Белбек"
+    ],
+    "description": "За последний месяц здесь прошло 4 концерта, часть — с бесплатным входом. «День свободного творчества» с открытым микрофоном, мастер-классами и детской зоной соседствует с камерным поэтическим квартирником «для ценителей тишины и глубины».",
+    "desc_baseline_count": 4,
+    "lat": 44.684306,
+    "lon": 33.69919
   },
   {
     "slug": "golf-pole",
@@ -655,20 +683,6 @@
     "lon": 33.522078
   },
   {
-    "slug": "simferopol",
-    "name": "Симферополь",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Симферополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -740,20 +754,6 @@
     "desc_baseline_count": 3,
     "lat": 44.597345,
     "lon": 33.527468
-  },
-  {
-    "slug": "belbek",
-    "name": "Белбек",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Белбек"
-    ],
-    "description": "За последний месяц здесь прошло 4 концерта, часть — с бесплатным входом. «День свободного творчества» с открытым микрофоном, мастер-классами и детской зоной соседствует с камерным поэтическим квартирником «для ценителей тишины и глубины».",
-    "desc_baseline_count": 4,
-    "lat": 44.684306,
-    "lon": 33.69919
   },
   {
     "slug": "otel-akvamarin",
@@ -2333,20 +2333,6 @@
     "lon": null
   },
   {
-    "slug": "apolo-bistro",
-    "name": "Apolo Bistro",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Apolo Bistro"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "api-balaklava-sevastopol",
     "name": "Api Balaklava",
     "city": "Севастополь",
@@ -2354,6 +2340,20 @@
     "event_count": 1,
     "aliases": [
       "Api Balaklava"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "apolo-bistro",
+    "name": "Apolo Bistro",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Apolo Bistro"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2373,5 +2373,33 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n",
+    "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kofeynya-turgenev",
+    "name": "кофейня «ТУРГЕНЕВЪ»",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "кофейня «ТУРГЕНЕВЪ»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]

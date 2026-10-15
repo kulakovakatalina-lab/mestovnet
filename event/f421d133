@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Сказки с оркестром, Севастопольский центр культуры и искусства, в Севастополе, 18 октября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Сказки с оркестром, Крымский академический симфонический оркестр, Севастопольский центр культуры и искусства, в Севастополе, 18 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сказки с оркестром — Севастопольский центр культуры и искусства, 18 октября · Местов.Нет</title>
+<title>Сказки с оркестром, Крымский академический симфонический оркестр — Севастопольский центр культуры и искусства, 18 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/f421d133">
-<meta property="og:title" content="Сказки с оркестром — Севастопольский центр культуры и искусства, 18 октября · Местов.Нет">
-<meta property="og:description" content="Сказки с оркестром, Севастопольский центр культуры и искусства, в Севастополе, 18 октября, вс. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Сказки с оркестром, Крымский академический симфонический оркестр — Севастопольский центр культуры и искусства, 18 октября · Местов.Нет">
+<meta property="og:description" content="Сказки с оркестром, Крымский академический симфонический оркестр, Севастопольский центр культуры и искусства, в Севастополе, 18 октября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/e46f8474224c882d3a21ab6b8044097a.jpg">
 <script type="application/ld+json">
@@ -970,7 +970,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Сказки с оркестром",
+      "name": "Сказки с оркестром, Крымский академический симфонический оркестр",
       "startDate": "2026-10-18T14:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -981,10 +981,10 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт 'Сказки с оркестром' в Севастопольском центре культуры и искусства.",
+      "description": "Первый концерт абонемента 'Сказки с оркестром'. Музыкальная сказка 'Чиполлино'.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Сказки с оркестром"
+        "name": "Сказки с оркестром, Крымский академический симфонический оркестр"
       },
       "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
     }
@@ -992,7 +992,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Сказки с оркестром"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Сказки с оркестром, Крымский академический симфонический оркестр"}]}
 </script>
 </head>
 <body>
