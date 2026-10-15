@@ -10,8 +10,8 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
-from generate_pages import event_meta
-from parser import is_placeholder_title
+from generate_pages import event_meta, load_venues, load_artists
+from parser import is_placeholder_title, _GENERIC_ARTIST_LITERALS
 
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
@@ -23,6 +23,68 @@ CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта
 # аккуратную заглушку постера. Остальные неполные поля требуют решения человека.
 OPTIONAL_ISSUES = {"нет цены", "нет постера"}
 SEO_COLLISION = "дубли мета-тегов: совпадают title и description"
+SCHEDULE_CONFLICT = "разные исполнители на одной площадке в одно время"
+
+
+def _schedule_name(value: str) -> str:
+    return re.sub(r"[\W_]+", "", value.casefold().replace("ё", "е"))
+
+
+def _schedule_venue(value: str, city: str) -> str:
+    name = _schedule_name(value)
+    return name.replace(city, "") if city else name
+
+
+def schedule_conflicts(events: list[dict], settings: dict, rejected_ids=()) -> dict[str, list[dict]]:
+    """Сравнивает будущие сеансы после ручных правок; не выбирает победителя."""
+    today = date.today().isoformat()
+    hidden = set(settings.get("hidden", [])) | set(settings.get("cancelled", []))
+    venue_aliases = {}
+    for venue in load_venues():
+        city = _schedule_name(venue.get("city") or "")
+        # Город в скобках/после запятой не создаёт отдельную площадку.
+        canonical = _schedule_venue(venue["name"], city)
+        for alias in [venue["name"], *venue.get("aliases", [])]:
+            venue_aliases[(city, _schedule_venue(alias, city))] = canonical
+    artist_aliases = {}
+    for artist in load_artists():
+        for alias in [artist["name"], *artist.get("aliases", [])]:
+            artist_aliases[_schedule_name(alias)] = _schedule_name(artist["name"])
+    generic_artists = {_schedule_name(name) for name in
+                       _GENERIC_ARTIST_LITERALS | {"Живая музыка", "DJ", "диджей"}}
+    slots = {}
+    for original in events:
+        event = dict(original)
+        url = event.get("source_url") or ""
+        if (not event.get("id") or str(event["id"]) in rejected_ids or url in hidden
+                or event.get("cancelled") or event.get("source_status") == "cancelled"
+                or (event.get("date") or "") < today):
+            continue
+        for setting, field in (("names", "artist"), ("venues", "venue"),
+                               ("cities", "source_city"), ("times", "time")):
+            if url in settings.get(setting, {}):
+                event[field] = settings[setting][url]
+        city = _schedule_name(event.get("source_city") or "")
+        venue = _schedule_venue(event.get("venue") or "", city)
+        venue = venue_aliases.get((city, venue), venue)
+        artist = _schedule_name(event.get("artist") or "")
+        if (not city or not venue or not artist or artist in generic_artists
+                or is_placeholder_title(event.get("artist"))):
+            continue
+        match = re.fullmatch(r"\s*(\d{1,2})[:.](\d{2})\s*", event.get("time") or "")
+        if not match or int(match[1]) > 23 or int(match[2]) > 59:
+            continue
+        time = f"{int(match[1]):02d}:{match[2]}"
+        key = (city, venue, event["date"], time)
+        slots.setdefault(key, []).append((event, artist_aliases.get(artist, artist)))
+    conflicts = {}
+    for group in slots.values():
+        for event, artist in group:
+            peers = [other for other, other_artist in group
+                     if other["id"] != event["id"] and artist != other_artist]
+            if peers:
+                conflicts[str(event["id"])] = sorted(peers, key=lambda e: str(e["id"]))
+    return conflicts
 
 
 def load_decisions() -> Optional[list[dict]]:
@@ -151,7 +213,7 @@ def _decision_signature(decision: dict) -> tuple:
 
 
 def enrich_remote_decisions(
-    remote: list[dict], cached: list[dict], events: list[dict]
+    remote: list[dict], cached: list[dict], events: list[dict], event_issues=None
 ) -> list[dict]:
     """Сохраняет fingerprint прежней версии, пока решение Worker не менялось."""
     cached_by_id = {d.get("event_id"): d for d in cached if d.get("event_id")}
@@ -167,7 +229,8 @@ def enrich_remote_decisions(
         if previous and _decision_signature(previous) == _decision_signature(decision):
             fingerprint = previous.get("fingerprint")
         else:
-            fingerprint = event_fingerprint(current, reasons(current)) if current else None
+            issues = (event_issues or {}).get(str(event_id), reasons(current)) if current else []
+            fingerprint = event_fingerprint(current, issues) if current else None
         if fingerprint:
             decision["fingerprint"] = fingerprint
         enriched.append(decision)
@@ -202,11 +265,31 @@ def main() -> None:
     remote_decisions = load_decisions()
     cached_decisions = load_cached_decisions()
     sync_failed = remote_decisions is None
+    known_decisions = cached_decisions if sync_failed else remote_decisions
+    rejected_ids = {str(d.get("event_id")) for d in known_decisions if d.get("status") == "rejected"}
+    if sync_failed:
+        rejected_ids.update(str(e.get("id")) for e in events
+                            if e.get("moderation_status") == "rejected")
+    conflicts = schedule_conflicts(events, settings, rejected_ids)
+    event_issues = {}
+    for event in events:
+        reviewed = dict(event)
+        url = event.get("source_url") or ""
+        if url in custom_names:
+            reviewed["artist"] = custom_names[url]
+        issues = reasons(reviewed)
+        peers = conflicts.get(str(event.get("id")), [])
+        if peers:
+            # ID и имя соседней карточки входят в fingerprint: новый конфликт
+            # требует нового решения, прежнее одобрение его не обходит.
+            issues.append(SCHEDULE_CONFLICT + ": " + "; ".join(
+                f"{p['artist']} (id {p['id']})" for p in peers))
+        event_issues[str(event.get("id"))] = issues
     if sync_failed:
         decisions = cached_decisions
         print("Модерация: Worker недоступен, использую локальный журнал решений.")
     else:
-        decisions = enrich_remote_decisions(remote_decisions, cached_decisions, events)
+        decisions = enrich_remote_decisions(remote_decisions, cached_decisions, events, event_issues)
         save_cached_decisions(decisions)
     by_id = {d.get("event_id"): d for d in decisions if d.get("event_id")}
     event_url_counts: dict[str, int] = {}
@@ -221,11 +304,8 @@ def main() -> None:
     }
     queue = []
     for event in events:
-        reviewed = dict(event)
-        url = event.get("source_url") or ""
-        if url in custom_names:
-            reviewed["artist"] = custom_names[url]
-        issues = reasons(reviewed)
+        issues = list(event_issues[str(event.get("id"))])
+        schedule_conflict = str(event.get("id")) in conflicts
         seo_collision = str(event.get("id")) in collision_ids
         if seo_collision:
             issues.append(SEO_COLLISION)
@@ -246,7 +326,7 @@ def main() -> None:
         # Однозначно сверенные изменения существующей карточки применяются
         # автоматически: это не новый LLM-кандидат, а обновление того же
         # первоисточника с сохранённым event_id.
-        auto_approved = not seo_collision and "нет названия" not in issues and (
+        auto_approved = not seo_collision and not schedule_conflict and "нет названия" not in issues and (
             bool(event.get("auto_updated"))
             or (bool(issues) and set(issues).issubset(OPTIONAL_ISSUES))
         )
