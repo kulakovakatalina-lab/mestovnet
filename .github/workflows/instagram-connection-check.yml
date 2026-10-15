@@ -1,0 +1,88 @@
+name: Instagram connection check
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - codex/instagram-connection-check
+    paths:
+      - .github/workflows/instagram-connection-check.yml
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check Instagram account (read only)
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        shell: python
+        run: |
+          import json
+          import os
+          import re
+          import sys
+          import urllib.error
+          import urllib.request
+
+          def finish(message, success=False):
+              print(message)
+              summary = os.environ.get("GITHUB_STEP_SUMMARY")
+              if summary:
+                  with open(summary, "a", encoding="utf-8") as out:
+                      out.write("## Instagram connection check\n\n" + message + "\n")
+                      out.write("\nRead-only check. Publishing permissions, insights access and token expiry are not verified.\n")
+              sys.exit(0 if success else 1)
+
+          token = os.environ.get("INSTAGRAM_ACCESS_TOKEN", "").strip()
+          if not token:
+              finish("Missing repository secret INSTAGRAM_ACCESS_TOKEN.")
+          if any(c.isspace() for c in token):
+              finish("Token contains whitespace. Save only the access token in the secret.")
+
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+
+          request = urllib.request.Request(
+              "https://graph.instagram.com/v25.0/me?fields=user_id,username,account_type",
+              headers={"Authorization": "Bearer " + token, "Accept": "application/json"},
+              method="GET",
+          )
+          opener = urllib.request.build_opener(NoRedirect())
+          try:
+              with opener.open(request, timeout=30) as response:
+                  data = json.load(response)
+          except urllib.error.HTTPError as exc:
+              # Never print response text, headers, request URL or exception details.
+              code = None
+              try:
+                  error = json.loads(exc.read(65536)).get("error", {})
+                  if isinstance(error, dict) and type(error.get("code")) is int:
+                      code = error["code"]
+              except Exception:
+                  pass
+              detail = " Meta code " + str(code) + "." if code is not None else ""
+              finish("Instagram API rejected the request: HTTP " + str(exc.code) + "." + detail)
+          except (urllib.error.URLError, TimeoutError):
+              finish("Could not reach Instagram API. Retry later.")
+          except Exception:
+              finish("Unexpected response from Instagram API; details suppressed to protect the token.")
+
+          if not isinstance(data, dict):
+              finish("Instagram API returned an unexpected response shape.")
+          if data.get("username") != "mestovnet82":
+              finish("Token belongs to a different account. Expected mestovnet82.")
+          user_id = str(data.get("user_id", ""))
+          if not re.fullmatch(r"[0-9]+", user_id):
+              finish("Account responded, but Instagram user_id is missing or invalid.")
+          kind = data.get("account_type")
+          if kind not in ("BUSINESS", "MEDIA_CREATOR", "Business", "Media_Creator"):
+              finish("Account responded, but professional account type was not confirmed.")
+          finish(
+              "Connection confirmed: @mestovnet82; Instagram user_id: " + user_id
+              + "; account type: " + kind + ". No content was published.",
+              success=True,
+          )
