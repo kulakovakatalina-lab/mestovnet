@@ -33,7 +33,7 @@ jobs:
               if summary:
                   with open(summary, "a", encoding="utf-8") as out:
                       out.write("## Instagram connection check\n\n" + message + "\n")
-                      out.write("\nRead-only check. Publishing permissions, insights access and token expiry are not verified.\n")
+                      out.write("\nRead-only check. See capability probes above; actual publishing and token expiry are not verified.\n")
               sys.exit(0 if success else 1)
 
           token = os.environ.get("INSTAGRAM_ACCESS_TOKEN", "").strip()
@@ -81,6 +81,70 @@ jobs:
           kind = data.get("account_type")
           if kind not in ("BUSINESS", "MEDIA_CREATOR", "Business", "Media_Creator"):
               finish("Account responded, but professional account type was not confirmed.")
+
+          def probe(label, path):
+              req = urllib.request.Request(
+                  "https://graph.instagram.com/v25.0/" + path,
+                  headers={"Authorization": "Bearer " + token, "Accept": "application/json"},
+                  method="GET",
+              )
+              try:
+                  with opener.open(req, timeout=30) as response:
+                      result = json.load(response)
+                  if not isinstance(result, dict) or not isinstance(result.get("data"), list):
+                      print(label + ": unexpected response shape.")
+                      return None
+                  print(label + ": request accepted.")
+                  return result["data"]
+              except urllib.error.HTTPError as exc:
+                  code = None
+                  try:
+                      error = json.loads(exc.read(65536)).get("error", {})
+                      if isinstance(error, dict) and type(error.get("code")) is int:
+                          code = error["code"]
+                  except Exception:
+                      pass
+                  print(label + ": HTTP " + str(exc.code) + "; Meta code " + str(code) + ".")
+              except Exception:
+                  print(label + ": request failed; details suppressed.")
+              return None
+
+          permissions = probe("PERMISSIONS", user_id + "/permissions")
+          required = (
+              "instagram_business_basic",
+              "instagram_business_content_publish",
+              "instagram_business_manage_insights",
+          )
+          statuses = {}
+          if permissions is not None:
+              for name in required:
+                  statuses[name] = next(
+                      (item.get("status") for item in permissions
+                       if isinstance(item, dict) and item.get("permission") == name),
+                      "not listed",
+                  )
+                  if statuses[name] not in ("granted", "declined", "expired", "not listed"):
+                      statuses[name] = "unknown"
+                  print("SCOPE " + name + ": " + statuses[name])
+
+          quota = probe("PUBLISHING_QUOTA", user_id + "/content_publishing_limit?fields=quota_usage,config")
+          if quota is not None:
+              print("Publishing quota endpoint is accessible; no publication was attempted.")
+          insights = probe("INSIGHTS_REACH", user_id + "/insights?metric=reach&period=day")
+          if insights is not None:
+              print("Reach insights accessible; result series count: " + str(len(insights)))
+          print("TOKEN_EXPIRY: unknown. This token was saved without issuance/expiry metadata.")
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as out:
+                  out.write("## Capability probes (read only)\n\n")
+                  for name in required:
+                      out.write("- " + name + ": " + statuses.get(name, "unknown") + "\n")
+                  out.write("- Publishing quota endpoint: " + ("accessible" if quota is not None else "not confirmed") + "\n")
+                  out.write("- Reach insights: " + ("accessible" if insights is not None else "not confirmed") + "\n")
+                  out.write("- Token expiry: unknown; expiry metadata must be obtained during token setup.\n")
+                  out.write("- No content or containers created; no messages sent.\n")
+
           finish(
               "Connection confirmed: @mestovnet82; Instagram user_id: " + user_id
               + "; account type: " + kind + ". No content was published.",
