@@ -15,7 +15,7 @@
    - Namespace: `mestov-bot-kv`
 5. **Переменные:** Worker → Settings → Variables and Secrets → добавить:
    - `BOT_TOKEN` (тип Secret) — токен бота
-   - `WEBHOOK_SECRET` — `6eQoa4vAL9cnI8cmoJv0nJeZeCi95Mlm`
+   - `WEBHOOK_SECRET` — случайная длинная строка (тип Secret)
    - `ADMIN_ID` — `267459702`
    - `MODERATION_SYNC_TOKEN` (тип Secret) — случайная длинная строка; это
      пароль для ночного парсера, который забирает решения модератора из KV.
@@ -27,7 +27,7 @@
 7. **URL Worker'а:** вида `https://mestov-bot.<твой-сабдомен>.workers.dev`.
 8. **Webhook:**
    ```bash
-   curl "https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://mestov-bot.<сабдомен>.workers.dev/&secret_token=6eQoa4vAL9cnI8cmoJv0nJeZeCi95Mlm"
+   curl "https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://mestov-bot.<сабдомен>.workers.dev/&secret_token=<WEBHOOK_SECRET>"
    ```
 
 ## Проверка

@@ -32,3 +32,24 @@ tests/artifacts/
 # Real-ESRGAN upscaler binary + models (большой, не в git)
 tools/
 images/events_orig/
+
+# Локальные настройки и виртуальные окружения
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Логи и локальный архив рабочих материалов
+*.log
+/local-archive/
+/releases/
+/social/SESSION_*.md
+
+# Сырые выгрузки разовых аудитов; отчёты и скрипты сохраняем
+/drafts/source-audit-*/*.json
+/drafts/source-audit-*/*.txt
+/drafts/source-audit-*/*.jpg
+
+# Промежуточные кадры роликов
+/social/visuals/*-reel-base.png
+/social/visuals/*-reel-[0-9][0-9].png
