@@ -274,7 +274,7 @@ def addr_from_desc(desc: str):
 
 def needs_desc_update(description, event_count: int, baseline) -> bool:
     """Описание пора переписать: его нет, либо событийная история заметно
-    выросла с момента последней ручной правки (см. ACTUALIZATION.md)."""
+    выросла с момента последней ручной правки (процедуру актуализации справочников)."""
     if not description:
         return True
     baseline = baseline or 0
@@ -294,7 +294,7 @@ def main():
     # Рукописные поля (description/lat/lon) и база отсчёта дрейфа описания
     # переживают пересборку — мерджим по slug, как build_artists.py уже
     # делает для description. Без этого пересборка стирала бы их (см.
-    # ACTUALIZATION.md о найденном баге).
+    # историю исправления найденного бага).
     # Слаг сам по себе — ненадёжный ключ: часть текущих записей venues.json
     # была вручную подчищена после исходного бутстрапа (например slug
     # «tsarskaya-pristan» вместо сгенерированного заново «bts-tsarskaya-
@@ -355,7 +355,7 @@ def main():
         baseline = prev.get("desc_baseline_count")
         if description and baseline is None:
             # первый прогон после фикса — база отсчёта - это то, что было
-            # в файле до пересборки (см. ACTUALIZATION.md)
+            # в файле до пересборки (процедуру актуализации справочников)
             baseline = prev.get("event_count") or event_count
         elif not description:
             baseline = 0

@@ -1100,7 +1100,7 @@ export default {
       return Response.json({ decisions: await listModerationDecisions(env) });
     }
     if (request.method === "POST") {
-      if (env.WEBHOOK_SECRET &&
+      if (!env.WEBHOOK_SECRET ||
           request.headers.get("X-Telegram-Bot-Api-Secret-Token") !== env.WEBHOOK_SECRET) {
         return new Response("forbidden", { status: 403 });
       }

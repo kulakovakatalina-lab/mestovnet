@@ -180,7 +180,7 @@ class TestArtistsJson:
         assert not problems, f"У артистов отсутствует name: {problems}"
 
     def test_min_event_count(self, artists):
-        # Порог публикации страницы — 2+ события (см. BACKLOG.md, раздел 1).
+        # Порог публикации страницы — 2+ события (страницы с историей выступлений).
         below = [(a["slug"], a["event_count"]) for a in artists if a.get("event_count", 0) < 2]
         assert not below, f"Артисты ниже порога публикации (event_count < 2) не должны быть в artists.json: {below}"
 
