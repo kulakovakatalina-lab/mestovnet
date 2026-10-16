@@ -28,5 +28,5 @@ def test_home_and_city_load_published_catalog_first():
     for path in (root / "index.html", root / "cities/sevastopol.html"):
         page = path.read_text(encoding="utf-8")
         assert page.index("fetch('/events.json')") < page.index("fetch('https://mestov-bot.")
-        assert "fetch('/settings.json')" in page
+        assert "settings.json" not in page
         assert "fetch('/cities.json')" in page

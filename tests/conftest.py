@@ -97,22 +97,16 @@ def channels():
 
 
 @pytest.fixture(scope="session")
-def settings():
-    return _load_json("settings.json")
-
-
-@pytest.fixture(scope="session")
 def today_str():
     return date.today().isoformat()
 
 
 @pytest.fixture(scope="session")
-def upcoming_events(events, today_str, settings):
-    hidden = set(settings.get("hidden", []))
+def upcoming_events(events, today_str):
+    from generate_pages import published_events
     return [
-        e for e in events
+        e for e in published_events(events)
         if e.get("date") and e["date"] >= today_str
-        and (e.get("source_url") or "") not in hidden
     ]
 
 
@@ -126,13 +120,12 @@ def sample_event(upcoming_events, events):
 
 
 @pytest.fixture(scope="session")
-def event_without_date(events, settings):
+def event_without_date(events):
     """Прошедшее/архивное событие без даты, у которого есть сгенерированная
     страница. Нужно для проверки, что JS не подменяет его на ближайшее."""
-    hidden = set(settings.get("hidden", []))
-    for e in events:
+    from generate_pages import published_events
+    for e in published_events(events):
         if (e.get("id") and not e.get("date")
-                and (e.get("source_url") or "") not in hidden
                 and (PROJECT_ROOT / "event" / e["id"]).is_file()):
             return e
     pytest.skip("Нет события без даты с сгенерированной страницей event/<id>")

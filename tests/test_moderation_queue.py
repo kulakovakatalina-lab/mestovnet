@@ -17,7 +17,7 @@ def test_network_errors_are_treated_as_failed_sync(monkeypatch):
 
 def test_unreviewed_and_rejected_events_are_not_publishable():
     """Один и тот же фильтр использует генератор всех статических страниц."""
-    from generate_pages import apply_settings
+    from generate_pages import published_events
 
     events = [
         {"id": "visible", "source_url": "https://example.test/visible"},
@@ -26,7 +26,7 @@ def test_unreviewed_and_rejected_events_are_not_publishable():
         {"id": "approved", "source_url": "https://example.test/approved", "moderation_status": "approved"},
     ]
 
-    assert [event["id"] for event in apply_settings(events, {})] == ["visible", "approved"]
+    assert [event["id"] for event in published_events(events)] == ["visible", "approved"]
 
 
 def test_dynamic_templates_apply_the_moderation_filter(project_root):

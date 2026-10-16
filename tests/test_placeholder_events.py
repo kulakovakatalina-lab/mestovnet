@@ -23,14 +23,12 @@ def test_auto_update_does_not_bypass_missing_title(tmp_path, monkeypatch):
     import moderation_queue as queue
     events = [
         {'id': 'bad', 'date': '2999-01-01', 'artist': 'не указано', 'auto_updated': True},
-        {'id': 'fixed', 'date': '2999-01-02', 'artist': 'не указано',
+        {'id': 'fixed', 'date': '2999-01-02', 'artist': 'Группа',
          'source_url': 'corrected', 'time': '19:00', 'venue': 'Клуб'},
     ]
-    for name, filename in [('EVENTS', 'events.json'), ('QUEUE', 'moderation.json'),
-                           ('SETTINGS', 'settings.json'), ('DECISIONS_CACHE', 'decisions.json')]:
+    for name, filename in [('EVENTS', 'events.json'), ('QUEUE', 'moderation.json'), ('DECISIONS_CACHE', 'decisions.json')]:
         monkeypatch.setattr(queue, name, tmp_path / filename)
     queue.EVENTS.write_text(json.dumps(events))
-    queue.SETTINGS.write_text(json.dumps({'names': {'corrected': 'Группа'}}))
     monkeypatch.setattr(queue, 'load_decisions', lambda: [])
     queue.main()
     saved = json.loads(queue.EVENTS.read_text())

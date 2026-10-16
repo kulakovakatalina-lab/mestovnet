@@ -16,7 +16,6 @@ from parser import is_placeholder_title, _GENERIC_ARTIST_LITERALS
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
 DECISIONS_CACHE = Path("moderation_decisions.json")
-SETTINGS = Path("settings.json")
 CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта|Керчь|Феодосия|Судак|Гурзуф)\b", re.I)
 # Цена и постер полезны, но их отсутствие не должно останавливать публикацию:
 # цена часто отсутствует у бесплатных/донатных событий, а сайт умеет показать
@@ -35,10 +34,9 @@ def _schedule_venue(value: str, city: str) -> str:
     return name.replace(city, "") if city else name
 
 
-def schedule_conflicts(events: list[dict], settings: dict, rejected_ids=()) -> dict[str, list[dict]]:
-    """Сравнивает будущие сеансы после ручных правок; не выбирает победителя."""
+def schedule_conflicts(events: list[dict], rejected_ids=()) -> dict[str, list[dict]]:
+    """Сравнивает будущие сеансы; не выбирает победителя."""
     today = date.today().isoformat()
-    hidden = set(settings.get("hidden", [])) | set(settings.get("cancelled", []))
     venue_aliases = {}
     for venue in load_venues():
         city = _schedule_name(venue.get("city") or "")
@@ -55,15 +53,10 @@ def schedule_conflicts(events: list[dict], settings: dict, rejected_ids=()) -> d
     slots = {}
     for original in events:
         event = dict(original)
-        url = event.get("source_url") or ""
-        if (not event.get("id") or str(event["id"]) in rejected_ids or url in hidden
+        if (not event.get("id") or str(event["id"]) in rejected_ids
                 or event.get("cancelled") or event.get("source_status") == "cancelled"
                 or (event.get("date") or "") < today):
             continue
-        for setting, field in (("names", "artist"), ("venues", "venue"),
-                               ("cities", "source_city"), ("times", "time")):
-            if url in settings.get(setting, {}):
-                event[field] = settings[setting][url]
         city = _schedule_name(event.get("source_city") or "")
         venue = _schedule_venue(event.get("venue") or "", city)
         venue = venue_aliases.get((city, venue), venue)
@@ -162,7 +155,7 @@ def reasons(event: dict) -> list[str]:
     return result
 
 
-def seo_collision_ids(events: list[dict], custom_names: dict[str, str], settings: dict) -> set[str]:
+def seo_collision_ids(events: list[dict]) -> set[str]:
     """Находит карточки, которые дали бы одинаковые title и description.
 
     Оставляем одну наиболее заполненную карточку. Остальные не удаляем: они
@@ -173,13 +166,7 @@ def seo_collision_ids(events: list[dict], custom_names: dict[str, str], settings
     for event in events:
         if not event.get("id"):
             continue
-        rendered = dict(event)
-        url = event.get("source_url") or ""
-        if url in settings.get("venues", {}):
-            rendered["venue"] = settings["venues"][url]
-        if url in settings.get("cities", {}):
-            rendered["source_city"] = settings["cities"][url]
-        groups.setdefault(event_meta(rendered, custom_names), []).append(event)
+        groups.setdefault(event_meta(event), []).append(event)
 
     collision_ids: set[str] = set()
     fields = ("artist", "venue", "source_city", "date", "time", "price", "description", "image")
@@ -258,9 +245,7 @@ def decision_embedded_in_event(event: dict) -> Optional[dict]:
 
 def main() -> None:
     events = json.loads(EVENTS.read_text(encoding="utf-8"))
-    settings = json.loads(SETTINGS.read_text(encoding="utf-8")) if SETTINGS.exists() else {}
-    custom_names = settings.get("names", {})
-    collision_ids = seo_collision_ids(events, custom_names, settings)
+    collision_ids = seo_collision_ids(events)
     today = date.today().isoformat()
     remote_decisions = load_decisions()
     cached_decisions = load_cached_decisions()
@@ -270,14 +255,10 @@ def main() -> None:
     if sync_failed:
         rejected_ids.update(str(e.get("id")) for e in events
                             if e.get("moderation_status") == "rejected")
-    conflicts = schedule_conflicts(events, settings, rejected_ids)
+    conflicts = schedule_conflicts(events, rejected_ids)
     event_issues = {}
     for event in events:
-        reviewed = dict(event)
-        url = event.get("source_url") or ""
-        if url in custom_names:
-            reviewed["artist"] = custom_names[url]
-        issues = reasons(reviewed)
+        issues = reasons(event)
         peers = conflicts.get(str(event.get("id")), [])
         if peers:
             # ID и имя соседней карточки входят в fingerprint: новый конфликт

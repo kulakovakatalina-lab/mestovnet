@@ -13,7 +13,6 @@
 
 const SITE = "https://mestov.net";
 const EVENTS_URL = `${SITE}/events.json`;
-const SETTINGS_URL = `${SITE}/settings.json`;
 const MODERATION_URL = `${SITE}/moderation.json`;
 const EVENTS_API_PATH = "/api/events";
 const CATALOG_SYNC_PATH = "/internal/catalog-sync";
@@ -453,28 +452,20 @@ async function getCounter(env, name) {
 // События
 // ---------------------------------------------------------------------------
 async function fetchEvents() {
-  const [evResp, setResp] = await Promise.all([fetch(EVENTS_URL), fetch(SETTINGS_URL).catch(() => null)]);
+  const evResp = await fetch(EVENTS_URL);
   const data = await evResp.json();
-  let settings = {};
-  if (setResp && setResp.ok) settings = await setResp.json().catch(() => ({}));
-  const hidden = new Set(settings.hidden || []);
-  const cancelled = new Set(settings.cancelled || []);
-  const ov = (k) => settings[k] || {};
-  const ovNames = ov("names"), ovTimes = ov("times"), ovPrices = ov("prices");
-  const ovCities = ov("cities"), ovVenues = ov("venues"), ovGenres = ov("genres");
   const today = crimeaParts().iso;
   const out = [];
   for (const e of data) {
-    const url = e.source_url || "";
-    if (hidden.has(url) || cancelled.has(url) || !e.date || e.date < today) continue;
-    const rawGenre = ovGenres[url] ?? e.genre;
-    const rawCity = ovCities[url] ?? e.source_city;
+    if (e.needs_review || e.moderation_status === "rejected" || e.cancelled || e.source_status === "cancelled" || !e.date || e.date < today) continue;
+    const rawGenre = e.genre;
+    const rawCity = e.source_city;
     out.push({
       id: e.id, date: e.date,
-      time: ovTimes[url] ?? e.time ?? "",
-      artist: ovNames[url] ?? e.artist ?? "Концерт",
-      venue: ovVenues[url] ?? e.venue ?? "",
-      price: ovPrices[url] ?? e.price ?? "",
+      time: e.time ?? "",
+      artist: e.artist ?? "Концерт",
+      venue: e.venue ?? "",
+      price: e.price ?? "",
       sourceCity: rawCity || "",
       genre: mapGenre(rawGenre), city: mapCity(rawCity),
       updatedAt: e.updated_at || "",

@@ -1,7 +1,7 @@
 """Проверки sitemap.xml, robots.txt и стабильности "статических" URL сайта."""
 import xml.etree.ElementTree as ET
 
-from generate_pages import CITY_SLUGS, DOMAIN, apply_settings
+from generate_pages import CITY_SLUGS, DOMAIN, published_events
 
 SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
@@ -42,12 +42,12 @@ class TestSitemap:
         wrong = [loc for loc in locs if not loc.startswith(DOMAIN)]
         assert not wrong, f"URL в sitemap.xml не на домене {DOMAIN}: {wrong}"
 
-    def test_includes_all_non_hidden_events(self, project_root, events, settings):
+    def test_includes_all_published_events(self, project_root, events):
         """Регресс: sitemap.xml раньше исключал прошедшие события (только
         upcoming), из-за чего ссылки на архивные афиши не были доступны
         поисковикам. Теперь в sitemap должны попадать ВСЕ события из
-        events.json с id, кроме скрытых и отправленных на модерацию."""
-        visible_events = apply_settings(events, settings)
+        events.json с id, кроме отклонённых и отправленных на модерацию."""
+        visible_events = published_events(events)
         expected_ids = {
             e["id"] for e in visible_events if e.get("id")
         }
@@ -60,10 +60,10 @@ class TestSitemap:
             f"{sorted(missing)}. Ожидалось {len(expected_ids)} страниц событий."
         )
 
-    def test_includes_past_events(self, project_root, events, settings, today_str):
+    def test_includes_past_events(self, project_root, events, today_str):
         """Прошедшие события (date < сегодня или без даты) обязаны оставаться
         в sitemap.xml — они не должны выпадать из него при прогоне."""
-        visible_events = apply_settings(events, settings)
+        visible_events = published_events(events)
         past_ids = {
             e["id"] for e in visible_events
             if e.get("id")

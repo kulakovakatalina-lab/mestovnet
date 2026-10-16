@@ -1160,25 +1160,11 @@ function priceText(p) {
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }
 
-function applySettings(data, settings) {
-  const hiddenSet    = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
-  const ov = { names: settings.names||{}, times: settings.times||{}, prices: settings.prices||{},
-    images: settings.images||{}, cities: settings.cities||{}, venues: settings.venues||{},
-    descriptions: settings.descriptions||{}, genres: settings.genres||{} };
+function publishedEvents(data) {
   return data.map((e, i) => {
-    const url = e.source_url || '';
-    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
-    const ev = { ...e };
-    if (url in ov.names)        ev.artist      = ov.names[url];
-    if (url in ov.times)        ev.time        = ov.times[url];
-    if (url in ov.prices)       ev.price       = ov.prices[url];
-    if (url in ov.images)       ev.image       = ov.images[url] === null ? null : ov.images[url];
-    if (url in ov.cities)       ev.source_city = ov.cities[url];
-    if (url in ov.venues)       ev.venue       = ov.venues[url];
-    if (url in ov.descriptions) ev.description = ov.descriptions[url];
-    if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (e.needs_review || e.moderation_status === 'rejected') return null;
+    const ev = { ...e, _origIdx: i };
+    if (ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1259,13 +1245,9 @@ function renderArchive() {
 
 async function load() {
   try {
-    const [res, settingsRes] = await Promise.all([
-      fetch('/events.json'),
-      fetch('/settings.json').catch(() => null)
-    ]);
+    const res = await fetch('/events.json');
     const data = await res.json();
-    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
-    const patched  = applySettings(data, settings);
+    const patched  = publishedEvents(data);
     const now      = moscowNow();
     const aliasSet = new Set(VENUE_ALIASES);
 
