@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н — афиша в Научном · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н, в Научном. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n">
-  <meta property="og:title" content="Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н — афиша в Научном · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <title>село Голубинка, Эко-Хутор (купольный зал) — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/selo-golubinka-eko-hutor-kupolnyy-zal">
+  <meta property="og:title" content="село Голубинка, Эко-Хутор (купольный зал) — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,32 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
+      "name": "село Голубинка, Эко-Хутор (купольный зал)",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Научный",
+        "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Андрей Ясинский",
-      "startDate": "2026-10-18T18:00:00+03:00",
+      "name": "Ольга Воронина",
+      "startDate": "2026-10-17T12:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"
+        "name": "село Голубинка, Эко-Хутор (купольный зал)"
       },
-      "description": "Концерт-погружение с Андреем Ясинским — музыкантом–мультиинструменталистом, композитором, преподавателем музыки, путешественником из Таганрога. Фортепиано, можжевеловые флейты, окарина, калимба, ханг, равдрам и другие редкие инструменты в руках Андрея рождают космическую музыку.",
+      "description": "Женский Круг, посвящённый Осеннему Празднику Наваратри. Проживание энергий трех аспектов Великой Матери через Интуитивный Танец.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Андрей Ясинский"
-      },
-      "image": "/images/events/b3bc1f6bffe05037d0b66df0a9495eae.jpg"
+        "name": "Ольга Воронина"
+      }
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный", "item": "https://mestov.net/cities/nauchny.html"}, {"@type": "ListItem", "position": 3, "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "село Голубинка, Эко-Хутор (купольный зал)"}]}
 </script>
   <style>
 
@@ -1063,9 +1062,9 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/nauchny.html">Научный</a>
+      · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н</h1>
+    <h1 class="genre-hero-title">село Голубинка, Эко-Хутор (купольный зал)</h1>
 
 
   </div>
@@ -1091,7 +1090,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н", "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"];
+const VENUE_ALIASES = ["село Голубинка, Эко-Хутор (купольный зал)", "село Голубинка, Эко-Хутор (купольный зал)"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

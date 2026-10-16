@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 30,
+    "event_count": 31,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -669,20 +669,6 @@
     "lon": 34.178866
   },
   {
-    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
-    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
-    "city": "Севастополь",
-    "address": "ул. Большая Морская, 19",
-    "event_count": 4,
-    "aliases": [
-      "Арт-кафе «Снежинка», Большая Морская, 19"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.606638,
-    "lon": 33.522078
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -885,6 +871,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "art-kafe-snezhinka-bolshaya-morskaya-19",
+    "name": "Арт-кафе «Снежинка», Большая Морская, 19",
+    "city": "Севастополь",
+    "address": "ул. Большая Морская, 19",
+    "event_count": 3,
+    "aliases": [
+      "Арт-кафе «Снежинка», Большая Морская, 19"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.606638,
+    "lon": 33.522078
   },
   {
     "slug": "park-mayakovskogo",
@@ -1127,6 +1127,21 @@
     "desc_baseline_count": 0,
     "lat": 45.300079,
     "lon": 36.427175
+  },
+  {
+    "slug": "galereya-iskusstv-mayya",
+    "name": "Галерея искусств «Майя»",
+    "city": "Ялта",
+    "address": "ул. Пушкинская, 9Б",
+    "event_count": 2,
+    "aliases": [
+      "Галерея искусств «Майя»",
+      "галерея искусств «Майя»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": 44.490592,
+    "lon": 34.159768
   },
   {
     "slug": "dom-muzey-a-p-chehova",
@@ -2137,20 +2152,6 @@
     "lon": null
   },
   {
-    "slug": "galereya-iskusstv-mayya",
-    "name": "Галерея искусств «Майя»",
-    "city": "Ялта",
-    "address": "ул. Пушкинская, 9Б",
-    "event_count": 1,
-    "aliases": [
-      "Галерея искусств «Майя»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": 44.490592,
-    "lon": 34.159768
-  },
-  {
     "slug": "labirint-krasnolesya",
     "name": "Лабиринт Краснолесья",
     "city": "Севастополь",
@@ -2347,6 +2348,20 @@
     "lon": null
   },
   {
+    "slug": "kofeynya-turgenev",
+    "name": "кофейня «ТУРГЕНЕВЪ»",
+    "city": "Симферополь",
+    "address": "Аксакова 1",
+    "event_count": 1,
+    "aliases": [
+      "кофейня «ТУРГЕНЕВЪ» (Аксакова 1)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "apolo-bistro",
     "name": "Apolo Bistro",
     "city": "Крым",
@@ -2354,34 +2369,6 @@
     "event_count": 1,
     "aliases": [
       "Apolo Bistro"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n",
-    "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
-    "city": "Научный",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "kofeynya-turgenev",
-    "name": "кофейня «ТУРГЕНЕВЪ»",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "кофейня «ТУРГЕНЕВЪ»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2401,5 +2388,19 @@
     "desc_baseline_count": 0,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "selo-golubinka-eko-hutor-kupolnyy-zal",
+    "name": "село Голубинка, Эко-Хутор (купольный зал)",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "село Голубинка, Эко-Хутор (купольный зал)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   }
 ]

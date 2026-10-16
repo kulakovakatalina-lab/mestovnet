@@ -32,7 +32,8 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "streetAddress": "Аксакова 1"
       }
     },
     {
@@ -43,12 +44,12 @@
         "@type": "MusicVenue",
         "name": "кофейня «ТУРГЕНЕВЪ»"
       },
-      "description": "Волшебный концерт Андрея Ясинского — путешествие в мир спокойствия и внутреннего слияния со звукотишиной. Инструменты: фортепиано, хендпан (ханг), лепестковый барабан Равваст, древний индийский ситар, ирландская флейта висл, лесные деревянные окарины, флейты североамериканских индейцев - пимак, индийская флейта бансури, мелодика, перкуссия, колокольчики и поющая чаша!",
+      "description": "Концерт Андрея Ясинского — путешествие в мир спокойствия и внутреннего слияния со звукотишиной.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Андрей Ясинский"
       },
-      "image": "/images/events/6fd4c3145d12249e235591822d5a4bc2.jpg"
+      "image": "/images/events/9a68f8115c302b59324c795851aade0d.jpg"
     }
   ]
 }
@@ -1066,7 +1067,7 @@ footer {
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
     <h1 class="genre-hero-title">кофейня «ТУРГЕНЕВЪ»</h1>
-
+<div class="venue-address-block"><span class="venue-hero-address">Аксакова 1, Симферополь</span></div>
 
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
@@ -1091,7 +1092,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["кофейня «ТУРГЕНЕВЪ»", "кофейня «ТУРГЕНЕВЪ»"];
+const VENUE_ALIASES = ["кофейня «ТУРГЕНЕВЪ» (Аксакова 1)", "кофейня «ТУРГЕНЕВЪ»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

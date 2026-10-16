@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -64,6 +64,21 @@
         "name": "Иммерсивный музыкальный вечер «Октоберфест»"
       },
       "image": "/images/events/c3ef3c060d45ffb9a9e9412d9b9fac1a.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Кристина Кушнир, Сергей Аниканов",
+      "startDate": "2026-10-18T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Вечер романсов в «Снежинке». В программе — русские старинные романсы, городской и цыганский романсы, современные произведения и любимые мелодии из кинофильмов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Кристина Кушнир, Сергей Аниканов"
+      },
+      "image": "/images/events/14493294a5e6d8d2703b70ee2e30dbe0.jpg"
     }
   ]
 }

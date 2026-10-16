@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Живая музыка — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта, Крым). 2 ближайших событий.">
+  <title>Живая музыка — концерты в Крыму, Севастополь, Крым, Ялта · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/zhivaya-muzyka">
-  <meta property="og:title" content="Живая музыка — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Ялта, Крым). 2 ближайших событий.">
+  <meta property="og:title" content="Живая музыка — концерты в Крыму, Севастополь, Крым, Ялта · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -47,8 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Гастрономический ужин с участием шеф-поваров Максима Карамана и Дмитрия Сотникова, а также основателя и винодела Усадьбы «Родное гнездо» Владимира Комолова. В программе вечера: пять авторских подач, вина Усадьбы «Родное гнездо», welcome drink, живая музыка.",
-      "image": "/images/events/9c62a7d24cfe667dbda5591854442317.jpg"
+      "description": "Гастрономический ужин с участием шеф-поваров Максима Карамана и Дмитрия Сотникова, вино от Усадьбы «Родное гнездо», welcome drink, живая музыка.",
+      "image": "/images/events/f0f16f7ff098e5999a0127c979df8794.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -1040,7 +1040,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Живая музыка</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Ялта, Крым</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым, Ялта</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

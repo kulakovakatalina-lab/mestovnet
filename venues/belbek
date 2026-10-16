@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "Белбек"
       },
-      "description": "Вводный однодневный интенсив Ecstatic-DJ, где покажут, как устроен мир подготовки dj-сетов и с чего начинается путь в DJ-проводника практики ED.",
+      "description": "Приглашение в мир ECSTATIC-DJ от Юрия Гео. Вводный однодневный интенсив Ecstatic-DJ.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Юрий Гео"
       },
-      "image": "/images/events/d4000c80e17f4f985f4a0584e637602c.jpg"
+      "image": "/images/events/fb75ff0d67ecba5cb00bb2e537ae8ce5.jpg"
     }
   ]
 }
