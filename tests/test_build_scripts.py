@@ -1,5 +1,5 @@
 """Регрессия на баг, найденный при разработке ежемесячной актуализации
-(см. ACTUALIZATION.md): build_venues.py раньше писал venues.json из
+(процедуру актуализации справочников): build_venues.py раньше писал venues.json из
 6 полей и безвозвратно стирал рукописные description/lat/lon при
 пересборке. build_artists.py уже сохранял description и раньше — здесь
 проверяем, что это продолжает работать вместе с новым desc_baseline_count.

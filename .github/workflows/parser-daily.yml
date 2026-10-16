@@ -111,7 +111,12 @@ jobs:
             exit 0
           fi
 
-          git add -A
+          # Добавляем только данные и результаты сборки, а не любые новые файлы.
+          git add -A -- events.json moderation.json moderation_decisions.json \
+            source_health.json artists.json venues.json settings.json \
+            .generated-pages.json .legacy-generated-pages-migrated.json \
+            index.html cities/ genre/ venues/ artist/ event/ current-events/ \
+            sitemap.xml robots.txt images/events/
           COUNT=$(python3 -c "import json; d=json.load(open('events.json')); print(len(d))")
           git commit -m "parser: обновить события [автоматически] ($COUNT в базе)"
           git push origin HEAD:main

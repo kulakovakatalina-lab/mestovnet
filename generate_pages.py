@@ -1068,7 +1068,7 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
     ])
 
     # Мини-карта с пином заведения — только если есть координаты
-    # (geocode_venues.py заполняет lat/lon не для всех площадок).
+    # (координаты lat/lon заполнены не для всех площадок).
     lat, lon = venue.get("lat"), venue.get("lon")
     has_coords = isinstance(lat, (int, float)) and isinstance(lon, (int, float))
     address_line = ", ".join(p for p in [address, city] if p) or "Крым"
@@ -2121,6 +2121,35 @@ def make_robots() -> str:
 
 # ── Главная функция ───────────────────────────────────────────────────────────
 
+
+def prune_unused_event_images(base_dir: Path) -> int:
+    """Удаляет хешированные афиши без ссылок в данных и страницах.
+
+    Сохраняет изображения архивных страниц и записей в очереди модерации.
+    Все источники читаются до удаления; ошибка чтения прерывает очистку.
+    """
+    if not isinstance(json.loads((base_dir / "events.json").read_text(encoding="utf-8")), list):
+        raise ValueError("events.json должен содержать список до очистки афиш")
+    sources = list(base_dir.glob("*.html"))
+    for name in ("events.json", "moderation.json", "settings.json", "venues.json",
+                 "artists.json", "cities.json"):
+        path = base_dir / name
+        if path.exists():
+            sources.append(path)
+    for name in ("cities", "genre", "venues", "event", "artist", "current-events"):
+        sources.extend(path for path in (base_dir / name).rglob("*") if path.is_file())
+    references = set()
+    image_name = re.compile(r"[0-9a-f]{32}\.(?:jpg|jpeg|png|gif|webp)", re.IGNORECASE)
+    for path in sources:
+        references.update(image_name.findall(path.read_text(encoding="utf-8")))
+    removed = 0
+    for path in (base_dir / "images" / "events").glob("*"):
+        if path.is_file() and image_name.fullmatch(path.name) and path.name not in references:
+            path.unlink()
+            removed += 1
+    return removed
+
+
 def main() -> None:
     print("📖  Читаем events.json …")
     events: list[dict] = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
@@ -2324,6 +2353,9 @@ def main() -> None:
     robots = make_robots()
     (BASE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("    ✓ robots.txt")
+
+    removed_images = prune_unused_event_images(BASE_DIR)
+    print(f"    (удалено неиспользуемых афиш: {removed_images})")
 
     print("\n✅  Готово! Все страницы сгенерированы.")
     print(f"    Города: {', '.join(cities_with_events)}")

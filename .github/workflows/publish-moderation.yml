@@ -61,7 +61,12 @@ jobs:
           fi
           git config user.name "MestovNet Bot"
           git config user.email "mestovnet-bot@users.noreply.github.com"
-          git add -A
+          # Добавляем только данные и результаты сборки, а не любые новые файлы.
+          git add -A -- events.json moderation.json moderation_decisions.json \
+            source_health.json artists.json venues.json settings.json \
+            .generated-pages.json .legacy-generated-pages-migrated.json \
+            index.html cities/ genre/ venues/ artist/ event/ current-events/ \
+            sitemap.xml robots.txt images/events/
           git commit -m "moderation: publish decision"
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"

@@ -123,7 +123,7 @@ def load_venue_keys(venues: list[dict]) -> set[str]:
 
 def needs_desc_update(description, event_count: int, baseline) -> bool:
     """Описание пора переписать: его нет, либо событийная история заметно
-    выросла с момента последней ручной правки (см. ACTUALIZATION.md)."""
+    выросла с момента последней ручной правки (процедуру актуализации справочников)."""
     if not description:
         return True
     baseline = baseline or 0

@@ -53,3 +53,30 @@ venv/
 # Промежуточные кадры роликов
 /social/visuals/*-reel-base.png
 /social/visuals/*-reel-[0-9][0-9].png
+
+# Локальные планы, исследования и необязательные инструменты
+/*.md
+/bot-cloudflare/*.md
+/drafts/
+/social/
+/fetch_posts.py
+/finalize_events.py
+/geocode_venues.py
+/upscale_images.py
+/update.sh
+
+# Ключи, учётные данные и локальные настройки редакторов
+*.pem
+*.key
+*.p12
+*.pfx
+/credentials.json
+/service-account*.json
+/ig_session*.json
+.idea/
+.vscode/
+_site/
+
+# Завершённая миграция и локальная проверка доставки
+/.legacy-generated-pages.json
+/.github/workflows/test-telegram-delivery.yml
