@@ -888,30 +888,11 @@ let currentCity = 'all';
 let currentView = 'upcoming';
 let pastExpanded = false;
 
-function applySettings(data, settings) {
-  const hiddenSet    = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
-  const ovNames   = settings.names        || {};
-  const ovTimes   = settings.times        || {};
-  const ovPrices  = settings.prices       || {};
-  const ovImages  = settings.images       || {};
-  const ovCities  = settings.cities       || {};
-  const ovVenues  = settings.venues       || {};
-  const ovDescs   = settings.descriptions || {};
-  const ovGenres  = settings.genres       || {};
+function publishedEvents(data) {
   return data.map((e, i) => {
-    const url = e.source_url || '';
-    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
+    if (e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = { ...e, _origIdx: i };
-    if (url in ovNames)  ev.artist      = ovNames[url];
-    if (url in ovTimes)  ev.time        = ovTimes[url];
-    if (url in ovPrices) ev.price       = ovPrices[url];
-    if (url in ovImages) ev.image       = ovImages[url] === null ? null : ovImages[url];
-    if (url in ovCities) ev.source_city = ovCities[url];
-    if (url in ovVenues) ev.venue       = ovVenues[url];
-    if (url in ovDescs)  ev.description = ovDescs[url];
-    if (url in ovGenres) ev.genre       = ovGenres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -925,15 +906,13 @@ async function load() {
   currentView = params.get('past') === '1' ? 'past' : 'upcoming';
 
   try {
-    const [res, settingsRes, citiesRes] = await Promise.all([
+    const [res, citiesRes] = await Promise.all([
       fetch('/events.json'),
-      fetch('/settings.json').catch(() => null),
       fetch('/cities.json').catch(() => null)
     ]);
     const data = await res.json();
-    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     if (citiesRes && citiesRes.ok) loadCities(await citiesRes.json().catch(() => []));
-    const patched = applySettings(data, settings);
+    const patched = publishedEvents(data);
     const now = moscowNow();
 
     allEvents = patched

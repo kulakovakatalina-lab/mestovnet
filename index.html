@@ -1062,7 +1062,7 @@ footer {
     },
     {
       "@type": "MusicEvent",
-      "name": "Джокер. Король и Шоу",
+      "name": "Джокер. Король, Шоу",
       "startDate": "2026-10-16T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -1076,7 +1076,7 @@ footer {
       "description": "О концерте «Я буду жить, — кричал он, — вечно!»\r\n\r\nЖдём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами «Лесника», «Камнем по голове», «Мастер приглашает в гости», «Жаль нет ружья», «Ели мясо мужики», «Мертвый анархист», «Отец и маски», «Охотник» и многие-многие другие песни!\r\n\r\nЕго песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!\r\nСказка Король и Шут звучит в наших сердцах бесконечно...\r\nСоздавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джокер. Король и Шоу"
+        "name": "Джокер. Король, Шоу"
       },
       "image": "/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg",
       "offers": {
@@ -1735,33 +1735,11 @@ let allEvents = [];
 let currentCity = 'all';
 let shownEventsCount = 12;
 
-function applySettings(data, settings) {
-  const hiddenSet    = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
-  const ovNames   = settings.names        || {};
-  const ovTimes   = settings.times        || {};
-  const ovPrices  = settings.prices       || {};
-  const ovImages  = settings.images       || {};
-  const ovCities  = settings.cities       || {};
-  const ovVenues  = settings.venues       || {};
-  const ovDescs   = settings.descriptions || {};
-  const ovGenres  = settings.genres       || {};
+function publishedEvents(data) {
   return data.map((e, i) => {
-    const url = e.source_url || '';
-    // events.json — внутренний реестр, поэтому до решения модератора
-    // карточка не должна просачиваться в динамическую главную страницу.
-    // Статический генератор применяет то же правило в apply_settings().
-    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
+    if (e.needs_review || e.moderation_status === 'rejected') return null;
     const ev = { ...e, _origIdx: i };
-    if (url in ovNames)  ev.artist      = ovNames[url];
-    if (url in ovTimes)  ev.time        = ovTimes[url];
-    if (url in ovPrices) ev.price       = ovPrices[url];
-    if (url in ovImages) ev.image       = ovImages[url] === null ? null : ovImages[url];
-    if (url in ovCities) ev.source_city = ovCities[url];
-    if (url in ovVenues) ev.venue       = ovVenues[url];
-    if (url in ovDescs)  ev.description = ovDescs[url];
-    if (url in ovGenres) ev.genre       = ovGenres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }).filter(Boolean);
 }
@@ -1782,14 +1760,12 @@ async function load() {
         return response.json();
       }
     };
-    const [data, settingsRes, citiesRes] = await Promise.all([
+    const [data, citiesRes] = await Promise.all([
       fetchEvents(),
-      fetch('/settings.json').catch(() => null),
       fetch('/cities.json').catch(() => null)
     ]);
-    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({})) : {};
     if (citiesRes && citiesRes.ok) loadCities(await citiesRes.json().catch(() => []));
-    const patched = applySettings(data, settings);
+    const patched = publishedEvents(data);
     const now = moscowNow();
 
     allEvents = patched
@@ -1965,13 +1941,13 @@ load();
 <div id="seo-content" style="display:none">
 <div class="date-group"><h2><span class="today-badge">Сегодня</span>16 октября, пт</h2>
 <div class="card" onclick="window.open('https://t.me/belbekma/1375','_blank')"><div class="card-inner"><div class="card-time">11:00–17:00</div><div class="card-body"><div class="card-artist">Юрий Гео</div><div class="card-venue">Белбек<span class="city">· Севастополь</span></div><div class="card-description">Приглашение в мир ECSTATIC-DJ от Юрия Гео. Вводный однодневный интенсив Ecstatic-DJ.</div><div class="card-footer"><span class="tag type">другое</span><span class="tag genre">поп</span><span class="tag price">3000 ₽</span></div><div class="card-source"><a class="src-link" href="https://t.me/belbekma/1375" target="_blank" rel="noopener">@belbekma</a></div></div><img class="card-thumb" src="/images/events/fb75ff0d67ecba5cb00bb2e537ae8ce5.jpg" alt="Юрий Гео" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card" onclick="window.open('https://www.afisha.ru/concert/dzhoker-6040095/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Джокер. Король и Шоу</div><div class="card-venue">Молодость<span class="city">· Севастополь</span></div><div class="card-description">О концерте «Я буду жить, — кричал он, — вечно!»
+<div class="card" onclick="window.open('https://www.afisha.ru/concert/dzhoker-6040095/','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Джокер. Король, Шоу</div><div class="card-venue">Молодость<span class="city">· Севастополь</span></div><div class="card-description">О концерте «Я буду жить, — кричал он, — вечно!»
 
 Ждём всех, кто вырос на этой музыке, кто ходил на концерты и хочет снова спеть с нами «Лесника», «Камнем по голове», «Мастер приглашает в гости», «Жаль нет ружья», «Ели мясо мужики», «Мертвый анархист», «Отец и маски», «Охотник» и многие-многие другие песни!
 
 Его песни навсегда с нами, и следуя завету Миши мы будем отрываться и веселиться под его музыку как в последний раз!
 Сказка Король и Шут звучит в наших сердцах бесконечно...
-Создавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1000 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/dzhoker-6040095/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg" alt="Джокер. Король и Шоу" loading="lazy" onerror="this.remove()"></div></div>
+Создавать атмосферу и заряжать энергией по традиции будет рок-банда «Джокер» (Сочи)!</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">рок</span><span class="tag price">от 1000 ₽</span></div><div class="card-source"><a class="src-link" href="https://www.afisha.ru/concert/dzhoker-6040095/" target="_blank" rel="noopener">@afisha_ru</a></div></div><img class="card-thumb" src="/images/events/42ed27bd786bcd058d2b011a2d4bcfdd.jpg" alt="Джокер. Король, Шоу" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/artcafesnezhinka/2055','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Музыкальный вечер «В мажоре»</div><div class="card-venue">Арт-кафе «Снежинка»<span class="city">· Севастополь</span></div><div class="card-description">Любимые хиты, знакомые с первых нот, прекрасные музыканты и песни, которым невозможно не подпевать. Вокал, фортепиано, саксофон, бас и ударные — всё для вечера, когда хочется улыбаться, танцевать и просто наслаждаться моментом.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">классика</span><span class="tag price">500–900 ₽</span></div><div class="card-source"><a class="src-link" href="https://t.me/artcafesnezhinka/2055" target="_blank" rel="noopener">@artcafesnezhinka</a></div></div><img class="card-thumb" src="/images/events/f1faa15356cdd375f05c07858c78ccac.jpg" alt="Музыкальный вечер «В мажоре»" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://t.me/usadbarodnoegnezdo/3706','_blank')"><div class="card-inner"><div class="card-time">19:00</div><div class="card-body"><div class="card-artist">Живая музыка</div><div class="card-venue">Apolo Bistro<span class="city">· Крым</span></div><div class="card-description">Гастрономический ужин с участием шеф-поваров Максима Карамана и Дмитрия Сотникова, вино от Усадьбы «Родное гнездо», welcome drink, живая музыка.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп</span><span class="tag price">4500 ₽</span></div><div class="card-source"><a class="src-link" href="https://t.me/usadbarodnoegnezdo/3706" target="_blank" rel="noopener">@usadbarodnoegnezdo</a></div></div><img class="card-thumb" src="/images/events/f0f16f7ff098e5999a0127c979df8794.jpg" alt="Живая музыка" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card" onclick="window.open('https://vk.com/wall-237501275_173','_blank')"><div class="card-inner"><div class="card-time">21:00</div><div class="card-body"><div class="card-artist">группа «Денайро»</div><div class="card-venue">Рок-н-рольщики (Симферополь)<span class="city">· Симферополь</span></div><div class="card-description">Рок-поп хиты и живые инструменты.</div><div class="card-footer"><span class="tag type">концерт</span><span class="tag genre">поп-рок</span></div><div class="card-source"><a class="src-link" href="https://vk.com/wall-237501275_173" target="_blank" rel="noopener">@rocknroll_82</a></div></div><img class="card-thumb" src="/images/events/9120b686f1adf1263e90f6e1613d35ba.jpg" alt="группа «Денайро»" loading="lazy" onerror="this.remove()"></div></div>

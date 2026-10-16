@@ -76,7 +76,7 @@ def test_manifest_rejects_archive_paths_and_path_traversal(tmp_path, monkeypatch
     manifest = tmp_path / ".generated-pages.json"
     monkeypatch.setattr(generate_pages, "GENERATED_PAGES_MANIFEST", manifest)
     manifest.write_text(
-        '["cities/yalta.html", "event/archive", "artist/name", "../settings.json"]',
+        '["cities/yalta.html", "event/archive", "artist/name", "../events.json"]',
         encoding="utf-8",
     )
 
@@ -106,7 +106,7 @@ def test_legacy_migration_only_adopts_explicit_verified_collection_pages(tmp_pat
     archived_event = tmp_path / "event" / "archive"
     archived_event.write_text("archive", encoding="utf-8")
     (tmp_path / ".legacy.json").write_text(
-        '["cities/old.html", "venues/manual", "event/archive", "../settings.json"]',
+        '["cities/old.html", "venues/manual", "event/archive", "../events.json"]',
         encoding="utf-8",
     )
 

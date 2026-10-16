@@ -23,9 +23,9 @@ class TestMapPageExists:
         assert soup.title and "Карта" in soup.title.text
         assert soup.find(id="map") is not None, "На странице нет контейнера #map"
 
-    def test_fetches_venues_events_and_settings(self, project_root):
+    def test_fetches_venues_and_events(self, project_root):
         content = (project_root / "map.html").read_text(encoding="utf-8")
-        for endpoint in ("/venues.json", "/events.json", "/settings.json"):
+        for endpoint in ("/venues.json", "/events.json"):
             assert endpoint in content, f"map.html не запрашивает {endpoint}"
 
     def test_loads_yandex_maps_api_with_key(self, project_root):

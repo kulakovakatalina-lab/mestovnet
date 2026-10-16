@@ -498,16 +498,13 @@ function buildVenueLookup(venues) {
 }
 
 // Считаем предстоящие концерты по заведению — те же правила, что и на
-// страницах жанров/заведений: скрытые (hidden) события не считаем,
+// страницах жанров/заведений: неопубликованные и отменённые события не считаем,
 // остальное — по venue_slug и дате >= сегодня.
-function countUpcomingByVenue(events, settings, venueLookup) {
-  const hiddenSet = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
+function countUpcomingByVenue(events, venueLookup) {
   const today = todayStr();
   const counts = {};
   for (const e of events) {
-    const url = e.source_url || '';
-    if (hiddenSet.has(url) || cancelledSet.has(url) || e.cancelled) continue;
+    if (e.needs_review || e.moderation_status === 'rejected' || e.cancelled || e.source_status === 'cancelled') continue;
     const slug = venueLookup[(e.venue || '').trim()];
     if (!slug || !e.date || e.date < today) continue;
     counts[slug] = (counts[slug] || 0) + 1;
@@ -615,13 +612,12 @@ document.querySelector('.switch-row').addEventListener('click', (e) => {
 
 ymaps.ready(async () => {
   try {
-    const [venues, events, settings] = await Promise.all([
+    const [venues, events] = await Promise.all([
       loadJson('/venues.json'),
       loadJson('/events.json'),
-      loadJson('/settings.json').catch(() => ({})),
     ]);
     const venueLookup = buildVenueLookup(venues);
-    const counts = countUpcomingByVenue(events, settings || {}, venueLookup);
+    const counts = countUpcomingByVenue(events, venueLookup);
     const enriched = venues.map(v => ({ ...v, upcomingCount: counts[v.slug] || 0 }));
     initMap(enriched);
   } catch (err) {

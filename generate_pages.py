@@ -30,7 +30,6 @@ BASE_DIR      = Path(__file__).parent
 EVENTS_FILE   = BASE_DIR / "events.json"
 VENUES_FILE   = BASE_DIR / "venues.json"
 ARTISTS_FILE  = BASE_DIR / "artists.json"
-SETTINGS_FILE = BASE_DIR / "settings.json"
 INDEX_FILE    = BASE_DIR / "index.html"
 EVENT_FILE    = BASE_DIR / "event.html"
 GENRE_FILE    = BASE_DIR / "genre.html"
@@ -176,7 +175,7 @@ def cleanup_unpublished_event_pages(events_dir: Path, current_ids: set[str]) -> 
 
     ``event/`` содержит только сгенерированные карточки с восьмизначным
     идентификатором. При отправке карточки в модерацию её больше нет в
-    ``events`` после apply_settings, поэтому старую страницу нужно удалить,
+    ``events`` после фильтрации модерации, поэтому старую страницу нужно удалить,
     иначе она останется доступной и нарушит уникальность SEO-метаданных.
     """
     removed = 0
@@ -326,64 +325,18 @@ def extract_js() -> str:
         pass
     return ""
 
-# ── Применение настроек из settings.json ─────────────────────────────────────
-
-def apply_settings(events: list[dict], settings: dict) -> list[dict]:
-    """Возвращает новый список событий с применёнными переопределениями из settings.json.
-
-    Применяет: names, times, prices, images, cities, venues, descriptions, genres, cancelled.
-    Удаляет скрытые события (hidden).
-    Оригинальные объекты не изменяются — создаются копии.
-    """
-    hidden       = set(settings.get("hidden",       []))
-    cancelled_ov = set(settings.get("cancelled",    []))
-    names        = settings.get("names",        {})
-    times        = settings.get("times",        {})
-    prices       = settings.get("prices",       {})
-    images_ov    = settings.get("images",       {})
-    cities_ov    = settings.get("cities",       {})
-    venues_ov    = settings.get("venues",       {})
-    descs_ov     = settings.get("descriptions", {})
-    genres_ov    = settings.get("genres",       {})
-
-    result = []
-    for e in events:
-        url = e.get("source_url") or ""
-
-        # Скрытые события исключаем полностью
-        if url in hidden or e.get("needs_review") or e.get("moderation_status") == "rejected":
-            continue
-
-        ev = dict(e)  # мелкая копия, нам хватает
-
-        if url in names:
-            ev["artist"] = names[url]
-        if url in times:
-            ev["time"] = times[url]
-        if url in prices:
-            ev["price"] = prices[url]
-        if url in images_ov:
-            # None (null в JSON) означает «удалить картинку»
-            ev["image"] = None if images_ov[url] is None else images_ov[url]
-        if url in cities_ov:
-            ev["source_city"] = cities_ov[url]
-        if url in venues_ov:
-            ev["venue"] = venues_ov[url]
-        if url in descs_ov:
-            ev["description"] = descs_ov[url]
-        if url in genres_ov:
-            ev["genre"] = genres_ov[url]
-        if url in cancelled_ov or ev.get("source_status") == "cancelled":
-            ev["cancelled"] = True
-
-        result.append(ev)
-
-    return result
+def published_events(events: list[dict]) -> list[dict]:
+    """Возвращает опубликованные карточки с учётом модерации и статуса источника."""
+    return [
+        {**event, "cancelled": True} if event.get("source_status") == "cancelled" else dict(event)
+        for event in events
+        if not event.get("needs_review") and event.get("moderation_status") != "rejected"
+    ]
 
 
 # ── Статический рендер карточки события ──────────────────────────────────────
 
-def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
+def render_card(e: dict) -> str:
     artist   = e.get("artist") or ""
     venue    = e.get("venue") or e.get("source_channel") or ""
     city     = e.get("source_city") or ""
@@ -395,8 +348,7 @@ def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
     src_label = esc(get_source_label(e))
     image    = e.get("image") or ""
 
-    src_url  = e.get("source_url") or ""
-    label    = (custom_names or {}).get(src_url) or artist or venue
+    label    = artist or venue
     venue_html = esc(venue) + (f'<span class="city">· {esc(city)}</span>' if artist else "")
 
     # Теги
@@ -435,7 +387,7 @@ def render_card(e: dict, custom_names: Optional[dict] = None) -> str:
         f'</div>{img_html}</div></div>'
     )
 
-def render_event_list(events: list, today: str, custom_names: Optional[dict] = None) -> str:
+def render_event_list(events: list, today: str) -> str:
     future   = [e for e in events if e.get("date") and e["date"] >= today]
     no_date  = [e for e in events if not e.get("date")]
 
@@ -457,7 +409,7 @@ def render_event_list(events: list, today: str, custom_names: Optional[dict] = N
             label = f'<span class="today-badge">Сегодня</span>{fmt_date(key)}'
         else:
             label = fmt_date(key)
-        cards = "\n".join(render_card(e, custom_names) for e in grp)
+        cards = "\n".join(render_card(e) for e in grp)
         parts.append(f'<div class="date-group"><h2>{label}</h2>\n{cards}\n</div>')
 
     return "\n".join(parts)
@@ -477,7 +429,7 @@ def jsonld_start_date(event: dict) -> str:
         return event_date
     return f"{event_date}T{int(match.group(1)):02d}:{match.group(2)}:00+03:00"
 
-def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str:
+def make_jsonld_events(events: list) -> str:
     items = []
     for e in events[:30]:
         if not e.get("date"):
@@ -487,11 +439,9 @@ def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str
         except ValueError:
             continue
 
-        src_url = e.get("source_url") or ""
-        custom_name = (custom_names or {}).get(src_url)
         item: dict = {
             "@type":     "MusicEvent",
-            "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
+            "name":      e.get("artist") or e.get("venue") or "Концерт",
             "startDate": jsonld_start_date(e),
             "location":  {
                 "@type": "MusicVenue",
@@ -507,7 +457,7 @@ def make_jsonld_events(events: list, custom_names: Optional[dict] = None) -> str
             item["description"] = e["description"]
         if e.get("cancelled"):
             item["eventStatus"] = "https://schema.org/EventCancelled"
-        display_artist = custom_name or e.get("artist")
+        display_artist = e.get("artist")
         if display_artist:
             item["performer"] = {"@type": "MusicGroup", "name": display_artist}
         if e.get("image"):
@@ -559,7 +509,6 @@ def make_city_page(
     events_all: list,
     all_cities: list[str],
     css: str,
-    custom_names: Optional[dict] = None,
 ) -> str:
     """Генерирует страницу города на основе нового index.html."""
     today   = today_str()
@@ -573,7 +522,7 @@ def make_city_page(
                    f"ближайшие {count} событий в клубах, барах и на площадках. "
                    f"Обновляется ежедневно.")
 
-    jsonld_events = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today], custom_names)
+    jsonld_events = make_jsonld_events([e for e in city_events if (e.get("date") or "") >= today])
     jsonld_bc     = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (city, "")])
 
     # Берём за основу свежий index.html
@@ -605,7 +554,7 @@ def make_city_page(
     # Статический пре-рендер событий города (для поисковиков).
     # Шаблон (index.html) может уже содержать SEO-блок — убираем его, чтобы не дублировать.
     src = strip_seo(src)
-    static_content = render_event_list(city_events, today, custom_names)
+    static_content = render_event_list(city_events, today)
     seo_block = wrap_seo(static_content)
 
     # Скрипт: предвыбираем город после загрузки
@@ -635,7 +584,6 @@ def make_genre_page(
     genre: str,
     events_all: list,
     css: str,
-    custom_names: Optional[dict] = None,
 ) -> str:
     """Генерирует статическую SEO-страницу жанра на основе genre.html."""
     today  = today_str()
@@ -649,7 +597,7 @@ def make_genre_page(
                    f"ближайшие {count} {count_word} в клубах, барах и на площадках. "
                    f"Обновляется ежедневно.")
 
-    jsonld_events = make_jsonld_events([e for e in genre_events if (e.get("date") or "") >= today], custom_names)
+    jsonld_events = make_jsonld_events([e for e in genre_events if (e.get("date") or "") >= today])
     jsonld_bc     = make_jsonld_breadcrumbs([("Местов.Нет", "/"), (label, "")])
 
     src = GENRE_FILE.read_text(encoding="utf-8")
@@ -679,7 +627,7 @@ def make_genre_page(
 
     # Статический пре-рендер событий жанра (для поисковиков).
     src = strip_seo(src)
-    static_content = render_event_list(genre_events, today, custom_names)
+    static_content = render_event_list(genre_events, today)
     seo_block = wrap_seo(static_content)
 
     # Скрипт: жанр по умолчанию для этой статической страницы (без ?g=).
@@ -693,15 +641,14 @@ def make_genre_page(
 
 # ── Шаблон страницы события (event/{id} без расширения) ──────────────────────
 
-def event_meta(event: dict, custom_names: Optional[dict] = None) -> tuple[str, str]:
+def event_meta(event: dict) -> tuple[str, str]:
     """Возвращает SEO-заголовок и описание карточки события.
 
     Эта функция используется и очередью модерации. Благодаря общему расчёту
     карточка с конфликтующими метаданными не может попасть в публикацию и
     позже остановить деплой на проверке уникальности страниц.
     """
-    src_url = event.get("source_url") or ""
-    artist = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
+    artist = event.get("artist") or "Мероприятие"
     venue = event.get("venue") or ""
     city = event.get("source_city") or ""
     city_prep = CITY_PREP.get(city, f"в {city}" if city else "")
@@ -723,17 +670,15 @@ def event_meta(event: dict, custom_names: Optional[dict] = None) -> tuple[str, s
     description = ", ".join(desc_parts) + ". Билеты и подробности на Местов.Нет."
     return title, description
 
-def make_event_page(event: dict, all_events: list[dict], today: str,
-                     custom_names: Optional[dict] = None) -> str:
+def make_event_page(event: dict, all_events: list[dict], today: str) -> str:
     """Генерирует страницу события на основе event.html (чистый URL /event/{id})."""
     eid   = event["id"]
-    src_url  = event.get("source_url") or ""
-    artist   = (custom_names or {}).get(src_url) or event.get("artist") or "Мероприятие"
+    artist   = event.get("artist") or "Мероприятие"
     city     = event.get("source_city") or ""
-    title, description = event_meta(event, custom_names)
+    title, description = event_meta(event)
 
     canonical = f"{DOMAIN}/event/{eid}"
-    jsonld    = make_jsonld_events([event], custom_names)
+    jsonld    = make_jsonld_events([event])
     jsonld_bc = make_jsonld_breadcrumbs([
         ("Местов.Нет", "/"),
         (city, f"/cities/{city_slug(city)}.html") if city else ("Крым", "/"),
@@ -810,14 +755,14 @@ body {{ background: var(--bg, #f8f8f6); color: var(--fg, #202225); }} main {{ ma
 
 # ── Обновление index.html ─────────────────────────────────────────────────────
 
-def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = None) -> str:
+def update_index(events: list, css_exists: bool) -> str:
     """Читает текущий index.html и добавляет JSON-LD + статический пре-рендер."""
     src = INDEX_FILE.read_text(encoding="utf-8")
     today = today_str()
     future = [e for e in events if (e.get("date") or "") >= today]
 
     # JSON-LD для событий
-    jsonld_events = make_jsonld_events(future, custom_names)
+    jsonld_events = make_jsonld_events(future)
 
     # Улучшенный title и description
     count = len(future)
@@ -874,7 +819,7 @@ def update_index(events: list, css_exists: bool, custom_names: Optional[dict] = 
 
     # Статический пре-рендер событий (скрытый блок для SEO).
     # Снимаем прежний блок по маркерам (устойчиво к вложенным </div>) и вставляем свежий.
-    static_html = render_event_list(future, today, custom_names)
+    static_html = render_event_list(future, today)
     src = strip_seo(src).replace('</body>', f'{wrap_seo(static_html)}</body>')
 
     return src
@@ -910,7 +855,7 @@ def build_venue_alias_lookup(venues: list[dict]) -> dict[str, str]:
     for v in venues:
         for alias in v.get("aliases", []):
             lookup[alias] = v["slug"]
-        # имя тоже добавляем на случай ручных правок settings.json
+        # Каноническое имя также участвует в поиске площадки.
         lookup[v["name"]] = v["slug"]
     return lookup
 
@@ -958,8 +903,7 @@ def resolve_artist_slugs(events: list[dict], lookup: dict[str, str]) -> None:
         e["artist_slugs"] = slugs
 
 
-def render_past_event_list(events: list[dict], today: str,
-                           custom_names: Optional[dict] = None) -> str:
+def render_past_event_list(events: list[dict], today: str) -> str:
     past = [e for e in events if e.get("date") and e["date"] < today]
     if not past:
         return ""
@@ -969,7 +913,7 @@ def render_past_event_list(events: list[dict], today: str,
     parts = []
     for key in sorted(groups, reverse=True):  # сначала самые свежие прошедшие
         grp = sorted(groups[key], key=lambda e: e.get("time") or "99:99")
-        cards = "\n".join(render_card(e, custom_names) for e in grp)
+        cards = "\n".join(render_card(e) for e in grp)
         parts.append(
             f'<div class="date-group">'
             f'<h2 class="past-date">{fmt_date(key)}</h2>\n{cards}\n</div>'
@@ -978,7 +922,7 @@ def render_past_event_list(events: list[dict], today: str,
 
 
 def make_venue_jsonld(venue: dict, upcoming: list[dict],
-                      today: str, custom_names: Optional[dict] = None) -> str:
+                      today: str) -> str:
     items: list[dict] = []
 
     place: dict = {
@@ -997,17 +941,16 @@ def make_venue_jsonld(venue: dict, upcoming: list[dict],
     for e in upcoming[:20]:
         if not e.get("date"):
             continue
-        src_url = e.get("source_url") or ""
-        custom_name = (custom_names or {}).get(src_url)
+
         item: dict = {
             "@type":     "MusicEvent",
-            "name":      custom_name or e.get("artist") or e.get("venue") or "Концерт",
+            "name":      e.get("artist") or e.get("venue") or "Концерт",
             "startDate": jsonld_start_date(e),
             "location":  {"@type": "MusicVenue", "name": venue["name"]},
         }
         if e.get("description"):
             item["description"] = e["description"]
-        artist = custom_name or e.get("artist")
+        artist = e.get("artist")
         if artist:
             item["performer"] = {"@type": "MusicGroup", "name": artist}
         if e.get("image"):
@@ -1040,7 +983,7 @@ def _extract_nav_block() -> str:
 
 
 def make_venue_page(venue: dict, all_events: list[dict], today: str,
-                    css: str, custom_names: Optional[dict] = None) -> str:
+                    css: str) -> str:
     import json as _json
     slug    = venue["slug"]
     name    = venue["name"]
@@ -1060,7 +1003,7 @@ def make_venue_page(venue: dict, all_events: list[dict], today: str,
                    + (f", {city_prep}" if city_prep else "")
                    + f". {len(upcoming)} ближайших событий. Расписание и билеты.")
     canonical   = f"{DOMAIN}/venues/{slug}"
-    jsonld      = make_venue_jsonld(venue, upcoming, today, custom_names)
+    jsonld      = make_venue_jsonld(venue, upcoming, today)
     jsonld_bc   = make_jsonld_breadcrumbs([
         ("Местов.Нет", "/"),
         (city, f"/cities/{city_slug(city)}.html") if city else ("Крым", "/"),
@@ -1432,25 +1375,11 @@ function priceText(p) {{
   return (low.includes('бесплат') || low === 'вход свободный') ? 'Вход свободный' : p;
 }}
 
-function applySettings(data, settings) {{
-  const hiddenSet    = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
-  const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
-    images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
-    descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
+function publishedEvents(data) {{
   return data.map((e, i) => {{
-    const url = e.source_url || '';
-    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
-    const ev = {{ ...e }};
-    if (url in ov.names)        ev.artist      = ov.names[url];
-    if (url in ov.times)        ev.time        = ov.times[url];
-    if (url in ov.prices)       ev.price       = ov.prices[url];
-    if (url in ov.images)       ev.image       = ov.images[url] === null ? null : ov.images[url];
-    if (url in ov.cities)       ev.source_city = ov.cities[url];
-    if (url in ov.venues)       ev.venue       = ov.venues[url];
-    if (url in ov.descriptions) ev.description = ov.descriptions[url];
-    if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (e.needs_review || e.moderation_status === 'rejected') return null;
+    const ev = {{ ...e, _origIdx: i }};
+    if (ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -1531,13 +1460,9 @@ function renderArchive() {{
 
 async function load() {{
   try {{
-    const [res, settingsRes] = await Promise.all([
-      fetch('/events.json'),
-      fetch('/settings.json').catch(() => null)
-    ]);
+    const res = await fetch('/events.json');
     const data = await res.json();
-    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
-    const patched  = applySettings(data, settings);
+    const patched  = publishedEvents(data);
     const now      = moscowNow();
     const aliasSet = new Set(VENUE_ALIASES);
 
@@ -1571,8 +1496,7 @@ load();
 </html>'''
 
 
-def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str,
-                       custom_names: Optional[dict] = None) -> str:
+def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str) -> str:
     items: list[dict] = []
 
     performer: dict = {"@type": "MusicGroup", "name": artist["name"]}
@@ -1581,11 +1505,10 @@ def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str,
     for e in upcoming[:20]:
         if not e.get("date"):
             continue
-        src_url = e.get("source_url") or ""
-        custom_name = (custom_names or {}).get(src_url)
+
         item: dict = {
             "@type":     "MusicEvent",
-            "name":      custom_name or artist["name"],
+            "name":      artist["name"],
             "startDate": jsonld_start_date(e),
             "performer": {"@type": "MusicGroup", "name": artist["name"]},
             "location":  {
@@ -1613,7 +1536,7 @@ def make_artist_jsonld(artist: dict, upcoming: list[dict], today: str,
 
 
 def make_artist_page(artist: dict, all_events: list[dict], today: str,
-                     css: str, custom_names: Optional[dict] = None) -> str:
+                     css: str) -> str:
     import json as _json
     slug    = artist["slug"]
     name    = artist["name"]
@@ -1632,7 +1555,7 @@ def make_artist_page(artist: dict, all_events: list[dict], today: str,
                    + (f" ({', '.join(cities[:3])})" if cities else "")
                    + f". {len(upcoming)} ближайших событий.")
     canonical   = f"{DOMAIN}/artist/{slug}"
-    jsonld      = make_artist_jsonld(artist, upcoming, today, custom_names)
+    jsonld      = make_artist_jsonld(artist, upcoming, today)
     jsonld_bc   = make_jsonld_breadcrumbs([
         ("Местов.Нет", "/"),
         (name, ""),
@@ -1945,25 +1868,11 @@ function otherArtistNames(ev) {{
   return names;
 }}
 
-function applySettings(data, settings) {{
-  const hiddenSet = new Set(settings.hidden || []);
-  const cancelledSet = new Set(settings.cancelled || []);
-  const ov = {{ names: settings.names||{{}}, times: settings.times||{{}}, prices: settings.prices||{{}},
-    images: settings.images||{{}}, cities: settings.cities||{{}}, venues: settings.venues||{{}},
-    descriptions: settings.descriptions||{{}}, genres: settings.genres||{{}} }};
+function publishedEvents(data) {{
   return data.map((e, i) => {{
-    const url = e.source_url || '';
-    if (hiddenSet.has(url) || e.needs_review || e.moderation_status === 'rejected') return null;
-    const ev = {{ ...e }};
-    if (url in ov.names)        ev.artist      = ov.names[url];
-    if (url in ov.times)        ev.time        = ov.times[url];
-    if (url in ov.prices)       ev.price       = ov.prices[url];
-    if (url in ov.images)       ev.image       = ov.images[url] === null ? null : ov.images[url];
-    if (url in ov.cities)       ev.source_city = ov.cities[url];
-    if (url in ov.venues)       ev.venue       = ov.venues[url];
-    if (url in ov.descriptions) ev.description = ov.descriptions[url];
-    if (url in ov.genres)       ev.genre       = ov.genres[url];
-    if (cancelledSet.has(url) || ev.source_status === 'cancelled') ev.cancelled = true;
+    if (e.needs_review || e.moderation_status === 'rejected') return null;
+    const ev = {{ ...e, _origIdx: i }};
+    if (ev.source_status === 'cancelled') ev.cancelled = true;
     return ev;
   }}).filter(Boolean);
 }}
@@ -2043,13 +1952,9 @@ function renderArchive() {{
 
 async function load() {{
   try {{
-    const [res, settingsRes] = await Promise.all([
-      fetch('/events.json'),
-      fetch('/settings.json').catch(() => null)
-    ]);
+    const res = await fetch('/events.json');
     const data = await res.json();
-    const settings = (settingsRes && settingsRes.ok) ? await settingsRes.json().catch(() => ({{}})) : {{}};
-    const patched  = applySettings(data, settings);
+    const patched  = publishedEvents(data);
     const now      = moscowNow();
 
     const all = patched
@@ -2155,26 +2060,7 @@ def main() -> None:
     events: list[dict] = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
     print(f"    {len(events)} событий загружено")
 
-    settings = {}
-    if SETTINGS_FILE.exists():
-        settings = json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
-
-    # Применяем все переопределения из settings.json одним проходом
-    events = apply_settings(events, settings)
-    hidden_count = len(settings.get("hidden", []))
-    print(f"    После применения настроек: {len(events)} событий "
-          f"({hidden_count} скрыто, переопределений: "
-          f"names={len(settings.get('names',{}))}, "
-          f"times={len(settings.get('times',{}))}, "
-          f"prices={len(settings.get('prices',{}))}, "
-          f"images={len(settings.get('images',{}))}, "
-          f"cities={len(settings.get('cities',{}))}, "
-          f"venues={len(settings.get('venues',{}))}, "
-          f"descriptions={len(settings.get('descriptions',{}))}, "
-          f"genres={len(settings.get('genres',{}))})")
-
-    # custom_names больше не нужен отдельно — names уже применены в events
-    custom_names: dict = {}
+    events = published_events(events)
 
     # Загружаем реестр заведений и привязываем venue_slug к каждому событию
     venues = load_venues()
@@ -2204,7 +2090,7 @@ def main() -> None:
 
     # 1. Обновляем index.html
     print("📝  Обновляем index.html …")
-    new_index = update_index(events, bool(css), custom_names)
+    new_index = update_index(events, bool(css))
     INDEX_FILE.write_text(new_index, encoding="utf-8")
     print("    ✓ index.html обновлён")
 
@@ -2226,7 +2112,7 @@ def main() -> None:
             print(f"    — cities/{slug}.html  (дубль: {city}, пропущен)")
             continue
         seen_slugs.add(slug)
-        page = make_city_page(city, events, cities_with_events, css, custom_names)
+        page = make_city_page(city, events, cities_with_events, css)
         out  = cities_dir / f"{slug}.html"
         out.write_text(page, encoding="utf-8")
         current_generated_pages.add(Path("cities") / f"{slug}.html")
@@ -2240,7 +2126,7 @@ def main() -> None:
     genres_with_events = [g for g in GENRE_ORDER if any(map_genre(e.get("genre")) == g for e in events)]
     print(f"🎼   Генерируем страницы жанров ({len(genres_with_events)}) …")
     for genre in genres_with_events:
-        page = make_genre_page(genre, events, css, custom_names)
+        page = make_genre_page(genre, events, css)
         slug_dir = genre_dir / genre
         slug_dir.mkdir(exist_ok=True)
         out = slug_dir / "index.html"
@@ -2260,7 +2146,7 @@ def main() -> None:
     print(f"🏟   Генерируем страницы заведений ({len(venues_with_events)}) …")
     generated_venue_slugs: list[str] = []
     for venue in venues_with_events:
-        page = make_venue_page(venue, events, today, css, custom_names)
+        page = make_venue_page(venue, events, today, css)
         out  = venues_dir / venue["slug"]  # без расширения .html
         out.write_text(page, encoding="utf-8")
         current_generated_pages.add(Path("venues") / venue["slug"])
@@ -2293,7 +2179,7 @@ def main() -> None:
     print(f"🎤   Генерируем страницы артистов ({len(artists_with_events)}) …")
     generated_artist_slugs: list[str] = []
     for artist in artists_with_events:
-        page = make_artist_page(artist, events, today, css, custom_names)
+        page = make_artist_page(artist, events, today, css)
         out  = artist_dir / artist["slug"]  # без расширения .html
         out.write_text(page, encoding="utf-8")
         a_upcoming = len([e for e in events
@@ -2314,7 +2200,7 @@ def main() -> None:
         eid = e.get("id")
         if not eid:
             continue
-        page = make_event_page(e, events, today, custom_names)
+        page = make_event_page(e, events, today)
         out  = events_dir / eid  # без расширения
         out.write_text(page, encoding="utf-8")
         generated_event_ids.append(eid)

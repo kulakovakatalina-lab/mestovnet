@@ -70,16 +70,13 @@ def test_seo_collision_publishes_one_event_and_queues_the_other(tmp_path, monkey
     events_path = tmp_path / "events.json"
     queue_path = tmp_path / "moderation.json"
     decisions_path = tmp_path / "moderation_decisions.json"
-    settings_path = tmp_path / "settings.json"
     events_path.write_text(json.dumps([
         {"id": "a", "date": "2999-01-01", "time": "19:00", "artist": "Кальвадос", "venue": "Рок-н-рольщики", "source_city": "Симферополь", "price": "500 ₽", "image": "/a.jpg"},
         {"id": "b", "date": "2999-01-01", "time": "20:00", "artist": "Кальвадос", "venue": "Рок-н-рольщики", "source_city": "Симферополь", "price": "500 ₽", "image": "/b.jpg"},
     ]), encoding="utf-8")
-    settings_path.write_text("{}", encoding="utf-8")
     monkeypatch.setattr(moderation_queue, "EVENTS", events_path)
     monkeypatch.setattr(moderation_queue, "QUEUE", queue_path)
     monkeypatch.setattr(moderation_queue, "DECISIONS_CACHE", decisions_path)
-    monkeypatch.setattr(moderation_queue, "SETTINGS", settings_path)
     monkeypatch.setattr(moderation_queue, "load_decisions", lambda: [])
 
     moderation_queue.main()
