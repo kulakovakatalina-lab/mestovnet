@@ -15,6 +15,7 @@ from zoneinfo import ZoneInfo
 import httpx
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from live_music import POLICY_VERSION, classify_event
 
 # Локально подхватываем ключи из .env. Уже заданные переменные
 # окружения (например, GitHub Actions Secrets) не перезаписываются.
@@ -399,6 +400,22 @@ def fetch_telegram_post(source_url: str):
 
 _SYSTEM_PROMPT = """Ты анализируешь посты из Telegram-канала крымского заведения.
 Извлекай музыкальные мероприятия из текста поста.
+
+Отбирай только ОЧНЫЕ ЖИВЫЕ МУЗЫКАЛЬНЫЕ ВЫСТУПЛЕНИЯ для слушателей.
+Не извлекай женские/мужские круги, интуитивные танцы, ecstatic dance,
+звукотерапевтические сеансы, ритуалы, DJ-интенсивы, обычное караоке гостей,
+DJ/виниловые сеты без живого исполнения, музыкальные игры и фоновые плейлисты.
+Ведущий игры, DJ и преподаватель не становятся концертными исполнителями
+из-за наличия имени. Слова «концерт» или «живая музыка» сами по себе не
+превращают квиз, практику или гастроужин в музыкальное выступление.
+Не выдумывай концертный блок. Из смешанной программы выделяй именно
+самостоятельное музыкальное выступление; не смешивай разные дни афиши.
+Сохраняй настоящие концерты с караоке после, живой вокал под минус,
+караоке с живым оркестром, концерты с дегустацией и инструментальные
+медитативные концерты. Не запрещай жанры и инструменты.
+Поле source_excerpt: короткая ТОЧНАЯ цитата из текущего поста о программе
+ИМЕННО ЭТОГО события (не соседней даты), или null. В description сохраняй
+основной формат и роль музыкантов, а не только рекламные эпитеты.
 
 ГЛАВНОЕ ПРАВИЛО: если в посте НЕТ музыкального мероприятия — верни пустой массив [].
 НЕ создавай объект-заглушку с пустыми полями и пояснением в description.
@@ -2290,6 +2307,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                 event.pop("image_indices", None)
                 event.pop("image_index", None)
                 event["source_url"] = post_url
+                _verify_music_excerpt(event, post)
                 all_events.append(event)
                 channel_events += 1
 
@@ -2332,6 +2350,7 @@ def process_channels(channels, all_events, get_posts_fn, days_back: int = DAYS_B
                         fix_event_year(event, post["date"])
 
                         event["source_url"] = post_url
+                        _verify_music_excerpt(event, post)
                         all_events.append(event)
                         channel_events += 1
 
@@ -2396,6 +2415,64 @@ def _print_dry_run_report(existing: list[dict], candidate: list[dict]) -> None:
                   f"{e.get('venue') or 'без площадки'} | {e.get('source_city') or ''}")
 
 
+def _verify_music_excerpt(event: dict, post: dict) -> None:
+    """Never use an entire multi-event post as proof for one event."""
+    excerpt = event.pop("source_excerpt", None)
+    if isinstance(excerpt, str) and 0 < len(excerpt) <= 600 and excerpt in (post.get("text") or ""):
+        event["_live_music_source_excerpt"] = excerpt
+
+
+def filter_new_live_music(candidates: list[dict], existing: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Admission only: existing catalogue rows are not reclassified or changed.
+
+    Run BEFORE deduplication/reconciliation, so a rejected new programme cannot
+    be merged into a real concert. A re-extraction of a legacy programme cannot
+    remove it either. A shared source URL alone does not grant an exemption.
+    """
+    accepted, held = [], []
+    for candidate in candidates:
+        decision = classify_event(candidate)
+        clean = {key: value for key, value in candidate.items()
+                 if key not in {"_live_music_source_excerpt", "source_excerpt"}}
+        if decision.action == "publish":
+            accepted.append(clean)
+            continue
+        if any(_events_are_duplicates(candidate, old) for old in existing):
+            # Leave the old row in existing; do not replace/enrich it with a
+            # rejected re-extraction. Other dates/programmes still get checked.
+            continue
+        held.append({"policy_version": POLICY_VERSION, "decision": decision.action,
+                     "reason": decision.reason, "evidence": decision.evidence,
+                     "event": clean})
+    return accepted, held
+
+
+def retain_existing_events(existing: list[dict], candidates: list[dict]) -> list[dict]:
+    """Admission changes must not remove stored rows, including future events.
+
+    Keep regular source corrections/cancellation flags on rows that survived.
+    Restore only missing IDs, without changing the original record.
+    """
+    present = {event.get("id") for event in candidates if event.get("id")}
+    return candidates + [dict(event) for event in existing
+                         if event.get("id") and event["id"] not in present]
+
+
+def _write_live_music_report(held: list[dict], dry_run: bool) -> None:
+    counts = Counter(item["decision"] for item in held)
+    print(f"Живая музыка (только новые): исключено {counts['ignore']}, "
+          f"требует сверки {counts['review']}")
+    for item in held:
+        event = item["event"]
+        print(f"  live-music {item['decision']}/{item['reason']}: "
+              f"{event.get('date')} | {event.get('artist')} | {event.get('source_url')}")
+    if not dry_run:
+        report = Path(CACHE_DIR) / "live_music_report.json"
+        report.parent.mkdir(parents=True, exist_ok=True)
+        report.write_text(json.dumps({"policy_version": POLICY_VERSION, "candidates": held},
+                                     ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     global PERSIST_IMAGES
     previous_persist_images = PERSIST_IMAGES
@@ -2457,10 +2534,6 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     normalized_times, invalid_times = _sanitize_event_times(all_events)
     if normalized_times or invalid_times:
         print(f"Время: нормализовано {normalized_times}, очищено {invalid_times}")
-    all_events = deduplicate_events(all_events)
-    after = len(all_events)
-    print(f"\nДедупликация: {before} → {after} событий (убрано дублей: {before - after})")
-
     existing = []
     if os.path.exists(OUTPUT_FILE):
         try:
@@ -2469,6 +2542,11 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
         except (json.JSONDecodeError, OSError):
             existing = []
     existing_before_cleanup = [dict(e) for e in existing]
+    all_events, music_held = filter_new_live_music(all_events, existing_before_cleanup)
+    before = len(all_events)
+    all_events = deduplicate_events(all_events)
+    after = len(all_events)
+    print(f"\nДедупликация: {before} → {after} событий (убрано дублей: {before - after})")
     old_invalid_dates = _sanitize_event_dates(existing)
     old_normalized_times, old_invalid_times = _sanitize_event_times(existing)
     if old_invalid_dates or old_normalized_times or old_invalid_times:
@@ -2478,7 +2556,10 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     # Обычный проход читает лишь несколько последних дней. Дополнительно
     # перепроверяем ограниченную порцию уже опубликованных будущих анонсов,
     # чтобы заметить правки и отмены старых постов.
-    all_events.extend(recheck_published_telegram_sources(existing, tg_channels, source_updates))
+    refreshed = recheck_published_telegram_sources(existing, tg_channels, source_updates)
+    refreshed, refreshed_held = filter_new_live_music(refreshed, existing_before_cleanup)
+    all_events.extend(refreshed)
+    _write_live_music_report(music_held + refreshed_held, dry_run)
     existing, all_events = reconcile_source_updates(existing, all_events, source_updates)
 
     missing_posters = _drop_unpublished_image_links(existing + all_events)
@@ -2611,6 +2692,7 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     # Защита ставится после всех эвристик и проверки: ни дедупликация, ни
     # очистка артистов не могут переписать архивные карточки.
     merged = preserve_past_events(existing_before_cleanup, merged)
+    merged = retain_existing_events(existing_before_cleanup, merged)
 
     _print_validation_report(before_validation, len(merged), rejected)
     _print_source_report(source_stats, validation_candidates, merged)

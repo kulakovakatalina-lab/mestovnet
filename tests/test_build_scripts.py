@@ -19,7 +19,7 @@ from tests.conftest import PROJECT_ROOT
 
 
 def _copy_for_build(tmp_path, *extra_files):
-    files = ["build_venues.py", "build_artists.py", "parser.py",
+    files = ["build_venues.py", "build_artists.py", "parser.py", "live_music.py",
              "events.json", "venues.json", "artists.json", "cities.json",
              *extra_files]
     for name in files:
