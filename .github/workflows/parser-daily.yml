@@ -1,13 +1,12 @@
 name: Parser daily
 
-# Основной ночной запуск — 02:17 по Москве, короткая повторная проверка — 05:43.
+# Единственный ежедневный запуск — 02:17 по Москве.
 # Время вне начала часа снижает риск задержки расписания GitHub Actions.
 # генерирует страницы, пушит изменения в main, дожидается деплоя
 # и только после этого присылает Telegram-уведомление.
 on:
   schedule:
     - cron: "17 23 * * *"
-    - cron: "43 2 * * *"
   workflow_dispatch:
     inputs:
       days:
@@ -71,12 +70,9 @@ jobs:
           retention-days: 1
 
       - name: Запустить парсер
-        env:
-          PARSER_SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
           DAYS="${{ github.event.inputs.days || 14 }}"
-          if [ "${PARSER_SCHEDULE:-}" = "43 2 * * *" ]; then DAYS=2; fi
           python -u parser.py --days "$DAYS" 2>&1 | tee parser_output.log
           python repair_event_data.py
           python moderation_queue.py
@@ -122,7 +118,7 @@ jobs:
 
           # Добавляем только данные и результаты сборки, а не любые новые файлы.
           git add -A -- events.json moderation.json moderation_decisions.json \
-            source_health.json artists.json venues.json settings.json \
+            source_health.json artists.json venues.json \
             .generated-pages.json .legacy-generated-pages-migrated.json \
             index.html cities/ genre/ venues/ artist/ event/ current-events/ \
             sitemap.xml robots.txt images/events/
