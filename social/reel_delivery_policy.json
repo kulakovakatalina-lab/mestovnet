@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "version": "reels-phase1-delivery-v1",
+  "reviewers": ["codex-visual-review", "server-vision"],
+  "allow_important_region_resolution": false,
+  "note": "Reviewer result must bind exact MP4, frames and facts. This file is not a visual pass, publication history or source-freshness receipt."
+}

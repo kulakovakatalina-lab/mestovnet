@@ -1,0 +1,5 @@
+# Reels + reading/verifying existing image-module bundles.
+Pillow
+numpy
+httpx
+python-dotenv

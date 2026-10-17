@@ -1,0 +1,167 @@
+{
+  "version": "photo-led-a2-v1",
+  "status": "visual_direction_selected",
+  "selection": {
+    "layout": "A",
+    "typography": "A2",
+    "reference": "social/visuals/joker-type-study/a2.png"
+  },
+  "scope": "Selected A2 cover direction integrated into the module; each event version still requires explicit owner approval",
+  "size": [
+    1080,
+    1350
+  ],
+  "fonts": {
+    "body": {
+      "path": "/System/Library/Fonts/Avenir Next.ttc",
+      "index": 7,
+      "family": "Avenir Next",
+      "style": "Regular",
+      "sha256": "98dec241f3ee712a37fad61aafdb83e225ed54c3e5b6e9f0abeb24eba13743ba",
+      "license": "Local preview with installed macOS fonts; runtime licensing not yet confirmed"
+    },
+    "title": {
+      "path": "/System/Library/Fonts/Avenir Next.ttc",
+      "index": 2,
+      "family": "Avenir Next",
+      "style": "Demi Bold",
+      "sha256": "98dec241f3ee712a37fad61aafdb83e225ed54c3e5b6e9f0abeb24eba13743ba",
+      "license": "Local preview with installed macOS fonts; runtime licensing not yet confirmed"
+    }
+  },
+  "font_sha256": "98dec241f3ee712a37fad61aafdb83e225ed54c3e5b6e9f0abeb24eba13743ba",
+  "font_usage": "Local preview with installed macOS fonts; runtime licensing not yet confirmed",
+  "rules": [
+    "Photograph fills the canvas; preserve main subject",
+    "Headline in sentence case; no forced uppercase",
+    "Text sits in quiet lower region with a gradual dark gradient",
+    "No slide counters or automatic second slide",
+    "Do not repeat facts within a card"
+  ],
+  "template_implementation": "social/image_module.py -> social/a2_pipeline.py / social/a2_renderer.py",
+  "photo_enhancement": {
+    "policy_version": "content-preserving-enhancement-v1",
+    "goal": "Restore usable resolution and reduce blur where feasible, then improve light and color richness while preserving identity and scene content",
+    "selection": "Per-image and local adjustments; no universal aggressive filter",
+    "preserve": [
+      "identity",
+      "facial_features_and_expression",
+      "hair_and_makeup",
+      "clothing",
+      "tattoos",
+      "instruments",
+      "objects",
+      "scene_content"
+    ],
+    "allow": [
+      "super_resolution",
+      "deblurring",
+      "existing_detail_sharpening",
+      "white_balance",
+      "local_tonal_correction",
+      "adaptive_saturation"
+    ],
+    "reject": [
+      "identity_or_content_changes",
+      "invented_detail",
+      "bleached_skin",
+      "clipped_highlights",
+      "crushed_shadows",
+      "sharpening_halos"
+    ],
+    "verification": "Compare original and processed source, including close-up faces; weaken or discard unsuccessful correction",
+    "fallback": "Use original photograph",
+    "keep_original": true,
+    "generation_for_missing_photo": "Separate atmospheric illustration workflow, not face reconstruction",
+    "restoration": {
+      "trigger": "Original is too small or blurred for the intended crop and output size",
+      "methods": [
+        "super_resolution",
+        "deblurring"
+      ],
+      "constraint": "Estimated missing pixels must not change identity, expressions, clothing, lettering, tattoos, instruments or other objects",
+      "uncertainty": "Missing information cannot be guaranteed to match the original; reject content-changing reconstruction",
+      "verification": "Compare restored and original subjects and objects; route uncertain identity or detail preservation to owner review"
+    }
+  },
+  "design_approved": true,
+  "typographic_approved": false,
+  "grid": {
+    "brand": [
+      60,
+      54,
+      460,
+      40
+    ],
+    "city": [
+      60,
+      103,
+      460,
+      40
+    ],
+    "date": [
+      650,
+      57,
+      370,
+      42
+    ],
+    "time": [
+      800,
+      104,
+      220,
+      40
+    ],
+    "kicker": [
+      60,
+      805,
+      960,
+      90
+    ],
+    "eyebrow": [
+      60,
+      870,
+      960,
+      60
+    ],
+    "title": [
+      55,
+      942,
+      965,
+      250
+    ],
+    "venue": [
+      60,
+      1253,
+      680,
+      40
+    ],
+    "address": [
+      60,
+      1293,
+      680,
+      32
+    ],
+    "price": [
+      775,
+      1256,
+      245,
+      40
+    ],
+    "title_size": 124,
+    "title_minimum": 88,
+    "title_leading": 123,
+    "title_lines": 2,
+    "band_y": 180,
+    "band_min_height": 500,
+    "band_max_height": 600,
+    "shade_start": 710,
+    "shade_end": 1240,
+    "shade_alpha": 235
+  },
+  "default_slides": [
+    "cover"
+  ],
+  "include_original_poster": false,
+  "study_renderer": "social/joker_type_study.py / style a2",
+  "reference_renderer": "social/a2_renderer.py / A2Renderer"
+}
