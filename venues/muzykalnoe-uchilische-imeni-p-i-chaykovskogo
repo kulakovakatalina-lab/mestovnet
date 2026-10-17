@@ -1082,7 +1082,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Музыкальное училище имени П. И. Чайковского</h1>
 
-
+<p class="venue-description">В училище можно прийти на концерты академической музыки: здесь представлены абонементы «Сказки с оркестром» и «Виват виртуозы!».</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

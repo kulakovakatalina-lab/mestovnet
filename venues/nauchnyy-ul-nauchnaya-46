@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Научный, ул Научная, 46</h1>
 
-
+<p class="venue-description">Под куполом телескопа в Научном проходят концерты-погружения Андрея Ясинского. В его руках звучат фортепиано и редкие инструменты.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

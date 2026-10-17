@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Ресторан Баркас на Парковой</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Парковая, 3, Севастополь</a></div>
-
+<p class="venue-description">В «Баркасе» встречают гостей живым вокалом и диджейской музыкой. В программе открытия — Анна Шакель и Тимофей Аккуратов.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

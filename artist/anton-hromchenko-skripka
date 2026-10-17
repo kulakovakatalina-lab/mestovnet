@@ -1075,7 +1075,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Антон Хромченко (скрипка)</h1>
-
+<p class="venue-description">Скрипач, участник концертов классической музыки в органном зале LIVADIA вместе с сопрано Юлией. В программах — произведения Баха, Вивальди, Мендельсона, Сен-Санса и Морриконе.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

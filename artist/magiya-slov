@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Магия слов</h1>
-
+<p class="venue-description">Группа сборных рок-вечеров Jam Club в Симферополе. Выступает в программах «Супер-рок-пятницы» вместе с Red Stars, Dumonica, «Найти» и другими коллективами.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

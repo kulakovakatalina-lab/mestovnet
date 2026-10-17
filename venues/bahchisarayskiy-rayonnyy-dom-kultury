@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Бахчисарайский районный дом культуры</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Симферопольская, 15, Бахчисарай</a></div>
-
+<p class="venue-description">Здесь собираются на вокальные концерты и вечера памяти любимых артистов. Ансамбль «Русская песня» участвует в фестивале «От сердца к сердцу», а на концерте памяти Марка Бернеса песни перемежаются историями из его жизни.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

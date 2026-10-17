@@ -1068,7 +1068,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Арт-кафе «Снежинка», Большая Морская, 19</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Большая Морская, 19, Севастополь</a></div>
-
+<p class="venue-description">Французские песни Пиаф, Азнавура и Дассена сменяются виртуозной скрипкой Матвея Блюмина и камерными ансамблями. Здесь же Ольга Панкратова и пианист Егор Криштопа рассказывают «Над розовым морем» — музыкальную историю по Аркадию Аверченко.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

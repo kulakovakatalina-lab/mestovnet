@@ -1039,7 +1039,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Джокер</h1>
-
+<p class="venue-description">Рок-группа из Сочи с панк-шоу по песням «Короля и Шута». В крымской афише — выступления в Jam Club, керченском «Камелоте» и других концертных залах.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь, Керчь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

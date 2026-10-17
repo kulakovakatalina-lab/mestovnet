@@ -1039,7 +1039,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Ундервуд</h1>
-
+<p class="venue-description">Рок-группа с программой альбома «1000 лун», новыми синглами и известными хитами. В крымской афише — Дворец культуры рыбаков в Севастополе и Музыкальный театр в Симферополе.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

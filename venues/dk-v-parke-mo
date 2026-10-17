@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">ДК в парке МО</h1>
 <div class="venue-address-block"><span class="venue-hero-address">ул. Свердлова, Ялта</span></div>
-
+<p class="venue-description">Средневековые мелодии здесь сопровождаются танцами: фолк-группа «Канальи» выступает вместе с объединением «Танцующее средневековье».</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

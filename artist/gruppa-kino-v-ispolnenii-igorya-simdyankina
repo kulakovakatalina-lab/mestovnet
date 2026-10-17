@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Группа «Кино» в исполнении Игоря Симдянкина</h1>
-
+<p class="venue-description">Акустическая программа песен «Кино» в исполнении Игоря Симдянкина. Анонсирована в «Рок-н-рольщиках» и среди музыкальных встреч в Аполлоновке.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">DJ-сет Яны Кучерявой</h1>
-
+<p class="venue-description">Диджейские программы Яны Кучерявой. В афише — «Сиеста» на винодельне Акчурина вместе со скрипачом Матвеем Блюминым и саксофонистом Иваном Сычом.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

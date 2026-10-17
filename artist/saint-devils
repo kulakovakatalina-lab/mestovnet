@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Saint Devils</h1>
-
+<p class="venue-description">Группа совместных рок-концертов Jam Club. Выступает в сборных программах с «Крышей Мира», «Иччи», «Структурой» и другими музыкантами клуба.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

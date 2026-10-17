@@ -1038,7 +1038,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Севастопольский эстрадный оркестр Валентина Таева</h1>
-
+<p class="venue-description">Оркестр с программой «Рок-хиты. Поём с оркестром». Исполняет песни «Наутилуса Помпилиуса», «Короля и Шута», «Ленинграда», «Сплина» и «Чайфа» вместе с залом; в афише — ресторан «У Чёрного моря» и клуб «Депо».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

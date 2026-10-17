@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Дмитрий Калинич</h1>
-
+<p class="venue-description">Исполнитель рок- и поп-хитов разных лет в собственных интерпретациях. Выступает в баре «Рок-н-рольщики» в Севастополе.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

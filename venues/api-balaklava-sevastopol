@@ -1067,7 +1067,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Api Balaklava</h1>
 
-
+<p class="venue-description">Мясо и овощи на огне, живая гитара и диджейская музыка — так проходит гриль-вечер в Api Balaklava.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

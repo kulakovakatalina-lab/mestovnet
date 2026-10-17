@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Кальвадос</h1>
-
+<p class="venue-description">Группа с электрической программой хитов русского рока, поп-рока и саундтреков из фильмов. Выступает в симферопольских «Рок-н-рольщиках».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

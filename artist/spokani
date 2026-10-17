@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">SPOKANI</h1>
-
+<p class="venue-description">Музыкальный проект сборных фестивальных программ сообщества «Таврида.АРТ». В афише — совместные выступления с OTYKEN, AY YOLA и другими артистами.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Судак</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

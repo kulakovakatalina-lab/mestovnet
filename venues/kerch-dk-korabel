@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Керчь, ДК &#x27;Корабел&#x27;</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Орджоникидзе, 88, Керчь</a></div>
-
+<p class="venue-description">На сцену керченского «Корабела» выходит Кубанский казачий хор с концертной программой.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

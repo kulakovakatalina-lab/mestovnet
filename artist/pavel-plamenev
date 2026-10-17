@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Павел Пламенев</h1>
-
+<p class="venue-description">Рок-исполнитель с авторскими песнями. В крымской афише — сольные выступления в «Депо» и Доме офицеров флота со специальной программой главных хитов.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

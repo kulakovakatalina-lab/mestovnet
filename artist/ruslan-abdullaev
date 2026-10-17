@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Руслан Абдуллаев</h1>
-
+<p class="venue-description">Гитарист, играющий фингерстайл и использующий Live Looping. В репертуаре — отечественные и зарубежные хиты в экспериментальных акустических аранжировках; в афише — Jam Club и симферопольские «Рок-н-рольщики».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

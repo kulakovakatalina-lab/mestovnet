@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Лабиринт Краснолесья</h1>
 
-
+<p class="venue-description">Саксофон и дудук, хавал, ханг, кахон и клавиши встречаются в этно-джазе среди лабиринта. Здесь играют Алим Куртмеметов, Андрей Дегурко и Андрей Рыбальченко.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

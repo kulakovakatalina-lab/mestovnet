@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Игорь Симдянкин с «КиШом»</h1>
-
+<p class="venue-description">Акустическая трибьют-программа Игоря Симдянкина по песням «Короля и Шута». Выступления анонсированы в барах «Рок-н-рольщики».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

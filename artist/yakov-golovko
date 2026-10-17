@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Яков Головко</h1>
-
+<p class="venue-description">Вокалист, участник программ Крымского киноконцертного объединения. В афише — «Разговор со счастьем» к юбилею Александра Зацепина с симфоническим оркестром и цикл «Чехов в музыке».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

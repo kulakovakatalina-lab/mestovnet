@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Blackened</h1>
-
+<p class="venue-description">Трибьют-коллектив Metallica с продолжительными программами живого звука. Выступает в Jam Club в Симферополе с известными хитами и другими песнями группы.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">бар «Пятница»</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Пушкинская, 2А, Ялта</a></div>
-
+<p class="venue-description">Электронные ночи «Пятницы» — в том числе с сетами SERGEY BARIBYN.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

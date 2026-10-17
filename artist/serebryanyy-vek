@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Серебряный век</h1>
-
+<p class="venue-description">Литературно-музыкальная программа со стихами, романсами и историей искусства. В центре — Ахматова, Блок, Цветаева, Мандельштам и Вертинский; встречи проходят в Севастополе при участии «Снежинки».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

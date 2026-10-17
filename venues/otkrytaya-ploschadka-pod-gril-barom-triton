@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Открытая площадка под гриль-баром «Тритон»</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Ефремова, 38, Севастополь</a></div>
-
+<p class="venue-description">За музыку на открытой площадке под «Тритоном» отвечает DJ Зандер: в его сете свежие треки смешиваются с проверенной классикой.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Русский драматический театр</h1>
 
-
+<p class="venue-description">В спектакле «Амадей» страсти вокруг Моцарта и Сальери разворачиваются под музыку Моцарта. Так театр соединяет драматическую историю с музыкой композитора.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

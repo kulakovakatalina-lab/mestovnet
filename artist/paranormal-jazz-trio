@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Paranormal Jazz Trio</h1>
-
+<p class="venue-description">Трио авторского джаза с фортепиано, контрабасом и барабанами. Представляет инструментальные программы в «Снежинке» и пабе Krongs.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

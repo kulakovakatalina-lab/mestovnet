@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Black Tears</h1>
-
+<p class="venue-description">Симферопольская группа альтернативного метала. В афише Jam Club — Modern Rock Heavy Fest, совместный METAL FEST с The Lone Dark Side и «Верни мне мой 2007й фест!».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

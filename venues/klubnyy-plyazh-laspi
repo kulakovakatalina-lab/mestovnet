@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">клубный пляж Ласпи</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">Ласпи, 20А, Севастополь</a></div>
-
+<p class="venue-description">Электронная музыка у моря и диджейские сеты до утра — так проходят большие вечеринки на клубном пляже Ласпи.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

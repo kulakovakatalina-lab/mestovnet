@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Заслуженный артист Крыма Виктор Никулин</h1>
-
+<p class="venue-description">Джазовый музыкант, заслуженный артист Крыма. Выступает с джаз-трио «А3» в «Снежинке» и участвует в музыкальных встречах в Аполлоновке.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
