@@ -100,8 +100,22 @@ def make_spec(bundle, report):
     if sha(source) != report['selected']['source_sha256']:
         raise ValueError('selected_source_hash_mismatch')
     mode, issues = background_plan(source, report['selected'])
-    return dict(title=title, subtitle=subtitle, date=date_text, venue=event['venue'],
-                city=event['city'], image=str(source), background_mode=mode), issues
+    spec = dict(title=title, subtitle=subtitle, date=date_text, venue=event['venue'],
+                city=event['city'], image=str(source), background_mode=mode)
+    # Explicitly approved alternative; never shrink type or discard a detected person.
+    if report['selected'].get('analysis',{}).get('kind') == 'group_photo':
+        with Image.open(source) as image:
+            wide = image.width/image.height >= 1.65
+        if wide:
+            candidate = dict(spec,layout=reels.GROUP_LAYOUT,background_mode='contain')
+            try:
+                with tempfile.TemporaryDirectory() as work:
+                    reels.compose_layers(candidate,Path(work),reels.typography())
+            except ValueError:
+                pass  # Too much text: keep the default candidate and its review blockers.
+            else:
+                spec = candidate
+    return spec, issues
 
 
 def validate_video(path, duration):
@@ -217,6 +231,7 @@ def _prepare_from_images(image_output, event_id, output, duration=10):
                 caption_note=images.get('caption_note'), spec=spec,
                 source_sha256=sha(spec['image']), duration=duration, event=images['event'],
                 facts_sha256=fingerprint(images['event']), preflight_issues=issues[:],
+                render_signature=reels.render_signature(),
                 archive_test=images['event'].get('production_scope')=='archive-test-only')
             # Keep the exact background that was selected for reproducibility.
             shutil.copyfile(spec['image'], work/'source.png')

@@ -23,6 +23,12 @@ jobs:
             /social/reel_composition.py
             /social/reel_delivery.py
             /social/reel_job.py
+            /social/reel_review.py
+            /social/reel_review_provider.py
+            /social/reel_pipeline.py
+            /social/reel_delivery_policy.json
+            /social/yandex_http.py
+            /social/yandex_spend_guard.py
             /social/build_cloud_fixture.py
             /social/templates/photo-led-a2.local.json
             /social/assets/vinyl.png
@@ -30,13 +36,16 @@ jobs:
             /social/tests/test_reels_reliability.py
             /social/tests/test_reel_delivery.py
             /social/tests/test_reel_job.py
+            /social/tests/test_reel_group_layout.py
+            /social/tests/test_reel_review.py
+            /social/tests/test_reel_pipeline.py
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Install render dependencies
         run: |
           command -v ffmpeg || brew install ffmpeg
-          python -m pip install Pillow pytest
+          python -m pip install Pillow pytest httpx
       - name: Locate installed Avenir without distributing a system font
         run: |
           mkdir -p output
@@ -58,6 +67,17 @@ jobs:
         run: |
           python -m social.build_cloud_fixture --output output/job
           python -m social.reel_job render --job output/job --output output/render
+          python -m social.reel_review --bundle output/render --output output/audit --audit-only
+          python -m social.build_cloud_fixture --group --output output/group-job
+          python -m social.reel_job render --job output/group-job --output output/group-render
+          python -m social.reel_review --bundle output/group-render --output output/group-audit --audit-only
+      - name: Automatic semantic review of synthetic output (never a publication)
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
+        run: |
+          python -m social.reel_review --bundle output/render --output output/review \
+            --policy social/reel_delivery_policy.json --budget-ledger output/review-spend.json --budget-rub 75
       - uses: actions/upload-artifact@v4
         if: always()
         with:

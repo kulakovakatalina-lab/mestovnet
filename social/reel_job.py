@@ -87,6 +87,7 @@ def render_job(job_dir,output):
         work=Path(work);spec=dict(job['spec'],image=str(job_dir/'source.png'),vinyl=str(job_dir/'vinyl.png'))
         with font_config(job_dir/'design.json'):
             fonts=reels.typography()
+            render_signature=reels.render_signature()
             reels.render(spec,work/'reel.mp4',job['duration'])
             technical=m.validate_video(work/'reel.mp4',job['duration'])
             with tempfile.TemporaryDirectory() as layers:
@@ -101,6 +102,7 @@ def render_job(job_dir,output):
         shutil.copyfile(job_dir/'source.png',work/'source.png');m.write_json(work/'spec.json',job['spec'])
         report=dict(schema=1,status='needs_review' if composition['issues'] else 'ready_for_review',
             approved=False,archive_test=job['scope']=='archive-test-only',event_id=job['event']['event_id'],
+            render_signature=render_signature,
             event=job['event'],facts_sha256=m.fingerprint(job['event']),technical=technical,
             issues=composition['issues'],composition=composition,job_integrity=job['integrity'],
             image_version=job['image_version'],caption_note=job.get('caption_note'),

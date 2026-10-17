@@ -13,6 +13,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parent
 # User-approved technical draft: disc ends at 710, text starts at 825 or lower.
 VINYL_X, VINYL_Y, VINYL_SIZE = 255, 200, 510
+DEFAULT_LAYOUT = 'technical-v2'
+GROUP_LAYOUT = 'group-strip-v1'  # Owner approved 17 October 2026.
 
 
 def typography():
@@ -33,8 +35,24 @@ def typography():
     return fonts
 
 
+def render_signature():
+    """Bind a reference replay to the same renderer, assets and font faces."""
+    def checksum(path):
+        return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return dict(renderer_sha256=checksum(__file__),vinyl_sha256=checksum(ROOT/'assets/vinyl.png'),
+                fonts={role:dict(sha256=checksum(item['path']),index=item.get('index',0),
+                                family=item['family'],style=item['style'])
+                       for role,item in typography().items()})
+
+
 def compose_layers(spec, temp, fonts):
-    """Approved v2 coordinates and sizes, shared by preview and video."""
+    """Approved coordinates and sizes, shared by preview and video."""
+    layout = spec.get('layout', DEFAULT_LAYOUT)
+    if layout not in (DEFAULT_LAYOUT, GROUP_LAYOUT):
+        raise ValueError('unapproved_reel_layout')
+    strip = layout == GROUP_LAYOUT
+    if strip and spec.get('background_mode') != 'contain':
+        raise ValueError('group_strip_requires_full_source_without_zoom')
     measured = []
 
     def face(size, role):
@@ -78,45 +96,58 @@ def compose_layers(spec, temp, fonts):
     with Image.open(spec['image']) as source:
         source = ImageOps.exif_transpose(source).convert('RGB')
         source_size = source.size
-        if spec.get('background_mode') == 'contain':
+        if strip:
+            base = Image.new('RGBA', (1080, 1920), '#101519')
+            photo = ImageOps.contain(source, (1080, 513))
+            offset = ((1080-photo.width)//2, 740)
+            base.paste(photo, offset)
+            scale = min(1080/source.width, 513/source.height)
+        elif spec.get('background_mode') == 'contain':
             base = Image.new('RGBA', (1080, 1920), '#101519')
             photo = ImageOps.contain(source, (1080, 1920))
-            base.paste(photo, ((1080-photo.width)//2, (1920-photo.height)//2))
+            offset = ((1080-photo.width)//2, (1920-photo.height)//2)
+            base.paste(photo, offset)
+            scale = min(1080/source.width, 1920/source.height)
         else:
             base = ImageOps.fit(source, (1080, 1920)).convert('RGBA')
-    placement = dict(source_size=list(source_size), scale=(min if spec.get('background_mode') == 'contain' else max)(1080/source_size[0],1920/source_size[1]))
+            scale = max(1080/source.width, 1920/source.height)
+            offset = [(1080-source.width*scale)/2, (1920-source.height*scale)/2]
+    placement = dict(source_size=list(source_size), scale=scale, offset=offset,
+                     rendered_size=list(photo.size) if spec.get('background_mode') == 'contain' else [1080,1920],
+                     layout=layout, zoom=0 if spec.get('background_mode') == 'contain' else .035)
     (temp / 'source-placement.json').write_text(json.dumps(placement))
     shade = layer()
     draw = ImageDraw.Draw(shade)
     for y in range(1920):
-        alpha = round(80 + 155 * min(1, max(0, (y - 520) / 850)))
+        alpha = 0 if strip else round(80 + 155 * min(1, max(0, (y - 520) / 850)))
         draw.line((0, y, 1080, y), fill=(10, 15, 19, alpha))
     Image.alpha_composite(base, shade).convert('RGB').save(temp / 'base.png')
 
     title = layer()
     artist, _, legacy_subtitle = spec['title'].partition('·')
     subtitle = spec.get('subtitle', legacy_subtitle.strip())
-    subtitle_lines = wrap(subtitle, 48, 'body', 840, 2)
+    subtitle_lines = wrap(subtitle, 48, 'body', 840, 1 if strip else 2)
     for i, line in enumerate(subtitle_lines):
-        put(title, line, 100, 885 - 60*(len(subtitle_lines)-1) + 60*i, 48)
-    for i, line in enumerate(wrap(spec.get('artist', artist).strip(), 150, 'title', 840, 2)):
-        put(title, line, 92, 970 + 165 * i, 150, 'title')
+        put(title, line, 100, 1285 if strip else 885 - 60*(len(subtitle_lines)-1) + 60*i, 48)
+    for i, line in enumerate(wrap(spec.get('artist', artist).strip(), 150, 'title', 840, 1 if strip else 2)):
+        put(title, line, 92, 1360 if strip else 970 + 165 * i, 150, 'title')
     title.save(temp / 'title.png')
 
     facts = layer()
-    ImageDraw.Draw(facts).line((100, 1345, 900, 1345), fill=(250, 247, 241, 100), width=2)
-    put(facts, spec['date'], 100, 1390, 64, 'title')
-    for i, line in enumerate(wrap(spec['venue'], 52, 'body', 840, 2)):
-        put(facts, line, 100, 1490 + 65 * i, 52)
+    if not strip:
+        ImageDraw.Draw(facts).line((100, 1345, 900, 1345), fill=(250, 247, 241, 100), width=2)
+    put(facts, spec['date'], 100, 1530 if strip else 1390, 64, 'title')
+    for i, line in enumerate(wrap(spec['venue'], 52, 'body', 840, 1 if strip else 2)):
+        put(facts, line, 100, 1620 if strip else 1490 + 65 * i, 52)
     facts.save(temp / 'facts.png')
 
     footer = layer()
-    put(footer, 'Местов.Нет', 100, 1670, 44, 'title')
+    put(footer, 'Местов.Нет', 100, 1700 if strip else 1670, 44, 'title')
     city = spec.get('city', '')
     city_x = min(610, 940 - ImageDraw.Draw(footer).textlength(city, font=face(46, 'body')))
     if city_x < 430:
         raise ValueError('City exceeds footer width; review composition')
-    put(footer, city, city_x, 1670, 46)
+    put(footer, city, city_x, 1700 if strip else 1670, 46)
     footer.save(temp / 'brand.png')
     (temp / 'text-layout.json').write_text(json.dumps(measured, ensure_ascii=False, indent=2))
     return measured

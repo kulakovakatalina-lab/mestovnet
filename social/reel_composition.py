@@ -37,9 +37,11 @@ def measure(work, selected, vinyl_box, *, mode='contain'):
         for index,region in enumerate(analysis.get(kind,[])):
             for zoom in ((1,1.035) if mode=='cover' else (1,)):
                 w,h=placement['source_size'];scale=placement['scale']*zoom
-                ox=(1080-w*scale)/2;oy=(1920-h*scale)/2
-                box=[round(region[0]*w*scale+ox),round(region[1]*h*scale+oy),
-                     round(region[2]*w*scale+ox),round(region[3]*h*scale+oy)]
+                ox,oy=placement.get('offset',[(1080-w*placement['scale'])/2,(1920-h*placement['scale'])/2])
+                rw,rh=placement.get('rendered_size',[w*placement['scale'],h*placement['scale']]) if mode=='contain' else [w*placement['scale'],h*placement['scale']]
+                ox=1080/2+(ox-1080/2)*zoom;oy=1920/2+(oy-1920/2)*zoom
+                box=[round(region[0]*rw*zoom+ox),round(region[1]*rh*zoom+oy),
+                     round(region[2]*rw*zoom+ox),round(region[3]*rh*zoom+oy)]
                 cropped=box[0]<0 or box[1]<0 or box[2]>1080 or box[3]>1920
                 overlap_text=count(alpha,box);overlap_disc=count(circle,box)
                 records.append(dict(kind=kind,index=index,zoom=zoom,box=box,
@@ -58,7 +60,7 @@ def measure(work, selected, vinyl_box, *, mode='contain'):
         preview.alpha_composite(disc,(x,y))
     preview=Image.alpha_composite(preview,text)
     Image.alpha_composite(preview,overlay).convert('RGB').resize((405,720)).save(work/'ui-preview.jpg')
-    result=dict(profile=PROFILE,ui_masks=UI_MASKS,source_mode=mode,protected=records,
+    result=dict(profile=PROFILE,ui_masks=UI_MASKS,layout=placement.get('layout','technical-v2'),source_mode=mode,protected=records,
                 first_text_y=first_y,vinyl_text_gap=first_y-y-size,issues=sorted(set(issues)),
                 method='actual_text_alpha_and_rotating_disc_envelope; protected_bounding_boxes')
     (work/'composition.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))

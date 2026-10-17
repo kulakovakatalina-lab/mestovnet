@@ -49,6 +49,25 @@ def review_binding(bundle,report):
                 artifacts={name:sha(bundle/name) for name in names})
 
 
+def validate_automatic_review(result,report):
+    """A server receipt needs whole-stream evidence, not a positive still review."""
+    if result.get('reviewer')!='server-vision' or result.get('decision')!='pass':return
+    audit=result.get('continuous_audit',{});semantic=result.get('semantic_review',{})
+    expected=report.get('duration',0)*30
+    if (result.get('review_method')!='reel-review-full-frame-v1' or expected<300
+        or audit.get('method')!='all_frames_against_approved_reference'
+        or audit.get('full_coverage') is not True or audit.get('checked_frames')!=expected
+        or audit.get('frame_count')!=expected
+        or audit.get('video_sha256')!=report['artifacts']['reel.mp4']):
+        raise ValueError('automatic_full_frame_evidence_required')
+    actual=semantic.get('result',{})
+    confidence=actual.get('confidence')
+    if (semantic.get('view')!='stills_and_motion_samples' or actual.get('checks')!=result.get('checks')
+        or type(confidence) not in (int,float) or not .9<=confidence<=1
+        or actual.get('issues')!=[] or not semantic.get('images_sha256')):
+        raise ValueError('automatic_semantic_evidence_required')
+
+
 def record_review(bundle,result,policy,output):
     """Accept an actual reviewer result. Does not manufacture a positive decision or owner."""
     bundle,report=intact(bundle)
@@ -60,18 +79,18 @@ def record_review(bundle,result,policy,output):
     if result['decision']=='pass':
         if result.get('watched_full_video') is not True:raise ValueError('full_video_review_required')
         if any(result.get('checks',{}).get(k) is not True for k in CHECKS):raise ValueError('review_checks_incomplete')
+        validate_automatic_review(result,report)
     review=dict(schema=1,mode='policy_review',owner_approval=False,**result,
                 policy_sha256=fingerprint(policy))
     review['integrity']=fingerprint(review);write_json(output,review)
     return review
 
 
-def evaluate(bundle,event,verification,history,review,policy,now):
-    bundle,report=intact(bundle);now=instant(now).astimezone(MOSCOW)
-    if report.get('archive_test'):
-        raise ValueError('archive_test_not_deliverable')
+def verify_event(event,prepared_event,verification,history,now):
+    """The same evidence gate runs before expensive work and again before queueing."""
+    now=instant(now).astimezone(MOSCOW)
     facts=canonical(event)
-    if facts!=canonical(report['event']):raise ValueError('event_facts_changed_rebuild_required')
+    if facts!=canonical(prepared_event):raise ValueError('event_facts_changed_rebuild_required')
     if any(not isinstance(v,str) or not v.strip() for v in facts.values()):raise ValueError('incomplete_event_facts')
     if event.get('hidden') or event.get('cancelled') or event.get('canceled') or event.get('needs_review'):
         raise ValueError('event_not_eligible')
@@ -83,7 +102,7 @@ def evaluate(bundle,event,verification,history,review,policy,now):
         raise ValueError('source_verification_not_bound_to_current_event')
     if verification.get('source_success') is not True or verification.get('copy_matches_source') is not True:
         raise ValueError('source_verification_incomplete')
-    if verification.get('editorial_copy_sha256')!=fingerprint(report['event'].get('cover',{})):
+    if verification.get('editorial_copy_sha256')!=fingerprint(prepared_event.get('cover',{})):
         raise ValueError('editorial_copy_not_verified')
     checked=instant(verification['checked_at']).astimezone(MOSCOW)
     if checked>now or now-checked>timedelta(hours=24):raise ValueError('source_verification_stale')
@@ -99,6 +118,14 @@ def evaluate(bundle,event,verification,history,review,policy,now):
     if len(published)>=2:raise ValueError('event_feed_limit_reached')
     if any(now-instant(item['published_at'])<timedelta(hours=72) for item in published):
         raise ValueError('event_repeat_before_72h')
+    return facts
+
+
+def evaluate(bundle,event,verification,history,review,policy,now):
+    bundle,report=intact(bundle);now=instant(now).astimezone(MOSCOW)
+    if report.get('archive_test'):
+        raise ValueError('archive_test_not_deliverable')
+    facts=verify_event(event,report['event'],verification,history,now)
     if review.get('integrity')!=fingerprint({k:v for k,v in review.items() if k!='integrity'}):raise ValueError('review_changed')
     if review.get('reviewer') not in policy.get('reviewers',[]) or review.get('policy_sha256')!=fingerprint(policy):
         raise ValueError('review_policy_mismatch')
@@ -107,6 +134,7 @@ def evaluate(bundle,event,verification,history,review,policy,now):
     if reviewed>now or now-reviewed>timedelta(hours=24):raise ValueError('visual_review_stale')
     if review.get('decision')!='pass' or review.get('watched_full_video') is not True or any(review.get('checks',{}).get(k) is not True for k in CHECKS):
         raise ValueError('visual_review_not_passed')
+    validate_automatic_review(review,report)
     waivers=review.get('waivers',{})
     for issue in report['issues']:
         # Only a false-positive important-object bounding box may be resolved by the configured reviewer.
@@ -157,7 +185,7 @@ def enqueue(bundle,event,verification,history,review,policy,now,queue):
     return target,receipt
 
 
-def enqueue_project(bundle,project,verification,history,review,policy,now,queue,*,image_output=None):
+def project_event(project,event_id):
     project=Path(project)
     # Apply the site's actual override rules, rather than duplicating a partial copy.
     import importlib.util
@@ -165,6 +193,13 @@ def enqueue_project(bundle,project,verification,history,review,policy,now,queue,
     site=importlib.util.module_from_spec(spec);spec.loader.exec_module(site)
     events=site.apply_settings(json.loads((project/'events.json').read_text()),
                               json.loads((project/'settings.json').read_text()))
+    event=next((e for e in events if e.get('id')==event_id),None)
+    if event is None:raise ValueError('event_missing_hidden_or_cancelled')
+    if not (project/'event'/event_id).is_file():raise ValueError('project_event_card_missing')
+    return event
+
+
+def enqueue_project(bundle,project,verification,history,review,policy,now,queue,*,image_output=None):
     _,report=intact(bundle)
     try:
         from .reel_module import load_image_bundle
@@ -176,7 +211,5 @@ def enqueue_project(bundle,project,verification,history,review,policy,now,queue,
     current,current_report=load_image_bundle(image_output,report['event_id'])
     if current_report['version']!=report['image_version']:
         raise ValueError('image_bundle_no_longer_current')
-    event=next((e for e in events if e.get('id')==report['event_id']),None)
-    if event is None:raise ValueError('event_missing_hidden_or_cancelled')
-    if not (project/'event'/report['event_id']).is_file():raise ValueError('project_event_card_missing')
+    event=project_event(project,report['event_id'])
     return enqueue(bundle,event,verification,history,review,policy,now,queue)
