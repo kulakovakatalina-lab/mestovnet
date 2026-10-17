@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Органном зале &quot;LIVADIA&quot;</h1>
 
-
+<p class="venue-description">Зал в Ялте с программами классической музыки. В концертах участвуют сопрано Юлия и скрипач Антон Хромченко; звучат произведения Баха, Вивальди, Генделя, Перселла, Сен-Санса и Морриконе.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

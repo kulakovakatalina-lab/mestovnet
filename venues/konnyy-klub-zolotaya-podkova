@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">конный клуб «Золотая подкова»</h1>
 
-
+<p class="venue-description">Конный клуб с камерными концертами под открытым небом среди гор. В музыкальной программе — выступление кантри-поп певицы Анастасии Грас.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">группа МАРАГОРА</h1>
-
+<p class="venue-description">Группа, выступающая вместе с Юлией Пересильд в концертной программе «Птица-Победа». Тур представлен в публикациях «Тавриды».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Судак</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

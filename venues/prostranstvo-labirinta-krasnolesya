@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">пространство лабиринта Краснолесья</h1>
 
-
+<p class="venue-description">Открытое пространство Краснолесья с джазовыми вечерами среди лабиринта. В программе — вокал Анны Шакель и джаз-трио «А3».</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

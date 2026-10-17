@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apolo Bistro — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Apolo Bistro, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Apolo Bistro, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/apolo-bistro">
   <meta property="og:title" content="Apolo Bistro — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Apolo Bistro, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Apolo Bistro, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Живая музыка",
-      "startDate": "2026-10-16T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Apolo Bistro"
-      },
-      "description": "Гастрономический ужин с участием шеф-поваров Максима Карамана и Дмитрия Сотникова, вино от Усадьбы «Родное гнездо», welcome drink, живая музыка.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Живая музыка"
-      },
-      "image": "/images/events/f0f16f7ff098e5999a0127c979df8794.jpg"
     }
   ]
 }
@@ -1067,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Apolo Bistro</h1>
 
-
+<p class="venue-description">Бистро с гастрономическими ужинами под живую музыку. В анонсе — меню приглашённых шеф-поваров и вино усадьбы «Родное гнездо».</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

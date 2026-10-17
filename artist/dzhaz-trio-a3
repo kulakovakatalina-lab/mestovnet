@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Джаз-трио «А3»</h1>
-
+<p class="venue-description">Джазовый коллектив с программами от неоклассики до джаза и мировых хитов. Выступает с Анной Шакель и Виктором Никулиным; среди программ — «Неоклассика и джаз» в «Снежинке» и «Ритм &amp; Грув» в Центре виноделия «Массандра».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь, Ялта</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

@@ -1067,7 +1067,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">ДК рыбаков</h1>
 
-
+<p class="venue-description">Концертная площадка в Севастополе. В афише — «Ундервуд» с программой альбома «1000 лун», новыми песнями и известными хитами.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

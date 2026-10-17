@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Rocking Ham</h1>
-
+<p class="venue-description">Коллектив с рокабилли, буги, джамп-блюзом и свингом. Играет музыку 1930–1950-х годов; среди площадок — севастопольская «Снежинка».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

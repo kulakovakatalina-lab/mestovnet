@@ -1019,7 +1019,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Крымский камерный оркестр «Новая гармония»</h1>
-
+<p class="venue-description">Камерный оркестр под управлением Дениса Карлова. В программе «Звуковой сплав 6» в Мраморной пещере — классика от барокко до современности, неоклассика, мелодии кино и мюзиклов.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Феодосия, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

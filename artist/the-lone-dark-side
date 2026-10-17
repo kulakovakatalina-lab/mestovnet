@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">The Lone Dark Side</h1>
-
+<p class="venue-description">Группа симфонического дэт-метала из Севастополя. В афише Jam Club — Metal Mania Fest и совместный METAL FEST с Black Tears.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

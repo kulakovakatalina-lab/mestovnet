@@ -1039,7 +1039,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Ирина Депутович</h1>
-
+<p class="venue-description">Исполнительница живых вокальных программ в ресторане «У Чёрного моря». В афише — ретровечеринки с хитами 1980–1990-х, караоке и музыкальная игра «Угадай мелодию».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

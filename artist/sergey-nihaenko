@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Сергей Нихаенко</h1>
-
+<p class="venue-description">Исполнитель песни «Высота» из фильма «Малыш». В публикациях представлен с выступлением перед футбольным матчем Россия — Буркина-Фасо в Волгограде.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Судак</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

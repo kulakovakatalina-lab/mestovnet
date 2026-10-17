@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Крыша мира</h1>
-
+<p class="venue-description">Группа крымской рок-сцены, участвующая в фестивалях Jam Club. В афише — Grunge Fest, сборные рок-вечера и совместные концерты музыкантов клуба.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

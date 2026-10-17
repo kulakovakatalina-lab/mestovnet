@@ -1019,7 +1019,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Jokers Band</h1>
-
+<p class="venue-description">Группа с мировыми рок- и поп-рок-хитами в полном электрическом составе. Выступает в программах Jokers Band Show в баре «Рок-н-рольщики».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

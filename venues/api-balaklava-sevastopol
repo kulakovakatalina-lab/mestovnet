@@ -1067,7 +1067,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Api Balaklava</h1>
 
-
+<p class="venue-description">Площадка гастрономических вечеров в Балаклаве. В программе гриль-вечера — живая гитара и музыка от диджея.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">«Этно-Джаз»</h1>
-
+<p class="venue-description">Ансамблевая программа Алима Куртмеметова, Андрея Дегурко и Андрея Рыбальченко. Соединяет саксофон, дудук, хавал, ханг, кахон, перкуссию и клавишные; в афише — дворец Дюльбер и Лабиринт Краснолесья.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

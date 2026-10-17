@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Белбек — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Белбек, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Белбек, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/belbek">
   <meta property="og:title" content="Белбек — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Белбек, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Белбек, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Юрий Гео",
-      "startDate": "2026-10-16T11:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Белбек"
-      },
-      "description": "Приглашение в мир ECSTATIC-DJ от Юрия Гео. Вводный однодневный интенсив Ecstatic-DJ.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Юрий Гео"
-      },
-      "image": "/images/events/fb75ff0d67ecba5cb00bb2e537ae8ce5.jpg"
     }
   ]
 }

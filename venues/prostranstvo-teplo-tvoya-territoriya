@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Пространство «ТЕпЛо. Твоя территория»</h1>
 
-
+<p class="venue-description">Пространство с живыми концертами. В музыкальной афише — выступление GangaMantra в честь начала осени.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

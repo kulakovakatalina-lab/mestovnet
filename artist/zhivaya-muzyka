@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Живая музыка — концерты в Крыму, Севастополь, Крым, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/zhivaya-muzyka">
   <meta property="og:title" content="Живая музыка — концерты в Крыму, Севастополь, Крым, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Живая музыка в Крыму (Севастополь, Крым, Ялта). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Живая музыка"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Живая музыка",
-      "startDate": "2026-10-16T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Живая музыка"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Apolo Bistro",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Крым",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Гастрономический ужин с участием шеф-поваров Максима Карамана и Дмитрия Сотникова, вино от Усадьбы «Родное гнездо», welcome drink, живая музыка.",
-      "image": "/images/events/f0f16f7ff098e5999a0127c979df8794.jpg"
     },
     {
       "@type": "MusicEvent",

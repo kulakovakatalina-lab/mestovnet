@@ -1053,7 +1053,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">ТЕпЛО. Твоя территория</h1>
 <div class="venue-address-block"><a href="#venue-map" class="venue-hero-address venue-hero-address-link">ул. Поликуровская, 25, Ялта</a></div>
-
+<p class="venue-description">Пространство в Севастополе, где анонсировано гастрольное выступление Дани (@lindele_art).</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

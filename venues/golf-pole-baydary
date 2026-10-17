@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">гольф-поле «Байдары»</h1>
 
-
+<p class="venue-description">Открытая площадка камерных концертов и пикников на закате. В программе — вокал Анны Шакель и клавишные Андрея Рыбальченко.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

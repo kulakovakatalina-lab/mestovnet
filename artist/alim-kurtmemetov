@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Алим Куртмеметов</h1>
-
+<p class="venue-description">Музыкант этно-джазовых программ с саксофоном, дудуком и хавалом. Выступает с Андреем Дегурко и Андреем Рыбальченко во дворце Дюльбер и Лабиринте Краснолесья.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

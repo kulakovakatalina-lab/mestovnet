@@ -1108,7 +1108,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Органный зал &#x27;Livadia&#x27;</h1>
 
-
+<p class="venue-description">Ялтинский зал с концертами классики для сопрано и скрипки. Юлия и Антон Хромченко исполняют произведения Баха, Вивальди, Морриконе, Перселла, Мендельсона, Сен-Санса и Генделя.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

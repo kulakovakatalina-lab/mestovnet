@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">п Научный, ул Научная, 46</h1>
 
-
+<p class="venue-description">Площадка в посёлке Научный с концертами-погружениями Андрея Ясинского. В программе — фортепиано, можжевеловые флейты, окарина, калимба, ханг и равдрам.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

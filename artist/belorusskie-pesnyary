@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">«Белорусские песняры»</h1>
-
+<p class="venue-description">Коллектив сборных фестивальных программ. В публикациях «Тавриды» представлен вместе с OTYKEN, AY YOLA, LIZWI, «7 станций» и SPOKANI.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Судак</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

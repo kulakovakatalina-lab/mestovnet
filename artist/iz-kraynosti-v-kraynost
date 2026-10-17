@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Из крайности в крайность</h1>
-
+<p class="venue-description">Группа сборных рок-программ Jam Club в Симферополе. Участвует в клубных фестивалях, совместных концертах и вечерах «Супер-рок-пятницы».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

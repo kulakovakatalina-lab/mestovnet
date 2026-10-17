@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Семейный фортепианный дуэт: Алина Аухадиева</h1>
-
+<p class="venue-description">Семейный фортепианный дуэт Алины Аухадиевой и Олега Никулина. В программах Мраморной пещеры — классика, джаз и современная музыка, включая произведения Свиридова, Дебюсси и Моцарта.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Крым</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

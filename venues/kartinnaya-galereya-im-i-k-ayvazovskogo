@@ -1068,7 +1068,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Картинная галерея им. И.К. Айвазовского</h1>
 <div class="venue-address-block"><span class="venue-hero-address">Феодосия, пр-т Айвазовского 15, Феодосия</span></div>
-
+<p class="venue-description">Галерея с концертами академической музыки. В афише — Крымский камерный оркестр «Новая гармония» под управлением Дениса Карлова и солистка Элеонора Царевская с произведениями Моцарта, Сарасате и Листа.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

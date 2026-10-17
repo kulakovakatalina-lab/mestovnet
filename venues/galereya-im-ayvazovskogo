@@ -1067,7 +1067,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Галерея им. Айвазовского</h1>
 
-
+<p class="venue-description">Галерея в Феодосии с музыкальной программой «В гостях у Айвазовского», которая соединяет концерт и живопись мариниста.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

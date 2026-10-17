@@ -999,7 +999,7 @@ footer {
       · Артист
     </div>
     <h1 class="genre-hero-title">Антон Калиниченко</h1>
-
+<p class="venue-description">Пианист, участник концертных программ «Снежинки». В Piano Battle вместе с Олегом Никулиным соединяет джаз, латино, поп и классику, импровизирует и выполняет музыкальные задания зрителей.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>

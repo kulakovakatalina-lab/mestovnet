@@ -1052,7 +1052,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">API Балаклава</h1>
 
-
+<p class="venue-description">Площадка в Балаклаве с гастрономическими вечерами и живой музыкой. Среди анонсов — дегустация розовых вин с Дарьей Грибановой под музыкальное сопровождение.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
