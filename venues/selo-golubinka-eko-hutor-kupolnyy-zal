@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>село Голубинка, Эко-Хутор (купольный зал) — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/selo-golubinka-eko-hutor-kupolnyy-zal">
   <meta property="og:title" content="село Голубинка, Эко-Хутор (купольный зал) — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в село Голубинка, Эко-Хутор (купольный зал), в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,20 +33,6 @@
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
-      }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ольга Воронина",
-      "startDate": "2026-10-17T12:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "село Голубинка, Эко-Хутор (купольный зал)"
-      },
-      "description": "Женский Круг, посвящённый Осеннему Празднику Наваратри. Проживание энергий трех аспектов Великой Матери через Интуитивный Танец.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ольга Воронина"
       }
     }
   ]

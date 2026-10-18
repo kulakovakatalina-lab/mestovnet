@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Виват виртуозы! — концерты в Крыму, Ялта, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Виват виртуозы! в Крыму (Ялта, Севастополь, Симферополь). 3 ближайших событий.">
+  <title>Виват виртуозы! — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Виват виртуозы! в Крыму (Севастополь, Симферополь, Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/vivat-virtuozy">
-  <meta property="og:title" content="Виват виртуозы! — концерты в Крыму, Ялта, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Виват виртуозы! в Крыму (Ялта, Севастополь, Симферополь). 3 ближайших событий.">
+  <meta property="og:title" content="Виват виртуозы! — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Виват виртуозы! в Крыму (Севастополь, Симферополь, Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Виват виртуозы!"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Виват виртуозы!",
-      "startDate": "2026-10-17T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Виват виртуозы!"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ялтинский театр имени А. П. Чехова",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Первый концерт абонемента 'Виват Виртуозы!'. Симфония № 1 Василия Калинникова и Концерт для фортепиано с оркестром № 2 Сергея Рахманинова.",
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -80,14 +60,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Музыкальное училище имени П. И. Чайковского",
+        "name": "музыкальное училище имени П. И. Чайковского",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт 'Виват виртуозы!' в Музыкальном училище имени П. И. Чайковского.",
+      "description": "Крымский академический симфонический оркестр представит первый концерт абонемента 'Виват Виртуозы!' В программе – Симфония № 1 В. Калинникова и Концерт для фортепиано с оркестром № 2 С. Рахманинова.",
       "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
     }
   ]
@@ -1060,7 +1040,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Виват виртуозы!</h1>
 <p class="venue-description">Концертный абонемент академической музыки. Среди программ — Первая симфония Калинникова и Второй фортепианный концерт Рахманинова с Крымским академическим симфоническим оркестром и солистом Александром Волокитиным.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Севастополь, Симферополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь, Ялта</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Матвей Блюмин — концерты в Крыму, Севастополь, Крым, Научный · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/matvey-blyumin">
   <meta property="og:title" content="Матвей Блюмин — концерты в Крыму, Севастополь, Крым, Научный · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Матвей Блюмин в Крыму (Севастополь, Крым, Научный). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Матвей Блюмин"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Матвей Блюмин",
-      "startDate": "2026-10-17",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Матвей Блюмин"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастополь",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Скрипка, фортепиано и музыка Бетховена, Чайковского, Брамса, Вагнера и Пуччини в интерьерах, которые усиливают впечатление от каждого произведения.",
-      "image": "/images/events/cd9ff1058ccb99658941b5076e5c4e89.jpg"
     }
   ]
 }

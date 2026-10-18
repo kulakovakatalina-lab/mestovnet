@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Галерея искусств «Майя» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Галерея искусств «Майя», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Галерея искусств «Майя», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/galereya-iskusstv-mayya">
   <meta property="og:title" content="Галерея искусств «Майя» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Галерея искусств «Майя», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Галерея искусств «Майя», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Пушкинская, 9Б"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Иван Коденко",
-      "startDate": "2026-10-17T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Галерея искусств «Майя»"
-      },
-      "description": "Произведения искусства, лучший вид на Ялту и любимые песни под гитару.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Иван Коденко"
-      },
-      "image": "/images/events/74ec28339a06ea1923f12a24506a37e6.jpg"
     }
   ]
 }

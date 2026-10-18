@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>кофейня «ТУРГЕНЕВЪ» — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в кофейня «ТУРГЕНЕВЪ», в Симферополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/kofeynya-turgenev">
-  <meta property="og:title" content="кофейня «ТУРГЕНЕВЪ» — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в кофейня «ТУРГЕНЕВЪ», в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н — афиша в Научном · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n">
+  <meta property="og:title" content="Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н — афиша в Научном · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н, в Научном. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,34 +28,33 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "кофейня «ТУРГЕНЕВЪ»",
+      "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Симферополь",
-        "addressCountry": "RU",
-        "streetAddress": "Аксакова 1"
+        "addressLocality": "Научный",
+        "addressCountry": "RU"
       }
     },
     {
       "@type": "MusicEvent",
       "name": "Андрей Ясинский",
-      "startDate": "2026-10-19T19:30:00+03:00",
+      "startDate": "2026-10-18T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "кофейня «ТУРГЕНЕВЪ»"
+        "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"
       },
-      "description": "Концерт Андрея Ясинского — путешествие в мир спокойствия и внутреннего слияния со звукотишиной.",
+      "description": "Концерт-погружение с Андреем Ясинским. Музыкант-мультиинструменталист исполнит космическую музыку на фортепиано, можжевеловых флейтах, окарине, калимбе, ханге, равдраме и других редких инструментах.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Андрей Ясинский"
       },
-      "image": "/images/events/9a68f8115c302b59324c795851aade0d.jpg"
+      "image": "/images/events/17d5671b3ba4b49b5290d62daefddf55.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "кофейня «ТУРГЕНЕВЪ»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Научный", "item": "https://mestov.net/cities/nauchny.html"}, {"@type": "ListItem", "position": 3, "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"}]}
 </script>
   <style>
 
@@ -1064,11 +1063,11 @@ footer {
   <div class="genre-hero-info">
     <div class="genre-hero-eyebrow">
       <a href="/">Местов.Нет</a>
-      · <a href="/cities/simferopol.html">Симферополь</a>
+      · <a href="/cities/nauchny.html">Научный</a>
     </div>
-    <h1 class="genre-hero-title">кофейня «ТУРГЕНЕВЪ»</h1>
-<div class="venue-address-block"><span class="venue-hero-address">Аксакова 1, Симферополь</span></div>
-<p class="venue-description">В кофейню приходят и на камерные концерты: Андрей Ясинский играет здесь медитативную музыку, приглашая слушателей к спокойствию и вниманию к звуку.</p>
+    <h1 class="genre-hero-title">Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н</h1>
+
+
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
@@ -1092,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["кофейня «ТУРГЕНЕВЪ» (Аксакова 1)", "кофейня «ТУРГЕНЕВЪ»"];
+const VENUE_ALIASES = ["Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н", "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

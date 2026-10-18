@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Музыкальный театр Республики Крым — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Музыкальный театр Республики Крым, в Симферополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/muzykalnyy-teatr-respubliki-krym">
-  <meta property="og:title" content="Музыкальный театр Республики Крым — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Музыкальный театр Республики Крым, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <title>Музыкальное училище им. Чайковского — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/muzykalnoe-uchilische-im-chaykovskogo">
+  <meta property="og:title" content="Музыкальное училище им. Чайковского — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Музыкальный театр Республики Крым",
+      "name": "Музыкальное училище им. Чайковского",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
@@ -37,24 +37,24 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Ундервуд",
-      "startDate": "2026-11-09T19:00:00+03:00",
+      "name": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+      "startDate": "2026-11-20T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Музыкальный театр Республики Крым"
+        "name": "Музыкальное училище им. Чайковского"
       },
-      "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
+      "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Ундервуд"
+        "name": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа"
       },
-      "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
+      "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Музыкальный театр Республики Крым"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Музыкальное училище им. Чайковского"}]}
 </script>
   <style>
 
@@ -1065,9 +1065,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Музыкальный театр Республики Крым</h1>
+    <h1 class="genre-hero-title">Музыкальное училище им. Чайковского</h1>
 
-<p class="venue-description">Музыкальный театр принимает и рок-гостей. Среди них — «Ундервуд» с альбомом «1000 лун»: «Гайдай», «Бетховен», новые синглы и знакомые песни группы.</p>
+
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
@@ -1081,47 +1081,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
-<script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "Музыкальный театр Республики Крым";
-  var addr = "Симферополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.948617,34.100806";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.948617, 34.100806],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.948617, 34.100806], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
+
 
 <script>
-const VENUE_ALIASES = ["Музыкальный театр Республики Крым", "Музыкальный театр Республики Крым"];
+const VENUE_ALIASES = ["Музыкальное училище им. Чайковского", "Музыкальное училище им. Чайковского"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

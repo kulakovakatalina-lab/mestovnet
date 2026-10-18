@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дэнза — концерты в Крыму, Бахчисарай, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Дэнза в Крыму (Бахчисарай, Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Дэнза в Крыму (Бахчисарай, Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/denza">
   <meta property="og:title" content="Дэнза — концерты в Крыму, Бахчисарай, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Дэнза в Крыму (Бахчисарай, Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Дэнза в Крыму (Бахчисарай, Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Дэнза"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Дэнза",
-      "startDate": "2026-10-17T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Дэнза"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ялта, ул. Свердлова, 34Б, здание напротив",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Очень живой концерт - совместный проект вокалиста группы «Чудеса & Tabor Band» и музыкантов Бельбекской долины.",
-      "image": "/images/events/91f2abaee6459fc11d40d31466b6f0e3.jpg"
     }
   ]
 }
