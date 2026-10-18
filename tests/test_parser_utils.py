@@ -393,6 +393,13 @@ class TestDetectCity:
         assert _detect_city("ЯЛТА") == "Ялта"
         assert _detect_city("севастополь") == "Севастополь"
 
+    def test_settlement_precedes_district_in_address(self):
+        address = (
+            "Круглый зал гостиницы Крымской астрофизической обсерватории, "
+            "ул Научная, 56, п Научный, Бахчисарайский р-н"
+        )
+        assert _detect_city(address) == "Научный"
+
 
 def test_dry_run_does_not_persist_images(tmp_path):
     previous = parser_module.PERSIST_IMAGES
@@ -425,6 +432,19 @@ def test_explicit_event_location_overrides_channel_city():
     }
     channel = {"city": "Севастополь"}
     assert resolve_city(event, channel) == "Симферополь"
+
+
+def test_venue_location_overrides_model_city_for_settlement_in_district():
+    event = {
+        "city": "Бахчисарай",
+        "venue": (
+            "Круглый зал гостиницы Крымской астрофизической обсерватории, "
+            "ул Научная, 56, п Научный, Бахчисарайский р-н"
+        ),
+        "description": "Концерт-погружение Андрея Ясинского",
+    }
+    channel = {"city": "Крым"}
+    assert resolve_city(event, channel) == "Научный"
 
 
 def test_weekly_album_assigns_each_music_poster_to_its_event(monkeypatch):

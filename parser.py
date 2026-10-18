@@ -1258,12 +1258,19 @@ def _canon_city(raw):
 
 
 def _detect_city(text: str):
-    """Ищет в свободном тексте любой город/алиас справочника (с падежами)."""
+    """Возвращает первое упомянутое место из справочника городов.
+
+    Порядок записей в ``cities.json`` не должен влиять на результат. В адресе
+    могут одновременно встречаться населённый пункт и район, например
+    ``п. Научный, Бахчисарайский р-н``; местом события в таком случае является
+    первое географическое название в адресе.
+    """
     low = (text or "").lower().replace("ё", "е")
+    matches: list[tuple[int, int, str]] = []
     for rx, canon in _CITY_RE:
-        if rx.search(low):
-            return canon
-    return None
+        if match := rx.search(low):
+            matches.append((match.start(), -len(match.group()), canon))
+    return min(matches)[2] if matches else None
 
 
 def resolve_city(event: dict, channel: dict, source_text: str = "") -> str:
@@ -1287,8 +1294,8 @@ def resolve_city(event: dict, channel: dict, source_text: str = "") -> str:
     # Канал может анонсировать выездное событие. Явно указанная
     # локация надёжнее города-владельца канала.
     explicit = (
-        _canon_city(event.get("city"))
-        or _detect_city(event.get("venue") or "")
+        _detect_city(event.get("venue") or "")
+        or _canon_city(event.get("city"))
         or _detect_city(event.get("description") or "")
     )
     return explicit or (ch if ch and ch != "Крым" else None) or "Крым"

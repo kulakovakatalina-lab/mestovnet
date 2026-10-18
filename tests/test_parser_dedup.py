@@ -13,6 +13,7 @@ from parser import (
     _split_artist_field,
     _venue_match,
     reconcile_source_updates,
+    resolve_city,
 )
 
 
@@ -285,6 +286,30 @@ class TestDeduplicateEvents:
             {**base, "source_url": "https://example.test/1", "source_city": "Симферополь"},
             {**base, "source_url": "https://example.test/2", "source_city": "Севастополь"},
         ]
+        assert len(deduplicate_events(events)) == 1
+
+    def test_yasinskiy_reposts_merge_after_city_resolution(self):
+        venue = (
+            "Круглый зал гостиницы Крымской астрофизической обсерватории, "
+            "ул Научная, 56, п Научный, Бахчисарайский р-н"
+        )
+        channels = ({"city": "Крым"}, {"city": "Бахчисарай"})
+        extracted = (
+            {"city": "Научный", "source_url": "https://t.me/dlyadushi_Crimea/6621"},
+            {"city": "Бахчисарай", "source_url": "https://t.me/belbekma/1377"},
+        )
+        events = []
+        for event, channel in zip(extracted, channels):
+            event.update({
+                "date": "2026-10-18",
+                "time": "18:00",
+                "artist": "Андрей Ясинский",
+                "venue": venue,
+            })
+            event["source_city"] = resolve_city(event, channel)
+            events.append(event)
+
+        assert {event["source_city"] for event in events} == {"Научный"}
         assert len(deduplicate_events(events)) == 1
 
     def test_regional_fallback_city_merges_with_specific_city(self):
