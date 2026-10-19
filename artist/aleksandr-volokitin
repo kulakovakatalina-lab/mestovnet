@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Александр Волокитин — концерты в Крыму, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/aleksandr-volokitin">
   <meta property="og:title" content="Александр Волокитин — концерты в Крыму, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Александр Волокитин"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Александр Волокитин",
-      "startDate": "2026-10-18T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Александр Волокитин"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "СЦКИ",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Крымский академический симфонический оркестр представит первый концерт абонемента 'Виват Виртуозы!' В программе – Симфония № 1 В. Калинникова и Концерт для фортепиано с оркестром № 2 С. Рахманинова.",
-      "image": "/images/events/97bee2621293a9c584693abd027f4ab1.jpg"
     },
     {
       "@type": "MusicEvent",

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Галерея им. Айвазовского — афиша в Феодосии · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Галерея им. Айвазовского, в Феодосии. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Галерея им. Айвазовского, в Феодосии. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/galereya-im-ayvazovskogo">
   <meta property="og:title" content="Галерея им. Айвазовского — афиша в Феодосии · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Галерея им. Айвазовского, в Феодосии. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Галерея им. Айвазовского, в Феодосии. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Феодосия",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "В гостях у Айвазовского",
-      "startDate": "2026-10-18T18:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Галерея им. Айвазовского"
-      },
-      "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "В гостях у Айвазовского"
-      },
-      "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg"
     }
   ]
 }

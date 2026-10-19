@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Крымский академический симфонический оркестр — концерты в Крыму, Ялта, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Севастополь). 4 ближайших событий.">
+  <meta name="description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/krymskiy-akademicheskiy-simfonicheskiy-orkestr">
   <meta property="og:title" content="Крымский академический симфонический оркестр — концерты в Крыму, Ялта, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Севастополь). 4 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Крымский академический симфонический оркестр в Крыму (Ялта, Симферополь, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,66 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Крымский академический симфонический оркестр"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр",
-      "startDate": "2026-10-18T14:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастопольский центр культуры и искусства",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Первый концерт абонемента 'Сказки с оркестром'. Музыкальная сказка 'Чиполлино'.",
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр",
-      "startDate": "2026-10-18T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастопольский центр культуры и искусства",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Первый концерт абонемента 'Виват Виртуозы!'. Симфония № 1 Василия Калинникова и Концерт для фортепиано с оркестром № 2 Сергея Рахманинова.",
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр",
-      "startDate": "2026-10-18T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "СЦКИ",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Крымский академический симфонический оркестр представит первый концерт абонемента 'Виват Виртуозы!' В программе – Симфония № 1 В. Калинникова и Концерт для фортепиано с оркестром № 2 С. Рахманинова.",
-      "image": "/images/events/97bee2621293a9c584693abd027f4ab1.jpg"
     },
     {
       "@type": "MusicEvent",

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>СЦКИ — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в СЦКИ, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в СЦКИ, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/stski">
   <meta property="og:title" content="СЦКИ — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в СЦКИ, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в СЦКИ, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Крымский академический симфонический оркестр, Александр Волокитин",
-      "startDate": "2026-10-18T17:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "СЦКИ"
-      },
-      "description": "Крымский академический симфонический оркестр представит первый концерт абонемента 'Виват Виртуозы!' В программе – Симфония № 1 В. Калинникова и Концерт для фортепиано с оркестром № 2 С. Рахманинова.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Крымский академический симфонический оркестр, Александр Волокитин"
-      },
-      "image": "/images/events/97bee2621293a9c584693abd027f4ab1.jpg"
     }
   ]
 }

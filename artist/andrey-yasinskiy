@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Андрей Ясинский — концерты в Крыму, Научный, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/andrey-yasinskiy">
   <meta property="og:title" content="Андрей Ясинский — концерты в Крыму, Научный, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Андрей Ясинский"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Андрей Ясинский",
-      "startDate": "2026-10-18T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Андрей Ясинский"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Научный",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт-погружение с Андреем Ясинским. Музыкант-мультиинструменталист исполнит космическую музыку на фортепиано, можжевеловых флейтах, окарине, калимбе, ханге, равдраме и других редких инструментах.",
-      "image": "/images/events/17d5671b3ba4b49b5290d62daefddf55.jpg"
     },
     {
       "@type": "MusicEvent",

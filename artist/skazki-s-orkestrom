@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сказки с оркестром — концерты в Крыму, Ялта, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Сказки с оркестром в Крыму (Ялта, Севастополь, Симферополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Сказки с оркестром в Крыму (Ялта, Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/skazki-s-orkestrom">
   <meta property="og:title" content="Сказки с оркестром — концерты в Крыму, Ялта, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Сказки с оркестром в Крыму (Ялта, Севастополь, Симферополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Сказки с оркестром в Крыму (Ялта, Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Сказки с оркестром"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Сказки с оркестром",
-      "startDate": "2026-10-18T14:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Сказки с оркестром"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастопольский центр культуры и искусства",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Первый концерт абонемента 'Сказки с оркестром'. Музыкальная сказка 'Чиполлино'.",
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
     },
     {
       "@type": "MusicEvent",

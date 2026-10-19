@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain — Jam Club, Симферополь, 24 октября · Местов.Нет">
 <meta property="og:description" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Jam Club, в Симферополе, 24 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/73d4e2d34135fbae004890944ac6510d.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Настоящий Сан Саныч Андрюшкин — легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и NIRVANA TRIBUTE by Paper Plain во втором зале.",
+      "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain"
       },
-      "image": "/images/events/73d4e2d34135fbae004890944ac6510d.jpg",
+      "image": "/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

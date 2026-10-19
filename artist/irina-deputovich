@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/irina-deputovich">
   <meta property="og:title" content="Ирина Депутович — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Ирина Депутович в Крыму (Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Ирина Депутович"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ирина Депутович",
-      "startDate": "2026-10-18T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ирина Депутович"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Игра «Угадай мелодию» с Ириной Депутович. В программе: живая музыка и призы от заведения.",
-      "image": "/images/events/2f40564ccf3d786fb2e1567c45792159.jpg"
     },
     {
       "@type": "MusicEvent",

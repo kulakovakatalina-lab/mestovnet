@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>солист – Александр Волокитин — концерты в Крыму, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов солист – Александр Волокитин в Крыму (Севастополь, Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов солист – Александр Волокитин в Крыму (Севастополь, Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/solist-aleksandr-volokitin">
   <meta property="og:title" content="солист – Александр Волокитин — концерты в Крыму, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов солист – Александр Волокитин в Крыму (Севастополь, Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов солист – Александр Волокитин в Крыму (Севастополь, Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "солист – Александр Волокитин"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "солист – Александр Волокитин",
-      "startDate": "2026-10-18T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "солист – Александр Волокитин"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастопольский центр культуры и искусства",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Первый концерт абонемента 'Виват Виртуозы!'. Симфония № 1 Василия Калинникова и Концерт для фортепиано с оркестром № 2 Сергея Рахманинова.",
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
     }
   ]
 }

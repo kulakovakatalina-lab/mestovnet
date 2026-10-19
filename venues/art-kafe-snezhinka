@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Кристина Кушнир, Сергей Аниканов",
-      "startDate": "2026-10-18T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»"
-      },
-      "description": "Старинные русские романсы, городские и цыганские мелодии, современные произведения и музыка из любимых кинофильмов. Истории о любви, встречах, разлуках и надеждах прозвучат в исполнении Кристины Кушнир и виртуозного гитариста Сергея Аниканова.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Кристина Кушнир, Сергей Аниканов"
-      },
-      "image": "/images/events/14493294a5e6d8d2703b70ee2e30dbe0.jpg"
     }
   ]
 }
