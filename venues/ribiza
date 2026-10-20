@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ribiza — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ribiza, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ribiza, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/ribiza">
   <meta property="og:title" content="Ribiza — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ribiza, в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ribiza, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Хиты 2000-х. Караоке с оркестром",
+      "startDate": "2026-11-19T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ribiza"
+      },
+      "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздни\u0000ка. Здесь каждый зритель — часть большого концерта!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Хиты 2000-х. Караоке с оркестром"
+      },
+      "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     }
   ]
 }

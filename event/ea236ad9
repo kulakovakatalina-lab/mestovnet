@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Jam Club, в Симферополе, 24 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane, Jam Club, в Симферополе, 24 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain — Jam Club, Симферополь, 24 октября · Местов.Нет</title>
+<title>Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane — Jam Club, Симферополь, 24 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,18 +960,18 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/ea236ad9">
-<meta property="og:title" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain — Jam Club, Симферополь, 24 октября · Местов.Нет">
-<meta property="og:description" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Jam Club, в Симферополе, 24 октября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane — Jam Club, Симферополь, 24 октября · Местов.Нет">
+<meta property="og:description" content="Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane, Jam Club, в Симферополе, 24 октября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/26dc2612a8c279a18b775c893e21b7fe.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain",
-      "startDate": "2026-10-24",
+      "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane",
+      "startDate": "2026-10-24T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -981,15 +981,15 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале.",
+      "description": "NIRVANA TRIBUTE by Paper Plane. Все хиты NIRVANA: огромная программа в 3х отделениях.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain"
+        "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane"
       },
-      "image": "/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg",
+      "image": "/images/events/26dc2612a8c279a18b775c893e21b7fe.jpg",
       "offers": {
         "@type": "Offer",
-        "price": "0",
+        "name": "бесплатно для подписчиков",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane"}]}
 </script>
 </head>
 <body>

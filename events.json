@@ -10301,7 +10301,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-10-19T01:31:51.377583+00:00",
+    "post_date": "2026-10-20T02:08:12.500872+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -10508,7 +10508,8 @@
     "genre": "рок",
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "images": [
-      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
+      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
+      "/images/events/ecabf5bc2088b146aaf30f717632aeda.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
     "post_date": "2026-11-09",
@@ -15350,7 +15351,7 @@
     "source_url": "https://t.me/koncertykrym/2340",
     "images": [
       "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
-      "/images/events/f3db302dd4bff2eaba4b4a5b86049e3e.jpg"
+      "/images/events/52f4cf4d33410cd3eb1816c84e1d4fbc.jpg"
     ],
     "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg",
     "post_date": "2026-10-16T13:03:06+00:00",
@@ -15857,7 +15858,7 @@
     "source_url": "https://t.me/dlyadushi_Crimea/6616",
     "images": [
       "/images/events/250cceb1bda9e340a21025c0d9d502fb.jpg",
-      "/images/events/fcda333951e5482a8510c9b784928260.jpg"
+      "/images/events/48c073ecd7f57243c8ae152cf9a5b65a.jpg"
     ],
     "image": "/images/events/250cceb1bda9e340a21025c0d9d502fb.jpg",
     "post_date": "2026-10-06T15:40:32+00:00",
@@ -15935,7 +15936,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "05217555",
@@ -16091,35 +16092,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "1b488e3a",
-    "date": "2026-11-07",
-    "time": "18:00",
-    "artist": "Концерт «Музыкальные истины»",
-    "event_type": "концерт",
-    "venue": "Винзавод Массандра",
-    "price": "от 1 100 ₽",
-    "description": "Музыкальные истины в Винзавод Массандра, Ялта.",
-    "source_city": "Ялта",
-    "source_channel": "yandex_afisha",
-    "genre": "поп",
-    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
-    "images": [
-      "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
-      "/images/events/bf241f025783007fbf0cc4ad9f6ef530.jpg"
-    ],
-    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
-    "post_date": "2026-11-07",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "source_last_checked_at": "2026-10-18T05:25:22.216363+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-10-18",
     "time": "18:30",
     "artist": "В гостях у Айвазовского",
@@ -16213,103 +16185,33 @@
     "review_reasons": []
   },
   {
-    "date": "2026-10-31",
-    "time": "17:00",
-    "artist": "Новая гармония. Звуковой сплав 6",
-    "venue": "Пещера «Мраморная» (Мраморное)",
-    "event_type": "концерт",
-    "price": "от 2 500 ₽",
-    "description": "Новая гармония. Звуковой сплав 6 в Пещера «Мраморная» (Мраморное), Симферополь.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-31",
-    "image": "/images/events/ee0faeca1210d537bab83a6236d2bd9f.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/novaia-garmoniia-zvukovoi-splav-6?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "329cdfae",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
-    "id": "31cb10ce",
-    "date": "2026-11-20",
-    "time": "19:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "event_type": "концерт",
-    "venue": "Музыкальное училище им. Чайковского",
-    "price": "от 1 590 ₽",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Симферополь",
-    "source_channel": "yandex_afisha",
-    "genre": "метал",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "images": [
-      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
-    ],
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-    "post_date": "2026-11-20",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
+    "id": "ea236ad9",
     "date": "2026-10-24",
-    "time": null,
-    "artist": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain",
+    "time": "18:00",
+    "artist": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane",
     "event_type": "концерт",
     "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале.",
-    "image": "/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg",
-    "images": null,
-    "source_channel": "clubjam",
+    "price": "бесплатно для подписчиков",
+    "description": "NIRVANA TRIBUTE by Paper Plane. Все хиты NIRVANA: огромная программа в 3х отделениях.",
     "source_city": "Симферополь",
-    "post_date": "2026-10-13T18:54:04+00:00",
-    "source_url": "https://t.me/clubjam/1172",
-    "id": "ea236ad9",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
+    "source_channel": "clubjam",
     "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
+    "source_url": "https://t.me/clubjam/1178",
+    "images": [
+      "/images/events/26dc2612a8c279a18b775c893e21b7fe.jpg",
+      "/images/events/a343fb4a48b47a8dc4de0c5b85b28fb1.jpg"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-20",
-    "time": "15:00",
-    "artist": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова",
-    "event_type": "концерт",
-    "venue": "КЗ «Юбилейный»",
-    "price": null,
-    "description": "Первый концерт «Русская душа». В этот вечер поговорим о чувствах на языке Чайковского, Рахманинова и других великих русских композиторов.",
-    "image": "/images/events/edbda8b825a2a47dec7851ac08d01f8b.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-10-06T12:15:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2334",
-    "id": "24a0725e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "image": "/images/events/26dc2612a8c279a18b775c893e21b7fe.jpg",
+    "post_date": "2026-10-19T09:39:32+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
-      "venue",
       "description",
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "source_status": "active",
     "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
@@ -16341,25 +16243,146 @@
     "moderation_status": "approved"
   },
   {
+    "id": "641834f5",
     "date": "2026-10-29",
     "time": "19:00",
     "artist": "Музыка Киношедевров в сиянии тысячи свечей",
-    "venue": "ДК профсоюзов",
     "event_type": "концерт",
-    "price": "от 1590 ₽",
-    "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
-    "source_channel": "afisha_ru",
+    "venue": "Дворец культуры профсоюзов",
+    "price": "от 2 590 ₽",
+    "description": "Музыка киношедевров в сиянии тысячи свечей в Дворец культуры профсоюзов, Симферополь.",
     "source_city": "Симферополь",
-    "post_date": "2026-10-19T01:31:51.377510+00:00",
-    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
-    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
+    "source_channel": "yandex_afisha",
     "genre": "классика",
-    "id": "641834f5",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "source_url": "https://www.afisha.ru/concert/muzyka-kinoshedevrov-v-siyanii-tysyachi-svechiy-6049976/",
+    "images": [
+      "/images/events/9178142987cd5921bdea535147e778dc.jpg",
+      "/images/events/2a9b5a36ae5cafc95dbe0be882ec8224.jpg"
+    ],
+    "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
+    "post_date": "2026-10-29",
     "auto_updated": true,
     "auto_updated_fields": [
       "venue",
+      "price",
+      "description",
+      "genre"
+    ],
+    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "4993369e",
+    "date": "2026-11-04",
+    "time": "19:00",
+    "artist": "Йорш",
+    "event_type": "концерт",
+    "venue": "Депо",
+    "price": "от 1 600 ₽",
+    "description": "«Йорш» — один из хедлайнеров отечественной панк-рок-сцены — отмечает 20-летие и отправляется в самый масштабный тур за историю группы! Прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\n\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\n\nСлэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
+    "source_city": "Симферополь",
+    "source_channel": "yandex_afisha",
+    "genre": "рок",
+    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
+    "images": [
+      "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+      "/images/events/25d0e8d15cc663edb70bc99ef0eddfc6.jpg"
+    ],
+    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+    "post_date": "2026-11-04",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "description"
+    ],
+    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-20",
+    "time": "15:00",
+    "artist": "А. Глушко, А. Меджидова, М. Герман, Я. Головко, Г. Эннарис, Е. Русакова, А. Темирбулатова, Д. Храмова",
+    "event_type": "концерт",
+    "venue": "КЗ «Юбилейный»",
+    "price": null,
+    "description": "Первый концерт «Русская душа». Русская музыка о любви – это глубокая рефлексия, искренность и невероятная мелодичность.",
+    "image": "/images/events/06984083f6b8d449cd3529dd7d4dab45.jpg",
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-10-06T12:15:01+00:00",
+    "source_url": "https://t.me/koncertykrym/2334",
+    "id": "24a0725e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-20T02:08:48.404676+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "17:00",
+    "artist": "Новая гармония. Звуковой сплав 6",
+    "venue": "Пещера «Мраморная» (Мраморное)",
+    "event_type": "концерт",
+    "price": "от 2 500 ₽",
+    "description": "Камерный оркестр «Новая гармония» образован крымским дирижёром, скрипачом и композитором Денисом Карловым как новое веяние в культурно-социальной жизни полуострова.\n\nВ состав оркестра входят лучшие профессиональные музыканты, живущие в Крыму и за его пределами. Концертный репертуар оркестра невероятно широк и многообразен. Это музыка разных эпох, стилей, жанров и направлений.\n\nСегодня оркестр принимает участие во многих престижных фестивалях, крупных культурных акциях международного и всероссийского значения, сотрудничает с ведущими дирижёрами и солистами мирового уровня.\n\nИсполнительский почерк оркестра виртуозен и выразителен, отличается тонким вкусом, высокой игровой и штриховой культурой, звуковым и тембральным разнообразием.\n\n«Новая гармония» — воздействие дивным излучением музыки для вдохновения, здоровья, богатой эмоциональной атмосферы, развития высоких вибраций души человека прекрасным, светлым, нежным, добрым прикосновением к вашему сердцу и разуму.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-31",
+    "image": "/images/events/ee0faeca1210d537bab83a6236d2bd9f.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/novaia-garmoniia-zvukovoi-splav-6?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "id": "329cdfae",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-20T02:08:48.404676+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "description",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "31cb10ce",
+    "date": "2026-11-20",
+    "time": "19:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. Чайковского",
+    "price": "от 1 590 ₽",
+    "description": "Аура Шоу. Главная музыка столетия. Новая… в Музыкальное училище им. Чайковского, Симферополь.",
+    "source_city": "Симферополь",
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+    ],
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "post_date": "2026-11-20",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-20T02:08:48.404676+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
       "price",
       "description",
       "genre"
@@ -16369,30 +16392,184 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-04",
-    "time": "19:00",
-    "artist": "Йорш",
-    "venue": "Депо",
+    "date": "2026-11-07",
+    "time": "18:00",
+    "artist": "Концерт «Музыкальные истины»",
+    "venue": "Винзавод «Массандра»",
     "event_type": "концерт",
-    "price": "от 1600 ₽",
-    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-19T01:31:51.377646+00:00",
-    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
-    "genre": "рок",
-    "id": "4993369e",
+    "price": "1100 - 2000",
+    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-10-20T02:08:46.031245+00:00",
+    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
+    "id": "1b488e3a",
     "source_status": "active",
-    "source_last_checked_at": "2026-10-19T01:32:05.358655+00:00",
+    "source_last_checked_at": "2026-10-20T02:08:48.404676+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
+      "venue",
       "price",
-      "description"
+      "description",
+      "genre"
     ],
+    "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
+  },
+  {
+    "id": "6bd32ac7",
+    "date": "2026-10-23",
+    "time": null,
+    "artist": "бенд",
+    "event_type": "концерт",
+    "venue": "Симферополь",
+    "price": "1000–1300 ₽",
+    "description": "Французские, итальянские и русские ретрохиты в живом исполнении бенда. Тёплая атмосфера, знакомые мелодии и общий финал, где гости смогут спеть любимые песни вместе.",
+    "source_city": "Симферополь",
+    "source_channel": "afisha_payberry",
+    "genre": "поп",
+    "source_url": "https://t.me/afisha_payberry/1652",
+    "images": [
+      "/images/events/61c22353b6bf744174843223b31a7ece.jpg",
+      "/images/events/9231d48cc310e45356cc5e9b62bbe8f2.jpg"
+    ],
+    "image": "/images/events/61c22353b6bf744174843223b31a7ece.jpg",
+    "post_date": "2026-10-19T13:44:36+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "id": "5631f73e",
+    "date": "2026-10-23",
+    "time": "19:00",
+    "artist": "Алина Авчиян, Андрей Рыбальченко",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "500–800 ₽",
+    "description": "Soul, R&B, smooth jazz и funk в исполнении вокалистки Алины Авчиян и пианиста Андрея Рыбальченко. В программе — композиции Стиви Уандера, Алиши Киз, Earth, Wind & Fire, Бейонсе и других артистов.",
+    "source_city": "Севастополь",
+    "source_channel": "artcafesnezhinka",
+    "genre": "джаз",
+    "source_url": "https://t.me/artcafesnezhinka/2068",
+    "images": [
+      "/images/events/83f7648efdcd46acf778e9a44721b239.jpg",
+      "/images/events/f81a270d189970897e73979d2d7070e0.jpg"
+    ],
+    "image": "/images/events/83f7648efdcd46acf778e9a44721b239.jpg",
+    "post_date": "2026-10-19T16:29:56+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-10-24",
+    "time": "19:00",
+    "artist": "Трио «Клан Зинченко»",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "800–1000 ₽",
+    "description": "Средневековая музыка. Музыкальное путешествие по Франции, Германии, Италии и другим странам средневековой Европы. Волынки, барабаны, бузуки, кларнет, флейты и мощный вокал перенесут вас в эпоху, когда музыку создавали без микрофонов. Вы услышите песни на разных языках, познакомитесь с необычными инструментами и узнаете истории, которые стоят за этой музыкой.",
+    "image": "/images/events/83f7648efdcd46acf778e9a44721b239.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-10-19T16:29:56+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2068",
+    "id": "44700ea3",
+    "genre": "фолк",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "id": "12d1ffc2",
+    "date": "2026-10-25",
+    "time": "18:30",
+    "artist": "Джаз-трио «А3», Анна Шакель, гости вечера",
+    "event_type": "концерт",
+    "venue": "МОЛОДОСТЬ",
+    "price": null,
+    "description": "Вечер, в котором музыканты и гости становятся одним целым! Джаз-трио «А3», Анна Шакель и гости вечера объединятся, чтобы вместе, громко и от души петь любимые песни Леонида Агутина, группы «Сплин», Евгения Крылатова и Владимира Преснякова, в том числе знакомые нам по кинофильмам.",
+    "source_city": "Севастополь",
+    "source_channel": "sevastopol_jazz",
+    "genre": "джаз",
+    "source_url": "https://vk.com/wall-214055536_2398",
+    "images": [
+      "/images/events/891c8a95a4ab2dda6ffc4b1fa7a22879.jpg",
+      "/images/events/f81a270d189970897e73979d2d7070e0.jpg"
+    ],
+    "image": "/images/events/891c8a95a4ab2dda6ffc4b1fa7a22879.jpg",
+    "post_date": "2026-10-19T14:39:42+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "21:00",
+    "artist": "Jokers Band",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Jokers Band show с русскими рок-поп хитами. Полностью живой звук и любимые песни.",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_82",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-17T11:03:56+00:00",
+    "source_url": "https://vk.com/wall-237501275_179",
+    "id": "0365984e",
+    "genre": "поп-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-19",
+    "time": "19:00",
+    "artist": "Хиты 2000-х. Караоке с оркестром",
+    "venue": "Ribiza",
+    "event_type": "концерт",
+    "price": "от 2500 ₽",
+    "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздни\u0000ка. Здесь каждый зритель — часть большого концерта!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-20T02:08:12.500766+00:00",
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "genre": "рок",
+    "id": "3d2ff3be",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-20T02:08:46.031376+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",

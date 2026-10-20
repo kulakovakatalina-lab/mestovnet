@@ -32,7 +32,7 @@
     "name": "Рок-н-рольщики (Симферополь)",
     "city": "Симферополь",
     "address": "",
-    "event_count": 34,
+    "event_count": 35,
     "aliases": [
       "Рок-н-рольщики (Симферополь)"
     ],
@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 31,
+    "event_count": 33,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -335,6 +335,7 @@
     "address": "ул. Винодела Егорова, 9",
     "event_count": 7,
     "aliases": [
+      "Винзавод «Массандра»",
       "Винзавод Массандра",
       "Массандра",
       "Севастополь Джаз"
@@ -526,6 +527,20 @@
     "lon": 33.944698
   },
   {
+    "slug": "simferopol",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Симферополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dvorets-kultury-rybakov",
     "name": "Дворец культуры рыбаков",
     "city": "Севастополь",
@@ -670,20 +685,6 @@
     "lon": 34.178866
   },
   {
-    "slug": "simferopol",
-    "name": "Симферополь",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Симферополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -740,6 +741,21 @@
     "desc_baseline_count": 3,
     "lat": 44.597345,
     "lon": 33.527468
+  },
+  {
+    "slug": "molodost",
+    "name": "Молодость",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "МОЛОДОСТЬ",
+      "Молодость"
+    ],
+    "description": "«Молодость» — кафе и клуб на Историческом бульваре Севастополя с панорамным видом и концертной сценой.",
+    "desc_baseline_count": 2,
+    "lat": 44.589973,
+    "lon": 33.480956
   },
   {
     "slug": "otel-akvamarin",
@@ -959,18 +975,18 @@
     "lon": 34.398636
   },
   {
-    "slug": "molodost",
-    "name": "Молодость",
-    "city": "Севастополь",
+    "slug": "ribiza",
+    "name": "Ribiza",
+    "city": "Симферополь",
     "address": "",
     "event_count": 2,
     "aliases": [
-      "Молодость"
+      "Ribiza"
     ],
-    "description": "«Молодость» — кафе и клуб на Историческом бульваре Севастополя с панорамным видом и концертной сценой.",
-    "desc_baseline_count": 2,
-    "lat": 44.589973,
-    "lon": 33.480956
+    "description": "Ribiza — рестоклуб в Симферополе с рестораном, бассейном и открытой площадкой.",
+    "desc_baseline_count": 1,
+    "lat": 44.969842,
+    "lon": 34.100402
   },
   {
     "slug": "nikitskiy-botanicheskiy-sad",
@@ -1229,6 +1245,20 @@
     "lon": null
   },
   {
+    "slug": "galereya-im-ayvazovskogo",
+    "name": "Галерея им. Айвазовского",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Галерея им. Айвазовского"
+    ],
+    "description": "Вечер «В гостях у Айвазовского» соединяет музыку с полотнами художника-мариниста. Концерт проходит в галерее в Феодосии.",
+    "desc_baseline_count": 1,
+    "lat": 45.032421,
+    "lon": 35.382656
+  },
+  {
     "slug": "nebar",
     "name": "Nebar",
     "city": "Севастополь",
@@ -1283,20 +1313,6 @@
     "desc_baseline_count": 1,
     "lat": 44.539802,
     "lon": 34.274541
-  },
-  {
-    "slug": "ribiza",
-    "name": "Ribiza",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Ribiza"
-    ],
-    "description": "Ribiza — рестоклуб в Симферополе с рестораном, бассейном и открытой площадкой.",
-    "desc_baseline_count": 1,
-    "lat": 44.969842,
-    "lon": 34.100402
   },
   {
     "slug": "balagan-38",
@@ -2375,20 +2391,6 @@
     "desc_baseline_count": 1,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "galereya-im-ayvazovskogo",
-    "name": "Галерея им. Айвазовского",
-    "city": "Феодосия",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Галерея им. Айвазовского"
-    ],
-    "description": "Вечер «В гостях у Айвазовского» соединяет музыку с полотнами художника-мариниста. Концерт проходит в галерее в Феодосии.",
-    "desc_baseline_count": 1,
-    "lat": 45.032421,
-    "lon": 35.382656
   },
   {
     "slug": "kruglyy-zal-gostinitsy-krymskoy-astrofizicheskoy-observatorii-ul-nauchnaya-56-p-nauchnyy-bahchisarayskiy-r-n",

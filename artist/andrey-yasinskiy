@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Андрей Ясинский — концерты в Крыму, Научный, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/andrey-yasinskiy">
   <meta property="og:title" content="Андрей Ясинский — концерты в Крыму, Научный, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Андрей Ясинский в Крыму (Научный, Севастополь, Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Андрей Ясинский"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Андрей Ясинский",
-      "startDate": "2026-10-19T19:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Андрей Ясинский"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Симферополь, кофейня «ТУРГЕНЕВЪ», Аксакова 1",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Волшебный концерт, который открывает сердца! Андрей Ясинский — талантливый композитор, уникальный исполнитель - мультиинструменталист и преподаватель музыки.",
-      "image": "/images/events/ae1c8da2dc2d270f962c181ca0b3057b.jpg"
     }
   ]
 }
