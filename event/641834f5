@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Музыка Киношедевров в сиянии тысячи свечей, Дворец культуры профсоюзов, в Симферополе, 29 октября, чт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Музыка Киношедевров в сиянии тысячи свечей, ДК профсоюзов, в Симферополе, 29 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Музыка Киношедевров в сиянии тысячи свечей — Дворец культуры профсоюзов, Симферополь, 29 октября · Местов.Нет</title>
+<title>Музыка Киношедевров в сиянии тысячи свечей — ДК профсоюзов, Симферополь, 29 октября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/641834f5">
-<meta property="og:title" content="Музыка Киношедевров в сиянии тысячи свечей — Дворец культуры профсоюзов, Симферополь, 29 октября · Местов.Нет">
-<meta property="og:description" content="Музыка Киношедевров в сиянии тысячи свечей, Дворец культуры профсоюзов, в Симферополе, 29 октября, чт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Музыка Киношедевров в сиянии тысячи свечей — ДК профсоюзов, Симферополь, 29 октября · Местов.Нет">
+<meta property="og:description" content="Музыка Киношедевров в сиянии тысячи свечей, ДК профсоюзов, в Симферополе, 29 октября, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/9178142987cd5921bdea535147e778dc.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-10-29T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Дворец культуры профсоюзов",
+        "name": "ДК профсоюзов",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Музыка киношедевров в сиянии тысячи свечей в Дворец культуры профсоюзов, Симферополь.",
+      "description": "О концерте Вас ждёт уникальный симфонический концерт, где оживают саундтреки из легендарных фильмов:\r\n\r\n«Титаник»\r\n«Игра престолов»\r\n«Бригада»\r\n«Гарри Поттер»\r\n«Пираты Карибского моря»«Хатико»\r\n«Перл Харбор»\r\n«Черная Любовь»\r\nи другие.\r\n\r\nЭти мелодии вы узнаете с первых нот — но в этот вечер они зазвучат по-настоящему иначе: глубже, эмоциональнее, ближе.\r\n\r\nЛюбимые моменты фильмов на экране, свечи, оркестр и живая энергия великой музыки",
       "performer": {
         "@type": "MusicGroup",
         "name": "Музыка Киношедевров в сиянии тысячи свечей"
@@ -989,7 +989,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/9178142987cd5921bdea535147e778dc.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 2 590 ₽",
+        "name": "от 1590 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
