@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>СЦКИ, ул Ленина, 25 — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в СЦКИ, ул Ленина, 25, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в СЦКИ, ул Ленина, 25, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/stski-ul-lenina-25">
   <meta property="og:title" content="СЦКИ, ул Ленина, 25 — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в СЦКИ, ул Ленина, 25, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в СЦКИ, ул Ленина, 25, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Севастопольский симфонический оркестр",
-      "startDate": "2026-10-21T12:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "СЦКИ, ул Ленина, 25"
-      },
-      "description": "Барочная сказка для юных слушателей. Оркестр распахнёт двери в удивительную эпоху - туда, где музыка звучала в королевских салонах и под сводами старинных соборов. Дети услышат, как нежно и глубоко может звучать английский рожок, как поёт кларнет, как переливаются струнные и духовые в руках наших музыкантов.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Севастопольский симфонический оркестр"
-      },
-      "image": "/images/events/259d29407d08bb8b9378dfa7021a2574.jpg"
     }
   ]
 }

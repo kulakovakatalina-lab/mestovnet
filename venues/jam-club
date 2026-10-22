@@ -37,16 +37,16 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane",
+      "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, NIRVANA TRIBUTE by Paper Plain, NIRVANA TRIBUTE by Paper Plane",
       "startDate": "2026-10-24T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "NIRVANA TRIBUTE by Paper Plane. Все хиты NIRVANA: огромная программа в 3х отделениях.",
+      "description": "Настоящий Сан Саныч Андрюшкин - легендарный барабанщик из Гражданской Обороны собственной персоной с полным живым электрическим составом, легендарная севастопольская группа ШАМ, группа ДЕЛИРИЙ, и... NIRVANA TRIBUTE by Paper Plain во втором зале.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, Paper Plain, Paper Plane"
+        "name": "Сан Саныч Андрюшкин, ШАМ, ДЕЛИРИЙ, NIRVANA TRIBUTE by Paper Plain, NIRVANA TRIBUTE by Paper Plane"
       },
       "image": "/images/events/26dc2612a8c279a18b775c893e21b7fe.jpg"
     }

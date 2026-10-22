@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>САБ — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов САБ в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов САБ в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/sab">
   <meta property="og:title" content="САБ — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов САБ в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов САБ в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,25 @@
     {
       "@type": "MusicGroup",
       "name": "САБ"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "САБ",
+      "startDate": "2026-10-24T21:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "САБ"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Севастополь)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Музыкальная ирония, рок и поп-рок на двух языках в мощном звучании группы 'САБ'."
     }
   ]
 }
@@ -1020,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «САБ»", "САБ", "группа «САБ»", "САБ"];
+const ARTIST_ALIASES = ["Группа 'САБ'", "Группа «САБ»", "САБ", "группа «САБ»", "САБ"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

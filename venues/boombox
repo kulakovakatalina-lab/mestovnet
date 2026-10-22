@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Boombox — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Boombox, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Boombox, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/boombox">
   <meta property="og:title" content="Boombox — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Boombox, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Boombox, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Helvegen",
-      "startDate": "2026-10-21T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Boombox"
-      },
-      "description": "Helvegen — феномен российской альтернативной музыки и ведущий фолккор коллектив! Это больше, чем музыка. Это — саундтрек к древним легендам, оживающим в энергичном, современном звучании.\n\nКаждый концерт группы — как путешествие во времени: от славянских хороводов до футуристического шаманского ритуала. Это эклектика эпох, это фолк вне времени. Не важно, слушаете ли вы металл, электронику или этнику — Helvegen объединяет всё!\n\nВ этом году группа отмечает своё пятилетие большим туром! Тебя ждут главные хиты группы, а также энергетика живого шоу которая захватывает дух!",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Helvegen"
-      },
-      "image": "/images/events/12216bbe04fad74b3da1812de62bad95.jpg"
     },
     {
       "@type": "MusicEvent",
