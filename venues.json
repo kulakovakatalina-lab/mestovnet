@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 53,
+    "event_count": 55,
     "aliases": [
       "Jam Club"
     ],
@@ -743,21 +743,6 @@
     "lon": 33.527468
   },
   {
-    "slug": "molodost",
-    "name": "Молодость",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "МОЛОДОСТЬ",
-      "Молодость"
-    ],
-    "description": "«Молодость» — кафе и клуб на Историческом бульваре Севастополя с панорамным видом и концертной сценой.",
-    "desc_baseline_count": 2,
-    "lat": 44.589973,
-    "lon": 33.480956
-  },
-  {
     "slug": "otel-akvamarin",
     "name": "Отель «Аквамарин»",
     "city": "Севастополь",
@@ -987,6 +972,20 @@
     "desc_baseline_count": 1,
     "lat": 44.969842,
     "lon": 34.100402
+  },
+  {
+    "slug": "molodost",
+    "name": "Молодость",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Молодость"
+    ],
+    "description": "«Молодость» — кафе и клуб на Историческом бульваре Севастополя с панорамным видом и концертной сценой.",
+    "desc_baseline_count": 2,
+    "lat": 44.589973,
+    "lon": 33.480956
   },
   {
     "slug": "nikitskiy-botanicheskiy-sad",
@@ -2463,6 +2462,20 @@
     "lon": null
   },
   {
+    "slug": "poyuschee-kafe-molodost",
+    "name": "Поющее кафе «Молодость»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Поющее кафе «Молодость»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo-simferopol",
     "name": "Музыкальное училище им. П. И. Чайковского",
     "city": "Симферополь",
@@ -2470,6 +2483,20 @@
     "event_count": 1,
     "aliases": [
       "Музыкальное училище им. П. И. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bukovyy-lesochek-na-sklone-krymskih-gor",
+    "name": "буковый лесочек на склоне крымских гор",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "буковый лесочек на склоне крымских гор"
     ],
     "description": null,
     "desc_baseline_count": 0,

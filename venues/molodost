@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Молодость — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Молодость, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Молодость, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/molodost">
   <meta property="og:title" content="Молодость — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Молодость, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Молодость, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Джаз-трио «А3», Анна Шакель, гости вечера",
-      "startDate": "2026-10-25T18:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Молодость"
-      },
-      "description": "Поющие джазовые вечера. Музыканты и гости становятся одним целым! Джаз-трио «А3», Анна Шакель и гости вечера объединятся, чтобы вместе петь любимые песни Леонида Агутина, группы «Сплин», Евгения Крылатова и Владимира Преснякова, в том числе знакомые по кинофильмам.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джаз-трио «А3», Анна Шакель, гости вечера"
-      },
-      "image": "/images/events/a510940ce02335583a541a77081e5745.jpg"
     }
   ]
 }
@@ -1121,7 +1106,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["МОЛОДОСТЬ", "Молодость", "Молодость"];
+const VENUE_ALIASES = ["Молодость", "Молодость"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Александр Волокитин — концерты в Крыму, Симферополь, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/aleksandr-volokitin">
   <meta property="og:title" content="Александр Волокитин — концерты в Крыму, Симферополь, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Александр Волокитин в Крыму (Симферополь, Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Александр Волокитин"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Александр Волокитин",
+      "startDate": "2026-10-25T13:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Александр Волокитин"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Музыкальное училище им. П. И. Чайковского",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Первые концерты нового абонементного сезона «Виват Виртуозы!» с Крымским академическим симфоническим оркестром и пианистом Александром Волокитиным (Москва). В программе прозвучали Симфония № 1 Василия Калинникова и Второй фортепианный концерт Сергея Рахманинова.",
+      "image": "/images/events/d6cce84015a3d3b9c57fa3395e914faa.jpg"
     },
     {
       "@type": "MusicEvent",
