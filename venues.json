@@ -1229,21 +1229,6 @@
     "lon": null
   },
   {
-    "slug": "muzykalnoe-uchilische-imeni-p-i-chaykovskogo",
-    "name": "Музыкальное училище имени П. И. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Музыкальное училище имени П. И. Чайковского",
-      "музыкальное училище имени П. И. Чайковского"
-    ],
-    "description": "В училище можно прийти на концерты академической музыки: здесь представлены абонементы «Сказки с оркестром» и «Виват виртуозы!».",
-    "desc_baseline_count": 2,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -2322,6 +2307,34 @@
     "lon": null
   },
   {
+    "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo-simferopol",
+    "name": "Музыкальное училище им. П. И. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музыкальное училище им. П. И. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzykalnoe-uchilische-imeni-p-i-chaykovskogo",
+    "name": "музыкальное училище имени П. И. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "музыкальное училище имени П. И. Чайковского"
+    ],
+    "description": "В училище можно прийти на концерты академической музыки: здесь представлены абонементы «Сказки с оркестром» и «Виват виртуозы!».",
+    "desc_baseline_count": 2,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "api-balaklava-sevastopol",
     "name": "Api Balaklava",
     "city": "Севастополь",
@@ -2420,34 +2433,6 @@
     "lon": null
   },
   {
-    "slug": "peschera-mramornaya-mramornoe",
-    "name": "Пещера «Мраморная» (Мраморное)",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Пещера «Мраморная» (Мраморное)"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
-    "name": "Музыкальное училище им. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музыкальное училище им. Чайковского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "stski-ul-lenina-25",
     "name": "СЦКИ, ул Ленина, 25",
     "city": "Севастополь",
@@ -2476,20 +2461,6 @@
     "lon": null
   },
   {
-    "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo-simferopol",
-    "name": "Музыкальное училище им. П. И. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музыкальное училище им. П. И. Чайковского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "bukovyy-lesochek-na-sklone-krymskih-gor",
     "name": "буковый лесочек на склоне крымских гор",
     "city": "Бахчисарай",
@@ -2497,6 +2468,48 @@
     "event_count": 1,
     "aliases": [
       "буковый лесочек на склоне крымских гор"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "peschera-mramornaya-mramornoe",
+    "name": "Пещера «Мраморная» (Мраморное)",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Пещера «Мраморная» (Мраморное)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
+    "name": "Музыкальное училище им. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музыкальное училище им. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "chistye-prudy",
+    "name": "Чистые пруды",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Чистые пруды"
     ],
     "description": null,
     "desc_baseline_count": 0,

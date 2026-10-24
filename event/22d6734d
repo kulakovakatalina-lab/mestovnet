@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Сказки с оркестром, Музыкальное училище имени П. И. Чайковского, в Симферополе, 25 октября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Карбид, Jam Club, в Симферополе, 14 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сказки с оркестром — Музыкальное училище имени П. И. Чайковского, Симферополь, 25 октября · Местов.Нет</title>
+<title>Карбид — Jam Club, Симферополь, 14 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,40 +959,46 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/ebb7cbe7">
-<meta property="og:title" content="Сказки с оркестром — Музыкальное училище имени П. И. Чайковского, Симферополь, 25 октября · Местов.Нет">
-<meta property="og:description" content="Сказки с оркестром, Музыкальное училище имени П. И. Чайковского, в Симферополе, 25 октября, вс. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/22d6734d">
+<meta property="og:title" content="Карбид — Jam Club, Симферополь, 14 ноября · Местов.Нет">
+<meta property="og:description" content="Карбид, Jam Club, в Симферополе, 14 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/e46f8474224c882d3a21ab6b8044097a.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/1337b5b89b1c04912015c6229dd42533.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Сказки с оркестром",
-      "startDate": "2026-10-25T13:00:00+03:00",
+      "name": "Карбид",
+      "startDate": "2026-11-14T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Музыкальное училище имени П. И. Чайковского",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт 'Сказки с оркестром' в Музыкальном училище имени П. И. Чайковского.",
+      "description": "RAMMSTEIN TRIBUTE by Карбид.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Сказки с оркестром"
+        "name": "Карбид"
       },
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
+      "image": "/images/events/1337b5b89b1c04912015c6229dd42533.jpg",
+      "offers": {
+        "@type": "Offer",
+        "name": "бесплатно для подписчиков клуба",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Сказки с оркестром"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Карбид"}]}
 </script>
 </head>
 <body>

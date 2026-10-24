@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Музыкальное училище имени П. И. Чайковского — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Музыкальное училище имени П. И. Чайковского, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <title>музыкальное училище имени П. И. Чайковского — афиша в Симферополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в музыкальное училище имени П. И. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/muzykalnoe-uchilische-imeni-p-i-chaykovskogo">
-  <meta property="og:title" content="Музыкальное училище имени П. И. Чайковского — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Музыкальное училище имени П. И. Чайковского, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:title" content="музыкальное училище имени П. И. Чайковского — афиша в Симферополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в музыкальное училище имени П. И. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Музыкальное училище имени П. И. Чайковского",
+      "name": "музыкальное училище имени П. И. Чайковского",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Симферополь",
@@ -37,26 +37,11 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Сказки с оркестром",
-      "startDate": "2026-10-25T13:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Музыкальное училище имени П. И. Чайковского"
-      },
-      "description": "Концерт 'Сказки с оркестром' в Музыкальном училище имени П. И. Чайковского.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Сказки с оркестром"
-      },
-      "image": "/images/events/e46f8474224c882d3a21ab6b8044097a.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Виват виртуозы!, Крымский академический симфонический оркестр, Александр Волокитин",
       "startDate": "2026-10-25T15:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Музыкальное училище имени П. И. Чайковского"
+        "name": "музыкальное училище имени П. И. Чайковского"
       },
       "description": "Крымский академический симфонический оркестр представит первый концерт абонемента 'Виват Виртуозы!' В программе – Симфония № 1 В. Калинникова и Концерт для фортепиано с оркестром № 2 С. Рахманинова.",
       "performer": {
@@ -69,7 +54,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Музыкальное училище имени П. И. Чайковского"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "музыкальное училище имени П. И. Чайковского"}]}
 </script>
   <style>
 
@@ -1080,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/simferopol.html">Симферополь</a>
     </div>
-    <h1 class="genre-hero-title">Музыкальное училище имени П. И. Чайковского</h1>
+    <h1 class="genre-hero-title">музыкальное училище имени П. И. Чайковского</h1>
 
 <p class="venue-description">В училище можно прийти на концерты академической музыки: здесь представлены абонементы «Сказки с оркестром» и «Виват виртуозы!».</p>
   </div>
@@ -1106,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Музыкальное училище имени П. И. Чайковского", "музыкальное училище имени П. И. Чайковского", "Музыкальное училище имени П. И. Чайковского"];
+const VENUE_ALIASES = ["музыкальное училище имени П. И. Чайковского", "музыкальное училище имени П. И. Чайковского"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
