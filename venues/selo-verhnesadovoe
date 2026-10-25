@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ДК рыбаков — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в ДК рыбаков, в Севастополе. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/dk-rybakov">
-  <meta property="og:title" content="ДК рыбаков — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в ДК рыбаков, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <title>село Верхнесадовое — афиша в Севастополе · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в село Верхнесадовое, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/selo-verhnesadovoe">
+  <meta property="og:title" content="село Верхнесадовое — афиша в Севастополе · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в село Верхнесадовое, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,33 +28,34 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "ДК рыбаков",
+      "name": "село Верхнесадовое",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "streetAddress": "улица Симиренко, 2а, Севастопольский район"
       }
     },
     {
       "@type": "MusicEvent",
-      "name": "Ундервуд",
-      "startDate": "2026-11-08T18:30:00+03:00",
+      "name": "Денайро",
+      "startDate": "2026-10-25T17:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "ДК рыбаков"
+        "name": "село Верхнесадовое"
       },
-      "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
+      "description": "живая музыка (гитарист Денайро) у костра",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Ундервуд"
+        "name": "Денайро"
       },
-      "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg"
+      "image": "/images/events/06b8e349053e268c20a7b91c029a0ca2.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "ДК рыбаков"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "село Верхнесадовое"}]}
 </script>
   <style>
 
@@ -1065,9 +1066,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/sevastopol.html">Севастополь</a>
     </div>
-    <h1 class="genre-hero-title">ДК рыбаков</h1>
+    <h1 class="genre-hero-title">село Верхнесадовое</h1>
+<div class="venue-address-block"><span class="venue-hero-address">улица Симиренко, 2а, Севастопольский район, Севастополь</span></div>
 
-<p class="venue-description">Севастопольская сцена для гастрольных концертов. «Ундервуд» привозит сюда «1000 лун» — новые песни, недавние синглы и хиты, без которых не обходятся концерты группы.</p>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
@@ -1081,47 +1082,17 @@ footer {
 <div class="past-heading" id="past-heading" hidden>Прошедшие</div>
 <div class="events-list" id="past-list"></div>
 
-<div class="venue-map-wrap"><div id="venue-map"><div class="venue-map-loading">Загрузка карты…</div></div></div>
+
 
 <footer>
   <a href="/" class="footer-logo">местов<em>.нет</em></a>
   <span class="footer-note">Афиша живой музыки Крыма · 2026</span>
 </footer>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=3085f395-0b2b-474d-aaeb-da26978e3e5c&lang=ru_RU" type="text/javascript"></script>
-<script>
-ymaps.ready(function() {
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function(c) {
-      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
-    });
-  }
-  var name = "ДК рыбаков";
-  var addr = "Севастополь";
-  var routeUrl = "https://yandex.ru/maps/?rtext=~44.584411,33.434823";
-  var el = document.getElementById('venue-map');
-  if (!el) return;
-  el.innerHTML = '';
-  var balloonContent = '<div class="balloon-card">'
-    + '<div class="balloon-name">' + escapeHtml(name) + '</div>'
-    + '<div class="balloon-addr">' + escapeHtml(addr) + '</div>'
-    + '<a class="balloon-route" href="' + routeUrl + '" target="_blank" rel="noopener">Как проехать?</a>'
-    + '</div>';
-  var map = new ymaps.Map(el, {
-    center: [44.584411, 33.434823],
-    zoom: 16,
-    controls: ['zoomControl'],
-  });
-  var placemark = new ymaps.Placemark([44.584411, 33.434823], {
-    hintContent: name,
-    balloonContent: balloonContent,
-  }, { preset: 'islands#blueDotIcon' });
-  map.geoObjects.add(placemark);
-});
-</script>
+
 
 <script>
-const VENUE_ALIASES = ["ДК рыбаков", "ДК рыбаков"];
+const VENUE_ALIASES = ["село Верхнесадовое, улица Симиренко, 2а, Севастопольский район", "село Верхнесадовое"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

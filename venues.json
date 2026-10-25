@@ -264,6 +264,21 @@
     "lon": 34.106607
   },
   {
+    "slug": "sevastopolskiy-tskii",
+    "name": "Севастопольский ЦКиИ",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "Севастопольский ЦКиИ",
+      "Центр культуры и искусства"
+    ],
+    "description": "За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.",
+    "desc_baseline_count": 7,
+    "lat": 44.610158,
+    "lon": 33.526829
+  },
+  {
     "slug": "vinzavod-massandra",
     "name": "Винзавод Массандра",
     "city": "Ялта",
@@ -297,21 +312,6 @@
     "desc_baseline_count": 9,
     "lat": 44.492566,
     "lon": 34.162337
-  },
-  {
-    "slug": "sevastopolskiy-tskii",
-    "name": "Севастопольский ЦКиИ",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 8,
-    "aliases": [
-      "Севастопольский ЦКиИ",
-      "Центр культуры и искусства"
-    ],
-    "description": "За последние три месяца здесь прошло 7 концертов с платным входом — и афиша необычная: световое шоу «Симфония оживших картин» с оркестром и тысячами свечей, якутская горловая певица Олена Уутай с нео-шаманскими практиками.",
-    "desc_baseline_count": 7,
-    "lat": 44.610158,
-    "lon": 33.526829
   },
   {
     "slug": "centrum",
@@ -467,6 +467,20 @@
     "lon": 34.143145
   },
   {
+    "slug": "dvorets-kultury-rybakov",
+    "name": "Дворец культуры рыбаков",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Дворец культуры рыбаков"
+    ],
+    "description": "За последний месяц здесь прошло 4 концерта. Был премьерный вечер Ирины Круг, в остальном афиша ровно поделена между попом, фолком и классикой. Вход платный.",
+    "desc_baseline_count": 4,
+    "lat": 44.584899,
+    "lon": 33.435348
+  },
+  {
     "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
     "name": "Ялтинский театр имени А. П. Чехова",
     "city": "Ялта",
@@ -539,20 +553,6 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "dvorets-kultury-rybakov",
-    "name": "Дворец культуры рыбаков",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Дворец культуры рыбаков"
-    ],
-    "description": "За последний месяц здесь прошло 4 концерта. Был премьерный вечер Ирины Круг, в остальном афиша ровно поделена между попом, фолком и классикой. Вход платный.",
-    "desc_baseline_count": 4,
-    "lat": 44.584899,
-    "lon": 33.435348
   },
   {
     "slug": "musson",
@@ -895,6 +895,20 @@
     "event_count": 3,
     "aliases": [
       "парк Маяковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teatr-yunogo-zritelya",
+    "name": "Театр юного зрителя",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Театр юного зрителя"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1985,20 +1999,6 @@
     "lon": 33.48307
   },
   {
-    "slug": "dk-rybakov",
-    "name": "ДК рыбаков",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "ДК рыбаков"
-    ],
-    "description": "Севастопольская сцена для гастрольных концертов. «Ундервуд» привозит сюда «1000 лун» — новые песни, недавние синглы и хиты, без которых не обходятся концерты группы.",
-    "desc_baseline_count": 1,
-    "lat": 44.584411,
-    "lon": 33.434823
-  },
-  {
     "slug": "klubnyy-plyazh-laspi",
     "name": "клубный пляж Ласпи",
     "city": "Севастополь",
@@ -2447,34 +2447,6 @@
     "lon": null
   },
   {
-    "slug": "poyuschee-kafe-molodost",
-    "name": "Поющее кафе «Молодость»",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Поющее кафе «Молодость»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "bukovyy-lesochek-na-sklone-krymskih-gor",
-    "name": "буковый лесочек на склоне крымских гор",
-    "city": "Бахчисарай",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "буковый лесочек на склоне крымских гор"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "peschera-mramornaya-mramornoe",
     "name": "Пещера «Мраморная» (Мраморное)",
     "city": "Симферополь",
@@ -2510,6 +2482,48 @@
     "event_count": 1,
     "aliases": [
       "Чистые пруды"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "poyuschee-kafe-molodost",
+    "name": "Поющее кафе «Молодость»",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Поющее кафе «Молодость»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "bukovyy-lesochek-na-sklone-krymskih-gor",
+    "name": "буковый лесочек на склоне крымских гор",
+    "city": "Бахчисарай",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "буковый лесочек на склоне крымских гор"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "selo-verhnesadovoe",
+    "name": "село Верхнесадовое",
+    "city": "Севастополь",
+    "address": "улица Симиренко, 2а, Севастопольский район",
+    "event_count": 1,
+    "aliases": [
+      "село Верхнесадовое, улица Симиренко, 2а, Севастопольский район"
     ],
     "description": null,
     "desc_baseline_count": 0,

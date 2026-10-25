@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Джокер — концерты в Крыму, Симферополь, Севастополь, Керчь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Джокер в Крыму (Симферополь, Севастополь, Керчь). 0 ближайших событий.">
+  <title>Джокер — концерты в Крыму, Севастополь, Керчь, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Джокер в Крыму (Севастополь, Керчь, Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/dzhoker">
-  <meta property="og:title" content="Джокер — концерты в Крыму, Симферополь, Севастополь, Керчь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Джокер в Крыму (Симферополь, Севастополь, Керчь). 0 ближайших событий.">
+  <meta property="og:title" content="Джокер — концерты в Крыму, Севастополь, Керчь, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Джокер в Крыму (Севастополь, Керчь, Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -1000,7 +1000,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Джокер</h1>
 <p class="venue-description">Рок-группа из Сочи с панк-шоу по песням «Короля и Шута». В крымской афише — выступления в Jam Club, керченском «Камелоте» и других концертных залах.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Севастополь, Керчь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Керчь, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

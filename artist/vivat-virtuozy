@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Виват виртуозы! — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Виват виртуозы! в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <title>Виват виртуозы! — концерты в Крыму, Симферополь, Ялта, Севастополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Виват виртуозы! в Крыму (Симферополь, Ялта, Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/vivat-virtuozy">
-  <meta property="og:title" content="Виват виртуозы! — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Виват виртуозы! в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:title" content="Виват виртуозы! — концерты в Крыму, Симферополь, Ялта, Севастополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Виват виртуозы! в Крыму (Симферополь, Ялта, Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -1020,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Виват виртуозы!</h1>
 <p class="venue-description">Концертный абонемент академической музыки. Среди программ — Первая симфония Калинникова и Второй фортепианный концерт Рахманинова с Крымским академическим симфоническим оркестром и солистом Александром Волокитиным.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь, Ялта</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Ялта, Севастополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

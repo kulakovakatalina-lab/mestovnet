@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Крымская астрофизическая обсерватория — афиша в Научном · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/krymskaya-astrofizicheskaya-observatoriya">
   <meta property="og:title" content="Крымская астрофизическая обсерватория — афиша в Научном · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Крымская астрофизическая обсерватория, в Научном. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Научная, 46, п. Научный, Бахчисарайский р-н"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Космос в музыке",
-      "startDate": "2026-10-24T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Крымская астрофизическая обсерватория"
-      },
-      "description": "Концерт солистов камерного оркестра «Новая гармония»",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Космос в музыке"
-      },
-      "image": "/images/events/92d979738e604b67991d9fb9b4f0b603.jpg"
     }
   ]
 }

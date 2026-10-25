@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Резонанс — концерты в Крыму, Крым, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Резонанс в Крыму (Крым, Симферополь). 1 ближайших событий.">
+  <title>Резонанс — концерты в Крыму, Симферополь, Крым · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Резонанс в Крыму (Симферополь, Крым). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/rezonans">
-  <meta property="og:title" content="Резонанс — концерты в Крыму, Крым, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Резонанс в Крыму (Крым, Симферополь). 1 ближайших событий.">
+  <meta property="og:title" content="Резонанс — концерты в Крыму, Симферополь, Крым · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Резонанс в Крыму (Симферополь, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Резонанс"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Резонанс",
-      "startDate": "2026-10-24T17:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Резонанс"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Мраморная пещера",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Последний концерт сезона в Мраморной пещере 'Резонанс'.",
-      "image": "/images/events/b7916d9f7de830f6e801cb60fcb7c0ba.jpg"
     }
   ]
 }
@@ -1020,7 +1000,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Резонанс</h1>
 <p class="venue-description">Концертная программа в Мраморной пещере. Музыка звучит под природными сводами подземных залов, где акустика становится частью впечатления.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Симферополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Крым</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
