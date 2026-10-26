@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-shakel">
   <meta property="og:title" content="Анна Шакель — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Шакель в Крыму (Севастополь, Симферополь, Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Шакель"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель",
-      "startDate": "2026-10-25T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Поющее кафе «Молодость»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальный формат на стыке концерта, квартирника и караоке. Трио «А3» и Анна Шакель исполнят любимые мелодии, а гости могут подпевать и становиться участниками музыкального вечера.",
-      "image": "/images/events/39b23b18034fd53a8eeffa5940b3be03.jpg"
     }
   ]
 }

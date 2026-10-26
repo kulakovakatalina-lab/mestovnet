@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня.",
+      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мираж Огня"

@@ -43,7 +43,7 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня.",
+      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мираж Огня"
@@ -57,12 +57,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "RAMMSTEIN TRIBUTE by Карбид.",
+      "description": "RAMMSTEIN TRIBUTE by Карбид. Rammstein tribute by Карбид(Севастополь) привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/0d4ba1e62af0b10a28f69520cfbd3a4b.jpg"
+      "image": "/images/events/d31fa5d63680591e882ecaf4f14cfefc.jpg"
     }
   ]
 }

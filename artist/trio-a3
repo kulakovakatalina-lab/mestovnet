@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/trio-a3">
   <meta property="og:title" content="Трио «А3» — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Трио «А3» в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Трио «А3»"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Трио «А3»",
-      "startDate": "2026-10-25T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Трио «А3»"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Поющее кафе «Молодость»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальный формат на стыке концерта, квартирника и караоке. Трио «А3» и Анна Шакель исполнят любимые мелодии, а гости могут подпевать и становиться участниками музыкального вечера.",
-      "image": "/images/events/39b23b18034fd53a8eeffa5940b3be03.jpg"
     }
   ]
 }

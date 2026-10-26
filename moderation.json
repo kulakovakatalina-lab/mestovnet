@@ -1,6 +1,6 @@
 [
   {
-    "id": "5e3be212",
+    "id": "0e3c71f6",
     "date": "2026-11-01",
     "time": null,
     "artist": "Энвер Каримов",
@@ -10,26 +10,26 @@
     "genre": "поп",
     "event_type": "концерт",
     "description": "Открытие сезона концертом со специальным гостем Энвером Каримовым. Музыка, мягкий свет свечей и особая атмосфера, в которой хочется задержаться подольше.",
-    "image": "/images/events/c95cc8ad85cf443417a70708d54342e4.jpg",
-    "source_url": "https://vk.com/wall-214055536_2413",
+    "image": "/images/events/d9fdd595043ac574c1d3d45d0dc48490.jpg",
+    "source_url": "https://t.me/sevastopol_jazz/1329",
     "reasons": [
       "нет времени",
       "нет цены"
     ]
   },
   {
-    "id": "67bd15e3",
-    "date": "2026-10-25",
+    "id": "50fefb51",
+    "date": "2026-10-28",
     "time": null,
-    "artist": "Трио «А3», Анна Шакель",
-    "venue": "Севастополь Джаз",
+    "artist": "Любовь Фатеева",
+    "venue": "Ресторан «У Чёрного моря»",
     "source_city": "Севастополь",
     "price": null,
-    "genre": "поп",
-    "event_type": "вечеринка",
-    "description": "Музыкальный формат на стыке концерта, квартирника и караоке. Трио «А3» и Анна Шакель исполнят любимые мелодии, а гости могут подпевать и становиться участниками музыкального вечера.",
-    "image": "/images/events/a0ad5383cf0c789b172f01c63cbb8b48.jpg",
-    "source_url": "https://t.me/sevastopol_jazz/1329",
+    "genre": "классика",
+    "event_type": "концерт",
+    "description": "«Романтика. Вечер. Виолончель». Любовь Фатеева: Despacito, Perfect, Shallow, хиты Стинга, Носкова, Антонова, Zivert.",
+    "image": "/images/events/274e0a0353d9e51dbbbbe3aa753e3237.jpg",
+    "source_url": "https://vk.com/wall-233167471_1096",
     "reasons": [
       "нет времени",
       "нет цены"

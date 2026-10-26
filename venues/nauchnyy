@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Научный — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Научный, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Научный, в Крыму. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/nauchnyy">
   <meta property="og:title" content="Научный — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Научный, в Крыму. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Научный, в Крыму. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,36 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "ENWAY, джаз-трио «А3»",
+      "startDate": "2026-11-01T18:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Научный"
+      },
+      "description": "Специальный гость вечера - ENWAY. В сопровождении джаз-трио «А3» он исполнит известные композиции Стинга, Элтона Джона, Леонида Агутина, Алексея Чумакова и других популярных артистов.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "ENWAY, джаз-трио «А3»"
+      },
+      "image": "/images/events/b0c636814c4ba50ea9649e634006075f.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Энвер Каримов",
+      "startDate": "2026-11-01",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Научный"
+      },
+      "description": "Концертом со специальным гостем Энвером Каримовым откроем новый сезон. Музыка, мягкий свет свечей и особая атмосфера, в которой хочется задержаться подольше.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Энвер Каримов"
+      },
+      "image": "/images/events/c95cc8ad85cf443417a70708d54342e4.jpg"
     }
   ]
 }

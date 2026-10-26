@@ -37,7 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Аура Шоу. Главная музыка столетия. Новая…",
+      "name": "Аура Шоу. Главная музыка столетия. Новая программа",
       "startDate": "2026-11-21T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -46,9 +46,9 @@
       "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Аура Шоу. Главная музыка столетия. Новая…"
+        "name": "Аура Шоу. Главная музыка столетия. Новая программа"
       },
-      "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png"
+      "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
     },
     {
       "@type": "MusicEvent",
@@ -63,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Джедже, Anjelina, Мали"
       },
-      "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg"
+      "image": "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дом культуры «Корабел» — афиша в Керчи · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дом культуры «Корабел», в Керчи. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Дом культуры «Корабел», в Керчи. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dom-kultury-korabel">
   <meta property="og:title" content="Дом культуры «Корабел» — афиша в Керчи · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дом культуры «Корабел», в Керчи. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Дом культуры «Корабел», в Керчи. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Орджоникидзе, 88"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Jawa. Хиты «Сектор Газа»",
-      "startDate": "2026-10-25T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Дом культуры «Корабел»"
-      },
-      "description": "Jawa. Хиты «Сектор Газа» — концерт в Дом культуры «Корабел», Керчь.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Jawa. Хиты «Сектор Газа»"
-      },
-      "image": "/images/events/a45148798317194e92ea5b4c16d2b2bd.jpg"
     }
   ]
 }

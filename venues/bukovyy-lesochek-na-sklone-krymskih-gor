@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>буковый лесочек на склоне крымских гор — афиша в Бахчисарае · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в буковый лесочек на склоне крымских гор, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в буковый лесочек на склоне крымских гор, в Бахчисарае. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/bukovyy-lesochek-na-sklone-krymskih-gor">
   <meta property="og:title" content="буковый лесочек на склоне крымских гор — афиша в Бахчисарае · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в буковый лесочек на склоне крымских гор, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в буковый лесочек на склоне крымских гор, в Бахчисарае. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Бахчисарай",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Макс Перов",
-      "startDate": "2026-10-25T14:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "буковый лесочек на склоне крымских гор"
-      },
-      "description": "Фортепиано и труба в исполнении Макса Перова. Осенний умиротворяющий концерт в лесу.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Макс Перов"
-      },
-      "image": "/images/events/0247ce3754f52535dac15dff8a6472e3.jpg"
     }
   ]
 }
