@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Карбид — Jam Club, Симферополь, 14 ноября · Местов.Нет">
 <meta property="og:description" content="Карбид, Jam Club, в Симферополе, 14 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/d31fa5d63680591e882ecaf4f14cfefc.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/2946ba09862455b0cfe0979a782c7797.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "RAMMSTEIN TRIBUTE by Карбид. Rammstein tribute by Карбид(Севастополь) привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
+      "description": "RAMMSTEIN TRIBUTE by Карбид. И на СУББОТУ 14-го ноября тоже ничего другого планировать не стоит. Rammstein tribute by Карбид(Севастополь) привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/d31fa5d63680591e882ecaf4f14cfefc.jpg",
+      "image": "/images/events/2946ba09862455b0cfe0979a782c7797.jpg",
       "offers": {
         "@type": "Offer",
         "name": "бесплатно для подписчиков клуба",

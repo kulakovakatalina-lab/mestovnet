@@ -16,23 +16,5 @@
       "нет времени",
       "нет цены"
     ]
-  },
-  {
-    "id": "50fefb51",
-    "date": "2026-10-28",
-    "time": null,
-    "artist": "Любовь Фатеева",
-    "venue": "Ресторан «У Чёрного моря»",
-    "source_city": "Севастополь",
-    "price": null,
-    "genre": "классика",
-    "event_type": "концерт",
-    "description": "«Романтика. Вечер. Виолончель». Любовь Фатеева: Despacito, Perfect, Shallow, хиты Стинга, Носкова, Антонова, Zivert.",
-    "image": "/images/events/274e0a0353d9e51dbbbbe3aa753e3237.jpg",
-    "source_url": "https://vk.com/wall-233167471_1096",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
   }
 ]

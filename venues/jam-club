@@ -43,11 +43,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
+      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. На ПЯТНИЦУ 13го ноября ничего другого не планируйте: группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мираж Огня"
-      }
+      },
+      "image": "/images/events/7af8d7f85bdd5eb5f4cd9fffb7ac3302.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -57,12 +58,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "RAMMSTEIN TRIBUTE by Карбид. Rammstein tribute by Карбид(Севастополь) привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
+      "description": "RAMMSTEIN TRIBUTE by Карбид. И на СУББОТУ 14-го ноября тоже ничего другого планировать не стоит. Rammstein tribute by Карбид(Севастополь) привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/d31fa5d63680591e882ecaf4f14cfefc.jpg"
+      "image": "/images/events/2946ba09862455b0cfe0979a782c7797.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Максим Перов — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Максим Перов в Крыму (Севастополь, Ялта, Крым). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Максим Перов в Крыму (Севастополь, Ялта, Крым). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/maksim-perov">
   <meta property="og:title" content="Максим Перов — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Максим Перов в Крыму (Севастополь, Ялта, Крым). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Максим Перов в Крыму (Севастополь, Ялта, Крым). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Максим Перов"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Перов",
+      "startDate": "2026-11-13T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Перов"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Chang Room",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Джазовый вечер с живым исполнением вокалистки Елены Голофеевой под аккомпанемент музыканта Максима Перова.",
+      "image": "/images/events/a046aa35228f9f6251d00974f8f353b8.jpg"
     }
   ]
 }

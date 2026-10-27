@@ -285,7 +285,6 @@
     "address": "ул. Винодела Егорова, 9",
     "event_count": 9,
     "aliases": [
-      "Винзавод «Массандра»",
       "Винзавод Массандра",
       "Массандра",
       "Севастополь Джаз"
@@ -685,20 +684,6 @@
     "lon": 34.178866
   },
   {
-    "slug": "nauchnyy",
-    "name": "Научный",
-    "city": "Крым",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -858,6 +843,20 @@
     "desc_baseline_count": 3,
     "lat": 44.497569,
     "lon": 34.17698
+  },
+  {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Крым",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "p-nauchnyy-ul-nauchnaya-46",
@@ -2524,6 +2523,34 @@
     "event_count": 1,
     "aliases": [
       "село Верхнесадовое, улица Симиренко, 2а, Севастопольский район"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "poselok-nauchnyy",
+    "name": "Посёлок Научный",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Посёлок Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "chang-room",
+    "name": "Chang Room",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Chang Room"
     ],
     "description": null,
     "desc_baseline_count": 0,
