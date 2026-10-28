@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 55,
+    "event_count": 56,
     "aliases": [
       "Jam Club"
     ],
@@ -2530,6 +2530,20 @@
     "lon": null
   },
   {
+    "slug": "chang-room",
+    "name": "Chang Room",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Chang Room"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "poselok-nauchnyy",
     "name": "Посёлок Научный",
     "city": "Научный",
@@ -2544,13 +2558,13 @@
     "lon": null
   },
   {
-    "slug": "chang-room",
-    "name": "Chang Room",
-    "city": "Севастополь",
+    "slug": "karla-marksa-6",
+    "name": "Карла Маркса 6",
+    "city": "Симферополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Chang Room"
+      "Карла Маркса 6, Симферополь"
     ],
     "description": null,
     "desc_baseline_count": 0,

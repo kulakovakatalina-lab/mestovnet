@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Андрей Рыбальченко — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/andrey-rybalchenko">
   <meta property="og:title" content="Андрей Рыбальченко — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Андрей Рыбальченко в Крыму (Севастополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Андрей Рыбальченко"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Андрей Рыбальченко",
-      "startDate": "2026-10-27T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Андрей Рыбальченко"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт в честь дня рождения Андрея Рыбальченко, талантливого пианиста и джазмена.",
-      "image": "/images/events/943e2e54216705bf698a913e120273f9.jpg"
     }
   ]
 }
