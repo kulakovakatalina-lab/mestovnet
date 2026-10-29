@@ -16,22 +16,5 @@
       "нет времени",
       "нет цены"
     ]
-  },
-  {
-    "id": "551f99f2",
-    "date": "2026-10-31",
-    "time": null,
-    "artist": "Девять рок-групп",
-    "venue": "Jam Club",
-    "source_city": "Симферополь",
-    "price": "313 рублей",
-    "genre": "рок",
-    "event_type": "концерт",
-    "description": "В субботу 31 октября в Jam Club пройдут концерты девяти рок-групп.",
-    "image": "/images/events/28c37928300a411c9f040fe95200d1f8.jpg",
-    "source_url": "https://t.me/clubjam/1186",
-    "reasons": [
-      "нет времени"
-    ]
   }
 ]

@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Концерт «Музыкальные истины», Винзавод Массандра, в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Концерт «Музыкальные истины», Винзавод «Массандра», в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Концерт «Музыкальные истины» — Винзавод Массандра, Ялта, 7 ноября · Местов.Нет</title>
+<title>Концерт «Музыкальные истины» — Винзавод «Массандра», Ялта, 7 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/1b488e3a">
-<meta property="og:title" content="Концерт «Музыкальные истины» — Винзавод Массандра, Ялта, 7 ноября · Местов.Нет">
-<meta property="og:description" content="Концерт «Музыкальные истины», Винзавод Массандра, в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Концерт «Музыкальные истины» — Винзавод «Массандра», Ялта, 7 ноября · Местов.Нет">
+<meta property="og:description" content="Концерт «Музыкальные истины», Винзавод «Массандра», в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg">
 <script type="application/ld+json">
@@ -971,17 +971,17 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Концерт «Музыкальные истины»",
-      "startDate": "2026-11-07T18:00:00+03:00",
+      "startDate": "2026-11-07T17:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Винзавод Массандра",
+        "name": "Винзавод «Массандра»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Друзья, мы приглашаем вас на самое душевное свидание — свидание с музыкой.\n\nМы зажжём огни в уютном зале, чтобы вы могли устроиться поудобнее, обняться и просто слушать.\n\nСолисты камерного оркестра «Новая гармония» и маэстро Денис Карлов подготовили для вас программу «Музыкальные истины». Это разговор о самом важном на самом прекрасном языке — языке струн, мелодий и гармоний.\n\nЗдесь, среди стен, хранящих ароматы винных легенд «Массандры», вы услышите, как звучит любовь. Это наш подарок всем, кто верит в романтику и силу искусства.\n\nДавайте проведём этот вечер вместе — тепло, изысканно, музыкально.",
+      "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Концерт «Музыкальные истины»"
@@ -989,7 +989,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "от 1 100 ₽",
+        "name": "1100 - 2000",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

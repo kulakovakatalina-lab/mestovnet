@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,6 +37,21 @@
     },
     {
       "@type": "MusicEvent",
+      "name": "Девять рок-групп",
+      "startDate": "2026-10-31",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Jam Club"
+      },
+      "description": "В субботу 31 октября в Jam Club состоится концерт девяти рок-групп.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Девять рок-групп"
+      },
+      "image": "/images/events/c48768a5fec2ab32fefa980ee73066c5.jpg"
+    },
+    {
+      "@type": "MusicEvent",
       "name": "Мираж Огня",
       "startDate": "2026-11-13T18:00:00+03:00",
       "location": {
@@ -48,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/89d5ec29f89b6bdab858951ec9ec7f6b.jpg"
+      "image": "/images/events/9af42061755d7c5d44ce3ad557430a22.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -63,7 +78,7 @@
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/9506c481d8e6a85cd1e4b17af1f58517.jpg"
+      "image": "/images/events/1299ba5573999292e0a1a06a2bdb0b24.jpg"
     }
   ]
 }
