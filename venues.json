@@ -32,7 +32,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 36,
+    "event_count": 37,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -685,6 +685,20 @@
     "lon": 34.178866
   },
   {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Крым",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -846,20 +860,6 @@
     "lon": 34.17698
   },
   {
-    "slug": "nauchnyy",
-    "name": "Научный",
-    "city": "Крым",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "p-nauchnyy-ul-nauchnaya-46",
     "name": "п Научный, ул Научная, 46",
     "city": "Научный",
@@ -914,6 +914,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
+    "name": "Бахчисарайский районный дом культуры",
+    "city": "Бахчисарай",
+    "address": "ул. Симферопольская, 15",
+    "event_count": 3,
+    "aliases": [
+      "Бахчисарайский районный дом культуры"
+    ],
+    "description": "Здесь собираются на вокальные концерты и вечера памяти любимых артистов. Ансамбль «Русская песня» участвует в фестивале «От сердца к сердцу», а на концерте памяти Марка Бернеса песни перемежаются историями из его жизни.",
+    "desc_baseline_count": 2,
+    "lat": 44.755291,
+    "lon": 33.857871
   },
   {
     "slug": "teatr-yunogo-zritelya",
@@ -1144,6 +1158,20 @@
     "lon": 33.945335
   },
   {
+    "slug": "natsionalnyy-tsentr-rossiya",
+    "name": "Национальный центр «Россия»",
+    "city": "Судак",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Национальный центр «Россия»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dom-kultury-korabel",
     "name": "Дом культуры «Корабел»",
     "city": "Керчь",
@@ -1213,20 +1241,6 @@
     "desc_baseline_count": 2,
     "lat": 44.539802,
     "lon": 34.274541
-  },
-  {
-    "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
-    "name": "Бахчисарайский районный дом культуры",
-    "city": "Бахчисарай",
-    "address": "ул. Симферопольская, 15",
-    "event_count": 2,
-    "aliases": [
-      "Бахчисарайский районный дом культуры"
-    ],
-    "description": "Здесь собираются на вокальные концерты и вечера памяти любимых артистов. Ансамбль «Русская песня» участвует в фестивале «От сердца к сердцу», а на концерте памяти Марка Бернеса песни перемежаются историями из его жизни.",
-    "desc_baseline_count": 2,
-    "lat": 44.755291,
-    "lon": 33.857871
   },
   {
     "slug": "sevastopolskiy-tsentr-kultury-i-iskusstva",
@@ -2041,20 +2055,6 @@
     "lon": 33.522683
   },
   {
-    "slug": "natsionalnyy-tsentr-rossiya",
-    "name": "Национальный центр «Россия»",
-    "city": "Судак",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Национальный центр «Россия»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kerch-dk-korabel",
     "name": "Керчь, ДК 'Корабел'",
     "city": "Керчь",
@@ -2552,20 +2552,6 @@
     "event_count": 1,
     "aliases": [
       "Карла Маркса 6, Симферополь"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "poselok-nauchnyy",
-    "name": "Посёлок Научный",
-    "city": "Научный",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Посёлок Научный"
     ],
     "description": null,
     "desc_baseline_count": 0,

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Руслан Сейдалиев — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Руслан Сейдалиев в Крыму (Севастополь, Ялта, Крым). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Руслан Сейдалиев в Крыму (Севастополь, Ялта, Крым). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/ruslan-seydaliev">
   <meta property="og:title" content="Руслан Сейдалиев — концерты в Крыму, Севастополь, Ялта, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Руслан Сейдалиев в Крыму (Севастополь, Ялта, Крым). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Руслан Сейдалиев в Крыму (Севастополь, Ялта, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Руслан Сейдалиев"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Руслан Сейдалиев",
-      "startDate": "2026-10-30T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Руслан Сейдалиев"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Музыкальный иммерсивный вечер. Чарующий женский вокал, глубокое звучание контрабаса, фортепиано, ударных и саксофона создадут волшебный мир музыкального нуара.",
-      "image": "/images/events/8e30236053bccf15b19bb6be81937968.jpg"
     }
   ]
 }

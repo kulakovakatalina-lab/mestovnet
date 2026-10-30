@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Бахчисарайский районный дом культуры — афиша в Бахчисарае · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Бахчисарайский районный дом культуры, в Бахчисарае. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Бахчисарайский районный дом культуры, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/bahchisarayskiy-rayonnyy-dom-kultury">
   <meta property="og:title" content="Бахчисарайский районный дом культуры — афиша в Бахчисарае · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Бахчисарайский районный дом культуры, в Бахчисарае. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Бахчисарайский районный дом культуры, в Бахчисарае. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Симферопольская, 15"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Праздничная концертная программа «Единение – наша сила!»",
+      "startDate": "2026-11-03T14:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Бахчисарайский районный дом культуры"
+      },
+      "description": "Праздничная концертная программа, посвящённая Дню народного единства.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Праздничная концертная программа «Единение – наша сила!»"
+      },
+      "image": "/images/events/bde875d9d698b96444b12720d76bf3d4.jpg"
     }
   ]
 }

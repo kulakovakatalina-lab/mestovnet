@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="ENWAY, Посёлок Научный, в Научном, 1 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="ENWAY, Научный, в Научном, 1 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ENWAY — Посёлок Научный, 1 ноября · Местов.Нет</title>
+<title>ENWAY — Научный, 1 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/b9c1c3d4">
-<meta property="og:title" content="ENWAY — Посёлок Научный, 1 ноября · Местов.Нет">
-<meta property="og:description" content="ENWAY, Посёлок Научный, в Научном, 1 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="ENWAY — Научный, 1 ноября · Местов.Нет">
+<meta property="og:description" content="ENWAY, Научный, в Научном, 1 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/b0c636814c4ba50ea9649e634006075f.jpg">
 <script type="application/ld+json">
@@ -974,7 +974,7 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-11-01T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Посёлок Научный",
+        "name": "Научный",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Научный",

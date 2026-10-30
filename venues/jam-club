@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "В субботу 31 октября в Jam Club состоится концерт девяти рок-групп.",
+      "description": "В субботу 31 октября в Jam Club пройдут концерты девяти рок-групп.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Девять рок-групп"
       },
-      "image": "/images/events/c48768a5fec2ab32fefa980ee73066c5.jpg"
+      "image": "/images/events/6cc2ea42cac0615fc579846e0a8e49c0.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -63,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/9af42061755d7c5d44ce3ad557430a22.jpg"
+      "image": "/images/events/cc97d622b4ef2c864d3abe640159130c.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -77,8 +77,7 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
-      },
-      "image": "/images/events/1299ba5573999292e0a1a06a2bdb0b24.jpg"
+      }
     }
   ]
 }
