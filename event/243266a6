@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Мираж Огня — Jam Club, Симферополь, 13 ноября · Местов.Нет">
 <meta property="og:description" content="Мираж Огня, Jam Club, в Симферополе, 13 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/cc97d622b4ef2c864d3abe640159130c.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/76eb67faea06dffa93fbc2a74256d7d3.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -986,7 +986,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/cc97d622b4ef2c864d3abe640159130c.jpg",
+      "image": "/images/events/76eb67faea06dffa93fbc2a74256d7d3.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

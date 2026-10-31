@@ -48,7 +48,7 @@
         "@type": "MusicGroup",
         "name": "Девять рок-групп"
       },
-      "image": "/images/events/6cc2ea42cac0615fc579846e0a8e49c0.jpg"
+      "image": "/images/events/f389b1770a179b19cab2547d8ff83e39.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -63,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/cc97d622b4ef2c864d3abe640159130c.jpg"
+      "image": "/images/events/76eb67faea06dffa93fbc2a74256d7d3.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -77,7 +77,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
-      }
+      },
+      "image": "/images/events/73faf1b56af83bacf573516ddce15747.jpg"
     }
   ]
 }

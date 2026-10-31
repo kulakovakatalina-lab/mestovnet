@@ -285,7 +285,6 @@
     "address": "ул. Винодела Егорова, 9",
     "event_count": 9,
     "aliases": [
-      "Винзавод «Массандра»",
       "Винзавод Массандра",
       "Массандра",
       "Севастополь Джаз"
@@ -685,20 +684,6 @@
     "lon": 34.178866
   },
   {
-    "slug": "nauchnyy",
-    "name": "Научный",
-    "city": "Крым",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "vinnyy-park-ponizovka",
     "name": "Винный парк (Понизовка)",
     "city": "Ялта",
@@ -858,6 +843,20 @@
     "desc_baseline_count": 3,
     "lat": 44.497569,
     "lon": 34.17698
+  },
+  {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Крым",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "p-nauchnyy-ul-nauchnaya-46",
@@ -2552,6 +2551,62 @@
     "event_count": 1,
     "aliases": [
       "Карла Маркса 6, Симферополь"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "poselok-nauchnyy",
+    "name": "Посёлок Научный",
+    "city": "Научный",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Посёлок Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinodelnya-rema-akchurina",
+    "name": "Винодельня Рема Акчурина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Винодельня Рема Акчурина"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "semeynyy-tsentr-vremena-goda",
+    "name": "Семейный центр 'Времена года'",
+    "city": "Феодосия",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Семейный центр 'Времена года'"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "livadiyskiy-dvorets-belyy-zal",
+    "name": "Ливадийский дворец, Белый зал",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Ливадийский дворец, Белый зал"
     ],
     "description": null,
     "desc_baseline_count": 0,

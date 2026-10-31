@@ -10276,7 +10276,7 @@
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "images": [
       "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
+      "/images/events/12362a59e8904f259b2f43ec24ee3daf.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
     "post_date": "2026-11-08",
@@ -16359,7 +16359,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "e359af52",
@@ -16658,8 +16658,7 @@
     "genre": "рок",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/yorsh-tour?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/3318cbac832f2cb7db53d825c31e1fa1.jpg",
-      "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg"
+      "/images/events/3318cbac832f2cb7db53d825c31e1fa1.jpg"
     ],
     "image": "/images/events/3318cbac832f2cb7db53d825c31e1fa1.jpg",
     "post_date": "2026-11-03",
@@ -16717,7 +16716,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1329",
     "images": [
       "/images/events/d9fdd595043ac574c1d3d45d0dc48490.jpg",
-      "/images/events/efc7b5dabd35e584ca2e03c667524896.jpg"
+      "/images/events/b434108aff362f78e121cb6a035a078c.jpg"
     ],
     "image": "/images/events/d9fdd595043ac574c1d3d45d0dc48490.jpg",
     "post_date": "2026-10-21T13:43:11+00:00",
@@ -16747,33 +16746,9 @@
     "image": "/images/events/8e30236053bccf15b19bb6be81937968.jpg",
     "post_date": "2026-10-26T18:00:29+00:00",
     "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Нуар при свечах (id 1615f8a3)"
-    ]
-  },
-  {
-    "id": "552384e2",
-    "date": "2026-10-31",
-    "time": "19:00",
-    "artist": "IRISH EVENING BAND",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": "700 ₽",
-    "description": "Отправляемся в музыкальное путешествие по Ирландии — стране волшебных замков, древних легенд и зажигательных танцев. Скрипка, гитары, банджо, бузуки, аккордеон и живой вокал создадут особое настроение этого вечера.",
-    "source_city": "Севастополь",
-    "source_channel": "artcafesnezhinka",
-    "genre": "классика",
-    "source_url": "https://t.me/artcafesnezhinka/2085",
-    "images": null,
-    "image": null,
-    "post_date": "2026-10-25T18:55:21+00:00",
-    "source_status": "active",
     "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-27",
@@ -16852,7 +16827,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-10-30T02:55:04.652722+00:00",
+    "post_date": "2026-10-31T02:44:30.147712+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -16878,7 +16853,7 @@
     "source_url": "https://t.me/afisha_crimea/8934",
     "images": [
       "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
-      "/images/events/9aa5dc3eb3fa30b2e9806e95e3d2609f.jpg"
+      "/images/events/926722d86420eaa4f3b56f5f5dd80312.jpg"
     ],
     "image": "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
     "post_date": "2026-10-28T18:33:09+00:00",
@@ -16930,79 +16905,88 @@
     "moderation_status": "approved"
   },
   {
+    "id": "3e1f0ed8",
     "date": "2026-11-21",
     "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
-    "venue": "Центр культуры и искусства",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
     "event_type": "концерт",
+    "venue": "Центр культуры и искусства",
     "price": "от 1 690 ₽",
     "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2026-11-21",
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "source_channel": "yandex_afisha",
+    "genre": "метал",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "3e1f0ed8",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "images": [
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
+    ],
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "post_date": "2026-11-21",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "price",
       "genre"
     ],
-    "genre": "метал",
+    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
   },
   {
+    "id": "6da07ac7",
     "date": "2027-01-04",
     "time": "17:00",
     "artist": "Джедже, Anjelina, Мали",
-    "venue": "Центр культуры и искусства",
     "event_type": "концерт",
+    "venue": "Центр культуры и искусства",
     "price": "от 1 500 ₽",
     "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2027-01-04",
-    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "6da07ac7",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "images": [
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
+    ],
+    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "post_date": "2027-01-04",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
   },
   {
+    "id": "f99ec362",
     "date": "2026-11-02",
     "time": "19:00",
     "artist": "Квартирник. Любовь",
-    "venue": "Театр юного зрителя",
     "event_type": "концерт",
+    "venue": "Театр юного зрителя",
     "price": "от 1 000 ₽",
     "description": "Квартирник. Любовь в Театр юного зрителя, Севастополь.",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2026-11-02",
-    "image": null,
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/kvartirnik-liubov?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "f99ec362",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-02",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -17010,26 +16994,27 @@
     "moderation_status": "approved"
   },
   {
+    "id": "98451dc7",
     "date": "2026-11-03",
     "time": "19:00",
     "artist": "Квартирник. Дом",
-    "venue": "Театр юного зрителя",
     "event_type": "концерт",
+    "venue": "Театр юного зрителя",
     "price": "от 1 000 ₽",
     "description": "Квартирник. Дом в Театр юного зрителя, Севастополь.",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2026-11-03",
-    "image": null,
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/kvartirnik-dom?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "98451dc7",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-03",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -17062,150 +17047,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2026-11-13",
-    "time": "18:00",
-    "artist": "Мираж Огня",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
-    "image": "/images/events/cc97d622b4ef2c864d3abe640159130c.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:04:07+00:00",
-    "source_url": "https://t.me/clubjam/1183",
-    "id": "243266a6",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-14",
-    "time": "18:00",
-    "artist": "Карбид",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "RAMMSTEIN TRIBUTE by Карбид. Привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
-    "image": null,
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:13:12+00:00",
-    "source_url": "https://t.me/clubjam/1184",
-    "id": "22d6734d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "фолк",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-31",
-    "time": null,
-    "artist": "Девять рок-групп",
-    "event_type": "концерт",
-    "venue": "Jam Club",
-    "price": "313 рублей",
-    "description": "В субботу 31 октября в Jam Club пройдут концерты девяти рок-групп.",
-    "image": "/images/events/6cc2ea42cac0615fc579846e0a8e49c0.jpg",
-    "images": [
-      "/images/events/6cc2ea42cac0615fc579846e0a8e49c0.jpg",
-      "/images/events/9055c4bf19994764980e09e10a8bc9bf.jpg"
-    ],
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-27T11:27:57+00:00",
-    "source_url": "https://t.me/clubjam/1186",
-    "id": "551f99f2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-10-31",
-    "time": "17:00",
-    "artist": "дирижер Денис Карлов, Крымский камерный оркестр «Новая гармония»",
-    "event_type": "концерт",
-    "venue": "Пещера «Мраморная»",
-    "price": null,
-    "description": "Крымский камерный оркестр «Новая гармония» и дирижер Денис Карлов исполнят программу «Звуковой сплав 6», где классика переплетается с современными хитами. Шедевры камерной музыки в новом, неожиданном звучании. От барокко до современности — программа держится в секрете, но обещает быть мощной.",
-    "image": "/images/events/27e53c9fe46b2516c06dd3b293fda165.jpg",
-    "images": null,
-    "source_channel": "afisha_crimea",
-    "source_city": "Крым",
-    "post_date": "2026-10-28T17:01:14+00:00",
-    "source_url": "https://t.me/afisha_crimea/8973",
-    "id": "94a062ed",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-01",
-    "time": "18:00",
-    "artist": "ENWAY",
-    "event_type": "концерт",
-    "venue": "Научный",
-    "price": null,
-    "description": "Специальный гость вечера - ENWAY. В сопровождении джаз-трио «А3» он исполнит известные композиции Стинга, Элтона Джона, Леонида Агутина, Алексея Чумакова и других популярных артистов.",
-    "image": "/images/events/b0c636814c4ba50ea9649e634006075f.jpg",
-    "images": null,
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Научный",
-    "post_date": "2026-10-25T13:16:26+00:00",
-    "source_url": "https://vk.com/wall-214055536_2430",
-    "id": "b9c1c3d4",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "genre"
-    ],
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-01",
     "time": null,
     "artist": "Энвер Каримов",
@@ -17236,76 +17077,30 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-04",
-    "time": "19:00",
-    "artist": "Йорш",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1600 ₽",
-    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
-    "source_channel": "afisha_ru",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-30T02:55:04.652742+00:00",
-    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
-    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
-    "genre": "рок",
-    "id": "4993369e",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
+    "id": "1b488e3a",
     "date": "2026-11-07",
     "time": "17:00",
     "artist": "Концерт «Музыкальные истины»",
-    "venue": "Винзавод «Массандра»",
     "event_type": "концерт",
-    "price": "1100 - 2000",
-    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
-    "source_channel": "afisha_goroda",
+    "venue": "Винзавод Массандра",
+    "price": "от 1 100 ₽",
+    "description": "Друзья, мы приглашаем вас на самое душевное свидание — свидание с музыкой.\n\nМы зажжём огни в уютном зале, чтобы вы могли устроиться поудобнее, обняться и просто слушать.\n\nСолисты камерного оркестра «Новая гармония» и маэстро Денис Карлов подготовили для вас программу «Музыкальные истины». Это разговор о самом важном на самом прекрасном языке — языке струн, мелодий и гармоний.\n\nЗдесь, среди стен, хранящих ароматы винных легенд «Массандры», вы услышите, как звучит любовь. Это наш подарок всем, кто верит в романтику и силу искусства.\n\nДавайте проведём этот вечер вместе — тепло, изысканно, музыкально.",
     "source_city": "Ялта",
-    "post_date": "2026-10-30T02:55:18.938462+00:00",
-    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
-    "id": "1b488e3a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
+    "images": [
+      "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+      "/images/events/bf241f025783007fbf0cc4ad9f6ef530.jpg"
+    ],
+    "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+    "post_date": "2026-11-07",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
     ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-15",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1200 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-10-30T02:55:18.938585+00:00",
-    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "e507a0c1",
-    "source_status": "active",
     "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -17348,11 +17143,11 @@
     "source_url": "https://t.me/artcafesnezhinka/2085",
     "id": "1615f8a3",
     "genre": "джаз",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
-      "нет постера",
-      "разные исполнители на одной площадке в одно время: контрабас, Женский вокал, саксофон, фортепиано, Анна Сидоренко, Виталий Какурин, Юрий Тараненко, Руслан Сейдалиев, Иван Сыч (id c6d7bce8)"
-    ]
+      "нет постера"
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-03",
@@ -17373,6 +17168,271 @@
     "needs_review": false,
     "review_reasons": [
       "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-13",
+    "time": "18:00",
+    "artist": "Мираж Огня",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
+    "image": "/images/events/76eb67faea06dffa93fbc2a74256d7d3.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:04:07+00:00",
+    "source_url": "https://t.me/clubjam/1183",
+    "id": "243266a6",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "18:00",
+    "artist": "Карбид",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "RAMMSTEIN TRIBUTE by Карбид. Привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
+    "image": "/images/events/73faf1b56af83bacf573516ddce15747.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:13:12+00:00",
+    "source_url": "https://t.me/clubjam/1184",
+    "id": "22d6734d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "фолк",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-31",
+    "time": null,
+    "artist": "Девять рок-групп",
+    "event_type": "концерт",
+    "venue": "Jam Club",
+    "price": "313 рублей",
+    "description": "В субботу 31 октября в Jam Club пройдут концерты девяти рок-групп.",
+    "image": "/images/events/f389b1770a179b19cab2547d8ff83e39.jpg",
+    "images": [
+      "/images/events/f389b1770a179b19cab2547d8ff83e39.jpg",
+      "/images/events/fba14820dbee792202869943c7b095f0.jpg"
+    ],
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-27T11:27:57+00:00",
+    "source_url": "https://t.me/clubjam/1186",
+    "id": "551f99f2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "19:00",
+    "artist": "IRISH EVENING BAND",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "700 ₽",
+    "description": "Отправляемся в музыкальное путешествие по Ирландии — стране волшебных замков, древних легенд и зажигательных танцев. Скрипка, гитары, банджо, бузуки, аккордеон и живой вокал создадут особое настроение этого вечера.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-10-25T18:55:21+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2085",
+    "id": "552384e2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-01",
+    "time": "18:00",
+    "artist": "ENWAY",
+    "event_type": "концерт",
+    "venue": "Посёлок Научный",
+    "price": null,
+    "description": "Специальный гость вечера - ENWAY. В сопровождении джаз-трио «А3» он исполнит известные композиции Стинга, Элтона Джона, Леонида Агутина, Алексея Чумакова и других популярных артистов.",
+    "image": "/images/events/b0c636814c4ba50ea9649e634006075f.jpg",
+    "images": null,
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Научный",
+    "post_date": "2026-10-25T13:16:26+00:00",
+    "source_url": "https://vk.com/wall-214055536_2430",
+    "id": "b9c1c3d4",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "19:00",
+    "artist": "Йорш",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1600 ₽",
+    "description": "О концерте В 2026 ЙОРШ – один из хедлайнеров отечественной панк-рок-сцены – отмечает 20-летие и отправляется в самый масштабный тур за историю группы! 04 ноября в ДЕПО прозвучат все хиты, на долгие годы осевшие в ваших плейлистах, редкие треки и, конечно, песни из нового альбома.\r\n\r\nОт андеграундных баров, тесных подвалов и локальной узнаваемости до гигантских фестивальных сцен, горячих ротаций на радио и туров, охватывающих сотню городов за год. От репетиций в подмосковном ДК до песен, которые знает и поёт вся страна. Этот путь стоил каждой капли пота, каждого синяка в слэме и каждой бессонной ночи в туровом автобусе. Мальчик с ирокезом вырос и празднует свой юбилей. Двадцать лет драйва, угара и панк-рока. Двадцать лет вместе с вами.\r\n\r\nЙОРШ. 04 ноября. Депо, Симферополь. Слэм, угар и панк-рок, где каждый станет частью истории. Будет шумно, будет яростно, будет по-настоящему. Приходите заряжаться безудержной энергией и громко праздновать юбилей любимой команды!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-31T02:44:30.147762+00:00",
+    "image": "/images/events/bb54a38a265416de38aa9ce51fec7403.jpg",
+    "source_url": "https://www.afisha.ru/concert/yorsh-6025408/",
+    "genre": "рок",
+    "id": "4993369e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-31T02:44:44.232133+00:00",
+    "image": "/images/events/d90b1152314506f95c8c19f49bb04dc0.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-31T02:44:47.882072+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-07",
+    "time": "15:00",
+    "artist": "Фортепианное трио Матвея Блюмина",
+    "event_type": "вечеринка",
+    "venue": "Винодельня Рема Акчурина",
+    "price": null,
+    "description": "Иммерсивное музыкальное событие с участием фортепианного трио Матвея Блюмина в рамках вечеринки в винодельне Рема Акчурина.",
+    "image": "/images/events/70bdb401d3102c20448adbae7001a0b3.jpg",
+    "images": [
+      "/images/events/70bdb401d3102c20448adbae7001a0b3.jpg",
+      "/images/events/fd7c9f1c79a55e4b518ae2f35876b2c0.jpg",
+      "/images/events/cb5badb18ff8684663017ee9667ccdb0.jpg",
+      "/images/events/dbc7a0691490fd21460d0e8987daaaf7.jpg",
+      "/images/events/c51619678ebc222de07d10a6bc49daf5.jpg",
+      "/images/events/1f16fe3cf2e48a3a41bc500eef1383aa.jpg",
+      "/images/events/9ea10e3b3a2234225ae931b77e521a0e.jpg"
+    ],
+    "source_channel": "afisha_crimea",
+    "source_city": "Севастополь",
+    "post_date": "2026-10-30T17:03:01+00:00",
+    "source_url": "https://t.me/afisha_crimea/8999",
+    "id": "9b9bea30",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "12:30–17:00",
+    "artist": "Nata Bery, Сырная Булочка из группы 'Тигры Амура'",
+    "event_type": "концерт",
+    "venue": "Семейный центр 'Времена года'",
+    "price": null,
+    "description": "Музыкальное сопровождение от диджея Джо Дэнс, и так же в программе выступят чувственные вокалистки: Сырная Булочка из группы 'Тигры Амура' и Nata Bery.",
+    "image": "/images/events/9b1fee44f4a331b6df123accf13e2140.jpg",
+    "images": null,
+    "source_channel": "crimea_event",
+    "source_city": "Феодосия",
+    "post_date": "2026-10-30T06:51:44+00:00",
+    "source_url": "https://t.me/crimea_event/5684",
+    "id": "d9364cdd",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-07",
+    "time": "18:00",
+    "artist": "Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Ливадийский дворец, Белый зал",
+    "price": null,
+    "description": "Концерт Крымского академического симфонического оркестра с произведениями И. Штрауса, И. Брамса, А. Хачатуряна, Ж. Бизе и других композиторов.",
+    "image": null,
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-10-30T13:40:17+00:00",
+    "source_url": "https://t.me/koncertykrym/2379",
+    "id": "3fb9cbe5",
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
     ],
     "moderation_status": "approved"
   },
@@ -17399,5 +17459,34 @@
       "нет цены"
     ],
     "moderation_status": "archived"
+  },
+  {
+    "date": "2026-10-31",
+    "time": "17:00",
+    "artist": "дирижер Денис Карлов, Крымский камерный оркестр «Новая гармония»",
+    "event_type": "концерт",
+    "venue": "Пещера «Мраморная»",
+    "price": null,
+    "description": "Крымский камерный оркестр «Новая гармония» и дирижер Денис Карлов исполнят программу «Звуковой сплав 6», где классика переплетается с современными хитами. Шедевры камерной музыки в новом, неожиданном звучании. От барокко до современности — программа держится в секрете, но обещает быть мощной.",
+    "image": "/images/events/27e53c9fe46b2516c06dd3b293fda165.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Крым",
+    "post_date": "2026-10-28T17:01:14+00:00",
+    "source_url": "https://t.me/afisha_crimea/8973",
+    "id": "94a062ed",
+    "source_status": "active",
+    "source_last_checked_at": "2026-10-30T02:55:22.685435+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
   }
 ]
