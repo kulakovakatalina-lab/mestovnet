@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>свечи — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов свечи в Крыму (Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов свечи в Крыму (Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/svechi">
   <meta property="og:title" content="свечи — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов свечи в Крыму (Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов свечи в Крыму (Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "свечи"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "свечи",
-      "startDate": "2026-11-07T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "свечи"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ливадийский дворец",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Продолжаем цикл концертов «Музыка и свечи» и приглашаем на следующую встречу в Ливадийском дворце.",
-      "image": "/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg"
     }
   ]
 }
@@ -1040,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["свечи", "свечи"];
+const ARTIST_ALIASES = ["свечи", "свечи»", "свечи"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
@@ -1208,9 +1188,7 @@ function renderArchive() {
 
 async function load() {
   try {
-    const [res] = await Promise.all([
-      fetch('/events.json'),
-    ]);
+    const res = await fetch('/events.json');
     const data = await res.json();
     const patched  = publishedEvents(data);
     const now      = moscowNow();

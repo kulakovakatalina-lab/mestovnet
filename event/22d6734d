@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Карбид — Jam Club, Симферополь, 14 ноября · Местов.Нет">
 <meta property="og:description" content="Карбид, Jam Club, в Симферополе, 14 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/73faf1b56af83bacf573516ddce15747.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/4fb6c8d4c975d104e3437ac7a002077e.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -971,7 +971,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Карбид",
-      "startDate": "2026-11-14T18:00:00+03:00",
+      "startDate": "2026-11-14",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -986,7 +986,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/73faf1b56af83bacf573516ddce15747.jpg",
+      "image": "/images/events/4fb6c8d4c975d104e3437ac7a002077e.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

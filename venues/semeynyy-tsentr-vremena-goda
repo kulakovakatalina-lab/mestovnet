@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Семейный центр &#x27;Времена года&#x27; — афиша в Феодосии · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Семейный центр &#x27;Времена года&#x27;, в Феодосии. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Семейный центр &#x27;Времена года&#x27;, в Феодосии. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/semeynyy-tsentr-vremena-goda">
   <meta property="og:title" content="Семейный центр &#x27;Времена года&#x27; — афиша в Феодосии · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Семейный центр &#x27;Времена года&#x27;, в Феодосии. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Семейный центр &#x27;Времена года&#x27;, в Феодосии. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Феодосия",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Nata Bery, Сырная Булочка из группы 'Тигры Амура'",
-      "startDate": "2026-10-31T12:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Семейный центр 'Времена года'"
-      },
-      "description": "Музыкальное сопровождение от диджея Джо Дэнс, и так же в программе выступят чувственные вокалистки: Сырная Булочка из группы 'Тигры Амура' и Nata Bery.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Nata Bery, Сырная Булочка из группы 'Тигры Амура'"
-      },
-      "image": "/images/events/9b1fee44f4a331b6df123accf13e2140.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jam Club — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/jam-club">
   <meta property="og:title" content="Jam Club — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 3 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Jam Club, в Симферополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,21 +37,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Девять рок-групп",
-      "startDate": "2026-10-31",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club"
-      },
-      "description": "В субботу 31 октября в Jam Club пройдут концерты девяти рок-групп.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Девять рок-групп"
-      },
-      "image": "/images/events/f389b1770a179b19cab2547d8ff83e39.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Мираж Огня",
       "startDate": "2026-11-13T18:00:00+03:00",
       "location": {
@@ -63,12 +48,12 @@
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/76eb67faea06dffa93fbc2a74256d7d3.jpg"
+      "image": "/images/events/abbcaf8c54899d5680cd59b3159cc890.jpg"
     },
     {
       "@type": "MusicEvent",
       "name": "Карбид",
-      "startDate": "2026-11-14T18:00:00+03:00",
+      "startDate": "2026-11-14",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
@@ -78,7 +63,7 @@
         "@type": "MusicGroup",
         "name": "Карбид"
       },
-      "image": "/images/events/73faf1b56af83bacf573516ddce15747.jpg"
+      "image": "/images/events/4fb6c8d4c975d104e3437ac7a002077e.jpg"
     }
   ]
 }

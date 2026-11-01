@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Карбид",
-      "startDate": "2026-11-14T18:00:00+03:00",
+      "startDate": "2026-11-14",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
@@ -48,7 +48,7 @@
         }
       },
       "description": "RAMMSTEIN TRIBUTE by Карбид. Привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
-      "image": "/images/events/73faf1b56af83bacf573516ddce15747.jpg"
+      "image": "/images/events/4fb6c8d4c975d104e3437ac7a002077e.jpg"
     }
   ]
 }

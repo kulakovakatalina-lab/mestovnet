@@ -32,7 +32,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 37,
+    "event_count": 38,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -55,6 +55,24 @@
     "desc_baseline_count": 34,
     "lat": 44.951251,
     "lon": 34.098202
+  },
+  {
+    "slug": "kontsertnyy-zal-yubileynyy",
+    "name": "Концертный зал «Юбилейный»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 17,
+    "aliases": [
+      "Концертный зал «Юбилейный»",
+      "Малый зал концертного зала «Юбилейный»",
+      "Юбилейный",
+      "концертный зал «Юбилейный»",
+      "малый зал концертного зала «Юбилейный»"
+    ],
+    "description": "Сюда приезжают с большими сольными концертами: Григорий Лепс, Полина Гагарина, SHAMAN, Таисия Повалий, «Нэнси». Но ялтинский «Юбилейный» принимает и совсем другую музыку — хор Сретенского монастыря, симфонический оркестр и вечера любимых мелодий из кино.",
+    "desc_baseline_count": 16,
+    "lat": 44.492898,
+    "lon": 34.163783
   },
   {
     "slug": "tavrida-art",
@@ -103,23 +121,6 @@
     "lon": 34.1258
   },
   {
-    "slug": "kontsertnyy-zal-yubileynyy",
-    "name": "Концертный зал «Юбилейный»",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 16,
-    "aliases": [
-      "Концертный зал «Юбилейный»",
-      "Малый зал концертного зала «Юбилейный»",
-      "Юбилейный",
-      "концертный зал «Юбилейный»"
-    ],
-    "description": "Сюда приезжают с большими сольными концертами: Григорий Лепс, Полина Гагарина, SHAMAN, Таисия Повалий, «Нэнси». Но ялтинский «Юбилейный» принимает и совсем другую музыку — хор Сретенского монастыря, симфонический оркестр и вечера любимых мелодий из кино.",
-    "desc_baseline_count": 16,
-    "lat": 44.492898,
-    "lon": 34.163783
-  },
-  {
     "slug": "mramornaya-peschera",
     "name": "Мраморная пещера",
     "city": "Симферополь",
@@ -157,7 +158,7 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 14,
+    "event_count": 13,
     "aliases": [
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
@@ -285,6 +286,7 @@
     "address": "ул. Винодела Егорова, 9",
     "event_count": 9,
     "aliases": [
+      "Винзавод «Массандра»",
       "Винзавод Массандра",
       "Массандра",
       "Севастополь Джаз"
@@ -494,6 +496,22 @@
     "lon": 34.162337
   },
   {
+    "slug": "krymskaya-astrofizicheskaya-observatoriya",
+    "name": "Крымская астрофизическая обсерватория",
+    "city": "Научный",
+    "address": "ул. Научная, 46, п. Научный, Бахчисарайский р-н",
+    "event_count": 5,
+    "aliases": [
+      "Астрофизическая обсерватория РАН (Научный)",
+      "Крымская астрофизическая обсерватория",
+      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н"
+    ],
+    "description": "Крымская астрофизическая обсерватория РАН близ посёлка Научный, открыта для экскурсий и наблюдений. Под куполом старейшего телескопа обсерватории (рефлектор Zeiss-48) проходят концерты: скрипач-виртуоз Матвей Блюмин и иммерсивные концерты-погружения «Космос внутри» Андрея Ясинского — фортепиано, можжевеловые флейты и электроника под звёздным небом.",
+    "desc_baseline_count": 3,
+    "lat": 44.726326,
+    "lon": 34.015381
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Севастополь",
@@ -566,22 +584,6 @@
     "desc_baseline_count": 4,
     "lat": 44.588803,
     "lon": 33.489841
-  },
-  {
-    "slug": "krymskaya-astrofizicheskaya-observatoriya",
-    "name": "Крымская астрофизическая обсерватория",
-    "city": "Научный",
-    "address": "ул. Научная, 46, п. Научный, Бахчисарайский р-н",
-    "event_count": 4,
-    "aliases": [
-      "Астрофизическая обсерватория РАН (Научный)",
-      "Крымская астрофизическая обсерватория",
-      "Телескоп Zeiss-48, ул. Научная, 46, п. Научный, Бахчисарайский р-н"
-    ],
-    "description": "Крымская астрофизическая обсерватория РАН близ посёлка Научный, открыта для экскурсий и наблюдений. Под куполом старейшего телескопа обсерватории (рефлектор Zeiss-48) проходят концерты: скрипач-виртуоз Матвей Блюмин и иммерсивные концерты-погружения «Космос внутри» Андрея Ясинского — фортепиано, можжевеловые флейты и электроника под звёздным небом.",
-    "desc_baseline_count": 3,
-    "lat": 44.726326,
-    "lon": 34.015381
   },
   {
     "slug": "narodnyy-bar",
@@ -682,6 +684,20 @@
     "desc_baseline_count": 4,
     "lat": 44.498096,
     "lon": 34.178866
+  },
+  {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Крым",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "vinnyy-park-ponizovka",
@@ -845,20 +861,6 @@
     "lon": 34.17698
   },
   {
-    "slug": "nauchnyy",
-    "name": "Научный",
-    "city": "Крым",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "p-nauchnyy-ul-nauchnaya-46",
     "name": "п Научный, ул Научная, 46",
     "city": "Научный",
@@ -913,6 +915,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "dom-muzey-a-s-pushkina-gurzuf",
+    "name": "Дом-музей А. С. Пушкина",
+    "city": "Гурзуф",
+    "address": "",
+    "event_count": 3,
+    "aliases": [
+      "Дом-музей А. С. Пушкина"
+    ],
+    "description": "Поэзия Пушкина звучит здесь вместе с музыкой. В музее исполняют романсы «Я помню чудное мгновенье…» и знакомят с композиторами пушкинской эпохи в программе «Пушкин и его современники. Музыкальные диалоги».",
+    "desc_baseline_count": 2,
+    "lat": 44.539802,
+    "lon": 34.274541
   },
   {
     "slug": "bahchisarayskiy-rayonnyy-dom-kultury",
@@ -1228,20 +1244,6 @@
     "lon": 34.163783
   },
   {
-    "slug": "dom-muzey-a-s-pushkina-gurzuf",
-    "name": "Дом-музей А. С. Пушкина",
-    "city": "Гурзуф",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Дом-музей А. С. Пушкина"
-    ],
-    "description": "Поэзия Пушкина звучит здесь вместе с музыкой. В музее исполняют романсы «Я помню чудное мгновенье…» и знакомят с композиторами пушкинской эпохи в программе «Пушкин и его современники. Музыкальные диалоги».",
-    "desc_baseline_count": 2,
-    "lat": 44.539802,
-    "lon": 34.274541
-  },
-  {
     "slug": "sevastopolskiy-tsentr-kultury-i-iskusstva",
     "name": "Севастопольский центр культуры и искусства",
     "city": "Севастополь",
@@ -1268,6 +1270,20 @@
     "desc_baseline_count": 1,
     "lat": 45.032421,
     "lon": 35.382656
+  },
+  {
+    "slug": "livadiyskiy-dvorets-belyy-zal",
+    "name": "Ливадийский дворец, Белый зал",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Ливадийский дворец, Белый зал"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "nebar",
@@ -2236,6 +2252,20 @@
     "lon": 34.180249
   },
   {
+    "slug": "g-sevastopol",
+    "name": "г. Севастополь",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "event_count": 1,
+    "aliases": [
+      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "bolshoy-zal-moskovskoy-konservatorii",
     "name": "Большой зал Московской консерватории",
     "city": "Судак",
@@ -2460,34 +2490,6 @@
     "lon": null
   },
   {
-    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
-    "name": "Музыкальное училище им. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музыкальное училище им. Чайковского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "chistye-prudy",
-    "name": "Чистые пруды",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Чистые пруды"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "poyuschee-kafe-molodost",
     "name": "Поющее кафе «Молодость»",
     "city": "Севастополь",
@@ -2558,13 +2560,13 @@
     "lon": null
   },
   {
-    "slug": "poselok-nauchnyy",
-    "name": "Посёлок Научный",
-    "city": "Научный",
+    "slug": "semeynyy-tsentr-vremena-goda",
+    "name": "Семейный центр 'Времена года'",
+    "city": "Феодосия",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Посёлок Научный"
+      "Семейный центр 'Времена года'"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2586,13 +2588,13 @@
     "lon": null
   },
   {
-    "slug": "semeynyy-tsentr-vremena-goda",
-    "name": "Семейный центр 'Времена года'",
-    "city": "Феодосия",
+    "slug": "chistye-prudy",
+    "name": "Чистые пруды",
+    "city": "Симферополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Семейный центр 'Времена года'"
+      "Чистые пруды"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2600,13 +2602,69 @@
     "lon": null
   },
   {
-    "slug": "livadiyskiy-dvorets-belyy-zal",
-    "name": "Ливадийский дворец, Белый зал",
+    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
+    "name": "Музыкальное училище им. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музыкальное училище им. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzey-antichnosti-i-vizantii",
+    "name": "Музей Античности и Византии",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музей Античности и Византии"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "tsentr-vinodeliya-massandra-egorovskiy-zal",
+    "name": "Центр виноделия «Массандра», Егоровский зал",
     "city": "Ялта",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Ливадийский дворец, Белый зал"
+      "Центр виноделия «Массандра», Егоровский зал"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kz-yubileynyy-malyy-zal",
+    "name": "КЗ «Юбилейный», малый зал",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "КЗ «Юбилейный», малый зал"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "skelskaya-peschera-s-rodnoe",
+    "name": "Скельская пещера, с. Родное",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Скельская пещера, с. Родное"
     ],
     "description": null,
     "desc_baseline_count": 0,

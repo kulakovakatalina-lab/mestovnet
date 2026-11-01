@@ -33,22 +33,22 @@
     {
       "@type": "MusicEvent",
       "name": "Музыка",
-      "startDate": "2026-11-07T18:00:00+03:00",
+      "startDate": "2026-11-03T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Музыка"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ливадийский дворец",
+        "name": "малый зал концертного зала «Юбилейный»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Продолжаем цикл концертов «Музыка и свечи» и приглашаем на следующую встречу в Ливадийском дворце.",
-      "image": "/images/events/bb9c949f04cc79ad9fc72f1f34a6a266.jpg"
+      "description": "В рамках Всероссийской акции «Ночь искусств», приуроченной ко Дню народного единства, приглашаем на музыкальный вечер в Ялте. В программе – русские народные песни, любимые романсы и вокальные произведения великих композиторов.",
+      "image": "/images/events/313604200c364a64c0a8a8a6ce32dcfd.jpg"
     }
   ]
 }
@@ -1208,9 +1208,7 @@ function renderArchive() {
 
 async function load() {
   try {
-    const [res] = await Promise.all([
-      fetch('/events.json'),
-    ]);
+    const res = await fetch('/events.json');
     const data = await res.json();
     const patched  = publishedEvents(data);
     const now      = moscowNow();

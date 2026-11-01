@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Карла Маркса 6 — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Карла Маркса 6, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Карла Маркса 6, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/karla-marksa-6">
   <meta property="og:title" content="Карла Маркса 6 — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Карла Маркса 6, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Карла Маркса 6, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "музыканты, Анна Лобода",
-      "startDate": "2026-10-31T18:30:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Карла Маркса 6"
-      },
-      "description": "Камерный вечер в формате квартирника с авторской музыкой и песнями в исполнении Анны Лободы и музыкантов: Андрея Рыбальченко (клавиши), Андрея Дегурко (ударные), Павла Беленикина (бас-гитара), Евгения Лободы (саксофон).",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "музыканты, Анна Лобода"
-      },
-      "image": "/images/events/92f7b97e99f622830fb420b59510ddb1.jpg"
     }
   ]
 }
