@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Музыка, раскрывающая русскую душу, малый зал концертного зала «Юбилейный», в Ялте, 3 ноября, вт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Ночь искусств в Юбилейном, малый зал концертного зала «Юбилейный», в Ялте, 3 ноября, вт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Музыка, раскрывающая русскую душу — малый зал концертного зала «Юбилейный», Ялта, 3 ноября · Местов.Нет</title>
+<title>Ночь искусств в Юбилейном — малый зал концертного зала «Юбилейный», Ялта, 3 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,17 +960,17 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/9a72dfdd">
-<meta property="og:title" content="Музыка, раскрывающая русскую душу — малый зал концертного зала «Юбилейный», Ялта, 3 ноября · Местов.Нет">
-<meta property="og:description" content="Музыка, раскрывающая русскую душу, малый зал концертного зала «Юбилейный», в Ялте, 3 ноября, вт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Ночь искусств в Юбилейном — малый зал концертного зала «Юбилейный», Ялта, 3 ноября · Местов.Нет">
+<meta property="og:description" content="Ночь искусств в Юбилейном, малый зал концертного зала «Юбилейный», в Ялте, 3 ноября, вт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/313604200c364a64c0a8a8a6ce32dcfd.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/c4fe8b245b851aa765285a4b4ab00170.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Музыка, раскрывающая русскую душу",
+      "name": "Ночь искусств в Юбилейном",
       "startDate": "2026-11-03T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -984,9 +984,9 @@ a { color: inherit; text-decoration: none; }
       "description": "В рамках Всероссийской акции «Ночь искусств», приуроченной ко Дню народного единства, приглашаем на музыкальный вечер в Ялте. В программе – русские народные песни, любимые романсы и вокальные произведения великих композиторов.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Музыка, раскрывающая русскую душу"
+        "name": "Ночь искусств в Юбилейном"
       },
-      "image": "/images/events/313604200c364a64c0a8a8a6ce32dcfd.jpg",
+      "image": "/images/events/c4fe8b245b851aa765285a4b4ab00170.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Музыка, раскрывающая русскую душу"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Ночь искусств в Юбилейном"}]}
 </script>
 </head>
 <body>

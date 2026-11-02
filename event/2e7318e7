@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Концерт «Пушкин в музыке», Дом-музей А. С. Пушкина, в Гурзуфе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Пушкин в музыке, Дом-музей А. С. Пушкина, в Гурзуфе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Концерт «Пушкин в музыке» — Дом-музей А. С. Пушкина, Гурзуф, 28 ноября · Местов.Нет</title>
+<title>Пушкин в музыке — Дом-музей А. С. Пушкина, Гурзуф, 28 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,17 +960,17 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/2e7318e7">
-<meta property="og:title" content="Концерт «Пушкин в музыке» — Дом-музей А. С. Пушкина, Гурзуф, 28 ноября · Местов.Нет">
-<meta property="og:description" content="Концерт «Пушкин в музыке», Дом-музей А. С. Пушкина, в Гурзуфе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Пушкин в музыке — Дом-музей А. С. Пушкина, Гурзуф, 28 ноября · Местов.Нет">
+<meta property="og:description" content="Пушкин в музыке, Дом-музей А. С. Пушкина, в Гурзуфе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/547ccafba8850865fe0c6105a4bf98f5.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/c5fdc4e451c2101497a4ef91c3f3c782.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Концерт «Пушкин в музыке»",
+      "name": "Пушкин в музыке",
       "startDate": "2026-11-28T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -984,15 +984,15 @@ a { color: inherit; text-decoration: none; }
       "description": "Литературно-музыкальный концерт, посвящённый творчеству Александра Сергеевича Пушкина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Концерт «Пушкин в музыке»"
+        "name": "Пушкин в музыке"
       },
-      "image": "/images/events/547ccafba8850865fe0c6105a4bf98f5.jpg"
+      "image": "/images/events/c5fdc4e451c2101497a4ef91c3f3c782.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Гурзуф", "item": "https://mestov.net/cities/gurzuf.html"}, {"@type": "ListItem", "position": 3, "name": "Концерт «Пушкин в музыке»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Гурзуф", "item": "https://mestov.net/cities/gurzuf.html"}, {"@type": "ListItem", "position": 3, "name": "Пушкин в музыке"}]}
 </script>
 </head>
 <body>

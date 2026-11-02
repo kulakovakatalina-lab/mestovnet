@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Карбид — концерты в Крыму, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Карбид в Крыму (Симферополь, Ялта). 1 ближайших событий.">
+  <title>Карбид — концерты в Крыму, Ялта, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Карбид в Крыму (Ялта, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/karbid">
-  <meta property="og:title" content="Карбид — концерты в Крыму, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Карбид в Крыму (Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:title" content="Карбид — концерты в Крыму, Ялта, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Карбид в Крыму (Ялта, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -48,7 +48,7 @@
         }
       },
       "description": "RAMMSTEIN TRIBUTE by Карбид. Привезёт нам лучшие хиты всенародно любимых Ramm-ов.",
-      "image": "/images/events/4fb6c8d4c975d104e3437ac7a002077e.jpg"
+      "image": "/images/events/65aa1b3a2208c7efb69cedc4acf984b8.jpg"
     }
   ]
 }
@@ -1020,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Карбид</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Симферополь, Ялта</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Ялта, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>

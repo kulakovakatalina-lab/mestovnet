@@ -32,7 +32,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 38,
+    "event_count": 40,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -2574,20 +2574,6 @@
     "lon": null
   },
   {
-    "slug": "vinodelnya-rema-akchurina",
-    "name": "Винодельня Рема Акчурина",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Винодельня Рема Акчурина"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "chistye-prudy",
     "name": "Чистые пруды",
     "city": "Симферополь",
@@ -2616,20 +2602,6 @@
     "lon": null
   },
   {
-    "slug": "muzey-antichnosti-i-vizantii",
-    "name": "Музей Античности и Византии",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музей Античности и Византии"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "tsentr-vinodeliya-massandra-egorovskiy-zal",
     "name": "Центр виноделия «Массандра», Егоровский зал",
     "city": "Ялта",
@@ -2651,6 +2623,34 @@
     "event_count": 1,
     "aliases": [
       "КЗ «Юбилейный», малый зал"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzey-antichnosti-i-vizantii",
+    "name": "Музей Античности и Византии",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музей Античности и Византии"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "vinodelnya-rema-akchurina",
+    "name": "Винодельня Рема Акчурина",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Винодельня Рема Акчурина"
     ],
     "description": null,
     "desc_baseline_count": 0,

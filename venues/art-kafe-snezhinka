@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,18 +37,31 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Шесть музыкантов",
-      "startDate": "2026-11-01T19:00:00+03:00",
+      "name": "ТРИО «ВЕГА»",
+      "startDate": "2026-11-07T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Арт-кафе «Снежинка»"
       },
-      "description": "Вечер живой музыки, танцев и весёлой мистики. На сцене шесть музыкантов: вокал, фортепиано, контрабас, ударные, саксофон и скрипка. Любимые песни, джаз, темпераментные номера и лирические баллады.",
+      "description": "Музыка Sting, Scorpions, «Браво», Billie Eilish и других исполнителей в оригинальных аранжировках для вокала, гитары и виолончели. Рок-баллады, поп-хиты, романтичные и современные композиции.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Шесть музыкантов"
+        "name": "ТРИО «ВЕГА»"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Андрей Рыбальченко VS Андрей Гнатюк",
+      "startDate": "2026-11-08T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
       },
-      "image": "/images/events/4e2839fcddae863be14623cf4ebbabcd.jpg"
+      "description": "PIANO BATTLE: состязание двух пианистов в жанрах джаз, латино, поп-музыка и классика. Неожиданные задания, игра с завязанными глазами и музыкальные пожелания зрителей.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Андрей Рыбальченко VS Андрей Гнатюк"
+      }
     }
   ]
 }

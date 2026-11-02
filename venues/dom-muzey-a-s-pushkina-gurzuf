@@ -37,7 +37,7 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Концерт «Пушкин в музыке»",
+      "name": "Пушкин в музыке",
       "startDate": "2026-11-28T16:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -46,9 +46,9 @@
       "description": "Литературно-музыкальный концерт, посвящённый творчеству Александра Сергеевича Пушкина.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Концерт «Пушкин в музыке»"
+        "name": "Пушкин в музыке"
       },
-      "image": "/images/events/547ccafba8850865fe0c6105a4bf98f5.jpg"
+      "image": "/images/events/c5fdc4e451c2101497a4ef91c3f3c782.jpg"
     }
   ]
 }
