@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="главный дирижёр — Денис Карлов, Солисты камерного оркестра «Новая гармония» — Центр виноделия «Массандра», Егоровский зал, Ялта, 7 ноября · Местов.Нет">
 <meta property="og:description" content="главный дирижёр — Денис Карлов, Солисты камерного оркестра «Новая гармония», Центр виноделия «Массандра», Егоровский зал, в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b2cf9b2210afb62bced98f1907fe93c9.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/b1530da90ec624825b8cb437bf879d74.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Винодельня «Массандра» открывает двери для ценителей прекрасного. В уникальной атмосфере старинного Егоровского зала, наполненного историей, прозвучат «Музыкальные истины».",
+      "description": "В уникальной атмосфере старинного Егоровского зала, наполненного историей, прозвучат «Музыкальные истины».",
       "performer": {
         "@type": "MusicGroup",
         "name": "главный дирижёр — Денис Карлов, Солисты камерного оркестра «Новая гармония»"
       },
-      "image": "/images/events/b2cf9b2210afb62bced98f1907fe93c9.jpg"
+      "image": "/images/events/b1530da90ec624825b8cb437bf879d74.jpg"
     }
   ]
 }

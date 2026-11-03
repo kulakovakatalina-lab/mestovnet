@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Камерный оркестр «Новая Гармония» в Крыму (Крым, Севастополь). 0 ближайших событий.">
+  <title>Камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Севастополь, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Камерный оркестр «Новая гармония» в Крыму (Крым, Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/kamernyy-orkestr-novaya-garmoniya">
-  <meta property="og:title" content="Камерный оркестр «Новая Гармония» — концерты в Крыму, Крым, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Камерный оркестр «Новая Гармония» в Крыму (Крым, Севастополь). 0 ближайших событий.">
+  <meta property="og:title" content="Камерный оркестр «Новая гармония» — концерты в Крыму, Крым, Севастополь, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Камерный оркестр «Новая гармония» в Крыму (Крым, Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,13 +28,33 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Камерный оркестр «Новая Гармония»"
+      "name": "Камерный оркестр «Новая гармония»"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Камерный оркестр «Новая гармония»",
+      "startDate": "2026-11-08T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Камерный оркестр «Новая гармония»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Симферополь, Киевская, 80",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Симферополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "«Музыкальные вечера в Чистых прудах» открывают новый сезон. В программе: Моцарт, Пёрселл и другие великие композиторы.",
+      "image": "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Камерный оркестр «Новая Гармония»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Камерный оркестр «Новая гармония»"}]}
 </script>
   <style>
 
@@ -998,9 +1018,9 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Камерный оркестр «Новая Гармония»</h1>
+    <h1 class="genre-hero-title">Камерный оркестр «Новая гармония»</h1>
 <p class="venue-description">Камерный оркестр под управлением Дениса Карлова. Представляет «Звуковой сплав 6» под сводами Мраморной пещеры.</p>
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Крым, Севастополь, Симферополь</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
@@ -1020,7 +1040,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Камерный оркестр «Новая Гармония»", "Камерный оркестр «Новая гармония»", "Камерный оркестр «Новая Гармония»"];
+const ARTIST_ALIASES = ["Камерный оркестр «Новая Гармония»", "Камерный оркестр «Новая гармония»", "Камерный оркестр «Новая гармония»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

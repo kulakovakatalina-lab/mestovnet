@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Концерт «Музыкальные истины» — Винзавод «Массандра», Ялта, 7 ноября · Местов.Нет">
 <meta property="og:description" content="Концерт «Музыкальные истины», Винзавод «Массандра», в Ялте, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/cc9ae9a9640e0a99c9c5d8f470a98323.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -986,7 +986,7 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Концерт «Музыкальные истины»"
       },
-      "image": "/images/events/c9432ce949e62fc1b3e6940b466fdfef.jpg",
+      "image": "/images/events/cc9ae9a9640e0a99c9c5d8f470a98323.jpg",
       "offers": {
         "@type": "Offer",
         "name": "1100 - 2000",

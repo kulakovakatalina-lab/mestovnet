@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 6 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
   <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 6 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,96 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Группа «Проект С»",
+      "startDate": "2026-11-06T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Главные хиты мирового рок-н-ролла и любимая танцевальная музыка от группы «Проект С». Не акустика",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Проект С»"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jokers Band",
+      "startDate": "2026-11-13T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Jokers Band show и только живой звук: танцевальные рок-поп хиты и невероятная харизма",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Jokers Band"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Алекс Бах",
+      "startDate": "2026-11-15T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Алекс Бах"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Группа «Домино»",
+      "startDate": "2026-11-21T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино». Не акустика",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Домино»"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Группа «Денайро»",
+      "startDate": "2026-11-27T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Любимые и танцевальные рок-поп хиты в живом исполнении группы «Денайро»",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Денайро»"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Группа «Тень Клоуна»",
+      "startDate": "2026-11-28T21:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Рок-н-рольщики (Симферополь)"
+      },
+      "description": "Большая премьера! Страшные сказки тёмного леса: трибьют «Короля и Шута» в исполнении группы «Тень Клоуна»",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Тень Клоуна»"
+      },
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
     }
   ]
 }

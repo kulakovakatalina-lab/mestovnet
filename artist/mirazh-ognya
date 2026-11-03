@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Мираж Огня",
-      "startDate": "2026-11-13T18:00:00+03:00",
+      "startDate": "2026-11-13",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мираж Огня"
@@ -47,8 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня. Группа Мираж Огня уже не раз на сцене клуба создавала ту самую энергетику концертов легендарной 'Арии'.",
-      "image": "/images/events/477543481130310ba7d378cbe3e28c0c.jpg"
+      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня.",
+      "image": "/images/events/4d53f0e3c177bf4ab3fa609408e0cfb2.jpg"
     }
   ]
 }
