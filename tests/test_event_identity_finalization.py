@@ -95,6 +95,21 @@ def test_archive_restoration_is_included_in_final_uniqueness_check():
     assert len({event["id"] for event in result}) == len(result)
 
 
+def test_archive_row_is_restored_when_same_id_candidate_is_another_session():
+    published = _shadow_event()
+    second_session = _shadow_event(time="22:30")
+
+    retained = parser.retain_existing_events([published], [second_session])
+    result = parser.finalize_event_ids(
+        parser.deduplicate_events(retained), existing=[published]
+    )
+
+    assert len(result) == 2
+    assert {event["time"] for event in result} == {"21:00", "22:30"}
+    assert next(event for event in result if event["time"] == "21:00")["id"] == "67c8bb8c"
+    assert len({event["id"] for event in result}) == 2
+
+
 def test_synthetic_legacy_eight_character_hash_collision_is_disambiguated(monkeypatch):
     first = _shadow_event(time="21:00", source_url="https://example.test/a", id=None)
     second = _shadow_event(time="22:30", source_url="https://example.test/b", id=None)

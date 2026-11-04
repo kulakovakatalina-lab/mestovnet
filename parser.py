@@ -2463,11 +2463,23 @@ def retain_existing_events(existing: list[dict], candidates: list[dict]) -> list
     """Admission changes must not remove stored rows, including future events.
 
     Keep regular source corrections/cancellation flags on rows that survived.
-    Restore only missing IDs, without changing the original record.
+    Restore a row when neither a same-ID candidate for that event nor an
+    explicitly reconciled update represents it. A different event can share
+    the same legacy ID, so ID presence alone is insufficient.
     """
-    present = {event.get("id") for event in candidates if event.get("id")}
-    return candidates + [dict(event) for event in existing
-                         if event.get("id") and event["id"] not in present]
+    retained = list(candidates)
+    for old in existing:
+        event_id = old.get("id")
+        if not event_id:
+            continue
+        represented = any(
+            candidate.get("id") == event_id
+            and (candidate.get("auto_updated") or _events_are_duplicates(old, candidate))
+            for candidate in candidates
+        )
+        if not represented:
+            retained.append(dict(old))
+    return retained
 
 
 _EVENT_ID_DIAGNOSTIC_FIELDS = (
@@ -2892,13 +2904,23 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     validation_candidates = list(merged)
     merged, rejected = validate_events(merged)
     accepted_count = len(merged)
-    accepted_ids = {event.get("id") for event in merged if event.get("id")}
+    restored_count = sum(
+        1 for old in existing_before_cleanup
+        if old.get("id") and (
+            not any(
+                candidate.get("id") == old.get("id")
+                and (candidate.get("auto_updated") or _events_are_duplicates(old, candidate))
+                for candidate in merged
+            )
+            or (old.get("date") or "") < moscow_today()
+            and any(candidate.get("id") == old.get("id") and candidate != old
+                    for candidate in merged)
+        )
+    )
     # Защита ставится после всех эвристик и проверки: ни дедупликация, ни
     # очистка артистов не могут переписать архивные карточки.
     merged = preserve_past_events(existing_before_cleanup, merged)
     merged = retain_existing_events(existing_before_cleanup, merged)
-    restored_count = sum(1 for event in merged
-                         if event.get("id") and event["id"] not in accepted_ids)
     merged = finalize_event_ids(
         merged, existing=existing_before_cleanup, stage="after-archive-restoration"
     )
