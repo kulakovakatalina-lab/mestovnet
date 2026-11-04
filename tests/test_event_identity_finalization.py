@@ -62,14 +62,14 @@ def test_different_confirmed_sessions_keep_both_stable_ids_and_published_id():
                 for line in sitemap.splitlines() if "<loc>https://mestov.net/event/" in line}) == 2
 
 
-def test_ambiguous_collision_fails_closed_with_actionable_diagnostic(tmp_path):
+def test_ambiguous_collision_fails_closed_with_actionable_diagnostic(tmp_path, monkeypatch):
     first = _shadow_event(time=None)
     second = _shadow_event(time=None, venue="Другая площадка")
-    diagnostic = tmp_path / "event-id-conflicts.json"
+    diagnostic = tmp_path / "event_id_conflicts.json"
+    monkeypatch.setattr(parser, "CACHE_DIR", str(tmp_path))
 
-    with pytest.raises(parser.EventIdentityConflict, match="event-id-conflicts.json"):
-        parser.finalize_event_ids([first, second], diagnostic_path=str(diagnostic),
-                                  stage="after-archive-restoration")
+    with pytest.raises(parser.EventIdentityConflict, match="event_id_conflicts.json"):
+        parser.finalize_event_ids([first, second], stage="after-archive-restoration")
 
     payload = json.loads(diagnostic.read_text(encoding="utf-8"))
     conflict = payload["conflicts"][0]

@@ -6,7 +6,6 @@ import mimetypes
 import os
 import re
 import subprocess
-import tempfile
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
@@ -2540,7 +2539,7 @@ def _events_are_distinct_sessions(left: dict, right: dict) -> bool:
 
 def _write_event_id_diagnostic(conflicts: list[dict], path: str | None = None) -> str:
     """Write bounded, sanitized conflict facts; provider payloads are excluded."""
-    path = path or os.path.join(tempfile.gettempdir(), "mestovnet-event-id-conflicts.json")
+    path = path or os.path.join(CACHE_DIR, "event_id_conflicts.json")
     payload = {
         "version": 1,
         "conflict_count": len(conflicts),
