@@ -17456,14 +17456,14 @@
     "source_channel": "artcafesnezhinka",
     "genre": "рок",
     "source_url": "https://t.me/artcafesnezhinka/2100",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/66a006284e27ae4e12d92755b6dac83b.jpg"
+    ],
+    "image": "/images/events/66a006284e27ae4e12d92755b6dac83b.jpg",
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
@@ -17479,14 +17479,14 @@
     "source_channel": "artcafesnezhinka",
     "genre": "джаз",
     "source_url": "https://t.me/artcafesnezhinka/2100",
-    "images": null,
-    "image": null,
+    "images": [
+      "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg"
+    ],
+    "image": "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg",
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
