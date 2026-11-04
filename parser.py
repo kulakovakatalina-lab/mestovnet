@@ -6,6 +6,7 @@ import mimetypes
 import os
 import re
 import subprocess
+import tempfile
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
@@ -1644,8 +1645,12 @@ def discard_past_events(events: list[dict], today=None) -> list[dict]:
     return [event for event in events if (event.get("date") or "") >= today]
 
 
-def _print_validation_report(total: int, accepted: int, rejected: Counter) -> None:
-    print(f"Финальная проверка: принято {accepted} из {total}")
+def _print_validation_report(total: int, accepted: int, rejected: Counter,
+                             restored: int = 0) -> None:
+    print(f"Финальная проверка: до проверки {total}, принято {accepted}, "
+          f"отклонено {sum(rejected.values())}")
+    if restored:
+        print(f"  Возвращено из архива после проверки: {restored}")
     for reason, count in rejected.items():
         print(f"  Отклонено — {_VALIDATION_LABELS[reason]}: {count}")
 
@@ -2465,6 +2470,196 @@ def retain_existing_events(existing: list[dict], candidates: list[dict]) -> list
                          if event.get("id") and event["id"] not in present]
 
 
+_EVENT_ID_DIAGNOSTIC_FIELDS = (
+    "id", "date", "time", "artist", "venue", "source_url", "source_channel",
+    "source_city", "event_type", "description", "price", "post_date",
+)
+
+
+class EventIdentityConflict(ValueError):
+    """An ID collision could not be resolved without risking event loss."""
+
+    def __init__(self, conflicts: list[dict], diagnostic: str):
+        super().__init__(f"Неоднозначный конфликт ID событий: {len(conflicts)}; "
+                         f"подробности: {diagnostic}")
+        self.conflicts = conflicts
+        self.diagnostic = diagnostic
+
+
+def _legacy_event_id(event: dict) -> str:
+    key = f"{event.get('source_url', '')}-{event.get('date', '')}-{event.get('artist', '')}"
+    return hashlib.md5(key.encode()).hexdigest()[:8]
+
+
+def _event_identity_fingerprint(event: dict) -> str:
+    """Stable alternate identity from normalized distinguishing event facts."""
+    fields = {
+        "source_url": (event.get("source_url") or "").strip(),
+        "date": (event.get("date") or "").strip(),
+        "artist": _normalize(event.get("artist") or ""),
+        "time": _normalize(event.get("time") or ""),
+        "venue": _normalize_venue(event.get("venue") or ""),
+    }
+    payload = json.dumps(fields, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _event_conflict_facts(event: dict) -> dict:
+    facts = {}
+    for field in _EVENT_ID_DIAGNOSTIC_FIELDS:
+        value = event.get(field)
+        if isinstance(value, str):
+            value = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", value)[:500]
+        facts[field] = value
+    return facts
+
+
+def _events_same_physical_event(left: dict, right: dict) -> bool:
+    """Use the established conservative duplicate contract for a safe merge."""
+    return _events_are_duplicates(left, right)
+
+
+def _events_are_distinct_sessions(left: dict, right: dict) -> bool:
+    """Only explicit, incompatible times prove separate sessions."""
+    left_time = _normalize(left.get("time") or "")
+    right_time = _normalize(right.get("time") or "")
+    return bool(left_time and right_time and left_time != right_time)
+
+
+def _write_event_id_diagnostic(conflicts: list[dict], path: str | None = None) -> str:
+    """Write bounded, sanitized conflict facts; provider payloads are excluded."""
+    path = path or os.path.join(tempfile.gettempdir(), "mestovnet-event-id-conflicts.json")
+    payload = {
+        "version": 1,
+        "conflict_count": len(conflicts),
+        "conflicts": [
+            {**conflict, "events": conflict.get("events", [])[:10]}
+            for conflict in conflicts[:20]
+        ],
+    }
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return str(target)
+
+
+def finalize_event_ids(events: list[dict], existing: list[dict] | None = None,
+                       stage: str = "pre-write", diagnostic_path: str | None = None) -> list[dict]:
+    """Assign stable IDs and fail closed on unresolved collisions.
+
+    Existing IDs are immutable. Same-physical-event rows are consolidated by
+    the normal duplicate contract; different sessions keep both rows and get
+    a SHA-256-derived alternate ID. Other collisions are diagnosed and raised.
+    """
+    existing = existing or []
+    existing_by_id: dict[str, list[dict]] = {}
+    for event in existing:
+        if event.get("id"):
+            existing_by_id.setdefault(str(event["id"]), []).append(event)
+    result = [dict(event) for event in events]
+    for event in result:
+        if not event.get("id"):
+            event["id"] = _legacy_event_id(event)
+
+    grouped: dict[str, list[int]] = {}
+    for index, event in enumerate(result):
+        if event.get("id"):
+            grouped.setdefault(str(event["id"]), []).append(index)
+
+    remove_indices: set[int] = set()
+    conflicts: list[dict] = []
+    for event_id, indices in grouped.items():
+        if len(indices) < 2:
+            continue
+        # Consolidate only when all rows are pairwise duplicates under the
+        # same existing conservative contract used by parser deduplication.
+        rows = [result[index] for index in indices]
+        all_same = all(_events_same_physical_event(rows[i], rows[j])
+                       for i in range(len(rows)) for j in range(i + 1, len(rows)))
+        if all_same:
+            # Prefer the actual archive row if present, preserving its exact ID
+            # and published facts; merge only through the existing helper.
+            archived_positions = [i for i, row in enumerate(rows)
+                                  if any(_events_same_physical_event(row, old)
+                                         for old in existing_by_id.get(event_id, []))]
+            if archived_positions:
+                keep_local = archived_positions[0]
+                archive = rows[keep_local]
+                merged = _merge_events(rows)
+                merged.update(archive)
+                result[indices[keep_local]] = merged
+            else:
+                result[indices[0]] = _merge_events(rows)
+            remove_indices.update(indices[1:] if not archived_positions
+                                  else [indices[i] for i in range(len(indices))
+                                        if i != keep_local])
+            continue
+
+        # Preserve an already-published ID; only a row without that immutable
+        # identity may receive the alternate. Two distinct archived rows with
+        # the same ID cannot be repaired without changing a published URL.
+        archived = [i for i in indices
+                    if any(_events_same_physical_event(result[i], old)
+                           for old in existing_by_id.get(event_id, []))]
+        if len(archived) > 1:
+            classification = "ambiguous"
+        else:
+            distinct = all(_events_are_distinct_sessions(result[i], result[j])
+                           for pos, i in enumerate(indices) for j in indices[pos + 1:])
+            archive_unresolved = bool(existing_by_id.get(event_id)) and not archived
+            classification = (
+                "ambiguous" if archive_unresolved else
+                "distinct_sessions" if distinct else "ambiguous"
+            )
+
+        if classification == "distinct_sessions" and len(archived) <= 1:
+            keep_index = archived[0] if archived else min(
+                indices, key=lambda index: _event_identity_fingerprint(result[index])
+            )
+            fingerprints: set[str] = set()
+            for index in indices:
+                if index == keep_index:
+                    continue
+                event = result[index]
+                fingerprint = _event_identity_fingerprint(event)
+                if fingerprint in fingerprints:
+                    classification = "ambiguous"
+                    break
+                fingerprints.add(fingerprint)
+                event["id"] = f"{_legacy_event_id(event)}-{fingerprint[:12]}"
+            if classification == "distinct_sessions":
+                continue
+
+        conflicts.append({
+            "stage": stage,
+            "classification": classification,
+            "id": event_id,
+            "events": [_event_conflict_facts(result[index]) for index in indices],
+        })
+
+    if remove_indices:
+        result = [event for index, event in enumerate(result) if index not in remove_indices]
+
+    # Detect true 8-character hash collisions and alternate-ID collisions too.
+    by_final_id: dict[str, list[dict]] = {}
+    for event in result:
+        if event.get("id"):
+            by_final_id.setdefault(str(event["id"]), []).append(event)
+    for event_id, rows in by_final_id.items():
+        if len(rows) > 1 and not any(item["id"] == event_id for item in conflicts):
+            conflicts.append({
+                "stage": stage,
+                "classification": "ambiguous_hash_collision",
+                "id": event_id,
+                "events": [_event_conflict_facts(row) for row in rows],
+            })
+
+    if conflicts:
+        diagnostic = _write_event_id_diagnostic(conflicts, diagnostic_path)
+        raise EventIdentityConflict(conflicts, diagnostic)
+    return result
+
+
 def _write_live_music_report(held: list[dict], dry_run: bool) -> None:
     counts = Counter(item["decision"] for item in held)
     print(f"Живая музыка (только новые): исключено {counts['ignore']}, "
@@ -2696,12 +2891,19 @@ def main(days_back: int = DAYS_BACK, dry_run: bool = False):
     before_validation = len(merged)
     validation_candidates = list(merged)
     merged, rejected = validate_events(merged)
+    accepted_count = len(merged)
+    accepted_ids = {event.get("id") for event in merged if event.get("id")}
     # Защита ставится после всех эвристик и проверки: ни дедупликация, ни
     # очистка артистов не могут переписать архивные карточки.
     merged = preserve_past_events(existing_before_cleanup, merged)
     merged = retain_existing_events(existing_before_cleanup, merged)
+    restored_count = sum(1 for event in merged
+                         if event.get("id") and event["id"] not in accepted_ids)
+    merged = finalize_event_ids(
+        merged, existing=existing_before_cleanup, stage="after-archive-restoration"
+    )
 
-    _print_validation_report(before_validation, len(merged), rejected)
+    _print_validation_report(before_validation, accepted_count, rejected, restored_count)
     _print_source_report(source_stats, validation_candidates, merged)
 
     if dry_run:
@@ -2738,6 +2940,7 @@ if __name__ == "__main__":
         valid, rejected = validate_events(deduplicated)
 
         _print_validation_report(len(current), len(valid), rejected)
+        valid = finalize_event_ids(valid, existing=current, stage="validate-existing")
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(valid, f, ensure_ascii=False, indent=2)
         raise SystemExit(0)
