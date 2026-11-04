@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Карбид",
-      "startDate": "2026-11-14",
+      "startDate": "2026-11-14T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"
@@ -47,8 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "RAMMSTEIN TRIBUTE by Карбид.",
-      "image": "/images/events/9e2d0b1a284089098c1c63b98fe45c2b.jpg"
+      "description": "Rammstein tribute by Карбид.",
+      "image": "/images/events/53fe0ef9b393718f2cdf6c2881cd4f24.jpg"
     }
   ]
 }

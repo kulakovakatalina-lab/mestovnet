@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Мираж Огня — Jam Club, Симферополь, 13 ноября · Местов.Нет">
 <meta property="og:description" content="Мираж Огня, Jam Club, в Симферополе, 13 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/4d53f0e3c177bf4ab3fa609408e0cfb2.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/fdb3e2c4cb0ce2d7a712a060387445e2.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -971,7 +971,7 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "Мираж Огня",
-      "startDate": "2026-11-13",
+      "startDate": "2026-11-13T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "АРИЯ ТРИБЬЮТ by Мираж Огня.",
+      "description": "Ария трибьют группой Мираж Огня.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мираж Огня"
       },
-      "image": "/images/events/4d53f0e3c177bf4ab3fa609408e0cfb2.jpg",
+      "image": "/images/events/fdb3e2c4cb0ce2d7a712a060387445e2.jpg",
       "offers": {
         "@type": "Offer",
         "price": "0",

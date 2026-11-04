@@ -1,22 +1,5 @@
 [
   {
-    "id": "3e1f0ed8",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Центр культуры и искусства",
-    "source_city": "Севастополь",
-    "price": "от 1 690 ₽",
-    "genre": "метал",
-    "event_type": "концерт",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "reasons": [
-      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
-    ]
-  },
-  {
     "id": "fa5a00e8",
     "date": "2026-11-07",
     "time": null,
@@ -72,20 +55,75 @@
     ]
   },
   {
-    "id": "f99bac38",
-    "date": "2026-11-03",
-    "time": null,
-    "artist": "Светлана Рубина",
-    "venue": "Скельская пещера, с. Родное",
-    "source_city": "Крым",
-    "price": "2500 ₽",
-    "genre": "классика",
+    "id": "3e1f0ed8",
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
+    "venue": "Центр культуры и искусства",
+    "source_city": "Севастополь",
+    "price": "от 1 690 ₽",
+    "genre": "метал",
     "event_type": "концерт",
-    "description": "«Четыре сезона» прозвучат в исполнении Светланы Рубиной – «Золотой скрипки Крыма».",
-    "image": "/images/events/87982da8277b2adaaecfaaa7c0b32c7f.jpg",
-    "source_url": "https://t.me/afisha_payberry/1654",
+    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "reasons": [
-      "нет времени"
+      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
+    ]
+  },
+  {
+    "id": "6c82da85",
+    "date": "2026-11-04",
+    "time": null,
+    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
+    "venue": "ТАВРИДА.АРТ",
+    "source_city": "Судак",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо». Душевные, энергичные, всеми любимые песни собрали гостей Зелёного фестиваля у главной сцены.",
+    "image": "/images/events/6005300559240f1747a122f0340505d8.jpg",
+    "source_url": "https://t.me/tavrida_art/22524",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "dc5711d6",
+    "date": "2026-11-15",
+    "time": null,
+    "artist": "джаз-трио «А3», Анна Сидоренко",
+    "venue": "Егоровский зал, Массандра",
+    "source_city": "Ялта",
+    "price": null,
+    "genre": "джаз",
+    "event_type": "концерт",
+    "description": "Музыкальная программа, объединившая французскую эстраду и джаз. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
+    "source_url": "https://vk.com/wall-214055536_2453",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "e3d3e501",
+    "date": "2026-11-04",
+    "time": null,
+    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
+    "venue": "главная сцена",
+    "source_city": "Судак",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо».",
+    "image": null,
+    "source_url": "https://vk.com/wall-89840945_121218",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
     ]
   },
   {
@@ -102,7 +140,7 @@
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
     "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
     "reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
     ]
   }
 ]

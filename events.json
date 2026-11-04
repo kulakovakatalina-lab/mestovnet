@@ -16577,7 +16577,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "31966e6e",
@@ -16733,7 +16733,7 @@
     "source_url": "https://t.me/afisha_crimea/8934",
     "images": [
       "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
-      "/images/events/629ffea8b467854b9392a0e526f25df7.jpg"
+      "/images/events/0094240cac89eecbcd2a7a5d53e89a83.jpg"
     ],
     "image": "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
     "post_date": "2026-10-28T18:33:09+00:00",
@@ -16783,68 +16783,6 @@
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "archived"
-  },
-  {
-    "id": "3e1f0ed8",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
-    "event_type": "концерт",
-    "venue": "Центр культуры и искусства",
-    "price": "от 1 690 ₽",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Севастополь",
-    "source_channel": "yandex_afisha",
-    "genre": "метал",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "images": [
-      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
-    ],
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-    "post_date": "2026-11-21",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "price",
-      "genre"
-    ],
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
-    ]
-  },
-  {
-    "id": "6da07ac7",
-    "date": "2027-01-04",
-    "time": "17:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "event_type": "концерт",
-    "venue": "Центр культуры и искусства",
-    "price": "от 1 500 ₽",
-    "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
-    "source_city": "Севастополь",
-    "source_channel": "yandex_afisha",
-    "genre": "поп",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "images": [
-      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
-      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
-    ],
-    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
-    "post_date": "2027-01-04",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "source_last_checked_at": "2026-10-29T02:40:59.946106+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
   },
   {
     "id": "f99ec362",
@@ -16900,7 +16838,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-29",
@@ -17023,7 +16961,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-31",
@@ -17238,7 +17176,7 @@
       "description",
       "genre"
     ],
-    "source_last_checked_at": "2026-11-01T02:33:21.889832+00:00",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
@@ -17394,7 +17332,7 @@
     "genre": "фолк",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-22",
@@ -17442,8 +17380,7 @@
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "review_reasons": []
   },
   {
     "id": "426a4651",
@@ -17465,8 +17402,7 @@
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "review_reasons": []
   },
   {
     "date": "2026-11-03",
@@ -17484,69 +17420,11 @@
     "source_url": "https://t.me/afisha_payberry/1654",
     "id": "f99bac38",
     "genre": "классика",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "time": null,
-    "artist": "Мираж Огня",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "АРИЯ ТРИБЬЮТ by Мираж Огня.",
-    "image": "/images/events/4d53f0e3c177bf4ab3fa609408e0cfb2.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:04:07+00:00",
-    "source_url": "https://t.me/clubjam/1183",
-    "id": "243266a6",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "time",
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
     "needs_review": false,
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-14",
-    "time": null,
-    "artist": "Карбид",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "RAMMSTEIN TRIBUTE by Карбид.",
-    "image": "/images/events/9e2d0b1a284089098c1c63b98fe45c2b.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:13:12+00:00",
-    "source_url": "https://t.me/clubjam/1184",
-    "id": "22d6734d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-03",
@@ -17572,7 +17450,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-07",
@@ -17642,26 +17520,29 @@
     "moderation_status": "approved"
   },
   {
+    "id": "3d2ff3be",
     "date": "2026-11-19",
     "time": "19:00",
     "artist": "Хиты 2000-х. Караоке с оркестром",
-    "venue": "Ribiza",
     "event_type": "концерт",
+    "venue": "Ribiza",
     "price": "от 2500 ₽",
     "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-    "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-11-03T04:09:25.620775+00:00",
-    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "source_channel": "afisha_ru",
     "genre": "рок",
-    "id": "3d2ff3be",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "images": [
+      "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
+    ],
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "post_date": "2026-11-04T17:28:07.574807+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
     ],
+    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -17692,6 +17573,310 @@
     "moderation_status": "approved"
   },
   {
+    "id": "cf5124e9",
+    "date": "2026-11-08",
+    "time": "19:00",
+    "artist": "маэстро Денис Карлов, Камерный оркестр «Новая гармония»",
+    "event_type": "концерт",
+    "venue": "Симферополь, Киевская, 80",
+    "price": null,
+    "description": "Открытие сезона. На сцене — Камерный оркестр 'Новая гармония' и маэстро Денис Карлов. В программе: Моцарт, Пёрселл и другие великие композиторы.",
+    "source_city": "Симферополь",
+    "source_channel": "crimea_event",
+    "genre": "классика",
+    "source_url": "https://t.me/afisha_crimea/9021",
+    "images": [
+      "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg",
+      "/images/events/360313372e8e9e5600b8b45980827686.jpg"
+    ],
+    "image": "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg",
+    "post_date": "2026-11-03T12:10:25+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "f4f0de78",
+    "date": "2026-11-06",
+    "time": "21:00",
+    "artist": "Группа «Проект С»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Главные хиты мирового рок-н-ролла и танцевальная музыка.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-04T15:18:01+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "0ee6b0c3",
+    "date": "2026-11-13",
+    "time": "21:00",
+    "artist": "Jokers Band",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Jokers Band show и только живой звук: танцевальные рок-поп хиты и невероятная харизма",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "поп-рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "37a9b83b",
+    "date": "2026-11-15",
+    "time": "21:00",
+    "artist": "Алекс Бах",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "авторская",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "275ce12f",
+    "date": "2026-11-21",
+    "time": "21:00",
+    "artist": "Группа «Домино»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино». Не акустика",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "поп-рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "ecca5b7c",
+    "date": "2026-11-27",
+    "time": "21:00",
+    "artist": "Группа «Денайро»",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": null,
+    "description": "Любимые и танцевальные рок-поп хиты в живом исполнении группы «Денайро»",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "поп-рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "67c8bb8c",
+    "date": "2026-11-28",
+    "time": "21:00",
+    "artist": "Группа «Тень Клоуна»",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "1000₽",
+    "description": "Большая премьера! Страшные сказки тёмного леса: трибьют «Короля и Шута» в исполнении группы «Тень Клоуна»",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "id": "91edb4a0",
+    "date": "2026-11-07",
+    "time": "20:00",
+    "artist": "Мятный гром band",
+    "event_type": "вечеринка",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "200 ₽",
+    "description": "Рок-вечеринка: Живой звук и море драйва.",
+    "source_city": "Севастополь",
+    "source_channel": "u_blacksea_rest",
+    "genre": "рок",
+    "source_url": "https://vk.com/wall-233167471_1116",
+    "images": [
+      "/images/events/82cf3eb69c4971ca00d374d548980802.jpg"
+    ],
+    "image": "/images/events/82cf3eb69c4971ca00d374d548980802.jpg",
+    "post_date": "2026-11-02T13:53:26+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2026-11-13",
+    "time": "18:00",
+    "artist": "Мираж Огня",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Ария трибьют группой Мираж Огня.",
+    "image": "/images/events/fdb3e2c4cb0ce2d7a712a060387445e2.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:04:07+00:00",
+    "source_url": "https://t.me/clubjam/1183",
+    "id": "243266a6",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "time",
+      "description",
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "18:00",
+    "artist": "Карбид",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Rammstein tribute by Карбид.",
+    "image": "/images/events/53fe0ef9b393718f2cdf6c2881cd4f24.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:13:12+00:00",
+    "source_url": "https://t.me/clubjam/1184",
+    "id": "22d6734d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "time",
+      "description",
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
+    "venue": "Центр культуры и искусства",
+    "event_type": "концерт",
+    "price": "от 1 690 ₽",
+    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-21",
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "id": "3e1f0ed8",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "метал",
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
+    ]
+  },
+  {
+    "date": "2027-01-04",
+    "time": "17:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Центр культуры и искусства",
+    "event_type": "концерт",
+    "price": "от 1 500 ₽",
+    "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
+    "source_channel": "yandex_afisha",
+    "source_city": "Севастополь",
+    "post_date": "2027-01-04",
+    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "id": "6da07ac7",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
     "date": "2026-11-07",
     "time": "17:00",
     "artist": "Концерт «Музыкальные истины»",
@@ -17701,12 +17886,12 @@
     "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
     "source_channel": "afisha_goroda",
     "source_city": "Ялта",
-    "post_date": "2026-11-03T04:09:40.255615+00:00",
+    "post_date": "2026-11-04T17:28:21.476382+00:00",
     "image": "/images/events/cc9ae9a9640e0a99c9c5d8f470a98323.jpg",
     "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
     "id": "1b488e3a",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -17726,12 +17911,12 @@
     "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
     "source_channel": "afisha_goroda",
     "source_city": "Феодосия",
-    "post_date": "2026-11-03T04:09:41.281202+00:00",
+    "post_date": "2026-11-04T17:28:21.476494+00:00",
     "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
     "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
     "id": "e507a0c1",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-03T04:09:45.670202+00:00",
+    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -17742,198 +17927,116 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-08",
-    "time": "19:00",
-    "artist": "маэстро Денис Карлов, Камерный оркестр «Новая гармония»",
+    "date": "2026-11-04",
+    "time": null,
+    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
     "event_type": "концерт",
-    "venue": "Симферополь, Киевская, 80",
+    "venue": "ТАВРИДА.АРТ",
     "price": null,
-    "description": "«Музыкальные вечера в Чистых прудах» открывают новый сезон. В программе: Моцарт, Пёрселл и другие великие композиторы.",
-    "image": "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg",
+    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо». Душевные, энергичные, всеми любимые песни собрали гостей Зелёного фестиваля у главной сцены.",
+    "image": "/images/events/6005300559240f1747a122f0340505d8.jpg",
     "images": null,
-    "source_channel": "afisha_crimea",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T17:04:04+00:00",
-    "source_url": "https://t.me/afisha_crimea/9021",
-    "id": "cf5124e9",
-    "genre": "классика",
-    "needs_review": false,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-11-04T17:01:47+00:00",
+    "source_url": "https://t.me/tavrida_art/22524",
+    "id": "6c82da85",
+    "genre": "поп",
+    "needs_review": true,
     "review_reasons": [
+      "нет времени",
       "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-06",
-    "time": "21:00",
-    "artist": "Группа «Проект С»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Главные хиты мирового рок-н-ролла и любимая танцевальная музыка от группы «Проект С». Не акустика",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "f4f0de78",
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-13",
-    "time": "21:00",
-    "artist": "Jokers Band",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Jokers Band show и только живой звук: танцевальные рок-поп хиты и невероятная харизма",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "0ee6b0c3",
-    "genre": "поп-рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
+    ]
   },
   {
     "date": "2026-11-15",
-    "time": "21:00",
-    "artist": "Алекс Бах",
+    "time": null,
+    "artist": "джаз-трио «А3», Анна Сидоренко",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
+    "venue": "Егоровский зал, Массандра",
     "price": null,
-    "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "description": "Музыкальная программа, объединившая французскую эстраду и джаз. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
     "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "37a9b83b",
-    "genre": "авторская",
-    "needs_review": false,
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Ялта",
+    "post_date": "2026-11-04T14:01:10+00:00",
+    "source_url": "https://vk.com/wall-214055536_2453",
+    "id": "dc5711d6",
+    "genre": "джаз",
+    "needs_review": true,
     "review_reasons": [
+      "нет времени",
       "нет цены"
-    ],
-    "moderation_status": "approved"
+    ]
   },
   {
-    "date": "2026-11-21",
-    "time": "21:00",
-    "artist": "Группа «Домино»",
+    "date": "2026-11-04",
+    "time": null,
+    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
+    "venue": "главная сцена",
     "price": null,
-    "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино». Не акустика",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо».",
+    "image": null,
     "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "275ce12f",
-    "genre": "поп-рок",
-    "needs_review": false,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-11-04T16:59:00+00:00",
+    "source_url": "https://vk.com/wall-89840945_121218",
+    "id": "e3d3e501",
+    "genre": "поп",
+    "needs_review": true,
     "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
   },
   {
-    "date": "2026-11-27",
-    "time": "21:00",
-    "artist": "Группа «Денайро»",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Любимые и танцевальные рок-поп хиты в живом исполнении группы «Денайро»",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "ecca5b7c",
-    "genre": "поп-рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-28",
-    "time": "21:00",
-    "artist": "Группа «Тень Клоуна»",
-    "event_type": "трибьют",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "1000₽",
-    "description": "Большая премьера! Страшные сказки тёмного леса: трибьют «Короля и Шута» в исполнении группы «Тень Клоуна»",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "images": null,
-    "source_channel": "rocknroll_82",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "67c8bb8c",
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
-    "id": "91edb4a0",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "time": "20:00",
     "artist": "Мятный гром band",
     "event_type": "вечеринка",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "200 ₽",
-    "description": "Рок-вечеринка: Живой звук и море драйва.",
-    "source_city": "Севастополь",
+    "venue": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "price": null,
+    "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
+    "image": null,
+    "images": null,
     "source_channel": "u_blacksea_rest",
-    "genre": "рок",
-    "source_url": "https://vk.com/wall-233167471_1116",
-    "images": [
-      "/images/events/82cf3eb69c4971ca00d374d548980802.jpg",
-      "/images/events/a7d2d444ab245d140d704af123c1d744.jpg"
-    ],
-    "image": "/images/events/82cf3eb69c4971ca00d374d548980802.jpg",
+    "source_city": "Севастополь",
     "post_date": "2026-11-02T13:53:26+00:00",
-    "source_status": "active",
+    "source_url": "https://vk.com/wall-233167471_1123",
+    "id": "e405828c",
+    "genre": "рок",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
   },
   {
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Севастопольский ЦКиИ",
-    "event_type": "концерт",
-    "price": "от 1690 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "afisha_ru",
+    "date": "2026-11-04",
+    "time": "20:00",
+    "artist": "Мятный гром band",
+    "event_type": "вечеринка",
+    "venue": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "price": null,
+    "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
+    "image": "/images/events/a7d2d444ab245d140d704af123c1d744.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
     "source_city": "Севастополь",
-    "post_date": "2026-11-03T04:09:25.620660+00:00",
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "genre": "метал",
-    "id": "3fe52eb3",
-    "needs_review": true,
+    "post_date": "2026-10-29T08:18:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1112",
+    "id": "9fc7d68c",
+    "genre": "рок",
+    "needs_review": false,
     "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
-    ]
+      "нет цены"
+    ],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-11",
@@ -17958,5 +18061,25 @@
       "нет цены"
     ],
     "moderation_status": "archived"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "event_type": "концерт",
+    "price": "от 1690 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-03T04:09:25.620660+00:00",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "genre": "метал",
+    "id": "3fe52eb3",
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
+    ]
   }
 ]
