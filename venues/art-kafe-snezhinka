@@ -47,7 +47,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "ТРИО «ВЕГА»"
-      }
+      },
+      "image": "/images/events/66a006284e27ae4e12d92755b6dac83b.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -61,7 +62,8 @@
       "performer": {
         "@type": "MusicGroup",
         "name": "Андрей Рыбальченко VS Андрей Гнатюк"
-      }
+      },
+      "image": "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg"
     }
   ]
 }
