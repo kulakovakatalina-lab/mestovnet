@@ -980,7 +980,7 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
+      "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band».",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мятный гром band"

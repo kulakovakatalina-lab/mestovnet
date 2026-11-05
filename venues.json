@@ -2686,6 +2686,20 @@
     "lon": null
   },
   {
+    "slug": "glavnaya-stsena",
+    "name": "главная сцена",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "главная сцена"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "egorovskiy-zal-massandra",
     "name": "Егоровский зал, Массандра",
     "city": "Ялта",
@@ -2700,13 +2714,13 @@
     "lon": null
   },
   {
-    "slug": "glavnaya-stsena",
-    "name": "главная сцена",
-    "city": "Судак",
+    "slug": "ulitochnaya-ferma-1-mama-dema",
+    "name": "Улиточная ферма №1 «Мама Дёма»",
+    "city": "Алушта",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "главная сцена"
+      "Улиточная ферма №1 «Мама Дёма»"
     ],
     "description": null,
     "desc_baseline_count": 0,

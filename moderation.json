@@ -72,61 +72,6 @@
     ]
   },
   {
-    "id": "6c82da85",
-    "date": "2026-11-04",
-    "time": null,
-    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
-    "venue": "ТАВРИДА.АРТ",
-    "source_city": "Судак",
-    "price": null,
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо». Душевные, энергичные, всеми любимые песни собрали гостей Зелёного фестиваля у главной сцены.",
-    "image": "/images/events/6005300559240f1747a122f0340505d8.jpg",
-    "source_url": "https://t.me/tavrida_art/22524",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
-    "id": "dc5711d6",
-    "date": "2026-11-15",
-    "time": null,
-    "artist": "джаз-трио «А3», Анна Сидоренко",
-    "venue": "Егоровский зал, Массандра",
-    "source_city": "Ялта",
-    "price": null,
-    "genre": "джаз",
-    "event_type": "концерт",
-    "description": "Музыкальная программа, объединившая французскую эстраду и джаз. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
-    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-    "source_url": "https://vk.com/wall-214055536_2453",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
-    "id": "e3d3e501",
-    "date": "2026-11-04",
-    "time": null,
-    "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
-    "venue": "главная сцена",
-    "source_city": "Судак",
-    "price": null,
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "На главной сцене выступили хедлайнеры Filatov & Karas и Александр Иванов и группа «Рондо».",
-    "image": null,
-    "source_url": "https://vk.com/wall-89840945_121218",
-    "reasons": [
-      "нет времени",
-      "нет цены",
-      "нет постера"
-    ]
-  },
-  {
     "id": "3fe52eb3",
     "date": "2026-11-21",
     "time": "18:00",
@@ -141,6 +86,24 @@
     "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
     "reasons": [
       "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
+    ]
+  },
+  {
+    "id": "6f99b2d5",
+    "date": "2026-11-07",
+    "time": null,
+    "artist": "Ксения Белокопытова",
+    "venue": "Улиточная ферма №1 «Мама Дёма»",
+    "source_city": "Алушта",
+    "price": null,
+    "genre": "джаз",
+    "event_type": "концерт",
+    "description": "Фестиваль «Революция вкуса»: пение под гитару на веранде фермы.",
+    "image": "/images/events/eb389c8ecb14b2037ede6212c391a627.jpg",
+    "source_url": "https://vk.com/wall-82058148_1153",
+    "reasons": [
+      "нет времени",
+      "нет цены"
     ]
   }
 ]

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>г. Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в г. Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в г. Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/g-sevastopol">
   <meta property="og:title" content="г. Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в г. Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в г. Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -39,27 +39,12 @@
     {
       "@type": "MusicEvent",
       "name": "Мятный гром band",
-      "startDate": "2026-11-04T20:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "г. Севастополь"
-      },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мятный гром band"
-      },
-      "image": "/images/events/a7d2d444ab245d140d704af123c1d744.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Мятный гром band",
       "startDate": "2026-11-08T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "г. Севастополь"
       },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
+      "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band».",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мятный гром band"

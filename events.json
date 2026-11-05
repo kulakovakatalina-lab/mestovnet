@@ -10486,7 +10486,8 @@
     "genre": "рок",
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "images": [
-      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
+      "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
+      "/images/events/12362a59e8904f259b2f43ec24ee3daf.jpg"
     ],
     "image": "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg",
     "post_date": "2026-11-09",
@@ -16606,7 +16607,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "0e3c71f6",
@@ -17166,8 +17167,7 @@
     "genre": "метал",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
     ],
     "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
     "post_date": "2026-11-20",
@@ -17333,32 +17333,6 @@
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "archived"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Ночные грузчики",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1 500 ₽",
-    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-22",
-    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
-    "id": "5b3c759f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-02T02:47:29.105415+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
   },
   {
     "id": "d9c96bd8",
@@ -17536,7 +17510,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-04T17:28:07.574807+00:00",
+    "post_date": "2026-11-05T03:44:10.777661+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -17570,7 +17544,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "cf5124e9",
@@ -17768,62 +17742,6 @@
     "review_reasons": []
   },
   {
-    "date": "2026-11-13",
-    "time": "18:00",
-    "artist": "Мираж Огня",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Ария трибьют группой Мираж Огня.",
-    "image": "/images/events/fdb3e2c4cb0ce2d7a712a060387445e2.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:04:07+00:00",
-    "source_url": "https://t.me/clubjam/1183",
-    "id": "243266a6",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "time",
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-14",
-    "time": "18:00",
-    "artist": "Карбид",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Rammstein tribute by Карбид.",
-    "image": "/images/events/53fe0ef9b393718f2cdf6c2881cd4f24.jpg",
-    "images": null,
-    "source_channel": "clubjam",
-    "source_city": "Симферополь",
-    "post_date": "2026-10-22T18:13:12+00:00",
-    "source_url": "https://t.me/clubjam/1184",
-    "id": "22d6734d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "time",
-      "description",
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-21",
     "time": "18:00",
     "artist": "Аура Шоу. Главная музыка столетия. Новая…",
@@ -17877,56 +17795,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-07",
-    "time": "17:00",
-    "artist": "Концерт «Музыкальные истины»",
-    "venue": "Винзавод «Массандра»",
-    "event_type": "концерт",
-    "price": "1100 - 2000",
-    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Ялта",
-    "post_date": "2026-11-04T17:28:21.476382+00:00",
-    "image": "/images/events/cc9ae9a9640e0a99c9c5d8f470a98323.jpg",
-    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
-    "id": "1b488e3a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-15",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1200 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-11-04T17:28:21.476494+00:00",
-    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "e507a0c1",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-04T17:28:27.118482+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-04",
     "time": null,
     "artist": "группа «Рондо», Filatov, Karas, Александр Иванов",
@@ -17942,33 +17810,12 @@
     "source_url": "https://t.me/tavrida_art/22524",
     "id": "6c82da85",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "time": null,
-    "artist": "джаз-трио «А3», Анна Сидоренко",
-    "event_type": "концерт",
-    "venue": "Егоровский зал, Массандра",
-    "price": null,
-    "description": "Музыкальная программа, объединившая французскую эстраду и джаз. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
-    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-    "images": null,
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Ялта",
-    "post_date": "2026-11-04T14:01:10+00:00",
-    "source_url": "https://vk.com/wall-214055536_2453",
-    "id": "dc5711d6",
-    "genre": "джаз",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-04",
@@ -17986,35 +17833,13 @@
     "source_url": "https://vk.com/wall-89840945_121218",
     "id": "e3d3e501",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены",
       "нет постера"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "time": "20:00",
-    "artist": "Мятный гром band",
-    "event_type": "вечеринка",
-    "venue": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
-    "price": null,
-    "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
-    "image": null,
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-02T13:53:26+00:00",
-    "source_url": "https://vk.com/wall-233167471_1123",
-    "id": "e405828c",
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-04",
@@ -18036,7 +17861,237 @@
     "review_reasons": [
       "нет цены"
     ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "event_type": "концерт",
+    "price": "от 1690 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-03T04:09:25.620660+00:00",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "genre": "метал",
+    "id": "3fe52eb3",
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "time": "18:00",
+    "artist": "Мираж Огня",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Ария трибьют группой Мираж Огня.",
+    "image": "/images/events/03eddc8918166e1b220419a522019aee.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:04:07+00:00",
+    "source_url": "https://t.me/clubjam/1183",
+    "id": "243266a6",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
     "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "18:00",
+    "artist": "Карбид",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Rammstein tribute by Карбид.",
+    "image": "/images/events/c158192125b052f97787661c9fd2e7aa.jpg",
+    "images": null,
+    "source_channel": "clubjam",
+    "source_city": "Симферополь",
+    "post_date": "2026-10-22T18:13:12+00:00",
+    "source_url": "https://t.me/clubjam/1184",
+    "id": "22d6734d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-15",
+    "time": null,
+    "artist": "джаз-трио «А3», Анна Сидоренко",
+    "event_type": "концерт",
+    "venue": "Егоровский зал, Массандра",
+    "price": null,
+    "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
+    "images": null,
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Ялта",
+    "post_date": "2026-11-04T14:01:10+00:00",
+    "source_url": "https://vk.com/wall-214055536_2453",
+    "id": "dc5711d6",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-08",
+    "time": "20:00",
+    "artist": "Мятный гром band",
+    "event_type": "вечеринка",
+    "venue": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "price": null,
+    "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band».",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-02T13:53:26+00:00",
+    "source_url": "https://vk.com/wall-233167471_1123",
+    "id": "e405828c",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Ночные грузчики",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1 500 ₽",
+    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-22",
+    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
+    "id": "5b3c759f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-07",
+    "time": "17:00",
+    "artist": "Концерт «Музыкальные истины»",
+    "venue": "Винзавод «Массандра»",
+    "event_type": "концерт",
+    "price": "1100 - 2000",
+    "description": "Концерт «Музыкальные истины» — концерт в Винзавод «Массандра», Ялта.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Ялта",
+    "post_date": "2026-11-05T03:44:24.240610+00:00",
+    "image": "/images/events/cc9ae9a9640e0a99c9c5d8f470a98323.jpg",
+    "source_url": "https://yalta.afishagoroda.ru/events/koncert-muzykalnye-istiny-2026",
+    "id": "1b488e3a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-11-05T03:44:24.240739+00:00",
+    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-07",
+    "time": null,
+    "artist": "Ксения Белокопытова",
+    "event_type": "концерт",
+    "venue": "Улиточная ферма №1 «Мама Дёма»",
+    "price": null,
+    "description": "Фестиваль «Революция вкуса»: пение под гитару на веранде фермы.",
+    "image": "/images/events/eb389c8ecb14b2037ede6212c391a627.jpg",
+    "images": null,
+    "source_channel": "skazhitejazz",
+    "source_city": "Алушта",
+    "post_date": "2026-10-31T08:11:49+00:00",
+    "source_url": "https://vk.com/wall-82058148_1153",
+    "id": "6f99b2d5",
+    "genre": "джаз",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
   },
   {
     "date": "2026-08-11",
@@ -18061,25 +18116,5 @@
       "нет цены"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Севастопольский ЦКиИ",
-    "event_type": "концерт",
-    "price": "от 1690 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "afisha_ru",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-03T04:09:25.620660+00:00",
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "genre": "метал",
-    "id": "3fe52eb3",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
-    ]
   }
 ]

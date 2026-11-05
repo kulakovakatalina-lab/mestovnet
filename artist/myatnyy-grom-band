@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мятный гром band — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Мятный гром band в Крыму (Севастополь). 3 ближайших событий.">
+  <meta name="description" content="Расписание концертов Мятный гром band в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/myatnyy-grom-band">
   <meta property="og:title" content="Мятный гром band — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Мятный гром band в Крыму (Севастополь). 3 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Мятный гром band в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Мятный гром band"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Мятный гром band",
-      "startDate": "2026-11-04T20:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мятный гром band"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band».",
-      "image": "/images/events/a7d2d444ab245d140d704af123c1d744.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -87,7 +67,7 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Выступит группа «Мятный гром band»."
+      "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band»."
     }
   ]
 }

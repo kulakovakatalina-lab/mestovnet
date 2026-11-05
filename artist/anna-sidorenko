@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Сидоренко — концерты в Крыму, Севастополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Сидоренко в Крыму (Севастополь, Ялта). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Сидоренко в Крыму (Севастополь, Ялта). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-sidorenko">
   <meta property="og:title" content="Анна Сидоренко — концерты в Крыму, Севастополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Сидоренко в Крыму (Севастополь, Ялта). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Сидоренко в Крыму (Севастополь, Ялта). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Сидоренко"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Сидоренко",
+      "startDate": "2026-11-15",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Сидоренко"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Егоровский зал, Массандра",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ялта",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+      "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg"
     }
   ]
 }
