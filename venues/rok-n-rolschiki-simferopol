@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/rok-n-rolschiki-simferopol">
   <meta property="og:title" content="Рок-н-рольщики (Симферополь) — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 6 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Рок-н-рольщики (Симферополь), в Симферополе. 5 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Проект С»",
-      "startDate": "2026-11-06T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)"
-      },
-      "description": "Главные хиты мирового рок-н-ролла и танцевальная музыка.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Проект С»"
-      },
-      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
     },
     {
       "@type": "MusicEvent",

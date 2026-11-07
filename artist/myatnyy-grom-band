@@ -53,21 +53,21 @@
     {
       "@type": "MusicEvent",
       "name": "Мятный гром band",
-      "startDate": "2026-11-08T20:00:00+03:00",
+      "startDate": "2026-11-08T19:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Мятный гром band"
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band»."
+      "description": "Рок-вечеринка: Живой звук и море драйва. Для вас выступит группа «Мятный гром band». Только живой звук, никаких фонограмм и только авторский материал."
     }
   ]
 }
@@ -1059,7 +1059,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Мятный гром band", "Мятный гром band"];
+const ARTIST_ALIASES = ["Группа «Мятный гром band»", "Мятный гром band", "Мятный гром band"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

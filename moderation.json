@@ -55,23 +55,6 @@
     ]
   },
   {
-    "id": "3e1f0ed8",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
-    "venue": "Центр культуры и искусства",
-    "source_city": "Севастополь",
-    "price": "от 1 690 ₽",
-    "genre": "метал",
-    "event_type": "концерт",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "reasons": [
-      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
-    ]
-  },
-  {
     "id": "3fe52eb3",
     "date": "2026-11-21",
     "time": "18:00",
@@ -85,22 +68,75 @@
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
     "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
     "reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
     ]
   },
   {
-    "id": "6f99b2d5",
+    "id": "3e1f0ed8",
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Центр культуры и искусства",
+    "source_city": "Севастополь",
+    "price": "от 1 690 ₽",
+    "genre": "метал",
+    "event_type": "концерт",
+    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "reasons": [
+      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
+    ]
+  },
+  {
+    "id": "4ca88c6f",
     "date": "2026-11-07",
     "time": null,
-    "artist": "Ксения Белокопытова",
-    "venue": "Улиточная ферма №1 «Мама Дёма»",
-    "source_city": "Алушта",
+    "artist": "Дмитрий Лебедев (\"Ничего Кроме Правды\")",
+    "venue": "Jam Club",
+    "source_city": "Симферополь",
+    "price": "бесплатно",
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Большой акустический концерт BLACK TEARS",
+    "image": null,
+    "source_url": "https://t.me/clubjam/1191",
+    "reasons": [
+      "нет времени",
+      "нет постера"
+    ]
+  },
+  {
+    "id": "510bf157",
+    "date": "2026-11-20",
+    "time": null,
+    "artist": "джаз-трио «А3»",
+    "venue": "Джаз-клуб «Ирей»",
+    "source_city": "Симферополь",
     "price": null,
     "genre": "джаз",
     "event_type": "концерт",
-    "description": "Фестиваль «Революция вкуса»: пение под гитару на веранде фермы.",
-    "image": "/images/events/eb389c8ecb14b2037ede6212c391a627.jpg",
-    "source_url": "https://vk.com/wall-82058148_1153",
+    "description": "Встреча восточных музыкальных традиций и джазовой импровизации. Необычное сочетание этнических инструментов, народных мотивов и современных музыкальных ритмов.",
+    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "bb91d851",
+    "date": "2026-11-22",
+    "time": null,
+    "artist": "Анна Шакель, джаз-трио «А3»",
+    "venue": "Научный",
+    "source_city": "Научный",
+    "price": null,
+    "genre": "джаз",
+    "event_type": "концерт",
+    "description": "«Джаз при свечах». Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
+    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
     "reasons": [
       "нет времени",
       "нет цены"

@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 56,
+    "event_count": 57,
     "aliases": [
       "Jam Club"
     ],
@@ -122,6 +122,22 @@
     "lon": 34.279458
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 16,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "За столиками здесь слушают живой вокал, танцуют под хиты 80–90-х и поют вместе с оркестром. Ирина Депутович ведёт ретровечеринки и музыкальные игры, Севастопольский эстрадный оркестр Валентина Таева привозит рок-хиты, а Любовь Фатеева играет мировые мелодии на виолончели.",
+    "desc_baseline_count": 13,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
     "name": "Пляж-кафе Van Gogh, Массандровский пляж",
     "city": "Ялта",
@@ -152,22 +168,6 @@
     "desc_baseline_count": 16,
     "lat": 44.9474,
     "lon": 34.1258
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 15,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "За столиками здесь слушают живой вокал, танцуют под хиты 80–90-х и поют вместе с оркестром. Ирина Депутович ведёт ретровечеринки и музыкальные игры, Севастопольский эстрадный оркестр Валентина Таева привозит рок-хиты, а Любовь Фатеева играет мировые мелодии на виолончели.",
-    "desc_baseline_count": 13,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "el-capulco-0-0",
@@ -265,26 +265,11 @@
     "lon": 36.427239
   },
   {
-    "slug": "dvorets-kultury-profsoyuzov",
-    "name": "Дворец культуры профсоюзов",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 10,
-    "aliases": [
-      "ДК профсоюзов",
-      "Дворец культуры профсоюзов"
-    ],
-    "description": "На этой сцене встречаются шансон, хоровая музыка и оркестровые шоу. Здесь выступают Владимир Ждамиров, хор Сретенского монастыря и Jawa с песнями «Сектора Газа». А на «Симфонии оживших картин» музыка оркестра сопровождает мировую живопись в свете свечей.",
-    "desc_baseline_count": 10,
-    "lat": 44.964773,
-    "lon": 34.106607
-  },
-  {
     "slug": "vinzavod-massandra",
     "name": "Винзавод Массандра",
     "city": "Ялта",
     "address": "ул. Винодела Егорова, 9",
-    "event_count": 9,
+    "event_count": 10,
     "aliases": [
       "Винзавод «Массандра»",
       "Винзавод Массандра",
@@ -301,18 +286,34 @@
     "name": "Театр им. А.П. Чехова",
     "city": "Ялта",
     "address": "Екатерининская ул., 13",
-    "event_count": 9,
+    "event_count": 10,
     "aliases": [
       "Колонный зал театра им. А.П. Чехова",
       "Театр им. А. П. Чехова",
       "Театр им. А.П. Чехова",
       "Театр имени А.П. Чехова, Екатерининская ул., 13",
-      "Ялтинский театр им. Чехова"
+      "Ялтинский театр им. Чехова",
+      "театр им. А. П. Чехова"
     ],
     "description": "В ялтинском театре слушают и симфонический оркестр, и шансон, и молодую поп-сцену. Здесь выступает AdrenalinHouse, звучат песни Владимира Ждамирова и музыкальное посвящение Анне Герман. Для камерных программ используют в том числе Колонный зал.",
     "desc_baseline_count": 9,
     "lat": 44.492566,
     "lon": 34.162337
+  },
+  {
+    "slug": "dvorets-kultury-profsoyuzov",
+    "name": "Дворец культуры профсоюзов",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 10,
+    "aliases": [
+      "ДК профсоюзов",
+      "Дворец культуры профсоюзов"
+    ],
+    "description": "На этой сцене встречаются шансон, хоровая музыка и оркестровые шоу. Здесь выступают Владимир Ждамиров, хор Сретенского монастыря и Jawa с песнями «Сектора Газа». А на «Симфонии оживших картин» музыка оркестра сопровождает мировую живопись в свете свечей.",
+    "desc_baseline_count": 10,
+    "lat": 44.964773,
+    "lon": 34.106607
   },
   {
     "slug": "centrum",
@@ -528,6 +529,20 @@
     "lon": 33.520121
   },
   {
+    "slug": "nauchnyy",
+    "name": "Научный",
+    "city": "Научный",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Научный"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "btr-bar-tyazhelogo-roka",
     "name": "БТР / Бар тяжёлого рока",
     "city": "Севастополь",
@@ -684,20 +699,6 @@
     "desc_baseline_count": 4,
     "lat": 44.498096,
     "lon": 34.178866
-  },
-  {
-    "slug": "nauchnyy",
-    "name": "Научный",
-    "city": "Крым",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Научный"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "vinnyy-park-ponizovka",
@@ -1258,6 +1259,20 @@
     "lon": null
   },
   {
+    "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo-simferopol",
+    "name": "Музыкальное училище им. П. И. Чайковского",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Музыкальное училище им. П. И. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "galereya-im-ayvazovskogo",
     "name": "Галерея им. Айвазовского",
     "city": "Феодосия",
@@ -1272,13 +1287,13 @@
     "lon": 35.382656
   },
   {
-    "slug": "livadiyskiy-dvorets-belyy-zal",
-    "name": "Ливадийский дворец, Белый зал",
-    "city": "Ялта",
+    "slug": "stski",
+    "name": "СЦКИ",
+    "city": "Севастополь",
     "address": "",
     "event_count": 2,
     "aliases": [
-      "Ливадийский дворец, Белый зал"
+      "СЦКИ"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -1286,13 +1301,13 @@
     "lon": null
   },
   {
-    "slug": "g-sevastopol",
-    "name": "г. Севастополь",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "slug": "livadiyskiy-dvorets-belyy-zal",
+    "name": "Ливадийский дворец, Белый зал",
+    "city": "Ялта",
+    "address": "",
     "event_count": 2,
     "aliases": [
-      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
+      "Ливадийский дворец, Белый зал"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2336,20 +2351,6 @@
     "lon": null
   },
   {
-    "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo-simferopol",
-    "name": "Музыкальное училище им. П. И. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музыкальное училище им. П. И. Чайковского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "muzykalnoe-uchilische-imeni-p-i-chaykovskogo",
     "name": "музыкальное училище имени П. И. Чайковского",
     "city": "Симферополь",
@@ -2441,20 +2442,6 @@
     "event_count": 1,
     "aliases": [
       "Круглый зал гостиницы Крымской астрофизической обсерватории, ул Научная, 56, п Научный, Бахчисарайский р-н"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "stski",
-    "name": "СЦКИ",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "СЦКИ"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2700,13 +2687,13 @@
     "lon": null
   },
   {
-    "slug": "egorovskiy-zal-massandra",
-    "name": "Егоровский зал, Массандра",
-    "city": "Ялта",
-    "address": "",
+    "slug": "g-sevastopol",
+    "name": "г. Севастополь",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8, ресторан «У Чёрного моря»",
     "event_count": 1,
     "aliases": [
-      "Егоровский зал, Массандра"
+      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2721,6 +2708,48 @@
     "event_count": 1,
     "aliases": [
       "Улиточная ферма №1 «Мама Дёма»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "dzhaz-klub-irey",
+    "name": "Джаз-клуб «Ирей»",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Джаз-клуб «Ирей»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "restoran-motivy-gorkogo-14",
+    "name": "ресторан «Мотивы», Горького, 14",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "ресторан «Мотивы», Горького, 14"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "teatr-imeni-a-p-chehova",
+    "name": "театр имени А. П. Чехова",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "театр имени А. П. Чехова"
     ],
     "description": null,
     "desc_baseline_count": 0,
