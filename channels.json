@@ -141,6 +141,13 @@
       "city": "Севастополь",
       "type": "venue",
       "notes": "источник добавлен по запросу пользователя: https://vk.ru/u_blacksea_rest"
+    },
+    {
+      "domain": "ryumo4naya_sevastopol",
+      "title": "Рюмочная (Севастополь)",
+      "city": "Севастополь",
+      "type": "venue",
+      "notes": "источник добавлен по запросу пользователя: https://vk.ru/ryumo4naya_sevastopol"
     }
   ],
   "max_channels": [
