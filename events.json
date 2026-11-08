@@ -16899,29 +16899,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2026-11-07",
-    "time": null,
-    "artist": "другие, Сергей Бобунец, группа UMA2RMAN",
-    "event_type": "концерт",
-    "venue": "Национальный центр «Россия»",
-    "price": null,
-    "description": "Выступления хедлайнеров на Молодёжном дне Международной недели «Народы России». Музыкальное настроение этого дня создавали Сергей Бобунец, группа UMA2RMAN и другие!",
-    "image": "/images/events/801df0b5931fcf4cfd792e7e2b350a42.jpg",
-    "images": null,
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-10-27T16:01:01+00:00",
-    "source_url": "https://t.me/tavrida_art/22467",
-    "id": "fa5a00e8",
-    "genre": "фолк",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "archived"
-  },
-  {
     "date": "2026-10-30",
     "time": "19:00",
     "artist": "Нуар при свечах",
