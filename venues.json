@@ -46,7 +46,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 40,
+    "event_count": 41,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -469,20 +469,6 @@
     "lon": 34.143145
   },
   {
-    "slug": "dvorets-kultury-rybakov",
-    "name": "Дворец культуры рыбаков",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 5,
-    "aliases": [
-      "Дворец культуры рыбаков"
-    ],
-    "description": "За последний месяц здесь прошло 4 концерта. Был премьерный вечер Ирины Круг, в остальном афиша ровно поделена между попом, фолком и классикой. Вход платный.",
-    "desc_baseline_count": 4,
-    "lat": 44.584899,
-    "lon": 33.435348
-  },
-  {
     "slug": "yaltinskiy-teatr-imeni-a-p-chehova",
     "name": "Ялтинский театр имени А. П. Чехова",
     "city": "Ялта",
@@ -585,6 +571,20 @@
     "desc_baseline_count": 0,
     "lat": null,
     "lon": null
+  },
+  {
+    "slug": "dvorets-kultury-rybakov",
+    "name": "Дворец культуры рыбаков",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Дворец культуры рыбаков"
+    ],
+    "description": "За последний месяц здесь прошло 4 концерта. Был премьерный вечер Ирины Круг, в остальном афиша ровно поделена между попом, фолком и классикой. Вход платный.",
+    "desc_baseline_count": 4,
+    "lat": 44.584899,
+    "lon": 33.435348
   },
   {
     "slug": "musson",
@@ -2055,6 +2055,20 @@
     "desc_baseline_count": 1,
     "lat": 44.608194,
     "lon": 33.48307
+  },
+  {
+    "slug": "dk-rybakov",
+    "name": "ДК рыбаков",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "ДК рыбаков"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "klubnyy-plyazh-laspi",

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Центр виноделия «Массандра», Егоровский зал — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Центр виноделия «Массандра», Егоровский зал, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Центр виноделия «Массандра», Егоровский зал, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/tsentr-vinodeliya-massandra-egorovskiy-zal">
   <meta property="og:title" content="Центр виноделия «Массандра», Егоровский зал — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Центр виноделия «Массандра», Егоровский зал, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Центр виноделия «Массандра», Егоровский зал, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "главный дирижёр — Денис Карлов, Солисты камерного оркестра «Новая гармония»",
-      "startDate": "2026-11-07T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Центр виноделия «Массандра», Егоровский зал"
-      },
-      "description": "В уникальной атмосфере старинного Егоровского зала, наполненного историей, прозвучат «Музыкальные истины».",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "главный дирижёр — Денис Карлов, Солисты камерного оркестра «Новая гармония»"
-      },
-      "image": "/images/events/b1530da90ec624825b8cb437bf879d74.jpg"
     }
   ]
 }

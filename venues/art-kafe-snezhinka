@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,36 +34,6 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "ТРИО «ВЕГА»",
-      "startDate": "2026-11-07T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»"
-      },
-      "description": "Музыка Sting, Scorpions, «Браво», Billie Eilish и других исполнителей в оригинальных аранжировках для вокала, гитары и виолончели. Рок-баллады, поп-хиты, романтичные и современные композиции.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "ТРИО «ВЕГА»"
-      },
-      "image": "/images/events/66a006284e27ae4e12d92755b6dac83b.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Андрей Рыбальченко VS Андрей Гнатюк",
-      "startDate": "2026-11-08T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»"
-      },
-      "description": "PIANO BATTLE: состязание двух пианистов в жанрах джаз, латино, поп-музыка и классика. Неожиданные задания, игра с завязанными глазами и музыкальные пожелания зрителей.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Андрей Рыбальченко VS Андрей Гнатюк"
-      },
-      "image": "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg"
     }
   ]
 }

@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Улиточная ферма №1 «Мама Дёма» — афиша в Алуште · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Улиточная ферма №1 «Мама Дёма», в Алуште. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Улиточная ферма №1 «Мама Дёма», в Алуште. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/ulitochnaya-ferma-1-mama-dema">
   <meta property="og:title" content="Улиточная ферма №1 «Мама Дёма» — афиша в Алуште · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Улиточная ферма №1 «Мама Дёма», в Алуште. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Улиточная ферма №1 «Мама Дёма», в Алуште. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Алушта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ксения Белокопытова",
-      "startDate": "2026-11-07",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Улиточная ферма №1 «Мама Дёма»"
-      },
-      "description": "Фестиваль «Революция вкуса»: пение под гитару на веранде фермы.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ксения Белокопытова"
-      },
-      "image": "/images/events/eb389c8ecb14b2037ede6212c391a627.jpg"
     }
   ]
 }

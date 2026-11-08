@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Андрей Рыбальченко VS Андрей Гнатюк, Арт-кафе «Снежинка», в Севастополе, 8 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Дмитрий Лебедев (&quot;Ничего Кроме Правды&quot;), Jam Club, в Симферополе, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Андрей Рыбальченко VS Андрей Гнатюк — Арт-кафе «Снежинка», Севастополь, 8 ноября · Местов.Нет</title>
+<title>Дмитрий Лебедев (&quot;Ничего Кроме Правды&quot;) — Jam Club, Симферополь, 7 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,35 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/426a4651">
-<meta property="og:title" content="Андрей Рыбальченко VS Андрей Гнатюк — Арт-кафе «Снежинка», Севастополь, 8 ноября · Местов.Нет">
-<meta property="og:description" content="Андрей Рыбальченко VS Андрей Гнатюк, Арт-кафе «Снежинка», в Севастополе, 8 ноября, вс. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/4ca88c6f">
+<meta property="og:title" content="Дмитрий Лебедев (&quot;Ничего Кроме Правды&quot;) — Jam Club, Симферополь, 7 ноября · Местов.Нет">
+<meta property="og:description" content="Дмитрий Лебедев (&quot;Ничего Кроме Правды&quot;), Jam Club, в Симферополе, 7 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/497c21c77ba173e45a869ad1eb57c012.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Андрей Рыбальченко VS Андрей Гнатюк",
-      "startDate": "2026-11-08T19:00:00+03:00",
+      "name": "Дмитрий Лебедев (\"Ничего Кроме Правды\")",
+      "startDate": "2026-11-07",
       "location": {
         "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
+        "name": "Jam Club",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "PIANO BATTLE: состязание двух пианистов в жанрах джаз, латино, поп-музыка и классика. Неожиданные задания, игра с завязанными глазами и музыкальные пожелания зрителей.",
+      "description": "Большой акустический концерт BLACK TEARS",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Андрей Рыбальченко VS Андрей Гнатюк"
+        "name": "Дмитрий Лебедев (\"Ничего Кроме Правды\")"
       },
-      "image": "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "500–800 ₽",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +996,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Андрей Рыбальченко VS Андрей Гнатюк"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Дмитрий Лебедев (\"Ничего Кроме Правды\")"}]}
 </script>
 </head>
 <body>

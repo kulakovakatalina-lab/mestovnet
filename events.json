@@ -10267,11 +10267,11 @@
     "time": "18:30",
     "artist": "Ундервуд",
     "event_type": "концерт",
-    "venue": "Дворец культуры рыбаков",
-    "price": "от 1 500 ₽",
-    "description": "Группа «Ундервуд» представит свой новый альбом «1000 лун»! Прозвучат «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды.\n\nГруппа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт «Ундервуда»!\n\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
+    "venue": "ДК рыбаков",
+    "price": "от 1500 ₽",
+    "description": "О концерте Ундервуд представит в Крыму свой новый альбом «1000 лун»! «Гайдай», «Бетховен» и другие песни из одиннадцатого полноформатного релиза команды прозвучат 8 ноября в Севастополе, Дворец Культуры Рыбаков и 9 ноября в Симферополе, Музыкальный Театр. Группа готовит программу, в которую войдут и новые треки, и недавние синглы, которые уже хорошо знакомы слушателям, и все хиты, без которых просто невозможно представить концерт Ундервуда.\r\n\r\nНе упустите возможность стать частью этого музыкального события и подарить себе незабываемые эмоции! До встречи на концерте!",
     "source_city": "Севастополь",
-    "source_channel": "yandex_afisha",
+    "source_channel": "afisha_ru",
     "genre": "рок",
     "source_url": "https://www.afisha.ru/concert/undervud-6049724/",
     "images": [
@@ -10279,7 +10279,7 @@
       "/images/events/3a8257e1c3e8cc4bbfc8752678c9cc8b.jpg"
     ],
     "image": "/images/events/50114af730500cc281b1bf2c73de8bf0.jpg",
-    "post_date": "2026-11-08",
+    "post_date": "2026-11-08T02:46:39.355336+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -16734,7 +16734,7 @@
     "source_url": "https://t.me/afisha_crimea/8934",
     "images": [
       "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
-      "/images/events/4a50711a7d563bdfbf091a6caec29208.jpg"
+      "/images/events/68ec933700c2cb80642415e637671107.jpg"
     ],
     "image": "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
     "post_date": "2026-10-28T18:33:09+00:00",
@@ -16914,11 +16914,12 @@
     "source_url": "https://t.me/tavrida_art/22467",
     "id": "fa5a00e8",
     "genre": "фолк",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-30",
@@ -17062,12 +17063,12 @@
     "image": null,
     "post_date": "2026-10-30T13:40:17+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет цены",
-      "нет постера",
-      "разные исполнители на одной площадке в одно время: свечи», Концерт «Музыка (id cd137cdc)"
-    ]
+      "нет постера"
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-31",
@@ -17228,11 +17229,11 @@
     "image": "/images/events/83ba581fb000bd9ba396519aac683c81.jpg",
     "post_date": "2026-10-26T07:54:01+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
-      "нет цены",
-      "разные исполнители на одной площадке в одно время: Крымский академический симфонический оркестр (id 3fb9cbe5)"
-    ]
+      "нет цены"
+    ],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-01",
@@ -17355,7 +17356,8 @@
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "426a4651",
@@ -17376,8 +17378,10 @@
     "image": "/images/events/497c21c77ba173e45a869ad1eb57c012.jpg",
     "post_date": "2026-11-01T19:03:18+00:00",
     "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Андрей Рыбальченко, Андрей Гнатюк, Елена Голофеева (id f23bef70)"
+    ]
   },
   {
     "date": "2026-11-03",
@@ -17456,7 +17460,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-07",
@@ -17486,7 +17490,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "3d2ff3be",
@@ -17505,7 +17509,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-07T03:06:08.651476+00:00",
+    "post_date": "2026-11-08T02:46:39.355378+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -17556,7 +17560,7 @@
     "source_url": "https://t.me/afisha_crimea/9021",
     "images": [
       "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg",
-      "/images/events/7d628105488a0394e4a84e3ff3c7bbd1.jpg"
+      "/images/events/8277a46708659842f7f8013f4d96c148.jpg"
     ],
     "image": "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg",
     "post_date": "2026-11-03T12:10:25+00:00",
@@ -17734,7 +17738,8 @@
     "post_date": "2026-11-02T13:53:26+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-04",
@@ -17822,11 +17827,11 @@
       "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-07T03:06:08.651420+00:00",
+    "post_date": "2026-11-08T02:46:39.355309+00:00",
     "source_status": "active",
     "needs_review": true,
     "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
     ]
   },
   {
@@ -17896,7 +17901,7 @@
     "source_url": "https://vk.com/wall-214055536_2453",
     "images": [
       "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
+      "/images/events/305cde4d20c25884386eb376b121baf2.jpg"
     ],
     "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
     "post_date": "2026-11-05T13:09:32+00:00",
@@ -17967,7 +17972,7 @@
       "нет времени",
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-08",
@@ -18004,59 +18009,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Центр культуры и искусства",
-    "event_type": "концерт",
-    "price": "от 1 690 ₽",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-21",
-    "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "3e1f0ed8",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-07T03:06:28.542308+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "метал",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
-    ]
-  },
-  {
-    "date": "2027-01-04",
-    "time": "17:00",
-    "artist": "Джедже, Anjelina, Мали",
-    "venue": "Центр культуры и искусства",
-    "event_type": "концерт",
-    "price": "от 1 500 ₽",
-    "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
-    "source_channel": "yandex_afisha",
-    "source_city": "Севастополь",
-    "post_date": "2027-01-04",
-    "image": "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg",
-    "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "6da07ac7",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-07T03:06:28.542308+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-07",
     "time": "17:00",
     "artist": "Концерт «Музыкальные истины»",
@@ -18079,32 +18031,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-15",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "1200 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-11-07T03:06:21.864402+00:00",
-    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "e507a0c1",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-07T03:06:28.542308+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-07",
@@ -18122,13 +18049,15 @@
     "source_url": "https://t.me/clubjam/1191",
     "id": "4ca88c6f",
     "genre": "поп",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет постера"
-    ]
+    ],
+    "moderation_status": "archived"
   },
   {
+    "id": "510bf157",
     "date": "2026-11-20",
     "time": null,
     "artist": "джаз-трио «А3»",
@@ -18136,14 +18065,17 @@
     "venue": "Джаз-клуб «Ирей»",
     "price": null,
     "description": "Встреча восточных музыкальных традиций и джазовой импровизации. Необычное сочетание этнических инструментов, народных мотивов и современных музыкальных ритмов.",
-    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-    "images": null,
-    "source_channel": "sevastopol_jazz",
     "source_city": "Симферополь",
-    "post_date": "2026-11-05T13:09:32+00:00",
-    "source_url": "https://t.me/sevastopol_jazz/1335",
-    "id": "510bf157",
+    "source_channel": "sevastopol_jazz",
     "genre": "джаз",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "images": [
+      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+      "/images/events/305cde4d20c25884386eb376b121baf2.jpg"
+    ],
+    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+    "post_date": "2026-11-05T13:09:32+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
@@ -18151,6 +18083,7 @@
     ]
   },
   {
+    "id": "bb91d851",
     "date": "2026-11-22",
     "time": null,
     "artist": "Анна Шакель, джаз-трио «А3»",
@@ -18158,19 +18091,100 @@
     "venue": "Научный",
     "price": null,
     "description": "«Джаз при свечах». Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
-    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-    "images": null,
-    "source_channel": "sevastopol_jazz",
     "source_city": "Научный",
-    "post_date": "2026-11-05T13:09:32+00:00",
-    "source_url": "https://t.me/sevastopol_jazz/1335",
-    "id": "bb91d851",
+    "source_channel": "sevastopol_jazz",
     "genre": "джаз",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "images": [
+      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+      "/images/events/305cde4d20c25884386eb376b121baf2.jpg"
+    ],
+    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+    "post_date": "2026-11-05T13:09:32+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "нет времени",
       "нет цены"
     ]
+  },
+  {
+    "id": "f81437f9",
+    "date": "2026-11-21",
+    "time": "14:00",
+    "artist": "Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "театр им. А. П. Чехова",
+    "price": null,
+    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
+    "source_city": "Ялта",
+    "source_channel": "koncertykrym",
+    "genre": "классика",
+    "source_url": "https://t.me/koncertykrym/2388",
+    "images": [
+      "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+      "/images/events/cc12c86f42575b03f5bf34f08c7c7192.jpg"
+    ],
+    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+    "post_date": "2026-11-06T07:50:01+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "47fd19cf",
+    "date": "2026-11-22",
+    "time": "14:00",
+    "artist": "Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "СЦКИ",
+    "price": null,
+    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
+    "source_city": "Севастополь",
+    "source_channel": "koncertykrym",
+    "genre": "классика",
+    "source_url": "https://t.me/koncertykrym/2388",
+    "images": [
+      "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+      "/images/events/cc12c86f42575b03f5bf34f08c7c7192.jpg"
+    ],
+    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+    "post_date": "2026-11-06T07:50:01+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "26b1352f",
+    "date": "2026-11-29",
+    "time": "13:00",
+    "artist": "Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. П. И. Чайковского",
+    "price": null,
+    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
+    "source_city": "Симферополь",
+    "source_channel": "koncertykrym",
+    "genre": "классика",
+    "source_url": "https://t.me/koncertykrym/2388",
+    "images": [
+      "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+      "/images/events/cc12c86f42575b03f5bf34f08c7c7192.jpg"
+    ],
+    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
+    "post_date": "2026-11-06T07:50:01+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
   },
   {
     "id": "44791043",
@@ -18186,12 +18200,17 @@
     "genre": "поп",
     "source_url": "https://t.me/purplecaseband/202",
     "images": [
-      "/images/events/9a17a08eecd80f83a720b1aa5733a866.jpg",
-      "/images/events/873a7c0af7e93c1431cc113cf9764b29.jpg"
+      "/images/events/cedcdab236db934f0120ea3c2aed68d1.jpg",
+      "/images/events/2cb8a2c741d835d45a66016bb7c3f534.jpg"
     ],
-    "image": "/images/events/9a17a08eecd80f83a720b1aa5733a866.jpg",
+    "image": "/images/events/cedcdab236db934f0120ea3c2aed68d1.jpg",
     "post_date": "2026-11-06T21:26:02+00:00",
     "source_status": "active",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "needs_review": false,
     "review_reasons": [
       "нет цены"
@@ -18206,13 +18225,19 @@
     "venue": "театр имени А. П. Чехова",
     "price": null,
     "description": "Концерт «Бельканто» – встреча с искусством оперного вокала, яркими ариями и музыкой известных композиторов. В программе прозвучат произведения Джакомо Пуччини, Гаэтано Доницетти, русских и европейских композиторов.",
-    "image": "/images/events/081347a3842739d1e073b1bef805ec91.jpg",
+    "image": "/images/events/dfaa3e924d62c964af74a922182f2deb.jpg",
     "images": null,
     "source_channel": "koncertykrym",
     "source_city": "Ялта",
     "post_date": "2026-11-02T14:30:54+00:00",
     "source_url": "https://t.me/koncertykrym/2384",
     "id": "1add7799",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "классика",
     "needs_review": false,
     "review_reasons": [
@@ -18222,69 +18247,104 @@
   },
   {
     "date": "2026-11-21",
-    "time": "14:00",
-    "artist": "Крымский академический симфонический оркестр",
+    "time": "18:00",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
+    "venue": "Центр культуры и искусства",
     "event_type": "концерт",
-    "venue": "театр им. А. П. Чехова",
-    "price": null,
-    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
-    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-11-06T07:50:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2388",
-    "id": "f81437f9",
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "14:00",
-    "artist": "Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "СЦКИ",
-    "price": null,
-    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
-    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
+    "price": "от 1 690 ₽",
+    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2026-11-06T07:50:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2388",
-    "id": "47fd19cf",
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
+    "post_date": "2026-11-21",
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "id": "3e1f0ed8",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
     ],
+    "genre": "метал",
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
+    ]
+  },
+  {
+    "date": "2027-01-04",
+    "time": "17:00",
+    "artist": "Джедже, Anjelina, Мали",
+    "venue": "Центр культуры и искусства",
+    "event_type": "концерт",
+    "price": "от 1 500 ₽",
+    "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
+    "source_channel": "yandex_afisha",
+    "source_city": "Севастополь",
+    "post_date": "2027-01-04",
+    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "id": "6da07ac7",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-29",
-    "time": "13:00",
-    "artist": "Крымский академический симфонический оркестр",
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
     "event_type": "концерт",
-    "venue": "Музыкальное училище им. П. И. Чайковского",
-    "price": null,
-    "description": "Первый концерт абонемента «Пушкин. Три судьбы» приглашает зрителей погрузиться в мир романа Александра Пушкина «Дубровский». Крымский академический симфонический оркестр и мастера современной хореографии соединят музыку, литературу и танец.",
-    "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-06T07:50:01+00:00",
-    "source_url": "https://t.me/koncertykrym/2388",
-    "id": "26b1352f",
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
+    "price": "1200 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-11-08T02:46:53.444161+00:00",
+    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
     ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
     "moderation_status": "approved"
+  },
+  {
+    "id": "f23bef70",
+    "date": "2026-11-08",
+    "time": "19:00",
+    "artist": "Андрей Рыбальченко, Андрей Гнатюк, Елена Голофеева",
+    "event_type": "джем",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "500–800 ₽",
+    "description": "Два пианиста. Один батл. Победителя выбираете вы! Джаз, латино, поп-хиты и классика — а ещё неожиданные задания, игра вслепую и импровизации на мелодии, которые предложит зал.",
+    "source_city": "Севастополь",
+    "source_channel": "artcafesnezhinka",
+    "genre": "джаз",
+    "source_url": "https://t.me/artcafesnezhinka/2100",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-07T17:18:34+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет постера",
+      "разные исполнители на одной площадке в одно время: Андрей Рыбальченко VS Андрей Гнатюк (id 426a4651)"
+    ]
   },
   {
     "date": "2026-08-11",
