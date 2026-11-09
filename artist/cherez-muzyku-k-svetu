@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "Через музыку к свету",
-      "startDate": "2026-11-08T18:00:00+03:00",
+      "startDate": "2026-12-13T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "Через музыку к свету"

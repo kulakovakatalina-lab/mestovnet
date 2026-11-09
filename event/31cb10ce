@@ -989,7 +989,7 @@ a { color: inherit; text-decoration: none; }
       "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
       "offers": {
         "@type": "Offer",
-        "name": "от 1 590 ₽",
+        "name": "от 1 750 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

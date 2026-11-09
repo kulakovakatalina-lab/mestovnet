@@ -89,6 +89,22 @@
     "lon": 34.163783
   },
   {
+    "slug": "restoran-u-chernogo-morya",
+    "name": "Ресторан «У Чёрного моря»",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8",
+    "event_count": 17,
+    "aliases": [
+      "Ресто-бар «У Чёрного моря»",
+      "Ресторан 'У Чёрного моря'",
+      "Ресторан «У Чёрного моря»"
+    ],
+    "description": "За столиками здесь слушают живой вокал, танцуют под хиты 80–90-х и поют вместе с оркестром. Ирина Депутович ведёт ретровечеринки и музыкальные игры, Севастопольский эстрадный оркестр Валентина Таева привозит рок-хиты, а Любовь Фатеева играет мировые мелодии на виолончели.",
+    "desc_baseline_count": 13,
+    "lat": 44.614484,
+    "lon": 33.525136
+  },
+  {
     "slug": "sevastopol",
     "name": "Севастополь",
     "city": "Севастополь",
@@ -120,22 +136,6 @@
     "desc_baseline_count": 15,
     "lat": 44.797184,
     "lon": 34.279458
-  },
-  {
-    "slug": "restoran-u-chernogo-morya",
-    "name": "Ресторан «У Чёрного моря»",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8",
-    "event_count": 16,
-    "aliases": [
-      "Ресто-бар «У Чёрного моря»",
-      "Ресторан 'У Чёрного моря'",
-      "Ресторан «У Чёрного моря»"
-    ],
-    "description": "За столиками здесь слушают живой вокал, танцуют под хиты 80–90-х и поют вместе с оркестром. Ирина Депутович ведёт ретровечеринки и музыкальные игры, Севастопольский эстрадный оркестр Валентина Таева привозит рок-хиты, а Любовь Фатеева играет мировые мелодии на виолончели.",
-    "desc_baseline_count": 13,
-    "lat": 44.614484,
-    "lon": 33.525136
   },
   {
     "slug": "plyazh-kafe-van-gogh-massandrovskiy-plyazh",
@@ -348,21 +348,6 @@
     "lon": 33.8904656
   },
   {
-    "slug": "krymskiy-muzykalnyy-teatr",
-    "name": "Крымский музыкальный театр",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 7,
-    "aliases": [
-      "Крымский Музыкальный Театр",
-      "Музыкальный театр"
-    ],
-    "description": "За последние три месяца в театре прошло 5 концертов с платным входом — гастрольная площадка: заезжал SHAMAN, был премьерный вечер Ирины Круг, играли финалисты «ВИА Суперстар» — «Лесоповал».",
-    "desc_baseline_count": 5,
-    "lat": 44.948617,
-    "lon": 34.100806
-  },
-  {
     "slug": "dom-ofitserov-flota",
     "name": "Дом офицеров флота",
     "city": "Севастополь",
@@ -376,6 +361,21 @@
     "desc_baseline_count": 7,
     "lat": 44.614062,
     "lon": 33.525728
+  },
+  {
+    "slug": "krymskiy-muzykalnyy-teatr",
+    "name": "Крымский музыкальный театр",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 6,
+    "aliases": [
+      "Крымский Музыкальный Театр",
+      "Музыкальный театр"
+    ],
+    "description": "За последние три месяца в театре прошло 5 концертов с платным входом — гастрольная площадка: заезжал SHAMAN, был премьерный вечер Ирины Круг, играли финалисты «ВИА Суперстар» — «Лесоповал».",
+    "desc_baseline_count": 5,
+    "lat": 44.948617,
+    "lon": 34.100806
   },
   {
     "slug": "snezhinka",
@@ -1174,20 +1174,6 @@
     "lon": 33.945335
   },
   {
-    "slug": "natsionalnyy-tsentr-rossiya",
-    "name": "Национальный центр «Россия»",
-    "city": "Судак",
-    "address": "",
-    "event_count": 2,
-    "aliases": [
-      "Национальный центр «Россия»"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "dom-kultury-korabel",
     "name": "Дом культуры «Корабел»",
     "city": "Керчь",
@@ -1308,6 +1294,20 @@
     "event_count": 2,
     "aliases": [
       "Ливадийский дворец, Белый зал"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "chistye-prudy",
+    "name": "Чистые пруды",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 2,
+    "aliases": [
+      "Чистые пруды"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2113,6 +2113,20 @@
     "lon": 33.522683
   },
   {
+    "slug": "natsionalnyy-tsentr-rossiya",
+    "name": "Национальный центр «Россия»",
+    "city": "Судак",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Национальный центр «Россия»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "kerch-dk-korabel",
     "name": "Керчь, ДК 'Корабел'",
     "city": "Керчь",
@@ -2575,34 +2589,6 @@
     "lon": null
   },
   {
-    "slug": "chistye-prudy",
-    "name": "Чистые пруды",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Чистые пруды"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
-    "name": "Музыкальное училище им. Чайковского",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Музыкальное училище им. Чайковского"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "kz-yubileynyy-malyy-zal",
     "name": "КЗ «Юбилейный», малый зал",
     "city": "Ялта",
@@ -2743,6 +2729,20 @@
     "lon": null
   },
   {
+    "slug": "teatr-imeni-a-p-chehova",
+    "name": "театр имени А. П. Чехова",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "театр имени А. П. Чехова"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "restoran-motivy-gorkogo-14",
     "name": "ресторан «Мотивы», Горького, 14",
     "city": "Симферополь",
@@ -2757,13 +2757,27 @@
     "lon": null
   },
   {
-    "slug": "teatr-imeni-a-p-chehova",
-    "name": "театр имени А. П. Чехова",
-    "city": "Ялта",
+    "slug": "muzykalnoe-uchilische-im-chaykovskogo",
+    "name": "Музыкальное училище им. Чайковского",
+    "city": "Симферополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "театр имени А. П. Чехова"
+      "Музыкальное училище им. Чайковского"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "muzykalnyy-teatr-respubliki-krym",
+    "name": "Музыкальный театр Республики Крым",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Музыкальный театр Республики Крым"
     ],
     "description": null,
     "desc_baseline_count": 0,

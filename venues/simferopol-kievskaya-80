@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Симферополь, Киевская, 80 — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Симферополь, Киевская, 80, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Симферополь, Киевская, 80, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/simferopol-kievskaya-80">
   <meta property="og:title" content="Симферополь, Киевская, 80 — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Симферополь, Киевская, 80, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Симферополь, Киевская, 80, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "маэстро Денис Карлов, Камерный оркестр «Новая гармония»",
-      "startDate": "2026-11-08T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Симферополь, Киевская, 80"
-      },
-      "description": "Открытие сезона. На сцене — Камерный оркестр 'Новая гармония' и маэстро Денис Карлов. В программе: Моцарт, Пёрселл и другие великие композиторы.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "маэстро Денис Карлов, Камерный оркестр «Новая гармония»"
-      },
-      "image": "/images/events/5b323361c2d16430b1cc1d1cc15dbc71.jpg"
     }
   ]
 }
