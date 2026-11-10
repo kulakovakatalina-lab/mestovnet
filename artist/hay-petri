@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Хай'Петри"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Хай'Петри",
+      "startDate": "2026-11-14T20:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Хай'Петри"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Дуэт «Хай Петри»: мировые рок-хиты.",
+      "image": "/images/events/6efc19183b0d6bb1c96cd0f69003ee0f.jpg"
     }
   ]
 }
