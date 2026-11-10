@@ -1477,6 +1477,11 @@ def _merge_events(group: list[dict]) -> dict:
         all_images.insert(0, best_img)
     merged["images"] = all_images if all_images else None
     merged["image"] = all_images[0] if all_images else None
+    locked_image = next((e for e in group_sorted if e.get("image_locked")), None)
+    if locked_image:
+        merged["image"] = locked_image.get("image")
+        merged["images"] = locked_image.get("images")
+        merged["image_locked"] = True
 
     merged["post_date"] = most_recent.get("post_date")
 
@@ -1911,6 +1916,10 @@ def reconcile_source_updates(existing: list[dict], fresh: list[dict], source_upd
         if not changed_fields and old.get("source_status") != "cancelled":
             continue
         updated = dict(new)
+        if old.get("image_locked"):
+            updated["image"] = old.get("image")
+            updated["images"] = old.get("images")
+            updated["image_locked"] = True
         updated["id"] = old.get("id")
         updated["source_status"] = "active"
         updated["source_last_checked_at"] = checked_at
