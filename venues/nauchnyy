@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Научный — афиша в Научном · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Научный, в Научном. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Научный, в Научном. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/nauchnyy">
   <meta property="og:title" content="Научный — афиша в Научном · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Научный, в Научном. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Научный, в Научном. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Научный",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель, джаз-трио «А3»",
+      "startDate": "2026-11-22",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Научный"
+      },
+      "description": "Вечер в окружении сотен свечей. Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель, джаз-трио «А3»"
+      },
+      "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
     }
   ]
 }

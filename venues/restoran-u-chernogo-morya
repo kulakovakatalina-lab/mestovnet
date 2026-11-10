@@ -38,18 +38,18 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "дуэт «Хай Петри»",
+      "name": "Дуэт «Хай Петри»",
       "startDate": "2026-11-14T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Ресторан «У Чёрного моря»"
       },
-      "description": "мировые рок-хиты",
+      "description": "Дуэт «Хай Петри»: мировые рок-хиты.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "дуэт «Хай Петри»"
+        "name": "Дуэт «Хай Петри»"
       },
-      "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg"
+      "image": "/images/events/6efc19183b0d6bb1c96cd0f69003ee0f.jpg"
     },
     {
       "@type": "MusicEvent",

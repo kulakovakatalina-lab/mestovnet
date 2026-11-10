@@ -75,6 +75,17 @@
     "fingerprint": "7fd510c2a85bf93739dbb86d1399d6edd17d7ead7e32336be51fcdffae575832"
   },
   {
+    "event_id": "510bf157",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-11-09T04:50:40.671Z",
+    "fingerprint": "a1f15538edbbed266cdc87fa80c3d6c455281273300aaec5609e44fab4f31190"
+  },
+  {
     "event_id": "6010156a",
     "source_url": "https://t.me/dlyadushi_Crimea/6504",
     "reasons": [
@@ -169,6 +180,17 @@
     "status": "rejected",
     "decided_at": "2026-10-03T07:35:06.933Z",
     "fingerprint": "7ba227b3e08a0814ef5f41072ed72130f7fa9be592fbd9cd77eb6dd106e0fe7a"
+  },
+  {
+    "event_id": "bb91d851",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "status": "approved",
+    "decided_at": "2026-11-09T04:50:47.629Z",
+    "fingerprint": "cc8ccd9417d2e5d34868a4fa86399a830bafc89a82046d9cb54e7eafd7dde0fd"
   },
   {
     "event_id": "c3f264fb",

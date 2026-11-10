@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Хай&#x27;Петри — концерты в Крыму, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Хай&#x27;Петри в Крыму (Симферополь, Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Хай&#x27;Петри в Крыму (Симферополь, Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/hay-petri">
   <meta property="og:title" content="Хай&#x27;Петри — концерты в Крыму, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Хай&#x27;Петри в Крыму (Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Хай&#x27;Петри в Крыму (Симферополь, Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -1020,7 +1020,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Хай'Петри»","Хай'Петри","дуэт «Хай Петри»","Хай'Петри"];
+const ARTIST_ALIASES = ["Группа «Хай'Петри»", "Хай'Петри", "Хай'Петри"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
