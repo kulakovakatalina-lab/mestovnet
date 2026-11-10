@@ -1040,7 +1040,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Хай'Петри»","Дуэт «Хай Петри»","Хай'Петри","Хай'Петри"];
+const ARTIST_ALIASES = ["Группа «Хай'Петри»", "Дуэт «Хай Петри»", "Хай'Петри", "Хай'Петри"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
