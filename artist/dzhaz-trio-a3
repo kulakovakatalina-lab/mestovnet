@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 3 ближайших событий.">
+  <meta name="description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/dzhaz-trio-a3">
   <meta property="og:title" content="Джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 3 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -40,35 +40,15 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Массандра",
+        "name": "Егоровский зал, Массандра",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Премьера новой программы! Анна Сидоренко и джаз-трио «А3» приглашают на музыкальное путешествие во Францию. Знакомые мелодии французской эстрады, джазовые аранжировки и особенное настроение Парижа.",
+      "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
       "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Джаз-трио «А3»",
-      "startDate": "2026-11-20",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Джаз-трио «А3»"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Джаз-клуб «Ирей»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Встреча восточных музыкальных традиций и джазовой импровизации. Необычное сочетание этнических инструментов, народных мотивов и современных музыкальных ритмов.",
-      "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
     },
     {
       "@type": "MusicEvent",

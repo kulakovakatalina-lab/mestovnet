@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Винзавод Массандра — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/vinzavod-massandra">
   <meta property="og:title" content="Винзавод Массандра — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Винзавод Массандра, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "ул. Винодела Егорова, 9"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "джаз-трио «А3», Анна Сидоренко",
-      "startDate": "2026-11-15",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Винзавод Массандра"
-      },
-      "description": "Премьера новой программы! Анна Сидоренко и джаз-трио «А3» приглашают на музыкальное путешествие во Францию. Знакомые мелодии французской эстрады, джазовые аранжировки и особенное настроение Парижа.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "джаз-трио «А3», Анна Сидоренко"
-      },
-      "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg"
     }
   ]
 }

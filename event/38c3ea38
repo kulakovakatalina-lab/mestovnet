@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Крымское киноконцертное объединение — Дом-музей А. П. Чехова, Ялта, 22 ноября · Местов.Нет">
 <meta property="og:description" content="Крымское киноконцертное объединение, Дом-музей А. П. Чехова, в Ялте, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/a6fe4c08d1be23ed92e11b81dfe5a018.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/d01e0cc0d41cfc8646adef421fcc66bf.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу эпохи и по-новому ощутить настроение знаменитого произведения.",
+      "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу этой эпохи и по-новому ощутить настроение знаменитого произведения.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Крымское киноконцертное объединение"
       },
-      "image": "/images/events/a6fe4c08d1be23ed92e11b81dfe5a018.jpg"
+      "image": "/images/events/d01e0cc0d41cfc8646adef421fcc66bf.jpg"
     }
   ]
 }

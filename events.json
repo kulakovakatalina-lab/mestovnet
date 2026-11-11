@@ -16713,7 +16713,7 @@
     "source_url": "https://t.me/afisha_crimea/8934",
     "images": [
       "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
-      "/images/events/4d647548ed7f6e6082c9506586c150ca.jpg"
+      "/images/events/87e01782c9fdaeafdc11fb96797f423e.jpg"
     ],
     "image": "/images/events/e0d189f27ddc4336682a1423d9e6b828.jpg",
     "post_date": "2026-10-28T18:33:09+00:00",
@@ -17412,7 +17412,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-10T04:51:54.209713+00:00",
+    "post_date": "2026-11-11T03:02:03.669529+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "description"
@@ -17771,19 +17771,19 @@
     "time": null,
     "artist": "джаз-трио «А3», Анна Сидоренко",
     "event_type": "концерт",
-    "venue": "Массандра",
+    "venue": "Егоровский зал, Массандра",
     "price": null,
-    "description": "Премьера новой программы! Анна Сидоренко и джаз-трио «А3» приглашают на музыкальное путешествие во Францию. Знакомые мелодии французской эстрады, джазовые аранжировки и особенное настроение Парижа.",
+    "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
     "source_city": "Ялта",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
     "source_url": "https://vk.com/wall-214055536_2453",
     "images": [
       "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-      "/images/events/5d8e74edf7c142d6762dd07ba44aa370.jpg"
+      "/images/events/740101a277864b9d01ea357aabb3d2f3.jpg"
     ],
     "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-    "post_date": "2026-11-09T11:54:57+00:00",
+    "post_date": "2026-11-10T16:29:03+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -17797,34 +17797,6 @@
       "нет времени",
       "нет цены"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "5b3c759f",
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Ночные грузчики",
-    "event_type": "концерт",
-    "venue": "Депо",
-    "price": "от 1 500 ₽",
-    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
-    "source_city": "Симферополь",
-    "source_channel": "yandex_afisha",
-    "genre": "рок",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
-    "images": [
-      "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png"
-    ],
-    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
-    "post_date": "2026-11-22",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "source_last_checked_at": "2026-11-05T03:44:30.518888+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
     "moderation_status": "approved"
   },
   {
@@ -17942,34 +17914,27 @@
     "id": "510bf157",
     "date": "2026-11-20",
     "time": null,
-    "artist": "джаз-трио «А3», Анна Шакель",
+    "artist": "джаз-трио «А3», Анна Шакель, Константин Францен",
     "event_type": "концерт",
-    "venue": "Джаз-клуб «Ирей»",
+    "venue": "Джаз-клуб «Ирэй»",
     "price": null,
-    "description": "Встреча восточных музыкальных традиций и джазовой импровизации. Необычное сочетание этнических инструментов, народных мотивов и современных музыкальных ритмов.",
+    "description": "Премьера в Симферополе проекта «Этно-джаз». Музыка Jimi Hendrix, The Beatles, ZZ Top, Aerosmith, The Rolling Stones и других легендарных исполнителей.",
     "source_city": "Симферополь",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/5d8e74edf7c142d6762dd07ba44aa370.jpg"
+      "/images/events/740101a277864b9d01ea357aabb3d2f3.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-    "post_date": "2026-11-09T11:54:57+00:00",
+    "post_date": "2026-11-10T12:45:49+00:00",
     "source_status": "active",
-    "needs_review": false,
+    "needs_review": true,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ],
-    "moderation_status": "approved",
-    "moderated_at": "2026-11-09T04:50:40.671Z",
-    "moderation_decision_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "a1f15538edbbed266cdc87fa80c3d6c455281273300aaec5609e44fab4f31190"
+    ]
   },
   {
     "id": "bb91d851",
@@ -17986,7 +17951,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/5d8e74edf7c142d6762dd07ba44aa370.jpg"
+      "/images/events/740101a277864b9d01ea357aabb3d2f3.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -18019,7 +17984,7 @@
     "source_url": "https://t.me/koncertykrym/2388",
     "images": [
       "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-      "/images/events/7734ba1b7188851a73f9a5a7ff2ef174.jpg"
+      "/images/events/b8ac4b85efb3d2de20f87efaaa2d4d2a.jpg"
     ],
     "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
     "post_date": "2026-11-06T07:50:01+00:00",
@@ -18045,7 +18010,7 @@
     "source_url": "https://t.me/koncertykrym/2388",
     "images": [
       "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-      "/images/events/7734ba1b7188851a73f9a5a7ff2ef174.jpg"
+      "/images/events/b8ac4b85efb3d2de20f87efaaa2d4d2a.jpg"
     ],
     "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
     "post_date": "2026-11-06T07:50:01+00:00",
@@ -18071,7 +18036,7 @@
     "source_url": "https://t.me/koncertykrym/2388",
     "images": [
       "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-      "/images/events/7734ba1b7188851a73f9a5a7ff2ef174.jpg"
+      "/images/events/b8ac4b85efb3d2de20f87efaaa2d4d2a.jpg"
     ],
     "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
     "post_date": "2026-11-06T07:50:01+00:00",
@@ -18083,54 +18048,62 @@
     "moderation_status": "approved"
   },
   {
+    "id": "3e1f0ed8",
     "date": "2026-11-21",
     "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
-    "venue": "Центр культуры и искусства",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
     "event_type": "концерт",
+    "venue": "Центр культуры и искусства",
     "price": "от 1 690 ₽",
     "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2026-11-21",
-    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "source_channel": "yandex_afisha",
+    "genre": "метал",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "3e1f0ed8",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "images": [
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
+    ],
+    "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+    "post_date": "2026-11-21",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "genre"
     ],
-    "genre": "метал",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
     ]
   },
   {
+    "id": "6da07ac7",
     "date": "2027-01-04",
     "time": "17:00",
     "artist": "Джедже, Anjelina, Мали",
-    "venue": "Центр культуры и искусства",
     "event_type": "концерт",
+    "venue": "Центр культуры и искусства",
     "price": "от 1 500 ₽",
     "description": "С концертом выступят любимки детей и молодежи, артисты «Новой песни года» и «ВК Феста», Anjelina, Мали и Джедже.\n\nAnjelina — певица, музыкант, автор своих песен, ведущая, участница Премии «Жара Мьюзик Авордс», «ВК Фест», Жара Лайт», «Топ звезды лайка», «Открытие года 2024» музыкальной премии от телеканала СТС кидс, лауреат телефестиваля «Новая песня года 2023».\n\nМали и Джедже — популярный музыкально-танцевальный дуэт, состоящий из двух сестер близняшек, покорившими просторы социальных сетей и задающие популярные танцевальные тренды. Артистки также пишут сами песни, которые быстро набирают популярность.\n\nИсполнители песенных хитов «Барбекю», «В сердце бум», «Красота», «Быть со мной опасно», «Мэн», «Делай как я» и другие с миллионными просмотрами на музыкальных площадках.\n\nПосле концерта артисты бесплатно сфотографируется с каждым слушателем и подарят свой автограф.\n\nПродолжительность концерта: 1,5 часа",
-    "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
-    "post_date": "2027-01-04",
-    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "source_channel": "yandex_afisha",
+    "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "6da07ac7",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "images": [
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
+    ],
+    "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+    "post_date": "2027-01-04",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-11-08T02:46:58.547445+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -18159,26 +18132,30 @@
     "moderation_status": "archived"
   },
   {
+    "id": "3b367cf3",
     "date": "2026-11-21",
     "time": "18:30",
     "artist": "Космос в музыке",
-    "venue": "Астрофизическая обсерватория РАН (Научный)",
     "event_type": "концерт",
+    "venue": "Астрофизическая обсерватория РАН (Научный)",
     "price": "от 1 700 ₽",
     "description": "Концерт солистов камерного оркестра «Новая гармония»",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-11-21",
-    "image": "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
+    "source_channel": "yandex_afisha",
+    "genre": "классика",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-v-muzyke-2024?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "3b367cf3",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-09T02:57:18.760681+00:00",
+    "images": [
+      "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
+      "/images/events/92d979738e604b67991d9fb9b4f0b603.jpg"
+    ],
+    "image": "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
+    "post_date": "2026-11-21",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
     ],
-    "genre": "классика",
+    "source_last_checked_at": "2026-11-09T02:57:18.760681+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -18198,7 +18175,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png"
     ],
     "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
     "post_date": "2026-11-20",
@@ -18212,35 +18189,6 @@
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
-  },
-  {
-    "id": "3fe52eb3",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "event_type": "концерт",
-    "venue": "Севастопольский ЦКиИ",
-    "price": "от 1690 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_ru",
-    "genre": "метал",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "images": [
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
-    ],
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-10T04:51:54.209678+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "source_last_checked_at": "2026-11-09T02:57:18.760681+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
-    ]
   },
   {
     "date": "2026-11-09",
@@ -18270,158 +18218,27 @@
     "moderation_status": "archived"
   },
   {
+    "id": "af1e9144",
     "date": "2026-12-13",
     "time": "18:00",
     "artist": "Через музыку к свету",
-    "venue": "Чистые пруды",
     "event_type": "концерт",
+    "venue": "Чистые пруды",
     "price": "от 900 ₽",
     "description": "Впервые новый проект Дениса Карлова — Музыкальные вечера в «Чистых прудах».\n\nКонцерт камерного оркестра «Новая гармония» с программой «Через музыку к свету».\n\nКонцерт камерного оркестра «Новая гармония» под руководством стипендиата Правительства России, лауреата Государственной премии, Заслуженного деятеля Республики Крым — Дениса Карлова.",
-    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "post_date": "2026-12-13",
-    "image": "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/cherez-muzyku-k-svetu-2025?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
-    "id": "af1e9144",
+    "source_channel": "yandex_afisha",
     "genre": "классика",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/cherez-muzyku-k-svetu-2025?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
+    "images": [
+      "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg",
+      "/images/events/f0a2457bb308f908ae4ed06a194a1f73.jpg"
+    ],
+    "image": "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg",
+    "post_date": "2026-12-13",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": []
-  },
-  {
-    "id": "44791043",
-    "date": "2026-11-13",
-    "time": "19:00",
-    "artist": "INSOMNIE",
-    "event_type": "концерт",
-    "venue": "ресторан «Мотивы», Горького, 14",
-    "price": null,
-    "description": "Концерт Инсомни",
-    "source_city": "Симферополь",
-    "source_channel": "purplecaseband",
-    "genre": "поп",
-    "source_url": "https://t.me/purplecaseband/202",
-    "images": [
-      "/images/events/85f5eb5a661c574e9554affe585846ca.jpg",
-      "/images/events/91351eca5685b3a1088c968eb462f379.jpg"
-    ],
-    "image": "/images/events/85f5eb5a661c574e9554affe585846ca.jpg",
-    "post_date": "2026-11-06T21:26:02+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-10T04:52:12.674027+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-14",
-    "time": "15:00",
-    "artist": "Анна Глушко, Арзы Меджидова, Марина Герман, Георг Эннарис",
-    "event_type": "концерт",
-    "venue": "театр имени А. П. Чехова",
-    "price": null,
-    "description": "Концерт «Бельканто» – встреча с искусством оперного вокала, яркими ариями и музыкой известных композиторов. В программе прозвучат произведения Джакомо Пуччини, Гаэтано Доницетти, русских и европейских композиторов.",
-    "image": "/images/events/fc37d412b54fedbba01b20a37baad7a7.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-11-02T14:30:54+00:00",
-    "source_url": "https://t.me/koncertykrym/2384",
-    "id": "1add7799",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-10T04:52:12.674027+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-14",
-    "time": "20:00",
-    "artist": "Дуэт «Хай Петри»",
-    "event_type": "концерт",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "бесплатно",
-    "description": "Дуэт «Хай Петри»: мировые рок-хиты.",
-    "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-08T07:23:52+00:00",
-    "source_url": "https://vk.com/wall-233167471_1137",
-    "id": "f5210d62",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-10T04:52:12.674027+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "description",
-      "genre"
-    ],
-    "genre": "русский рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved",
-    "image_locked": true
-  },
-  {
-    "date": "2026-11-15",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "2000 - 2300",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-11-10T04:52:09.252798+00:00",
-    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "e507a0c1",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-10T04:52:12.674027+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "16:00",
-    "artist": "Крымское киноконцертное объединение",
-    "event_type": "концерт",
-    "venue": "Дом-музей А. П. Чехова",
-    "price": null,
-    "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу эпохи и по-новому ощутить настроение знаменитого произведения.",
-    "image": "/images/events/a6fe4c08d1be23ed92e11b81dfe5a018.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-11-09T13:29:45+00:00",
-    "source_url": "https://t.me/koncertykrym/2390",
-    "id": "38c3ea38",
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
   },
   {
     "date": "2026-11-13",
@@ -18446,6 +18263,7 @@
     "moderation_status": "approved"
   },
   {
+    "id": "a4d5fe45",
     "date": "2026-11-14",
     "time": "19:00",
     "artist": "Таврида Band, Антон Калиниченко",
@@ -18453,14 +18271,229 @@
     "venue": "Арт-кафе «Снежинка»",
     "price": "600–900 ₽",
     "description": "В этот вечер в «Снежинке» выступит диксиленд «Таврида Band» — семь музыкантов из разных городов Крыма, а специальным гостем станет Антон Калиниченко (фортепиано). В программе — новоорлеанский диксиленд, джазовые стандарты, музыкальные фантазии и латиноамериканские ритмы.",
-    "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
-    "images": null,
-    "source_channel": "artcafesnezhinka",
     "source_city": "Севастополь",
-    "post_date": "2026-11-09T10:55:59+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2131",
-    "id": "a4d5fe45",
+    "source_channel": "artcafesnezhinka",
     "genre": "джаз",
+    "source_url": "https://t.me/artcafesnezhinka/2131",
+    "images": [
+      "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
+      "/images/events/83ac7687682ad3dcf4fc2d1e1d8e5a40.jpg"
+    ],
+    "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
+    "post_date": "2026-11-09T10:55:59+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "id": "44791043",
+    "date": "2026-11-13",
+    "time": "19:00",
+    "artist": "INSOMNIE",
+    "event_type": "концерт",
+    "venue": "ресторан «Мотивы», Горького, 14",
+    "price": null,
+    "description": "Концерт Инсомни",
+    "source_city": "Симферополь",
+    "source_channel": "purplecaseband",
+    "genre": "поп",
+    "source_url": "https://t.me/purplecaseband/202",
+    "images": [
+      "/images/events/cf0c000bf8f544417d7cb172e1e7aed1.jpg",
+      "/images/events/a0a8e71a0d94fa88cce1f0713ac8d151.jpg"
+    ],
+    "image": "/images/events/cf0c000bf8f544417d7cb172e1e7aed1.jpg",
+    "post_date": "2026-11-06T21:26:02+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "15:00",
+    "artist": "Анна Глушко, Арзы Меджидова, Марина Герман, Георг Эннарис",
+    "event_type": "концерт",
+    "venue": "театр имени А. П. Чехова",
+    "price": null,
+    "description": "Концерт «Бельканто» – встреча с искусством оперного вокала, яркими ариями и музыкой известных композиторов. В программе прозвучат произведения Джакомо Пуччини, Гаэтано Доницетти, русских и европейских композиторов.",
+    "image": "/images/events/c58e9fdcb4e26e4adeea61271fbc180e.jpg",
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-11-02T14:30:54+00:00",
+    "source_url": "https://t.me/koncertykrym/2384",
+    "id": "1add7799",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "16:00",
+    "artist": "Крымское киноконцертное объединение",
+    "event_type": "концерт",
+    "venue": "Дом-музей А. П. Чехова",
+    "price": null,
+    "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу этой эпохи и по-новому ощутить настроение знаменитого произведения.",
+    "image": "/images/events/d01e0cc0d41cfc8646adef421fcc66bf.jpg",
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-11-09T13:29:45+00:00",
+    "source_url": "https://t.me/koncertykrym/2390",
+    "id": "38c3ea38",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "20:00",
+    "artist": "дуэт «Хай Петри»",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "бесплатно",
+    "description": "дуэт «Хай Петри»: мировые рок-хиты.",
+    "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-08T07:23:52+00:00",
+    "source_url": "https://vk.com/wall-233167471_1137",
+    "image_locked": true,
+    "id": "f5210d62",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "русский рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Ночные грузчики",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1 500 ₽",
+    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-22",
+    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
+    "id": "5b3c759f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "event_type": "концерт",
+    "price": "от 1690 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T03:02:03.669495+00:00",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "genre": "метал",
+    "id": "3fe52eb3",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "2000 - 2300",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-11-11T03:02:17.633839+00:00",
+    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-12",
+    "time": "19:00",
+    "artist": "Ирина Депутович",
+    "event_type": "вечеринка",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "бесплатно",
+    "description": "«Путешествие в нулевые»: живая музыка и дискотека под живое исполнение песен Ирины Депутович — любимые композиции нулевых прозвучат по-новому!",
+    "image": "/images/events/57060b6b190c4cc9192fd2f43b9e31db.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-10T09:19:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1143",
+    "id": "8512c228",
+    "genre": "поп",
     "needs_review": false,
     "review_reasons": []
   },

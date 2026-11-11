@@ -1,9 +1,27 @@
 [
   {
+    "id": "510bf157",
+    "date": "2026-11-20",
+    "time": null,
+    "artist": "джаз-трио «А3», Анна Шакель, Константин Францен",
+    "venue": "Джаз-клуб «Ирэй»",
+    "source_city": "Симферополь",
+    "price": null,
+    "genre": "джаз",
+    "event_type": "концерт",
+    "description": "Премьера в Симферополе проекта «Этно-джаз». Музыка Jimi Hendrix, The Beatles, ZZ Top, Aerosmith, The Rolling Stones и других легендарных исполнителей.",
+    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
     "id": "3e1f0ed8",
     "date": "2026-11-21",
     "time": "18:00",
-    "artist": "Аура Шоу. Главная музыка столетия. Новая…",
+    "artist": "Аура Шоу. Главная музыка столетия. Новая программа",
     "venue": "Центр культуры и искусства",
     "source_city": "Севастополь",
     "price": "от 1 690 ₽",
@@ -30,7 +48,7 @@
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
     "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
     "reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая… (id 3e1f0ed8)"
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
     ]
   }
 ]
