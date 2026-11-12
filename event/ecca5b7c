@@ -986,7 +986,13 @@ a { color: inherit; text-decoration: none; }
         "@type": "MusicGroup",
         "name": "Группа «Денайро»"
       },
-      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }

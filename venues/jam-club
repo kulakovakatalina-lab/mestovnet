@@ -37,16 +37,16 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Мираж Огня",
+      "name": "Мираж Огня, АРИЯ, КИПЕЛОВ",
       "startDate": "2026-11-13T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Ария трибьют группой Мираж Огня.",
+      "description": "Трибьют-концерт группы 'Ария' и 'Кипелов'.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Мираж Огня"
+        "name": "Мираж Огня, АРИЯ, КИПЕЛОВ"
       },
       "image": "/images/events/03eddc8918166e1b220419a522019aee.jpg"
     },
@@ -58,7 +58,7 @@
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Rammstein tribute by Карбид.",
+      "description": "Rammstein tribute by Карбид. Лучшие хиты Rammstein.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Карбид"

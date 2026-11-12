@@ -43,12 +43,12 @@
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики (Симферополь)"
       },
-      "description": "Jokers Band show и только живой звук: танцевальные рок-поп хиты и невероятная харизма",
+      "description": "Танцевальные рок-поп хиты и невероятная харизма.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Jokers Band"
       },
-      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -98,12 +98,12 @@
     {
       "@type": "MusicEvent",
       "name": "Группа «Тень Клоуна»",
-      "startDate": "2026-11-28T21:00:00+03:00",
+      "startDate": "2026-11-28T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Рок-н-рольщики (Симферополь)"
       },
-      "description": "Большая премьера! Страшные сказки тёмного леса: трибьют «Короля и Шута» в исполнении группы «Тень Клоуна»",
+      "description": "Трибьют «Короля и Шута».",
       "performer": {
         "@type": "MusicGroup",
         "name": "Группа «Тень Клоуна»"
