@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Таврида Band — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Таврида Band в Крыму (Севастополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Таврида Band в Крыму (Севастополь). 2 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/tavrida-band">
   <meta property="og:title" content="Таврида Band — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Таврида Band в Крыму (Севастополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Таврида Band в Крыму (Севастополь). 2 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -49,6 +49,26 @@
       },
       "description": "В этот вечер в «Снежинке» выступит диксиленд «Таврида Band» — семь музыкантов из разных городов Крыма, а специальным гостем станет Антон Калиниченко (фортепиано). В программе — новоорлеанский диксиленд, джазовые стандарты, музыкальные фантазии и латиноамериканские ритмы.",
       "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Таврида Band",
+      "startDate": "2026-11-14",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Таврида Band"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых. Дресс-код приветствуется – подтяжки, кепки, платья, яркие детали и немного джазового хулиганства.",
+      "image": "/images/events/3d602bd65982905513226cef097549e8.jpg"
     }
   ]
 }

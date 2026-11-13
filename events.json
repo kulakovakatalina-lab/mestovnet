@@ -17472,29 +17472,6 @@
     "moderation_status": "archived"
   },
   {
-    "id": "0ee6b0c3",
-    "date": "2026-11-13",
-    "time": "21:00",
-    "artist": "Jokers Band",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "бесплатно",
-    "description": "Танцевальные рок-поп хиты и невероятная харизма.",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "поп-рок",
-    "source_url": "https://t.me/rocknroll_82/1096",
-    "images": [
-      "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
-      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
-    ],
-    "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
-    "post_date": "2026-11-11T08:11:02+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
     "id": "37a9b83b",
     "date": "2026-11-15",
     "time": "21:00",
@@ -17694,7 +17671,7 @@
     "source_url": "https://t.me/clubjam/1183",
     "images": [
       "/images/events/03eddc8918166e1b220419a522019aee.jpg",
-      "/images/events/c56fbb3394fb9c366c90d422d2cecc67.jpg"
+      "/images/events/1cb4bf09e2b66505fa846267bc7a2c58.jpg"
     ],
     "image": "/images/events/03eddc8918166e1b220419a522019aee.jpg",
     "post_date": "2026-11-11T08:14:31+00:00",
@@ -17723,7 +17700,7 @@
     "source_url": "https://t.me/clubjam/1184",
     "images": [
       "/images/events/c158192125b052f97787661c9fd2e7aa.jpg",
-      "/images/events/4aa3cad47a1a3853b82b2f5a11649f9d.jpg"
+      "/images/events/6aceb5cac5c2a982f40159157462591e.jpg"
     ],
     "image": "/images/events/c158192125b052f97787661c9fd2e7aa.jpg",
     "post_date": "2026-11-11T14:15:59+00:00",
@@ -17752,7 +17729,7 @@
     "source_url": "https://vk.com/wall-214055536_2453",
     "images": [
       "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-      "/images/events/225c028a67db87b6d02ddbe7fb792c48.jpg"
+      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
     ],
     "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
     "post_date": "2026-11-10T16:29:03+00:00",
@@ -17897,7 +17874,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/225c028a67db87b6d02ddbe7fb792c48.jpg"
+      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17923,7 +17900,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/225c028a67db87b6d02ddbe7fb792c48.jpg"
+      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -18033,7 +18010,8 @@
     "genre": "метал",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png"
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
+      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
     ],
     "image": "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png",
     "post_date": "2026-11-21",
@@ -18063,7 +18041,8 @@
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg"
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
     ],
     "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
     "post_date": "2027-01-04",
@@ -18143,7 +18122,8 @@
     "genre": "метал",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
+      "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
+      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
     "post_date": "2026-11-20",
@@ -18244,7 +18224,7 @@
     "source_url": "https://t.me/artcafesnezhinka/2131",
     "images": [
       "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
-      "/images/events/5107a5d8ed3fe061746a8a58e2227896.jpg"
+      "/images/events/4645e4130299476c763be3c7f969b88f.jpg"
     ],
     "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
     "post_date": "2026-11-09T10:55:59+00:00",
@@ -18394,7 +18374,7 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-22",
@@ -18422,84 +18402,65 @@
     "moderation_status": "approved"
   },
   {
+    "id": "3fe52eb3",
     "date": "2026-11-21",
     "time": "18:00",
     "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Севастопольский ЦКиИ",
     "event_type": "концерт",
+    "venue": "Севастопольский ЦКиИ",
     "price": "от 1750 ₽",
     "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_channel": "afisha_ru",
     "source_city": "Севастополь",
-    "post_date": "2026-11-12T04:05:58.999898+00:00",
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "source_channel": "afisha_ru",
     "genre": "метал",
-    "id": "3fe52eb3",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "images": [
+      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+    ],
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "post_date": "2026-11-13T03:40:22.299313+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price",
       "genre"
     ],
+    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
+    "source_status": "active",
     "needs_review": true,
     "review_reasons": [
       "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
     ]
   },
   {
+    "id": "3d2ff3be",
     "date": "2026-11-19",
     "time": "19:00",
     "artist": "Хиты 2000-х. Караоке с оркестром",
-    "venue": "Ribiza",
     "event_type": "концерт",
+    "venue": "Ribiza",
     "price": "от 1990 ₽",
     "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-    "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-11-12T04:05:58.999919+00:00",
-    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "source_channel": "afisha_ru",
     "genre": "рок",
-    "id": "3d2ff3be",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "images": [
+      "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
+    ],
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "post_date": "2026-11-13T03:40:22.299340+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price"
     ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-15",
-    "time": "18:30",
-    "artist": "В гостях у Айвазовского",
-    "venue": "Галерея им. Айвазовского",
-    "event_type": "концерт",
-    "price": "2000",
-    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Феодосия",
-    "post_date": "2026-11-12T04:06:14.087227+00:00",
-    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
-    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
-    "id": "e507a0c1",
-    "source_status": "active",
     "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price",
-      "genre"
-    ],
-    "genre": "поп",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
   },
   {
+    "id": "359c8b0c",
     "date": "2026-11-13",
     "time": "21:00",
     "artist": "Группа «Домино»",
@@ -18507,14 +18468,14 @@
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
     "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино»",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-11-11T07:10:12+00:00",
-    "source_url": "https://t.me/rocknroll_92/7817",
-    "id": "359c8b0c",
+    "source_channel": "rocknroll_92",
     "genre": "поп-рок",
+    "source_url": "https://t.me/rocknroll_92/7817",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-11T07:10:12+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -18522,6 +18483,7 @@
     "moderation_status": "approved"
   },
   {
+    "id": "a0d6fdfd",
     "date": "2026-11-14",
     "time": "21:00",
     "artist": "Игорь Симдянкин",
@@ -18529,14 +18491,14 @@
     "venue": "Рок-н-рольщики (Севастополь)",
     "price": "бесплатно",
     "description": "Только любимые русские рок-поп хиты в акустике, Игорь Симдянкин",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-11-11T07:10:12+00:00",
-    "source_url": "https://t.me/rocknroll_92/7817",
-    "id": "a0d6fdfd",
+    "source_channel": "rocknroll_92",
     "genre": "поп-рок",
+    "source_url": "https://t.me/rocknroll_92/7817",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-11T07:10:12+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -18544,53 +18506,7 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-21",
-    "time": "18:20",
-    "artist": "главный дирижер Денис Карлов, Солисты оркестра «Новая гармония»",
-    "event_type": "концерт",
-    "venue": "Научный, Крымская астрофизическая обсерватория, круглый зал гостиницы",
-    "price": null,
-    "description": "Удивительное путешествие, где музыка встречается с бескрайними галактиками. В программе — произведения, вдохновлённые звёздами, планетами и тайнами Вселенной.",
-    "image": "/images/events/a55e6de0932848067e13a052275de41b.jpg",
-    "images": null,
-    "source_channel": "afisha_crimea",
-    "source_city": "Научный",
-    "post_date": "2026-11-11T17:05:33+00:00",
-    "source_url": "https://t.me/afisha_crimea/9117",
-    "id": "c0780058",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "32df7bae",
-    "date": "2026-11-14",
-    "time": null,
-    "artist": "Таврида Band",
-    "event_type": "концерт",
-    "venue": "Севастополь",
-    "price": "600–900 ₽",
-    "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_payberry",
-    "genre": "классика",
-    "source_url": "https://t.me/afisha_payberry/1664",
-    "images": [
-      "/images/events/73b0b62f3aa2d2816a81798300337b80.jpg",
-      "/images/events/b2641041bd477193391cf47d921f1df4.jpg"
-    ],
-    "image": "/images/events/73b0b62f3aa2d2816a81798300337b80.jpg",
-    "post_date": "2026-11-11T09:30:32+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
+    "id": "67c8bb8c-0c1c8137db43",
     "date": "2026-11-28",
     "time": "20:00",
     "artist": "Группа «Тень Клоуна»",
@@ -18598,14 +18514,16 @@
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": "1000₽",
     "description": "Трибьют «Короля и Шута».",
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "images": null,
-    "source_channel": "rocknroll_82",
     "source_city": "Симферополь",
-    "post_date": "2026-11-02T12:05:22+00:00",
-    "source_url": "https://vk.com/wall-237501275_211",
-    "id": "67c8bb8c-0c1c8137db43",
+    "source_channel": "rocknroll_82",
     "genre": "рок",
+    "source_url": "https://vk.com/wall-237501275_211",
+    "images": [
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+    "post_date": "2026-11-02T12:05:22+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": []
   },
@@ -18626,6 +18544,125 @@
     "genre": "классика",
     "needs_review": false,
     "review_reasons": []
+  },
+  {
+    "id": "0ee6b0c3",
+    "date": "2026-11-13",
+    "time": "21:00",
+    "artist": "Jokers Band",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "бесплатно",
+    "description": "Танцевальные рок-поп хиты и невероятная харизма.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "поп-рок",
+    "source_url": "https://t.me/rocknroll_82/1096",
+    "images": [
+      "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+    "post_date": "2026-11-11T08:11:02+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "c0780058",
+    "date": "2026-11-21",
+    "time": "18:20",
+    "artist": "Солисты оркестра «Новая гармония», главный дирижер Денис Карлов",
+    "event_type": "концерт",
+    "venue": "Научный, Крымская астрофизическая обсерватория, круглый зал гостиницы",
+    "price": null,
+    "description": "Удивительное путешествие, где музыка встречается с бескрайними галактиками.",
+    "source_city": "Научный",
+    "source_channel": "crimea_event",
+    "genre": "поп",
+    "source_url": "https://t.me/afisha_crimea/9117",
+    "images": [
+      "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
+      "/images/events/a49875c6e74efc2c0bf1019927f4b4e7.jpg"
+    ],
+    "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
+    "post_date": "2026-11-12T07:08:06+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "32df7bae",
+    "date": "2026-11-14",
+    "time": null,
+    "artist": "Таврида Band",
+    "event_type": "концерт",
+    "venue": "Севастополь",
+    "price": "600–900 ₽",
+    "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых. Дресс-код приветствуется – подтяжки, кепки, платья, яркие детали и немного джазового хулиганства.",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_payberry",
+    "genre": "джаз",
+    "source_url": "https://t.me/afisha_payberry/1664",
+    "images": [
+      "/images/events/3d602bd65982905513226cef097549e8.jpg",
+      "/images/events/b2641041bd477193391cf47d921f1df4.jpg"
+    ],
+    "image": "/images/events/3d602bd65982905513226cef097549e8.jpg",
+    "post_date": "2026-11-11T09:30:32+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-15",
+    "time": "18:30",
+    "artist": "В гостях у Айвазовского",
+    "venue": "Галерея им. Айвазовского",
+    "event_type": "концерт",
+    "price": "2000",
+    "description": "В гостях у Айвазовского — концерт в Галерея им. Айвазовского, Феодосия.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Феодосия",
+    "post_date": "2026-11-13T03:40:38.743705+00:00",
+    "image": "/images/events/7d3274beb9ac5971819dcc142a9e2ef9.jpg",
+    "source_url": "https://feo.afishagoroda.ru/events/v-gostiax-u-aivazovskogo",
+    "id": "e507a0c1",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-11",

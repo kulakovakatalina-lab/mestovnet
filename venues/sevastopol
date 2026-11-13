@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,6 +35,21 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Таврида Band",
+      "startDate": "2026-11-14",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Севастополь"
+      },
+      "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых. Дресс-код приветствуется – подтяжки, кепки, платья, яркие детали и немного джазового хулиганства.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Таврида Band"
+      },
+      "image": "/images/events/3d602bd65982905513226cef097549e8.jpg"
     }
   ]
 }
