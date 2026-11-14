@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мираж Огня — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Мираж Огня в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Мираж Огня в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/mirazh-ognya">
   <meta property="og:title" content="Мираж Огня — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Мираж Огня в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Мираж Огня в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Мираж Огня"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Мираж Огня",
-      "startDate": "2026-11-13T18:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Мираж Огня"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Jam Club",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Трибьют-концерт группы 'Ария' и 'Кипелов'.",
-      "image": "/images/events/03eddc8918166e1b220419a522019aee.jpg"
     }
   ]
 }

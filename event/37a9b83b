@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Алекс Бах — Рок-н-рольщики (Симферополь), 15 ноября · Местов.Нет">
 <meta property="og:description" content="Алекс Бах, Рок-н-рольщики (Симферополь), в Симферополе, 15 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/bdaa4d4acb011daf627634a30215f007.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/fe860aeddb015556a97aabaf616e93f8.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,18 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика",
+      "description": "Авторская музыка, акустика",
       "performer": {
         "@type": "MusicGroup",
         "name": "Алекс Бах"
       },
-      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock"
+      }
     }
   ]
 }

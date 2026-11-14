@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -37,21 +37,6 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Антон Калиниченко, Матвей Блюмин, Анна Сидоренко",
-      "startDate": "2026-11-13T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»"
-      },
-      "description": "Осенняя коллекция шедевров. Выразительный вокал, проникновенная скрипка и фортепиано. В программе — мировые музыкальные хиты.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Антон Калиниченко, Матвей Блюмин, Анна Сидоренко"
-      },
-      "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg"
-    },
-    {
-      "@type": "MusicEvent",
       "name": "Таврида Band, Антон Калиниченко",
       "startDate": "2026-11-14T19:00:00+03:00",
       "location": {
@@ -63,7 +48,7 @@
         "@type": "MusicGroup",
         "name": "Таврида Band, Антон Калиниченко"
       },
-      "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg"
+      "image": "/images/events/0ce7628fc08e8178ac3315d7b97515bb.jpg"
     }
   ]
 }

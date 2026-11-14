@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Антон Калиниченко — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Антон Калиниченко в Крыму (Севастополь). 2 ближайших событий.">
+  <meta name="description" content="Расписание концертов Антон Калиниченко в Крыму (Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anton-kalinichenko">
   <meta property="og:title" content="Антон Калиниченко — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Антон Калиниченко в Крыму (Севастополь). 2 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Антон Калиниченко в Крыму (Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Антон Калиниченко"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Антон Калиниченко",
-      "startDate": "2026-11-13T19:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Антон Калиниченко"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Арт-кафе «Снежинка»",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Осенняя коллекция шедевров. Выразительный вокал, проникновенная скрипка и фортепиано. В программе — мировые музыкальные хиты.",
-      "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg"
     },
     {
       "@type": "MusicEvent",
@@ -68,7 +48,7 @@
         }
       },
       "description": "В этот вечер в «Снежинке» выступит диксиленд «Таврида Band» — семь музыкантов из разных городов Крыма, а специальным гостем станет Антон Калиниченко (фортепиано). В программе — новоорлеанский диксиленд, джазовые стандарты, музыкальные фантазии и латиноамериканские ритмы.",
-      "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg"
+      "image": "/images/events/0ce7628fc08e8178ac3315d7b97515bb.jpg"
     }
   ]
 }

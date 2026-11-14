@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 3 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-u-chernogo-morya">
   <meta property="og:title" content="Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 3 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -44,12 +44,26 @@
         "@type": "MusicVenue",
         "name": "Ресторан «У Чёрного моря»"
       },
-      "description": "дуэт «Хай Петри»: мировые рок-хиты.",
+      "description": "ВЕЧЕР ЖИВОГО РОКА! Дуэт «Хай Петри» с программой «Мировые рок-хиты и не только».",
       "performer": {
         "@type": "MusicGroup",
         "name": "дуэт «Хай Петри»"
       },
       "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "МЯТНЫЙ ГРОМ BAND",
+      "startDate": "2026-12-12T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»"
+      },
+      "description": "Выступление МЯТНОГО ГРОМ BAND.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "МЯТНЫЙ ГРОМ BAND"
+      }
     },
     {
       "@type": "MusicEvent",
@@ -1137,7 +1151,7 @@ ymaps.ready(function() {
 </script>
 
 <script>
-const VENUE_ALIASES = ["Ресто-бар «У Чёрного моря»", "Ресторан 'У Чёрного моря'", "Ресторан «У Чёрного моря»", "Ресторан «У Чёрного моря»"];
+const VENUE_ALIASES = ["Ресто-Бар «У Чёрного моря»", "Ресто-бар «У Чёрного моря»", "Ресторан 'У Чёрного моря'", "Ресторан «У Чёрного моря»", "Ресторан «У Чёрного моря»"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

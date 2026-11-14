@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Таврида Band — Севастополь, 14 ноября · Местов.Нет">
 <meta property="og:description" content="Таврида Band, Севастополь, в Севастополе, 14 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/3d602bd65982905513226cef097549e8.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/695ea07834c25adcbfa7027e530fc896.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,12 +981,12 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых. Дресс-код приветствуется – подтяжки, кепки, платья, яркие детали и немного джазового хулиганства.",
+      "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Таврида Band"
       },
-      "image": "/images/events/3d602bd65982905513226cef097549e8.jpg",
+      "image": "/images/events/695ea07834c25adcbfa7027e530fc896.jpg",
       "offers": {
         "@type": "Offer",
         "name": "600–900 ₽",

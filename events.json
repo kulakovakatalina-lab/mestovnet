@@ -16728,7 +16728,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-31",
@@ -17478,23 +17478,21 @@
     "artist": "Алекс Бах",
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
-    "price": null,
-    "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика",
+    "price": "бесплатно",
+    "description": "Авторская музыка, акустика",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "авторская",
-    "source_url": "https://vk.com/wall-237501275_211",
+    "source_url": "https://vk.com/wall-237501275_231",
     "images": [
+      "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
       "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
     ],
-    "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "post_date": "2026-11-02T12:05:22+00:00",
+    "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+    "post_date": "2026-11-11T07:10:01+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
+    "review_reasons": []
   },
   {
     "id": "275ce12f",
@@ -17683,7 +17681,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "22d6734d",
@@ -17700,7 +17698,7 @@
     "source_url": "https://t.me/clubjam/1184",
     "images": [
       "/images/events/c158192125b052f97787661c9fd2e7aa.jpg",
-      "/images/events/6aceb5cac5c2a982f40159157462591e.jpg"
+      "/images/events/05c5bf1e28221b4b2e2ad528e2db23eb.jpg"
     ],
     "image": "/images/events/c158192125b052f97787661c9fd2e7aa.jpg",
     "post_date": "2026-11-11T14:15:59+00:00",
@@ -17729,7 +17727,7 @@
     "source_url": "https://vk.com/wall-214055536_2453",
     "images": [
       "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
+      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
     ],
     "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
     "post_date": "2026-11-10T16:29:03+00:00",
@@ -17874,7 +17872,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
+      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17900,7 +17898,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/07d3141e1b031ef5718200e139d661c2.jpg"
+      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -18132,7 +18130,7 @@
       "price",
       "genre"
     ],
-    "source_last_checked_at": "2026-11-09T02:57:18.760681+00:00",
+    "source_last_checked_at": "2026-11-14T03:33:23.343181+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
@@ -18207,30 +18205,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "a4d5fe45",
-    "date": "2026-11-14",
-    "time": "19:00",
-    "artist": "Таврида Band, Антон Калиниченко",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": "600–900 ₽",
-    "description": "В этот вечер в «Снежинке» выступит диксиленд «Таврида Band» — семь музыкантов из разных городов Крыма, а специальным гостем станет Антон Калиниченко (фортепиано). В программе — новоорлеанский диксиленд, джазовые стандарты, музыкальные фантазии и латиноамериканские ритмы.",
-    "source_city": "Севастополь",
-    "source_channel": "artcafesnezhinka",
-    "genre": "джаз",
-    "source_url": "https://t.me/artcafesnezhinka/2131",
-    "images": [
-      "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
-      "/images/events/4645e4130299476c763be3c7f969b88f.jpg"
-    ],
-    "image": "/images/events/003c47c53e09ce23009dacfff83a8561.jpg",
-    "post_date": "2026-11-09T10:55:59+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
+    "moderation_status": "archived"
   },
   {
     "id": "44791043",
@@ -18261,7 +18236,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-14",
@@ -18321,30 +18296,30 @@
     "moderation_status": "approved"
   },
   {
+    "id": "f5210d62",
     "date": "2026-11-14",
     "time": "20:00",
     "artist": "дуэт «Хай Петри»",
     "event_type": "концерт",
     "venue": "Ресторан «У Чёрного моря»",
     "price": "бесплатно",
-    "description": "дуэт «Хай Петри»: мировые рок-хиты.",
-    "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
+    "description": "ВЕЧЕР ЖИВОГО РОКА! Дуэт «Хай Петри» с программой «Мировые рок-хиты и не только».",
     "source_city": "Севастополь",
-    "post_date": "2026-11-08T07:23:52+00:00",
+    "source_channel": "u_blacksea_rest",
+    "genre": "русский рок",
     "source_url": "https://vk.com/wall-233167471_1137",
+    "images": null,
+    "image": "/images/events/6c2f0b7d137a7f58c9df368e249487ca.jpg",
     "image_locked": true,
-    "id": "f5210d62",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "post_date": "2026-11-11T07:00:00+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "description",
       "genre"
     ],
-    "genre": "русский рок",
+    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -18402,36 +18377,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "3fe52eb3",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "event_type": "концерт",
-    "venue": "Севастопольский ЦКиИ",
-    "price": "от 1750 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_ru",
-    "genre": "метал",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "images": [
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
-    ],
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-13T03:40:22.299313+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price",
-      "genre"
-    ],
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
-    ]
-  },
-  {
     "id": "3d2ff3be",
     "date": "2026-11-19",
     "time": "19:00",
@@ -18448,7 +18393,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-13T03:40:22.299340+00:00",
+    "post_date": "2026-11-14T03:33:07.089473+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price"
@@ -18480,7 +18425,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "a0d6fdfd",
@@ -18572,7 +18517,7 @@
     ],
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "c0780058",
@@ -18589,53 +18534,21 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/a49875c6e74efc2c0bf1019927f4b4e7.jpg"
+      "/images/events/9bd05e39488b6da223b69c8e790e6a42.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
       "description",
       "genre"
     ],
+    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "32df7bae",
-    "date": "2026-11-14",
-    "time": null,
-    "artist": "Таврида Band",
-    "event_type": "концерт",
-    "venue": "Севастополь",
-    "price": "600–900 ₽",
-    "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых. Дресс-код приветствуется – подтяжки, кепки, платья, яркие детали и немного джазового хулиганства.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_payberry",
-    "genre": "джаз",
-    "source_url": "https://t.me/afisha_payberry/1664",
-    "images": [
-      "/images/events/3d602bd65982905513226cef097549e8.jpg",
-      "/images/events/b2641041bd477193391cf47d921f1df4.jpg"
-    ],
-    "image": "/images/events/3d602bd65982905513226cef097549e8.jpg",
-    "post_date": "2026-11-11T09:30:32+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-13T03:40:43.784513+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
     ],
     "moderation_status": "approved"
   },
@@ -18665,6 +18578,129 @@
     "moderation_status": "approved"
   },
   {
+    "id": "32df7bae",
+    "date": "2026-11-14",
+    "time": null,
+    "artist": "Таврида Band",
+    "event_type": "концерт",
+    "venue": "Севастополь",
+    "price": "600–900 ₽",
+    "description": "Диксиленд «Таврида Band», фортепиано, танцы и горячие ритмы в духе ревущих двадцатых.",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_payberry",
+    "genre": "классика",
+    "source_url": "https://t.me/afisha_payberry/1664",
+    "images": [
+      "/images/events/695ea07834c25adcbfa7027e530fc896.jpg",
+      "/images/events/b2641041bd477193391cf47d921f1df4.jpg"
+    ],
+    "image": "/images/events/695ea07834c25adcbfa7027e530fc896.jpg",
+    "post_date": "2026-11-11T09:30:32+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-14T03:33:23.343181+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-14",
+    "time": "19:00",
+    "artist": "Таврида Band, Антон Калиниченко",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "600–900 ₽",
+    "description": "В этот вечер в «Снежинке» выступит диксиленд «Таврида Band» — семь музыкантов из разных городов Крыма, а специальным гостем станет Антон Калиниченко (фортепиано). В программе — новоорлеанский диксиленд, джазовые стандарты, музыкальные фантазии и латиноамериканские ритмы.",
+    "image": "/images/events/0ce7628fc08e8178ac3315d7b97515bb.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-09T10:55:59+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2131",
+    "id": "a4d5fe45",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-14T03:33:23.343181+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-18",
+    "time": null,
+    "artist": "СНИМКИ",
+    "event_type": "концерт",
+    "venue": "Новосибирск",
+    "price": null,
+    "description": "Концерт группы СНИМКИ в Новосибирске.",
+    "image": null,
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-11-11T09:59:13+00:00",
+    "source_url": "https://vk.com/wall-89840945_121332",
+    "id": "8293d2e1",
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ]
+  },
+  {
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Ирина Депутович",
+    "event_type": "музыкальный вечер",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
+    "description": "МУЗЫКАЛЬНЫЙ НОВЫЙ ГОД 2027 В СЕВАСТОПОЛЕ! Живой звук от Ирины Депутович.",
+    "image": "/images/events/ff0184ab4a14d13eb633ac09e888f2cc.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-13T17:40:12+00:00",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "id": "0c6fc9b2",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "date": "2026-12-12",
+    "time": "20:00",
+    "artist": "МЯТНЫЙ ГРОМ BAND",
+    "event_type": "концерт",
+    "venue": "Ресто-Бар «У Чёрного моря»",
+    "price": "200 руб. / чел.",
+    "description": "Выступление МЯТНОГО ГРОМ BAND.",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T14:11:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1148",
+    "id": "7b34b139",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
     "date": "2026-08-11",
     "time": null,
     "artist": "неизвестно",
@@ -18687,5 +18723,35 @@
       "нет цены"
     ],
     "moderation_status": "archived"
+  },
+  {
+    "id": "3fe52eb3",
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "event_type": "концерт",
+    "venue": "Севастопольский ЦКиИ",
+    "price": "от 1750 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_city": "Севастополь",
+    "source_channel": "afisha_ru",
+    "genre": "метал",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "images": [
+      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+    ],
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "post_date": "2026-11-13T03:40:22.299313+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "genre"
+    ],
+    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+    ]
   }
 ]
