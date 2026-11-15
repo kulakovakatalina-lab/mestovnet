@@ -16162,7 +16162,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-10-20",
@@ -17472,29 +17472,6 @@
     "moderation_status": "archived"
   },
   {
-    "id": "37a9b83b",
-    "date": "2026-11-15",
-    "time": "21:00",
-    "artist": "Алекс Бах",
-    "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
-    "price": "бесплатно",
-    "description": "Авторская музыка, акустика",
-    "source_city": "Симферополь",
-    "source_channel": "rocknroll_82",
-    "genre": "авторская",
-    "source_url": "https://vk.com/wall-237501275_231",
-    "images": [
-      "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
-      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
-    ],
-    "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
-    "post_date": "2026-11-11T07:10:01+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
     "id": "275ce12f",
     "date": "2026-11-21",
     "time": "21:00",
@@ -17710,27 +17687,27 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "dc5711d6",
     "date": "2026-11-15",
-    "time": null,
+    "time": "18:00",
     "artist": "джаз-трио «А3», Анна Сидоренко",
     "event_type": "концерт",
-    "venue": "Егоровский зал, Массандра",
+    "venue": "Егоровский зал винодельни «Массандра»",
     "price": null,
-    "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+    "description": "Премьера новой программы «Франция & Джаз» с вокалисткой Анной Сидоренко. В программе — музыка Эдит Пиаф, Шарля Азнавура, Джо Дассена и других легендарных французских исполнителей.",
     "source_city": "Ялта",
     "source_channel": "sevastopol_jazz",
     "genre": "джаз",
-    "source_url": "https://vk.com/wall-214055536_2453",
+    "source_url": "https://t.me/afisha_crimea/9133",
     "images": [
-      "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
+      "/images/events/0bce793d136c0695cf918099392f37e6.jpg",
+      "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg"
     ],
-    "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg",
-    "post_date": "2026-11-10T16:29:03+00:00",
+    "image": "/images/events/0bce793d136c0695cf918099392f37e6.jpg",
+    "post_date": "2026-11-14T07:49:11+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -17741,7 +17718,6 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [
-      "нет времени",
       "нет цены"
     ],
     "moderation_status": "approved"
@@ -17872,7 +17848,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
+      "/images/events/c55355df5847d59e49abc5fc11a84b63.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17898,7 +17874,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/91977140b7ef8c65e3ed79938e378bc4.jpg"
+      "/images/events/c55355df5847d59e49abc5fc11a84b63.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -18092,7 +18068,8 @@
     "genre": "классика",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-v-muzyke-2024?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg"
+      "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
+      "/images/events/92d979738e604b67991d9fb9b4f0b603.jpg"
     ],
     "image": "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
     "post_date": "2026-11-21",
@@ -18121,7 +18098,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
       "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
+      "/images/events/6d3b6dabf40e0781510d42c81f2f76f3.png"
     ],
     "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
     "post_date": "2026-11-20",
@@ -18177,7 +18154,8 @@
     "genre": "классика",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/cherez-muzyku-k-svetu-2025?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg"
+      "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg",
+      "/images/events/f0a2457bb308f908ae4ed06a194a1f73.jpg"
     ],
     "image": "/images/events/bd01a0cb982f30cf92d57c6b18386f58.jpg",
     "post_date": "2026-12-13",
@@ -18264,7 +18242,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-22",
@@ -18322,7 +18300,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-12",
@@ -18352,31 +18330,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Ночные грузчики",
-    "venue": "Депо",
-    "event_type": "концерт",
-    "price": "от 1 500 ₽",
-    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-22",
-    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
-    "id": "5b3c759f",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "id": "3d2ff3be",
     "date": "2026-11-19",
     "time": "19:00",
@@ -18393,7 +18346,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-14T03:33:07.089473+00:00",
+    "post_date": "2026-11-15T02:59:29.157856+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price"
@@ -18448,7 +18401,7 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "67c8bb8c-0c1c8137db43",
@@ -18469,24 +18422,6 @@
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
     "post_date": "2026-11-02T12:05:22+00:00",
     "source_status": "active",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
-    "date": "2026-12-11",
-    "time": "19:00",
-    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
-    "venue": "Дворец культуры профсоюзов",
-    "event_type": "концерт",
-    "price": "от 2 590 ₽",
-    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-12-11",
-    "image": "/images/events/bde5f78bbb2cb9a114eede4c0a42762d.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
-    "id": "ac92b02c",
-    "genre": "классика",
     "needs_review": false,
     "review_reasons": []
   },
@@ -18534,7 +18469,7 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/9bd05e39488b6da223b69c8e790e6a42.jpg"
+      "/images/events/4c0ada2aaa12201561190bccab68187b.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
@@ -18607,7 +18542,7 @@
     "review_reasons": [
       "нет времени"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-14",
@@ -18633,30 +18568,7 @@
     "genre": "джаз",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-18",
-    "time": null,
-    "artist": "СНИМКИ",
-    "event_type": "концерт",
-    "venue": "Новосибирск",
-    "price": null,
-    "description": "Концерт группы СНИМКИ в Новосибирске.",
-    "image": null,
-    "images": null,
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-11-11T09:59:13+00:00",
-    "source_url": "https://vk.com/wall-89840945_121332",
-    "id": "8293d2e1",
-    "genre": "поп",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет цены",
-      "нет постера"
-    ]
+    "moderation_status": "archived"
   },
   {
     "date": "2027-12-31",
@@ -18701,6 +18613,132 @@
     "moderation_status": "approved"
   },
   {
+    "id": "37a9b83b",
+    "date": "2026-11-15",
+    "time": "21:00",
+    "artist": "Алекс Бах",
+    "event_type": "концерт",
+    "venue": "Рок-н-рольщики (Симферополь)",
+    "price": "бесплатно",
+    "description": "Впервые на нашей сцене проект Алекс Бах с авторской музыкой. Акустика.",
+    "source_city": "Симферополь",
+    "source_channel": "rocknroll_82",
+    "genre": "авторская",
+    "source_url": "https://vk.com/wall-237501275_231",
+    "images": [
+      "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+    ],
+    "image": "/images/events/fe860aeddb015556a97aabaf616e93f8.jpg",
+    "post_date": "2026-11-11T07:10:01+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Ночные грузчики",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 1 500 ₽",
+    "description": "Альбом «Ночные грузчики» вышел почти девять лет назад, и с тех пор всерьез не обсуждалось планов на новые записи. Монтаж аттракционов ускоряется, реальность подкидывает все новые жуткие сюжеты, но фокусироваться на них не было ни желания, ни мотивации. Тело, лежащее под землей, проснется по своим собственным часам, чтобы поведать свой сон о грядущем. Поэту нужно только сохранять баланс, оставаясь грязной шовинистской свиньей среди чистоплюев и ангелочком на засаленной оргии.\n\nЗа историю группы у нас был лишь один большой тур, в начале 2016 года — времени, по которому люди теперь много и со смаком ностальгируют. Поздней осенью прокатимся от Владивостока до Калининграда, вспомним лучшее из уже написанного, решим, какими будут новые песни.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-22",
+    "image": "/images/events/e7aaf8b089fec7ea6dc01d854548c318.png",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/nochnye-gruzchiki-tour",
+    "id": "5b3c759f",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-11",
+    "time": "19:00",
+    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
+    "venue": "Дворец культуры профсоюзов",
+    "event_type": "концерт",
+    "price": "от 2 590 ₽",
+    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-12-11",
+    "image": "/images/events/54d1667e92c05316c67c9f730f2b1bad.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
+    "id": "ac92b02c",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "event_type": "концерт",
+    "price": "от 1750 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-15T02:59:29.157837+00:00",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "genre": "метал",
+    "id": "3fe52eb3",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "time": "19:00",
+    "artist": "Елена Голофеева (вокал), Виталий Какурин (фортепиано), Иван Сыч (саксофон), Руслан Сейдалиев (ударные), Юрий Тараненко (контрабас)",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "600–900 ₽",
+    "description": "Вечер золотых стандартов мировой джазовой музыки: от проникновенных баллад до темпераментного свинга и блюзовых импровизаций.",
+    "image": "/images/events/fcc0daf8b04f47eebda6c650ee344987.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-09T10:55:59+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2131",
+    "id": "e365b470",
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
     "date": "2026-08-11",
     "time": null,
     "artist": "неизвестно",
@@ -18725,33 +18763,26 @@
     "moderation_status": "archived"
   },
   {
-    "id": "3fe52eb3",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "date": "2026-11-18",
+    "time": null,
+    "artist": "СНИМКИ",
     "event_type": "концерт",
-    "venue": "Севастопольский ЦКиИ",
-    "price": "от 1750 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_ru",
-    "genre": "метал",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "images": [
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
-    ],
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-13T03:40:22.299313+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price",
-      "genre"
-    ],
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
-    "source_status": "active",
+    "venue": "Новосибирск",
+    "price": null,
+    "description": "Концерт группы СНИМКИ в Новосибирске.",
+    "image": null,
+    "images": null,
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-11-11T09:59:13+00:00",
+    "source_url": "https://vk.com/wall-89840945_121332",
+    "id": "8293d2e1",
+    "genre": "поп",
     "needs_review": true,
     "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+      "нет времени",
+      "нет цены",
+      "нет постера"
     ]
   }
 ]

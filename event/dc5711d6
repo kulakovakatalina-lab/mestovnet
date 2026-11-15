@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="джаз-трио «А3», Анна Сидоренко, Егоровский зал, Массандра, в Ялте, 15 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="джаз-трио «А3», Анна Сидоренко, Егоровский зал винодельни «Массандра», в Ялте, 15 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>джаз-трио «А3», Анна Сидоренко — Егоровский зал, Массандра, Ялта, 15 ноября · Местов.Нет</title>
+<title>джаз-трио «А3», Анна Сидоренко — Егоровский зал винодельни «Массандра», Ялта, 15 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,10 +960,10 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/dc5711d6">
-<meta property="og:title" content="джаз-трио «А3», Анна Сидоренко — Егоровский зал, Массандра, Ялта, 15 ноября · Местов.Нет">
-<meta property="og:description" content="джаз-трио «А3», Анна Сидоренко, Егоровский зал, Массандра, в Ялте, 15 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="джаз-трио «А3», Анна Сидоренко — Егоровский зал винодельни «Массандра», Ялта, 15 ноября · Местов.Нет">
+<meta property="og:description" content="джаз-трио «А3», Анна Сидоренко, Егоровский зал винодельни «Массандра», в Ялте, 15 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/0bce793d136c0695cf918099392f37e6.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -971,22 +971,22 @@ a { color: inherit; text-decoration: none; }
     {
       "@type": "MusicEvent",
       "name": "джаз-трио «А3», Анна Сидоренко",
-      "startDate": "2026-11-15",
+      "startDate": "2026-11-15T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Егоровский зал, Массандра",
+        "name": "Егоровский зал винодельни «Массандра»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Музыка, в которой французская эстрада встречается с джазом. Песни Эдит Пиаф, Шарля Азнавура, Джо Дассена, Мирей Матье и других известных французских исполнителей.",
+      "description": "Премьера новой программы «Франция & Джаз» с вокалисткой Анной Сидоренко. В программе — музыка Эдит Пиаф, Шарля Азнавура, Джо Дассена и других легендарных французских исполнителей.",
       "performer": {
         "@type": "MusicGroup",
         "name": "джаз-трио «А3», Анна Сидоренко"
       },
-      "image": "/images/events/1972e18f1a96916c34828a64bfa2b4cb.jpg"
+      "image": "/images/events/0bce793d136c0695cf918099392f37e6.jpg"
     }
   ]
 }

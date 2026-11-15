@@ -52,25 +52,6 @@
     ]
   },
   {
-    "id": "8293d2e1",
-    "date": "2026-11-18",
-    "time": null,
-    "artist": "СНИМКИ",
-    "venue": "Новосибирск",
-    "source_city": "Судак",
-    "price": null,
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Концерт группы СНИМКИ в Новосибирске.",
-    "image": null,
-    "source_url": "https://vk.com/wall-89840945_121332",
-    "reasons": [
-      "нет времени",
-      "нет цены",
-      "нет постера"
-    ]
-  },
-  {
     "id": "0c6fc9b2",
     "date": "2027-12-31",
     "time": null,
@@ -102,6 +83,25 @@
     "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
     "reasons": [
       "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+    ]
+  },
+  {
+    "id": "8293d2e1",
+    "date": "2026-11-18",
+    "time": null,
+    "artist": "СНИМКИ",
+    "venue": "Новосибирск",
+    "source_city": "Судак",
+    "price": null,
+    "genre": "поп",
+    "event_type": "концерт",
+    "description": "Концерт группы СНИМКИ в Новосибирске.",
+    "image": null,
+    "source_url": "https://vk.com/wall-89840945_121332",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
     ]
   }
 ]

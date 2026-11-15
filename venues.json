@@ -32,7 +32,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 43,
+    "event_count": 44,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -2702,13 +2702,13 @@
     "lon": null
   },
   {
-    "slug": "egorovskiy-zal-massandra",
-    "name": "Егоровский зал, Массандра",
+    "slug": "egorovskiy-zal-vinodelni-massandra",
+    "name": "Егоровский зал винодельни «Массандра»",
     "city": "Ялта",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Егоровский зал, Массандра"
+      "Егоровский зал винодельни «Массандра»"
     ],
     "description": null,
     "desc_baseline_count": 0,

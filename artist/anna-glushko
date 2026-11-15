@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Глушко — концерты в Крыму, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Анна Глушко в Крыму (Ялта). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Анна Глушко в Крыму (Ялта). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/anna-glushko">
   <meta property="og:title" content="Анна Глушко — концерты в Крыму, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Анна Глушко в Крыму (Ялта). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Анна Глушко в Крыму (Ялта). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Анна Глушко"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Глушко",
-      "startDate": "2026-11-14T15:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Глушко"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "театр имени А. П. Чехова",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ялта",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт «Бельканто» – встреча с искусством оперного вокала, яркими ариями и музыкой известных композиторов. В программе прозвучат произведения Джакомо Пуччини, Гаэтано Доницетти, русских и европейских композиторов.",
-      "image": "/images/events/c58e9fdcb4e26e4adeea61271fbc180e.jpg"
     }
   ]
 }
