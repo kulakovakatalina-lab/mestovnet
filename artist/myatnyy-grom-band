@@ -47,7 +47,7 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Выступление МЯТНОГО ГРОМ BAND."
+      "description": "Мощный живой звук, драйв и полный зал энергии."
     }
   ]
 }
@@ -1039,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Мятный гром band»", "МЯТНЫЙ ГРОМ BAND", "Мятный гром band", "Мятный гром band"];
+const ARTIST_ALIASES = ["Группа «Мятный гром band»", "Мятный гром band", "Мятный гром band"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

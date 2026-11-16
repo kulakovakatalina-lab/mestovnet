@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Егоровский зал винодельни «Массандра» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Егоровский зал винодельни «Массандра», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Егоровский зал винодельни «Массандра», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/egorovskiy-zal-vinodelni-massandra">
   <meta property="og:title" content="Егоровский зал винодельни «Массандра» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Егоровский зал винодельни «Массандра», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Егоровский зал винодельни «Массандра», в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "джаз-трио «А3», Анна Сидоренко",
-      "startDate": "2026-11-15T18:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Егоровский зал винодельни «Массандра»"
-      },
-      "description": "Премьера новой программы «Франция & Джаз» с вокалисткой Анной Сидоренко. В программе — музыка Эдит Пиаф, Шарля Азнавура, Джо Дассена и других легендарных французских исполнителей.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "джаз-трио «А3», Анна Сидоренко"
-      },
-      "image": "/images/events/0bce793d136c0695cf918099392f37e6.jpg"
     }
   ]
 }
