@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/art-kafe-snezhinka">
   <meta property="og:title" content="Арт-кафе «Снежинка» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Арт-кафе «Снежинка», в Севастополе. 2 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,6 +33,34 @@
         "@type": "PostalAddress",
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Перов",
+      "startDate": "2026-11-20T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Осень в джазовых тонах. Красивые джазовые стандарты разных лет в авторских аранжировках. Фортепиано и труба, знакомые мелодии в новом звучании и живая импровизация.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Перов"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "ансамбль «Консонанс»",
+      "startDate": "2026-11-22T19:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Арт-кафе «Снежинка»"
+      },
+      "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "ансамбль «Консонанс»"
       }
     }
   ]

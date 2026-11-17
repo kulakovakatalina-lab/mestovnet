@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <title>джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/dzhaz-trio-a3">
-  <meta property="og:title" content="Джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
+  <meta property="og:title" content="джаз-трио «А3» — концерты в Крыму, Севастополь, Симферополь, Ялта · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов джаз-трио «А3» в Крыму (Севастополь, Симферополь, Ялта). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,15 +28,15 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Джаз-трио «А3»"
+      "name": "джаз-трио «А3»"
     },
     {
       "@type": "MusicEvent",
-      "name": "Джаз-трио «А3»",
+      "name": "джаз-трио «А3»",
       "startDate": "2026-11-22",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Джаз-трио «А3»"
+        "name": "джаз-трио «А3»"
       },
       "location": {
         "@type": "MusicVenue",
@@ -54,7 +54,7 @@
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Джаз-трио «А3»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "джаз-трио «А3»"}]}
 </script>
   <style>
 
@@ -1018,7 +1018,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Джаз-трио «А3»</h1>
+    <h1 class="genre-hero-title">джаз-трио «А3»</h1>
 <p class="venue-description">Джазовый коллектив с программами от неоклассики до джаза и мировых хитов. Выступает с Анной Шакель и Виктором Никулиным; среди программ — «Неоклассика и джаз» в «Снежинке» и «Ритм &amp; Грув» в Центре виноделия «Массандра».</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь, Ялта, Научный</span></div>
   </div>
@@ -1040,7 +1040,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Джаз-трио «А3»", "Джаз-трио А3", "джаз-трио «А3»", "джаз-трио А3", "Джаз-трио «А3»"];
+const ARTIST_ALIASES = ["Джаз-трио «А3»", "Джаз-трио А3", "джаз-трио «А3»", "джаз-трио А3", "джаз-трио «А3»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

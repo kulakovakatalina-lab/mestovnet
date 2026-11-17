@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресто-Бар «У Чёрного моря»",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Мощный живой звук, драйв и полный зал энергии."
+      "description": "Следующее выступление МЯТНЫЙ ГРОМ BAND."
     }
   ]
 }

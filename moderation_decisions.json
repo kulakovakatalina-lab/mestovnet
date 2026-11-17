@@ -21,6 +21,16 @@
     "fingerprint": "13c3972c0e09b31d1e58d01753697e725e4b47c7f586884fd0ac59a66406fe21"
   },
   {
+    "event_id": "0c6fc9b2",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "reasons": [
+      "нет времени"
+    ],
+    "status": "approved",
+    "decided_at": "2026-11-16T04:37:56.091Z",
+    "fingerprint": "75a10bf3687c5309550912abbf7089e529c95b73f19eb8c461ff74604c7cb9df"
+  },
+  {
     "event_id": "19525d0a",
     "source_url": "https://t.me/clubjam/1131",
     "reasons": [
@@ -157,6 +167,18 @@
     "status": "rejected",
     "decided_at": "2026-08-29T15:50:31.183Z",
     "fingerprint": "22a2781f67d225598910218a7f871bc7d508fea2b86caa05e24b4d3a6c613b1e"
+  },
+  {
+    "event_id": "8293d2e1",
+    "source_url": "https://vk.com/wall-89840945_121332",
+    "reasons": [
+      "нет времени",
+      "нет цены",
+      "нет постера"
+    ],
+    "status": "rejected",
+    "decided_at": "2026-11-16T04:38:23.626Z",
+    "fingerprint": "5f4860ed3044ee43643c3ea610a45f9c318cc1738d698bebcb68132c4d39442f"
   },
   {
     "event_id": "9dd6645a",

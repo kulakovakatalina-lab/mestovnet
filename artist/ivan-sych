@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Иван Сыч — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Иван Сыч в Крыму (Севастополь). 0 ближайших событий.">
+  <title>Иван Сыч — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/ivan-sych">
-  <meta property="og:title" content="Иван Сыч — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Иван Сыч в Крыму (Севастополь). 0 ближайших событий.">
+  <meta property="og:title" content="Иван Сыч — концерты в Крыму, Севастополь, Крым · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "Иван Сыч"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Иван Сыч",
+      "startDate": "2026-11-22T16:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Иван Сыч"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "с. Родниковое",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Крым",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
+      "image": "/images/events/e1ff1e7cfae5e9a9dc6d08498200f4c7.jpg"
     }
   ]
 }
@@ -1000,7 +1020,7 @@ footer {
     </div>
     <h1 class="genre-hero-title">Иван Сыч</h1>
 
-<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь</span></div>
+<div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Крым</span></div>
   </div>
 <div class="genre-hero-meta" id="upcoming-count"></div>
 </div>
