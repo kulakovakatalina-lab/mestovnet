@@ -61,8 +61,9 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 21,
+    "event_count": 22,
     "aliases": [
+      "Ресто-Бар «У Чёрного моря»",
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»"
@@ -2826,13 +2827,13 @@
     "lon": null
   },
   {
-    "slug": "novosibirsk",
-    "name": "Новосибирск",
-    "city": "Судак",
+    "slug": "p-nauchnyy",
+    "name": "п. Научный",
+    "city": "Научный",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Новосибирск"
+      "п. Научный"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2854,13 +2855,13 @@
     "lon": null
   },
   {
-    "slug": "p-nauchnyy",
-    "name": "п. Научный",
-    "city": "Научный",
+    "slug": "novosibirsk",
+    "name": "Новосибирск",
+    "city": "Судак",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "п. Научный"
+      "Новосибирск"
     ],
     "description": null,
     "desc_baseline_count": 0,

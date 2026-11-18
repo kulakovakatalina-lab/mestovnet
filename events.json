@@ -1660,7 +1660,8 @@
     "post_date": "2026-11-17T05:17:22.443962+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2027-07-19",
@@ -17849,7 +17850,7 @@
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
       "/images/events/ff2ed168391aad0853bc69bcb644b40e.jpg",
-      "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg"
+      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17875,7 +17876,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg"
+      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -18016,8 +18017,7 @@
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
-      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg"
     ],
     "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
     "post_date": "2027-01-04",
@@ -18331,34 +18331,6 @@
     "moderation_status": "archived"
   },
   {
-    "id": "3d2ff3be",
-    "date": "2026-11-19",
-    "time": "19:00",
-    "artist": "Хиты 2000-х. Караоке с оркестром",
-    "event_type": "концерт",
-    "venue": "Ribiza",
-    "price": "от 1990 ₽",
-    "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-    "source_city": "Симферополь",
-    "source_channel": "afisha_ru",
-    "genre": "рок",
-    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
-    "images": [
-      "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
-    ],
-    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-17T05:17:22.443941+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "price"
-    ],
-    "source_last_checked_at": "2026-11-12T04:06:17.616267+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "id": "359c8b0c",
     "date": "2026-11-13",
     "time": "21:00",
@@ -18470,7 +18442,7 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/b239afb1370595c695bb6466eb411c58.jpg"
+      "/images/events/e32ef0c3ed920c10ba1d8bf5c35bb98b.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
@@ -18685,7 +18657,7 @@
     "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
     "event_type": "концерт",
     "venue": "Севастопольский ЦКиИ",
-    "price": "от 1750 ₽",
+    "price": "от 2350 ₽",
     "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
     "source_city": "Севастополь",
     "source_channel": "afisha_ru",
@@ -18695,7 +18667,7 @@
       "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-17T05:17:22.443916+00:00",
+    "post_date": "2026-11-18T04:41:11.881741+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -18728,6 +18700,264 @@
     "moderation_status": "archived"
   },
   {
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Фортепиано), Дуэт (Виолончель",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "бесплатно",
+    "description": "Живая классика и мировые хиты.",
+    "image": "/images/events/877b54f349840a1d9974d26be9489282.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-15T08:01:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1160",
+    "id": "4744bf0a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-17T05:17:38.903574+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "a5a1f485",
+    "date": "2026-11-29",
+    "time": null,
+    "artist": "Анна Шакель, джаз-трио «А3»",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Музыка, винил и общение.",
+    "source_city": "Севастополь",
+    "source_channel": "sevastopol_jazz",
+    "genre": "джаз",
+    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "images": [
+      "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg",
+      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
+    ],
+    "image": "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg",
+    "post_date": "2026-11-05T13:09:32+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "id": "1da9989d",
+    "date": "2026-11-20",
+    "time": "19:00",
+    "artist": "Максим Перов",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Осень в джазовых тонах. Красивые джазовые стандарты разных лет в авторских аранжировках. Фортепиано и труба, знакомые мелодии в новом звучании и живая импровизация.",
+    "source_city": "Севастополь",
+    "source_channel": "artcafesnezhinka",
+    "genre": "джаз",
+    "source_url": "https://t.me/artcafesnezhinka/2152",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-16T17:13:43+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "57960552",
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "ансамбль «Консонанс»",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
+    "source_city": "Севастополь",
+    "source_channel": "artcafesnezhinka",
+    "genre": "поп",
+    "source_url": "https://t.me/artcafesnezhinka/2152",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-16T17:13:43+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "4e321489",
+    "date": "2026-11-21",
+    "time": null,
+    "artist": "Оркестр «Новая гармония»",
+    "event_type": "концерт",
+    "venue": "п. Научный",
+    "price": "1700–2500 ₽",
+    "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
+    "source_city": "Научный",
+    "source_channel": "afisha_payberry",
+    "genre": "поп",
+    "source_url": "https://vk.com/wall-221587243_2533",
+    "images": [
+      "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
+      "/images/events/04c9d68e0484a392c0d6d69b7a1e40c0.jpg"
+    ],
+    "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
+    "post_date": "2026-11-16T10:00:00+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "time": "16:00",
+    "artist": "Иван Сыч",
+    "event_type": "концерт",
+    "venue": "с. Родниковое",
+    "price": "Взрослый: 1300 ₽, Дети (6-14 лет вкл): 600 ₽",
+    "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
+    "image": "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
+    "images": null,
+    "source_channel": "crimea_event",
+    "source_city": "Крым",
+    "post_date": "2026-11-16T13:23:01+00:00",
+    "source_url": "https://t.me/crimea_event/5706",
+    "id": "03b01e9b",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-12",
+    "time": "20:00",
+    "artist": "МЯТНЫЙ ГРОМ BAND",
+    "event_type": "концерт",
+    "venue": "Ресто-Бар «У Чёрного моря»",
+    "price": "200 руб/чел",
+    "description": "Живой звук, драйв и полный зал энергии.",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T14:11:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1148",
+    "id": "7b34b139",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "venue",
+      "price",
+      "description",
+      "event_type",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "20:00",
+    "artist": "Хиты 2000-х. Караоке с оркестром",
+    "venue": "Ribiza",
+    "event_type": "концерт",
+    "price": "от 1990 ₽",
+    "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-18T04:41:11.881766+00:00",
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "genre": "рок",
+    "id": "3d2ff3be",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "date",
+      "time"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-19",
+    "time": "19:00",
+    "artist": "Ирина Депутович",
+    "event_type": "вечеринка",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": null,
+    "description": "Вечеринка «Путешествие в нулевые»! Живая музыка и дискотека под живое исполнение песен Ирины Депутович.",
+    "image": "/images/events/9d907807708887d0ce41b6e4112f3af0.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-16T12:58:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1168",
+    "id": "2e4a9363",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-08-11",
+    "time": null,
+    "artist": "неизвестно",
+    "event_type": "фестиваль",
+    "venue": "Квартал культур мира",
+    "price": null,
+    "description": "Караоке-пауза на Международном фестивале молодёжи. Знакомство с культурой стран через шоу и выступления.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-11T08:59:01+00:00",
+    "image": "/images/events/4a41fdd3b95502a4272685b62f94aad2.jpg",
+    "images": null,
+    "source_url": "https://t.me/tavrida_art/21776",
+    "id": "52c8990b",
+    "genre": "фолк",
+    "needs_review": false,
+    "review_reasons": [
+      "нет названия",
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "archived"
+  },
+  {
     "date": "2026-11-18",
     "time": null,
     "artist": "СНИМКИ",
@@ -18757,196 +18987,5 @@
       "нет постера"
     ],
     "moderation_decision_fingerprint": "5f4860ed3044ee43643c3ea610a45f9c318cc1738d698bebcb68132c4d39442f"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "Фортепиано), Дуэт (Виолончель",
-    "event_type": "концерт",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "бесплатно",
-    "description": "Живая классика и мировые хиты.",
-    "image": "/images/events/877b54f349840a1d9974d26be9489282.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-15T08:01:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1160",
-    "id": "4744bf0a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-17T05:17:38.903574+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-12",
-    "time": "20:00",
-    "artist": "Мятный гром band",
-    "event_type": "вечеринка",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "200 руб / чел",
-    "description": "Следующее выступление МЯТНЫЙ ГРОМ BAND.",
-    "image": null,
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-11T14:11:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1148",
-    "id": "7b34b139",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-17T05:17:38.903574+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "price",
-      "description",
-      "event_type",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-29",
-    "time": null,
-    "artist": "Анна Шакель, джаз-трио «А3»",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Музыка, винил и общение.",
-    "image": "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg",
-    "images": null,
-    "source_channel": "sevastopol_jazz",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-05T13:09:32+00:00",
-    "source_url": "https://t.me/sevastopol_jazz/1335",
-    "id": "a5a1f485",
-    "genre": "джаз",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
-    "date": "2026-11-22",
-    "time": "16:00",
-    "artist": "Иван Сыч",
-    "event_type": "концерт",
-    "venue": "с. Родниковое",
-    "price": "Взрослый: 1300₽, Дети (6-14 лет вкл): 600₽",
-    "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
-    "image": "/images/events/e1ff1e7cfae5e9a9dc6d08498200f4c7.jpg",
-    "images": null,
-    "source_channel": "crimea_event",
-    "source_city": "Крым",
-    "post_date": "2026-11-16T13:23:01+00:00",
-    "source_url": "https://t.me/crimea_event/5706",
-    "id": "03b01e9b",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": []
-  },
-  {
-    "date": "2026-11-20",
-    "time": "19:00",
-    "artist": "Максим Перов",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Осень в джазовых тонах. Красивые джазовые стандарты разных лет в авторских аранжировках. Фортепиано и труба, знакомые мелодии в новом звучании и живая импровизация.",
-    "image": null,
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-16T17:13:43+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2152",
-    "id": "1da9989d",
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "ансамбль «Консонанс»",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
-    "image": null,
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-16T17:13:43+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2152",
-    "id": "57960552",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-21",
-    "time": null,
-    "artist": "Оркестр «Новая гармония»",
-    "event_type": "концерт",
-    "venue": "п. Научный",
-    "price": "1700–2500 ₽",
-    "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
-    "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-    "images": null,
-    "source_channel": "afisha_payberry",
-    "source_city": "Научный",
-    "post_date": "2026-11-16T10:00:00+00:00",
-    "source_url": "https://vk.com/wall-221587243_2533",
-    "id": "4e321489",
-    "genre": "поп",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "time": null,
-    "artist": "неизвестно",
-    "event_type": "фестиваль",
-    "venue": "Квартал культур мира",
-    "price": null,
-    "description": "Караоке-пауза на Международном фестивале молодёжи. Знакомство с культурой стран через шоу и выступления.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-11T08:59:01+00:00",
-    "image": "/images/events/4a41fdd3b95502a4272685b62f94aad2.jpg",
-    "images": null,
-    "source_url": "https://t.me/tavrida_art/21776",
-    "id": "52c8990b",
-    "genre": "фолк",
-    "needs_review": false,
-    "review_reasons": [
-      "нет названия",
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "archived"
   }
 ]

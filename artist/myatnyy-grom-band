@@ -40,14 +40,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "Ресто-Бар «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Следующее выступление МЯТНЫЙ ГРОМ BAND."
+      "description": "Живой звук, драйв и полный зал энергии."
     }
   ]
 }
@@ -1039,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Мятный гром band»", "Мятный гром band", "Мятный гром band"];
+const ARTIST_ALIASES = ["Группа «Мятный гром band»", "МЯТНЫЙ ГРОМ BAND", "Мятный гром band", "Мятный гром band"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {
