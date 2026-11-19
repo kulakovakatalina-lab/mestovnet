@@ -17849,8 +17849,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/ff2ed168391aad0853bc69bcb644b40e.jpg",
-      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
+      "/images/events/8b9f4b9e722eea75395daadfbac11f60.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17876,7 +17875,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
+      "/images/events/8b9f4b9e722eea75395daadfbac11f60.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-09T11:54:57+00:00",
@@ -17909,7 +17908,7 @@
     "source_url": "https://t.me/koncertykrym/2388",
     "images": [
       "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
-      "/images/events/b8ac4b85efb3d2de20f87efaaa2d4d2a.jpg"
+      "/images/events/a8ce6fa36f15e0672993d3b5aec8610e.jpg"
     ],
     "image": "/images/events/e8bc40e0331741169352970d7b37c1ef.jpg",
     "post_date": "2026-11-06T07:50:01+00:00",
@@ -18017,7 +18016,8 @@
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg"
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
+      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
     ],
     "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
     "post_date": "2027-01-04",
@@ -18442,7 +18442,7 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/e32ef0c3ed920c10ba1d8bf5c35bb98b.jpg"
+      "/images/events/07156c9d3fb7e829e705b8aa71ad24d6.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
@@ -18544,32 +18544,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2027-12-31",
-    "time": null,
-    "artist": "Ирина Депутович",
-    "event_type": "музыкальный вечер",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
-    "description": "МУЗЫКАЛЬНЫЙ НОВЫЙ ГОД 2027 В СЕВАСТОПОЛЕ! Живой звук от Ирины Депутович.",
-    "image": "/images/events/ff0184ab4a14d13eb633ac09e888f2cc.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-13T17:40:12+00:00",
-    "source_url": "https://vk.com/wall-233167471_1150",
-    "id": "0c6fc9b2",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved",
-    "moderated_at": "2026-11-16T04:37:56.091Z",
-    "moderation_decision_reasons": [
-      "нет времени"
-    ],
-    "moderation_decision_fingerprint": "75a10bf3687c5309550912abbf7089e529c95b73f19eb8c461ff74604c7cb9df"
-  },
-  {
     "id": "37a9b83b",
     "date": "2026-11-15",
     "time": "21:00",
@@ -18667,7 +18641,7 @@
       "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-18T04:41:11.881741+00:00",
+    "post_date": "2026-11-19T04:28:11.863811+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -18741,7 +18715,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg",
-      "/images/events/519ee1a1c47254c08389f4d7b77d16db.jpg"
+      "/images/events/8b9f4b9e722eea75395daadfbac11f60.jpg"
     ],
     "image": "/images/events/f1fbe8dc19551155a18e869b6b36077e.jpg",
     "post_date": "2026-11-05T13:09:32+00:00",
@@ -18815,7 +18789,7 @@
     "source_url": "https://vk.com/wall-221587243_2533",
     "images": [
       "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-      "/images/events/04c9d68e0484a392c0d6d69b7a1e40c0.jpg"
+      "/images/events/bfa4db281bc40321fc3b3bd89989bf72.jpg"
     ],
     "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
     "post_date": "2026-11-16T10:00:00+00:00",
@@ -18826,6 +18800,7 @@
     ]
   },
   {
+    "id": "03b01e9b",
     "date": "2026-11-22",
     "time": "16:00",
     "artist": "Иван Сыч",
@@ -18833,80 +18808,52 @@
     "venue": "с. Родниковое",
     "price": "Взрослый: 1300 ₽, Дети (6-14 лет вкл): 600 ₽",
     "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
-    "image": "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
-    "images": null,
-    "source_channel": "crimea_event",
     "source_city": "Крым",
-    "post_date": "2026-11-16T13:23:01+00:00",
+    "source_channel": "crimea_event",
+    "genre": "поп",
     "source_url": "https://t.me/crimea_event/5706",
-    "id": "03b01e9b",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "images": [
+      "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
+      "/images/events/00c3be3eb51ad6503ac78ef5693b7172.jpg"
+    ],
+    "image": "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
+    "post_date": "2026-11-16T13:23:01+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price",
       "genre"
     ],
-    "genre": "поп",
+    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
   },
   {
-    "date": "2026-12-12",
-    "time": "20:00",
-    "artist": "МЯТНЫЙ ГРОМ BAND",
-    "event_type": "концерт",
-    "venue": "Ресто-Бар «У Чёрного моря»",
-    "price": "200 руб/чел",
-    "description": "Живой звук, драйв и полный зал энергии.",
-    "image": null,
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-11T14:11:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1148",
-    "id": "7b34b139",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "venue",
-      "price",
-      "description",
-      "event_type",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
+    "id": "3d2ff3be",
     "date": "2027-01-22",
     "time": "20:00",
     "artist": "Хиты 2000-х. Караоке с оркестром",
-    "venue": "Ribiza",
     "event_type": "концерт",
+    "venue": "Ribiza",
     "price": "от 1990 ₽",
     "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-    "source_channel": "afisha_ru",
     "source_city": "Симферополь",
-    "post_date": "2026-11-18T04:41:11.881766+00:00",
-    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "source_channel": "afisha_ru",
     "genre": "рок",
-    "id": "3d2ff3be",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "images": [
+      "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
+    ],
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "post_date": "2026-11-19T04:28:14.277270+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
       "time"
     ],
+    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
     "moderation_status": "approved"
@@ -18932,30 +18879,6 @@
       "нет цены"
     ],
     "moderation_status": "approved"
-  },
-  {
-    "date": "2026-08-11",
-    "time": null,
-    "artist": "неизвестно",
-    "event_type": "фестиваль",
-    "venue": "Квартал культур мира",
-    "price": null,
-    "description": "Караоке-пауза на Международном фестивале молодёжи. Знакомство с культурой стран через шоу и выступления.",
-    "source_channel": "tavrida_art",
-    "source_city": "Судак",
-    "post_date": "2026-08-11T08:59:01+00:00",
-    "image": "/images/events/4a41fdd3b95502a4272685b62f94aad2.jpg",
-    "images": null,
-    "source_url": "https://t.me/tavrida_art/21776",
-    "id": "52c8990b",
-    "genre": "фолк",
-    "needs_review": false,
-    "review_reasons": [
-      "нет названия",
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "archived"
   },
   {
     "date": "2026-11-18",
@@ -18987,5 +18910,162 @@
       "нет постера"
     ],
     "moderation_decision_fingerprint": "5f4860ed3044ee43643c3ea610a45f9c318cc1738d698bebcb68132c4d39442f"
+  },
+  {
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Ирина Депутович",
+    "event_type": "концерт",
+    "venue": "г. Севастополь, ул. Ленина, 8",
+    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
+    "description": "Живой звук создаст праздничное настроение.",
+    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-13T17:40:12+00:00",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "id": "0c6fc9b2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-19T04:28:33.050843+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "description",
+      "event_type"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-12",
+    "time": "20:00",
+    "artist": "Мятный гром band",
+    "event_type": "концерт",
+    "venue": "Ресто-Бар 'У Чёрного моря'",
+    "price": "200 руб./чел.",
+    "description": "Живой звук от Мятный гром band.",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T14:11:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1148",
+    "id": "7b34b139",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-19T04:28:33.050843+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "venue",
+      "price",
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "21:00",
+    "artist": "Меджикул",
+    "event_type": "концерт",
+    "venue": "Гастродвор, Ялта, Ленина 15",
+    "price": null,
+    "description": "Официальный запуск фирменных вечеринок с участием специального гостя — Меджикула. Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
+    "image": "/images/events/4fcd442559963cc4412fff50adc8aa96.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-11-17T11:40:51+00:00",
+    "source_url": "https://t.me/afisha_crimea/9159",
+    "id": "c41196ee",
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "18:00",
+    "artist": "трио «А3», Анна Шакель",
+    "event_type": "концерт",
+    "venue": "Севастополь Джаз",
+    "price": null,
+    "description": "Классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
+    "image": null,
+    "images": null,
+    "source_channel": "sevastopol_jazz",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-18T14:14:53+00:00",
+    "source_url": "https://vk.com/wall-214055536_2476",
+    "id": "06a385d8",
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "596d5770",
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8",
+    "price": null,
+    "description": "Музыка для души. В исполнении дуэта прозвучит лёгкая популярная классика, известные мировые хиты, а также произведения знаменитого дуэта THE PIANO GUYS.",
+    "source_city": "Севастополь",
+    "source_channel": "u_blacksea_rest",
+    "genre": "поп",
+    "source_url": "https://vk.com/wall-233167471_1176",
+    "images": [
+      "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg",
+      "/images/events/877b54f349840a1d9974d26be9489282.jpg"
+    ],
+    "image": "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg",
+    "post_date": "2026-11-18T10:55:00+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-08-11",
+    "time": null,
+    "artist": "неизвестно",
+    "event_type": "фестиваль",
+    "venue": "Квартал культур мира",
+    "price": null,
+    "description": "Караоке-пауза на Международном фестивале молодёжи. Знакомство с культурой стран через шоу и выступления.",
+    "source_channel": "tavrida_art",
+    "source_city": "Судак",
+    "post_date": "2026-08-11T08:59:01+00:00",
+    "image": "/images/events/4a41fdd3b95502a4272685b62f94aad2.jpg",
+    "images": null,
+    "source_url": "https://t.me/tavrida_art/21776",
+    "id": "52c8990b",
+    "genre": "фолк",
+    "needs_review": false,
+    "review_reasons": [
+      "нет названия",
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "archived"
   }
 ]

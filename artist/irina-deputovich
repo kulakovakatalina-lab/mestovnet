@@ -80,15 +80,15 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "г. Севастополь, ул. Ленина, 8",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "МУЗЫКАЛЬНЫЙ НОВЫЙ ГОД 2027 В СЕВАСТОПОЛЕ! Живой звук от Ирины Депутович.",
-      "image": "/images/events/ff0184ab4a14d13eb633ac09e888f2cc.jpg"
+      "description": "Живой звук создаст праздничное настроение.",
+      "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg"
     }
   ]
 }
