@@ -18,7 +18,7 @@
     "name": "Рок-н-рольщики (Севастополь)",
     "city": "Севастополь",
     "address": "",
-    "event_count": 48,
+    "event_count": 49,
     "aliases": [
       "Рок-н-рольщики (Севастополь)"
     ],
@@ -32,7 +32,7 @@
     "name": "Арт-кафе «Снежинка»",
     "city": "Севастополь",
     "address": "",
-    "event_count": 47,
+    "event_count": 48,
     "aliases": [
       "Арт-кафе «Снежинка»",
       "арт-кафе «Снежинка»"
@@ -63,7 +63,6 @@
     "address": "ул. Ленина, 8",
     "event_count": 22,
     "aliases": [
-      "Ресто-Бар 'У Чёрного моря'",
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»",
@@ -2865,6 +2864,20 @@
     "event_count": 1,
     "aliases": [
       "Новосибирск"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "kontsertnyy-zal-krao-nauchnyy",
+    "name": "Концертный зал КРаО (Научный)",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концертный зал КРаО (Научный)"
     ],
     "description": null,
     "desc_baseline_count": 0,

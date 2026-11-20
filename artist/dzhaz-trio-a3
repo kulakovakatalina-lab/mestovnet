@@ -33,7 +33,7 @@
     {
       "@type": "MusicEvent",
       "name": "джаз-трио «А3»",
-      "startDate": "2026-11-22",
+      "startDate": "2026-11-22T18:00:00+03:00",
       "performer": {
         "@type": "MusicGroup",
         "name": "джаз-трио «А3»"
@@ -47,8 +47,8 @@
           "addressCountry": "RU"
         }
       },
-      "description": "Вечер в окружении сотен свечей. Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
-      "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
+      "description": "Джазовый концерт в Научном при свечах — вечер, в котором красота музыки и величие мироздания сливаются воедино. В программе — классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
+      "image": "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg"
     }
   ]
 }

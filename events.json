@@ -17480,16 +17480,17 @@
     "event_type": "концерт",
     "venue": "Рок-н-рольщики (Симферополь)",
     "price": "бесплатно",
-    "description": "Хиты русского поп-рока и неожиданные аранжировки в исполнении группы «Домино». Не акустика",
+    "description": "Нетленки русского поп-рока и неожиданные аранжировки в мощном звучании группы «Домино»",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "поп-рок",
     "source_url": "https://vk.com/wall-237501275_211",
     "images": [
-      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+      "/images/events/4bf735e769f70bccb59e73a8b2da9d95.jpg"
     ],
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "post_date": "2026-11-02T12:05:22+00:00",
+    "post_date": "2026-11-19T14:23:26+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -17849,7 +17850,7 @@
     "source_url": "https://t.me/sevastopol_jazz/1335",
     "images": [
       "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/8b9f4b9e722eea75395daadfbac11f60.jpg"
+      "/images/events/ff2ed168391aad0853bc69bcb644b40e.jpg"
     ],
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
@@ -17863,35 +17864,28 @@
   {
     "id": "bb91d851",
     "date": "2026-11-22",
-    "time": null,
+    "time": "18:00",
     "artist": "Анна Шакель, джаз-трио «А3»",
     "event_type": "концерт",
     "venue": "Научный",
     "price": null,
-    "description": "Вечер в окружении сотен свечей. Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
+    "description": "Джазовый концерт в Научном при свечах — вечер, в котором красота музыки и величие мироздания сливаются воедино. В программе — классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
     "source_city": "Научный",
-    "source_channel": "sevastopol_jazz",
+    "source_channel": "crimea_event",
     "genre": "джаз",
-    "source_url": "https://t.me/sevastopol_jazz/1335",
+    "source_url": "https://t.me/crimea_event/5710",
     "images": [
-      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-      "/images/events/8b9f4b9e722eea75395daadfbac11f60.jpg"
+      "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg",
+      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
     ],
-    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-    "post_date": "2026-11-09T11:54:57+00:00",
+    "image": "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg",
+    "post_date": "2026-11-19T17:21:00+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [
-      "нет времени",
       "нет цены"
     ],
-    "moderation_status": "approved",
-    "moderated_at": "2026-11-09T04:50:47.629Z",
-    "moderation_decision_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_decision_fingerprint": "cc8ccd9417d2e5d34868a4fa86399a830bafc89a82046d9cb54e7eafd7dde0fd"
+    "moderation_status": "approved"
   },
   {
     "id": "f81437f9",
@@ -18091,10 +18085,10 @@
     "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
     "event_type": "концерт",
     "venue": "Музыкальное училище им. Чайковского",
-    "price": "от 1 750 ₽",
-    "description": "Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона — «Главная музыка столетия. Новая программа».\n\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи.\n\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звёзды, которые вы пропустили в первой части.\n\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнётесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "price": "от 1750 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
     "source_city": "Симферополь",
-    "source_channel": "yandex_afisha",
+    "source_channel": "afisha_ru",
     "genre": "метал",
     "source_url": "https://afisha.yandex.ru/simferopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
@@ -18102,7 +18096,7 @@
       "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png",
-    "post_date": "2026-11-20",
+    "post_date": "2026-11-20T04:13:10.404654+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "price",
@@ -18442,7 +18436,7 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/07156c9d3fb7e829e705b8aa71ad24d6.jpg"
+      "/images/events/c21df1718947290700ad179e5a8c145f.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
@@ -18599,32 +18593,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-12-11",
-    "time": "19:00",
-    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
-    "venue": "Дворец культуры профсоюзов",
-    "event_type": "концерт",
-    "price": "от 2 590 ₽",
-    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-12-11",
-    "image": "/images/events/54d1667e92c05316c67c9f730f2b1bad.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
-    "id": "ac92b02c",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
     "id": "3fe52eb3",
     "date": "2026-11-21",
     "time": "18:00",
@@ -18641,7 +18609,7 @@
       "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
     ],
     "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-19T04:28:11.863811+00:00",
+    "post_date": "2026-11-20T04:13:10.404772+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
@@ -18696,9 +18664,10 @@
       "genre"
     ],
     "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано) (id 596d5770)"
+    ]
   },
   {
     "id": "a5a1f485",
@@ -18789,7 +18758,7 @@
     "source_url": "https://vk.com/wall-221587243_2533",
     "images": [
       "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-      "/images/events/bfa4db281bc40321fc3b3bd89989bf72.jpg"
+      "/images/events/aac7d8d80d204b690cf8d0967556ed24.jpg"
     ],
     "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
     "post_date": "2026-11-16T10:00:00+00:00",
@@ -18814,7 +18783,7 @@
     "source_url": "https://t.me/crimea_event/5706",
     "images": [
       "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
-      "/images/events/00c3be3eb51ad6503ac78ef5693b7172.jpg"
+      "/images/events/b81727ba5d8976da84c1160114ae95a9.jpg"
     ],
     "image": "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
     "post_date": "2026-11-16T13:23:01+00:00",
@@ -18846,7 +18815,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-19T04:28:14.277270+00:00",
+    "post_date": "2026-11-20T04:13:12.380204+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
@@ -18878,7 +18847,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-18",
@@ -18942,52 +18911,27 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-12-12",
-    "time": "20:00",
-    "artist": "Мятный гром band",
-    "event_type": "концерт",
-    "venue": "Ресто-Бар 'У Чёрного моря'",
-    "price": "200 руб./чел.",
-    "description": "Живой звук от Мятный гром band.",
-    "image": null,
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-11T14:11:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1148",
-    "id": "7b34b139",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-19T04:28:33.050843+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "venue",
-      "price",
-      "description",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-21",
     "time": "21:00",
     "artist": "Меджикул",
     "event_type": "концерт",
     "venue": "Гастродвор, Ялта, Ленина 15",
     "price": null,
-    "description": "Официальный запуск фирменных вечеринок с участием специального гостя — Меджикула. Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
-    "image": "/images/events/4fcd442559963cc4412fff50adc8aa96.jpg",
+    "description": "Официальный запуск фирменных вечеринок. Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
+    "image": "/images/events/b215ddb84bf94d87c185b87d56c96e7a.jpg",
     "images": null,
     "source_channel": "afisha_crimea",
     "source_city": "Ялта",
     "post_date": "2026-11-17T11:40:51+00:00",
     "source_url": "https://t.me/afisha_crimea/9159",
     "id": "c41196ee",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description",
+      "genre"
+    ],
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [
@@ -19010,6 +18954,13 @@
     "post_date": "2026-11-18T14:14:53+00:00",
     "source_url": "https://vk.com/wall-214055536_2476",
     "id": "06a385d8",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
     "genre": "джаз",
     "needs_review": false,
     "review_reasons": [
@@ -19019,7 +18970,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "596d5770",
     "date": "2026-11-22",
     "time": "19:00",
     "artist": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)",
@@ -19027,20 +18977,147 @@
     "venue": "Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8",
     "price": null,
     "description": "Музыка для души. В исполнении дуэта прозвучит лёгкая популярная классика, известные мировые хиты, а также произведения знаменитого дуэта THE PIANO GUYS.",
-    "source_city": "Севастополь",
-    "source_channel": "u_blacksea_rest",
-    "genre": "поп",
-    "source_url": "https://vk.com/wall-233167471_1176",
-    "images": [
-      "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg",
-      "/images/events/877b54f349840a1d9974d26be9489282.jpg"
-    ],
     "image": "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
     "post_date": "2026-11-18T10:55:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1176",
+    "id": "596d5770",
     "source_status": "active",
+    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": true,
+    "review_reasons": [
+      "нет цены",
+      "разные исполнители на одной площадке в одно время: Фортепиано), Дуэт (Виолончель (id 4744bf0a)"
+    ]
+  },
+  {
+    "date": "2026-12-12",
+    "time": "20:00",
+    "artist": "Мятный гром band",
+    "event_type": "вечеринка",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "200 руб / чел",
+    "description": "Следующее выступление МЯТНЫЙ ГРОМ BAND.",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T14:11:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1148",
+    "id": "7b34b139",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "price",
+      "description",
+      "event_type",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-11",
+    "time": "19:00",
+    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
+    "venue": "Дворец культуры профсоюзов",
+    "event_type": "концерт",
+    "price": "от 2 590 ₽",
+    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-12-11",
+    "image": "/images/events/54d1667e92c05316c67c9f730f2b1bad.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
+    "id": "ac92b02c",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "21:00",
+    "artist": "дуэт «Хабанеро»",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Трибьют Red Hot Chili Peppers в исполнении дуэта «Хабанеро», акустика",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-19T13:20:24+00:00",
+    "source_url": "https://t.me/rocknroll_92/7885",
+    "id": "dc838139",
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-19",
+    "time": "18:30",
+    "artist": "Ольга Панкратова, Максим Перов",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты, которые в этот вечер будет петь весь зал!",
+    "image": "/images/events/4e8857cedde6a3c9a7d843c0a746aa95.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-19T20:15:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2163",
+    "id": "288731e5",
+    "genre": "панк-рок",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-25",
+    "time": "19:00",
+    "artist": "Космос внутри. Симфо-рок на скрипках. Мировые…",
+    "venue": "Концертный зал КРаО (Научный)",
+    "event_type": "концерт",
+    "price": "от 1 700 ₽",
+    "description": "Космос внутри. Симфо-рок на скрипках. Мировые… в Концертный зал КРаО (Научный), Симферополь.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-12-25",
+    "image": null,
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-vnutri-simfo-rok-na-skripkakh-mirovye-khity",
+    "id": "68d8abd9",
+    "genre": "рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
     ],
     "moderation_status": "approved"
   },

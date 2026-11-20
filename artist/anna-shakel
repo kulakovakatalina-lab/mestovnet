@@ -40,6 +40,26 @@
       },
       "location": {
         "@type": "MusicVenue",
+        "name": "Научный",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Научный",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Джазовый концерт в Научном при свечах — вечер, в котором красота музыки и величие мироздания сливаются воедино. В программе — классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
+      "image": "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Анна Шакель",
+      "startDate": "2026-11-22T18:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Анна Шакель"
+      },
+      "location": {
+        "@type": "MusicVenue",
         "name": "Севастополь Джаз",
         "address": {
           "@type": "PostalAddress",
@@ -48,26 +68,6 @@
         }
       },
       "description": "Классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James."
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Анна Шакель",
-      "startDate": "2026-11-22",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Анна Шакель"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Научный",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Научный",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Вечер в окружении сотен свечей. Любимые мелодии, джазовые композиции и особая атмосфера музыкальной гостиной.",
-      "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
     }
   ]
 }

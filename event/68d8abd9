@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Фортепиано), Дуэт (Виолончель, Ресторан «У Чёрного моря», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Космос внутри. Симфо-рок на скрипках. Мировые…, Концертный зал КРаО (Научный), в Симферополе, 25 декабря, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Фортепиано), Дуэт (Виолончель — Ресторан «У Чёрного моря», Севастополь, 22 ноября · Местов.Нет</title>
+<title>Космос внутри. Симфо-рок на скрипках. Мировые… — Концертный зал КРаО (Научный), Симферополь, 25 декабря · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,37 +959,35 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/4744bf0a">
-<meta property="og:title" content="Фортепиано), Дуэт (Виолончель — Ресторан «У Чёрного моря», Севастополь, 22 ноября · Местов.Нет">
-<meta property="og:description" content="Фортепиано), Дуэт (Виолончель, Ресторан «У Чёрного моря», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/68d8abd9">
+<meta property="og:title" content="Космос внутри. Симфо-рок на скрипках. Мировые… — Концертный зал КРаО (Научный), Симферополь, 25 декабря · Местов.Нет">
+<meta property="og:description" content="Космос внутри. Симфо-рок на скрипках. Мировые…, Концертный зал КРаО (Научный), в Симферополе, 25 декабря, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/877b54f349840a1d9974d26be9489282.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Фортепиано), Дуэт (Виолончель",
-      "startDate": "2026-11-22T19:00:00+03:00",
+      "name": "Космос внутри. Симфо-рок на скрипках. Мировые…",
+      "startDate": "2026-12-25T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "Концертный зал КРаО (Научный)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Севастополь",
+          "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Живая классика и мировые хиты.",
+      "description": "Космос внутри. Симфо-рок на скрипках. Мировые… в Концертный зал КРаО (Научный), Симферополь.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Фортепиано), Дуэт (Виолончель"
+        "name": "Космос внутри. Симфо-рок на скрипках. Мировые…"
       },
-      "image": "/images/events/877b54f349840a1d9974d26be9489282.jpg",
       "offers": {
         "@type": "Offer",
-        "price": "0",
+        "name": "от 1 700 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -998,7 +996,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Фортепиано), Дуэт (Виолончель"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Космос внутри. Симфо-рок на скрипках. Мировые…"}]}
 </script>
 </head>
 <body>

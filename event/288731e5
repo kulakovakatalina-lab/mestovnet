@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано), Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8, в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Ольга Панкратова, Максим Перов, Арт-кафе «Снежинка», в Севастополе, 19 декабря, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано) — Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8, 22 ноября · Местов.Нет</title>
+<title>Ольга Панкратова, Максим Перов — Арт-кафе «Снежинка», Севастополь, 19 декабря · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -959,40 +959,40 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 </style>
-<link rel="canonical" href="https://mestov.net/event/596d5770">
-<meta property="og:title" content="Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано) — Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8, 22 ноября · Местов.Нет">
-<meta property="og:description" content="Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано), Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8, в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<link rel="canonical" href="https://mestov.net/event/288731e5">
+<meta property="og:title" content="Ольга Панкратова, Максим Перов — Арт-кафе «Снежинка», Севастополь, 19 декабря · Местов.Нет">
+<meta property="og:description" content="Ольга Панкратова, Максим Перов, Арт-кафе «Снежинка», в Севастополе, 19 декабря, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/4e8857cedde6a3c9a7d843c0a746aa95.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)",
-      "startDate": "2026-11-22T19:00:00+03:00",
+      "name": "Ольга Панкратова, Максим Перов",
+      "startDate": "2026-12-19T18:30:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8",
+        "name": "Арт-кафе «Снежинка»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Музыка для души. В исполнении дуэта прозвучит лёгкая популярная классика, известные мировые хиты, а также произведения знаменитого дуэта THE PIANO GUYS.",
+      "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты, которые в этот вечер будет петь весь зал!",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)"
+        "name": "Ольга Панкратова, Максим Перов"
       },
-      "image": "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg"
+      "image": "/images/events/4e8857cedde6a3c9a7d843c0a746aa95.jpg"
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ольга Панкратова, Максим Перов"}]}
 </script>
 </head>
 <body>
