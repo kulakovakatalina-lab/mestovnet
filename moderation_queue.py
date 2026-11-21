@@ -16,6 +16,10 @@ from parser import is_placeholder_title, _GENERIC_ARTIST_LITERALS
 EVENTS = Path("events.json")
 QUEUE = Path("moderation.json")
 DECISIONS_CACHE = Path("moderation_decisions.json")
+# Карточки, снятые с публикации по запросу редакции вне очереди Telegram.
+EDITORIAL_REJECTIONS = {
+    "7b34b139": {"status": "rejected", "reasons": ["снято с публикации редакцией"]},
+}
 CITY_RE = re.compile(r"\b(Симферополь|Севастополь|Ялта|Керчь|Феодосия|Судак|Гурзуф)\b", re.I)
 # Цена и постер полезны, но их отсутствие не должно останавливать публикацию:
 # цена часто отсутствует у бесплатных/донатных событий, а сайт умеет показать
@@ -252,6 +256,7 @@ def main() -> None:
     sync_failed = remote_decisions is None
     known_decisions = cached_decisions if sync_failed else remote_decisions
     rejected_ids = {str(d.get("event_id")) for d in known_decisions if d.get("status") == "rejected"}
+    rejected_ids.update(EDITORIAL_REJECTIONS)
     if sync_failed:
         rejected_ids.update(str(e.get("id")) for e in events
                             if e.get("moderation_status") == "rejected")
@@ -290,7 +295,7 @@ def main() -> None:
         seo_collision = str(event.get("id")) in collision_ids
         if seo_collision:
             issues.append(SEO_COLLISION)
-        decision = decision_for(event, by_id, legacy_by_source)
+        decision = EDITORIAL_REJECTIONS.get(event.get("id")) or decision_for(event, by_id, legacy_by_source)
         if decision is None and sync_failed:
             decision = decision_embedded_in_event(event)
         status = (decision or {}).get("status")

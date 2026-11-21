@@ -19065,7 +19065,12 @@
     "review_reasons": [
       "нет постера"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "rejected",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "снято с публикации редакцией"
+    ],
+    "moderation_decision_fingerprint": "f2ee8102e43e295512b6e6158fc10abf4305fd41253ff6ee644b25d2ca94ec4d"
   },
   {
     "date": "2026-12-11",
