@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Меджикул, Гастродвор, Ялта, Ленина 15, в Ялте, 21 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Меджикул, Ялта, Ленина 15, в Ялте, 21 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Меджикул — Гастродвор, Ялта, Ленина 15, 21 ноября · Местов.Нет</title>
+<title>Меджикул — Ялта, Ленина 15, 21 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,10 +960,10 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/c41196ee">
-<meta property="og:title" content="Меджикул — Гастродвор, Ялта, Ленина 15, 21 ноября · Местов.Нет">
-<meta property="og:description" content="Меджикул, Гастродвор, Ялта, Ленина 15, в Ялте, 21 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Меджикул — Ялта, Ленина 15, 21 ноября · Местов.Нет">
+<meta property="og:description" content="Меджикул, Ялта, Ленина 15, в Ялте, 21 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/b215ddb84bf94d87c185b87d56c96e7a.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/a07577d764000f3ab9edef4207a30066.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -974,19 +974,19 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-11-21T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Гастродвор, Ялта, Ленина 15",
+        "name": "Ялта, Ленина 15",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Ялта",
           "addressCountry": "RU"
         }
       },
-      "description": "Официальный запуск фирменных вечеринок. Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
+      "description": "Официальный запуск фирменных вечеринок в «Гастродворе». Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Меджикул"
       },
-      "image": "/images/events/b215ddb84bf94d87c185b87d56c96e7a.jpg"
+      "image": "/images/events/a07577d764000f3ab9edef4207a30066.jpg"
     }
   ]
 }

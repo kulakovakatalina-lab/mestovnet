@@ -17855,37 +17855,12 @@
     "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
     "post_date": "2026-11-10T12:45:49+00:00",
     "source_status": "active",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени",
       "нет цены"
-    ]
-  },
-  {
-    "id": "bb91d851",
-    "date": "2026-11-22",
-    "time": "18:00",
-    "artist": "Анна Шакель, джаз-трио «А3»",
-    "event_type": "концерт",
-    "venue": "Научный",
-    "price": null,
-    "description": "Джазовый концерт в Научном при свечах — вечер, в котором красота музыки и величие мироздания сливаются воедино. В программе — классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
-    "source_city": "Научный",
-    "source_channel": "crimea_event",
-    "genre": "джаз",
-    "source_url": "https://t.me/crimea_event/5710",
-    "images": [
-      "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg",
-      "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg"
     ],
-    "image": "/images/events/4106c30c6cc566ef73aaa57ff62f904d.jpg",
-    "post_date": "2026-11-19T17:21:00+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "f81437f9",
@@ -18106,7 +18081,7 @@
     "source_status": "active",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-11-09",
@@ -18238,35 +18213,6 @@
       "нет цены"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "16:00",
-    "artist": "Крымское киноконцертное объединение",
-    "event_type": "концерт",
-    "venue": "Дом-музей А. П. Чехова",
-    "price": null,
-    "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу этой эпохи и по-новому ощутить настроение знаменитого произведения.",
-    "image": "/images/events/d01e0cc0d41cfc8646adef421fcc66bf.jpg",
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Ялта",
-    "post_date": "2026-11-09T13:29:45+00:00",
-    "source_url": "https://t.me/koncertykrym/2390",
-    "id": "38c3ea38",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-11T03:02:19.963191+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
   },
   {
     "id": "f5210d62",
@@ -18436,7 +18382,7 @@
     "source_url": "https://t.me/afisha_crimea/9117",
     "images": [
       "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
-      "/images/events/c21df1718947290700ad179e5a8c145f.jpg"
+      "/images/events/8d6bd78a3c253a3f14118a373f9cf5eb.jpg"
     ],
     "image": "/images/events/c2aaa1b879ee22341a5cfc4d82b82416.jpg",
     "post_date": "2026-11-12T07:08:06+00:00",
@@ -18593,35 +18539,6 @@
     "moderation_status": "approved"
   },
   {
-    "id": "3fe52eb3",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "event_type": "концерт",
-    "venue": "Севастопольский ЦКиИ",
-    "price": "от 2350 ₽",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "source_city": "Севастополь",
-    "source_channel": "afisha_ru",
-    "genre": "метал",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "images": [
-      "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg"
-    ],
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "post_date": "2026-11-20T04:13:10.404772+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "source_last_checked_at": "2026-11-15T02:59:46.199703+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
-    ]
-  },
-  {
     "date": "2026-11-15",
     "time": "19:00",
     "artist": "Елена Голофеева (вокал), Виталий Какурин (фортепиано), Иван Сыч (саксофон), Руслан Сейдалиев (ударные), Юрий Тараненко (контрабас)",
@@ -18717,56 +18634,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "57960552",
-    "date": "2026-11-22",
-    "time": "19:00",
-    "artist": "ансамбль «Консонанс»",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
-    "source_city": "Севастополь",
-    "source_channel": "artcafesnezhinka",
-    "genre": "поп",
-    "source_url": "https://t.me/artcafesnezhinka/2152",
-    "images": null,
-    "image": null,
-    "post_date": "2026-11-16T17:13:43+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "4e321489",
-    "date": "2026-11-21",
-    "time": null,
-    "artist": "Оркестр «Новая гармония»",
-    "event_type": "концерт",
-    "venue": "п. Научный",
-    "price": "1700–2500 ₽",
-    "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
-    "source_city": "Научный",
-    "source_channel": "afisha_payberry",
-    "genre": "поп",
-    "source_url": "https://vk.com/wall-221587243_2533",
-    "images": [
-      "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-      "/images/events/aac7d8d80d204b690cf8d0967556ed24.jpg"
-    ],
-    "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-    "post_date": "2026-11-16T10:00:00+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени"
-    ]
+    "moderation_status": "archived"
   },
   {
     "id": "03b01e9b",
@@ -18783,7 +18651,7 @@
     "source_url": "https://t.me/crimea_event/5706",
     "images": [
       "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
-      "/images/events/b81727ba5d8976da84c1160114ae95a9.jpg"
+      "/images/events/9f1dfecfdc7376edea834d777978668f.jpg"
     ],
     "image": "/images/events/49e980780a5afebde7c94bc968fad626.jpg",
     "post_date": "2026-11-16T13:23:01+00:00",
@@ -18815,7 +18683,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-20T04:13:12.380204+00:00",
+    "post_date": "2026-11-21T04:13:17.283867+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
@@ -18881,32 +18749,24 @@
     "moderation_decision_fingerprint": "5f4860ed3044ee43643c3ea610a45f9c318cc1738d698bebcb68132c4d39442f"
   },
   {
-    "date": "2027-12-31",
-    "time": null,
-    "artist": "Ирина Депутович",
-    "event_type": "концерт",
-    "venue": "г. Севастополь, ул. Ленина, 8",
-    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
-    "description": "Живой звук создаст праздничное настроение.",
-    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
+    "date": "2026-11-22",
+    "time": "21:00",
+    "artist": "дуэт «Хабанеро»",
+    "event_type": "трибьют",
+    "venue": "Рок-н-рольщики (Севастополь)",
+    "price": "бесплатно",
+    "description": "Трибьют Red Hot Chili Peppers в исполнении дуэта «Хабанеро», акустика",
+    "image": null,
     "images": null,
-    "source_channel": "u_blacksea_rest",
+    "source_channel": "rocknroll_92",
     "source_city": "Севастополь",
-    "post_date": "2026-11-13T17:40:12+00:00",
-    "source_url": "https://vk.com/wall-233167471_1150",
-    "id": "0c6fc9b2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-19T04:28:33.050843+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "description",
-      "event_type"
-    ],
-    "genre": "поп",
+    "post_date": "2026-11-19T13:20:24+00:00",
+    "source_url": "https://t.me/rocknroll_92/7885",
+    "id": "dc838139",
+    "genre": "рок",
     "needs_review": false,
     "review_reasons": [
-      "нет времени"
+      "нет постера"
     ],
     "moderation_status": "approved"
   },
@@ -18915,10 +18775,10 @@
     "time": "21:00",
     "artist": "Меджикул",
     "event_type": "концерт",
-    "venue": "Гастродвор, Ялта, Ленина 15",
+    "venue": "Ялта, Ленина 15",
     "price": null,
-    "description": "Официальный запуск фирменных вечеринок. Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
-    "image": "/images/events/b215ddb84bf94d87c185b87d56c96e7a.jpg",
+    "description": "Официальный запуск фирменных вечеринок в «Гастродворе». Вечер, в котором встречаются живая музыка и электроника, а музыка сопровождается множеством неожиданных твистов.",
+    "image": "/images/events/a07577d764000f3ab9edef4207a30066.jpg",
     "images": null,
     "source_channel": "afisha_crimea",
     "source_city": "Ялта",
@@ -18926,13 +18786,132 @@
     "source_url": "https://t.me/afisha_crimea/9159",
     "id": "c41196ee",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
+      "venue",
       "description",
       "genre"
     ],
     "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "bb91d851",
+    "date": "2026-11-22",
+    "time": "18:00",
+    "artist": "Анна Шакель, джаз-трио «А3»",
+    "event_type": "концерт",
+    "venue": "Научный",
+    "price": null,
+    "description": "Джазовый концерт в Научном при свечах — вечер, в котором красота музыки и величие мироздания сливаются воедино. В программе — классика джаза и музыка великих исполнителей: Aretha Franklin, Norah Jones, George Gershwin, Nina Simone, Etta James.",
+    "source_city": "Научный",
+    "source_channel": "crimea_event",
+    "genre": "джаз",
+    "source_url": "https://t.me/crimea_event/5710",
+    "images": [
+      "/images/events/a2ce3207444e24c868d4e33993c2745e.jpg",
+      "/images/events/dd2086e30687a3025a2bb7a06e50f853.jpg",
+      "/images/events/5fbadf7d55943b9f940f4c4d512e51f0.jpg"
+    ],
+    "image": "/images/events/a2ce3207444e24c868d4e33993c2745e.jpg",
+    "post_date": "2026-11-19T17:21:00+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "16:00",
+    "artist": "Крымское киноконцертное объединение",
+    "event_type": "концерт",
+    "venue": "Дом-музей А. П. Чехова",
+    "price": null,
+    "description": "Концерт из цикла «Чехов в музыке» – «Вишнёвый сад: мелодии уходящей эпохи». Музыка поможет погрузиться в атмосферу этой эпохи и по-новому ощутить настроение знаменитого произведения.",
+    "image": "/images/events/0ac3273aefd2f16b85a6fdbad986a007.jpg",
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Ялта",
+    "post_date": "2026-11-09T13:29:45+00:00",
+    "source_url": "https://t.me/koncertykrym/2390",
+    "id": "38c3ea38",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-22",
+    "time": "19:00",
+    "artist": "Ансамбль «Консонанс»",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-16T17:13:43+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2152",
+    "id": "57960552",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-19",
+    "time": "18:30",
+    "artist": "Ольга Панкратова, Максим Перов",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты, которые в этот вечер будет петь весь зал!",
+    "image": "/images/events/88df0b4e1b159359e7a5cb41b37beda7.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-19T20:15:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2163",
+    "id": "288731e5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "панк-рок",
     "needs_review": false,
     "review_reasons": [
       "нет цены"
@@ -18955,7 +18934,7 @@
     "source_url": "https://vk.com/wall-214055536_2476",
     "id": "06a385d8",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -18966,6 +18945,34 @@
     "review_reasons": [
       "нет цены",
       "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": null,
+    "artist": "Оркестр «Новая гармония»",
+    "event_type": "концерт",
+    "venue": "п. Научный",
+    "price": "1700–2500 ₽",
+    "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
+    "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
+    "images": null,
+    "source_channel": "afisha_payberry",
+    "source_city": "Научный",
+    "post_date": "2026-11-16T10:00:00+00:00",
+    "source_url": "https://vk.com/wall-221587243_2533",
+    "id": "4e321489",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
     ],
     "moderation_status": "approved"
   },
@@ -18985,7 +18992,7 @@
     "source_url": "https://vk.com/wall-233167471_1176",
     "id": "596d5770",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -18999,13 +19006,44 @@
     ]
   },
   {
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Ирина Депутович",
+    "event_type": "концерт",
+    "venue": "г. Севастополь, ул. Ленина, 8",
+    "price": null,
+    "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
+    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-13T17:40:12+00:00",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "id": "0c6fc9b2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
     "date": "2026-12-12",
     "time": "20:00",
     "artist": "Мятный гром band",
-    "event_type": "вечеринка",
-    "venue": "Ресторан «У Чёрного моря»",
+    "event_type": "концерт",
+    "venue": "Ресто-Бар «У Чёрного моря», Севастополь",
     "price": "200 руб / чел",
-    "description": "Следующее выступление МЯТНЫЙ ГРОМ BAND.",
+    "description": "Живой звук, драйв и полный зал энергии.",
     "image": null,
     "images": null,
     "source_channel": "u_blacksea_rest",
@@ -19014,11 +19052,10 @@
     "source_url": "https://vk.com/wall-233167471_1148",
     "id": "7b34b139",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "venue",
-      "price",
       "description",
       "event_type",
       "genre"
@@ -19045,7 +19082,7 @@
     "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
     "id": "ac92b02c",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-20T04:13:29.036686+00:00",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -19054,50 +19091,6 @@
     "genre": "классика",
     "needs_review": false,
     "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-22",
-    "time": "21:00",
-    "artist": "дуэт «Хабанеро»",
-    "event_type": "трибьют",
-    "venue": "Рок-н-рольщики (Севастополь)",
-    "price": "бесплатно",
-    "description": "Трибьют Red Hot Chili Peppers в исполнении дуэта «Хабанеро», акустика",
-    "image": null,
-    "images": null,
-    "source_channel": "rocknroll_92",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-19T13:20:24+00:00",
-    "source_url": "https://t.me/rocknroll_92/7885",
-    "id": "dc838139",
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-19",
-    "time": "18:30",
-    "artist": "Ольга Панкратова, Максим Перов",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты, которые в этот вечер будет петь весь зал!",
-    "image": "/images/events/4e8857cedde6a3c9a7d843c0a746aa95.jpg",
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-19T20:15:23+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2163",
-    "id": "288731e5",
-    "genre": "панк-рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
     "moderation_status": "approved"
   },
   {
@@ -19114,12 +19107,45 @@
     "image": null,
     "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-vnutri-simfo-rok-na-skripkakh-mirovye-khity",
     "id": "68d8abd9",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "рок",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
     ],
     "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "event_type": "концерт",
+    "price": "от 2750 ₽",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "source_channel": "afisha_ru",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-21T04:13:17.283895+00:00",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "genre": "метал",
+    "id": "3fe52eb3",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "genre"
+    ],
+    "needs_review": true,
+    "review_reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
+    ]
   },
   {
     "date": "2026-08-11",

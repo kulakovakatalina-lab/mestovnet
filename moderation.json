@@ -17,24 +17,6 @@
     ]
   },
   {
-    "id": "510bf157",
-    "date": "2026-11-20",
-    "time": null,
-    "artist": "джаз-трио «А3», Анна Шакель, Константин Францен, Анна Сидоренко",
-    "venue": "Джаз-клуб «Ирэй»",
-    "source_city": "Симферополь",
-    "price": null,
-    "genre": "джаз",
-    "event_type": "концерт",
-    "description": "Премьера в Симферополе проекта «Этно-джаз». Музыка Jimi Hendrix, The Beatles, ZZ Top, Aerosmith, The Rolling Stones и других легендарных исполнителей.",
-    "image": "/images/events/e6f30a4a9f82bd771a6d907e7f9b5dad.jpg",
-    "source_url": "https://t.me/sevastopol_jazz/1335",
-    "reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
     "id": "3e1f0ed8",
     "date": "2026-11-21",
     "time": "18:00",
@@ -49,23 +31,6 @@
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/aura-shou-glavnaia-muzyka-stoletiia-novaia-programma?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "reasons": [
       "разные исполнители на одной площадке в одно время: Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа (id 3fe52eb3)"
-    ]
-  },
-  {
-    "id": "3fe52eb3",
-    "date": "2026-11-21",
-    "time": "18:00",
-    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-    "venue": "Севастопольский ЦКиИ",
-    "source_city": "Севастополь",
-    "price": "от 2350 ₽",
-    "genre": "метал",
-    "event_type": "концерт",
-    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
-    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
-    "reasons": [
-      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
     ]
   },
   {
@@ -104,23 +69,6 @@
     ]
   },
   {
-    "id": "4e321489",
-    "date": "2026-11-21",
-    "time": null,
-    "artist": "Оркестр «Новая гармония»",
-    "venue": "п. Научный",
-    "source_city": "Научный",
-    "price": "1700–2500 ₽",
-    "genre": "поп",
-    "event_type": "концерт",
-    "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
-    "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg",
-    "source_url": "https://vk.com/wall-221587243_2533",
-    "reasons": [
-      "нет времени"
-    ]
-  },
-  {
     "id": "596d5770",
     "date": "2026-11-22",
     "time": "19:00",
@@ -136,6 +84,23 @@
     "reasons": [
       "нет цены",
       "разные исполнители на одной площадке в одно время: Фортепиано), Дуэт (Виолончель (id 4744bf0a)"
+    ]
+  },
+  {
+    "id": "3fe52eb3",
+    "date": "2026-11-21",
+    "time": "18:00",
+    "artist": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
+    "venue": "Севастопольский ЦКиИ",
+    "source_city": "Севастополь",
+    "price": "от 2750 ₽",
+    "genre": "метал",
+    "event_type": "концерт",
+    "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
+    "image": "/images/events/3742eddbbf50f5bfac21e4fe0a91eab6.jpg",
+    "source_url": "https://www.afisha.ru/concert/orkestr-pri-svechah-aura-shou-glavnaya-muzyka-stoletiya-novaya-programma-6039797/",
+    "reasons": [
+      "разные исполнители на одной площадке в одно время: Аура Шоу. Главная музыка столетия. Новая программа (id 3e1f0ed8)"
     ]
   }
 ]

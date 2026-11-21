@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Музыкальное училище им. Чайковского — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/muzykalnoe-uchilische-im-chaykovskogo">
   <meta property="og:title" content="Музыкальное училище им. Чайковского — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Музыкальное училище им. Чайковского, в Симферополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа",
-      "startDate": "2026-11-20T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Музыкальное училище им. Чайковского"
-      },
-      "description": "О концерте Аура Шоу приглашает на долгожданное продолжение лучшей программы сезона  — «Главная музыка столетия. Новая программа».\r\n\r\nСнова — живые струнные, свечи и хиты, которые меняли историю. Но теперь — другой ряд композиций. Другой срез эпохи. \r\n\r\nНеожиданные аранжировки Elton John, Queen, Louis Armstrong, Prince, Taylor Swift, Metallica, AC/DC, Ricky Martin, Whitney Houston, Linkin Park, Pink Floyd и другие звезды, которые вы пропустили в первой части.\r\n\r\nЭто вечер для тех, кто хочет продлить встречу с «главной музыкой». Вы улыбнетесь, встретив «свою» песню — но на этот раз, возможно, совсем не ту, которую ждали.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Оркестр при свечах - Аура Шоу. Главная музыка столетия. Новая программа"
-      },
-      "image": "/images/events/b5306dafb6ac6fd0f44f1f94f3ea5e56.png"
     }
   ]
 }

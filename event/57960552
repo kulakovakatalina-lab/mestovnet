@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="ансамбль «Консонанс», Арт-кафе «Снежинка», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Ансамбль «Консонанс», Арт-кафе «Снежинка», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ансамбль «Консонанс» — Арт-кафе «Снежинка», Севастополь, 22 ноября · Местов.Нет</title>
+<title>Ансамбль «Консонанс» — Арт-кафе «Снежинка», Севастополь, 22 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/57960552">
-<meta property="og:title" content="ансамбль «Консонанс» — Арт-кафе «Снежинка», Севастополь, 22 ноября · Местов.Нет">
-<meta property="og:description" content="ансамбль «Консонанс», Арт-кафе «Снежинка», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Ансамбль «Консонанс» — Арт-кафе «Снежинка», Севастополь, 22 ноября · Местов.Нет">
+<meta property="og:description" content="Ансамбль «Консонанс», Арт-кафе «Снежинка», в Севастополе, 22 ноября, вс. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <script type="application/ld+json">
 {
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "ансамбль «Консонанс»",
+      "name": "Ансамбль «Консонанс»",
       "startDate": "2026-11-22T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -983,14 +983,14 @@ a { color: inherit; text-decoration: none; }
       "description": "Музыкально-визуальное путешествие в мир кино и анимации с живой музыкой ансамбля «Консонанс» при мерцании свечей. В программе — знаменитые саундтреки из «Красотки», «Богемской рапсодии», «Запаха женщины», «Короля Льва», Mamma Mia!, «Ходячего замка Хаула», «Гарри Поттера» и многих других историй.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "ансамбль «Консонанс»"
+        "name": "Ансамбль «Консонанс»"
       }
     }
   ]
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "ансамбль «Консонанс»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Ансамбль «Консонанс»"}]}
 </script>
 </head>
 <body>
