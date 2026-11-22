@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>п. Научный — афиша в Научном · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в п. Научный, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в п. Научный, в Научном. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/p-nauchnyy">
   <meta property="og:title" content="п. Научный — афиша в Научном · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в п. Научный, в Научном. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в п. Научный, в Научном. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Научный",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Оркестр «Новая гармония»",
-      "startDate": "2026-11-21",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "п. Научный"
-      },
-      "description": "Оркестр «Новая гармония» исполнит произведения, в которых масштаб музыки словно продолжает масштаб Вселенной.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Оркестр «Новая гармония»"
-      },
-      "image": "/images/events/0fefe35abae4f2b44bc73cb2a3de01e3.jpg"
     }
   ]
 }

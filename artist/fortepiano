@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>фортепиано — концерты в Крыму, Севастополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов фортепиано в Крыму (Севастополь). 0 ближайших событий.">
+  <meta name="description" content="Расписание концертов фортепиано в Крыму (Севастополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/fortepiano">
   <meta property="og:title" content="фортепиано — концерты в Крыму, Севастополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов фортепиано в Крыму (Севастополь). 0 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов фортепиано в Крыму (Севастополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,6 +29,26 @@
     {
       "@type": "MusicGroup",
       "name": "фортепиано"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "фортепиано",
+      "startDate": "2026-11-22T19:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "фортепиано"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ресторан «У Чёрного моря»",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Живая классика и мировые хиты.",
+      "image": "/images/events/877b54f349840a1d9974d26be9489282.jpg"
     }
   ]
 }

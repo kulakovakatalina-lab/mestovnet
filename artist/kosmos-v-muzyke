@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Космос в музыке — концерты в Крыму, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Космос в музыке в Крыму (Симферополь). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Космос в музыке в Крыму (Симферополь). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/kosmos-v-muzyke">
   <meta property="og:title" content="Космос в музыке — концерты в Крыму, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Космос в музыке в Крыму (Симферополь). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Космос в музыке в Крыму (Симферополь). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Космос в музыке"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Космос в музыке",
-      "startDate": "2026-11-21T18:30:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Космос в музыке"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Астрофизическая обсерватория РАН (Научный)",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Симферополь",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Концерт солистов камерного оркестра «Новая гармония»",
-      "image": "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg"
     }
   ]
 }

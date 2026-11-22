@@ -60,7 +60,7 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "г. Севастополь, ул. Ленина, 8",
+        "name": "Севастополь, ул. Ленина, 8",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",

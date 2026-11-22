@@ -61,18 +61,35 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 22,
+    "event_count": 21,
     "aliases": [
-      "Ресто-Бар «У Чёрного моря», Севастополь",
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»",
-      "Ресторан «У Чёрного моря», Севастополь, ул. Ленина, 8"
+      "ресто-бар «У Чёрного моря»"
     ],
     "description": "За столиками здесь слушают живой вокал, танцуют под хиты 80–90-х и поют вместе с оркестром. Ирина Депутович ведёт ретровечеринки и музыкальные игры, Севастопольский эстрадный оркестр Валентина Таева привозит рок-хиты, а Любовь Фатеева играет мировые мелодии на виолончели.",
     "desc_baseline_count": 13,
     "lat": 44.614484,
     "lon": 33.525136
+  },
+  {
+    "slug": "sevastopol",
+    "name": "Севастополь",
+    "city": "Севастополь",
+    "address": "Матросский бульвар",
+    "event_count": 21,
+    "aliases": [
+      "Севастополь",
+      "Севастополь, Матросский бульвар",
+      "Севастополь, наб. Адмирала Клокачева, 16",
+      "Севастополь, ул. Ленина, 8",
+      "Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
   },
   {
     "slug": "tavrida-art",
@@ -87,22 +104,6 @@
     "desc_baseline_count": 17,
     "lat": 44.835312,
     "lon": 35.016803
-  },
-  {
-    "slug": "sevastopol",
-    "name": "Севастополь",
-    "city": "Севастополь",
-    "address": "Матросский бульвар",
-    "event_count": 18,
-    "aliases": [
-      "Севастополь",
-      "Севастополь, Матросский бульвар",
-      "Севастополь, наб. Адмирала Клокачева, 16"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
   },
   {
     "slug": "kontsertnyy-zal-yubileynyy",
@@ -1296,21 +1297,6 @@
     "event_count": 2,
     "aliases": [
       "Чистые пруды"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "g-sevastopol",
-    "name": "г. Севастополь",
-    "city": "Севастополь",
-    "address": "ул. Ленина, 8, ресторан «У Чёрного моря»",
-    "event_count": 2,
-    "aliases": [
-      "г. Севастополь, ул. Ленина, 8",
-      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
     ],
     "description": null,
     "desc_baseline_count": 0,
@@ -2718,6 +2704,20 @@
     "lon": null
   },
   {
+    "slug": "g-sevastopol",
+    "name": "г. Севастополь",
+    "city": "Севастополь",
+    "address": "ул. Ленина, 8, ресторан «У Чёрного моря»",
+    "event_count": 1,
+    "aliases": [
+      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "egorovskiy-zal-vinodelni-massandra",
     "name": "Егоровский зал винодельни «Массандра»",
     "city": "Ялта",
@@ -2830,20 +2830,6 @@
     "lon": null
   },
   {
-    "slug": "s-rodnikovoe",
-    "name": "с. Родниковое",
-    "city": "Крым",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "с. Родниковое"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
     "slug": "novosibirsk",
     "name": "Новосибирск",
     "city": "Судак",
@@ -2879,6 +2865,34 @@
     "event_count": 1,
     "aliases": [
       "Концертный зал КРаО (Научный)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "s-rodnikovoe",
+    "name": "с. Родниковое",
+    "city": "Крым",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "с. Родниковое"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "otel-palmira-palace-resort-spa-g-yalta",
+    "name": "Отель Palmira Palace Resort & SPA, г. Ялта",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Отель Palmira Palace Resort & SPA, г. Ялта"
     ],
     "description": null,
     "desc_baseline_count": 0,
