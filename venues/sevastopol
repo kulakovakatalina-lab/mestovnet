@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)",
-      "startDate": "2026-11-22T19:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастополь"
-      },
-      "description": "Музыка для души. В исполнении дуэта прозвучит лёгкая популярная классика, известные мировые хиты, а также произведения знаменитого дуэта THE PIANO GUYS.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Любовь Фатеева (виолончель), Ольга Плетнёва (фортепиано)"
-      },
-      "image": "/images/events/bfbddf4798df03b6a5df034e402aa6cc.jpg"
     },
     {
       "@type": "MusicEvent",

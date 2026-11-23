@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иван Сыч — концерты в Крыму, Севастополь, Крым · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta name="description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/ivan-sych">
   <meta property="og:title" content="Иван Сыч — концерты в Крыму, Севастополь, Крым · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 1 ближайших событий.">
+  <meta property="og:description" content="Расписание концертов Иван Сыч в Крыму (Севастополь, Крым). 0 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -29,26 +29,6 @@
     {
       "@type": "MusicGroup",
       "name": "Иван Сыч"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Иван Сыч",
-      "startDate": "2026-11-22T16:00:00+03:00",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Иван Сыч"
-      },
-      "location": {
-        "@type": "MusicVenue",
-        "name": "с. Родниковое",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Крым",
-          "addressCountry": "RU"
-        }
-      },
-      "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
-      "image": "/images/events/a268f57e4a658797bb88cc06b10485b3.jpg"
     }
   ]
 }

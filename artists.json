@@ -966,6 +966,25 @@
     "desc_baseline_count": 5
   },
   {
+    "slug": "angle-of-wonders",
+    "name": "Angle Of Wonders",
+    "aliases": [
+      "Angle Of Wonders",
+      "Angle of Wonders"
+    ],
+    "event_count": 5,
+    "cities": [
+      "Симферополь"
+    ],
+    "venues": [
+      "Jam Club"
+    ],
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-11-27",
+    "description": "Группа клубной рок-сцены Симферополя. Выступает в Jam Club на Grunge Fest, сборных рок- и метал-вечерах и совместных концертах музыкантов клуба.",
+    "desc_baseline_count": 4
+  },
+  {
     "slug": "trio-a3",
     "name": "Трио «А3»",
     "aliases": [
@@ -1182,25 +1201,6 @@
     "first_seen": "2026-07-24",
     "last_seen": "2026-09-26",
     "description": "Коллектив сборных рок-вечеров Jam Club в Симферополе. Участвует в программах «Супер-рок-пятницы» вместе с «Найти», Red Stars и другими группами.",
-    "desc_baseline_count": 4
-  },
-  {
-    "slug": "angle-of-wonders",
-    "name": "Angle Of Wonders",
-    "aliases": [
-      "Angle Of Wonders",
-      "Angle of Wonders"
-    ],
-    "event_count": 4,
-    "cities": [
-      "Симферополь"
-    ],
-    "venues": [
-      "Jam Club"
-    ],
-    "first_seen": "2026-05-01",
-    "last_seen": "2026-08-12",
-    "description": "Группа клубной рок-сцены Симферополя. Выступает в Jam Club на Grunge Fest, сборных рок- и метал-вечерах и совместных концертах музыкантов клуба.",
     "desc_baseline_count": 4
   },
   {
@@ -1439,6 +1439,7 @@
     "name": "Мятный гром band",
     "aliases": [
       "Группа «Мятный гром band»",
+      "МЯТНЫЙ ГРОМ BAND",
       "Мятный гром band"
     ],
     "event_count": 4,
@@ -1447,8 +1448,8 @@
     ],
     "venues": [
       "Ресторан «У Чёрного моря»",
-      "Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
-      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»"
+      "г. Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»",
+      "Ресто-Бар «У Чёрного моря»"
     ],
     "first_seen": "2026-11-04",
     "last_seen": "2026-12-12",

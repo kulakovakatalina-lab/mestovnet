@@ -4,7 +4,7 @@
     "name": "Jam Club",
     "city": "Симферополь",
     "address": "",
-    "event_count": 57,
+    "event_count": 58,
     "aliases": [
       "Jam Club"
     ],
@@ -61,8 +61,9 @@
     "name": "Ресторан «У Чёрного моря»",
     "city": "Севастополь",
     "address": "ул. Ленина, 8",
-    "event_count": 21,
+    "event_count": 22,
     "aliases": [
+      "Ресто-Бар «У Чёрного моря»",
       "Ресто-бар «У Чёрного моря»",
       "Ресторан 'У Чёрного моря'",
       "Ресторан «У Чёрного моря»",
@@ -78,7 +79,7 @@
     "name": "Севастополь",
     "city": "Севастополь",
     "address": "Матросский бульвар",
-    "event_count": 21,
+    "event_count": 20,
     "aliases": [
       "Севастополь",
       "Севастополь, Матросский бульвар",
@@ -604,6 +605,20 @@
     "lon": 33.489841
   },
   {
+    "slug": "boombox",
+    "name": "Boombox",
+    "city": "Севастополь",
+    "address": "",
+    "event_count": 4,
+    "aliases": [
+      "Boombox"
+    ],
+    "description": "Boombox — диско-бар и концертная площадка в Севастополе с живыми концертами и тематическими вечеринками. Среди гостей — Игорь Растеряев, панк-рок-группа «Йорш» и Helvegen, соединяющие фольклор с тяжёлым современным звучанием.",
+    "desc_baseline_count": 3,
+    "lat": 44.606507,
+    "lon": 33.520673
+  },
+  {
     "slug": "narodnyy-bar",
     "name": "Народный бар",
     "city": "Ялта",
@@ -733,20 +748,6 @@
     "desc_baseline_count": 3,
     "lat": 44.396253,
     "lon": 33.944912
-  },
-  {
-    "slug": "boombox",
-    "name": "Boombox",
-    "city": "Севастополь",
-    "address": "",
-    "event_count": 3,
-    "aliases": [
-      "Boombox"
-    ],
-    "description": "Boombox — диско-бар и концертная площадка в Севастополе с живыми концертами и тематическими вечеринками. Среди гостей — Игорь Растеряев, панк-рок-группа «Йорш» и Helvegen, соединяющие фольклор с тяжёлым современным звучанием.",
-    "desc_baseline_count": 3,
-    "lat": 44.606507,
-    "lon": 33.520673
   },
   {
     "slug": "klub-belyy",
@@ -2893,6 +2894,20 @@
     "event_count": 1,
     "aliases": [
       "Отель Palmira Palace Resort & SPA, г. Ялта"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "klub-kamelot",
+    "name": "Клуб «Камелот»",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Клуб «Камелот»"
     ],
     "description": null,
     "desc_baseline_count": 0,

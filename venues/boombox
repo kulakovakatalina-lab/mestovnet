@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Boombox — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Boombox, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Boombox, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/boombox">
   <meta property="og:title" content="Boombox — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Boombox, в Севастополе. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Boombox, в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,6 +34,21 @@
         "addressLocality": "Севастополь",
         "addressCountry": "RU"
       }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "АнимациЯ",
+      "startDate": "2027-02-19T20:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Boombox"
+      },
+      "description": "Костя Кулясов и группа «АнимациЯ» возвращается с большим сольным концертом, где будут песни, которые вы знаете наизусть, и те, что особенно хочется услышать живьём.\n\nЭто будет вечер честных текстов, громких припевов, живых эмоций и той самой атмосферы, ради которой мы снова и снова собираемся вместе. Будем петь, вспоминать, переживать и проживать каждую песню вместе с вами.\n\nЕсли давно собирались попасть на концерт «Анимации» — это отличный повод. Если уже были — знаете, что такие встречи не хочется пропускать.\n\nБилеты уже в продаже. Не откладывайте на потом — лучшие места заканчиваются первыми.\n\nДо встречи на концерте!",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "АнимациЯ"
+      },
+      "image": "/images/events/c3f70126fe555850b3cbf337e1df170c.jpg"
     }
   ]
 }

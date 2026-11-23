@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>с. Родниковое — афиша в Крыму · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в с. Родниковое, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в с. Родниковое, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/s-rodnikovoe">
   <meta property="og:title" content="с. Родниковое — афиша в Крыму · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в с. Родниковое, в Крыму. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в с. Родниковое, в Крыму. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Крым",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Иван Сыч",
-      "startDate": "2026-11-22T16:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "с. Родниковое"
-      },
-      "description": "Известный саксофонист Иван Сыч подарит вам «Блеск подземного саксофона» прямо в сердце горы, в месте, где акустику создавала сама природа! Вы сможете услышать саксофон там, где обычно только капает вода.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Иван Сыч"
-      },
-      "image": "/images/events/a268f57e4a658797bb88cc06b10485b3.jpg"
     }
   ]
 }
