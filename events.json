@@ -17985,8 +17985,7 @@
     "genre": "поп",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/anjelina-mali-i-dzhedzhe?source=selection-events&rubricCode=concert&refererSelection=main_page_landing&refererSurface=selection",
     "images": [
-      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
-      "/images/events/6a2537e23cbbbc454b6cfe18cec6b6a8.jpg"
+      "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg"
     ],
     "image": "/images/events/e023181f5a19184a5eac1a7e78f28aaf.jpg",
     "post_date": "2027-01-04",
@@ -18652,7 +18651,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-23T03:57:40.334584+00:00",
+    "post_date": "2026-11-24T07:10:05.645366+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
@@ -18826,59 +18825,6 @@
       "нет времени"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "date": "2026-12-11",
-    "time": "19:00",
-    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
-    "venue": "Дворец культуры профсоюзов",
-    "event_type": "концерт",
-    "price": "от 2 590 ₽",
-    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-12-11",
-    "image": "/images/events/54d1667e92c05316c67c9f730f2b1bad.jpg",
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
-    "id": "ac92b02c",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-25",
-    "time": "19:00",
-    "artist": "Космос внутри. Симфо-рок на скрипках. Мировые…",
-    "venue": "Концертный зал КРаО (Научный)",
-    "event_type": "концерт",
-    "price": "от 1 700 ₽",
-    "description": "Космос внутри. Симфо-рок на скрипках. Мировые… в Концертный зал КРаО (Научный), Симферополь.",
-    "source_channel": "yandex_afisha",
-    "source_city": "Симферополь",
-    "post_date": "2026-12-25",
-    "image": null,
-    "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-vnutri-simfo-rok-na-skripkakh-mirovye-khity",
-    "id": "68d8abd9",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-21T04:13:36.549206+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
   },
   {
     "date": "2026-11-21",
@@ -19106,6 +19052,29 @@
     ]
   },
   {
+    "id": "58a2f4fc",
+    "date": "2026-11-27",
+    "time": "18:00",
+    "artist": "Рок-Архив, Angle of Wonders",
+    "event_type": "трибьют",
+    "venue": "Jam Club",
+    "price": "бесплатно",
+    "description": "Deep Purple Tribute by 'Рок-Архив'.",
+    "source_city": "Симферополь",
+    "source_channel": "clubjam",
+    "genre": "рок",
+    "source_url": "https://t.me/clubjam/1198",
+    "images": [
+      "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
+      "/images/events/d28b7f8345f6b43152f505d0404dbe99.jpg"
+    ],
+    "image": "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
+    "post_date": "2026-11-22T19:01:33+00:00",
+    "source_status": "active",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
     "date": "2027-01-07",
     "time": "13:00",
     "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
@@ -19113,7 +19082,7 @@
     "venue": "Отель Palmira Palace Resort & SPA, г. Ялта",
     "price": "1000 ₽ (до 7 декабря), 1500 ₽ (до 31 декабря), 2000 ₽ (до 6 января), 2500 ₽ (в день мероприятия)",
     "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на красивом событии крымской зимы! Для вас прозвучат легендарные рождественские джазовые стандарты и любимые новогодние песни на русском языке!",
-    "image": "/images/events/4d4cb5cdc9a233eefd1260ef3e4c3187.jpg",
+    "image": "/images/events/8cbe3d8102242e2397e59ddedc1a8f39.jpg",
     "images": null,
     "source_channel": "skazhitejazz",
     "source_city": "Ялта",
@@ -19121,10 +19090,9 @@
     "source_url": "https://t.me/skazhitejazz/1608",
     "id": "4393807d",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-23T03:58:00.311021+00:00",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
-      "description",
       "genre"
     ],
     "genre": "джаз",
@@ -19139,8 +19107,8 @@
     "event_type": "концерт",
     "venue": "Арт-кафе «Снежинка»",
     "price": null,
-    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты, которые в этот вечер будет петь весь зал!",
-    "image": "/images/events/2ba5d1b5f499d171de0df3f2a9a725d8.jpg",
+    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты.",
+    "image": "/images/events/9e34ee7b4e28f27daef959304647d48c.jpg",
     "images": null,
     "source_channel": "artcafesnezhinka",
     "source_city": "Севастополь",
@@ -19148,10 +19116,9 @@
     "source_url": "https://t.me/artcafesnezhinka/2163",
     "id": "288731e5",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-23T03:58:00.311021+00:00",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
-      "artist",
       "description",
       "genre"
     ],
@@ -19165,11 +19132,11 @@
   {
     "date": "2026-12-12",
     "time": "20:00",
-    "artist": "МЯТНЫЙ ГРОМ BAND",
+    "artist": "Мятный гром band",
     "event_type": "концерт",
-    "venue": "Ресто-Бар «У Чёрного моря»",
-    "price": "200 руб./чел.",
-    "description": "Выступление МЯТНЫЙ ГРОМ BAND.",
+    "venue": "Ресто-Бар 'У Чёрного моря'",
+    "price": "200 руб. / чел.",
+    "description": "Живой звук от Мятного грома.",
     "image": null,
     "images": null,
     "source_channel": "u_blacksea_rest",
@@ -19178,7 +19145,7 @@
     "source_url": "https://vk.com/wall-233167471_1148",
     "id": "7b34b139",
     "source_status": "active",
-    "source_last_checked_at": "2026-11-23T03:58:00.311021+00:00",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "artist",
@@ -19197,30 +19164,60 @@
     "moderation_decision_reasons": [
       "снято с публикации редакцией"
     ],
-    "moderation_decision_fingerprint": "e8cdc5fb7be8f0d087d14b81d42283595b2e7048d8db705452b13823e2ee6feb"
+    "moderation_decision_fingerprint": "7c8b623d9e808fffa169036164b6e05211b62e8d82c6b4cb25243ff53968d1a5"
   },
   {
-    "id": "58a2f4fc",
-    "date": "2026-11-27",
-    "time": "18:00",
-    "artist": "Рок-Архив, Angle of Wonders",
-    "event_type": "трибьют",
-    "venue": "Jam Club",
-    "price": "бесплатно",
-    "description": "Deep Purple Tribute by 'Рок-Архив'.",
+    "date": "2026-12-11",
+    "time": "19:00",
+    "artist": "саундтреки волшебных…, Симфония Гарри Поттера",
+    "venue": "Дворец культуры профсоюзов",
+    "event_type": "концерт",
+    "price": "от 2 590 ₽",
+    "description": "А если письмо из Хогвартса всё-таки существует — и однажды вечером оно приведёт вас не на вокзал, а в концертный зал?\n\nВ окружении тысячи мерцающих свечей прозвучат самые известные саундтреки из фильмов о Гарри Поттере. Симфонический оркестр проведёт вас по всей истории любимой киносаги: от первого письма, прибытия на платформу 9¾ до больших сражений, важных решений и финальной битвы.\n\nВы снова услышите музыку Хогвартса, почувствуете атмосферу святочного бала, вспомните полёты, заклинания, тайные коридоры и встречи с героями, которые стали близкими миллионам зрителей.\n\nСияние свечей, живой оркестр и знакомые до мурашек мелодии создадут пространство, где граница между реальностью и волшебным миром исчезает. Здесь не нужно ждать сову с письмом — достаточно прийти на концерт и позволить музыке открыть дверь в Хогвартс.\n\nНа один вечер оставьте привычный мир за дверями. Вас ждёт путешествие туда, где невозможное становится возможным.\n\nВ программе:\nМузыка из фильмов:\n«Гарри Поттер и философский камень»;\n«Гарри Поттер и тайная комната»;\n«Гарри Поттер и узник Азкабана»;\n«Гарри Поттер и Кубок огня»;\n«Гарри Поттер и Орден Феникса»;\n«Гарри Поттер и Принц-полукровка»;\n«Гарри Поттер и Дары смерти: Часть 1»;\n«Гарри Поттер и Дары смерти: Часть 2»;\nИ другие саундтреки из:\n«Как приручить дракона»;\n«Хроники Нарнии»;\n«Властелин колец»;\n«Ходячий замок»;\n«Унесённые призраками»;\n«Фантастические твари и где они обитают».",
+    "source_channel": "yandex_afisha",
     "source_city": "Симферополь",
-    "source_channel": "clubjam",
-    "genre": "рок",
-    "source_url": "https://t.me/clubjam/1198",
-    "images": [
-      "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
-      "/images/events/9f0285b7c7c09421bb37346f33943d18.jpg"
-    ],
-    "image": "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
-    "post_date": "2026-11-22T19:01:33+00:00",
+    "post_date": "2026-12-11",
+    "image": "/images/events/bde5f78bbb2cb9a114eede4c0a42762d.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/simfoniia-garri-pottera-i-saundtreki-volshebnykh-mirov",
+    "id": "ac92b02c",
     "source_status": "active",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "genre"
+    ],
+    "genre": "классика",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-25",
+    "time": "19:00",
+    "artist": "Космос внутри. Симфо-рок на скрипках. Мировые хиты",
+    "venue": "Концертный зал КРаО (Научный)",
+    "event_type": "концерт",
+    "price": "от 1 700 ₽",
+    "description": "Приятные эмоции — отличная идея новогоднего подарка!\n\nВ концертном зале обсерватории выступит группа Two Violins, с уникальным форматом игры на скрипках, сочетающем в себе прогрессивный рок и классические музыкальные традиции\n\nВы услышите известные мировые хиты — песни таких исполнителей, как Queen, Nirvana, Michael Jackson, Iron Maiden, System of a Down, Гагарина, The Cranberries, Linkin Park, Дженкинс, Metallica, Adele, Imagine Dragons, Evanescence и многие другие\n\nКонцерт пройдёт в рамках проекта Ирины Андреевой #Космосвнутри, по возрождению культурных традиций в Крыму и Крымской астрофизической обсерватории\n\nПосле концерта — желающие дополнительно смогут посетить астропрограмму, регистрация у @kosmosvnutri_info тг. Также есть возможность остаться с ночёвкой.",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-12-25",
+    "image": "/images/events/2b43dbde947817b694841b47eef66ae1.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-vnutri-simfo-rok-na-skripkakh-mirovye-khity",
+    "id": "68d8abd9",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "метал",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
   },
   {
     "date": "2027-02-19",
@@ -19233,12 +19230,19 @@
     "source_channel": "yandex_afisha",
     "source_city": "Севастополь",
     "post_date": "2027-02-19",
-    "image": "/images/events/c3f70126fe555850b3cbf337e1df170c.jpg",
+    "image": "/images/events/c8b1d3688be4234024eeb65147f42237.jpg",
     "source_url": "https://afisha.yandex.ru/sevastopol/concert/animatsiya-elektrichestvo-tour",
     "id": "3d50442e",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
     "genre": "поп",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "approved"
   },
   {
     "date": "2027-02-21",
@@ -19250,10 +19254,124 @@
     "description": "Костя Кулясов (АнимациЯ) — концерт в Клуб «Камелот», Керчь.",
     "source_channel": "afisha_goroda",
     "source_city": "Керчь",
-    "post_date": "2026-11-23T03:57:56.652056+00:00",
+    "post_date": "2026-11-24T07:10:20.239328+00:00",
     "image": "/images/events/c49a832da8b2b4479098ee4a2ac48eca.jpg",
     "source_url": "https://kerch.afishagoroda.ru/events/kostya-kulyasov-animaciya-2027",
     "id": "2474bf4a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "a7c074b2",
+    "date": "2026-12-05",
+    "time": null,
+    "artist": "INSOMNIE",
+    "event_type": "концерт",
+    "venue": "Джаз-клуб «Ирей»",
+    "price": null,
+    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
+    "source_city": "Симферополь",
+    "source_channel": "purplecaseband",
+    "genre": "джаз",
+    "source_url": "https://t.me/purplecaseband/208",
+    "images": [
+      "/images/events/8c77bb8f6a0dbbf73b787f453be936e9.jpg",
+      "/images/events/f83a80f6a58619730d3e75a379381b13.jpg"
+    ],
+    "image": "/images/events/8c77bb8f6a0dbbf73b787f453be936e9.jpg",
+    "post_date": "2026-11-21T12:29:29+00:00",
+    "source_status": "active",
+    "needs_review": true,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ]
+  },
+  {
+    "date": "2026-11-29",
+    "time": "15:30",
+    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. П. И. Чайковского",
+    "price": null,
+    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
+    "image": null,
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-23T12:28:09+00:00",
+    "source_url": "https://t.me/koncertykrym/2406",
+    "id": "bfe312a2",
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-28",
+    "time": "19:00",
+    "artist": "Кантри-музыка",
+    "event_type": "концерт-вечеринка",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "800–1000 ₽",
+    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-23T11:56:19+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2165",
+    "id": "c037a582",
+    "genre": "другое",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-19",
+    "time": "18:00",
+    "artist": "Космос в музыке",
+    "venue": "Астрофизическая обсерватория РАН (Научный)",
+    "event_type": "концерт",
+    "price": "от 1 700 ₽",
+    "description": "Концерт солистов камерного оркестра «Новая гармония»",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2026-12-19",
+    "image": "/images/events/255c88df095bfa879ddec7c0d12558b0.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/kosmos-v-muzyke-2024",
+    "id": "fb500890",
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": []
+  },
+  {
+    "date": "2027-02-20",
+    "time": "20:00",
+    "artist": "АнимациЯ",
+    "venue": "Депо",
+    "event_type": "концерт",
+    "price": "от 2 200 ₽",
+    "description": "Костя Кулясов и группа «АнимациЯ» возвращается с большим сольным концертом, где будут песни, которые вы знаете наизусть, и те, что особенно хочется услышать живьём.\n\nЭто будет вечер честных текстов, громких припевов, живых эмоций и той самой атмосферы, ради которой мы снова и снова собираемся вместе. Будем петь, вспоминать, переживать и проживать каждую песню вместе с вами.\n\nЕсли давно собирались попасть на концерт «Анимации» — это отличный повод. Если уже были — знаете, что такие встречи не хочется пропускать.\n\nБилеты уже в продаже. Не откладывайте на потом — лучшие места заканчиваются первыми.\n\nДо встречи на концерте!",
+    "source_channel": "yandex_afisha",
+    "source_city": "Симферополь",
+    "post_date": "2027-02-20",
+    "image": "/images/events/c3f70126fe555850b3cbf337e1df170c.jpg",
+    "source_url": "https://afisha.yandex.ru/simferopol/concert/animatsiya-elektrichestvo-tour",
+    "id": "91602b88",
     "genre": "поп",
     "needs_review": false,
     "review_reasons": []
