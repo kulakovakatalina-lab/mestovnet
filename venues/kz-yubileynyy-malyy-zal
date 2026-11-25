@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>КЗ «Юбилейный», малый зал — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», малый зал, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в КЗ «Юбилейный», малый зал, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/kz-yubileynyy-malyy-zal">
   <meta property="og:title" content="КЗ «Юбилейный», малый зал — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», малый зал, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в КЗ «Юбилейный», малый зал, в Ялте. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Ялта",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Концерт музыкального цикла «О любви на разных языках»",
-      "startDate": "2026-11-24T15:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "КЗ «Юбилейный», малый зал"
-      },
-      "description": "Путешествие в Италию – страну оперы, ярких эмоций и страстных признаний. В музыке итальянских композиторов переплетаются нежность, драматизм и восторг.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Концерт музыкального цикла «О любви на разных языках»"
-      },
-      "image": "/images/events/a4d735dd48263fc3ee61b9fba0bad1e9.jpg"
     }
   ]
 }

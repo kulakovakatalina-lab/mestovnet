@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Севастополь — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/sevastopol">
   <meta property="og:title" content="Севастополь — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 1 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Севастополь, в Севастополе. 0 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -35,21 +35,6 @@
         "addressCountry": "RU",
         "streetAddress": "Матросский бульвар"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ирина Депутович",
-      "startDate": "2027-12-31",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Севастополь"
-      },
-      "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ирина Депутович"
-      },
-      "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg"
     }
   ]
 }
@@ -1092,7 +1077,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Севастополь", "Севастополь, Матросский бульвар", "Севастополь, наб. Адмирала Клокачева, 16", "Севастополь, ул. Ленина, 8", "Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»", "Севастополь"];
+const VENUE_ALIASES = ["Севастополь", "Севастополь, Матросский бульвар", "Севастополь, наб. Адмирала Клокачева, 16", "Севастополь, ул. Ленина, 8, ресторан «У Чёрного моря»", "Севастополь"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',

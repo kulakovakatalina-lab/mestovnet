@@ -60,7 +60,7 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Севастополь, ул. Ленина, 8",
+        "name": "Ресторан «У Чёрного моря»",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",

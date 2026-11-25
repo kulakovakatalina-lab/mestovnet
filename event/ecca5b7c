@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Группа «Денайро», Рок-н-рольщики (Симферополь), в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Группа «Денайро», Екатерининская, 14, Симферополь, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Группа «Денайро» — Рок-н-рольщики (Симферополь), 27 ноября · Местов.Нет</title>
+<title>Группа «Денайро» — Екатерининская, 14, Симферополь, 27 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/ecca5b7c">
-<meta property="og:title" content="Группа «Денайро» — Рок-н-рольщики (Симферополь), 27 ноября · Местов.Нет">
-<meta property="og:description" content="Группа «Денайро», Рок-н-рольщики (Симферополь), в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Группа «Денайро» — Екатерининская, 14, Симферополь, 27 ноября · Местов.Нет">
+<meta property="og:description" content="Группа «Денайро», Екатерининская, 14, Симферополь, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/bdaa4d4acb011daf627634a30215f007.jpg">
 <script type="application/ld+json">
@@ -974,14 +974,14 @@ a { color: inherit; text-decoration: none; }
       "startDate": "2026-11-27T21:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Рок-н-рольщики (Симферополь)",
+        "name": "Екатерининская, 14, Симферополь",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Симферополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Любимые и танцевальные рок-поп хиты в живом исполнении группы «Денайро»",
+      "description": "Танцевальные рок-поп хиты в живом исполнении группы «Денайро». Музыканты приедут из Севастополя, чтобы сыграть только любимые треки.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Группа «Денайро»"

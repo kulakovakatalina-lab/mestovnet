@@ -17134,7 +17134,7 @@
     "review_reasons": [
       "нет цены"
     ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "id": "cd137cdc",
@@ -17502,18 +17502,19 @@
     "time": "21:00",
     "artist": "Группа «Денайро»",
     "event_type": "концерт",
-    "venue": "Рок-н-рольщики (Симферополь)",
+    "venue": "Екатерининская, 14, Симферополь",
     "price": "бесплатно",
-    "description": "Любимые и танцевальные рок-поп хиты в живом исполнении группы «Денайро»",
+    "description": "Танцевальные рок-поп хиты в живом исполнении группы «Денайро». Музыканты приедут из Севастополя, чтобы сыграть только любимые треки.",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "поп-рок",
     "source_url": "https://vk.com/wall-237501275_211",
     "images": [
-      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+      "/images/events/6baf40a379f39fdc09fb43c7c00961f7.jpg"
     ],
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "post_date": "2026-11-02T12:05:22+00:00",
+    "post_date": "2026-11-24T18:26:16+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -17537,10 +17538,8 @@
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
     "post_date": "2026-11-02T12:05:22+00:00",
     "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "дубли мета-тегов: совпадают title и description"
-    ]
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "id": "91edb4a0",
@@ -18321,18 +18320,19 @@
     "time": "20:00",
     "artist": "Группа «Тень Клоуна»",
     "event_type": "трибьют",
-    "venue": "Рок-н-рольщики (Симферополь)",
+    "venue": "Екатерининская, 14, Симферополь",
     "price": "1000₽",
-    "description": "Трибьют «Короля и Шута».",
+    "description": "Большая премьера! Страшные сказки тёмного леса: трибьют «Короля и Шута» в исполнении группы «Тень Клоуна».",
     "source_city": "Симферополь",
     "source_channel": "rocknroll_82",
     "genre": "рок",
     "source_url": "https://vk.com/wall-237501275_211",
     "images": [
-      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
+      "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
+      "/images/events/6baf40a379f39fdc09fb43c7c00961f7.jpg"
     ],
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-    "post_date": "2026-11-02T12:05:22+00:00",
+    "post_date": "2026-11-24T18:26:16+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
@@ -18651,7 +18651,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-24T07:10:05.645366+00:00",
+    "post_date": "2026-11-25T05:43:57.861931+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
@@ -19000,36 +19000,6 @@
     "moderation_status": "archived"
   },
   {
-    "date": "2027-12-31",
-    "time": null,
-    "artist": "Ирина Депутович",
-    "event_type": "концерт",
-    "venue": "Севастополь, ул. Ленина, 8",
-    "price": null,
-    "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
-    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-13T17:40:12+00:00",
-    "source_url": "https://vk.com/wall-233167471_1150",
-    "id": "0c6fc9b2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-22T03:27:34.625106+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-12-05",
     "time": null,
     "artist": "Максим Веселов, Севастопольский эстрадный оркестр",
@@ -19066,105 +19036,13 @@
     "source_url": "https://t.me/clubjam/1198",
     "images": [
       "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
-      "/images/events/d28b7f8345f6b43152f505d0404dbe99.jpg"
+      "/images/events/47554f323430f6c1a9fcb3d8ff6c5185.jpg"
     ],
     "image": "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
     "post_date": "2026-11-22T19:01:33+00:00",
     "source_status": "active",
     "needs_review": false,
     "review_reasons": []
-  },
-  {
-    "date": "2027-01-07",
-    "time": "13:00",
-    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
-    "event_type": "фестиваль",
-    "venue": "Отель Palmira Palace Resort & SPA, г. Ялта",
-    "price": "1000 ₽ (до 7 декабря), 1500 ₽ (до 31 декабря), 2000 ₽ (до 6 января), 2500 ₽ (в день мероприятия)",
-    "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на красивом событии крымской зимы! Для вас прозвучат легендарные рождественские джазовые стандарты и любимые новогодние песни на русском языке!",
-    "image": "/images/events/8cbe3d8102242e2397e59ddedc1a8f39.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Ялта",
-    "post_date": "2026-11-21T07:56:21+00:00",
-    "source_url": "https://t.me/skazhitejazz/1608",
-    "id": "4393807d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-19",
-    "time": "18:30",
-    "artist": "Ольга Панкратова, Максим Перов",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты.",
-    "image": "/images/events/9e34ee7b4e28f27daef959304647d48c.jpg",
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-19T20:15:23+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2163",
-    "id": "288731e5",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "description",
-      "genre"
-    ],
-    "genre": "панк-рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-12",
-    "time": "20:00",
-    "artist": "Мятный гром band",
-    "event_type": "концерт",
-    "venue": "Ресто-Бар 'У Чёрного моря'",
-    "price": "200 руб. / чел.",
-    "description": "Живой звук от Мятного грома.",
-    "image": null,
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-11T14:11:00+00:00",
-    "source_url": "https://vk.com/wall-233167471_1148",
-    "id": "7b34b139",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "venue",
-      "price",
-      "description",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "rejected",
-    "moderated_at": "",
-    "moderation_decision_reasons": [
-      "снято с публикации редакцией"
-    ],
-    "moderation_decision_fingerprint": "7c8b623d9e808fffa169036164b6e05211b62e8d82c6b4cb25243ff53968d1a5"
   },
   {
     "date": "2026-12-11",
@@ -19245,102 +19123,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2027-02-21",
-    "time": "20:00",
-    "artist": "Костя Кулясов (АнимациЯ)",
-    "venue": "Клуб «Камелот»",
-    "event_type": "концерт",
-    "price": "1900",
-    "description": "Костя Кулясов (АнимациЯ) — концерт в Клуб «Камелот», Керчь.",
-    "source_channel": "afisha_goroda",
-    "source_city": "Керчь",
-    "post_date": "2026-11-24T07:10:20.239328+00:00",
-    "image": "/images/events/c49a832da8b2b4479098ee4a2ac48eca.jpg",
-    "source_url": "https://kerch.afishagoroda.ru/events/kostya-kulyasov-animaciya-2027",
-    "id": "2474bf4a",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-24T07:10:22.587100+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "a7c074b2",
-    "date": "2026-12-05",
-    "time": null,
-    "artist": "INSOMNIE",
-    "event_type": "концерт",
-    "venue": "Джаз-клуб «Ирей»",
-    "price": null,
-    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
-    "source_city": "Симферополь",
-    "source_channel": "purplecaseband",
-    "genre": "джаз",
-    "source_url": "https://t.me/purplecaseband/208",
-    "images": [
-      "/images/events/8c77bb8f6a0dbbf73b787f453be936e9.jpg",
-      "/images/events/f83a80f6a58619730d3e75a379381b13.jpg"
-    ],
-    "image": "/images/events/8c77bb8f6a0dbbf73b787f453be936e9.jpg",
-    "post_date": "2026-11-21T12:29:29+00:00",
-    "source_status": "active",
-    "needs_review": true,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ]
-  },
-  {
-    "date": "2026-11-29",
-    "time": "15:30",
-    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "Музыкальное училище им. П. И. Чайковского",
-    "price": null,
-    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
-    "image": null,
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-23T12:28:09+00:00",
-    "source_url": "https://t.me/koncertykrym/2406",
-    "id": "bfe312a2",
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-28",
-    "time": "19:00",
-    "artist": "Кантри-музыка",
-    "event_type": "концерт-вечеринка",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": "800–1000 ₽",
-    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
-    "image": null,
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-23T11:56:19+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2165",
-    "id": "c037a582",
-    "genre": "другое",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-12-19",
     "time": "18:00",
     "artist": "Космос в музыке",
@@ -19375,6 +19157,242 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": []
+  },
+  {
+    "id": "a7c074b2",
+    "date": "2026-12-05",
+    "time": null,
+    "artist": "INSOMNIE",
+    "event_type": "концерт",
+    "venue": "Джаз-клуб «Ирей»",
+    "price": null,
+    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
+    "source_city": "Симферополь",
+    "source_channel": "purplecaseband",
+    "genre": "джаз",
+    "source_url": "https://t.me/purplecaseband/208",
+    "images": [
+      "/images/events/6b6d6ea7bcafac3b0de25a1ac7e83d62.jpg",
+      "/images/events/8c0b638f928a55735fd6d93e5876377a.jpg"
+    ],
+    "image": "/images/events/6b6d6ea7bcafac3b0de25a1ac7e83d62.jpg",
+    "post_date": "2026-11-21T12:29:29+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "13:00",
+    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
+    "event_type": "фестиваль",
+    "venue": "Отель Palmira Palace Resort & SPA, г. Ялта",
+    "price": "1000 ₽ (до 7 декабря), 1500 ₽ (до 31 декабря), 2000 ₽ (до 6 января), 2500 ₽ (в день мероприятия)",
+    "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на красивом событии крымской зимы! Для вас прозвучат легендарные рождественские джазовые стандарты и любимые новогодние песни на русском языке!",
+    "image": "/images/events/f9d9a9ff3268bd26631b96c753a2acc3.jpg",
+    "images": null,
+    "source_channel": "skazhitejazz",
+    "source_city": "Ялта",
+    "post_date": "2026-11-21T07:56:21+00:00",
+    "source_url": "https://t.me/skazhitejazz/1608",
+    "id": "4393807d",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-29",
+    "time": "15:30",
+    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. П. И. Чайковского",
+    "price": null,
+    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
+    "image": null,
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-23T12:28:09+00:00",
+    "source_url": "https://t.me/koncertykrym/2406",
+    "id": "bfe312a2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-19",
+    "time": "18:30",
+    "artist": "Максим Перов, Ольга Панкратова",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Первый новогодний концерт с участием заслуженной артистки России Ольги Панкратовой и маэстро Максима Перова. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты.",
+    "image": "/images/events/3df9e4f7ca7146a440f1baf043b4727f.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-19T20:15:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2163",
+    "id": "288731e5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "панк-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-28",
+    "time": "19:00",
+    "artist": "Кантри-музыка",
+    "event_type": "концерт-вечеринка",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "800–1000 ₽",
+    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-23T11:56:19+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2165",
+    "id": "c037a582",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "другое",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Ирина Депутович",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
+    "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
+    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-13T17:40:12+00:00",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "id": "0c6fc9b2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "price",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-12",
+    "time": "20:00",
+    "artist": "МЯТНЫЙ ГРОМ BAND",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "200 руб. / чел.",
+    "description": "Живой звук.",
+    "image": null,
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-11T14:11:00+00:00",
+    "source_url": "https://vk.com/wall-233167471_1148",
+    "id": "7b34b139",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "venue",
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "rejected",
+    "moderated_at": "",
+    "moderation_decision_reasons": [
+      "снято с публикации редакцией"
+    ],
+    "moderation_decision_fingerprint": "104b99529ff35c5dc4c5a47f6358a86e383c1af522b734278a506968761bfc09"
+  },
+  {
+    "date": "2027-02-21",
+    "time": "20:00",
+    "artist": "Костя Кулясов (АнимациЯ)",
+    "venue": "Клуб «Камелот»",
+    "event_type": "концерт",
+    "price": "1900",
+    "description": "Костя Кулясов (АнимациЯ) — концерт в Клуб «Камелот», Керчь.",
+    "source_channel": "afisha_goroda",
+    "source_city": "Керчь",
+    "post_date": "2026-11-25T05:44:13.058944+00:00",
+    "image": "/images/events/c49a832da8b2b4479098ee4a2ac48eca.jpg",
+    "source_url": "https://kerch.afishagoroda.ru/events/kostya-kulyasov-animaciya-2027",
+    "id": "2474bf4a",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
   },
   {
     "date": "2026-08-11",
