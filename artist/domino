@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Домино — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
-  <meta name="description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <title>Группа «Домино» — концерты в Крыму, Севастополь, Симферополь · Местов.Нет</title>
+  <meta name="description" content="Расписание концертов Группа «Домино» в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <link rel="canonical" href="https://mestov.net/artist/domino">
-  <meta property="og:title" content="Домино — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
-  <meta property="og:description" content="Расписание концертов Домино в Крыму (Севастополь, Симферополь). 0 ближайших событий.">
+  <meta property="og:title" content="Группа «Домино» — концерты в Крыму, Севастополь, Симферополь · Местов.Нет">
+  <meta property="og:description" content="Расписание концертов Группа «Домино» в Крыму (Севастополь, Симферополь). 1 ближайших событий.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,13 +28,32 @@
   "@graph": [
     {
       "@type": "MusicGroup",
-      "name": "Домино"
+      "name": "Группа «Домино»"
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Группа «Домино»",
+      "startDate": "2026-11-27T21:00:00+03:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Группа «Домино»"
+      },
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Ленина, 8",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Севастополь",
+          "addressCountry": "RU"
+        }
+      },
+      "description": "Хиты русского поп-рока и танцевальная музыка от группы «Домино»"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Домино"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Группа «Домино»"}]}
 </script>
   <style>
 
@@ -998,7 +1017,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · Артист
     </div>
-    <h1 class="genre-hero-title">Домино</h1>
+    <h1 class="genre-hero-title">Группа «Домино»</h1>
 <p class="venue-description">Севастопольская группа, исполняющая хиты русского рока и поп-рока в необычных аранжировках. Выступает электрическим составом в барах «Рок-н-рольщики» Севастополя и Симферополя.</p>
 <div class="venue-address-block"><span class="venue-hero-address">Играет: Севастополь, Симферополь</span></div>
   </div>
@@ -1020,7 +1039,7 @@ footer {
 </footer>
 
 <script>
-const ARTIST_ALIASES = ["Группа «Домино»", "Домино", "группа «Домино»", "Домино"];
+const ARTIST_ALIASES = ["Группа «Домино»", "Домино", "группа «Домино»", "Группа «Домино»"];
 const ARTIST_ALIAS_SET = new Set(ARTIST_ALIASES);
 
 const GENRE_MAP = {

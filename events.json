@@ -18651,7 +18651,7 @@
       "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
     ],
     "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-25T05:43:57.861931+00:00",
+    "post_date": "2026-11-26T05:23:59.676489+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "date",
@@ -19159,181 +19159,6 @@
     "review_reasons": []
   },
   {
-    "id": "a7c074b2",
-    "date": "2026-12-05",
-    "time": null,
-    "artist": "INSOMNIE",
-    "event_type": "концерт",
-    "venue": "Джаз-клуб «Ирей»",
-    "price": null,
-    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
-    "source_city": "Симферополь",
-    "source_channel": "purplecaseband",
-    "genre": "джаз",
-    "source_url": "https://t.me/purplecaseband/208",
-    "images": [
-      "/images/events/6b6d6ea7bcafac3b0de25a1ac7e83d62.jpg",
-      "/images/events/8c0b638f928a55735fd6d93e5876377a.jpg"
-    ],
-    "image": "/images/events/6b6d6ea7bcafac3b0de25a1ac7e83d62.jpg",
-    "post_date": "2026-11-21T12:29:29+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2027-01-07",
-    "time": "13:00",
-    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
-    "event_type": "фестиваль",
-    "venue": "Отель Palmira Palace Resort & SPA, г. Ялта",
-    "price": "1000 ₽ (до 7 декабря), 1500 ₽ (до 31 декабря), 2000 ₽ (до 6 января), 2500 ₽ (в день мероприятия)",
-    "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на красивом событии крымской зимы! Для вас прозвучат легендарные рождественские джазовые стандарты и любимые новогодние песни на русском языке!",
-    "image": "/images/events/f9d9a9ff3268bd26631b96c753a2acc3.jpg",
-    "images": null,
-    "source_channel": "skazhitejazz",
-    "source_city": "Ялта",
-    "post_date": "2026-11-21T07:56:21+00:00",
-    "source_url": "https://t.me/skazhitejazz/1608",
-    "id": "4393807d",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-29",
-    "time": "15:30",
-    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "Музыкальное училище им. П. И. Чайковского",
-    "price": null,
-    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
-    "image": null,
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-23T12:28:09+00:00",
-    "source_url": "https://t.me/koncertykrym/2406",
-    "id": "bfe312a2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-12-19",
-    "time": "18:30",
-    "artist": "Максим Перов, Ольга Панкратова",
-    "event_type": "концерт",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": null,
-    "description": "Первый новогодний концерт с участием заслуженной артистки России Ольги Панкратовой и маэстро Максима Перова. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты.",
-    "image": "/images/events/3df9e4f7ca7146a440f1baf043b4727f.jpg",
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-19T20:15:23+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2163",
-    "id": "288731e5",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "artist",
-      "description",
-      "genre"
-    ],
-    "genre": "панк-рок",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-28",
-    "time": "19:00",
-    "artist": "Кантри-музыка",
-    "event_type": "концерт-вечеринка",
-    "venue": "Арт-кафе «Снежинка»",
-    "price": "800–1000 ₽",
-    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
-    "image": null,
-    "images": null,
-    "source_channel": "artcafesnezhinka",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-23T11:56:19+00:00",
-    "source_url": "https://t.me/artcafesnezhinka/2165",
-    "id": "c037a582",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "другое",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2027-12-31",
-    "time": null,
-    "artist": "Ирина Депутович",
-    "event_type": "концерт",
-    "venue": "Ресторан «У Чёрного моря»",
-    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
-    "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
-    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
-    "images": null,
-    "source_channel": "u_blacksea_rest",
-    "source_city": "Севастополь",
-    "post_date": "2026-11-13T17:40:12+00:00",
-    "source_url": "https://vk.com/wall-233167471_1150",
-    "id": "0c6fc9b2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-25T05:44:16.920787+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "price",
-      "genre"
-    ],
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-12-12",
     "time": "20:00",
     "artist": "МЯТНЫЙ ГРОМ BAND",
@@ -19392,6 +19217,207 @@
     "genre": "поп",
     "needs_review": false,
     "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "a7c074b2",
+    "date": "2026-12-05",
+    "time": null,
+    "artist": "INSOMNIE",
+    "event_type": "концерт",
+    "venue": "Джаз-клуб «Ирей»",
+    "price": null,
+    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
+    "source_city": "Симферополь",
+    "source_channel": "purplecaseband",
+    "genre": "джаз",
+    "source_url": "https://t.me/purplecaseband/208",
+    "images": [
+      "/images/events/c89c90b43ef48e3133d5de5cf3f1e408.jpg",
+      "/images/events/40deb8ac695399d8f9663cbf3f55b366.jpg"
+    ],
+    "image": "/images/events/c89c90b43ef48e3133d5de5cf3f1e408.jpg",
+    "post_date": "2026-11-21T12:29:29+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "4393807d",
+    "date": "2027-01-07",
+    "time": "13:00",
+    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
+    "event_type": "фестиваль",
+    "venue": "Отель Palmira Palace Resort & SPA, г. Ялта",
+    "price": "1000 ₽ до 7 декабря, 1500 ₽ до 31 декабря, 2000 ₽ до 6 января, 2500 ₽ в день мероприятия",
+    "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на главном зимнем событии Крыма! В программе: Рождественский джаз & Хор, Ярмарка & Фуд-зона, Развлечения.",
+    "source_city": "Ялта",
+    "source_channel": "skazhitejazz",
+    "genre": "джаз",
+    "source_url": "https://t.me/skazhitejazz/1608",
+    "images": [
+      "/images/events/069dee2a8cb03fdd642b416516054735.jpg",
+      "/images/events/306dfc6a8399fb6316efe61f5eb36d86.jpg"
+    ],
+    "image": "/images/events/069dee2a8cb03fdd642b416516054735.jpg",
+    "post_date": "2026-11-25T13:30:50+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "price",
+      "description",
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-29",
+    "time": "15:30",
+    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. П. И. Чайковского",
+    "price": null,
+    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
+    "image": null,
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-23T12:28:09+00:00",
+    "source_url": "https://t.me/koncertykrym/2406",
+    "id": "bfe312a2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-19",
+    "time": "18:30",
+    "artist": "Ольга Панкратова, Максим Перов",
+    "event_type": "концерт",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": null,
+    "description": "Первый новогодний концерт. Участница шоу «Голос», заслуженная артистка России Ольга Панкратова и маэстро Максим Перов приглашают вас на особенный музыкальный вечер. В программе — авторские песни Ольги Панкратовой и авторская музыка Максима Перова в новом прочтении и любимые новогодние хиты.",
+    "image": "/images/events/810e80c702e044b8e3449698b07988f5.jpg",
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-19T20:15:23+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2163",
+    "id": "288731e5",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "description",
+      "genre"
+    ],
+    "genre": "панк-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-28",
+    "time": "19:00",
+    "artist": "Кантри-музыка",
+    "event_type": "концерт-вечеринка",
+    "venue": "Арт-кафе «Снежинка»",
+    "price": "800–1000 ₽",
+    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
+    "image": null,
+    "images": null,
+    "source_channel": "artcafesnezhinka",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-23T11:56:19+00:00",
+    "source_url": "https://t.me/artcafesnezhinka/2165",
+    "id": "c037a582",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "другое",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-12-31",
+    "time": null,
+    "artist": "Ирина Депутович",
+    "event_type": "концерт",
+    "venue": "Ресторан «У Чёрного моря»",
+    "price": "10 000 руб. (взрослый билет), 7 000 руб. (детский билет)",
+    "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
+    "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg",
+    "images": null,
+    "source_channel": "u_blacksea_rest",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-13T17:40:12+00:00",
+    "source_url": "https://vk.com/wall-233167471_1150",
+    "id": "0c6fc9b2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-26T05:24:21.865720+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-27",
+    "time": "21:00",
+    "artist": "Группа «Домино»",
+    "event_type": "концерт",
+    "venue": "Ленина, 8",
+    "price": null,
+    "description": "Хиты русского поп-рока и танцевальная музыка от группы «Домино»",
+    "image": null,
+    "images": null,
+    "source_channel": "rocknroll_92",
+    "source_city": "Севастополь",
+    "post_date": "2026-11-25T07:10:07+00:00",
+    "source_url": "https://t.me/rocknroll_92/7949",
+    "id": "73028ef7",
+    "genre": "поп-рок",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
     "moderation_status": "approved"
   },
   {

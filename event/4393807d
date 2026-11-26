@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 <meta property="og:title" content="Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев — Отель Palmira Palace Resort &amp; SPA, г. Ялта, 7 января · Местов.Нет">
 <meta property="og:description" content="Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев, Отель Palmira Palace Resort &amp; SPA, г. Ялта, в Ялте, 7 января, чт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://mestov.net/images/events/f9d9a9ff3268bd26631b96c753a2acc3.jpg">
+<meta property="og:image" content="https://mestov.net/images/events/069dee2a8cb03fdd642b416516054735.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -981,15 +981,15 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на красивом событии крымской зимы! Для вас прозвучат легендарные рождественские джазовые стандарты и любимые новогодние песни на русском языке!",
+      "description": "Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на главном зимнем событии Крыма! В программе: Рождественский джаз & Хор, Ярмарка & Фуд-зона, Развлечения.",
       "performer": {
         "@type": "MusicGroup",
         "name": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев"
       },
-      "image": "/images/events/f9d9a9ff3268bd26631b96c753a2acc3.jpg",
+      "image": "/images/events/069dee2a8cb03fdd642b416516054735.jpg",
       "offers": {
         "@type": "Offer",
-        "name": "1000 ₽ (до 7 декабря), 1500 ₽ (до 31 декабря), 2000 ₽ (до 6 января), 2500 ₽ (в день мероприятия)",
+        "name": "1000 ₽ до 7 декабря, 1500 ₽ до 31 декабря, 2000 ₽ до 6 января, 2500 ₽ в день мероприятия",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }

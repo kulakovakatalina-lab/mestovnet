@@ -2899,6 +2899,20 @@
     "lon": null
   },
   {
+    "slug": "klub-kamelot",
+    "name": "Клуб «Камелот»",
+    "city": "Керчь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Клуб «Камелот»"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dzhaz-klub-irey-simferopol",
     "name": "Джаз-клуб «Ирей»",
     "city": "Симферополь",
@@ -2927,13 +2941,13 @@
     "lon": null
   },
   {
-    "slug": "klub-kamelot",
-    "name": "Клуб «Камелот»",
-    "city": "Керчь",
+    "slug": "lenina-8",
+    "name": "Ленина, 8",
+    "city": "Севастополь",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Клуб «Камелот»"
+      "Ленина, 8"
     ],
     "description": null,
     "desc_baseline_count": 0,
