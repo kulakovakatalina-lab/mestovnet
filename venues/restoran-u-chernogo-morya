@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/restoran-u-chernogo-morya">
   <meta property="og:title" content="Ресторан «У Чёрного моря» — афиша в Севастополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Ресторан «У Чёрного моря», в Севастополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -50,21 +50,6 @@
         "name": "DJ, Ирина Депутович"
       },
       "image": "/images/events/30cf0c3fe12db1d26728e650e2ff5431.jpg"
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Ирина Депутович",
-      "startDate": "2027-12-31",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»"
-      },
-      "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Ирина Депутович"
-      },
-      "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg"
     }
   ]
 }

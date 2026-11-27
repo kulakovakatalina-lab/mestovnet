@@ -60,14 +60,14 @@
       },
       "location": {
         "@type": "MusicVenue",
-        "name": "Ресторан «У Чёрного моря»",
+        "name": "г. Севастополь, ул. Ленина, 8",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Севастополь",
           "addressCountry": "RU"
         }
       },
-      "description": "Живой звук: праздничное настроение создаст очаровательная Ирина Депутович.",
+      "description": "Живой звук создаст праздничное настроение с очаровательной Ириной Депутович.",
       "image": "/images/events/ffc87eac7263702e4f8cbb8de2b1c8b9.jpg"
     }
   ]

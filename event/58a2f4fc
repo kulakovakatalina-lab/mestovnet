@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Рок-Архив, Angle of Wonders, Jam Club, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars, Jam Club, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Рок-Архив, Angle of Wonders — Jam Club, Симферополь, 27 ноября · Местов.Нет</title>
+<title>DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars — Jam Club, Симферополь, 27 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/58a2f4fc">
-<meta property="og:title" content="Рок-Архив, Angle of Wonders — Jam Club, Симферополь, 27 ноября · Местов.Нет">
-<meta property="og:description" content="Рок-Архив, Angle of Wonders, Jam Club, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars — Jam Club, Симферополь, 27 ноября · Местов.Нет">
+<meta property="og:description" content="DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars, Jam Club, в Симферополе, 27 ноября, пт. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://mestov.net/images/events/abe8b6e333dd8f4da993f243060376d3.jpg">
 <script type="application/ld+json">
@@ -970,7 +970,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Рок-Архив, Angle of Wonders",
+      "name": "DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars",
       "startDate": "2026-11-27T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -981,10 +981,10 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Deep Purple Tribute by 'Рок-Архив'.",
+      "description": "DEEP PURPLE TRIBUTE by Рок-Архив с участием группы Angle of Wonders (группа Евгения Громова) на разогреве. Метал-гиг с участием трёх молодых metal-команд: Scrotum | Deathtroy | Red Stars. Бесплатное рок-караоке после групп до 6:00 утра.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Рок-Архив, Angle of Wonders"
+        "name": "DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars"
       },
       "image": "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg",
       "offers": {
@@ -998,7 +998,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "Рок-Архив, Angle of Wonders"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Симферополь", "item": "https://mestov.net/cities/simferopol.html"}, {"@type": "ListItem", "position": 3, "name": "DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars"}]}
 </script>
 </head>
 <body>

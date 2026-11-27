@@ -37,16 +37,16 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Рок-Архив, Angle of Wonders",
+      "name": "DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars",
       "startDate": "2026-11-27T18:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
         "name": "Jam Club"
       },
-      "description": "Deep Purple Tribute by 'Рок-Архив'.",
+      "description": "DEEP PURPLE TRIBUTE by Рок-Архив с участием группы Angle of Wonders (группа Евгения Громова) на разогреве. Метал-гиг с участием трёх молодых metal-команд: Scrotum | Deathtroy | Red Stars. Бесплатное рок-караоке после групп до 6:00 утра.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Рок-Архив, Angle of Wonders"
+        "name": "DEEP PURPLE TRIBUTE by Рок-Архив, Angle of Wonders (группа Евгения Громова), Scrotum, Deathtroy, Red Stars"
       },
       "image": "/images/events/abe8b6e333dd8f4da993f243060376d3.jpg"
     }
