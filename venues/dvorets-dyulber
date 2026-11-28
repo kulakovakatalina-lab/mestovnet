@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дворец «Дюльбер» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Дворец «Дюльбер», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Дворец «Дюльбер», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/dvorets-dyulber">
   <meta property="og:title" content="Дворец «Дюльбер» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Дворец «Дюльбер», в Ялте. 0 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Дворец «Дюльбер», в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -33,6 +33,20 @@
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
         "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Максим Перов",
+      "startDate": "2026-11-29T17:00:00+03:00",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Дворец «Дюльбер»"
+      },
+      "description": "Пианист, трубач и композитор Максим Перов представит специально подготовленную романтическую программу: известные джазовые композиции о любви и авторские сочинения. В исполнении Максима прозвучат старинный рояль, синтезатор и труба. Особенной частью программы станут «Музыкальные портреты» — авторские импровизации Максима Перова, которые рождаются прямо во время концерта и посвящаются кому-то из слушателей.",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Максим Перов"
       }
     }
   ]

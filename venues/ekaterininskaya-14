@@ -17,10 +17,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Екатерининская, 14 — афиша в Симферополе · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Екатерининская, 14, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta name="description" content="Концерты и живая музыка в Екатерининская, 14, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <link rel="canonical" href="https://mestov.net/venues/ekaterininskaya-14">
   <meta property="og:title" content="Екатерининская, 14 — афиша в Симферополе · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Екатерининская, 14, в Симферополе. 2 ближайших событий. Расписание и билеты.">
+  <meta property="og:description" content="Концерты и живая музыка в Екатерининская, 14, в Симферополе. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -34,21 +34,6 @@
         "addressLocality": "Симферополь",
         "addressCountry": "RU"
       }
-    },
-    {
-      "@type": "MusicEvent",
-      "name": "Группа «Денайро»",
-      "startDate": "2026-11-27T21:00:00+03:00",
-      "location": {
-        "@type": "MusicVenue",
-        "name": "Екатерининская, 14"
-      },
-      "description": "Танцевальные рок-поп хиты в живом исполнении группы «Денайро». Музыканты приедут из Севастополя, чтобы сыграть только любимые треки.",
-      "performer": {
-        "@type": "MusicGroup",
-        "name": "Группа «Денайро»"
-      },
-      "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg"
     },
     {
       "@type": "MusicEvent",

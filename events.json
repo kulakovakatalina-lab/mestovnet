@@ -17517,7 +17517,8 @@
     "post_date": "2026-11-24T18:26:16+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "id": "67c8bb8c",
@@ -18329,7 +18330,7 @@
     "source_url": "https://vk.com/wall-237501275_211",
     "images": [
       "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
-      "/images/events/6baf40a379f39fdc09fb43c7c00961f7.jpg"
+      "/images/events/79f514853def1e13a1dd8058c901a8bd.jpg"
     ],
     "image": "/images/events/bdaa4d4acb011daf627634a30215f007.jpg",
     "post_date": "2026-11-24T18:26:16+00:00",
@@ -18633,35 +18634,6 @@
       "нет постера"
     ],
     "moderation_status": "archived"
-  },
-  {
-    "id": "3d2ff3be",
-    "date": "2027-01-22",
-    "time": "20:00",
-    "artist": "Хиты 2000-х. Караоке с оркестром",
-    "event_type": "концерт",
-    "venue": "Ribiza",
-    "price": "от 1990 ₽",
-    "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с за\u0000лом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
-    "source_city": "Симферополь",
-    "source_channel": "afisha_ru",
-    "genre": "рок",
-    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
-    "images": [
-      "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg"
-    ],
-    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
-    "post_date": "2026-11-27T05:18:16.710614+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "date",
-      "time"
-    ],
-    "source_last_checked_at": "2026-11-18T04:41:27.838755+00:00",
-    "source_status": "active",
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
   },
   {
     "date": "2026-11-19",
@@ -19042,7 +19014,8 @@
     "post_date": "2026-11-26T19:54:56+00:00",
     "source_status": "active",
     "needs_review": false,
-    "review_reasons": []
+    "review_reasons": [],
+    "moderation_status": "archived"
   },
   {
     "date": "2027-02-19",
@@ -19158,99 +19131,7 @@
       "нет цены",
       "нет постера"
     ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "a7c074b2",
-    "date": "2026-12-05",
-    "time": null,
-    "artist": "INSOMNIE",
-    "event_type": "концерт",
-    "venue": "Джаз-клуб «Ирей»",
-    "price": null,
-    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
-    "source_city": "Симферополь",
-    "source_channel": "purplecaseband",
-    "genre": "джаз",
-    "source_url": "https://t.me/purplecaseband/208",
-    "images": [
-      "/images/events/df4dd12cdbca664be3a600457b2024ac.jpg",
-      "/images/events/7b7a79717a23d975dd6a79aee92a5646.jpg"
-    ],
-    "image": "/images/events/df4dd12cdbca664be3a600457b2024ac.jpg",
-    "post_date": "2026-11-21T12:29:29+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-27T05:18:27.301981+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [
-      "нет времени",
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "id": "4393807d",
-    "date": "2027-01-07",
-    "time": "13:00",
-    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
-    "event_type": "фестиваль",
-    "venue": "Отель Palmira Palace Resort & SPA",
-    "price": "1000 ₽ до 7 декабря, 1500 ₽ до 31 декабря, 2000 ₽ до 6 января, 2500 ₽ в день мероприятия",
-    "description": "Рождество в Ялте: Фестиваль-маркет «СКАЖИТЕ JAZZ». Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на главном зимнем событии Крыма! В программе: Рождественский джаз & Хор, Ярмарка & Фуд-зона, Развлечения.",
-    "source_city": "Ялта",
-    "source_channel": "skazhitejazz",
-    "genre": "джаз",
-    "source_url": "https://t.me/skazhitejazz/1608",
-    "images": [
-      "/images/events/7846b2603a4bbfa951fe7d3680d85558.jpg",
-      "/images/events/cc4d7b2da56ec62584104468c3b1b933.jpg"
-    ],
-    "image": "/images/events/7846b2603a4bbfa951fe7d3680d85558.jpg",
-    "post_date": "2026-11-25T13:30:50+00:00",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-27T05:18:27.301981+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "venue",
-      "description",
-      "genre"
-    ],
-    "needs_review": false,
-    "review_reasons": [],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-29",
-    "time": "15:30",
-    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
-    "event_type": "концерт",
-    "venue": "Музыкальное училище им. П. И. Чайковского",
-    "price": null,
-    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
-    "image": null,
-    "images": null,
-    "source_channel": "koncertykrym",
-    "source_city": "Симферополь",
-    "post_date": "2026-11-23T12:28:09+00:00",
-    "source_url": "https://t.me/koncertykrym/2406",
-    "id": "bfe312a2",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-27T05:18:27.301981+00:00",
-    "auto_updated": true,
-    "auto_updated_fields": [
-      "genre"
-    ],
-    "genre": "классика",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены",
-      "нет постера"
-    ],
-    "moderation_status": "approved"
+    "moderation_status": "archived"
   },
   {
     "date": "2026-12-19",
@@ -19282,27 +19163,27 @@
     "moderation_status": "approved"
   },
   {
+    "id": "c037a582",
     "date": "2026-11-28",
     "time": "19:00",
-    "artist": "Кантри-музыка",
+    "artist": "Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер",
     "event_type": "концерт-вечеринка",
     "venue": "Арт-кафе «Снежинка»",
-    "price": "800–1000 ₽",
-    "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
-    "image": null,
-    "images": null,
-    "source_channel": "artcafesnezhinka",
+    "price": "800–1 000 ₽",
+    "description": "Концерт-вечеринка «Кантри» в «Снежинке»! Будем слушать живьём песни Долли Партон, Шанайи Твейн и Джона Денвера, разучивать кантри-танцы с командой «Севастопольского бала» и играть вместе.",
     "source_city": "Севастополь",
-    "post_date": "2026-11-23T11:56:19+00:00",
+    "source_channel": "artcafesnezhinka",
+    "genre": "другое",
     "source_url": "https://t.me/artcafesnezhinka/2165",
-    "id": "c037a582",
-    "source_status": "active",
-    "source_last_checked_at": "2026-11-27T05:18:27.301981+00:00",
+    "images": null,
+    "image": null,
+    "post_date": "2026-11-27T16:47:47+00:00",
     "auto_updated": true,
     "auto_updated_fields": [
       "genre"
     ],
-    "genre": "другое",
+    "source_last_checked_at": "2026-11-27T05:18:27.301981+00:00",
+    "source_status": "active",
     "needs_review": false,
     "review_reasons": [
       "нет постера"
@@ -19442,50 +19323,6 @@
     "moderation_status": "approved"
   },
   {
-    "date": "2026-11-28",
-    "time": "20:00",
-    "artist": "Полина, DJ ARKADA, MC Алекс",
-    "event_type": "вечеринка",
-    "venue": "GTА YALTA CITY • TERRACE • ТЫБОСС, набережная Ленина, 14Ф",
-    "price": null,
-    "description": "Ритм жизни в VICE CITY: сбор гостей, живой вокал Полины, DJ ARKADA и MC Алекс.",
-    "image": "/images/events/d2fc17266e4a91622152bf8e7cf7fc32.jpg",
-    "images": null,
-    "source_channel": "afisha_crimea",
-    "source_city": "Ялта",
-    "post_date": "2026-11-26T12:08:12+00:00",
-    "source_url": "https://t.me/afisha_crimea/9210",
-    "id": "2322b421",
-    "genre": "поп",
-    "needs_review": false,
-    "review_reasons": [
-      "нет цены"
-    ],
-    "moderation_status": "approved"
-  },
-  {
-    "date": "2026-11-29",
-    "time": "17:00",
-    "artist": "Максим Перов",
-    "event_type": "концерт",
-    "venue": "Ялта, Дворец «Дюльбер»",
-    "price": "1500₽",
-    "description": "Пианист, трубач и композитор Максим Перов представит специально подготовленную романтическую программу: известные джазовые композиции о любви и авторские сочинения.",
-    "image": null,
-    "images": null,
-    "source_channel": "afisha_crimea",
-    "source_city": "Ялта",
-    "post_date": "2026-11-26T17:02:01+00:00",
-    "source_url": "https://t.me/afisha_crimea/9211",
-    "id": "f2271e24",
-    "genre": "джаз",
-    "needs_review": false,
-    "review_reasons": [
-      "нет постера"
-    ],
-    "moderation_status": "approved"
-  },
-  {
     "date": "2026-11-27",
     "time": null,
     "artist": "Французские мотивы",
@@ -19501,10 +19338,227 @@
     "source_url": "https://t.me/afisha_payberry/1673",
     "id": "54b92f35",
     "genre": "классика",
-    "needs_review": true,
+    "needs_review": false,
     "review_reasons": [
       "нет времени"
-    ]
+    ],
+    "moderation_status": "archived"
+  },
+  {
+    "date": "2026-11-28",
+    "time": "20:00",
+    "artist": "Полина",
+    "event_type": "вечеринка",
+    "venue": "GTА YALTA CITY • TERRACE",
+    "price": null,
+    "description": "Самая трендовая вечеринка месяца! «Твой город. Твои правила. Сегодня ты босс»! Ночь неона, уличной эстетики, бешенного ритма. Живой вокал Полины, DJ ARKADA и MC Алекс.",
+    "image": "/images/events/d32eabc102b2367428263eb0ee3e95b2.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-11-26T12:08:12+00:00",
+    "source_url": "https://t.me/afisha_crimea/9210",
+    "id": "2322b421",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "artist",
+      "venue",
+      "description",
+      "genre"
+    ],
+    "genre": "поп",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-29",
+    "time": "17:00",
+    "artist": "Максим Перов",
+    "event_type": "концерт",
+    "venue": "Дворец «Дюльбер»",
+    "price": "1500₽",
+    "description": "Пианист, трубач и композитор Максим Перов представит специально подготовленную романтическую программу: известные джазовые композиции о любви и авторские сочинения. В исполнении Максима прозвучат старинный рояль, синтезатор и труба. Особенной частью программы станут «Музыкальные портреты» — авторские импровизации Максима Перова, которые рождаются прямо во время концерта и посвящаются кому-то из слушателей.",
+    "image": null,
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-11-26T17:02:01+00:00",
+    "source_url": "https://t.me/afisha_crimea/9211",
+    "id": "f2271e24",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "venue",
+      "description",
+      "genre"
+    ],
+    "genre": "джаз",
+    "needs_review": false,
+    "review_reasons": [
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "a7c074b2",
+    "date": "2026-12-05",
+    "time": null,
+    "artist": "INSOMNIE",
+    "event_type": "концерт",
+    "venue": "Джаз-клуб «Ирей»",
+    "price": null,
+    "description": "INSOMNIE — одна история, в исполнении четырех музыкантов, в которой знакомые зарубежные хиты обретают новое звучание. В основе программы: выразительный вокал, гитара с лёгким рок-характером, атмосферные клавишные и живая перкуссия. Вместе они создают объёмное, тонкое и ритмичное настроение, где есть место чувственности соула, свободе блюза, джазовой выразительности и энергии современной поп-музыки! В программе: хиты OneRepublic, Aerosmith, Ed Sheeran, Rihanna, Duffy, Elvis Presley, Nina Simone и других исполнителей - музыка разных эпох и стилей в авторских аранжировках ИНСОМНИ для самого лучшего настроения!",
+    "source_city": "Симферополь",
+    "source_channel": "purplecaseband",
+    "genre": "джаз",
+    "source_url": "https://t.me/purplecaseband/208",
+    "images": [
+      "/images/events/1dd1dc859ba7b04ab774a52feadf8b28.jpg",
+      "/images/events/5a322396693bc69b349bf46c5e870edd.jpg"
+    ],
+    "image": "/images/events/1dd1dc859ba7b04ab774a52feadf8b28.jpg",
+    "post_date": "2026-11-21T12:29:29+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [
+      "нет времени",
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "id": "4393807d",
+    "date": "2027-01-07",
+    "time": "13:00",
+    "artist": "Елена Голофеева, Руслан Кривцун, Андрей Морозов, Александр Мелентьев",
+    "event_type": "фестиваль",
+    "venue": "Отель Palmira Palace Resort & SPA",
+    "price": "1000 ₽ до 7 декабря, 1500 ₽ до 31 декабря, 2000 ₽ до 6 января, 2500 ₽ в день мероприятия",
+    "description": "Рождество в Ялте: Фестиваль-маркет «СКАЖИТЕ JAZZ». Погрузитесь в атмосферу светлого праздника, живой музыки и загородного уюта на главном зимнем событии Крыма! В программе: Рождественский джаз & Хор, Ярмарка & Фуд-зона, Развлечения.",
+    "source_city": "Ялта",
+    "source_channel": "skazhitejazz",
+    "genre": "джаз",
+    "source_url": "https://t.me/skazhitejazz/1608",
+    "images": [
+      "/images/events/d0877f012ee4526ccaf4c6a4ad7daca5.jpg",
+      "/images/events/fb75c63647af9001bd0f4594c29345e0.jpg"
+    ],
+    "image": "/images/events/d0877f012ee4526ccaf4c6a4ad7daca5.jpg",
+    "post_date": "2026-11-25T13:30:50+00:00",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-11-29",
+    "time": "15:30",
+    "artist": "Матвей Блюмин (скрипка), Крымский академический симфонический оркестр",
+    "event_type": "концерт",
+    "venue": "Музыкальное училище им. П. И. Чайковского",
+    "price": null,
+    "description": "Крымский академический симфонический оркестр и солист Матвей Блюмин (скрипка) исполнят произведения классической музыки.",
+    "image": null,
+    "images": null,
+    "source_channel": "koncertykrym",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-23T12:28:09+00:00",
+    "source_url": "https://t.me/koncertykrym/2406",
+    "id": "bfe312a2",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "genre"
+    ],
+    "genre": "классика",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены",
+      "нет постера"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "20:00",
+    "artist": "Хиты 2000-х. Караоке с оркестром",
+    "venue": "Ribiza",
+    "event_type": "концерт",
+    "price": "от 1990 ₽",
+    "description": "О концерте Мы знаем как вы любите петь !\r\nПредставьте: вы поёте вместе с залом любимые русские хиты, которые знаете наизусть — «Звери», «Кино», «Король и Шут», «Ария», «Сплин» и многие другие.\r\nНа сцене — живой оркестр, превращающий каждую песню в мощное, захватывающее звучание.\r\nПойте вместе с залом, наслаждайтесь мощным оркестровым звучанием и атмосферой настоящего музыкального праздника. Здесь каждый зритель — часть большого концерта!",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-28T04:56:21.102337+00:00",
+    "image": "/images/events/60b6ed7ad4a1d950fb35de8a1cf1ad29.jpg",
+    "source_url": "https://www.afisha.ru/concert/hity-2000-h-karaoke-s-orkestrom-6032609/",
+    "genre": "рок",
+    "id": "3d2ff3be",
+    "source_status": "active",
+    "source_last_checked_at": "2026-11-28T04:56:39.261289+00:00",
+    "auto_updated": true,
+    "auto_updated_fields": [
+      "description"
+    ],
+    "needs_review": false,
+    "review_reasons": [],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2027-12-31",
+    "time": "22:00",
+    "artist": "вокалистка, Кавер-группа",
+    "event_type": "другое",
+    "venue": "Эспаньола",
+    "price": null,
+    "description": "Праздничная программа с ведущим, кавер-группа и вокалистка.",
+    "image": "/images/events/46c69de33b91b520e831bdcd2a9fcbce.jpg",
+    "images": null,
+    "source_channel": "afisha_crimea",
+    "source_city": "Ялта",
+    "post_date": "2026-11-27T17:03:01+00:00",
+    "source_url": "https://t.me/afisha_crimea/9215",
+    "id": "1b96dc1d",
+    "genre": "каверы",
+    "needs_review": false,
+    "review_reasons": [
+      "нет цены"
+    ],
+    "moderation_status": "approved"
+  },
+  {
+    "date": "2026-12-18",
+    "time": "19:00",
+    "artist": "«Атмосфера»: великие хиты. Оркестр в сиянии свечей",
+    "venue": "ДК профсоюзов",
+    "event_type": "концерт",
+    "price": "от 2500 ₽",
+    "description": "О концерте «Атмосфера» — один из самых волнующих музыкальных вечеров сезона, где эстетика тысяч мерцающих свечей объединится с виртуозным исполнением живым оркестром мировых хитов разных эпох: от Баха и Вивальди до Ханса Циммера, Queen, Людовико Эйнауди, Adele и культовых саундтреков современности.\r\n\r\nЭто не академический концерт в привычном понимании. Это красивое оркестровое шоу, в котором музыка становится частью особенного момента. Пространство зала преображает тёплый блеск свечей, создавая эффект полного погружения, а за инструментами — настоящие маэстро, солисты оркестра.\r\n\r\nВ программе собраны произведения, которые давно стали частью нашей культурной ДНК: мелодии из любимых фильмов и сериалов, мировая классика, легендарные хиты, узнаваемые с первых нот.\r\n\r\n«Атмосфера» — идеальный повод для красивого выхода в свет: свидание, романтический сюрприз, подарок близкому человеку или встреча с друзьями.",
+    "source_channel": "afisha_ru",
+    "source_city": "Симферополь",
+    "post_date": "2026-11-28T04:56:19.803776+00:00",
+    "image": "/images/events/c79fe0dbf63babdd0c304d3ffd8aca5e.jpg",
+    "source_url": "https://www.afisha.ru/concert/atmosfera-velikie-hity-orkestr-v-siyanii-svechiy-6059542/",
+    "genre": "рок",
+    "id": "d6712809",
+    "needs_review": false,
+    "review_reasons": []
   },
   {
     "date": "2026-08-11",

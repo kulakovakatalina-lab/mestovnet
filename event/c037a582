@@ -16,9 +16,9 @@
 <!-- /Yandex.Metrika counter -->
 
 <meta charset="utf-8">
-<meta name="description" content="Кантри-музыка, Арт-кафе «Снежинка», в Севастополе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta name="description" content="Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер, Арт-кафе «Снежинка», в Севастополе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Кантри-музыка — Арт-кафе «Снежинка», Севастополь, 28 ноября · Местов.Нет</title>
+<title>Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер — Арт-кафе «Снежинка», Севастополь, 28 ноября · Местов.Нет</title>
 <link rel="icon" type="image/png" href="/images/fav.png">
 <style>
 :root {
@@ -960,8 +960,8 @@ a { color: inherit; text-decoration: none; }
 }
 </style>
 <link rel="canonical" href="https://mestov.net/event/c037a582">
-<meta property="og:title" content="Кантри-музыка — Арт-кафе «Снежинка», Севастополь, 28 ноября · Местов.Нет">
-<meta property="og:description" content="Кантри-музыка, Арт-кафе «Снежинка», в Севастополе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
+<meta property="og:title" content="Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер — Арт-кафе «Снежинка», Севастополь, 28 ноября · Местов.Нет">
+<meta property="og:description" content="Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер, Арт-кафе «Снежинка», в Севастополе, 28 ноября, сб. Билеты и подробности на Местов.Нет.">
 <meta property="og:type" content="article">
 <script type="application/ld+json">
 {
@@ -969,7 +969,7 @@ a { color: inherit; text-decoration: none; }
   "@graph": [
     {
       "@type": "MusicEvent",
-      "name": "Кантри-музыка",
+      "name": "Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер",
       "startDate": "2026-11-28T19:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
@@ -980,14 +980,14 @@ a { color: inherit; text-decoration: none; }
           "addressCountry": "RU"
         }
       },
-      "description": "Премьера новой концерт-вечеринки «Снежинки»! Приглашаем на яркий музыкальный праздник с кантри-хитами, танцами и настоящим ковбойским настроением. В программе — любимые песни Долли Партон, Шанайи Твейн, Джона Денвера, современные композиции с кантри-мотивами, фольклорные мелодии и виртуозные инструментальные номера.",
+      "description": "Концерт-вечеринка «Кантри» в «Снежинке»! Будем слушать живьём песни Долли Партон, Шанайи Твейн и Джона Денвера, разучивать кантри-танцы с командой «Севастопольского бала» и играть вместе.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Кантри-музыка"
+        "name": "Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер"
       },
       "offers": {
         "@type": "Offer",
-        "name": "800–1000 ₽",
+        "name": "800–1 000 ₽",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock"
       }
@@ -996,7 +996,7 @@ a { color: inherit; text-decoration: none; }
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Кантри-музыка"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Севастополь", "item": "https://mestov.net/cities/sevastopol.html"}, {"@type": "ListItem", "position": 3, "name": "Кантри-музыка, Долли Партон, Шанайя Твейн, Джон Денвер"}]}
 </script>
 </head>
 <body>

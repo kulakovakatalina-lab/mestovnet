@@ -172,6 +172,21 @@
     "lon": 34.178866
   },
   {
+    "slug": "dvorets-kultury-profsoyuzov",
+    "name": "Дворец культуры профсоюзов",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 12,
+    "aliases": [
+      "ДК профсоюзов",
+      "Дворец культуры профсоюзов"
+    ],
+    "description": "На этой сцене встречаются шансон, хоровая музыка и оркестровые шоу. Здесь выступают Владимир Ждамиров, хор Сретенского монастыря и Jawa с песнями «Сектора Газа». А на «Симфонии оживших картин» музыка оркестра сопровождает мировую живопись в свете свечей.",
+    "desc_baseline_count": 10,
+    "lat": 44.964773,
+    "lon": 34.106607
+  },
+  {
     "slug": "el-capulco-0-0",
     "name": "El Capulco 0.0",
     "city": "Ялта",
@@ -232,21 +247,6 @@
     "desc_baseline_count": 12,
     "lat": 44.475488,
     "lon": 34.143145
-  },
-  {
-    "slug": "dvorets-kultury-profsoyuzov",
-    "name": "Дворец культуры профсоюзов",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 11,
-    "aliases": [
-      "ДК профсоюзов",
-      "Дворец культуры профсоюзов"
-    ],
-    "description": "На этой сцене встречаются шансон, хоровая музыка и оркестровые шоу. Здесь выступают Владимир Ждамиров, хор Сретенского монастыря и Jawa с песнями «Сектора Газа». А на «Симфонии оживших картин» музыка оркестра сопровождает мировую живопись в свете свечей.",
-    "desc_baseline_count": 10,
-    "lat": 44.964773,
-    "lon": 34.106607
   },
   {
     "slug": "sevastopolskiy-tskii",
@@ -501,6 +501,21 @@
     "lon": 34.162337
   },
   {
+    "slug": "dvorets-dyulber",
+    "name": "Дворец «Дюльбер»",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 5,
+    "aliases": [
+      "Дворец «Дюльбер»",
+      "Дворец Дюльбер"
+    ],
+    "description": "За последний месяц здесь прошло 5 концертов — камерные вечера с одним и тем же составом музыкантов: Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Руслан Сейдалиев и Максим Перов играли здесь по два раза каждый. Среди программ — «Песни любимого кино»: вокал, фортепиано, труба и ударные.",
+    "desc_baseline_count": 5,
+    "lat": 44.429442,
+    "lon": 34.096119
+  },
+  {
     "slug": "krongs",
     "name": "Krongs",
     "city": "Севастополь",
@@ -657,21 +672,6 @@
     "desc_baseline_count": 4,
     "lat": null,
     "lon": null
-  },
-  {
-    "slug": "dvorets-dyulber",
-    "name": "Дворец «Дюльбер»",
-    "city": "Ялта",
-    "address": "",
-    "event_count": 4,
-    "aliases": [
-      "Дворец «Дюльбер»",
-      "Дворец Дюльбер"
-    ],
-    "description": "За последний месяц здесь прошло 5 концертов — камерные вечера с одним и тем же составом музыкантов: Алим Куртмеметов, Андрей Дегурко, Андрей Рыбальченко, Руслан Сейдалиев и Максим Перов играли здесь по два раза каждый. Среди программ — «Песни любимого кино»: вокал, фортепиано, труба и ударные.",
-    "desc_baseline_count": 5,
-    "lat": 44.429442,
-    "lon": 34.096119
   },
   {
     "slug": "muzykalnoe-uchilische-im-p-i-chaykovskogo",
@@ -2915,6 +2915,34 @@
     "lon": null
   },
   {
+    "slug": "kontsertnyy-zal-krao-nauchnyy",
+    "name": "Концертный зал КРаО (Научный)",
+    "city": "Симферополь",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "Концертный зал КРаО (Научный)"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
+    "slug": "gta-yalta-city-terrace",
+    "name": "GTА YALTA CITY • TERRACE",
+    "city": "Ялта",
+    "address": "",
+    "event_count": 1,
+    "aliases": [
+      "GTА YALTA CITY • TERRACE"
+    ],
+    "description": null,
+    "desc_baseline_count": 0,
+    "lat": null,
+    "lon": null
+  },
+  {
     "slug": "dzhaz-klub-irey-simferopol",
     "name": "Джаз-клуб «Ирей»",
     "city": "Симферополь",
@@ -2943,41 +2971,13 @@
     "lon": null
   },
   {
-    "slug": "kontsertnyy-zal-krao-nauchnyy",
-    "name": "Концертный зал КРаО (Научный)",
-    "city": "Симферополь",
-    "address": "",
-    "event_count": 1,
-    "aliases": [
-      "Концертный зал КРаО (Научный)"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "gta-yalta-city-terrace-tyboss",
-    "name": "GTА YALTA CITY • TERRACE • ТЫБОСС",
-    "city": "Ялта",
-    "address": "набережная Ленина, 14Ф",
-    "event_count": 1,
-    "aliases": [
-      "GTА YALTA CITY • TERRACE • ТЫБОСС, набережная Ленина, 14Ф"
-    ],
-    "description": null,
-    "desc_baseline_count": 0,
-    "lat": null,
-    "lon": null
-  },
-  {
-    "slug": "yalta-dvorets-dyulber",
-    "name": "Ялта, Дворец «Дюльбер»",
+    "slug": "espanola",
+    "name": "Эспаньола",
     "city": "Ялта",
     "address": "",
     "event_count": 1,
     "aliases": [
-      "Ялта, Дворец «Дюльбер»"
+      "Эспаньола"
     ],
     "description": null,
     "desc_baseline_count": 0,

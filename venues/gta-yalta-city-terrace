@@ -16,11 +16,11 @@
 <!-- /Yandex.Metrika counter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ялта, Дворец «Дюльбер» — афиша в Ялте · Местов.Нет</title>
-  <meta name="description" content="Концерты и живая музыка в Ялта, Дворец «Дюльбер», в Ялте. 1 ближайших событий. Расписание и билеты.">
-  <link rel="canonical" href="https://mestov.net/venues/yalta-dvorets-dyulber">
-  <meta property="og:title" content="Ялта, Дворец «Дюльбер» — афиша в Ялте · Местов.Нет">
-  <meta property="og:description" content="Концерты и живая музыка в Ялта, Дворец «Дюльбер», в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <title>GTА YALTA CITY • TERRACE — афиша в Ялте · Местов.Нет</title>
+  <meta name="description" content="Концерты и живая музыка в GTА YALTA CITY • TERRACE, в Ялте. 1 ближайших событий. Расписание и билеты.">
+  <link rel="canonical" href="https://mestov.net/venues/gta-yalta-city-terrace">
+  <meta property="og:title" content="GTА YALTA CITY • TERRACE — афиша в Ялте · Местов.Нет">
+  <meta property="og:description" content="Концерты и живая музыка в GTА YALTA CITY • TERRACE, в Ялте. 1 ближайших событий. Расписание и билеты.">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@
   "@graph": [
     {
       "@type": "MusicVenue",
-      "name": "Ялта, Дворец «Дюльбер»",
+      "name": "GTА YALTA CITY • TERRACE",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ялта",
@@ -37,23 +37,24 @@
     },
     {
       "@type": "MusicEvent",
-      "name": "Максим Перов",
-      "startDate": "2026-11-29T17:00:00+03:00",
+      "name": "Полина",
+      "startDate": "2026-11-28T20:00:00+03:00",
       "location": {
         "@type": "MusicVenue",
-        "name": "Ялта, Дворец «Дюльбер»"
+        "name": "GTА YALTA CITY • TERRACE"
       },
-      "description": "Пианист, трубач и композитор Максим Перов представит специально подготовленную романтическую программу: известные джазовые композиции о любви и авторские сочинения.",
+      "description": "Самая трендовая вечеринка месяца! «Твой город. Твои правила. Сегодня ты босс»! Ночь неона, уличной эстетики, бешенного ритма. Живой вокал Полины, DJ ARKADA и MC Алекс.",
       "performer": {
         "@type": "MusicGroup",
-        "name": "Максим Перов"
-      }
+        "name": "Полина"
+      },
+      "image": "/images/events/d32eabc102b2367428263eb0ee3e95b2.jpg"
     }
   ]
 }
 </script>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "Ялта, Дворец «Дюльбер»"}]}
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Местов.Нет", "item": "https://mestov.net/"}, {"@type": "ListItem", "position": 2, "name": "Ялта", "item": "https://mestov.net/cities/yalta.html"}, {"@type": "ListItem", "position": 3, "name": "GTА YALTA CITY • TERRACE"}]}
 </script>
   <style>
 
@@ -1064,7 +1065,7 @@ footer {
       <a href="/">Местов.Нет</a>
       · <a href="/cities/yalta.html">Ялта</a>
     </div>
-    <h1 class="genre-hero-title">Ялта, Дворец «Дюльбер»</h1>
+    <h1 class="genre-hero-title">GTА YALTA CITY • TERRACE</h1>
 
 
   </div>
@@ -1090,7 +1091,7 @@ footer {
 
 
 <script>
-const VENUE_ALIASES = ["Ялта, Дворец «Дюльбер»", "Ялта, Дворец «Дюльбер»"];
+const VENUE_ALIASES = ["GTА YALTA CITY • TERRACE", "GTА YALTA CITY • TERRACE"];
 
 const GENRE_MAP = {
   'джаз':'jazz','рок':'rock','русский рок':'rock','панк-рок':'rock',
